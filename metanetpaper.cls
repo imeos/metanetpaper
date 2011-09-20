@@ -1,7 +1,7 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{/Users/chris/Documents/Studies/FHP/DFKI/metanetpaper/metanetpaper}[2011/09/19 LaTeX class to typeset bilingual papers of the DFKI META-NET Project]
+\ProvidesClass{/Users/chris/Documents/Studies/FHP/DFKI/metanetpaper/metanetpaper}[2011/09/20 LaTeX class to typeset bilingual papers of the DFKI META-NET Project]
 
-% Use KOMA-script class 'scrartcl'
+% Use KOMA-script class 'scrartcl', based on 'article'
 \LoadClass[10pt]{scrartcl}
 
 \usepackage[]{graphicx}
@@ -12,6 +12,10 @@
 % Colorize and customize the headings
 \usepackage{color}
 \usepackage{titlesec}
+% Generate TOC with hyperlinks inside document
+\usepackage{hyperref}
+% Custom background-images
+\usepackage{wallpaper}
 % XeLaTeX packages 
 \usepackage[T1]{fontenc}
 \usepackage{fontspec}
@@ -21,23 +25,24 @@
 %Select fonts
 \setmainfont[Mapping=tex-text]{Chaparral Pro Light}
 \setsansfont[Mapping=tex-text]{DIN}
-\setmonofont{Monaco}
+\setmonofont{Courier}
 
 % Color definitions
 \definecolor{yellow}{rgb}{0.95,0.72,0}
 \definecolor{orange}{rgb}{0.94,0.33,0}
-\definecolor{brown}{rgb}{0.75,0,0}
+\definecolor{lightorange}{rgb}{1,0.8,0.6}
+\definecolor{red}{rgb}{0.7,0,0}
 \definecolor{white}{rgb}{1,1,1}
 
 % The basic layout
-\setlength{\textheight}{180mm}
+\setlength{\textheight}{190mm}
 \setlength{\textwidth}{125mm}
 \setlength{\parindent}{0pt} % Indent for new paragraphs
 \setlength{\parskip}{0.2cm} % Spacing between paragraphs
 
 % Headings - \section
 \titleformat{\section}
-{\clearpage\color{brown}\fontsize{18}{20}\selectfont \sffamily\bfseries}{\thesection}{1.12em}{}
+{\color{red}\fontsize{18}{20}\selectfont \sffamily\bfseries}{\thesection}{1.12em}{}
 % Headings - \subsection
 \titleformat{\subsection}
 {\vskip 0.5cm \color{orange}\fontsize{13}{15}\selectfont \sffamily\bfseries}{\thesubsection}{1em}{}
@@ -50,18 +55,18 @@
 % The first page
 \renewcommand\maketitle{%
   \begin{titlepage}%
-	  {\pagecolor{orange}}
+	\ThisLRCornerWallPaper{1.02}{/Users/chris/Documents/Studies/FHP/DFKI/metanetpaper/media/titlepage_bg.jpg} 
+	  \includegraphics[width=4cm]{/Users/chris/Documents/Studies/FHP/DFKI/metanetpaper/media/metanet_logo_white.pdf}
 	  \null\vfil
 	  \vskip 1cm%
 	    {\color{white}\fontsize{30}{44}\selectfont \textsf{\textbf{\@title}} \par}%
 	  \vskip 1cm%
-	    {\fontsize{14}{17}\selectfont \textsf{\textbf{\@author}} \par}%
+	    {\color{lightorange}\fontsize{14}{17}\selectfont \textsf{\@author} \par}%
 	  \vskip 1cm%
 	    {\color{yellow}\fontsize{12}{15}\selectfont \textsf{\textbf{\@date}} \par}%
 	  \vfill	
-	    {\footnotesize The development of this white paper has been funded by the Seventh Framework Programme and the ICT Policy Support Programme of the European Commission under contracts T4ME (Grant Agreement 249119), CESAR (Grant Agreement 271022), METANET4U (Grant Agreement 270893) and META-NORD (Grant Agreement 270899).}
+	    {\color{white}\footnotesize The development of this white paper has been funded by the Seventh Framework Programme and the ICT Policy Support Programme of the European Commission under contracts T4ME (Grant Agreement 249119), CESAR (Grant Agreement 271022), METANET4U (Grant Agreement 270893) and META-NORD (Grant Agreement 270899).}
   \end{titlepage}
-	{\pagecolor{white}}
 }
 
 \endinput
