@@ -1,19 +1,39 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{/Users/chris/Documents/Studies/FHP/DFKI/metanetpaper/metanetpaper}[2011/09/19 LaTeX class to typeset bilingual papers of the DFKI META-NET Project]
 
-% Use class 'report'
-\LoadClass[]{report}
+% Use class 'article'
+\LoadClass[]{scrartcl}
 
 \usepackage[]{graphicx}
 % Parallel, two-column layout
-\usepackage{parallel}
+\usepackage[]{parallel}
 % ...  in EN ISO 216 B5 format
 \usepackage[paper=b5paper]{geometry}
+
 
 % The basic layout
 \setlength{\textheight}{180mm}
 \setlength{\textwidth}{125mm}
 \setlength{\parindent}{0pt} % No indent for new paragraphs
 
-% The first page
 
+% The first page
+\renewcommand\maketitle{%
+  \begin{titlepage}%
+	  \null\vfil
+	  \vskip 60\p@
+	  \begin{center}%
+	    {\LARGE \textsf \@title \par}%
+	    \vskip 7em%
+	    {\large
+	     \lineskip .75em%
+	      \begin{tabular}[t]{c}%
+	        \@author
+	      \end{tabular}\par}%
+	      \vskip 1.5em%
+	    {\Large \@date \par}%       % Set date in \large size.
+	  \end{center}\par
+	  \@thanks
+	  \vfil\null
+  \end{titlepage}
+}
