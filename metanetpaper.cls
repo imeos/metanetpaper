@@ -19,7 +19,7 @@
   \sbox{\firmhead}{\parbox{\textwidth}{%
    \begin{minipage}[t]{180mm}
    \mbox{}\\
-   \includegraphics[width=180mm]{/Users/chris/Documents/Studies/FHP/DFKI/dfkipapr/media/meta-net_header.pdf}
+   \includegraphics[width=180mm]{/Users/chris/Documents/Studies/FHP/DFKI/metanetpaper/media/metanet_header.pdf}
    \end{minipage}
    \begin{minipage}[t]{\rightfield}
    \vspace{0.2ex}
