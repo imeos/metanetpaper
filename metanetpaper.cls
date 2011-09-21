@@ -4,9 +4,9 @@
 % Use KOMA-script class 'scrartcl', based on 'article'
 \LoadClass[10pt]{scrartcl}
 
-\usepackage[]{graphicx}
+\usepackage{graphicx}
 % Parallel, two-column layout
-\usepackage[]{parallel}
+\usepackage{parallel}
 % ...  in EN ISO 216 B5 format
 \usepackage[paper=b5paper]{geometry}
 % Colorize and customize the headings
@@ -23,7 +23,7 @@
 
 
 %Select fonts
-\setmainfont[Mapping=tex-text]{Chaparral Pro Light}
+\setmainfont[Mapping=tex-text]{Georgia}
 \setsansfont[Mapping=tex-text]{DIN}
 \setmonofont{Courier}
 
@@ -56,7 +56,7 @@
 \renewcommand\maketitle{%
   \begin{titlepage}%
 	\ThisLRCornerWallPaper{1.02}{/Users/chris/Documents/Studies/FHP/DFKI/metanetpaper/media/titlepage_bg.jpg} 
-	  \includegraphics[width=4cm]{/Users/chris/Documents/Studies/FHP/DFKI/metanetpaper/media/metanet_logo_white.pdf}
+	\begin{flushright} \includegraphics[width=4cm]{/Users/chris/Documents/Studies/FHP/DFKI/metanetpaper/media/metanet_logo_white.pdf}
 	  \null\vfil
 	  \vskip 1cm%
 	    {\color{white}\fontsize{30}{44}\selectfont \textsf{\textbf{\@title}} \par}%
@@ -64,6 +64,7 @@
 	    {\color{lightorange}\fontsize{14}{17}\selectfont \textsf{\@author} \par}%
 	  \vskip 1cm%
 	    {\color{yellow}\fontsize{12}{15}\selectfont \textsf{\textbf{\@date}} \par}%
+	\end{flushright}
 	  \vfill	
 	    {\color{white}\footnotesize The development of this white paper has been funded by the Seventh Framework Programme and the ICT Policy Support Programme of the European Commission under contracts T4ME (Grant Agreement 249119), CESAR (Grant Agreement 271022), METANET4U (Grant Agreement 270893) and META-NORD (Grant Agreement 270899).}
   \end{titlepage}
