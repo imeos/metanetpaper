@@ -64,8 +64,11 @@
 	    {\color{lightorange}\fontsize{14}{17}\selectfont \textsf{\@author} \par}%
 	  \vskip 1cm%
 	    {\color{yellow}\fontsize{12}{15}\selectfont \textsf{\textbf{\@date}} \par}%
-	\end{flushright}
-	  \vfill	
+	  \vfill
+	    \colorbox{white}{
+	\hskip -0.08cm \includegraphics[height=1cm]{/Users/chris/Documents/Studies/FHP/DFKI/metanetpaper/media/eu_flag.pdf} \hskip 0.4cm \includegraphics[height=1cm]{/Users/chris/Documents/Studies/FHP/DFKI/metanetpaper/media/fp7_logo.pdf} \hskip 0.2cm \includegraphics[height=1cm]{/Users/chris/Documents/Studies/FHP/DFKI/metanetpaper/media/ictpsp_logo.pdf}
+	  }
+  \end{flushright}
 	    {\color{white}\footnotesize The development of this white paper has been funded by the Seventh Framework Programme and the ICT Policy Support Programme of the European Commission under contracts T4ME (Grant Agreement 249119), CESAR (Grant Agreement 271022), METANET4U (Grant Agreement 270893) and META-NORD (Grant Agreement 270899).}
   \end{titlepage}
 }
