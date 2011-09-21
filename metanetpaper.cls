@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{/Users/chris/Documents/Studies/FHP/DFKI/metanetpaper/metanetpaper}[2011/09/20 LaTeX class to typeset bilingual papers of the DFKI META-NET Project]
+\ProvidesClass{metanetpaper}[2011/09/20 LaTeX class to typeset bilingual papers of the DFKI META-NET Project]
 
 % Use KOMA-script class 'scrartcl', based on 'article'
 \LoadClass[10pt]{scrartcl}
@@ -55,8 +55,8 @@
 % The first page
 \renewcommand\maketitle{%
   \begin{titlepage}%
-	\ThisLRCornerWallPaper{1.02}{/Users/chris/Documents/Studies/FHP/DFKI/metanetpaper/media/titlepage_bg.jpg} 
-	\begin{flushright} \includegraphics[width=4cm]{/Users/chris/Documents/Studies/FHP/DFKI/metanetpaper/media/metanet_logo_white.pdf}
+	\ThisLRCornerWallPaper{1.02}{../media/titlepage_bg.jpg} 
+	\begin{flushright} \includegraphics[width=4cm]{../media/metanet_logo_white.pdf}
 	  \null\vfil
 	  \vskip 1cm%
 	    {\color{white}\fontsize{30}{44}\selectfont \textsf{\textbf{\@title}} \par}%
@@ -65,8 +65,13 @@
 	  \vskip 1cm%
 	    {\color{yellow}\fontsize{12}{15}\selectfont \textsf{\textbf{\@date}} \par}%
 	  \vfill
-	    \colorbox{white}{
-	\hskip -0.08cm \includegraphics[height=1cm]{/Users/chris/Documents/Studies/FHP/DFKI/metanetpaper/media/eu_flag.pdf} \hskip 0.4cm \includegraphics[height=1cm]{/Users/chris/Documents/Studies/FHP/DFKI/metanetpaper/media/fp7_logo.pdf} \hskip 0.2cm \includegraphics[height=1cm]{/Users/chris/Documents/Studies/FHP/DFKI/metanetpaper/media/ictpsp_logo.pdf}
+	  \colorbox{white}{
+			\hskip -0.08cm 
+			\includegraphics[height=1cm]{../media/eu_flag.pdf} 
+			\hskip 0.4cm 
+			\includegraphics[height=1cm]{../media/fp7_logo.pdf} 
+			\hskip 0.2cm 
+			\includegraphics[height=1cm]{../media/ictpsp_logo.pdf}
 	  }
   \end{flushright}
 	    {\color{white}\footnotesize The development of this white paper has been funded by the Seventh Framework Programme and the ICT Policy Support Programme of the European Commission under contracts T4ME (Grant Agreement 249119), CESAR (Grant Agreement 271022), METANET4U (Grant Agreement 270893) and META-NORD (Grant Agreement 270899).}
