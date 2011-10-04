@@ -2,13 +2,13 @@
 \ProvidesClass{metanetpaper}[2011/09/20 LaTeX class to typeset bilingual papers of the DFKI META-NET Project]
 
 % Use KOMA-script class 'scrartcl', based on 'article'
-\LoadClass[10pt]{scrartcl}
+\LoadClass[10pt,twoside]{scrartcl}
 
 \usepackage{graphicx}
 % Parallel, two-column layout
 \usepackage{parallel}
 % ...  in EN ISO 216 B5 format
-\usepackage[paper=b5paper]{geometry}
+\usepackage[paper=b5paper,hcentering,bindingoffset=8mm]{geometry}
 % Colorize and customize the headings
 \usepackage{color}
 \usepackage{titlesec}
@@ -19,6 +19,8 @@
 % XeLaTeX packages 
 \usepackage[T1]{fontenc}
 \usepackage{fontspec}
+% Header and footer
+\usepackage{fancyhdr}
 
 
 
@@ -35,7 +37,7 @@
 \definecolor{white}{rgb}{1,1,1}
 
 % The basic layout
-\setlength{\textheight}{190mm}
+\setlength{\textheight}{195mm}
 \setlength{\textwidth}{125mm}
 \setlength{\parindent}{0pt} % Indent for new paragraphs
 \setlength{\parskip}{0.2cm} % Spacing between paragraphs
@@ -49,6 +51,15 @@
 % Headings - \subsubsection
 \titleformat{\subsubsection}
 {\vskip 0.2cm \color{orange}\fontsize{11}{15}\selectfont \sffamily\bfseries}{\thesubsubsection}{0.62em}{}
+
+% Header and footer
+\pagestyle{fancy}
+\fancyhead[LE]{\textsf \rightmark}
+\fancyhead[RO]{\textsf \leftmark}
+\fancyhead[LO,RE]{}
+\fancyfoot[C]{}
+\fancyfoot[LE]{\textsf \thepage \hskip 0.4cm \rule[-1.1cm]{0.25pt}{1.6cm}}
+\fancyfoot[RO]{\rule[-1.1cm]{0.25pt}{1.6cm} \hskip 0.2cm \textsf \thepage}
 
 
 
