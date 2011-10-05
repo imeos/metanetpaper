@@ -6,9 +6,9 @@
 
 \usepackage{graphicx}
 % Parallel, two-column layout
-\usepackage{parallel}
+%\usepackage{parallel}
 % ...  in EN ISO 216 B5 format
-\usepackage[paper=b5paper,hcentering,bindingoffset=8mm]{geometry}
+\usepackage[paper=b5paper,hcentering,bindingoffset=20mm]{geometry}
 % Colorize and customize the headings
 \usepackage{color}
 \usepackage{titlesec}
@@ -21,13 +21,17 @@
 \usepackage{fontspec}
 % Header and footer
 \usepackage{fancyhdr}
-
-
+%Margin
+\usepackage{marginnote}
+\newcommand{\margin}[1]{\marginnote{\scriptsize #1}}
+%\setlength{\marginparwidth}{50mm}
+\setlength{\marginparpush}{80mm}
+\reversemarginpar
 
 %Select fonts
 \setmainfont[Mapping=tex-text]{Georgia}
 \setsansfont[Mapping=tex-text]{DIN}
-\setmonofont{Courier}
+\setmonofont{Courier 10 Pitch}
 
 % Color definitions
 \definecolor{yellow}{rgb}{0.95,0.72,0}
@@ -37,8 +41,8 @@
 \definecolor{white}{rgb}{1,1,1}
 
 % The basic layout
-\setlength{\textheight}{195mm}
-\setlength{\textwidth}{125mm}
+\setlength{\textheight}{200mm}
+\setlength{\textwidth}{80mm}
 \setlength{\parindent}{0pt} % Indent for new paragraphs
 \setlength{\parskip}{0.2cm} % Spacing between paragraphs
 
