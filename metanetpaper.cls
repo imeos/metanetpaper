@@ -8,7 +8,8 @@
 % Parallel, two-column layout
 %\usepackage{parallel}
 % ...  in EN ISO 216 B5 format
-\usepackage[paper=b5paper,hcentering,bindingoffset=20mm]{geometry}
+\usepackage[paper=b5paper,hcentering,bindingoffset=10mm]{geometry}
+
 % Colorize and customize the headings
 \usepackage{color}
 \usepackage{titlesec}
@@ -24,9 +25,10 @@
 %Margin
 \usepackage{marginnote}
 \newcommand{\margin}[1]{\marginnote{\scriptsize #1}}
-%\setlength{\marginparwidth}{50mm}
-\setlength{\marginparpush}{80mm}
+\setlength{\marginparwidth}{30mm}
+%\setlength{\marginparpush}{80mm}
 \reversemarginpar
+\setlength{\oddsidemargin}{2cm}
 
 %Select fonts
 \setmainfont[Mapping=tex-text]{Georgia}
