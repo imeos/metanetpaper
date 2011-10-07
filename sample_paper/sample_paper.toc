@@ -1,10 +1,10 @@
 \contentsline {section}{\numberline {1}Executive Summary --- Zusammenfassung}{5}{section.1}
-\contentsline {section}{\numberline {2}Risk for Our Languages and a Challenge for Language Technology}{5}{section.2}
-\contentsline {subsection}{\numberline {2.1}Language Borders Hinder the European Information Society}{6}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Our Languages at Risk}{7}{subsection.2.2}
+\contentsline {section}{\numberline {2}Risk for Our Languages and a Challenge for Language Technology}{6}{section.2}
+\contentsline {subsection}{\numberline {2.1}Language Borders Hinder the European Information Society}{7}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Our Languages at Risk}{8}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}Language Technology is a Key Enabling Technology}{8}{subsection.2.3}
 \contentsline {subsection}{\numberline {2.4}Opportunities for Language Technology}{9}{subsection.2.4}
-\contentsline {subsection}{\numberline {2.5}Challenges Facing Language Technology}{9}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.5}Challenges Facing Language Technology}{10}{subsection.2.5}
 \contentsline {subsection}{\numberline {2.6}Language Acquisition in Humans and Machines}{10}{subsection.2.6}
 \contentsline {section}{\numberline {3}German in the European Information Society}{12}{section.3}
 \contentsline {subsection}{\numberline {3.1}General Facts}{12}{subsection.3.1}
@@ -28,22 +28,22 @@
 \contentsline {subsection}{\numberline {3.18}Cross-language comparison}{29}{subsection.3.18}
 \contentsline {subsection}{\numberline {3.19}Conclusions}{30}{subsection.3.19}
 \contentsline {section}{\numberline {4}About META-NET}{31}{section.4}
-\contentsline {subsection}{\numberline {4.1}Lines of Action}{32}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Member Organisations}{34}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}References}{36}{subsection.4.3}
-\contentsline {section}{\numberline {5}LOREM ISPUM}{37}{section.5}
-\contentsline {subsection}{\numberline {5.1}IPSUM LOREM}{37}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}IPSUM LOREM}{38}{subsection.5.2}
-\contentsline {section}{\numberline {6}LOREM ISPUM}{38}{section.6}
-\contentsline {subsection}{\numberline {6.1}IPSUM LOREM}{40}{subsection.6.1}
-\contentsline {section}{\numberline {7}LOREM ISPUM}{40}{section.7}
-\contentsline {subsection}{\numberline {7.1}IPSUM LOREM}{42}{subsection.7.1}
-\contentsline {section}{\numberline {8}LOREM ISPUM}{44}{section.8}
-\contentsline {subsection}{\numberline {8.1}IPSUM LOREM}{44}{subsection.8.1}
-\contentsline {subsection}{\numberline {8.2}IPSUM LOREM}{46}{subsection.8.2}
-\contentsline {section}{\numberline {9}LOREM ISPUM}{48}{section.9}
-\contentsline {subsection}{\numberline {9.1}IPSUM LOREM}{49}{subsection.9.1}
-\contentsline {subsection}{\numberline {9.2}IPSUM LOREM}{50}{subsection.9.2}
-\contentsline {subsection}{\numberline {9.3}IPSUM LOREM}{51}{subsection.9.3}
-\contentsline {subsubsection}{\numberline {9.3.1}IPSUM LOREM}{52}{subsubsection.9.3.1}
-\contentsline {subsection}{\numberline {9.4}IPSUM LOREM}{53}{subsection.9.4}
+\contentsline {subsection}{\numberline {4.1}Lines of Action}{31}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Member Organisations}{33}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}References}{34}{subsection.4.3}
+\contentsline {section}{\numberline {5}LOREM ISPUM}{35}{section.5}
+\contentsline {subsection}{\numberline {5.1}IPSUM LOREM}{35}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}IPSUM LOREM}{36}{subsection.5.2}
+\contentsline {section}{\numberline {6}LOREM ISPUM}{36}{section.6}
+\contentsline {subsection}{\numberline {6.1}IPSUM LOREM}{38}{subsection.6.1}
+\contentsline {section}{\numberline {7}LOREM ISPUM}{38}{section.7}
+\contentsline {subsection}{\numberline {7.1}IPSUM LOREM}{40}{subsection.7.1}
+\contentsline {section}{\numberline {8}LOREM ISPUM}{42}{section.8}
+\contentsline {subsection}{\numberline {8.1}IPSUM LOREM}{42}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}IPSUM LOREM}{44}{subsection.8.2}
+\contentsline {section}{\numberline {9}LOREM ISPUM}{46}{section.9}
+\contentsline {subsection}{\numberline {9.1}IPSUM LOREM}{47}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}IPSUM LOREM}{48}{subsection.9.2}
+\contentsline {subsection}{\numberline {9.3}IPSUM LOREM}{49}{subsection.9.3}
+\contentsline {subsubsection}{\numberline {9.3.1}IPSUM LOREM}{50}{subsubsection.9.3.1}
+\contentsline {subsection}{\numberline {9.4}IPSUM LOREM}{51}{subsection.9.4}

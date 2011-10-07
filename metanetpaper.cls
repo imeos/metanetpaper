@@ -44,7 +44,7 @@
 \setlength{\textwidth}{120mm}
 \setlength{\parindent}{0pt} % Indent for new paragraphs
 \setlength{\parskip}{0.2cm} % Spacing between paragraphs
-\setlength{\oddsidemargin}{2cm}
+\setlength{\oddsidemargin}{1cm}
 \setlength{\evensidemargin}{2cm}
 
 % Headings - \section
@@ -59,9 +59,9 @@
 
 % Header and footer
 \pagestyle{fancy}
-\fancyhead[LE]{\textsf \rightmark}
-\fancyhead[RO]{\textsf \leftmark}
-\fancyhead[LO,RE]{}
+\fancyhead[LE]{\textsf \leftmark}
+\fancyhead[LO]{\textsf \leftmark}
+\fancyhead[RO,RE]{}
 \fancyfoot[C]{}
 \fancyfoot[LE]{\vspace{0.1cm} \textsf{\thepage} \hskip 0.4cm \rule[-1.4cm]{0.25pt}{2cm}}
 \fancyfoot[RO]{\vspace{0.3cm} \rule[-1.1cm]{0.25pt}{1.6cm} \hskip 0.2cm \textsf{\thepage}}
