@@ -8,7 +8,7 @@
 % Parallel, two-column layout
 %\usepackage{parallel}
 % ...  in EN ISO 216 B5 format
-\usepackage[paper=b5paper,hcentering,bindingoffset=10mm]{geometry}
+\usepackage[paper=b5paper]{geometry}
 % Alles weg und oddside und evenside nehmen
 
 
