@@ -1,5 +1,9 @@
+.gitignore
+.DS_Store
+@metanetpaper.tmproj
+*/.DS_Store
 *.aux
 *.log
-*.docx
-*.odt
-*.doc
+*.out
+*.synctex.gz
+*.toc
