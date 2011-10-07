@@ -35,7 +35,7 @@
 %Select fonts
 \setmainfont[Mapping=tex-text]{Georgia}
 \setsansfont[Mapping=tex-text]{DIN}
-\setmonofont{Courier 10 Pitch}
+\setmonofont{Courier New}
 
 % Color definitions
 \definecolor{yellow}{rgb}{0.95,0.72,0}
