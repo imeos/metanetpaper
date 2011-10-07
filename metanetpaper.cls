@@ -8,7 +8,7 @@
 % Parallel, two-column layout
 %\usepackage{parallel}
 % ...  in EN ISO 216 B5 format
-\usepackage[paper=b5paper]{geometry}
+\usepackage[paper=a4paper]{geometry}
 % Alles weg und oddside und evenside nehmen
 
 
@@ -24,13 +24,8 @@
 \usepackage{fontspec}
 % Header and footer
 \usepackage{fancyhdr}
-%Margin
+% Marginnote
 \usepackage{marginnote}
-\newcommand{\margin}[1]{\marginnote{\scriptsize #1}}
-\setlength{\marginparwidth}{30mm}
-%\setlength{\marginparpush}{80mm}
-\reversemarginpar
-\setlength{\oddsidemargin}{2cm}
 
 %Select fonts
 \setmainfont[Mapping=tex-text]{Georgia}
@@ -45,10 +40,12 @@
 \definecolor{white}{rgb}{1,1,1}
 
 % The basic layout
-\setlength{\textheight}{200mm}
-\setlength{\textwidth}{80mm}
+\setlength{\textheight}{230mm}
+\setlength{\textwidth}{120mm}
 \setlength{\parindent}{0pt} % Indent for new paragraphs
 \setlength{\parskip}{0.2cm} % Spacing between paragraphs
+\setlength{\oddsidemargin}{2cm}
+\setlength{\evensidemargin}{2cm}
 
 % Headings - \section
 \titleformat{\section}
@@ -66,8 +63,13 @@
 \fancyhead[RO]{\textsf \leftmark}
 \fancyhead[LO,RE]{}
 \fancyfoot[C]{}
-\fancyfoot[LE]{\textsf \thepage \hskip 0.4cm \rule[-1.1cm]{0.25pt}{1.6cm}}
-\fancyfoot[RO]{\rule[-1.1cm]{0.25pt}{1.6cm} \hskip 0.2cm \textsf \thepage}
+\fancyfoot[LE]{\vspace{0.1cm} \textsf{\thepage} \hskip 0.4cm \rule[-1.4cm]{0.25pt}{2cm}}
+\fancyfoot[RO]{\vspace{0.3cm} \rule[-1.1cm]{0.25pt}{1.6cm} \hskip 0.2cm \textsf{\thepage}}
+
+% Marginnote
+\newcommand{\note}[1]{{\marginnote{\color{red}\scriptsize #1}}}
+\setlength{\marginparwidth}{30mm}
+%\setlength{\marginparpush}{80mm}
 
 
 
