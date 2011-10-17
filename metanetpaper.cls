@@ -8,8 +8,11 @@
 % Parallel, two-column layout
 %\usepackage{parallel}
 % ...  in EN ISO 216 B5 format
-\usepackage[paper=a4paper]{geometry}
+%\usepackage[paper=a4paper]{geometry}
 % Alles weg und oddside und evenside nehmen
+
+\usepackage[paperwidth=210mm, paperheight=279mm, left=18mm, textwidth=113mm, marginparsep=8mm, marginpar=56mm]{geometry}
+
 
 
 % Colorize and customize the headings
@@ -39,13 +42,6 @@
 \definecolor{red}{rgb}{0.7,0,0}
 \definecolor{white}{rgb}{1,1,1}
 
-% The basic layout
-\setlength{\textheight}{230mm}
-\setlength{\textwidth}{120mm}
-\setlength{\parindent}{0pt} % Indent for new paragraphs
-\setlength{\parskip}{0.2cm} % Spacing between paragraphs
-\setlength{\oddsidemargin}{1cm}
-\setlength{\evensidemargin}{2cm}
 
 % Headings - \section
 \titleformat{\section}
@@ -59,17 +55,18 @@
 
 % Header and footer
 \pagestyle{fancy}
-\fancyhead[LE]{\textsf \leftmark}
-\fancyhead[LO]{\textsf \leftmark}
-\fancyhead[RO,RE]{}
+\fancyhead[LE]{\textsf \rightmark}
+\fancyhead[RO]{\textsf \leftmark}
+\fancyhead[LO,RE]{}
 \fancyfoot[C]{}
 \fancyfoot[LE]{\vspace{0.1cm} \textsf{\thepage} \hskip 0.4cm \rule[-1.4cm]{0.25pt}{2cm}}
 \fancyfoot[RO]{\vspace{0.3cm} \rule[-1.1cm]{0.25pt}{1.6cm} \hskip 0.2cm \textsf{\thepage}}
 
 % Marginnote
 \newcommand{\note}[1]{{\marginnote{\color{red}\scriptsize #1}}}
-\setlength{\marginparwidth}{30mm}
-%\setlength{\marginparpush}{80mm}
+%\setlength{\marginparwidth}{40mm}
+%\setlength{\marginparsep}{5mm}
+%%\setlength{\marginparpush}{80mm}
 
 
 
