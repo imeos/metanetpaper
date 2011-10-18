@@ -1,49 +1,49 @@
 \contentsline {section}{\numberline {1}Executive Summary --- Zusammenfassung}{5}{section.1}
-\contentsline {section}{\numberline {2}Risk for Our Languages and a Challenge for Language Technology}{7}{section.2}
-\contentsline {subsection}{\numberline {2.1}Language Borders Hinder the European Information Society}{9}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Our Languages at Risk}{10}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Language Technology is a Key Enabling Technology}{11}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Opportunities for Language Technology}{11}{subsection.2.4}
-\contentsline {subsection}{\numberline {2.5}Challenges Facing Language Technology}{12}{subsection.2.5}
-\contentsline {subsection}{\numberline {2.6}Language Acquisition in Humans and Machines}{13}{subsection.2.6}
-\contentsline {section}{\numberline {3}German in the European Information Society}{15}{section.3}
-\contentsline {subsection}{\numberline {3.1}General Facts}{15}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Particularities of the German Language}{16}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Recent Developments}{17}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Language Cultivation in Germany}{18}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}Language in Education}{19}{subsection.3.5}
-\contentsline {subsection}{\numberline {3.6}International Aspects}{20}{subsection.3.6}
-\contentsline {subsection}{\numberline {3.7}German on the Internet}{21}{subsection.3.7}
-\contentsline {subsection}{\numberline {3.8}Language Technology Support for German}{22}{subsection.3.8}
-\contentsline {subsection}{\numberline {3.9}Application Architectures}{23}{subsection.3.9}
-\contentsline {subsection}{\numberline {3.10}Core Application Areas}{23}{subsection.3.10}
-\contentsline {subsubsection}{\numberline {3.10.1}Language Checking}{23}{subsubsection.3.10.1}
-\contentsline {subsection}{\numberline {3.11}Web Search}{25}{subsection.3.11}
-\contentsline {subsection}{\numberline {3.12}Speech Interaction}{27}{subsection.3.12}
-\contentsline {subsection}{\numberline {3.13}Machine Translation}{29}{subsection.3.13}
-\contentsline {subsection}{\numberline {3.14}Other Application Areas}{31}{subsection.3.14}
-\contentsline {subsection}{\numberline {3.15}Educational Programmes}{33}{subsection.3.15}
-\contentsline {subsection}{\numberline {3.16}National Projects and Efforts}{33}{subsection.3.16}
-\contentsline {subsection}{\numberline {3.17}Availability of Tools and Resources}{35}{subsection.3.17}
-\contentsline {subsection}{\numberline {3.18}Cross-language comparison}{36}{subsection.3.18}
-\contentsline {subsection}{\numberline {3.19}Conclusions}{37}{subsection.3.19}
-\contentsline {section}{\numberline {4}About META-NET}{38}{section.4}
-\contentsline {subsection}{\numberline {4.1}Lines of Action}{39}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Member Organisations}{41}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}References}{42}{subsection.4.3}
-\contentsline {section}{\numberline {5}LOREM ISPUM}{43}{section.5}
-\contentsline {subsection}{\numberline {5.1}IPSUM LOREM}{43}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}IPSUM LOREM}{44}{subsection.5.2}
-\contentsline {section}{\numberline {6}LOREM ISPUM}{45}{section.6}
-\contentsline {subsection}{\numberline {6.1}IPSUM LOREM}{47}{subsection.6.1}
-\contentsline {section}{\numberline {7}LOREM ISPUM}{47}{section.7}
-\contentsline {subsection}{\numberline {7.1}IPSUM LOREM}{49}{subsection.7.1}
-\contentsline {section}{\numberline {8}LOREM ISPUM}{51}{section.8}
-\contentsline {subsection}{\numberline {8.1}IPSUM LOREM}{52}{subsection.8.1}
-\contentsline {subsection}{\numberline {8.2}IPSUM LOREM}{54}{subsection.8.2}
-\contentsline {section}{\numberline {9}LOREM ISPUM}{56}{section.9}
-\contentsline {subsection}{\numberline {9.1}IPSUM LOREM}{58}{subsection.9.1}
-\contentsline {subsection}{\numberline {9.2}IPSUM LOREM}{59}{subsection.9.2}
-\contentsline {subsection}{\numberline {9.3}IPSUM LOREM}{60}{subsection.9.3}
-\contentsline {subsubsection}{\numberline {9.3.1}IPSUM LOREM}{61}{subsubsection.9.3.1}
-\contentsline {subsection}{\numberline {9.4}IPSUM LOREM}{62}{subsection.9.4}
+\contentsline {section}{\numberline {2}Risk for Our Languages and a Challenge for Language Technology}{6}{section.2}
+\contentsline {subsection}{\numberline {2.1}Language Borders Hinder the European Information Society}{7}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Our Languages at Risk}{8}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Language Technology is a Key Enabling Technology}{9}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Opportunities for Language Technology}{9}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Challenges Facing Language Technology}{10}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}Language Acquisition in Humans and Machines}{11}{subsection.2.6}
+\contentsline {section}{\numberline {3}German in the European Information Society}{13}{section.3}
+\contentsline {subsection}{\numberline {3.1}General Facts}{13}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Particularities of the German Language}{14}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Recent Developments}{15}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Language Cultivation in Germany}{15}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Language in Education}{16}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}International Aspects}{17}{subsection.3.6}
+\contentsline {subsection}{\numberline {3.7}German on the Internet}{18}{subsection.3.7}
+\contentsline {subsection}{\numberline {3.8}Language Technology Support for German}{19}{subsection.3.8}
+\contentsline {subsection}{\numberline {3.9}Application Architectures}{20}{subsection.3.9}
+\contentsline {subsection}{\numberline {3.10}Core Application Areas}{20}{subsection.3.10}
+\contentsline {subsubsection}{\numberline {3.10.1}Language Checking}{20}{subsubsection.3.10.1}
+\contentsline {subsection}{\numberline {3.11}Web Search}{22}{subsection.3.11}
+\contentsline {subsection}{\numberline {3.12}Speech Interaction}{23}{subsection.3.12}
+\contentsline {subsection}{\numberline {3.13}Machine Translation}{25}{subsection.3.13}
+\contentsline {subsection}{\numberline {3.14}Other Application Areas}{27}{subsection.3.14}
+\contentsline {subsection}{\numberline {3.15}Educational Programmes}{28}{subsection.3.15}
+\contentsline {subsection}{\numberline {3.16}National Projects and Efforts}{29}{subsection.3.16}
+\contentsline {subsection}{\numberline {3.17}Availability of Tools and Resources}{31}{subsection.3.17}
+\contentsline {subsection}{\numberline {3.18}Cross-language comparison}{31}{subsection.3.18}
+\contentsline {subsection}{\numberline {3.19}Conclusions}{32}{subsection.3.19}
+\contentsline {section}{\numberline {4}About META-NET}{33}{section.4}
+\contentsline {subsection}{\numberline {4.1}Lines of Action}{34}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Member Organisations}{36}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}References}{37}{subsection.4.3}
+\contentsline {section}{\numberline {5}LOREM ISPUM}{38}{section.5}
+\contentsline {subsection}{\numberline {5.1}IPSUM LOREM}{38}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}IPSUM LOREM}{39}{subsection.5.2}
+\contentsline {section}{\numberline {6}LOREM ISPUM}{39}{section.6}
+\contentsline {subsection}{\numberline {6.1}IPSUM LOREM}{41}{subsection.6.1}
+\contentsline {section}{\numberline {7}LOREM ISPUM}{41}{section.7}
+\contentsline {subsection}{\numberline {7.1}IPSUM LOREM}{43}{subsection.7.1}
+\contentsline {section}{\numberline {8}LOREM ISPUM}{45}{section.8}
+\contentsline {subsection}{\numberline {8.1}IPSUM LOREM}{45}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}IPSUM LOREM}{47}{subsection.8.2}
+\contentsline {section}{\numberline {9}LOREM ISPUM}{49}{section.9}
+\contentsline {subsection}{\numberline {9.1}IPSUM LOREM}{51}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}IPSUM LOREM}{51}{subsection.9.2}
+\contentsline {subsection}{\numberline {9.3}IPSUM LOREM}{52}{subsection.9.3}
+\contentsline {subsubsection}{\numberline {9.3.1}IPSUM LOREM}{53}{subsubsection.9.3.1}
+\contentsline {subsection}{\numberline {9.4}IPSUM LOREM}{54}{subsection.9.4}

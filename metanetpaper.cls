@@ -5,15 +5,8 @@
 \LoadClass[10pt,twoside]{scrartcl}
 
 \usepackage{graphicx}
-% Parallel, two-column layout
-%\usepackage{parallel}
-% ...  in EN ISO 216 B5 format
-%\usepackage[paper=a4paper]{geometry}
-% Alles weg und oddside und evenside nehmen
 
 \usepackage[paperwidth=210mm, paperheight=279mm, left=18mm, textwidth=113mm, marginparsep=8mm, marginpar=56mm]{geometry}
-
-
 
 % Colorize and customize the headings
 \usepackage{color}
@@ -30,18 +23,22 @@
 % Marginnote
 \usepackage{marginnote}
 
+
+
+% Eigene Definitionen
+% -------------------
+
 %Select fonts
-\setmainfont[Mapping=tex-text]{Georgia}
+\setmainfont[Mapping=tex-text]{Adobe Garamond Pro}
 \setsansfont[Mapping=tex-text]{DIN}
 \setmonofont{Courier New}
 
-% Color definitions
+% Farben
 \definecolor{yellow}{rgb}{0.95,0.72,0}
 \definecolor{orange}{rgb}{0.94,0.33,0}
 \definecolor{lightorange}{rgb}{1,0.8,0.6}
 \definecolor{red}{rgb}{0.7,0,0}
 \definecolor{white}{rgb}{1,1,1}
-
 
 % Headings - \section
 \titleformat{\section}
@@ -53,6 +50,14 @@
 \titleformat{\subsubsection}
 {\vskip 0.2cm \color{orange}\fontsize{11}{15}\selectfont \sffamily\bfseries}{\thesubsubsection}{0.62em}{}
 
+% Ungeordnete Listen
+\newenvironment{my_itemize}{
+\begin{itemize}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}}{\end{itemize}
+}
+
 % Header and footer
 \pagestyle{fancy}
 \fancyhead[LE]{\textsf \rightmark}
@@ -62,37 +67,16 @@
 \fancyfoot[LE]{\vspace{0.1cm} \textsf{\thepage} \hskip 0.4cm \rule[-1.4cm]{0.25pt}{2cm}}
 \fancyfoot[RO]{\vspace{0.3cm} \rule[-1.1cm]{0.25pt}{1.6cm} \hskip 0.2cm \textsf{\thepage}}
 
-% Marginnote
+% Marginalien
 \newcommand{\note}[1]{{\marginnote{\color{red}\scriptsize #1}}}
-%\setlength{\marginparwidth}{40mm}
-%\setlength{\marginparsep}{5mm}
-%%\setlength{\marginparpush}{80mm}
 
-
-
-% The first page
+% Titelseite
 \renewcommand\maketitle{%
   \begin{titlepage}%
-	\ThisLRCornerWallPaper{1.02}{../media/titlepage_bg.jpg} 
-	\begin{flushright} \includegraphics[width=4cm]{../media/metanet_logo_white.pdf}
-	  \null\vfil
-	  \vskip 1cm%
-	    {\color{white}\fontsize{30}{44}\selectfont \textsf{\textbf{\@title}} \par}%
-	  \vskip 1cm%
-	    {\color{lightorange}\fontsize{14}{17}\selectfont \textsf{\@author} \par}%
-	  \vskip 1cm%
-	    {\color{yellow}\fontsize{12}{15}\selectfont \textsf{\textbf{\@date}} \par}%
-	  \vfill
-	  \colorbox{white}{
-			\hskip -0.08cm 
-			\includegraphics[height=1cm]{../media/eu_flag.pdf} 
-			\hskip 0.4cm 
-			\includegraphics[height=1cm]{../media/fp7_logo.pdf} 
-			\hskip 0.2cm 
-			\includegraphics[height=1cm]{../media/ictpsp_logo.pdf}
-	  }
-  \end{flushright}
-	    {\color{white}\footnotesize The development of this white paper has been funded by the Seventh Framework Programme and the ICT Policy Support Programme of the European Commission under contracts T4ME (Grant Agreement 249119), CESAR (Grant Agreement 271022), METANET4U (Grant Agreement 270893) and META-NORD (Grant Agreement 270899).}
+  	\ThisCenterWallPaper{1.07}{../media/titlepage.pdf} 
+  	\begin{flushright} 
+  	  \vfill
+    \end{flushright}
   \end{titlepage}
 }
 
