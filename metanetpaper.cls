@@ -2,12 +2,16 @@
 \ProvidesClass{metanetpaper}[2011/09/20 LaTeX class to typeset bilingual papers of the DFKI META-NET Project]
 
 % Use KOMA-script class 'scrartcl', based on 'article'
-\LoadClass[9pt,twoside]{scrartcl}
+\LoadClass[10pt,twoside]{scrartcl}
 
 \usepackage{graphicx}
+% Parallel, two-column layout
+%\usepackage{parallel}
+% ...  in EN ISO 216 B5 format
+%\usepackage[paper=a4paper]{geometry}
+% Alles weg und oddside und evenside nehmen
 
-% Papierformat
-\usepackage[paperwidth=210mm, paperheight=279mm, left=18mm, textwidth=113mm, marginparsep=8mm, marginpar=56mm, top=10mm, textheight=220mm, includehead]{geometry}
+\usepackage[paperwidth=210mm, paperheight=279mm, left=18mm, textwidth=113mm, marginparsep=8mm, marginpar=56mm]{geometry}
 
 
 
@@ -25,13 +29,11 @@
 \usepackage{fancyhdr}
 % Marginnote
 \usepackage{marginnote}
-% Zeilenabstand
-\usepackage[onehalfspacing]{setspace}
 
 %Select fonts
-\setmainfont[Mapping=tex-text]{DejaVu Serif}
-\setsansfont[Mapping=tex-text]{Open Sans}
-\setmonofont{DejaVu Sans Mono}
+\setmainfont[Mapping=tex-text]{Georgia}
+\setsansfont[Mapping=tex-text]{DIN}
+\setmonofont{Courier New}
 
 % Color definitions
 \definecolor{yellow}{rgb}{0.95,0.72,0}
@@ -61,7 +63,7 @@
 \fancyfoot[RO]{\vspace{0.3cm} \rule[-1.1cm]{0.25pt}{1.6cm} \hskip 0.2cm \textsf{\thepage}}
 
 % Marginnote
-\newcommand{\note}[1]{{\marginnote{\color{red}\small #1}}}
+\newcommand{\note}[1]{{\marginnote{\color{red}\scriptsize #1}}}
 %\setlength{\marginparwidth}{40mm}
 %\setlength{\marginparsep}{5mm}
 %%\setlength{\marginparpush}{80mm}
@@ -71,7 +73,6 @@
 % The first page
 \renewcommand\maketitle{%
   \begin{titlepage}%
-  
 	\ThisLRCornerWallPaper{1.02}{../media/titlepage_bg.jpg} 
 	\begin{flushright} \includegraphics[width=4cm]{../media/metanet_logo_white.pdf}
 	  \null\vfil
@@ -93,14 +94,6 @@
   \end{flushright}
 	    {\color{white}\footnotesize The development of this white paper has been funded by the Seventh Framework Programme and the ICT Policy Support Programme of the European Commission under contracts T4ME (Grant Agreement 249119), CESAR (Grant Agreement 271022), METANET4U (Grant Agreement 270893) and META-NORD (Grant Agreement 270899).}
   \end{titlepage}
-}
-
-
-\newenvironment{my_itemize}{
-\begin{itemize}
-  \setlength{\itemsep}{1pt}
-  \setlength{\parskip}{0pt}
-  \setlength{\parsep}{0pt}}{\end{itemize}
 }
 
 \endinput
