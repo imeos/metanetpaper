@@ -30,7 +30,7 @@
 
 %Select fonts
 \setmainfont[Mapping=tex-text]{Adobe Garamond Pro}
-\setsansfont[Mapping=tex-text]{DIN}
+\setsansfont[Mapping=tex-text]{Futura Std}
 \setmonofont{Courier New}
 
 % Farben
