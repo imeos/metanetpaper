@@ -79,7 +79,7 @@
 % Titelseite
 \renewcommand\maketitle{%
   \begin{titlepage}%
-  	\ThisCenterWallPaper{1.07}{../media/titlepage.pdf} 
+  	\ThisCenterWallPaper{1}{../media/titlepage.pdf} 
   	\begin{flushright} 
   	  \vfill
     \end{flushright}
