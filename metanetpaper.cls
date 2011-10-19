@@ -5,8 +5,9 @@
 \LoadClass[10pt,twoside]{scrartcl}
 
 \usepackage{graphicx}
+\usepackage{hyperref}
 
-\usepackage[paperwidth=210mm, paperheight=279mm, left=18mm, textwidth=113mm, marginparsep=8mm, marginpar=56mm]{geometry}
+\usepackage[paperwidth=210mm, paperheight=279mm, left=18mm, textwidth=169mm]{geometry}
 
 % Colorize and customize the headings
 \usepackage{color}
@@ -30,7 +31,7 @@
 
 %Select fonts
 \setmainfont[Mapping=tex-text]{Adobe Garamond Pro}
-\setsansfont[Mapping=tex-text]{DIN}
+\setsansfont[Mapping=tex-text]{Futura Std}
 \setmonofont{Courier New}
 
 % Farben
@@ -69,6 +70,11 @@
 
 % Marginalien
 \newcommand{\note}[1]{{\marginnote{\color{red}\scriptsize #1}}}
+
+\newcommand{\boxtext}[1]{
+	\begin{center}
+		{\textbf{#1}}
+	\end{center}}
 
 % Titelseite
 \renewcommand\maketitle{%
