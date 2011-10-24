@@ -3,6 +3,7 @@
 
 % Use KOMA-script class 'scrartcl', based on 'article'
 \LoadClass[10pt]{scrartcl}
+
 \usepackage[paperwidth=210mm, paperheight=279mm, left=18mm, textwidth=169mm]{geometry}
 
 \usepackage{graphicx}
@@ -25,6 +26,8 @@
 \usepackage{marginnote}
 %Two columns per page
 \usepackage{pdfcolparallel}
+% Package for line-spacing
+\usepackage{setspace}
 
 
 % Eigene Definitionen
@@ -46,14 +49,17 @@
 \definecolor{white}{rgb}{1,1,1}
 
 % Headings - \section
-\titleformat{\section}
-{\color{red}\fontsize{18}{20}\selectfont \sffamily\bfseries}{\thesection}{1.12em}{}
+\titleformat{\section}{
+  \newpage \fontsize{18}{20}\selectfont \sffamily  \uppercase
+}{\thesection}{1.12em}{}
 % Headings - \subsection
-\titleformat{\subsection}
-{\vskip 0.5cm \color{orange}\fontsize{13}{15}\selectfont \sffamily\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsection}{
+  \vskip 0.5cm \color{orange}\fontsize{13}{15}\selectfont \sffamily\bfseries
+}{\thesubsection}{1em}{}
 % Headings - \subsubsection
-\titleformat{\subsubsection}
-{\vskip 0.2cm \color{orange}\fontsize{11}{15}\selectfont \sffamily\bfseries}{\thesubsubsection}{0.62em}{}
+\titleformat{\subsubsection}{
+  \vskip 0.2cm \color{orange}\fontsize{11}{15}\selectfont \sffamily\bfseries
+}{\thesubsubsection}{0.62em}{}
 
 % Ungeordnete Listen
 \newenvironment{my_itemize}{
@@ -77,17 +83,34 @@
 	\begin{center}
 		{\textbf{#1}}
 	\end{center}}
+	
+% Untertitel
 
 % Titelseite
 \renewcommand\maketitle{%
   \begin{titlepage}%
   	\ThisCenterWallPaper{1}{../media/titlepage.pdf}
-  	\begin{center} 
-  	  
-      \textsf{{\Huge{
-        \MakeUppercase{\@title}
-      }}}
-  	\end{center}
+  	  \begin{center}
+        \parbox{11cm}{
+      	  \begin{center}
+        	  \vspace*{3.7cm}
+        	  \begin{spacing}{2.5}
+        	    \textsf{
+          	    \Huge{
+                  \MakeUppercase{
+                    \@title % title
+                  }
+                }
+              }\\
+              \textit{
+                \fontsize{13}{15}\selectfont{
+                  -- \@subtitle \ -- % subtitle
+                }
+              }
+            \end{spacing}
+        	\end{center}
+        }  
+      	\end{center}
     \vfill
   \end{titlepage}
 }
