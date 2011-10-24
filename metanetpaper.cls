@@ -30,7 +30,10 @@
 % Eigene Definitionen
 % -------------------
 
-%Select fonts
+% Indent for new Paragraphs
+\setlength\parindent{0pt}
+
+% Select fonts
 \setmainfont[Mapping=tex-text]{Adobe Garamond Pro}
 \setsansfont[Mapping=tex-text]{Futura Std}
 \setmonofont{Courier New}
@@ -70,8 +73,6 @@
 \fancyfoot[RO]{\vspace{0.3cm} \rule[-1.1cm]{0.25pt}{1.6cm} \hskip 0.2cm \textsf{\thepage}}
 
 % Marginalien
-\newcommand{\note}[1]{{\marginnote{\color{red}\scriptsize #1}}}
-
 \newcommand{\boxtext}[1]{
 	\begin{center}
 		{\textbf{#1}}
@@ -82,6 +83,8 @@
   \begin{titlepage}%
   	\ThisCenterWallPaper{1}{../media/titlepage.pdf}
   	\begin{center} 
+  	
+      \vspace{3cm}
       \textsf{{\Huge{
         \MakeUppercase{\@title}
       }}}
