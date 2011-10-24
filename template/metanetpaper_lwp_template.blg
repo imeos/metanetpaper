@@ -1,0 +1,68 @@
+This is BibTeX, Version 0.99d (TeX Live 2011)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: metanetpaper_lwp_template.aux
+The style file: plain.bst
+Database file #1: sample.bib
+Warning--I didn't find a database entry for "Schn1"
+Warning--I didn't find a database entry for "laz1"
+Warning--I didn't find a database entry for "sor1"
+Warning--to sort, need author or key in Meta1
+Warning--to sort, need editor, organization, or key in EC1
+Warning--to sort, need author or key in Unesco1
+Warning--to sort, need author or key in Eur1
+Warning--to sort, need author or key in Goe1
+Warning--to sort, need author or key in Efni1
+Warning--to sort, need author or key in Cano1
+Warning--to sort, need author or key in Sick2
+Warning--to sort, need author or key in Pisa1
+Warning--to sort, need author or key in kmk1
+Warning--to sort, need author or key in joy1
+Warning--to sort, need author or key in Ard1
+Warning--to sort, need author or key in denic1
+Warning--to sort, need author or key in leo1
+Warning--to sort, need author or key in spi1
+Warning--to sort, need author or key in pc1
+Warning--to sort, need author or key in wie1
+Warning--to sort, need author or key in latl1
+You've used 24 entries,
+            2118 wiz_defined-function locations,
+            592 strings with 6582 characters,
+and the built_in function-call counts, 4316 in all, are:
+= -- 391
+> -- 62
+< -- 2
++ -- 36
+- -- 12
+* -- 157
+:= -- 509
+add.period$ -- 39
+call.type$ -- 24
+change.case$ -- 57
+chr.to.int$ -- 0
+cite$ -- 42
+duplicate$ -- 225
+empty$ -- 558
+format.name$ -- 12
+if$ -- 1045
+int.to.chr$ -- 0
+int.to.str$ -- 24
+missing$ -- 5
+newline$ -- 89
+num.names$ -- 14
+pop$ -- 226
+preamble$ -- 1
+purify$ -- 54
+quote$ -- 0
+skip$ -- 215
+stack$ -- 0
+substring$ -- 150
+swap$ -- 56
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 89
+warning$ -- 18
+while$ -- 13
+width$ -- 26
+write$ -- 163
+(There were 21 warnings)
