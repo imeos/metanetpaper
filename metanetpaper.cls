@@ -3,12 +3,10 @@
 
 % Use KOMA-script class 'scrartcl', based on 'article'
 \LoadClass[10pt]{scrartcl}
+% Define papersize
 \usepackage[paperwidth=210mm, paperheight=279mm, left=18mm, textwidth=169mm]{geometry}
-
+%Images
 \usepackage{graphicx}
-\usepackage{hyperref}
-
-
 % Colorize and customize the headings
 \usepackage{color}
 \usepackage{titlesec}
@@ -21,10 +19,10 @@
 \usepackage{fontspec}
 % Header and footer
 \usepackage{fancyhdr}
-% Marginnote
-\usepackage{marginnote}
-%Two columns per page
+% Two columns per page
 \usepackage{pdfcolparallel}
+% Linespacing
+\usepackage[onehalfspacing]{setspace}
 
 
 % Eigene Definitionen
@@ -63,6 +61,13 @@
   \setlength{\parsep}{0pt}}{\end{itemize}
 }
 
+% Boxtexts
+\newcommand{\boxtext}[1]{
+	\begin{center}
+		{\textbf{#1}}
+	\end{center}
+}
+
 % Header and footer
 \pagestyle{fancy}
 \fancyhead[LE]{\textsf \rightmark}
@@ -71,12 +76,6 @@
 \fancyfoot[C]{}
 \fancyfoot[LE]{\vspace{0.1cm} \textsf{\thepage} \hskip 0.4cm \rule[-1.4cm]{0.25pt}{2cm}}
 \fancyfoot[RO]{\vspace{0.3cm} \rule[-1.1cm]{0.25pt}{1.6cm} \hskip 0.2cm \textsf{\thepage}}
-
-% Marginalien
-\newcommand{\boxtext}[1]{
-	\begin{center}
-		{\textbf{#1}}
-	\end{center}}
 
 % Titelseite
 \renewcommand\maketitle{%
