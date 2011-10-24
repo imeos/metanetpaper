@@ -7,7 +7,6 @@
 *.out
 *.toc
 *.synctex.gz
-*.pdf
 righttext.tex
 leftext.tex
 b.tex
