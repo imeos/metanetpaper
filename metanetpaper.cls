@@ -23,7 +23,8 @@
 \usepackage{fancyhdr}
 % Marginnote
 \usepackage{marginnote}
-
+%Two columns per page
+\usepackage{pdfcolparallel}
 
 
 % Eigene Definitionen
