@@ -2,12 +2,12 @@
 \ProvidesClass{metanetpaper}[2011/09/20 LaTeX class to typeset bilingual papers of the DFKI META-NET Project]
 
 % Use KOMA-script class 'scrartcl', based on 'article'
-\LoadClass[10pt,twoside]{scrartcl}
+\LoadClass[10pt]{scrartcl}
+\usepackage[paperwidth=210mm, paperheight=279mm, left=18mm, textwidth=169mm]{geometry}
 
 \usepackage{graphicx}
 \usepackage{hyperref}
 
-\usepackage[paperwidth=210mm, paperheight=279mm, left=18mm, textwidth=169mm]{geometry}
 
 % Colorize and customize the headings
 \usepackage{color}
@@ -83,8 +83,7 @@
   \begin{titlepage}%
   	\ThisCenterWallPaper{1}{../media/titlepage.pdf}
   	\begin{center} 
-  	
-      \vspace{3cm}
+  	  
       \textsf{{\Huge{
         \MakeUppercase{\@title}
       }}}
