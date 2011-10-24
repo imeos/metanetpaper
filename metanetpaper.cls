@@ -79,10 +79,13 @@
 % Titelseite
 \renewcommand\maketitle{%
   \begin{titlepage}%
-  	\ThisCenterWallPaper{1}{../media/titlepage.pdf} 
-  	\begin{flushright} 
-  	  \vfill
-    \end{flushright}
+  	\ThisCenterWallPaper{1}{../media/titlepage.pdf}
+  	\begin{center} 
+      \textsf{{\Huge{
+        \MakeUppercase{\@title}
+      }}}
+  	\end{center}
+    \vfill
   \end{titlepage}
 }
 
