@@ -1,8 +1,22 @@
+%                                     MMMMMMMMM                                         
+%                                                                             
+%  MMO    MM   MMMMMM  MMMMMMM   MM    MMMMMMMM   MMD   MM  MMMMMMM MMMMMMM   
+%  MMM   MMM   MM        MM     ?MMM              MMM$  MM  MM         MM     
+%  MMMM 7MMM   MM        MM     MM8M    MMMMMMM   MMMMD MM  MM         MM     
+%  MM MMMMMM   MMMMMM    MM    MM  MM             MM MMDMM  MMMMMM     MM     
+%  MM  MM MM   MM        MM    MMMMMM             MM  MMMM  MM         MM     
+%  MM     MM   MMMMMM    MM   MM    MM            MM   MMM  MMMMMMM    MM
+%
+%
+%                - META-NET Language Whitepaper | CLASS -
+
+
+
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{metanetpaper}[2011/09/20 LaTeX class to typeset bilingual papers of the DFKI META-NET Project]
 
 % Use KOMA-script class 'scrartcl', based on 'article'
-\LoadClass[10pt]{scrartcl}
+\LoadClass[10pt, twoside]{scrartcl}
 
 \usepackage[paperwidth=210mm, paperheight=279mm, left=18mm, textwidth=169mm]{geometry}
 
@@ -50,15 +64,15 @@
 
 % Headings - \section
 \titleformat{\section}{
-  \newpage \fontsize{18}{20}\selectfont \sffamily  \uppercase
-}{\thesection}{1.12em}{}
+  \fontsize{18}{20}\selectfont \sffamily  \uppercase
+}{--- \thesection \ ---}{1.12em}{\protect\linebreak}
 % Headings - \subsection
 \titleformat{\subsection}{
-  \vskip 0.5cm \color{orange}\fontsize{13}{15}\selectfont \sffamily\bfseries
+  \vskip 0.5cm \fontsize{13}{15}\selectfont \sffamily
 }{\thesubsection}{1em}{}
 % Headings - \subsubsection
 \titleformat{\subsubsection}{
-  \vskip 0.2cm \color{orange}\fontsize{11}{15}\selectfont \sffamily\bfseries
+  \vskip 0.2cm \fontsize{11}{15}\selectfont \sffamily
 }{\thesubsubsection}{0.62em}{}
 
 % Ungeordnete Listen
