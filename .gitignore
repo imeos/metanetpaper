@@ -6,6 +6,7 @@
 *.log
 *.out
 *.toc
+*.pdf
 *.synctex.gz
 righttext.tex
 leftext.tex

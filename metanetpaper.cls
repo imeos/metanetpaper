@@ -48,7 +48,7 @@
 % -------------------
 
 % Indent for new Paragraphs
-\setlength\parindent{0pt}
+\setlength{\parindent}{0pt}
 
 % Select fonts
 \setmainfont[Mapping=tex-text]{Adobe Garamond Pro}

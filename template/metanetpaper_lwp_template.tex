@@ -1,4 +1,4 @@
-%                                     MMMMMMMMM                               
+%                                     MMMMMMMMM                                         
 %                                                                             
 %  MMO    MM   MMMMMM  MMMMMMM   MM    MMMMMMMM   MMD   MM  MMMMMMM MMMMMMM   
 %  MMM   MMM   MM        MM     ?MMM              MMM$  MM  MM         MM     
@@ -6,20 +6,21 @@
 %  MM MMMMMM   MMMMMM    MM    MM  MM             MM MMDMM  MMMMMM     MM     
 %  MM  MM MM   MM        MM    MMMMMM             MM  MMMM  MM         MM     
 %  MM     MM   MMMMMM    MM   MM    MM            MM   MMM  MMMMMMM    MM
-
-
-
-% META-NET Language Whitepaper
+%
+%
+%                 - META-NET Language Whitepaper | Template -
+%
+% 
 % ----------------------------------------------------------------------------
-
+%
 % This is a sample .tex file. If you have questions about this file, please
 % contact us:
 % christoph.seelus@dfki.de || gregor.kneitschel@dfki.de
-
+%
 % Important note:
 % --------------
 % Save your file with utf-8 encoding!
-
+%
 % Usage:
 % -----
 % \ParallelLText{…} and \ParallelRText{…} contain the original text and the
@@ -28,7 +29,7 @@
 % Sections, subsections (etc.) and tables have to be outside the Parallel 
 % environment, that is, after \Parallelpar but before the next
 % \ParallelLText{} and \ParallelRText{}
-
+%
 % Sample:
 % ------
 % \ParallelLText{The text in your language}
@@ -42,6 +43,9 @@
 
 \documentclass{scrartcl}
 \usepackage{pdfcolparallel}
+\usepackage{xunicode}
+\usepackage{fontspec}
+\usepackage{xltxtra}
 \newcommand{\boxtext}[1]{
   \begin{center}
     {\textbf{#1}}
