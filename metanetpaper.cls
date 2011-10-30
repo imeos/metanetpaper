@@ -23,7 +23,6 @@
 \usepackage{graphicx}
 \usepackage{hyperref}
 
-
 % Colorize and customize the headings
 \usepackage{color}
 \usepackage{titlesec}
@@ -83,7 +82,15 @@
 % Marginal notes
 \newcommand{\boxtext}[1]{
   \begin{center}
-    {\textbf{#1}}
+   \vspace*{0.4cm}
+    \large{
+      \textsf{
+        \MakeUppercase{
+          #1
+        }
+      }
+    }
+    \vspace*{0.4cm}
   \end{center}
 }
 
