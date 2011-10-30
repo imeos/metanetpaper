@@ -18,7 +18,7 @@
 % Use KOMA-script class 'scrartcl', based on 'article'
 \LoadClass[10pt, twoside]{scrartcl}
 % Define papersize
-\usepackage[paperwidth=210mm, paperheight=279mm, left=18mm, textwidth=169mm]{geometry}
+\usepackage[paperwidth=210mm, paperheight=279mm, top=40mm, bottom=20mm, left=18mm, textwidth=169mm, headsep=20mm]{geometry}
 
 \usepackage{graphicx}
 \usepackage{hyperref}
@@ -69,13 +69,14 @@
 \definecolor{lightorange}{rgb}{1,0.8,0.6}
 \definecolor{red}{rgb}{0.7,0,0}
 \definecolor{white}{rgb}{1,1,1}
+\definecolor{grey}{rgb}{0.7,0.7,0.7}
 
 
 % Headings - \section
 \renewcommand\section{\@startsection {section}{1}{\z@}%
                                    {-3.5ex \@plus -1ex \@minus -.2ex}%
                                    {2.3ex \@plus.2ex}%
-                                   {\centering\normalfont\Large\bfseries}}
+                                   {\centering\fontsize{18}{20}\selectfont \sffamily  \uppercase}}
 % Headings - \subsection
 \titleformat{\subsection}{
   \vskip 0.5cm \fontsize{13}{15}\selectfont \sffamily
@@ -112,9 +113,9 @@
 
 
 % Header and footer
-	% SanSerif pagenumber
+	% Sans-serif pagenumber
 \setkomafont{pagenumber}{%
-  \normalfont\sffamily
+  \normalfont\sffamily\color{grey}
 }
 	% Clear styling for head and foot
 \clearscrheadings
@@ -134,7 +135,7 @@
   	  \begin{center}
         \parbox{11cm}{
       	  \begin{center}
-        	  \vspace*{3.7cm}
+        	  \vspace*{3.2cm}
         	  \begin{spacing}{2.5}
         	    \textsf{
           	    \Huge{
