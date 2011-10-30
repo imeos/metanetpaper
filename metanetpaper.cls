@@ -17,7 +17,7 @@
 
 % Use KOMA-script class 'scrartcl', based on 'article'
 \LoadClass[10pt, twoside]{scrartcl}
-
+% Define papersize
 \usepackage[paperwidth=210mm, paperheight=279mm, left=18mm, textwidth=169mm]{geometry}
 
 \usepackage{graphicx}
@@ -34,17 +34,14 @@
 % XeLaTeX packages 
 \usepackage[T1]{fontenc}
 \usepackage{fontspec}
-% Header and footer
-\usepackage{fancyhdr}
-% Marginnote
-\usepackage{marginnote}
-%Two columns per page
+% Two columns per page
 \usepackage{pdfcolparallel}
-% Package for line-spacing
-\usepackage{setspace}
+% Linespacing
+\usepackage[onehalfspacing]{setspace}
+\usepackage{scrpage2}
 
 
-% Eigene Definitionen
+% Own Markup
 % -------------------
 
 % Indent for new Paragraphs
@@ -55,7 +52,7 @@
 \setsansfont[Mapping=tex-text]{Futura Std}
 \setmonofont{Courier New}
 
-% Farben
+% Colors
 \definecolor{yellow}{rgb}{0.95,0.72,0}
 \definecolor{orange}{rgb}{0.94,0.33,0}
 \definecolor{lightorange}{rgb}{1,0.8,0.6}
@@ -75,7 +72,7 @@
   \vskip 0.2cm \fontsize{11}{15}\selectfont \sffamily
 }{\thesubsubsection}{0.62em}{}
 
-% Ungeordnete Listen
+% Unordered lists
 \newenvironment{my_itemize}{
 \begin{itemize}
   \setlength{\itemsep}{1pt}
@@ -84,23 +81,21 @@
 }
 
 % Header and footer
-\pagestyle{fancy}
-\fancyhead[LE]{\textsf \rightmark}
-\fancyhead[RO]{\textsf \leftmark}
-\fancyhead[LO,RE]{}
-\fancyfoot[C]{}
-\fancyfoot[LE]{\vspace{0.1cm} \textsf{\thepage} \hskip 0.4cm \rule[-1.4cm]{0.25pt}{2cm}}
-\fancyfoot[RO]{\vspace{0.3cm} \rule[-1.1cm]{0.25pt}{1.6cm} \hskip 0.2cm \textsf{\thepage}}
-
-% Marginalien
-\newcommand{\boxtext}[1]{
-	\begin{center}
-		{\textbf{#1}}
-	\end{center}}
+	% SanSerif pagenumber
+\setkomafont{pagenumber}{%
+\normalfont\sffamily
+}
+	% Clear styling for head and foot
+\clearscrheadings
+\clearscrplain
+\clearscrheadfoot 
 	
-% Untertitel
+	% Pagenumber on outer margin
+\ohead[\pagemark]{\pagemark}
+\setheadwidth[-20mm]{text}
+\pagestyle{scrheadings}
 
-% Titelseite
+% Titlepage
 \renewcommand\maketitle{%
   \begin{titlepage}%
   	\ThisCenterWallPaper{1}{../media/titlepage.pdf}

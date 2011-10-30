@@ -43,9 +43,10 @@
 
 \documentclass{scrartcl}
 \usepackage{pdfcolparallel}
-\usepackage{xunicode}
 \usepackage{fontspec}
-\usepackage{xltxtra}
+%!TEX TS-program = xelatex
+\RequireXeTeX %Force XeTeX check
+
 \newcommand{\boxtext}[1]{
   \begin{center}
     {\textbf{#1}}
@@ -785,10 +786,10 @@
   
   \ParallelRText{
     Anyone who has used a word processor such as Microsoft Word knows that it has a spelling checker that highlights spelling mistakes and proposes corrections. The first spelling correction programs compared a list of extracted words against a dictionary of correctly spelled words. Today these programs are far more sophisticated. Using language-dependent algorithms for text analysis, they detect errors related to morphology (e.g., plural formation) as well as syntax–related errors, such as a missing verb or a conflict of verb-subject agreement (e.g., \textit{she *write a letter}). But most spell checkers will not find any errors in the following text:
-    \textit{Eye have a spelling chequer,\\
-      It came with my Pea Sea.\\
+    \textit{I have a spelling checker,\\
+      It came with my PC.\\
       It plane lee marks four my revue\\
-      Miss Steaks I can knot sea\cite{zar1}.}\\
+      Miss steaks aye can knot sea\cite{zar1}.}\\
 
     Handling these kinds of errors usually requires an analysis of the context. For example: whether a word needs to be capitalised in German or not:
     \textit{Sie übersetzte den Text ins Englische.\\
