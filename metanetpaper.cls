@@ -72,9 +72,10 @@
 
 
 % Headings - \section
-\titleformat{\section}{
-  \fontsize{18}{20}\selectfont \sffamily  \uppercase
-}{--- \thesection \ ---}{1.12em}{\protect\linebreak}
+\renewcommand\section{\@startsection {section}{1}{\z@}%
+                                   {-3.5ex \@plus -1ex \@minus -.2ex}%
+                                   {2.3ex \@plus.2ex}%
+                                   {\centering\normalfont\Large\bfseries}}
 % Headings - \subsection
 \titleformat{\subsection}{
   \vskip 0.5cm \fontsize{13}{15}\selectfont \sffamily
