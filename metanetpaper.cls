@@ -80,6 +80,13 @@
   \setlength{\parsep}{0pt}}{\end{itemize}
 }
 
+% Marginal notes
+\newcommand{\boxtext}[1]{
+  \begin{center}
+    {\textbf{#1}}
+  \end{center}
+}
+
 % Header and footer
 	% SanSerif pagenumber
 \setkomafont{pagenumber}{%
