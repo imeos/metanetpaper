@@ -6,6 +6,7 @@
 *.log
 *.out
 *.toc
+sample_paper/sample_paper.pdf
 *.synctex.gz
 righttext.tex
 leftext.tex
