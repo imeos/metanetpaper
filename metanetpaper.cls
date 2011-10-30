@@ -48,6 +48,12 @@
 \setlength{\parindent}{0pt}
 
 
+% Table of contents
+\renewcommand\tableofcontents{
+      \@starttoc{toc}
+}
+
+
 % Select fonts
 \setmainfont[Mapping=tex-text]{Adobe Garamond Pro}
 \setsansfont[Mapping=tex-text]{Futura Std}
@@ -87,8 +93,8 @@
 
 % Marginal notes
 \newcommand{\boxtext}[1]{
+ \vspace*{0.4cm}
   \begin{center}
-   \vspace*{0.4cm}
     \large{
       \textsf{
         \MakeUppercase{
@@ -96,8 +102,8 @@
         }
       }
     }
-    \vspace*{0.4cm}
-  \end{center}
+  \end{center}  
+  \vspace*{0.4cm}
 }
 
 
@@ -132,7 +138,7 @@
                     \@title % title
                   }
                 }
-              }\\
+              }\\[0.5cm]
               \textit{
                 \fontsize{13}{15}\selectfont{
                   -- \@subtitle \ -- % subtitle
