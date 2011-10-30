@@ -23,7 +23,6 @@
 \usepackage{graphicx}
 \usepackage{hyperref}
 
-
 % Colorize and customize the headings
 \usepackage{color}
 \usepackage{titlesec}
@@ -41,16 +40,28 @@
 \usepackage{scrpage2}
 
 
+
 % Own Markup
 % -------------------
 
 % Indent for new Paragraphs
 \setlength{\parindent}{0pt}
 
+
+% Table of contents
+\renewcommand\tableofcontents{
+  \vspace*{0.1cm}
+  \begin{spacing}{1.2}
+    \@starttoc{toc}
+  \end{spacing}
+}
+
+
 % Select fonts
 \setmainfont[Mapping=tex-text]{Adobe Garamond Pro}
 \setsansfont[Mapping=tex-text]{Futura Std}
 \setmonofont{Courier New}
+
 
 % Colors
 \definecolor{yellow}{rgb}{0.95,0.72,0}
@@ -58,6 +69,7 @@
 \definecolor{lightorange}{rgb}{1,0.8,0.6}
 \definecolor{red}{rgb}{0.7,0,0}
 \definecolor{white}{rgb}{1,1,1}
+
 
 % Headings - \section
 \titleformat{\section}{
@@ -72,6 +84,7 @@
   \vskip 0.2cm \fontsize{11}{15}\selectfont \sffamily
 }{\thesubsubsection}{0.62em}{}
 
+
 % Unordered lists
 \newenvironment{my_itemize}{
 \begin{itemize}
@@ -80,17 +93,27 @@
   \setlength{\parsep}{0pt}}{\end{itemize}
 }
 
+
 % Marginal notes
 \newcommand{\boxtext}[1]{
+ \vspace*{0.4cm}
   \begin{center}
-    {\textbf{#1}}
-  \end{center}
+    \large{
+      \textsf{
+        \MakeUppercase{
+          #1
+        }
+      }
+    }
+  \end{center}  
+  \vspace*{0.4cm}
 }
+
 
 % Header and footer
 	% SanSerif pagenumber
 \setkomafont{pagenumber}{%
-\normalfont\sffamily
+  \normalfont\sffamily
 }
 	% Clear styling for head and foot
 \clearscrheadings
@@ -101,6 +124,7 @@
 \ohead[\pagemark]{\pagemark}
 \setheadwidth[-20mm]{text}
 \pagestyle{scrheadings}
+
 
 % Titlepage
 \renewcommand\maketitle{%
@@ -117,7 +141,7 @@
                     \@title % title
                   }
                 }
-              }\\
+              }\\[0.5cm]
               \textit{
                 \fontsize{13}{15}\selectfont{
                   -- \@subtitle \ -- % subtitle
