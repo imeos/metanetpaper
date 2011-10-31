@@ -18,7 +18,7 @@
 % Use KOMA-script class 'scrartcl', based on 'article'
 \LoadClass[10pt, twoside]{scrartcl}
 % Define papersize
-\usepackage[paperwidth=210mm, paperheight=279mm, top=40mm, bottom=20mm, left=18mm, textwidth=169mm, headsep=20mm]{geometry}
+\usepackage[paperwidth=210mm, paperheight=279mm, top=40mm, bottom=20mm, left=18mm, textwidth=169mm, headsep=20mm, bindingoffset=0mm]{geometry}
 
 \usepackage{graphicx}
 \usepackage{hyperref}
@@ -73,10 +73,9 @@
 
 
 % Headings - \section
-\renewcommand\section{\@startsection {section}{1}{\z@}%
-                                   {-3.5ex \@plus -1ex \@minus -.2ex}%
-                                   {2.3ex \@plus.2ex}%
-                                   {\centering\fontsize{18}{20}\selectfont \sffamily  \uppercase}}
+\titleformat{\section}{
+  \fontsize{18}{20}\selectfont \sffamily  \uppercase
+}{\centering--- \thesection \ ---}{-1.5em}{\centering\protect\linebreak}
 % Headings - \subsection
 \titleformat{\subsection}{
   \vskip 0.5cm \fontsize{13}{15}\selectfont \sffamily
@@ -89,16 +88,15 @@
 
 % Unordered lists
 \newenvironment{my_itemize}{
-\begin{itemize}
   \setlength{\itemsep}{1pt}
   \setlength{\parskip}{0pt}
-  \setlength{\parsep}{0pt}}{\end{itemize}
+  \setlength{\parsep}{0pt}
 }
 
 
 % Marginal notes
 \newcommand{\boxtext}[1]{
- \vspace*{0.4cm}
+  {\vspace*{0.2cm}}
   \begin{center}
     \large{
       \textsf{
@@ -107,8 +105,8 @@
         }
       }
     }
-  \end{center}  
-  \vspace*{0.4cm}
+  \end{center}    
+    {\vspace*{0.2cm}}
 }
 
 
