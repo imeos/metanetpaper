@@ -16,7 +16,7 @@
 \ProvidesClass{metanetpaper}[2011/09/20 LaTeX class to typeset bilingual papers of the DFKI META-NET Project]
 
 % Use KOMA-script class 'scrartcl', based on 'article'
-\LoadClass[10pt, twoside]{scrartcl}
+\LoadClass[11pt, twoside]{scrartcl}
 % Define papersize
 \usepackage[paperwidth=210mm, paperheight=279mm, top=40mm, bottom=20mm, left=18mm, textwidth=169mm, headsep=20mm, bindingoffset=0mm]{geometry}
 
@@ -133,7 +133,13 @@
   	  \begin{center}
         \parbox{11cm}{
       	  \begin{center}
-        	  \vspace*{3.2cm}
+        	  \vspace*{1.8cm}
+            \textit{
+              \fontsize{13}{15}\selectfont{
+        	      -- META-NET White Paper Series \ -- % series title
+        	    }
+        	  }
+        	  \vspace*{0.8cm}
         	  \begin{spacing}{2.5}
         	    \textsf{
           	    \Huge{
