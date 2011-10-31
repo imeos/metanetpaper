@@ -6,7 +6,8 @@
 *.log
 *.out
 *.toc
-sample_paper/sample_paper.pdf
+languages_in_the_digital_age/*/*.pdf
+!languages_in_the_digital_age/\@media/*.pdf
 language_test/language_test.pdf
 *.synctex.gz
 righttext.tex
