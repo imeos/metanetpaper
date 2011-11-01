@@ -7,7 +7,7 @@
 *.out
 *.toc
 languages_in_the_digital_age/*/*.pdf
-!languages_in_the_digital_age/\@media/*.pdf
+!languages_in_the_digital_age/_media/*.pdf
 language_test/language_test.pdf
 *.synctex.gz
 righttext.tex
