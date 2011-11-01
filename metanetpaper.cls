@@ -129,7 +129,7 @@
 % Titlepage
 \renewcommand\maketitle{%
   \begin{titlepage}%
-  	\ThisCenterWallPaper{1}{../@media/titlepage.pdf}
+  	\ThisCenterWallPaper{1}{../_media/titlepage.pdf}
   	  \begin{center}
         \parbox{11cm}{
       	  \begin{center}
