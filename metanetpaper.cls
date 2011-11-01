@@ -49,7 +49,7 @@
 
 % Select fonts
 \setmainfont[Mapping=tex-text]{Garamond Premier Pro}
-\setsansfont[Mapping=tex-text]{Futura Std}
+\setsansfont[Mapping=tex-text]{Futura}
 \setmonofont{Courier New}
 
 
