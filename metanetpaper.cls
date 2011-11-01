@@ -64,12 +64,15 @@
 
 
 % Colors
-\definecolor{yellow}{rgb}{0.95,0.72,0}
-\definecolor{orange}{rgb}{0.94,0.33,0}
-\definecolor{lightorange}{rgb}{1,0.8,0.6}
-\definecolor{red}{rgb}{0.7,0,0}
-\definecolor{white}{rgb}{1,1,1}
-\definecolor{grey}{rgb}{0.7,0.7,0.7}
+\definecolor{white}{RGB}{255,255,255} % #FFFFFF
+\definecolor{orange1}{RGB}{255,110,0} % #FF6600
+\definecolor{orange2}{RGB}{255,155,0} % #FF9900
+\definecolor{orange3}{RGB}{1,0.8,0.6} % #FFCC00
+\definecolor{red_dark}{RGB}{153,0,0}  % #990000
+\definecolor{red}{RGB}{255,151,0}     % #FF3300
+\definecolor{green}{RGB}{204,55,153}  % #FF3300
+\definecolor{grey1}{RGB}{60,60,60}    % #3C3C3C
+\definecolor{grey2}{RGB}{198,199,200} % #C6C7C8
 
 
 % Headings - \section
@@ -113,7 +116,7 @@
 % Header and footer
 	% Sans-serif pagenumber
 \setkomafont{pagenumber}{%
-  \normalfont\sffamily\color{grey}
+  \normalfont\sffamily\color{grey1}
 }
 	% Clear styling for head and foot
 \clearscrheadings
@@ -130,33 +133,50 @@
 \renewcommand\maketitle{%
   \begin{titlepage}%
   	\ThisCenterWallPaper{1}{../_media/titlepage.pdf}
-  	  \begin{center}
-        \parbox{11cm}{
-      	  \begin{center}
-        	  \vspace*{1.8cm}
-            \textit{
-              \fontsize{13}{15}\selectfont{
-        	      -- META-NET White Paper Series \ -- % series title
-        	    }
-        	  }
-        	  \vspace*{0.8cm}
-        	  \begin{spacing}{2.5}
-        	    \textsf{
-          	    \Huge{
+  	  \vspace*{0.3cm}
+  	  \begin{Parallel}[c]{8.7cm}{7.5cm}
+        \ParallelLText{
+          \textsf{
+    	        \begin{flushright}
+      	        % Subtitle
+    	          \@subtitle
+    	          \vspace*{1.5cm}
+      	        % Title
+          	    \fontsize{32}{38}\selectfont{
                   \MakeUppercase{
-                    \@title % title
+                    \@title 
                   }
                 }
-              }\\[0.5cm]
-              \textit{
-                \fontsize{13}{15}\selectfont{
-                  -- \@subtitle \ -- % subtitle
+              \end{flushright}
+              \vspace*{1.5cm}
+          }
+        }
+        \ParallelRText{
+          \textsf{
+    	      \textcolor{white}{
+    	        \begin{flushleft}
+      	        % Subtitle
+    	          \@subtitle
+    	          \vspace*{1.5cm}
+      	        % Title
+          	    \fontsize{32}{38}\selectfont{
+                  \MakeUppercase{
+                    \@title 
+                  }
                 }
+              \end{flushleft}
+              \vspace*{1.5cm}
+              % Authors
+              \fontsize{13}{16}\selectfont{
+              \begin{tabular}{@{}l@{}}%
+                \@author
+              \end{tabular}%
               }
-            \end{spacing}
-        	\end{center}
-        }  
-      	\end{center}
+            }
+          }
+        }
+        \ParallelPar
+      \end{Parallel}
     \vfill
   \end{titlepage}
 }
