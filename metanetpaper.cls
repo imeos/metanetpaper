@@ -129,7 +129,7 @@
   \ThisCenterWallPaper{1}{../_media/titlepage.pdf}
     \vspace*{0.3cm}
     % Right column
-    \begin{minipage}[t]{8.5cm}
+    \begin{minipage}[t]{8.7cm}
       \color{grey2}
       \textsf{
         \begin{flushright}
@@ -144,7 +144,7 @@
       }
     \end{minipage}
     % spacing between colums
-    \begin{minipage}[t]{0.7cm}\ \end{minipage}
+    \begin{minipage}[t]{0.5cm}\ \end{minipage}
     % Left column
     \begin{minipage}[t]{8.5cm}
       \color{white}
