@@ -1,4 +1,4 @@
-%                                     MMMMMMMMM                                         
+	%                                     MMMMMMMMM                                         
 %                                                                             
 %  MMO    MM   MMMMMM  MMMMMMM   MM    MMMMMMMM   MMD   MM  MMMMMMM MMMMMMM   
 %  MMM   MMM   MM        MM     ?MMM              MMM$  MM  MM         MM     
@@ -21,13 +21,12 @@
 \usepackage[paperwidth=210mm, paperheight=279mm, top=40mm, bottom=20mm, left=18mm, textwidth=169mm, headsep=20mm, bindingoffset=0mm]{geometry}
 
 \usepackage{graphicx}
-\usepackage{hyperref}
 
 % Colorize and customize the headings
 \usepackage{color}
 \usepackage{titlesec}
-% Generate TOC with hyperlinks inside document
-\usepackage{hyperref}
+% Generate TOC with hyperlinks inside document, no border, no color
+\usepackage[colorlinks=true, linkcolor=black, citecolor=black, urlcolor=black]{hyperref}
 % Custom background-images
 \usepackage{wallpaper}
 % XeLaTeX packages 
@@ -86,13 +85,14 @@
 }{\thesubsubsection}{0.62em}{}
 
 
-% Unordered lists
+% WIe den Abstand anedern?!?!?!?!? FUCK!
 \newenvironment{my_itemize}{
-  \setlength{\itemsep}{1pt}
-  \setlength{\parskip}{0pt}
-  \setlength{\parsep}{0pt}
+	\begin{list}{\labelitemi}{
+		\setlength{\itemsep}{-2pt}
+		\setlength{\leftmargin}{1.3em}
+	}
 }
-
+{\end{list}}
 
 % Marginal notes
 \newcommand{\boxtext}[1]{
