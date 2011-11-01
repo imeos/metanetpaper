@@ -58,7 +58,7 @@
 
 
 % Select fonts
-\setmainfont[Mapping=tex-text]{Adobe Garamond Pro}
+\setmainfont[Mapping=tex-text]{Garamond Premier Pro}
 \setsansfont[Mapping=tex-text]{Futura Std}
 \setmonofont{Courier New}
 
@@ -129,7 +129,7 @@
 % Titlepage
 \renewcommand\maketitle{%
   \begin{titlepage}%
-  	\ThisCenterWallPaper{1}{../@media/titlepage.pdf}
+  	\ThisCenterWallPaper{1}{../_media/titlepage.pdf}
   	  \begin{center}
         \parbox{11cm}{
       	  \begin{center}
