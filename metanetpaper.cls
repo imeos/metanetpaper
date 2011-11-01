@@ -58,7 +58,7 @@
 
 
 % Select fonts
-\setmainfont[Mapping=tex-text]{Adobe Garamond Pro}
+\setmainfont[Mapping=tex-text]{Garamond Premier Pro}
 \setsansfont[Mapping=tex-text]{Futura Std}
 \setmonofont{Courier New}
 
@@ -122,7 +122,7 @@
 	
 	% Pagenumber on outer margin
 \ohead[\pagemark]{\pagemark}
-\setheadwidth[-20mm]{text}
+\setheadwidth{text}
 \pagestyle{scrheadings}
 
 
