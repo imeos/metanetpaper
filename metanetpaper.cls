@@ -1,4 +1,4 @@
-	%                                     MMMMMMMMM                                         
+  %                                     MMMMMMMMM                                         
 %                                                                             
 %  MMO    MM   MMMMMM  MMMMMMM   MM    MMMMMMMM   MMD   MM  MMMMMMM MMMMMMM   
 %  MMM   MMM   MM        MM     ?MMM              MMM$  MM  MM         MM     
@@ -47,18 +47,9 @@
 \setlength{\parindent}{0pt}
 
 
-% Table of contents
-\renewcommand\tableofcontents{
-  \vspace*{0.1cm}
-  \begin{spacing}{1.2}
-    \@starttoc{toc}
-  \end{spacing}
-}
-
-
 % Select fonts
 \setmainfont[Mapping=tex-text]{Garamond Premier Pro}
-\setsansfont[Mapping=tex-text]{Futura Std}
+\setsansfont[Mapping=tex-text]{Futura}
 \setmonofont{Courier New}
 
 
@@ -87,18 +78,21 @@
   \vskip 0.2cm \fontsize{11}{15}\selectfont \sffamily
 }{\thesubsubsection}{0.62em}{}
 
+% 
+% \renewcommand\ParallelRText{}
 
-% WIe den Abstand anedern?!?!?!?!? FUCK!
+
+% Wie den Abstand aendern?
 \newenvironment{my_itemize}{
-	\begin{list}{\labelitemi}{
-		\setlength{\itemsep}{-2pt}
-		\setlength{\leftmargin}{1.3em}
-	}
+  \begin{list}{\labelitemi}{
+    \setlength{\itemsep}{-2pt}
+    \setlength{\leftmargin}{1.3em}
+  }
 }
 {\end{list}}
 
 % Marginal notes
-\newcommand{\boxtext}[1]{
+\newcommand\boxtext[1]{
   {\vspace*{0.2cm}}
   \begin{center}
     \large{
@@ -109,21 +103,21 @@
       }
     }
   \end{center}    
-    {\vspace*{0.2cm}}
+  {\vspace*{0.2cm}}
 }
 
 
 % Header and footer
-	% Sans-serif pagenumber
+  % Sans-serif pagenumber
 \setkomafont{pagenumber}{%
   \normalfont\sffamily\color{grey1}
 }
-	% Clear styling for head and foot
+  % Clear styling for head and foot
 \clearscrheadings
 \clearscrplain
 \clearscrheadfoot 
-	
-	% Pagenumber on outer margin
+  
+  % Pagenumber on outer margin
 \ohead[\pagemark]{\pagemark}
 \setheadwidth{text}
 \pagestyle{scrheadings}
@@ -132,53 +126,75 @@
 % Titlepage
 \renewcommand\maketitle{%
   \begin{titlepage}%
-  	\ThisCenterWallPaper{1}{../_media/titlepage.pdf}
-  	  \vspace*{0.3cm}
-  	  \begin{Parallel}[c]{8.7cm}{7.5cm}
-        \ParallelLText{
-          \textsf{
-    	        \begin{flushright}
-      	        % Subtitle
-    	          \@subtitle
-    	          \vspace*{1.5cm}
-      	        % Title
-          	    \fontsize{32}{38}\selectfont{
-                  \MakeUppercase{
-                    \@title 
-                  }
-                }
-              \end{flushright}
-              \vspace*{1.5cm}
+  \ThisCenterWallPaper{1}{../_media/titlepage.pdf}
+    \vspace*{0.3cm}
+    % Right column
+    \begin{minipage}[t]{8.5cm}
+      \color{grey2}
+      \textsf{
+        \begin{flushright}
+          % Subtitle
+          \@subtitle \\
+          \vspace*{0.5cm}
+          % Title
+          \fontsize{32}{33}\selectfont{%
+            \MakeUppercase\@title
           }
-        }
-        \ParallelRText{
-          \textsf{
-    	      \textcolor{white}{
-    	        \begin{flushleft}
-      	        % Subtitle
-    	          \@subtitle
-    	          \vspace*{1.5cm}
-      	        % Title
-          	    \fontsize{32}{38}\selectfont{
-                  \MakeUppercase{
-                    \@title 
-                  }
-                }
-              \end{flushleft}
-              \vspace*{1.5cm}
-              % Authors
-              \fontsize{13}{16}\selectfont{
-              \begin{tabular}{@{}l@{}}%
+        \end{flushright}
+      }
+    \end{minipage}
+    % spacing between colums
+    \begin{minipage}[t]{0.7cm}\ \end{minipage}
+    % Left column
+    \begin{minipage}[t]{8.5cm}
+      \color{white}
+      \textsf{
+        \begin{flushleft}
+          % Subtitle
+          \textcolor{white}{\@subtitle} \\
+          \vspace*{0.5cm}
+          % Title
+          \fontsize{32}{33}\selectfont{%
+            \MakeUppercase\@title
+          }
+        \end{flushleft}
+        \vspace*{1.5cm}
+      }
+    \end{minipage}
+    % Authors
+    \begin{Parallel}[c]{8.5cm}{7.5cm}
+      \ParallelLText{
+        \begin{flushright}
+          \fontsize{13}{16}\selectfont{%
+            \textsf{
+              \textcolor{grey2}{by}
+            }
+          }
+        \end{flushright}
+      }
+      \ParallelRText{
+        \begin{flushleft}
+          \fontsize{13}{16}\selectfont{%
+            \textsf{%
+              \textcolor{white}{%
                 \@author
-              \end{tabular}%
               }
             }
           }
-        }
-        \ParallelPar
-      \end{Parallel}
-    \vfill
+        \end{flushleft}
+      }
+      \ParallelPar
+    \end{Parallel}
   \end{titlepage}
+}
+
+
+% Table of contents
+\renewcommand\tableofcontents{
+  \vspace*{-1cm}
+  \begin{spacing}{1.1}
+    \@starttoc{toc}
+  \end{spacing}
 }
 
 \endinput
