@@ -50,6 +50,8 @@
 % Select fonts
 \setmainfont[Mapping=tex-text]{Garamond Premier Pro}
 \setsansfont[Mapping=tex-text]{Futura}
+  \newfontfamily\futuralight{Futura Light}
+  \newfontfamily\futuramedium{Futura Medium}
 \setmonofont{Courier New}
 
 
@@ -137,10 +139,13 @@
           \@subtitle \\
           \vspace*{0.5cm}
           % Title
-          \fontsize{32}{33}\selectfont{%
-            \MakeUppercase\@title
+          \fontsize{34}{40}\selectfont{%
+            {\futuramedium%
+              \MakeUppercase\@title
+            }
           }
         \end{flushright}
+        \vspace*{0.7cm}
       }
     \end{minipage}
     % spacing between colums
@@ -154,18 +159,20 @@
           \textcolor{white}{\@subtitle} \\
           \vspace*{0.5cm}
           % Title
-          \fontsize{32}{33}\selectfont{%
-            \MakeUppercase\@title
+          \fontsize{34}{40}\selectfont{%
+            {\futuramedium%
+              \MakeUppercase\@title
+            }
           }
         \end{flushleft}
-        \vspace*{1.5cm}
+        \vspace*{0.7cm}
       }
     \end{minipage}
     % Authors
     \begin{Parallel}[c]{8.5cm}{7.5cm}
       \ParallelLText{
         \begin{flushright}
-          \fontsize{13}{16}\selectfont{%
+          \fontsize{14}{20}\selectfont{%
             \textsf{
               \textcolor{grey2}{by}
             }
