@@ -38,6 +38,8 @@
 \usepackage[onehalfspacing]{setspace}
 \usepackage{scrpage2}
 
+\usepackage{xstring}
+
 
 
 % Own Markup
@@ -130,18 +132,18 @@
   \begin{titlepage}%
   \ThisCenterWallPaper{1}{../_media/titlepage.pdf}
     \vspace*{0.3cm}
-    % Right column
+    % Left column
     \begin{minipage}[t]{8.7cm}
       \color{grey2}
       \textsf{
         \begin{flushright}
           % Subtitle
-          \@subtitle \\
+          \StrBefore{\@subtitle}{---} \\
           \vspace*{0.5cm}
           % Title
           \fontsize{34}{40}\selectfont{%
-            {\futuramedium%
-              \MakeUppercase\@title
+            \MakeUppercase{%
+              \protect\StrBefore{\@title}{---}
             }
           }
         \end{flushright}
@@ -150,18 +152,20 @@
     \end{minipage}
     % spacing between colums
     \begin{minipage}[t]{0.5cm}\ \end{minipage}
-    % Left column
+    % Right column
     \begin{minipage}[t]{8.5cm}
       \color{white}
       \textsf{
         \begin{flushleft}
           % Subtitle
-          \textcolor{white}{\@subtitle} \\
+          \textcolor{white}{%
+            \StrBehind{\@subtitle}{---}
+          } \\
           \vspace*{0.5cm}
           % Title
           \fontsize{34}{40}\selectfont{%
-            {\futuramedium%
-              \MakeUppercase\@title
+            \MakeUppercase{%
+              \protect\StrBehind{\@title}{---}
             }
           }
         \end{flushleft}
