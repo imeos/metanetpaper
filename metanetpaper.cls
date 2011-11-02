@@ -61,7 +61,7 @@
 \definecolor{orange1}{cmyk}{0, 0.56, 0.86, 0}         % #FF6600
 \definecolor{orange2}{cmyk}{0, 0.34, 0.87, 0.01}      % #FF9900
 \definecolor{orange3}{cmyk}{0.01, 0.12, 0.91, 0.01}   % #FFCC00
-\definecolor{red_dark}{cmyk}{0.07, 0.85, 0.98, 0.24}  % #990000
+\definecolor{red_dark}{cmyk}{0.2, 1, 1, 0.10}         % #B72126
 \definecolor{red}{cmyk}{0, 0.72, 0.9, 0}              % #FF3300
 \definecolor{grey1}{cmyk}{0, 0, 0, 0.7}               % #3C3C3C
 \definecolor{grey2}{cmyk}{0.16, 0.11, 0.09, 0}        % #C6C7C8
@@ -107,6 +107,12 @@
 }
 
 
+% Lines
+% \colorrule{<color>}{<width>}{<thickness>}
+\newcommand*\colorrule[3]{%
+  \color{#1}\rule{#2}{#3}\normalcolor}
+
+
 % Header and footer
   % Sans-serif pagenumber
 \setkomafont{pagenumber}{%
@@ -137,7 +143,7 @@
           \StrBefore{\@subtitle}{ ---} \\
           \vspace*{0.5cm}
           % Title
-          \fontsize{34}{37}\selectfont{%
+          \fontsize{34}{34}\selectfont{%
             \MakeUppercase{%
               \protect\StrBefore{\@title}{ ---}
             }
@@ -159,7 +165,7 @@
           } \\
           \vspace*{0.5cm}
           % Title
-          \fontsize{34}{37}\selectfont{%
+          \fontsize{34}{34}\selectfont{%
             \MakeUppercase{%
               \protect\StrBehind{\@title}{--- }
             }
