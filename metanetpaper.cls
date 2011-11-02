@@ -23,7 +23,7 @@
 \usepackage{graphicx}
 
 % Colorize and customize the headings
-\usepackage{color}
+\usepackage[xetex]{color}
 \usepackage{titlesec}
 % Generate TOC with hyperlinks inside document, no border, no color
 \usepackage[colorlinks=true, linkcolor=black, citecolor=black, urlcolor=black]{hyperref}
@@ -58,15 +58,15 @@
 
 
 % Colors
-\definecolor{white}{RGB}{255,255,255} % #FFFFFF
-\definecolor{orange1}{RGB}{255,110,0} % #FF6600
-\definecolor{orange2}{RGB}{255,155,0} % #FF9900
-\definecolor{orange3}{RGB}{1,0.8,0.6} % #FFCC00
-\definecolor{red_dark}{RGB}{153,0,0}  % #990000
-\definecolor{red}{RGB}{255,151,0}     % #FF3300
-\definecolor{green}{RGB}{204,55,153}  % #FF3300
-\definecolor{grey1}{RGB}{60,60,60}    % #3C3C3C
-\definecolor{grey2}{RGB}{198,199,200} % #C6C7C8
+\definecolor{white}{cmyk}{0, 0, 0, 0}                 % #FFFFFF
+\definecolor{printblack}{cmyk}{0, 0, 0, 100}          % #141413
+\definecolor{orange1}{cmyk}{0, 0.56, 0.86, 0}         % #FF6600
+\definecolor{orange2}{cmyk}{0, 0.34, 0.87, 0.01}      % #FF9900
+\definecolor{orange3}{cmyk}{0.01, 0.12, 0.91, 0.01}   % #FFCC00
+\definecolor{red_dark}{cmyk}{0.07, 0.85, 0.98, 0.24}  % #990000
+\definecolor{red}{cmyk}{0, 0.72, 0.9, 0}              % #FF3300
+\definecolor{grey1}{cmyk}{0, 0, 0, 0.7}               % #3C3C3C
+\definecolor{grey2}{cmyk}{0.16, 0.11, 0.09, 0}        % #C6C7C8
 
 
 % Headings - \section
@@ -141,7 +141,7 @@
           \StrBefore{\@subtitle}{---} \\
           \vspace*{0.5cm}
           % Title
-          \fontsize{34}{40}\selectfont{%
+          \fontsize{34}{37}\selectfont{%
             \MakeUppercase{%
               \protect\StrBefore{\@title}{---}
             }
@@ -163,7 +163,7 @@
           } \\
           \vspace*{0.5cm}
           % Title
-          \fontsize{34}{40}\selectfont{%
+          \fontsize{34}{37}\selectfont{%
             \MakeUppercase{%
               \protect\StrBehind{\@title}{---}
             }
