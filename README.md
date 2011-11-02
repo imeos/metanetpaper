@@ -1,3 +1,3 @@
-# DFKI META-NET Paper LaTeX-Class
+# DFKI META-NET Language Whitepaper
 
-A LaTeX class to typeset bilingual papers of the DFKI META-NET Project in a twocolumn layout in all languages of the project. 
+LaTeX class and files to typeset bilingual papers of the DFKI META-NET project in a twocolumn layout in all languages of the project.
