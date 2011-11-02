@@ -97,17 +97,14 @@
 
 % Marginal notes
 \newcommand\boxtext[1]{
-  {\vspace*{0.2cm}}
-  \begin{center}
-    \large{
-      \textsf{
-        \MakeUppercase{
-          #1
-        }
-      }
+  \begin{minipage}[t]{8cm}
+  \centering
+  \large{
+    \textsf{
+      #1
     }
-  \end{center}    
-  {\vspace*{0.2cm}}
+  }
+  \end{minipage}
 }
 
 
@@ -138,7 +135,7 @@
       \textsf{
         \begin{flushright}
           % Subtitle
-          \StrBefore{\@subtitle}{---} \\
+          \StrBefore{\@subtitle}{ ---} \\
           \vspace*{0.5cm}
           % Title
           \fontsize{34}{37}\selectfont{%
@@ -159,13 +156,13 @@
         \begin{flushleft}
           % Subtitle
           \textcolor{white}{%
-            \StrBehind{\@subtitle}{---}
+            \StrBehind{\@subtitle}{--- }
           } \\
           \vspace*{0.5cm}
           % Title
           \fontsize{34}{37}\selectfont{%
             \MakeUppercase{%
-              \protect\StrBehind{\@title}{---}
+              \protect\StrBehind{\@title}{--- }
             }
           }
         \end{flushleft}
