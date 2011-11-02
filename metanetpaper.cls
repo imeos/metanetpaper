@@ -57,17 +57,17 @@
 \setmonofont{Courier New}
 
 
-% Colors
-\definecolor{white}{cmyk}{0, 0, 0, 0}                 % #FFFFFF
-\definecolor{printblack}{cmyk}{0, 0, 0, 100}          % #141413
-\definecolor{orange1}{cmyk}{0, 0.56, 0.86, 0}         % #FF6600
-\definecolor{orange2}{cmyk}{0, 0.34, 0.87, 0.01}      % #FF9900
-\definecolor{orange3}{cmyk}{0.01, 0.12, 0.91, 0.01}   % #FFCC00
-\definecolor{red_dark}{cmyk}{0.2, 1, 1, 0.10}         % #B72126
-\definecolor{red}{cmyk}{0, 0.72, 0.9, 0}              % #FF3300
-\definecolor{grey1}{cmyk}{0, 0, 0, 0.7}               % #3C3C3C
-\definecolor{grey2}{cmyk}{0.16, 0.11, 0.09, 0}        % #C6C7C8
-
+% Colors                                             
+\definecolor{white}{cmyk}{0, 0, 0, 0}                % #FFFFFF
+\definecolor{printblack}{cmyk}{0, 0, 0, 100}         % #141413
+\definecolor{orange1}{cmyk}{0, 0.56, 0.86, 0}        % #FF6600
+\definecolor{orange2}{cmyk}{0, 0.34, 0.87, 0.01}     % #FF9900
+\definecolor{orange3}{cmyk}{0.01, 0.12, 0.91, 0.01}  % #FFCC00
+\definecolor{red_dark}{cmyk}{0.2, 1, 1, 0.10}        % #B72126
+\definecolor{red}{cmyk}{0, 0.72, 0.9, 0}             % #FF3300
+\definecolor{grey1}{cmyk}{0, 0, 0, 0.7}              % #3C3C3C
+\definecolor{grey2}{cmyk}{0.16, 0.11, 0.09, 0}       % #C6C7C8
+                                                      
 
 % Headings - \section
 \titleformat{\section}{
