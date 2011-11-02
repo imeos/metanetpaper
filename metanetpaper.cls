@@ -51,15 +51,13 @@
 
 % Select fonts
 \setmainfont[Mapping=tex-text]{Garamond Premier Pro}
-\setsansfont[Mapping=tex-text]{Futura}
-  \newfontfamily\futuralight{Futura Light}
-  \newfontfamily\futuramedium{Futura Medium}
+\setsansfont[Mapping=tex-text]{Linux Biolinum}
 \setmonofont{Courier New}
 
 
 % Colors
 \definecolor{white}{cmyk}{0, 0, 0, 0}                 % #FFFFFF
-\definecolor{printblack}{cmyk}{0, 0, 0, 100}          % #141413
+\definecolor{printblack}{cmyk}{0, 0, 0, 1}          % #141413
 \definecolor{orange1}{cmyk}{0, 0.56, 0.86, 0}         % #FF6600
 \definecolor{orange2}{cmyk}{0, 0.34, 0.87, 0.01}      % #FF9900
 \definecolor{orange3}{cmyk}{0.01, 0.12, 0.91, 0.01}   % #FFCC00
@@ -83,7 +81,9 @@
 }{\thesubsubsection}{0.62em}{}
 
 % 
-% \renewcommand\ParallelRText{}
+%\renewcommand\ParallelRText[1]{
+%\ParallelRText{\textcolor{grey1}{#1}
+%}}
 
 
 % Wie den Abstand aendern?
@@ -97,14 +97,13 @@
 
 % Marginal notes
 \newcommand\boxtext[1]{
-  \begin{minipage}[t]{8cm}
-  \centering
+  \begin{center}
   \large{
     \textsf{
       #1
     }
   }
-  \end{minipage}
+\end{center}
 }
 
 
