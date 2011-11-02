@@ -143,7 +143,7 @@
           % Title
           \fontsize{34}{37}\selectfont{%
             \MakeUppercase{%
-              \protect\StrBefore{\@title}{---}
+              \protect\StrBefore{\@title}{ ---}
             }
           }
         \end{flushright}
