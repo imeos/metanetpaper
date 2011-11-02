@@ -17,6 +17,12 @@
 
 % Use KOMA-script class 'scrartcl', based on 'article'
 \LoadClass[11pt, twoside]{scrartcl}
+
+
+
+% Dependencies
+% ------------
+
 % Define papersize
 \usepackage[paperwidth=210mm, paperheight=279mm, top=40mm, bottom=20mm, left=18mm, textwidth=169mm, headsep=20mm, bindingoffset=0mm]{geometry}
 
@@ -37,13 +43,13 @@
 % Linespacing
 \usepackage[onehalfspacing]{setspace}
 \usepackage{scrpage2}
-
+% String modifications
 \usepackage{xstring}
 
 
 
-% Own Markup
-% -------------------
+% Class options & definitions
+% ---------------------------
 
 % Indent for new Paragraphs
 \setlength{\parindent}{0pt}
@@ -51,7 +57,7 @@
 
 % Select fonts
 \setmainfont[Mapping=tex-text]{Garamond Premier Pro}
-\setsansfont[Mapping=tex-text]{Linux Biolinum}
+\setsansfont[Mapping=tex-text]{Futura}
 \setmonofont{Courier New}
 
 
@@ -95,7 +101,9 @@
 }
 {\end{list}}
 
+
 % Marginal notes
+% \boxtext{your text}
 \newcommand\boxtext[1]{
   \begin{center}
   \large{
@@ -110,7 +118,8 @@
 % Lines
 % \colorrule{<color>}{<width>}{<thickness>}
 \newcommand*\colorrule[3]{%
-  \color{#1}\rule{#2}{#3}\normalcolor}
+  \color{#1}\rule{#2}{#3}\normalcolor
+}
 
 
 % Header and footer
