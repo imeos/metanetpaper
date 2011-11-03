@@ -24,7 +24,7 @@
 % ------------
 
 % Define papersize
-\usepackage[paperwidth=210mm, paperheight=279mm, top=40mm, bottom=22mm, left=18mm, textwidth=169mm, headsep=20mm, bindingoffset=0mm]{geometry}
+\usepackage[paperwidth=210mm, paperheight=279mm, top=21mm, bottom=34mm, left=24mm, right=22mm, headsep=20mm, bindingoffset=0mm]{geometry}
 
 \usepackage{graphicx}
 
@@ -148,7 +148,7 @@
   \ThisCenterWallPaper{1}{../_media/titlepage.pdf}
     \vspace*{0.3cm}
     % Left column
-    \begin{minipage}[t]{8.7cm}
+    \begin{minipage}[t]{8.1cm}
       \color{grey2}
       \textsf{
         \begin{flushright}
@@ -188,7 +188,7 @@
       }
     \end{minipage}
     % Authors
-    \begin{Parallel}[c]{8.5cm}{7.5cm}
+    \begin{Parallel}[c]{8.1cm}{7.7cm}
       \ParallelLText{
         \begin{flushright}
           \fontsize{14}{20}\selectfont{%
