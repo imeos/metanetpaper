@@ -1,4 +1,4 @@
-  %                                     MMMMMMMMM                                         
+%                                     MMMMMMMMM                                         
 %                                                                             
 %  MMO    MM   MMMMMM  MMMMMMM   MM    MMMMMMMM   MMD   MM  MMMMMMM MMMMMMM   
 %  MMM   MMM   MM        MM     ?MMM              MMM$  MM  MM         MM     
@@ -59,10 +59,10 @@
 
 % Select fonts
 \setmainfont[Mapping=tex-text]{Garamond Premier Pro}
-\setsansfont[Mapping=tex-text]{Futura}
-  \newfontfamily\futuralight{Futura Light}
-  \newfontfamily\futurabook{Futura Book}
-  \newfontfamily\futuramedium{Futura Medium}
+\setsansfont[Mapping=tex-text]{Linux Biolinum}
+%  \newfontfamily\futuralight{Futura Light}
+%  \newfontfamily\futurabook{Futura Book}
+%  \newfontfamily\futuramedium{Futura Medium}
 \setmonofont{Courier New}
 
 
@@ -217,15 +217,15 @@
 
 % Table of contents
   % the sections
-\renewcommand{\cftsecfont}{\futurabook}
-\renewcommand{\cftsubsecfont}{\futuralight}
-\renewcommand{\cftsubsubsecfont}{\futuralight}
-  % the page numbers
-\renewcommand{\cftsecpagefont}{\futurabook}  
-\renewcommand{\cftsubsecpagefont}{\futuralight}
-\renewcommand{\cftsubsubsecpagefont}{\futuralight}
-  % remove 'Contents'
-\renewcommand*\contentsname{}
+%\renewcommand{\cftsecfont}{\futurabook}
+%\renewcommand{\cftsubsecfont}{\futuralight}
+%\renewcommand{\cftsubsubsecfont}{\futuralight}
+%  % the page numbers
+%\renewcommand{\cftsecpagefont}{\futurabook}  
+%\renewcommand{\cftsubsecpagefont}{\futuralight}
+%\renewcommand{\cftsubsubsecpagefont}{\futuralight}
+%  % remove 'Contents'
+%\renewcommand*\contentsname{}
   % set the depth
 \setcounter{tocdepth}{3}
 
