@@ -68,24 +68,112 @@
 
 % Colors                                             
 \definecolor{white}{cmyk}{0, 0, 0, 0}                % #FFFFFF
-\definecolor{printblack}{cmyk}{0, 0, 0, 1}         % #141413
+\definecolor{printblack}{cmyk}{0, 0, 0, 1}           % #141413
 \definecolor{orange1}{cmyk}{0, 0.56, 0.86, 0}        % #FF6600
 \definecolor{orange2}{cmyk}{0, 0.34, 0.87, 0.01}     % #FF9900
 \definecolor{orange3}{cmyk}{0.01, 0.12, 0.91, 0.01}  % #FFCC00
 \definecolor{red_dark}{cmyk}{0.2, 1, 1, 0.10}        % #B72126
-\definecolor{red}{cmyk}{0, 0.72, 0.9, 0}             % #FF3300
+\definecolor{red}{cmyk}{0.2, 1, 1, 0.1}              % #C80000
 \definecolor{grey1}{cmyk}{0, 0, 0, 0.7}              % #3C3C3C
 \definecolor{grey2}{cmyk}{0.16, 0.11, 0.09, 0}       % #C6C7C8
                                                       
 
-% Headings - \section
-\titleformat{\section}{
-  \fontsize{18}{20}\selectfont \sffamily  \uppercase
-}{\centering--- \thesection \ ---}{-1.5em}{\centering\protect\linebreak}
-% Headings - \subsection
-\titleformat{\subsection}{
-  \vskip 0.5cm \fontsize{14}{16}\selectfont \sffamily
-}{\thesubsection}{1em}{\MakeUppercase}
+% Headings
+  % Reset all sections
+\renewcommand\section{\@startsection {section}{1}{\z@}%
+  {-3.5ex \@plus -1ex \@minus -.2ex}%
+  {2.3ex \@plus.2ex}%
+  {}
+}
+\renewcommand\subsection{\@startsection {section}{1}{\z@}%
+  {-3.5ex \@plus -1ex \@minus -.2ex}%
+  {2.3ex \@plus.2ex}%
+  {}
+}
+\renewcommand\subsubsection{\@startsection {section}{1}{\z@}%
+  {-3.5ex \@plus -1ex \@minus -.2ex}%
+  {2.3ex \@plus.2ex}%
+  {}
+}
+
+% Redefine \sectio as \ssection
+\newcommand{\ssection}[1]{%
+  \clearpage
+  \section[#1]{%
+    % rule above
+    \begin{minipage}[t]{\textwidth}
+        \colorrule{grey1}{7.5cm}{1pt}
+    \end{minipage}
+    % Left column
+    \begin{minipage}[t]{7.5cm}
+      \color{red}
+      \textsf{
+        \begin{flushright}
+          % Title
+          \fontsize{24}{25}\selectfont{%
+            \MakeUppercase{%
+              \protect\StrBefore{#1}{ ---}
+            }
+          }
+        \end{flushright}
+        \vspace*{0.7cm}
+      }
+    \end{minipage}
+    % spacing between colums
+    \begin{minipage}[t]{0.5cm}\ \end{minipage}
+    % Right column
+    \begin{minipage}[t]{7cm}
+      \textsf{
+        \begin{flushleft}
+          % Title
+          \fontsize{24}{25}\selectfont{%
+            \MakeUppercase{%
+              \protect\StrBehind{#1}{--- }
+            }
+          }
+        \end{flushleft}
+        \vspace*{0.7cm}
+      }
+    \end{minipage}
+  }
+}
+
+% Redefine \sectio as \ssection
+\newcommand{\ssubsection}[1]{%
+  \subsection[#1]{%
+    % Left column
+    \begin{minipage}[t]{7.5cm}
+      \textsf{
+        \begin{flushright}
+          % Title
+          \fontsize{14}{16}\selectfont{%
+            \MakeUppercase{%
+              \protect\StrBefore{#1}{ ---}
+            }
+          }
+        \end{flushright}
+        \vspace*{0.7cm}
+      }
+    \end{minipage}
+    % spacing between colums
+    \begin{minipage}[t]{0.5cm}\ \end{minipage}
+    % Right column
+    \begin{minipage}[t]{7cm}
+      \color{grey1}
+      \textsf{
+        \begin{flushleft}
+          % Title
+          \fontsize{14}{16}\selectfont{%
+            \MakeUppercase{%
+              \protect\StrBehind{#1}{--- }
+            }
+          }
+        \end{flushleft}
+        \vspace*{0.7cm}
+      }
+    \end{minipage}
+  }
+}
 % Headings - \subsubsection
 \titleformat{\subsubsection}{
   \vskip 0.2cm \fontsize{12}{15}\selectfont \sffamily
