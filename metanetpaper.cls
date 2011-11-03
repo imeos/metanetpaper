@@ -88,8 +88,8 @@
 }{\thesubsection}{1em}{\MakeUppercase}
 % Headings - \subsubsection
 \titleformat{\subsubsection}{
-  \vskip 0.2cm \fontsize{11}{15}\selectfont \sffamily
-}{\thesubsubsection}{0.62em}{}
+  \vskip 0.2cm \fontsize{12}{15}\selectfont \sffamily
+}{\thesubsubsection}{0.62em}{\MakeUppercase}
 
  
 %\renewcommand\ParallelRText[1]{{
