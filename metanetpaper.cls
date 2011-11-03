@@ -24,7 +24,7 @@
 % ------------
 
 % Define papersize
-\usepackage[paperwidth=210mm, paperheight=279mm, top=40mm, bottom=20mm, left=18mm, textwidth=169mm, headsep=20mm, bindingoffset=0mm]{geometry}
+\usepackage[paperwidth=210mm, paperheight=279mm, top=40mm, bottom=22mm, left=18mm, textwidth=169mm, headsep=20mm, bindingoffset=0mm]{geometry}
 
 \usepackage{graphicx}
 
@@ -138,8 +138,7 @@
 \clearscrheadfoot 
   
   % Pagenumber on outer margin
-\ohead[\pagemark]{\pagemark}
-\setheadwidth{text}
+\ofoot[\pagemark]{\pagemark}
 \pagestyle{scrheadings}
 
 
