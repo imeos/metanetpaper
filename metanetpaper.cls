@@ -68,7 +68,7 @@
 
 % Colors                                             
 \definecolor{white}{cmyk}{0, 0, 0, 0}                % #FFFFFF
-\definecolor{printblack}{cmyk}{0, 0, 0, 100}         % #141413
+\definecolor{printblack}{cmyk}{0, 0, 0, 1}         % #141413
 \definecolor{orange1}{cmyk}{0, 0.56, 0.86, 0}        % #FF6600
 \definecolor{orange2}{cmyk}{0, 0.34, 0.87, 0.01}     % #FF9900
 \definecolor{orange3}{cmyk}{0.01, 0.12, 0.91, 0.01}  % #FFCC00
@@ -91,10 +91,10 @@
   \vskip 0.2cm \fontsize{11}{15}\selectfont \sffamily
 }{\thesubsubsection}{0.62em}{}
 
-% 
-%\renewcommand\ParallelRText[1]{
-%\ParallelRText{\textcolor{grey1}{#1}
-%}}
+ 
+%\renewcommand\ParallelRText[1]{{
+%	\textcolor{grey1}{#1} }}
+
 
 
 % Wie den Abstand aendern?
