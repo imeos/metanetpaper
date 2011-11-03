@@ -45,6 +45,8 @@
 \usepackage{scrpage2}
 % String modifications
 \usepackage{xstring}
+% TOC modifications
+\usepackage{tocloft}
 
 
 
@@ -58,6 +60,9 @@
 % Select fonts
 \setmainfont[Mapping=tex-text]{Garamond Premier Pro}
 \setsansfont[Mapping=tex-text]{Futura}
+  \newfontfamily\futuralight{Futura Light}
+  \newfontfamily\futurabook{Futura Book}
+  \newfontfamily\futuramedium{Futura Medium}
 \setmonofont{Courier New}
 
 
@@ -79,8 +84,8 @@
 }{\centering--- \thesection \ ---}{-1.5em}{\centering\protect\linebreak}
 % Headings - \subsection
 \titleformat{\subsection}{
-  \vskip 0.5cm \fontsize{13}{15}\selectfont \sffamily
-}{\thesubsection}{1em}{}
+  \vskip 0.5cm \fontsize{14}{16}\selectfont \sffamily
+}{\thesubsection}{1em}{\MakeUppercase}
 % Headings - \subsubsection
 \titleformat{\subsubsection}{
   \vskip 0.2cm \fontsize{11}{15}\selectfont \sffamily
@@ -212,11 +217,18 @@
 
 
 % Table of contents
-\renewcommand\tableofcontents{
-  \vspace*{-1cm}
-  \begin{spacing}{1.1}
-    \@starttoc{toc}
-  \end{spacing}
-}
+  % the sections
+\renewcommand{\cftsecfont}{\futurabook}
+\renewcommand{\cftsubsecfont}{\futuralight}
+\renewcommand{\cftsubsubsecfont}{\futuralight}
+  % the page numbers
+\renewcommand{\cftsecpagefont}{\futurabook}  
+\renewcommand{\cftsubsecpagefont}{\futuralight}
+\renewcommand{\cftsubsubsecpagefont}{\futuralight}
+  % remove 'Contents'
+\renewcommand*\contentsname{}
+  % set the depth
+\setcounter{tocdepth}{3}
+
 
 \endinput
