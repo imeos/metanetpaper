@@ -21,6 +21,9 @@
 %\usepackage{color} see Class
 \usepackage{colortbl}
 
+\usepackage{polyglossia}
+\setotherlanguages{german, english}
+
 %!TEX TS-program = xelatex
 \RequireXeTeX %Force XeTeX check
 
@@ -41,23 +44,23 @@
 }
 
 \begin{document}
-\begin{Parallel}[c]{80mm}{80mm}
+\begin{Parallel}[c]{77mm}{77mm}
   \maketitle
 
 
   % --------------------------------------------------------------------------
   \section*{Vorwort --- Preface}
-  \ParallelLText{
+  \ParallelLText{\selectlanguage{german}
 Dieses Weißbuch gehört zu einer Reihe, die Wissen über Sprachtechnologie und deren Potenzial vermitteln soll. Es richtet sich u. a. an Lehrkräfte, Journalisten, Politiker und Sprachgemeinschaften. 
 
-Die Verfügbarkeit und Nutzung von Sprachtechnologie in Europa hängen von der jeweiligen Sprache ab. Hierdurch sind für die weitere Unterstützung von Forschung und Entwicklung im Bereich Sprachtechnologien bei jeder Sprache andere Maßnahmen notwendig. Sie hängen von zahlreichen Faktoren ab, beispielsweise der Komplexität einer bestimmten Sprache und der Anzahl ihrer Sprecher.
+Die Verfügbarkeit und Nutzung von Sprachtechnologie in Europa hängen von der jeweiligen Sprache ab. Hierdurch sind für die weitere Unterstützung von Forschung und Entwicklung im Bereich Sprachtechnologien bei jeder Sprache andere Maß\-nahmen not\-wendig. Sie hängen von zahlreichen Faktoren ab, beispielsweise der Komplexität einer bestimmten Sprache und der Anzahl ihrer Sprecher.
 
 META-NET, ein von der Europäischen Kommission gefördertes Exzellenznetzwerk, hat die aktuellen Sprachressourcen und -technologien analysiert. Die Analyse umfasst die 23 europäischen Amtssprachen sowie weitere wichtige nationale und regionale Sprachen Europas. Die Ergebnisse zeigen, dass es bei allen Spra-chen ganz beträchtliche Forschungslücken gibt. Durch die nun vorliegende ausführlichere Expertenanalyse und Bewertung der aktuellen Situation lässt sich die Wirksamkeit der weiteren Forschungstätigkeit maximieren.
 
-META-NET besteht aus 54 Forschungszentren aus 33 europäschen Ländern (Stand: November 2011), die mit Interessensvertretern aus Handelsunternehmen, Behörden, der Industrie, Forschungsorganisationen, Softwareunternehmen, Technologieanbietern, Nichtregierungsorganisationen, Sprachgemeinschaften und europäischen Universitäten zusammenarbeiten. Gemeinsam entwickeln sie derzeit eine übergreifende Technologievision und eine strategische Forschungsagenda für das mehrsprachige Europa 2020.
+META-NET besteht aus 54 Forschungszentren aus 33 europäschen Ländern (Stand: November 2011), die mit Interessensvertretern aus Handelsunternehmen, Behörden, der Industrie, Forschungsorganisationen, Softwareunternehmen, Technologieanbietern, Nicht\-regierungs\-orga\-nisa\-tionen, Sprachgemeinschaften und europäischen Universitäten zusammenarbeiten. Gemeinsam entwickeln sie derzeit eine übergreifende Technologievision und eine strategische Forschungsagenda für das mehrsprachige Europa 2020.
   }
    
-  \ParallelRText{
+  \ParallelRText{\selectlanguage{english}
 This white paper is part of a series that promotes knowledge about language technology and its potential. It addresses educators, journalists, politicians, language communities and others. 
 
 The availability and use of language technology in Europe varies between languages. Consequently, the actions that are required to further support research and development of language technologies also differ for each language. The required actions depend on many factors, such as the complexity of a given language and the size of its community.
@@ -82,7 +85,7 @@ As of November 2011, META-NET consists of 54 research centres from 33 European c
   % --------------------------------------------------------------------------
   \section[Zusammenfassung --- Executive Summary]{Zusammenfassung\\ ---\\ Executive Summary}
   
-  \ParallelLText{
+  \ParallelLText{\selectlanguage{german}
   
     \boxtext{Sprachtechnologie baut Brücken für Europas Zukunft}
     
@@ -90,7 +93,7 @@ Europa ist in den vergangenen 60 Jahren eine politisch-wirtschaftliche Einheit g
 
 Die deutsche Wirtschaft profitiert überdurchschnittlich vom europäischen Binnenmarkt: 2010 gingen 60,3 Prozent der deutschen Ausfuhren in die EU, weitere 10,8 Prozent in andere europäische Länder. Doch die Geschäftstätigkeit stößt überall dort auf Schwierigkeiten, wo Sprachbarrieren dem Handel massiv im Wege stehen. Insbesondere kleine und mittelständische Unternehmen (KMUs) stehen vor einem mit vertretbarem Aufwand kaum lösbaren Problem. Die einzige (undenkbare) Alternative zum multilingualen Europa würde so aussehen, dass eine einzige Sprache die Vormachtstellung einnimmt und letztendlich alle anderen Sprachen ersetzt. 
 
-Eine bewährte Möglichkeit, Sprachbarrieren zu überwinden, ist und bleibt das Erlernen von Fremdsprachen. Ohne technologische Unterstützung stellen die 23 Amtssprachen der Mitgliedstaaten der Europäischen Union und die rund 60 weiteren Sprachen Europas für die europäischen Bürger und ihre Wirtschaft, für politische Debatten sowie für den wissenschaftlichen Fortschritt jedoch ein unüberwindliches Hindernis dar. 
+Eine bewährte Möglichkeit, Sprachbarrieren zu überwinden, ist und bleibt das Erlernen von Fremdsprachen. Ohne technologische Unterstützung stellen die 23 Amts\-sprachen der Mitgliedstaaten der Europäischen Union und die rund 60 weiteren Sprachen Europas für die europäischen Bürger und ihre Wirtschaft, für politische Debatten sowie für den wissenschaftlichen Fortschritt jedoch ein unüberwindliches Hindernis dar. 
 
 Die Lösung ist die Entwicklung von Schlüsseltechnologien. Diese bieten den europäischen Akteuren ungeheure Vorteile, nicht nur auf dem gemeinsamen europäischen Markt, sondern auch bei Handelsbeziehungen mit Drittländern, insbesondere Schwellenländern. Um dieses Ziel erreichen und die kulturelle und sprachliche Vielfalt Europas bewahren zu können, ist zunächst eine systematische Analyse der linguistischen Besonderheiten aller europäischen Sprachen notwendig. Außerdem muss der derzeitige Stand der Unterstützung durch Sprachtechnologie analysiert werden. Sprachtechnologielösungen werden letztendlich als einzigartige Brücke zwischen den Sprachen Europas dienen.
     
@@ -111,7 +114,7 @@ Das perspektivische Ziel von META-NET ist es, mittels hochqualitativer Sprachtec
 Diese Weißbuch-Reihe flankiert die anderen strategischen Aktivitäten von META-NET. (Einen Überblick hierzu finden Sie im Anhang.) Aktuelle Informationen, die neueste Version des META-NET Vision Papers\cite{Meta1} oder der strategische Forschungsagenda (SRA; Strategic Research Agenda) finden Sie auf unserer Website: http://www.meta-net.eu.
   }
   
-  \ParallelRText{
+  \ParallelRText{\selectlanguage{english}
 
     \boxtext{Language technology builds bridges for Europe’s future}
     
@@ -151,7 +154,7 @@ This whitepaper series complements other strategic actions taken by META-NET (se
   % --------------------------------------------------------------------------
   \section[Ein Risiko für unsere Sprachen und eine Herausforderung für die Sprachtechnologie --- Our Languages at Risk: a Challenge for Language Technology]{Ein Risiko für unsere Sprachen und eine Herausforderung für die Sprachtechnologie\\ ---\\ Our Languages at Risk: a Challenge for Language Technology}
   
-  \ParallelLText{
+  \ParallelLText{\selectlanguage{german}
 Wir sind Zeugen einer digitalen Revolution, die enorme Auswirkungen auf Kommunikation und Gesellschaft hat. Die jüngsten Entwicklungen in der digitalen Informations- und Kommunikationstechnologie werden manchmal mit Gutenbergs Erfindung der Druckerpresse verglichen. Was kann uns diese Analogie über die Zukunft der europäischen Informationsgesellschaft und insbesondere über unsere Sprachen sagen?
 
 Nach Gutenbergs Erfindung hatten Leistungen wie beispielsweise die Übersetzung der Bibel durch Luther in die Landessprache echte Durchbrüche im Kommunikations- und Wissensaustausch zur Folge. In den folgenden Jahrhunderten wurden Kulturtechniken entwickelt, die die Sprachverarbeitung und den Wissensaustausch erleichterten:
@@ -176,7 +179,7 @@ In den vergangenen zwanzig Jahren trug die Informationstechnologie zu einer Auto
 Diese Werkzeuge und Anwendungen sind hilfreich, aber lange nicht ausreichend, eine nachhaltige, mehrsprachige europäische Gesellschaft zu unterstützen, in der Informationen und Waren ungehindert fließen können.
   }
 
-  \ParallelRText{
+  \ParallelRText{\selectlanguage{english}
 We are witnesses to a digital revolution that is dramatically impacting communication and society. Recent developments in information and communication technology are sometimes compared to Gutenberg’s invention of the printing press. What can this analogy tell us about the future of the European information society and our languages in particular?
 
 After Gutenberg’s invention, real breakthroughs in communication and knowledge exchange were accomplished by efforts such as Luther’s translation of the Bible into vernacular language. In subsequent centuries, cultural techniques have been developed to better handle language processing and knowledge exchange:
@@ -205,7 +208,7 @@ Although these tools and applications are helpful, they are not yet capable of s
 
   \subsection{Sprachgrenzen behindern die Europäische Informationsgesellschaft --- Language Borders Hold back the European Information Society}
   
-  \ParallelLText{
+  \ParallelLText{\selectlanguage{german}
 Wir können nicht genau vorhersagen, wie die Informationsgesellschaft der Zukunft aussehen wird. Es ist jedoch sehr wahrscheinlich, dass die Revolution in der Kommunikationstechnologie Menschen, die unterschiedliche Sprachen sprechen, auf eine ganz neue Weise zusammenbringen wird. Dadurch ist der Einzelne gezwungen, neue Sprachen zu lernen. Besonderer Druck liegt auf Entwicklern, die neue Technologieanwendungen schaffen müssen, um das gegenseitige Verstehen und den Zugriff auf gemeinsam nutzbares Wissen sicherzustellen. In einem globalen Wirtschafts- und Informationsraum interagieren mehr Sprachen, Sprecher und Inhalte schneller miteinander durch neuartige Medien. Die derzeitige Popularität von Sozialen Medien (Wikipedia, Facebook, Twitter, YouTube und seit neuestem auch Google+) ist nur die Spitze des Eisbergs.
 
 Heute können wir in Sekundenschnelle gigabyteweise Textmengen um die Welt schicken, bevor wir überhaupt merken, dass dies in einer Sprache geschieht, die wir gar nicht verstehen. Einem jüngsten Bericht der Europäischen Kommission zufolge erwerben 57\% der Internetnutzer in Europa Waren und Dienstleistungen in Sprachen, die nicht ihre Muttersprache sind. (Englisch ist die gängigste Fremdsprache, gefolgt von Französisch, Deutsch und Spanisch.) 55\% der Nutzer lesen Inhalte in einer Fremdsprache, und nur 35\% verwenden eine andere Sprache, um E-Mails zu schreiben oder Kommentare im Web zu posten\cite{EC1}. Vor ein paar Jahren mag Englisch noch die lingua franca des Webs gewesen sein – die meisten Webinhalte waren auf Englisch verfasst – doch das hat sich dramatisch gewandelt. Der Anteil an Onlineinhalten in anderen europäischen Sprachen (sowie asiatischen Sprachen und Sprachen aus Nahost) hat explosionsartig zugenommen.
@@ -213,7 +216,7 @@ Heute können wir in Sekundenschnelle gigabyteweise Textmengen um die Welt schic
 Erstaunlicherweise hat diese allgegenwärtige, durch Sprachgrenzen bedingte digitale Kluft bisher kaum öffentliche Aufmerksamkeit erhalten. Doch eine drängende Frage ergibt sich daraus: Welche europäischen Sprachen gewinnen in der vernetzten Informations- und Wissensgesellschaft an Bedeutung und welche sind dem Untergang geweiht?
   }
 
-  \ParallelRText{
+  \ParallelRText{\selectlanguage{english}
 We cannot predict exactly what the future information society will look like. However, there is a strong likelihood that the revolution in communication technology is bringing together people who speak different languages in new ways. This is putting pressure both on individuals to learn new languages and especially on developers to create new technology applications to ensure mutual understanding and access to shareable knowledge. In the global economic and information space, there is increasing interaction between different languages, speakers and content interact more quickly with new types of media. The current popularity of social media (Wikipedia, Facebook, Twitter, YouTube, and, recently, Google+) is only the tip of the iceberg.
 
 Today, we can transmit gigabytes of text around the world in a few seconds before we recognise that it is in a language that we do not understand. According to a recent report from the European Commission, 57\% of Internet users in Europe purchase goods and services in languages that are not their native language. (English is the most common foreign language followed by French, German and Spanish). 55\% of users read content in a foreign language while only 35\% use another language to write e-mails or post comments on the Web\cite{EC1}. A few years ago, English might have been the lingua franca of the Web—the vast majority of content on the Web was in English—but the situation has now drastically changed. The amount of online content in other European (as well as Asian and Middle Eastern) languages has exploded.
@@ -225,13 +228,13 @@ Surprisingly, this ubiquitous digital linguistic divide has not gained much publ
 
   \subsection{Unsere Sprachen in Gefahr --- Our Languages at Risk}
 
-  \ParallelLText{
+  \ParallelLText{\selectlanguage{german}
 Die Druckerpresse hat den Informationsaustausch in Europa mit vorangetrieben, dabei aber auch zum Aussterben vieler europäischer Sprachen geführt. Regionale Sprachen und Sprachen von Minderheiten fanden sich kaum in Druckform, und Sprachen wie Kornisch und Dalmatisch waren auf mündliche Übertragungsformen begrenzt, was ihre Reichweite stark beschränkte. Wird das Internet die gleiche Wirkung auf unsere „modernen“ Sprachen haben?
 
 Europas rund 80 Sprachen sind eines seiner reichsten und wichtigsten Kulturgüter und ein vitaler Teil seines einzigartigen sozialen Modells\cite{EC2}. Sprachen wie Englisch und Spanisch werden auf dem aufstrebenden digitalen Marktplatz sicher überleben, doch zahlreiche europäische Sprachen könnten in einer vernetzten Gesellschaft schnell unbedeutend werden. Dies würde den Stand Europas auf der Weltbühne schwächen und dem strategischen Ziel zuwiderlaufen, allen europäischen Bürgern ungeachtet ihrer Sprache gleiche Partizipationsmöglichkeiten zuzusichern. Einem Bericht der UNESCO über Mehrsprachigkeit zufolge sind Sprachen ein wichtiges Medium um grundlegende Rechte genießen zu können, wie politische Meinungsäußerung, Bildung und gesellschaftliche Beteiligung\cite{Unesco1}.
   }
   
-  \ParallelRText{
+  \ParallelRText{\selectlanguage{english}
 While the printing press helped step up the exchange of information in Europe, it also led to the extinction of many European languages. Regional and minority languages were rarely printed and languages such as Cornish and Dalmatian were limited to oral forms of transmission, which in turn restricted their scope of use. Will the Internet have the same impact on our ‘modern’ languages?
 
 Europe’s approximately 80 languages are one of its richest and most important cultural assets, and a vital part of its unique social model\cite{EC2}. While languages such as English and Spanish are likely to survive in the emerging digital marketplace, many European languages could become irrelevant in a networked society. This would weaken Europe’s global standing, and run counter to the strategic goal of ensuring equal participation for every European citizen regardless of language. According to a UNESCO report on multilingualism, languages are an essential medium for the enjoyment of fundamental rights, such as political expression, education and participation in society\cite{Unesco1}.
@@ -242,7 +245,7 @@ Europe’s approximately 80 languages are one of its richest and most important 
 
   \subsection{Sprachtechnologie ist eine Schlüsseltechnologie --- Language Technology is a Key Enabling Technology }
 
-  \ParallelLText{
+  \ParallelLText{\selectlanguage{german}
 Früher konzentrierten sich Investitionen in den Erhalt der Sprache vor allem auf Sprachausbildung und Übersetzungen. Einer Schätzung zufolge belief sich der europäische Markt für Übersetzungen, Dolmetschen, Softwarelokalisierung und Website-Globalisierung 2008 auf 8,4 Milliarden €, wobei von einem jährlichen Wachstum um 10\% ausgegangen wird\cite{EC3}. Diese Zahl deckt jedoch nur einen geringen Anteil unseres aktuellen und künftigen Kommunikationsbedarfs zwischen den verschiedenen Sprachen ab. Die umfassendste Lösung, mit der die Breite und Tiefe des Sprachgebrauchs im Europa von morgen sichergestellt werden kann, ist der Einsatz geeigneter Technologie, so wie wir auch Technologie einsetzen, um beispielsweise unserem Transport- und Energiebedarf und den Bedürfnissen von Behinderten gerecht zu werden.
 
 Sprachtechnologie (für alle Formen geschriebener Texte und gesprochener Sprache) ermöglicht es Menschen, zusammenzuarbeiten, Geschäfte zu tätigen, Wissen auszutauschen und sich an sozialen und politischen Debatten zu beteiligen, und zwar ungeachtet von Sprachbarrieren und Computerfertigkeiten. Sie arbeitet oft unsichtbar in komplexen Softwaresystemen und unterstützt u.a.:
@@ -258,7 +261,7 @@ Sprachtechnologie besteht aus einer Reihe von Kerntechnologien, die Einsatz in g
 Damit Europa seine Position an der vordersten Front der globalen Innovation behaupten kann, benötigt es eine auf alle europäischen Sprachen abgestimmte Sprachtechnologie, die robust, preiswert und eng in die wichtigsten Softwareumgebungen integriert ist. Ohne Sprachtechnologie sind wir nicht in der Lage, in naher Zukunft wirklich effektive interaktive, multimediale und mehrsprachige Endanwendungen für alle europäischen Nutzer zu realisieren. 
   }
 
-  \ParallelRText{
+  \ParallelRText{\selectlanguage{english}
 In the past, investments in language preservation focussed primarily on language education and translation. According to one estimate, the European market for translation, interpretation, software localisation and website globalisation was €8.4 billion in 2008 and is expected to grow by 10\% per annum\cite{EC3}. Yet this figure covers just a small proportion of current and future needs in communicating between languages. The most compelling solution for ensuring the breadth and depth of language usage in Europe tomorrow is to use appropriate technology, just as we use technology to solve our transport, energy and disability needs among others.
 
 Language technology (targeting all forms of written text and spoken discourse) helps people to collaborate, conduct business, share knowledge and participate in social and political debate regardless of language barriers and computer skills. It often operates invisibly inside complex software systems to help us:
@@ -279,7 +282,7 @@ To maintain our position in the frontline of global innovation, Europe will need
 
   \subsection{Chancen für die Sprachtechnologie --- Opportunities for Language Technology }
 
-  \ParallelLText{
+  \ParallelLText{\selectlanguage{german}
 In der Welt des Druckes bestand der technologische Durchbruch in der raschen Duplizierung eines Textbildes (einer Seite) mittels einer ausreichend leistungsstarken Druckerpresse. Dem Mensch kam die schwere Aufgabe des Suchens, Lesens, Übersetzens und Zusammenfassens von Wissen zu. Wir mussten bis Edison warten, gesprochene Sprache aufzunehmen – aber auch seine Technologie fertigte einfach nur analoge Kopien an.
 
 Mithilfe von Sprachtechnologie lassen sich jetzt auch die Prozesse der Übersetzung, Inhaltsproduktion und Wissensmanagement für alle europäischen Sprachen weiter automatisieren. Auch können hiermit intuitive sprachbasierte Schnittstellen für Haushaltselektronik, Maschinen, Fahrzeuge, Computer und Roboter ermöglicht werden. Gewerbliche und industrielle Anwendungen für den praktischen Einsatz befinden sich nach wie vor in einer frühen Entwicklungsstufe. Dennoch bieten die bisherigen Errungenschaften der Forschung und Entwicklung eine einmalige Chance. In bestimmten Domänen funktioniert die maschinelle Übersetzung beispielsweise bereits relativ präzise. Experimentelle Anwendungen ermöglichen bereits Informations- und Wissensverwaltung in mehreren Sprachen sowie die Produktion von Inhalten in vielen europäischen Sprachen. 
@@ -291,7 +294,7 @@ Sprachtechnologie stellt für die Europäische Union eine ungeheure Chance dar. 
 Abschließend sei noch der Einsatz der Sprachtechnologie bei Rettungstätigkeiten in Katastrophengebieten genannt, wo Leistungsfähigkeit über Leben und Tod entscheiden kann. Intelligente mehrsprachige Roboter der Zukunft besitzen das Potenzial, Leben zu retten.
   }
 
-  \ParallelRText{
+  \ParallelRText{\selectlanguage{english}
 In the world of print, the technology breakthrough was the rapid duplication of an image of a text (a page) using a suitably powered printing press. Human beings had to do the hard work of looking up, reading, translating, and summarising knowledge. We had to wait until Edison to record spoken language – and again his technology simply made analogue copies.
 
 Language technology can now automate the processes of translation, content production, and knowledge management for all European languages. It can also empower intuitive speech-based interfaces for household electronics, machinery, vehicles, computers and robots. Real-world commercial and industrial applications are still in the early stages of development, yet R\&D achievements are creating a genuine window of opportunity. For example, machine translation is already reasonably accurate in specific domains, and experimental applications provide multilingual information and knowledge management, as well as content production, in many European languages. 
@@ -308,11 +311,11 @@ Finally, one active field of research is the use of language technology for resc
 
   \subsection{Herausforderungen, denen die Sprachtechnologie gegenübersteht --- Challenges Facing Language Technology }
 
-  \ParallelLText{
+  \ParallelLText{\selectlanguage{german}
 In den vergangenen Jahren hat die Sprachtechnologie zwar erhebliche Fortschritte gemacht, doch das Tempo des technologischen Fortschritts und von Produktinnovationen ist derzeit zu langsam. Weit verbreitete Technologien wie die Rechtschreib- und Grammatikkorrektur in Textverarbeitungsprogrammen sind üblicherweise einsprachig gehalten und stehen nur für eine Handvoll Sprachen zur Verfügung. Mit Online-Übersetzungsdiensten lässt sich der Inhalt eines Dokuments zwar schnell und grob übersetzen, doch wenn es um genaue und vollständige Übersetzungen geht, versagt diese Technologie. Aufgrund der Komplexität der menschlichen Sprache ist deren Modellierung in Software und der Testeinsatz in der Praxis ein langwieriges, teures Geschäft, das langfristige Finanzmittel erfordert. Europa muss seine Pionierrolle behaupten, wenn es darum geht, den technologischen Herausforderungen einer mehrsprachigen Gemeinschaft zu begegnen, indem neue Methoden für eine effizientere Entwicklung in allen Gebieten Europas gefunden werden. Dazu gehören nicht nur Fortschritte im Computersektor, sondern auch Techniken wie Crowdsourcing.
   }
   
-  \ParallelRText{
+  \ParallelRText{\selectlanguage{english}
 Although language technology has made considerable progress in the last few years, the current pace of technological progress and product innovation is too slow. Widely-used technologies such as the spelling and grammar correctors in word processors are typically monolingual, and are only available for a handful of languages. Online machine translation services, although useful for quickly generating a reasonable approximation of a document’s contents, are fraught with difficulties when highly accurate and complete translations are required. Due to the complexity of human language, modelling our tongues in software and testing them in the real world is a long, costly business that requires sustained funding commitments. Europe must therefore maintain its pioneering role in facing the technological challenges of a multiple-language community by inventing new methods to accelerate development right across the map. These could include both computational advances and techniques such as crowdsourcing.
   }
 
@@ -321,7 +324,7 @@ Although language technology has made considerable progress in the last few year
 
   \subsection{Spracherwerb beim Mensch und bei der Maschine --- Language Acquisition in Humans and Machines}
 
-  \ParallelLText{
+  \ParallelLText{\selectlanguage{german}
 Zur Veranschaulichung wie Computer Sprache verarbeiten und warum es so schwierig ist, diese so zu programmieren, dass sie Sprache vernünftig verwenden, wollen wir uns kurz ansehen, wie Menschen sich Erst- und Zweitsprachen aneignen und dann schauen, wie Sprachtechnologiesysteme funktionieren. 
 
 Der Mensch eignet sich Sprachfertigkeiten auf zweierlei Weise an. Babies eignen sich Sprache an, indem sie den Interaktionen zwischen ihren Eltern, Geschwistern und anderen Familienmitgliedern zuhören. Ab einem Alter von etwa zwei Jahren bringen Kinder ihre ersten Worte und kurzen Sätze hervor. Das ist nur möglich, weil der Mensch eine genetische Veranlagung besitzt, das Gehörte zu imitieren und dann zu rationalisieren. 
@@ -339,7 +342,7 @@ Da die Stärken und Schwächen statistischer und regelbasierter Systeme typische
 In diesem Kapitel haben wir gesehen, dass viele der in der heutigen Informationsgesellschaft auf breiter Ebene eingesetzten Anwendungen stark von Sprachtechnologie abhängig sind. Besonders im europäischen Wirtschafts- und Informationsraum trifft dies wegen seiner mehrsprachigen Gestalt zu. Auch wenn die Sprachtechnologie in den vergangenen Jahren erhebliche Fortschritte gemacht hat, besteht nach wie vor enormer Verbesserungsbedarf, was die Qualität der Sprachtechnologiesysteme anbelangt. Im Folgenden werden wir die Rolle des Deutschen in der europäischen Informationsgesellschaft beschreiben und den aktuellen Stand der Sprachtechnologie für die deutsche Sprache einer Bewertung unterziehen.
   }
 
-  \ParallelRText{
+  \ParallelRText{\selectlanguage{english}
 To illustrate how computers handle language and why it is difficult to program them to process different tongues, let’s look briefly at the way humans acquire first and second languages, and then see how language technology systems work. 
 
 Humans acquire language skills in two different ways. Babies acquire a language by listening to the real interactions between their parents, siblings and other family members. From the age of about two, children produce their first words and short phrases. This is only possible because humans have a genetic disposition to imitate and then rationalise what they hear. 
@@ -368,7 +371,7 @@ As we have seen in this chapter, many applications widely used in today’s info
   
   \subsection{Allgemeine Fakten --- General Facts}
 
-  \ParallelLText{
+  \ParallelLText{\selectlanguage{german}
 Mit rund 100 Millionen Muttersprachlern ist Deutsch die am weitesten verbreitete Muttersprache in der Europäischen Union. Es ist die allgemein in Deutschland, Österreich und Liechtenstein gesprochene Sprache und eine der Amtssprachen der Schweiz, Luxemburgs und Belgiens, wo sie von Teilen der Bevölkerung gesprochen wird. Weltweit sprechen rund 30 Millionen Nichtmuttersprachler deutsch\cite{Eur1}. Deutsch ist auch die Fremdsprache, die in der EU nach Englisch am zweithäufigsten erlernt wird\cite{Goe1}. 
 
 In Deutschland ist die deutsche Sprache die allgemein gesprochene und geschriebene Sprache sowie die Muttersprache des größten Teils der Bevölkerung. Minderheitensprachen im Sinne der Europäischen Charta der Regional- oder Minderheitensprachen sind: Dänisch und Nordfriesisch in Schleswig-Holstein, Obersorbisch in Sachsen, Niedersorbisch in Brandenburg, Saterfriesisch in Niedersachsen sowie die Sprache Romani der deutschen Sinti und Roma im gesamten Land. Jede Gruppe repräsentiert einige Zehn- bis Hunderttausende, die die jeweilige Sprache sprechen\cite{Efni1}. Dazu gibt es in Deutschland noch einige Immigrantensprachen wie Türkisch, das von rund 3,3 Millionen Menschen gesprochen wird.
@@ -382,7 +385,7 @@ In Deutschland gibt es eine Vielzahl an Dialekten wie Bayrisch und Schwäbisch. 
 Österreichisches Deutsch ist eine Variante von Deutsch (\textit{Oberdeutsch}), dessen Wortschatz sich von der in Deutschland gebräuchlichen Amtssprache unterscheidet, z.B.:
   }
 
-  \ParallelRText{
+  \ParallelRText{\selectlanguage{english}
 With about 100 million native speakers, German is the most widely spoken native language in the European Union. It is the commonly used language in Germany, Austria and Liechtenstein, and it is one of the official languages of Switzerland, Luxembourg and Belgium where it is used by parts of the population. Around the world, German is spoken by around 30 million non-native speakers\cite{Eur1}, and is also the second most studied foreign language in the EU after English\cite{Goe1}. 
 
 In Germany, the German language is the common spoken and written language as well as the native language of the vast majority of the population. Minority languages in the sense of the European Charter on Regional and Minority Languages include Danish and North Frisian in Schleswig-Holstein; Upper Sorbian in Saxony; Lower Sorbian in Brandenburg; Saterland Frisian in Lower Saxony; and the Romani language of the German Roms and Sinti throughout the country. Each group represents some tens to hundreds of thousands of speakers\cite{Efni1}. In addition, there are immigrant languages, such as Turkish, which has roughly 3.3 million speakers in Germany.
@@ -409,13 +412,13 @@ Austrian German (AT) is a variant of German (\textit{Oberdeutsch}) whose lexicon
     \hline
   \end{tabular*}
 
-  \ParallelLText{
+  \ParallelLText{\selectlanguage{german}
 Lenisierung (stimmhafte Aussprache von stimmlosen Konsonanten) ist ebenfalls im gesprochenen österreichischen Deutsch weit verbreitet. So wird phonetisch nicht zwischen \textit{backen} und \textit{packen} oder zwischen \textit{Teich} und \textit{Deich} unterschieden. Beim österreichischen Deutsch wird im Gegensatz zum Hochdeutschen in Deutschland nur selten die 1. Vergangenheitsform (das Präteritum) verwendet. Ereignisse in der Vergangenheit werden hier vorzugsweise in der 2. Vergangenheitsform (dem Perfekt) geschildert. 
 
 Beim Schweizer Deutsch wird auf eine Reihe französischer Wörter wie \textit{Velo} anstatt \textit{Fahrrad} zurückgegriffen. Es gibt auch einige morphologische und orthografische Varianten\cite{Cano1}. Beispielsweise wird \textit{ss} anstelle von \textit{ß} verwendet, und einige Wörter werden anders geschrieben, beispielsweise \textit{Müesli} statt \textit{Müsli}. Mit seinen vier Amtssprachen ist Mehrsprachigkeit in der Schweiz ein wichtiges Thema.
   }
 
-  \ParallelRText{
+  \ParallelRText{\selectlanguage{english}
 Lenisation (or consonant weakening) is also widespread in spoken Austrian German. For instance, there is no pronounced phonemic distinction between \textit{backen} {[}to bake{]} and \textit{packen} {[}to pack{]} or \textit{Teich} {[}lake{]} and \textit{Deich} {[}dyke{]}. Unlike in Standard German in Germany, the past tense is rarely used in Austrian German; speakers prefer the perfect tense when referring to past events.
 
 Swiss German (CH) has borrowed a number of French words such as \textit{Velo} (CH) instead of \textit{Fahrrad} (DE) for bicycle. There are also some morphological and orthographical variations\cite{Cano1}. For example, \textit{ss} is used instead of \textit{ß} and some words are spelled differently, for example, \textit{Müesli} (CH) instead of \textit{Müsli} (DE) for cereal. Multilingualism is a matter of course in Switzerland with its four official languages.
@@ -426,7 +429,7 @@ Swiss German (CH) has borrowed a number of French words such as \textit{Velo} (C
 
   \subsection{Besonderheiten der deutschen Sprache --- Particularities of the German Language }
 
-  \ParallelLText{
+  \ParallelLText{\selectlanguage{german}
 Deutsch weist eine Reihe besonderer Merkmale auf, die zum Sprachreichtum beitragen, für die automatische Verarbeitung der Sprache jedoch auch eine Herausforderung darstellen können. 
 
 Ein und derselbe Gedanke kann auf unterschiedlichste Weise ausgedrückt werden. Zum Beispiel gibt es in deutschen Sätzen keine starre Wortstellung. Der folgende Satz auf Englisch:\\
@@ -459,7 +462,7 @@ Die deutsche Sprache besitzt noch weitere spezifische Merkmale, die eine Verarbe
 Die Bedeutung des Verbs, das verschiedene Präfixe „annehmen“ kann, wie \textit{vor}, \textit{ein} oder \textit{aus}, ist für jemanden, der die deutsche Sprache erlernt, oftmals ziemlich verwirrend. So ändert zum Beispiel das Verb \textit{stellen} seine Bedeutung in \textit{vorstellen}, \textit{einstellen} bzw. \textit{ausstellen}.
   }
   
-  \ParallelRText{
+  \ParallelRText{\selectlanguage{english}
 German exhibits a number of specific characteristics that contribute to the richness of the language but can also be a challenge for the computational processing of natural language. For instance, speakers can express the same idea in a wide variety of ways.
 First, word order is relatively free in German sentences. The following sentence in English:\\
     \textit{The woman gave the man an apple.}\\
@@ -498,13 +501,13 @@ There are other specific characteristics of the German language that make it har
 
   \subsection{Jüngste Entwicklungen --- Recent Developments}
 
-  \ParallelLText{
+  \ParallelLText{\selectlanguage{german}
 In den 1950er-Jahren hielten immer mehr amerikanische Fernsehserien und Filme auf dem deutschen Markt Einzug. Ausländische Filme und Serien werden zwar meist ins Deutsche synchronisiert (anders als in Ländern wie Schweden und Polen), doch die starke Präsenz des „American Way of Life“ in den Medien hatte Einfluss auf die deutsche Kultur und Sprache. Aufgrund der anhaltenden Beliebtheit englischer und amerikanischer Musik seit den 1960er-Jahren ist für Generationen heranwachsender Deutscher die englische Sprache selbstverständlicher Teil ihres Alltags. So erlangte Englisch schnell den Status einer coolen und hippen Sprache, den sie bis heute behalten hat. 
 
 Die anhaltende Popularität der englischen Sprache wird durch die riesige Anzahl an Lehnwörtern aus der englischen Sprache (Anglizismen) deutlich. Eine systematische Untersuchung von Neologismen in deutschen Zeitungen seit 2000 hat ergeben, dass rund ein Drittel der Neologismen ganz oder teilweise Anglizismen sind\cite{Lemni1}. Meist ersetzen die Wörter eine fehlende Vokabel, ergänzen also deutsche Wörter, statt an ihre Stelle zu treten. Doch in einigen Bereichen haben Anglizismen damit begonnen, bestehende deutsche Wörter zu ersetzen. Ein Beispiel hierfür ist der Gebrauch englischer Stellenbezeichnungen in Stellenausschreibungen, insbesondere für Führungspositionen (z.B. „Human Resource Manager“ statt \textit{Personalleiter}). Auch bei Produktwerbung kommen häufig Anglizismen vor. 2003 führte Endmark eine Studie durch, in der der Gebrauch englischer Werbeslogans durch deutsche Unternehmen untersucht wurde. Die Studie zeigte, dass fast alle der 12 untersuchten Slogans von über der Hälfte der Befragten falsch verstanden wurden. Dies hatte zur Folge, dass die Unternehmen daraufhin stattdessen die deutschen Äquivalente verwendeten. Dieses Beispiel zeigt, wie wichtig es ist sich bewusst zu machen, welche Auswirkungen es haben kann, wenn große Teile der Bevölkerung von einer uneingeschränkten Teilnahme an der Informationsgesellschaft ausgeschlossen werden, insbesondere solche, die der englischen Sprache nicht kundig sind. Wenn nötig sollten Übersetzungen oder Erklärungen verfügbar gemacht werden.
   }
   
-  \ParallelRText{
+  \ParallelRText{\selectlanguage{english}
 Starting in the 1950s, American television series and movies began to dominate the German market. Although foreign films and series are usually dubbed into German (unlike countries such as Sweden and Poland), the strong presence of the American way of life in the media had an influence on popular German culture and language. Due to the continuing triumph of English and American music since the 1960s, generations of Germans have been widely exposed to English during their adolescence. English soon acquired the status of a ‘fashionable’ language, and this continues today.
 
 The continued popularity of English is reflected in the sheer number of loan words from the English language (Anglicisms). A systematic investigation of neologisms in German newspapers since 2000 revealed that about one third of the neologisms are complete or partial Anglicisms\cite{Lemni1}. In most cases the words fill a vocabulary gap—they complement native German words rather than compete with them. However, Anglicisms have started to replace existing German vocabulary in some areas. The use of English titles in job advertisements is one example, especially for executive positions (e.g., “Human Resource Manager” instead of \textit{Personalleiter}). Product advertisements also have a strong tendency to overuse Anglicisms. In 2003, Endmark conducted a study of the use of English advertising slogans by German companies. The study revealed that almost all of the 12 slogans investigated were misunderstood by more than half of the respondents; as a result the companies replaced them with German equivalents. This example demonstrates how important it is to raise awareness about the risk of excluding large parts of the population from participating fully in the information society, especially those who are less familiar with English. Translations or explanations should be made available where necessary.
@@ -515,7 +518,7 @@ The continued popularity of English is reflected in the sheer number of loan wor
 
   \subsection{Sprachkultivierung in Deutschland --- Official Language Protection in Germany}
 
-  \ParallelLText{
+  \ParallelLText{\selectlanguage{german}
 In Deutschland gibt es keine institutionellen Stellen, die für die Entwicklung oder Umsetzung einer Richtlinie zum Schutz der deutschen Sprache zuständig sind. Eine Reihe nicht-staatlicher, öffentlich finanzierter Organisationen spielt bei der Förderung der deutschen Sprache jedoch eine wichtige Rolle. Das Goethe-Institut arbeitet mit dem Auswärtigen Amt zusammen und bietet überall auf der Welt Deutschkurse an, um die internationale Stellung der deutschen Sprache zu stärken. Andere Organisationen, die das Bewusstsein über die deutsche Sprache steigern und deutsche Sprachkultur in Deutschland fördern wollen, sind u.a. die Deutsche Akademie für Sprache und Dichtung (DASD) sowie die Gesellschaft für Deutsche Sprache (GfDS). Letztere wurde vom Deutschen Bundestag damit beauftragt, die Sprache von Gesetzestexten zu kontrollieren. Das Institut für Deutsche Sprache (IDS) ist das zentrale Forschungszentrum für die deutsche Sprache. 
 
 Aber auch einzelne Autoren tragen zum linguistischen Bewusstsein bei, indem sie unerwünschte Entwicklungen diskutieren. Beispielhaft dafür sind der weit verbreitete fälschliche Gebrauch des Apostrophs (\textit{Maria’s Haus} anstatt der richtigen Form \textit{Marias Haus}), Geschäftsjargon und Neologismen. Der bekannteste Autor dieser Art ist Bastian Sick\cite{Sick1} mit seiner Zeitschriftenkolumne \textit{Zwiebelfisch}\cite{Sick2}. Private Initiativen beschäftigen sich meist mit Anglizismen: Die Initiative des Vereins Deutsche Sprache (VDS) vergibt jedes Jahr seinen \textit{Kulturpreis Deutsche Sprache} für kreative Beiträge zur Entwicklung der deutschen Sprache. 2011 erhielt der deutsche Sänger Udo Lindenberg die Auszeichnung. Die Kampagne \textit{Aktion lebendiges Deutsch} organisiert regelmäßig Wettbewerbe zur Eindeutschung unerwünschter Anglizismen. 
@@ -529,7 +532,7 @@ Es gibt so gut wie keine Maßnahmen zum Schutz des offiziellen Status der deutsc
 Die Beispiele oben veranschaulichen die ungünstige Situation der deutschen Sprache im Vergleich beispielsweise zu Französisch, das von der globalen Gemeinschaft französisch-sprachiger Menschen (\textit{Francophonie}) enorme finanzielle Unterstützung erhält. Der vergleichbar geringe Grad an kultureller Identität, der mit der zeitgenössischen deutschen Sprache verbunden ist, fördert sicherlich eine tolerante und offene Haltung gegenüber kultureller Vielfalt, kann aber gleichzeitig die Wahrung eines bestimmten Standards deutscher Ausdrucksformen bedrohen.
  }
     
-  \ParallelRText{
+  \ParallelRText{\selectlanguage{english}
 Germany has no institutional body responsible for developing or implementing a policy to protect the German language. However, there are a number of non-governmental, publicly-funded organisations that play an active role in the promotion of the German language. The Goethe Institute works in partnership with the Federal Foreign Office, offering German language courses all over the world to strengthen the international standing of the German language. Other organisations that raise awareness about the German language and promote German language culture in Germany include the German Academy for Language and Literature (DASD) and the Society for the German Language (GfDS), which has been charged by the German Bundestag (Federal Parliament) with controlling the language of legislative texts. The Institute for the German Language (IDS) is the central research centre for German. 
 
 In addition, individual authors contribute to linguistic awareness by discussing undesirable developments such as the widespread use of incorrect apostrophes (\textit{Maria’s Haus} instead of the correct \textit{Marias Haus}), business jargon and neologisms. The best-known author of this type is Bastian Sick\cite{Sick1} and his magazine column \textit{Zwiebelfisch}\cite{Sick2}. Private initiatives usually target Anglicisms: the Verein Deutsche Sprache (VDS) initiative annually awards its \textit{Kulturpreis Deutsche Sprache} [cultural prize for the German language] for creative contributions to the development of the German language. (In 2011, Udo Lindenberg, a German singer, won the award.) The \textit{Aktion lebendiges Deutsch}[action for lively German] campaign regularly organises contests to Germanise egregious Anglicisms.
@@ -548,7 +551,7 @@ The above examples illustrate the disadvantageous situation of the German langua
 
   \subsection{Sprache im Bildungswesen --- Language in Education}
 
-  \ParallelLText{
+  \ParallelLText{\selectlanguage{german}
 Die erste vom OECD \textit{Programme for International Student Assessment} (PISA) 2000 veröffentlichte Studie ergab, dass die Lesekompetenz der deutschen Schüler unter dem Durchschnitt lag. Die Ergebnisse von Schülern aus Einwandererfamilien waren dabei besonders schlecht. Die darauf folgende Debatte stärkte das Bewusstsein der Öffentlichkeit über die Bedeutung des Erlernens von Sprache, insbesondere für Einwanderer und ihre soziale Integration. 
 
 Mithilfe der Empfehlungen der OECD verabschiedete Deutschland in den vergangenen zehn Jahren einige Gesetze, die eine frühzeitige Sprachförderung vorsehen. Ein Beispiel dafür ist das \textit{Gesetz zur vorschulischen Sprachförderung}, das im April 2008 in Berlin in Kraft trat, einer Stadt mit einem sehr hohen Anteil an Kindern, deren Muttersprache nicht Deutsch ist (über 90\% der Kinder in einigen Teilen des Stadtteils Neukölln). Das Gesetz sieht einen Deutschtest vor, den Kinder, die nicht den Kindergarten besucht haben, vor der Einschulung ablegen müssen. Außerdem soll allen mit unzulänglichen Deutschkenntnissen besondere Sprachförderung zukommen.
@@ -562,7 +565,7 @@ Sprachkenntnisse sind eine wichtige Qualifikation für die Bildung und für die 
 Ein vermehrtes Angebot an Deutschunterricht in Schulen ist ein möglicher Schritt, um Schülern die Sprachfertigkeiten zu vermitteln, die sie für eine aktive Teilnahme am gesellschaftlichen Leben benötigen. Sprachtechnologie kann einen wichtigen Beitrag in dieser Hinsicht leisten. Durch das Angebot so genannter computergestützter Sprachlernsysteme (CALL) können Schüler Sprache auf spielerische Weise erfahren. Sie können damit beispielsweise Vokabeln in elektronischen Texten mit leicht verständlichen Definitionen oder mit Audio- oder Videodateien verknüpfen, so dass Zusatzinformationen wie die richtige Aussprache zur Verfügung stehen.
   }
 
-  \ParallelRText{
+  \ParallelRText{\selectlanguage{english}
 The first study published by the OECD Programme for International Student Assessment (PISA) in 2000 revealed that German students had below average reading literacy. Students from immigrant families had particularly poor results. The ensuing debate increased public awareness about the importance of language learning, especially for socially integrating immigrants. 
 
 Using the recommendations of the OECD, Germany has adopted several laws on early language training in the last decade. One example is the \textit{Gesetz zur vorschulischen Sprachförderung} [Law for the Promotion of Pre-School Language Learning], which came into effect in April 2008 in Berlin, a city with a very high number of children whose native language is not German. (This means more than 90\% of the children in some parts of the Berlin Neukölln district). The law introduces a compulsory German test for children who did not attend kindergarten before enrolling in school, and provides enhanced language training for those that have insufficient German language skills.
@@ -581,7 +584,7 @@ Increasing the amount of German language instruction in schools is one possible 
 
   \subsection{Internationale Aspekte --- International Aspects}
 
-  \ParallelLText{
+  \ParallelLText{\selectlanguage{german}
 Deutschland wird oft als das Land der Dichter und Denker bezeichnet. Grund dafür sind die vielen literarischen, philosophischen und wissenschaftlichen Beiträge. Die Werke von Autoren wie Goethe, Kafka und Hesse haben weltweit Ruhm erlangt. Die philosophischen Gedanken von Kant, Hegel, Marx und Nietzsche sowie Freuds Theorie im Bereich der Psychoanalyse haben die moderne Kultur nachhaltig beeinflusst. Wissenschaftler aus deutschsprachigen Ländern haben zahlreiche Nobelpreise in Literatur, Wirtschaft, Physik, Chemie und Medizin gewonnen.
 
 Anfang des 20. Jahrhunderts lagen deutschsprachige Länder in wissenschaftlichen Disziplinen an vorderster Stelle. Deutsch war dabei die wichtigste wissenschaftliche Sprache: 30\% der wissenschaftlichen Publikationen waren auf Deutsch verfasst. Seitdem hat die Bedeutung von Deutsch als wissenschaftliche Sprache dramatisch abgenommen, und heute sind weniger als 5\% der wissenschaftlichen Publikationen auf Deutsch verfasst – die meisten davon in den Disziplinen Recht, Philosophie und Theologie\cite{joy1}. Das lässt sich nur teilweise auf einen Rückgang wissenschaftlicher Beiträge aus deutschsprachigen Ländern zurückführen. Selbst in den Universitäten dieser Länder hat Deutsch nicht mehr so einen hohen Stellenwert, so dass in vielen Disziplinen Publikationen vorrangig auf Englisch verfasst werden.
@@ -591,7 +594,7 @@ Das gleiche gilt für die Geschäftswelt. In vielen großen Unternehmen, die gre
 In der Europäischen Union ist Deutsch eine der drei offiziellen Arbeitssprachen der Europäischen Kommission (neben Englisch und Französisch). In der Praxis wird Deutsch im öffentlichen Geschäft der EU jedoch kaum gebraucht. Nur 3\% der von der Europäischen Kommission an die Mitgliedstaaten verschickten Dokumente sind auf Deutsch verfasst\cite{joy1}. Unlängst wurden politische Maßnahmen ergriffen, um diesem Problem beizukommen. 2006 schrieb Norbert Lammert, der Präsident des Deutschen Bundestags, einen Brief an die Europäische Kommission, in dem er ankündigte, dass der Deutsche Bundestag künftig Verträge und ähnliche Dokumente ablehnen werde, wenn keine deutsche Übersetzung zur Verfügung stehe. Sprachtechnologie kann dieser Herausforderung begegnen, indem sie Dienste wie maschinelle Übersetzung oder sprachübergreifende Informationssuche anbietet. Mithilfe derartiger Technologien lassen sich persönliche und wirtschaftliche Nachteile für nicht englischsprachige Menschen in Europa mindern.
   }
   
-  \ParallelRText{
+  \ParallelRText{\selectlanguage{english}
 Germany is often referred to as the land of \textit{Dichter und Denker} [poets and thinkers] due to its immense contributions to literature, philosophy and science. The works of authors such as Goethe, Kafka and Hesse have gained international fame; the philosophical ideas of Kant, Hegel, Marx and Nietzsche as well as Freud's theory of psychoanalysis have made a lasting impact on modern culture. Scientists from German-speaking countries have won numerous Nobel Prizes in literature, economy, physics, chemistry and medicine.
 
 At the beginning of the 20th century, German-speaking countries were at the forefront of scientific disciplines, and German was the major language of science — 30\% of scientific publications were written in German. Since then, the importance of German as a scientific language has dramatically decreased and less than 5\% of scientific publications are currently written in German—most of them in disciplines such as law, philosophy and theology\cite{joy1}. This situation can only partly be attributed to a decline in scientific contributions from German-speaking countries. Even in the universities of these countries, German is strongly challenged or has even been overtaken by English as the language of publication in many disciplines.
@@ -606,7 +609,7 @@ In the European Union, German is one of the three official working languages of 
 
   \subsection{Deutsch im Internet --- German on the Internet}
 
-  \ParallelLText{
+  \ParallelLText{\selectlanguage{german}
 2010 waren fast 70\% der deutschen Bevölkerung und 74,8\% der österreichischen Bevölkerung Internetnutzer, und die meisten gaben an, jeden Tag online zu sein\cite{Ard1}. Unter den jungen Menschen ist der Anteil der Internetnutzer in beiden Ländern sogar noch höher. Dass Deutsch im Web sehr stark vertreten ist, spiegelt sich auch in der Tatsache wider, dass das deutsche Wikipedia nach Englisch das zweitgrößte Wikipedia ist (automatisch übersetzte Versionen wie das thailändische Wikipedia werden dabei nicht berücksichtigt).
 
 Mit rund 14 Millionen Internetdomänen im November 2010 ist die Landesdomäne .de für Deutschland das größte Länderkürzel der Welt und das zweitgrößte Kürzel nach der Domäne .com\cite{denic1}. Diese dominante Internetpräsenz zeigt, dass es ungeheure Mengen an Daten in deutscher Sprache im Web gibt. Außerdem stehen einige zweisprachige Ressourcen wie das Onlinewörterbuch LEO kostenlos zur Verfügung\cite{leo1}.
@@ -622,7 +625,7 @@ Internetnutzer und Anbieter von Webinhalt können Sprachtechnologie auch auf wen
 Das nächste Kapitel liefert eine Einführung in die Sprachtechnologie und ihre Kernanwendungsbereiche sowie eine Bewertung der derzeitigen Sprachtechnologieunterstützung für die deutsche Sprache.
   }
 
-  \ParallelRText{
+  \ParallelRText{\selectlanguage{english}
 In 2010, almost 70\% of the German population and 74.8\% of the Austrian population were Internet users and most said they were online every day\cite{Ard1}. The percentage of young people using the Internet is even higher in both countries. The strong presence of German on the Web is also mirrored by the fact that the German Wikipedia is the second largest Wikipedia after English (not including automatically translated versions like the Thai Wikipedia).
 
 With about 14 million Internet domains in November 2010, the .de top-level country domain for Germany is the world’s largest country extension, and it is the second largest extension after the .com domain\cite{denic1}. This dominant Internet presence suggests that there is a vast amount of German language data on the Web. In addition, some bilingual resources such as the LEO online dictionary are available for free\cite{leo1}.
@@ -646,19 +649,21 @@ The next chapter gives an introduction to language technology and its core appli
   % --------------------------------------------------------------------------
   \section[Sprachtechnologieunterstützung für das Deutsche --- Language Technology Support for German]{Sprachtechnologieunterstützung für das Deutsche\\ ---\\ Language Technology Support for German}
 
-  \ParallelLText{
+  \ParallelLText{\selectlanguage{german}
 Sprachtechnologien sind Softwaresysteme, die für die Verarbeitung menschlicher Sprache konzipiert sind. Deshalb spricht man häufig von „human language technology. Menschliche Sprache äußert sich in gesprochener und geschriebener Form. Gesprochene Sprache ist die älteste und im Hinblick auf die Evolution des Menschen die natürlichste Form der sprachlichen Kommunikation. Komplexe Informationen und der größte Teil des menschlichen Wissens werden jedoch in schriftlicher Form erfasst und vermittelt. Technologien für gesprochene Sprache und Texttechnologien verarbeiten oder erzeugen diese unterschiedlichen Formen der Sprache, nutzen aber intern ähnliche Wörterbücher sowie Grammatik- und Semantikregeln. Sprachtechnologie verknüpft also Sprache mit verschiedenen Wissensformen, unabhängig von den Medien (gesprochene Sprache oder Text), in denen sie ausgedrückt wird. Die Abbildung rechts veranschaulicht die Sprachtechnologie und angrenzende Gebiete.}
-\ParallelRText{
+\ParallelRText{\selectlanguage{english}
     Language technologies are software systems designed to handle human language and are therefore often called “human language technology”. Human language comes in spoken and written forms. While speech is the oldest and in terms of human evolution the most natural form of language communication, complex information and most human knowledge is stored and transmitted in written texts. Speech and text technologies process or produce these different forms of language, though they both use dictionaries and rules of grammar and semantics. This means that language technology (LT) links language to various forms of knowledge, independently of the media (speech or text) it is expressed in. The figure on the right illustrates the LT landscape. }
 \ParallelPar
 
 \begin{figure}[h!]
+  \colorrule{grey1}{\textwidth}{1pt}
 	\center
-\includegraphics[width=0.4\textwidth]{../_media/language_technologies}\\
-\textsf{LT Lorel -- LT Landscape}
+  \includegraphics[width=\textwidth]{../_media/language_technologies}\\
+  \textsf{LT Lorel -- LT Landscape}
+  \colorrule{grey1}{\textwidth}{1pt}
 \end{figure}
 
-\ParallelLText{
+\ParallelLText{\selectlanguage{german}
 Wenn wir kommunizieren, kombinieren wir Sprache mit anderen Kommunikationskanälen und Informationsmedien – Sprechen wird beispielsweise von Gesten und Gesichtsausdrücken begleitet. Text in digitaler Form ist mit Bildern und Tönen verlinkt. Filme können Sprache in gesprochener und geschriebener Form enthalten. Mit anderen Worten, Sprach- und Texttechnologien überlappen und interagieren mit anderen Technologien, die die Verarbeitung multimodaler Kommunikation und von multimedialer Dokumente erleichtern. 
 
 Im Folgenden werden wir uns mit den Hauptanwendungsbereichen der Sprachtechnologie beschäftigen, d.h. Überprüfung von z.B. Grammatik und Stil, Websuche, gesprochener Spracheingabe und maschineller Übersetzung. Dies umfasst Anwendungen und Basistechnologien wie
@@ -677,7 +682,7 @@ Bevor wir die oben genannten Anwendungsbereiche genauer behandeln, werden wir di
 
   % --------------------------------------------------------------------------
    
-\ParallelRText{
+\ParallelRText{\selectlanguage{english}
 When we communicate, we combine language with other modes of communication and information media – for example speaking can involve gestures and facial expressions. Digital texts link to pictures and sounds. Movies may contain language in spoken and written form. In other words, speech and text technologies overlap and interact with other technologies that facilitate processing of multimodal communication and multimedia documents. In the following, we will discuss the main application areas of language technology, i.e., language checking, web search, speech technology, and machine translation. This includes applications and basic technologies such as 
     \begin{itemize}
       \item spelling correction
@@ -697,7 +702,7 @@ When we communicate, we combine language with other modes of communication and i
 
   \subsection{Anwendungsarchitekturen --- Application Architectures}
   
-  \ParallelLText{
+  \ParallelLText{\selectlanguage{german}
 Softwareanwendungen für die Sprachverarbeitung bestehen typischerweise aus mehreren Komponenten, die verschiedene Aspekte der Sprache widerspiegeln. Die Abbildung rechts zeigt eine stark vereinfachte Architektur, die man in einem typischen Textverarbeitungssystem findet. Die ersten drei Module verarbeiten die Struktur und Bedeutung der Texteingabe:
     \begin{enumerate}
       \item Vorverarbeitung: bereinigt die Daten, analysiert oder entfernt Formatierung, ermittelt die Eingabesprache usw.
@@ -709,7 +714,7 @@ Nach der Analyse des Texts können aufgabenspezifische Module weitere Operatione
 Nach der Einführung der Kernanwendungsbereiche liefern wir einen kurzen Überblick über den heutigen Stand der Forschung und Ausbildung im Bereich Sprachtechnologie. Abschließend geben wir noch einen Überblick über frühere und heutige Forschungsprogramme. Im Anschluss daran präsentieren wir eine Experteneinschätzung zu zentralen Tools und Ressourcen der Sprachtechnologie im Hinblick auf verschiedene Dimensionen wie Verfügbarkeit, Reifegrad und Qualität. Die allgemeine Situation der Sprachtechnologie für die deutsche Sprache wird in einer Tabelle zusammengefasst. Zudem wird sie mit anderen Sprachen verglichen, die Gegenstand der vorliegenden Reihe sind.
   }
 
-  \ParallelRText{
+  \ParallelRText{\selectlanguage{english}
     Software applications for language processing typically consist of several components that mirror different aspects of language. The figure on the right shows a highly simplified architecture that can be found in a typical text processing system. The first three modules handle the structure and meaning of the text input:
     \begin{enumerate}
       \item Pre-processing: cleans the data, analyses or removes formatting, detects the input language, replaces ä 
@@ -727,16 +732,18 @@ Nach der Einführung der Kernanwendungsbereiche liefern wir einen kurzen Überbl
   \ParallelPar
   \clearpage
 \begin{figure}[h!]
-\center
-\includegraphics[scale=0.6]{../_media/text_processing_app_architecture}\\
-\textsf{Lorem Ipsum Deus Ex Machina - A Typical Text Processing Architecture}
- \end{figure}
+  \colorrule{grey1}{\textwidth}{1pt}
+  \center
+  \includegraphics[width=\textwidth]{../_media/text_processing_app_architecture}\\
+  \textsf{Lorem Ipsum Deus Ex Machina - A Typical Text Processing Architecture}
+  \colorrule{grey1}{\textwidth}{1pt}
+\end{figure}
   \subsection{Zentrale Anwendungsbereiche --- Core Application Areas} 
-  \ParallelLText{
+  \ParallelLText{\selectlanguage{german}
 In diesem Abschnitt konzentrieren wir uns auf die wichtigsten sprachtechnologischen Tools und Ressourcen und geben einen Überblick über Aktivitäten zum Bereich Sprachtechnologie in Deutschland, Österreich und in der Schweiz. Im Text unterstrichene Tools und Ressourcen sind auch in der Tabelle am Ende dieses Kapitels zu finden.
   }
   
-  \ParallelRText{
+  \ParallelRText{\selectlanguage{english}
     In this section, we focus on the most important LT tools and resources, and give an overview of LT activities in Germany, Austria and Switzerland. Tools and resources that are underlined in the text can also be found in the table at the end of this chapter.
   } 
   
@@ -746,13 +753,15 @@ In diesem Abschnitt konzentrieren wir uns auf die wichtigsten sprachtechnologisc
   \subsubsection{Sprachüberprüfung --- Language Checking}
 
 \begin{figure}[h!]
+  \colorrule{grey1}{\textwidth}{1pt}
 	\center
-		\includegraphics[scale=0.7]{../_media/language_checking}\\
-			\textsf{LIngua France (dexter: lorem-ipsum, sinister: staresto - Language Checking (right: rule-based, left: statistical)}
+		\includegraphics[width=\textwidth]{../_media/language_checking}\\
+		\textsf{LIngua France (dexter: lorem-ipsum, sinister: staresto - Language Checking (right: rule-based, left: statistical)}
+  \colorrule{grey1}{\textwidth}{1pt}
 \end{figure}
 
 
-  \ParallelLText{
+  \ParallelLText{\selectlanguage{german}
 Jeder, der ein Textverarbeitungsprogramm wie Microsoft Word einsetzt, weiß, dass es eine Rechtschreibprüfung besitzt, die Rechtschreibfehler kenntlich macht und Korrekturen vorschlägt. Die ersten Rechtschreibkorrekturprogramme verglichen eine Liste extrahierter Wörter mit einem Wörterbuch mit richtig geschriebenen Wörtern. Heute sind diese Programme wesentlich ausgefeilter. Mithilfe von sprachabhängigen Algorithmen für die Textanalyse erkennen sie Fehler im Hinblick auf Morphologie (z.B., Pluralbildung) sowie syntaxbezogene Fehler, beispielsweise ein fehlendes Verb oder einen Konflikt zwischen Eigenschaften von Verb und Subjekt (z.B. \textit{Er *schreiben einen Brief}). Aber die meisten Rechtschreibprüfungen finden im folgenden Text keinen Fehler:\\
 \textit{I have a spelling checker,}\\
 \textit{It came with my PC.}\\
@@ -771,7 +780,7 @@ Viele deutsche Unternehmen und Sprachdienstleister bieten Produkte in diesem Ber
 
 Neben Rechtschreibprüfungen und Autorenunterstützung ist auch die Sprachüberprüfung im Bereich des computergestützten Sprachlernens sehr wichtig. Sprachprüfanwendungen korrigieren auch automatisch Anfragen bei Suchmaschinen, wie bei den Google-Vorschlägen \textit{Meinten Sie…}.  }
   
-  \ParallelRText{
+  \ParallelRText{\selectlanguage{english}
 Anyone who has used a word processor such as Microsoft Word knows that it has a spelling checker that highlights spelling mistakes and proposes corrections. The first spelling correction programs compared a list of extracted words against a dictionary of correctly spelled words. Today these programs are far more sophisticated. Using language-dependent algorithms for text analysis, they detect errors related to morphology (e.g., plural formation) as well as syntax–related errors, such as a missing verb or a conflict of verb-subject agreement (e.g., \textit{she *write a letter}). But most spell checkers will not find any errors in the following text:
     \textit{Eye have a spelling chequer,}\\
       \textit{It came with my Pea Sea.}\\
@@ -798,12 +807,14 @@ Besides spell checkers and authoring support, language checking is also importan
 \subsubsection{Websuche --- Web Search}
 
 \begin{figure}[h!]
-\center
-\includegraphics[scale=0.6]{../_media/web_search_architecture}\\
-\textsf{Deus Ex Machina - Web Search Architecture}
+  \colorrule{grey1}{\textwidth}{1pt}
+  \center
+  \includegraphics[width=\textwidth]{../_media/web_search_architecture}\\
+  \textsf{Deus Ex Machina - Web Search Architecture}
+  \colorrule{grey1}{\textwidth}{1pt}
  \end{figure}
 
-  \ParallelLText{
+  \ParallelLText{\selectlanguage{german}
 Die Suche im Web, in Intranets oder digitalen Bibliotheken ist wohl die am weitesten verbreitete, doch derzeit noch stark unterentwickelte Sprachtechnologieanwendung. Die 1998 online geschaltete Google-Suchmaschine wickelt heutzutage rund 80\% aller Suchanfragen ab\cite{spi1}. Seit 2004 ist das Verb \textit{googeln} sogar im Duden eingetragen. Die Darstellungsform der Google-Suchoberfläche und der Ergebnisseite hat sich seit der ersten Version nur unwesentlich verändert. In der heutigen Version bietet Google jedoch eine Rechtschreibkorrektur für falsch geschriebene Wörter. Außerdem umfasst es jetzt grundlegende Semantiksuchfunktionen, die die Suchgenauigkeit erhöhen können, indem sie die Bedeutung von Begriffen in einem Suchanfragekontext analysieren\cite{pc1}. Die Erfolgsgeschichte von Google zeigt, dass eine große Menge der verfügbaren Daten und effizienten Indizierungstechniken zufriedenstellende Ergebnisse für einen auf Statistiken basierenden Ansatz liefern können. 
 
 Für ausgefeiltere Informationsanfragen ist es wichtig, tiefgreifenderes linguistisches Wissen für eine Textinterpretation einzubeziehen. Experimente mit lexikalischen Ressourcen wie maschinenlesbare Thesauri oder ontologische Sprachressourcen (z.B., WordNet für Englisch oder GermaNet für Deutsch) haben Verbesserungen bei der Suche von Seiten anhand von Synonymen der ursprünglichen Suchbegriffe gezeigt, beispielsweise \textit{Atomkraft}, \textit{Kernenergie} und \textit{Nuklearenergie} oder sogar noch weniger eng miteinander in Beziehung stehenden Begriffe. 
@@ -821,7 +832,7 @@ Diese Unternehmen konzentrieren ihre Entwicklung auf die Bereitstellung von Add-
 MetaGer ist eine Metasuchmaschine, die von der Universität Hannover betrieben wird. Intrafind, ein in München ansässiges Unternehmen, und weitere Unternehmen haben sich auf Intranet-Suchanwendungen und Suchanwendungen für Produkte wie SAP spezialisiert, bei denen eine Anpassung an bestimmte Kundendaten erforderlich ist. In der Schweiz liefert Eurospider eine Informationssuche für Internet-Portale. In Österreich gibt es Websuchmaschinen nur für österreichische Websites wie AT:SEARCH, AUSTRIA-SEEK oder AUSTROLINKS, ihre Abdeckung und Reichweite sind jedoch ziemlich begrenzt. Neben diesen Suchmaschinen haben österreichische Unternehmen außerdem Suchmaschinen für ganz besondere Zwecke entwickelt, beispielsweise 123people, eine Anwendung zur Personensuche in Echtzeit, die die regionale und internationale Suche z.B. für Österreich, Deutschland, Kanada, die USA und GB unterstützt, oder Tripwolf, eine Onlinereiseplattform.
   }
   
-\ParallelRText{
+\ParallelRText{\selectlanguage{english}
  Searching the Web, intranets or digital libraries is probably the most widely used yet largely underdeveloped language technology application today. The Google search engine, which started in 1998, now handles about 80\% of all search queries\cite{spi1}. Since 2004, the verb \textit{googeln} even has an entry in the Duden dictionary. The Google search interface and results page display has not significantly changed since the first version. Yet in the current version, Google offers spelling correction for misspelled words and has now incorporated basic semantic search capabilities that can improve search accuracy by analysing the meaning of terms in a search query context\cite{pc1}. The Google success story shows that a large volume of available data and efficient indexing techniques can deliver satisfactory results for a statistically-based approach. 
 
     For more sophisticated information requests, it is essential to integrate deeper linguistic knowledge for text interpretation. Experiments using lexical resources such as machine-readable thesauri or ontological language resources (e.g., WordNet for English or GermaNet for German) have demonstrated improvements in finding pages using synonyms of the original search terms, such as \textit{Atomkraft} {[}atomic energy{]}, \textit{Kernenergie} {[}atomic power{]} and \textit{Nuklearenergie} {[}nuclear energy{]}, or even more loosely related terms.
@@ -858,11 +869,11 @@ In Germany, small and medium-sized enterprises such as Neofonie have successfull
 
   \subsubsection{Sprachliche Interaktion --- Speech Interaction}
 
-  \ParallelLText{
+  \ParallelLText{\selectlanguage{german}
 Sprachliche Interaktion ist eine der vielen Anwendungsbereiche, die auf Technologie zur Sprachein- und –ausgabe zurück greift. Technologie für sprachliche Interaktion dient zur Schaffung von Schnittstellen, über die Nutzer in gesprochener Sprache interagieren können, statt über eine grafische Anzeige, Tastatur und Maus. Heute finden diese sprachbasierten Benutzerschnittstellen (engl. Voice User Interfaces, VUI) bei teil- oder vollautomatischen Telefondiensten Anwendung, die Unternehmen ihren Kunden, Mitarbeitern oder Partnern anbieten. Geschäftsdomänen, die VUIs verstärkt einsetzen, sind beispielsweise Banken, Lieferketten, das öffentliche Transportwesen und Telekommunikationsunternehmen. Weitere Anwendungen für die Verarbeitung gesprochener Sprache sind u.a. Schnittstellen zu Kfz-Navigationssystemen sowie der Einsatz der gesprochenen Sprache als Alternative zu grafischen Oberflächen oder Touchscreens in Smartphones. 
 }
 
-  \ParallelRText{
+  \ParallelRText{\selectlanguage{english}
 Speech technology is the basis for creating interfaces that allow a user to interact with spoken language instead of a 
 graphical display, keyboard and mouse. Speech interaction is one of many application areas that depend on speech technology, i.e., 
 technologies for processing spoken language. Speech interaction is used to create interfaces that enable users to interact in spoken 
@@ -873,14 +884,16 @@ interfaces to car navigation systems and the use of spoken language as an altern
 smartphones.}
 \ParallelPar
 \clearpage
-\begin{figure}[h!]
-\center
-\includegraphics[scale=0.7]{../_media/simple_speech-based_dialogue_architecture}\\
-\textsf{Deus Ex Machina - A Simple Speech-based Dialogue Architecture}
- \end{figure}
+  \begin{figure}[h!]
+    \colorrule{grey1}{\textwidth}{1pt}
+    \center
+    \includegraphics[width=\textwidth]{../_media/simple_speech-based_dialogue_architecture}\\
+    \textsf{Deus Ex Machina - A Simple Speech-based Dialogue Architecture}
+    \colorrule{grey1}{\textwidth}{1pt}
+  \end{figure}
 
 
-\ParallelLText{
+\ParallelLText{\selectlanguage{german}
 Technologien zur Verarbeitung gesprochener Sprache setzen sich aus vier Bereichen zusammen:
     \begin{enumerate}
       \item Automatische Spracherkennung (ASR) bestimmt, welche Wörter in einer bestimmten Lautabfolge, die von einem Nutzer geäußert werden, tatsächlich gesprochen werden.
@@ -902,7 +915,7 @@ In den vergangenen fünf Jahren ist die Nachfrage nach sprachlichen Benutzerschn
 Künftig wird sich aufgrund der Verbreitung von Smartphones als neue Plattform zur Verwaltung von Kundenbeziehungen neben Festnetztelefonen, dem Internet und E-Mail sehr viel ändern. Dies wird sich auch auf den Einsatz der Technologien für gesprochene Sprache auswirken. Langfristig gesehen wird es mehr telefonbasierte VUI geben und gesprochene Sprache wird eine wesentlich zentralere Rolle als benutzerfreundliche Eingabemöglichkeit bei Smartphones spielen. Ausschlaggebend werden dafür vor allem schrittweise Verbesserungen in der Genauigkeit der sprecherunabhängigen Spracherkennung über Diktierdienste sein, die Smartphone-Nutzern bereits heute als zentrale Dienste angeboten werden.
   }
 
-\ParallelRText{
+\ParallelRText{\selectlanguage{english}
     Speech interaction technology comprises four technologies: 
     \begin{enumerate}
       \item Automatic speech recognition (ASR) determines which words are actually spoken in a given sequence of  
@@ -932,13 +945,15 @@ Künftig wird sich aufgrund der Verbreitung von Smartphones als neue Plattform z
   \subsubsection{Maschinelle Übersetzung --- Machine Translation}
 
 \begin{figure}[h!]
-\center
-\includegraphics[scale=0.7]{../_media/machine_translation}\\
-\textsf{Deus Ex Machina (hyper: stareto, sub:regulare) - Machine Translation (top: statistical, bottom:rule-based}
- \end{figure}
+  \colorrule{grey1}{\textwidth}{1pt}
+  \center
+  \includegraphics[width=\textwidth]{../_media/machine_translation}\\
+  \textsf{Deus Ex Machina (hyper: stareto, sub:regulare) - Machine Translation (top: statistical, bottom:rule-based}
+  \colorrule{grey1}{\textwidth}{1pt}
+\end{figure}
 
 \clearpage  
-  \ParallelLText{
+  \ParallelLText{\selectlanguage{german}
 Die Idee, digitale Computer für die Übersetzung natürlicher Sprachen einzusetzen, geht auf das Jahr 1946 zurück. In den 1950er-Jahren und dann wieder in den 1980er-Jahren wurden schließlich größere Summen in die entsprechende Forschung investiert. Doch die maschinelle Übersetzung („machine translation“ MT) kann bisher das anfängliche Versprechen einer automatischen, allgemein verwendbaren Übersetzung noch nicht halten. 
 Der grundlegendste Ansatz bei der Maschinellen Übersetzung besteht darin, die Wörter in einem Text in einer natürlichen Sprache automatisch durch Wörter in einer anderen Sprache zu ersetzen. In Themengebieten mit sehr beschränkter, formelhafter Sprache wie Wetterberichte kann dies nützlich sein. Aber für eine gute Übersetzung weniger standardisierter Texte müssen größere Texteinheiten (Phrasen, Sätze oder sogar ganze Abschnitte) mit naheliegenden Entsprechungen in der Zielsprache abgeglichen werden. Die größte Schwierigkeit besteht darin, dass die menschliche Sprache vieldeutig ist. Vieldeutigkeit stellt auf mehreren Ebenen eine Herausforderung dar, wie eine Begriffserklärung auf lexikalischer Ebene (ein \textit{Jaguar} ist eine Automarke oder ein Tier) oder die Fallzuweisung auf syntaktischer Ebene, beispielsweise:\\
 \textit{the woman saw the car and her husband, too.}\\
@@ -965,7 +980,7 @@ Die besten Ergebnisse (in grün und blau) wurden von Sprachen erreicht, bei dene
 Leistung der maschinellen Übersetzung für Sprachpaare im Rahmen des Projektes Euromatrix+
   }
 
-  \ParallelRText{
+  \ParallelRText{\selectlanguage{english}
 At its basic level, Machine Translation simply substitutes words in one natural language with words in another language. The idea of using digital computers to translate natural languages goes back to 1946 and was followed by substantial funding for research during the 1950s and again in the 1980s. Yet machine translation (MT) still cannot meet its initial promise of across-the-board automated translation. 
 
     The most basic approach to machine translation is to automatically replace the words in a text in one natural language by words in another language. This can be useful in subject domains that have a very restricted, formulaic language such as weather reports. But to produce a good translation of less standardised texts, larger text units (phrases, sentences, or even whole passages) need to be matched to their closest counterparts in the target language. The major difficulty is that human language is ambiguous. Ambiguity creates challenges on multiple levels, such as word sense disambiguation on the lexical level (a \textit{jaguar} is a brand of car or an animal) or the assignment of case on the syntactic level, for example:
@@ -1005,14 +1020,16 @@ The best results (in green and blue) were achieved by languages that benefit fro
   \ParallelPar
 
 \begin{figure}[h!]
-\center
-\includegraphics[scale=0.6]{../_media/grit}
- \end{figure}
+  \colorrule{grey1}{\textwidth}{1pt}
+  \center
+  \includegraphics[scale=0.6]{../_media/grit}
+  \colorrule{grey1}{\textwidth}{1pt}
+\end{figure}
 
   
   \subsection{Andere Anwendungsbereiche --- Other Application Areas}
 
-  \ParallelLText{
+  \ParallelLText{\selectlanguage{german}
 \boxtext{Sprachtechnologieanwendungen bieten häufig wichtige Servicefunktionen "unter der Haube" größerer Softwaresysteme }Die Erstellung von Sprachtechnologieanwendungen umfasst eine Reihe von Unteraufgaben, die bei der Interaktion mit dem Anwender nicht immer an die Oberfläche treten. Sie bieten jedoch beträchtliche Servicefunktionen „unter der Haube“ des betreffenden Systems. Sie alle stellen wichtige Forschungsthemen dar, die sich mittlerweile in einzelne Unterdisziplinen der Computerlinguistik weiterentwickelt haben. 
 
 Die automatische Fragenbeantwortung ist beispielsweise ein aktiver Forschungsbereich, in dem annotierte Korpora erstellt und wissenschaftliche Wettbewerbe ins Leben gerufen wurden. Das Konzept der Fragenbeantwortung geht über die auf Stichwörtern basierende Suche hinaus (bei der die Suchmaschine antwortet, indem sie eine Sammlung potenziell relevanter Dokumente liefert). Vielmehr können Nutzer eine konkrete Frage stellen, auf die das System eine einzige Antwort liefert. Beispiel:\\
@@ -1028,7 +1045,7 @@ Textzusammenfassung und Textgenerierung sind zwei Grenzbereiche, die entweder in
 Für die deutsche Sprache ist die Forschung in diesen, Texte verarbeitenden Technologien weniger entwickelt als für die englische Sprache. Fragenbeantwortung, Informationsextraktion und Zusammenfassung standen seit den 1990er-Jahren im Fokus zahlreicher offener Wettbewerbe in den USA, die vor allem von den staatlich geförderten Organisationen DARPA und NIST organisiert wurden, die von der Regierung gefördert werden. Durch diese Wettbewerbe konnte der Stand der Technik beträchtlich verbessert werden, ihr Fokus lag jedoch meist auf der englischen Sprache. Aus diesem Grund gibt es kaum annotierte Korpora oder andere spezielle Ressourcen, die notwendig sind, um diese Arbeit in Deutschland zu leisten. Wenn Zusammenfassungssysteme rein auf statistischen Methoden basieren, sind sie weitgehend sprachunabhängig, und es steht in diesem Bereich eine Reihe von Forschungsprototypen zur Verfügung. Für die Textgenerierung waren wiederverwendbare Komponenten bisher auf Oberflächenrealisierungsmodelle (Grammatikgenerierung) begrenzt. Fast die gesamte hierfür zur Verfügung stehende Software betrifft die englische Sprache. Es gibt jedoch einen auf Semantik basierenden mehrsprachigen Generator sowie einen auf Vorlagen basierenden Generator für die deutsche Sprache. Diese stammen aber aus den 1990er-Jahren und wurden noch nicht auf die heutigen Softwareumgebungen übertragen.
   }
 
-  \ParallelRText{
+  \ParallelRText{\selectlanguage{english}
 \boxtext{Language technology applications often provide significant service functionalities “under the hood” of larger software 
 systems}Building language technology applications involves a range of subtasks that do not always surface at the level of interaction 
 with the user, but they provide significant service functionalities “under the hood” of the system in question. They all form 
@@ -1054,13 +1071,13 @@ For the German language, research in these text technologies is much less develo
 
   \subsection{Bildungsprogramme --- Educational Programmes}
 
-  \ParallelLText{
+  \ParallelLText{\selectlanguage{german}
 Sprachtechnologie ist ein äußerst interdisziplinäres Feld, welches die vereinte Expertise von u.a. Linguisten, Computerwissenschaftlern, Mathematikern, Philosophen, Psycholinguisten und Neurowissenschaftlern bedarf. Aus diesem Grund konnte es sich im deutschen Fakultätensystem nicht eindeutig und unabhängig etablieren. Einige Universitäten haben ein eigenes Institut für Computerlinguistik (CL) eingerichtet (z.B., Heidelberg, Saarbrücken und Tübingen). Andere haben Institute unter einem etwas anderen Namen geschaffen (Stuttgart). Wieder andere Universitäten bieten Programme an, z.B. Fakultäten für Informatik (Leipzig und Hamburg) oder Fakultäten für Linguistik (Bochum und Jena). Einige Universitäten bieten nur Master-Studiengänge (Gießen) oder Bachelor-Studiengänge (Erlangen-Nürnberg, Göttingen, München, Potsdam und Trier) oder Sprachtechnologiemodule für Studenten aus anderen Fächern (Hildesheim). Viele dieser Programme und Studiengänge wurden erst vor kurzem eingeführt. Mindestens 17 deutsche Universitäten bieten derzeit Programme im Bereich der Sprachtechnologie an. In der Schweiz werden CL-Programme von den Universitäten in Zürich und Genf angeboten. In Österreich gibt es kein vollwertiges CL-Studienprogramm. CL- und Sprachtechnologie-Seminare werden jedoch im Rahmen anderer Programme in Wien und Klagenfurt abgehalten.
 
 Das deutsche Statistische Bundesamt führt seit dem Wintersemester 1992/1993 Statistiken zu CL als Studiengang an deutschen Universitäten. Das Studium von CL hat seit dieser Zeit zunehmend an Beliebtheit gewonnen. Die Anzahl der Studenten ist seit dem Jahr 2000 stabil. Jahr für Jahr ziehen die Programme rund 250-350 neue Studenten an, die sich für CL als Hauptstudiengang einschreiben\cite{wie1}. Diese verhältnismäßig geringe Zahl an Absolventen von deutschen Universitäten kann dem ständig steigenden Bedarf an qualifiziertem Personal, das sich auf Sprachtechnologie spezialisiert hat, nicht gerecht werden. In vielen Fällen müssen Unternehmen und Forschungsinstitute wie das Deutsche Forschungszentrum für künstliche Intelligenz (DFKI) und das Österreichische Forschungszentrum für künstliche Intelligenz (ÖFAI) ausländische Fachleute um Unterstützung bei ihrer Arbeit bitten.
 }
 
-  \ParallelRText{
+  \ParallelRText{\selectlanguage{english}
     Language technology is a very interdisciplinary field that involves the combined expertise of linguists, computer scientists, mathematicians, philosophers, psycholinguists, and neuroscientists among others. As a result, it has not acquired a clear, independent existence in the German faculty system. Some universities have established a separate institute for computational linguistics (CL) (e.g., Heidelberg, Saarbrücken and Tübingen); others have created institutes under a slightly different name (Stuttgart). Programmes are also offered by other departments, such as computer science faculties (Leipzig and Hamburg) or linguistics faculties (Bochum and Jena). Some universities only offer Master’s courses (Gießen) or Bachelor’s courses (Erlangen-Nürnberg, Göttingen, Munich, Potsdam and Trier), or language technology modules to students majoring in other subjects (Hildesheim). Many of these programmes and courses have only been introduced recently. At least 17 German universities currently offer programmes in the field of language technology. In Switzerland, CL programmes are offered by the Universities of Zurich and Geneva. In Austria, there is no fully-fledged CL study programme, but CL and LT courses are taught as part of other programmes in Vienna and Klagenfurt.
 
     The German Federal Statistics Office has kept statistics on CL as a course of study at German universities since the Winter Semester of 1992-93. Since then, studying CL has become increasingly popular. The number of students has been stable since 2000, and programmes have annually attracted around 250-350 new students who enrol in CL as their main course of study\cite{wie1}. This relatively low number of graduates from German universities cannot meet the steadily rising demand for qualified personnel specialised in language technology. In many cases, companies and research institutes such as the German Research Centre for Artificial Intelligence (DFKI) and the Austrian Research Institute for Artificial Intelligence (ÖFAI) have to call on foreign experts to help them with their work.
@@ -1071,7 +1088,7 @@ Das deutsche Statistische Bundesamt führt seit dem Wintersemester 1992/1993 Sta
 
   \subsection{Nationale Projekte und Anstrengungen --- National Projects and Efforts}
 
-  \ParallelLText{
+  \ParallelLText{\selectlanguage{german}
 Das Vorhandensein eines verhältnismäßig lebendigen Sprachtechnologie-Sektors in Deutschland kann auf die großen Förderprogramme in den vergangenen 20 bis 30 Jahren zurückgeführt werden. Eines der ersten war EUROTRA, ein ehrgeiziges Projekt für maschinelle Übersetzung, das von der Europäischen Kommission von den späten 1970er-Jahre bis 1994 eingerichtet und gefördert wurde. EUROTRA konnte zwar das gesetzte Ziel des Aufbaus eines modernen Übersetzungssystems nicht erreichen, hatte aber langfristige Wirkung auf die Sprachtechnologiebranche Europas. Das Projekt VERBMOBIL konzentrierte sich auf einen eher datengetriebenen sprachtechnologischen Ansatz und folgte damit einem starken Umdenken im Übersetzungsbereich, weg von regelbasierten Ansätzen. Dieses umfangreiche nationale Projekt mit dem Ziel, Sprache in Echtzeit von Deutsch, Japanisch und Englisch in alle Richtungen zu übersetzen, wurde vom Bundesministerium für Forschung und Bildung (BMBF) von 1993 bis 2000 mit Finanzmitteln unterstützt. Der daraus entstandene Prototyp VERBMOBIL konnte sich zwar nicht auf dem Markt etablieren, doch sind daraus zahlreiche Spin-Off-Innovationen entstanden. Und der in VERBMOBIL entwickelte statistische Übersetzungsansatz liegt heute dem Google-Übersetzungssystem zu Grunde, das im Web zur Verfügung steht. 
 
 Das IBM-Projekt LILOG, das von 1985 bis 1991 lief, beinhaltete die Implementierung einer Informationsdatenbank in deutscher Sprache. Rund 200 Wissenschaftler waren daran beteiligt, die in den Bereichen Computerlinguistik, sprachverstehende Systeme und künstliche Intelligenz in Deutschland arbeiteten. Der Erfolg zeigte, dass ein Kooperationsprojekt zwischen Universitäten und der Industrie nützliche Ergebnisse für die reine Forschung sowie Methoden und Tools für die praktische Anwendung hervorbringen kann.
@@ -1089,7 +1106,7 @@ In der Schweiz nahm das Interesse an Sprachtechnologie in den 1980er-Jahren mit 
 Wie beschrieben haben frühere Programme zur Entwicklung einer Reihe von sprachtechnologischen Tools und Ressourcen für die deutsche Sprache geführt. Im folgenden Abschnitt wird der aktuelle Status der sprachtechnologischen Unterstützung für das Deutsche zusammengefasst.
 }
 
-  \ParallelRText{
+  \ParallelRText{\selectlanguage{english}
     The existence of a relatively lively LT sector in Germany can be traced back to the major LT programmes over the last 20 to 30 years. One of the first was EUROTRA, an ambitious machine translation project that was established and funded by the European Commission from the late 1970s until 1994. Although EUROTRA did not manage to reach its stated goal of building a state-of-the-art translation system, the project did have a long-term impact on Europe’s language technology industry. The VERBMOBIL project focused on a more data-driven approach to LT following a major shift in the translation paradigm away from a rule-based approach. This large-scale national project with the goal of translating speech in real time between German, Japanese and English was funded by the Federal Ministry of Education and Research (BMBF) from 1993 to 2000. Although the resulting VERBMOBIL prototype was unable to establish itself in the marketplace, it lead to many spin-off innovations, and the technology now underlies the Google Translate system available on the Web. 
 
     The IBM project LILOG, which ran from 1985 to 1991, was an implementation of an information base in the German language. It involved some 200 scientists working in computational linguistics, natural language understanding systems and artificial intelligence in Germany, and proved that a cooperative project between universities and industry can produce useful results for both pure research and real world methods and tools.
@@ -1111,10 +1128,10 @@ Wie beschrieben haben frühere Programme zur Entwicklung einer Reihe von spracht
 
   \subsection{Verfügbarkeit von Tools und Ressourcen --- Availability of Tools and Resources}
 
-  \ParallelLText{
+  \ParallelLText{\selectlanguage{german}
 In der folgenden Tabelle wird der aktuelle Stand der Sprachtechnologieunterstützung für die deutsche Sprache zusammengefasst. Die Bewertung der bestehenden Tools und Ressourcen wurde von führenden Experten in dem Bereich vorgenommen. Sie lieferten Einschätzungen anhand einer Skala von 0 (sehr gering) bis 6 (sehr hoch), anhand von sieben Kriterien.}
 
-  \ParallelRText{
+  \ParallelRText{\selectlanguage{english}
     The following table summarises the current state of language technology support for the German language. The rating for existing tools and resources was generated by leading experts in the field who provided estimates based on a scale from 0 (very low) to 6 (very high) according to seven criteria.}
 \ParallelPar
 
@@ -1149,7 +1166,7 @@ Grammatiken \newline Grammars&3&2&3.5&3.5&3&2&1\\
 \caption{Status der Sprachtechnologieunterstützung für Deutsch -- State of language technology support for German}
 \end{table}
 
-\ParallelLText{
+\ParallelLText{\selectlanguage{german}
 Die wichtigsten Ergebnisse für die deutsche Sprache lassen sich wie folgt zusammenfassen:
 	\begin{itemize}
 \item Die Verarbeitung gesprochener Sprache scheint derzeit ausgereifter zu sein als die Verarbeitung von Text. In der Tat konnte die Sprachein- und Ausgabe bereits erfolgreich in zahlreiche Alltagsanwendungen integriert werden, von Dialogsystemen und sprachbasierten Schnittstellen bis hin zu Mobiltelefonen und Kfz-Navigationssystemen.
@@ -1162,7 +1179,7 @@ Die wichtigsten Ergebnisse für die deutsche Sprache lassen sich wie folgt zusam
 	\end{itemize}
 Zusammenfassend lässt sich sagen, dass in einer Reihe von Spezialgebieten der deutschen Sprachforschung heutzutage Software mit begrenzter Funktionalität zur Verfügung steht. Weitere Forschungsaktivitäten sind klar erforderlich, damit dem derzeitigen Defizit bei der Textverarbeitung auf tiefgreifender semantischer Ebene begegnet und der Mangel an Ressourcen wie Parallelkorpora für die maschinelle Übersetzung ausgeglichen werden kann.
   }
-\ParallelRText{    
+\ParallelRText{\selectlanguage{english}    
 The key results for the German language can be summed up as follows:
     \begin{itemize}
       \item Speech processing currently seems to be more mature than the processing of written text. In fact, speech technology has already been successfully integrated into many everyday applications, from spoken dialogue systems and voice-based interfaces to mobile phones and car navigation systems. 
@@ -1348,7 +1365,7 @@ Serbisch -- Serbian \\
   \caption{Sprachcluster für Ressourcen -- Language clusters for Resources}
 \end{sidewaysfigure}
 
-  \ParallelLText{
+  \ParallelLText{\selectlanguage{german}
 Der aktuelle Stand der LT-Unterstützung variiert stark von einer Sprachgemeinschaft zur anderen. Um zu vergleichen, wie es um die verschiedenen Sprachen steht, liefert dieser Abschnitt eine Auswertung, die auf zwei beispielhafte Anwendungsbereichen (maschinelle Übersetzung und Verarbeitung gesprochener Sprache) sowie einer zugrunde liegenden Technologie (Textanalyse) und auch den für den Aufbau von sprachtechnologischen Anwendungen notwendigen, grundlegenden Ressourcen basiert. 
 
 Die Sprachen wurden in Cluster anhand der folgenden Fünf-Punkte-Skala eingeordnet:
@@ -1373,7 +1390,7 @@ Aktuelle Technologien für die Verarbeitung gesprochener Sprache lassen sich rec
 Für die Schaffung ausgefeilterer Anwendungen wie maschinelle Übersetzung besteht jedoch deutlicher Bedarf an Ressourcen und Technologien, die mehr linguistische Aspekte abdecken und eine tiefe semantische Analyse des eingegebenen Textes ermöglichen. Nur, wenn die Qualität und Abdeckung dieser grundlegenden Ressourcen und Technologien verbessert wird, eröffnen sich neue Chancen für die zahlreichen erweiterten Anwendungsbereiche, darunter auch eine qualitativ hochwertige maschinelle Übersetzung. 
  }
 
-  \ParallelRText{
+  \ParallelRText{\selectlanguage{english}
     The current state of LT support varies considerably from one language community to another. In order to compare the situation between languages, this section will present an evaluation based on two sample application areas (machine translation and speech processing) and one underlying technology (text analysis), as well as basic resources needed for building LT applications.    \textit{Cluster description (for Speech Processing and Machine Translation)}
     \begin{itemize}
       \item Cluster 1 (excellent LT support): Technologies with excellent quality and performance exist that can be used in practically all relevant applications. 
@@ -1402,7 +1419,7 @@ Für die Schaffung ausgefeilterer Anwendungen wie maschinelle Übersetzung beste
 
   \subsection{Schlussfolgerungen --- Conclusions}
 
-  \ParallelLText{
+  \ParallelLText{\selectlanguage{german}
 \boxtext{In dieser White Paper-Reihe haben wir einen wichtigen ersten Schritt zur Bewertung von Sprachtechnologieunterstützung für 30 europäische Sprachen unternommen und einen überblicksartigen Vergleich dieser Sprachen angestellt. Durch Aufdeckung der Lücken, des Bedarfs und der Defizite sind die europäische Sprachtechnologiegemeinschaft und die jeweiligen Interessengruppen jetzt in der Lage, ein groß angelegtes Forschungs- und Entwicklungsprogramm zu entwerfen, das für den Aufbau eines wirklich mehrsprachigen, technologisch aufgewerteten Europas ausgelegt ist.}Wir haben gesehen, dass es riesige Unterschiede zwischen den Sprachen Europas gibt. Für einige Sprachen und Anwendungsbereiche stehen Software und Ressourcen guter Qualität zur Verfügung, bei anderen wiederum (üblicherweise den „kleineren“ Sprachen) bestehen erhebliche Lücken. Vielen Sprachen mangelt es an grundlegenden Technologien für die Textanalyse sowie an ausreichenden Ressourcen für die Entwicklung dieser Technologien. Anderen stehen grundlegende Tools und Ressourcen zur Verfügung, sie sind aber noch nicht in der Lage, in semantische Verarbeitung zu investieren. Deshalb müssen wir umfassende Anstrengungen unternehmen, um das hochgesteckte Ziel zu erreichen, hochwertige maschinelle Übersetzung für alle europäischen Sprachen anzubieten.
 
 Was die deutsche Sprache anbelangt, können wir den derzeitigen Stand der Unterstützung von Sprachtechnologie vorsichtig optimistisch betrachten. In Deutschland, Österreich und der Schweiz gibt es eine leistungsfähige Forschungsgemeinschaft zur Sprachtechnologie, die in der Vergangenheit durch große Forschungsprogramme unterstützt wurde. Viele davon wurden in Kooperation mit Playern aus der Branche getragen wie Philips und IBM. Für Hochdeutsch wurde außerdem eine Reihe umfassender Ressourcen und moderner Technologien erzeugt und verbreitet. Der Umfang der Ressourcen und das Angebot der Tools sind jedoch im Vergleich zu den Ressourcen und Tools für die englische Sprache noch sehr begrenzt und in puncto Qualität und Quantität einfach noch nicht ausreichend, um die Art von Technologien zu entwickeln, die notwendig sind, um eine wirklich mehrsprachige Wissensgesellschaft zu unterstützen.
@@ -1420,7 +1437,7 @@ Deshalb können wir den Schluss ziehen, dass dringender Bedarf an einer umfassen
 Das langfristige Ziel von META-NET ist die Einführung einer hochwertigen Sprachtechnologie für alle Sprachen. Nur so kann gerade durch die kultureller Verschiedenartigkeit eine politische und wirtschaftliche Einheit erreicht werden. Mithilfe der Technologie können bestehende Schranken eingerissen und Brücken zwischen den Sprachen Europas gebaut werden. Dazu müssen alle Interessengruppen – in der Politik, Forschung, Wirtschaft und Gesellschaft – ihre Kräfte für die Zukunft bündeln.
   }
 
-  \ParallelRText{
+  \ParallelRText{\selectlanguage{english}
     \boxtext{In this series of white papers, we have made an important initial effort to assess language technology support for 30 European languages, and provide a high-level comparison across these languages. By identifying the gaps, needs and deficits, the European language technology community and related stakeholders are now in a position to design a large scale research and development programme aimed at building a truly multilingual, technology-enabled Europe.}
 
     We have seen that there are huge differences between Europe’s languages. While there are good quality software and resources available for some languages and application areas, others (usually ‘smaller’ languages) have substantial gaps. Many languages lack basic technologies for text analysis and the essential resources for developing these technologies. Others have basic tools and resources but are as yet unable to invest in semantic processing. We therefore still need to make a large-scale effort to attain the ambitious goal of providing high-quality machine translation between all European languages. 
@@ -1448,7 +1465,7 @@ Das langfristige Ziel von META-NET ist die Einführung einer hochwertigen Sprach
   % --------------------------------------------------------------------------
   \section[Über META-NET --- About META-NET]{Über META-NET\\ ---\\ About META-NET}
   
-  \ParallelLText{
+  \ParallelLText{\selectlanguage{german}
 META-NET ist ein Exzellenznetzwerk, das von der Europäischen Kommission gefördert wird. Derzeit besteht das Netzwerk aus 54 Mitgliedern aus 33 europäischen Ländern. META-NET unterstützt die Multilingual Europe Technology Alliance (META), eine wachsende Gemeinschaft aus europäischen Experten und Organisationen aus dem Bereich der Sprachtechnologie. 
 META-NET kooperiert mit anderen Initiativen wie der Common Language Resources and Technology Infrastructure (CLARIN), welche daran arbeitet, Forschung auf dem Gebiet Digital Humanities zu etablieren. META-NET legt die technologische Grundlage für eine wirklich mehrsprachige europäische Informationsgesellschaft, die Folgendes ermöglicht:
 \begin{itemize}
@@ -1459,7 +1476,7 @@ META-NET kooperiert mit anderen Initiativen wie der Common Language Resources an
 META-NET stimuliert und fördert mehrsprachige Technologien für alle europäischen Sprachen. Die Technologien ermöglichen automatische Übersetzung, Inhaltserstellung, Informationsverarbeitung und Wissensverwaltung für eine breite Palette an Anwendungen und Themengebieten. Das Netzwerk möchte die aktuellen Ansätze verbessern, damit eine bessere Kommunikation und Kooperation zwischen den verschiedenen Sprachen stattfinden kann. Alle Europäer haben ungeachtet ihrer Sprache das gleiche Recht auf Information und Wissen. 
   }
 
-  \ParallelRText{
+  \ParallelRText{\selectlanguage{english}
 META-NET is a Network of Excellence funded by the European Commission. The network currently consists of 54 members from 33 European countries. META-NET fosters the Multilingual Europe Technology Alliance (META), a growing community of language technology professionals and organisations in Europe. META-NET cooperates with other initiatives like the Common Language Resources and Technology Infrastructure (CLARIN), which is helping establish digital humanities research in Europe. META-NET fosters the technological foundations for a truly multilingual European information society that:
     \begin{itemize}
       \item makes communication and cooperation possible across languages;
@@ -1474,14 +1491,14 @@ META-NET stimulates and promotes multilingual technologies for all European lang
 
   \subsection{Aktionslinien --- Lines of Action}
 
-  \ParallelLText{
+  \ParallelLText{\selectlanguage{german}
 META-NET nahm am 1. Februar 2010 die Arbeit auf mit dem Ziel, die Forschung im Bereich der Sprachtechnologie voranzutreiben. Das Netzwerk unterstützt ein Europa, das als digitaler Marktplatz und Informationsraum vereint ist. META-NET verfolgt seine Ziele durch eine Reihe unterschiedlicher Aktivitäten innerhalb der drei Aktionslinien des Netzwerks META-VISION, META-SHARE und META-RESEARCH. \\
 \textbf{META-VISION} baut eine dynamische und einflussreiche Interessensgemeinschaft auf, die durch eine gemeinsame Vision und eine gemeinsame strategische Forschungsagenda (SRA) verbunden ist. Der Schwerpunkt dieser Arbeit ist der Aufbau einer kohärenten und geschlossenen Sprachtechnologie-Gemeinschaft in Europa durch das Zusammenbringen von Vertretern der stark zersplitterten und inhomogenen Interessengruppen. Schon im ersten Jahr seiner Tätigkeit betrieb META-NET eine intensive Öffentlichkeitsarbeit, etwa durch eine Beteiligung an Konferenzen wie dem FLaReNet Forum (Spanien), den Language Technology Days (Luxemburg), JIAMCATT 2010 (Luxemburg), LREC 2010 (Malta), EAMT 2010 (Frankreich) und ICT 2010 (Belgien). Schätzungsweise hat META-NET bereits mehr als 2500 Experten aus dem Bereich Sprachtechnologie erreicht und über seine Ziele und Visionen informiert. Auf dem META-FORUM 2010 in Brüssel stellte META-NET die ersten Ergebnisse seines Visionsbildungsprozesses mehr als 250 Teilnehmern vor. In einer Reihe interaktiver Sessions äußerten die Teilnehmer ihre Ansicht zu den vom Netzwerk vorgestellten Visionen.\\
 \textbf{META-SHARE} ist eine offene, verteilte Plattform für den Austausch und die gemeinsame Nutzung von Sprachressourcen. Das Peer-to-Peer-Netzwerk von Repositorien enthält Sprachdaten, Tools und Webdienste, die mit hochwertigen Metadaten dokumentiert und in standardisierte Kategorien unterteilt sind. Auf die Ressourcen kann einfach zugegriffen werden und eine einheitliche Suche ist möglich. Zu den verfügbaren Ressourcen gehören sowohl kostenloses Open-Source-Material als auch  kostenpflichtige Angebote. META-SHARE zielt sowohl auf bestehende Sprachdaten, Tools und Systeme ab als auch auf neue und kommende Produkte, die für den Aufbau und die Bewertung neuer Technologien, Anwendungen und Dienste benötigt werden. Die Wiederverwendung, Kombination, Nutzbarmachung und das Re-Engineering von Sprachdaten und Tools spielt eine immer wichtigere Rolle. META-SHARE wird somit zu einem entsdheidenden Teil des Sprachtechnologie-Marktplatzes für Entwickler, Lokalisierungsexperten, Forscher, Übersetzer und Sprachexperten aus kleinen, mittleren und großen Unternehmen. META-SHARE begleitet sich den gesamten Entwicklungszyklus von Sprachtechnologie – von der Forschung bis hin zu innovativen Produkten und Diensten. Einen wichtigen Aspekt dieser Arbeit stellt die Etablierung von META-SHARE als wichtiger und wertvoller Teil einer europäischen und weltweiten Infrastruktur für die Sprachtechnologie-Gemeinschaft dar.\\
 \textbf{META-RESEARCH} baut Brücken zu verwandten Technologiefeldern. Die Arbeit besteht in innovativer Forschung mit dem Ziel, Fortschritte in Nachbardisziplinen gewinnbringend zur Verbesserung von Sprachtechnologie einzusetzen. Ein Fokus der Arbeit liegt insbesondere in der Integration von Semantik in die maschinelle Übersetzung (MT), der Optimierung von Aufgaben bei der hybriden MT, in der Nutzung von Kontextinformationen bei der Erzeugung automatischer Übersetzungen sowie der Aufbereitung empirischer Daten für MT. META-NET arbeitet mit anderen Bereichen und Disziplinen wie maschinelles Lernen und der Semantic Web Community zusammen. META-RESEARCH ist befasst mit der Sammlung von Daten, der Aufbereitung von Datenquellen und Sprachressourcen für Evaluationszwecke, der Zusammenstellung von Repositorien von Tools und Methoden und mit der Organisation von Workshops und Aus- und Weiterbildungsmaßnahmen für Mitglieder der Gemeinschaft. Durch diese Arbeit konnten bereits die relevanten Problemfelder der MT identifiziert werden, bei denen Semantik ein großes Potential zur Lösungsfindung besitzt. Zudem konnten Empfehlungen zusammengestellt werden, wie das Problem der Integration semantischer Informationen in die MT angegangen werden kann. Außerdem finalisiert META-RESEARCH gegenwärtig eine neue Sprachressource für MT, das Annotated Hybrid Sample MT Corpus, das Daten für die Sprachpaare Englisch-Deutsch, Englisch-Spanisch und Englisch-Tschechisch bereitstellt. META-RESEARCH hat außerdem Software entwickelt, die mehrsprachige Korpora sammelt, die im Web verborgen sind.
   }
 
-  \ParallelRText{
+  \ParallelRText{\selectlanguage{english}
 META-NET launched on 1 February 2010 with the goal of advancing research in language technology (LT). The network supports a Europe that unites as a single digital market and information space. META-NET has conducted several activities that further its goals. META-VISION, META-SHARE and META-RESEARCH are the network’s three lines of action.
 Three Lines of Action in META-NET\\
 
@@ -1497,10 +1514,10 @@ Three Lines of Action in META-NET\\
 
   \subsection{Mitgliedsorganisationen --- Member Organisations}
 
-  \ParallelLText{
+  \ParallelLText{\selectlanguage{german}
 Die folgende Liste enthält die Organisationen und ihre Vertreter, die  derzeit an META-NET beteiligt sind.
   }
-  \ParallelRText{
+  \ParallelRText{\selectlanguage{english}
     The following table lists the organisations and their representatives that currently participate in META-NET.
   }
   
@@ -1569,8 +1586,8 @@ Zypern & Cyprus & Language Centre, School of Humanities: Jack Burston
 
 \section*{Die META-NET Weissbuch-Serie: The META-NET White Paper Series}
 
-%\ParallelLText{Die META-NET Weißbuch-Serie umfasst die folgenden 31 Sprachen.}
-%\ParallelRText{The META-NET White Paper Series covers the following 31 languages.}
+%\ParallelLText{\selectlanguage{german}Die META-NET Weißbuch-Serie umfasst die folgenden 31 Sprachen.}
+%\ParallelRText{\selectlanguage{english}The META-NET White Paper Series covers the following 31 languages.}
 %\ParallelPar
 \end{Parallel}
 
