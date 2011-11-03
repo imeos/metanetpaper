@@ -12,10 +12,6 @@
 
 \documentclass[]{../../metanetpaper}
 
-\usepackage{booktabs}
-\usepackage{longtable}
-\usepackage{tabulary}
-
 %!TEX TS-program = xelatex
 \RequireXeTeX %Force XeTeX check
 
@@ -34,6 +30,8 @@
   Hans Uszkoreit \\
   Martin Volk 
 }
+
+
 
 \begin{document}
 \begin{Parallel}[c]{80mm}{80mm}
@@ -1273,111 +1271,153 @@ Three Lines of Action in META-NET\\
 
   \ParallelPar
  
-  \subsection{META-NET Mitgliedsorganisationen --- META-NET Member Organisations}
 
-  % FIXME: Die nachfolgende Liste muesste vollstaendig und korrekt sein, sollte aber noch mal ueberprueft werden (auch in Bezug auf die diakritischen Zeichen) -- Georg
+  \subsection{Mitgliedsorganisationen --- Member Organisations}
 
-  \begin{longtable}{lp{13.5cm}}
-  Austria & Zentrum für Translationswissenschaft, Universität Wien: Gerhard Budin\\ \addlinespace
-  Belgium & Computational Linguistics and Psycholinguistics Research Centre, University of Antwerp: Walter Daelemans\\ \addlinespace
-          & Centre for Processing Speech and Images, University of Leuven: Dirk van Compernolle \\ \addlinespace
-  Bulgaria & Institute for Bulgarian Language, Bulgarian Academy of Sciences: Svetla Koeva \\ \addlinespace
-  Croatia & Institute of Linguistics, Faculty of Humanities and Social Science, University of Zagreb: Marko Tadić \\ \addlinespace
-  Cyprus & Language Centre, School of Humanities: Jack Burston \\ \addlinespace
-  Czech Republic & Institute of Formal and Applied Linguistics, Charles University in Prague: Jan Hajic \\ \addlinespace
-  Denmark & Centre for Language Technology, University of Copenhagen: Bolette Sandford Pedersen, Bente Maegaard\\ \addlinespace
-  Estonia & Institute of Computer Science, University of Tartu: Tiit Roosmaa\\ \addlinespace
-  Finland & Computational Cognitive Systems Research Group, Aalto University: Timo Honkela\\ \addlinespace
-   & Department of General Linguistics, University of Helsinki: Kimmo Koskenniemi, Krister Linden \\ \addlinespace
-  France & Centre National de la Recherche Scientifique, Laboratoire d'Informatique pour la Mécanique et les Sciences de l'Ingénieur: Joseph Mariani \\ \addlinespace
-  & Evaluations and Language Resources Distribution Agency: Khalid Choukri\\ \addlinespace
-  Germany & DFKI (German Research Centre for Artificial Intelligence): Hans Uszkoreit, Georg Rehm\\ \addlinespace
-  & Human Language Technology and Pattern Recognition, RWTH Aachen University: Hermann Ney \\ \addlinespace
-  & Department of Computational Linguistics, Saarland University: Manfred Pinkal\\ \addlinespace
-  Greece & Institute for Language and Speech Processing, R.C. “Athena”: Stelios Piperidis\\ \addlinespace
-  Hungary & Research Institute for Linguistics, Hungarian Academy of Sciences: Tamás Váradi\\ \addlinespace
-  & Department of Telecommunications and Media Informatics, Budapest University of Technology and Economics: Géza Németh and Gábor Olaszy\\ \addlinespace
-  Iceland & School of Humanities, University of Iceland: Eirikur Rögnvaldsson\\ \addlinespace
-  Ireland & School of Computing, Dublin City University: Josef van Genabith\\ \addlinespace
-  Italy & Consiglio Nazionale Ricerche, Istituto di Linguistica Computazionale “Antonio Zampolli”: Nicoletta Calzolari\\ \addlinespace
-  & Human Language Technology, Fondazione Bruno Kessler: Bernardo Magnini\\ \addlinespace
-  Latvia & Tilde: Andrejs Vasiljevs\\ \addlinespace
-  & Institute of Mathematics and Computer Science, University of Latvia: Inguna Skadina\\ \addlinespace
-  Lithuania & Institute of the Lithuanian Language: Jolanta Zabarskaitė\\ \addlinespace
-  Luxembourg & Arax Ltd.: Vartkes Goetcherian\\ \addlinespace
-  Malta & Department Intelligent Computer Systems, University of Malta: Mike Rosner\\ \addlinespace
-  Netherlands & Utrecht Institute of Linguistics, Utrecht University: Jan Odijk\\ \addlinespace
-  & Computational Linguistics, University of Groningen: Gertjan van Noord\\ \addlinespace
-  Norway & Department of Linguistic, University of Bergen: Koenraad De Smedt\\ \addlinespace
-  & Department of Informatics, Language Technology Group, University of Oslo: Stephan Oepen \\ \addlinespace
-  Poland & Institute of Computer Science, Polish Academy of Sciences: Adam Przepiórkowski, Maciej Ogrodniczuk \\ \addlinespace
-  & University of Łódź: Barbara Lewandowska-Tomaszczyk, Piotr Pęzik\\ \addlinespace
-  & Department of Computer Linguistics and Artificial Intelligence, Adam Mickiewicz University: Zygmunt Vetulani \\ \addlinespace
-  Portugal & Department of Informatics, University of Lisbon: Antonio Branco\\ \addlinespace
-  & Spoken Language Systems Lab, Institute for Systems Engineering and Computers: Isabel Trancoso \\ \addlinespace
-  Romania & Research Institute for Artificial Intelligence, Romanian Academy of Sciences: Dan Tufis \\ \addlinespace
-  & Faculty of Computer Science, University Alexandru Ioan Cuza: Dan Cristea \\ \addlinespace
-  Serbia & Faculty of Mathematics, Belgrade University: Dusko Vitas, Cvetana Krstev, Ivan Obradovic \\ \addlinespace
-  & Pupin Institute: Sanja Vranes \\ \addlinespace 
-  Slovakia & Ludovit Stur Institute of Linguistics, Slovak Academy of Sciences: Radovan Garabik \\ \addlinespace 
-  Slovenia & Jozef Stefan Institute: Marko Grobelnik \\ \addlinespace 
-  Spain & Barcelona Media: Toni Badia \\ \addlinespace 
-  & Center for Language and Speech Technologies and Applications, Technical University of Catalonia: Asunción Moreno \\ \addlinespace 
-  & Institut Universitari de Lingüistica Aplicada, University Pompeu Fabra: Núria Bel \\ \addlinespace 
-  & Aholab Signal Processing Laboratory, University of the Basque Country: Inma Hernaez Rioja \\ \addlinespace 
-  & Department of Signal Processing and Communications, University of Vigo: Carmen García Mateo \\ \addlinespace 
-  Sweden & Department of Swedish Language, University of Gothenburg: Lars Borin \\ \addlinespace 
-  Switzerland & Idiap Research Institute: Hervé Bourlard \\ \addlinespace 
-  UK & Institute for Language, Cognition and Computation, Center for Speech Technology Research, University of Edinburgh: Steve Renals \\ \addlinespace 
-  & School of Computer Science, University of Manchester: Sophia Ananiandou \\ \addlinespace 
-  & Research Institute of Informatics and Language Processing, University of Wolverhampton: Ruslan Mitkov \\ \addlinespace 
- \end{longtable}
+  \ParallelLText{
+Die folgende Liste enthält die Organisationen und ihre Vertreter, die sich am META-NET beteiligen.
+  }
+  \ParallelRText{
+    The following table lists the organisations and their representatives that participate in META-NET.
+  }
+  
+  \ParallelPar
+
+  % Die nachfolgende Liste muesste vollstaendig und korrekt sein, sollte aber noch mal ueberprueft werden (auch in Bezug auf die diakritischen Zeichen) -- Georg
+
+  \begin{tabular*}{\textwidth}{lp{13.5cm}}
+   \small
+  Austria & Zentrum für Translationswissenschaft, Universität Wien -- Gerhard Budin\\
+  Belgium & Computational Linguistics and Psycholinguistics Research Centre, University of Antwerp -- Walter Daelemans\\
+          & Centre for Processing Speech and Images, University of Leuven -- Dirk van Compernolle \\
+  Bulgaria & Institute for Bulgarian Language, Bulgarian Academy of Sciences -- Svetla Koeva \\
+  Croatia & Institute of Linguistics, Faculty of Humanities and Social Science, University of Zagreb -- Marko Tadić \\
+  Cyprus & Language Centre, School of Humanities -- Jack Burston \\
+  Czech Republic & Institute of Formal and Applied Linguistics, Charles University in Prague -- Jan Hajic \\
+  Denmark & Centre for Language Technology, University of Copenhagen -- Bolette Sandford Pedersen and Bente Maegaard\\
+  Estonia & Institute of Computer Science, University of Tartu -- Tiit Roosmaa\\
+  Finland & Computational Cognitive Systems Research Group, Aalto University -- Timo Honkela\\
+   & Department of General Linguistics, University of Helsinki -- Kimmo Koskenniemi and Krister Linden \\
+  France & Centre National de la Recherche Scientifique, Laboratoire d'Informatique pour la Mécanique et les Sciences de l'Ingénieur -- Joseph Mariani \\
+  & Evaluations and Language Resources Distribution Agency -- Khalid Choukri\\
+  Germany & DFKI (German Research Centre for Artificial Intelligence) -- Hans Uszkoreit and Georg Rehm\\
+  & Human Language Technology and Pattern Recognition, RWTH Aachen University -- Hermann Ney \\
+  & Department of Computational Linguistics, Saarland University -- Manfred Pinkal\\
+  Greece & Institute for Language and Speech Processing, R.C. “Athena” -- Stelios Piperidis\\
+  Hungary & Research Institute for Linguistics, Hungarian Academy of Sciences -- Tamás Váradi\\
+  & Department of Telecommunications and Media Informatics, Budapest University of Technology and Economics -- Géza Németh and Gábor Olaszy\\
+  Iceland & School of Humanities, University of Iceland -- Eirikur Rögnvaldsson\\
+  Ireland & School of Computing, Dublin City University -- Josef van Genabith\\
+  Italy & Consiglio Nazionale Ricerche, Istituto di Linguistica Computazionale “Antonio Zampolli” -- Nicoletta Calzolari\\
+  & Human Language Technology, Fondazione Bruno Kessler -- Bernardo Magnini\\
+  Latvia & Tilde -- Andrejs Vasiljevs\\
+  & Institute of Mathematics and Computer Science, University of Latvia -- Inguna Skadina\\
+  Lithuania & Institute of the Lithuanian Language -- Jolanta Zabarskaitė\\
+  Luxembourg & Arax Ltd. -- Vartkes Goetcherian\\
+  Malta & Department Intelligent Computer Systems, University of Malta -- Mike Rosner\\
+\end{tabular*}
+\begin{tabular*}{\textwidth}{lp{13.5cm}}
+  Netherlands & Utrecht Institute of Linguistics, Utrecht University -- Jan Odijk\\
+  & Computational Linguistics, University of Groningen -- Gertjan van Noord\\
+  Norway & Department of Linguistic, University of Bergen -- Koenraad De Smedt\\
+  & Department of Informatics, Language Technology Group, University of Oslo -- Stephan Oepen \\
+  Poland & Institute of Computer Science, Polish Academy of Sciences -- Adam Przepiórkowski and Maciej Ogrodniczuk \\
+  & University of Łódź -- Barbara Lewandowska-Tomaszczyk and Piotr Pęzik\\
+  & Department of Computer Linguistics and Artificial Intelligence, Adam Mickiewicz University -- Zygmunt Vetulani \\
+  Portugal & Department of Informatics, University of Lisbon -- Antonio Branco\\
+  & Spoken Language Systems Lab, Institute for Systems Engineering and Computers -- Isabel Trancoso \\
+  Romania & Research Institute for Artificial Intelligence, Romanian Academy of Sciences -- Dan Tufis \\
+  & Faculty of Computer Science, University Alexandru Ioan Cuza -- Dan Cristea \\
+  Serbia & Faculty of Mathematics, Belgrade University -- Dusko Vitas, Cvetana Krstev and Ivan Obradovic \\
+  & Pupin Institute -- Sanja Vranes \\ 
+  Slovakia & Ludovit Stur Institute of Linguistics, Slovak Academy of Sciences -- Radovan Garabik \\ 
+  Slovenia & Jozef Stefan Institute -- Marko Grobelnik \\ 
+  Spain & Barcelona Media -- Toni Badia \\ 
+  & Center for Language and Speech Technologies and Applications, Technical University of Catalonia -- Asunción Moreno \\ 
+  & Institut Universitari de Lingüistica Aplicada, University Pompeu Fabra -- Núria Bel \\ 
+  & Aholab Signal Processing Laboratory, University of the Basque Country -- Inma Hernaez Rioja \\ 
+  & Department of Signal Processing and Communications, University of Vigo -- Carmen García Mateo \\ 
+  Sweden & Department of Swedish Language, University of Gothenburg -- Lars Borin \\ 
+  Switzerland & Idiap Research Institute -- Hervé Bourlard \\ 
+  UK & Institute for Language, Cognition and Computation, Center for Speech Technology Research, University of Edinburgh -- Steve Renals \\ 
+  & School of Computer Science, University of Manchester -- Sophia Ananiandou \\ 
+  & Research Institute of Informatics and Language Processing, University of Wolverhampton -- Ruslan Mitkov \\ 
+ \end{tabular*}
+
+
 
   \bibliographystyle{plain}
   \bibliography{sample_references}
 
-\cleardoublepage
-
-\section*{Die META-NET Weissbuch-Serie: The META-NET White Paper Series}
-
-%\ParallelLText{Die META-NET Weißbuch-Serie umfasst die folgenden 31 Sprachen.}
-%\ParallelRText{The META-NET White Paper Series covers the following 31 languages.}
-%\ParallelPar
+\ParallelLText{Die META-NET Weißbuch-Serie Europäische Sprachen im Digitalen Zeitalter umfasst die folgenden 31 Sprachen:}
+\ParallelRText{The META-NET White Paper Series on European Languages in the Digital Age covers the following 31 languages:}
+\ParallelPar
 \end{Parallel}
 
-\centering
-%\begin{tabular}{p{35mm}p{35mm}p{35mm}} \toprule
-\begin{tabulary}{170mm}{LLL} \toprule
-  Baskisch & Basque & euskara\\
-  Bulgarisch & Bulgarian & български\\
-  Dänisch & Danish & dansk\\
-  Deutsch & German & Deutsch\\
-  Englisch & English & English\\
-  Estnisch & Estonian & eesti\\
-  Finnisch & Finnish & suomi\\
-  Französisch & French & français\\
-  Galizisch & Galician & galego\\
-  Griechisch & Greek & ελληνικά\\
-  Isländisch & Icelandic & íslenska\\
-  Irisch & Irish & Gaeilge\\
-  Italienisch & Italian & italiano\\
-  Katalanisch & Catalan & català\\
-  Kroatisch & Croatian & hrvatski\\
-  Lettisch & Latvian & latviešu valoda\\
-  Litauisch & Lithuanian & lietuvių kalba\\
-  Maltesisch & Maltese & Malti\\
-  Niederländisch & Dutch & Nederlands\\
-  Norwegisch Bokmål & Norwegian Bokmål & bokmål\\
-  Norwegisch Nynorsk & Norwegian Nynorsk & nynorsk\\
-  Polnisch & Polish & polski\\
-  Portugiesisch & Portuguese & português\\
-  Rumänisch & Romanian & română\\
-  Serbisch & Serbian & српски\\
-  Slowakisch & Slovak & slovenčina\\
-  Slowenisch & Slovene & slovenščina\\
-  Spanisch & Spanish & español\\
-  Schwedisch & Swedish & svenska\\
-  Tschechisch & Czech & čeština\\
-  Ungarisch & Hungarian & magyar\\ \addlinespace \bottomrule
-\end{tabulary}
+\center
+
+	\begin{tabular}{l|l|l}
+\hline
+	Baskisch & Basque & euskara\\
+\hline
+	Bulgarisch & Bulgarian & български\\
+\hline
+	Dänisch & Danish & dansk\\
+\hline
+	Deutsch & German & Deutsch\\
+\hline
+	Englisch & English & English\\
+\hline
+	Estnisch & Estonian & eesti\\
+\hline
+	Finnisch & Finnish & suomi\\
+\hline
+	Französisch & French & français\\
+\hline
+	Galizisch & Galician & galego\\
+\hline
+	Griechisch & Greek & ελληνικά\\
+\hline
+	Isländisch & Icelandic & íslenska\\
+\hline
+	Irisch & Irish & Gaeilge\\
+\hline
+	Italienisch & Italian & italiano\\
+\hline
+	Katalanisch & Catalan & català\\
+\hline
+	Kroatisch & Croatian & hrvatski\\
+\hline
+	Lettisch & Latvian & latviešu valoda\\
+\hline
+	Litauisch & Lithuanian & lietuvių kalba\\
+\hline
+	Maltesisch & Maltese & Malti\\
+\hline
+	Niederländisch & Dutch & Nederlands\\
+\hline
+	Norwegisch Bokmål & Norwegian Bokmål & bokmål\\
+\hline
+	Norwegisch Nynorsk & Norwegian Nynorsk & nynorsk\\
+\hline
+	Polnisch & Polish & polski\\
+\hline
+	Portugiesisch & Portuguese & português\\
+\hline
+	Rumänisch & Romanian & română\\
+\hline
+	Serbisch & Serbian & српски\\
+\hline
+	Slowakisch & Slovak & slovenčina\\
+\hline
+	Slowenisch & Slovene & slovenščina\\
+\hline
+	Spanisch & Spanish & español\\
+\hline
+	Schwedisch & Swedish & svenska\\
+\hline
+	Tschechisch & Czech & čeština\\
+\hline
+	Ungarisch & Hungarian & magyar\\
+\end{tabular}
 \end{document}
