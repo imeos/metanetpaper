@@ -116,7 +116,7 @@
             }
           }
         \end{flushright}
-        \vspace*{0.7cm}
+        \vspace*{0.2cm}
       }
     \end{minipage}
     % spacing between colums
@@ -132,7 +132,7 @@
             }
           }
         \end{flushleft}
-        \vspace*{0.7cm}
+        \vspace*{0.2cm}
       }
     \end{minipage}
   }
@@ -152,7 +152,7 @@
             }
           }
         \end{flushright}
-        \vspace*{0.7cm}
+        \vspace*{0.1cm}
       }
     \end{minipage}
     % spacing between colums
@@ -169,7 +169,7 @@
             }
           }
         \end{flushleft}
-        \vspace*{0.7cm}
+        \vspace*{0.1cm}
       }
     \end{minipage}
   }
