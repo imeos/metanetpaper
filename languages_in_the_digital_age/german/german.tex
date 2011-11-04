@@ -24,6 +24,8 @@
 \usepackage{polyglossia}
 \setotherlanguages{german, english}
 
+\addtokomafont{caption}{\sffamily}
+
 %!TEX TS-program = xelatex
 \RequireXeTeX %Force XeTeX check
 
@@ -44,6 +46,9 @@
 }
 
 \begin{document}
+
+\renewcommand*{\figureformat}{\sffamily\thefigure\autodot}
+
 \begin{Parallel}[c]{77mm}{77mm}
   \maketitle
 
@@ -55,10 +60,9 @@ Dieses Weißbuch gehört zu einer Reihe, die Wissen über Sprachtechnologie und 
 
 Die Verfügbarkeit und Nutzung von Sprachtechnologie in Europa hängen von der jeweiligen Sprache ab. Hierdurch sind für die weitere Unterstützung von Forschung und Entwicklung im Bereich Sprachtechnologien bei jeder Sprache andere Maß\-nahmen not\-wendig. Sie hängen von zahlreichen Faktoren ab, beispielsweise der Komplexität einer bestimmten Sprache und der Anzahl ihrer Sprecher.
 
-META-NET, ein von der Europäischen Kommission gefördertes Exzellenznetzwerk, hat die aktuellen Sprachressourcen und -technologien analysiert. Die Analyse umfasst die 23 europäischen Amtssprachen sowie weitere wichtige nationale und regionale Sprachen Europas. Die Ergebnisse zeigen, dass es bei allen Spra-chen ganz beträchtliche Forschungslücken gibt. Durch die nun vorliegende ausführlichere Expertenanalyse und Bewertung der aktuellen Situation lässt sich die Wirksamkeit der weiteren Forschungstätigkeit maximieren.
+META-NET, ein von der Europäischen Kommission gefördertes Exzellenznetzwerk, hat die aktuellen Sprachressourcen und -technologien analysiert. Die Analyse umfasst die 23 europäischen Amtssprachen sowie weitere wichtige nationale und regionale Sprachen Europas. Die Ergebnisse zeigen, dass es bei allen Sprachen ganz beträchtliche Forschungslücken gibt. Durch die nun vorliegende ausführlichere Expertenanalyse und Bewertung der aktuellen Situation lässt sich die Wirksamkeit der weiteren Forschungstätigkeit maximieren.
 
-META-NET besteht aus 54 Forschungszentren aus 33 europäschen Ländern (Stand: November 2011), die mit Interessensvertretern aus Handelsunternehmen, Behörden, der Industrie, Forschungsorganisationen, Softwareunternehmen, Technologieanbietern, Nicht\-regierungs\-orga\-nisa\-tionen, Sprachgemeinschaften und europäischen Universitäten zusammenarbeiten. Gemeinsam entwickeln sie derzeit eine übergreifende Technologievision und eine strategische Forschungsagenda für das mehrsprachige Europa 2020.
-  }
+META-NET besteht aus 54 Forschungszentren aus 33 europäschen Ländern (Stand: November 2011), die mit Interessensvertretern aus Handelsunternehmen, Behörden, der Industrie, Forschungsorganisationen, Softwareunternehmen, Technologieanbietern, Nicht\-regierungs\-orga\-nisa\-tionen, Sprachgemeinschaften und europäischen Universitäten zusammenarbeiten. Gemeinsam entwickeln sie derzeit eine übergreifende Technologievision und eine strategische Forschungsagenda für das mehrsprachige Europa 2020.}
    
   \ParallelRText{\selectlanguage{english}
 This white paper is part of a series that promotes knowledge about language technology and its potential. It addresses educators, journalists, politicians, language communities and others. 
@@ -67,8 +71,7 @@ The availability and use of language technology in Europe varies between languag
 
 META-NET, a Network of Excellence funded by the European Commission, has conducted an analysis of current language resources and technologies. This analysis focused on the 23 official European languages as well as other important national and regional languages in Europe. The results of this analysis suggest that there are many significant research gaps for each language. A detailed expert analysis and assessment of the current situation will help maximise the impact of additional research.
 
-As of November 2011, META-NET consists of 54 research centres from 33 European countries. META-NET is working with stakeholders from commercial businesses, government agencies, industry, research organisations, software companies, technology providers, non-governmental organisations, language communities and European universities. Together, they are creating a common technology vision and strategic research agenda for multilingual Europe 2020. 
- }
+As of November 2011, META-NET consists of 54 research centres from 33 European countries. META-NET is working with stakeholders from commercial businesses, government agencies, industry, research organisations, software companies, technology providers, non-governmental organisations, language communities and European universities. Together, they are creating a common technology vision and strategic research agenda for multilingual Europe 2020.}
   
   \ParallelPar
 
@@ -400,17 +403,16 @@ Austrian German (AT) is a variant of German (\textit{Oberdeutsch}) whose lexicon
   }
   \ParallelPar
 
-  \begin{tabular*}{\textwidth}{c|c|c}
-    \hline
-    \textbf{Englisch - English} & \textbf{Österr. Deutsch - Austrian German} & \textbf{Hochdeutsch - Standard German}\\
-    \hline
-    Chair & Sessel & Stuhl\\
-    \hline
-    Arm chair & Fauteuil & Sessel\\
-    \hline
-    Tobacconist & Trafik & Tabakladen\\
-    \hline
-  \end{tabular*}
+  \begin{center}
+  \setlength{\tabcolsep}{2em}
+  \begin{tabulary}{150mm}{LLL} \toprule\addlinespace
+    \textbf{Englisch} & \textbf{Österreiches Deutsch} & \textbf{Hochdeutsch}\\ 
+    \textbf{English} & \textbf{Austrian German} & \textbf{Standard German}\\ \addlinespace\midrule\addlinespace
+    Chair       & Sessel   & Stuhl\\ \addlinespace
+    Arm chair   & Fauteuil & Sessel\\ \addlinespace
+    Tobacconist & Trafik   & Tabakladen\\ \addlinespace\bottomrule
+  \end{tabulary}
+  \end{center}
 
   \ParallelLText{\selectlanguage{german}
 Lenisierung (stimmhafte Aussprache von stimmlosen Konsonanten) ist ebenfalls im gesprochenen österreichischen Deutsch weit verbreitet. So wird phonetisch nicht zwischen \textit{backen} und \textit{packen} oder zwischen \textit{Teich} und \textit{Deich} unterschieden. Beim österreichischen Deutsch wird im Gegensatz zum Hochdeutschen in Deutschland nur selten die 1. Vergangenheitsform (das Präteritum) verwendet. Ereignisse in der Vergangenheit werden hier vorzugsweise in der 2. Vergangenheitsform (dem Perfekt) geschildert. 
@@ -657,9 +659,10 @@ Sprachtechnologien sind Softwaresysteme, die für die Verarbeitung menschlicher 
 
 \begin{figure}[h!]
   \colorrule{grey1}{\textwidth}{1pt}
-	\center
+  \center
   \includegraphics[width=\textwidth]{../_media/language_technologies}\\
-  \textsf{LT Lorel -- LT Landscape}
+  \caption{Sprachtechnologie im Kontext -- Language technology in context}
+  \label{fig:ltincontext}
   \colorrule{grey1}{\textwidth}{1pt}
 \end{figure}
 
@@ -717,10 +720,8 @@ Nach der Einführung der Kernanwendungsbereiche liefern wir einen kurzen Überbl
   \ParallelRText{\selectlanguage{english}
     Software applications for language processing typically consist of several components that mirror different aspects of language. The figure on the right shows a highly simplified architecture that can be found in a typical text processing system. The first three modules handle the structure and meaning of the text input:
     \begin{enumerate}
-      \item Pre-processing: cleans the data, analyses or removes formatting, detects the input language, replaces ä 
-      with ae in German texts, and so on.
-      \item Grammatical analysis: finds the verb, its objects, modifiers and other parts of speech as well as 
-      detects the sentence structure.
+      \item Pre-processing: cleans the data, analyses or removes formatting, detects the input languages, and so on.
+      \item Grammatical analysis: finds the verb, its objects, modifiers and other parts of speech as well as detects the sentence structure.
       \item Semantic analysis: performs disambiguation (i.e., computes the appropriate meaning of words in a given 
       context); resolves anaphora (i.e., which pronouns refer to which nouns in the sentence) and substitute    
       expressions; and represents the meaning of the sentence in a machine-readable way.
@@ -735,7 +736,8 @@ Nach der Einführung der Kernanwendungsbereiche liefern wir einen kurzen Überbl
   \colorrule{grey1}{\textwidth}{1pt}
   \center
   \includegraphics[width=\textwidth]{../_media/text_processing_app_architecture}\\
-  \textsf{Lorem Ipsum Deus Ex Machina - A Typical Text Processing Architecture}
+  \caption{Eine typische Architektur zur Verarbeitung von Texten -- A Typical Text Processing Architecture}
+  \label{fig:textprocessingarch}
   \colorrule{grey1}{\textwidth}{1pt}
 \end{figure}
   \subsection{Zentrale Anwendungsbereiche --- Core Application Areas} 
@@ -754,12 +756,12 @@ In diesem Abschnitt konzentrieren wir uns auf die wichtigsten sprachtechnologisc
 
 \begin{figure}[h!]
   \colorrule{grey1}{\textwidth}{1pt}
-	\center
-		\includegraphics[width=\textwidth]{../_media/language_checking}\\
-		\textsf{LIngua France (dexter: lorem-ipsum, sinister: staresto - Language Checking (right: rule-based, left: statistical)}
+  \center
+  \includegraphics[width=\textwidth]{../_media/language_checking}\\
+  \caption{Sprachüberprüfung (statistisch; regelbasiert) -- Language checking (statistical; rule-based)}
+  \label{fig:langcheckingaarch}
   \colorrule{grey1}{\textwidth}{1pt}
 \end{figure}
-
 
   \ParallelLText{\selectlanguage{german}
 Jeder, der ein Textverarbeitungsprogramm wie Microsoft Word einsetzt, weiß, dass es eine Rechtschreibprüfung besitzt, die Rechtschreibfehler kenntlich macht und Korrekturen vorschlägt. Die ersten Rechtschreibkorrekturprogramme verglichen eine Liste extrahierter Wörter mit einem Wörterbuch mit richtig geschriebenen Wörtern. Heute sind diese Programme wesentlich ausgefeilter. Mithilfe von sprachabhängigen Algorithmen für die Textanalyse erkennen sie Fehler im Hinblick auf Morphologie (z.B., Pluralbildung) sowie syntaxbezogene Fehler, beispielsweise ein fehlendes Verb oder einen Konflikt zwischen Eigenschaften von Verb und Subjekt (z.B. \textit{Er *schreiben einen Brief}). Aber die meisten Rechtschreibprüfungen finden im folgenden Text keinen Fehler:\\
@@ -810,7 +812,8 @@ Besides spell checkers and authoring support, language checking is also importan
   \colorrule{grey1}{\textwidth}{1pt}
   \center
   \includegraphics[width=\textwidth]{../_media/web_search_architecture}\\
-  \textsf{Deus Ex Machina - Web Search Architecture}
+  \caption{Websuche -- Web Search}
+  \label{fig:websearcharch}
   \colorrule{grey1}{\textwidth}{1pt}
  \end{figure}
 
@@ -886,10 +889,10 @@ smartphones.}
     \colorrule{grey1}{\textwidth}{1pt}
     \center
     \includegraphics[width=\textwidth]{../_media/simple_speech-based_dialogue_architecture}\\
-    \textsf{Deus Ex Machina - A Simple Speech-based Dialogue Architecture}
+    \caption{Sprachdialogsystem -- Speech-based dialogue system}
+    \label{fig:dialoguearch}
     \colorrule{grey1}{\textwidth}{1pt}
   \end{figure}
-
 
 \ParallelLText{\selectlanguage{german}
 Technologien zur Verarbeitung gesprochener Sprache setzen sich aus vier Bereichen zusammen:
@@ -939,14 +942,14 @@ Künftig wird sich aufgrund der Verbreitung von Smartphones als neue Plattform z
   
   \ParallelPar
 
-
   \subsubsection{Maschinelle Übersetzung --- Machine Translation}
 
 \begin{figure}[h!]
   \colorrule{grey1}{\textwidth}{1pt}
   \center
   \includegraphics[width=\textwidth]{../_media/machine_translation}\\
-  \textsf{Deus Ex Machina (hyper: stareto, sub:regulare) - Machine Translation (top: statistical, bottom:rule-based}
+  \caption{Maschinelle Übersetzung (statistisch; regelbasiert) -- Machine Translation (statistical; rule-based)}
+  \label{fig:mtarch}
   \colorrule{grey1}{\textwidth}{1pt}
 \end{figure}
 
@@ -1034,6 +1037,8 @@ The best results (in green and blue) were achieved by languages that benefit fro
 
 \begin{sidewaysfigure}
   \colorrule{grey1}{\textwidth}{1pt}
+
+  \medskip
 \centering
 \setlength{\tabcolsep}{0.4em}
 \begin{tabular}{>{\columncolor[RGB]{255,190,000}}cccccccccccccccccccccccc}
@@ -1065,6 +1070,7 @@ SV & \textcolor{em2}{58.5} & \textcolor{em5}{26.9} & \textcolor{em3}{41.0} & \te
 \end{tabular}
 \label{tab:euromatrix}
 \caption{Maschinelle Übersetzung zwischen 22 EU-Sprachen -- Machine translation between 22 EU-languages [\textbf{FIXME: cite paper!}]}
+\label{fig:euromatrix}
   \colorrule{grey1}{\textwidth}{1pt}
 \end{sidewaysfigure}
   
@@ -1179,7 +1185,7 @@ In der folgenden Tabelle wird der aktuelle Stand der Sprachtechnologieunterstüt
 %\begin{tabular}{>{\columncolor[RGB]{255,155,000}}p{.17\linewidth}@{\hspace{.027\linewidth}}>{\columncolor[RGB]{255,155,000}}p{.17\linewidth}@{\hspace{.027\linewidth}}>{\columncolor[RGB]{255,155,000}}p{.17\linewidth}@{\hspace{.027\linewidth}}>{\columncolor[RGB]{255,155,000}}p{.17\linewidth}@{\hspace{.027\linewidth}}>{\columncolor[RGB]{255,155,000}}p{.17\linewidth} }
 
 
-\begin{table}
+\begin{figure}
 \centering
 %\begin{tabular}{>{\columncolor[RGB]{255,190,000}}p{.33\linewidth}ccccccc} % ORIGINAL
 \begin{tabular}{>{\columncolor[RGB]{255,190,000}}p{.33\linewidth}@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c}
@@ -1203,9 +1209,9 @@ Parallele Korpora \newline Parallel corpora&2&1&2.5&2.5&2&2&1\\ \addlinespace
 Lexikalische Ressourcen \newline Lexical resources&3&2.5&4.5&3&4&4&2.5\\ \addlinespace
 Grammatiken \newline Grammars&3&2&3.5&3.5&3&2&1\\
 \end{tabular}
-\label{tab:german_table}
+\label{tab:lrlttable}
 \caption{Status der Sprachtechnologieunterstützung für Deutsch -- State of language technology support for German}
-\end{table}
+\end{figure}
 
 \ParallelLText{\selectlanguage{german}
 Die wichtigsten Ergebnisse für die deutsche Sprache lassen sich wie folgt zusammenfassen:
@@ -1553,15 +1559,8 @@ Three Lines of Action in META-NET\\
   \ParallelPar
  
 
-  \subsection{Mitgliedsorganisationen --- Member Organisations}
+  \subsection{META-NET-Mitgliedsorganisationen --- META-NET Member Organisations}
 
-  \ParallelLText{\selectlanguage{german}
-Die folgende Liste enthält die Organisationen und ihre Vertreter, die  derzeit an META-NET beteiligt sind.
-  }
-  \ParallelRText{\selectlanguage{english}
-    The following table lists the organisations and their representatives that currently participate in META-NET.
-  }
-  
   \ParallelPar
   % FIXME: Die nachfolgende Liste muesste vollstaendig und korrekt sein, sollte aber noch mal ueberprueft werden (auch in Bezug auf die diakritischen Zeichen) -- Georg
 
@@ -1620,6 +1619,14 @@ Ungarn & Hungary & Research Institute for Linguistics, Hungarian Academy of Scie
 Zypern & Cyprus & Language Centre, School of Humanities: Jack Burston
  \end{longtable}
 
+ \ParallelLText{\selectlanguage{german}~}
+
+ \ParallelRText{\selectlanguage{english}
+   \vspace*{130mm}
+   The development of this white paper has been funded by the Seventh Framework Programme and the ICT Policy Support Programme of the European Commission under contracts T4ME (Grant Agreement 249119), CESAR (Grant Agreement 271022), ME\-TA\-NET4U (Grant Agreement 270893) and ME\-TA-NORD (Grant Agreement 270899).}
+
+  \ParallelPar
+
   \bibliographystyle{plain}
   \bibliography{references}
 
@@ -1667,4 +1674,8 @@ Zypern & Cyprus & Language Centre, School of Humanities: Jack Burston
   Tschechisch & Czech & čeština\\
   Ungarisch & Hungarian & magyar\\ \addlinespace \bottomrule
 \end{tabulary}
+
+\vfill
+\centerline{META-NET -- office@meta-net.eu -- http://www.meta-net.eu}
+
 \end{document}
