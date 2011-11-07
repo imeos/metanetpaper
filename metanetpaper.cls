@@ -26,7 +26,8 @@
 \usepackage[paperwidth=210mm, paperheight=279mm, top=21mm, bottom=34mm, left=24mm, right=22mm, headsep=20mm, bindingoffset=0mm]{geometry}
 
 \usepackage{graphicx}
-
+% Mathematical symbols
+\usepackage{mathabx}
 % Colorize and customize the headings
 \usepackage[xetex]{color}
 \usepackage{titlesec}
@@ -46,8 +47,7 @@
 \usepackage{xstring}
 % TOC modifications
 \usepackage{tocloft}
-
-
+% Conditional statements
 \usepackage{ifthen}
 
 
@@ -95,7 +95,8 @@
   \color{white}\sffamily\thesubsubsection
 }{-0.5em}{\centering\protect\linebreak}
 
-% Redefine \section as \ssection
+% Redefine \section as \ssection and then as \sectionstar and \sectionnostar
+% for numbered and unnumbered sections
 \newcommand{\ssection}{\@ifstar
                      \sectionStar%
                      \sectionNoStar%
@@ -104,8 +105,9 @@
   \clearpage
   \section[#1]{%
     \ThisCenterWallPaper{1}{../_media/section_bg.pdf}
+    \vspace*{4mm}
     % Left column
-    \begin{minipage}[t]{8cm}
+    \begin{minipage}[t]{79mm}
       \color{red}
       \textsf{
         \begin{flushright}
@@ -119,9 +121,10 @@
       }
     \end{minipage}
     % spacing between colums
-    \begin{minipage}[t]{0.4cm}\ \end{minipage}
+    \begin{minipage}[t]{5mm}\ \end{minipage}
     % Right column
-    \begin{minipage}[t]{7.8cm}
+    \begin{minipage}[t]{78mm}
+      \color{grey1}
       \textsf{
         \begin{flushleft}
           % Title
@@ -133,15 +136,15 @@
         \end{flushleft}
       }
     \end{minipage}
-    \vspace*{-0.35cm}
+    \vspace*{-12mm}
   }
 }
 \newcommand{\sectionStar}[1]{%
   \clearpage
     \ThisCenterWallPaper{1}{../_media/section_bg2.pdf}
-    \vspace*{0.5cm}
+    \vspace*{4mm}
     % Left column
-    \begin{minipage}[t]{8cm}
+    \begin{minipage}[t]{79mm}
       \color{red}
       \textsf{
         \begin{flushright}
@@ -152,13 +155,13 @@
             }
           }
         \end{flushright}
-        \vspace*{0.4cm}
       }
     \end{minipage}
     % spacing between colums
-    \begin{minipage}[t]{0.4cm}\ \end{minipage}
+    \begin{minipage}[t]{5mm}\ \end{minipage}
     % Right column
-    \begin{minipage}[t]{7.8cm}
+    \begin{minipage}[t]{78mm}
+      \color{grey1}    
       \textsf{
         \begin{flushleft}
           % Title
@@ -168,17 +171,17 @@
             }
           }
         \end{flushleft}
-        \vspace*{0.2cm}
       }
-    \end{minipage}
+    \end{minipage}  
+    \vspace*{1mm}
 }
 
 % Redefine \subsection as \ssubsection
 \newcommand{\ssubsection}[1]{%
   \subsection[#1]{%
     % Left column
-    \begin{minipage}[t]{8cm}
-      \vspace*{-1.3cm}
+    \begin{minipage}[t]{79mm}
+      \vspace*{-13mm}
       \textsf{
         \begin{flushleft}
           % Title
@@ -191,10 +194,10 @@
       }
     \end{minipage}
     % spacing between colums
-    \begin{minipage}[t]{0.4cm}\ \end{minipage}
+    \begin{minipage}[t]{5mm}\ \end{minipage}
     % Right column
-    \begin{minipage}[t]{7.8cm}
-      \vspace*{-1.3cm}
+    \begin{minipage}[t]{78mm}
+      \vspace*{-13mm}
       \color{grey1}
       \textsf{
         \begin{flushleft}
@@ -207,7 +210,7 @@
         \end{flushleft}
       }
     \end{minipage}
-    \vspace*{-0.7cm}
+    \vspace*{-11mm}
   }
 }
 
@@ -215,8 +218,8 @@
 \newcommand{\ssubsubsection}[1]{%
   \subsubsection[#1]{%
     % Left column
-    \begin{minipage}[t]{8cm}
-      \vspace*{-1.4cm}
+    \begin{minipage}[t]{79mm}
+      \vspace*{-14mm}
       \textsf{
         \begin{flushleft}
           % Title
@@ -224,14 +227,13 @@
             \protect\StrBefore{#1}{ ---}
           }
         \end{flushleft}
-        \vspace*{0.1cm}
       }
     \end{minipage}
     % spacing between colums
-    \begin{minipage}[t]{0.4cm}\ \end{minipage}
+    \begin{minipage}[t]{5mm}\ \end{minipage}
     % Right column
-    \begin{minipage}[t]{7.8cm}
-      \vspace*{-1.4cm}
+    \begin{minipage}[t]{78mm}
+      \vspace*{-14mm}
       \color{grey1}
       \textsf{
         \begin{flushleft}
@@ -240,10 +242,9 @@
             \protect\StrBehind{#1}{--- }
           }
         \end{flushleft}
-        \vspace*{0.1cm}
       }
     \end{minipage}
-    \vspace*{-0.7cm}
+    \vspace*{-14mm}
   }
 }
 
@@ -253,7 +254,10 @@
 
 
 
-% Wie den Abstand aendern?
+% Lists
+  % List item style
+\renewcommand{\labelitemi}{\textcolor{red}{$\sqbullet$}}
+  % List spacing
 \newenvironment{my_itemize}{
   \begin{list}{\labelitemi}{
     \setlength{\itemsep}{-2pt}
@@ -302,29 +306,29 @@
 \renewcommand\maketitle{%
   \begin{titlepage}%
   \ThisCenterWallPaper{1}{../_media/titlepage.pdf}
-    \vspace*{0.3cm}
+    \vspace*{3mm}
     % Left column
-    \begin{minipage}[t]{8.1cm}
+    \begin{minipage}[t]{81mm}
       \color{grey2}
       \textsf{
         \begin{flushright}
           % Subtitle
           \StrBefore{\@subtitle}{ ---} \\
-          \vspace*{0.5cm}
+          \vspace*{5mm}
           % Title
-          \fontsize{34}{34}\selectfont{%
+          \fontsize{36}{36}\selectfont{%
             \MakeUppercase{%
               \protect\StrBehind{\@title}{--- }
             }
           }
         \end{flushright}
-        \vspace*{0.7cm}
+        \vspace*{7mm}
       }
     \end{minipage}
     % spacing between colums
-    \begin{minipage}[t]{0.5cm}\ \end{minipage}
+    \begin{minipage}[t]{5mm}\ \end{minipage}
     % Right column
-    \begin{minipage}[t]{8.5cm}
+    \begin{minipage}[t]{85mm}
       \color{white}
       \textsf{
         \begin{flushleft}
@@ -332,22 +336,22 @@
           \textcolor{white}{%
             \StrBehind{\@subtitle}{--- }
           } \\
-          \vspace*{0.5cm}
+          \vspace*{5mm}
           % Title
-          \fontsize{34}{34}\selectfont{%
+          \fontsize{36}{36}\selectfont{%
             \MakeUppercase{%
               \protect\StrBefore{\@title}{ ---}
             }
           }
         \end{flushleft}
-        \vspace*{0.7cm}
+        \vspace*{7mm}
       }
     \end{minipage}
     % Authors
-    \begin{Parallel}[c]{8.1cm}{7.7cm}
+    \begin{Parallel}[c]{81mm}{77mm}
       \ParallelLText{
         \begin{flushright}
-          \fontsize{14}{20}\selectfont{%
+          \fontsize{14}{24}\selectfont{%
             \textsf{
               \textcolor{grey2}{by}
             }
@@ -356,7 +360,7 @@
       }
       \ParallelRText{
         \begin{flushleft}
-          \fontsize{13}{16}\selectfont{%
+          \fontsize{14}{24}\selectfont{%
             \textsf{%
               \textcolor{white}{%
                 \@author
@@ -372,50 +376,50 @@
     \cleardoublepage
     \pagestyle{empty} 
     \ThisCenterWallPaper{1}{../_media/mocktitlepage.pdf}
-    \vspace*{0.3cm}
+    \vspace*{3mm}
     % Left column
-    \begin{minipage}[t]{8.1cm}
+    \begin{minipage}[t]{81mm}
       \color{grey3}
       \textsf{
         \begin{flushright}
           % Subtitle
           \StrBefore{\@subtitle}{ ---} \\
-          \vspace*{0.5cm}
+          \vspace*{5mm}
           % Title
-          \fontsize{34}{34}\selectfont{%
+          \fontsize{36}{36}\selectfont{%
             \MakeUppercase{%
               \protect\StrBehind{\@title}{--- }
             }
           }
         \end{flushright}
-        \vspace*{0.7cm}
+        \vspace*{7mm}
       }
     \end{minipage}
     % spacing between colums
-    \begin{minipage}[t]{0.5cm}\ \end{minipage}
+    \begin{minipage}[t]{5mm}\ \end{minipage}
     % Right column
-    \begin{minipage}[t]{8.5cm}
+    \begin{minipage}[t]{85mm}
       \color{red}
       \textsf{
         \begin{flushleft}
           % Subtitle
           \StrBehind{\@subtitle}{--- } \\
-          \vspace*{0.5cm}
+          \vspace*{5mm}
           % Title
-          \fontsize{34}{34}\selectfont{%
+          \fontsize{36}{36}\selectfont{%
             \MakeUppercase{%
               \protect\StrBefore{\@title}{ ---}
             }
           }
         \end{flushleft}
-        \vspace*{0.7cm}
+        \vspace*{7mm}
       }
     \end{minipage}
     % Authors
-    \begin{Parallel}[c]{8.1cm}{7.7cm}
+    \begin{Parallel}[c]{81mm}{77mm}
       \ParallelLText{
         \begin{flushright}
-          \fontsize{14}{20}\selectfont{%
+          \fontsize{14}{24}\selectfont{%
             \textsf{
               \textcolor{grey3}{by}
             }
@@ -424,7 +428,7 @@
       }
       \ParallelRText{
         \begin{flushleft}
-          \fontsize{13}{16}\selectfont{%
+          \fontsize{14}{24}\selectfont{%
             \textsf{%
               \textcolor{red}{%
                 \@author
