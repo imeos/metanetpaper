@@ -84,11 +84,9 @@
   \centering \fontsize{24}{25}\color{red}\sffamily\thesection
 }{-0.5em}{\centering\protect\linebreak}
 
-\renewcommand\subsection{\@startsection {subsection}{1}{\z@}%
-  {-3.5ex \@plus -1ex \@minus -.2ex}%
-  {2.3ex \@plus.2ex}%
-  {}
-}
+\titleformat{\subsection}{}{
+  \color{white}\sffamily\thesubsection
+}{-0.5em}{\centering\protect\linebreak}
 
 \renewcommand\subsubsection{\@startsection {subsubsection}{1}{\z@}%
   {-3.5ex \@plus -1ex \@minus -.2ex}%
@@ -135,17 +133,17 @@
   }
 }
 
-% Redefine \sectio as \ssection
+% Redefine \subsection as \ssubsection
 \newcommand{\ssubsection}[1]{%
   \subsection[#1]{%
     % Left column
-    \begin{minipage}[t]{7.5cm}
+    \begin{minipage}[t]{7.3cm}
       \textsf{
         \begin{flushright}
           % Title
           \fontsize{14}{16}\selectfont{%
             \MakeUppercase{%
-              \protect\StrBefore{#1}{ ---}
+              \thesubsection \ \protect\StrBefore{#1}{ ---}
             }
           }
         \end{flushright}
@@ -162,7 +160,7 @@
           % Title
           \fontsize{14}{16}\selectfont{%
             \MakeUppercase{%
-              \protect\StrBehind{#1}{--- }
+              \thesubsection \ \protect\StrBehind{#1}{--- }
             }
           }
         \end{flushleft}
