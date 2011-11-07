@@ -79,6 +79,7 @@
 \definecolor{red}{cmyk}{0.2, 1, 1, 0.1}              % #C80000
 \definecolor{grey1}{cmyk}{0, 0, 0, 0.7}              % #3C3C3C
 \definecolor{grey2}{cmyk}{0.16, 0.11, 0.09, 0}       % #C6C7C8
+\definecolor{grey3}{cmyk}{0, 0, 0, 0.4}              % #C6C7C8
                                                       
 
 % Headings
@@ -352,6 +353,73 @@
           \fontsize{13}{16}\selectfont{%
             \textsf{%
               \textcolor{white}{%
+                \@author
+              }
+            }
+          }
+        \end{flushleft}
+      }
+      \ParallelPar
+    \end{Parallel}
+    
+    % Mocktitle
+    \cleardoublepage
+    \ThisCenterWallPaper{1}{../_media/mocktitlepage.pdf}
+    \vspace*{0.3cm}
+    % Left column
+    \begin{minipage}[t]{8.1cm}
+      \color{grey3}
+      \textsf{
+        \begin{flushright}
+          % Subtitle
+          \StrBefore{\@subtitle}{ ---} \\
+          \vspace*{0.5cm}
+          % Title
+          \fontsize{34}{34}\selectfont{%
+            \MakeUppercase{%
+              \protect\StrBehind{\@title}{--- }
+            }
+          }
+        \end{flushright}
+        \vspace*{0.7cm}
+      }
+    \end{minipage}
+    % spacing between colums
+    \begin{minipage}[t]{0.5cm}\ \end{minipage}
+    % Right column
+    \begin{minipage}[t]{8.5cm}
+      \color{red}
+      \textsf{
+        \begin{flushleft}
+          % Subtitle
+          \StrBehind{\@subtitle}{--- } \\
+          \vspace*{0.5cm}
+          % Title
+          \fontsize{34}{34}\selectfont{%
+            \MakeUppercase{%
+              \protect\StrBefore{\@title}{ ---}
+            }
+          }
+        \end{flushleft}
+        \vspace*{0.7cm}
+      }
+    \end{minipage}
+    % Authors
+    \begin{Parallel}[c]{8.1cm}{7.7cm}
+      \ParallelLText{
+        \begin{flushright}
+          \fontsize{14}{20}\selectfont{%
+            \textsf{
+              \textcolor{grey3}{by}
+            }
+          }
+        \end{flushright}
+      }
+      \ParallelRText{
+        \begin{flushleft}
+          \fontsize{13}{16}\selectfont{%
+            \textsf{%
+              \textcolor{red}{%
                 \@author
               }
             }
