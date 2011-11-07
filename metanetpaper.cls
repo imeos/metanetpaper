@@ -134,6 +134,7 @@
         \end{flushleft}
       }
     \end{minipage}
+    \vspace*{-0.25cm}
   }
 }
 \newcommand{\sectionStar}[1]{%
@@ -152,7 +153,7 @@
             }
           }
         \end{flushright}
-        \vspace*{0.2cm}
+        \vspace*{0.4cm}
       }
     \end{minipage}
     % spacing between colums
@@ -168,7 +169,7 @@
             }
           }
         \end{flushleft}
-        \vspace*{0.2cm}
+        \vspace*{0.4cm}
       }
     \end{minipage}
 }
@@ -178,6 +179,7 @@
   \subsection[#1]{%
     % Left column
     \begin{minipage}[t]{8cm}
+      \vspace{-1cm}
       \textsf{
         \begin{flushleft}
           % Title
@@ -193,6 +195,7 @@
     \begin{minipage}[t]{0.4cm}\ \end{minipage}
     % Right column
     \begin{minipage}[t]{7.8cm}
+      \vspace{-1cm}
       \color{grey1}
       \textsf{
         \begin{flushleft}
@@ -205,6 +208,7 @@
         \end{flushleft}
       }
     \end{minipage}
+    \vspace*{-0.5cm}
   }
 }
 
