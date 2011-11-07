@@ -80,39 +80,34 @@
 
 % Headings
   % Reset all sections
-  \renewcommand\section{\@startsection
-  {section}%                   % the name
-  {1}%                         % the level
-  {0mm}%                       % the indent
-  {-\baselineskip}%            % the before skip
-  {0.5\baselineskip}%          % the after skip
-  {}} % the style
-\renewcommand\subsection{\@startsection {section}{1}{\z@}%
-  {-3.5ex \@plus -1ex \@minus -.2ex}%
-  {2.3ex \@plus.2ex}%
-  {}
-}
-\renewcommand\subsubsection{\@startsection {section}{1}{\z@}%
+\titleformat{\section}{}{
+  \centering \fontsize{24}{25}\color{red}\sffamily\thesection
+}{-0.5em}{\centering\protect\linebreak}
+
+\renewcommand\subsection{\@startsection {subsection}{1}{\z@}%
   {-3.5ex \@plus -1ex \@minus -.2ex}%
   {2.3ex \@plus.2ex}%
   {}
 }
 
-% Redefine \sectio as \ssection
+\renewcommand\subsubsection{\@startsection {subsubsection}{1}{\z@}%
+  {-3.5ex \@plus -1ex \@minus -.2ex}%
+  {2.3ex \@plus.2ex}%
+  {}
+}
+
+% Redefine \section as \ssection
 \newcommand{\ssection}[1]{%
   \clearpage
   \section[#1]{%
-    % rule above
-    \begin{minipage}[t]{\textwidth}
-        \colorrule{grey1}{7.5cm}{1pt}
-    \end{minipage}
+    \ThisCenterWallPaper{1}{../_media/section_bg.pdf}
     % Left column
-    \begin{minipage}[t]{7.5cm}
+    \begin{minipage}[t]{7.3cm}
       \color{red}
       \textsf{
         \begin{flushright}
           % Title
-          \fontsize{24}{25}\selectfont{%
+          \fontsize{24}{24}\selectfont{%
             \MakeUppercase{%
               \protect\StrBefore{#1}{ ---}
             }
@@ -128,7 +123,7 @@
       \textsf{
         \begin{flushleft}
           % Title
-          \fontsize{24}{25}\selectfont{%
+          \fontsize{24}{24}\selectfont{%
             \MakeUppercase{%
               \protect\StrBehind{#1}{--- }
             }
