@@ -169,7 +169,7 @@
             }
           }
         \end{flushleft}
-        \vspace*{0.4cm}
+        \vspace*{0.3cm}
       }
     \end{minipage}
 }
@@ -208,7 +208,7 @@
         \end{flushleft}
       }
     \end{minipage}
-    \vspace*{-0.5cm}
+    \vspace*{-0.6cm}
   }
 }
 
@@ -432,6 +432,8 @@
       }
       \ParallelPar
     \end{Parallel}
+    
+    \clearpage
   \end{titlepage}
 }
 
