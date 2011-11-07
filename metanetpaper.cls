@@ -1,4 +1,4 @@
-  %                                     MMMMMMMMM                                         
+%                                     MMMMMMMMM                                         
 %                                                                             
 %  MMO    MM   MMMMMM  MMMMMMM   MM    MMMMMMMM   MMD   MM  MMMMMMM MMMMMMM   
 %  MMM   MMM   MM        MM     ?MMM              MMM$  MM  MM         MM     
@@ -9,7 +9,6 @@
 %
 %
 %                - META-NET Language Whitepaper | CLASS -
-
 
 
 \NeedsTeXFormat{LaTeX2e}
@@ -455,8 +454,6 @@
 \renewcommand*\contentsname{}
   % set the depth
 \setcounter{tocdepth}{2}
-
-\addtocontents{toc}{\protect\thispagestyle{empty}}
 
 
 \endinput
