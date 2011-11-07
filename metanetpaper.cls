@@ -86,7 +86,7 @@
   % Reset all sections
 \titleformat{\section}{}{
   \centering \fontsize{24}{25}\color{red}\sffamily\thesection
-}{-0.3em}{\centering\protect\linebreak}
+}{-0.35em}{\centering\protect\linebreak}
 
 \titleformat{\subsection}{}{
   \color{white}\sffamily\thesubsection
@@ -134,7 +134,7 @@
         \end{flushleft}
       }
     \end{minipage}
-    \vspace*{-0.25cm}
+    \vspace*{-0.35cm}
   }
 }
 \newcommand{\sectionStar}[1]{%
@@ -169,7 +169,7 @@
             }
           }
         \end{flushleft}
-        \vspace*{0.3cm}
+        \vspace*{0.2cm}
       }
     \end{minipage}
 }
@@ -179,7 +179,7 @@
   \subsection[#1]{%
     % Left column
     \begin{minipage}[t]{8cm}
-      \vspace{-1cm}
+      \vspace*{-1.3cm}
       \textsf{
         \begin{flushleft}
           % Title
@@ -195,7 +195,7 @@
     \begin{minipage}[t]{0.4cm}\ \end{minipage}
     % Right column
     \begin{minipage}[t]{7.8cm}
-      \vspace{-1cm}
+      \vspace*{-1.3cm}
       \color{grey1}
       \textsf{
         \begin{flushleft}
@@ -208,7 +208,7 @@
         \end{flushleft}
       }
     \end{minipage}
-    \vspace*{-0.6cm}
+    \vspace*{-0.7cm}
   }
 }
 
@@ -217,6 +217,7 @@
   \subsubsection[#1]{%
     % Left column
     \begin{minipage}[t]{8cm}
+      \vspace*{-1.4cm}
       \textsf{
         \begin{flushleft}
           % Title
@@ -231,6 +232,7 @@
     \begin{minipage}[t]{0.4cm}\ \end{minipage}
     % Right column
     \begin{minipage}[t]{7.8cm}
+      \vspace*{-1.4cm}
       \color{grey1}
       \textsf{
         \begin{flushleft}
@@ -242,6 +244,7 @@
         \vspace*{0.1cm}
       }
     \end{minipage}
+    \vspace*{-0.7cm}
   }
 }
 
@@ -270,7 +273,7 @@
       #1
     }
   }
-\end{center}
+  \end{center}
 }
 
 
@@ -368,6 +371,7 @@
     
     % Mocktitle
     \cleardoublepage
+    \pagestyle{empty} 
     \ThisCenterWallPaper{1}{../_media/mocktitlepage.pdf}
     \vspace*{0.3cm}
     % Left column
@@ -450,7 +454,9 @@
   % remove 'Contents'
 \renewcommand*\contentsname{}
   % set the depth
-\setcounter{tocdepth}{3}
+\setcounter{tocdepth}{2}
+
+\addtocontents{toc}{\protect\thispagestyle{empty}}
 
 
 \endinput

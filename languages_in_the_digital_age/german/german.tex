@@ -54,7 +54,6 @@
   
   \input{german_mocktitle}
 
-
   % --------------------------------------------------------------------------
   \ssection*{Vorwort --- Preface}
   \ParallelLText{\selectlanguage{german}
@@ -83,9 +82,12 @@ As of November 2011, META-NET consists of 54 research centres from 33 European c
 
   
   \tableofcontents
+  \addtocontents{toc}{\protect\thispagestyle{empty}}
   
   \clearpage
 
+  \setcounter{page}{1}
+  \pagestyle{scrheadings}
 
   % --------------------------------------------------------------------------
   \ssection{Zusammenfassung --- Executive Summary}
