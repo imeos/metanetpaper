@@ -80,11 +80,13 @@
 
 % Headings
   % Reset all sections
-\renewcommand\section{\@startsection {section}{1}{\z@}%
-  {-3.5ex \@plus -1ex \@minus -.2ex}%
-  {2.3ex \@plus.2ex}%
-  {}
-}
+  \renewcommand\section{\@startsection
+  {section}%                   % the name
+  {1}%                         % the level
+  {0mm}%                       % the indent
+  {-\baselineskip}%            % the before skip
+  {0.5\baselineskip}%          % the after skip
+  {}} % the style
 \renewcommand\subsection{\@startsection {section}{1}{\z@}%
   {-3.5ex \@plus -1ex \@minus -.2ex}%
   {2.3ex \@plus.2ex}%
