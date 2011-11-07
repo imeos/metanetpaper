@@ -49,6 +49,9 @@
 \usepackage{tocloft}
 
 
+\usepackage{ifthen}
+
+
 
 % Class options & definitions
 % ---------------------------
@@ -82,25 +85,27 @@
   % Reset all sections
 \titleformat{\section}{}{
   \centering \fontsize{24}{25}\color{red}\sffamily\thesection
-}{-0.5em}{\centering\protect\linebreak}
+}{-0.3em}{\centering\protect\linebreak}
 
 \titleformat{\subsection}{}{
   \color{white}\sffamily\thesubsection
 }{-0.5em}{\centering\protect\linebreak}
 
-\renewcommand\subsubsection{\@startsection {subsubsection}{1}{\z@}%
-  {-3.5ex \@plus -1ex \@minus -.2ex}%
-  {2.3ex \@plus.2ex}%
-  {}
-}
+\titleformat{\subsubsection}{}{
+  \color{white}\sffamily\thesubsubsection
+}{-0.5em}{\centering\protect\linebreak}
 
 % Redefine \section as \ssection
-\newcommand{\ssection}[1]{%
+\newcommand{\ssection}{\@ifstar
+                     \sectionStar%
+                     \sectionNoStar%
+}
+\newcommand{\sectionNoStar}[1]{%
   \clearpage
   \section[#1]{%
     \ThisCenterWallPaper{1}{../_media/section_bg.pdf}
     % Left column
-    \begin{minipage}[t]{7.3cm}
+    \begin{minipage}[t]{8cm}
       \color{red}
       \textsf{
         \begin{flushright}
@@ -115,9 +120,9 @@
       }
     \end{minipage}
     % spacing between colums
-    \begin{minipage}[t]{0.5cm}\ \end{minipage}
+    \begin{minipage}[t]{0.4cm}\ \end{minipage}
     % Right column
-    \begin{minipage}[t]{7cm}
+    \begin{minipage}[t]{7.8cm}
       \textsf{
         \begin{flushleft}
           % Title
@@ -132,28 +137,63 @@
     \end{minipage}
   }
 }
+\newcommand{\sectionStar}[1]{%
+  \clearpage
+    \ThisCenterWallPaper{1}{../_media/section_bg2.pdf}
+    \vspace*{0.5cm}
+    % Left column
+    \begin{minipage}[t]{8cm}
+      \color{red}
+      \textsf{
+        \begin{flushright}
+          % Title
+          \fontsize{24}{24}\selectfont{%
+            \MakeUppercase{%
+              \protect\StrBefore{#1}{ ---}
+            }
+          }
+        \end{flushright}
+        \vspace*{0.2cm}
+      }
+    \end{minipage}
+    % spacing between colums
+    \begin{minipage}[t]{0.4cm}\ \end{minipage}
+    % Right column
+    \begin{minipage}[t]{7.8cm}
+      \textsf{
+        \begin{flushleft}
+          % Title
+          \fontsize{24}{24}\selectfont{%
+            \MakeUppercase{%
+              \protect\StrBehind{#1}{--- }
+            }
+          }
+        \end{flushleft}
+        \vspace*{0.2cm}
+      }
+    \end{minipage}
+}
 
 % Redefine \subsection as \ssubsection
 \newcommand{\ssubsection}[1]{%
   \subsection[#1]{%
     % Left column
-    \begin{minipage}[t]{7.3cm}
+    \begin{minipage}[t]{8cm}
       \textsf{
-        \begin{flushright}
+        \begin{flushleft}
           % Title
           \fontsize{14}{16}\selectfont{%
             \MakeUppercase{%
               \thesubsection \ \protect\StrBefore{#1}{ ---}
             }
           }
-        \end{flushright}
-        \vspace*{0.1cm}
+        \end{flushleft}
       }
     \end{minipage}
     % spacing between colums
-    \begin{minipage}[t]{0.5cm}\ \end{minipage}
+    \begin{minipage}[t]{0.4cm}\ \end{minipage}
     % Right column
-    \begin{minipage}[t]{7cm}
+    \begin{minipage}[t]{7.8cm}
       \color{grey1}
       \textsf{
         \begin{flushleft}
@@ -164,17 +204,45 @@
             }
           }
         \end{flushleft}
+      }
+    \end{minipage}
+  }
+}
+
+% Redefine \subsubsection as \ssubsubsection
+\newcommand{\ssubsubsection}[1]{%
+  \subsubsection[#1]{%
+    % Left column
+    \begin{minipage}[t]{8cm}
+      \textsf{
+        \begin{flushleft}
+          % Title
+          \fontsize{14}{16}\selectfont{%
+            \protect\StrBefore{#1}{ ---}
+          }
+        \end{flushleft}
+        \vspace*{0.1cm}
+      }
+    \end{minipage}
+    % spacing between colums
+    \begin{minipage}[t]{0.4cm}\ \end{minipage}
+    % Right column
+    \begin{minipage}[t]{7.8cm}
+      \color{grey1}
+      \textsf{
+        \begin{flushleft}
+          % Title
+          \fontsize{14}{16}\selectfont{%
+            \protect\StrBehind{#1}{--- }
+          }
+        \end{flushleft}
         \vspace*{0.1cm}
       }
     \end{minipage}
   }
 }
-% Headings - \subsubsection
-\titleformat{\subsubsection}{
-  \vskip 0.2cm \fontsize{12}{15}\selectfont \sffamily
-}{\thesubsubsection}{0.62em}{\MakeUppercase}
 
- 
+
 %\renewcommand\ParallelRText[1]{{
 %	\textcolor{grey1}{#1} }}
 
