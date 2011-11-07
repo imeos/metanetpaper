@@ -264,7 +264,8 @@
     \setlength{\leftmargin}{1.3em}
   }
 }
-{\end{list}}
+{\end{list}
+}
 
 
 % Marginal notes
