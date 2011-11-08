@@ -65,7 +65,7 @@
   \newfontfamily\futuralight{Futura Light}
   \newfontfamily\futurabook{Futura Book}
   \newfontfamily\futuramedium{Futura Medium}
-\setmonofont{Courier New}
+\setmonofont[Scale=0.7]{DejaVu Sans Mono}
 
 
 % Colors                                             
@@ -77,6 +77,7 @@
 \definecolor{red_dark}{cmyk}{0.2, 1, 1, 0.10}        % #B72126
 \definecolor{red}{cmyk}{0.2, 1, 1, 0.1}              % #C80000
 \definecolor{red2}{cmyk}{0, 0.45, 0.26, 0}           % #ff8182
+\definecolor{red3}{cmyk}{0.1, 0.8, 0.6, 0}           % #a83b3b
 \definecolor{grey1}{cmyk}{0, 0, 0, 0.7}              % #3C3C3C
 \definecolor{grey2}{cmyk}{0.16, 0.11, 0.09, 0}       % #C6C7C8
 \definecolor{grey3}{cmyk}{0, 0, 0, 0.4}              % #C6C7C8
@@ -280,15 +281,15 @@
 % Marginal notes
 % \boxtext{your text}
 \newcommand\boxtext[1]{
-  \colorrule{grey2}{78mm}{0.5pt}
+  \colorrule{printblack}{78mm}{0.25pt}
   \begin{center}
   \large{
     \textsf{
       #1
     }
   }
+  \colorrule{printblack}{78mm}{0.25pt}
   \end{center}
-  \colorrule{grey2}{78mm}{0.5pt}
 }
 
 
@@ -470,27 +471,5 @@
 \renewcommand*\contentsname{}
   % set the depth
 \setcounter{tocdepth}{2}
-
-
-% Bibliography
-\renewenvironment{thebibliography}[1]
-  {\section*{\bibname}
-  \@mkboth{\MakeUppercase\bibname}{\MakeUppercase\bibname}%
-  \list{\@biblabel{\@arabic\c@enumiv}}%
-       {\settowidth\labelwidth{\@biblabel{#1}}%
-        \leftmargin\labelwidth
-        \advance\leftmargin\labelsep
-        \@openbib@code
-        \usecounter{enumiv}%
-        \let\p@enumiv\@empty
-        \renewcommand\theenumiv{\@arabic\c@enumiv}}%
-  \sloppy
-  \clubpenalty4000
-  \@clubpenalty \clubpenalty
-  \widowpenalty4000%
-  \sfcode`\.\@m}
-  {\def\@noitemerr
-   {\@latex@warning{Empty `thebibliography' environment}}%
-  \endlist}
 
 \endinput
