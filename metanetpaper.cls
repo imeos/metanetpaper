@@ -110,9 +110,9 @@
                      \sectionStar%
                      \sectionNoStar%
 }
-\newcommand{\sectionNoStar}[1]{%
+\newcommand{\sectionNoStar}[2][]{%
   \clearpage
-  \section[#1]{%
+  \section[#2]{%
     \ThisCenterWallPaper{1}{../_media/section_bg.pdf}
     \vspace*{4mm}
     % Left column
@@ -123,7 +123,7 @@
           % Title
           \fontsize{24}{24}\selectfont{%
             \MakeUppercase{%
-              \protect\StrBefore{#1}{ ---}
+              \protect\StrBefore{#2}{ ---}
             }
           }
         \end{flushright}
@@ -139,7 +139,7 @@
           % Title
           \fontsize{24}{24}\selectfont{%
             \MakeUppercase{%
-              \protect\StrBehind{#1}{--- }
+              \protect\StrBehind{#2}{--- }
             }
           }
         \end{flushleft}
@@ -148,7 +148,7 @@
     \vspace*{-12mm}
   }
 }
-\newcommand{\sectionStar}[1]{%
+\newcommand{\sectionStar}[2][]{%
   \clearpage
     \ThisCenterWallPaper{1}{../_media/section_bg.pdf}
     \vspace*{4mm}
@@ -160,7 +160,7 @@
           % Title
           \fontsize{24}{24}\selectfont{%
             \MakeUppercase{%
-              \protect\StrBefore{#1}{ ---}
+              \protect\StrBefore{#2}{ ---}
             }
           }
         \end{flushright}
@@ -176,7 +176,7 @@
           % Title
           \fontsize{24}{24}\selectfont{%
             \MakeUppercase{%
-              \protect\StrBehind{#1}{--- }
+              \protect\StrBehind{#2}{--- }
             }
           }
         \end{flushleft}
