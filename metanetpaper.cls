@@ -471,26 +471,4 @@
   % set the depth
 \setcounter{tocdepth}{2}
 
-
-% Bibliography
-%\renewenvironment{thebibliography}[1]
-%  {\section*{\bibname}
-%  \@mkboth{\MakeUppercase\bibname}{\MakeUppercase\bibname}%
-%  \list{\@biblabel{\@arabic\c@enumiv}}%
-%       {\settowidth\labelwidth{\@biblabel{#1}}%
-%        \leftmargin\labelwidth
-%        \advance\leftmargin\labelsep
-%        \@openbib@code
-%        \usecounter{enumiv}%
-%        \let\p@enumiv\@empty
-%        \renewcommand\theenumiv{\@arabic\c@enumiv}}%
-%  \sloppy
-%  \clubpenalty4000
-%  \@clubpenalty \clubpenalty
-%  \widowpenalty4000%
-%  \sfcode`\.\@m}
-%  {\def\@noitemerr
-%   {\@latex@warning{Empty `thebibliography' environment}}%
-%  \endlist}
-
 \endinput
