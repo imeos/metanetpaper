@@ -76,9 +76,18 @@
 \definecolor{orange3}{cmyk}{0.01, 0.12, 0.91, 0.01}  % #FFCC00
 \definecolor{red_dark}{cmyk}{0.2, 1, 1, 0.10}        % #B72126
 \definecolor{red}{cmyk}{0.2, 1, 1, 0.1}              % #C80000
+\definecolor{red2}{cmyk}{0, 0.45, 0.26, 0}           % #ff8182
 \definecolor{grey1}{cmyk}{0, 0, 0, 0.7}              % #3C3C3C
 \definecolor{grey2}{cmyk}{0.16, 0.11, 0.09, 0}       % #C6C7C8
 \definecolor{grey3}{cmyk}{0, 0, 0, 0.4}              % #C6C7C8
+\definecolor{green}{cmyk}{0.82, 0.16, 0.79, 0.03}    % #1F9863
+\definecolor{green2}{cmyk}{0.53, 0, 0.77, 0}         % #81C56B
+\definecolor{blue}{cmyk}{0.65, 0, 0.26, 0}           % #44C1C5
+\definecolor{blue2}{cmyk}{0.55, 0, 0.22, 0}          % #56D8D8
+\definecolor{purple}{cmyk}{0.49, 0.32, 0, 0}         % #7e7fff
+
+
+
                                                       
 
 % Headings
@@ -101,9 +110,9 @@
                      \sectionStar%
                      \sectionNoStar%
 }
-\newcommand{\sectionNoStar}[1]{%
+\newcommand{\sectionNoStar}[2][]{%
   \clearpage
-  \section[#1]{%
+  \section[#2]{%
     \ThisCenterWallPaper{1}{../_media/section_bg.pdf}
     \vspace*{4mm}
     % Left column
@@ -114,7 +123,7 @@
           % Title
           \fontsize{24}{24}\selectfont{%
             \MakeUppercase{%
-              \protect\StrBefore{#1}{ ---}
+              \protect\StrBefore{#2}{ ---}
             }
           }
         \end{flushright}
@@ -130,7 +139,7 @@
           % Title
           \fontsize{24}{24}\selectfont{%
             \MakeUppercase{%
-              \protect\StrBehind{#1}{--- }
+              \protect\StrBehind{#2}{--- }
             }
           }
         \end{flushleft}
@@ -139,9 +148,9 @@
     \vspace*{-12mm}
   }
 }
-\newcommand{\sectionStar}[1]{%
+\newcommand{\sectionStar}[2][]{%
   \clearpage
-    \ThisCenterWallPaper{1}{../_media/section_bg2.pdf}
+    \ThisCenterWallPaper{1}{../_media/section_bg.pdf}
     \vspace*{4mm}
     % Left column
     \begin{minipage}[t]{79mm}
@@ -151,7 +160,7 @@
           % Title
           \fontsize{24}{24}\selectfont{%
             \MakeUppercase{%
-              \protect\StrBefore{#1}{ ---}
+              \protect\StrBefore{#2}{ ---}
             }
           }
         \end{flushright}
@@ -167,7 +176,7 @@
           % Title
           \fontsize{24}{24}\selectfont{%
             \MakeUppercase{%
-              \protect\StrBehind{#1}{--- }
+              \protect\StrBehind{#2}{--- }
             }
           }
         \end{flushleft}
@@ -256,7 +265,7 @@
 
 % Lists
   % List item style
-\renewcommand{\labelitemi}{\textcolor{red}{$\sqbullet$}}
+\renewcommand{\labelitemi}{$\sqbullet$}
   % List spacing
 \newenvironment{my_itemize}{
   \begin{list}{\labelitemi}{
@@ -271,6 +280,7 @@
 % Marginal notes
 % \boxtext{your text}
 \newcommand\boxtext[1]{
+  \colorrule{grey2}{78mm}{0.5pt}
   \begin{center}
   \large{
     \textsf{
@@ -278,6 +288,7 @@
     }
   }
   \end{center}
+  \colorrule{grey2}{78mm}{0.5pt}
 }
 
 
@@ -448,7 +459,7 @@
 
 % Table of contents
   % the sections
-\renewcommand{\cftsecfont}{\futurabook}
+\renewcommand{\cftsecfont}{\fontsize{12}{9}\selectfont\futurabook}
 \renewcommand{\cftsubsecfont}{\futuralight}
 \renewcommand{\cftsubsubsecfont}{\futuralight}
   % the page numbers
@@ -460,5 +471,26 @@
   % set the depth
 \setcounter{tocdepth}{2}
 
+
+% Bibliography
+\renewenvironment{thebibliography}[1]
+  {\section*{\bibname}
+  \@mkboth{\MakeUppercase\bibname}{\MakeUppercase\bibname}%
+  \list{\@biblabel{\@arabic\c@enumiv}}%
+       {\settowidth\labelwidth{\@biblabel{#1}}%
+        \leftmargin\labelwidth
+        \advance\leftmargin\labelsep
+        \@openbib@code
+        \usecounter{enumiv}%
+        \let\p@enumiv\@empty
+        \renewcommand\theenumiv{\@arabic\c@enumiv}}%
+  \sloppy
+  \clubpenalty4000
+  \@clubpenalty \clubpenalty
+  \widowpenalty4000%
+  \sfcode`\.\@m}
+  {\def\@noitemerr
+   {\@latex@warning{Empty `thebibliography' environment}}%
+  \endlist}
 
 \endinput
