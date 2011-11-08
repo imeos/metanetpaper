@@ -86,6 +86,7 @@
 \definecolor{grey1}{cmyk}{0, 0, 0, 0.7}              % #3C3C3C
 \definecolor{grey2}{cmyk}{0.16, 0.11, 0.09, 0}       % #C6C7C8
 \definecolor{grey3}{cmyk}{0, 0, 0, 0.4}              % #C6C7C8
+\definecolor{grey4}{cmyk}{0.54, 0.59, 0.77, 0.23}    % #847a6f
 \definecolor{green}{cmyk}{0.82, 0.16, 0.79, 0.03}    % #1F9863
 \definecolor{green2}{cmyk}{0.53, 0, 0.77, 0}         % #81C56B
 \definecolor{blue}{cmyk}{0.65, 0, 0.26, 0}           % #44C1C5
