@@ -74,6 +74,11 @@
 \definecolor{orange1}{cmyk}{0, 0.56, 0.86, 0}        % #FF6600
 \definecolor{orange2}{cmyk}{0, 0.34, 0.87, 0.01}     % #FF9900
 \definecolor{orange3}{cmyk}{0.01, 0.12, 0.91, 0.01}  % #FFCC00
+\definecolor{corange1}{cmyk}{0.0, 0.216, 0.42, 0.04} % #F5B58E
+\definecolor{corange2}{cmyk}{0.0, 0.32, 0.51, 0.04}  % #F5A676
+\definecolor{corange3}{cmyk}{0.0, 0.38, 0.62, 0.04}  % #F5975D
+\definecolor{corange4}{cmyk}{0.0, 0.44, 0.72, 0.04}  % #F58845
+\definecolor{corange5}{cmyk}{0.0, 0.50, 0.82, 0.04}  % #F5792C
 \definecolor{red_dark}{cmyk}{0.2, 1, 1, 0.10}        % #B72126
 \definecolor{red}{cmyk}{0.2, 1, 1, 0.1}              % #C80000
 \definecolor{red2}{cmyk}{0, 0.45, 0.26, 0}           % #ff8182
@@ -266,7 +271,7 @@
 
 % Lists
   % List item style
-\renewcommand{\labelitemi}{$\sqbullet$}
+%\renewcommand{\labelitemi}{$\sqbullet$}
   % List spacing
 \newenvironment{my_itemize}{
   \begin{list}{\labelitemi}{
