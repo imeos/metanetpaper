@@ -27,7 +27,7 @@
 
 \usepackage{graphicx}
 % Mathematical symbols
-%\usepackage{mathabx}
+\usepackage{mathabx}
 % Colorize and customize the headings
 \usepackage[xetex]{color}
 \usepackage{titlesec}
@@ -265,7 +265,7 @@
 
 % Lists
   % List item style
-%\renewcommand{\labelitemi}{\textcolor{red}{$\sqbullet$}}
+\renewcommand{\labelitemi}{$\sqbullet$}
   % List spacing
 \newenvironment{my_itemize}{
   \begin{list}{\labelitemi}{
@@ -459,7 +459,7 @@
 
 % Table of contents
   % the sections
-\renewcommand{\cftsecfont}{\futurabook}
+\renewcommand{\cftsecfont}{\fontsize{12}{9}\selectfont\futurabook}
 \renewcommand{\cftsubsecfont}{\futuralight}
 \renewcommand{\cftsubsubsecfont}{\futuralight}
   % the page numbers
