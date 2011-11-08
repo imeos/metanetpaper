@@ -38,6 +38,7 @@
   Markus Egg \\
   Kathrin Eichler \\
   Brigitte Krenn \\
+  Jörn Kreutel \\
   Annette Leßmöllmann \\
   Georg Rehm \\
   Manfred Stede \\
@@ -56,7 +57,7 @@
 
   % --------------------------------------------------------------------------
 
-  \section*{Vorwort --- Preface}
+  \ssection*{Vorwort --- Preface}
   \ParallelLText{\selectlanguage{german}
 Dieses Weißbuch gehört zu einer Reihe, die Wissen über Sprachtechnologie und deren Potenzial vermitteln soll, und sich insbesondere an Journalisten, Politiker, Sprachgemeinschaften und Lehrende richtet.
 
@@ -81,7 +82,6 @@ As of November 2011, META-NET consists of 54 research centres from 33 European c
   % --------------------------------------------------------------------------
   \clearpage
 
-  
   \tableofcontents
   \addtocontents{toc}{\protect\thispagestyle{empty}}
   
@@ -1044,16 +1044,11 @@ There is still a huge potential for improving the quality of MT systems. The cha
 Evaluation campaigns help to compare the quality of MT systems, the different approaches and the status of the systems for different language pairs. Table \ref{tab:euromatrix}, which was prepared during the EC Euromatrix+ project, shows the pair-wise performances obtained for 22 of the 23 official EU languages (Irish was not compared). The results are ranked according to a BLEU score, which indicates higher scores for better translations\cite{bleu1}. A human translator would normally achieve a score of around 80 points.
 
 The best results (in green and blue) were achieved by languages that benefit from a considerable research effort in coordinated programmes and the existence of many parallel corpora (e.g., English, French, Dutch, Spanish and German). The languages with poorer results are shown in red. These languages either lack such development efforts or are structurally very different from other languages (e.g., Hungarian, Maltese and Finnish).
-
-
   }  
   \ParallelPar
 
 
 \begin{sidewaysfigure}
-  \colorrule{grey3}{\textwidth}{1.5pt}
-
-  \medskip
 \centering
 \setlength{\tabcolsep}{0.4em}
 \begin{tabular}{>{\columncolor{orange1}}cccccccccccccccccccccccc}
@@ -1086,7 +1081,6 @@ SV & \textcolor{green2}{58.5} & \textcolor{red}{26.9} & \textcolor{blue}{41.0} &
 \label{tab:euromatrix}
 \caption{Maschinelle Übersetzung zwischen 22 EU-Sprachen -- Machine translation between 22 EU-languages [\textbf{FIXME: cite paper!}]}
 \label{fig:euromatrix}
-  \colorrule{grey3}{\textwidth}{1.5pt}
 \end{sidewaysfigure}
   
   \ssubsection{Andere Anwendungsbereiche --- Other Application Areas}
@@ -1655,10 +1649,10 @@ Zypern & Cyprus & Language Centre, School of Humanities: Jack Burston
 
 \cleardoublepage
 
-\ssection*{Die META-NET Weissbuch-Serie --- The META-NET White Paper Series}
+\ssection*{Die META-NET Weissbuch-Serie --- The META-NET\ \ \ \ White Paper Series}
 
+\vfill
 \centering
-%\begin{tabular}{p{35mm}p{35mm}p{35mm}} \toprule
 \begin{tabulary}{170mm}{LLL} \toprule
   Baskisch & Basque & euskara\\
   Bulgarisch & Bulgarian & български\\
@@ -1693,6 +1687,7 @@ Zypern & Cyprus & Language Centre, School of Humanities: Jack Burston
   Ungarisch & Hungarian & magyar\\ \addlinespace \bottomrule
 \end{tabulary}
 
+\cleardoublepage
 \vfill
 \centerline{META-NET -- office@meta-net.eu -- http://www.meta-net.eu}
 
