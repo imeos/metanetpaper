@@ -65,7 +65,7 @@
   \newfontfamily\futuralight{Futura Light}
   \newfontfamily\futurabook{Futura Book}
   \newfontfamily\futuramedium{Futura Medium}
-\setmonofont{Courier New}
+\setmonofont[Scale=0.7]{DejaVu Sans Mono}
 
 
 % Colors                                             
@@ -74,12 +74,19 @@
 \definecolor{orange1}{cmyk}{0, 0.56, 0.86, 0}        % #FF6600
 \definecolor{orange2}{cmyk}{0, 0.34, 0.87, 0.01}     % #FF9900
 \definecolor{orange3}{cmyk}{0.01, 0.12, 0.91, 0.01}  % #FFCC00
+\definecolor{corange1}{cmyk}{0.0, 0.216, 0.42, 0.04} % #F5B58E
+\definecolor{corange2}{cmyk}{0.0, 0.32, 0.51, 0.04}  % #F5A676
+\definecolor{corange3}{cmyk}{0.0, 0.38, 0.62, 0.04}  % #F5975D
+\definecolor{corange4}{cmyk}{0.0, 0.44, 0.72, 0.04}  % #F58845
+\definecolor{corange5}{cmyk}{0.0, 0.50, 0.82, 0.04}  % #F5792C
 \definecolor{red_dark}{cmyk}{0.2, 1, 1, 0.10}        % #B72126
 \definecolor{red}{cmyk}{0.2, 1, 1, 0.1}              % #C80000
 \definecolor{red2}{cmyk}{0, 0.45, 0.26, 0}           % #ff8182
+\definecolor{red3}{cmyk}{0.1, 0.8, 0.6, 0}           % #a83b3b
 \definecolor{grey1}{cmyk}{0, 0, 0, 0.7}              % #3C3C3C
 \definecolor{grey2}{cmyk}{0.16, 0.11, 0.09, 0}       % #C6C7C8
 \definecolor{grey3}{cmyk}{0, 0, 0, 0.4}              % #C6C7C8
+\definecolor{grey4}{cmyk}{0.54, 0.59, 0.77, 0.23}    % #847a6f
 \definecolor{green}{cmyk}{0.82, 0.16, 0.79, 0.03}    % #1F9863
 \definecolor{green2}{cmyk}{0.53, 0, 0.77, 0}         % #81C56B
 \definecolor{blue}{cmyk}{0.65, 0, 0.26, 0}           % #44C1C5
@@ -265,7 +272,7 @@
 
 % Lists
   % List item style
-\renewcommand{\labelitemi}{$\sqbullet$}
+%\renewcommand{\labelitemi}{$\sqbullet$}
   % List spacing
 \newenvironment{my_itemize}{
   \begin{list}{\labelitemi}{
@@ -280,15 +287,15 @@
 % Marginal notes
 % \boxtext{your text}
 \newcommand\boxtext[1]{
-  \colorrule{grey2}{78mm}{0.5pt}
+  \colorrule{printblack}{78mm}{0.25pt}
   \begin{center}
   \large{
     \textsf{
       #1
     }
   }
+  \colorrule{printblack}{78mm}{0.25pt}
   \end{center}
-  \colorrule{grey2}{78mm}{0.5pt}
 }
 
 
