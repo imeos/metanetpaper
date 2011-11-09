@@ -287,13 +287,14 @@
 % Marginal notes
 % \boxtext{your text}
 \newcommand\boxtext[1]{
-  \colorrule{printblack}{78mm}{0.25pt}
   \begin{center}
+  \colorrule{printblack}{78mm}{0.25pt}
   \fontsize{11}{9}\selectfont{
     \textsf{
       #1
     }
   }
+  \vspace*{2mm}
   \colorrule{printblack}{78mm}{0.25pt}
   \end{center}
 }
