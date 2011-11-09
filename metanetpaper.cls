@@ -93,8 +93,6 @@
 \definecolor{blue2}{cmyk}{0.55, 0, 0.22, 0}          % #56D8D8
 \definecolor{purple}{cmyk}{0.49, 0.32, 0, 0}         % #7e7fff
 
-
-
                                                       
 
 % Headings
