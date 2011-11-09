@@ -22,8 +22,8 @@
 % Dependencies
 % ------------
 
-% Define papersize
-\usepackage[paperwidth=210mm, paperheight=279mm, top=21mm, bottom=34mm, left=24mm, right=22mm, headsep=20mm, bindingoffset=0mm]{geometry}
+% Define papersize 210x279mm + 4mm bleed
+\usepackage[paperwidth=218mm, paperheight=287mm, top=24mm, bottom=37mm, left=27mm, right=25mm, headsep=20mm, bindingoffset=0mm]{geometry}
 
 \usepackage{graphicx}
 % Mathematical symbols
@@ -121,7 +121,7 @@
     \ThisCenterWallPaper{1}{../_media/section_bg.pdf}
     \vspace*{4mm}
     % Left column
-    \begin{minipage}[t]{79mm}
+    \begin{minipage}[t]{80mm}
       \color{red}
       \textsf{
         \begin{flushright}
@@ -137,7 +137,7 @@
     % spacing between colums
     \begin{minipage}[t]{5mm}\ \end{minipage}
     % Right column
-    \begin{minipage}[t]{78mm}
+    \begin{minipage}[t]{77mm}
       \color{grey1}
       \textsf{
         \begin{flushleft}
@@ -158,7 +158,7 @@
     \ThisCenterWallPaper{1}{../_media/section_bg.pdf}
     \vspace*{4mm}
     % Left column
-    \begin{minipage}[t]{79mm}
+    \begin{minipage}[t]{80mm}
       \color{red}
       \textsf{
         \begin{flushright}
@@ -174,7 +174,7 @@
     % spacing between colums
     \begin{minipage}[t]{5mm}\ \end{minipage}
     % Right column
-    \begin{minipage}[t]{78mm}
+    \begin{minipage}[t]{77mm}
       \color{grey1}    
       \textsf{
         \begin{flushleft}
@@ -194,7 +194,7 @@
 \newcommand{\ssubsection}[1]{%
   \subsection[#1]{%
     % Left column
-    \begin{minipage}[t]{79mm}
+    \begin{minipage}[t]{80mm}
       \vspace*{-13mm}
       \textsf{
         \begin{flushleft}
@@ -210,7 +210,7 @@
     % spacing between colums
     \begin{minipage}[t]{5mm}\ \end{minipage}
     % Right column
-    \begin{minipage}[t]{78mm}
+    \begin{minipage}[t]{77mm}
       \vspace*{-13mm}
       \color{grey1}
       \textsf{
@@ -224,7 +224,7 @@
         \end{flushleft}
       }
     \end{minipage}
-    \vspace*{-11mm}
+    \vspace*{-4mm}
   }
 }
 
