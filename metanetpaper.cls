@@ -321,6 +321,10 @@
 \pagestyle{scrheadings}
 
 
+% Captions
+\addtokomafont{caption}{\sffamily}
+
+
 % Titlepage
 \renewcommand\maketitle{%
   \begin{titlepage}%
