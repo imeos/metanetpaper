@@ -325,6 +325,10 @@
 \addtokomafont{caption}{\sffamily}
 
 
+% Autors with affiliation
+\def\authoraffiliation#1{\gdef\@authoraffiliation{#1}}
+\def\@authoraffiliation{\@latex@warning@no@line{No \noexpand\authoraffiliation given}}
+
 % Titlepage
 \renewcommand\maketitle{%
   \begin{titlepage}%
@@ -454,7 +458,7 @@
           \fontsize{14}{24}\selectfont{%
             \textsf{%
               \textcolor{red}{%
-                \@author
+                \@authoraffiliation
               }
             }
           }
@@ -466,6 +470,7 @@
     \clearpage
   \end{titlepage}
 }
+\global\let\@authoraffiliation\@empty
 
 
 % Table of contents
