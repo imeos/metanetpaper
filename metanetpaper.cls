@@ -289,7 +289,7 @@
 \newcommand\boxtext[1]{
   \colorrule{printblack}{78mm}{0.25pt}
   \begin{center}
-  \large{
+  \fontsize{11}{9}\selectfont{
     \textsf{
       #1
     }
