@@ -288,6 +288,7 @@
 % \boxtext{your text}
 \newcommand\boxtext[1]{
   \begin{center}
+  \vspace*{2mm}
   \colorrule{printblack}{78mm}{0.25pt}
   \fontsize{11}{9}\selectfont{
     \textsf{
@@ -473,6 +474,28 @@
 }
 \global\let\@authoraffiliation\@empty
 
+
+% Bibliography
+\renewenvironment{thebibliography}[1]{
+  \@mkboth{\MakeUppercase\bibname}{\MakeUppercase\bibname}%
+    \vspace*{1cm}
+      \list{\@biblabel{\@arabic\c@enumiv}}%
+           {\settowidth\labelwidth{\@biblabel{#1}}%
+            \leftmargin\labelwidth
+            \advance\leftmargin\labelsep
+            \@openbib@code
+            \usecounter{enumiv}%
+            \let\p@enumiv\@empty
+            \renewcommand\theenumiv{\@arabic\c@enumiv}}%
+      \sloppy
+      \clubpenalty4000
+      \@clubpenalty \clubpenalty
+      \widowpenalty4000%
+      \sfcode`\.\@m}
+{\def\@noitemerr
+ {\@latex@warning{Empty `thebibliography' environment}}%
+\endlist}
+      
 
 % Table of contents
   % the sections
