@@ -15,6 +15,7 @@
 \usepackage{booktabs}
 \usepackage{longtable}
 \usepackage{tabulary}
+\usepackage{tabularx}
 \usepackage{rotating}
 \usepackage{makecell}
 \usepackage{multirow}
@@ -122,7 +123,7 @@ Die derzeit auf dem Markt erhältlichen Tools zur automatischen Übersetzung und
 
 Die heute marktdominanten Sprach\-tech\-no\-logie-Ak\-teu\-re setzen auf ungenaue statistische Ansätze, bei denen keine tiefgreifende linguistische Analysen und Methoden zum Einsatz kommen. So werden Sätze automatisch übersetzt, indem ein neuer Satz mit Tausenden bereits früher vom Menschen übersetzter Sätze verglichen wird. Die Qualität des ausgegebenen Ergebnisses hängt vor allem vom Umfang und der Qualität der verfügbaren Daten ab. Bei der automatischen Übersetzung einfacher Sätze zwischen Sprachen mit ausreichendem Textmaterial kann man nützliche Ergebnisse erzielen. Doch die flachen, statistischen Verfahren sind zum Scheitern verurteilt bei Sprachen mit einem wesentlich geringeren Anteil an Referenzmaterial oder bei Sätzen von komplexer, nichtrepetitiver Struktur. Wenn wir Anwendungen schaffen möchten, die bei sämtlichen europäischen Sprachen ausgezeichnete Leistung bringen, ist eine Analyse der tieferliegenden strukturellen Eigenschaften der Sprachen die einzige erfolgversprechende Methode.
 
-Aus diesem Grund fördert die Europäische Union Projekte wie EuroMatrix und EuroMatrixPlus (seit 2006) oder iTranslate4 (seit 2010). Hier werden durch Grundlagenforschung und angewandte Forschung Ressourcen für hochwertige Sprachtechnologielösungen für alle europäischen Sprachen bereitgestellt. Die europäische Forschung kann bereits zahlreiche Erfolge verbuchen. So nutzen die Übersetzungsdienstleister der Europäischen Union heute die Open-Source-Übersetzungssoftware Moses, die überwiegend im Rahmen europäischer Forschungsprojekte entwickelt wurde. Das vom deutschen Bundesministerium für Bildung und Forschung (BMBF) zwischen 1993 und 2000 geförderte Projekt Verbmobil katapultierte Deutschland in der Forschung im Bereich der Übersetzung gesprochener Sprache für einige Zeit in die internationale Führungsposition. Viele der zu dieser Zeit in Deutschland angesiedelten Forschungs- und Entwicklungslabore (z.\,B.~IBM und Philips) sind jedoch mittlerweile geschlossen oder umgezogen. Statt auf den Ergebnissen seiner Forschungsprojekte aufzubauen, hat Europa weiterhin eher isolierte Forschungsaktivitäten verfolgt, die auf dem Markt wenig wirkungsvoll waren. Der ökonomische Wert selbst der frühen Leistungen lässt sich an der Anzahl der Geschäftsausgliederungen erkennen. Ein Unternehmen wie das bereits 1984 gegründete Trados wurde z.\,B.~2005 an SDL mit Firmensitz in Großbritannien verkauft.
+Aus diesem Grund fördert die Europäische Union Projekte wie EuroMatrix und EuroMatrixPlus (seit 2006) oder iTranslate4 (seit 2010). Hier werden durch Grundlagenforschung und angewandte Forschung Ressourcen für hochwertige Sprachtechnologielösungen für alle europäischen Sprachen bereitgestellt. Die europäische Forschung kann bereits zahlreiche Erfolge verbuchen. So nutzen die Übersetzungsdienstleister der Europäischen Union heute die Open-Source-Über\-set\-zungs\-soft\-ware Moses, die überwiegend im Rahmen europäischer Forschungsprojekte entwickelt wurde. Das vom deutschen Bundesministerium für Bildung und Forschung (BMBF) zwischen 1993 und 2000 geförderte Projekt Verbmobil katapultierte Deutschland in der Forschung im Bereich der Übersetzung gesprochener Sprache für einige Zeit in die internationale Führungsposition. Viele der zu dieser Zeit in Deutschland angesiedelten Forschungs- und Entwicklungslabore (z.\,B.~IBM und Philips) sind jedoch mittlerweile geschlossen oder umgezogen. Statt auf den Ergebnissen seiner Forschungsprojekte aufzubauen, hat Europa weiterhin eher isolierte Forschungsaktivitäten verfolgt, die auf dem Markt wenig wirkungsvoll waren. Der ökonomische Wert selbst der frühen Leistungen lässt sich an der Anzahl der Geschäftsausgliederungen erkennen. Ein Unternehmen wie das bereits 1984 gegründete Trados wurde z.\,B.~2005 an SDL mit Firmensitz in Großbritannien verkauft.
 
     \boxtext{Sprachtechnologie trägt zur Einheit Europas bei}
 Die bisher erlangten Erkenntnisse legen nahe, dass die heutige hybride Sprachtechnologie, die tiefe Verarbeitung mit statistischen Methoden kombiniert, die Kluft zwischen allen europäischen Sprachen überbrücken kann. Wie diese Weißbuch-Serie zeigt, bestehen jedoch im Hinblick auf die Einsatzfähigkeit von Sprachlösungen und den Stand der Forschung in den verschiedenen europäischen Mitgliedstaaten enorme Unterschiede. Auch wenn Deutschland zu den größeren EU-Sprachen gehört, ist dennoch weitergehende Forschung notwendig, um wirklich effektive Sprachtechnologielösungen für den alltäglichen Einsatz zu verwirklichen. Gleichzeitig stehen die Chancen gut, dass der deutschsprachige Teil Europas in diesem wichtigen Technologiebereich wieder eine international führende Position einnimmt. 
@@ -139,10 +140,9 @@ During the last 60 years, Europe has become a distinct political and economic st
     \boxtext{Language technology builds bridges\\ for Europe’s future}
 
 The German economy benefits more than others from the European single market: In 2010, trade within the EU accounted for 60.3\% of German exports and with other European countries totalled another 10.8\%. But language barriers can bring business to a halt, especially for SMEs who do not have the financial means to reverse the situation. The only (unthinkable) alternative to this kind of a multilingual Europe would be to allow a single language to take a dominant position, to replace all other languages. 
-
 One way to overcome the language barrier is to learn foreign languages. Yet without technological support, mastering the 23 official languages of the member states of the European Union and some 60 other European languages is an insurmountable obstacle for Europe’s citizens, economy, political debate, and scientific progress. 
 
-The solution is to build key enabling technologies: language technologies will offer European stakeholders tremendous advantages, not only within the common European market, but also in trade relations with non-European countries, especially emerging economies. Language technology solutions will eventually serve as a unique bridge between Europe's languages. An indespensable prerequisite for the development of these technologies is first to carry out a systematic analysis of the linguistic particularities of all European languages, and the current state of language technology support for them.  
+The solution is to build key enabling technologies: language technologies will offer European stakeholders tremendous advantages, not only within the common European market, but also in trade relations with non-European countries, especially emerging economies. Language technology solutions will eventually serve as a unique bridge between Europe's languages. An indespensable prerequisite for their development is first to carry out a systematic analysis of the linguistic particularities of all European languages, and the current state of language technology support for them.  
     
     \boxtext{Language technology as a key for the future}
 
@@ -186,7 +186,7 @@ In den vergangenen zwanzig Jahren trug die Informationstechnologie zu einer Auto
       \item Digitale Audio- und Video-Formate erleichtern den Austausch von Multimediainhalten.
       \item Suchmaschinen bieten Zugriff auf Webseiten per Stichwortsuche.
       \item Onlinedienste wie Google Translate erzeugen schnelle Grobübersetzungen.
-      \item Soziale Medien  wie Facebook, Twitter und Google+ erleichtern  Kommunika\-tion, Zusammenarbeit und  Informationsaustausch.
+      \item Soziale Medien (Facebook, Twitter) erleichtern Kommunika\-tion und  Informationsaustausch.
     \end{itemize}
 All diese Werkzeuge und Anwendungen sind zweifelsohne hilfreich, aber lange nicht ausreichend, um eine nachhaltige, mehrsprachige europäische Gesellschaft zu unterstützen, in der Informationen und Waren ungehindert fließen können.
   }
@@ -211,7 +211,7 @@ After Gutenberg’s invention, real breakthroughs in communication were accompli
       \item audio and video encoding formats make it easy to exchange multimedia content;
       \item search engines provide keyword-based access to web pages;
       \item online services like Google Translate produce quick, approximate translations;
-      \item social media platforms such as Facebook, Twitter, and Google+ facilitate communication, collaboration, and information sharing.
+      \item social media platforms such as Facebook, Twitter and Google+ facilitate communication, collaboration, and information sharing.
     \end{itemize}
 Although these tools and applications are helpful, they are not yet capable of supporting a fully-sustainable, multilingual European society in which information and goods can flow freely.
   }
@@ -223,7 +223,7 @@ Although these tools and applications are helpful, they are not yet capable of s
   \ParallelLText{\selectlanguage{german}%
 Wir können nicht genau vorhersagen, wie die Informationsgesellschaft der Zukunft aussehen wird. Es ist jedoch sehr wahrscheinlich, dass die Revolution in der Kommunikationstechnologie Menschen, die unterschiedliche Sprachen sprechen, auf eine ganz neue Weise zusammenbringen wird. Dadurch ist der Einzelne gezwungen, neue Sprachen zu lernen. Insbesondere sind aber  Entwickler gefragt  neue Technologieanwendungen zu schaffen, die das gegenseitige Verstehen und den Zugriff auf gemeinsam nutzbares Wissen sicherstellen. Im globalen Wirtschafts- und Informationsraum interagieren immer mehr Sprachen, Sprecher und Inhalte immer schneller miteinander dank neuartiger Medien. Die derzeitige Popularität von Sozialen Medien (Wikipedia, Facebook, Twitter, YouTube und Google+) ist nur die Spitze des Eisbergs.
 
-Heute können wir in Sekundenschnelle gigabyteweise Textmengen um die Welt schicken, bevor wir überhaupt merken, dass sie in einer Sprache sind, die wir gar nicht verstehen. Einem jüngsten Bericht der Europäischen Kommission zufolge erwerben 57\% der Internetnutzer in Europa Waren und Dienstleistungen in Sprachen, die nicht ihre Muttersprache sind. (Englisch ist die gängigste Fremdsprache, gefolgt von Französisch, Deutsch und Spanisch.) 55\% der Nutzer lesen Inhalte in einer Fremdsprache, und 35\% verwenden eine fremde Sprache, um E-Mails zu schreiben oder Kommentare im Web zu posten \cite{EC1}. Vor ein paar Jahren mag Englisch noch die lingua franca des Webs gewesen sein – die meisten Webinhalte waren auf Englisch verfasst – doch das hat sich dramatisch gewandelt. Der Anteil an Onlineinhalten in anderen europäischen Sprachen (sowie asiatischen Sprachen und Sprachen aus Nahost) hat explosionsartig zugenommen.
+Heute können wir in Sekundenschnelle gigabyteweise Textmengen um die Welt schicken, bevor wir überhaupt merken, dass sie in einer Sprache sind, die wir gar nicht verstehen. Einem jüngsten Bericht der Europäischen Kommission zufolge erwerben 57\% der Internetnutzer in Europa Waren und Dienstleistungen in Sprachen, die nicht ihre Muttersprache sind; Englisch ist die gängigste Fremdsprache, gefolgt von Französisch, Deutsch und Spanisch. 55\% der Nutzer lesen Inhalte in einer Fremdsprache, und 35\% verwenden eine fremde Sprache, um E-Mails zu schreiben oder Kommentare im Web zu posten \cite{EC1}. Vor ein paar Jahren mag Englisch noch die lingua franca des Webs gewesen sein – die meisten Webinhalte waren auf Englisch verfasst – doch das hat sich dramatisch gewandelt. Der Anteil an Onlineinhalten in anderen europäischen Sprachen (sowie asiatischen Sprachen und Sprachen aus Nahost) hat explosionsartig zugenommen.
 
 Erstaunlicherweise hat diese allgegenwärtige, durch Sprachgrenzen bedingte digitale Kluft bisher kaum öffentliche Aufmerksamkeit erhalten.  Eine drängende Frage ergibt sich jedoch daraus: Welche europäischen Sprachen gewinnen in der vernetzten Informations- und Wissensgesellschaft an Bedeutung und welche sind dem Untergang geweiht?
   }
@@ -231,7 +231,7 @@ Erstaunlicherweise hat diese allgegenwärtige, durch Sprachgrenzen bedingte digi
   \ParallelRText{\selectlanguage{english}%
 We cannot predict exactly what the future information society will look like. However, there is a strong likelihood that the revolution in communication technology is bringing together people who speak different languages in new ways. This is putting pressure both on individuals to learn new languages and especially on developers to create new technology applications to ensure mutual understanding and access to shareable knowledge. In the global economic and information space, there is increasing interaction between different languages, speakers and content thanks to new types of media. The current popularity of social media (Wikipedia, Facebook, Twitter, YouTube, and, recently, Google+) is only the tip of the iceberg.
 
-Today, we can transmit gigabytes of text around the world in a few seconds before we recognise that it is in a language that we do not understand. According to a recent report from the European Commission, 57\% of Internet users in Europe purchase goods and services in languages that are not their native language. (English is the most common foreign language followed by French, German and Spanish). 55\% of users read content in a foreign language while 35\% use another language to write e-mails or post comments on the Web \cite{EC1}. A few years ago, English might have been the lingua franca of the Web—the vast majority of content on the Web was in English—but the situation has now drastically changed. The amount of online content in other European (as well as Asian and Middle Eastern) languages has exploded.
+Today, we can transmit gigabytes of text around the world in a few seconds before we recognise that it is in a language that we do not understand. According to a recent report from the European Commission, 57\% of Internet users in Europe purchase goods and services in languages that are not their native language; English is the most common foreign language followed by French, German and Spanish. 55\% of users read content in a foreign language while 35\% use another language to write e-mails or post comments on the Web \cite{EC1}. A few years ago, English might have been the lingua franca of the Web—the vast majority of content on the Web was in English—but the situation has now drastically changed. The amount of online content in other European (as well as Asian and Middle Eastern) languages has exploded.
 
 Surprisingly, this ubiquitous digital linguistic divide has not gained much public attention; yet, it raises a very pressing question: Which European languages will thrive in the networked information and knowledge society, and which are doomed to disappear?
   }
@@ -262,7 +262,7 @@ Früher konzentrierten sich Investitionen in den Spracherhalt vor allem auf Spra
 
 Sprachtechnologie für alle Formen geschriebener und gesprochener Sprache ermöglicht es den Menschen ungeachtet von Sprachbarrieren und Computerfertigkeiten zusammenzuarbeiten, Geschäfte zu tätigen, Wissen auszutauschen und sich an sozialen und politischen Debatten zu beteiligen. Diese Technologie arbeitet oft unsichtbar in komplexen Softwaresystemen und unterstützt schon heute:
     \begin{itemize}
-      \item Informationssuche mit Internet-Suchmaschinen
+      \item Informationssuche mit Suchmaschinen
       \item Rechtschreib- und Grammatikprüfung
       \item Produktempfehlungen in Online-Shops
       \item Sprachanweisungen von Na\-vi\-ga\-tions\-sys\-te\-men
@@ -278,7 +278,7 @@ In the past, investments in language preservation focussed primarily on language
 
 Language technology targeting all forms of written text and spoken discourse helps people to collaborate, conduct business, share knowledge and participate in social and political debate regardless of language barriers and computer skills. This technology often operates invisibly inside complex software systems to help us already today to:
     \begin{itemize}
-      \item find information with an Internet search engine;
+      \item find information with a search engine;
       \item check spelling and grammar in a word processor;
       \item view product recommendations in an online shop;
       \item follow the verbal instructions of a car navigation system;
@@ -373,12 +373,12 @@ As we have seen in this chapter, many applications widely used in today’s info
   }
 
   \ParallelPar
-
   \clearpage
   
-
   % --------------------------------------------------------------------------
   \ssection{Deutsch in der europäischen Informationsgesellschaft --- The German Language in the European Information Society} 
+
+  \vspace*{10mm}
   
   \ssubsection{Allgemeine Fakten --- General Facts}
 
@@ -413,13 +413,13 @@ Austrian German is a variant of German whose lexicon differs from the language u
 
   \begin{center}
   \setlength{\tabcolsep}{2em}
-  \begin{tabulary}{150mm}{LLL} \toprule\addlinespace
-    \textbf{Österreiches Deutsch} & \textbf{Bundesdeutsch} & \textbf{Englisch}\\ 
-    \textcolor{grey1}{\textbf{Austrian German}} & \textcolor{grey1}{\textbf{Standard German (Germany)}} & \textcolor{grey1}{\textbf{English}}\\ \addlinespace\midrule\addlinespace
-     Sessel   & Stuhl & Chair\\ 
-    Fauteuil & Sessel & Arm chair\\ 
-    Trafik   & Tabakladen & Tobacconist\\ \addlinespace\bottomrule
-  \end{tabulary}
+    \begin{tabularx}{\textwidth}{lllll} \toprule\addlinespace
+    & \textbf{Österreiches Deutsch} & \textbf{Bundesdeutsch} & \textbf{Englisch} & \\ 
+    & \textcolor{grey1}{\textbf{Austrian German}} & \textcolor{grey1}{\textbf{Standard German (Germany)}} & \textcolor{grey1}{\textbf{English}} & \\ \addlinespace\midrule\addlinespace
+    & Sessel   & Stuhl      & Chair & \\ 
+    & Fauteuil & Sessel     & Arm chair & \\ 
+    & Trafik   & Tabakladen & Tobacconist & \\ \addlinespace\bottomrule
+  \end{tabularx}
   \end{center}
 
   \ParallelLText{\selectlanguage{german}%
@@ -533,7 +533,6 @@ The continued popularity of English is reflected in the sheer number of loan wor
 
   \ParallelPar
 
-
   \ssubsection{Sprachkultivierung in Deutschland --- Official Language Protection in Germany}
 
   \ParallelLText{\selectlanguage{german}%
@@ -570,9 +569,7 @@ The above examples illustrate the disadvantageous situation of the German langua
   \ssubsection{Sprache im Bildungswesen --- Language in Education}
 
   \ParallelLText{\selectlanguage{german}%
-Die 2000 veröffentlichte erste Internationale Schulleistungsstudie der OECD (PISA) ergab, dass die Lesekompetenz der deutschen Schüler unter dem Durchschnitt lag. Die Ergebnisse von Schülern aus Einwandererfamilien waren dabei besonders schlecht. Die darauf folgende Debatte stärkte das Bewusstsein der Öffentlichkeit über die Bedeutung des Erlernens von Sprache, insbesondere für Einwanderer und ihre soziale Integration. 
-
-Mithilfe der Empfehlungen der OECD verabschiedete Deutschland in den vergangenen zehn Jahren einige Gesetze, die eine frühzeitige Sprachförderung vorsehen. Ein Beispiel dafür ist das \textit{Gesetz zur vorschulischen Sprachförderung}, das im April 2008 in Berlin in Kraft trat, einer Stadt mit einem sehr hohen Anteil an Kindern, deren Muttersprache nicht Deutsch ist (über 90\% der Kinder in einigen Teilen des Stadtteils Neukölln). Das Gesetz sieht einen Deutschtest vor, den Kinder, die nicht den Kindergarten besucht haben, vor der Einschulung ablegen müssen. Außerdem soll allen mit unzulänglichen Deutschkenntnissen besondere Sprachförderung zukommen.
+Die 2000 veröffentlichte erste Internationale Schulleistungsstudie der OECD (PISA) ergab, dass die Lesekompetenz der deutschen Schüler unter dem Durchschnitt lag. Die Ergebnisse von Schülern aus Einwandererfamilien waren dabei besonders schlecht. Die darauf folgende Debatte stärkte das Bewusstsein der Öffentlichkeit über die Bedeutung des Erlernens von Sprache, insbesondere für Einwanderer und ihre soziale Integration. Mithilfe der Empfehlungen der OECD verabschiedete Deutschland in den vergangenen zehn Jahren einige Gesetze, die eine frühzeitige Sprachförderung vorsehen. Ein Beispiel dafür ist das \textit{Gesetz zur vorschulischen Sprachförderung}, das im April 2008 in Berlin in Kraft trat, einer Stadt mit einem sehr hohen Anteil an Kindern, deren Muttersprache nicht Deutsch ist (über 90\% der Kinder in einigen Teilen des Stadtteils Neukölln). Das Gesetz sieht einen Deutschtest vor, den Kinder, die nicht den Kindergarten besucht haben, vor der Einschulung ablegen müssen. Außerdem soll allen mit unzulänglichen Deutschkenntnissen besondere Sprachförderung zukommen.
 
 Maßnahmen wie das in Berlin verabschiedete Sprachgesetz haben Wirkung gezeigt. So ergab die PISA-Studie 2009, dass sich die Lesekompetenz der deutschen Schüler seit 2000 wesentlich verbessert hat, insbesondere bei Kindern aus Einwandererfamilien. Im Vergleich zu anderen Ländern, in denen eine ähnliche Situation vorherrscht, bestehen jedoch nach wie vor erhebliche Unterschiede in den Sprachkenntnissen von Schülern mit und ohne Migrationshintergrund. Besonders deutlich werden die Unterschiede in Österreich, einem der drei OECD-Länder mit der größten Kluft zwischen der Lesekompetenz junger Leute mit Deutsch als Muttersprache bzw. aus Einwandererfamilien \cite{Pisa1}.
 
@@ -580,13 +577,11 @@ Der Gebrauch der deutschen Sprache ist ein wichtiger Aspekt bei der Einwanderung
 
 Sprachkenntnisse sind eine wichtige Qualifikation für die Bildung und für die Kommunikation im privaten und beruflichen Umfeld. Doch Deutsch spielt als Schulfach in weiterführenden Schulen eine verhältnismäßig geringe Rolle. Den 2003 veröffentlichten Zahlen der OECD zufolge hat der deutsche Sprachunterricht für neun- bis elfjährige Schüler einen Anteil von 20\% am Lehrplan, im Vergleich zu einem Anteil von fast 33\% des Muttersprachunterrichts in Frankreich, Griechenland und den Niederlanden \cite{kmk1}.
 
-Ein vermehrtes Angebot an Deutschunterricht in Schulen ist ein möglicher Schritt, um Schülern die Sprachfertigkeiten zu vermitteln, die sie für eine aktive Teilnahme am gesellschaftlichen Leben benötigen. Sprachtechnologie kann einen wichtigen Beitrag in dieser Hinsicht leisten. Durch das Angebot so genannter computergestützter Sprachlernsysteme (CALL) können Schüler Sprache auf spielerische Weise erfahren. Sie können damit beispielsweise Vokabeln in elektronischen Texten mit leicht verständlichen Definitionen oder mit Audio- oder Videodateien verknüpfen, so dass Zusatzinformationen wie die richtige Aussprache zur Verfügung stehen.
+Ein vermehrtes Angebot an Deutschunterricht in Schulen ist ein möglicher Schritt, um Schülern die Sprachfertigkeiten zu vermitteln, die sie für eine aktive Teilnahme am gesellschaftlichen Leben benötigen. Sprachtechnologie kann einen wichtigen Beitrag in dieser Hinsicht leisten. Durch computergestützte Sprachlernsysteme (CALL) können Schüler Sprache auf spielerische Weise erfahren. Vokabeln in digitalen Texten können mit leicht verständlichen Definitionen oder mit Audio- und Videodateien verknüpft werden, um etwa Zusatzinformationen wie die richtige Aussprache zur Verfügung zu stellen.
   }
 
   \ParallelRText{\selectlanguage{english}%
-The first study published by the OECD Programme for International Student Assessment (PISA) in 2000 revealed that German students had below average reading literacy. Students from immigrant families had particularly poor results. The ensuing debate increased public awareness about the importance of language learning, especially for socially integrating immigrants. 
-
-Using the recommendations of the OECD, Germany has adopted several laws on early language training in the last decade. One example is the \textit{Gesetz zur vorschulischen Sprachförderung} [Law for the Promotion of Pre-School Language Learning], which came into effect in April 2008 in Berlin, a city with a very high number of children whose native language is not German. This means more than 90\% of the children in some parts of the Berlin Neukölln district. The law introduces a compulsory German test for children who did not attend kindergarten before enrolling in school, and provides enhanced language training for those that have insufficient German language skills.
+The first study published by the OECD Programme for International Student Assessment (PISA) in 2000 revealed that German students had below average reading literacy. Students from immigrant families had particularly poor results. The ensuing debate increased public awareness about the importance of language learning, especially for socially integrating immigrants. Using the recommendations of the OECD, Germany has adopted several laws on early language training in the last decade. One example is the \textit{Gesetz zur vorschulischen Sprachförderung} [Law for the Promotion of Pre-School Language Learning], which came into effect in April 2008 in Berlin, a city with a very high number of children whose native language is not German. This means more than 90\% of the children in some parts of the Berlin Neukölln district. The law introduces a compulsory German test for children who did not attend kindergarten before enrolling in school, and provides enhanced language training for those that have insufficient German language skills.
 
 Measures such as the language law in Berlin have been successful, as the 2009 PISA study showed that reading literacy among Germans had significantly improved since 2000, in particular for children from immigrant families. However, there are still major differences in language skills between students with and without a native-language background compared to other countries with a similar situation. The differences are particularly salient in Austria, which is among the three OECD countries that show the widest gap between native and immigrant skills in reading literacy among young people \cite{Pisa1}.
 
