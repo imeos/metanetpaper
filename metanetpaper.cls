@@ -199,16 +199,19 @@
 % Marginal notes
 % \boxtext{your text}
 \newcommand\boxtext[1]{
+  \vskip4mm
   \begin{center}
-  \colorrule{grey3}{0.5\textwidth-2mm}{1.5pt}
-  \colorrule{white}{0.5\textwidth-2mm}{5mm}
+  \colorrule{grey3}{\textwidth}{1.5pt}
+  \colorrule{white}{\textwidth}{5mm}
+%  \colorrule{grey3}{0.5\textwidth-2mm}{1.5pt}
+%  \colorrule{white}{0.5\textwidth-2mm}{5mm}
   \fontsize{12}{9}\selectfont{
     \textsf{
       #1
     }
   }
-    \colorrule{white}{0.5\textwidth-2mm}{0.01mm}
-  \colorrule{grey3}{0.5\textwidth-2mm}{1.5pt}
+    \colorrule{white}{\textwidth}{0.01mm}
+  \colorrule{grey3}{\textwidth}{1.5pt}
   \end{center}
 }
 
@@ -223,16 +226,40 @@
 % Header and footer
   % Sans-serif pagenumber
 \setkomafont{pagenumber}{%
-  \normalfont\sffamily\color{grey1}
+  \fontsize{10}{1.2}\normalfont\sffamily\color{grey1}
 }
   % Clear styling for head and foot
+\pagestyle{scrheadings}
 \clearscrheadings
 \clearscrplain
 \clearscrheadfoot 
+\setfootwidth[-28mm]{text}
   
   % Pagenumber on outer margin
-\ofoot[\pagemark]{\pagemark}
-\pagestyle{scrheadings}
+\lofoot[\pagemark]{
+  \colorrule{grey1}{22mm}{0.5pt}%
+  \vskip1mm%
+  \begin{minipage}[h]{23mm}%
+    \begin{flushright}%
+        \fontsize{10}{1.2}\normalfont\sffamily\color{grey1}%
+      \pagemark
+    \end{flushright}
+  \end{minipage}
+}
+
+\refoot[\pagemark]{
+\colorrule{grey1}{22mm}{0.5pt}%
+\vskip1mm%
+  \begin{minipage}[h]{21mm}%
+    \begin{flushleft}%
+        \fontsize{10}{1.2}\normalfont\sffamily\color{grey1}%
+      \pagemark
+    \end{flushleft}
+  \end{minipage}
+}
+  
+
+
 
 
 % Captions
