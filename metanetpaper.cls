@@ -15,7 +15,7 @@
 \ProvidesClass{metanetpaper}[2011/09/20 LaTeX class to typeset bilingual papers of the DFKI META-NET Project]
 
 % Use KOMA-script class 'scrartcl', based on 'article'
-\LoadClass[11pt, twoside, twocolumn]{scrartcl}
+\LoadClass[11pt, twoside]{scrartcl}
 
 
 
@@ -49,7 +49,8 @@
 \usepackage{tocloft}
 % Conditional statements
 \usepackage{ifthen}
-
+% 
+\usepackage{multicol}
 
 
 % Class options & definitions
@@ -101,12 +102,12 @@
 % Headings
   % Reset all sections
 \titleformat{\section}{}{
-  \centering \fontsize{24}{25}\color{red}\sffamily\thesection
+  \centering \fontsize{24}{1.2}\color{red}\sffamily\thesection
 }{-0.35em}{\centering\protect\linebreak}
 
 \titleformat{\subsection}{}{
-  \fontsize{18}{18}\futuralight\thesubsection
-}{0.5em}{\fontsize{18}{18}\sffamily\MakeUppercase}
+  \fontsize{18}{1.2}\futuralight\thesubsection
+}{0.5em}{\fontsize{18}{1.2}\sffamily\MakeUppercase}
 
 \titleformat{\subsubsection}{}{%
   %\fontsize{14}{14}\futuralight\thesubsubsection
@@ -119,7 +120,7 @@
                      \sectionNoStar%
 }
 \newcommand{\sectionNoStar}[2][]{%
-  \clearpage
+  \begin{figure*}[t]
   \section[#2]{%
     \vspace*{1mm}
     \ThisCenterWallPaper{1}{../_media/section_bg.pdf}
@@ -136,6 +137,7 @@
     \end{minipage}
     \vspace*{-8mm}
   }
+  \end{figure*}
 }
 \newcommand{\sectionStar}[2][]{%
   \clearpage
@@ -153,6 +155,16 @@
     \end{spacing}
   \end{minipage}
   \vspace*{0mm}
+}
+
+\newcommand{\ssubsection}[2][]{%
+  \subsection[#2]{%
+    \fontsize{14}{1.2}\selectfont{%
+        \MakeUppercase{%
+          #2
+        }
+    }
+  }  
 }
 
 %\renewcommand\ParallelRText[1]{{
@@ -188,14 +200,15 @@
 % \boxtext{your text}
 \newcommand\boxtext[1]{
   \begin{center}
-  \colorrule{printblack}{\textwidth}{0.25pt}
-  \colorrule{white}{\textwidth}{1mm}
+  \colorrule{grey3}{0.5\textwidth-2mm}{1.5pt}
+  \colorrule{white}{0.5\textwidth-2mm}{5mm}
   \fontsize{12}{9}\selectfont{
     \textsf{
       #1
     }
   }
-  \colorrule{printblack}{\textwidth}{0.25pt}
+    \colorrule{white}{0.5\textwidth-2mm}{0.01mm}
+  \colorrule{grey3}{0.5\textwidth-2mm}{1.5pt}
   \end{center}
 }
 
