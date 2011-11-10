@@ -93,7 +93,10 @@
 \definecolor{blue2}{cmyk}{0.55, 0, 0.22, 0}          % #56D8D8
 \definecolor{purple}{cmyk}{0.49, 0.32, 0, 0}         % #7e7fff
 
-                                                      
+
+% Orphans and widows
+\widowpenalties 3 10000 10000 100 
+\clubpenalties 3 10000 10000 100
 
 % Headings
   % Reset all sections
@@ -118,76 +121,38 @@
 \newcommand{\sectionNoStar}[2][]{%
   \clearpage
   \section[#2]{%
+    \vspace*{1mm}
     \ThisCenterWallPaper{1}{../_media/section_bg.pdf}
-    \vspace*{4mm}
-    % Left column
-    \begin{minipage}[t]{80mm}
+    \begin{minipage}[t]{\textwidth}
+      \begin{spacing}{2.2}
       \color{red}
-      \textsf{
-        \begin{flushright}
-          % Title
-          \fontsize{24}{24}\selectfont{%
-            \MakeUppercase{%
-              \protect\StrBefore{#2}{ ---}
-            }
-          }
-        \end{flushright}
+      \textsf{%
+        % Title
+        \fontsize{24}{24}\selectfont{%
+          \MakeUppercase{#2}
+        }
       }
-    \end{minipage}
-    % spacing between colums
-    \begin{minipage}[t]{5mm}\ \end{minipage}
-    % Right column
-    \begin{minipage}[t]{77mm}
-      \color{grey1}
-      \textsf{
-        \begin{flushleft}
-          % Title
-          \fontsize{24}{24}\selectfont{%
-            \MakeUppercase{%
-              \protect\StrBehind{#2}{--- }
-            }
-          }
-        \end{flushleft}
-      }
+      \end{spacing}
     \end{minipage}
     \vspace*{-8mm}
   }
 }
 \newcommand{\sectionStar}[2][]{%
   \clearpage
-    \ThisCenterWallPaper{1}{../_media/section_bg.pdf}
-    \vspace*{4mm}
-    % Left column
-    \begin{minipage}[t]{80mm}
-      \color{red}
-      \textsf{
-        \begin{flushright}
-          % Title
-          \fontsize{24}{24}\selectfont{%
-            \MakeUppercase{%
-              \protect\StrBefore{#2}{ ---}
-            }
-          }
-        \end{flushright}
+  \vspace*{10mm}
+  \ThisCenterWallPaper{1}{../_media/section_bg.pdf}
+  \begin{minipage}[t]{\textwidth}
+    \begin{spacing}{2.2}
+    \color{red}
+    \textsf{%
+      % Title
+      \fontsize{24}{24}\selectfont{%
+        \MakeUppercase{#2}
       }
-    \end{minipage}
-    % spacing between colums
-    \begin{minipage}[t]{5mm}\ \end{minipage}
-    % Right column
-    \begin{minipage}[t]{77mm}
-      \color{grey1}    
-      \textsf{
-        \begin{flushleft}
-          % Title
-          \fontsize{24}{24}\selectfont{%
-            \MakeUppercase{%
-              \protect\StrBehind{#2}{--- }
-            }
-          }
-        \end{flushleft}
-      }
-    \end{minipage}  
-    \vspace*{1mm}
+    }
+    \end{spacing}
+  \end{minipage}
+  \vspace*{0mm}
 }
 
 % Redefine \subsection as \ssubsection
@@ -287,14 +252,14 @@
 \newcommand\boxtext[1]{
   \begin{center}
   \vspace*{2mm}
-  \colorrule{printblack}{78mm}{0.25pt}
+  \colorrule{printblack}{\textwidth}{0.25pt}
   \fontsize{11}{9}\selectfont{
     \textsf{
       #1
     }
   }
   \vspace*{2mm}
-  \colorrule{printblack}{78mm}{0.25pt}
+  \colorrule{printblack}{\textwidth}{0.25pt}
   \end{center}
 }
 
