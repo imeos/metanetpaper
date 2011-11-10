@@ -105,12 +105,12 @@
 }{-0.35em}{\centering\protect\linebreak}
 
 \titleformat{\subsection}{}{
-  \color{white}\sffamily\thesubsection
-}{-0.5em}{\centering\protect\linebreak}
+  \fontsize{18}{18}\futuralight\thesubsection
+}{0.5em}{\fontsize{18}{18}\sffamily\MakeUppercase}
 
-\titleformat{\subsubsection}{}{
-  \color{white}\sffamily\thesubsubsection
-}{-0.5em}{\centering\protect\linebreak}
+\titleformat{\subsubsection}{}{%
+  %\fontsize{14}{14}\futuralight\thesubsubsection
+}{0em}{\fontsize{14}{14}\sffamily}
 
 % Redefine \section as \ssection and then as \sectionstar and \sectionnostar
 % for numbered and unnumbered sections
@@ -155,79 +155,6 @@
   \vspace*{0mm}
 }
 
-% Redefine \subsection as \ssubsection
-\newcommand{\ssubsection}[1]{%
-  \subsection[#1]{%
-    % Left column
-    \begin{minipage}[t]{80mm}
-      \vspace*{-13mm}
-      \textsf{
-        \begin{flushleft}
-          % Title
-          \fontsize{14}{16}\selectfont{%
-            \MakeUppercase{%
-              \thesubsection \ \protect\StrBefore{#1}{ ---}
-            }
-          }
-        \end{flushleft}
-      }
-    \end{minipage}
-    % spacing between colums
-    \begin{minipage}[t]{5mm}\ \end{minipage}
-    % Right column
-    \begin{minipage}[t]{77mm}
-      \vspace*{-13mm}
-      \color{grey1}
-      \textsf{
-        \begin{flushleft}
-          % Title
-          \fontsize{14}{16}\selectfont{%
-            \MakeUppercase{%
-              \thesubsection \ \protect\StrBehind{#1}{--- }
-            }
-          }
-        \end{flushleft}
-      }
-    \end{minipage}
-    \vspace*{-8mm}
-  }
-}
-
-% Redefine \subsubsection as \ssubsubsection
-\newcommand{\ssubsubsection}[1]{%
-  \subsubsection[#1]{%
-    % Left column
-    \begin{minipage}[t]{79mm}
-      \vspace*{-14mm}
-      \textsf{
-        \begin{flushleft}
-          % Title
-          \fontsize{14}{16}\selectfont{%
-            \protect\StrBefore{#1}{ ---}
-          }
-        \end{flushleft}
-      }
-    \end{minipage}
-    % spacing between colums
-    \begin{minipage}[t]{5mm}\ \end{minipage}
-    % Right column
-    \begin{minipage}[t]{78mm}
-      \vspace*{-14mm}
-      \color{grey1}
-      \textsf{
-        \begin{flushleft}
-          % Title
-          \fontsize{14}{16}\selectfont{%
-            \protect\StrBehind{#1}{--- }
-          }
-        \end{flushleft}
-      }
-    \end{minipage}
-    \vspace*{-14mm}
-  }
-}
-
-
 %\renewcommand\ParallelRText[1]{{
 %	\textcolor{grey1}{#1} }}
 
@@ -251,14 +178,14 @@
 % \boxtext{your text}
 \newcommand\boxtext[1]{
   \begin{center}
-  \vspace*{2mm}
+  \vspace*{-2mm}
   \colorrule{printblack}{\textwidth}{0.25pt}
   \fontsize{11}{9}\selectfont{
     \textsf{
       #1
     }
   }
-  \vspace*{2mm}
+  \vspace*{0mm}
   \colorrule{printblack}{\textwidth}{0.25pt}
   \end{center}
 }
