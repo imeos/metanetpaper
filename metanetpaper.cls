@@ -163,11 +163,21 @@
 % Lists
   % List item style
 \renewcommand{\labelitemi}{$\sqbullet$}
-  % List spacing
-\newenvironment{my_itemize}{
+  % Unordered list spacing
+\renewenvironment{itemize}{
   \begin{list}{\labelitemi}{
     \setlength{\itemsep}{-2pt}
     \setlength{\leftmargin}{1.3em}
+  }
+}
+{\end{list}
+}
+  % Ordered list spacing
+\renewenvironment{enumerate}{
+  \begin{list}{\arabic{enumi}.}{
+    \setlength{\itemsep}{-2pt}
+    \setlength{\leftmargin}{1.3em}
+    \usecounter{enumi}
   }
 }
 {\end{list}
@@ -179,13 +189,12 @@
 \newcommand\boxtext[1]{
   \begin{center}
   \colorrule{printblack}{\textwidth}{0.25pt}
-  \colorrule{white}{\textwidth}{2mm}
+  \colorrule{white}{\textwidth}{1mm}
   \fontsize{12}{9}\selectfont{
     \textsf{
       #1
     }
   }
-  \vspace*{0mm}
   \colorrule{printblack}{\textwidth}{0.25pt}
   \end{center}
 }
