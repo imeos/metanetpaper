@@ -358,7 +358,15 @@
       }
       \ParallelPar
     \end{Parallel}
-    
+    \vfill
+     % Left column
+      \begin{minipage}[t]{81mm}\ \end{minipage}
+      % spacing between colums
+      \begin{minipage}[t]{5mm}\ \end{minipage}
+      % Right column
+      \begin{minipage}[t]{85mm}
+        \textsf{Georg Rehm, Hans Uszkoreit (Hrsg., eds.)}
+      \end{minipage}
     \clearpage
   \end{titlepage}
 }
