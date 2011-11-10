@@ -22,8 +22,8 @@
 % Dependencies
 % ------------
 
-% Define papersize 210x279mm + 4mm bleed
-\usepackage[paperwidth=218mm, paperheight=287mm, top=24mm, bottom=37mm, left=27mm, right=25mm, headsep=20mm, bindingoffset=0mm]{geometry}
+% Define papersize 210x279mm + 3mm bleed
+\usepackage[paperwidth=216mm, paperheight=285mm, top=24mm, bottom=37mm, left=27mm, right=25mm, headsep=20mm, bindingoffset=0mm]{geometry}
 
 \usepackage{graphicx}
 % Mathematical symbols
@@ -150,7 +150,7 @@
         \end{flushleft}
       }
     \end{minipage}
-    \vspace*{-12mm}
+    \vspace*{-8mm}
   }
 }
 \newcommand{\sectionStar}[2][]{%
@@ -224,7 +224,7 @@
         \end{flushleft}
       }
     \end{minipage}
-    \vspace*{-4mm}
+    \vspace*{-8mm}
   }
 }
 
@@ -270,7 +270,7 @@
 
 % Lists
   % List item style
-%\renewcommand{\labelitemi}{$\sqbullet$}
+\renewcommand{\labelitemi}{$\sqbullet$}
   % List spacing
 \newenvironment{my_itemize}{
   \begin{list}{\labelitemi}{
