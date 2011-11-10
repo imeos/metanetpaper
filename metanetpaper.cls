@@ -178,9 +178,9 @@
 % \boxtext{your text}
 \newcommand\boxtext[1]{
   \begin{center}
-  \vspace*{-2mm}
   \colorrule{printblack}{\textwidth}{0.25pt}
-  \fontsize{11}{9}\selectfont{
+  \colorrule{white}{\textwidth}{2mm}
+  \fontsize{12}{9}\selectfont{
     \textsf{
       #1
     }
@@ -365,7 +365,7 @@
       \begin{minipage}[t]{5mm}\ \end{minipage}
       % Right column
       \begin{minipage}[t]{85mm}
-        \textsf{Georg Rehm, Hans Uszkoreit (Hrsg., eds.)}
+        \textsf{\color{red}Georg Rehm, Hans Uszkoreit (Hrsg., eds.)}
       \end{minipage}
     \clearpage
   \end{titlepage}
