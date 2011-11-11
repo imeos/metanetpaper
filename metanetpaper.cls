@@ -108,8 +108,9 @@
 }{-0.35em}{\centering\protect\linebreak}
 
 \titleformat{\subsection}[block]{}{
-  \raggedright\fontsize{18}{19}\futuralight\thesubsection
-}{0.5em}{\raggedright\fontsize{18}{19}\sffamily\MakeUppercase}
+  \raggedright\LARGE\futuralight\thesubsection
+}{0.5em}{\raggedright\LARGE\sffamily\MakeUppercase}
+\titlespacing{\subsection}{0pt}{*4}{*1}
 
 \titleformat{\subsubsection}{}{%
   %\fontsize{14}{14}\futuralight\thesubsubsection
@@ -158,17 +159,16 @@
 }
 
 \newcommand{\ssubsection}[2][]{%
+  \vspace*{11mm}
+  \begin{minipage}[h]{0.5\textwidth-2mm}
   \subsection[#2]{%
-    \fontsize{14}{1.2}\selectfont{%
         \MakeUppercase{%
           #2
         }
-    }
-  }  
+  }
+  \end{minipage}  
+  \vspace*{1mm}
 }
-
-%\renewcommand\ParallelRText[1]{{
-%	\textcolor{grey1}{#1} }}
 
 
 
