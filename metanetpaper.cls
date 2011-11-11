@@ -15,7 +15,7 @@
 \ProvidesClass{metanetpaper}[2011/09/20 LaTeX class to typeset bilingual papers of the DFKI META-NET Project]
 
 % Use KOMA-script class 'scrartcl', based on 'article'
-\LoadClass[11pt, twoside]{scrartcl}
+\LoadClass[11pt, twoside, twocolumn]{scrartcl}
 
 
 
@@ -51,6 +51,8 @@
 \usepackage{ifthen}
 % 
 \usepackage{multicol}
+
+\usepackage{float}
 
 
 % Class options & definitions
@@ -105,13 +107,13 @@
   \centering \fontsize{24}{1.2}\color{red}\sffamily\thesection
 }{-0.35em}{\centering\protect\linebreak}
 
-\titleformat{\subsection}{}{
-  \fontsize{18}{1.2}\futuralight\thesubsection
-}{0.5em}{\fontsize{18}{1.2}\sffamily\MakeUppercase}
+\titleformat{\subsection}[block]{}{
+  \raggedright\fontsize{18}{1}\futuralight\thesubsection
+}{0.5em}{\raggedright\fontsize{18}{1}\sffamily\MakeUppercase}
 
 \titleformat{\subsubsection}{}{%
   %\fontsize{14}{14}\futuralight\thesubsubsection
-}{0em}{\fontsize{14}{14}\sffamily}
+}{0em}{\fontsize{14}{1.2}\sffamily}
 
 % Redefine \section as \ssection and then as \sectionstar and \sectionnostar
 % for numbered and unnumbered sections
@@ -120,7 +122,6 @@
                      \sectionNoStar%
 }
 \newcommand{\sectionNoStar}[2][]{%
-  \begin{figure*}[t]
   \section[#2]{%
     \vspace*{1mm}
     \ThisCenterWallPaper{1}{../_media/section_bg.pdf}
@@ -137,11 +138,10 @@
     \end{minipage}
     \vspace*{-8mm}
   }
-  \end{figure*}
 }
 \newcommand{\sectionStar}[2][]{%
   \clearpage
-  \vspace*{10mm}
+  \vspace*{9mm}
   \ThisCenterWallPaper{1}{../_media/section_bg.pdf}
   \begin{minipage}[t]{\textwidth}
     \begin{spacing}{2.2}
@@ -201,17 +201,13 @@
 \newcommand\boxtext[1]{
   \vskip4mm
   \begin{center}
-  \colorrule{grey3}{\textwidth/2}{1.5pt}
-  \colorrule{white}{\textwidth/2}{5mm}
-%  \colorrule{grey3}{0.5\textwidth-2mm}{1.5pt}
-%  \colorrule{white}{0.5\textwidth-2mm}{5mm}
+  \colorrule{grey3}{0.5\textwidth-2mm}{1.5pt}
   \fontsize{12}{9}\selectfont{
     \textsf{
       #1
     }
   }
-    \colorrule{white}{\textwidth/2}{0.01mm}
-  \colorrule{grey3}{\textwidth/2}{1.5pt}
+  \colorrule{grey3}{0.5\textwidth-2mm}{1.5pt}
   \end{center}
 }
 

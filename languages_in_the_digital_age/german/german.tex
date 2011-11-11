@@ -12,6 +12,7 @@
 
 \documentclass[]{../../metanetpaper}
 
+\usepackage{covington}
 \usepackage{booktabs}
 \usepackage{longtable}
 \usepackage{tabulary}
@@ -60,15 +61,15 @@
 \renewcommand*{\figureformat}{\sffamily\thefigure\autodot}
 
 \maketitle
-  
+\onecolumn
 \input{german_mocktitle}
 
 \pagenumbering{Roman} 
 \setcounter{page}{5}
 \pagestyle{scrheadings}
 
-
 % --------------------------------------------------------------------------
+
 \ssection*{Vorwort}
 \begin{Parallel}[c]{79mm}{78mm}
 \ParallelLText{
@@ -86,10 +87,8 @@ The availability and use of language technology in Europe varies between languag
 
 META-NET, a Network of Excellence funded by the European Commission, has conducted an analysis of current language resources and technologies in this white paper series (p.~\pageref{whitepaperseries}). The analysis focused on the 23 official European languages as well as other important national and regional languages in Europe. The results of this analysis suggest that there are tremendous deficits in technology support and significant research gaps for each language. The given detailed expert analysis and assessment of the current situation will help maximise the impact of additional research.
 
-As of November 2011, META-NET consists of 54 research centres from 33 European countries (p.~\pageref{metanetmembers}). META-NET is working with stakeholders from economy (Software companies, technology providers, users), government agencies, research organisations, non-governmental organisations, language communities and European universities. Together with these communities, META-NET is creating a common technology vision and strategic research agenda for multilingual Europe 2020.}
-   \ParallelPar
+As of November 2011, META-NET consists of 54 research centres from 33 European countries (p.~\pageref{metanetmembers}). META-NET is working with stakeholders from economy (Software companies, technology providers, users), government agencies, research organisations, non-governmental organisations, language communities and European universities. Together with these communities, META-NET is creating a common technology vision and strategic research agenda for multilingual Europe 2020.}   \ParallelPar
 \end{Parallel}
-
 
 % --------------------------------------------------------------------------
 \cleardoublepage
@@ -99,14 +98,16 @@ As of November 2011, META-NET consists of 54 research centres from 33 European c
 
 \cleardoublepage
 
+\twocolumn
+
 \setcounter{page}{1}
 \pagenumbering{arabic} 
 \pagestyle{scrheadings}
 
 
 % --------------------------------------------------------------------------
-\ssection{Zusammenfassung}
-\begin{multicols}{2}
+\twocolumn[\ssection{Zusammenfassung}]
+
 Europa ist in den vergangenen 60 Jahren eine politisch-wirtschaftliche Einheit geworden. Kulturell und sprachlich ist der europäische Raum reich und vielfältig. Von Portugiesisch bis Polnisch, von Italienisch bis Isländisch -- im kommunikativen Miteinander stoßen Europas Bürger, die europäische Wirtschaft und auch die Politik schnell an sprachliche Grenzen. Die Institutionen der EU geben jährlich rund eine Milliarde Euro für die Übersetzung von Texten und das Dolmetschen gesprochener Kommunikation aus, um am Grundsatz der Mehrsprachigkeit festzuhalten. Ist dieser Aufwand tatsächlich notwendig? Moderne Sprachtechnologie und Sprachforschung können einen wichtigen Beitrag leisten, um die Sprachgrenzen zu überwinden. Wenn Europäer sich miteinander unterhalten oder Verträge schließen wollen, kann moderne Sprachtechnologie in Verbindung mit intelligenten Endgeräten und Anwendungen ihnen hierbei künftig helfen -- selbst wenn sie keine gemeinsame Sprache sprechen. 
 
 \boxtext{Sprachtechnologie baut Brücken für Europas Zukunft}
@@ -131,11 +132,11 @@ Die Vision von META-NET ist hochqualitative Sprachtechnologie für alle Sprachen
 
 Diese Weißbuch-Serie flankiert die anderen strategischen Aktivitäten von META-NET. Einen Überblick hierzu finden Sie im Anhang. Aktuelle Informationen, die neueste Version des META-NET Vision Papers \cite{Meta1} oder der strategischen Forschungsagenda (SRA) finden Sie auf unserer Website: http://www.meta-net.eu.
 
-\end{multicols}
+
 \clearpage
 % --------------------------------------------------------------------------
-\ssection{Unsere Sprachen in Gefahr: Eine Heraus\-for\-de\-rung für die Sprachtechnologie}
-\begin{multicols}{2}
+\twocolumn[\ssection{Unsere Sprachen in Gefahr: Eine Heraus\-for\-de\-rung für die Sprachtechnologie}]
+
 Wir sind Zeugen einer digitalen Revolution, die enorme Auswirkungen auf Kommunikation und Gesellschaft hat. Die jüngsten Entwicklungen in der digitalen In\-for\-ma\-tions- und Kommunikationstechnologie werden manchmal mit Gutenbergs Erfindung der Druckerpresse verglichen. Was kann uns diese Analogie über die Zukunft der europäischen Informationsgesellschaft und insbesondere der unserer Sprachen sagen?
 
 Nach Gutenbergs Erfindung wurden echte Durchbrüche im Kom\-mu\-ni\-ka\-tions- und Wis\-sens\-aus\-tausch beispielsweie durch Luthers Bibelübersetzung    in die Landessprache  erzielt. In den folgenden Jahrhunderten wurden Kulturtechniken entwickelt, die die Sprachverarbeitung und den Wissensaustausch erleichterten:
@@ -228,12 +229,12 @@ Den zweiten Ansatz in der Sprachtechnologie und insbesondere der maschinellen Ü
 Da die Stärken und Schwächen statistischer und regelbasierter Systeme oft komplementär sind, konzentriert sich die Forschung heute auf hybride Ansätze, die die beiden Methoden kombinieren. Bei industriellen Anwendungen haben sich diese Ansätze bisher jedoch als weniger erfolgreich erwiesen als im Forschungslabor. 
 
 In diesem Kapitel haben wir gesehen, dass viele der in der heutigen Informationsgesellschaft auf breiter Ebene eingesetzten Anwendungen stark von Sprachtechnologie abhängig sind, besonders im europäischen Wirtschafts- und Informationsraum. Auch wenn die Sprachtechnologie in den vergangenen Jahren erhebliche Fortschritte gemacht hat, besteht nach wie vor enormer Verbesserungsbedarf in puncto Qualität der Sprachtechnologiesysteme. Im Folgenden werden wir die Rolle des Deutschen in der europäischen Informationsgesellschaft darstellen und den aktuellen Stand der Sprachtechnologie für die deutsche Sprache bewerten.
-\end{multicols}
+
 \clearpage
 
 % --------------------------------------------------------------------------
-\ssection{Deutsch in der europäischen Informationsgesellschaft}
-\begin{multicols}{2}
+\twocolumn[\ssection{Deutsch in der europäischen Informationsgesellschaft}]
+
 \subsection{Allgemeine Fakten}
 
 Mit rund 100 Millionen Muttersprachlern ist Deutsch die am weitesten verbreitete Muttersprache in der Europäischen Union. Es ist die allgemein in Deutschland, Österreich und Liechtenstein verwendete Sprache und eine der Amtssprachen der Schweiz, Luxemburgs und Belgiens, wo sie von Teilen der Bevölkerung gesprochen wird. Weltweit sprechen rund 30 Millionen Nichtmuttersprachler deutsch \cite{Eur1}. Deutsch ist auch die Fremdsprache, die in der EU nach Englisch am zweithäufigsten erlernt wird \cite{Goe1}. 
@@ -242,18 +243,20 @@ In Österreich und Liechtenstein ist Deutsch die Amtssprache sowie die am häufi
 In der Schweiz hat Deutsch neben den Sprachen Französisch, Italienisch und Rätoromanisch Amtssprachencharakter. In Belgien sind Deutsch, Niederländisch und Französisch Amtssprachen, in Luxemburg Deutsch, Französisch und Luxemburgisch. Deutsche Sprachvarianten werden auch von Minderheiten in anderen EU-Ländern gesprochen, z.\,B.~in Frankreich (Elsass und Lothringen), Italien (Südtirol) und Polen (Schlesien).
 In Deutschland gibt es eine Vielzahl an Dialekten wie Bayrisch und Schwäbisch. Meist gilt in den verschiedenen Dialekten die gleiche Grammatik, manche weisen aber auch etwas andere syntaktische Strukturen auf. Die Teilung Deutschlands zwischen 1945 und 1989 spiegelt sich noch immer in einigen lexikalischen Unterschieden wider, beispielsweise \textit{Plastik} versus \textit{Plaste}.
 
-Österreichisches Deutsch ist eine Variante des Deutschen, deren Wortschatz sich von der in Deutschland gebräuchlichen Sprache unterscheidet, z.\,B.:
+Österreichisches Deutsch ist eine Variante des Deutschen, deren Wortschatz sich von der in Deutschland gebräuchlichen Sprache unterscheidet (siehe Abbildung~\ref{atgetabelle}).
 
-\begin{center}
+\begin{figure*}[h]
   \setlength{\tabcolsep}{2em}
-    \begin{tabularx}{\textwidth}{lllll} \toprule\addlinespace
+  \begin{tabularx}{\textwidth}{lllll} \toprule\addlinespace
     & \textbf{Österreiches Deutsch} & \textbf{Bundesdeutsch} & \textbf{Englisch} & \\ 
     & \textcolor{grey1}{\textbf{Austrian German}} & \textcolor{grey1}{\textbf{Standard German (Germany)}} & \textcolor{grey1}{\textbf{English}} & \\ \addlinespace\midrule\addlinespace
     & Sessel   & Stuhl      & Chair & \\ 
     & Fauteuil & Sessel     & Arm chair & \\ 
     & Trafik   & Tabakladen & Tobacconist & \\ \addlinespace\bottomrule
   \end{tabularx}
-\end{center}
+  \label{atgetabelle}
+  \caption{FIXME}
+\end{figure*}
 
 Lenisierung (stimmhafte Aussprache von stimmlosen Konsonanten) ist im gesprochenen österreichischen Deutsch weit verbreitet. So wird phonetisch nicht zwischen \textit{backen} und \textit{packen} oder zwischen \textit{Teich} und \textit{Deich} unterschieden. Beim österreichischen Deutsch wird im Gegensatz zum Hochdeutschen in Deutschland nur selten die 1.~Vergangenheitsform (Präteritum) verwendet: Ereignisse in der Vergangenheit werden vorzugsweise in der 2.~Vergangenheitsform (Perfekt) geschildert. 
 Beim Schweizer Deutsch wird auf eine Reihe französischer Wörter wie \textit{Velo} anstatt \textit{Fahrrad} zurückgegriffen. Es gibt auch einige morphologische und orthografische Varianten \cite{Cano1}. Anstelle von \textit{ß} wird \textit{ss} verwendet, und einige Wörter werden anders geschrieben, z.\,B.~\textit{Müesli} statt \textit{Müsli}. Mit seinen vier Amtssprachen ist Mehrsprachigkeit in der Schweiz ein wichtiges Thema.
@@ -262,65 +265,42 @@ Beim Schweizer Deutsch wird auf eine Reihe französischer Wörter wie \textit{Ve
 \subsection{Besonderheiten der deutschen Sprache}
 
 Deutsch weist eine Reihe besonderer Merkmale auf, die zum Sprachreichtum beitragen, für die automatische Verarbeitung der Sprache jedoch auch eine Herausforderung darstellen können. Ein und derselbe Gedanke kann auf unterschiedlichste Weise ausgedrückt werden. Zum Beispiel gibt es in deutschen Sätzen keine starre Wortstellung. Der englische Satz \textit{The woman gave the man an apple} kann im Englischen noch auf zweierlei Weise ausgedrückt werden:
-%\onecolumn
 
-%\begin{center}
-%  \begin{longtable}{@{}l@{}}    
-%    \textit{The woman gave an apple to the man.}\\ 
-%    \textit{An apple was given to the man by the woman.}
-%  \end{longtable}
-%\end{center}
-%\vspace*{-10mm}
-%\begin{table*}[h!]
-%\centering
-\begin{figure*}
-\begin{tabular*}{\textwidth}{l}\\
+\begin{itemize}
+\item The woman gave an apple to the man.
+\item An apple was given to the man by the woman.
+\end{itemize}
 
-	\textit{The woman gave an apple to the man.}\\
-	\textit{An apple was given to the man by the woman.}\\
-
-\end{tabular*}
-\end{figure*}
-%\vspace*{-10mm}
-%\end{table*}
 Im Deutschen gibt es mindestens neun Möglichkeiten, um den gleichen Satz auszudrücken, auch wenn einige davon kaum gebräuchlich sind:
-\onecolumn
-\begin{center}
-  \begin{longtable}{@{}l@{}}    
-    \textit{Die Frau gab dem Mann einen Apfel.}\\ 
-    \textit{Einen Apfel gab die Frau dem Mann.}\\ 
-    \textit{Dem Mann gab die Frau einen Apfel.}\\ 
-    \textit{Ein Apfel wurde dem Mann von der Frau gegeben.}\\ 
-    \textit{Dem Mann wurde von der Frau ein Apfel gegeben.}\\ 
-    \textit{Dem Mann wurde ein Apfel von der Frau gegeben.}\\ 
-    \textit{Ein Apfel wurde von der Frau dem Mann gegeben.}\\ 
-    \textit{Von der Frau wurde dem Mann ein Apfel gegeben.}\\ 
-    \textit{Von der Frau wurde ein Apfel dem Mann gegeben.}
-  \end{longtable}  
-\end{center}
-\vspace*{-10mm}
- 
+
+\begin{itemize}
+  \item Die Frau gab dem Mann einen Apfel.
+  \item Einen Apfel gab die Frau dem Mann.
+  \item Dem Mann gab die Frau einen Apfel.
+  \item Ein Apfel wurde dem Mann von der Frau gegeben.
+  \item Dem Mann wurde von der Frau ein Apfel gegeben.
+  \item Dem Mann wurde ein Apfel von der Frau gegeben.
+  \item Ein Apfel wurde von der Frau dem Mann gegeben.
+  \item Von der Frau wurde dem Mann ein Apfel gegeben.
+  \item Von der Frau wurde ein Apfel dem Mann gegeben.
+\end{itemize}  
 
 Deutsch ist zudem äußerst produktiv bei Wortneuschöpfungen., da sich aufgrund der Möglichkeit der Wortbildung mehrere Wörter und Affixe einfach kombinieren lassen. In der Theorie lassen sich so unendlich lange Wörter bilden:
 
-\onecolumn
-\begin{center}
-  \begin{longtable}{@{}l@{}}    
-    \textit{Verteidigung [defence]}\\ 
-    \textit{Verteidigungsminister [minister of defence]}\\ 
-    \textit{Selbstverteidigungsminister [minister of self-defence]}\\ 
-    \textit{Bundesselbstverteidigungsminister [federal minister of self-defence]} 
-  \end{longtable}
-\end{center}
-\vspace*{-10mm}
+\begin{itemize} 
+\item Verteidigung [defence]
+\item Verteidigungsminister [minister of defence]
+\item Selbstverteidigungsminister [minister of self-defence]
+\item Bundesselbstverteidigungsminister [federal minister of self-defence]
+\end{itemize}
  
 Menschen können die Bedeutung dieser Neologismen mühelos ableiten, doch Maschinen stoßen bei ihrer Verarbeitung auf Schwierigkeiten. Die deutsche Sprache besitzt noch weitere spezifische Merkmale, die eine Verarbeitung mit einem Computer schwierig gestalten. Eines davon ist die häufige Verwendung langer Schachtelsätze. Ein weiteres ist die Möglichkeit, trennbare Verbpräfixe weit entfernt vo ihrem Verb zu positionieren. Das Verb \textit{vorstellen} findet man z.\,B.~in Sätzen wie:
-\onecolumn
+
 \begin{center}
-  \begin{longtable}{@{}l@{}}    
+  \begin{tabular}{l}    
     \textit{Er \textbf{stellte} sich, nachdem er mir ein Getränk angeboten hatte und wir ins Gespräch gekommen waren, \textbf{vor}.}\\ 
     \textit{{[}He \textit{introduced} himself after he had offered me a drink and we had started a conversation.{]}}
-  \end{longtable}
+  \end{tabular}
 \end{center}
 \vspace*{-10mm}
  
@@ -388,10 +368,10 @@ Ein wichtiger Aspekt für Chancengleichheit in Deutschland und anderen europäis
 Internetnutzer und Anbieter von Webinhalt können Sprachtechnologie auch auf weniger offenkundige Weise nutzen, beispielsweise für die automatische Übersetzung des Inhalts von Webseiten von einer Sprache in eine andere. Obwohl die manuelle Übersetzung dieser Inhalte sehr kostspielig ist, wurde angesichts des geschätzten Bedarfs bisher noch relativ wenig Sprachtechnologie entwickelt und zu diesem Zweck bereitgestellt. Dies kann in der Komplexität der deutschen Sprache und der Menge an unterschiedlichen Technologien begründet liegen, die an typischen Anwendungen beteiligt sind. 
 
 Das nächste Kapitel liefert eine Einführung in die Sprachtechnologie und ihre Kernanwendungsbereiche sowie eine Bewertung der derzeitigen Sprachtechnologieunterstützung für die deutsche Sprache.
-\end{multicols}
+
 \clearpage
 % --------------------------------------------------------------------------
-\ssection{Sprach\-technologie für das Deutsche}
+\twocolumn[\ssection{Sprach\-technologie für das Deutsche}]
 
 Sprachtechnologie dient der Entwicklung von Softwaresystemen zur Verarbeitung menschlicher Sprache. Menschliche Sprache äußert sich in gesprochener und geschriebener Form. Gesprochene Sprache ist die älteste und im Hinblick auf die Evolution des Menschen die natürlichste Form der sprachlichen Kommunikation. Komplexe Informationen und der größte Teil des menschlichen Wissens werden jedoch in schriftlicher Form erfasst und vermittelt. Sprachtechnologie verarbeitet oder erzeugt diese unterschiedlichen Formen der Sprache mit Hilfe von Wörterbüchern sowie Grammatik- und Semantikregeln. Sprachtechnologie verknüpft also Sprache mit verschiedenen Wissensformen, unabhängig davon, ob es sich um gesprochene oder geschriebene Sprache handelt. Abbildung \ref{fig:ltincontext} veranschaulicht die Sprachtechnologie und angrenzende Gebiete.
 
@@ -971,7 +951,7 @@ Das langfristige Ziel von META-NET ist es, den Aufbau hochwertiger Sprachtechnol
 
 
 % --------------------------------------------------------------------------
-\ssection{Über META-NET}
+\twocolumn[\ssection{Über META-NET}]
   
 META-NET ist ein Exzellenznetzwerk, das von der Europäischen Kommission gefördert wird. Derzeit besteht das Netzwerk aus 54 Mitgliedern aus 33 europäischen Ländern. META-NET unterstützt die Multilingual Europe Technology Alliance (META), eine wachsende Gemeinschaft aus europäischen Experten und Organisationen aus dem Bereich der Sprachtechnologie. 
 META-NET kooperiert mit anderen Initiativen wie der Common Language Resources and Technology Infrastructure (CLARIN), welche daran arbeitet, Forschung auf dem Gebiet Digital Humanities zu etablieren. META-NET legt die technologische Grundlage für eine wirklich mehrsprachige europäische Informationsgesellschaft, die Folgendes ermöglicht:
@@ -992,12 +972,13 @@ META-NET nahm am 1. Februar 2010 die Arbeit auf mit dem Ziel, die Forschung im B
 \textbf{META-SHARE} ist eine offene, verteilte Plattform für den Austausch und die gemeinsame Nutzung von Sprachressourcen. Das Peer-to-Peer-Netzwerk von Repositorien enthält Sprachdaten, Tools und Webdienste, die mit hochwertigen Metadaten dokumentiert und in standardisierte Kategorien unterteilt sind. Auf die Ressourcen kann einfach zugegriffen werden und eine einheitliche Suche ist möglich. Zu den verfügbaren Ressourcen gehören sowohl kostenloses Open-Source-Material als auch  kostenpflichtige Angebote. META-SHARE zielt sowohl auf bestehende Sprachdaten, Tools und Systeme ab als auch auf neue und kommende Produkte, die für den Aufbau und die Bewertung neuer Technologien, Anwendungen und Dienste benötigt werden. Die Wiederverwendung, Kombination, Nutzbarmachung und das Re-Engineering von Sprachdaten und Tools spielt eine immer wichtigere Rolle. META-SHARE wird somit zu einem entsdheidenden Teil des Sprachtechnologie-Marktplatzes für Entwickler, Lokalisierungsexperten, Forscher, Übersetzer und Sprachexperten aus kleinen, mittleren und großen Unternehmen. META-SHARE begleitet sich den gesamten Entwicklungszyklus von Sprachtechnologie – von der Forschung bis hin zu innovativen Produkten und Diensten. Einen wichtigen Aspekt dieser Arbeit stellt die Etablierung von META-SHARE als wichtiger und wertvoller Teil einer europäischen und weltweiten Infrastruktur für die Sprachtechnologie-Gemeinschaft dar.\\
 \textbf{META-RESEARCH} baut Brücken zu verwandten Technologiefeldern. Die Arbeit besteht in innovativer Forschung mit dem Ziel, Fortschritte in Nachbardisziplinen gewinnbringend zur Verbesserung von Sprachtechnologie einzusetzen. Ein Fokus der Arbeit liegt insbesondere in der Integration von Semantik in die maschinelle Übersetzung (MT), der Optimierung von Aufgaben bei der hybriden MT, in der Nutzung von Kontextinformationen bei der Erzeugung automatischer Übersetzungen sowie der Aufbereitung empirischer Daten für MT. META-NET arbeitet mit anderen Bereichen und Disziplinen wie maschinelles Lernen und der Semantic Web Community zusammen. META-RESEARCH ist befasst mit der Sammlung von Daten, der Aufbereitung von Datenquellen und Sprachressourcen für Evaluationszwecke, der Zusammenstellung von Repositorien von Tools und Methoden und mit der Organisation von Workshops und Aus- und Weiterbildungsmaßnahmen für Mitglieder der Gemeinschaft. Durch diese Arbeit konnten bereits die relevanten Problemfelder der MT identifiziert werden, bei denen Semantik ein großes Potential zur Lösungsfindung besitzt. Zudem konnten Empfehlungen zusammengestellt werden, wie das Problem der Integration semantischer Informationen in die MT angegangen werden kann. Außerdem finalisiert META-RESEARCH gegenwärtig eine neue Sprachressource für MT, das Annotated Hybrid Sample MT Corpus, das Daten für die Sprachpaare Englisch-Deutsch, Englisch-Spanisch und Englisch-Tschechisch bereitstellt. META-RESEARCH hat außerdem Software entwickelt, die mehrsprachige Korpora sammelt, die im Web verborgen sind.
 
-
+\clearpage
+\onecolumn
 \subsection{Mit\-glieds\-or\-ga\-ni\-sa\-tio\-nen}
 
 \label{metanetmembers}
-\onecolumn
-\begin{longtable}{@{}llp{105mm}@{}}
+
+\begin{longtable}{llp{105mm}}
   Belgien & Belgium & Computational Linguistics and Psycholinguistics Research Centre, University of Antwerp: Walter Daelemans\\ \addlinespace
   & & Centre for Processing Speech and Images, University of Leuven: Dirk van Compernolle \\ \addlinespace
   Bulgarien & Bulgaria & Institute for Bulgarian Language, Bulgarian Academy of Sciences: Svetla Koeva \\ \addlinespace
@@ -1061,7 +1042,7 @@ META-NET nahm am 1. Februar 2010 die Arbeit auf mit dem Ziel, die Forschung im B
  
 \cleardoublepage
 
-\ssection{Executive Summary}
+\twocolumn[\ssection{Executive Summary}]
 During the last 60 years, Europe has become a distinct political and economic structure. Culturally and linguistically it is rich and diverse. However, from Portuguese to Polish and Italian to Icelandic, everyday communication between Europe’s citizens, within business and among politicians is inevitably confronted with language barriers. The EU's institutions spend about a billion euros a year on maintaining their policy of multilingualism, i.\,e., translating texts and interpreting spoken communication. Does this have to be such a burden? Language technology and linguistic research can make a significant contribution to removing the linguistic borders. Combined with intelligent devices and applications, language technology will help Europeans talk and do business together even if they do not speak a common language. 
 
     \boxtext{Language technology builds bridges\\ for Europe’s future}
@@ -1087,7 +1068,7 @@ META-NET’s vision is high-quality language technology for all languages that s
 
 This whitepaper series complements the other strategic actions taken by META-NET (see the appendix for an overview). Up-to-date information such as the current version of the META-NET vision paper \cite{Meta1} or the Strategic Research Agenda (SRA) can be found on the META-NET web site: http://www.meta-net.eu.
 
-\ssection{Languages at Risk: a Challenge for Language Technology}
+\twocolumn[\ssection{Languages at Risk: a Challenge for Language Technology}]
 
   \ParallelRText{\selectlanguage{english}%
 We are witnesses to a digital revolution that is dramatically impacting communication and society. Recent developments in information and communication technology are sometimes compared to Gutenberg’s invention of the printing press. What can this analogy tell us about the future of the European information society and our languages in particular?
@@ -1172,7 +1153,7 @@ As the strengths and weaknesses of statistical and rule-based systems tend to be
 
 As we have seen in this chapter, many applications widely used in today’s information society rely heavily on language technology, particularly in Europe’s economic and information space. Although this technology has made considerable progress in the last few years, there is still huge potential to improve the quality of language technology systems. In the next section, we describe the role of German in European information society and assess the current state of language technology for the German language.
 
-\ssection{The German Language in the European Information Society}
+\twocolumn[\ssection{The German Language in the European Information Society}]
 \subsection{General Facts}
 With about 100 million native speakers, German is the most widely spoken native language in the European Union. It is the commonly used language in Germany, Austria and Liechtenstein, and it is one of the official languages of Switzerland, Luxembourg and Belgium, where it is used by parts of the population. Around the world, German is spoken by around 30 million non-native speakers \cite{Eur1}, and is also the second most studied foreign language in the EU after English \cite{Goe1}. 
 
@@ -1206,20 +1187,20 @@ German exhibits a number of specific characteristics that contribute to the rich
 First, word order is relatively free in German sentences. In English, the sentence \textit{The woman gave the man an apple}
 can also be expressed in two other ways:
 
-\onecolumn
+
   \begin{center}
-    \begin{longtable}{@{}l@{}}    
+    \begin{tabular}{ll}    
       \textit{The woman gave an apple to the man.}\\ 
       \textit{An apple was given to the man by the woman.}
-    \end{longtable}
+    \end{tabular}
   \end{center}
   \vspace*{-10mm}
    
   
  In German, however, there are at least nine possible ways to express the same sentence, although some of them are very rarely used:
-\onecolumn
+
   \begin{center}
-    \begin{longtable}{@{}l@{}}    
+    \begin{tabular}{ll}    
       \textit{Die Frau gab dem Mann einen Apfel.}\\ 
       \textit{Einen Apfel gab die Frau dem Mann.}\\ 
       \textit{Dem Mann gab die Frau einen Apfel.}\\ 
@@ -1229,29 +1210,29 @@ can also be expressed in two other ways:
       \textit{Ein Apfel wurde von der Frau dem Mann gegeben.}\\ 
       \textit{Von der Frau wurde dem Mann ein Apfel gegeben.}\\ 
       \textit{Von der Frau wurde ein Apfel dem Mann gegeben.}
-    \end{longtable}  
+    \end{tabular}  
   \end{center}
   \vspace*{-10mm}
  
 German is very productive when it comes to coining new words due to the compounding system that allows combining words and affixes in a simple way. In theory, this allows for the creation of infinitely long words, where other languages might use a set phrase:
-\onecolumn
+
 \begin{center}
-    \begin{longtable}{@{}l@{}}    
+    \begin{tabular}{l}    
       \textit{Verteidigung [defence]}\\ 
       \textit{Verteidigungsminister [minister of defence]}\\ 
       \textit{Selbstverteidigungsminister [minister of self-defence]}\\ 
       \textit{Bundesselbstverteidigungsminister [federal minister of self-defence]} 
-    \end{longtable}
+    \end{tabular}
   \end{center}
   \vspace*{-10mm}
    
 Humans can easily derive the meanings of these neologisms as above, but machines have difficulty processing them. There are other specific characteristics of the German language that make it hard to process with a computer. One is a tendency to use fairly long, nested sentences. Another is the ability to position separable verb prefixes far away from their associated verb. For example, the verb \textit{vorstellen} can be found in sentences such as:
-\onecolumn
+
 \begin{center}
-    \begin{longtable}{@{}l@{}}    
+    \begin{tabular}{l}    
       \textit{Er \textbf{stellte} sich, nachdem er mir ein Getränk angeboten hatte und wir ins Gespräch gekommen waren, \textbf{vor}.}\\ 
       \textit{{[}He \textit{introduced} himself after he had offered me a drink and we had started a conversation.{]}}
-    \end{longtable}
+    \end{tabular}
   \end{center}
   \vspace*{-10mm}
   
@@ -1307,7 +1288,7 @@ Internet users and providers of web content can also use language technology in 
 
 The next chapter gives an introduction to language technology and its core application areas, together with an evaluation of current language technology support for German.
 
-\ssection{Language Technology Support for German}
+\twocolumn[\ssection{Language Technology Support for German}]
     Language technology is used to develop software systems designed to handle human language and are therefore often called “human language technology”. Human language comes in spoken and written forms. While speech is the oldest and in terms of human evolution the most natural form of language communication, complex information and most human knowledge is stored and transmitted through the written word. Speech and text technologies process or produce these different forms of language, using dictionaries, rules of grammar, and semantics. This means that language technology (LT) links language to various forms of knowledge, independently of the media (speech or text) in which it is expressed. figure* \ref{fig:ltincontext} illustrates the LT landscape.
 
 \begin{figure*}[h!]
@@ -1887,7 +1868,7 @@ The results of this white paper series show that there is a dramatic difference 
 Finally there is a lack of continuity in research and development funding. Short-term coordinated programmes tend to alternate with periods of sparse or zero funding. In addition, there is an overall lack of coordination with programmes in other EU countries and at the European Commission level.
 
 The long term goal of META-NET is to enable the creation of high-quality language technology for all languages. This requires all stakeholders - in politics, research, business, and society - to unite their efforts. The resulting technology will help tear down existing barriers and build bridges between Europe’s languages, paving the way for political and economic unity through cultural diversity. 
-\ssection{About META-NET}
+\twocolumn[\ssection{About META-NET}]
 META-NET is a Network of Excellence funded by the European Commission. The network currently consists of 54 members from 33 European countries. META-NET fosters the Multilingual Europe Technology Alliance (META), a growing community of language technology professionals and organisations in Europe. META-NET cooperates with other initiatives like the Common Language Resources and Technology Infrastructure (CLARIN), which is helping establish digital humanities research in Europe. META-NET fosters the technological foundations for a truly multilingual European information society that:
     \begin{itemize}
       \item makes communication and cooperation possible across languages;
@@ -1904,9 +1885,9 @@ Three Lines of Action in META-NET\\
     \textbf{META-SHARE} creates an open, distributed facility for exchanging and sharing resources. The peer-to-peer network of repositories will contain language data, tools and web services that are documented with high-quality metadata and organised in standardised categories. The resources can be readily accessed and uniformly searched. The available resources include free, open source materials as well as restricted, commercially available, fee-based items. META-SHARE targets existing language data, tools and systems as well as new and emerging products that are required for building and evaluating new technologies, products and services. The reuse, combination, repurposing and re-engineering of language data and tools plays a crucial role. META-SHARE will eventually become a critical part of the LT marketplace for developers, localisation experts, researchers, translators and language professionals from small, mid-sized and large enterprises. META-SHARE addresses the full development cycle of LT—from research to innovative products and services. A key aspect of this activity is establishing META-SHARE as an important and valuable part of a European and global infrastructure for the LT community. 
 
     \textbf{META-RESEARCH} builds bridges to related technology fields. This activity seeks to leverage advances in other fields and to capitalise on innovative research that can benefit language technology. In particular, this activity wants to bring more semantics into machine translation (MT), optimise the division of labour in hybrid MT, exploit context when computing automatic translations and prepare an empirical base for MT. META-RESEARCH is working with other fields and disciplines, such as machine learning and the Semantic Web community. META-RESEARCH focuses on collecting data, preparing data sets and organising language resources for evaluation purposes; compiling inventories of tools and methods; and organising workshops and training events for members of the community. This activity has already clearly identified aspects of MT where semantics can impact current best practices. In addition, the activity has created recommendations on how to approach the problem of integrating semantic information in MT. META-RESEARCH is also finalising a new language resource for MT, the Annotated Hybrid Sample MT Corpus, which provides data for English-German, English-Spanish and English-Czech language pairs. META-RESEARCH has also developed software that collects multilingual corpora that are hidden on the Web.
-   \onecolumn
+   
 \subsection{Member Organisations}
-  \begin{longtable}{@{}llp{105mm}@{}}
+  \begin{tabular}{llp{105mm}}
 Belgien & Belgium & Computational Linguistics and Psycholinguistics Research Centre, University of Antwerp: Walter Daelemans\\ \addlinespace
 & & Centre for Processing Speech and Images, University of Leuven: Dirk van Compernolle \\ \addlinespace
 Bulgarien & Bulgaria & Institute for Bulgarian Language, Bulgarian Academy of Sciences: Svetla Koeva \\ \addlinespace
@@ -1959,7 +1940,7 @@ Tschechien & Czech Republic & Institute of Formal and Applied Linguistics, Charl
 Ungarn & Hungary & Research Institute for Linguistics, Hungarian Academy of Sciences: Tamás Váradi\\  \addlinespace
 & & Department of Telecommunications and Media Informatics, Budapest University of Technology and Economics: Géza Németh and Gábor Olaszy\\ \addlinespace
 Zypern & Cyprus & Language Centre, School of Humanities: Jack Burston
- \end{longtable}
+ \end{tabular}
 \begin{figure*}[h!]
   \center
   \includegraphics[width=\textwidth]{../_media/meta-net_team.jpg}
@@ -1967,13 +1948,13 @@ Zypern & Cyprus & Language Centre, School of Humanities: Jack Burston
     \textcolor{grey1}{Almost 100 language technology experts -- representatives of the countries and languages represented in META-NET -- discussed and finalised the key results and messages of the White Paper Series at a META-NET meeting in Berlin, Germany, on October 21/22, 2011.}}
 \end{figure*}
   \clearpage
-  \ssection{Literaturverweise --- References}
+  \twocolumn[\ssection{Literaturverweise --- References}]
   \bibliographystyle{plain}
   \bibliography{german_references}
 
 \cleardoublepage
 
-\ssection*{Die META-NET Weissbuch-Serie --- The META-NET\ \ \ \ White Paper Series}
+\twocolumn[\ssection*{Die META-NET Weissbuch-Serie --- The META-NET\ \ \ \ White Paper Series}]
 
 \label{whitepaperseries}
 
