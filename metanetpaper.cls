@@ -262,11 +262,15 @@
 \addtokomafont{caption}{\sffamily}
 
 
-% Autors with affiliation
-\def\authoraffiliation#1{\gdef\@authoraffiliation{#1}}
-\def\@authoraffiliation{\@latex@warning@no@line{No \noexpand\authoraffiliation given}}
 
 % Titlepage
+  % Autors with affiliation
+\def\authoraffiliation#1{\gdef\@authoraffiliation{#1}}
+\def\@authoraffiliation{\@latex@warning@no@line{No \noexpand\authoraffiliation given}}
+  % Autors with affiliation
+\def\editors#1{\gdef\@editors{#1}}
+\def\@editors{\@latex@warning@no@line{No \noexpand\editors given}}
+  % Maketitle
 \renewcommand\maketitle{%
   \begin{titlepage}%
   \ThisCenterWallPaper{1}{../_media/titlepage.pdf}
@@ -315,7 +319,7 @@
     \begin{Parallel}[c]{81mm}{77mm}
       \ParallelLText{
         \begin{flushright}
-          \fontsize{14}{24}\selectfont{%
+          \fontsize{14}{1.2}\selectfont{%
             \textsf{
               \textcolor{grey2}{by}
             }
@@ -324,7 +328,7 @@
       }
       \ParallelRText{
         \begin{flushleft}
-          \fontsize{14}{24}\selectfont{%
+          \fontsize{14}{1.2}\selectfont{%
             \textsf{%
               \textcolor{white}{%
                 \@author
@@ -410,12 +414,11 @@
       \begin{minipage}[t]{5mm}\ \end{minipage}
       % Right column
       \begin{minipage}[t]{85mm}
-        \textsf{\color{red}Georg Rehm, Hans Uszkoreit (Hrsg., eds.)}
+        \textsf{\color{red}\@editors}
       \end{minipage}
     \clearpage
   \end{titlepage}
 }
-\global\let\@authoraffiliation\@empty
 
 
 % Bibliography
