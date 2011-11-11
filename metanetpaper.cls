@@ -82,7 +82,6 @@
 % Orphans and widows
 % \widowpenalties 3 10000 10000 100 
 % \clubpenalties 3 10000 10000 100
-%
 % CAREFUL: There are sideeffects with the "parallel" package!
 
 % Headings
@@ -91,14 +90,9 @@
   \centering \fontsize{24}{1.2}\color{red}\sffamily\thesection
 }{-0.35em}{\centering\protect\linebreak}
 
-\titleformat{\subsection}[block]{}{
-  \raggedright\LARGE\futuralight\thesubsection
-}{0.5em}{\raggedright\LARGE\sffamily\MakeUppercase}
-\titlespacing{\subsection}{0pt}{*4}{*1}
+\titleformat{\subsection}[block]{}{\raggedright\LARGE\futuralight\thesubsection}{0.5em}{\raggedright\LARGE\sffamily\MakeUppercase}\titlespacing{\subsection}{0pt}{*4}{*1}
 
-\titleformat{\subsubsection}{}{%
-  %\fontsize{14}{14}\futuralight\thesubsubsection
-}{0em}{\fontsize{14}{1.2}\sffamily}
+\titleformat{\subsubsection}{}{\fontsize{14}{14}\futuralight\thesubsubsection}{0em}{\fontsize{14}{1.2}\sffamily}
 
 % Redefine \section as \ssection and then as \sectionstar and \sectionnostar
 % for numbered and unnumbered sections
@@ -182,21 +176,14 @@
   }
 }
 
-
-% Redifine \subsection as \ssubsection (not currently used)
-\newcommand{\ssubsection}[2][]{%
-  \vspace*{11mm}
-  \begin{minipage}[h]{0.5\textwidth-2mm}
-  \subsection[#2]{%
-        \MakeUppercase{%
-          #2
-        }
-  }
-  \end{minipage}  
-  \vspace*{1mm}
-}
-
-
+% Redefine \subsection as \ssubsection (not currently used)
+%\newcommand{\ssubsection}[2][]{%
+%  \vspace*{11mm}
+%  \begin{minipage}[h]{0.5\textwidth-2mm}
+%  \subsection[#2]{\MakeUppercase{#2}}
+%  \end{minipage}  
+%  \vspace*{1mm}
+%}
 
 % Lists
   % List item style
