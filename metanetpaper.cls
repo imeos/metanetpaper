@@ -201,8 +201,8 @@
 \newcommand\boxtext[1]{
   \vskip4mm
   \begin{center}
-  \colorrule{grey3}{\textwidth}{1.5pt}
-  \colorrule{white}{\textwidth}{5mm}
+  \colorrule{grey3}{\textwidth/2}{1.5pt}
+  \colorrule{white}{\textwidth/2}{5mm}
 %  \colorrule{grey3}{0.5\textwidth-2mm}{1.5pt}
 %  \colorrule{white}{0.5\textwidth-2mm}{5mm}
   \fontsize{12}{9}\selectfont{
@@ -210,8 +210,8 @@
       #1
     }
   }
-    \colorrule{white}{\textwidth}{0.01mm}
-  \colorrule{grey3}{\textwidth}{1.5pt}
+    \colorrule{white}{\textwidth/2}{0.01mm}
+  \colorrule{grey3}{\textwidth/2}{1.5pt}
   \end{center}
 }
 
