@@ -12,7 +12,6 @@
 
 \documentclass[]{../../metanetpaper}
 
-\usepackage{covington}
 \usepackage{booktabs}
 \usepackage{longtable}
 \usepackage{tabulary}
@@ -27,7 +26,7 @@
 %!TEX TS-program = xelatex
 \RequireXeTeX %Force XeTeX check
 
-\title{Deutsch im Digitalen Zeitalter --- The German Language in the Digital Age}
+\title{Die Deutsche Sprache im Digitalen Zeitalter --- The German Language in the Digital Age}
 
 \subtitle{White Paper Series --- Weißbuch-Serie}
 
@@ -56,7 +55,7 @@
   Martin Volk~ {\small Universität Zürich}
 }
 \editors{
-  Georg Rehm, Hans Uszkoreit (Hrsg., \textcolor{grey1}{eds.})
+  Georg Rehm, Hans Uszkoreit\\(Herausgeber, \textcolor{grey1}{editors})
 }
 
 \begin{document}
@@ -74,18 +73,24 @@
 % --------------------------------------------------------------------------
 
 \bsection{Vorwort --- Preface}
-\begin{Parallel}[c]{79mm}{78mm}
-\ParallelLText{
-Dieses Weißbuch gehört zu einer Serie, die Wissen über Sprachtechnologie und deren Potenzial vermitteln soll, und sich insbesondere an Journalisten, Politiker, Sprachgemeinschaften und Lehrende richtet.
-Die derzeitige Verfügbarkeit und Nutzung von Sprachtechnologie in Europa variiert stark je nach Sprache. Folglich müssen auch die notwendigen 
-Maßnahmen für die weitere Unterstützung von Forschung und Entwicklung in diesem Bereich variieren. Die Maßnahmen hängen von zahlreichen Faktoren ab, z.\,B.~der Komplexität einer Sprache und der Anzahl ihrer Sprecher.
+
+\begin{Parallel}[c]{78mm}{78mm}
+\ParallelLText{\selectlanguage{german}
+Dieses Weißbuch gehört zu einer Serie, die Wissen über Sprachtechnologie und deren Potenzial vermitteln soll, und sich insbesondere an Journalisten, Politiker, Sprachgemeinschaften und Lehrende richtet. Die derzeitige Verfügbarkeit und Nutzung von Sprachtechnologie in Europa variiert stark je nach Sprache. Folglich müssen auch die notwendigen Maßnahmen für die weitere Unterstützung von Forschung und Entwicklung in diesem Bereich variieren. Die Maßnahmen hängen von zahlreichen Faktoren ab, z.\,B.~der Komplexität einer Sprache und der Anzahl ihrer Sprecher.
+
 META-NET, ein von der Europäischen Kommission gefördertes Exzellenznetzwerk, hat die aktuellen Sprachressourcen und -technologien in der vorliegenden Weiß\-buch-Serie analysiert (siehe S.~\pageref{whitepaperseries}). Die Analyse umfasst die 23 europäischen Amtssprachen sowie weitere wichtige nationale und regionale Sprachen Europas. Die Ergebnisse zeigen, dass es bei allen Sprachen beträchtliche Defizite in der technologischen Unterstützung und signifikante Forschungslücken gibt. Die vorliegende ausführliche Expertenanalyse und Bewertung der aktuellen Situation dient dazu, die Wirksamkeit weiterer Forschungstätigkeit zu maximieren.
+
 META-NET besteht aus 54 Forschungszentren aus 33 Ländern (Stand: November 2011, siehe S.~\pageref{metanetmembers}), die mit Interessensvertretern aus Wirtschaft (Softwareunternehmen, Technologieanbietern, Nutzer), Verwaltung, NGOs, Sprachgemeinschaften und europäischen Universitäten zusammenarbeiten. META-NET entwickelt gemeinsam mit diesen Gruppen eine übergreifende Technologievision und eine strategische Forschungsagenda für das mehrsprachige Europa 2020.}
 
-\ParallelRText{This white paper is part of a series that promotes knowledge about language technology and its potential. It addresses journalists, politicians, language communities, educators and others. 
+\ParallelRText{\selectlanguage{english}
+This white paper is part of a series that promotes knowledge about language technology and its potential. It addresses journalists, politicians, language communities, educators and others. 
 The availability and use of language technology in Europe varies between languages. Consequently, the actions that are required to further support research and development of language technologies also differs. The required actions depend on many factors, such as the complexity of a given language and the size of its community.
-META-NET, a Network of Excellence funded by the European Commission, has conducted an analysis of current language resources and technologies in this white paper series (p.~\pageref{whitepaperseries}). The analysis focused on the 23 official European languages as well as other important national and regional languages in Europe. The results of this analysis suggest that there are tremendous deficits in technology support and significant research gaps for each language. The given detailed expert analysis and assessment of the current situation will help maximise the impact of additional research.
-As of November 2011, META-NET consists of 54 research centres from 33 European countries (p.~\pageref{metanetmembers}). META-NET is working with stakeholders from economy (Software companies, technology providers, users), government agencies, research organisations, non-governmental organisations, language communities and European universities. Together with these communities, META-NET is creating a common technology vision and strategic research agenda for multilingual Europe 2020.}   \ParallelPar
+
+META-NET, a Network of Excellence funded by the European Commission, has conducted an  analysis of current language resources and technologies in this white paper series (p.~\pageref{whitepaperseries}). The analysis focused on the 23 official European languages as well as other important national and regional languages in Europe. The results of this analysis suggest that there are tremendous deficits in technology support and significant research gaps for each language. The given detailed expert analysis and assessment of the current situation will help maximise the impact of additional research.
+
+As of November 2011, META-NET consists of 54 research centres from 33 European countries (p.~\pageref{metanetmembers}). META-NET is working with stakeholders from economy (Software companies, technology providers, users), government agencies, research organisations, non-governmental organisations, language communities and European universities. Together with these communities, META-NET is creating a common technology vision and strategic research agenda for multilingual Europe 2020.} 
+
+\ParallelPar
 \end{Parallel}
 
 % --------------------------------------------------------------------------
@@ -102,9 +107,10 @@ As of November 2011, META-NET consists of 54 research centres from 33 European c
 \pagenumbering{arabic} 
 \pagestyle{scrheadings}
 
-
 % --------------------------------------------------------------------------
 \twocolumn[\ssection{Zusammenfassung}]
+
+\selectlanguage{german}
 
 Europa ist in den vergangenen 60 Jahren eine politisch-wirtschaftliche Einheit geworden. Kulturell und sprachlich ist der europäische Raum reich und vielfältig. Von Portugiesisch bis Polnisch, von Italienisch bis Isländisch -- im kommunikativen Miteinander stoßen Europas Bürger, die europäische Wirtschaft und auch die Politik schnell an sprachliche Grenzen. Die Institutionen der EU geben jährlich rund eine Milliarde Euro für die Übersetzung von Texten und das Dolmetschen gesprochener Kommunikation aus, um am Grundsatz der Mehrsprachigkeit festzuhalten. Ist dieser Aufwand tatsächlich notwendig? Moderne Sprachtechnologie und Sprachforschung können einen wichtigen Beitrag leisten, um die Sprachgrenzen zu überwinden. Wenn Europäer sich miteinander unterhalten oder Verträge schließen wollen, kann moderne Sprachtechnologie in Verbindung mit intelligenten Endgeräten und Anwendungen ihnen hierbei künftig helfen -- selbst wenn sie keine gemeinsame Sprache sprechen. 
 
@@ -969,7 +975,10 @@ META-NET nahm am 1. Februar 2010 die Arbeit auf mit dem Ziel, die Forschung im B
  
 \cleardoublepage
 
+\selectlanguage{english}
+
 \twocolumn[\ssection{Executive Summary}]
+
 During the last 60 years, Europe has become a distinct political and economic structure. Culturally and linguistically it is rich and diverse. However, from Portuguese to Polish and Italian to Icelandic, everyday communication between Europe’s citizens, within business and among politicians is inevitably confronted with language barriers. The EU's institutions spend about a billion euros a year on maintaining their policy of multilingualism, i.\,e., translating texts and interpreting spoken communication. Does this have to be such a burden? Language technology and linguistic research can make a significant contribution to removing the linguistic borders. Combined with intelligent devices and applications, language technology will help Europeans talk and do business together even if they do not speak a common language. 
 
     \boxtext{Language technology builds bridges\\ for Europe’s future}
@@ -1805,6 +1814,9 @@ Three Lines of Action in META-NET\\
 \onecolumn
 
 \subsection{Member Organisations}
+
+\label{metanetmembers}
+
 \begin{longtable}{llp{105mm}}
   Belgien & Belgium & Computational Linguistics and Psycholinguistics Research Centre, University of Antwerp: Walter Daelemans\\ \addlinespace
   & & Centre for Processing Speech and Images, University of Leuven: Dirk van Compernolle \\ \addlinespace
@@ -1912,11 +1924,6 @@ Three Lines of Action in META-NET\\
   Tschechisch & Czech & čeština\\
   Ungarisch & Hungarian & magyar\\ \addlinespace \bottomrule
 \end{tabulary}
-
-\cleardoublepage
-
-\vfill
-\centerline{META-NET -- office@meta-net.eu -- http://www.meta-net.eu}
 
 \end{document}
 

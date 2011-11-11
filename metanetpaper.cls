@@ -10,14 +10,11 @@
 %
 %                - META-NET Language Whitepaper | CLASS -
 
-
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{metanetpaper}[2011/09/20 LaTeX class to typeset bilingual papers of the DFKI META-NET Project]
 
 % Use KOMA-script class 'scrartcl', based on 'article'
 \LoadClass[11pt, twoside, twocolumn]{scrartcl}
-
-
 
 % Dependencies
 % ------------
@@ -26,41 +23,28 @@
 \usepackage[paperwidth=216mm, paperheight=285mm, top=24mm, bottom=37mm, left=27mm, right=25mm, headsep=20mm, bindingoffset=0mm]{geometry}
 
 \usepackage{graphicx}
-% Mathematical symbols
-\usepackage{mathabx}
-% Colorize and customize the headings
-\usepackage[xetex]{color}
-\usepackage{titlesec}
-% Generate TOC with hyperlinks inside document, no border, no color
+\usepackage{mathabx} % Mathematical symbols
+\usepackage[xetex]{color} % Colorize and customize the headings
+\usepackage{titlesec} % Generate TOC with hyperlinks inside document, no border, no color
 \usepackage[colorlinks=true, linkcolor=black, citecolor=black, urlcolor=black]{hyperref}
-% Custom background-images
-\usepackage{wallpaper}
-% XeLaTeX packages 
-\usepackage[T1]{fontenc}
+\usepackage{wallpaper} % Custom background-images
+\usepackage[T1]{fontenc} % XeLaTeX packages 
 \usepackage{fontspec}
-% Two columns per page
-\usepackage{pdfcolparallel}
-% Linespacing
-\usepackage[onehalfspacing]{setspace}
+\usepackage{parallel} % Two columns per page
+\usepackage[onehalfspacing]{setspace} % Linespacing
 \usepackage{scrpage2}
-% String modifications
-\usepackage{xstring}
-% TOC modifications
-\usepackage{tocloft}
-% Conditional statements
-\usepackage{ifthen}
-% 
-\usepackage{multicol}
+\usepackage{xstring} % String modifications
+\usepackage{tocloft} % TOC modifications
+\usepackage{ifthen} % Conditional statements
+%\usepackage{multicol}
 
 \usepackage{float}
-
 
 % Class options & definitions
 % ---------------------------
 
 % Indent for new Paragraphs
 \setlength{\parindent}{0pt}
-
 
 % Select fonts
 \setmainfont[Mapping=tex-text]{Garamond Premier Pro}
@@ -69,7 +53,6 @@
   \newfontfamily\futurabook{Futura Book}
   \newfontfamily\futuramedium{Futura Medium}
 \setmonofont[Scale=0.7]{DejaVu Sans Mono}
-
 
 % Colors                                             
 \definecolor{white}{cmyk}{0, 0, 0, 0}                % #FFFFFF
@@ -96,10 +79,11 @@
 \definecolor{blue2}{cmyk}{0.55, 0, 0.22, 0}          % #56D8D8
 \definecolor{purple}{cmyk}{0.49, 0.32, 0, 0}         % #7e7fff
 
-
 % Orphans and widows
-\widowpenalties 3 10000 10000 100 
-\clubpenalties 3 10000 10000 100
+% \widowpenalties 3 10000 10000 100 
+% \clubpenalties 3 10000 10000 100
+%
+% CAREFUL: There are sideeffects with the "parallel" package!
 
 % Headings
   % Reset all sections
@@ -176,7 +160,7 @@
       }
     }
     \end{flushright}
-    \vspace*{7mm}
+    %\vspace*{5mm}
   \end{minipage}
   % spacing between colums
   \begin{minipage}[t]{5mm}\ \end{minipage}
@@ -193,7 +177,7 @@
       }
     }
     \end{flushleft}
-    \vspace*{7mm}
+    %\vspace*{5mm}
   \end{minipage}
   }
 }
