@@ -108,8 +108,9 @@
 }{-0.35em}{\centering\protect\linebreak}
 
 \titleformat{\subsection}[block]{}{
-  \raggedright\fontsize{18}{19}\futuralight\thesubsection
-}{0.5em}{\raggedright\fontsize{18}{19}\sffamily\MakeUppercase}
+  \raggedright\LARGE\futuralight\thesubsection
+}{0.5em}{\raggedright\LARGE\sffamily\MakeUppercase}
+\titlespacing{\subsection}{0pt}{*4}{*1}
 
 \titleformat{\subsubsection}{}{%
   %\fontsize{14}{14}\futuralight\thesubsubsection
@@ -157,18 +158,59 @@
   \vspace*{0mm}
 }
 
+% Redefine bilingual \sections 
+\newcommand{\bsection}[2][]{%
+  \clearpage
+  \vspace*{15mm}
+  \ThisCenterWallPaper{1}{../_media/section_bg.pdf}
+  % original language
+  \begin{minipage}[t]{80mm}
+    \color{red}
+    \begin{flushright}
+    \textsf{%
+      % Title
+      \fontsize{24}{24}\selectfont{%
+        \MakeUppercase{%
+          \protect\StrBefore{#2}{ ---}
+        }
+      }
+    }
+    \end{flushright}
+    \vspace*{7mm}
+  \end{minipage}
+  % spacing between colums
+  \begin{minipage}[t]{5mm}\ \end{minipage}
+  % english version
+  \begin{minipage}[t]{81mm}
+    \color{grey1}
+    \begin{flushleft}
+    \textsf{%
+      % Title
+      \fontsize{24}{24}\selectfont{%
+        \MakeUppercase{%
+          \protect\StrBehind{#2}{--- }
+        }
+      }
+    }
+    \end{flushleft}
+    \vspace*{7mm}
+  \end{minipage}
+  }
+}
+
+
+% Redifine \subsection as \ssubsection (not currently used)
 \newcommand{\ssubsection}[2][]{%
+  \vspace*{11mm}
+  \begin{minipage}[h]{0.5\textwidth-2mm}
   \subsection[#2]{%
-    \fontsize{14}{1.2}\selectfont{%
         \MakeUppercase{%
           #2
         }
-    }
-  }  
+  }
+  \end{minipage}  
+  \vspace*{1mm}
 }
-
-%\renewcommand\ParallelRText[1]{{
-%	\textcolor{grey1}{#1} }}
 
 
 
@@ -202,6 +244,7 @@
   \vskip4mm
   \begin{center}
   \colorrule{grey3}{0.5\textwidth-2mm}{1.5pt}
+  \vskip1.5mm
   \fontsize{12}{9}\selectfont{
     \textsf{
       #1
