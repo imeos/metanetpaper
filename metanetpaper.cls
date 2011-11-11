@@ -108,8 +108,8 @@
 }{-0.35em}{\centering\protect\linebreak}
 
 \titleformat{\subsection}[block]{}{
-  \raggedright\fontsize{18}{1.5}\futuralight\thesubsection
-}{0.5em}{\raggedright\fontsize{18}{1.5}\sffamily\MakeUppercase}
+  \raggedright\fontsize{18}{19}\futuralight\thesubsection
+}{0.5em}{\raggedright\fontsize{18}{19}\sffamily\MakeUppercase}
 
 \titleformat{\subsubsection}{}{%
   %\fontsize{14}{14}\futuralight\thesubsubsection
