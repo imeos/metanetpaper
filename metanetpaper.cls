@@ -158,6 +158,48 @@
   \vspace*{0mm}
 }
 
+% Redefine bilingual \sections 
+\newcommand{\bsection}[2][]{%
+  \clearpage
+  \vspace*{15mm}
+  \ThisCenterWallPaper{1}{../_media/section_bg.pdf}
+  % original language
+  \begin{minipage}[t]{80mm}
+    \color{red}
+    \begin{flushright}
+    \textsf{%
+      % Title
+      \fontsize{24}{24}\selectfont{%
+        \MakeUppercase{%
+          \protect\StrBefore{#2}{ ---}
+        }
+      }
+    }
+    \end{flushright}
+    \vspace*{7mm}
+  \end{minipage}
+  % spacing between colums
+  \begin{minipage}[t]{5mm}\ \end{minipage}
+  % english version
+  \begin{minipage}[t]{81mm}
+    \color{grey1}
+    \begin{flushleft}
+    \textsf{%
+      % Title
+      \fontsize{24}{24}\selectfont{%
+        \MakeUppercase{%
+          \protect\StrBehind{#2}{--- }
+        }
+      }
+    }
+    \end{flushleft}
+    \vspace*{7mm}
+  \end{minipage}
+  }
+}
+
+
+% Redifine \subsection as \ssubsection (not currently used)
 \newcommand{\ssubsection}[2][]{%
   \vspace*{11mm}
   \begin{minipage}[h]{0.5\textwidth-2mm}

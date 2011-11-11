@@ -12,6 +12,7 @@
 
 \documentclass[]{../../metanetpaper}
 
+\usepackage{covington}
 \usepackage{booktabs}
 \usepackage{longtable}
 \usepackage{tabulary}
@@ -40,7 +41,7 @@
   Georg Rehm \\
   Manfred Stede \\
   Hans Uszkoreit \\
-  Martin Volk 
+  Martin Volk
 }
 \authoraffiliation{
   Aljoscha Burchardt~ {\small DFKI}\\
@@ -63,27 +64,34 @@
 \renewcommand*{\figureformat}{\sffamily\thefigure\autodot}
 
 \maketitle
-  
+\onecolumn
 \input{../german/german_mocktitle}
 
 \pagenumbering{Roman} 
 \setcounter{page}{5}
 \pagestyle{scrheadings}
 
-
-%\begin{multicols}{2}
-
 % --------------------------------------------------------------------------
-\ssection*{Vorwort}
 
+\bsection{Vorwort --- Preface}
+\begin{Parallel}[c]{79mm}{78mm}
+\ParallelLText{
 Dieses Weißbuch gehört zu einer Serie, die Wissen über Sprachtechnologie und deren Potenzial vermitteln soll, und sich insbesondere an Journalisten, Politiker, Sprachgemeinschaften und Lehrende richtet.
 
 Die derzeitige Verfügbarkeit und Nutzung von Sprachtechnologie in Europa variiert stark je nach Sprache. Folglich müssen auch die notwendigen Maßnahmen für die weitere Unterstützung von Forschung und Entwicklung in diesem Bereich variieren. Die Maßnahmen hängen von zahlreichen Faktoren ab, z.\,B.~der Komplexität einer Sprache und der Anzahl ihrer Sprecher.
 
 META-NET, ein von der Europäischen Kommission gefördertes Exzellenznetzwerk, hat die aktuellen Sprachressourcen und -technologien in der vorliegenden Weiß\-buch-Serie analysiert (siehe S.~\pageref{whitepaperseries}). Die Analyse umfasst die 23 europäischen Amtssprachen sowie weitere wichtige nationale und regionale Sprachen Europas. Die Ergebnisse zeigen, dass es bei allen Sprachen beträchtliche Defizite in der technologischen Unterstützung und signifikante Forschungslücken gibt. Die vorliegende ausführliche Expertenanalyse und Bewertung der aktuellen Situation dient dazu, die Wirksamkeit weiterer Forschungstätigkeit zu maximieren.
 
-META-NET besteht aus 54 Forschungszentren aus 33 Ländern (Stand: November 2011, siehe S.~\pageref{metanetmembers}), die mit Interessensvertretern aus Wirtschaft (Softwareunternehmen, Technologieanbietern, Nutzer), Verwaltung, NGOs, Sprachgemeinschaften und europäischen Universitäten zusammenarbeiten. META-NET entwickelt gemeinsam mit diesen Gruppen eine übergreifende Technologievision und eine strategische Forschungsagenda für das mehrsprachige Europa 2020.
+META-NET besteht aus 54 Forschungszentren aus 33 Ländern (Stand: November 2011, siehe S.~\pageref{metanetmembers}), die mit Interessensvertretern aus Wirtschaft (Softwareunternehmen, Technologieanbietern, Nutzer), Verwaltung, NGOs, Sprachgemeinschaften und europäischen Universitäten zusammenarbeiten. META-NET entwickelt gemeinsam mit diesen Gruppen eine übergreifende Technologievision und eine strategische Forschungsagenda für das mehrsprachige Europa 2020.}
 
+\ParallelRText{This white paper is part of a series that promotes knowledge about language technology and its potential. It addresses journalists, politicians, language communities, educators and others. 
+
+The availability and use of language technology in Europe varies between languages. Consequently, the actions that are required to further support research and development of language technologies also differs. The required actions depend on many factors, such as the complexity of a given language and the size of its community.
+
+META-NET, a Network of Excellence funded by the European Commission, has conducted an analysis of current language resources and technologies in this white paper series (p.~\pageref{whitepaperseries}). The analysis focused on the 23 official European languages as well as other important national and regional languages in Europe. The results of this analysis suggest that there are tremendous deficits in technology support and significant research gaps for each language. The given detailed expert analysis and assessment of the current situation will help maximise the impact of additional research.
+
+As of November 2011, META-NET consists of 54 research centres from 33 European countries (p.~\pageref{metanetmembers}). META-NET is working with stakeholders from economy (Software companies, technology providers, users), government agencies, research organisations, non-governmental organisations, language communities and European universities. Together with these communities, META-NET is creating a common technology vision and strategic research agenda for multilingual Europe 2020.}   \ParallelPar
+\end{Parallel}
 
 % --------------------------------------------------------------------------
 \cleardoublepage
@@ -93,12 +101,15 @@ META-NET besteht aus 54 Forschungszentren aus 33 Ländern (Stand: November 2011,
 
 \cleardoublepage
 
+\twocolumn
+
 \setcounter{page}{1}
-\pagenumbering{arabic}
+\pagenumbering{arabic} 
+\pagestyle{scrheadings}
 
 
 % --------------------------------------------------------------------------
-\ssection{Zusammenfassung}
+\twocolumn[\ssection{Zusammenfassung}]
 
 Europa ist in den vergangenen 60 Jahren eine politisch-wirtschaftliche Einheit geworden. Kulturell und sprachlich ist der europäische Raum reich und vielfältig. Von Portugiesisch bis Polnisch, von Italienisch bis Isländisch -- im kommunikativen Miteinander stoßen Europas Bürger, die europäische Wirtschaft und auch die Politik schnell an sprachliche Grenzen. Die Institutionen der EU geben jährlich rund eine Milliarde Euro für die Übersetzung von Texten und das Dolmetschen gesprochener Kommunikation aus, um am Grundsatz der Mehrsprachigkeit festzuhalten. Ist dieser Aufwand tatsächlich notwendig? Moderne Sprachtechnologie und Sprachforschung können einen wichtigen Beitrag leisten, um die Sprachgrenzen zu überwinden. Wenn Europäer sich miteinander unterhalten oder Verträge schließen wollen, kann moderne Sprachtechnologie in Verbindung mit intelligenten Endgeräten und Anwendungen ihnen hierbei künftig helfen -- selbst wenn sie keine gemeinsame Sprache sprechen. 
 
@@ -125,8 +136,9 @@ Die Vision von META-NET ist hochqualitative Sprachtechnologie für alle Sprachen
 Diese Weißbuch-Serie flankiert die anderen strategischen Aktivitäten von META-NET. Einen Überblick hierzu finden Sie im Anhang. Aktuelle Informationen, die neueste Version des META-NET Vision Papers \cite{Meta1} oder der strategischen Forschungsagenda (SRA) finden Sie auf unserer Website: http://www.meta-net.eu.
 
 
+\clearpage
 % --------------------------------------------------------------------------
-\ssection{Unsere Sprachen in Gefahr: Eine Heraus\-for\-de\-rung für die Sprachtechnologie}
+\twocolumn[\ssection{Unsere Sprachen in Gefahr: Eine Heraus\-for\-de\-rung für die Sprachtechnologie}]
 
 Wir sind Zeugen einer digitalen Revolution, die enorme Auswirkungen auf Kommunikation und Gesellschaft hat. Die jüngsten Entwicklungen in der digitalen In\-for\-ma\-tions- und Kommunikationstechnologie werden manchmal mit Gutenbergs Erfindung der Druckerpresse verglichen. Was kann uns diese Analogie über die Zukunft der europäischen Informationsgesellschaft und insbesondere der unserer Sprachen sagen?
 
@@ -152,7 +164,7 @@ In den vergangenen zwanzig Jahren trug die Informationstechnologie zu einer Auto
 All diese Werkzeuge und Anwendungen sind zweifelsohne hilfreich, aber lange nicht ausreichend, um eine nachhaltige, mehrsprachige europäische Gesellschaft zu unterstützen, in der Informationen und Waren ungehindert fließen können.
 
 
-\subsection{Sprachgrenzen bremsen die Europäische Infor\-ma\-tions\-ge\-sell\-schaft}
+\subsection{Sprachgrenzen bremsen die Europäische Informations\-ge\-sell\-schaft}
   
 Wir können nicht genau vorhersagen, wie die Informationsgesellschaft der Zukunft aussehen wird. Es ist jedoch sehr wahrscheinlich, dass die Revolution in der Kommunikationstechnologie Menschen, die unterschiedliche Sprachen sprechen, auf eine ganz neue Weise zusammenbringen wird. Dadurch ist der Einzelne gezwungen, neue Sprachen zu lernen. Insbesondere sind aber  Entwickler gefragt  neue Technologieanwendungen zu schaffen, die das gegenseitige Verstehen und den Zugriff auf gemeinsam nutzbares Wissen sicherstellen. Im globalen Wirtschafts- und Informationsraum interagieren immer mehr Sprachen, Sprecher und Inhalte immer schneller miteinander dank neuartiger Medien. Die derzeitige Popularität von Sozialen Medien (Wikipedia, Facebook, Twitter, YouTube und Google+) ist nur die Spitze des Eisbergs.
 
@@ -173,18 +185,15 @@ Europas rund 80 Sprachen sind eines unser reichsten und wichtigsten Kulturgüter
 Früher konzentrierten sich Investitionen in den Spracherhalt vor allem auf Sprachausbildung und Übersetzungen. Einer Schätzung zufolge belief sich 2008 der europäische Markt für Übersetzungen, Dolmetschen, Softwarelokalisierung und Website-Globalisierung auf 8,4 Milliarden €, wobei von einem jährlichen Wachstum um 10\% ausgegangen wird \cite{EC3}. Diese Zahl deckt jedoch nur einen geringen Anteil unseres aktuellen und künftigen Kommunikationsbedarfs zwischen den verschiedenen Sprachen ab. Die einzige Lösung, den Sprachgebrauch im Europa von morgen in voller Breite und  Tiefe sicherzustellen, ist der Einsatz geeigneter Tech\-no\-lo\-gie -- so wie wir auch Technologie einsetzen, um  unseren Transport- und Energiebedarf zu decken.
 
 Sprachtechnologie für alle Formen geschriebener und gesprochener Sprache ermöglicht es den Menschen ungeachtet von Sprachbarrieren und Computerfertigkeiten zusammenzuarbeiten, Geschäfte zu tätigen, Wissen auszutauschen und sich an sozialen und politischen Debatten zu beteiligen. Diese Technologie arbeitet oft unsichtbar in komplexen Softwaresystemen und unterstützt schon heute:
-    \begin{enumerate}
+    \begin{itemize}
       \item Informationssuche mit Suchmaschinen
       \item Rechtschreib- und Grammatikprüfung
       \item Produktempfehlungen in Online-Shops
       \item Sprachanweisungen von Na\-vi\-ga\-tions\-sys\-te\-men
       \item Online-Übersetzung von Webseiten 
-    \end{enumerate}
+    \end{itemize}
 Sprachtechnologie besteht aus einer Reihe von Kerntechnologien, die Einsatz in größerer Anwendungssoftware finden. Die META-NET Weißbücher zeigen auf, wie gut die Kerntechnologien bereits für die einzelnen europäischen Sprachen einsetzbar sind. 
 
 Damit Europa seine Position an der vordersten Front der globalen Innovation behaupten kann, benötigt es eine auf alle europäischen Sprachen abgestimmte Sprachtechnologie, die robust und preiswert ist und sich in größere Softwareumgebungen einbetten lässt. Ohne Sprachtechnologie können wir in der Zukunft keine multimedialen und mehrsprachigen Endanwendungen für alle europäischen Nutzer realisieren.
 
-%\end{multicols}
-
 \end{document}
-
