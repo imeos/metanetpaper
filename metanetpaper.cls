@@ -244,6 +244,7 @@
   \vskip4mm
   \begin{center}
   \colorrule{grey3}{0.5\textwidth-2mm}{1.5pt}
+  \vskip1.5mm
   \fontsize{12}{9}\selectfont{
     \textsf{
       #1
