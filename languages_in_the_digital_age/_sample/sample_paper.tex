@@ -22,6 +22,7 @@
 \usepackage{multirow}
 \usepackage{colortbl}
 \usepackage{polyglossia}
+\usepackage{multicol,framed,lipsum}
 \setotherlanguages{german, english}
 
 %!TEX TS-program = xelatex
@@ -64,7 +65,7 @@
 \renewcommand*{\figureformat}{\sffamily\thefigure\autodot}
 
 \maketitle
-\onecolumn
+
 \input{../german/german_mocktitle}
 
 \pagenumbering{Roman} 
@@ -101,16 +102,15 @@ As of November 2011, META-NET consists of 54 research centres from 33 European c
 
 \cleardoublepage
 
-\twocolumn
 
 \setcounter{page}{1}
 \pagenumbering{arabic}  
 \pagestyle{scrheadings}
 
-\onecolumn
+
 % --------------------------------------------------------------------------
 \ssection[Test]{Zusammenfassung}
-\twocolumn
+\begin{multicols}{2}
 Europa ist in den vergangenen 60 Jahren eine politisch-wirtschaftliche Einheit geworden. Kulturell und sprachlich ist der europäische Raum reich und vielfältig. Von Portugiesisch bis Polnisch, von Italienisch bis Isländisch -- im kommunikativen Miteinander stoßen Europas Bürger, die europäische Wirtschaft und auch die Politik schnell an sprachliche Grenzen. Die Institutionen der EU geben jährlich rund eine Milliarde Euro für die Übersetzung von Texten und das Dolmetschen gesprochener Kommunikation aus, um am Grundsatz der Mehrsprachigkeit festzuhalten. Ist dieser Aufwand tatsächlich notwendig? Moderne Sprachtechnologie und Sprachforschung können einen wichtigen Beitrag leisten, um die Sprachgrenzen zu überwinden. Wenn Europäer sich miteinander unterhalten oder Verträge schließen wollen, kann moderne Sprachtechnologie in Verbindung mit intelligenten Endgeräten und Anwendungen ihnen hierbei künftig helfen -- selbst wenn sie keine gemeinsame Sprache sprechen. 
 
 \boxtext{Sprachtechnologie baut Brücken für Europas Zukunft}
@@ -134,12 +134,13 @@ Die bisher erlangten Erkenntnisse legen nahe, dass die heutige hybride Sprachtec
 Die Vision von META-NET ist hochqualitative Sprachtechnologie für alle Sprachen Europas, die die politische und wirtschaftliche Einheit in kultureller Vielfalt vollendet. Mithilfe dieser Technologie können bestehende Schranken eingerissen und Brücken zwischen den Sprachen Europas gebaut werden. Hierfür müssen alle Interessengruppen aus Politik, Forschung, Wirtschaft und Gesellschaft ihre Kräfte bündeln.
 
 Diese Weißbuch-Serie flankiert die anderen strategischen Aktivitäten von META-NET. Einen Überblick hierzu finden Sie im Anhang. Aktuelle Informationen, die neueste Version des META-NET Vision Papers \cite{Meta1} oder der strategischen Forschungsagenda (SRA) finden Sie auf unserer Website: http://www.meta-net.eu.
-
+\end{multicols}
 
 \clearpage
 % --------------------------------------------------------------------------
 \ssection{Unsere Sprachen in Gefahr: Eine Heraus\-for\-de\-rung für die Sprachtechnologie}
 
+\begin{multicols}{2}
 Wir sind Zeugen einer digitalen Revolution, die enorme Auswirkungen auf Kommunikation und Gesellschaft hat. Die jüngsten Entwicklungen in der digitalen In\-for\-ma\-tions- und Kommunikationstechnologie werden manchmal mit Gutenbergs Erfindung der Druckerpresse verglichen. Was kann uns diese Analogie über die Zukunft der europäischen Informationsgesellschaft und insbesondere der unserer Sprachen sagen?
 
 Nach Gutenbergs Erfindung wurden echte Durchbrüche im Kom\-mu\-ni\-ka\-tions- und Wis\-sens\-aus\-tausch beispielsweie durch Luthers Bibelübersetzung    in die Landessprache  erzielt. In den folgenden Jahrhunderten wurden Kulturtechniken entwickelt, die die Sprachverarbeitung und den Wissensaustausch erleichterten:
@@ -176,7 +177,6 @@ Erstaunlicherweise hat diese allgegenwärtige, durch Sprachgrenzen bedingte digi
 \subsection{Unsere Sprachen in Gefahr}
 
 Die Druckerpresse hat den Informationsaustausch in Europa mit vorangetrieben, gleichzeitig aber auch zum Aussterben vieler europäischer Sprachen geführt. Regionale Sprachen und Minderheitssprachen fanden sich kaum in Druckform. Sprachen wie Kornisch und Dalmatisch waren auf mündliche Übertragungsformen begrenzt und damit in ihrer Reichweite stark beschränkt. Wird das Internet die gleiche Wirkung auf unsere modernen Sprachen haben?
-
 Europas rund 80 Sprachen sind eines unser reichsten und wichtigsten Kulturgüter und ein vitaler Teil dieses einzigartigen sozialen Modells \cite{EC2}. Sprachen wie Englisch und Spanisch werden auf dem aufstrebenden digitalen Marktplatz wohl überleben, doch zahlreiche europäische Sprachen könnten in einer vernetzten Gesellschaft schnell unbedeutend werden. Dies würde  Europas globales Standing schwächen und dem strategischen Ziel zuwiderlaufen, allen europäischen Bürgern ungeachtet ihrer Sprache gleiche Partizipationsmöglichkeiten zuzusichern. Einem Bericht der UNESCO über Mehrsprachigkeit zufolge ist Sprache ein wichtiges Medium, um grundlegende Rechte wie politische Meinungsäußerung, Bildung und gesellschaftliche Beteiligung wahrnehmen zu können. \cite{Unesco1}
 
 
@@ -196,6 +196,7 @@ Sprachtechnologie besteht aus einer Reihe von Kerntechnologien, die Einsatz in g
 
 Damit Europa seine Position an der vordersten Front der globalen Innovation behaupten kann, benötigt es eine auf alle europäischen Sprachen abgestimmte Sprachtechnologie, die robust und preiswert ist und sich in größere Softwareumgebungen einbetten lässt. Ohne Sprachtechnologie können wir in der Zukunft keine multimedialen und mehrsprachigen Endanwendungen für alle 
 europäischen Nutzer realisieren.
+\end{multicols}
 
 \ssection{Ein weiterer Test}
 Damit Europa seine Position an der vordersten Front der globalen Innovation behaupten kann, benötigt es eine auf alle europäischen Sprachen abgestimmte Sprachtechnologie, die robust und preiswert ist und sich in größere Softwareumgebungen einbetten lässt. Ohne Sprachtechnologie können wir in der Zukunft keine multimedialen und mehrsprachigen Endanwendungen für alle 
