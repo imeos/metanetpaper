@@ -54,6 +54,8 @@
 
 \usepackage{float}
 
+\usepackage{xifthen}
+
 
 % Class options & definitions
 % ---------------------------
@@ -123,22 +125,44 @@
                      \sectionNoStar%
 }
 \newcommand{\sectionNoStar}[2][]{%
-  \section[#2]{%
-    \vspace*{1mm}
-    \ThisCenterWallPaper{1}{../_media/section_bg.pdf}
-    \begin{minipage}[t]{\textwidth}
-      \begin{spacing}{2.2}
-      \color{red}
-      \textsf{%
-        % Title
-        \fontsize{24}{24}\selectfont{%
-          \MakeUppercase{#2}
+  \ifthenelse{\isempty{#1}}%
+      {% if #1 is empty      
+        \section[#2]{%
+          \vspace*{1mm}
+          \ThisCenterWallPaper{1}{../_media/section_bg.pdf}
+          \begin{minipage}[t]{\textwidth}
+            \begin{spacing}{2.2}
+            \color{red}
+            \textsf{%
+              % Title
+              \fontsize{24}{24}\selectfont{%
+                \MakeUppercase{#2}
+              }
+            }
+            \end{spacing}
+          \end{minipage}
+          \vspace*{-8mm}
         }
       }
-      \end{spacing}
-    \end{minipage}
-    \vspace*{-8mm}
-  }
+      {% if #1 is not empty 
+        \section[#1]{%
+          \vspace*{1mm}
+          \ThisCenterWallPaper{1}{../_media/section_bg.pdf}
+          \begin{minipage}[t]{\textwidth}
+            \begin{spacing}{2.2}
+            \color{red}
+            \textsf{%
+              % Title
+              \fontsize{24}{24}\selectfont{%
+                \MakeUppercase{#2}
+              }
+            }
+            \end{spacing}
+          \end{minipage}
+          \vspace*{-8mm}
+        }
+      }
+
 }
 \newcommand{\sectionStar}[2][]{%
   \clearpage
