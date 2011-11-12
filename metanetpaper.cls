@@ -139,7 +139,7 @@
 % Redefine bilingual \sections 
 \newcommand{\bsection}[2][]{%
   \clearpage
-  \vspace*{15mm}
+  \vspace*{8mm}
   \ThisCenterWallPaper{1}{../_media/section_bg.pdf}
   % original language
   \begin{minipage}[t]{80mm}
@@ -173,7 +173,7 @@
     \end{flushleft}
     %\vspace*{5mm}
   \end{minipage}
-  }
+  \vspace*{12mm}
 }
 
 % Redefine \subsection as \ssubsection (not currently used)
