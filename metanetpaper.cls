@@ -92,7 +92,7 @@
 
 \titleformat{\subsection}[block]{}{\raggedright\LARGE\futuralight\thesubsection}{0.5em}{\raggedright\LARGE\sffamily\MakeUppercase}\titlespacing{\subsection}{0pt}{*4}{*1}
 
-\titleformat{\subsubsection}{}{\fontsize{14}{14}\futuralight\thesubsubsection}{0em}{\fontsize{14}{1.2}\sffamily}
+\titleformat{\subsubsection}{}{\fontsize{14}{14}\futuralight\thesubsubsection}{0.5em}{\fontsize{14}{1.2}\sffamily}
 
 % Redefine \section as \ssection and then as \sectionstar and \sectionnostar
 % for numbered and unnumbered sections
