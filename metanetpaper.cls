@@ -133,7 +133,6 @@
     }
     \end{spacing}
   \end{minipage}
-  \vspace*{0mm}
 }
 
 % Redefine bilingual \sections 
@@ -143,6 +142,7 @@
   \ThisCenterWallPaper{1}{../_media/section_bg.pdf}
   % original language
   \begin{minipage}[t]{80mm}
+    \begin{spacing}{2.2}
     \color{red}
     \begin{flushright}
     \textsf{%
@@ -154,11 +154,13 @@
       }
     }
     \end{flushright}
+    \end{spacing}
   \end{minipage}
   % spacing between colums
   \begin{minipage}[t]{5mm}\ \end{minipage}
   % english version
   \begin{minipage}[t]{81mm}
+    \begin{spacing}{2.2}
     \color{grey1}
     \begin{flushleft}
     \textsf{%
@@ -170,8 +172,9 @@
       }
     }
     \end{flushleft}
+    \end{spacing}
   \end{minipage}
-  \vspace*{8mm}
+  \vspace*{-8mm}
 }
 
 % Redefine \subsection as \ssubsection (not currently used)
