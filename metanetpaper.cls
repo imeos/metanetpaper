@@ -101,7 +101,7 @@
                      \sectionNoStar%
 }
 \newcommand{\sectionNoStar}[2][]{%
-  \section[#2]{%
+  \section[#1]{%
     \vspace*{1mm}
     \ThisCenterWallPaper{1}{../_media/section_bg.pdf}
     \begin{minipage}[t]{\textwidth}
@@ -154,7 +154,6 @@
       }
     }
     \end{flushright}
-    %\vspace*{5mm}
   \end{minipage}
   % spacing between colums
   \begin{minipage}[t]{5mm}\ \end{minipage}
@@ -171,9 +170,8 @@
       }
     }
     \end{flushleft}
-    %\vspace*{5mm}
   \end{minipage}
-  \vspace*{12mm}
+  \vspace*{8mm}
 }
 
 % Redefine \subsection as \ssubsection (not currently used)

@@ -21,6 +21,7 @@
 \usepackage{multirow}
 \usepackage{colortbl}
 \usepackage{polyglossia}
+\usepackage{multicol,framed,lipsum}
 \setotherlanguages{german, english}
 
 %!TEX TS-program = xelatex
@@ -63,7 +64,6 @@
 \renewcommand*{\figureformat}{\sffamily\thefigure\autodot}
 
 \maketitle
-\onecolumn
 \input{german_mocktitle}
 
 \pagenumbering{Roman} 
@@ -101,21 +101,21 @@ As of November 2011, META-NET consists of 54 research centres from 33 European c
 \tableofcontents
 
 \addtocontents{toc}{\protect\thispagestyle{empty}\protect}
-\addtocontents{toc}{\smallskip{\Large\textsf{\centerline{DIE DEUTSCHE SPRACHE IM DIGITALEN ZEITALTER}} \par}}
+\addtocontents{toc}{{\Large\textsf{\centerline{DIE DEUTSCHE SPRACHE IM DIGITALEN ZEITALTER}}\par}}
 
 \cleardoublepage
-
-\twocolumn
 
 \setcounter{page}{1}
 \pagenumbering{arabic} 
 \pagestyle{scrheadings}
 
 % --------------------------------------------------------------------------
-\twocolumn[\ssection{Zusammenfassung}]
+
+\ssection[Zusammenfassung]{Zusammenfassung}
 
 \selectlanguage{german}
 
+\begin{multicols}{2}
 Europa ist in den vergangenen 60 Jahren eine politisch-wirtschaftliche Einheit geworden. Kulturell und sprachlich ist der europäische Raum reich und vielfältig. Von Portugiesisch bis Polnisch, von Italienisch bis Isländisch -- im kommunikativen Miteinander stoßen Europas Bürger, die europäische Wirtschaft und auch die Politik schnell an sprachliche Grenzen. Die Institutionen der EU geben jährlich rund eine Milliarde Euro für die Übersetzung von Texten und das Dolmetschen gesprochener Kommunikation aus, um am Grundsatz der Mehrsprachigkeit festzuhalten. Ist dieser Aufwand tatsächlich notwendig? Moderne Sprachtechnologie und Sprachforschung können einen wichtigen Beitrag leisten, um die Sprachgrenzen zu überwinden. Wenn Europäer sich miteinander unterhalten oder Verträge schließen wollen, kann moderne Sprachtechnologie in Verbindung mit intelligenten Endgeräten und Anwendungen ihnen hierbei künftig helfen -- selbst wenn sie keine gemeinsame Sprache sprechen. 
 
 \boxtext{Sprachtechnologie baut Brücken}
@@ -138,12 +138,15 @@ Die bisher erlangten Erkenntnisse legen nahe, dass die heutige hybride Sprachtec
 Die Vision von META-NET ist hochqualitative Sprachtechnologie für alle Sprachen Europas, die die politische und wirtschaftliche Einheit in kultureller Vielfalt vollendet. Mithilfe dieser Technologie können bestehende Schranken eingerissen und Brücken zwischen den Sprachen Europas gebaut werden. Hierfür müssen alle Interessengruppen aus Politik, Forschung, Wirtschaft und Gesellschaft ihre Kräfte bündeln.
 
 Diese Weißbuch-Serie flankiert die anderen strategischen Aktivitäten von META-NET. Einen Überblick hierzu finden Sie im Anhang. Aktuelle Informationen, die neueste Version des META-NET Vision Papers \cite{Meta1} oder der strategischen Forschungsagenda (SRA) finden Sie auf unserer Website: http://www.meta-net.eu.
-
+\end{multicols}
 
 \clearpage
+
 % --------------------------------------------------------------------------
-\twocolumn[\ssection{Unsere Sprachen in Gefahr:\newline Eine Heraus\-for\-de\-rung für die\newline Sprachtechnologie}]
-%\ssection[Unsere Sprachen in Gefahr: Eine Herausforderung für die Sprachtechnologie]{Unsere Sprachen in Gefahr:\newline Eine Heraus\-for\-de\-rung für die\newline Sprachtechnologie}]
+
+\ssection[Unsere Sprachen in Gefahr: Eine Herausforderung für die Sprachtechnologie]{Unsere Sprachen in Gefahr:\newline Eine Heraus\-for\-de\-rung für die\newline Sprachtechnologie}
+
+\begin{multicols}{2}
 
 Wir sind Zeugen einer digitalen Revolution, die enorme Auswirkungen auf Kommunikation und Gesellschaft hat. Die jüngsten Entwicklungen in der digitalen In\-for\-ma\-tions- und Kommunikationstechnologie werden manchmal mit Gutenbergs Erfindung der Druckerpresse verglichen. Was kann uns diese Analogie über die Zukunft der europäischen Informationsgesellschaft und insbesondere der unserer Sprachen sagen?
 
@@ -239,12 +242,15 @@ Den zweiten Ansatz in der Sprachtechnologie und insbesondere der maschinellen Ü
 Da die Stärken und Schwächen statistischer und regelbasierter Systeme oft komplementär sind, konzentriert sich die Forschung heute auf hybride Ansätze, die die beiden Methoden kombinieren. Bei industriellen Anwendungen haben sich diese Ansätze bisher jedoch als weniger erfolgreich erwiesen als im Forschungslabor. 
 
 In diesem Kapitel haben wir gesehen, dass viele der in der heutigen Informationsgesellschaft auf breiter Ebene eingesetzten Anwendungen stark von Sprachtechnologie abhängig sind, besonders im europäischen Wirtschafts- und Informationsraum. Auch wenn die Sprachtechnologie in den vergangenen Jahren erhebliche Fortschritte gemacht hat, besteht nach wie vor enormer Verbesserungsbedarf in puncto Qualität der Sprachtechnologiesysteme. Im Folgenden werden wir die Rolle des Deutschen in der europäischen Informationsgesellschaft darstellen und den aktuellen Stand der Sprachtechnologie für die deutsche Sprache bewerten.
+\end{multicols}
 
 \clearpage
 
 % --------------------------------------------------------------------------
-\twocolumn[\ssection{Deutsch in der europäischen\newline Informationsgesellschaft}]
-%\ssection[Deutsch in der europäischen Informationsgesellschaft]{Deutsch in der europäischen\newline Informationsgesellschaft}]
+
+\ssection[Deutsch in der europäischen Informationsgesellschaft]{Deutsch in der europäischen\newline Informationsgesellschaft}
+
+\begin{multicols}{2}
 
 \subsection{Allgemeine Fakten}
 
@@ -369,12 +375,15 @@ Internetnutzer und Anbieter von Webinhalt können Sprachtechnologie auch auf wen
 
 Das nächste Kapitel liefert eine Einführung in die Sprachtechnologie und ihre Kernanwendungsbereiche sowie eine Bewertung der derzeitigen Sprachtechnologieunterstützung für die deutsche Sprache.
 
+\end{multicols}
+
 \clearpage
 
 % --------------------------------------------------------------------------
 
-\twocolumn[\ssection{Sprach\-technologie\newline für das Deutsche}]
-%\ssection[Sprachtechnologie für das Deutsche]{Sprach\-technologie\newline für das Deutsche}]
+\ssection[Sprachtechnologie für das Deutsche]{Sprach\-technologie\newline für das Deutsche}
+
+\begin{multicols}{2}
 
 Sprachtechnologie dient der Entwicklung von Softwaresystemen zur Verarbeitung menschlicher Sprache in gesprochener oder geschriebener Form. Gesprochene Sprache ist die älteste und im Hinblick auf die Evolution des Menschen die natürlichste Form der sprachlichen Kommunikation. Komplexe Informationen und der größte Teil des menschlichen Wissens werden jedoch in schriftlicher Form erfasst und vermittelt. Sprachtechnologie verarbeitet oder erzeugt diese unterschiedlichen Formen der Sprache mit Hilfe von Wörterbüchern sowie Grammatik- und Semantikregeln. Sprachtechnologie verknüpft also Sprache mit verschiedenen Wissensformen, unabhängig davon, ob es sich um gesprochene oder geschriebene Sprache handelt (siehe Abbildung~\ref{fig:ltincontext_de}).
 
@@ -565,7 +574,7 @@ Die besten Ergebnisse (in grün und blau) wurden von Sprachen erreicht, bei dene
   \centering
   \setlength{\tabcolsep}{0.4em}
   \begin{tabular}{>{\columncolor{orange1}}cccccccccccccccccccccccc}
-      \small
+    \small
     & \multicolumn{22}{>{\columncolor{orange1}}c}{Zielsprache -- Target Language}\\\addlinespace[{-.009cm}]
     \rowcolor{orange1}  & EN & BG & DE & CS & DA & EL & ES & ET & FI & FR & HU & IT & LT & LV & MT & NL & PL & PT & RO & SK & SL & SV\\
     EN & -- & \textcolor{blue}{40.5} & \textcolor{blue}{46.8} & \textcolor{green2}{52.6} & \textcolor{green2}{50.0} & \textcolor{blue}{41.0} & \textcolor{green2}{55.2} & \textcolor{purple}{34.8} & \textcolor{purple}{38.6} & \textcolor{green2}{50.1} & \textcolor{purple}{37.2} & \textcolor{green2}{50.4} & \textcolor{purple}{39.6} & \textcolor{blue}{43.4} & \textcolor{purple}{39.8} & \textcolor{green2}{52.3} & \textcolor{blue}{49.2} & \textcolor{green2}{55.0} & \textcolor{blue}{49.0} & \textcolor{blue}{44.7} & \textcolor{green2}{50.7} & \textcolor{green2}{52.0}\\
@@ -594,7 +603,6 @@ Die besten Ergebnisse (in grün und blau) wurden von Sprachen erreicht, bei dene
   \caption{Maschinelle Übersetzung zwischen 22 EU-Sprachen \cite{euro1}}
   \label{fig:euromatrix_de}
 \end{sidewaysfigure*}
-  
 
 \subsection{Andere Anwendungsbereiche}
 
@@ -615,13 +623,11 @@ Textzusammenfassung und \textbf{Textgenerierung} sind zwei Bereiche, die entwede
 
 Für die deutsche Sprache ist die Forschung in dieser Textverarbeitungstechnologie weniger entwickelt als für die englische Sprache. Fragenbeantwortung, Informationsextraktion und Zusammenfassung standen seit den 1990er-Jahren im Fokus zahlreicher offener Wettbewerbe in den USA, die vor allem von den staatlich geförderten Organisationen DARPA und NIST organisiert wurden. Durch diese Wettbewerbe konnte der Stand der Technik beträchtlich verbessert werden, ihr Fokus lag jedoch meist auf der englischen Sprache, so dass fürs Deutsche kaum annotierte Korpora oder andere spezielle Ressourcen existieren. Wenn Zusammenfassungssysteme rein auf statistischen Methoden basieren, sind sie weitgehend sprachunabhängig, und es stehen in diesem Bereich eine Reihe von Forschungsprototypen zur Verfügung. Für die Textgenerierung waren wiederverwendbare Komponenten bisher auf Oberflächenrealisierungsmodelle (Grammatikgenerierung) begrenzt. Fast die gesamte hierfür zur Verfügung stehende Software ist auf die englische Sprache ausgerichtet. Es gibt jedoch einen auf Semantik basierenden mehrsprachigen Generator sowie einen auf Vorlagen basierenden Generator für die deutsche Sprache. Diese stammen aber aus den 1990er-Jahren und wurden noch nicht auf die heutigen Softwareumgebungen übertragen.
 
-
 \subsection{Bildungsprogramme}
 
 Sprachtechnologie ist ein äußerst interdisziplinäres Feld, welches die Expertise von u.a. Linguisten, Computerwissenschaftlern, Mathematikern, Philosophen, Psycholinguisten und Neurowissenschaftlern vereint. Aus diesem Grund konnte es sich im deutschen Fakultätensystem bisher nicht eindeutig und unabhängig etablieren. Einige Universitäten haben ein eigenes Institut für Computerlinguistik (CL) eingerichtet (z.\,B.~Heidelberg, Saarbrücken und Tübingen). Andere haben Institute unter einem etwas anderen Namen geschaffen (Stuttgart). Wieder andere Universitäten bieten CL-Programme an den Fakultäten für Informatik (Leipzig und Hamburg) oder Linguistik (Bochum und Jena) an. Einige Universitäten bieten nur Master-Studiengänge (Gießen) oder nur Bachelor-Studiengänge (Erlangen-Nürnberg, Göttingen, München, Potsdam und Trier) oder Sprachtechnologiemodule für Studenten aus anderen Fächern (Hildesheim) an. Viele dieser Programme und Studiengänge wurden erst vor kurzem eingeführt. An mindestens 17 deutschen Universitäten können derzeit Vorlesungen im Bereich der Sprachtechnologie besucht werden. In der Schweiz werden CL-Programme von den Universitäten in Zürich und Genf angeboten. In Österreich gibt es kein vollwertiges CL-Studienprogramm. CL- und Sprachtechnologie-Seminare werden jedoch im Rahmen anderer Programme in Wien und Klagenfurt abgehalten.
 
 Das deutsche Statistische Bundesamt führt seit dem Wintersemester 1992/1993 Statistiken zu CL als Studiengang an deutschen Universitäten. Das CL-Studium hat seit dieser Zeit zunehmend an Beliebtheit gewonnen. Seit dem Jahr 2000 ziehen die Programme jährlich rund 250-350 neue Studenten an, die sich für CL als Hauptstudiengang einschreiben \cite{wie1}. Die verhältnismäßig geringe Zahl an Absolventen von deutschen Universitäten kann dem ständig steigenden Bedarf an qualifiziertem Personal, das sich auf Sprachtechnologie spezialisiert hat, nicht gerecht werden. In vielen Fällen müssen Unternehmen und Forschungsinstitute wie das Deutsche Forschungszentrum für künstliche Intelligenz (DFKI) und das Österreichische Forschungszentrum für künstliche Intelligenz (ÖFAI) ausländische Fachleute hinzuziehen.
-
 
 \subsection{Nationale Projekte und Initiativen}
 
@@ -940,11 +946,16 @@ Unsere Ergebnisse führen zu dem Schluß, dasss der einzige Weg in der Zukunft d
 Schließlich fehlt es an Kontinuität bei Förderung von Forschung und Entwicklung. Auf kurzfristige Förderprogramme folgen oft Perioden, in denen nur spärliche oder überhaupt keine Fördermittel gibt. Außerdem mangelt es insgesamt an einer Koordination mit Programmen in anderen EU-Ländern und auf Ebene der Europäischen Kommission.
 
 Das langfristige Ziel von META-NET ist es, den Aufbau hochwertiger Sprachtechnologie für alle Sprachen zu ermöglichen. Dies erfordert die Bündelung der Kräfte aller Interessengruppen – in der Politik, Forschung, Wirtschaft und Gesellschaft. Die so entstehenden Technologie kann helfen bestehende Schranken einzureissen und Brücken zwischen den Sprachen Europas zu bauen, um so kulturelle Verschiedenartigkeit und eine politische und wirtschaftliche Einheit zugleich zu erreichen. 
+\end{multicols}
 
+\cleardoublepage
 
 % --------------------------------------------------------------------------
-\twocolumn[\ssection{Über META-NET}]
-  
+
+\ssection[Über META-NET]{Über META-NET}
+
+\begin{multicols}{2}
+
 META-NET ist ein Exzellenznetzwerk, das von der Europäischen Kommission gefördert wird. Derzeit besteht das Netzwerk aus 54 Mitgliedern aus 33 europäischen Ländern. META-NET unterstützt die Multilingual Europe Technology Alliance (META), eine wachsende Gemeinschaft aus europäischen Experten und Organisationen aus dem Bereich der Sprachtechnologie. 
 META-NET kooperiert mit anderen Initiativen wie der Common Language Resources and Technology Infrastructure (CLARIN), welche daran arbeitet, Forschung auf dem Gebiet Digital Humanities zu etablieren. META-NET legt die technologische Grundlage für eine wirklich mehrsprachige europäische Informationsgesellschaft, die Folgendes ermöglicht:
 
@@ -966,9 +977,11 @@ META-NET nahm am 1. Februar 2010 die Arbeit auf mit dem Ziel, die Forschung im B
 \textbf{META-SHARE} ist eine offene, verteilte Plattform für den Austausch und die gemeinsame Nutzung von Sprachressourcen. Das Peer-to-Peer-Netzwerk von Repositorien enthält Sprachdaten, Tools und Webdienste, die mit hochwertigen Metadaten dokumentiert und in standardisierte Kategorien unterteilt sind. Auf die Ressourcen kann einfach zugegriffen werden und eine einheitliche Suche ist möglich. Zu den verfügbaren Ressourcen gehören sowohl kostenloses Open-Source-Material als auch  kostenpflichtige Angebote. META-SHARE zielt sowohl auf bestehende Sprachdaten, Tools und Systeme ab als auch auf neue und kommende Produkte, die für den Aufbau und die Bewertung neuer Technologien, Anwendungen und Dienste benötigt werden. Die Wiederverwendung, Kombination, Nutzbarmachung und das Re-Engineering von Sprachdaten und Tools spielt eine immer wichtigere Rolle. META-SHARE wird somit zu einem entsdheidenden Teil des Sprachtechnologie-Marktplatzes für Entwickler, Lokalisierungsexperten, Forscher, Übersetzer und Sprachexperten aus kleinen, mittleren und großen Unternehmen. META-SHARE begleitet sich den gesamten Entwicklungszyklus von Sprachtechnologie – von der Forschung bis hin zu innovativen Produkten und Diensten. Einen wichtigen Aspekt dieser Arbeit stellt die Etablierung von META-SHARE als wichtiger und wertvoller Teil einer europäischen und weltweiten Infrastruktur für die Sprachtechnologie-Gemeinschaft dar.
 
 \textbf{META-RESEARCH} baut Brücken zu verwandten Technologiefeldern. Die Arbeit besteht in innovativer Forschung mit dem Ziel, Fortschritte in Nachbardisziplinen gewinnbringend zur Verbesserung von Sprachtechnologie einzusetzen. Ein Fokus der Arbeit liegt insbesondere in der Integration von Semantik in die maschinelle Übersetzung (MT), der Optimierung von Aufgaben bei der hybriden MT, in der Nutzung von Kontextinformationen bei der Erzeugung automatischer Übersetzungen sowie der Aufbereitung empirischer Daten für MT. META-NET arbeitet mit anderen Bereichen und Disziplinen wie maschinelles Lernen und der Semantic Web Community zusammen. META-RESEARCH ist befasst mit der Sammlung von Daten, der Aufbereitung von Datenquellen und Sprachressourcen für Evaluationszwecke, der Zusammenstellung von Repositorien von Tools und Methoden und mit der Organisation von Workshops und Aus- und Weiterbildungsmaßnahmen für Mitglieder der Gemeinschaft. Durch diese Arbeit konnten bereits die relevanten Problemfelder der MT identifiziert werden, bei denen Semantik ein großes Potential zur Lösungsfindung besitzt. Zudem konnten Empfehlungen zusammengestellt werden, wie das Problem der Integration semantischer Informationen in die MT angegangen werden kann. Außerdem finalisiert META-RESEARCH gegenwärtig eine neue Sprachressource für MT, das Annotated Hybrid Sample MT Corpus, das Daten für die Sprachpaare Englisch-Deutsch, Englisch-Spanisch und Englisch-Tschechisch bereitstellt. META-RESEARCH hat außerdem Software entwickelt, die mehrsprachige Korpora sammelt, die im Web verborgen sind.
+\end{multicols}
 
 \addtocontents{toc}{\protect\clearpage\protect}
 \addtocontents{toc}{\protect\thispagestyle{empty}\protect}
+\addtocontents{toc}{\protect\vspace*{4mm}\protect}
 \addtocontents{toc}{\smallskip{\Large\textsf{\centerline{THE GERMAN LANGUAGE IN THE DIGITAL AGE}}\par}}
 
 \setcounter{section}{0}
@@ -978,7 +991,9 @@ META-NET nahm am 1. Februar 2010 die Arbeit auf mit dem Ziel, die Forschung im B
 
 \selectlanguage{english}
 
-\twocolumn[\ssection{Executive Summary}]
+\ssection[Executive Summary]{Executive Summary}
+
+\begin{multicols}{2}
 
 During the last 60 years, Europe has become a distinct political and economic structure. Culturally and linguistically it is rich and diverse. However, from Portuguese to Polish and Italian to Icelandic, everyday communication between Europe’s citizens, within business and among politicians is inevitably confronted with language barriers. The EU's institutions spend about a billion euros a year on maintaining their policy of multilingualism, i.\,e., translating texts and interpreting spoken communication. Does this have to be such a burden? Language technology and linguistic research can make a significant contribution to removing the linguistic borders. Combined with intelligent devices and applications, language technology will help Europeans talk and do business together even if they do not speak a common language. 
 
@@ -1005,9 +1020,13 @@ Drawing on the insights gained so far, today’s hybrid language technology mixi
 META-NET’s vision is high-quality language technology for all languages that supports political and economic unity through cultural diversity. This technology will help tear down existing barriers and build bridges between Europe’s languages. This requires all stakeholders - in politics, research, business, and society - to unite their efforts for the future.
 
 This whitepaper series complements the other strategic actions taken by META-NET (see the appendix for an overview). Up-to-date information such as the current version of the META-NET vision paper \cite{Meta1} or the Strategic Research Agenda (SRA) can be found on the META-NET web site: http://www.meta-net.eu.
+\end{multicols}
 
-\twocolumn[\ssection{Languages at Risk: a Challenge for\newline Language Technology}]
-%\ssection[Languages at Risk: a Challenge for Language Technology]{Languages at Risk: a Challenge for\newline Language Technology}]
+\clearpage
+
+\ssection[Languages at Risk: a Challenge for Language Technology]{Languages at Risk: a Challenge for\newline Language Technology}
+
+\begin{multicols}{2}
 
 We are witnesses to a digital revolution that is dramatically impacting communication and society. Recent developments in information and communication technology are sometimes compared to Gutenberg’s invention of the printing press. What can this analogy tell us about the future of the European information society and our languages in particular?
 
@@ -1100,9 +1119,13 @@ The second approach to language technology, and to machine translation in partic
 As the strengths and weaknesses of statistical and rule-based systems tend to be complementary, current research focusses on hybrid approaches that combine the two methodologies. However, these approaches have so far been less successful in industrial applications than in the research lab. 
 
 As we have seen in this chapter, many applications widely used in today’s information society rely heavily on language technology, particularly in Europe’s economic and information space. Although this technology has made considerable progress in the last few years, there is still huge potential to improve the quality of language technology systems. In the next section, we describe the role of German in European information society and assess the current state of language technology for the German language.
+\end{multicols}
 
-\twocolumn[\ssection{The German Language in the\newline European Information Society}]
-%\ssection[The German Language in the European Information Society]{The German Language in the\newline European Information Society}]
+\clearpage
+
+\ssection[The German Language in the European Information Society]{The German Language in the\newline European Information Society}
+
+\begin{multicols}{2}
 
 \subsection{General Facts}
 
@@ -1229,9 +1252,13 @@ One important aspect of equal opportunities in Germany and other European countr
 Internet users and providers of web content can also use language technology in less obvious ways, for example, by automatically translating web page contents from one language into another. Despite the high cost of manually translating this content, comparatively little language technology has been developed and applied to the issue of website translation in light of the supposed need. This may be due to the complexity of the German language and to the range of different technologies involved in typical applications. 
 
 The next chapter gives an introduction to language technology and its core application areas, together with an evaluation of current language technology support for German.
+\end{multicols}
 
-\twocolumn[\ssection{Language Technology Support\newline for German}]
-%\ssection[Language Technology Support for German]{Language Technology Support\newline for German}]
+\clearpage
+
+\ssection[Language Technology Support for German]{Language Technology Support\newline for German}]
+
+\begin{multicols}{2}
 
 Language technology is used to develop software systems designed to handle human language and are therefore often called “human language technology”. Human language comes in spoken and written forms. While speech is the oldest and in terms of human evolution the most natural form of language communication, complex information and most human knowledge is stored and transmitted through the written word. Speech and text technologies process or produce these different forms of language, using dictionaries, rules of grammar, and semantics. This means that language technology (LT) links language to various forms of knowledge, independently of the media (speech or text) in which it is expressed. figure* \ref{fig:ltincontext_en} illustrates the LT landscape.
 
@@ -1797,15 +1824,19 @@ The results of this white paper series show that there is a dramatic difference 
 Finally there is a lack of continuity in research and development funding. Short-term coordinated programmes tend to alternate with periods of sparse or zero funding. In addition, there is an overall lack of coordination with programmes in other EU countries and at the European Commission level.
 
 The long term goal of META-NET is to enable the creation of high-quality language technology for all languages. This requires all stakeholders - in politics, research, business, and society - to unite their efforts. The resulting technology will help tear down existing barriers and build bridges between Europe’s languages, paving the way for political and economic unity through cultural diversity. 
+\end{multicols}
 
-\twocolumn[\ssection{About META-NET}]
+\ssection[About META-NET]{About META-NET}
 
+\begin{multicols}{2}
 META-NET is a Network of Excellence funded by the European Commission. The network currently consists of 54 members from 33 European countries. META-NET fosters the Multilingual Europe Technology Alliance (META), a growing community of language technology professionals and organisations in Europe. META-NET cooperates with other initiatives like the Common Language Resources and Technology Infrastructure (CLARIN), which is helping establish digital humanities research in Europe. META-NET fosters the technological foundations for a truly multilingual European information society that:
-    \begin{itemize}
-      \item makes communication and cooperation possible across languages;
-      \item provides equal access to information and knowledge in any language;
-      \item offers advanced and affordable networked information technology to European citizens.
-    \end{itemize}
+
+\begin{itemize}
+\item makes communication and cooperation possible across languages;
+\item provides equal access to information and knowledge in any language;
+\item offers advanced and affordable networked information technology to European citizens.
+\end{itemize}
+
 META-NET stimulates and promotes multilingual technologies for all European languages. The technologies enable automatic translation, content production, information processing and knowledge management for a wide variety of applications and subject domains. The network wants to improve current approaches, so better communication and cooperation across languages can take place. Europeans have an equal right to information and knowledge regardless of language.
 
 \subsection*{Lines of Action}
@@ -1813,18 +1844,17 @@ META-NET stimulates and promotes multilingual technologies for all European lang
 META-NET launched on 1 February 2010 with the goal of advancing research in language technology (LT). The network supports a Europe that unites as a single digital market and information space. META-NET has conducted several activities that further its goals. META-VISION, META-SHARE and META-RESEARCH are the network’s three lines of action.
 Three Lines of Action in META-NET\\
 
-    \textbf{META-VISION} fosters a dynamic and influential stakeholder community that unites around a shared vision and a common strategic research agenda (SRA). The main focus of this activity is to build a coherent and cohesive LT community in Europe by bringing together representatives from highly fragmented and diverse groups of stakeholders. In the first year of META-NET, presentations at the FLaReNet Forum (Spain), Language Technology Days (Luxembourg), JIAMCATT 2010 (Luxembourg), LREC 2010 (Malta), EAMT 2010 (France) and ICT 2010 (Belgium) centred on public outreach. According to initial estimates, META-NET has already contacted more than 2,500 LT professionals to develop its goals and visions with them. At the META-FORUM 2010 event in Brussels, META-NET communicated the initial results of its vision building process to more than 250 participants. In a series of interactive sessions, the participants provided feedback on the visions presented by the network. 
+\textbf{META-VISION} fosters a dynamic and influential stakeholder community that unites around a shared vision and a common strategic research agenda (SRA). The main focus of this activity is to build a coherent and cohesive LT community in Europe by bringing together representatives from highly fragmented and diverse groups of stakeholders. In the first year of META-NET, presentations at the FLaReNet Forum (Spain), Language Technology Days (Luxembourg), JIAMCATT 2010 (Luxembourg), LREC 2010 (Malta), EAMT 2010 (France) and ICT 2010 (Belgium) centred on public outreach. According to initial estimates, META-NET has already contacted more than 2,500 LT professionals to develop its goals and visions with them. At the META-FORUM 2010 event in Brussels, META-NET communicated the initial results of its vision building process to more than 250 participants. In a series of interactive sessions, the participants provided feedback on the visions presented by the network. 
 
-    \textbf{META-SHARE} creates an open, distributed facility for exchanging and sharing resources. The peer-to-peer network of repositories will contain language data, tools and web services that are documented with high-quality metadata and organised in standardised categories. The resources can be readily accessed and uniformly searched. The available resources include free, open source materials as well as restricted, commercially available, fee-based items. META-SHARE targets existing language data, tools and systems as well as new and emerging products that are required for building and evaluating new technologies, products and services. The reuse, combination, repurposing and re-engineering of language data and tools plays a crucial role. META-SHARE will eventually become a critical part of the LT marketplace for developers, localisation experts, researchers, translators and language professionals from small, mid-sized and large enterprises. META-SHARE addresses the full development cycle of LT—from research to innovative products and services. A key aspect of this activity is establishing META-SHARE as an important and valuable part of a European and global infrastructure for the LT community. 
+\textbf{META-SHARE} creates an open, distributed facility for exchanging and sharing resources. The peer-to-peer network of repositories will contain language data, tools and web services that are documented with high-quality metadata and organised in standardised categories. The resources can be readily accessed and uniformly searched. The available resources include free, open source materials as well as restricted, commercially available, fee-based items. META-SHARE targets existing language data, tools and systems as well as new and emerging products that are required for building and evaluating new technologies, products and services. The reuse, combination, repurposing and re-engineering of language data and tools plays a crucial role. META-SHARE will eventually become a critical part of the LT marketplace for developers, localisation experts, researchers, translators and language professionals from small, mid-sized and large enterprises. META-SHARE addresses the full development cycle of LT—from research to innovative products and services. A key aspect of this activity is establishing META-SHARE as an important and valuable part of a European and global infrastructure for the LT community. 
 
-    \textbf{META-RESEARCH} builds bridges to related technology fields. This activity seeks to leverage advances in other fields and to capitalise on innovative research that can benefit language technology. In particular, this activity wants to bring more semantics into machine translation (MT), optimise the division of labour in hybrid MT, exploit context when computing automatic translations and prepare an empirical base for MT. META-RESEARCH is working with other fields and disciplines, such as machine learning and the Semantic Web community. META-RESEARCH focuses on collecting data, preparing data sets and organising language resources for evaluation purposes; compiling inventories of tools and methods; and organising workshops and training events for members of the community. This activity has already clearly identified aspects of MT where semantics can impact current best practices. In addition, the activity has created recommendations on how to approach the problem of integrating semantic information in MT. META-RESEARCH is also finalising a new language resource for MT, the Annotated Hybrid Sample MT Corpus, which provides data for English-German, English-Spanish and English-Czech language pairs. META-RESEARCH has also developed software that collects multilingual corpora that are hidden on the Web.
-
-\onecolumn
+\textbf{META-RESEARCH} builds bridges to related technology fields. This activity seeks to leverage advances in other fields and to capitalise on innovative research that can benefit language technology. In particular, this activity wants to bring more semantics into machine translation (MT), optimise the division of labour in hybrid MT, exploit context when computing automatic translations and prepare an empirical base for MT. META-RESEARCH is working with other fields and disciplines, such as machine learning and the Semantic Web community. META-RESEARCH focuses on collecting data, preparing data sets and organising language resources for evaluation purposes; compiling inventories of tools and methods; and organising workshops and training events for members of the community. This activity has already clearly identified aspects of MT where semantics can impact current best practices. In addition, the activity has created recommendations on how to approach the problem of integrating semantic information in MT. META-RESEARCH is also finalising a new language resource for MT, the Annotated Hybrid Sample MT Corpus, which provides data for English-German, English-Spanish and English-Czech language pairs. META-RESEARCH has also developed software that collects multilingual corpora that are hidden on the Web.
+\end{multicols}
 
 \appendix
+\addtocontents{toc}{\protect\bigskip}
 
-\ssection{Member Organisations}
-
+\ssection[META-NET Member Organisations -- META-NET Mitgliedsorganisationen]{META-NET Member Organisations (Mitgliedsorganisationen)}
 \label{metanetmembers}
 
 \begin{longtable}{llp{105mm}}
@@ -1888,15 +1918,15 @@ Three Lines of Action in META-NET\\
   \caption{Etwa 100 Experten des Gebiets Sprachtechnologie -- Repräsentanten der in META-NET vertretenen Länder und Sprachen -- diskutierten und finalisierten die zentralen Ergebnisse der Weißbuch-Serie bei einem META-NET-Treffen in Berlin am 21./22.~Oktober 2011.}
 \end{figure*}
 
-  \clearpage
-  \twocolumn[\ssection{Literaturverweise --- References}]
-  \bibliographystyle{plain}
-  \bibliography{german_references}
+\clearpage
 
+\ssection[References -- Literaturverweise]{Literaturverweise --- References}
+\bibliographystyle{plain}
+\bibliography{german_references}
+  
 \cleardoublepage
 
-\twocolumn[\ssection*{Die META-NET Weissbuch-Serie --- The META-NET\ \ \ \ White Paper Series}]
-
+\ssection*{Die META-NET Weissbuch-Serie --- The META-NET\ \ \ \ White Paper Series}
 \label{whitepaperseries}
 
 \vfill
