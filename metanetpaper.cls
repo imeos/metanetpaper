@@ -244,10 +244,10 @@
 \clearscrheadings
 \clearscrplain
 \clearscrheadfoot 
-\setfootwidth[-28mm]{text}
+\setfootwidth[27mm]{text}
   
   % Pagenumber on outer margin
-\lofoot[\pagemark]{
+\lefoot[\pagemark]{
   \colorrule{grey1}{22mm}{0.5pt}%
   \vskip1mm%
   \begin{minipage}[h]{23mm}%
@@ -258,7 +258,7 @@
   \end{minipage}
 }
 
-\refoot[\pagemark]{
+\rofoot[\pagemark]{
 \colorrule{grey1}{22mm}{0.5pt}%
 \vskip1mm%
   \begin{minipage}[h]{21mm}%
