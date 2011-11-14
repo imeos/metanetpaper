@@ -145,7 +145,12 @@
 \newcommand{\bsectionNoStar}[2][]{%
   \clearpage
   \stepcounter{bsectioncounter}
-  \addcontentsline{toc}{section}{\Alph{bsectioncounter}\hskip0.75em #2}
+  \ifx#1\@null
+  \ifsecondargument
+    \addcontentsline{toc}{section}{\Alph{bsectioncounter}\hskip0.75em #2}
+  \else
+    \addcontentsline{toc}{section}{\Alph{bsectioncounter}\hskip0.75em #1}
+  \fi
   \ThisCenterWallPaper{1}{../_media/section_bg.pdf}
   % Numbering
   \begin{center}
