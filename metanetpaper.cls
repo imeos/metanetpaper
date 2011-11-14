@@ -135,8 +135,66 @@
   \end{minipage}
 }
 
-% Redefine bilingual \sections 
-\newcommand{\bsection}[2][]{%
+% Redefine bilingual \sections
+% Unstarred bsections will be added to the appendix of the TOC
+\newcounter{bsectioncounter}
+\newcommand{\bsection}{\@ifstar
+                     \bsectionStar%
+                     \bsectionNoStar%
+}
+\newcommand{\bsectionNoStar}[2][]{%
+  \clearpage
+  \stepcounter{bsectioncounter}
+  \addcontentsline{toc}{section}{\Alph{bsectioncounter}\hskip0.75em #2}
+  \ThisCenterWallPaper{1}{../_media/section_bg.pdf}
+  % Numbering
+  \begin{center}
+    \textsf{%
+      \fontsize{24}{24}\selectfont{%
+        \textcolor{red}{%
+          \Alph{bsectioncounter}\\
+        }
+      }
+    }
+  \end{center}
+  \vspace*{8mm}
+  % original language
+  \begin{minipage}[t]{80mm}
+    \begin{spacing}{2.2}
+    \color{red}
+    \begin{flushright}
+    \textsf{%
+      % Title
+      \fontsize{24}{24}\selectfont{%
+        \MakeUppercase{%
+          \protect\StrBefore{#2}{ ---}
+        }
+      }
+    }
+    \end{flushright}
+    \end{spacing}
+  \end{minipage}
+  % spacing between colums
+  \begin{minipage}[t]{5mm}\ \end{minipage}
+  % english version
+  \begin{minipage}[t]{81mm}
+    \begin{spacing}{2.2}
+    \color{grey1}
+    \begin{flushleft}
+    \textsf{%
+      % Title
+      \fontsize{24}{24}\selectfont{%
+        \MakeUppercase{%
+          \protect\StrBehind{#2}{--- }
+        }
+      }
+    }
+    \end{flushleft}
+    \end{spacing}
+  \end{minipage}
+  \vspace*{-8mm}
+}
+\newcommand{\bsectionStar}[2][]{%
   \clearpage
   \vspace*{8mm}
   \ThisCenterWallPaper{1}{../_media/section_bg.pdf}
