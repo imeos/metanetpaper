@@ -46,6 +46,9 @@
 % Indent for new Paragraphs
 \setlength{\parindent}{0pt}
 
+% Spacing between columns
+\setlength{\columnsep}{5mm}
+
 % Select fonts
 \setmainfont[Mapping=tex-text]{Garamond Premier Pro}
 \setsansfont[Mapping=tex-text]{Futura}
