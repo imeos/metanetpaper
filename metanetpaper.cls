@@ -174,25 +174,7 @@
     \end{flushleft}
     \end{spacing}
   \end{minipage}
-<<<<<<< HEAD
-  }
-%}
-
-
-% Redefine \subsection as \ssubsection (not currently used)
-\newcommand{\ssubsection}[2][]{%
-  \vspace*{11mm}
-  \begin{minipage}[h]{0.5\textwidth-2mm}
-  \subsection[#2]{%
-        \MakeUppercase{%
-          #2
-        }
-  }
-  \end{minipage}  
-  \vspace*{1mm}
-=======
   \vspace*{-8mm}
->>>>>>> master
 }
 
 % Redefine \subsection as \ssubsection (not currently used)
