@@ -220,10 +220,10 @@
     \vspace*{7mm}
   \end{minipage}
   }
-}
+%}
 
 
-% Redifine \subsection as \ssubsection (not currently used)
+% Redefine \subsection as \ssubsection (not currently used)
 \newcommand{\ssubsection}[2][]{%
   \vspace*{11mm}
   \begin{minipage}[h]{0.5\textwidth-2mm}
@@ -296,10 +296,10 @@
 \clearscrheadings
 \clearscrplain
 \clearscrheadfoot 
-\setfootwidth[-28mm]{text}
+\setfootwidth[27mm]{text}
   
   % Pagenumber on outer margin
-\lofoot[\pagemark]{
+\lefoot[\pagemark]{
   \colorrule{grey1}{22mm}{0.5pt}%
   \vskip1mm%
   \begin{minipage}[h]{23mm}%
@@ -310,7 +310,7 @@
   \end{minipage}
 }
 
-\refoot[\pagemark]{
+\rofoot[\pagemark]{
 \colorrule{grey1}{22mm}{0.5pt}%
 \vskip1mm%
   \begin{minipage}[h]{21mm}%
