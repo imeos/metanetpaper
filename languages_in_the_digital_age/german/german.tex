@@ -9,23 +9,17 @@
 %
 %
 %            - META-NET Language Whitepaper | German paper -
+%
+% 
+% ----------------------------------------------------------------------------
 
 \documentclass[]{../../metanetpaper}
 
-\usepackage{booktabs}
-\usepackage{longtable}
-\usepackage{tabulary}
-\usepackage{tabularx}
-\usepackage{rotating}
-\usepackage{makecell}
-\usepackage{multirow}
-\usepackage{colortbl}
-\usepackage{polyglossia}
-\usepackage{multicol,framed,lipsum}
-\setotherlanguages{german,english}
-
 %!TEX TS-program = xelatex
 \RequireXeTeX %Force XeTeX check
+
+\setotherlanguages{german,english}
+
 
 \title{Die Deutsche Sprache im Digitalen Zeitalter --- The German Language in the Digital Age}
 
@@ -61,8 +55,6 @@
 
 \begin{document}
 
-\renewcommand*{\figureformat}{\sffamily\thefigure\autodot}
-
 \maketitle
 \input{german_mocktitle}
 
@@ -72,8 +64,8 @@
 
 \cleardoublepage
 
-% --------------------------------------------------------------------------
 
+% --------------------------------------------------------------------------
 \bsection*{Vorwort --- Preface}
 
 \begin{Parallel}[c]{78mm}{78mm}
@@ -94,10 +86,10 @@ As of November 2011, META-NET consists of 54 research centres from 33 European c
 \ParallelPar
 \end{Parallel}
 
-% --------------------------------------------------------------------------
-
 \cleardoublepage
 
+
+% --------------------------------------------------------------------------
 \bsection*{Inhaltsverzeichnis --- Table of Contents}
 
 \tableofcontents
@@ -105,14 +97,17 @@ As of November 2011, META-NET consists of 54 research centres from 33 European c
 \addtocontents{toc}{\protect\thispagestyle{empty}\protect}
 \addtocontents{toc}{{\Large\textsf{\centerline{DIE DEUTSCHE SPRACHE IM DIGITALEN ZEITALTER}}\par}}
 
-% --------------------------------------------------------------------------
-
 \cleardoublepage
 
+
+% --------------------------------------------------------------------------
 \setcounter{page}{1}
 \pagenumbering{arabic} 
 \pagestyle{scrheadings}
 
+
+% Start of origin language part
+% --------------------------------------------------------------------------
 \ssection[Zusammenfassung]{Zusammenfassung}
 
 \selectlanguage{german}
@@ -145,8 +140,8 @@ Diese Weißbuch-Serie flankiert die anderen strategischen Aktivitäten von META-
 
 \clearpage
 
-% --------------------------------------------------------------------------
 
+% --------------------------------------------------------------------------
 \ssection[Unsere Sprachen in Gefahr: Eine Herausforderung für die Sprachtechnologie]{Unsere Sprachen in Gefahr:\newline Eine Heraus\-for\-de\-rung für die\newline Sprachtechnologie}
 
 \begin{multicols}{2}
@@ -271,8 +266,8 @@ In diesem Kapitel haben wir gesehen, dass viele der in der heutigen Informations
 
 \clearpage
 
-% --------------------------------------------------------------------------
 
+% --------------------------------------------------------------------------
 \ssection[Deutsch in der europäischen Informationsgesellschaft]{Deutsch in der europäischen\newline Informationsgesellschaft}
 
 \begin{multicols}{2}
@@ -420,8 +415,8 @@ Das nächste Kapitel liefert eine Einführung in die Sprachtechnologie und ihre 
 
 \clearpage
 
-% --------------------------------------------------------------------------
 
+% --------------------------------------------------------------------------
 \ssection[Sprachtechnologie für das Deutsche]{Sprach\-technologie\newline für das Deutsche}
 
 \begin{multicols}{2}
@@ -1037,8 +1032,8 @@ Das langfristige Ziel von META-NET ist es, den Aufbau hochwertiger Sprachtechnol
 
 \cleardoublepage
 
-% --------------------------------------------------------------------------
 
+% --------------------------------------------------------------------------
 \ssection[Über META-NET]{Über META-NET}
 
 \begin{multicols}{2}
@@ -1075,6 +1070,9 @@ META-NET nahm am 1. Februar 2010 die Arbeit auf mit dem Ziel, die Forschung im B
 
 \selectlanguage{english}
 
+
+% Start of english part
+% --------------------------------------------------------------------------
 \ssection[Executive Summary]{Executive Summary}
 
 \begin{multicols}{2}
@@ -1108,6 +1106,8 @@ This whitepaper series complements the other strategic actions taken by META-NET
 
 \clearpage
 
+
+% --------------------------------------------------------------------------
 \ssection[Languages at Risk: a Challenge for Language Technology]{Languages at Risk: a Challenge for\newline Language Technology}
 
 \begin{multicols}{2}
@@ -1222,6 +1222,8 @@ As we have seen in this chapter, many applications widely used in today’s info
 
 \clearpage
 
+
+% --------------------------------------------------------------------------
 \ssection[The German Language in the European Information Society]{The German Language in the\newline European Information Society}
 
 \begin{multicols}{2}
@@ -1385,6 +1387,8 @@ The next chapter gives an introduction to language technology and its core appli
 
 \clearpage
 
+
+% --------------------------------------------------------------------------
 \ssection[Language Technology Support for German]{Language Technology Support\newline for German}
 
 \begin{multicols}{2}
@@ -1965,6 +1969,8 @@ The long term goal of META-NET is to enable the creation of high-quality languag
 
 \clearpage
 
+
+% --------------------------------------------------------------------------
 \ssection[About META-NET]{About META-NET}
 
 \begin{multicols}{2}

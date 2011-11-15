@@ -9,6 +9,9 @@
 %
 %
 %                - META-NET Language Whitepaper | CLASS -
+%
+% 
+% ----------------------------------------------------------------------------
 
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{metanetpaper}[2011/09/20 LaTeX class to typeset bilingual papers of the DFKI META-NET Project]
@@ -16,8 +19,9 @@
 % Use KOMA-script class 'scrartcl', based on 'article'
 \LoadClass[11pt, twoside]{scrartcl}
 
+
 % Dependencies
-% ------------
+% ----------------------------------------------------------------------------
 
 % Define papersize 210x279mm + 3mm bleed
 \usepackage[paperwidth=216mm, paperheight=285mm, top=24mm, bottom=37mm, left=27mm, right=25mm, headsep=20mm, bindingoffset=0mm]{geometry}
@@ -31,31 +35,47 @@
 \usepackage[T1]{fontenc} % XeLaTeX packages 
 \usepackage{fontspec}
 \usepackage{parallel} % Two columns per page
+\usepackage{multicol}
 \usepackage[onehalfspacing]{setspace} % Linespacing
 \usepackage{scrpage2}
 \usepackage{xstring} % String modifications
 \usepackage{tocloft} % TOC modifications
 \usepackage{ifthen} % Conditional statements
-%\usepackage{multicol}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{tabulary}
+\usepackage{tabularx}
+\usepackage{makecell}
+\usepackage{multirow}
+\usepackage{rotating}
+\usepackage{colortbl}
+\usepackage{polyglossia}
 
-\usepackage{float}
 
 % Class options & definitions
-% ---------------------------
+% ----------------------------------------------------------------------------
 
 % Indent for new Paragraphs
 \setlength{\parindent}{0pt}
 
-% Spacing between columns
-\setlength{\columnsep}{5mm}
 
-% Select fonts
+% Package multicol options
+  % Gutter between columns
+\setlength{\columnsep}{8mm}
+
+
+% Figure format
+\renewcommand*{\figureformat}{\sffamily\thefigure\autodot}
+
+
+% Set fonts
 \setmainfont[Mapping=tex-text]{Garamond Premier Pro}
 \setsansfont[Mapping=tex-text]{Futura}
   \newfontfamily\futuralight{Futura Light}
   \newfontfamily\futurabook{Futura Book}
   \newfontfamily\futuramedium{Futura Medium}
 \setmonofont[Scale=0.7]{DejaVu Sans Mono}
+
 
 % Colors                                             
 \definecolor{white}{cmyk}{0, 0, 0, 0}                % #FFFFFF
@@ -82,13 +102,15 @@
 \definecolor{blue2}{cmyk}{0.55, 0, 0.22, 0}          % #56D8D8
 \definecolor{purple}{cmyk}{0.49, 0.32, 0, 0}         % #7e7fff
 
+
 % Orphans and widows
 % \widowpenalties 3 10000 10000 100 
 % \clubpenalties 3 10000 10000 100
 % CAREFUL: There are sideeffects with the "parallel" package!
 
+
 % Headings
-  % Reset all sections
+  % Reset all sections, subsections and subsubsections
 \titleformat{\section}{}{
   \centering \fontsize{24}{1.2}\color{red}\sffamily\thesection
 }{-0.35em}{\centering\protect\linebreak}
@@ -97,8 +119,8 @@
 
 \titleformat{\subsubsection}{}{\fontsize{14}{14}\futuralight\thesubsubsection}{0.5em}{\fontsize{14}{1.2}\sffamily}
 
-% Redefine \section as \ssection and then as \sectionstar and \sectionnostar
-% for numbered and unnumbered sections
+  % Redefine \section as \ssection and then as \sectionstar and \sectionnostar
+  % for numbered and unnumbered sections
 \newcommand{\ssection}{\@ifstar
                      \sectionStar%
                      \sectionNoStar%
@@ -138,8 +160,8 @@
   \end{minipage}
 }
 
-% Redefine bilingual \sections
-% Unstarred bsections will be added to the appendix of the TOC
+  % Redefine bilingual \sections
+  % Unstarred bsections will be added to the appendix of the TOC
 \newcounter{bsectioncounter}
 \newcommand{\bsection}{\@ifstar
                      \bsectionStar%
@@ -252,6 +274,7 @@
 %  \vspace*{1mm}
 %}
 
+
 % Lists
   % List item style
 \renewcommand{\labelitemi}{$\sqbullet$}
@@ -277,7 +300,7 @@
 
 
 % Marginal notes
-% \boxtext{your text}
+  % \boxtext{your text}
 \newcommand\boxtext[1]{
   \vskip4mm
   \begin{center}
@@ -294,13 +317,13 @@
 
 
 % Lines
-% \colorrule{<color>}{<width>}{<thickness>}
+  % \colorrule{<color>}{<width>}{<thickness>}
 \newcommand*\colorrule[3]{%
   \color{#1}\rule{#2}{#3}\normalcolor
 }
 
 
-% Header and footer
+% Page header and footer
   % Sans-serif pagenumber
 \setkomafont{pagenumber}{%
   \fontsize{10}{1.2}\normalfont\sffamily\color{grey1}
@@ -334,17 +357,51 @@
     \end{flushleft}
   \end{minipage}
 }
-  
-
-
 
 
 % Captions
 \addtokomafont{caption}{\sffamily}
 
 
+% Bibliography
+\renewenvironment{thebibliography}[1]{
+  \@mkboth{\MakeUppercase\bibname}{\MakeUppercase\bibname}%
+    \vspace*{1cm}
+      \list{\@biblabel{\@arabic\c@enumiv}}%
+           {\settowidth\labelwidth{\@biblabel{#1}}%
+            \leftmargin\labelwidth
+            \advance\leftmargin\labelsep
+            \@openbib@code
+            \usecounter{enumiv}%
+            \let\p@enumiv\@empty
+            \renewcommand\theenumiv{\@arabic\c@enumiv}}%
+      \sloppy
+      \clubpenalty4000
+      \@clubpenalty \clubpenalty
+      \widowpenalty4000%
+      \sfcode`\.\@m}
+{\def\@noitemerr
+ {\@latex@warning{Empty `thebibliography' environment}}%
+\endlist}
+      
 
-% Titlepage
+% Table of contents
+  % the sections
+\renewcommand{\cftsecfont}{\fontsize{12}{9}\selectfont\futurabook}
+\renewcommand{\cftsubsecfont}{\futuralight}
+\renewcommand{\cftsubsubsecfont}{\futuralight}
+  % the page numbers
+\renewcommand{\cftsecpagefont}{\futurabook}  
+\renewcommand{\cftsubsecpagefont}{\futuralight}
+\renewcommand{\cftsubsubsecpagefont}{\futuralight}
+  % remove 'Contents'
+\renewcommand*\contentsname{}
+  % set the depth
+\setcounter{tocdepth}{2}
+
+
+% Titlepage and mocktitle
+% ----------------------------------------------------------------------------
   % Autors with affiliation
 \def\authoraffiliation#1{\gdef\@authoraffiliation{#1}}
 \def\@authoraffiliation{\@latex@warning@no@line{No \noexpand\authoraffiliation given}}
@@ -420,7 +477,8 @@
       }
       \ParallelPar
     \end{Parallel}
-    
+
+  
     % Mocktitle
     \cleardoublepage
     \pagestyle{empty} 
@@ -501,41 +559,5 @@
   \end{titlepage}
 }
 
-
-% Bibliography
-\renewenvironment{thebibliography}[1]{
-  \@mkboth{\MakeUppercase\bibname}{\MakeUppercase\bibname}%
-    \vspace*{1cm}
-      \list{\@biblabel{\@arabic\c@enumiv}}%
-           {\settowidth\labelwidth{\@biblabel{#1}}%
-            \leftmargin\labelwidth
-            \advance\leftmargin\labelsep
-            \@openbib@code
-            \usecounter{enumiv}%
-            \let\p@enumiv\@empty
-            \renewcommand\theenumiv{\@arabic\c@enumiv}}%
-      \sloppy
-      \clubpenalty4000
-      \@clubpenalty \clubpenalty
-      \widowpenalty4000%
-      \sfcode`\.\@m}
-{\def\@noitemerr
- {\@latex@warning{Empty `thebibliography' environment}}%
-\endlist}
-      
-
-% Table of contents
-  % the sections
-\renewcommand{\cftsecfont}{\fontsize{12}{9}\selectfont\futurabook}
-\renewcommand{\cftsubsecfont}{\futuralight}
-\renewcommand{\cftsubsubsecfont}{\futuralight}
-  % the page numbers
-\renewcommand{\cftsecpagefont}{\futurabook}  
-\renewcommand{\cftsubsecpagefont}{\futuralight}
-\renewcommand{\cftsubsubsecpagefont}{\futuralight}
-  % remove 'Contents'
-\renewcommand*\contentsname{}
-  % set the depth
-\setcounter{tocdepth}{2}
 
 \endinput
