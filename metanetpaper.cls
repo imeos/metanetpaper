@@ -93,7 +93,7 @@
   \centering \fontsize{24}{1.2}\color{red}\sffamily\thesection
 }{-0.35em}{\centering\protect\linebreak}
 
-\titleformat{\subsection}[block]{}{\raggedright\LARGE\futuralight\thesubsection}{0.5em}{\raggedright\LARGE\sffamily\MakeUppercase}\titlespacing{\subsection}{0pt}{*4}{*1}
+\titleformat{\subsection}[block]{}{\raggedright\LARGE\futuralight\thesubsection}{0.5em}{\linespread{1.1}\raggedright\LARGE\sffamily\MakeUppercase}\titlespacing{\subsection}{0pt}{*4}{*1}
 
 \titleformat{\subsubsection}{}{\fontsize{14}{14}\futuralight\thesubsubsection}{0.5em}{\fontsize{14}{1.2}\sffamily}
 
@@ -281,14 +281,14 @@
 \newcommand\boxtext[1]{
   \vskip4mm
   \begin{center}
-  \colorrule{grey3}{0.5\textwidth-2mm}{1.5pt}
+  \colorrule{grey3}{0.5\textwidth-3.5mm}{1.5pt}
   \vskip1.5mm
   \fontsize{12}{9}\selectfont{
     \textsf{
       #1
     }
   }
-  \colorrule{grey3}{0.5\textwidth-2mm}{1.5pt}
+  \colorrule{grey3}{0.5\textwidth-3.5mm}{1.5pt}
   \end{center}
 }
 
