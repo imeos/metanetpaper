@@ -61,7 +61,7 @@
 
 % Package multicol options
   % Gutter between columns
-\setlength{\columnsep}{8mm}
+\setlength{\columnsep}{5mm}
 
 
 % Figure format
