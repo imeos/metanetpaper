@@ -300,9 +300,7 @@
 
 
 % URL style
-\renewcommand\url{%
-  \@ifundefined{selectfont}{\def\UrlFont{\sf}}{\def\UrlFont{\small\ttfamily}}
-}
+\urlstyle{same}
 
 
 % Marginal notes
