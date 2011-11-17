@@ -310,11 +310,7 @@
   \begin{center}
   \colorrule{grey3}{0.5\textwidth-3.5mm}{1.5pt}
   \vskip1.5mm
-  \fontsize{12}{9}\selectfont{
-    \textsf{
-      #1
-    }
-  }
+  \fontsize{12}{9}\selectfont{\textsf{#1}}
   \colorrule{grey3}{0.5\textwidth-3.5mm}{1.5pt}
   \end{center}
 }
