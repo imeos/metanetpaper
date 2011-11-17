@@ -299,6 +299,12 @@
 }
 
 
+% URL style
+\renewcommand\url{%
+  \@ifundefined{selectfont}{\def\UrlFont{\sf}}{\def\UrlFont{\small\ttfamily}}
+}
+
+
 % Marginal notes
   % \boxtext{your text}
 \newcommand\boxtext[1]{
