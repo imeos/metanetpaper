@@ -49,7 +49,6 @@
 \usepackage{multirow}
 \usepackage{rotating}
 \usepackage{colortbl}
-\usepackage{polyglossia}
 
 
 % Class options & definitions
