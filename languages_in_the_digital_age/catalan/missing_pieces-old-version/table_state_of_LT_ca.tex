@@ -1,0 +1,64 @@
+\documentclass[10pt]{article}
+\usepackage{color}
+\usepackage{longtable}
+\usepackage{tabulary}
+\usepackage{rotating}
+\usepackage{makecell}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{booktabs}
+
+\usepackage{fontspec}
+
+% The new babel, for hyphenating and localization in general...
+\usepackage{polyglossia}
+\setmainlanguage{catalan}
+%\setotherlanguage{catalan}
+%!TEX TS-program = xelatex
+\RequireXeTeX %Force XeTeX check
+
+
+
+% Table colors
+\definecolor{orange1}{cmyk}{0, 0.56, 0.86, 0}        % #FF6600
+\definecolor{orange2}{cmyk}{0, 0.34, 0.87, 0.01}     % #FF9900
+
+\begin{document}
+
+% Begin table
+\begin{figure}
+\centering
+
+\begin{tabular}{>{\columncolor{orange1}}p{.33\linewidth}@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c}
+\rowcolor{orange1}
+ \cellcolor{white}&
+ \begin{sideways}\makecell[l]{Quantitat}\end{sideways} &
+ \begin{sideways}\makecell[l]{\makecell[l]{Disponibilitat} }\end{sideways} &
+ \begin{sideways}\makecell[l]{Qualitat}\end{sideways} &
+ \begin{sideways}\makecell[l]{Cobertura}\end{sideways} &
+ \begin{sideways}\makecell[l]{Maduresa}\end{sideways} &
+ \begin{sideways}\makecell[l]{Sostenibilitat}\end{sideways} &
+ \begin{sideways}\makecell[l]{Adaptabilitat}\end{sideways} \\ \addlinespace
+
+\multicolumn{8}{>{\columncolor{orange2}}l}{\textcolor{black}{Tecnologia de la llengua: eines, tecnologies i aplicacions}} \\ \addlinespace
+
+Reconeixement de la parla	&3&3&3&3&3&3&2 \\ \addlinespace
+Síntesi de veu &4&2&4&4&5&4&2\\ \addlinespace
+Anàlisi de text &3&2.5&4&4&4&2.5&2.5\\ \addlinespace
+Interpretació de text &1&1&2&1&1&1&1\\ \addlinespace
+Generació de llenguatge &1&2&3&1&3&3&1\\ \addlinespace
+Traducció automàtica &3&3&2&3&4&1&2\\ \addlinespace
+
+\multicolumn{8}{>{\columncolor{orange2}}l}{\textcolor{black}{Recursos lingüístics: recursos, dades, bases de coneixement}} \\ \addlinespace
+
+Corpora textual &3&2.5&3.5&3&3&2.5&2.5\\ \addlinespace
+Corpora de veu &3&5&3&2&3&3&2\\ \addlinespace
+Parallel corpora &2&1&2.5&2.5&2&2&1\\ \addlinespace
+Corpus paraŀlels &2&1&2&2&2&1&1\\ \addlinespace
+Gramàtiques &2&3&2&2&2&2&2\\
+\end{tabular}
+\label{tab:lrlttable}
+\caption{Estat del suport a les tecnologies del llenguatge pel Català}
+\end{figure}
+
+\end{document}
