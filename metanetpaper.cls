@@ -24,34 +24,43 @@
 % ----------------------------------------------------------------------------
 
 % Define papersize 210x279mm + 3mm bleed
-\usepackage[paperwidth=216mm, paperheight=285mm, top=24mm, bottom=37mm, left=27mm, right=25mm, headsep=20mm, bindingoffset=0mm]{geometry}
+\RequirePackage[paperwidth=216mm, paperheight=285mm, top=24mm, bottom=37mm, left=27mm, right=25mm, headsep=20mm, bindingoffset=0mm]{geometry}
 
-\usepackage{graphicx}
-\usepackage{mathabx} % Mathematical symbols
-\usepackage[xetex]{color} % Colorize and customize the headings
-\usepackage{titlesec} % Generate TOC with hyperlinks inside document, no border, no color
-\usepackage[colorlinks=true, linkcolor=black, citecolor=black, urlcolor=black]{hyperref}
-\usepackage{wallpaper} % Custom background-images
-\usepackage[T1]{fontenc} % XeLaTeX packages 
-\usepackage{fontspec}
-\usepackage{parallel} % Two columns per page
-\usepackage{multicol}
-\usepackage[onehalfspacing]{setspace} % Linespacing
-\usepackage{scrpage2}
-\usepackage{xstring} % String modifications
-\usepackage{tocloft} % TOC modifications
-\usepackage{ifthen} % Conditional statements
-\usepackage{booktabs}
-\usepackage{longtable}
-\usepackage{tabulary}
-\usepackage{tabularx}
-\usepackage{makecell}
-\usepackage{multirow}
-\usepackage{rotating}
-\usepackage{colortbl}
+\RequirePackage{graphicx}
+\RequirePackage{mathabx} % Mathematical symbols
+\RequirePackage[xetex]{color} % Colorize and customize the headings
+\RequirePackage{titlesec} % Generate TOC with hyperlinks inside document, no border, no color
+\RequirePackage[colorlinks=true, linkcolor=black, citecolor=black, urlcolor=black]{hyperref}
+\RequirePackage{wallpaper} % Custom background-images
+\RequirePackage[T1]{fontenc} % XeLaTeX packages 
+\RequirePackage{fontspec}
+\RequirePackage{parallel} % Two columns per page
+\RequirePackage{multicol}
+\RequirePackage[onehalfspacing]{setspace} % Linespacing
+\RequirePackage{scrpage2}
+\RequirePackage{xstring} % String modifications
+\RequirePackage{tocloft} % TOC modifications
+\RequirePackage{ifthen} % Conditional statements
+\RequirePackage{booktabs}
+\RequirePackage{longtable}
+\RequirePackage{tabulary}
+\RequirePackage{tabularx}
+\RequirePackage{makecell}
+\RequirePackage{multirow}
+\RequirePackage{rotating}
+\RequirePackage{colortbl}
 
 
-% Class options & definitions
+% Class options
+% ----------------------------------------------------------------------------
+\DeclareOption{cover}{%
+  % Define papersize for cover 420x279mm + 3mm bleed
+  \setlength{\parindent}{0pt}
+}
+\ProcessOptions\relax
+
+
+% Class definitions
 % ----------------------------------------------------------------------------
 
 % Indent for new Paragraphs
