@@ -19,37 +19,29 @@
 \RequireXeTeX %Force XeTeX check
 
 \usepackage{polyglossia}
-\setotherlanguages{german,english}
+\setotherlanguages{catalan,english}
 
 
-\title{Die Deutsche Sprache im Digitalen Zeitalter --- The German Language in the Digital Age}
+\title{Les llengües en la societat de la informació europea --- Languages in the European Information Society}
+%FIXME: title needs to be "The Catalan Language in the Digital Age"
 
 \subtitle{White Paper Series --- Weißbuch-Serie}
 
 \author{
-  Aljoscha Burchardt \\
-  Markus Egg \\
-  Kathrin Eichler \\
-  Brigitte Krenn \\
-  Jörn Kreutel \\
-  Annette Leßmöllmann \\
-  Georg Rehm \\
-  Manfred Stede \\
-  Hans Uszkoreit \\
-  Martin Volk
+ Asunción Moreno\\
+ Núria Bel\\ 
+ Eva Revilla\\
+ Emília Garcia\\
+ Sisco Vallverdú
 }
 \authoraffiliation{
-  Aljoscha Burchardt~ {\small DFKI}\\
-  Markus Egg~ {\small Humboldt-Universität zu Berlin}\\
-  Kathrin Eichler~ {\small DFKI} \\
-  Brigitte Krenn~ {\small ÖFAI}\\
-  Jörn Kreutel~ {\small FH Brandenburg}\\
-  Annette Leßmöllmann~ {\small Hochschule Darmstadt}\\
-  Georg Rehm~ {\small DFKI} \\
-  Manfred Stede~ {\small Universität Potsdam}\\
-  Hans Uszkoreit~ {\small Universität des Saarlandes, DFKI} \\
-  Martin Volk~ {\small Universität Zürich}
+ Asunción Moreno~ {\small Universitat Politècnica de Catalunya}\\
+ Núria Bel~{\small Universitat Pompeu Fabra}\\ 
+ Eva Revilla~{\small Universitat Pompeu Fabra}\\
+ Emília Garcia~{\small Universitat Politècnica de Catalunya}\\
+ Sisco Vallverdú~{\small Universitat Politècnica de Catalunya}
 }
+%FIXME: need "editors" in catalan
 \editors{
   Georg Rehm, Hans Uszkoreit\\(Herausgeber, \textcolor{grey1}{editors})
 }
@@ -57,7 +49,7 @@
 \begin{document}
 
 \maketitle
-\input{german_mocktitle}
+%FIXME - does not work \input{catalan_mocktitle}
 
 \pagenumbering{Roman} 
 \setcounter{page}{5}
@@ -67,15 +59,17 @@
 
 
 % --------------------------------------------------------------------------
-\bsection*{Vorwort --- Preface}
+\bsection*{Pròleg --- Preface}
 
 \begin{Parallel}[c]{78mm}{78mm}
-\ParallelLText{\selectlanguage{german}
-Dieses Weißbuch gehört zu einer Serie, die Wissen über Sprachtechnologie und deren Potenzial vermitteln soll und sich insbesondere an Journalisten, Politiker, Sprachgemeinschaften und Lehrende richtet. Die derzeitige Verfügbarkeit und Nutzung von Sprachtechnologie in Europa variiert stark je nach Sprache. Folglich müssen auch die notwendigen Maßnahmen für die weitere Unterstützung von Forschung und Entwicklung in diesem Bereich variieren. Die Maßnahmen hängen von zahlreichen Faktoren ab, z.\,B.~der Komplexität einer Sprache und der Anzahl ihrer Sprecher.
+\ParallelLText{\selectlanguage{catalan}
+Aquest document forma part d'una sèrie que vol donar a coneixer les tecnologies del llenguatge i el seu potencial. S'adreça a educadors, periodistes, polítics i membres de comunitats lingüístiques, entre d'altres.
 
-META-NET, ein von der Europäischen Kommission gefördertes Exzellenznetzwerk, hat die aktuellen Sprachressourcen und -technologien in der vorliegenden Weiß\-buch-Serie analysiert (siehe S.~\pageref{whitepaperseries}). Die Analyse umfasst die 23 europäischen Amtssprachen sowie weitere wichtige nationale und regionale Sprachen Europas. Die Ergebnisse zeigen, dass es bei allen Sprachen beträchtliche Defizite in der technologischen Unterstützung und signifikante Forschungslücken gibt. Die vorliegende ausführliche Expertenanalyse und Bewertung der aktuellen Situation dient dazu, die Wirksamkeit weiterer Forschungstätigkeit zu maximieren.
+A Europa, la disponibilitat de tecnologies del llenguatge i el seu ús varia segons l’idioma. En conseqüència, les accions que es requereixen per reforçar la investigació i el desenvolupament d'aquestes tecnologies també són diferents per a cada idioma. Les accions necessàries depenen de molts factors, com ara la complexitat d'una llengua determinada o de la mida de la comunitat de parlants.
 
-META-NET besteht aus 54 Forschungszentren aus 33 Ländern (Stand: November 2011, siehe S.~\pageref{metanetmembers}), die mit Interessensvertretern aus Wirtschaft (Softwareunternehmen, Technologieanbietern, Nutzern), Verwaltung, NGOs, Sprachgemeinschaften und europäischen Universitäten zusammenarbeiten. META-NET entwickelt gemeinsam mit diesen Gruppen eine übergreifende Technologievision und eine strategische Forschungsagenda für das mehrsprachige Europa 2020.}
+META-NET, una xarxa d'excel·lència finançada per la Comissió Europea, ha dut a terme una anàlisi de l’estat actual dels recursos i les tecnologies del llenguatge per a les 23 llengües oficials europees, així com per a d’altres idiomes importants a nivell nacional i regional a Europa. Els resultats d'aquesta anàlisi suggereixen que hi ha encara mancances significatives en la investigació necessària per a cada idioma. Una anàlisi més detallada i una avaluació experta de la situació actual han de contribuir a maximitzar l'impacte de noves investigacions i minimitzar-ne els riscos. 
+
+META-NET es compon de 54 centres de recerca de 33 països que estan treballant amb tots els agents implicats (p.~\pageref{metanetmembers}): comercials, agències de govern,  organitzacions de recerca, empreses de programari, proveïdors de tecnologia i universitats europees. Junts, estan treballant en una visió comuna de la tecnologia i desenvolupant una agenda estratègica de la recerca que mostra com les aplicacions de les tecnologies del llenguatge podran resoldre els problemes actuals abans de l’any 2020.}
 
 \ParallelRText{\selectlanguage{english}
 This white paper is part of a series that promotes knowledge about language technology and its potential. It addresses journalists, politicians, language communities, educators and others. 
@@ -92,6 +86,7 @@ As of November 2011, META-NET consists of 54 research centres from 33 European c
 
 % --------------------------------------------------------------------------
 \bsection*{Inhaltsverzeichnis --- Table of Contents}
+%FIXME: "table of contents" in Catalan
 
 \tableofcontents
 
@@ -109,86 +104,83 @@ As of November 2011, META-NET consists of 54 research centres from 33 European c
 
 % Start of origin language part
 % --------------------------------------------------------------------------
-\ssection[Zusammenfassung]{Zusammenfassung}
+\ssection[Zusammenfassung]{Resum}
+%FIXME: does "Zusammenfassung" need to be translated?
 
-\selectlanguage{german}
+\selectlanguage{Catalan}
 
 \begin{multicols}{2}
-Europa ist in den vergangenen 60 Jahren eine politisch-wirtschaftliche Einheit geworden. Kulturell und sprachlich ist der europäische Raum reich und vielfältig. Von Portugiesisch bis Polnisch, von Italienisch bis Isländisch -- im kommunikativen Miteinander stoßen Europas Bürger, die europäische Wirtschaft und auch die Politik schnell an sprachliche Grenzen. Die Institutionen der EU geben jährlich rund eine Milliarde Euro für die Übersetzung von Texten und das Dolmetschen gesprochener Kommunikation aus, um am Grundsatz der Mehrsprachigkeit festzuhalten. Ist dieser Aufwand tatsächlich notwendig? Moderne Sprachtechnologie und Sprachforschung können einen wichtigen Beitrag leisten, um die Sprachgrenzen zu überwinden. Wenn Europäer sich miteinander unterhalten oder Verträge schließen wollen, kann moderne Sprachtechnologie in Verbindung mit intelligenten Endgeräten und Anwendungen ihnen hierbei künftig helfen -- selbst wenn sie keine gemeinsame Sprache sprechen. 
 
-\boxtext{Sprachtechnologie baut Brücken.}
+Al llarg dels últims 60 anys, Europa s'ha anat convertint en una estructura política i econòmica ben definida, encara que culturalment i lingüísticament sigui molt diversa. És a dir, que la comunicació entre els ciutadans europeus,
+tant la més quotidiana com la que es produeix en l'àmbit dels negocis o la política, ja sigui per portuguesos o polonesos, o per italians o islandesos, cal que superi inevitablement les barreres de l'idioma. Les institucions de la UE gasten prop de mil milions d'euros l'any per mantenir la seva política de multilingüisme, és a dir, la traducció de textos i la interpretació de comunicacions orals. Però, cal que la diversitat lingüística resulti una càrrega tan costosa? Les modernes tecnologies del llenguatge i la recerca lingüística poden contribuir de forma significativa a enderrocar aquestes barreres lingüístiques. Combinant adequadament els dispositius intel·ligents i les seves aplicacions amb les tecnologies del llenguatge es podrà, en un futur proper, ajudar als ciutadans europeus a comunicar-se fàcilment els uns amb els altres i fer negocis tot i no parlar cap llengua en comú.
 
-Die deutsche Wirtschaft profitiert überdurchschnittlich vom europäischen Binnenmarkt: 2010 gingen 60,3\% der deutschen Ausfuhren in die EU, weitere 10,8\% in andere europäische Länder. Doch die Geschäftstätigkeit stößt überall dort auf Schwierigkeiten, wo Sprachbarrieren dem Handel massiv im Wege stehen. Insbesondere kleine und mittelständische Unternehmen stehen vor einem mit vertretbarem Aufwand kaum lösbaren Problem. Die einzige (undenkbare) Alternative zum multilingualen Europa würde so aussehen, dass eine einzige Sprache die Vormachtstellung einnimmt und alle anderen Sprachen ersetzt.  Eine Möglichkeit, Sprachbarrieren zu überwinden, ist das Erlernen von Fremdsprachen. Ohne technologische Unterstützung stellen die 23 Amts\-sprachen der Mitgliedstaaten der Europäischen Union und die rund 60 weiteren Sprachen Europas für die europäischen Bürger und ihre Wirtschaft, für politische Debatten sowie für den wissenschaftlichen Fortschritt jedoch ein unüberwindliches Hindernis dar.
+    \boxtext{Les tecnologies del llenguatge construeixen ponts pel futur d'Europa}
 
-Die Lösung ist die Entwicklung von Schlüsseltechnologien: Sprachtechnologien bieten den europäischen Akteuren ungeheure Vorteile, nicht nur auf dem gemeinsamen europäischen Markt, sondern auch bei Handelsbeziehungen mit Dritt-, insbesondere Schwellenländern. Sprachtechnologielösungen werden letztendlich als einzigartige Brücke zwischen den Sprachen Europas dienen. Eine unverzichtbare Basis für die Entwicklung dieser Technologien ist eine systematische Analyse der linguistischen Besonderheiten aller europäischen Sprachen. Außerdem muss der derzeitige Stand der Unterstützung durch Sprachtechnologie analysiert werden. 
+L'economia europea treu un major profit del mercat únic europeu que d'altres: El 2010, el comerç dins de la UE significava el 60,3\% de les exportacions alemanyes mentre que el comerç amb altres països europeus era un 10,8\% de les mateixes, però les barreres lingüístiques poden aturar el progrés dels negocis, especialment en el cas de les PIME (Petita I Mitjana Empresa) que no tenen els mitjans econòmics per abordar aquesta situació. L'única (impensable) alternativa a aquesta Europa multilingüe seria permetre que una sola llengua prengui la posició dominant i acabi reemplaçant totes les altres llengües.
 
-Die derzeit auf dem Markt erhältlichen Tools zur automatischen Übersetzung und Verarbeitung gesprochener Sprache werden den angestrebten Zielen nicht gerecht. Die dominanten Akteure sind privatwirtschaftliche Unternehmen mit Sitz in den Vereinigten Staaten. Bereits Ende der 1970er-Jahre erkannte die EU die tiefgreifende Bedeutung der Sprachtechnologie als Motor für die europäische Einheit und begann ihre ersten Forschungsprojekte zu finanzieren, z.\,B.~EUROTRA. Gleichzeitig wurden nationale Projekte ins Leben gerufen. Diese lieferten zwar wertvolle Ergebnisse, führten aber niemals zu einer konzertierten europäischen Initiative. Im Gegensatz zu dieser hochgradig selektiven Förderung haben andere mehrsprachige Gesellschaften wie Indien (22 Amtssprachen) und Südafrika (11 Amtssprachen) langfristige nationale Programme für Sprachforschung und Technologieentwicklung aufgelegt. 
+Una forma clàssica de superar les barreres lingüístiques és l'aprenentatge de llengües estrangeres, però, sense cap suport tecnològic, esdevenir un expert en les 23 llengües oficials dels Estats membres de la Unió Europea i en, aproximadament, les 60 llengües europees addicionals, és una tasca pràcticament impossible per qualsevol ciutadà i és un fre pel desenvolupament econòmic, el debat polític o el progrés científic d’Europa.
 
-\boxtext{Sprachtechnologie als Schlüssel für die Zukunft.}
+La solució passa per desenvolupar tecnologies clau que facilitin la comunicació. Aquestes tecnologies ofereixen avantatges enormes  en l'àmbit europeu, no només dins del mercat comú, sinó també en les relacions comercials amb tercers països, especialment en les economies emergents. Per aconseguir aquest objectiu i preservar la diversitat cultural i lingüística d'Europa, primer és necessari realitzar una anàlisi sistemàtica de les particularitats lingüístiques i de l'estat actual de la tecnologia de suport de cadascun dels idiomes europeus. En un futur proper, les solucions de les tecnologies de la llengua podran ser un pont entre les llengües d'Europa.
 
-Die heute marktdominanten Sprach\-tech\-no\-logie-Ak\-teu\-re setzen auf ungenaue statistische Ansätze, bei denen keine tiefgreifende linguistische Analysen und Methoden zum Einsatz kommen. So werden Sätze automatisch übersetzt, indem ein neuer Satz mit Tausenden bereits früher vom Menschen übersetzter Sätze verglichen wird. Die Qualität des ausgegebenen Ergebnisses hängt vor allem vom Umfang und der Qualität der verfügbaren Daten ab. Bei der automatischen Übersetzung einfacher Sätze zwischen Sprachen mit ausreichendem Textmaterial kann man nützliche Ergebnisse erzielen. Doch die flachen, statistischen Verfahren sind zum Scheitern verurteilt bei Sprachen mit einem wesentlich geringeren Anteil an Referenzmaterial oder bei Sätzen von komplexer, nichtrepetitiver Struktur. Wenn wir Anwendungen schaffen möchten, die bei sämtlichen europäischen Sprachen ausgezeichnete Leistung bringen, ist eine Analyse der tieferliegenden strukturellen Eigenschaften der Sprachen die einzige erfolgversprechende Methode.
+\boxtext{Tecnologia de la llengua, com una clau per al futur}
 
-Aus diesem Grund fördert die Europäische Union Projekte wie EuroMatrix und EuroMatrix+ (seit 2006) oder iTranslate4 (seit 2010). Hier werden durch Grundlagenforschung und angewandte Forschung Ressourcen für hochwertige Sprachtechnologielösungen für alle europäischen Sprachen bereitgestellt. Die europäische Forschung kann bereits zahlreiche Erfolge verbuchen. So nutzen die Übersetzungsdienstleister der Europäischen Union heute die Open-Source-Über\-set\-zungs\-soft\-ware Moses, die überwiegend im Rahmen europäischer Forschungsprojekte entwickelt wurde. Das vom deutschen Bundesministerium für Bildung und Forschung (BMBF) zwischen 1993 und 2000 geförderte Projekt Verbmobil katapultierte Deutschland in der Forschung im Bereich der Übersetzung gesprochener Sprache für einige Zeit in die internationale Führungsposition. Viele der zu dieser Zeit in Deutschland angesiedelten Forschungs- und Entwicklungslabore (z.\,B.~IBM und Philips) sind jedoch mittlerweile geschlossen oder umgezogen. Statt auf den Ergebnissen seiner Forschungsprojekte aufzubauen, hat Europa weiterhin eher isolierte Forschungsaktivitäten verfolgt, die auf dem Markt wenig wirkungsvoll waren. Der ökonomische Wert selbst der frühen Leistungen lässt sich an der Anzahl der Geschäftsausgliederungen erkennen. Ein Unternehmen wie das bereits 1984 gegründete Trados wurde z.\,B.~2005 an SDL mit Firmensitz in Großbritannien verkauft.
+La traducció automàtica i les eines de processament de la parla actualment disponibles al mercat encara són lluny d'un objectiu tan ambiciós. Els principals protagonistes de l'àmbit són empreses de propietat privada amb ànim de lucre radicades a Amèrica del Nord. Ja en la dècada de 1970, la UE es va adonar de la profunda rellevància de les tecnologies del llenguatge com a guia cap a la unitat europea, i va començar a finançar els seus primers projectes de recerca, per exemple EUROTRA. Al mateix temps, es van establir projectes nacionals que generaren valuosos resultats, però sense arribar a constituir una acció ben coordinada a nivell europeu. Contrastant amb aquest esforç de finançament selectiu, altres societats multilingües, com l'Índia (22 llengües oficials) i Sud-àfrica (11 llengües oficials) han creat recentment programes nacionals d'investigació lingüística i desenvolupament tecnològic a llarg termini.
 
-\boxtext{Sprachtechnologie trägt zur Einheit Europas bei.}
+Avui, els models predominants en tecnologies del llenguatge depenen de mètodes estadístics que no fan ús de mètodes o coneixements lingüístics profunds. Per exemple, les frases es tradueixen automàticament mitjançant la comparació d'una nova frase contra milers de frases prèviament traduïdes per humans. La qualitat de la traducció depèn en gran mesura de la quantitat i qualitat dels corpora de la mostra disponible. Mentre que la traducció automàtica d'oracions simples en idiomes amb una quantitat suficient de material de text disponibles poden donar resultats útils, els mètodes estadístics estan condemnats al fracàs en el cas d'idiomes amb una mostra de materials de traducció molt petita, o en la traducció d'oracions amb estructures complexes.
 
-Die bisher erlangten Erkenntnisse legen nahe, dass die heutige hybride Sprachtechnologie, die tiefe Verarbeitung mit statistischen Methoden kombiniert, die Kluft zwischen allen europäischen Sprachen überbrücken kann. Wie diese Weißbuch-Serie zeigt, bestehen jedoch im Hinblick auf die Einsatzfähigkeit von Sprachlösungen und den Stand der Forschung in den verschiedenen europäischen Mitgliedstaaten enorme Unterschiede. Auch wenn Deutschland zu den größeren EU-Sprachen gehört, ist dennoch weitergehende Forschung notwendig, um wirklich effektive Sprachtechnologielösungen für den alltäglichen Einsatz zu verwirklichen. Gleichzeitig stehen die Chancen gut, dass der deutschsprachige Teil Europas in diesem wichtigen Technologiebereich wieder eine international führende Position einnimmt. 
+La Unió Europea ha decidit finançar projectes com ara EuroMatrix i EuroMatrixPlus (des de 2006) o iTranslate4 (des de 2010) que fan recerca bàsica i aplicada i generen recursos per a l'establiment de solucions d'alta qualitat en tecnologies de la llengua en tots els idiomes europeus. L'anàlisi de les propietats estructurals més profundes de les llengües és l'únic camí si volem crear aplicacions que funcionin bé en tot el rang de les llengües d'Europa.
 
-Die Vision von META-NET ist hochqualitative Sprachtechnologie für alle Sprachen Europas, die die politische und wirtschaftliche Einheit in kultureller Vielfalt vollendet. Mithilfe dieser Technologie können bestehende Schranken eingerissen und Brücken zwischen den Sprachen Europas gebaut werden. Hierfür müssen alle Interessengruppen aus Politik, Forschung, Wirtschaft und Gesellschaft ihre Kräfte bündeln.
+La investigació europea en aquest àmbit ja ha aconseguit diversos èxits. Per exemple, els serveis de traducció de la Unió Europea utilitzen ara  MOSES un programari de traducció automàtica de codi font obert que s'ha desenvolupat gràcies principalment a projectes de recerca europeus. El projecte Verbmobil, finançat pel Ministeri alemany d'Educació i Investigació (BMBF) entre 1993 i 2000, va situar Alemanya al capdavant del món de la investigació en traducció de la parla durant un temps. Molts dels laboratoris de recerca i desenvolupament ubicats a Alemanya aleshores (com IBM o Philips) han anat tancant o s'han traslladat a un altre lloc des de llavors. En lloc de construir sobre els resultats dels seus projectes de recerca, Europa ha tendit a realitzar activitats aïllades amb poc impacte en el mercat. El valor econòmic dels primers esforços fins i tot es pot veure en el nombre de derivats posteriors. Una companyia com Trados, que va ser fundada el 1984, va ser venuda a la SDL, amb seu al Regne Unit, el 2005.
 
-Diese Weißbuch-Serie flankiert die anderen strategischen Aktivitäten von META-NET. Einen Überblick hierzu finden Sie im Anhang. Aktuelle Informationen, die neueste Version des META-NET Vision Papers \cite{Meta1} oder der strategischen Forschungsagenda (SRA) finden Sie auf unserer Website: http://www.meta-net.eu.
+\boxtext{Les tecnologies del llenguatge ajuden a unificar Europa}
+
+Segons l'estat actual de les tecnologies del llenguatge, sembla que les anomenades "tecnologies híbrides", que combinen processament a partir de coneixements lingüístics profunds amb mètodes estadístics, seran capaces de connectar totes les llengües europees i de molt més. Com aquesta sèrie de llibres blancs sobre les llengües europees demostra, hi ha grans diferències  pel que fa a inversions en solucions tecnològiques i a l'estat de la recerca lingüística entre els Estats membres d'Europa. El català és una de les llengües de la UE que necessita encara més investigació per tal que les solucions de les tecnologies del llenguatge siguin veritablement eficaces i estiguin a punt per a l’ús diari. Al mateix temps, hi ha bones perspectives per tal d'assolir una posició destacada en aquesta àrea tecnològica tan important.
+
+ A llarg termini, l’objectiu de META-NET és introduir tecnologies del llenguatge d'alta qualitat  per a tots els idiomes per tal d'aconseguir una unitat política i econòmica a través de la diversitat cultural. La tecnologia ajudarà a enderrocar les barreres existents i a construir ponts entre les llengües d'Europa. Això requereix que totes les parts interessades - política, recerca, empreses i societat - uneixin els seus esforços per al futur.
+
+Aquesta sèrie de llibres blancs complementa altres accions estratègiques adoptades per META-NET (vegeu l'apèndix per a una descripció). Les versions actualitzades dels documents “\textit{META-NET vision paper}” \cite{Meta1} o “\textit{Strategic Research Agenda (SRA)}” es poden trobar al lloc web de META-NET: \url{http://www.meta-net.eu}.
 \end{multicols}
 
 \clearpage
 
 
 % --------------------------------------------------------------------------
-\ssection[Unsere Sprachen in Gefahr: Eine Herausforderung für die Sprachtechnologie]{Unsere Sprachen in Gefahr:\newline Eine Heraus\-for\-de\-rung für die\newline Sprachtechnologie}
+\ssection[Un risc per a les nostres llengües i un repte per a les tecnologies del llenguatge]{Un risc per a les nostres llengües\newline  i un repte per a les\newline tecnologies del llenguatge}
 
 \begin{multicols}{2}
 
-Wir sind Zeugen einer digitalen Revolution, die enorme Auswirkungen auf Kommunikation und Gesellschaft hat. Die jüngsten Entwicklungen in der digitalen In\-for\-ma\-tions- und Kommunikationstechnologie werden manchmal mit Gutenbergs Erfindung der Druckerpresse verglichen. Was kann uns diese Analogie über die Zukunft der europäischen Informationsgesellschaft und insbesondere der unserer Sprachen sagen?
+Som testimonis d’una revolució digital que té un impacte espectacular en la comunicació i la societat. Els desenvolupaments recents en la tecnologia de comunicació digital i de xarxes es poden comparar a la invenció de la impremta de Gutenberg. Què ens pot dir aquesta analogia sobre el futur de la societat de la informació europea i les nostres llengües en particular?
 
-\boxtext{Die digitale Revolution ist mit der Erfindung der Druckerpresse vergleichbar.}
-
-Nach Gutenbergs Erfindung wurden echte Durchbrüche im Kom\-mu\-ni\-ka\-tions- und Wis\-sens\-aus\-tausch z.\,B.~durch Luthers Bibelübersetzung    in die Landessprache  erzielt. In den folgenden Jahrhunderten wurden Kulturtechniken entwickelt, die die Sprachverarbeitung und den Wissensaustausch erleichterten:
-
-\medskip
+Després de la invenció de la impremta de Gutenberg, es van dur a terme grans avenços en la comunicació i en l’intercanvi de coneixement mitjançant esforços com el de la traducció de Luter de la Bíblia a la llengua comuna. En els segles posteriors, s’han desenvolupat tècniques culturals per tractar millor el processament del llenguatge i l’intercanvi de coneixement: 
 \begin{itemize}
-\item Die orthografische und grammatikalische Standardisierung großer Sprachen ermöglichte die schnelle Verbreitung neue wissenschaftlicher und intellektueller Ideen.
-\item Die Entwicklung von Amtssprachen ermöglichte es den Bürgern, innerhalb oftmals politischer Grenzen miteinander zu kommunizieren.
-\item Sprachübergreifender Austausch wurde durch Lehren und Übersetzen von Sprachen möglich.
-\item Die Schaffung redaktioneller und bibliografischer Richtlinien stellte die Qualität und Verfügbarkeit von Druckmaterial sicher.
-\medskip
-\item Die Entwicklung von Medien wie Buch, Zeitung, Radio und Fernsehen befriedigte ganz unterschiedliche Kommunikationsbedürfnisse.
+\item l’estandardització ortogràfica i gramatical de les principals llengües van permetre la ràpida difusió de noves idees científiques i intel·lectuals;
+\item el desenvolupament de les llengües oficials va fer possible que els ciutadans es comuniquessin dins determinades fronteres (sovint polítiques);
+\item l’ensenyament i la traducció de llengües va permetre l’intercanvi lingüístic;
+\item la creació de pautes bibliogràfiques i periodístiques va assegurar la qualitat i la disponibilitat del material imprès;
+\item la creació de diferents mitjans com els diaris, la ràdio, la televisió, els llibres i altres formats va satisfer les diferents necessitats de comunicació. 
 \end{itemize}
-
-In den vergangenen zwanzig Jahren trug die Informationstechnologie zu einer Automatisierung und Vereinfachung zahlreicher Prozesse bei:
-
+En els últims vint anys, la tecnologia de la informació ha ajudat a automatitzar i facilitar molts dels processos:
 \begin{itemize}
-\item Desktop-Publishing-Software ist an die Stelle von Schreibmaschine und Textsatz getreten.
-\item Microsoft PowerPoint ersetzte Overhead-Folien.
-\item Per E-Mail lassen sich Dokumente schneller versenden und empfangen als mit einem Faxgerät.
-\item Skype ermöglicht preiswerte Telefonanrufe über das Internet und virtuelle Konferenzen.
-\item Digitale Audio- und Video-Formate erleichtern den Austausch von Multimediainhalten.
-\item Suchmaschinen bieten Zugriff auf Webseiten per Stichwortsuche.
-\item Onlinedienste wie Google Translate erzeugen schnelle Grobübersetzungen.
-\item Soziale Medien (Facebook, Twitter) erleichtern Kommunika\-tion und  Informationsaustausch.
+\item el programari d’edició de textes substitueix la mecanografia i la composició tipogràfica;
+\item El \textit{PowerPoint} de Microsoft substitueix les transparències per retroprojector;
+\item el correu electrònic envia i rep documents molt més de pressa que el fax;
+\item L’Skype permet fer trucades telefòniques a través d’Internet i organitzar reunions virtuals;
+\item els formats de codificació d’àudio i de vídeo faciliten l’intercanvi de contingut multimèdia;
+\item els motors de cerca proporcionen accés a pàgines web basat en paraules clau;
+\item els serveis en xarxa com el Google Translate produeixen traduccions ràpides i aproximades;
+\item les plataformes dels mitjans de comunicació socials faciliten la coŀlaboració i permeten compartir informació.
 \end{itemize}
+Tot i que aquestes eines i aplicacions són útils, actualment no permeten implementar de manera suficient una societat de la informació europea sostenible i multilingüe, una societat moderna i inclusiva, on la informació i els productes puguin circular lliurement.
 
-All diese Werkzeuge und Anwendungen sind zweifelsohne hilfreich, aber lange nicht ausreichend, um eine nachhaltige, mehrsprachige europäische Gesellschaft zu unterstützen, in der Informationen und Waren ungehindert fließen können.
-
-\subsection{Sprachgrenzen bremsen die Europäische Informations\-ge\-sell\-schaft}
+\subsection{Les fronteres lingüístiques dificulten la societat de la informació europea}
   
-Wir können nicht genau vorhersagen, wie die Informationsgesellschaft der Zukunft aussehen wird. Es ist jedoch sehr wahrscheinlich, dass die Revolution in der Kommunikationstechnologie Menschen, die unterschiedliche Sprachen sprechen, auf eine ganz neue Weise zusammenbringen wird. Dadurch ist der Einzelne gezwungen, neue Sprachen zu lernen. Insbesondere sind aber Entwickler gefragt, neue Technologieanwendungen zu schaffen, die das gegenseitige Verstehen und den Zugriff auf gemeinsam nutzbares Wissen sicherstellen.
+No podem saber exactament com serà la societat de la informació del futur. Quan es tracta de discutir una estratègia energètica europea o una política d’afers estrangers comunes, voldríem poder escoltar com parlen els ministres d’afers estrangers en la seva llengua materna. Voldríem poder tenir una plataforma on la gent, que parla moltes llengües diferents i amb dominis molts variats d’aquestes llengües, poguessin discutir un tema en particular mentre la tecnologia recopila automàticament les seves opinions i genera breus resums. També voldríem poder parlar amb el departament de suport o informació d’una companyia d’assegurances de salut que es troba en un país estranger.
 
-\boxtext{Der globale Wirtschafts- und Informationsraum konfrontiert uns mit mehr Sprachen, Sprechern und Inhalten.}
+És clar que les necessitats de comunicació tenen una qualitat diferent en comparació a fa uns anys. Una economia global i l’espai d’informació ens confronten amb més llengües, parlants i continguts, i ens demanen una interacció més ràpida amb nous tipus de mitjans de comunicació. La popularitat actual dels mitjans de comunicació socials (Viquipèdia, \textit{Facebook}, \textit{Twitter} i \textit{YouTube}) és només la punta de l’iceberg. 
 
-Im globalen Wirtschafts- und Informationsraum interagieren immer mehr Sprachen, Sprecher und Inhalte immer schneller miteinander dank neuartiger Medien. Die Popularität von Plattformen wie Wikipedia, Facebook, Twitter und Google+ ist nur die Spitze des Eisbergs.
+Avui en dia, podem transmetre gigabytes de text arreu del món en pocs segons abans de reconèixer que el text és en una llengua que no entenem. D’acord amb un informe recent demanat per la Comissió Europea, el 57\% dels usuaris d’Internet a Europa compren productes i serveis en llengües que no són la seva llengua materna. (L’anglès és la llengua estrangera més comuna seguida del francès, l’alemany i l’espanyol.) El 55\% dels usuaris llegeix continguts en una llengua estrangera mentre que només un 35\% utilitza una altra llengua per escriure correus electrònics o publicar comentaris a la web \cite{CAT-Nota1}. Fa uns anys, l’anglès podria haver estat la lingua franca de la web —la gran majoria de continguts era en anglès— però ara la situació ha canviat radicalment. La quantitat de continguts en altres llengües (particularment en àrab i en llengües asiàtiques)  s’ha disparat.
 
-Heute können wir in Sekunden gigabyteweise Textmengen um die Welt schicken, bevor wir überhaupt merken, dass sie in einer Sprache sind, die wir gar nicht verstehen. Einem jüngsten Bericht der Europäischen Kommission zufolge erwerben 57\% der Internetnutzer in Europa Waren und Dienstleistungen in Sprachen, die nicht ihre Muttersprache sind; Englisch ist die gängigste Fremdsprache, gefolgt von Französisch, Deutsch und Spanisch. 55\% der Nutzer lesen Inhalte in einer Fremdsprache, und 35\% verwenden eine fremde Sprache, um E-Mails zu schreiben oder Kommentare im Web zu posten \cite{EC1}. Vor ein paar Jahren mag Englisch noch die lingua franca des Webs gewesen sein -- die meisten Webinhalte waren auf Englisch verfasst -- doch das hat sich dramatisch gewandelt. Der Anteil an Onlineinhalten in anderen europäischen Sprachen (sowie asiatischen Sprachen und Sprachen aus Nahost) hat explosionsartig zugenommen. 
-
-Erstaunlicherweise hat diese allgegenwärtige, durch Sprachgrenzen bedingte digitale Kluft bisher kaum öffentliche Aufmerksamkeit erhalten.  Es drängt sich eine Frage auf: Welche europäischen Sprachen gewinnen in der vernetzten Informations- und Wissensgesellschaft an Bedeutung und welche sind dem Untergang geweiht?
+Sorprenentment, una bretxa digital omnipresent causada per les fronteres lingüístiques no ha aconseguit ser un punt de gaire interès en el discurs públic; no obstant, hi ha una pregunta a l’aire que es planteja de manera insistent: “Quines llengües europees prosperaran i persistiran en la informació en xarxa i la societat del coneixement?”
 
 \subsection{Unsere Sprachen in Gefahr}
 
