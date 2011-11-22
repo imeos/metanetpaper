@@ -494,7 +494,6 @@
   \setlength{\paperwidth}{430mm}%
   \setlength{\paperheight}{289mm}%
   \setlength{\textwidth}{380mm}%
-  \setlength{\width}{380mm}%
   
   % Titlepage and mocktitle
     % Left text on spine
