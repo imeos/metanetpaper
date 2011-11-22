@@ -51,15 +51,6 @@
 \RequirePackage{colortbl}
 
 
-% Class options
-% ----------------------------------------------------------------------------
-\DeclareOption{cover}{%
-  % Define papersize for cover 420x279mm + 3mm bleed
-  \setlength{\parindent}{0pt}
-}
-\ProcessOptions\relax
-
-
 % Class definitions
 % ----------------------------------------------------------------------------
 
@@ -408,85 +399,13 @@
 \setcounter{tocdepth}{2}
 
 
-% Titlepage and mocktitle
-% ----------------------------------------------------------------------------
-  % Autors with affiliation
-\def\authoraffiliation#1{\gdef\@authoraffiliation{#1}}
-\def\@authoraffiliation{\@latex@warning@no@line{No \noexpand\authoraffiliation given}}
+% Mocktitle
   % Autors with affiliation
 \def\editors#1{\gdef\@editors{#1}}
 \def\@editors{\@latex@warning@no@line{No \noexpand\editors given}}
   % Maketitle
 \renewcommand\maketitle{%
-  \begin{titlepage}%
-  \ThisCenterWallPaper{1}{../_media/titlepage.pdf}
-    \vspace*{3mm}
-    % Left column
-    \begin{minipage}[t]{81mm}
-      \color{grey2}
-      \textsf{
-        \begin{flushright}
-          % Subtitle
-          \StrBefore{\@subtitle}{ ---} \\
-          \vspace*{5mm}
-          % Title
-          \fontsize{36}{36}\selectfont{%
-            \MakeUppercase{%
-              \protect\StrBehind{\@title}{--- }
-            }
-          }
-        \end{flushright}
-        \vspace*{7mm}
-      }
-    \end{minipage}
-    % spacing between colums
-    \begin{minipage}[t]{5mm}\ \end{minipage}
-    % Right column
-    \begin{minipage}[t]{85mm}
-      \color{white}
-      \textsf{
-        \begin{flushleft}
-          % Subtitle
-          \textcolor{white}{%
-            \StrBehind{\@subtitle}{--- }
-          } \\
-          \vspace*{5mm}
-          % Title
-          \fontsize{36}{36}\selectfont{%
-            \MakeUppercase{%
-              \protect\StrBefore{\@title}{ ---}
-            }
-          }
-        \end{flushleft}
-        \vspace*{7mm}
-      }
-    \end{minipage}
-    % Authors
-    \begin{Parallel}[c]{81mm}{77mm}
-      \ParallelLText{
-        \begin{flushright}
-          \fontsize{14}{1.2}\selectfont{%
-            \textsf{
-              \textcolor{grey2}{by}
-            }
-          }
-        \end{flushright}
-      }
-      \ParallelRText{
-        \begin{flushleft}
-          \fontsize{14}{1.2}\selectfont{%
-            \textsf{%
-              \textcolor{white}{%
-                \@author
-              }
-            }
-          }
-        \end{flushleft}
-      }
-      \ParallelPar
-    \end{Parallel}
-
-  
+  \begin{titlepage}%  
     % Mocktitle
     \cleardoublepage
     \pagestyle{empty} 
@@ -546,7 +465,7 @@
           \fontsize{14}{24}\selectfont{%
             \textsf{%
               \textcolor{red}{%
-                \@authoraffiliation
+                \@author
               }
             }
           }
@@ -567,5 +486,127 @@
   \end{titlepage}
 }
 
+
+% Class options
+% ----------------------------------------------------------------------------
+\DeclareOption{cover}{%
+  % Define papersize for cover 420x279mm + 5mm bleed
+  \setlength{\paperwidth}{430mm}%
+  \setlength{\paperheight}{289mm}%
+  \setlength{\textwidth}{380mm}%
+  
+  % Titlepage and mocktitle
+    % Left text on spine
+  \def\SpineLText#1{\gdef\@SpineLText{#1}}
+  \def\@SpineLText{\@latex@warning@no@line{No \noexpand\SpineLText given}}
+    % Right text on spine
+  \def\SpineRText#1{\gdef\@SpineRText{#1}}
+  \def\@SpineRText{\@latex@warning@no@line{No \noexpand\SpineRText given}}
+    % Left text on spine
+  \def\quotes#1{\gdef\@quotes{#1}}
+  \def\@quotes{\@latex@warning@no@line{No \noexpand\quotes given}}
+
+    % Maketitle
+  \renewcommand\maketitle{%
+    \begin{titlepage}%
+    \ThisCenterWallPaper{1}{../_media/titlepage.pdf}
+      \vspace*{3mm}
+      % workaround to add 2mm to \left margin of geometry package
+      \begin{minipage}[t]{1mm}\ \end{minipage}
+      % Back cover
+      \begin{minipage}[t]{166mm}  
+        \vskip60mm
+        \begin{minipage}[t]{79mm}
+          \color{grey2}%
+          \textsf{%
+            \@SpineLText
+          }
+        \end{minipage}
+        % Gutter 
+        \begin{minipage}[t]{8mm}\ \end{minipage}
+        \begin{minipage}[t]{79mm}
+          \color{white}%
+          \textsf{%
+            \@SpineRText
+          }
+        \end{minipage}
+        \vskip10mm
+        \textsf{%
+          \textcolor{white}{\@quotes}
+        }
+      \end{minipage}
+      % Space between back and front cover
+      \begin{minipage}[t]{43mm}\ \end{minipage} 
+      % Front cover
+      \begin{minipage}[t]{185mm} 
+        % Left column
+        \begin{minipage}[t]{81mm}
+          \color{grey2}
+          \textsf{
+            \begin{flushright}
+              % Subtitle
+              \StrBefore{\@subtitle}{ ---} \\
+              \vspace*{5mm}
+              % Title
+              \fontsize{36}{36}\selectfont{%
+                \MakeUppercase{%
+                  \protect\StrBehind{\@title}{--- }
+                }
+              }
+            \end{flushright}
+            \vspace*{7mm}
+          }
+        \end{minipage}
+        % spacing between colums
+        \begin{minipage}[t]{5mm}\ \end{minipage}
+        % Right column
+        \begin{minipage}[t]{85mm}
+          \color{white}
+          \textsf{
+            \begin{flushleft}
+              % Subtitle
+              \textcolor{white}{%
+                \StrBehind{\@subtitle}{--- }
+              } \\
+              \vspace*{5mm}
+              % Title
+              \fontsize{36}{36}\selectfont{%
+                \MakeUppercase{%
+                  \protect\StrBefore{\@title}{ ---}
+                }
+              }
+            \end{flushleft}
+            \vspace*{7mm}
+          }
+        \end{minipage}
+        % Authors
+        \begin{Parallel}[c]{81mm}{97mm}
+          \ParallelLText{
+            \begin{flushright}
+              \fontsize{14}{1.2}\selectfont{%
+                \textsf{
+                  \textcolor{grey2}{by}
+                }
+              }
+            \end{flushright}
+          }
+          \ParallelRText{
+            \begin{flushleft}
+              \fontsize{14}{1.2}\selectfont{%
+                \textsf{%
+                  \textcolor{white}{%
+                    \@author
+                  }
+                }
+              }
+            \end{flushleft}
+          }
+          \ParallelPar
+        \end{Parallel}
+      \end{minipage} % end Front cover
+    \end{titlepage}
+  }
+}
+\ProcessOptions\relax
 
 \endinput
