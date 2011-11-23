@@ -186,82 +186,76 @@
       }
     }
   \end{center}
-  \vspace*{8mm}
+  \vspace*{-6mm}
   % original language
   \begin{minipage}[t]{80mm}
-    \begin{spacing}{2.2}
-    \color{red}
-    \begin{flushright}
-    \textsf{%
-      % Title
-      \fontsize{24}{24}\selectfont{%
-        \MakeUppercase{%
-          \protect\StrBefore{#2}{ ---}
-        }
+      \color{red}
+      \textsf{%
+        \begin{flushright}%
+          % Title
+          \fontsize{24}{24}\selectfont{%
+            \MakeUppercase{%
+              \protect\StrBefore{#2}{ ---}
+            }
+          }
+        \end{flushright}
+        \vspace*{3mm}
       }
-    }
-    \end{flushright}
-    \end{spacing}
   \end{minipage}
   % spacing between colums
   \begin{minipage}[t]{5mm}\ \end{minipage}
   % english version
   \begin{minipage}[t]{81mm}
-    \begin{spacing}{2.2}
     \color{grey1}
-    \begin{flushleft}
     \textsf{%
-      % Title
-      \fontsize{24}{24}\selectfont{%
-        \MakeUppercase{%
-          \protect\StrBehind{#2}{--- }
+      \begin{flushleft}%
+        % Title
+        \fontsize{24}{24}\selectfont{%
+          \MakeUppercase{%
+            \protect\StrBehind{#2}{--- }
+          }
         }
-      }
+      \end{flushleft}
+      \vspace*{3mm}
     }
-    \end{flushleft}
-    \end{spacing}
   \end{minipage}
-  \vspace*{-8mm}
 }
 \newcommand{\bsectionStar}[2][]{%
   \clearpage
-  \vspace*{8mm}
+  \vspace*{1mm}
   \ThisCenterWallPaper{1}{../_media/section_bg.pdf}
   % original language
   \begin{minipage}[t]{80mm}
-    \begin{spacing}{2.2}
-    \color{red}
-    \begin{flushright}
-    \textsf{%
-      % Title
-      \fontsize{24}{24}\selectfont{%
-        \MakeUppercase{%
-          \protect\StrBefore{#2}{ ---}
-        }
+      \color{red}
+      \textsf{%
+        \begin{flushright}%
+          % Title
+          \fontsize{24}{24}\selectfont{%
+            \MakeUppercase{%
+              \protect\StrBefore{#2}{ ---}
+            }
+          }
+        \end{flushright}
+        \vspace*{3mm}
       }
-    }
-    \end{flushright}
-    \end{spacing}
   \end{minipage}
   % spacing between colums
   \begin{minipage}[t]{5mm}\ \end{minipage}
   % english version
   \begin{minipage}[t]{81mm}
-    \begin{spacing}{2.2}
     \color{grey1}
-    \begin{flushleft}
     \textsf{%
-      % Title
-      \fontsize{24}{24}\selectfont{%
-        \MakeUppercase{%
-          \protect\StrBehind{#2}{--- }
+      \begin{flushleft}%
+        % Title
+        \fontsize{24}{24}\selectfont{%
+          \MakeUppercase{%
+            \protect\StrBehind{#2}{--- }
+          }
         }
-      }
+      \end{flushleft}
+      \vspace*{3mm}
     }
-    \end{flushleft}
-    \end{spacing}
   \end{minipage}
-  \vspace*{-8mm}
 }
 
 % Redefine \subsection as \ssubsection (not currently used)
@@ -494,6 +488,7 @@
   \setlength{\paperwidth}{430mm}%
   \setlength{\paperheight}{289mm}%
   \setlength{\textwidth}{380mm}%
+%  \setlength{\width}{380mm}%
   
   % Titlepage and mocktitle
     % Left text on spine
