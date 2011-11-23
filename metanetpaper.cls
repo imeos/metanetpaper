@@ -12,6 +12,11 @@
 %
 % 
 % ----------------------------------------------------------------------------
+%
+% Class options
+% [cover] = Set (only) the cover of the whitepaper
+%
+% ----------------------------------------------------------------------------
 
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{metanetpaper}[2011/09/20 LaTeX class to typeset bilingual papers of the DFKI META-NET Project]
@@ -258,74 +263,6 @@
   \end{minipage}
 }
 
-  %Redefine sections with alphanumeric numbering
-\newcounter{asectioncounter}
-
-\newcommand{\asection}[2][]{%
-  \clearpage
-  \stepcounter{asectioncounter}
-  \ifx#1\@null
-  \ifsecondargument
-    \addcontentsline{toc}{section}{\Alph{asectioncounter}\hskip0.75em #2}
-  \else
-    \addcontentsline{toc}{section}{\Alph{asectioncounter}\hskip0.75em #1}
-  \fi
-  \ThisCenterWallPaper{1}{../_media/section_bg.pdf}
-  % Numbering
-  \begin{center}
-    \textsf{%
-      \fontsize{24}{24}\selectfont{%
-        \textcolor{red}{%
-          \Alph{asectioncounter}\\
-        }
-      }
-    }
-  \end{center}
-  \vspace*{-6mm}
-  % original language
-  \begin{minipage}[t]{80mm}
-      \color{red}
-      \textsf{%
-        \begin{flushright}%
-          % Title
-          \fontsize{24}{24}\selectfont{%
-            \MakeUppercase{%
-              \protect\StrBefore{#2}{ ---}
-            }
-          }
-        \end{flushright}
-        \vspace*{3mm}
-      }
-  \end{minipage}
-  % spacing between colums
-  \begin{minipage}[t]{5mm}\ \end{minipage}
-  % english version
-  \begin{minipage}[t]{81mm}
-    \color{grey1}
-    \textsf{%
-      \begin{flushleft}%
-        % Title
-        \fontsize{24}{24}\selectfont{%
-          \MakeUppercase{%
-            \protect\StrBehind{#2}{--- }
-          }
-        }
-      \end{flushleft}
-      \vspace*{3mm}
-    }
-  \end{minipage}
-}
-
-
-% Redefine \subsection as \ssubsection (not currently used)
-%\newcommand{\ssubsection}[2][]{%
-%  \vspace*{11mm}
-%  \begin{minipage}[h]{0.5\textwidth-2mm}
-%  \subsection[#2]{\MakeUppercase{#2}}
-%  \end{minipage}  
-%  \vspace*{1mm}
-%}
-
 
 % Lists
   % List item style
@@ -438,6 +375,10 @@
       
 
 % Table of contents
+  % remove 'Contents'
+\renewcommand\contentsname{}
+  % set the depth
+\setcounter{tocdepth}{2}
   % the sections
 \renewcommand{\cftsecfont}{\fontsize{12}{9}\selectfont\futurabook}
 \renewcommand{\cftsubsecfont}{\futuralight}
@@ -446,10 +387,6 @@
 \renewcommand{\cftsecpagefont}{\futurabook}  
 \renewcommand{\cftsubsecpagefont}{\futuralight}
 \renewcommand{\cftsubsubsecpagefont}{\futuralight}
-  % remove 'Contents'
-\renewcommand*\contentsname{}
-  % set the depth
-\setcounter{tocdepth}{2}
 
 
 % Mocktitle
