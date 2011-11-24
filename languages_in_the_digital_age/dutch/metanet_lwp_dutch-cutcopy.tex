@@ -1,0 +1,1024 @@
+%.............................................................................
+%....................................~MMMMMMMMM ..............................
+%.............................................................................
+%..MMO....MM.. MMMMMM..MMMMMMM...MM .. MMMMMMMM...MMD...MM..MMMMMMM.MMMMMMM...
+%..MMM ..MMM.. MM........MM ....?MMM... ..........MMM$..MM..MM........ MM.. ..
+%..MMMM 7MMM.. MM  .... .MM ....MM8M ...MMMMMMM...MMMMD.MM..MM.........MM.....
+%..MM.MMMMMM.. MMMMMM.. .MM ...MM  MM.............MM.MMDMM..MMMMMM.....MM.....
+%..MM..MM.MM.. MM........MM .. MMMMMM.............MM..MMMM..MM.........MM.....
+%..MM.....MM . MMMMMM... MM ..MM.   MM............MM...MMM..MMMMMMM....MM.....
+%.............................................................................
+
+
+% META-NET Language Whitepaper
+% ----------------------------------------------------------------------------
+
+% This is a sample .tex file. If you have questions about this file, please
+% contact us:
+% christoph.seelus@dfki.de || gregor.kneitschel@dfki.de
+
+% Important note:
+% --------------
+% Save your file with utf-8 encoding!
+
+% Usage:
+% -----
+% \ParallelLText{…} and \ParallelRText{…} contain the original text and the
+% english text.
+% Write \ParallelPar after EACH pair of \ParallelLText{} and \ParallelRText{…}
+% Sections, subsections (etc.) and tables have to be outside the Parallel
+% environment, that is, after \Parallelpar but before the next
+% \ParallelLText{} and \ParallelRText{}
+
+% Sample:
+% ------
+% \ParallelLText{The text in your language}
+% \ParallelRText{The english text}
+% \ParallelPar
+% \section{…}
+% …
+% ----------------------------------------------------------------------------
+
+
+
+%\documentclass{article}
+%\documentclass[dutch,english]{scrartcl}
+\documentclass{scrartcl}
+\usepackage{pdfcolparallel}
+\usepackage{url}
+%\usepackage[dutch,english]{babel}
+\newcommand{\boxtext}[1]{
+  \begin{center}
+    {\textbf{#1}}
+  \end{center}
+}
+\setlength\parindent{0pt} % Indent for new Paragraphs
+
+%\long\def\MyParallelLText#1{\ParallelLText{\selectlanguage{dutch}#1}}
+%\long\def\MyParallelRText#1{\ParallelRText{\selectlanguage{english}#1}}
+\long\def\MyParallelLText#1{\ParallelLText{#1}}
+\long\def\MyParallelRText#1{\ParallelRText{#1}}
+
+%ca-te-go-ri{\"e}n
+%ge-o-ri{\'e}n-teerd
+\hyphenation{al-go-rit-mi-sche ana-ly-se an-der-zijds ant-woord ant-woor-den Ask-Now au-to-ma-tic au-to-ma-ti-se-ren A-xen-do au-teurs-on-der-steu-nings-sy-ste-men be-dien-den be-doe-ling be-drijfs-do-mei-nen  be-drijfs-le-ven be-drijfs-spe-ci-fie-ke be-drij-ven be-grij-pen be-kij-ken be-lang-rij-ke be-na-de-ring be-oor-de-len be-schik-baar-heid  be-schrij-ven be-ta-ling be-trek-ke-lij-ke be-voor-deeld bij-ko-men-de bij-na bui-ten-ge-slo-ten com-mu-ni-ca-tie-no-den com-ple-xi-teit com-pu-ters con-fe-ren-ties copy-right-schen-din-gen crowd-sour-cing daad-wer-ke-lijk des-am-bi-gu-e-ring di-a-kri-ti-sche dichtst-bij-zijnde dien-sten Di-gi-ta-le di-gi-ta-le do-cu-men-ten
+do-mein-mo-del-le-ring do-mi-nan-te dy-na-mi-sche eind-ge-brui-kers-toe-pas-sin-gen e-lec-tro-ni-ca e-lek-tro-ni-ca ele-men-ten e-ner-zijds e-qui-va-lent erf-goed e-va-lu-a-tie fei-te-lij-ke fi-nan-cie-rings-toe-zeg-gin-gen Frank-rijk func-tio-na-li-teit ge-brui-kers-ac-cep-ta-tie ge-brui-kers-er-va-ring ge-brui-kers-vrien-de-lij-ke ge-meen-schap-pe-lijke ge-net-werk-te Ge-noot-schap  ge-or-ga-ni-seerd ge-pu-bli-ceerd ge-stan-daar-di-seerd ge-stuur-de ge-za-men-lij-ke gram-ma-ti-ca-le hier-on-der Hier-on-der hoe-veel-heid in-ge-ni-eurs-we-ten-schap-pen In-ter-net-do-mei-nen in-te-res-sant ken-nis-ma-na-ge-ment kern-roe-pas-sin-gen ko-nink-lij-ke Ko-nink-lij-ke kwa-li-teit le-vert Lu-xem-burg mak-ke-lij-ker me-de-werk-ers meer-ta-lig-heid  ME-TA-VI-SI-ON ME-TA-RE-SEARCH ME-TA-SHA-RE mo-del-le-ren moe-der-taal-spre-kers moei-lijk mo-ge-lijk-he-den na-tuur-lij-ke na-tuur-lijk-heid nau-we-lijks Ne-der-land Ne-der-lands Ne-der-land-se nog-al nood-za-ke-lij-ker nood-za-ke-lij-ker-wijs  on-der-zoeks-or-ga-ni-sa-ties on-der-steund on-der-steu-nen on-der-steu-nings-pro-gram-ma on-der-zoeks-or-ga-ni-sa-tie ont-bre-kend ont-wik-ke-laars ont-wik-keld ont-wik-kel-de ont-wik-ke-ling oor-spron-ke-lij-ke or-ga-ni-sa-ties ou-de-ren per-soon-lij-ke pho-nes pu-blieke re-le-van-te rij-zen se-man-ti-sche spe-ci-fie-ke spre-ker-on-af-han-ke-lij-ke spre-kers sta-tis-ti-sche stra-te-gi-sche strij-den sym-bo-li-sche taal-mo-del-len Taal-unie taal-tech-no-lo-gi-sche taal-ver-wer-king ta-bel-len tech-no-lo-gi-sche te-ge-lij-ker-tijd te-gen-woor-dig tekst-ana-ly-se teks-ten tekst-ver-wer-kers par-sing toe-pas-sin-gen toe-pas-sings-om-ge-ving toe-pas-sings-ge-bie-den toe-pas-sings-ka-der toe-pas-sings-ont-wik-ke-laars toe-wij-zings-over-een-komst     Toe-wij-zings-over-een-komst trans-pa-ran-ten uit-ge-voerd uit-vin-ding uit-zon-de-ring ver-an-de-rin-gen  ver-ba-zing-wek-kend ver-e-nigd ver-ge-lij-ken ver-ge-lij-king ver-te-gen-woor-di-ger ver-wer-ken ver-wer-king ver-wer-ven  ver-ze-ke-ren vir-tu-ele vi-sie-ont-wik-ke-lings-pro-ces Vlaan-de-ren voor-deel voor-uit-gang wer-kers werk-woord-con-struc-ties werk-woor-den woor-den woor-den-boek-af-dek-king werk-woor-denwoord-groe-pen woord-volg-or-de zaak-voe-ring}
+
+\title{Talen in de Europese Informatiemaatschappij
+ --- Languages in the European Information Society}
+
+
+\author{
+  Prof. Dr. Jan Odijk, Universiteit Utrecht
+}
+
+
+
+
+
+\begin{document}
+\def\mytitle#1{\textbf{#1}}
+\mytitle{Talen in de Europese Informatiemaatschappij
+ --- Languages in the European Information Society}\\\\\\
+
+\def\language#1{\textbf{#1}}
+\language{Nederlands --- Dutch}
+\newpage
+
+
+
+
+\begin{Parallel}[c]{70mm}{70mm}
+%  \maketitle
+
+
+\MyParallelLText{
+}
+\MyParallelRText{The development of this white paper has been funded by the Seventh Framework Programme and the ICT Policy Support Programme of the European Commission under contracts T4ME (Grant Agreement 249119), CESAR (Grant Agreement 271022), META-NET4U (Grant Agreement 270893) and META-NORD (Grant Agreement 270899).
+}
+\ParallelPar
+\newpage
+
+  % --------------------------------------------------------------------------
+  \section*{ --- Preface}
+  \MyParallelLText{
+    }
+
+  \MyParallelRText{
+    This white paper is part of a series that promotes knowledge about language technology and its potential. It addresses educators, journalists, politicians, language communities and others.}
+
+
+  \ParallelPar
+
+  \MyParallelLText{
+ 
+  }
+
+  \MyParallelRText{
+    The availability and use of language technology in Europe varies between languages. Consequently, the actions that are required to further support research and development of language technologies also differ for each language. The required actions depend on many factors, such as the complexity of a given language and the size of its community.
+  }
+
+  \ParallelPar
+
+
+\MyParallelLText{
+}
+\MyParallelRText{META-NET, a Network of Excellence funded by the European Commission, has conducted an analysis of current language resources and technologies. This analysis focused on the 23 official European languages as well as other important national and regional languages in Europe. The results of this analysis suggest that there are many significant research gaps for each language. A more detailed expert analysis and assessment of the current situation will help maximise the impact of additional research and minimise any risks.
+}
+\ParallelPar
+
+\MyParallelLText{
+}
+\MyParallelRText{META-NET consists of 47 research centres from 31 countries that are working with stakeholders from commercial businesses, government agencies, industry, research organisations, software companies, technology providers and European universities. Together, they are creating a common technology vision while developing a strategic research agenda that shows how language technology applications can address any research gaps by 2020.
+}
+\ParallelPar
+
+\section*{}
+\MyParallelLText{\textbf{Contact}\\
+META-NET\\
+DFKI Projektb{\"u}ro Berlin\\
+Alt-Moabit 91c\\
+10559 Berlijn\\
+Duitsland\\\\
+\url{office@meta-net.eu}\\
+\url{http://www.meta-net.eu}
+}
+\MyParallelRText{\textbf{Contact}\\
+META-NET\\
+DFKI Projektb{\"u}ro Berlin\\
+Alt-Moabit 91c\\
+10559 Berlin\\
+Germany\\\\
+\url{office@meta-net.eu}\\
+\url{http://www.meta-net.eu}
+
+}
+\ParallelPar
+\section*{}
+
+\MyParallelLText{\textbf{Auteur}\\
+Prof. Dr. Jan Odijk, Universiteit Utrecht
+}
+\MyParallelRText{\textbf{Author}\\
+Prof. Dr. Jan Odijk, Utrecht University
+}
+\ParallelPar
+
+\section*{}
+\MyParallelLText{\textbf{Met bijdragen van}\\
+Dr. Catia Cucchiarini, Nederlandse Taalunie\\
+Prof.dr. Walter Daelemans, Universiteit Antwerpen\\
+Drs. Alice Dijkstra, NWO\\
+Prof.dr. Jean-Pierre Martens, Universiteit Gent\\
+Dr. Jacomine Nortier, Universiteit Utrecht\\
+Dr. Peter Spyns, Nederlandse Taalunie\\
+Drs. Remco van Veenendaal, TST-centrale
+
+}
+\MyParallelRText{\textbf{Contributors}\\
+Dr. Catia Cucchiarini, Dutch Language Union\\
+Prof.dr. Walter Daelemans, Antwerp University\\
+Drs. Alice Dijkstra, NWO\\
+Prof.dr. Jean-Pierre Martens, Ghent University\\
+Dr. Jacomine Nortier, Utrecht University\\
+Dr. Peter Spyns, Dutch Language Union\\
+Drs. Remco van Veenendaal, Dutch HLT Agency
+
+}
+\ParallelPar
+\section*{}
+\MyParallelLText{\textbf{Dankbetuiging}\\
+De auteur bedankt de auteurs van het taalwitboek voor het Duits voor de toestemming om materiaal uit dat witboek hier te gebruiken.
+
+}
+\MyParallelRText{\textbf{Acknowledgements}\\
+The publisher is grateful to the authors of the German white paper for permission to reproduce materials from their paper.
+}
+\ParallelPar
+
+
+  % --------------------------------------------------------------------------
+  \clearpage
+  \tableofcontents
+  \clearpage
+
+
+  % --------------------------------------------------------------------------
+  \section {Managementsamenvatting --- Executive Summary}
+
+  \MyParallelLText{
+
+
+
+  }
+
+  \MyParallelRText{
+
+    \boxtext{Language technology builds bridges for Europe's future}
+
+    During the last 60 years, Europe has become a distinct political and economic structure, yet culturally and linguistically it is still very diverse. This means that from Portuguese to Polish and Italian to Irish, everyday communication between Europe's citizens as well as communication in the spheres of business and politics is inevitably confronted by language barriers. The EU's institutions spend about a billion euros a year on maintaining their policy of multilingualism, i.e., translating texts and interpreting spoken communication. Yet does this have to be such a burden? Modern language technology and linguistic research can make a significant contribution to pulling down these linguistic borders. When combined with intelligent devices and applications, language technology will in the future be able to help Europeans talk easily to each other and do business with each other even if they do not speak a common language.
+
+    But language barriers can bring business to a halt, especially for SMEs who do not have the financial means to reverse the situation. The only (unthinkable) alternative to this kind of multilingual Europe would be to allow a single language to take a dominant position and end up replacing all other languages.
+
+    One classic way of overcoming the language barrier is to learn foreign languages. Yet without technological support, mastering the 23 official languages of the member states of the European Union and some 60 other European languages is an insurmountable obstacle for the citizens of Europe and its economy, political debate, and scientific progress.
+
+    The solution is to build key enabling technologies. These will offer European actors tremendous advantages, not only within the common European market but also in trade relations with third countries, especially emerging economies.  To achieve this goal and preserve Europe's cultural and linguistic diversity, it is necessary to first carry out a systematic analysis of the linguistic particularities of all European languages, and the current state of language technology support for them. Language technology solutions will eventually serve as a unique bridge between Europe's languages.
+
+
+    \boxtext{Language technology as a key for the future}
+
+    The automated translation and speech processing tools currently available on the market still fall short of this ambitious goal. The dominant actors in the field are primarily privately-owned for-profit enterprises based in Northern America. Already in the late 1970s, the EU realised the profound relevance of language technology as a driver of European unity, and began funding its first research projects, such as EUROTRA. At the same time, national projects were set up that generated valuable results but never led to concerted European action. In contrast to this highly selective funding effort, other multilingual societies such as India (22 official languages) and South Africa (11 official languages) have recently set up long-term national programmes for language research and technology development.
+
+    The predominant actors in LT today rely on imprecise statistical approaches that do not make use of deeper linguistic methods and knowledge. For example, sentences are automatically translated by comparing a new sentence against thousands of sentences previously translated by humans. The quality of the output largely depends on the amount and quality of the available sample corpus. While the automatic translation of simple sentences in languages with sufficient amounts of available text material can achieve useful results, such shallow statistical methods are doomed to fail in the case of languages with a much smaller body of sample material or in the case of sentences with complex structures.
+
+    The European Union has therefore decided to fund projects such as EuroMatrix and EuroMatrixPlus (since 2006) and iTranslate4 (since 2010) that carry out basic and applied research and generate resources for establishing high quality language technology solutions for all European languages. Analysing the deeper structural properties of languages is the only way forward if we want to build applications that perform well across the entire range of Europe's languages.
+
+    European research in this area has already achieved a number of successes. For example, the translation services of the European Union now use MOSES open-source machine translation software that has been mainly developed through European research projects. 
+
+
+    \boxtext{Language Technology helps unify Europe}
+
+    Drawing on the insights gained so far, it appears that today's `hybrid' language technology mixing deep processing with statistical methods will be able to bridge the gap between all European languages and beyond. As this series of white papers shows, there is a dramatic difference in the state of readiness with respect to language solutions and the state of research between Europe's member states. Yet even though Dutch is one of the `better-resourced' EU languages, it too still needs further research before truly effective language technology solutions are ready for everyday use. At the same time, there are good prospects in the Dutch-speaking part of Europe for playing a leading international role in this important technology area.
+
+    META-NET's long-term goal is to introduce high-quality language technology for all languages in order to achieve political and economic unity through cultural diversity. The technology will help tear down existing barriers and build bridges between Europe's languages. This requires all stakeholders --- in politics, research, business, and society --- to unite their efforts for the future.
+
+    This whitepaper series complements other strategic actions taken by META-NET (see the appendix for an overview). Up-to-date information such as the current version of the META-NET vision paper \cite{MNVision} or the Strategic Research Agenda (SRA) can be found on the META-NET web site: \url{http://www.meta-net.eu}.
+
+  }
+
+  \ParallelPar
+
+
+  % --------------------------------------------------------------------------
+  \section{Gevaar voor onze Talen en een Uitdaging voor Taaltechnologie --- Risk for Our Languages and a Challenge for Language Technology}
+
+  \MyParallelLText{
+    
+   
+
+  }
+
+  \MyParallelRText{
+    We are witnesses to a digital revolution that is dramatically impacting communication and society. Recent developments in digital information and communication technology are sometimes compared to Gutenberg’s invention of the printing press. What can this analogy tell us about the future of the European information society and our languages in particular?
+
+    After Gutenberg’s invention, real breakthroughs in communication and knowledge exchange were accomplished by efforts such as Luther's translation of the Bible into vernacular language. In subsequent centuries, cultural techniques have been developed to better handle language processing and knowledge exchange:
+    \begin{itemize}
+      \item the orthographic and grammatical standardisation of major languages enabled the rapid dissemination of new
+      scientific and intellectual ideas;
+      \item the development of official languages made it possible for citizens to communicate within certain (often
+      political) boundaries;
+      \item the teaching and translation of languages enabled exchanges across languages;
+      \item the creation of editorial and bibliographic guidelines assured the quality and availability of printed
+      material;
+      \item the creation of different media like newspapers, radio, television, books, and other formats satisfied
+      different communication needs.
+    \end{itemize}
+    In the past twenty years, information technology has helped to automate and facilitate many of the processes:
+    \begin{itemize}
+      \item desktop publishing software has replaced typewriting and typesetting;
+      \item Microsoft PowerPoint has replaced overhead projector transparencies;
+      \item e-mail send and receive documents faster than a fax machine;
+      \item Skype offers cheap Internet phone calls and hosts virtual meetings;
+      \item audio and video encoding formats make it easy to exchange multimedia content;
+      \item search engines provide keyword-based access to web pages;
+      \item online services like Google Translate produce quick, approximate translations;
+      \item social media platforms such as Facebook, Twitter, and Google+ facilitate communication, collaboration, and information sharing.
+    \end{itemize}
+    Although such tools and applications are helpful, they are not yet capable of supporting a sustainable, multilingual European society for all where information and goods can flow freely.
+  }
+  \ParallelPar
+
+
+  \subsection{ --- Language Borders Hinder the European Information Society}
+
+  \MyParallelLText{
+
+
+
+
+    
+
+  }
+
+  \MyParallelRText{
+    We cannot predict exactly what the future information society will look like. But there is a strong likelihood that the revolution in communication technology is bringing people speaking different languages together in new ways. This is putting pressure on individuals to learn new languages and especially on developers to create new technology applications to ensure mutual understanding and access to shareable knowledge. In a global economic and information space, more languages, speakers and content interact more quickly with new types of media. The current popularity of social media (Wikipedia, Facebook, Twitter, YouTube, and, recently, Google+) is only the tip of the iceberg.
+
+    Today, we can transmit gigabytes of text around the world in a few seconds before we recognise that it is in a language we do not understand. According to a recent report from the European Commission, 57\% of Internet users in Europe purchase goods and services in languages that are not their native language. (English is the most common foreign language followed by French, German and Spanish.) 55\% of users read content in a foreign language while only 35\% use another language to write e-mails or post comments on the Web \cite{EC1}. A few years ago, English might have been the lingua franca of the Web--- the vast majority of content on the Web was in English --- but the situation has now drastically changed. The amount of online content in other European (as well as Asian and Middle Eastern) languages has exploded.
+
+    Surprisingly, this ubiquitous digital divide due to language borders has not gained much public attention; yet, it raises a very pressing question: Which European languages will thrive in the networked information and knowledge society, and which are doomed to disappear?
+  }
+  \ParallelPar
+
+
+  \subsection{--- Our Languages at Risk }
+
+  \MyParallelLText{
+
+
+  }
+
+  \MyParallelRText{
+    While the printing press helped step up the exchange of information in Europe, it also led to the extinction of many European languages. Regional and minority languages were rarely printed and languages such as Cornish and Dalmatian were limited to oral forms of transmission, which in turn restricted their scope of use. Will the Internet have the same impact on our languages?
+
+    Europe's approximately 80 languages are one of its richest and most important cultural assets, and a vital part of its unique social model\cite{EC2}. While languages such as English and Spanish are likely to survive in the emerging digital marketplace, many European languages could become irrelevant in a networked society. This would weaken Europe's global standing, and run counter to the strategic goal of ensuring equal participation for every European citizen regardless of language. According to a UNESCO report on multilingualism, languages are an essential medium for the enjoyment of fundamental rights, such as political expression, education and participation in society \cite{Unesco1}.
+  }
+
+  \ParallelPar
+
+
+  \subsection{ --- Language Technology is a Key Enabling Technology }
+
+  \MyParallelLText{
+
+
+    
+
+  }
+
+  \MyParallelRText{
+    In the past, investment efforts in language preservation focused on language education and translation. According to one estimate, the European market for translation, interpretation, software localisation and website globalisation was 8.4 billion euro in 2008 and is expected to grow by 10\% per annum \cite{EC3}. Yet this figure covers just a small proportion of current and future needs in communicating between languages. The most compelling solution for ensuring the breadth and depth of language usage in Europe tomorrow is to use appropriate technology, just as we use technology to solve our transport, energy and disability needs among others.
+
+    Digital language technology (targeting all forms of written text and spoken discourse) helps people collaborate, conduct business, share knowledge and participate in social and political debate regardless of language barriers and computer skills. It often operates invisibly inside complex software systems to help us:
+    \begin{itemize}
+      \item find information with an Internet search engine;
+      \item check spelling and grammar in a word processor;
+      \item view product recommendations in an online shop;
+      \item hear the verbal instructions of a car navigation system;
+      \item translate web pages via an online service.
+    \end{itemize}
+    Language technology consists of a number of core applications that enable processes within a larger application framework. The purpose of the META-NET language white papers is to focus on how ready these core technologies are for each European language.
+
+    To maintain our position in the frontline of global innovation, Europe will need language technology adapted to all European languages that is robust, affordable and tightly integrated within key software environments. Without language technology, we will not be able to achieve a really effective interactive, multimedia and multilingual user experience in the near future.
+  }
+
+  \ParallelPar
+
+
+  \subsection{ --- Opportunities for Language Technology }
+
+  \MyParallelLText{
+
+
+
+
+
+  }
+
+  \MyParallelRText{
+    In the world of print, the technology breakthrough was the rapid duplication of an image of a text (a page) using a suitably powered printing press. Human beings had to do the hard work of looking up, reading, translating, and summarizing knowledge. We had to wait until Edison to record spoken language – and again his technology simply made analogue copies.
+
+    Digital language technology can now automate the very processes of translation, content production, and knowledge management for all European languages. It can also empower intuitive language\/speech-based interfaces for household electronics, machinery, vehicles, computers and robots. Real-world commercial and industrial applications are still in the early stages of development, yet R\&D achievements are creating a genuine window of opportunity. For example, machine translation is already reasonably accurate in specific domains, and experimental applications provide multilingual information and knowledge management as well as content production in many European languages.
+
+    As with most technologies, the first language applications such as voice-based user interfaces and dialogue systems were developed for highly specialised domains, and often exhibit limited performance. But there are huge market opportunities in the education and entertainment industries for integrating language technologies into games, cultural heritage sites, edutainment packages, libraries, simulation environments and training programmes. Mobile information services, computer-assisted language learning software, eLearning environments, self-assessment tools and plagiarism detection software are just some of the application areas where language technology can play an important role. The popularity of social media applications like Twitter and Facebook suggest a further need for sophisticated language technologies that can monitor posts, summarise discussions, suggest opinion trends, detect emotional responses, identify copyright infringements or track misuse.
+
+    Language technology represents a tremendous opportunity for the European Union. It can help address the complex issue of multilingualism in Europe --- the fact that different languages coexist naturally in European businesses, organisations and schools. But citizens need to communicate across these language borders criss-crossing the European Common Market, and language technology can help overcome this final barrier while supporting the free and open use of individual languages. Looking even further forward, innovative European multilingual language technology will provide a benchmark for our global partners when they begin to enable their own multilingual communities. Language technology can be seen as a form of `assistive' technology that helps overcome the `disability' of linguistic diversity and make language communities more accessible to each other.
+
+    Finally, one active field of research is the use of language technology for rescue operations in disaster areas, where performance can be a matter of life and death: Future intelligent robots with cross-lingual language capabilities have the potential to save lives.
+  }
+
+  \ParallelPar
+
+
+  \subsection{ --- Challenges Facing Language Technology }
+
+  \MyParallelLText{
+    
+  }
+
+  \MyParallelRText{
+    Although language technology has made considerable progress in the last few years, the current pace of technological progress and product innovation is too slow. Widely-used technologies such as the spelling and grammar correctors in word processors are typically monolingual, and are only available for a handful of languages. Online machine translation services, although useful for quickly generating a reasonable approximation of a document's contents, are fraught with difficulties when highly accurate and complete translations are required. Due to the complexity of human language, modelling our tongues in software and testing them in the real world is a long, costly business that requires sustained funding commitments. Europe must therefore maintain its pioneering role in facing the technology challenges of a multiple-language community by inventing new methods to accelerate development right across the map. These could include both computational advances and techniques such as crowdsourcing.
+  }
+
+  \ParallelPar
+
+
+  \subsection{ --- Language Acquisition in Humans and Machines}
+
+  \MyParallelLText{
+   
+
+   
+  }
+
+  \MyParallelRText{
+    To illustrate how computers handle language and why it is difficult to program them to use it, let's look briefly at the way humans acquire first and second languages, and then see how language technology systems work.
+
+    Humans acquire language skills in two different ways. Babies acquire a language by listening to the real interactions between its parents, siblings and other family members. From the age of about two, children produce their first words and short phrases. This is only possible because humans have a genetic disposition to imitate and then rationalise what they hear.
+
+    Learning a second language at an older age requires more effort, largely because the child is not immersed in a language community of native speakers. At school, foreign languages are usually acquired by learning grammatical structure, vocabulary and spelling using drills that describe linguistic knowledge in terms of abstract rules, tables and examples. Learning a foreign language gets harder with age.
+
+    The two main types of language technology systems `acquire' language capabilities in a similar manner. Statistical (or `data-driven') approaches obtain linguistic knowledge from vast collections of concrete example texts. While it is sufficient to use text in a single language for training, e.g., a spell checker, parallel texts in two (or more) languages have to be available for training a machine translation system. The machine learning algorithm then `learns' patterns of how words, short phrases and complete sentences are translated.
+
+    This statistical approach can require millions of sentences and performance quality increases with the amount of text analysed. This is one reason why search engine providers are eager to collect as much written material as possible. Spelling correction in word processors, and services such as Google Search and Google Translate all rely on statistical approaches. The great advantage of statistics is that the machine learns fast in continuous series of training cycles, even though quality can vary arbitrarily.
+
+    The second approach to language technology and machine translation in particular is to build rule-based systems. Experts in the fields of linguistics, computational linguistics and computer science first have to encode grammatical analyses (translation rules) and compile vocabulary lists (lexicons). This is very time consuming and labour intensive. Some of the leading rule-based machine translation systems have been under constant development for more than twenty years. The great advantage of rule-based systems is that the experts have more detailed control over the language processing. This makes it possible to systematically correct mistakes in the software and give detailed feedback to the user, especially when rule-based systems are used for language learning. But due to the high cost of this work, rule-based language technology has so far only been developed for major languages.
+
+    As the strengths and weaknesses of statistical and rule-based systems tend to be complementary, current research focuses on hybrid approaches that combine the two methodologies. However, these approaches have so far been less successful in industrial applications than in the research lab.
+
+    As we have seen in this chapter, many applications widely used in today's information society rely heavily on language technology. Due to its multilingual community, this is particularly true of Europe's economic and information space. Although language technology has made considerable progress in the last few years, there is still huge potential in improving the quality of language technology systems. In the following sections, we will describe the role of Dutch in European information society and assess the current state of language technology for the Dutch language.
+  }
+
+  \ParallelPar
+
+
+  % --------------------------------------------------------------------------
+  \section{ --- }
+
+
+  \subsection{ --- General Facts}
+
+  \MyParallelLText{
+    
+  }
+
+  \MyParallelRText{
+
+
+  }
+  \ParallelPar
+
+
+
+  \subsection{ ---  }
+
+  \MyParallelLText{
+    
+  }
+
+  \MyParallelRText{
+
+
+  }
+
+  \ParallelPar
+
+
+  \subsection{ --- Recent Developments}
+
+  \MyParallelLText{
+
+
+  }
+
+  \MyParallelRText{
+
+  }
+
+  \ParallelPar
+
+
+  \subsection{ --- }
+
+  \MyParallelLText{
+
+
+    }
+
+  \MyParallelRText{
+   
+  }
+
+  \ParallelPar
+
+
+  \subsection{ --- Language in Education}
+
+  \MyParallelLText{
+
+
+  }
+
+  \MyParallelRText{
+
+  }
+
+  \ParallelPar
+
+
+  \subsection{--- International Aspects}
+
+  \MyParallelLText{
+
+  }
+
+  \MyParallelRText{
+
+
+  }
+
+  \ParallelPar
+
+
+  \subsection{ --- }
+
+  \MyParallelLText{
+
+  }
+
+  \MyParallelRText{
+    In June 2010, 88.6\% of the Dutch \cite{Internetworldstats} were internet users and 72.7\% of the Flemish  \cite{VRIND} had internet. Among young people, the proportion of users is even higher. There is an active Dutch-speaking web community, e.g. reflected by the Dutch Wikipedia, the ninth largest Wikipedia in the world \cite{Wikipedia}.  A recent study showed that 90\% of the European internet users prefer reading a website in their native language over reading a website in a non-native language, and only a small minority would accept a web page in English if there is no alternative in their own language \cite{Flash}. Furthermore, active use of the internet drops to 35\% when it has to be done in a non-native language. This witnesses to the importance of the native language on the internet.
+
+\boxtext{XXX The German Wikipedia is the second largest Wikipedia after English.}
+
+    With about 1.24 million Internet domains \cite{Webstats}, the Netherlands's top-level country domain .nl is the 11th country extension. Though not bad for a small country and growing, the amount of Dutch language data available on the web is of course minor compared to the English language data and language data from several other bigger languages such as German and French.
+
+    For language technology, the growing importance of the internet is important in two ways. On the one hand, the large amount of digitally available language data represents a rich source for analysing the usage of natural language, in particular by collecting statistical information. On the other hand, the internet offers a wide range of application areas involving language technology.
+
+\boxtext{XXX With about 14 million Internet domains in November 2010, the .de top-level country domain for Germany is the world’s largest country extension.}
+
+    The most commonly used web application is certainly web search, which involves the automatic processing of language on multiple levels, as we will see in more detail in the second part of this paper. It involves sophisticated language technology, differing for each language. For Dutch, this comprises matching words with variants with changed spellings as well as words with diacritics such as accents and tremas with words without these diacritics. But internet users and providers of web content can also profit from language technology in less obvious ways, for example if it is used to automatically translate web contents from one language into another. Considering the high costs associated with manually translating these contents, it may be surprising how little usable language technology is built in compared to the anticipated need.
+
+    However, it becomes less surprising if we consider the complexity of (the Dutch) language and the number of technologies involved in typical LT applications. In the next chapter, we will present an introduction to language technology and its core application areas as well as an evaluation of the current situation of LT support for Dutch.
+
+    For further information on the Dutch language we refer to \cite{e-ans}, \cite{TUFenW}, \cite{NedWiki:Fries}, \cite{NedWiki:Nederlands}, \cite{NedWiki:Nedersaksisch},  \cite{Ethn-Dutch} and \cite{Ethn-LN}.
+  }
+
+  \ParallelPar
+
+
+  % --------------------------------------------------------------------------
+  \section{  --- Language Technology Support for Dutch}
+  \subsection{Taaltechnologie{\"e}n --- Language Technologies}
+
+  \MyParallelLText{
+
+
+      }
+
+  % --------------------------------------------------------------------------
+  \MyParallelRText{
+    Language technologies are information technologies that are specialised for dealing with human language. Therefore these technologies are also often subsumed under the term `Human Language Technology'. Human language occurs in spoken and written form. Whereas speech is the oldest and most natural mode of language communication, complex information and most of human knowledge is maintained and transmitted in written texts. Speech and text technologies process or produce language in these two modes of realisation. But language also has aspects that are shared between speech and text such as dictionaries, most of grammar and the meaning of sentences. Thus large parts of language technology cannot be subsumed under either speech or text technologies. Among those are technologies that link language to knowledge. The figure on the right illustrates the Language Technology landscape. In our communication we mix language with other modes of communication and other information media. We combine speech with gesture and facial expressions. Digital texts are combined with pictures and sounds. Movies may contain language in spoken and written form. Thus speech and text technologies overlap and interact with many other technologies that facilitate processing of multimodal communication and multimedia documents.   }
+  \ParallelPar
+
+
+  \subsection{ --- Language Technology Application Architectures}
+
+  \MyParallelLText{
+    
+
+  }
+
+  \MyParallelRText{
+    Typical software applications for language processing consist of several components that mirror different aspects of language and of the task they implement. The figure on the right displays a highly simplified architecture that can be found in a text processing system. The first three modules deal with the structure and meaning of the text input:
+    \begin{itemize}
+    \item Pre-processing: cleaning up the data, removing formatting, detecting the input language, replacing "e" by "{\"e}" for Dutch, etc.
+ 	\item Grammatical analysis: finding the verb and its objects, modifiers, etc.; detecting the sentence structure.
+ 	\item Semantic analysis: disambiguation (Which meaning of \emph{apple} is the right one in the given context?), resolving the reference of pronouns such as  \emph{she}, and expressions such as \emph{the car}, etc.; representing the meaning of the sentence in a machine-readable way
+    \end{itemize}
+
+    Task-specific modules then perform many different operations such as automatic summarisation of an input text, database look-ups and many others. Below, we will illustrate \textbf{core application areas} and highlight certain of the modules of the different architectures in each section. Again, the architectures are highly simplified and idealised, serving for illustrating the complexity of language technology applications in a generally understandable way.
+
+    After the introduction of the core application areas, we will shortly give an overview of the situation in LT research and education, concluding with an overview of (past) funding programs. In the end of this section, we will present an expert estimation on the situation regarding core LT tools and resources in a number of dimensions such as availability, maturity, or quality. This table gives a good overview on the situation of LT for Dutch.
+
+  }
+  \ParallelPar
+
+
+  \subsection{ --- Core Application Areas}
+
+
+
+
+  \subsubsection{ --- Language Checking}
+
+  \MyParallelLText{
+
+
+  }
+
+  \MyParallelRText{
+    Anyone using a word processing tool such as Microsoft Word has come across a spell checking component that indicates spelling mistakes and proposes corrections. 40 years after the first spelling correction program by Ralph Gorin, language checkers nowadays do not simply compare the list of extracted words against a dictionary of correctly spelled words, but have become increasingly sophisticated. In addition to language-dependent algorithms for handling morphology (e.g. plural formation), some are now capable of recognizing syntax-related errors, such as a missing verb or a verb that does not agree with its subject in person and number, e.g. in \emph{She *write a letter}. However, most available spell checkers (including Microsoft Word) will find no errors in the following text:\\
+
+    \emph{I have a spelling checker,\\
+    It came with my PC.\\
+    It plane lee marks four my revue\\
+    Miss steaks aye can knot sea.\\}
+
+    For handling this type of errors, analysis of the context is needed in many cases, e.g., for deciding whether a verb has to be written with \emph{dt} or \emph{d} at the end in Dutch, as in:\\
+
+    \emph{Hij heeft het dier \underline{verwond}.\\
+    (He has injured the animal)\\
+    Hij \underline{verwondt} het dier.\\
+    (He injures the animal.)\\}
+
+    This either requires the formulation of language-specific grammar rules, i.e. a high degree of expertise and manual labour, or the use of a so-called statistical language model.  Such models calculate the probability of a particular word occurring in a specific environment (i.e., the preceding and following words). For example, \emph{hij verwondt} is a much more probable word sequence than \emph{hij verwond}. A statistical language model can be automatically derived using a large amount of (correct) language data (i.e. a corpus). Up to now, these approaches have mostly been developed and evaluated on English language data. However, they do not necessarily transfer straightforwardly to Dutch with its more flexible word order, verb particle combinations, compounds, and crossing dependencies.
+
+    The use of Language Checking is not limited to word processing tools, but it is also applied in authoring support systems. Accompanying the rising number of technical products, the amount of technical documentation has rapidly increased over the last decades. Fearing customer complaints about wrong usage and damage claims resulting from bad or badly understood instructions, companies have begun to focus increasingly on the quality of technical documentation, at the same time targeting the international market. Advances in natural language processing led to the development of authoring support software, which assists the writer of technical documentation to use vocabulary and sentence structures consistent with certain rules and (corporate) terminology restrictions.
+
+    Proofing tools for Dutch that were incorporated in Microsoft products were developed in the past by Lernout \& Hauspie, independently later by Polderland, and this software is currently maintained and further developed by Knowledge Concepts.  Other companies active in this area are *TAL{\=O} BV and Carp technologies.
+
+    Besides spell checkers and authoring support, Language Checking is also important in the field of computer-assisted language learning and is applied to automatically correct queries sent to Web Search engines, e.g. Google's `Did you mean�' suggestions.
+
+  }
+  \ParallelPar
+
+
+  \subsubsection{ --- Web Search}
+
+  \MyParallelLText{
+   
+
+  }
+
+  \MyParallelRText{
+    Search on the web, in intranets, or in digital libraries is probably the most widely used and yet underdeveloped Language Technology today. The search engine Google, which started in 1998, is nowadays used for about 80\% of all search queries world-wide \cite{Spiegel}. The verb \emph{googelen} even has an entry in the Dutch Van Dale dictionary. Neither the search interface nor the presentation of the retrieved results has significantly changed since the first version. In the current version, Google offers a spelling correction for misspelled words and also, in 2009, incorporated basic semantic search capabilities into their algorithmic mix \cite{GoogleSem}, which can improve search accuracy by analysing the meaning of the query terms in context. The success story of Google shows that with a lot of data at hand and efficient techniques for indexing these data, a mainly statistically-based approach can lead to satisfactory results.
+
+    However, for a more sophisticated request for information, integrating deeper linguistic knowledge is essential. In the research labs, experiments using machine-readable thesauri and ontological language resources like WordNet (or the equivalent Dutch EuroWordNet), have shown improvements by allowing to find a page on the basis of synonyms of the search terms, e.g. \emph{kernenergie}  and \emph{nucleaire energie} (atomic energy, nuclear energy) or even more loosely related terms.
+
+    The next generation of search engines will have to include much more sophisticated Language Technology. If a search query consists of a question or another type of sentence rather than a list of keywords, retrieving relevant answers to this query requires an analysis of this sentence on a syntactic and semantic level as well as the availability of an index that allows for a fast retrieval of the relevant documents. For example, imagine a user inputs the query `Give me a list of all companies that were taken over by other companies in the last five years'. For a satisfactory answer, syntactic parsing needs to be applied to analyse the grammatical structure of the sentence and determine that the user is looking for companies that have been taken over and not companies that took over others. Also, the expression \emph{in the last five years} needs to be processed in order to find out which years it refers to.
+
+    Finally, the processed query needs to be matched against a huge amount of unstructured data in order to find the piece or pieces of information the user is looking for. This is commonly referred to as information retrieval and involves the search for and ranking of relevant documents. In addition, generating a list of companies, we also need to extract the information that a particular string of words in a document refers to a company name. This kind of information is made available by so-called named-entity recognisers.
+
+    Even more demanding is the attempt to match a query to documents written in a different language. For cross-lingual information retrieval, we have to automatically translate the query to all possible source languages and transfer the retrieved information back to the target language. The increasing percentage of data available in non-textual formats drives the demand for services enabling multimedia information retrieval, i.e., information search on images, audio, and video data. For audio and video files, this involves a speech recognition module to convert speech content into text or a phonetic representation, to which user queries can be matched.
+
+    In the Netherlands, several companies are active in these domains, including AskNow Solutions, Carp Technologies, GridLine, Irion Technologies, Knowledge Concepts, MediaLab Solutions, RightNow! (formerly Q-Go), TextKernel, and others. In Belgium Natlanco, InterSystems (formerly i.Know), ICMS, Aktor Technologies, Mentoring Systems and CrossMinder are active in these areas.
+
+    The focus of development for these companies is in providing add-ons and advanced search engines for special-interest portals by exploiting topic-relevant semantics. Due to the still high demands in processing power, such search engines are only economically usable on relatively small text corpora. Processing time easily exceeds that of a common statistical search engine as, e.g., provided by Google by a magnitude of thousands. These search engines also have high demand in topic-specific domain modelling, making it not feasible to use these mechanisms on web scale.
+
+  }
+
+  \ParallelPar
+
+
+  \subsubsection{ --- Speech Interaction}
+
+  \MyParallelLText{
+  
+
+  }
+
+  \MyParallelRText{
+    Speech interaction is one of many application areas that depend on speech technology, i.e., technologies for processing spoken language. Speech interaction technology is used to create interfaces that enable users to interact in spoken language instead of a graphical display, keyboard and mouse. Today, these voice user interfaces (VUIs) are employed for partially or fully automating service offerings provided by companies to their customers, employees, or partners via the telephone. Business domains that rely heavily on VUIs are banking, logistics, public transportation, and telecommunications. Other usages of Speech Interaction technology are interfaces to particular devices, e.g. in-car navigation systems, and the employment of spoken language as an alternative to the input/output modalities of graphical user interfaces, e.g. in smart phones.
+
+    Speech interaction comprises four technologies:
+    \begin{itemize}
+    \item Automatic speech recognition (ASR) is responsible for deter-mining which words were actually spoken given a sequence of sounds uttered by a user.
+ 	\item Syntactic analysis and semantic interpretation deal with analysing the syntactic structure of a user's utterance and interpreting the latter according to the purpose of the respective system.
+ 	\item Dialogue management is required for determining, on the part of the system the user interacts with, which action shall be taken given the user's input and the functionality of the system.
+ 	\item Speech synthesis (Text-to-Speech, TTS) technology is employed for transforming the wording of that utterance into sounds that will be output to the user.
+    \end{itemize}
+
+    One of the major challenges is to have an ASR system recognise the words uttered by a user as precisely as possible. This is difficult because speech does not contain spaces between words (as in written language), and because the speech signal is highly variable in character (accent differences, male voices differ from female voices, background noises, etc.).  This requires either a restriction of the range of possible user utterances to a limited set of keywords, or the manual creation of language models that cover a large range of natural language user utterances. Whereas the former results in a rather rigid and inflexible usage of a VUI and possibly causes a poor user acceptance, the creation, tuning and maintenance of language models may increase the costs significantly. However, VUIs that employ language models and initially allow a user to flexibly express his/her intent --- evoked, e.g., by a `How may I help you' greeting --- show both a higher automation rate and a higher user acceptance and may therefore be considered as advantageous over a less flexible directed dialogue approach.
+
+    For the output part of a VUI, companies tend to use pre-recorded utterances of professional --- ideally corporate --- speakers a lot. For static utterances, in which the wording does not depend on the particular contexts of use or the personal data of the given user, this will result in a rich user experience. However, the more dy-namic content an utterance needs to consider, the more the user experience may suffer from a poor prosody resulting from concatenating single audio files. In contrast, today's TTS systems prove superior regarding the prosodic naturalness of dynamic utterances, even though improvements are still possible.
+
+    Regarding the market for speech interaction, the last decade underwent a strong standardisation of the interfaces between the different technology components, as well as by standards for creating particular software artefacts for a given application. There also has been strong market consolidation within the last ten years, particularly in the field of ASR and TTS. Here, the national markets in the G20 countries -- i.e. economically strong countries with a considerable population -- are dominated by less than 5 players worldwide, with Nuance (USA) and Loquendo (Italy) being the most prominent ones in Europe. Nuance has a big development centre in Flanders.
+
+    On the Dutch TTS market, there are additional smaller companies like Acapela, based in Wallonia, SVOX, headquartered in Switzerland, and Fluency, based in Amsterdam. There are many companies that are active in using TTS and ASR technology in applications and services. These include Advance Voice Technology, DB-Scape, Dialogs Unlimited, DutchEar,   G2 Speech,  Logica, OrcaVoice, Quentris, Telecats, TomTom and Voice Data Bridge. Several companies and foundations focus on applications for user groups with specific demands such as physically handicapped people, dyslectic people, and elderly. These include Axendo, Cochlear Benelux, Dedicon, JABBLA, Kamelego, Lexima, rdgKompagne, Sensotec NV, and VoiceCore.
+
+    Regarding dialogue management technology and know-how, some relevant companies are Carp technologies, Irion,  RightNow! (formerly Q-Go) and  RE-Phrase for text-based applications, and  Dialogs Unlimited, DutchEar, Telecats, and Voice Data Bridge for speech-based applications. Within the domain of speech interaction, a genuine market for the linguistic core technologies for syntactic and semantic analysis does not exist yet.
+
+    As for the actual employment of VUIs, demand has increased within the last 5 years. This tendency has been driven by end customers' increasing demand for customer self-service and the considerable cost optimisation aspect of automated telephone services, as well as by a significantly increased acceptance of spoken language as a modality for man-machine interaction.
+
+    Looking beyond today's state of technology, there will be significant changes due to the spread of smart phones as a new platform for managing customer relationships - in addition to the tele-phone, internet, and email channels. This tendency will also affect the employment of speech technology. On the one hand, demand for telephony-based VUIs will decrease, on the long run. On the other hand, the usage of spoken language as a user-friendly input modality for smart phones will gain significant importance. This tendency is supported by the observable improvement of speaker-independent speech recognition accuracy for speech dictation services that are already offered as centralised services to Smartphone users. Given this `outsourcing' of the recognition task to the infrastructure of applications, the application-specific employment of linguistic core technologies will supposedly gain importance compared to the present situation.
+
+  }
+
+  \ParallelPar
+
+
+  \subsubsection{ --- Machine Translation}
+
+  \MyParallelLText{
+  
+
+  }
+
+  \MyParallelRText{
+    The idea of using digital computers for translation of natural lan-guages came up in 1946 by A. D. Booth and was followed by sub-stantial funding for research in this area in the 1950s and begin-ning again in the 1980s. Nevertheless, Machine Translation (MT) still fails to fulfil the high expectations it gave rise to in its early years.
+
+    At its basic level, MT simply substitutes words in one natural lan-guage by words in another. This can be useful in subject domains with a very restricted, formulaic language, e.g., weather reports. However, for a good translation of less standardised texts, larger text units (phrases, sentences, or even whole passages) need to be matched to their closest counterparts in the target language. The major difficulty here lies in the fact that human language is ambiguous, which yields challenges on multiple levels, e.g., word sense disambiguation on the lexical level (e.g. \emph{graven} can mean `counts',  `graves' or `to dig') or the interpretation of relative pronouns (as subject or as object) on the syntactic level as in:\\
+
+    \emph{De man die de vrouw zag\\}
+    \emph{(The man who saw the woman) or\\
+    (The man who the woman saw)\\}
+
+    One way of approaching the task is based on linguistic rules. For translations between closely related languages, a direct translation may be feasible in simple cases. But often rule-based (or knowledge-driven) systems must analyse the input text and create an intermediary, symbolic representation, from which the text in the target language is generated. The success of these methods is highly dependent on the availability of extensive lexicons with morphological, syntactic, and semantic information, and large sets of grammar rules carefully designed by a skilled linguist.
+
+    Beginning in the late 1980s, as computational power increased and became less expensive, more interest was shown in statistical models for MT. The parameters of these statistical models are derived from the analysis of bilingual text corpora, such as the \emph{Europarl} parallel corpus, which contains the proceedings of the European Parliament in 11 European languages. Given enough data, statistical MT works well enough to derive an approximate meaning of a foreign language text. However, unlike knowledge-driven systems, statistical (or data-driven) MT often generates ungrammatical output. On the other hand, besides the advantage that less human effort is required for grammar writing, data-driven MT can also cover particularities of the language that go missing in knowledge-driven systems, for example idiomatic expressions.
+
+    As the strengths and weaknesses of knowledge- and data-driven MT are complementary, researchers nowadays unanimously target hybrid approaches combining methodologies of both. This can be done in several ways. One is to use both knowledge- and data-driven systems and have a selection module decide on the best output for each sentence. However, for longer sentences, no result will be perfect. A better solution is to combine the best parts of each sentence from multiple outputs, which can be fairly complex, as corresponding parts of multiple alternatives are not always obvious and need to be aligned.
+
+    For Dutch, MT is particularly challenging. The possibility of creating arbitrary new words by compounding makes dictionary analysis and dictionary coverage difficult; rather free word order, split verb constructions and R-pronouns pose problems for analysis.
+
+    Leading commercial MT systems from the past like Systran, Globalink, LOGOS, METAL (and its spin-offs, LANT (currently Xplanation), GMS and Lucy Software), LMT developed by IBM (forming the basis for Linguatec  and Lingenio) never covered the Dutch language, probably because it was not interesting to do so from a commercial point of view. Only some research systems for Dutch were developed, partially in companies (Philips: Rosetta, BSO: Distributed Translation) and partially in academia (Utrecht University \& KU Leuven: Eurotra). Translation systems for Dutch were only produced when funded. For example, METAL produced a Dutch-French MT system for the ministries of Agriculture and Internal Affairs, and after the Dutch Language Union issued a call for the development of MT systems translating between Dutch on the one hand and English and French on the other in 1999 \cite{Cucchiarini:etal:2000},  funded by public money, Systran developed such systems in the context of the NL-Translex project.
+
+    All systems mentioned above were knowledge-based. With the rise of statistical MT, Dutch has become a language quite generally covered. It is included in the 52 languages Google Translate offers and in the 24 languages SDL Language Weaver offers.
+
+    The use of machine translation can significantly increase productivity provided the system is intelligently adapted to user-specific terminology and integrated into a workflow. Most MT companies stress that they can rapidly adapt their standard systems to com-pany-specific dictionaries, terminology and translation memories, thereby increasing MT quality significantly.
+
+    There is still a huge potential for improving the quality of MT systems. Challenges include the adaptability of the language resources to a given subject domain or user area and the integration into existing workflows with term bases and translation memories. In addition, most of the current systems are English-centred and support only few languages directly from and into Dutch, which leads to frictions in the total translation workflow, and e.g. forces MT users to learn different lexicon coding tools for different systems.
+
+    Evaluation campaigns help compare the quality of MT systems, the different approaches and the status of the systems for different language pairs. Table~\ref{euromatrixplustable}, which was prepared during the EC Euromatrix+ project, shows the pair-wise performances obtained for 22 of the 23 official EU languages (Irish was not compared). The results are ranked according to a BLEU score, which indicates higher scores for better translations \cite{bleu1}.   A human translator would achieve a score of around 80 points.
+
+    The best results (in green and blue) were achieved by languages that benefit from a considerable research effort in coordinated programs and from the existence of many parallel corpora (e.g., English, French, Dutch, Spanish and German). The languages with poorer results are shown in red. These languages either lack such development efforts or are structurally very different from other languages (e.g., Hungarian, Maltese and Finnish).
+
+
+
+  }
+
+  \ParallelPar
+
+\begin{table}
+\caption{Performantie van automatisch vertalen voor taalparen in het Euromatrix+ project --- Performance of Machine Translation for Language Pairs in the Euromatrix+ Project.}
+\label{euromatrixplustable}
+\end{table}
+
+
+  \subsection{ --- Language Technology `behind the scenes'}
+
+  \MyParallelLText{
+
+
+  }
+
+  \MyParallelRText{
+    Building Language Technology applications involves a range of subtasks that do not always surface at the level of interaction with the user,  but provide significant service functionalities `under the hood' of the system. Therefore, they constitute important research issues that have become individual sub-disciplines of Computational Linguistics in academia.
+
+    Question answering has become an active area of research, for which annotated corpora have been built and scientific competitions have been started. The idea is to move from keyword-based search (to which the engine responds with a whole collection of potentially relevant documents) to the scenario of the user asking a concrete question and the system providing a single answer: `At what age did Neil Armstrong step on the moon?' - `38'. While this is obviously related to the aforementioned core area Web Search, question answering nowadays is primarily an umbrella term for research questions such as what types of questions should be distinguished and how should they be handled, how can a set of documents that potentially contain the answer be analysed and compared (do they give conflicting answers?), and how can specific information - the answer - be reliably extracted from a document, without unduly ignoring the context.
+
+    This is in turn related to the information extraction (IE) task, an area that was extremely popular and influential at the time of the `statistical turn' in Computational Linguistics, in the early 1990s. IE aims at identifying specific pieces of information in specific classes of documents; this could be e.g. the detection of the key players in company takeovers as reported in newspaper stories. Another scenario that has been worked on is reports on terrorist incidents, where the problem is to map the text to a template specifying the perpetrator, the target, time and location of the incident, and the results of the incident. Domain-specific template-filling is the central characteristic of IE, which for this reason is another example of a `behind the scenes' technology that constitutes a well-demarcated research area but for practical purposes then needs to be embedded into a suitable application environment.
+
+    Two `borderline' areas, which sometimes play the role of stand-alone application and sometimes that of supportive, `under the hood' component are text summarisation and text generation. Summarisation, obviously, refers to the task of making a long text short, is used in virtually every search engine to provide a snippets of a found document, and is offered for instance as a functionality within MS Word. It works largely on a statistical basis, by first identifying `important' words in a text (that is, for example, words that are highly frequent in this text but markedly less frequent in general language use) and then determining those sentences that contain many important words. These sentences are then marked in the document, or extracted from it, and are taken to constitute the summary. In this scenario, which is by far the most popular one, summarisation equals sentence extraction: the text is reduced to a subset of its sentences. All commercial summarisers make use of this idea. An alternative approach, to which some research is devoted, is to actually synthesise new sentences, i.e., to build a summary of sentences that need not show up in that form in the source text. This requires a certain amount of deeper understanding of the text and therefore is much less robust. All in all, a text generator is in most cases not a stand-alone application but embedded into a larger software environment, such as into the clinical information system where patient data is collected, stored and processed, and report generation is just one of many functionalities.
+
+    For Dutch, the situation in all these research areas is much less developed than it is for English, where question answering, information extraction, and summarisation have since the 1990s been the subject of numerous open competitions, primarily those organised by DARPA/NIST in the United States. These have significantly improved the state of the art, but the focus has always been on English; some competitions have added multilingual tracks, but Dutch was never prominent, though some challenges are organised from Flanders \cite{SemEval}.  Nevertheless, work on question answering was promoted by the IMIX programme that focused on Interactive Multimodal Information eXtraction applied to Dutch resources \cite{IMIX}.  In this programme, question answering systems, with speech input and output, supporting follow-up questions were developed for the general domain and one specific for the medical domain. In addition, systems to generate textual output in combination with other modalities, and dialogue managers to connect all these systems were developed. The company RightNow (formerly Q-GO) from the Netherlands has been very successful in the area of textual question answer systems operating via chats or e-mail.  Eindhoven University (IPO) has worked on a language and speech generation system, that has later been acquired by Polderland (and probably now resides with Knowledge Concepts), but it appears hardly to have been used outside its original purpose \cite{Theune:2003}.  Tilburg University has worked on multi-document summarisation (integrating different messages on the same topic) in the STEVIN DAESO project \cite{DAESO}.  Nevertheless, there are hardly any annotated corpora or other resources for these tasks.
+
+      }
+
+  \ParallelPar
+
+
+  \subsection{  --- LT Research and Education }
+
+  \MyParallelLText{
+
+}
+
+  \MyParallelRText{
+    In academia there are a number of excellent centres in the area of human language technology, e.g.  KU Leuven, Ghent university, Radboud University Nijmegen and University of Twente for speech technology, Tilburg and Antwerp universities for machine learning techniques in NLP, Utrecht University, and Leuven for NLP and machine translation, Groningen and Amsterdam for parsing, Amsterdam for sentiment mining and parsing, etc. It is, however, very difficult to attract students for the NLP field. Possible causes for this may be the relative low visibility of NLP in the university curricula and the fact that many NLP research groups are in the humanities (students there do not easily take a technical view on language, as is required for NLP).
+
+    The academic players in the Netherlands and Flanders do not necessarily focus on the Dutch language: in research the focus is typically on English in order to be able to make sensible comparisons with researchers abroad. Nevertheless, several researchers are active in the area of Computer Aided Language Learning (CALL), where language and speech technology is used to increase language skills of first and second language learners. Relevant organisations include RU Nijmegen, University of Antwerp Linguapolis and KULAK.
+
+  }
+
+  \ParallelPar
+
+
+  \subsection{ --- Language Technology Industry}
+
+  \MyParallelLText{
+   
+}
+
+  \MyParallelRText{
+    The LT field in the Netherlands and Belgium consist of many organisations, both industry (some 65) and knowledge centres (44) \cite{Orgs}.  The sector is reasonably well organised, with an active professional organisation NOTaS \cite{NOTAS} in the Netherlands consisting of 15 industrial and academic partners, the Flemish research community cooperating in CLIF \cite{CLIF}, and intense cooperation in the last decade between players from the Netherlands and Flanders, and from industry and academia in the joint Netherlands-Flanders LT programmes CGN (Spoken Dutch Corpus) \cite{CGN} and especially STEVIN \cite{STEVIN}. The SMEs in Flanders, however, are acting individually, and have not organised themselves in a sector, which makes them relatively invisible.
+
+    Most industrial players are very small SMEs and have to struggle every day to survive, or they are small departments in a company that has a different focus for its core business activities. Nevertheless, some SMEs are quite successful and have been able to build up a stable business. Most SMEs in the area of speech technology are system integrators, application developers, or service providers. The actual development of technology, at least in speech technology, has been concentrated in a very few number of players (e.g. Nuance).
+
+    One problem for marketing LT is that LT is not clearly visible because it is hidden as an integrated part of a more encompassing product or service, even though it is a component of products and services used by many users (e.g. search on the internet, texting on mobile phones, etc.).
+
+    Even though there are many players in the Netherlands and Flanders, this does not imply that their focus is also on the Dutch language. For industry, the Dutch language is commercially less interesting than other languages, and the necessary investments can often not be justified by the small Dutch-language market.
+}
+
+  \ParallelPar
+
+
+ \subsection{ --- Language Technology Programs}
+
+  \MyParallelLText{
+
+
+}
+
+  \MyParallelRText{
+  Activities for the Dutch language have to be promoted and supported explicitly. Fortunately, this has been done in several programmes and projects over the last one and a half decade. Thus a Dutch language spoken train information system was developed as a carrier for research in speech analysis and generation, in language analysis and generation, and in dialogue management in the OVIS programme in the late nineties. The NL-Translex project was already mentioned above. Flanders had a short term programme on LT in the mid nineties. The IMIX programme, mentioned above, carried out research using systems for the Dutch language.  In the IOP MMI (Innovation Research Programme on Man Machine Interaction) and CATCH \cite{CATCH} programs language and speech technology have been used as tools for man machine interfaces and disclosing cultural heritage. Most prominent in their focus on the Dutch language are the joint Netherlands-Flanders CGN and STEVIN programmes. These have yielded significant progress in the availability of basic resources (data and tools) for the Dutch language, some initial research and several end user applications. Though some of the results achieved in these projects can be exploited in industry and in academia (e.g. in the CLARIN-NL research infrastructure \cite{CLARIN-NL} ) the prospects for optimally exploiting these results in actual research and in industry further are grim, since it appears not to have the focus of attention of the government in the Netherlands, and research has been reorganised so that it has become more difficult to get funding for discipline-specific programmes. The situation is probably a bit more positive in Flanders, though. Furthermore, some prerequisites for exploiting the potential are in place, such as visibility and accessibility of the resources produced in earlier programmes via the TST-Centrale (Dutch HLT Agency).
+
+  The programmes mentioned also contributed significantly to bringing together the speech and language technology communities, which until recently were heterogeneous communities and operated quite separated from each other. These disciplines are distributed over computer or engineering science faculties (speech technology in Flanders, and in Twente; some language technology) and the humanities faculties (most though not all language technology) and generally meet in several separate conferences. The only exception may be the LREC conference \cite{LREC}, which however has a specific focus on language resources and evaluation.
+
+  It is generally expected that the role of LT is going to be boosted enormously by the increasing growth of content that is ubiquitously available via an increasing amount of small mobile devices with large computational power (smart phones, iPad, etc.) and continuous access to the internet. Such devices have a relatively small screen, and no or primitive keyboards, which makes the use of speech increasingly more natural and necessary, and the amount of information they must search, summarise, translate or otherwise process requires an enormous boost in LT technology.
+
+  It is therefore of the utmost importance that the activities started with the CGN and STEVIN programmes are continued, so that the scientific and commercial opportunities lying around the corner are optimally taken advantage of and the Dutch language and their native speakers can play a lasting role in the modern information and communication society also at the European level.
+
+}
+
+  \ParallelPar
+
+
+
+
+  \subsection{ --- Availability of Tools and Resources}
+
+  \MyParallelLText{
+
+
+  }
+
+  \MyParallelRText{
+    The following table provides an overview of the current situation of language technology support for Dutch. The rating for existing tools and resources was generated by leading experts in the field who provided estimates based on a scale from 0 (very low) to 6 (very high) according to seven criteria.
+
+    % Table here
+For Dutch, key results regarding technologies and resources include the following:
+
+\begin{itemize}
+ \item Speech processing currently seems to be more mature than processing of written text (though more complex applications still pose serious challenges to speech technology).
+ \item Advanced information access technologies are in their infancies (Information Extraction, Question Answering, Advanced Discourse Processing, Summarisation, etc.).
+ \item The more linguistic and semantic knowledge a tool takes into account, the more gaps exist (see, e.g., information retrieval v. text semantics); more efforts for supporting deep linguistic processing are needed.
+ \item	Research was successful in designing particular high quality software, but many of the resources lack standardisation and especially interoperability; concerted programs and initiatives are needed to make data and tools truly interoperable.
+ \item	For Dutch, many resources created with public money in the recent LT programmes are either open source or stored, main-tained and distributed by the HLT Agency and easily and cheaply accessible. (cf. the high scores for Availability for Text Analysis, Text Interpretation, Text and Speech Corpora)
+ \item 	Annotated corpora with semantic structures are available but minimal in size and depth of annotation. Annotated corpora with discourse structures are lacking almost completely, as are     Ontological resources for World Knowledge.
+\item  	Parallel corpora for machine translation are available but in quantities that are too small for proper development of MT systems. MT, and especially statistical MT, needs huge amounts of (parallel) data to perform reasonably.
+\item  	Multimedia data is a huge gap.
+\end{itemize}
+
+From this, it is clear that more efforts need to be directed into the creation of resources for Dutch and into research, innovation, and development. The need for large amounts of data and the high com-plexity of language technology systems make it also mandatory to develop new infrastructures for sharing and cooperation.
+
+  }
+
+  \ParallelPar
+
+
+  \subsection{ --- Cross-language comparison}
+
+  \MyParallelLText{
+
+ 
+
+   
+
+
+     }
+
+  \MyParallelRText{
+    The current state of LT support varies considerably from one language community to another. In order to compare the situation between languages, this section will present an evaluation based on two sample application areas (machine translation and speech processing) and one underlying technology (text analysis), as well as basic resources needed for building LT applications\\
+
+    Figure 1: Language clusters for Speech Processing\\
+
+    Figure 2: Language clusters for Machine Translation\\
+
+
+    Figure 3: Language clusters for Text Analysis\\
+
+    Figure 4: Language clusters for Resources\\
+
+    The above tables show that, thanks to large-scale LT funding in recent decades, the Dutch language is better equipped than most other languages. It compares well with languages with a similar number of speakers, such as French, despite its greater structural complexity. But LT resources and tools for Dutch clearly do not yet reach the quality and coverage of comparable resources and tools for the English language, which is in the lead in almost all LT areas. And there are still plenty of gaps in English language resources with regard to high quality applications.
+
+    For speech processing, current technologies perform well enough to be successfully integrated into a number of industrial applications such as spoken dialogue and dictation systems. Today's text analysis components and language resources already cover the linguistic phenomena of Dutch to a certain extent and form part of many applications involving mostly shallow natural language processing, e.g. spelling correction and authoring support.
+
+    However, for building more sophisticated applications, such as machine translation, there is a clear need for resources and tech-nologies that cover a wider range of linguistic aspects and allow a deep semantic analysis of the input text. By improving the quality and coverage of these basic resources and technologies, we shall be able to open up new opportunities for tackling a vast range of advanced application areas, including high-quality machine translation.
+
+
+
+  }
+
+  \ParallelPar
+
+
+  \subsection{ --- Conclusions}
+
+  \MyParallelLText{
+    
+
+  }
+
+  \MyParallelRText{
+    In this series of white papers, we have made an important initial effort to assess language technology support for 30 European languages, and provide a high-level comparison across these languages. By identifying the gaps, needs and deficits, the European language technology community and related stakeholders are now in a position to design a large scale research and development programme aimed at building a truly multilingual, technology-enabled Europe.
+
+    We have seen that there are huge differences between Europe's languages. While there are good quality software and resources available for some languages and application areas, others (usually `smaller' languages) have substantial gaps. Many languages lack basic technologies for text analysis and the essential resources for developing these technologies. Others have basic tools and resources but are as yet unable to invest in semantic processing. We therefore still need to make a large-scale effort to attain the ambitious goal of providing high-quality machine translation between all European languages.
+
+    The situation of Dutch concerning language technology support gives rise to cautious optimism. Supported by larger research programs in the past, there exists a language technology industry and research scene in the Low Countries, which consists mostly of SMEs but is already partially organised.
+
+    For standard Dutch, a number of technologies and resources exist, but far less than for English. As has been shown by several past studies on specific areas of language technology such as Euroma-trixPlus, Dutch plays in Europe's second league together with German and French and few other languages. Still, this information has to be taken with care as even for English, language technology support today is by far not in a state that is needed for offering the support a true multilingual knowledge society needs.
+
+    Our findings show that the Low Countries, after the successful CGN and STEVIN programmes should persist, and continue the development of language technology resources and use them to drive forward research, innovation and development. The need for large amounts of data and the extreme complexity of language technology systems makes it vital to develop a new infrastructure and a more coherent research organisation to spur greater sharing and cooperation.
+
+    There is also a lack of continuity in research and development funding. Short-term coordinated programmes tend to alternate with periods of sparse or zero funding. In addition, there is an overall lack of coordination with programmes in other EU countries and at the European Commission level.
+
+    We can therefore conclude that there is a desperate need for a large, coordinated initiative focused on overcoming the differences in language technology readiness for European languages as a whole.
+
+    META-NET's long-term goal is to introduce high-quality language technology for all languages in order to achieve political and economic unity through cultural diversity. The technology will help tear down existing barriers and build bridges between Europe's languages. This requires all stakeholders - in politics, research, business, and society - to unite their efforts for the future.
+
+  }
+
+  \ParallelPar
+
+
+  % --------------------------------------------------------------------------
+  \section{ --- About META-NET}
+
+  \MyParallelLText{
+
+
+  }
+
+  \MyParallelRText{
+    META-NET is a Network of Excellence funded by the European Commission. The network currently consists of 47 members from 31 European countries. META-NET fosters the Multilingual Europe Technology Alliance (META), a growing community of language technology professionals and organisations in Europe.
+
+    META-NET cooperates with other initiatives like the Common Language Resources and Technology Infrastructure (CLARIN), which is helping establish digital humanities research in Europe. META-NET fosters the technological foundations for a truly multilingual European information society that:
+    \begin{itemize}
+      \item makes communication and cooperation possible across languages;
+      \item provides equal access to information and knowledge in any language;
+      \item offers advanced and affordable networked information technology to European citizens.
+    \end{itemize}
+    META-NET stimulates and promotes multilingual technologies for all European languages. The technologies enable automatic translation, content production, information processing and knowledge management for a wide variety of applications and subject domains. The network wants to improve current approaches, so better communication and cooperation across languages can take place. Europeans have an equal right to information and knowledge regardless of language.
+  }
+
+  \ParallelPar
+
+
+  \subsection{Actielijnen --- Lines of Action}
+
+  \MyParallelLText{
+    
+
+  }
+
+  \MyParallelRText{
+    META-NET launched on 1 February 2010 with the goal of advancing research in language technology (LT). The network supports a Europe that unites as a single digital market and information space. META-NET has conducted several activities that further its goals. META-VISION, META-SHARE and META-RESEARCH are the network's three lines of action.\\
+
+    Three Lines of Action in META-NET\\
+
+    \textbf{META-VISION} fosters a dynamic and influential stakeholder community that unites around a shared vision and a common strategic research agenda (SRA). The main focus of this activity is to build a coherent and cohesive LT community in Europe by bringing together representatives from highly fragmented and diverse groups of stakeholders. In the first year of META-NET, presentations at the FLaReNet Forum (Spain), Language Technology Days (Luxembourg), JIAMCATT 2010 (Luxembourg), LREC 2010 (Malta), EAMT 2010 (France) and ICT 2010 (Belgium) centred on public outreach. According to initial estimates, META-NET has already contacted more than 2,500 LT professionals to develop its goals and visions with them. At the META-FORUM 2010 event in Brussels, META-NET communicated the initial results of its vision building process to more than 250 participants. In a series of interactive sessions, the participants provided feedback on the visions presented by the network.
+
+    \textbf{META-SHARE} creates an open, distributed facility for exchanging and sharing resources. The peer-to-peer network of repositories will contain language data, tools and web services that are documented with high-quality metadata and organised in standardised categories. The resources can be readily accessed and uniformly searched. The available resources include free, open source materials as well as restricted, commercially available, fee-based items. META-SHARE targets existing language data, tools and systems as well as new and emerging products that are required for building and evaluating new technologies, products and services. The reuse, combination, repurposing and re-engineering of language data and tools plays a crucial role. META-SHARE will eventually become a critical part of the LT marketplace for developers, localisation experts, researchers, translators and language professionals from small, mid-sized and large enterprises. META-SHARE addresses the full development cycle of LT --- from research to innovative products and services. A key aspect of this activity is establishing META-SHARE as an important and valuable part of a European and global infrastructure for the LT community.
+
+    \textbf{META-RESEARCH} builds bridges to related technology fields. This activity seeks to leverage advances in other fields and to capitalise on innovative research that can benefit language technology. In particular, this activity wants to bring more semantics into machine translation (MT), optimise the division of labour in hybrid MT, exploit context when computing automatic translations and prepare an empirical base for MT. META-RESEARCH is working with other fields and disciplines, such as machine learning and the Semantic Web community. META-RESEARCH focuses on collecting data, preparing data sets and organising language resources for evaluation purposes; compiling inventories of tools and methods; and organising workshops and training events for members of the community. This activity has already clearly identified aspects of MT where semantics can impact current best practices. In addition, the activity has created recommendations on how to approach the problem of integrating semantic information in MT. META-RESEARCH is also finalising a new language resource for MT, the Annotated Hybrid Sample MT Corpus, which provides data for English-German, English-Spanish and English-Czech language pairs. META-RESEARCH has also developed software that collects multilingual corpora that are hidden on the Web.
+  }
+
+  \ParallelPar
+
+
+  \subsection{ --- Member Organisations}
+
+  \MyParallelLText{
+    De volgende tabel somt de organisaties en hun vertegenwoordigers op die deelnemen in META-NET.
+  }
+  \MyParallelRText{
+    The following table lists the organisations and their representatives that participate in META-NET.
+  }
+
+  \ParallelPar
+
+  \begin{tabular*}{\textwidth}{l|p{6cm}|p{4cm}}
+    \hline \textbf{Land --- Country} & \textbf{Organisatie --- Organisation} & \textbf{Deelnemer(s) --- Participant(s)} \\
+    \hline Austria & University of Vienna & Gerhard Budin\\
+    \hline Belgium & University of Antwerp & Walter Daelemans\\
+    \hline          & University of Leuven & Dirk van Compernolle  \\
+    \hline Bulgaria & Bulgarian Academy of Sciences & Svetla Koeva \\
+    \hline Croatia & University of Zagreb & Marko Tadi{\'c}\\
+    \hline Cyprus & University of Cyprus & Jack Burston\\
+    \hline Czech Republic & Charles University in Prague & Jan Hajic \\
+    \hline Denmark & University of Copenhagen & Bolette Sandford Pedersen and
+    Bente Maegaard\\
+    \hline Estonia & University of Tartu & Tiit Roosmaa\\
+    \hline Finland & Aalto University & Timo Honkela\\
+    \hline  & University of Helsinki & Kimmo Koskenniemi and
+    Krister Linden \\
+    \hline France & CNRS/LIMSI & Joseph Mariani \\
+    \hline & Evaluations and Language Resources Distribution Agency & Khalid Choukri\\
+    \hline Germany & DFKI & Hans Uszkoreit and Georg Rehm\\
+    \hline & RWTH Aachen University & Hermann Ney\\
+    \hline & Saarland University & Manfred Pinkal\\
+    \hline Greece & Institute for Language and Speech Processing, "Athena" R.C. & Stelios Piperidis\\
+    \hline Hungary & Hungarian Academy of Sciences & Tam{\'a}s V{\'a}radi\\
+    \hline & Budapest University of Technology and Economics & G{\'e}za N{\'e}meth and G{\'a}bor Olaszy\\
+    \hline Iceland & University of Iceland & Eirikur R{\"o}gnvaldsson\\
+    \hline Ireland & Dublin City University & Josef van Genabith\\
+    \hline Italy & Consiglio Nazionale Ricerche,  Istituto di Linguistica Computazionale “Antonio Zampolli” & Nicoletta Calzolari\\
+    \hline & Fondazione Bruno Kessler & Bernardo Magnini\\
+    \hline Latvia & Tilde & Andrejs Vasiljevs\\
+    \hline & Institute of Mathematics and Computer Science, University of Latvia & Inguna Skadina\\
+    \hline Lithuania & Institute of the Lithuanian Language & Jolanta Zabarskait{\.e}\\
+    \hline Luxembourg & Arax Ltd. & Vartkes Goetcherian\\
+    \hline Malta & University of Malta & Mike Rosner\\
+    \hline Netherlands & Utrecht University & Jan Odijk\\
+    \hline & University of Groningen & Gertjan van Noord\\
+    \hline Norway & University of Bergen & Koenraad De Smedt\\
+    \hline Poland & Polish Academy of Sciences & Adam Przepi{\'o}rkowski and
+    Maciej Ogrodniczuk \\
+    \hline & University of Lodz & Barbara Lewandowska-Tomaszczyk and Piotr P{\c{e}}zik\\
+    \hline Portugal & University of Lisbon & Antonio Branco\\
+    \hline & Institute for Systems Engineering and Computers & Isabel Trancoso\\
+\end{tabular*}
+
+  \begin{tabular*}{\textwidth}{l|p{6cm}|p{4cm}}
+    \hline \textbf{Land --- Country} & \textbf{Organisatie --- Organisation} & \textbf{Deelnemer(s) --- Participant(s)} \\
+    \hline Romania &	Romanian Academy of Sciences &	Dan Tufis\\
+ 	\hline         & Alexandru Ioan Cuza University	 & Dan Cristea\\
+    \hline Serbia &	University of Belgrade	& Dusko Vitas, Cvetana Krstev and
+Ivan Obradovic\\
+    \hline &	Institute Mihailo Pupin &	Sanja Vranes\\
+    \hline Slovakia  & 	Slovak Academy of Sciences	& Radovan Garabik\\
+    \hline Slovenia  & 	Jozef Stefan Institute	& Marko Grobelnik\\
+    \hline Spain  & 	Barcelona Media	& Toni Badia\\
+ 	\hline        & Technical University of Catalonia	& Asunci{\'o}n Moreno\\
+ 	\hline        & Pompeu Fabra University	& N{\'u}ria Bel\\
+    \hline Sweden &	University of Gothenburg & 	Lars Borin\\
+    \hline UK 	& University of Manchester 	& Sophia Ananiadou\\
+    \hline      &	University of Edinburgh	& Steve Renals
+  \end{tabular*}
+
+  \end{Parallel}
+
+  \bibliographystyle{plain}
+  \bibliography{dutch}
+\end{document}
