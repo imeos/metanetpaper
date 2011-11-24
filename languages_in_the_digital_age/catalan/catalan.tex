@@ -8,7 +8,7 @@
 %  MM     MM   MMMMMM    MM   MM    MM            MM   MMM  MMMMMMM    MM
 %
 %
-%            - META-NET Language Whitepaper | German paper -
+%            - META-NET Language Whitepaper | Catalan paper -
 %
 % 
 % ----------------------------------------------------------------------------
@@ -26,6 +26,7 @@
 %FIXME: title needs to be "The Catalan Language in the Digital Age"
 
 \subtitle{White Paper Series --- Weißbuch-Serie}
+%FIXME: "white paper" and "white paper series" in Catalan?
 
 \author{
  Asunción Moreno~ {\small Universitat Politècnica de Catalunya}\\
@@ -34,15 +35,14 @@
  Emília Garcia~{\small Universitat Politècnica de Catalunya}\\
  Sisco Vallverdú~{\small Universitat Politècnica de Catalunya}
 }
-%FIXME: need "editors" in catalan
 \editors{
   Georg Rehm, Hans Uszkoreit\\(Herausgeber, \textcolor{grey1}{editors})
+%FIXME: "editors" in catalan
 }
 
 \begin{document}
 
 \maketitle
-%FIXME - does not work \input{catalan_mocktitle}
 
 \pagenumbering{Roman} 
 \setcounter{page}{5}
@@ -82,7 +82,7 @@ As of November 2011, META-NET consists of 54 research centres from 33 European c
 %FIXME: "table of contents" in Catalan
 
 \tableofcontents
-%FIXME -"Die Deutsche Sprache ..."
+%FIXME -"The Catalan Language in the Digital Age" in Catalan
 \addtocontents{toc}{\protect\thispagestyle{empty}\protect}
 \addtocontents{toc}{{\Large\textsf{\centerline{DIE DEUTSCHE SPRACHE IM DIGITALEN ZEITALTER}}\par}}
 
@@ -97,8 +97,7 @@ As of November 2011, META-NET consists of 54 research centres from 33 European c
 
 % Start of origin language part
 % --------------------------------------------------------------------------
-\ssection[Zusammenfassung]{Resum}
-%FIXME: does "Zusammenfassung" need to be translated?
+\ssection[Resum]{Resum}
 
 \selectlanguage{Catalan}
 
@@ -413,7 +412,7 @@ La propera generació de motors de cerca haurà d’incloure una tecnologia de l
 
 Finalment, la consulta processada s’ha de comparar amb una enorme quantitat de dades no estructurades per tal de trobar la informació que l'usuari està cercant. Aquest procés es coneix habitualment com a ‘\underline{recuperació d'informació}’ i implica la cerca i la classificació dels documents rellevants. A més a més, per poder generar una llista d’empreses, cal tenir la capacitat de detectar que una cadena determinada de paraules en un document es refereix a un nom d'empresa. Aquest tipus de informació es pot obtenir amb els anomenats \underline{reconeixedors de noms d’entitats}.
 
-El fet d’intentar \underline{trobar la resposta en documents escrits en una llengua diferent} de la llengua de consulta és un repte encara més gran. Per fer-lo possible, cal traduir automàticament la consulta a totes les llengües en les quals és possible trobar la resposta, i després traduir la informació trobada a la llengua original. Per altra banda, l’augment de la quantitat d’informació en formats no textuals fa que cada vegada sigui més necessària l’aparició de serveis que permetin \underline{cercar informació en entorns multimèdia}, és a dir, imatges, àudio i vídeo. El cas de fitxers d’àudio i vídeo implica utilitzar sistemes de \underline{reconeixement automàtic de la parla} per convertir la veu en un text en el qual es pugui cercar la informació de la consulta. 
+El fet d’intentar trobar la resposta en documents escrits en una llengua diferent de la llengua de consulta és un repte encara més gran. Per fer-lo possible, cal traduir automàticament la consulta a totes les llengües en les quals és possible trobar la resposta, i després traduir la informació trobada a la llengua original. Per altra banda, l’augment de la quantitat d’informació en formats no textuals fa que cada vegada sigui més necessària l’aparició de serveis que permetin \underline{cercar informació en entorns multimèdia}, és a dir, imatges, àudio i vídeo. El cas de fitxers d’àudio i vídeo implica utilitzar sistemes de \underline{reconeixement automàtic de la parla} per convertir la veu en un text en el qual es pugui cercar la informació de la consulta. 
 
 Les petites i mitjanes empreses com Inbenta \cite{CAT-inbenta} o RightNow  (anteriorment q-go \cite{CAT-rightnow}) ofereixen motors de cerca amb informació semàntica en català.
 
@@ -564,7 +563,27 @@ La taula es pot resumir amb els següents punts clau, que remarquen els aspectes
 
 \subsection{Comparació entre llengües}
 
-L'estat actual del suport de les tecnologies del llenguatge varia considerablement d'una comunitat lingüística a una altra. Per tal de comparar la situació d'aquest aspecte entre les llengües, en aquesta secció es presenta una avaluació basada en dues àrees concretes d'aplicació (traducció automàtica i processament de veu) i una tecnologia subjacent (anàlisi de textos), així com també en els recursos lingüístics bàsics necessaris per a construir aplicacions.
+%FIXME: the following needs to be translated.
+
+The current state of LT support varies considerably from one language community to another. In order to compare the situation between languages, this section will present an evaluation based on two sample application areas (machine translation and speech processing) and one underlying technology (text analysis), as well as basic resources needed for building LT applications. The languages were categorised using the following five-point scale: 
+
+\begin{enumerate}
+\item Excellent support
+\item Good support
+\item Moderate support
+\item Fragmentary support
+\item Weak or no support
+\end{enumerate}
+
+LT support was measured according to the following criteria:
+
+\textbf{Speech Processing:} Quality of existing speech recognition technologies, quality of existing speech synthesis technologies, coverage of domains, number and size of existing speech corpora, amount and variety of available speech-based applications.
+
+\textbf{Machine Translation:} Quality of existing MT technologies, number of language pairs covered, coverage of linguistic phenomena and domains, quality and size of existing parallel corpora, amount and variety of available MT applications.
+
+\textbf{Text Analysis:} Quality and coverage of existing text analysis technologies (morphology, syntax, semantics), coverage of linguistic phenomena and domains, amount and variety of available applications, quality and size of existing (annotated) text corpora, quality and coverage of existing lexical resources (e.\,g., WordNet) and grammars.
+
+\textbf{Resources:} Quality and size of existing text corpora, speech corpora and parallel corpora, quality and coverage of existing lexical resources and grammars.
 
 \begin{figure*}
 \small
@@ -679,15 +698,6 @@ Txec \newline
 \label{fig:mt_cluster}
 \end{figure*}
 
-\textit{Descripció dels grups (per al processament de la parla i traducció automàtica)}
-\begin{itemize}
-\item Grup 1 (suport exceŀlent): Les tecnologies que existeixen són d'exceŀlent qualitat i rendiment; es poden utilitzar en pràcticament totes les aplicacions rellevants.
-\item Grup 2 (molt bon suport): Les tecnologies que existeixen són de bona qualitat i bones prestacions. Poden ser utilitzades en diverses aplicacions.
-\item Grup 3 (bon suport): Les tecnologies que existeixen tenen una qualitat i unes prestacions raonables; el seu ús està limitat a certes aplicacions o dominis.
-\item Grup 4 (suport mitjà): Existeixen prototips d'investigació, primeres aplicacions comercials i serveis gratuïts amb diferent qualitat i prestacions.
-\item Grup 5 (de poc a gairebé cap suport): Tecnologies en fase de disseny o prototips rudimentaris amb una qualitat i prestacions molt limitades.
-\end{itemize}
-
 \begin{figure*}
   \small
   \centering
@@ -799,15 +809,6 @@ Txec \newline
   \caption{Grups de llengües en funció de l’estat actual dels recursos }
   \label{fig:resources_cluster}
 \end{figure*}
-
-\textit{Descripció dels grups (per anàlisi de textos i recursos):}
-\begin{itemize}
-\item Grup 1 (suport exceŀlent): Existeixen tecnologies i recursos d'ús generalitzat que cobreixen pràcticament tots els fenòmens lingüístics (vocabulari, paraules compostes, gramàtica, metàfores, etc.) d'una llengua.
-\item Grup 2 (molt bon suport): Existeixen tecnologies i recursos que s'utilitzen en una àmplia varietat d'aplicacions i cobreixen els fenòmens lingüístics més importants.
-\item Grup 3 (bon suport): Existeixen tecnologies i recursos que cobreixen una quantitat raonable dels fenòmens lingüístics i s'utilitzen en aplicacions que solen ser de dominis específics.
-\item Grup 4 (suport mitjà): Existeixen prototips de recerca i recursos, però varien en qualitat i cobertura.
-\item Grup 5 (de poc a gairebé cap suport): Prototips en fase de disseny o rudimentaris (qualitat i cobertura molt limitades, sistemes de prova).
-\end{itemize}
 
 Les taules anteriors mostren que, gràcies als programes per al finançament de les tecnologies del llenguatge dels governs espanyol i català en les últimes dècades, el català està al nivell de la majoria d'altres llengües europees. Es compara bé amb els idiomes amb un nombre similar de parlants, com l'hungarès, el grec i el portuguès (europeu), tot i que aquests són idiomes oficials en països de la UE. No obstant això, els recursos i eines per a la tecnologia de la llengua en català no arriben encara a la cobertura i qualitat dels recursos i eines comparables per a la llengua espanyola, que està en una bona posició en gairebé totes les àrees de la tecnologia de la llengua, tot i que encara hi ha molt a millorar en els seus recursos pel que fa a les aplicacions d'alta qualitat.
 
@@ -986,9 +987,8 @@ META-NET estimula i promou tecnologies multilingües per a totes les llengües e
 
 \subsection{Challenges Facing Language Technology}
 
-    Although language technology has made considerable progress in the last few years, the current pace of technological progress and product innovation is too slow. Widely-used technologies such as the spelling and grammar correctors in word processors are typically monolingual, and are only available for a handful of languages. Online machine translation services, although useful for quickly generating a reasonable approximation of a document’s contents, are fraught with difficulties when highly accurate and complete translations are required. Due to the complexity of human language, modelling our tongues in software and testing them in the real world is a long, costly business that requires sustained funding commitments. Europe must therefore maintain its pioneering role in facing the technology challenges of a multiple-language community by inventing new methods to accelerate development right across the map. These could include both computational advances and techniques such as crowdsourcing.
-
-\boxtext{The current pace of technological progress is too slow.}
+    Although language technology has made considerable progress in the last few years, the current pace of technological progress and product innovation is too slow. \boxtext{The current pace of technological progress is too slow.}
+Widely-used technologies such as the spelling and grammar correctors in word processors are typically monolingual, and are only available for a handful of languages. Online machine translation services, although useful for quickly generating a reasonable approximation of a document’s contents, are fraught with difficulties when highly accurate and complete translations are required. Due to the complexity of human language, modelling our tongues in software and testing them in the real world is a long, costly business that requires sustained funding commitments. Europe must therefore maintain its pioneering role in facing the technology challenges of a multiple-language community by inventing new methods to accelerate development right across the map. These could include both computational advances and techniques such as crowdsourcing.
 
 \subsection{Language Acquisition in Humans and Machines}
 
@@ -1058,7 +1058,7 @@ In 1985, the Catalan Government and the Institute of Catalan Studies established
 
 \subsection{Language cultivation in Catalan}
 
-According to Article 6 of the Statute of Autonomy of Catalonia \cite{CAT-estatut}, the own language of Catalonia is Catalan. Catalan is the language normally used in public administration, public media of Catalonia and teaching. Both Catalan and Spanish are official languages ​​in Catalonia. The citizens of Catalonia have the right and duty to know both languages.
+According to Article 6 of the Statute of Autonomy of Catalonia \cite{CAT-estatut}, the own language of Catalonia is Catalan. Catalan is the language normally used in public administration, public media of Catalonia and teaching. Both Catalan and Spanish are official languages in Catalonia. The citizens of Catalonia have the right and duty to know both languages.
 
 The Institute of Catalan Studies \cite{CAT-IEC}, founded in 1907 by Enric Prat de la Riba, has as main objective to promote high scientific research, mainly on all the elements related to Catalan culture. After returning to normal in the late 70s, the IEC was divided into five sections. The Philological Section plays the role of academy of the Catalan language. This function involves the scientific study of this language, the establishment of linguistic rules and monitoring the process of implementing this regulation in the geographical area where Catalan is used. The IEC also publishes the Dictionary of the Catalan language, whose second edition was released in 2007. This dictionary is also a useful instrument to nourish the Catalan language.
 
@@ -1135,260 +1135,151 @@ According to these data, we can conclude that, despite being rather small, the C
 
 \begin{multicols}{2}
 
-Language technologies are information technologies that are specialised for dealing with human language. Therefore these technologies are also often subsumed under the term Human Language Technology. Human language occurs in spoken and written form. Whereas speech is the oldest and most natural mode of language communication, complex information and most of human knowledge is maintained and transmitted in written texts. Speech and text technologies process or produce language in these two modes of realisation. But language also has aspects that are shared between speech and text such as dictionaries, most of grammar and the meaning of sentences. Thus, large parts of language technology cannot be subsumed under either speech or text technologies. Among those are technologies that link language to knowledge. Figure Figure~\ref{fig:ltincontext_en} illustrates the Language Technology landscape. In our communication we mix language with other modes of communication and other information media. We combine speech with gesture and facial expressions. Digital texts are combined with pictures and sounds. Movies may contain language in spoken and written form. Thus, speech and text technologies overlap and interact with many other technologies that facilitate the processing of multimodal communication and multimedia documents. 
-
-Language technology is used to develop software systems designed to handle human language and are therefore often called “human language technology”. Human language comes in spoken and written forms. While speech is the oldest and in terms of human evolution the most natural form of language communication, complex information and most human knowledge is stored and transmitted through the written word. Speech and text technologies process or produce these different forms of language, using dictionaries, rules of grammar, and semantics. This means that language technology (LT) links language to various forms of knowledge, independently of the media (speech or text) in which it is expressed. Figure~\ref{fig:ltincontext_en} illustrates the LT landscape.
-
-\begin{figure*}[htb]
-  \colorrule{grey3}{\textwidth}{1.5pt}
-  \center
-  \includegraphics[width=\textwidth]{../_media/english/language_technologies}
-  \caption{Language technology in context}
-  \label{fig:ltincontext_en}
-  \colorrule{grey3}{\textwidth}{1.5pt}
-\end{figure*}
-
-When we communicate, we combine language with other modes of communication and information media – for example speaking can involve gestures and facial expressions. Digital texts link to pictures and sounds. Movies may contain language in spoken and written form. In other words, speech and text technologies overlap and interact with other multimodal communication and multimedia technologies.\\ 
-In this section, we will discuss the main application areas of language technology, i.\,e., language checking, web search, speech interaction, and machine translation. These applications and basic technologies include 
-
-\begin{itemize}
-\item spelling correction
-\item authoring support
-\item computer-assisted language learning
-\item information retrieval 
-\item information extraction
-\item text summarisation
-\item question answering
-\item speech recognition 
-\item speech synthesis 
-\end{itemize}
-
-Language technology is an established area of research with an extensive set of introductory literature. The interested reader is referred to the following references:  \cite{carstensen-etal1, jurafsky-martin01, manning-schuetze1, lt-world1, lt-survey1}.
-
-Before discussing the above application areas, we will briefly describe the architecture of a typical LT system.
+Language technologies are information technologies that are specialised for dealing with human language. Therefore these technologies are also often subsumed under the term Human Language Technology. Human language occurs in spoken and written form. Whereas speech is the oldest and most natural mode of language communication, complex information and most of human knowledge is maintained and transmitted in written texts. Speech and text technologies process or produce language in these two modes of realisation. But language also has aspects that are shared between speech and text such as dictionaries, most of grammar and the meaning of sentences. Thus, large parts of language technology cannot be subsumed under either speech or text technologies. Among those are technologies that link language to knowledge. The figure on the right illustrates the Language Technology landscape. In our communication we mix language with other modes of communication and other information media. We combine speech with gesture and facial expressions. Digital texts are combined with pictures and sounds. Movies may contain language in spoken and written form. Thus, speech and text technologies overlap and interact with many other technologies that facilitate the processing of multimodal communication and multimedia documents.  
 
 \subsection{Application Architectures}
 
-Software applications for language processing typically consist of several components that mirror different aspects of language. While such applications are typically very complex, figure~\ref{fig:textprocessingarch_en} shows a highly simplified architecture of a typical text processing system. The first three modules handle the structure and meaning of the text input:
+Typical software applications for language processing consist of several components that mirror different aspects of language and of the task they implement. The figure on the right displays a highly simplified architecture that can be found in a text processing system. The first three modules deal with the structure and meaning of the text input:
+\begin{itemize}
+\item Pre-processing: cleaning up the data, removing formatting, detecting the input language, replacing “5è” by “cinquè” for Catalan, etc.
+\item Grammatical analysis: finding the verb and its objects, modifiers, etc.; detecting the sentence structure.
+\item Semantic analysis: disambiguation (Which meaning of apple is the right one in a given context?), resolving anaphora and referring expressions like she, the car, etc.; representing the meaning of the sentence in a machine-readable way.
+\end{itemize}
 
-\begin{enumerate}
-\item Pre-processing: cleans the data, analyses or removes formatting, detects the input languages, and so on.
-\item Grammatical analysis: finds the verb, its objects, modifiers and other parts of speech; detects the sentence structure.
-\item Semantic analysis: performs disambiguation (i.\,e., computes the appropriate meaning of words in a given context); resolves anaphora (i.\,e., which pronouns refer to which nouns in the sentence); represents the meaning of the sentence in a machine-readable way.
-\end{enumerate}
+Task-specific modules then perform many different operations such as automatic summarisation of an input text, database lookups and many others. Below, we will illustrate core application areas and highlight their core modules. Again, the architectures of the applications are highly simplified and idealised, to illustrate the complexity of Language Technology (LT) applications in a generally understandable way. The most important tools and resources involved are underlined in the text and can also be found in the table at the end of the chapter.  The sections discussing the core application areas also contain an overview of the industries active in the respective field in Catalonia. 
 
-After analysing the text, task-specific modules can perform other operations, such as automatic summarisation and database look-ups.
-
-In the remainder of this section, we firstly introduce the core application areas for language technology, and follow this with a brief overview of the state of LT research and education today, and a description of past and present research programmes. Finally, we present an expert estimate of core LT tools and resources for German in terms of various dimensions such as availability, maturity and quality. The general situation of LT for the German language is summarised in a matrix (figure~\ref{fig:lrlttable_en}). Tools and resources that are boldfaced in the text can also be found in figure~\ref{fig:lrlttable_en} (p.~\pageref{fig:lrlttable_en}) at the end of this chapter. LT support for German is also compared to other languages that are part of this series.
-
-\begin{figure*}[htb]
-  \colorrule{grey3}{\textwidth}{1.5pt}
-  \center
-  \includegraphics[width=\textwidth]{../_media/english/text_processing_app_architecture}
-  \caption{A typical text processing architecture}
-  \label{fig:textprocessingarch_en}
-  \colorrule{grey3}{\textwidth}{1.5pt}
-\end{figure*}
+After introducing the core application areas, we will give a short overview of the situation in LT research and education, concluding with an overview of past and ongoing research programs. At the end of this section, we will present an expert estimation on the situation regarding core LT tools and resources on a number of dimensions such as availability, maturity, or quality. This table gives a good overview on the situation of LT for Catalan.
 
 \subsection{Core Application Areas}
 
-In this section, we focus on the most important LT tools and resources, and provide an overview of LT activities in Germany, Austria and Switzerland. 
+    In this section, we focus on the most important LT tools and resources, and give an overview of LT activities in Catalan. Tools and resources that are underlined in the text can also be found in the table at the end of this chapter.
 
 \subsubsection{Language Checking}
 
-Anyone who has used a word processor such as Microsoft Word knows that it has a spell checker that highlights spelling mistakes and proposes corrections. The first spelling correction programs compared a list of extracted words against a dictionary of correctly spelled words. Today these programs are far more sophisticated. Using language-dependent algorithms for \textbf{grammatical analysis}, they detect errors related to morphology (e.\,g., plural formation) as well as syntax–related errors, such as a missing verb or a conflict of verb-subject agreement (e.\,g., \textit{she *write a letter}). However, most spell checkers will not find any errors in the following text \cite{zar1}:
+Anyone using a word processing tool such as Microsoft Word has come across a spell checking component that indicates spelling mistakes and proposes corrections. Forty years after the first spel-ling correction program by Ralph Gorin, language checkers nowadays do not simply compare the list of extracted words against a dictionary of correctly spelled words, but have become increasingly sophisticated. In addition to language-dependent algorithms for handling morphology (e.g. plural formation), some are now capable of recognising syntax–related errors, such as a missing verb or a verb that does not agree with its subject in person and number, e.g. in ‘She write a letter.’ 
 
-\begin{quote}
-  I have a spelling checker,\\
-  It came with my PC.\\
-  It plane lee marks four my revue\\
-  Miss steaks aye can knot sea.
-\end{quote}
+This either requires the formulation of language-specific grammar rules, i.e. a high degree of expertise and manual labour, or the use of a so-called statistical language model. Such models calculate the probability of a particular word occurring in a specific environment (i.e., the preceding and following words). For example, llibre anglès is a much more probable word sequence than llibre anglesa. A statistical language model can be automatically derived using a large amount of (correct) language data (i.e. a corpus). Up to now, these approaches have mostly been developed and evaluated on English language data. However, they do not necessarily transfer straightforwardly to Catalan with its flexible word order and richer inflection. 
 
-Handling these kinds of errors usually requires an analysis of the context. For example: whether a word needs to be capitalised in German or not:
+The use of Language Checking is not limited to word processing tools. It is also applied in authoring support systems. Accompanying the rising number of technical products, the amount of technical documentation has rapidly increased over the last decades. Fearing customer complaints about wrong usage and damage claims resulting from bad or badly understood instructions, companies have begun to focus increasingly on the quality of technical documentation, and at the same time targeting the international market. Advances in natural language processing lead to the development of authoring support software, which assists the writer of technical documentation to use vocabulary and sentence structures consistent with certain rules and (corporate) terminology restrictions.
 
-\begin{itemize}
-\item Sie übersetzte den Text ins \textbf{Englische}.
-\item {[}She translated the text into English.{]} 
-\item Er las das \textbf{englische} Buch.
-\item {[}He read the English book.{]}
-\end{itemize}
+Only a few companies and Language Service Providers offer products in this area for Catalan. Enciclopèdia Catalana, Maxigrammar and Inèdit have created and commercialised products that include spell and grammar checking for Catalan, as well as specific checking facilities adapted to different domains and styles. Softcatalà and Barcelona Media have also developed language tools that are offered to the community as web applications. A new version of “\textit{El Corrector}” has recently been developed and commercialised as iPod, iPhone and iPad apps. 
 
-This type of analysis either needs to draw on language-specific \textbf{grammars} laboriously coded into the software by experts, or on a statistical language model. In this case, a model calculates the probability of a particular word as it occurs in a specific position (e.\,g., between the words that precede and follow it). For example: \textit{englische Buch} is a much more probable word sequence than \textit{Englisch Buch}. A statistical language model can be automatically created by using a large amount of (correct) language data, a \textbf{text corpus}. Most of these two approaches have been developed around data from English. Neither approach can transfer easily to German because the language has a flexible word order, unlimited compound building and a richer inflection system.
-
-\begin{figure*}[htb]
-  \colorrule{grey3}{\textwidth}{1.5pt}
-  \center
-  \includegraphics[width=\textwidth]{../_media/english/language_checking}
-  \caption{Language checking (statistical; rule-based)}
-  \label{fig:langcheckingaarch_en}
-  \colorrule{grey3}{\textwidth}{1.5pt}
-\end{figure*}
-
-Language checking is not limited to word processors; it is also used in “authoring support systems”, i.\,e., software environments in which manuals and other types of technical documentation for complex IT, healthcare, engineering and other products, are written. To offset customer complaints about incorrect use and damage claims resulting from poorly understood instructions, companies are increasingly focusing on the quality of technical documentation while targeting the international market (via translation or localisation) at the same time. Advances in natural language processing have led to the development of authoring support software, which helps the writer of technical documentation to use vocabulary and sentence structures that are consistent with industry rules and (corporate) terminology restrictions.
-
-\boxtext{The use of language checking is not limited to word processors. It also applies to authoring support systems.}
-
-There are a number of German companies and language service providers offering products in this area. Siemens investigated approaches for German and developed the \textit{Siemens-Dokumentationsdeutsch}, a controlled language for German. IAI, a German research institute, developed a checking module, CLAT, for German grammar and style. Acrolinx, a German company, offers software with a highly adaptable language checker as well as a terminology database. The Acrolinx style guidelines for technical documentation advise against using complex noun compounds like \textit{Achsmesshebebühne} {[}hydraulic platform for measuring axles{]} and metaphorical language like \textit{blitzschnell} {[}fast as lightning{]} or \textit{Faustregel} {[}rule of thumb{]}. The guidelines also discourage the use of \textit{man}, the impersonal pronoun, for example, \textit{Danach stellt man die Maschine aus} {[}afterwards, one switches off the engine{]}. Long and nested sentences are also discouraged. This is largely because such bloated language phenomena are hard for humans to process quickly and accurately. They may also be hard for MT systems to translate effectively.
-Besides spell checkers and authoring support, language checking is also important in the field of computer-assisted language learning. Language checking applications also automatically correct search engine queries, as found in Google's \textit{Did you mean…} suggestions.
+Besides spell checkers and authoring support, Language Checking is also important in the field of computer-assisted language learning and is applied to automatically correct queries sent to Web Search engines, e.g. Google’s ‘Did you mean…’ suggestions. 
 
 \subsubsection{Web Search}
 
-\begin{figure*}[htb]
-  \colorrule{grey3}{\textwidth}{1.5pt}
-  \center
-  \includegraphics[width=\textwidth]{../_media/english/web_search_architecture}
-  \caption{Web search}
-  \label{fig:websearcharch_en}
-  \colorrule{grey3}{\textwidth}{1.5pt}
- \end{figure*}
+Search on the web, in intranets or in digital libraries, is probably the most widely used and yet underdeveloped Language Techno-logy today. The search engine Google, which started in 1998, is nowadays used for about 80\% of all search queries world-wide \cite{CAT-Nota22}. 
 
-Searching the Web, intranets or digital libraries is probably the most widely used yet largely underdeveloped language technology application today. The Google search engine, which started in 1998, now handles about 80\% of all search queries \cite{spi1}. Since 2004, the verb \textit{googeln} has even had an entry in the Duden dictionary. The Google search interface and results page display has not significantly changed since the first version. However, in the current version, Google offers spelling correction for misspelled words and incorporates basic semantic search capabilities that can improve search accuracy by analysing the meaning of terms in a search query context \cite{pc1}. The Google success story shows that a large volume of data and efficient indexing techniques can deliver satisfactory results using a statistical approach to language processing. 
+Neither the search interface nor the presentation of the retrieved results has significantly changed since the first version. In the current version, Google offers a spelling correction facility for misspelled words, including Catalan, and, in 2009, they incorporated basic semantic search capabilities into their algorithmic mix \cite{CAT-Nota23}, which can improve search accuracy by analysing the meaning of the query terms in context. The success story of Google shows that with a lot of data at hand and efficient techniques for indexing these data, a mainly statistically-based approach can lead to satisfactory results. 
 
-For more sophisticated information requests, it is essential to integrate deeper linguistic knowledge to facilitate text interpretation. Experiments using \textbf{lexical resources} such as machine-readable thesauri or ontological language resources (e.\,g., WordNet for English or GermaNet for German) have demonstrated improvements in finding pages using synonyms of the original search terms, such as \textit{Atomkraft} {[}atomic energy{]}, \textit{Kernenergie} {[}atomic power{]} and \textit{Nuklearenergie} {[}nuclear energy{]}, or even more loosely related terms.
+However, for a more sophisticated request for information, integrating deeper linguistic knowledge is essential. In the research labs, experiments using machine-readable thesauri and ontological language resources like WordNet have shown improvements by allowing the possibility of finding a page on the basis of synonyms of the search terms, or even more loosely related terms. Again, these developments require language specific resources. A Catalan WordNet has been developed by the research centre TALP at Universitat Politècnica de Catalunya. The Catalan WordNet is freely available \cite{CAT-Nota24}.
 
-\boxtext{The next generation of search engines will have to include much more sophisticated language technology.}
+The next generation of search engines will have to include much more sophisticated Language Technology. If a search query consists of a question or another type of sentence rather than a list of keywords, retrieving relevant answers to this query requires an analysis of this sentence on a syntactic and semantic level as well as the availability of an index that allows for a fast retrieval of the relevant documents. For example, imagine a user inputs the query ‘Give me a list of all companies that were taken over by other companies in the last five years’. For a satisfactory answer, syntactic \underline{parsing} needs to be applied to analyse the grammatical structure of the sentence and determine that the user is looking for companies that have been taken over and not companies that took over others. Also, the expression last five years needs to be processed in order to find out which years it refers to. 
 
-The next generation of search engines will have to include much more sophisticated language technology, escpecially to deal with search queries consisting of a question or other sentence type rather than a list of keywords. For the query, \textit{Give me a list of all companies that were taken over by other companies in the last five years}, a syntactic as well as \textbf{semantic analysis} is required. The system also needs to provide an index to quickly retrieve relevant documents. A satisfactory answer will require syntactic parsing to analyse the grammatical structure of the sentence and determine that the user wants companies that have been acquired, rather than companies that have acquired other companies. For the expression \textit{last five years}, the system needs to determine the relevant range of years, taking into account the present year. The query then needs to be matched against a huge amount of unstructured data to find the pieces of information that are relevant to the user’s request. This process is called information retrieval, and involves searching and ranking relevant documents. To generate a list of companies, the system also needs to recognise a particular string of words in a document represents a company name, using a process called named entity recognition.
+Finally, the processed query needs to be matched against a huge amount of unstructured data in order to find the piece or pieces of information the user is looking for. This is commonly referred to as \underline{information retrieval} and involves the search for and ranking of relevant documents. In addition, generating a list of companies, we also need to extract the information that a particular string of words in a document refers to a company name. This kind of information is made available by so-called \underline{named-entity recognizers}. 
 
-A more demanding challenge is matching a query in one language with documents in another language. Cross-lingual information retrieval involves automatically translating the query into all possible source languages and then translating the results back into the user's target language.
+Even more demanding is the attempt to match a query to documents written in a different language. For \underline{cross-lingual information retrieval}, we have to automatically translate the query to all possible source languages and transfer the retrieved information back to the target language. The increasing percentage of data available in non-textual formats drives the demand for services enabling \underline{multimedia information retrieval}, i.e., information search on images, audio, and video data. For audio and video files, this involves a \underline{speech recognition} module to convert speech content into text or a phonetic representation, to which user queries can be matched.
 
-Now that data is increasingly found in non-textual formats, there is a need for services that deliver multimedia information retrieval by searching images, audio files and video data. In the case of audio and video files, a speech recognition module must convert the speech content into text (or into a phonetic representation) that can then be matched against a user query.
+Small and Medium Enterprises such as Inbenta \cite{CAT-inbenta} or RightNow (formerly q-go \cite{CAT-rightnow}) offer specific semantic search engines, including those that are developed for Catalan.
 
-In Germany, small and medium-sized enterprises such as Neofonie have successfully developed and applied search technologies, delivering the first German web search engine (Fireball) in 1997. It was later bought and further developed as a content portal by Lycos Europe. Today, only a few German companies such as Neofonie or Attensity Group (formerly Empolis) provide their own search engines. Open source technologies like Lucene and Solr are often used by search-focused companies to provide a basic search infrastructure. Other search-based companies rely on international search technologies such as FAST (a Norwegian company acquired by Microsoft in 2008) or the French company Exalead (acquired by Dassault Systèmes in 2010).
-
-These companies focus their development on providing add-ons and advanced search engines for special interest portals by using topic-relevant semantics. Due to the constant high demand for processing power, such search engines are only cost-effective when handling relatively small text corpora. The processing time is several thousand times higher than that needed by a standard statistical search engine like Google. These search engines are in high demand for topic-specific domain modelling, but they cannot be used on the Web with its billions and billions of documents.
-
-MetaGer is a meta search engine run by the University of Hannover. Intrafind, a Munich-based company, and others specialise in intranet search applications and search applications for products like SAP, which require customisation for specific customer data. In Switzerland, Eurospider provides information search for internet portals. In Austria, there are web search engines directed only at Austrian sites such as AT:SEARCH, AUSTRIA-SEEK or AUSTROLINKS but their coverage and outreach is fairly limited. In addition to these search engines, Austrian companies have also developed special purpose search engines such as 123people, a real-time people search engine that supports regional and international searches for, e.\,g., Austria, Germany, Canada, the USA, and the UK, or Tripwolf, an online travel platform.
+There are also some interesting initiatives to group specific web search services for Catalan, such as CerCat or Som-hi \cite{CAT-cercadors}, as one of the firs initiatives. An historical overview can be found at \cite{CAT-Resum-sobre-cercadors}.
 
 \subsubsection{Speech Interaction}
 
-Speech interaction is one of many application areas that depend on speech technology, i.\,e., technologies for processing spoken language. Speech interaction technology is used to create interfaces that enable users to interact in spoken language instead of using a graphical display, keyboard and mouse.  Today, these voice user interfaces (VUI) are used for partially or fully automated telephone services provided by companies to customers, employees or partners. Business domains that rely heavily on VUIs include banking, supply chain, public transportation, and telecommunications. Other uses of speech interaction technology include interfaces to car navigation systems and the use of spoken language as an alternative to the graphical or touchscreen interfaces in smartphones.
+Speech interaction technology is the basis for the creation of interfaces that allow a user to interact with machines using spoken language rather than, e.g., a graphical display, a keyboard and a mouse. Today, such voice user interfaces (VUIs) are usually employed for partially or fully automating service offerings provided by companies to their customers, employees or partners via the telephone. Business domains that rely heavily on VUIs are banking, logistics, public transportation and telecommunications. Other usages of speech interaction technology are interfaces to particular devices, e.g. in-car navigation systems, and the employment of spoken language as an alternative to the input/output modalities of graphical user interfaces, e.g. in smart phones.
 
-\begin{figure*}[htb]
-  \colorrule{grey3}{\textwidth}{1.5pt}
-  \center
-  \includegraphics[width=\textwidth]{../_media/english/simple_speech-based_dialogue_architecture}
-  \caption{Speech-based dialogue system}
-  \label{fig:dialoguearch_en}
-  \colorrule{grey3}{\textwidth}{1.5pt}
-\end{figure*}
+At its core, speech interaction comprises the following four different technologies:
+\begin{itemize}
+\item Automatic \underline{speech recognition} (ASR) is responsible for determining which words were actually spoken given a sequence of sounds uttered by a user.
+\item \underline{Syntactic analysis} and \underline{semantic interpretation} deal with analysing the syntactic structure of a user’s utterance and interpret-ting the latter according to the given system’s purpose.
+\item \underline{Dialogue Management} is required for determining, on the part of the system the user interacts with, which action shall be taken given the user’s input and the system’s functionality.
+\item \underline{Speech Synthesis} (Text-to-Speech, TTS) technology is employed for transforming the wording of that utterance into sounds that will be output to the user. 
+\end{itemize}
+One of the major challenges is to have an ASR system recognise the words uttered by a user as precisely as possible. This requires either a restriction of the range of possible user utterances to a limi-ted set of keywords, or the manual creation of language models that cover a large range of natural language user utterances. Whereas the former results in a rather rigid and inflexible usage of a VUI and possibly causes a poor user acceptance, the creation, tuning and maintenance of \underline{language models} may increase the costs significantly. However, VUIs that employ language models and initially allow a user to flexibly express their intent – evoked, e.g., by a \textit{How may I help you} greeting – show both a higher automation rate and a higher user acceptance and may therefore be considered as advantageous over a less flexible \textit{directed dialogue} approach.
 
-Speech interaction technology comprises four technologies: 
+For the output part of a VUI, companies tend to use pre-recorded utterances of professional – ideally corporate – speakers a lot. For static utterances, in which the wording does not depend on the particular contexts of use or the personal data of the given user, this will result in a rich user experience. However, the more dynamic content an utterance needs to consider, the more the user experience may suffer from a poor prosody resulting from concatenating single audio files. In contrast, today’s TTS systems prove superior, though optimisable, regarding the prosodic naturalness of dynamic utterances.  
 
-\begin{enumerate}
-\item Automatic \textbf{speech recognition} (ASR) determines which words are actually spoken in a given sequence of sounds uttered by a user.  
-\item Natural language understanding analyses the syntactic structure of a user’s utterance and interprets it according to the system in question.
-\item Dialogue management determines which action to take given the user input and system functionality.   
-\item \textbf{Speech synthesis} (text-to-speech or TTS) transforms the system’s reply into sounds for the user.
-\end{enumerate}
+Regarding the market for speech interaction technology, the last decade has been characterised by a strong standardisation of the interfaces between the different technology components, as well as by standards for creating particular software artefacts for a given application. There also has been strong market consolidation within the last ten years, particularly in the field of ASR and TTS. Here, the national markets in the G20 countries – i.e. economically strong countries with a considerable population - are dominated by less than 5 players worldwide, with Nuance being the most prominent one in Europe, also for Catalan, although some smaller local companies are starting to compete, such as Verbio \cite{CAT-Nota25}, which is a spin-off of Universitat Politècnica de Catalunya and has its own speech technology. 
 
-One of the major challenges of ASR systems is to accurately recognise the words a user utters. This means restricting the range of possible user utterances to a limited set of keywords, or manually creating language models that cover a large range of natural language utterances. Using machine learning techniques, language models can also be generated automatically from \textbf{speech corpora}, i.\,e., large collections of speech audio files and text transcriptions. Restricting utterances usually forces people to use the voice user interface in a rigid way and can damage user acceptance; but the creation, tuning and maintenance of rich language models will significantly increase costs. VUIs that employ language models and initially allow a user to express their intent more flexibly — prompted by a \textit{How may I help you?} greeting — tend to be automated and are better accepted by users.
+Regarding dialogue management technology and know-how, markets are strongly dominated by national players, which are usually SMEs. Most of the companies on the Catalan TTS market are essentially application developers. Key players in the Spanish market are: Indsys \cite{CAT-Nota26} (Intelligent Dialogue Systems), Fonetic \cite{CAT-Nota27}, Ydilo \cite{CAT-Nota28} and NaturalVoz \cite{CAT-Nota29}.
 
-\boxtext{Speech interaction is the basis for creating interfaces that allow a user to interact with spoken language instead of a graphical dis-play, keyboard and mouse.}
-
-Companies tend to use pre-recorded utterances by professional speakers for generating the output of the voice user interface. For static utterances where the wording does not depend on particular contexts of use or personal user data, this can deliver a rich user experience. But more dynamic content in an utterance may suffer from unnatural intonation because bits of audio files have simply been strung together. Through optimisation, today’s TTS systems are getting better at producing natural-sounding dynamic utterances.
-
-Interfaces in speech interaction have been considerably standardised during the last decade in terms of their various technological components. There has also been strong market consolidation in speech recognition and speech synthesis. The national markets in the G20 countries (economically resilient countries with high populations) have been dominated by just five global players, with Nuance (USA) and Loquendo (Italy) being the most prominent players in Europe. In 2011, Nuance announced the acquisition of Loquendo, which represents a further step in market consolidation.
-
-In the German-language TTS market, there are smaller companies such as voiceINTERconnect and Ivona. SVOX (Switzerland) was acquired by Nuance in 2011. An Austrian German TTS voice was commercialised by CereProc, a UK company, in 2010. For many years, Philips Speech Recognition Systems had a strong ASR research and development unit in Austria, which was acquired by Nuance in 2008. Today, Simon Listens is an Austrian non-profit organisation that develops open-source ASR software, focusing on applications for special-needs user groups such as the physically handicapped and the elderly.
-
-With regard to dialogue management technology and know-how, the market is dominated by national SME players. In Germany, these include Crealog, Excelsis and SemanticEdge. Rather than relying on a software license-driven product business, these companies are mainly positioned as full-service providers that create voice user interfaces as part of a system integration service. In the area of speech interaction, there is as yet no real market for syntactic and semantic analysis-based core technologies.
-
-The demand for voice user interfaces in Germany has grown fast in the last five years, driven by increasing demand for customer self-service, cost optimisation for automated telephone services, and the increasing acceptance of spoken language as a media for human-machine interaction. All this was catalysed by the creation of the voice-community.de network that brought together industry players, research institutes and enterprise customers. Among other achievements, the voice community launched a joint plan for VUI quality, and organised the annual VOICE Days event which included a competition for VOICE Awards in different categories. As academic partners, the DFKI and the Fraunhofer IAO institutes played a key role in spreading knowledge about the advantages of speech interaction technology to German enterprises.
-
-Looking ahead, there will be significant changes, due to the spread of smartphones as a new platform for managing customer relationships, in addition to fixed telephones, the Internet and e-mail. This will also affect how speech interaction technology is used. In the long term, there will be fewer telephone-based VUIs, and spoken language apps will play a far more central role as a user-friendly input for smartphones. This will be largely driven by stepwise improvements in the accuracy of speaker-independent speech recognition via the speech dictation services already offered as centralised services to smartphone users.
+Looking beyond today’s state of technology, there will be significant changes due to the spread of smart phones as a new platform for managing customer relationships – in addition to the telephone, internet, and email channels. This tendency will also affect the employment of technology for speech interaction. On one hand, demand for telephony-based VUIs will decrease, in the long run. On the other hand, the usage of spoken language as a user-friendly input modality for smart phones will gain significant importance. This tendency is supported by the observable improvement of speaker independent speech recognition accuracy for speech dictation services that are already offered as centralised services to smart phone users. Given this ‘outsourcing’ of the recognition task to the infrastructure of applications, the application-specific employment of linguistic core technologies will supposedly gain importance compared to the present situation. 
 
 \subsubsection{Machine Translation}
 
-\begin{figure*}[htb]
-  \colorrule{grey3}{\textwidth}{1.5pt}
-  \center
-  \includegraphics[width=\textwidth]{../_media/english/machine_translation}
-  \caption{Machine translation (statistical; rule-based)}
-  \label{fig:mtarch_en}
-  \colorrule{grey3}{\textwidth}{1.5pt}
-\end{figure*}
+The idea of using digital computers for translation of natural languages came up in 1946 by A. D. Booth and was followed by substantial funding for research in this area in the 1950s and beginning again in the 1980s. Nevertheless, \underline{Machine Translation} (MT) still fails to fulfil the high expectations it gave rise to in its early years. 
 
-The idea of using digital computers to translate natural languages can be traced back to 1946 and was followed by substantial funding for research during the 1950s and again in the 1980s. 
-Yet machine translation (MT) still cannot deliver on its initial promise of providing across-the-board automated translation.  
-
-\boxtext{At its basic level, Machine Translation simply substitutes words in one natural language with words in another language.}
-
-The idea of using digital computers to translate natural languages goes back to 1946 and was followed by substantial funding for research during the 1950s and again in the 1980s. Yet \textbf{machine translation} (MT) still cannot meet its initial promise of across-the-board automated translation. 
-
-The most basic approach to machine translation is the automatic replacement of the words in a text written in one natural language with the equivalent words of another language. This can be useful in subject domains that have a very restricted, formulaic language such as weather reports.
-However, in order to produce a good translation of less restricted texts, larger text units (phrases, sentences, or even whole passages) need to be matched to their closest counterparts in the target language. The major difficulty is that human language is ambiguous. Ambiguity creates challenges on multiple levels, such as word sense disambiguation on the lexical level (a \textit{jaguar} is a brand of car or an animal) or the assignment of case on the syntactic level, for example:
-
+At its basic level, MT simply substitutes words in one natural language by words in another. This can be useful in subject domains with a very restricted, formulaic language, e.g., weather reports or for closely related languages. However, for a good translation of less standardised texts, larger text units (phrases, sentences, or even whole passages) need to be matched to their closest counterparts in the target language. The major difficulty here lies in the fact that human language is ambiguous, which yields challenges on multiple levels, e.g., \underline{word sense disambiguation} on the lexical level (‘Jaguar’ can mean a car or an animal) or the attachment of prepositional phrases on the syntactic level as in:
 \begin{itemize}
-\item Die Frau sah das Auto und \textbf{ihr} Mann auch.
-\item Die Frau sah das Auto und \textbf{ihren} Mann auch.
-\item The woman saw the car and her husband, too.
+\item \textit{Passejava amb el nen cantant.}
+\item \textit{T1: I was walking with the singer child.}
+\item \textit{T2: I was walking and singing with the child.}
 \end{itemize}
 
-One way to build an MT system is to use linguistic rules. For translations between closely related languages, a translation using direct substitution may be feasible in cases such as the above example. However, rule-based (or linguistic knowledge-driven) systems often analyse the input text and create an intermediary symbolic representation from which the target language text can be generated. The success of these methods is highly dependent on the availability of extensive lexicons with morphological, syntactic, and semantic information, and large sets of grammar rules carefully designed by skilled linguists. This is a very long and therefore costly process.
+One way of approaching the task is based on linguistic rules. For translations between closely related languages, a direct translation may be feasible in cases like the example above. But often rule-based (or knowledge-driven) systems analyse the input text and create an intermediary, symbolic representation, from which the text in the target language is generated. The success of these methods is highly dependent on the availability of extensive \underline{lexica} with morphological, syntactic, and semantic information, and large sets of \underline{grammar} rules carefully designed by a skilled linguist.
 
-In the late 1980s when computational power increased and became cheaper, interest in statistical models for machine translation began to grow. Statistical models are derived from analysing bilingual text corpora, \textbf{parallel corpora}, such as the Europarl parallel corpus, which contains the proceedings of the European Parliament in 11 European languages. Given enough data, statistical MT works well enough to derive an approximate meaning of a foreign language text by processing parallel versions and finding plausible patterns of words. Unlike knowledge-driven systems, however, statistical (or data-driven) MT systems often generate ungrammatical output. Data-driven MT is advantageous because less human effort is required, and it can also cover special particularities of the language (e.\,g., idiomatic expressions) that are often ignored in knowledge-driven systems. 
+Beginning in the late 1980s, as computational power increased and became less expensive, more interest was shown in statistical mo-dels for MT. The parameters of these statistical models are derived from the analysis of bilingual text corpora, such as the Europarl parallel corpus, which contains the proceedings of the European Parliament in 11 European languages. Given enough data, statistical MT works well enough to derive an approximate meaning of a foreign language text. However, unlike knowledge-driven systems, statistical (or data-driven) MT often generates ungrammatical output. On the other hand, besides the advantage that less human effort is required for grammar writing, data-driven MT can also cover particularities of the language that go missing in knowledge-driven systems, for example idiomatic expressions. 
 
-The strengths and weaknesses of knowledge-driven and data-driven machine translation tend to be complementary, so that nowadays researchers focus on hybrid approaches that combine both methodologies. One such approach uses both knowledge-driven and data-driven systems, together with a selection module that decides on the best output for each sentence. However, results for sentences longer than, say, 12 words, will often be far from perfect. A more effective solution is to combine the best parts of each sentence from multiple outputs; this can be fairly complex, as corresponding parts of multiple alternatives are not always obvious and need to be aligned. 
+As the strengths and weaknesses of knowledge- and data-driven MT are complementary, researchers nowadays unanimously target hybrid approaches combining methodologies of both. This can be done in several ways. One is to use both knowledge- and data-driven systems and have a selection module decide on the best output for each sentence. However, for longer sentences, no result will be perfect. A better solution is to combine the best parts of each sentence from multiple outputs, which can be fairly complex, as corresponding parts of multiple alternatives are not always obvious and need to be aligned. 
 
-\boxtext{Machine Translation is particularly challenging for the German language.}
+Due to the particular official situation of bilingualism in particular regions of Spain, and to the linguistic relatedness of Catalan with Spanish, the development of MT systems for this pair of languages has been quite successful. Initially supported by the autonomous Catalan leading MT systems like METAL (Siemens), ATLAS (Fujitsu) were located in Barcelona during the 1990’s, and when the big companies ended their engagement, the systems were further developed by offspring and spin-off companies: METAL was further developed by a local SME, INCYTA, as well as by GMS and later by Lucy Software, which is currently the main (but not the only) vendor for MT systems involving Catalan. In fact, the Catalan-Spanish MT system  bought by the Generalitat of Catalonia was offered as a public web service as early as 2005, while Google started offering it in 2007. 
 
-The potential for creating arbitrary new words by compounding makes dictionary analysis and dictionary coverage difficult; free word order and split verb constructions pose problems for analysis; and extensive inflection is a challenge for generating words with proper gender and case markings.  Some of today's leading MT systems such as LOGOS, METAL (Siemens) and LMT (IBM Heidelberg) were originally developed in Germany and brought to market maturity in this geography. When these companies ended their initial engagement in the technology, development was passed down to spin-offs. LOGOS was open-sourced. METAL was taken on by GMS and later Lucy Software, and also offered as Langenscheidt T1 in the retail market. The IBM system forms the basis for product offers from Linguatec (Personal Translator) and Lingenio (translate). CLS Communication offers MT in Switzerland. All of these systems are rule-based. Although significant research in this technology exists in national and international contexts, data-driven and hybrid systems have so far been less successful in business applications than in the research lab.  The use of machine translation can significantly increase productivity provided the system is intelligently adapted to user-specific terminology and integrated into a workflow. Special systems for interactive translation support were developed, for example, at Siemens. Language portals such as the Volkswagen site provide access to dictionaries, company-specific terminology, translation memory and MT support.
+Other companies also developed MT systems with in-house technologies: T6 Estàndar Linguistic and AutomaticTrans. The system developed by AutomaticTrans has its origin in the production of a bilingual newspaper, in Catalan and Spanish, El Periódico. Currently, there are three newspapers which are made available in the two languages  through the use of Machine Translation technology. The other two are El Segre and La Vanguardia. 
 
-There is still a huge potential for improving the quality of MT systems. The challenges involve adapting language resources to a given subject domain or user area, and integrating the technology into workflows that already have term bases and translation memories. Another problem is that most of the current systems are English-centred and only support a few languages from and into German. This leads to friction in the translation workflow and forces MT users to learn different lexicon coding tools for different systems.
+The Generalitat Valenciana supported the creation of a MT system specific for Valencian, SALT. More recently, the Universidad Politécnica de Valencia has also released a version of SiShiTra, a hybrid system, and the open-source OpenTrad also offers a particular version for Valencian.
 
-Evaluation campaigns help to compare the quality of MT systems, the different approaches and the status of the systems for different language pairs. Figure~\ref{fig:euromatrix_de} (p.~\pageref{fig:euromatrix_de}), which was prepared during the EC Euromatrix+ project, shows the pair-wise performances obtained for 22 of the 23 official EU languages (Irish was not compared). The results are ranked according to a BLEU score, which indicates higher scores for better translations \cite{bleu1}. A human translator would normally achieve a score of around 80 points.
+The pair Spanish-Catalan was the origin of the open source system developed by the Transducens \cite{CAT-transducens} group of the Universitat d'Alacant \cite{CAT-UnivAlacant}, Apertium, which is the first open-source MT technology in the world. Its commercial exploitation is mainly carried out by Prompsit Language Engineering and OpenTrad Consortium. 
 
-The best results (in green and blue) were achieved by languages that benefit from a considerable research effort in coordinated programmes and the existence of many parallel corpora (e.\,g., English, French, Dutch, Spanish and German). The languages with poorer results are shown in red. These languages either lack such development efforts or are structurally very different from other languages (e.\,g., Hungarian, Maltese and Finnish).
+Most of the systems introduced above are rule-based. While there is significant research on this technology in national and international contexts, data-driven and hybrid systems have been less successful in business than in research so far. 
+
+Provided with good adaptation in terms of user-specific terminology and workflow integration, the use of MT can increase productivity significantly. Thus, the main user of MT for Catalan is the public administration, including the Justice Department and other Ministries, since the beginning of the 21st century. 
+
+The quality of MT systems is still considered to have huge improvement potential. Challenges include the adaptability of the language resources to a given subject domain or user area and the integration into existing workflows with term bases and translation memories.
+
+In addition, most of the existing parallel corpora are between Spanish and Catalan, so for the majority of translation solutions, Spanish is the pivot language.
 
 \subsection{Other Application Areas}
 
-Building language technology applications involves a range of subtasks that do not always surface at the level of interaction with the user, but they provide significant service functionalities “behind the scenes” of the system in question. They all form important research issues that have now evolved into individual sub-disciplines of computational linguistics.  Question answering, for example, is an active area of research for which annotated corpora have been built and scientific competitions have been initiated. The concept of question answering goes beyond keyword-based searches (in which the search engine responds by delivering a collection of potentially relevant documents) and enables users to ask a concrete question to which the system provides a single answer. For example:
+Building Language Technology applications involves a range of subtasks that do not always surface at the level of interaction with the user, but provide significant service functionalities ‘under the hood’ of the system. Therefore, they constitute important research issues that have become individual sub-disciplines of Computational Linguistics in academia. 
 
-\textit{Question: How old was Neil Armstrong when he stepped on the moon?}\\
-\textit{Answer: 38.}
+Question answering has become an active area of research, for which annotated corpora have been built and scientific competitions have been started. The idea is to move from keyword-based search (to which the engine responds with a whole collection of potentially relevant documents) to the scenario of the user asking a concrete question and the system providing a single answer: \\
+\textit{‘At what age did Neil Armstrong step on the moon?’}\\
+\textit{’38’.}
 
-While question answering is obviously related to the core area of web search, it is nowadays an umbrella term for such research issues as which different types of questions exist, and how they should be handled; how a set of documents that potentially contain the answer can be analysed and compared (do they provide conflicting answers?); and how specific information (the answer) can be reliably extracted from a document without ignoring the context. 
+While this is obviously related to the aforementioned core area Web Search, question answering nowadays is primarily an umbrella term for research questions such as what types of questions should be distinguished and how should they be handled, how can a set of documents that potentially contain the answer be analysed and compared (do they give conflicting answers?), and how can specific information - the answer - be reliably extracted from a document, without unduly ignoring the context. 
 
-\boxtext{Language technology applications often provide significant service functionalities "behind the scenes” of larger software systems.}
+This is in turn related to the information extraction (IE) task, an area that was extremely popular and influential at the time of the ‘statistical turn’ in Computational Linguistics, in the early 1990s. IE aims at identifying specific pieces of information in specific classes of documents; this could e.g. be the detection of the key players in company takeovers as reported in newspaper stories. Another scenario that has been worked on is reports on terrorist incidents, where the problem is to map the text to a template specifying the perpetrator, the target, time and location of the incident, and the results of the incident. Domain-specific template-filling is the central characteristic of IE, which for this reason is another example of a ‘behind the scenes’ technology that constitutes a well-demarcated research area but for practical purposes then needs to be embedded into a suitable application environment. 
 
-Question answering is in turn related to information extraction (IE), an area that was extremely popular and influential when computational linguistics took a statistical turn in the early 1990s. IE aims to identify specific pieces of information in specific classes of documents, such as the key players in company takeovers as reported in newspaper stories. Another common scenario that has been studied is reports on terrorist incidents. The task here consists of mapping appropriate parts of the text to a template that specifies the perpetrator, target, time, location and results of the incident. Domain-specific template-filling is the central characteristic of IE, which makes it another example of a “behind the scenes” technology that forms a well-demarcated research area, which in practice needs to be embedded into a suitable application environment. 
+Two ‘borderline’ areas, which sometimes play the role of standalone application and sometimes that of supportive, ‘under the hood’ component are text summarization and text generation. Summarization, obviously, refers to the task of making a long text short, and is offered for instance as a functionality within MS Word. It works largely on a statistical basis, by first identifying ‘important’ words in a text (that is, for example, words that are highly frequent in this text but markedly less frequent in general language use) and then determining those sentences that contain many important words. These sentences are then marked in the document, or extracted from it, and are taken to constitute the summary. In this scenario, which is by far the most popular one, summarization equals sentence extraction: the text is reduced to a subset of its sentences. All commercial summarizers make use of this idea. An alternative approach, to which some research is devoted, is to actually synthesize new sentences, i.e., to build a summary of sentences that need not show up in that form in the source text. This requires a certain amount of deeper understanding of the text and therefore is much less robust. All in all, a text generator is in most cases not a stand-alone application but embedded into a larger software environment, such as into the clinical information system where patient data is collected, stored and processed, and report generation is just one of many functionalities.
 
-    Text summarisation and \textbf{text generation} are two borderline areas that can act either as standalone applications or play a supporting role. Summarisation attempts to give the essentials of a long text in a short form, and is one of the features available in Microsoft Word. It mostly uses a statistical approach to identify the “important” words in a text (i.\,e., words that occur very frequently in the text in question but less frequently in general language use) and determine which sentences contain the most of these “important” words. These sentences are then extracted and put together to create the summary. In this very common commercial scenario, summarisation is simply a form of sentence extraction, and the text is reduced to a subset of its sentences. An alternative approach, for which some research has been carried out, is to generate brand new sentences that do not exist in the source text. 
-
-\boxtext{For the German language, research in most text technologies is much less developed than for the English language.}
-
-This requires a deeper understanding of the text, which means that so far this approach is far less robust. On the whole, a text generator is rarely used as a stand-alone application but is embedded into a larger software environment, such as a clinical information system that collects, stores and processes patient data. Creating reports is just one of many applications for text summarisation. 
-For the German language, research in these text technologies is much less developed than for the English language. Question answering, information extraction, and summarisation have been the focus of numerous open competitions in the USA since the 1990s, primarily organised by the government-sponsored organisations DARPA and NIST. These competitions have significantly improved the state of the art, but their focus has mostly been on the English language. As a result, there are hardly any annotated corpora or other special resources for these tasks in German. When summarisation systems use purely statistical methods, they are largely language-independent and a number of research prototypes are available. For text generation, reusable components have traditionally been limited to surface realisation modules (generation grammars) and most of the available software is for the English language. There is, however, a semantics-based multilingual generator and a template-based generator for the German language, but they date back to the 1990s and have not been ported to today’s software environments.
+The situation in all these research areas for most of the languages is much less developed than it is for English, where question answering, information extraction, and summarization have since the 1990s been the subject of numerous open competitions, primarily those organised by DARPA/NIST in the United States. These have significantly improved the state of the art, but the focus has always been on English; some competitions have added multilingual tracks, but Catalan has never been prominent. Accordingly, there are hardly any annotated corpora or other resources for Catalan that relate to these tasks. Summarization systems, when using purely statistical methods, are often to a good extent language-independent, and thus some research prototypes are available. For text generation, reusable components have traditionally been limited to the surface realisation modules (the "generation grammars"); again, most available software is for English.
 
 \subsection{Educational Programmes}
 
-Language technology is a very interdisciplinary field that involves the combined expertise of linguists, computer scientists, mathematicians, philosophers, psycholinguists, and neuroscientists among others. As a result, it has not acquired a clear, independent existence in the German faculty system. Some universities have established a separate institute for computational linguistics (CL) (e.\,g., Heidelberg, Saarbrücken and Tübingen); others have created institutes under a slightly different name (Stuttgart). Programmes are also offered by other departments, such as computer science faculties (Leipzig and Hamburg) or linguistics faculties (Bochum and Jena). Some universities only offer Master’s courses (Gießen) or Bachelor’s courses (Erlangen-Nürnberg, Göttingen, Munich, Potsdam and Trier), or language technology modules to students majoring in other subjects (Hildesheim). Many of these programmes and courses have only been introduced recently. At least 17 German universities currently offer programmes in the field of language technology. In Switzerland, CL programmes are offered by the Universities of Zurich and Geneva. In Austria, there is no fully-fledged CL study programme, but CL and LT courses are taught as part of other programmes in Vienna and Klagenfurt.
+Language Technology is a highly interdisciplinary field, involving the expertise of linguists, computer scientists, mathematicians, philosophers, psycholinguists, and neuroscientists, among others. Although it has not yet acquired a fixed place in any of the faculty systems of the universities in the Catalan linguistic domain, Barcelona has a higher concentration of studies that consider the field. 
+Several subjects related to language technology are offered in bachelor degrees by different departments, such as the faculty of computer science (e.g., in the Universitat d’Alacant) or the faculty of linguistics (e.g., in the Universitat de Barcelona, the Universitat PompeuFabra and the Universitat Oberta de Catalunya).
+As regards masters courses and postgraduate degrees, Universitat Autònoma de Barcelona offers the International Master in Natural Language Processing and Human Language Technology, in collaboration with foreign universities. Besides this, some masters are offered in which one of the research areas focusses on natural language processing (e.g., the Universitat de Barcelona, the Universitat Pompeu Fabra, the Universitat de Girona and the Universitat Rovira i Virgili). Modules in Language Technology are also offered to students of other master courses (e.g. the Universitat d’Alacant, the Universitat de Castelló and the Universitat Politècnica de València). 
+PhD programmes are also offered, in which one of the research areas is human language technologies (e.g. the Universitat d’Alacant, the Universitat de Barcelona and the Universitat Rovira i Virgili).
 
-The German Federal Statistics Office has kept statistics on CL as a course of study at German universities since the Winter Semester of 1992-93. Since then, studying CL has become increasingly popular. The number of students has been stable since 2000, and programmes have annually attracted around 250-350 new students who enrol in CL as their main course of study \cite{wie1}. The relatively low number of graduates from German universities cannot meet the steadily rising demand for qualified personnel specialised in language technology. In many cases, companies and research institutes such as the German Research Centre for Artificial Intelligence (DFKI) and the Austrian Research Institute for Artificial Intelligence (ÖFAI) have to call on foreign experts to help them with their work.
+\subsection{National Projects and Efforts}
 
-\subsection{National Projects and Initiatives}
+Technology programs for the Catalan language have been supported by the Spanish and the Catalan Governments.
 
-The existence of a relatively lively LT sector in Germany can be traced back to major LT programmes over the last 20 to 30 years. One of the first was EUROTRA, an ambitious machine translation project that was established and funded by the European Commission from the late 1970s until 1994. Although EUROTRA did not  reach its stated goal of building a state-of-the-art translation system, the project did have a long-term impact on Europe’s language technology industry. The VERBMOBIL project focused on a more data-driven approach to LT following a major shift in the translation paradigm away from a rule-based approach. This large-scale national project with the goal of translating speech in real time between German, Japanese and English was funded by the Federal Ministry of Education and Research (BMBF) from 1993 to 2000. Although the resulting VERBMOBIL prototype was unable to establish itself in the marketplace, it lead to many spin-off innovations, and the technology now underlies the Google Translate system available on the Web. 
+The existence of comparably lively LT activity, specifically in the Barcelona area, can be traced back to major LT programs and large research projects carried out in the last decades. One of the first programs was EUROTRA, the ambitious Machine Translation (MT) project established and funded by the European Commission from the late 1970s until 1994. Even though the EUROTRA project did not work with Catalan, the project, which had a long-term impact on language industries in Europe, was also crucial to highlighting the importance of languages in the technological world, and how it could affect small to medium languages. The Catalan government quickly began to understand the challenges and initiated different programs that basically addressed the localization of differrent software tools, including LT applications. 
 
-    The IBM project LILOG, which ran from 1985 to 1991, was an implementation of an information base in the German language. It involved some 200 scientists working in computational linguistics, natural language understanding systems and artificial intelligence in Germany, and proved that a cooperative project between universities and industry can produce useful results for both pure research and real world methods and tools.
+Machine translation, speech recognition, spelling and grammar checking research and industrial developments have been supported by different departments of the Generalitat de Catalunya for more than 20 years. The Secretaria de Política Lingüística, the Comissionat per a la Societat de la Informació and the Secretaria de Telecomunicacions i Societat de la Informació have been the main engines of the support policies. Besides, MT into or from Catalan has also benefited from Spanish funding programs. Projects such as Apertium (open source MT system) and OpenTrad, as well as a number of other small programs, have received funding from the Ministerio de Ciencia y Tecnología. 
 
-    National projects focused on marking-up and annotating language resources were funded in the 1990s and early 2000. These led to the development of the Stuttgart-Tübingen tag set (STTS), which has had a lasting impact on the annotation of language corpora. Two other projects – NEGRA and TIGER – were partially funded by the German Research Foundation (DFG). The annotation schemes proposed by these projects have become the de facto standard in the field, and they now underlie the international standardisation of syntactic annotation.
+The CREL – Centre de Referència en Enginyeria Lingüística, 1996-2000, managed by the Institut d’Estudis Catalans and with participants from the major Catalan Universities, was created with the specific aim of promoting the creation of resources and tools for the automatic processing of Catalan texts in a variety of applications. 
 
-    COLLATE, funded by the BMBF from 2000 to 2006, was one of the first projects to address the issues of a language infrastructure and led to the creation of an information portal for the field (LT World). German and Austrian institutions are involved in the on-going European CLARIN project. Other on-going projects include EUROPEANA and THESEUS, a project co-funded by the Federal Ministry of Economics and Technology (BMWI) that aims to develop the basic technologies and standards needed to make knowledge on the Internet more widely available in the future. 
+As regards the presence of the Catalan language in European infrastructures, in 2008 the Catalan Government signed an agreement with Universitat Pompeu Fabra, the national representative of the European project CLARIN in Spain, with the aim of building a Catalan demonstrator. The main goal of this demonstrator (CLARIN-CAT-LAB), which is already available for research purposes \cite{CAT-Nota30}, is to integrate language resources and technology for the Catalan language, thus guaranteeing the presence of this language in the European CLARIN infrastructure. In addition, the Biblioteca de Catalunya, Catalonia’s national library, is one of the partners in the EUROPEANA project. Other Catalan institutions are also contributing content to the project.
 
-    Along with many smaller scale projects that have now been completed, the above projects have led to the development of wide-ranging competencies in the field of language technology as well as the creation of a basic technological infrastructure for German language tools and resources. Public funding for LT projects in Germany and in Europe is still relatively low, however, when compared to the amount of money the USA spends on language translation and multilingual information access \cite{laz1}. 
+From 2000 up until the present day, the Spanish Government supported several projects in the area of multilingual speech technologies within the National Plan of Research and Technology, i.e., TEHAM, AVIVAVOZ, and BUCEADOR. The main purpose of these projects was to improve the quality of speech recognition, speech translation and text to speech synthesis in all the official languages spoken in Spain, i.e., Basque, Galician, Catalan and Spanish.
 
-    In Austria, the Medical University of Vienna developed a language dialogue system in German as a part of the VIE-LANG project. The Faculty of Computer Sciences at the University of Vienna is carrying out the JETCAT project on translation between Japanese and English, and an on-going project has been compiling the Austrian Academy Corpus since 2001. There are no dedicated LT programmes in Austria. Funding for LT-related topics typically comes from research programmes that have open topics, especially those that focus on the transfer of knowledge from academic research to industry (particularly via SMEs). Several of these programmes are administered by the Austrian Research Promotion Agency (FFG). The Vienna Science and Technology Fund (WWTF) is a fairly strong supporter of localised language technology, especially for topics related to Vienna, such as synthesizing the speech of the Viennese dialect (or sociolect) and building MT systems to translate from Austrian German to Viennese and other dialects. 
-
-    In Switzerland, interest in language technology began in the 1980s with strong involvement in the EUROTRA project. The Universities of Zurich and Geneva are currently working on several projects in the field of MT including MT between Standard German and Swiss German \cite{latl1}. Corpus-building projects include the collection of speech corpora by the National Centre of Competence in Research on Interactive Multimodal Information Management and a project that collects SMS text messages in Swiss German \cite{sor1}. A Swiss research institute in this field is IDIAP. Generally speaking, Switzerland has a small LT sector, mainly because of limited funding opportunities. EU funding is not always accessible and is often considered to be unattractive for Swiss SMEs. The Commission for Technology and Innovation (KTI) offers efficient, red-tape-free support for short and medium-term projects and also supports the development of start-up companies. However, start-ups in the field of language technology are rare due to this lack of relevant expertise.
-
-As we have seen, previous programmes have led to the development of a number of LT tools and resources for the German language. The following section summarises the current state of LT support for German.
+In 2005, the Catalan Government launched a project to produce Language Resources for Speech Recognition and Speech Synthesis. As a result, Language Resources for telephone applications, in-car applications and microphone applications were produced. Later, the project TECNOPARLA (2007-2010) had as its objective the translation of speech between Spanish and Catalan. The speech signals were collected directly from TV programmes. The project resulted on advances in all the component speech technologies, i.e.  diarization, speech recognition, speech translation and text to speech synthesis.
   
 \subsection{Availability of Tools and Resources}
 
-Figure~\ref{fig:lrlttable_en} provides a rating for language technology support for the German language. This rating of existing tools and resources was generated by leading experts in the field who provided estimates based on a scale from 0 (very low) to 6 (very high) using seven criteria.
+    The following table summarises the current state of language technology support for the German language. The rating for existing tools and resources was generated by leading experts in the field who provided estimates based on a scale from 0 (very low) to 6 (very high) according to seven criteria.
 
 \begin{figure*}[htb]
 \centering
@@ -1399,38 +1290,40 @@ Figure~\ref{fig:lrlttable_en} provides a rating for language technology support 
 &\begin{sideways}\makecell[l]{\makecell[l]{Availability} }\end{sideways} &\begin{sideways}\makecell[l]{Quality}\end{sideways}
 &\begin{sideways}\makecell[l]{Coverage}\end{sideways} &\begin{sideways}\makecell[l]{Maturity}\end{sideways} &\begin{sideways}\makecell[l]{Sustainability}\end{sideways} &\begin{sideways}\makecell[l]{Adaptability}\end{sideways} \\ \addlinespace
 \multicolumn{8}{>{\columncolor{orange2}}l}{Language Technology: Tools, Technologies and Applications} \\ \addlinespace
-Speech Recognition	&5&1&5&5&4&3&3 \\ \addlinespace
-Speech Synthesis &5&3&5&5&4&3&3\\ \addlinespace
-Grammatical analysis &4&2.5&4&4&4&2.5&2.5\\ \addlinespace
-Semantic analysis &2&2&3.5&2.5&2&2&1\\ \addlinespace
-Text generation &2&1&2.5&2.5&2&1&2\\ \addlinespace
-Machine translation &5&3&2.5&3.5&4&1&2\\ \addlinespace
+Speech Recognition	&3&3&3&3&3&3&2 \\ \addlinespace
+Speech Synthesis &4&2&4&4&5&4&2\\ \addlinespace
+Grammatical analysis &3&2.5&4&4&4&2.5&2.5\\ \addlinespace
+Semantic analysis &1&1&2&1&1&1&1\\ \addlinespace
+Text generation &1&2&3&1&3&3&1\\ \addlinespace
+Machine translation &3&3&2&3&4&1&2\\ \addlinespace
 \multicolumn{8}{>{\columncolor{orange2}}l}{Language Resources: Resources, Data and Knowledge Bases} \\ \addlinespace
-Text corpora &3&2&4.5&3.5&4&4&2.5\\ \addlinespace
-Speech corpora &3&1&3.5&2.5&3&3&2\\ \addlinespace
+Text corpora &3&2.5&3.5&3&3&2.5&2.5\\ \addlinespace
+Speech corpora &3&5&3&2&3&3&2\\ \addlinespace
 Parallel corpora &2&1&2.5&2.5&2&2&1\\ \addlinespace
-Lexical resources &3&2.5&4.5&3&4&4&2.5\\ \addlinespace
-Grammars &3&2&3.5&3.5&3&2&1\\
+Lexical resources &2&1&2&2&2&1&1\\ \addlinespace
+Grammars &2&3&2&2&2&2&2\\
 \end{tabular}
-\caption{State of language technology support for German}
+\caption{State of language technology support for Catalan}
 \label{fig:lrlttable_en}
 \end{figure*}
 
-The key results for German language technology can be summed up as follows:
+The table can be summarized in the form of a number of key messages, which highlight crucial issues for the further development of automatic language processing of Catalan, on the basis of the present situation:
 
 \begin{itemize}
-\item Speech processing currently seems to be more mature than the processing of written text. In fact, speech technology has already been successfully integrated into many everyday applications, from spoken dialogue systems and voice-based interfaces to mobile phones and car navigation systems. 
-\item Research has successfully led to the design of medium to high quality software for basic text analysis, such as tools for morphological analysis and syntactic parsing. But advanced technologies that require deep linguistic processing and semantic knowledge are still in their infancy. 
-\item As to resources, there is a large reference text corpus with a balanced mix of genres for the German language, but it is difficult and expensive to access. There are a number of corpora annotated with syntactic, semantic and discourse structure mark-up, but again, there are not nearly enough language corpora containing the right sort of content to meet the growing need for deeper linguistic and semantic information. 
-\item In particular, there is a lack of the sort of parallel corpora that form the basis for statistical and hybrid approaches to machine translation. Currently, translation from German to English works best because for there are large amounts of parallel text available for this language pair. 
-\item Many of these tools, resources and data formats do not meet industry standards and cannot be sustained effectively. A concerted programme is required to standardise data formats and APIs.
-\item An unclear legal situation restricts the use of digital texts, e.\,g., those published online by newspapers, for empirical linguistic and language technology research, such as training statistical language models. Together with politicians and policy makers, researchers should try to establish laws or regulations that enable researchers to use publicly available texts for language-related R\&D activities.
-\item The cooperation between the Language Technology community and those involved with the Semantic Web and the closely related Linked Open Data movement should be intensified with the goal of establishing a collaboratively maintained, machine-readable knowledge base that can be used both in web-based information systems and as semantic knowledge bases in LT applications. Ideally, this endeavour should be addressed multilingually on the European scale.
+\item While some specific corpora of high quality exist, a very large syntactically annotated corpus is not available.
+\item For Catalan, a large corpus exists, but it is not easily/cheaply accessible.
+\item Many of the resources lack standardisation, i.e., even if they exist, sustainability is not given; concerted programs and initiatives are needed to standardise data and interchange formats.
+\item Semantics is more difficult to process than syntax; text semantics is more difficult to process than word and sentence semantics.
+\item The more semantics a tool takes into account, the more difficult it is to find the right data; more efforts for supporting deep processing are needed.
+\item Standards do exist for semantics in the sense of world knowledge (RDF, OWL, etc.); they are, however, not easily applicable to NLP tasks.
+\item Speech processing is currently more mature than NLP for written text.
+\item There are many groups working in machine translation, particularly focused in Catalan-Spanish. 
+\item Research has been successful in designing particular high quality software, but it is nearly impossible to come up with sustainable and standardised solutions, given the current funding situations.
 \end{itemize}
 
-In a number of specific areas of German language research, we have software with limited functionality available today. Obviously, further research efforts are required to meet the current deficit in processing texts on a deeper semantic level and to address the lack of resources such as parallel corpora for machine translation
-
 \subsection{Cross-language comparison}
+
+    The current state of LT support varies considerably from one language community to another. In order to compare the situation between languages, this section will present an evaluation based on two sample application areas (machine translation and speech processing) and one underlying technology (text analysis), as well as basic language resources needed for building LT applications. 
 
 \begin{figure*}[tb]
   \small
@@ -1688,29 +1581,27 @@ LT support was measured according to the following criteria:
 
 \textbf{Resources:} Quality and size of existing text corpora, speech corpora and parallel corpora, quality and coverage of existing lexical resources and grammars.
 
-Figures~\ref{fig:speech_cluster_en} to~\ref{fig:resources_cluster_en} show that, thanks to large-scale LT funding in recent decades, the German language is better equipped than most other languages. It compares well with languages with a similar number of speakers, such as French, despite its greater structural complexity. But LT resources and tools for German clearly do not yet reach the quality and coverage of comparable resources and tools for the English language, which is in the lead in almost all LT areas. And there are still plenty of gaps in English language resources with regard to high quality applications.
+The above tables show that, thanks to LT funding programs from the Spanish and Catalonian governments in recent decades, the Catalan language is equipped as most of other European languages. It compares well with languages with a similar number of speakers such as Hungarian, Greek, and European Portuguese despite these are official languages of EU countries. But LT resources and tools for Catalan clearly do not yet reach the quality and coverage of comparable resources and tools for the Spanish language, which is in a good position in almost all LT areas. And there are still plenty of gaps in Spanish language resources with regard to high quality applications.
 
-For speech processing, current technologies perform well enough to be successfully integrated into a number of industrial applications such as spoken dialogue and dictation systems. Today’s text analysis components and language resources already cover the linguistic phenomena of German to a certain extent and form part of many applications involving mostly shallow natural language processing, e.\,g. spelling correction and authoring support.
-
-However, for building more sophisticated applications, such as machine translation, there is a clear need for resources and technologies that cover a wider range of linguistic aspects and enable a deep semantic analysis of the input text. By improving the quality and coverage of these basic resources and technologies, we shall be able to open up new opportunities for tackling a broader range of advanced application areas, including high-quality machine translation.
+For speech processing, current technologies perform well enough to be successfully integrated into a number of industrial applications such as Interactive Voice Response systems and constrained domain dictation systems. Machine Translation systems get a good performance, especially between the language pairs Spanish-Catalan and English-Catalan. However, for building more sophisticated applications, such as machine translation, there is a clear need for resources and technologies that cover a wider range of linguistic aspects and allow a deep semantic analysis of the input text. By improving the quality and coverage of these basic resources and technologies, we shall be able to open up new opportunities for tackling a vast range of advanced application areas, including high-quality machine translation.  
 
 \subsection{Conclusions}
 
-\emph{In this series of white papers, we have made an important effort by assessing the language technology support for 30 European languages, and by providing a high-level comparison across these languages. By identifying the gaps, needs and deficits, the European language technology community and its related stakeholders are now in a position to design a large scale research and development programme aimed at building a truly multilingual, technology-enabled communication across Europe.}
+    \emph{In this series of white papers, we have made an important initial effort to assess language technology support for 30 European languages, and provide a high-level comparison across these languages. By identifying the gaps, needs and deficits, the European language technology community and related stakeholders are now in a position to design a large scale research and development programme aimed at building a truly multilingual, technology-enabled Europe.}
 
-The results of this white paper series show that there is a dramatic difference in language technology support for the various European languages. While there are good quality software and resources available for some languages and application areas, others, usually smaller languages, have substantial gaps. Many languages lack basic technologies for text analysis and the essential resources. Others have basic tools and resources but the implementation of for example semantic methods is still far away. Therefore a large-scale effort is needed to attain the ambitious goal of providing high-quality language technology support for all European languages, for example through high quality machine translation. 
+    We have seen that there are huge differences between Europe’s languages. While there are good quality software and resources available for some languages and application areas, others (usually ‘smaller’ languages) have substantial gaps. Many languages lack basic technologies for text analysis and the essential resources for developing these technologies. Others have basic tools and resources but are as yet unable to invest in semantic processing. We therefore still need to make a large-scale effort to attain the ambitious goal of providing high-quality machine translation between all European languages. 
 
-In the case of the German language, we can be cautiously optimistic about the current state of language technology support. There is a viable LT research community in Germany, Austria and Switzerland, which has been supported in the past by large research programmes, many of them in cooperation with industrial players such as Philips and IBM. And a number of large-scale resources and state-of-the-art technologies have been produced for Standard German. However, the scope of the resources and the range of tools are still very limited when compared to English, and they are simply not sufficient in quality and quantity to develop the kind of technologies required to support a truly multilingual knowledge society.
+    In the case of the Catalan language, we are moderately optimistic about the current state of language technology support. There is a viable LT research community in Catalonia, which has been supported by Spanish and Catalan research programmes. A number of resources and state-of-the-art technologies have been produced and distributed for Catalan. However, the scope of the resources and the range of tools are still very limited when compared to the resources and tools for the Spanish language (and obviously for the English language) and they are simply not sufficient in quality and quantity to develop the kind of technologies required to support a truly multilingual knowledge society.
 
-Nor can we simply transfer technologies already developed and optimised for the English language to handle German. English-based systems for parsing (syntactic and grammatical analysis of sentence structure) typically perform far less well on German texts, due to the specific characteristics of the German language.
+    The Catalan language technology industry dedicated to transforming research into products is currently very small. Most large companies have either stopped or severely cut their LT efforts, leaving the languages spoken by a small number of people in a secondary objective.
 
-The German language technology industry is currently fragmented and disorganised. Most large companies have either stopped or severely cut their LT efforts, leaving the field to a number of specialised SMEs that are not robust enough to address the internal and the global market with a sustained strategy. 
+    Our findings show that the only alternative is to make a substantial effort to create LT resources for Catalan, and use them to drive forward research, innovation and development. The need for large amounts of data and the extreme complexity of language technology systems makes it vital to develop a new infrastructure and a more coherent research organization to spur greater sharing and cooperation.
 
-Our findings lead to the conclusion that the only way forward is to make a substantial effort to create language technology resources for German, as a means to drive forward research, innovation and development. The need for large amounts of data and the extreme complexity of language technology systems makes it vital to develop an infrastructure and a coherent research organisation to spur greater sharing and cooperation.
+    There is also a lack of continuity in research and development funding. Short-term coordinated programmes tend to alternate with periods of sparse or zero funding. In addition, there is an overall lack of coordination with programmes in other EU countries and at the European Commission level.
 
-Finally there is a lack of continuity in research and development funding. Short-term coordinated programmes tend to alternate with periods of sparse or zero funding. In addition, there is an overall lack of coordination with programmes in other EU countries and at the European Commission level.
+    We can therefore conclude that there is a desperate need for a large, coordinated initiative focused on overcoming the differences in language technology readiness for European languages as a whole.
 
-The long term goal of META-NET is to enable the creation of high-quality language technology for all languages. This requires all stakeholders - in politics, research, business, and society - to unite their efforts. The resulting technology will help tear down existing barriers and build bridges between Europe’s languages, paving the way for political and economic unity through cultural diversity. 
+    META-NET’s long-term goal is to introduce high-quality language technology for all languages in order to achieve political and economic unity through cultural diversity. The technology will help tear down existing barriers and build bridges between Europe’s languages. This requires all stakeholders - in politics, research, business, and society - to unite their efforts for the future. 
 \end{multicols}
 
 \clearpage
@@ -1748,13 +1639,15 @@ META-NET launched on 1 February 2010 with the goal of advancing research in lang
 \addtocontents{toc}{\protect\bigskip}
 
 \bsection[Literaturverweise -- References]{Literaturverweise --- References}
+%FIXME - "References" in Catalan
 \bibliographystyle{unsrt} % What is the difference between "unsrt" und "is-unsrt"?
 %\bibliographystyle{is-unsrt}
-\bibliography{german_references}
+\bibliography{references_ca}
   
 \cleardoublepage
 
-\bsection[META-NET Mitglieder -- META-NET Members]{META-NET Mitglieder --- META-NET Members}
+\bsection[Organitzacions membres -- META-NET Members]{Organitzacions membres --- META-NET Members}
+%FIXME - "META-NET Members" in Catalan
 \label{metanetmembers}
 
 \small
@@ -1832,6 +1725,7 @@ META-NET launched on 1 February 2010 with the goal of advancing research in lang
 \cleardoublepage
 
 \bsection[Die META-NET Weissbuch-Serie -- The META-NET White Paper Series]{Die META-NET Weissbuch-Serie --- The META-NET\ \ \ \ \ \ White Paper Series}
+%FIXME: "The META-NET White Paper Series" in Catalan
 \label{whitepaperseries}
 
 \vspace*{-5mm}
@@ -1839,37 +1733,37 @@ META-NET launched on 1 February 2010 with the goal of advancing research in lang
   \setlength{\tabcolsep}{2em}
   \begin{tabularx}{\textwidth}{lllll} \toprule\addlinespace
   %\begin{tabulary}{170mm}{LLL} \toprule
-  &Baskisch & Basque & euskara& \\
-  &Bulgarisch & Bulgarian & български& \\
-  &Dänisch & Danish & dansk& \\
-  &Deutsch & German & Deutsch& \\
-  &Englisch & English & English& \\
-  &Estnisch & Estonian & eesti& \\
-  &Finnisch & Finnish & suomi& \\
-  &Französisch & French & français& \\
-  &Galizisch & Galician & galego& \\
-  &Griechisch & Greek & ελληνικά& \\
-  &Isländisch & Icelandic & íslenska& \\
-  &Irisch & Irish & Gaeilge& \\
-  &Italienisch & Italian & italiano& \\
-  &Katalanisch & Catalan & català& \\
-  &Kroatisch & Croatian & hrvatski& \\
-  &Lettisch & Latvian & latviešu valoda& \\
-  &Litauisch & Lithuanian & lietuvių kalba& \\
-  &Maltesisch & Maltese & Malti& \\
-  &Niederländisch & Dutch & Nederlands& \\
-  &Norwegisch Bokmål & Norwegian Bokmål & bokmål& \\
-  &Norwegisch Nynorsk & Norwegian Nynorsk & nynorsk& \\
-  &Polnisch & Polish & polski& \\
-  &Portugiesisch & Portuguese & português& \\
-  &Rumänisch & Romanian & română& \\
-  &Serbisch & Serbian & српски& \\
-  &Slowakisch & Slovak & slovenčina& \\
-  &Slowenisch & Slovene & slovenščina& \\
-  &Spanisch & Spanish & español& \\
-  &Schwedisch & Swedish & svenska& \\
-  &Tschechisch & Czech & čeština& \\
-  &Ungarisch & Hungarian & magyar& \\ \addlinespace \bottomrule
+  Alemany & German & Deutsch\\
+  Anglès & English & English\\
+  Basc & Basque & euskara\\
+  Búlgar & Bulgarian & български \\
+  Català & Catalan & català\\
+  Croat & Croatian & hrvatski\\
+  Danès & Danish & dansk\\
+  Eslovac & Slovak & slovenčina\\
+  Eslovè & Slovene & slovenščina\\
+  Espanyol & Spanish & español\\
+  Estonià & Estonian & eesti\\
+  Finès & Finnish & suomi\\
+  Francès & French & français\\
+  Gallec & Galician & galego\\
+  Grec & Greek & ελληνικά\\
+  Holandès & Dutch & Nederlands\\
+  Hongarès & Hungarian & magyar\\ 
+  Irlandès & Irish & Gaeilge\\
+  Islandès & Icelandic & íslenska\\
+  Italià & Italian & italiano\\
+  Letó & Latvian & latviešu valoda\\
+  Lituà & Lithuanian & lietuvių kalba\\
+  Maltès & Maltese & Malti\\
+  Noruec Bokmål & Norwegian Bokmål & bokmål\\
+  Noruec Nynorsk & Norwegian Nynorsk & nynorsk\\
+  Polonès & Polish & polski\\
+  Portuguès & Portuguese & português\\
+  Romanès & Romanian & română\\
+  Serbi & Serbian & српски\\
+  Suec & Swedish & svenska\\
+  Txec & Czech & čeština\\  \addlinespace \bottomrule
 \end{tabularx}
 
 \end{document}

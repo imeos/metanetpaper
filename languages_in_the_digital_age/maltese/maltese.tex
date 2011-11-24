@@ -31,6 +31,7 @@
 %\usepackage{epstopdf}
 %\usepackage{maltese}
 %\usepackage{tipa}
+%\usepackage{tikz}
 \usepackage{covington}
 %\usepackage{enumerate}
 % ----------------------------------------------------------------------------
@@ -55,22 +56,40 @@
 
 \begin{document}
 
-%\renewcommand*{\figureformat}{\sffamily\thefigure\autodot}
+\renewcommand*{\figureformat}{\sffamily\thefigure\autodot}
 
+% Mocktitle
 \maketitle
-
-% ---------------- Mocktitle ------------------
-\null
 \pagestyle{empty} 
 
 \centerline{META-NET -- office@meta-net.eu -- http://www.meta-net.eu}
 
 \vfill
 
+% 1. Acknowledgments Originalsprache
+\begin{small}
+Il-pubblikatur huwa grat lejn l-awturi tal-white paper Ġermaniża
+għall-permess li jirriproduċi materjal mill-white paper imsemmija.
+Grazzi lil Ritianne Stanyer u Roberta Abela għat-translazzjoni ta' dan
+id-dokument.
+\end{small}
+
+% 2. Acknowledgments Englisch
+\bigskip
+\begin{small}
+The publisher is grateful to the authors of the German white paper for
+permission to reproduce materials from their paper. Thanks to Ritianne
+Stanyer and Roberta Abela for the translation of this document.
+\end{small}
+
+% 3. Funding notice Original
+\bigskip
 \begin{small}
   \selectlanguage{maltese}
 L-iżvilupp ta’ din il-white paper ġie ffinanzjat mis-Seba' Programm ta' Qafas u l-Programm ta' Appoġġ għall-Politika dwar l-ICT tal-Kummissjoni Ewropea taħt il-kuntratti T4ME (Grant Agreement 249119), CESAR (Grant Agreement 271022), METANET4U (Grant Agreement 270893) u META-NORD (Grant Agreement 270899).
 \end{small}
+
+% 4. Funding notice Englisch
 
 \bigskip
 \begin{small}
@@ -83,6 +102,7 @@ L-iżvilupp ta’ din il-white paper ġie ffinanzjat mis-Seba' Programm ta' Qafa
 \end{small}
 
 \clearpage
+
 % ------------- End of mocktitle ----------------
 
 \pagenumbering{Roman} 
@@ -181,6 +201,7 @@ Din is-serje ta’ \emph{white papers} tikkumplimenta azzjonijiet strateġiċi o
 Qed naraw rivoluzzjoni diġitali li qed tħalli impatt b’mod drammatiku fuq il-komunikazzjoni u s-soċjetà. Żviluppi riċenti fit-teknoloġija tal-komunikazzjoni diġitizzata u tan-networks xi drabi jiġu mqabbla mal-invenzjoni tal-istampar ta’ Gutenberg. X’tista’ tgħidilna din l-analoġija dwar il-futur tas-soċjetà tal-informazzjoni Ewropea u b’mod partikolari l-lingwi tagħna?
    
 Wara l-invenzjoni ta’ Gutenberg, skoperti reali fil-komunikazzjoni u skambju ta’ għarfien kienu mwettqa permezz ta’ sforzi bħat-traduzzjoni tal-Bibbja ta’ Luther għal-lingwa komuni. Fis-sekli sussegwenti, tekniki kulturali ġew żviluppati biex jimmaniġġjaw aħjar l-ipproċessar tal-lingwa u l-iskambju ta’ għarfien:
+
 \begin{itemize}
 \item l-istandardizzazzjoni ortografika u grammatikali ta’ lingwi kbar ippermettiet it-tixrid rapidu ta’ ideat xjentifiċi u intellettwali ġodda;
 \item l-iżvilupp ta’ lingwi uffiċjali għamel possibbli għaċ-ċittadini li jikkomunikaw bejn ċerti konfini (ta’ spiss politiċi);
@@ -190,6 +211,7 @@ Wara l-invenzjoni ta’ Gutenberg, skoperti reali fil-komunikazzjoni u skambju t
 \end{itemize}
 
 Fl-aħħar għoxrin sena, it-teknoloġija tal-informatika (TI) għenet biex ħafna mill-proċessi jiġu awtomatizzati u ffaċilitati:
+
 \begin{itemize}
 \item is-software ta’ desktop publishing jissostitwixxi l-ittajpjar u t-typesetting;
 \item il-Microsoft PowerPoint tissostitwixxi t-trasparenzi tal-projectors;
@@ -213,18 +235,18 @@ Illum, aħna nistgħu nittrażmettu gigabytes ta’ test madwar id-dinja fi ftit
 
 Firda diġitali li tinsab kullimkien u li hija kkawżata minn konfini lingwistiċi sorprendentement ma kisbitx ħafna attenzjoni fid-diskors pubbliku; madankollu, qajmet kwistjoni urġenti ħafna, ``Liema lingwi Ewropej se jirnexxu u jippersistu fis-soċjetà tal-informazzjoni u l-għarfien, ibbażata fuq in-networks?''
 
-
 \subsection{Il-Lingwi Tagħna f’Riskju}
 
 L-istampar ikkontribwixxa għal skambju imprezzabbli ta’ informazzjoni fl-Ewropa, iżda wassal ukoll għall-estinzjoni ta’ bosta lingwi Ewropej. Lingwi reġjonali u dawk f’minoranza rarament ġew stampati. Bħala riżultat ta’ dan, ħafna lingwi bħal Cornish jew Dalmatian spiss kienu limitati għal forom orali ta’ trasmissjoni, li llimita l-adozzjoni kontinwa, it-tixrid u l-użu tagħhom.
   
-Il-lingwi  tal-Ewropa, madwar 80, huma wieħed mill-assi l-aktar prezzjużi tagħha u l-aktar importanti f’dak li huwa assi kulturali. In-numru kbir ta’ lingwi Ewropej huwa wkoll parti vitali mis-suċċess soċjali tagħha\cite{EC2}.  Filwaqt li l-lingwi popolari bħall-Ingliż jew l-Ispanjol żgur li se jżommu l-preżenza tagħhom fis-soċjetà diġitali u s-suq li qed jitfaċċaw, bosta lingwi Ewropej jistgħu jinqatgħu mill- komunikazzjonijiet diġitali u jsiru irrilevanti għas-soċjetà tal-Internet. Żviluppi bħal dawn żgur li ma jkunux mixtieqa. Minn naħa, opportunità strateġika tista’ tintilef li jista’ jkun iddgħajjef il-pożizzjoni globali tal-Ewropa. Min-naħa l-oħra, żviluppi bħal dawn jistgħu jmorru kontra l-għan ta’ parteċipazzjoni ugwali għal kull ċittadin Ewropew irrispettivament mil-lingwa. Skont rapport tal-UNESCO dwar il-multilingwiżmu, il-lingwi huma mezz essenzjali għat-tgawdija tad-drittijiet fundamentali, bħall-espressjoni politika, l-edukazzjoni u l-parteċipazzjoni fis-soċjetà\cite{Unesco1}.
+Il-lingwi  tal-Ewropa, madwar 80, huma wieħed mill-assi l-aktar prezzjużi tagħha u l-aktar importanti f’dak li huwa assi kulturali. In-numru kbir ta’ lingwi Ewropej huwa wkoll parti vitali mis-suċċess soċjali tagħha \cite{EC2}.  Filwaqt li l-lingwi popolari bħall-Ingliż jew l-Ispanjol żgur li se jżommu l-preżenza tagħhom fis-soċjetà diġitali u s-suq li qed jitfaċċaw, bosta lingwi Ewropej jistgħu jinqatgħu mill- komunikazzjonijiet diġitali u jsiru irrilevanti għas-soċjetà tal-Internet. Żviluppi bħal dawn żgur li ma jkunux mixtieqa. Minn naħa, opportunità strateġika tista’ tintilef li jista’ jkun iddgħajjef il-pożizzjoni globali tal-Ewropa. Min-naħa l-oħra, żviluppi bħal dawn jistgħu jmorru kontra l-għan ta’ parteċipazzjoni ugwali għal kull ċittadin Ewropew irrispettivament mil-lingwa. Skont rapport tal-UNESCO dwar il-multilingwiżmu, il-lingwi huma mezz essenzjali għat-tgawdija tad-drittijiet fundamentali, bħall-espressjoni politika, l-edukazzjoni u l-parteċipazzjoni fis-soċjetà\cite{Unesco1}.
 
 \subsection{It-Teknoloġija Lingwistika hija Teknoloġija Katalizzanti Ewlenija}
 
 Fil-passat, l-isforzi tal-investiment iffukaw fuq l-edukazzjoni u t-traduzzjoni tal-lingwi. Pereżempju, skont ċerti stimi, is-suq Ewropew għat-traduzzjoni, l-interpretazzjoni, il-lokalizzazzjoni ta’ software, u l-globalizzazzjoni ta’ websajts kien ta' EUR 8.4 biljun fl-2008 u kien mistenni li jikber b’10\% fis-sena\cite{EC3}.  Madankollu, din il-kapaċità eżistenti mhix biżżejjed biex tissodisfa l-ħtiġijiet kurrenti u futuri.
   
 It-teknoloġija lingwistika hija teknoloġija katalizzanti ewlenija li tista’ tħares u trawwem lingwi Ewropej. It-teknoloġija lingwistika tgħin lin-nies jikkollaboraw, iwettqu negozju, jaqsmu l-għarfien u jieħdu sehem f’dibattiti soċjali u politiċi irrispettivament mill-ostakoli lingwistiċi jew il-ħiliet tal-kompjuter. It-teknoloġija lingwistika diġà qed tassisti kompiti ta’ kuljum, bħal kitba ta’ ittri elettroniċi, twettiq ta’ tiftix fuq l-internet jew prenotazzjoni ta’ titjiriet. Aħna nibbenefikaw minn teknoloġija lingwistika meta:
+
 \begin{itemize}
 \item nsibu informazzjoni permezz ta’ magni ta’ tiftix fuq l-Internet; 
 \item niċċekkjaw l-ortografija u l-grammatika fil-word processor;
@@ -268,7 +290,7 @@ Sistemi bbażati fuq regoli huma t-tieni tip ewlieni ta’ teknoloġija lingwist
 
 % --------------------------------------------------------------------------
 
-\ssection[Il-Malti fis-Soċjetà tal-Informazzjoni Ewropea]{Il-Malti fis-Soċjetà \newline tal-Informazzjoni Ewropea} %\cite{Fabri1mt} 
+\ssection[Il-Malti fis-Soċjetà tal-Informazzjoni Ewropea]{Il-Malti fis-Soċjetà tal-Informazzjoni Ewropea} %\cite{Fabri1mt} 
 
 \begin{multicols}{2}
 
@@ -417,9 +439,9 @@ Il-bidla biex il-Malti jsir ilsien internazzjonalment viżibbli seħħet mas-sħ
 
 Akkademikament, l-interess fil-Malti bħala suġġett tax-xjenza jmur lura sal-1603 meta Hieronymus Megiser ippubblika t-\emph{Thesaurus Polyglottus} tiegħu, li kien jinkludi lista ta’ kliem bil-Malti. L-ewwel studjuż li b’mod sistematiku esplora u ppromwova l-lingwa Maltija kien Mikiel Anton Vassalli. Huwa ppubblika grammatika (1790), dizzjunarju (1797) u alfabetti diversi (1788 u 1790) għall-Malti u llum huwa msejjaħ ``il-missier tal-Ilsien Malti'' (Brincat 2011). Fis-seklu 20, kien ippubblikat il-\emph{Grammar of the Maltese Language} (1936) ta’ Sutcliffe. Mis-sittinijiet tas-seklu 20, il-Lingwistika tal-Ilsien Malti kisbet għarfien akkademiku internazzjonali permezz tal-pubblikazzjonijiet ta’ Joseph Aquilina (eż. \emph{Papers in Maltese Linguistics} (1961) u \emph{Maltese-English Dictionary}, żewġ volumi (1987 and 1990)).  Minn dak iż-żmien, aktar u aktar studjużi barra minn Malta wrew interess fil-Malti. L-2007 rat it-twaqqif tal-Għaqda Internazzjonali tal-Lingwistika Maltija\cite{GHILM2}, assoċjazzjoni ta’ lingwisti li huma interessati fil-lingwa Maltija. L-għan ewlieni tal-GĦILM, kif jidher fuq is-sitweb tagħha, huwa li tipprovdi ``konnessjoni bejn studjużi interessi fil li ġejjin mid-dixxiplina kollha tal-Lingwistika'', b'hekk tiffaċilita r-riċerka dwar il-Malti. Din l-għaqda trid ukoll li tgħaqqad flimkien nies minn sfondi differenti li jaħdmu bl-ilsien Malti (lingwisti, tradutturi, studenti u oħrajn).
 
-\subsection{Il-Malti fuq l-Internet }
+\subsection{Il-Malti fuq l-Internet}
 
-Stħarriġ tal-Uffiċċju Nazzjonali tal-Istatistika ta’ Malta fit-tieni kwart tal-2009\cite{NSO2} juri li fost il-popolazzjoni ta’ madwar 400,000 ruħ, 67 fil-mija kellhom aċċess għall-kompjuter u 64 fil-mija kellhom aċċess għall-internet. Stħarriġ riċenti tal-Ewrobarometru (ippubblikat f'Mejju tal-2011)\cite{Eurobarometer1} dwar id-drawwiet tat-tiftix fuq l-internet fost l-utenti Ewropej wera li huma biss 6.5 fil-mija tal-utenti tal-internet Maltin li jużaw esklussivament il-Malti fuq l-internet meta jaqraw, jikkunsmaw il-kontenut jew jikkomunikaw. Minflok, 90.6 fil-mija jagħżlu li jibbrawżjaw is-websajts bl-Ingliż u 20.1 fil-mija bit-Taljan, rispettivament. Dawn iċ-ċifri iffurmaw il-bażi tal-artiklu fil-gazzetta Maltija li toħroġ kuljum \emph{The Times of Malta}, li ħoloq diskussjoni interessanti l-aktar fost il-qarrejja Maltin tal-edizzjoni fuq l-internet\cite{TimesOfMalta1}.
+Stħarriġ tal-Uffiċċju Nazzjonali tal-Istatistika ta’ Malta fit-tieni kwart tal-2009 \cite{NSO2} juri li fost il-popolazzjoni ta’ madwar 400,000 ruħ, 67 fil-mija kellhom aċċess għall-kompjuter u 64 fil-mija kellhom aċċess għall-internet. Stħarriġ riċenti tal-Ewrobarometru (ippubblikat f'Mejju tal-2011) \cite{Eurobarometer1} dwar id-drawwiet tat-tiftix fuq l-internet fost l-utenti Ewropej wera li huma biss 6.5 fil-mija tal-utenti tal-internet Maltin li jużaw esklussivament il-Malti fuq l-internet meta jaqraw, jikkunsmaw il-kontenut jew jikkomunikaw. Minflok, 90.6 fil-mija jagħżlu li jibbrawżjaw is-websajts bl-Ingliż u 20.1 fil-mija bit-Taljan, rispettivament. Dawn iċ-ċifri iffurmaw il-bażi tal-artiklu fil-gazzetta Maltija li toħroġ kuljum \emph{The Times of Malta}, li ħoloq diskussjoni interessanti l-aktar fost il-qarrejja Maltin tal-edizzjoni fuq l-internet \cite{TimesOfMalta1}.
     
 Madankollu, ir-riżultati eżatti tal-istħarriġ, iwasslu għall-konklużjoni li din l-abitudni mhix għażla maħsuba:
     
@@ -438,7 +460,7 @@ Fir-rigward tal-ammont ta’ Malti fuq l-internet b’mod ġenerali, huwa diffi�
 L-ewwel ħarsa lejn l-ammont ta’ daħliet fil-Wikipedia (fl-1 ta’ Ġunju, 2011) wera li kien hemm madwar 2,820 daħla bil-Malti b’kuntrast ma’ aktar minn 3,640,000 daħla bl-Ingliż u aktar minn 1,238,000 daħla bil-Ġermaniż.
 Meta wieħed iqabbel in-numru tad-Dominju tal-Ogħla Livell (TLD), it-TLD .mt jokkupa l-pożizzjoni 213 (minn 358) b’numru mhux speċifikat ta’ dominji .mt rreġistrati (membru taċ-Ċentru Informazzjoni tan-Network ta' Malta ta stima ta’ madwar 5,000), imqabbel ma’ 21,336,063 dominju irreġistrat għal .com (kummerċjali, klassifikazzjoni 1) u 5,459,604 dominji għad- .de (il-Ġermanja, klassifikazzjoni 2). Naturalment, in-numru ta’ dominji rreġistrati ma jgħid xejn dwar il-lingwa li l-paġni taħt ċertu dominju huma miktubin biha. 
     
-Xi numri approssimattivi tal-ammont tal-lingwa Maltija fuq l-internet jistgħu jiġu kkalkulati permezz ta’ proċedura proposta minn \cite{Kilgarriff-Grefenstette:2003}\cite{Gatt1mt}. L-idea bażika hija li kliem funzjonali (eż. iżda, għal, dan eċċ.) huma aktar frekwenti minn kliem ta’ kontenut (eż. nomi, verbi, aġġettivi) u jiffurma sett finit fil-lingwa. Barra minn hekk, il-persentaġġ ta’ kliem funzjonali f'lingwa jkun stabbli f'kampjun ta’ test meta d-daqs tal-kampjun jiżdied (il-Liġi Zipf). Għaldaqstant, wieħed jista’ jikkalkula l-ammont ta’ kliem għal kull lingwa fuq l-internet kif ġej:
+Xi numri approssimattivi tal-ammont tal-lingwa Maltija fuq l-internet jistgħu jiġu kkalkulati permezz ta’ proċedura proposta minn \cite{Kilgarriff-Grefenstette:2003,Gatt1mt}. L-idea bażika hija li kliem funzjonali (eż. iżda, għal, dan eċċ.) huma aktar frekwenti minn kliem ta’ kontenut (eż. nomi, verbi, aġġettivi) u jiffurma sett finit fil-lingwa. Barra minn hekk, il-persentaġġ ta’ kliem funzjonali f'lingwa jkun stabbli f'kampjun ta’ test meta d-daqs tal-kampjun jiżdied (il-Liġi Zipf). Għaldaqstant, wieħed jista’ jikkalkula l-ammont ta’ kliem għal kull lingwa fuq l-internet kif ġej:
     
 L-ewwel nett, wieħed jikkalkula l-ammont ta’ kliem funzjonali magħżula bil-Malti f’korpus (jiġifieri ġabra ta’ testi) li d-daqs ikun magħruf. It-tieni nett, wieħed juża magna ta’ tiftix (eż. Google) biex isib il-frekwenza għall-istess kliem funzjonali fuq il-web. Fit-tielet pass, il-frekwenza min-numru tal-korpus tiġi estrapolata għall-Google Search u mbagħad medja tiġi kkalkolata għall-frekwenza tal-kliem funzjonali fir-rizultati ta’ tiftix.
     
@@ -448,9 +470,8 @@ Il-metodu deskritt aktar kmieni, applikat għall-kliem funzjonali Maltin, jiġġ
     
 Ir-riżultati eżatti tat-tfittxijiet fil-Google (imwettqa fit-8 ta’ Lulju, 2011) u l-estrapolazzjoni tagħhom tista’ tiġi ttraċċata lura fit-Tabella A u t-Tabella B hawn taħt. Il-kolonna f/m (jiġifieri frekwenza għal kull miljun) tidentifika kemm il-kelma rispettiva sseħħ ta’ spiss f’miljun, fil-korpus MLRS. Pereżempju, fit-Tabella A, il-kelma \emph{għal} ‘for’ tidher kważi 3731 darba f’miljun kelma. It-tiftix tal-Google għall-kelma \emph{għal} tirriżulta f’94,300 paġna b’mill-anqas okkażjoni waħda ta’ \emph{għal} fuq paġna web taħt id-dominju .mt f'Malta. Multiplikazzjoni ta’ miljun u diviżjoni b’3730.96 jagħti ammont stmat ta’ 25,274,996 każ ta’ kull kelma Maltija fuq il-paġni taħt id-dominju .mt ġewwa Malta. Jekk wieħed jagħmel dan il-kalkolu għall-kliem l-ieħor fit-tabella u jsib il-medja tar-riżultati, wieħed jasal għal numru ftit anqas minn 50 miljun kelma. Għall-paġni web madwar id-dinja kollha elenkati taħt id-dominju .mt, ir-riżultati huma għaxar darbiet ogħla.
 
-\begin{table}[htdp]
-\caption{Tfittxija bil-Google, ristretta għad-dominju .mt u r-reġjun ta’ Malta}
-\begin{center} 
+\begin{table}[htbp]
+\centering
 \begin{tabular}{|c|c|c|c|} %tabular* doesn't compile!
 \hline
 Kelma  & f/m & Google (.mt biss, Reġjun=mt) & Estrapolazzjoni  \\
@@ -471,13 +492,12 @@ mhux & 2101.32 & 79,500 & 37,833,362 \\
 Medja & & & 48,013,952 \\
 \hline
 \end{tabular}
-\end{center}
+\caption{Tfittxija bil-Google, ristretta għad-dominju .mt u r-reġjun ta’ Malta}
 \label{table:Google_A_mt}
 \end{table}%
 
-\begin{table}[htdp]
-\caption{Tfittxija bil-Google, ristretta għad-dominju .mt biss}
-\begin{center}
+\begin{table}[htbp]
+\centering
 \begin{tabular}{|c|c|c|c|} %tabular* doesn't compile!
 \hline
 Kelma & f/m & Google (.mt biss, Reġjun=mt) & Estrapolazzjoni \\
@@ -498,32 +518,30 @@ mhux & 2101.32  & 1,040,000  &  494,926,998 \\
 Medja & & & 518,724,430 \\
 \hline
 \end{tabular} 
-\end{center}
+\caption{Tfittxija bil-Google, ristretta għad-dominju .mt biss}
 \label{table:Google_B_mt}
 \end{table}%
 
 Naturalment, għal studju serju, din it-tfittxija u l-estrapolazzjoni jkollhom jinkludu aktar kliem biex jaslu għal numri aktar affidabbli għall-ammont ta’ Malti fuq l-internet. Iżda meta wieħed iqabbel ir-riżultati mat-Tabella 3 f’\cite{Kilgarriff-Grefenstette:2003}, wieħed jista’ jgħid li ż-żewġ numri huma baxxi ħafna: għall-paġni web f’Malta biss, l-ammont huwa aktar mil-Latvjan u anqas mill-Iżlandiż għaxar snin ilu (in-numri fit-Tabella 3 ġew ikkalkulati f’Marzu 2001). Għall-paġni web dinjin, l-ammont tal-Malti huwa aktar mill-Ungeriż u anqas miċ-Ċek għaxar snin ilu. Minħabba li ``l-proporzjon ta’ testi mhux bl-Ingliż għall-Ingliż qed jikber'' \cite{Kilgarriff-Grefenstette:2003}, il-Malti jista’ jkun saħansitra rappreżentat anqas fuq l-internet illum mil-lingwi li għadhom kemm issemmew.
 
-Apparti minn paġni ewlenin privati u weblogs, hemm numru ta’ websajts uffiċjali bil-Malti. L-ewwel nett, hemm il-paġna ewlenija tal-gvern Malti\cite{GovernmentOfMalta1}, li hija disponibbli kemm bil-Malti kif ukoll bl-Ingliż. Barra minn hekk, hemm l-edizzjonijiet tal-internet tal-gazzetti ta’ kuljum u ta’ kull ġimgħa bil-lingwa Maltija: \emph{In-Nazzjon}, \emph{L-Orizzont} (kuljum), \emph{Illum}, \emph{Il-ĠENSillum}, \emph{KullĦadd}, \emph{Leħen is-Sewwa}, \emph{It-Torċa} (kull ġimgħa).
+Apparti minn paġni ewlenin privati u weblogs, hemm numru ta’ websajts uffiċjali bil-Malti. L-ewwel nett, hemm il-paġna ewlenija tal-gvern Malti \cite{GovernmentOfMalta1}, li hija disponibbli kemm bil-Malti kif ukoll bl-Ingliż. Barra minn hekk, hemm l-edizzjonijiet tal-internet tal-gazzetti ta’ kuljum u ta’ kull ġimgħa bil-lingwa Maltija: \emph{In-Nazzjon}, \emph{L-Orizzont} (kuljum), \emph{Illum}, \emph{Il-ĠENSillum}, \emph{KullĦadd}, \emph{Leħen is-Sewwa}, \emph{It-Torċa} (kull ġimgħa).
 
-Is-websajts tat-TV Malti u l-istazzjonijiet tar-radju juru taħlita tal-Ingliż u l-Malti fi gradi differenti. Pereżempju, is-websajts tal-istazzjonijiet tat-televiżjoni NET TV\cite{NetTV1} u One TV\cite{OneTV1} għandhom qafas bl-Ingliż, flimkien ma’ xi artikli bil-Malti, minkejja li l-programm tagħhom jinkludi titli kemm bil-Malti kif ukoll bl-Ingliż. L-istazzjon tar-radju tal-knisja RTK\cite{RTK1} (Malti u Ingliż) jippermetti lill-utent jagħżel bejn iż-żewġ lingwi. Is-sitweb tal-Public Broadcasting Services (PBS)\cite{PBS1} fih sezzjonijiet bl-Ingliż u taqsimiet bil-Malti kif għandu s-sitweb tar-Radju 101\cite{radio101}. Din it-taħlita bejn Ingliż u Malti tirrifletti l-użu tal-lingwa fil-ħajja ta’ kuljum. Madankollu, fil-programmi, is-sitwazzjoni hija aktar ċara, minħabba li l-\emph{Awtorità tax-Xandir ta’ Malta} ħarġet linji gwida stretti għall-użu tal-Malti fuq it-TV u r-radju. Skont dawn, il-preżentaturi għandhom jitkellmu bil-Malti jew bl-Ingliż u mhux jaqilbu bejn iż-żewġ lingwi \cite{Fabri:2011a}. Għaldaqstant il-programmi tal-istazzjonijiet jinkludu xandiriet bil-Malti biss u oħrajn bl-Ingliż biss. Dawn ikunu wkoll spiss disponibbli fuq l-internet, jew bħala live stream inkella podcasts.
+Is-websajts tat-TV Malti u l-istazzjonijiet tar-radju juru taħlita tal-Ingliż u l-Malti fi gradi differenti. Pereżempju, is-websajts tal-istazzjonijiet tat-televiżjoni NET TV \cite{NetTV1} u One TV\cite{OneTV1} għandhom qafas bl-Ingliż, flimkien ma’ xi artikli bil-Malti, minkejja li l-programm tagħhom jinkludi titli kemm bil-Malti kif ukoll bl-Ingliż. L-istazzjon tar-radju tal-knisja RTK\cite{RTK1} (Malti u Ingliż) jippermetti lill-utent jagħżel bejn iż-żewġ lingwi. Is-sitweb tal-Public Broadcasting Services (PBS) \cite{PBS1} fih sezzjonijiet bl-Ingliż u taqsimiet bil-Malti kif għandu s-sitweb tar-Radju 101 \cite{radio101}. Din it-taħlita bejn Ingliż u Malti tirrifletti l-użu tal-lingwa fil-ħajja ta’ kuljum. Madankollu, fil-programmi, is-sitwazzjoni hija aktar ċara, minħabba li l-\emph{Awtorità tax-Xandir ta’ Malta} ħarġet linji gwida stretti għall-użu tal-Malti fuq it-TV u r-radju. Skont dawn, il-preżentaturi għandhom jitkellmu bil-Malti jew bl-Ingliż u mhux jaqilbu bejn iż-żewġ lingwi \cite{Fabri:2011a}. Għaldaqstant il-programmi tal-istazzjonijiet jinkludu xandiriet bil-Malti biss u oħrajn bl-Ingliż biss. Dawn ikunu wkoll spiss disponibbli fuq l-internet, jew bħala live stream inkella podcasts.
 
 Barra minn Malta, kollezzjoni kbira ta’ testi bil-Malti tinsab fi ħdan il-EUR-Lex\cite{EURLex1} li tospita l-liġi uffiċjali u dokumenti oħra tal-Unjoni Ewropea mill-1951 fit-23 lingwa uffiċjali tagħha.
 
-Ħafna jekk mhux id-dokumenti kollha tal-web disponibbli b’mod miftuħ jintużaw fi proġetti tal-korpus, eż. il-\emph{JRC-Acquis Multilingual Parallel Corpus}\cite{JRC-Acquis1}, li huwa korpus parallel li fih testi sħaħ tal-Liġi tal-Unjoni Ewropea fi 22 lingwa. Korpus ieħor li fih numru dejjem jikber ta’ dokumenti tal-web viżibbli bil-Malti huwa l-korpus tal-MLRS (Server għar-Riżorsi Lingwistiċi bil-Malti)\cite{MLRS1}.
-
-
+Ħafna jekk mhux id-dokumenti kollha tal-web disponibbli b’mod miftuħ jintużaw fi proġetti tal-korpus, eż. il-\emph{JRC-Acquis Multilingual Parallel Corpus} \cite{JRC-Acquis1}, li huwa korpus parallel li fih testi sħaħ tal-Liġi tal-Unjoni Ewropea fi 22 lingwa. Korpus ieħor li fih numru dejjem jikber ta’ dokumenti tal-web viżibbli bil-Malti huwa l-korpus tal-MLRS (Server għar-Riżorsi Lingwistiċi bil-Malti)\cite{MLRS1}.
 \end{multicols}
 
 \clearpage
 
 % --------------------------------------------------------------------------
 
-\ssection[Appoġġ ta’ Teknoloġija Lingwistika għall-Malti]{Appoġġ ta’ Tek\-no\-lo\-ġi\-ja Ling\-wis\-ti\-ka \newline għall-Malti}
+\ssection[Appoġġ ta’ Teknoloġija Lingwistika għall-Malti]{Appoġġ ta’ Tek\-no\-lo\-ġi\-ja Ling\-wis\-ti\-ka għall-Malti}
 
 \begin{multicols}{2}
 
-    Teknoloġiji lingwistiċi huma teknoloġiji ta’ informazzjoni li huma speċjalizzati biex jittrattaw il-lingwa umana. Għalhekk dawn it-teknoloġiji huma wkoll ta’ spiss ikorporati taħt it-terminu Teknoloġija Lingwistika Umana. Il-lingwa umana sseħħ fil-forma mitkellma u miktuba. Filwaqt li t-taħdit huwa l-eqdem u l-aktar mod naturali ta’ komunikazzjoni lingwistika, l-informazzjoni kumplessa u l-biċċa l-kbira tal-għarfien uman jinżammu u jiġu trażmessi f’testi miktubin. Teknoloġiji ta’ taħdit u testi jipproċessaw jew jipproduċu lingwa f'dawn iż-żewġ modi ta’ produzzjoni. Iżda l-lingwa għandha wkoll aspetti li huma maqsuma bejn taħdit u testi bħal dizzjunarji, il-biċċa l-kbira tal-grammatika u t-tifsir ta’ sentenzi. Għaldaqstant partijiet kbar mit-teknoloġija lingwistika ma jistgħux jiġu inklużi taħt teknoloġiji tat-taħdit inkella tat-testi. Fost dawn hemm teknoloġiji li jorbtu l-lingwa mal-għarfien. Ir-rappreżentazzjoni fuq il-lemin turi l-pajsaġġ grafiku tat-Teknoloġija Lingwistika. Fil-komunikazzjoni tagħna aħna nħalltu l-lingwa ma’ modi oħra ta’ komunikazzjoni u mezzi oħra ta’ informazzjoni. Aħna norbtu t-taħdit ma’ ġesti u espressjonijiet tal-wiċċ. Testi diġitali jingħaqdu ma’ stampi u ħsejjes. Il-films jistgħu jinkludu lingwa f’forma mitkellma u miktuba. Għaldaqstant teknoloġiji ta’ taħdit u testi jikkoinċidu u jinteraġixxu ma’ ħafna teknoloġiji oħra li jiffaċilitaw l-ipproċessar ta’ komunikazzjoni multimodali u dokumenti multimidjali.
+Teknoloġiji lingwistiċi huma teknoloġiji ta’ informazzjoni li huma speċjalizzati biex jittrattaw il-lingwa umana. Għalhekk dawn it-teknoloġiji huma wkoll ta’ spiss ikorporati taħt it-terminu Teknoloġija Lingwistika Umana. Il-lingwa umana sseħħ fil-forma mitkellma u miktuba. Filwaqt li t-taħdit huwa l-eqdem u l-aktar mod naturali ta’ komunikazzjoni lingwistika, l-informazzjoni kumplessa u l-biċċa l-kbira tal-għarfien uman jinżammu u jiġu trażmessi f’testi miktubin. Teknoloġiji ta’ taħdit u testi jipproċessaw jew jipproduċu lingwa f'dawn iż-żewġ modi ta’ produzzjoni. Iżda l-lingwa għandha wkoll aspetti li huma maqsuma bejn taħdit u testi bħal dizzjunarji, il-biċċa l-kbira tal-grammatika u t-tifsir ta’ sentenzi. Għaldaqstant partijiet kbar mit-teknoloġija lingwistika ma jistgħux jiġu inklużi taħt teknoloġiji tat-taħdit inkella tat-testi. Fost dawn hemm teknoloġiji li jorbtu l-lingwa mal-għarfien. Ir-rappreżentazzjoni fuq il-lemin turi l-pajsaġġ grafiku tat-Teknoloġija Lingwistika. Fil-komunikazzjoni tagħna aħna nħalltu l-lingwa ma’ modi oħra ta’ komunikazzjoni u mezzi oħra ta’ informazzjoni. Aħna norbtu t-taħdit ma’ ġesti u espressjonijiet tal-wiċċ. Testi diġitali jingħaqdu ma’ stampi u ħsejjes. Il-films jistgħu jinkludu lingwa f’forma mitkellma u miktuba. Għaldaqstant teknoloġiji ta’ taħdit u testi jikkoinċidu u jinteraġixxu ma’ ħafna teknoloġiji oħra li jiffaċilitaw l-ipproċessar ta’ komunikazzjoni multimodali u dokumenti multimidjali.
 
 \begin{figure*}[htb]
   \colorrule{grey3}{\textwidth}{1.5pt}
@@ -549,11 +567,11 @@ Applikazzjonijiet ta’ software tipiċi għall-ipproċessar tal-lingwa jikkonsi
 
 \begin{enumerate}
 \item Qabel l-ipproċessar: tindif tad-dejta, tneħħija tal-ifformattjar fejn hu xieraq, sejbien tal-lingwa mdaħħla fis-sistema, standardizzazjoni tar-rappreżentazzjoni ta’ simboli speċjali bħas-sing fil-Malti.
-\item Analiżi grammatikali:  tiftix tal-verb u l-oġġetti tiegħu, il-modifikaturi, eċċ;  sejbien tal-istruttura tas-sentenza.
-\item Analiżi semantika: tneħħja tal-ambigwità (Liema tifsira ta’ “bank” hija t-tajba f’kuntest partikolari?), soluzzjoni ta’ anafori u espressjonijiet ta' referenza bħal “hi”, “il-karozza”, eċċ; rappreżentazzjoni tat-tifsira tas-sentenza b’mod li tinqara minn magna.
+\item \textbf{Analiżi grammatikali}:  tiftix tal-verb u l-oġġetti tiegħu, il-modifikaturi, eċċ;  sejbien tal-istruttura tas-sentenza.
+\item \textbf{Analiżi semantika}: tneħħja tal-ambigwità (Liema tifsira ta’ “bank” hija t-tajba f’kuntest partikolari?), soluzzjoni ta’ anafori u espressjonijiet ta' referenza bħal “hi”, “il-karozza”, eċċ; rappreżentazzjoni tat-tifsira tas-sentenza b’mod li tinqara minn magna.
 \end{enumerate}
 
-Moduli ta’ kompiti speċifiċi mbagħad iwettqu ħafna operazzjonijiet differenti bħal sommarju awtomatiku ta’ test imdaħħal fis-sistema, tfittxija ta’ bażi ta' dejta u ħafna oħrajn. Hawn taħt, se nagħtu eżempji ta’ \textbf{oqsma ewlenin ta’ applikazzjoni} u niġbdu l-attenzjoni għal xi wħud mill-moduli ta’ arkitetturi differenti f'kull sezzjoni. Għal darb’oħra, l-arkitetturi huma simplifikati ferm u idealizzati, sabiex iservu biex wieħed jispjega l-kumplessità tal-applikazzjonijiet tat-teknoloġija lingwistika b'mod ġenerali li jinftiehem.
+Moduli ta’ kompiti speċifiċi mbagħad iwettqu ħafna operazzjonijiet differenti bħal sommarju awtomatiku ta’ test imdaħħal fis-sistema, tfittxija ta’ bażi ta' dejta u ħafna oħrajn. Hawn taħt, se nagħtu eżempji ta’ oqsma ewlenin ta’ applikazzjoni u niġbdu l-attenzjoni għal xi wħud mill-moduli ta’ arkitetturi differenti f'kull sezzjoni. Għal darb’oħra, l-arkitetturi huma simplifikati ferm u idealizzati, sabiex iservu biex wieħed jispjega l-kumplessità tal-applikazzjonijiet tat-teknoloġija lingwistika b'mod ġenerali li jinftiehem.
 
 Wara l-introduzzjoni tal-oqsma ewlenin ta’ applikazzjoni, se nagħtu ħarsa ġenerali fil-qosor lejn is-sitwazzjoni fir-riċerka u l-edukazzjoni tat-TL, u nikkonkludu b’deskrizzjoni ta’ programmi ta’ ffinanzjar (tal-passat). Fl-aħħar ta’ din it-taqsima, se nippreżentaw stima esperta dwar is-sitwazzjoni fir-rigward ta’ għodod prinċipali u riżorsi tat-TL f’numru ta’ dimensjonijiet bħal disponibbiltà, maturità, jew kwalità. It-tabella~\ref{fig:lrlttable_mt} fuq paġna~\pageref{fig:lrlttable_mt} tagħti ħarsa ġenerali tajba lejn is-sitwazzjoni tat-TL għall-Malti.
 
@@ -561,7 +579,7 @@ Wara l-introduzzjoni tal-oqsma ewlenin ta’ applikazzjoni, se nagħtu ħarsa ġ
 
 \subsubsection{L-Iċċekkjar tal-lingwa}
 
-Kull min juża għodda ta’ pproċessar tal-kliem bħal Microsoft Word iltaqa’ ma’ komponent li jiċċekkja l-ortografija, jindika żbalji ortografiċi u jipproponi korrezzjonijiet. 40 sena wara l-ewwel programm ta’ korrezzjoni tal-ortografija minn Ralph Gorin, ċekkjaturi lingwistiċi llum ma jqabblux biss il-lista ta’ kliem estratta ma’ dizzjunarju ta’ kliem spellut b’mod korrett, iżda saru dejjem aktar sofistikati. Minbarra l-algoritmi li jiddependu fuq il-lingwa għall-immaniġġjar tal-\underline{morfoloġija} (eż. formazzjoni tal-plural), xi wħud issa huma kapaċi jagħrfu żbalji marbuta ma’ sintassi, bħal verb nieqes jew verb li ma jaqbilx mas-suġġett tiegħu fil-persuna u n-numru, eż. f’ \emph{`She *write a letter.’} Madankollu, iċ-ċekkjaturi l-aktar disponibbli (inkluż Microsoft Word) ma jsibu l-ebda żbalji fl-ewwel vers ta’ poeżija \cite{zar1} %minn Jerrold H. Zar (1992) 
+Kull min juża għodda ta’ pproċessar tal-kliem bħal Microsoft Word iltaqa’ ma’ komponent li jiċċekkja l-ortografija, jindika żbalji ortografiċi u jipproponi korrezzjonijiet. 40 sena wara l-ewwel programm ta’ korrezzjoni tal-ortografija minn Ralph Gorin, ċekkjaturi lingwistiċi llum ma jqabblux biss il-lista ta’ kliem estratta ma’ dizzjunarju ta’ kliem spellut b’mod korrett, iżda saru dejjem aktar sofistikati. Minbarra l-algoritmi li jiddependu fuq il-lingwa għall-immaniġġjar tal-morfoloġija (eż. formazzjoni tal-plural), xi wħud issa huma kapaċi jagħrfu żbalji marbuta ma’ sintassi, bħal verb nieqes jew verb li ma jaqbilx mas-suġġett tiegħu fil-persuna u n-numru, eż. f’ \emph{`She *write a letter.’} Madankollu, iċ-ċekkjaturi l-aktar disponibbli (inkluż Microsoft Word) ma jsibu l-ebda żbalji fl-ewwel vers ta’ poeżija \cite{zar1} %minn Jerrold H. Zar (1992) 
 li tidher hawn taħt:
 
 \begin{quote}
@@ -571,7 +589,7 @@ li tidher hawn taħt:
   Miss steaks aye can knot sea.
 \end{quote}
 
-Għall-immaniġġjar ta’ dan it-tip ta’ żbalji, l-analiżi tal-\underline{kuntest} huwa meħtieġ f'ħafna każijiet, eż. sabiex jiġi deċiż f'liema pożizzjoni l-għ siekta għandha tinkiteb f’verb Malti, bħal f’dan l-eżempju:
+Għall-immaniġġjar ta’ dan it-tip ta’ żbalji, l-analiżi tal-kuntest huwa meħtieġ f'ħafna każijiet, eż. sabiex jiġi deċiż f'liema pożizzjoni l-għ siekta għandha tinkiteb f’verb Malti, bħal f’dan l-eżempju:
 
 \begin{enumerate} %[(a)]
 \item \textit{... in-negozjati li kien għamel il-Gvern ...}
@@ -581,7 +599,7 @@ Għall-immaniġġjar ta’ dan it-tip ta’ żbalji, l-analiżi tal-\underline{k
 
 Iż-żewġ verbi għamel  u agħmel jiġu ppronunzjati [ɐː.mɛl].
 
-Dan jew jeħtieġ il-formulazzjoni ta’ regoli tal-\underline{grammatika} li jkunu  speċifiċi, jiġifieri livell għoli ta’ kompetenza u xogħol manwali, jew l-użu tal-hekk imsejjaħ \underline{mudell lingwistiku} tal-istatistika. Mudelli bħal dawn jikkalkulaw il-probabbiltà ta’ kelma partikolari li tidher f’ambjent speċifiku (jiġifieri, il-kliem ta’ qabel u ta’ wara). Pereżempju, kien għamel hija sekwenza ta’ kliem ħafna aktar probabbli milli kien agħmel. Mudell lingwistiku tal-statistika jista’ jitnissel awtomatikament  minn ammont kbir ta’ dejta lingwistika (xierqa) (jiġifieri \underline{korpus}). Sa issa, dawn il-metodi ġew l-aktar żviluppati u evalwati fuq dejta lingwistika bl-Ingliż. Madankollu, dawn mhux neċessarjament jittrasferixxu sew għal-lingwi li jkollhom inflessjoni għolja bħall-Malti, fejn tip ta’ kelma partikolari, bħal verb, tista’ tagħti numru kbir ta’ forom ortografiċi.
+Dan jew jeħtieġ il-formulazzjoni ta’ regoli tal-\textbf{grammatika} li jkunu  speċifiċi, jiġifieri livell għoli ta’ kompetenza u xogħol manwali, jew l-użu tal-hekk imsejjaħ mudell lingwistiku tal-istatistika. Mudelli bħal dawn jikkalkulaw il-probabbiltà ta’ kelma partikolari li tidher f’ambjent speċifiku (jiġifieri, il-kliem ta’ qabel u ta’ wara). Pereżempju, kien għamel hija sekwenza ta’ kliem ħafna aktar probabbli milli kien agħmel. Mudell lingwistiku tal-statistika jista’ jitnissel awtomatikament  minn ammont kbir ta’ dejta lingwistika (xierqa) (jiġifieri \textbf{korpus}). Sa issa, dawn il-metodi ġew l-aktar żviluppati u evalwati fuq dejta lingwistika bl-Ingliż. Madankollu, dawn mhux neċessarjament jittrasferixxu sew għal-lingwi li jkollhom inflessjoni għolja bħall-Malti, fejn tip ta’ kelma partikolari, bħal verb, tista’ tagħti numru kbir ta’ forom ortografiċi.
 
 L-użu ta’ Ċekkjaturi Lingwistiċi mhuwiex limitat għal għodod ta’ pproċessar tal-kliem, iżda jiġi wkoll applikat f’sistemi ta’ appoġġ għal min jikteb. L-ammont ta’ dokumentazzjoni teknika li jakkumpanja l-għadd dejjem jikber ta’ prodotti tekniċi, żdied b’mod mgħaġġel matul l-aħħar deċennji. Minħabba l-biża’ tal-ilmenti tal-klijenti dwar l-użu ħażin u talbiet għal danni li jirriżultaw minn istruzzjonijiet ħżiena jew mifhuma ħażin, il-kumpaniji bdew jiffokaw dejjem aktar fuq il-kwalità tad-dokumentazzjoni teknika, fl-istess ħin jimmiraw għas-suq internazzjonali. Avvanzi fl-ipproċessar lingwistiku naturali wasslu għall-iżvilupp ta’ software ta’ appoġġ għal min jikteb, li jgħin lill-kittieb ta’ dokumentazzjoni teknika sabiex juża vokabolarju u strutturi ta’ sentenzi konsistenti ma’ ċerti regoli u restrizzjonijiet (korporattivi) tat-terminoloġija. 
 
@@ -600,11 +618,11 @@ Wieħed minn tal-ewwel kien ta’ \cite{Mangion:1999} li juża forom rudimentali
 
 Metodu ieħor ħares lejn l-istatistiċi għal soluzzjoni. L-idea intuwittiva hija li għal lingwa partikolari, ċerti sekwenzi ta’ karattri huma improbabbli ħafna. Bl-Ingliż, pereżempju, qatt ma nsibu s-sekwenza \emph{kk}, għalhekk jekk isseħħ taħt l-istess sekwenza f’kelma miktuba, nistgħu nbassru, bi grad għoli ta’ kunfidenza, li l-kelma mhijiex valida. B’mod aktar ġenerali, nistgħu nikkalkulaw il-probabbiltà ta’ xi sekwenza bħala funzjoni tal-probabbiltajiet tas-sekwenzi ta’ taħtha kollha, bl-adozzjoni tal-prinċipju li sabiex il-kelma tiġi kkunsidrata valida, il-probabbiltà trid taqbeż ċertu limitu.
 
-Ċekkjatur ortografiku statistiku li jagħmel użu minn prinċipju bħal dan kien żviluppat minn \cite{Mizzi:2001}. Dan ma kienx jeħtieġ dizzjunarju, iżda minflok kien ibbażat fuq id-distribuzzjoni ta’ n-grammi ta' karattri misjuba f’korpus ta’ gazzetta. Deher ċar li biex dan il-metodu jirnexxi kien jeħtieġ (i) mudell lingwistiku aktar preċiż li jirrikjedi aktar dejta lingwistika minn dik disponibbli dak iż-żmien, u (ii) li l-probabbiltà tas-sekwenza waħedha ma kinitx biżżejjed sabiex kelma ortografika tiġi kklassifikata bħala żball. Kif issuġġerit hawn fuq, informazzjoni oħra hija meħtieġa, bħal kategorija tal-kliem mill-kuntest tal-madwar.
+Ċekkjatur ortografiku statistiku li jagħmel użu minn prinċipju bħal dan kien żviluppat minn \cite{Mizzi:2000}. Dan ma kienx jeħtieġ dizzjunarju, iżda minflok kien ibbażat fuq id-distribuzzjoni ta’ n-grammi ta' karattri misjuba f’korpus ta’ gazzetta. Deher ċar li biex dan il-metodu jirnexxi kien jeħtieġ (i) mudell lingwistiku aktar preċiż li jirrikjedi aktar dejta lingwistika minn dik disponibbli dak iż-żmien, u (ii) li l-probabbiltà tas-sekwenza waħedha ma kinitx biżżejjed sabiex kelma ortografika tiġi kklassifikata bħala żball. Kif issuġġerit hawn fuq, informazzjoni oħra hija meħtieġa, bħal kategorija tal-kliem mill-kuntest tal-madwar.
 
 Tentattivi oħra biex jiġi żviluppat ċekkjatur ortografiku għall-Malti jinkludu ċekkjatur fuq l-internet li ġie żviluppat minn Ramon Casha tal-Linux User Group\cite{Linux-spellcheck1}. Dan huwa bbażat fuq lista ta’ kliem b’madwar miljun tip ta’ kelma oriġinarjament miġbura minn korpus li jvarja, u sussegwentement estiż permezz ta’ regoli differenti għall-immaniġġjar ta’ inflessjonijiet. L-eżattezza tiegħu ma ġietx stabbilita uffiċjalment. Microsoft ukoll kienu qed jaħdmu fuq ċekkjatur ortografiku biex jinkluduh mal-pakkett ta’ interface tagħhom għal-lingwa Maltija għalkemm mhux magħruf meta dan se jiġi rilaxxat.
 
-L-użu ta’ ċekkjatur lingwistiku mhuwiex limitat għal għodod ta’  pproċessar tal-kliem. Oqsma ta’ applikazzjoni oħra jinkludu \textbf{appoġġ għal min jikteb}, pereżempju biex jgħin lill-kittieb ta’ dokumentazzjoni teknika juża vokabolarju tekniku b’mod konsistenti, u l-qasam tat-\textbf{tagħlim tal-lingwi assistit mill-kompjuter}. L-iċċekkjar tal-lingwa jiġi wkoll applikat biex jiġu kkoreġuti awtomatikament mistoqsijiet mibgħuta lil magni ta’ tiftix, eż. suġġerimenti tat-tip ``Ridt tfisser ...'' lil Google. 
+L-użu ta’ ċekkjatur lingwistiku mhuwiex limitat għal għodod ta’  pproċessar tal-kliem. Oqsma ta’ applikazzjoni oħra jinkludu appoġġ għal min jikteb, pereżempju biex jgħin lill-kittieb ta’ dokumentazzjoni teknika juża vokabolarju tekniku b’mod konsistenti, u l-qasam tat-tagħlim tal-lingwi assistit mill-kompjuter. L-iċċekkjar tal-lingwa jiġi wkoll applikat biex jiġu kkoreġuti awtomatikament mistoqsijiet mibgħuta lil magni ta’ tiftix, eż. suġġerimenti tat-tip ``Ridt tfisser ...'' lil Google. 
 
 Barra minn CD ta’ dizzjunarju interattiv bl-istampi \cite{Sciriha:1997}, sal-lum l-ebda applikazzjoni bħal din ma ġiet żviluppata għall-Malti.
 
@@ -627,13 +645,13 @@ L-interazzjoni tat-taħdit hija l-bażi għall-ħolqien ta’ interfaces li jipp
 Fil-qalba tagħha, l-Interazzjoni tat-Taħdit tinkludi l-erba’ teknoloġiji differenti li ġejjin:
 
 \begin{enumerate}
-\item L-Identifikazzjoni awtomatika tat-taħdit (ASR) hija responsabbli biex tiddetermina liema kliem kien attwalment mitkellem f’sekwenza partikolari ta’ ħsejjes imlissna minn utent.
+\item L-\textbf{Identifikazzjoni awtomatika tat-taħdit} (ASR) hija responsabbli biex tiddetermina liema kliem kien attwalment mitkellem f’sekwenza partikolari ta’ ħsejjes imlissna minn utent.
 \item L-analiżi sintattika u l-interpretazzjoni semantika janalizzaw l-istruttura sintattika tat-tlissin tal-utent u jinterpretaw tal-aħħar skont l-għan tas-sistema rispettiva.
 \item Il-ġestjoni tad-djalogu hija meħtieġa sabiex jiġi determinata ma’ liema parti tas-sistema l-utent jinteraġixxi, liema azzjoni għandha tittieħed skont l-input tal-utent u l-funzjonalità tas-sistema.
-\item It-teknoloġija tas-sinteżi tat-taħdit (Text-to-Speech, TTS) hija użata biex tittrasforma l-kliem ta’ dik l-espressjoni fi ħsejjes li jkunu prodotti għall-utent. 
+\item It-teknoloġija tas-\textbf{sinteżi tat-taħdit} (Text-to-Speech, TTS) hija użata biex tittrasforma l-kliem ta’ dik l-espressjoni fi ħsejjes li jkunu prodotti għall-utent. 
 \end{enumerate}
 
-Waħda mill-isfidi ewlenin hija li jkollok sistema ASR li tidentifika  l-kliem imlissen minn utent bl-aktar mod preċiż possibbli. Dan jeħtieġ jew restrizzjoni tal-firxa ta’ espressjonijiet possibbli tal-utent għal sett limitat ta’ kliem ewlieni, inkella l-ħolqien manwali ta’ \underline{mudelli lingwistiċi} li jkopru firxa kbira ta’ espressjonijiet ta’ lingwa naturali tal-utent. Filwaqt li tal-ewwel jirriżulta f’użu pjuttost riġidu u inflessibbli ta’ VUI u li  possibilment jikkawża aċċettazzjoni baxxa mill-utenti, il-ħolqien, l-irfinar u l-manutenzjoni tal-mudelli lingwistiċi jistgħu jżidu l-ispejjeż b’mod sinifikanti. Madankollu, il-VUIs li jużaw mudelli lingwistiċi u fil-bidu jippermettu lill-utent biex jesprimi l-intenzjoni tiegħu b’mod flessibbli – evokati, pereżempju, minn tislima bħal ‘Kif nista’ ngħinek’ – għandha kemm rata ogħla ta’ awtomazzjoni, kif ukoll aktar aċċettazzjoni mill-utenti u għalhekk jistgħu jitqiesu bħala vantaġġużi fuq il-metodu ta’ djalogu dirett u anqas flessibbli. Għall-parti tal-output tal-VUI, il-kumpaniji għandhom tendenza li jużaw ħafna espressjonijiet irrekordjati minn qabel ta’ kelliema professjonali – idealment korporattivi. Għal espressjonijiet statiċi, li fihom il-kliem ma jiddependix fuq il-kuntesti partikolari tal-użu jew id-dejta personali ta’ utent partikolari, dan iwassal għal esperjenza rikka tal-utent. Madankollu, aktar ma l-espressjoni jkollha tikkunsidra kontenut dinamiku, aktar l-esperjenza tal-utent tista’ tbati aktar minn prosodija fqira li tirriżulta minn files audio individwali marbutin ma’ xulxin. B'kuntrast ma’ dan, is-sistemi TTS tal-lum, jagħtu xhieda li huma superjuri, għalkemm jistgħu jintużaw aħjar, fir-rigward tan-naturalezza prosodika ta’ espressjonijiet dinamiċi.
+Waħda mill-isfidi ewlenin hija li jkollok sistema ASR li tidentifika  l-kliem imlissen minn utent bl-aktar mod preċiż possibbli. Dan jeħtieġ jew restrizzjoni tal-firxa ta’ espressjonijiet possibbli tal-utent għal sett limitat ta’ kliem ewlieni, inkella l-ħolqien manwali ta’ mudelli lingwistiċi li jkopru firxa kbira ta’ espressjonijiet ta’ lingwa naturali tal-utent. Filwaqt li tal-ewwel jirriżulta f’użu pjuttost riġidu u inflessibbli ta’ VUI u li  possibilment jikkawża aċċettazzjoni baxxa mill-utenti, il-ħolqien, l-irfinar u l-manutenzjoni tal-mudelli lingwistiċi jistgħu jżidu l-ispejjeż b’mod sinifikanti. Madankollu, il-VUIs li jużaw mudelli lingwistiċi u fil-bidu jippermettu lill-utent biex jesprimi l-intenzjoni tiegħu b’mod flessibbli – evokati, pereżempju, minn tislima bħal ‘Kif nista’ ngħinek’ – għandha kemm rata ogħla ta’ awtomazzjoni, kif ukoll aktar aċċettazzjoni mill-utenti u għalhekk jistgħu jitqiesu bħala vantaġġużi fuq il-metodu ta’ djalogu dirett u anqas flessibbli. Għall-parti tal-output tal-VUI, il-kumpaniji għandhom tendenza li jużaw ħafna espressjonijiet irrekordjati minn qabel ta’ kelliema professjonali – idealment korporattivi. Għal espressjonijiet statiċi, li fihom il-kliem ma jiddependix fuq il-kuntesti partikolari tal-użu jew id-dejta personali ta’ utent partikolari, dan iwassal għal esperjenza rikka tal-utent. Madankollu, aktar ma l-espressjoni jkollha tikkunsidra kontenut dinamiku, aktar l-esperjenza tal-utent tista’ tbati aktar minn prosodija fqira li tirriżulta minn files audio individwali marbutin ma’ xulxin. B'kuntrast ma’ dan, is-sistemi TTS tal-lum, jagħtu xhieda li huma superjuri, għalkemm jistgħu jintużaw aħjar, fir-rigward tan-naturalezza prosodika ta’ espressjonijiet dinamiċi.
 
 Rigward is-suq tat-teknoloġija għall-Interazzjoni tat-Taħdit, l-aħħar għaxar snin għaddew minn standardizzazzjoni qawwija tal-interfaces bejn il-komponenti ta’ teknoloġiji differenti, kif ukoll bi standards għal ħolqien ta’ prodotti ta’ software partikolari għal ċerta applikazzjoni. F’dawn l-aħħar għaxar snin kien hemm ukoll konsolidazzjoni soda tas-suq, partikolarment fil-qasam tal-ASR u t-TTS. Hawnhekk, is-swieq nazzjonali fil-pajjiżi tal-G20 – jiġifieri pajjiżi ekonomikament b'saħħithom b’popolazzjoni konsiderevoli - huma dominati minn anqas minn 5 parteċipanti dinjija, b’Nuance u Loquendo dawk l-aktar prominenti fl-Ewropa.
 
@@ -647,29 +665,29 @@ Ix-xogħol fuq l-idenifikazzjoni tat-taħdit huwa anqas avvanzat. Prototip biex 
 
 \subsubsection{Traduzzjoni awtomatika}
 
-L-idea tal-użu ta’ kompjuters diġitali għat-traduzzjoni ta’ lingwi naturali bdiet fl-1946 minn A. D. Booth u kienet segwita minn fondi sostanzjali għar-riċerka f'dan il-qasam fil-ħamsinijiet u ssoktat mill-ġdid fit-tmeninijiet. Madankollu, it-\underline{Traduzzjoni Awtomatika} (TA) tibqa’ tonqos li tissodisfa l-aspettativi għolja li ħolqot fis-snin bikrin tagħha.
+L-idea tal-użu ta’ kompjuters diġitali għat-traduzzjoni ta’ lingwi naturali bdiet fl-1946 minn A. D. Booth u kienet segwita minn fondi sostanzjali għar-riċerka f'dan il-qasam fil-ħamsinijiet u ssoktat mill-ġdid fit-tmeninijiet. Madankollu, it-\textbf{Traduzzjoni Awtomatika} (TA) tibqa’ tonqos li tissodisfa l-aspettativi għolja li ħolqot fis-snin bikrin tagħha.
 
 \boxtext{Fil-livell bażiku tagħha, TA sempliċiment tissostitwixxi l-kliem ta' lingwa naturali waħda b'ta' oħra.}
 
-Fil-livell bażiku tagħha, TA sempliċiment tissostitwixxi l-kliem ta' lingwa naturali waħda b'ta' oħra. Dan jista’ jkun utli f'dominji ta' suġġetti b’lingwa ristretta u konvenzjonali ħafna, pereżempju, rapporti tat-temp. Madankollu, għal traduzzjoni tajba ta’ testi anqas standardizzati, unitajiet ta’ testi akbar (frażijiet, sentenzi, jew anki siltiet sħaħ) jeħtieġ li jkunu mqabbla mal-eqreb kontropartijiet tagħhom fil-lingwa fil-mira. Id-diffikultà prinċipali hawnhekk tinsab fil-fatt li l-lingwa umana hija ambigwa, u toħloq  sfidi fuq livelli multipli, eż. \underline{tneħħija ta’ ambigwità mis-sens tal-kelma} fuq livell lessikali (`Jaguar' tista’ tfisser karozza jew annimal) jew it-twaħħil ta’ frażijiet prepożizzjonali fuq livell sintattiku bħal fl-eżempji li ġejjin:
+Fil-livell bażiku tagħha, TA sempliċiment tissostitwixxi l-kliem ta' lingwa naturali waħda b'ta' oħra. Dan jista’ jkun utli f'dominji ta' suġġetti b’lingwa ristretta u konvenzjonali ħafna, pereżempju, rapporti tat-temp. Madankollu, għal traduzzjoni tajba ta’ testi anqas standardizzati, unitajiet ta’ testi akbar (frażijiet, sentenzi, jew anki siltiet sħaħ) jeħtieġ li jkunu mqabbla mal-eqreb kontropartijiet tagħhom fil-lingwa fil-mira. Id-diffikultà prinċipali hawnhekk tinsab fil-fatt li l-lingwa umana hija ambigwa, u toħloq  sfidi fuq livelli multipli, eż. tneħħija ta’ ambigwità mis-sens tal-kelma fuq livell lessikali (`Jaguar' tista’ tfisser karozza jew annimal) jew it-twaħħil ta’ frażijiet prepożizzjonali fuq livell sintattiku bħal fl-eżempji li ġejjin:
 
 \begin{enumerate}%[(a)]
 \item \emph{Il-Kuntistabbli osserva lir-raġel bit-teleskopju.}
 \item \emph{Il-Kuntistabbli osserva lir-raġel bir-rivolver.}
 \end{enumerate}
 
-Mod wieħed kif wieħed jitratta l-kompitu huwa bbażat fuq regoli lingwistiċi. Għat-traduzzjonijiet bejn lingwi marbutin flimkien mill-qrib, traduzzjoni diretta tista’ tkun possibbli f'każijiet bħall-eżempju t’hawn fuq. Iżda sistemi bbażati fuq regoli (jew immexxija minn għarfien) ta’ spiss janalizzaw it-test imdaħħal fis-sistema u joħolqu rappreżentazzjoni intermedjarja u simbolika, li minnhom it-test fil-lingwa fil-mira jiġi ġġenerat. Is-suċċess ta’ dawn il-metodi jiddipendi ħafna fuq id-disponibbiltà ta’ \underline{dizzjunarji} estensivi b’ informazzjoni morfoloġika, sintattika, u semantika, u settijiet kbar ta’ regoli tal-\underline{grammatika} mfassla bir-reqqa minn lingwista tas-sengħa.
+Mod wieħed kif wieħed jitratta l-kompitu huwa bbażat fuq regoli lingwistiċi. Għat-traduzzjonijiet bejn lingwi marbutin flimkien mill-qrib, traduzzjoni diretta tista’ tkun possibbli f'każijiet bħall-eżempju t’hawn fuq. Iżda sistemi bbażati fuq regoli (jew immexxija minn għarfien) ta’ spiss janalizzaw it-test imdaħħal fis-sistema u joħolqu rappreżentazzjoni intermedjarja u simbolika, li minnhom it-test fil-lingwa fil-mira jiġi ġġenerat. Is-suċċess ta’ dawn il-metodi jiddipendi ħafna fuq id-disponibbiltà ta’ dizzjunarji estensivi b’ informazzjoni morfoloġika, sintattika, u semantika, u settijiet kbar ta’ regoli tal-\textbf{grammatika} mfassla bir-reqqa minn lingwista tas-sengħa.
 
 \begin{figure*}[htb]
   \colorrule{grey3}{\textwidth}{1.5pt}
-  \center
+  \centering
   \includegraphics[width=\textwidth]{../_media/maltese/machine_translation}
   \caption{Traduzzjoni awtomatika (statistika; ibbażata fuq regoli)}
   \label{fig:mtarch_mt}
   \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
 
-Lejn it-tmiem tat-tmeninijiet, kif l-enerġija kompjutazzjonali żdiedet u saret anqas għalja, kien hemm aktar interess fil-mudelli statistiċi għat-TA. Il-parametri ta’ dawn il-mudelli statistiċi jittieħdu mill-analiżi ta’ \underline{korpora} ta’ testijiet bilingwi, bħalma hu l-korpus parallel tal-Europarl, li fih il-proċedimenti tal-Parlament Ewropew fi 11-il lingwa Ewropea. B’dejta suffiċjenti, TA statistika jaħdem tajjeb biżżejjed li jikseb tifsira approssimattiva għal test ta’ lingwa barranija. Madankollu, bid-differenza ta’ sistemi mmexxija mill-għarfien, it-TA statistika (jew immexxija minn dejta) spiss tiġġenera produzzjoni mhux grammatikali. Min-naħa l-oħra, minbarra l-vantaġġ li anqas sforz uman huwa meħtieġ għall-kitba grammatikali, TA mmexxija minn dejta tista’ wkoll tkopri partikolaritajiet tal-lingwa li jintilfu f’sistemi mmexxija minn għarfien, pereżempju espressjonijiet idjomatiċi.
+Lejn it-tmiem tat-tmeninijiet, kif l-enerġija kompjutazzjonali żdiedet u saret anqas għalja, kien hemm aktar interess fil-mudelli statistiċi għat-TA. Il-parametri ta’ dawn il-mudelli statistiċi jittieħdu mill-analiżi ta’ korpora ta’ testijiet bilingwi, bħalma hu l-\textbf{korpus parallel} tal-Europarl, li fih il-proċedimenti tal-Parlament Ewropew fi 11-il lingwa Ewropea. B’dejta suffiċjenti, TA statistika jaħdem tajjeb biżżejjed li jikseb tifsira approssimattiva għal test ta’ lingwa barranija. Madankollu, bid-differenza ta’ sistemi mmexxija mill-għarfien, it-TA statistika (jew immexxija minn dejta) spiss tiġġenera produzzjoni mhux grammatikali. Min-naħa l-oħra, minbarra l-vantaġġ li anqas sforz uman huwa meħtieġ għall-kitba grammatikali, TA mmexxija minn dejta tista’ wkoll tkopri partikolaritajiet tal-lingwa li jintilfu f’sistemi mmexxija minn għarfien, pereżempju espressjonijiet idjomatiċi.
 
 Minħabba li l-punti tajbin u dgħajfin tat-TA mmexxija minn għarfien u dejta huma kumplimentari, ir-riċerkaturi llum unanimament jimmiraw għal metodi ibridi li jgħaqqdu l-metodoloġiji tat-tnejn li huma. Dan jista’ jsir b’modi diversi. Wieħed jinkludi l-użu ta’ kemm sistemi mmexxija minn għarfien kif ukoll dejta u jkollu modulu ta’ għażla li jiddeċiedi dwar l-aħjar output għal kull sentenza. Madankollu, għal sentenzi itwal, l-ebda riżultat mhu se jkun perfett. Soluzzjoni aħjar hija li tgħaqqad l-aħjar partijiet ta’ kull sentenza minn outputs multipli, li jistgħu jkunu pjuttost kumplessi, minħabba li partijiet korrispondenti ta’ alternattivi multipli mhux dejjem huma ovvji u jridu jkunu allinjati.
 
@@ -723,16 +741,18 @@ L-aħjar riżultati (murija bl-aħdar u l-blu) nkisbu minn lingwi li jibbenefika
 
 Il-bini ta’ applikazzjonijiet tat-teknoloġija lingwistika jinvolvi firxa ta’ kompiti sekondarji li mhux dejjem jidhru fuq livell ta’ interazzjoni mal-utent, iżda jipprovdu funzjonalitajiet ta’ servizz sinifikanti ``wara l-kwinti'' tas-sistema. Għaldaqstant, dawn jikkostitwixxu kwistjonijiet importanti ta’ riċerka li saru dixxiplini sekondarji individwali tal-Lingwistika Kompjutazzjonali fl-akkademja.
 
-\underline{It-tweġib ta’ mistoqsijiet} sar qasam attiv ta’ riċerka, li għalih  inbnew il-\underline{korpora} annotati u bdew kompetizzjonijiet xjentifiċi. L-idea hija li wieħed jimxi minn tfittxija bbażata fuq  kelma ewlenija (li għalih il-magna tirrispondi b’ġabra sħiħa ta’ dokumenti potenzjalment rilevanti) għal xenarju fejn l-utent jistaqsi mistoqsija konkreta u s-sistema tipprovdi tweġiba waħda: 
+It-tweġib ta’ mistoqsijiet sar qasam attiv ta’ riċerka, li għalih  inbnew il-\textbf{korpora} annotati u bdew kompetizzjonijiet xjentifiċi. L-idea hija li wieħed jimxi minn tfittxija bbażata fuq  kelma ewlenija (li għalih il-magna tirrispondi b’ġabra sħiħa ta’ dokumenti potenzjalment rilevanti) għal xenarju fejn l-utent jistaqsi mistoqsija konkreta u s-sistema tipprovdi tweġiba waħda: 
 
-\textit{Mistoqsija: F’ liema età Neil Armstrong għamel l-ewwel pass fuq il-qamar?'}\\
-\textit{Tweġiba: 38.}
+\begin{itemize}
+\item[] \textit{Mistoqsija: F’ liema età Neil Armstrong għamel l-ewwel pass fuq il-qamar?'}\\
+\item[] \textit{Tweġiba: 38.}
+\end{itemize}
 
 Filwaqt li dan huwa ovvjament relatat ma’ Tiftix fuq il-Web tal-qasam ewlieni msemmi qabel, it-tweġib tal-mistoqsijiet, illum huwa primarjament terminu ġenerali għal mistoqsijiet ta’ riċerka bħal liema tipi ta’ mistoqsijiet għandhom ikunu distinti u kif dawn għandhom ikunu trattati, kif sett ta’ dokumenti li potenzjalment fih ir-risposta jista’ jiġi analizzat u mqabbel (dawn jagħtu tweġibiet konfliġġenti?), u kif tista’ l-informazzjoni speċifika - it-tweġiba – tittieħed b’mod affidabbli minn dokument, mingħajr ma jiġi injorat il-kuntest.
 
-Dan huwa min-naħa l-oħra marbut mal-kompitu tal-\underline{estrazzjoni ta’ informazzjoni} (EI), qasam li kien ferm popolari u influwenti fil-mument tal-‘bidla statistika’ għal-Lingwistika Kompjutazzjonali, fil-bidu tad-disgħinijiet. EI timmira li tidentifika biċċiet speċifiċi ta’ informazzjoni fi klassijiet speċifiċi ta’ dokumenti; dan jista’ jkun eż. s-sejbien tal-atturi ewlenin fit-teħid ta’ kontroll ta’ kumpaniji kif irrappurtat fi stejjer fil-gazzetti. Xenarju ieħor li nħadem fuqu huwa rapporti dwar inċidenti terroristiċi, fejn il-problema hija li tqabbel it-test ma’ mudell li jispeċifika min hu l-awtur, il-mira, il-ħin u l-post, u r-riżultati tal-inċident. Il-mili tal-mudell permezz ta’ dominju speċifiku hija l-karatteristika ċentrali tal-EI, li għal din ir-raġuni huwa eżempju ieħor ta’ teknoloġija ``wara l-kwinti'' li tikkostitwixxi qasam ta’ riċerka demarkata sew, iżda għal skopijiet prattiċi mbagħad jeħtieġ li tkun inkorporata f’ambjent ta’ applikazzjoni xierqa.
+Dan huwa min-naħa l-oħra marbut mal-kompitu tal-estrazzjoni ta’ informazzjoni (EI), qasam li kien ferm popolari u influwenti fil-mument tal-‘bidla statistika’ għal-Lingwistika Kompjutazzjonali, fil-bidu tad-disgħinijiet. EI timmira li tidentifika biċċiet speċifiċi ta’ informazzjoni fi klassijiet speċifiċi ta’ dokumenti; dan jista’ jkun eż. s-sejbien tal-atturi ewlenin fit-teħid ta’ kontroll ta’ kumpaniji kif irrappurtat fi stejjer fil-gazzetti. Xenarju ieħor li nħadem fuqu huwa rapporti dwar inċidenti terroristiċi, fejn il-problema hija li tqabbel it-test ma’ mudell li jispeċifika min hu l-awtur, il-mira, il-ħin u l-post, u r-riżultati tal-inċident. Il-mili tal-mudell permezz ta’ dominju speċifiku hija l-karatteristika ċentrali tal-EI, li għal din ir-raġuni huwa eżempju ieħor ta’ teknoloġija ``wara l-kwinti'' li tikkostitwixxi qasam ta’ riċerka demarkata sew, iżda għal skopijiet prattiċi mbagħad jeħtieġ li tkun inkorporata f’ambjent ta’ applikazzjoni xierqa.
 
-Żewġ oqsma ``borderline'', li xi drabi jkollhom ir-rwol ta’ applikazzjoni waħedha u xi kultant dak ta’ komponent appoġġjat, ``taħt il-kappa'' huma \underline{sommarju ta’ testi} u \underline{ġenerazzjoni ta’ testi}. Sommarju, ovvjament, jirreferi għall-kompitu ta’ taqsir ta’ test twil, u jiġi offrut pereżempju bħala funzjonalità fi ħdan l-MS Word. Dan jaħdem aktar fuq bażi ta’ statistika, billi l-ewwel jidentifika l-kliem ``importanti'' f’test (jiġifieri, pereżempju, kliem li huma frekwenti ferm f'dan it-test iżda sostanzjalment anqas frekwenti fl-użu ġenerali tal-lingwa) u mbagħad jiddetermina dawk is-sentenzi li jinkludu ħafna kliem importanti. Dawn is-sentenzi mbagħad jiġu mmarkati fid-dokument, jew estratti minnu, u jiġu meħuda biex isir is-sommarju. F’dan ix-xenarju, li huwa bil-bosta l-aktar wieħed popolari, sommarju huwa ugwali għal estrazzjoni ta’ sentenzi: it-test jiġi trattat bħala sett sekondarju tas-sentenzi tiegħu. Is-sistemi ta’ sommarji kummerċjali kollha jagħmlu użu minn din l-idea. Metodu alternattiv, li għalih hija ddedikata ċerta riċerka, huwa li sentenzi \emph{ġodda} jiġu attwalment sintetizzati, jiġifieri, jinbena sommarju ta’ sentenzi li m’hemmx għalfejn jidhru f’dik il-forma fit-test sors. Dan jeħtieġ ċertu ammont ta’ fehim aktar profond tat-test u għaldaqstant huwa ħafna anqas b'saħħtu. Kollox ma’ kollox, ġeneratur ta’ test huwa f’ħafna każijiet mhux applikazzjoni li tista’ toqgħod waħedha iżda huwa inkorporat f’ambjent ta’ software akbar, bħal fis-sistema ta’ informazzjoni kliniku fejn dejta tal-pazjent hija miġbura, maħżuna u pproċessata, u l-ġenerazzjoni ta’ rapporti hija biss waħda minn ħafna funzjonalitajiet.
+Żewġ oqsma ``borderline'', li xi drabi jkollhom ir-rwol ta’ applikazzjoni waħedha u xi kultant dak ta’ komponent appoġġjat, ``taħt il-kappa'' huma sommarju ta’ testi u \textbf{ġenerazzjoni ta’ testi}. Sommarju, ovvjament, jirreferi għall-kompitu ta’ taqsir ta’ test twil, u jiġi offrut pereżempju bħala funzjonalità fi ħdan l-MS Word. Dan jaħdem aktar fuq bażi ta’ statistika, billi l-ewwel jidentifika l-kliem ``importanti'' f’test (jiġifieri, pereżempju, kliem li huma frekwenti ferm f'dan it-test iżda sostanzjalment anqas frekwenti fl-użu ġenerali tal-lingwa) u mbagħad jiddetermina dawk is-sentenzi li jinkludu ħafna kliem importanti. Dawn is-sentenzi mbagħad jiġu mmarkati fid-dokument, jew estratti minnu, u jiġu meħuda biex isir is-sommarju. F’dan ix-xenarju, li huwa bil-bosta l-aktar wieħed popolari, sommarju huwa ugwali għal estrazzjoni ta’ sentenzi: it-test jiġi trattat bħala sett sekondarju tas-sentenzi tiegħu. Is-sistemi ta’ sommarji kummerċjali kollha jagħmlu użu minn din l-idea. Metodu alternattiv, li għalih hija ddedikata ċerta riċerka, huwa li sentenzi \emph{ġodda} jiġu attwalment sintetizzati, jiġifieri, jinbena sommarju ta’ sentenzi li m’hemmx għalfejn jidhru f’dik il-forma fit-test sors. Dan jeħtieġ ċertu ammont ta’ fehim aktar profond tat-test u għaldaqstant huwa ħafna anqas b'saħħtu. Kollox ma’ kollox, ġeneratur ta’ test huwa f’ħafna każijiet mhux applikazzjoni li tista’ toqgħod waħedha iżda huwa inkorporat f’ambjent ta’ software akbar, bħal fis-sistema ta’ informazzjoni kliniku fejn dejta tal-pazjent hija miġbura, maħżuna u pproċessata, u l-ġenerazzjoni ta’ rapporti hija biss waħda minn ħafna funzjonalitajiet.
 
 \subsection{Programmi tal-Edukazzjoni}
 
@@ -850,7 +870,7 @@ Estrazzjoni ta’ testi f’livell baxx u għodod ta’ pproċessar huma disponi
 
 Għodod ta’ livell ogħla (analiżi sintattika jew semantika, għodod ta’ klassifikazzjoni, estrazzjoni ta’ informazzjoni eċċ.) huma kompletament neqsin. Il-konsegwenza hija li, pereżempju, m’hemm l-ebda treebanks disponibbli għall-Malti.
 
-Prototip ta’ għodod ta’ identifikazzjoni ta’ taħdit ġew żviluppati fl-Università iżda mhumiex faċilment disponibbli fiż-żmien meta qed jinkiteb dan. Madankollu, il-magna tat-taħdit iffinanzjata mill-gvern imsemmija qabel għandha tipprovdi sintetizzatur tat-taħdit jiffunzjona sal-2013. Filwaqt li dan huwa żvilupp pożittiv ħafna, huwa ffukat ħafna fuq in-naħa tas-sinteżi tat-taħdit. Kważi l-ebda xogħol fuq l-identifikazzjoni tat-taħdit ma huwa ppjanat f'dan l-istadju.
+Prototip ta’ għodod ta’ identifikazzjoni ta’ taħdit ġew żviluppati fl-Università iżda mhumiex faċilment disponibbli fiż-żmien meta qed jinkiteb dan. Madankollu, il-magna tat-taħdit iffinanzjata mill-gvern imsemmija qabel għandha tipprovdi sintetizzatur tat-taħdit jiffunzjona sal-2013. Filwaqt li dan huwa żvilupp pożittiv ħafna, huwa ffukat ħafna fuq in-naħa tas-sinteżi tat-taħdit. Kważi l-ebda xogħol fuq l-\textbf{identifikazzjoni tat-taħdit} ma huwa ppjanat f'dan l-istadju.
 
 Fir-rigward ta’ riżorsi, is-sitwazzjoni hija xi ftit aktar strutturata, minħabba li diġà jeżisti l-MLRS, infrastruttura kompjutazzjoni estensiva fil-forma ta’ server li tipprovdi funzjonalità bażika li tippermetti aċċess fuq il-web għall-korpora disponibbli, xi servizzi, u sistema rudimentali li tiffaċilita l-preżentazzjoni ta’ kontribuzzjonijiet. L-MLRS bħalissa qed jipprovdi xi servizzi bażiċi ħafna għall-estrazzjoni, rappreżentazzjoni, tiftix u analiżi ta’ testi.
 
@@ -1579,8 +1599,6 @@ The websites of the Maltese TV and radio stations show a mixture of both English
 Outside Malta, a big collection for Maltese texts is within the EUR-Lex\cite{EURLex1} that hosts all official law and other documents of the European Union since 1951 in its 23 official languages.
 
 Many if not all of these openly available web documents are used in corpus projects, e.g. the \emph{JRC-Acquis Multilingual Parallel Corpus}\cite{JRC-Acquis1}, which is a parallel corpus containing the complete text of the European Union Law in 22 languages. Another corpus that contains a growing number of visible web documents in Maltese is the corpus on the MLRS (Maltese Language Resource Server)\cite{MLRS1}.
-
-
 \end{multicols}
 
 \clearpage
@@ -1588,7 +1606,6 @@ Many if not all of these openly available web documents are used in corpus proje
 \ssection[Language Technology Support for Maltese]{Language Technology Support\newline for Maltese}
 
 \begin{multicols}{2}
-
 Language technology is used to develop software systems designed to handle human language and are therefore often called “human language technology”. Human language comes in spoken and written forms. While speech is the oldest and in terms of human evolution the most natural form of language communication, complex information and most human knowledge is stored and transmitted through the written word. Speech and text technologies process or produce these different forms of language, using dictionaries, rules of grammar, and semantics. This means that language technology (LT) links language to various forms of knowledge, independently of the media (speech or text) in which it is expressed. Figure~\ref{fig:ltincontext_en} illustrates the LT landscape.
 
 \begin{figure*}[htb]
@@ -1631,7 +1648,7 @@ Software applications for language processing typically consist of several compo
 
 After analysing the text, task-specific modules can perform other operations, such as automatic summarisation and database look-ups.
 
-In the remainder of this section, we firstly introduce the core application areas for language technology, and follow this with a brief overview of the state of LT research and education today, and a description of past and present research programmes. Finally, we present an expert estimate of core LT tools and resources for Maltese in terms of various dimensions such as availability, maturity and quality. The general situation of LT for the Maltese language is summarised in a matrix (figure~\ref{fig:lrlttable_en}). Tools and resources that are underlined in the text can also be found in figure~\ref{fig:lrlttable_en} (p.~\pageref{fig:lrlttable_en}) at the end of this chapter. LT support for Maltese is also compared to other languages that are part of this series.
+In the remainder of this section, we firstly introduce the core application areas for language technology, and follow this with a brief overview of the state of LT research and education today, and a description of past and present research programmes. Finally, we present an expert estimate of core LT tools and resources for Maltese in terms of various dimensions such as availability, maturity and quality. The general situation of LT for the Maltese language is summarised in a matrix (figure~\ref{fig:lrlttable_en}). Tools and resources that are boldfaced in the text can also be found in figure~\ref{fig:lrlttable_en} (p.~\pageref{fig:lrlttable_en}) at the end of this chapter. LT support for Maltese is also compared to other languages that are part of this series.
 
 \begin{figure*}[htb]
   \colorrule{grey3}{\textwidth}{1.5pt}
@@ -1697,7 +1714,7 @@ As a result of the rapid increase in demand for technical products, many compani
 
 Authoring support software for Maltese does not at the moment exist but there would be considerable scope for the use of such software at the production end of Maltese. One of the reasons for the comparative scarcity of written Maltese content, in business correspondence for example, is that the production of correct Maltese text is difficult. Many competent native speakers are inclined to make mistakes when it comes to the written language and so they prefer to write in English. The availability of the right kind of simple authoring support tools could alleviate this problem.
 
-An evolving area of language technology is \textbf{computer-assisted language learning} but apart from an interactive CD picture dictionary \cite{Sciriha:1997}, no such applications have been specifically developed for Maltese to date.
+An evolving area of language technology is computer-assisted language learning but apart from an interactive CD picture dictionary \cite{Sciriha:1997}, no such applications have been specifically developed for Maltese to date.
 
 
 \subsubsection{Web Search}
@@ -1713,15 +1730,15 @@ An evolving area of language technology is \textbf{computer-assisted language le
 
 Search on the web, in intranets, or in digital libraries is probably the most widely used and yet underdeveloped language technology today. The search engine Google, which started in 1998, is nowadays used for about 80\% of all search queries world-wide\cite{spi1}. Since 2004, the verb \emph{to google} even has an entry in the \emph{Cambridge Advanced Learner’s Dictionary}. Neither the search interface nor the presentation of the retrieved results has significantly changed since the first version. In the current version, Google offers spelling correction for misspelled words and also, in 2009, incorporated basic semantic search capabilities into their algorithmic mix\cite{pc1}, which can improve search accuracy by analyzing the meaning of the query terms in context. The success story of Google shows that with a lot of data at hand and efficient indexing techniques a mainly statistical approach can lead to satisfactory results.  
 
-However, for more sophisticated information requests, the integration of deeper linguistic knowledge is essential. In the research labs, experiments using machine-readable \underline{thesauri} and \underline{ontological language resources} like WordNet have shown improvements by allowing a page to be found on the basis of synonyms of the search terms, e.g. German \emph{Atomkraft, Kernenergie and Nuklearenergie} (atomic energy, atomic power, and nuclear energy) or even more loosely related terms. 
+However, for more sophisticated information requests, the integration of deeper linguistic knowledge is essential. In the research labs, experiments using machine-readable thesauri and ontological language resources like WordNet have shown improvements by allowing a page to be found on the basis of synonyms of the search terms, e.g. German \emph{Atomkraft, Kernenergie and Nuklearenergie} (atomic energy, atomic power, and nuclear energy) or even more loosely related terms. 
 
 \boxtext{The next generation of search engines will have to include much more sophisticated language technology.}
 
-The next generation of search engines will have to include much more sophisticated language technology. If a search query consists of a question or another type of sentence rather than a list of key-words, retrieving relevant answers to this query requires an analysis of this sentence at a syntactic and semantic level as well as the availability of an index that allows for a fast retrieval of the relevant documents. For example, imagine a user inputs the query ``Give me a list of all companies that were taken over by other companies in the last five years''. For a satisfactory answer, syntactic \underline{parsing} needs to be applied to analyze the grammatical structure of the sentence and determine that the user is looking for companies that have been taken over and not companies that took over others. Also, the expression \emph{last five years} needs to be processed in order to find out which years it refers to. 
+The next generation of search engines will have to include much more sophisticated language technology. If a search query consists of a question or another type of sentence rather than a list of key-words, retrieving relevant answers to this query requires an analysis of this sentence at a syntactic and semantic level as well as the availability of an index that allows for a fast retrieval of the relevant documents. For example, imagine a user inputs the query ``Give me a list of all companies that were taken over by other companies in the last five years''. For a satisfactory answer, syntactic parsing needs to be applied to analyze the grammatical structure of the sentence and determine that the user is looking for companies that have been taken over and not companies that took over others. Also, the expression \emph{last five years} needs to be processed in order to find out which years it refers to. 
 
-Finally, the processed query needs to be matched against a huge amount of unstructured data in order to find the piece or pieces of information the user is looking for. This is commonly referred to as \underline{information retrieval} and involves the search for and ranking of relevant documents. In addition, generating a list of companies, we also need to extract the information that a particular string of words in a document actually refers to a company name. This kind of information is made available by so-called \underline{named-entity recognizers}. 
+Finally, the processed query needs to be matched against a huge amount of unstructured data in order to find the piece or pieces of information the user is looking for. This is commonly referred to as information retrieval and involves the search for and ranking of relevant documents. In addition, generating a list of companies, we also need to extract the information that a particular string of words in a document actually refers to a company name. This kind of information is made available by so-called named-entity recognizers. 
 
-Even more demanding is the attempt to match a query to documents written in a different language. For \underline{cross-lingual information retrieval}, we have to automatically translate the query to all possible source languages and transfer the retrieved information back to the target language. The increasing percentage of data available in non-textual formats drives the demand for services enabling \underline{multimedia information retrieval}, i.e., information search on images, audio, and video data. For audio and video files, this involves a \underline{speech recognition} module to convert speech content into text or a phonetic representation, to which user queries can be matched.
+Even more demanding is the attempt to match a query to documents written in a different language. For cross-lingual information retrieval, we have to automatically translate the query to all possible source languages and transfer the retrieved information back to the target language. The increasing percentage of data available in non-textual formats drives the demand for services enabling multimedia information retrieval, i.e., information search on images, audio, and video data. For audio and video files, this involves a \textbf{speech recognition} module to convert speech content into text or a phonetic representation, to which user queries can be matched.
 
 In Malta, there are a number of search websites that are specifically oriented towards Malta\cite{philb1}. In addition there are a small number of Malta based SMEs that incorporate relatively sophisticated language processing techniques within search applications. Charonite\cite{charonite1}, for example, is a local SME dealing with search engine optimization. However, at the time of writing there are no commercially available search engines that are specifically oriented towards the Maltese language, apart from a prototype for cross lingual in-formation retrieval developed within the scope of LT4EL\cite{let1}, a European FP6 research project which used multilingual language technology tools and semantic encoding techniques for improving the retrieval of learning material. 
 
@@ -1747,7 +1764,7 @@ Speech interaction technology comprises four technologies:
 \item \textbf{Speech synthesis} (text-to-speech or TTS) transforms the system’s reply into sounds for the user.
 \end{enumerate}
 
-One of the major challenges is to have an ASR system recognize the words uttered by a user as precisely as possible. This requires either a restriction of the range of possible user utterances to a limited set of keywords, or the manual creation of \underline{language models} that cover a large range of natural language user utterances. Whereas the former results in a rather rigid and inflexible usage of a VUI and possibly causes a poor user acceptance, the creation, tuning and maintenance of language models may increase the costs significantly. However, VUIs that employ language models and initially allow users to flexibly express their intentions – evoked, e.g., by a \emph{How may I help you} greeting – show both a higher automation rate and a higher user acceptance and may therefore be considered as advantageous over a less flexible directed dialogue approach. For the output part of a VUI, companies tend to use pre-recorded utterances of professional – ideally corporate – speakers. For static utterances, in which the wording does not depend on the particular contexts of use or the personal data of the given user, this will result in a rich user experience. However, the more dynamic content an utterance needs to consider, the more the user experience may suffer from a poor prosody resulting from concatenating single audio files. In contrast, today’s TTS systems prove superior, though optimizable, regarding the prosodic naturalness of dynamic utterances.  
+One of the major challenges is to have an ASR system recognize the words uttered by a user as precisely as possible. This requires either a restriction of the range of possible user utterances to a limited set of keywords, or the manual creation of language models that cover a large range of natural language user utterances. Whereas the former results in a rather rigid and inflexible usage of a VUI and possibly causes a poor user acceptance, the creation, tuning and maintenance of language models may increase the costs significantly. However, VUIs that employ language models and initially allow users to flexibly express their intentions – evoked, e.g., by a \emph{How may I help you} greeting – show both a higher automation rate and a higher user acceptance and may therefore be considered as advantageous over a less flexible directed dialogue approach. For the output part of a VUI, companies tend to use pre-recorded utterances of professional – ideally corporate – speakers. For static utterances, in which the wording does not depend on the particular contexts of use or the personal data of the given user, this will result in a rich user experience. However, the more dynamic content an utterance needs to consider, the more the user experience may suffer from a poor prosody resulting from concatenating single audio files. In contrast, today’s TTS systems prove superior, though optimizable, regarding the prosodic naturalness of dynamic utterances.  
 
 \boxtext{Speech interaction is the basis for creating interfaces that allow a user to interact with spoken language instead of a graphical dis-play, keyboard and mouse.}
 
@@ -1772,11 +1789,11 @@ Looking beyond the state of today’s technology, there will be significant chan
   \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
 
-The idea of using digital computers for translation of natural languages came up in 1946 by A. D. Booth and was followed by substantial funding for research in this area in the 1950s and beginning again in the 1980s. Nevertheless, \underline{Machine Translation} (MT) still fails to fulfill the high expectations it gave rise to in its early years.  
+The idea of using digital computers for translation of natural languages came up in 1946 by A. D. Booth and was followed by substantial funding for research in this area in the 1950s and beginning again in the 1980s. Nevertheless, \textbf{Machine Translation} (MT) still fails to fulfill the high expectations it gave rise to in its early years.  
 
 \boxtext{At its basic level, Machine Translation simply substitutes words in one natural language with words in another language.}
 
-At its basic level, MT simply substitutes words in one natural language by words in another. This can be useful in subject domains with a very restricted, formulaic language, e.g., weather reports. However, for a good translation of less standardized texts, larger text units (phrases, sentences, or even whole passages) need to be matched to their closest counterparts in the target language. The major difficulty here lies in the fact that human language is ambiguous, which yields challenges on multiple levels, e.g., \underline{word sense disambiguation} on the lexical level (`Jaguar' can mean a car or an animal) or the attachment of prepositional phrases on the syntactic level as in:
+At its basic level, MT simply substitutes words in one natural language by words in another. This can be useful in subject domains with a very restricted, formulaic language, e.g., weather reports. However, for a good translation of less standardized texts, larger text units (phrases, sentences, or even whole passages) need to be matched to their closest counterparts in the target language. The major difficulty here lies in the fact that human language is ambiguous, which yields challenges on multiple levels, e.g., word sense disambiguation on the lexical level (`Jaguar' can mean a car or an animal) or the attachment of prepositional phrases on the syntactic level as in:
 
 \begin{enumerate} %[(a)]
 \item \emph{Il-Kuntistabbli osserva lir-ragel bit-teleskopju.}\\
@@ -1785,9 +1802,9 @@ At its basic level, MT simply substitutes words in one natural language by words
 `The policeman observed the man with the revolver.'
 \end{enumerate}
 
-One way of approaching the task is based on linguistic rules. For translations between closely related languages, a direct translation may be feasible in cases like the example above. But often rule-based (or knowledge-driven) systems analyze the input text and create an intermediary, symbolic representation, from which the text in the target language is generated. The success of these methods is highly dependent on the availability of extensive \underline{lexicons} with morphological, syntactic, and semantic information, and large sets of \underline{grammar rules} carefully designed by a skilled linguist.
+One way of approaching the task is based on linguistic rules. For translations between closely related languages, a direct translation may be feasible in cases like the example above. But often rule-based (or knowledge-driven) systems analyze the input text and create an intermediary, symbolic representation, from which the text in the target language is generated. The success of these methods is highly dependent on the availability of extensive \textbf{lexicons} with morphological, syntactic, and semantic information, and large sets of \textbf{grammar rules} carefully designed by a skilled linguist.
 
-Beginning in the late 1980s, as computational power increased and became less expensive, more interest was shown in statistical models for MT. The parameters of these statistical models are derived from the analysis of bilingual text \underline{corpora}, such as the Europarl parallel corpus, which contains the proceedings of the European Parliament in 11 European languages. Given enough data, statistical MT works well enough to derive an approximate meaning of a foreign language text. However, unlike knowledge-driven systems, statistical (or data-driven) MT often generates ungrammatical output. On the other hand, besides the advantage that less human effort is required for grammar writing, data-driven MT can also cover particularities of the language that go missing in knowledge-driven systems, for example idiomatic expressions. 
+Beginning in the late 1980s, as computational power increased and became less expensive, more interest was shown in statistical models for MT. The parameters of these statistical models are derived from the analysis of bilingual text corpora, such as the Europarl \textbf{parallel corpus}, which contains the proceedings of the European Parliament in 11 European languages. Given enough data, statistical MT works well enough to derive an approximate meaning of a foreign language text. However, unlike knowledge-driven systems, statistical (or data-driven) MT often generates ungrammatical output. On the other hand, besides the advantage that less human effort is required for grammar writing, data-driven MT can also cover particularities of the language that go missing in knowledge-driven systems, for example idiomatic expressions. 
 
 As the strengths and weaknesses of knowledge- and data-driven MT are complementary, researchers nowadays unanimously target hybrid approaches combining methodologies of both. This can be done in several ways. One is to use both knowledge- and data-driven systems and have a selection module decide on the best output for each sentence. However, for longer sentences, no result will be perfect. A better solution is to combine the best parts of each sentence from multiple outputs, which can be fairly complex, as corresponding parts of multiple alternatives are not always obvious and need to be aligned. 
 
@@ -1805,18 +1822,20 @@ The best results (shown in green and blue) were achieved by languages that benef
 
 \subsection{Other Application Areas}
 
-Building language technology applications involves a range of subtasks that do not always surface at the level of interaction with the user, but they provide significant service functionalities “behind the scenes” of the system in question. They all form important research issues that have now evolved into individual sub-disciplines of computational linguistics.  \underline{Question answering}, for example, is an active area of research for which annotated corpora have been built and scientific competitions have been initiated. The concept of question answering goes beyond keyword-based searches (in which the search engine responds by delivering a collection of potentially relevant documents) and enables users to ask a concrete question to which the system provides a single answer. For example:
+Building language technology applications involves a range of subtasks that do not always surface at the level of interaction with the user, but they provide significant service functionalities “behind the scenes” of the system in question. They all form important research issues that have now evolved into individual sub-disciplines of computational linguistics.  Question answering, for example, is an active area of research for which annotated corpora have been built and scientific competitions have been initiated. The concept of question answering goes beyond keyword-based searches (in which the search engine responds by delivering a collection of potentially relevant documents) and enables users to ask a concrete question to which the system provides a single answer. For example:
 
-\textit{Question: How old was Neil Armstrong when he stepped on the moon?}\\
-\textit{Answer: 38.}
+\begin{itemize}
+\item[] \textit{Question: How old was Neil Armstrong when he stepped on the moon?}
+\item[] \textit{Answer: 38.}
+\end{itemize}
 
 While question answering is obviously related to the core area of web search, it is nowadays an umbrella term for such research issues as which different types of questions exist, and how they should be handled; how a set of documents that potentially contain the answer can be analysed and compared (do they provide conflicting answers?); and how specific information (the answer) can be reliably extracted from a document without ignoring the context. 
 
 \boxtext{Language technology applications often provide significant service functionalities "behind the scenes” of larger software systems.}
 
-This is in turn related to the \underline{information extraction} (IE) task, an area that was extremely popular and influential at the time of the ``statistical turn'' in Computational Linguistics, in the early 1990s. IE aims at identifying specific pieces of information in specific classes of documents; this could be e.g. the detection of the key players in company takeovers as reported in newspaper stories. Another scenario that has been worked on is reports on terrorist incidents, where the problem is to map the text to a template specifying the perpetrator, the target, time and location of the incident, and the results of the incident. Domain-specific template-filling is the central characteristic of IE, which for this reason is another example of a ``behind the scenes'' technology that constitutes a well-demarcated research area but for practical purposes then needs to be embedded into a suitable application environment. 
+This is in turn related to the information extraction (IE) task, an area that was extremely popular and influential at the time of the ``statistical turn'' in Computational Linguistics, in the early 1990s. IE aims at identifying specific pieces of information in specific classes of documents; this could be e.g. the detection of the key players in company takeovers as reported in newspaper stories. Another scenario that has been worked on is reports on terrorist incidents, where the problem is to map the text to a template specifying the perpetrator, the target, time and location of the incident, and the results of the incident. Domain-specific template-filling is the central characteristic of IE, which for this reason is another example of a ``behind the scenes'' technology that constitutes a well-demarcated research area but for practical purposes then needs to be embedded into a suitable application environment. 
 
-Two ``borderline'' areas, which sometimes play the role of standalone application and sometimes that of supportive, ``under the hood'' component are \underline{text summarization} and \underline{text generation}. Summarization, obviously, refers to the task of making a long text short, and is offered for instance as a functionality within MS Word. It works largely on a statistical basis, by first identifying `important' words in a text (that is, for example, words that are highly frequent in this text but markedly less frequent in general language use) and then determining those sentences that contain many important words. These sentences are then marked in the document, or extracted from it, and are taken to constitute the summary. In this scenario, which is by far the most popular one, summarization equals sentence extraction: the text is reduced to a subset of its sentences. All commercial summarizers make use of this idea. An alternative approach, to which some research is devoted, is to actually synthesize \emph{new} sentences, i.e., to build a summary of sentences that need not show up in that form in the source text. This requires a certain amount of deeper understanding of the text and therefore is much less robust. All in all, a text generator is in most cases not a stand-alone application but embedded into a larger software environment, such as into the clinical information system where patient data is collected, stored and processed, and report generation is just one of many functionalities.
+Two ``borderline'' areas, which sometimes play the role of standalone application and sometimes that of supportive, ``under the hood'' component are text summarization and \textbf{text generation}. Summarization, obviously, refers to the task of making a long text short, and is offered for instance as a functionality within MS Word. It works largely on a statistical basis, by first identifying `important' words in a text (that is, for example, words that are highly frequent in this text but markedly less frequent in general language use) and then determining those sentences that contain many important words. These sentences are then marked in the document, or extracted from it, and are taken to constitute the summary. In this scenario, which is by far the most popular one, summarization equals sentence extraction: the text is reduced to a subset of its sentences. All commercial summarizers make use of this idea. An alternative approach, to which some research is devoted, is to actually synthesize \emph{new} sentences, i.e., to build a summary of sentences that need not show up in that form in the source text. This requires a certain amount of deeper understanding of the text and therefore is much less robust. All in all, a text generator is in most cases not a stand-alone application but embedded into a larger software environment, such as into the clinical information system where patient data is collected, stored and processed, and report generation is just one of many functionalities.
 
 \subsection{Educational Programmes}
 
@@ -2251,69 +2270,71 @@ META-NET launched on 1 February 2010 with the goal of advancing research in lang
 \addtocontents{toc}{\protect\bigskip}
 
 \bsection[Referenzi  -- References]{Referenzi --- References}
-\bibliographystyle{plain}
+\bibliographystyle{unsrt}
 \bibliography{references}
   
 \cleardoublepage
 
-\bsection[Membri ta' META-NET -- META-NET Members]{Membri ta' META-NET --- META-NET Members}
+\bsection[META-NET Mitglieder -- META-NET Members]{META-NET Mitglieder --- META-NET Members}
 \label{metanetmembers}
 
 \small
-\begin{longtable}{llp{105mm}}
-  Awstrija & \textcolor{grey1}{Austria} & Zentrum für Translationswissenschaft, Universität Wien: Gerhard Budin\\ \addlinespace
-  Belġju & \textcolor{grey1}{Belgium} & Computational Linguistics and Psycholinguistics Research Centre, Univ. of Antwerp: Walter Daelemans\\ \addlinespace
-  & & Centre for Proc. Speech and Images, Univ. of Leuven: Dirk van Compernolle \\ \addlinespace
-  Bulgarija & \textcolor{grey1}{Bulgaria} & Inst. for Bulgarian Lang., Bulgarian Academy of Sciences: Svetla Koeva \\ \addlinespace
-  Ċekja & \textcolor{grey1}{Czech Republic} & Inst. of Formal and Applied Linguistics, Charles Univ. in Prague: Jan Hajic \\ \addlinespace
-  Ċipru & \textcolor{grey1}{Cyprus} & Lang. Centre, School of Humanities: Jack Burston \\ \addlinespace
-  Danimarka &  \textcolor{grey1}{Denmark} & Centre for Lang. Technology, Univ. of Copenhagen: Bolette Sandford Pedersen, Bente Maegaard\\ \addlinespace
-  Estonja & \textcolor{grey1}{Estonia} & Inst. of Computer Science, Univ. of Tartu: Tiit Roosmaa\\ \addlinespace
-  Finlandja & \textcolor{grey1}{Finland} & Computational Cognitive Systems Research Group, Aalto Univ.: Timo Honkela\\ \addlinespace
-  & & Dept. of General Linguistics, Univ. of Helsinki: Kimmo Koskenniemi, Krister Linden \\ \addlinespace
-  Franza & \textcolor{grey1}{France} & Centre National de la Recherche Scientifique, Laboratoire d'Informatique pour la Mécanique et les Sciences de l'Ingénieur: Joseph Mariani \\ \addlinespace
-  & & Evaluations and Lang. Resources Distribution Agency: Khalid Choukri\\ \addlinespace 
-  Ġermanja & \textcolor{grey1}{Germany} & DFKI (German Research Centre for Artificial Intelligence): Hans Uszkoreit, Georg Rehm\\ \addlinespace
-  & & Human Lang. Technology and Pattern Recognition, RWTH Aachen Univ.: Hermann Ney \\ \addlinespace
-  & & Dept. of Computational Linguistics, Saarland Univ.: Manfred Pinkal\\ \addlinespace 
-  Gran Brittanja & \textcolor{grey1}{UK} & Inst. for Lang., Cognition and Computation, Center for Speech Technology Research, Univ. of Edinburgh: Steve Renals \\ \addlinespace 
-  & & Research Inst. of Informatics and Lang. Proc., Univ. of Wolverhampton: Ruslan Mitkov \\ \addlinespace 
-  & & School of Computer Science, Univ. of Manchester: Sophia Ananiandou \\ \addlinespace 
-  Greċja & \textcolor{grey1}{Greece} & Inst. for Lang. and Speech Proc., R.C. “Athena”: Stelios Piperidis\\ \addlinespace
-  Irlanda & \textcolor{grey1}{Ireland} & School of Computing, Dublin City Univ.: Josef van Genabith\\ \addlinespace
-  Islanda & \textcolor{grey1}{Iceland} & School of Humanities, Univ. of Iceland: Eirikur Rögnvaldsson\\ \addlinespace
-  Isvezja & \textcolor{grey1}{Sweden} & Dept. of Swedish Lang., Univ. of Gothenburg: Lars Borin \\ \addlinespace 
-  Isvizzera & \textcolor{grey1}{Switzerland} & Idiap Research Inst.: Hervé Bourlard \\ \addlinespace 
-  Italja & \textcolor{grey1}{Italy} & Consiglio Nazionale Ricerche, Istituto di Linguistica Computazionale “Antonio Zampolli”: Nicoletta Calzolari\\ \addlinespace
-  & & Human Lang. Technology, Fondazione Bruno Kessler: Bernardo Magnini\\ \addlinespace 
-  Kroazja & \textcolor{grey1}{Croatia} & Inst. of Linguistics, Faculty of Humanities and Social Science, Univ. of Zagreb: Marko Tadić \\ \addlinespace
-  Latvja & \textcolor{grey1}{Latvia} & Tilde: Andrejs Vasiljevs\\ \addlinespace 
-  & & Inst. of Mathematics and Computer Science, Univ. of Latvia: Inguna Skadina\\ \addlinespace
-  Litwanja & \textcolor{grey1}{Lithuania} & Inst. of the Lithuanian Lang.: Jolanta Zabarskaitė\\ \addlinespace
+
+\begin{longtable}{@{}llp{113mm}@{}}
+  Awstrija & \textcolor{grey1}{Austria} & Zentrum für Translationswissenschaft, Universität Wien: Gerhard Budin\\ \addlinespace 
+  Belġju & \textcolor{grey1}{Belgium} & Computational Linguistics and Psycholinguistics Research Centre, University of Antwerp: Walter Daelemans\\ \addlinespace
+  & & Centre for Processing Speech and Images, University of Leuven: Dirk van Compernolle \\ \addlinespace
+  Bulgarija & \textcolor{grey1}{Bulgaria} & Institute for Bulgarian Language, Bulgarian Academy of Sciences: Svetla Koeva\\ \addlinespace
+  Ċekja & \textcolor{grey1}{Czech Republic} & Institute of Formal and Applied Linguistics, Charles University in Prague: Jan Hajič\\ \addlinespace
+  Ċipru & \textcolor{grey1}{Cyprus} & Language Centre, School of Humanities: Jack Burston\\ \addlinespace
+  Danimarka &  \textcolor{grey1}{Denmark} & Centre for Language Technology, University of Copenhagen: \newline Bolette Sandford Pedersen, Bente Maegaard\\ \addlinespace
+  Estonja & \textcolor{grey1}{Estonia} & Institute of Computer Science, University of Tartu: Tiit Roosmaa, Kadri Vider\\ \addlinespace
+  Finlandja & \textcolor{grey1}{Finland} & Computational Cognitive Systems Research Group, Aalto University: Timo Honkela\\ \addlinespace
+  & & Department of Modern Languages, University of Helsinki: Kimmo Koskenniemi,\newline Krister Lindén \\ \addlinespace
+  Franza & \textcolor{grey1}{France} & Centre National de la Recherche Scientifique, Laboratoire d'Informatique pour la Mécanique et les Sciences de l'Ingénieur and Institute for Multilingual and Multimedia Information: Joseph Mariani \\ \addlinespace
+  & & Evaluations and Language Resources Distribution Agency: Khalid Choukri\\ \addlinespace 
+  Ġermanja & \textcolor{grey1}{Germany} & Language Technology Lab, DFKI: Hans Uszkoreit, Georg Rehm\\ \addlinespace
+  & & Human Language Technology and Pattern Recognition, RWTH Aachen University: Hermann Ney \\ \addlinespace
+  & & Department of Computational Linguistics, Saarland University: Manfred Pinkal\\ \addlinespace 
+  Gran Brittanja & \textcolor{grey1}{UK} & 
+  School of Computer Science, University of Manchester: Sophia Ananiadou \\ \addlinespace 
+  & & Institute for Language, Cognition and Computation, Center for Speech Technology Research, University of Edinburgh: Steve Renals \\ \addlinespace 
+  & & Research Institute of Informatics and Language Processing, University of Wolverhampton: Ruslan Mitkov \\ \addlinespace 
+  Greċja & \textcolor{grey1}{Greece} & R.C. “Athena”, Institute for Language and Speech Processing: Stelios Piperidis\\ \addlinespace
+  Irlanda & \textcolor{grey1}{Ireland} & School of Computing, Dublin City University: Josef van Genabith\\ \addlinespace
+  Islanda & \textcolor{grey1}{Iceland} & School of Humanities, University of Iceland: Eiríkur Rögnvaldsson\\ \addlinespace
+  Isvezja & \textcolor{grey1}{Sweden} & Department of Swedish, University of Gothenburg: Lars Borin \\ \addlinespace 
+  Isvizzera & \textcolor{grey1}{Switzerland} & Idiap Research Institute: Hervé Bourlard \\ \addlinespace 
+  Italja & \textcolor{grey1}{Italy} & Consiglio Nazionale delle Ricerche, Istituto di Linguistica Computazionale “Antonio Zampolli”: Nicoletta Calzolari\\ \addlinespace
+  & & Human Language Technology Research Unit, Fondazione Bruno Kessler:\newline Bernardo Magnini\\ \addlinespace 
+  Kroazja & \textcolor{grey1}{Croatia} & Institute of Linguistics, Faculty of Humanities and Social Science, University of Zagreb: Marko Tadić \\ \addlinespace
+  Latvja & \textcolor{grey1}{Latvia} & Tilde: Andrejs Vasiļjevs\\ \addlinespace 
+  & & Institute of Mathematics and Computer Science, University of Latvia: Inguna Skadiņa\\ \addlinespace
+  Litwanja & \textcolor{grey1}{Lithuania} & Institute of the Lithuanian Language: Jolanta Zabarskaitė\\ \addlinespace
   Lussemburgu & \textcolor{grey1}{Luxembourg} & Arax Ltd.: Vartkes Goetcherian\\ \addlinespace
-  Malta & \textcolor{grey1}{Malta} & Dept. Intelligent Computer Systems, Univ. of Malta: Mike Rosner\\ \addlinespace
-  Norveġja & \textcolor{grey1}{Norway} & Dept. of Linguistic, Univ. of Bergen: Koenraad De Smedt\\ \addlinespace 
-  & & Dept. of Informatics, Lang. Technology Group, Univ. of Oslo: Stephan Oepen \\ \addlinespace 
-  Olanda & \textcolor{grey1}{Netherlands} & Utrecht Inst. of Linguistics, Utrecht Univ.: Jan Odijk\\ \addlinespace 
-  & & Computational Linguistics, Univ. of Groningen: Gertjan van Noord\\ \addlinespace
-  Polonja & \textcolor{grey1}{Poland} & Inst. of Computer Science, Polish Academy of Sciences: Adam Przepiórkowski, Maciej Ogrodniczuk \\ \addlinespace
-  & & Univ. of Łódź: Barbara Lewandowska-Tomaszczyk, Piotr Pęzik\\ \addlinespace
-  & & Dept. of Computer Linguistics and Artificial Intelligence, Adam Mickiewicz Univ.: Zygmunt Vetulani \\ \addlinespace
-  Portugall & \textcolor{grey1}{Portugal} & Dept. of Informatics, Univ. of Lisbon: Antonio Branco\\ \addlinespace
-  & & Spoken Lang. Systems Lab., Inst. for Systems Engineering and Computers: Isabel Trancoso \\ \addlinespace
-  Rumanija & \textcolor{grey1}{Romania} & Research Inst. for Artificial Intelligence, Romanian Academy of Sciences: Dan Tufis \\ \addlinespace
-  & & Faculty of Computer Science, Univ. Alexandru Ioan Cuza: Dan Cristea \\ \addlinespace
-  Serbja & \textcolor{grey1}{Serbia} & Faculty of Mathematics, Belgrade Univ.: Dusko Vitas, Cvetana Krstev, Ivan Obradovic \\ \addlinespace
-  & & Pupin Inst.: Sanja Vranes \\ \addlinespace  
-  Slovakkja & \textcolor{grey1}{Slovakia} & Ludovit Stur Inst. of Linguistics, Slovak Academy of Sciences: Radovan Garabik \\ \addlinespace 
-  Slovenja & \textcolor{grey1}{Slovenia} & Jozef Stefan Inst.: Marko Grobelnik \\ \addlinespace 
-  Spanja & \textcolor{grey1}{Spain} & Barcelona Media: Toni Badia \\ \addlinespace 
-  & & Institut Universitari de Lingüistica Aplicada, Univ. Pompeu Fabra: Núria Bel \\ \addlinespace 
-  & & Aholab Signal Proc. Lab., Univ. of the Basque Country: Inma Hernaez Rioja \\ \addlinespace 
-  & & Center for Lang. and Speech Technologies and Applications, Technical Univ. of Catalonia: Asunción Moreno \\ \addlinespace 
-  & & Dept. of Signal Proc. and Communications, Univ. of Vigo: Carmen García Mateo \\ \addlinespace 
-  Ungerija & \textcolor{grey1}{Hungary} & Research Inst. for Linguistics, Hungarian Academy of Sciences: Tamás Váradi\\  \addlinespace
-  & & Dept. of Telecommunications and Media Informatics, Budapest Univ. of Technology and Economics: Géza Németh and Gábor Olaszy\\ \addlinespace
+  Malta & \textcolor{grey1}{Malta} & Department Intelligent Computer Systems, University of Malta: Mike Rosner\\ \addlinespace
+  Norveġja & \textcolor{grey1}{Norway} & Department of Linguistic, University of Bergen: Koenraad De Smedt\\ \addlinespace 
+  & & Department of Informatics, Language Technology Group, University of Oslo:\newline Stephan Oepen \\ \addlinespace
+  Olanda & \textcolor{grey1}{Netherlands} & Utrecht Institute of Linguistics, Utrecht University: Jan Odijk\\ \addlinespace 
+  & & Computational Linguistics, University of Groningen: Gertjan van Noord\\ \addlinespace
+  Polonja & \textcolor{grey1}{Poland} & Institute of Computer Science, Polish Academy of Sciences: Adam Przepiórkowski, Maciej Ogrodniczuk \\ \addlinespace
+  & & University of Łódź: Barbara Lewandowska-Tomaszczyk, Piotr Pęzik\\ \addlinespace
+  & & Department of Computer Linguistics and Artificial Intelligence, Adam Mickiewicz University: Zygmunt Vetulani \\ \addlinespace
+  Portugall & \textcolor{grey1}{Portugal} & University of Lisbon: António Branco, Amália Mendes \\ \addlinespace
+  & & Spoken Language Systems Laboratory, Institute for Systems Engineering and Computers: Isabel Trancoso \\ \addlinespace
+  Rumanija & \textcolor{grey1}{Romania} & Research Institute for Artificial Intelligence, Romanian Academy of Sciences:\newline Dan Tufiș \\ \addlinespace
+  & & Faculty of Computer Science, University Alexandru Ioan Cuza of Iași: Dan Cristea \\ \addlinespace
+  Serbja & \textcolor{grey1}{Serbia} & University of Belgrade, Faculty of Mathematics: Duško Vitas, Cvetana Krstev,\newline Ivan Obradović \\ \addlinespace
+  & & Pupin Institute: Sanja Vranes \\ \addlinespace  
+  Slovakkja & \textcolor{grey1}{Slovakia} & Ľudovít Štúr Institute of Linguistics, Slovak Academy of Sciences: Radovan Garabík \\ \addlinespace 
+  Slovenja & \textcolor{grey1}{Slovenia} & Jožef Stefan Institute: Marko Grobelnik \\ \addlinespace 
+  Spanja & \textcolor{grey1}{Spain} & Barcelona Media: Toni Badia, Maite Melero \\ \addlinespace 
+  & & Institut Universitari de Lingüística Aplicada, Universitat Pompeu Fabra: Núria Bel \\ \addlinespace 
+  & & Aholab Signal Processing Laboratory, University of the Basque Country:\newline Inma Hernaez Rioja \\ \addlinespace 
+  & & Center for Language and Speech Technologies and Applications, Universitat Politècnica de Catalunya:  Asunción Moreno \\ \addlinespace 
+  & & Department of Signal Processing and Communications, University of Vigo:\newline Carmen García Mateo \\ \addlinespace 
+  Ungerija & \textcolor{grey1}{Hungary} & Research Institute for Linguistics, Hungarian Academy of Sciences: Tamás Váradi\\  \addlinespace
+  & & Department of Telecommunications and Media Informatics, Budapest University of Technology and Economics: Géza Németh, Gábor Olaszy\\ \addlinespace
 \end{longtable}
 \normalsize
 
@@ -2321,11 +2342,15 @@ META-NET launched on 1 February 2010 with the goal of advancing research in lang
 \renewcommand*{\captionformat}{}
 
 \begin{figure*}[htbp]
+  \colorrule{grey3}{\textwidth}{1.5pt}
   \center
-  %\includegraphics[width=\textwidth]{../_media/meta-net_team.jpg}
-   \fbox{Dummy -- we'll include the group photo of our META-NET meeting in Berlin here}
+  %\fbox{-- META-NET group picture omitted to keep the size of the PDF file small. --}
+  \includegraphics[width=\textwidth]{../_media/meta-net_team.jpg}
   \caption{Kważi 100 esperti tat-teknoloġija lingwistika -- rappreżentanti tal-pajjiżi u tal-lingwi li huma rappreżentati f'META-NET -- ddiskutew u ffinalizzaw ir-riżultati ewlenin u l-messaġġi ta' Serje ta’ White Papers tal-META-NET f'laqgħa f'Berlin, fil-Ġermanja, dwar Ottubru 21/22, 2011. --- \textcolor{grey1}{About 100 language technology experts -- representatives of the countries and languages represented in META-NET -- discussed and finalised the key results and messages of the White Paper Series at a META-NET meeting in Berlin, Germany, on October 21/22, 2011.}}
+  \medskip
+  \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
+
 
 \cleardoublepage
 
