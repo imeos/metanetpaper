@@ -475,6 +475,40 @@
     \clearpage
   \end{titlepage}
 }
+  % Funding notices
+  % Left funding notice
+\def\FundingLNotice#1{\gdef\@FundingLNotice{#1}}
+\def\@FundingLNotice{\@latex@warning@no@line{No \noexpand\FundingLNotice given}}
+  % Rightfunding notice
+\def\FundingRNotice#1{\gdef\@FundingRNotice{#1}}
+\def\@FundingRNotice{\@latex@warning@no@line{No \noexpand\FundingRNotice given}}
+\newcommand{\makefundingnotice}{%
+  \centerline{META-NET -- office@meta-net.eu -- http://www.meta-net.eu}
+
+  \vfill
+
+  \hskip87mm\colorrule{grey3}{110mm}{1.5pt}
+  \vskip1mm
+
+  \begin{minipage}[t]{81mm}
+    \begin{small}
+      \@FundingLNotice
+    \end{small}
+  \end{minipage}  
+  % spacing between colums
+  \begin{minipage}[t]{5mm}\ \end{minipage}
+  \begin{minipage}[t]{85mm}
+    \color{grey1}
+    \begin{small}
+      \@FundingRNotice
+    \end{small}
+  \end{minipage}
+  
+  \vskip6mm
+  \hskip-29mm\colorrule{grey3}{110mm}{1.5pt}
+  
+  \clearpage
+}
 
 
 % Class options
@@ -486,7 +520,7 @@
   \setlength{\textwidth}{380mm}%
 %  \setlength{\width}{380mm}%
   
-  % Titlepage and mocktitle
+  % Titlepage
     % Left text on spine
   \def\SpineLText#1{\gdef\@SpineLText{#1}}
   \def\@SpineLText{\@latex@warning@no@line{No \noexpand\SpineLText given}}
