@@ -471,10 +471,10 @@
 }
   % Funding notices
   % Left funding notice
-\def\FundingLNotice#1{\gdef\@FundingLNotice{#1}}
+\long\def\FundingLNotice#1{\gdef\@FundingLNotice{#1}}
 \def\@FundingLNotice{\@latex@warning@no@line{No \noexpand\FundingLNotice given}}
   % Rightfunding notice
-\def\FundingRNotice#1{\gdef\@FundingRNotice{#1}}
+\long\def\FundingRNotice#1{\gdef\@FundingRNotice{#1}}
 \def\@FundingRNotice{\@latex@warning@no@line{No \noexpand\FundingRNotice given}}
 \newcommand{\makefundingnotice}{%
   \centerline{META-NET -- office@meta-net.eu -- http://www.meta-net.eu}
