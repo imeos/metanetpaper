@@ -442,13 +442,7 @@
     % Authors
     \begin{Parallel}[c]{81mm}{77mm}
       \ParallelLText{
-        \begin{flushright}
-          \fontsize{14}{24}\selectfont{%
-            \textsf{
-              \textcolor{grey3}{by}
-            }
-          }
-        \end{flushright}
+        \
       }
       \ParallelRText{
         \begin{flushleft}
@@ -487,7 +481,7 @@
 
   \vfill
 
-  \hskip87mm\colorrule{grey3}{110mm}{1.5pt}
+  \hskip90mm\colorrule{grey3}{110mm}{1.5pt}
   \vskip1mm
 
   \begin{minipage}[t]{81mm}
@@ -496,8 +490,8 @@
     \end{small}
   \end{minipage}  
   % spacing between colums
-  \begin{minipage}[t]{5mm}\ \end{minipage}
-  \begin{minipage}[t]{85mm}
+  \begin{minipage}[t]{8mm}\ \end{minipage}
+  \begin{minipage}[t]{82mm}
     \color{grey1}
     \begin{small}
       \@FundingRNotice
@@ -607,13 +601,7 @@
         % Authors
         \begin{Parallel}[c]{81mm}{97mm}
           \ParallelLText{
-            \begin{flushright}
-              \fontsize{14}{1.2}\selectfont{%
-                \textsf{
-                  \textcolor{grey2}{by}
-                }
-              }
-            \end{flushright}
+            \
           }
           \ParallelRText{
             \begin{flushleft}
