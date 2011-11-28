@@ -1897,167 +1897,163 @@ The second approach to language technology, and to machine translation in partic
 
 As the strengths and weaknesses of statistical and rule-based systems tend to be complementary, current research focusses on hybrid approaches that combine the two methodologies. However, these approaches have so far been less successful in industrial applications than in the research lab. 
 
-As we have seen in this chapter, many applications widely used in today’s information society rely heavily on language technology, particularly in Europe’s economic and information space. Although this technology has made considerable progress in the last few years, there is still huge potential to improve the quality of language technology systems. In the next section, we describe the role of German in European information society and assess the current state of language technology for the German language.
+As we have seen in this chapter, many applications widely used in today’s information society rely heavily on language technology, particularly in Europe’s economic and information space. Although this technology has made considerable progress in the last few years, there is still huge potential to improve the quality of language technology systems. In the next section, we describe the role of Bulgarian in European information society and assess the current state of language technology for the Bulgarian language.
 \end{multicols}
 
 \clearpage
 
 % --------------------------------------------------------------------------
-\ssection[The German Language in the European Information Society]{The German Language in the\newline European Information Society}
+\ssection[The Bulgarian Language in the European Information Society]{The Bulgarian Language in the\newline European Information Society}
 
 \begin{multicols}{2}
 
 \subsection{General Facts}
 
-With about 100 million native speakers, German is the most widely spoken native language in the European Union. It is the commonly used language in Germany, Austria and Liechtenstein, and it is one of the official languages of Switzerland, Luxembourg and Belgium, where it is used by parts of the population. Around the world, German is spoken by around 30 million non-native speakers \cite{Eur1}, and is also the second most studied foreign language in the EU after English \cite{Goe1}. 
+Bulgarian is the official language of the Republic of Bulgaria. 
 
-In Germany, the German language is the common spoken and written language as well as the native language of the vast majority of the population. Minority languages in the sense of the European Charter on Regional and Minority Languages include Danish and North Frisian in Schleswig-Holstein; Upper Sorbian in Saxony; Lower Sorbian in Brandenburg; Saterland Frisian in Lower Saxony; and the Romani language of the German Roms and Sinti throughout the country. Each group represents some tens to hundreds of thousands of speakers \cite{Efni1}. In addition, there are immigrant languages, such as Turkish, which has roughly 3.3 million speakers in Germany.
-In Austria and Liechtenstein, German is the official language as well as the most common spoken and written language. In Austria, recognised minority languages include Slovene, Croatian (Burgenland-Kroatisch), Slovak, Romani, Hungarian and Czech. Immigrant languages spoken in Austria are Turkish and the languages of former Yugoslavia (Bosnian, Croatian and Serbian).
-In Switzerland, German shares its official status with French, Italian and Rhaeto-Romanic. In Belgium, German, Dutch and French are official languages. In Luxembourg, German, French and Luxembourgish are official languages. German variants are also spoken by minorities in specific regions of other EU countries, such as France (Alsace and Lorraine), Italy (South Tyrol) and Poland (Silesia).
+Bulgarian is spoken by approximately 9 million native speakers, mainly in Bulgaria. but also in Greece, Macedonia, Romania, Serbia, Turkey (Europe), Ukraine, Australia, Canada, USA, Germany and Spain. It is also spoken in Croatia, Czech Republic, Hungary, Israel, Moldova, Romania, Russian Federation (Europe), Slovakia \cite{Ethno}. Bulgarian communities in the neighbouring countries and communities of immigrants around the world are supported by the Government agency for Bulgarians Abroad \cite{ABA} at ministerial level.
 
-\boxtext{German is the second most studied foreign language in the EU after English.}
+Preliminary data provided by the National Statistical Institute \cite{NSI} from the population census of Bulgaria indicates that as of the 1st of February, 2011, the population was 7 351 633. The number of Bulgarians living in countries of the European Union will become clear in 2012 when the data from EU populations censuses is available.
 
-German has a large variety of dialects including Bavarian and Swabian. By and large, the dialects have the same grammar, although some exhibit slightly different syntactic constructions. The division of Germany into two between 1945 and 1989 is still reflected in some lexical differences, for example, \textit{Plastik} or \textit{Plaste} {[}plastics{]}. Austrian German is a variant of German whose lexicon differs from the language used in Germany (see figure~\ref{atgetabelle2_en}).
-
-\begin{figure*}[htb]
-  \setlength{\tabcolsep}{2em}
-  \begin{tabularx}{\textwidth}{lllll} \toprule\addlinespace
-    & \textbf{Austrian German} & \textbf{Standard German (Germany)} & \textbf{English} & \\ \addlinespace\midrule\addlinespace
-    & Sessel   & Stuhl      & Chair & \\ 
-    & Fauteuil & Sessel     & Arm chair & \\ 
-    & Trafik   & Tabakladen & Tobacconist & \\ \addlinespace\bottomrule
-  \end{tabularx}
-  \caption{Differences between Austrian German and Standard German}
-  \label{atgetabelle2_en}
-\end{figure*}
-
-Lenisation (consonant weakening) is widespread in spoken Austrian German, e.\,g., there is no pronounced phonemic distinction between \textit{backen} {[}to bake{]} and \textit{packen} {[}to pack{]} or \textit{Teich} {[}lake{]} and \textit{Deich} {[}dyke{]}. Unlike in Standard German in Germany, the past tense is rarely used; speakers prefer the perfect tense when referring to past events.
-Swiss German has borrowed a number of French words such as \textit{Velo} instead of \textit{Fahrrad} for bicycle. There are also morphological and orthographical variations \cite{Cano1}. For example, \textit{ss} is used instead of \textit{ß} and some words are spelled differently (e.\,g., \textit{Müesli} instead of \textit{Müsli} for cereal). Multilingualism is a matter of course in Switzerland with its four official languages.
-
-\subsection{Particularities of the German Language}
-
-German exhibits a number of specific characteristics that contribute to the richness of the language but can also be a challenge for the computational processing of natural language. For instance, speakers can express the same idea in a wide variety of ways.
-
-\boxtext{Certain linguistic characteristics of German are challenges for computational processing.}
-
-Word order is relatively free in German sentences. In English, the sentence \textit{The woman gave the man an apple} can also be expressed in two other ways:
-    
-\begin{itemize}    
-\item The woman gave an apple to the man.
-\item An apple was given to the man by the woman.
-\end{itemize}
-
-%\boxtext{Word order is relatively free in German sentences.}
-
-In German, however, there are at least nine possible ways to express the same sentence, although some of them are very rarely used:
-
-\begin{itemize}    
-\item Die Frau gab dem Mann einen Apfel.
-\item Einen Apfel gab die Frau dem Mann.
-\item Dem Mann gab die Frau einen Apfel.
-\item Ein Apfel wurde dem Mann von der Frau gegeben.
-\item Dem Mann wurde von der Frau ein Apfel gegeben.
-\item Dem Mann wurde ein Apfel von der Frau gegeben.
-\item Ein Apfel wurde von der Frau dem Mann gegeben.
-\item Von der Frau wurde dem Mann ein Apfel gegeben.
-\item Von der Frau wurde ein Apfel dem Mann gegeben.
-\end{itemize}
+The official alphabet is Cyrillic. Bulgarian is the first Slavic language with its own writing system which dates from the 9th century. In 886 AD the Glagolitic alphabet was introduced in Bulgaria. Glagolitic was created by Sts. Cyril and Methodius but was gradually replaced with the Cyrillic alphabet, created at the literary schools of Ohrid and Preslav in the beginning of the 10th century. On the 1st of January 2007 when Bulgaria became a full member of the European Union, Cyrillic became the third official alphabet of the European Union, following the Latin and Greek alphabets.
  
-German is very productive when it comes to coining new words due to the compounding system that allows combining words and affixes in a simple way. 
+Bulgarian dialects are those regional, colourful varieties of the Bulgarian language spoken both inside and outside the borders of the country. The main isogloss separating the Bulgarian dialects into Eastern and Western is the "Yat Border" which marks the different mutations of the Old Bulgarian "yat" form (\includegraphics[scale=0.4]{../_media/bulgarian/yat}),  pronounced in certain conditions as either /’a/ or /e/ to the east ({\it /b’al/}, but plural {\it /beli/}, [white]) and strictly as /e/ to the west of it ({\it /bel/}, plural {\it /beli/}). 
 
-%\boxtext{German is extremely productive when it comes to coining new words.}
+\subsection{Particularities of the Bulgarian Language}
 
-In theory, this allows for the creation of infinitely long words, where other languages might use a set phrase:
+Bulgarian belongs to the family of South Slavic languages and forms part of the Balkan linguistic union (Balkan Sprachbund). Consequently Bulgarian displays similarities to both language groups. As a Slavic language Bulgarian possesses a rich inflectional and derivational morphology, verb aspect pairs, etc. However, due to the mutual influence of Balkan languages Bulgarian has lost noun cases (except vocative) and completely has lost the infinitive form.
 
+In addition to a common lexicon some of the most important grammatical features of Bulgarian, which distinguish it as a Slavic language, are (some of these features are also shared with other Balkan languages):
 \begin{itemize}
-\item Verteidigung [defence] 
-\item Verteidigungsminister [minister of defence]
-\item Selbstverteidigungsminister\newline [minister of self-defence]
-\item Bundesselbstverteidigungsminister\newline [federal minister of self-defence] 
-\end{itemize}
-   
-Humans can easily derive the meanings of these neologisms, but machines have difficulty processing them. There are other specific characteristics of the German language that make it hard to process with a computer. One is a tendency to use fairly long, nested sentences. Another is the ability to position separable verb prefixes far away from their associated verb. For example, the verb \textit{vorstellen} can be found in sentences such as:
-
+\item Rich system of inflections. The rich inflectional system poses specific difficulties to LT systems: lemmatisation, for example, might face the notorious problem of recognition of certain inflectional types that can belong to different parts of speech. Such a case of homography, for instance is the word \textit{{beli}} which can be: 
 \begin{itemize}
-\item Er \textbf{stellte} sich, nachdem er mir einen Tee angeboten hatte und wir ins Gespräch gekommen waren, \textbf{vor}.
-\item {[}He \textbf{introduced} himself after he had offered me a cup of tea and we had started a conversation.{]} 
+\item plural of the noun \textit{{belya}} [trouble];
+\item plural of the adjective \textit{{byal}} [white];
+\item 3rd person singular presence of the verb \textit{{belya}} [peel];
+\item 2nd or 3rd person singular aorist of the verb \textit{{belya}} [peel];
+\item 2nd person singular imperative of the verb \textit{{belya}} [peel]. 
 \end{itemize}
 
-The meaning of verbs that can “take” different prefixes, such as \textit{vor}, \textit{ein} or \textit{aus}, is often confusing for German language learners. For example: the verb \textit{stellen} {[}to put{]} changes its meaning in \textit{vorstellen} {[}imagine or introduce{]}, \textit{einstellen} {[}hire, discontinue or regulate{]}, or \textit{ausstellen} {[}exhibit, switch off or issue{]}.
+\item Rich derivational system: diminutive and augmentative nouns: \textit{{stol — stolche}} [chair — small seat]; feminine suffixes for nouns relating to persons (professions): \textit{{uchitel — uchitelka}} [teacher — female teacher]; etc.
 
-\boxtext{Separable verb prefixes can be positioned far away from their associated verb.}
+\item Aspectual verb pairs: \textit{{rodya — razhdam}} [to give birth – to be giving birth].
+
+\item A pro-drop language, i.e. subjects are typically not overtly expressed whenever they are inferable from context: \textit{{Az cheta kniga — Cheta kniga}} [I am reading a book]. 
+\end{itemize}
+
+During the historical development of Bulgarian and as a result of its contacts with neighbouring non-Slavic languages in the Balkans, significant changes have occurred when compared with the other Slavic languages. Typical features of the Balkan Sprachbund are:
+\begin{itemize}
+\item Simplification of the nominal case structure — only relics of the accusative and dative cases remain in the system of pronouns and the vocative form in certain masculine and feminine animate nouns or persons.
+
+\item Existence of post-fixed definite article in Bulgarian (\textit{{zhena — zhenata}} [a woman — the woman]), Albanian, Aroumanian and Romanian. This phenomenon arose most probably under the influence of Old Bulgarian since it does not exist in Modern Greek, where the definite article is prefixed.
+
+\item Loss of the infinitive and its replacement with finite verb forms, etc. 
+\end{itemize}
+
+Bulgarian orthography is far more transparent than, for example, English orthography. The pronunciation of a word can be easily divined from its written form. Nonetheless, a number of the writing system's rules combined with pronunciation rules (assimilation between voiced and voiceless consonants, reduction of vowels, etc.) lead to potential homophony: \textit{{kos} /kos/} [blackbird] and \textit{{koz /kos/}} [trump]. In this way, a number of spellings could represent the same pronunciation. This is a source of potential errors that spell and grammar checkers are able to detect and correct.
+
+Capitalisation in Bulgarian is sparse compared with other languages. In general, only personal and place names, some abbreviations (e.g. \textit{Stara Zagora}), the first word (only) in the title of a book, movie, song, etc., and the first word in a sentence are capitalised, as are names of companies, government bodies, etc. Names of nationalities or languages are not capitalised, nor are days of the week and months of the year.
+ 
+Bulgarian exhibits a number of specific characteristics that contribute to the richness of the language but can also be a challenge for the computational processing of natural language. For example, it has a relatively free word order – while the order of adjectives as pre-positive modifiers of nouns or of adverbs as pre-positive modifiers of adjectives and other adverbs is fixed, the order of the subject and object of the verb is relatively loose. Thus in a sentence of three constituents (subject, verb, object), all six permutations are possible, in a sentence containing four constituents (subject, verb, direct object, indirect object) — twenty four permutations, and so on. For example, in the following sentence:
+
+ \textit{{Divata kotka goni zloto kuche tsyala sutrin}} [The wild cat chases the bad dog the whole morning] it is not clear without a broader context which constituent is the subject — \textit{{divata kotka}} [wild-the cat] or \textit{{zloto kuche}} [bad-the dog]. Unlike other languages which show a relatively loose word order (the other Slavonic languages, for example) Bulgarian does not possess nominal case inflection to indicate the syntactic relations between the words.
+
+Yet another characteristic feature of Bulgarian which poses difficulty for syntactic parsing is the free omission of the subject which, when combined with the possibility of shifting the positions of the subject and object, makes the task even harder. For example the following sentence: \textit{{Izvika Anna}} [*called Anna] could mean that Anna called somebody, i.e.  \textit{Anna} is the subject, or that Anna had been called by someone else, i.e. that  \textit{Anna} is the object (there is no morphological marker to distinguish the subject from the object, except in the case of the graphical representation of the definite article in masculine nouns in the subject position: \textit{{popita uchitelyat}} [*asked teacher] means that the teacher asked something, while \textit{{popita uchitelya}} [*asked teacher] means that the teacher was asked something. 
+
+The rather flexible word order which when combined with the lack of morphological distinction for nominal cases and subject omission is a real challenge for natural language processing of Bulgarian.
 
 \subsection{Recent Developments}
 
-Starting in the 1950s, American television series and movies began to dominate the German market. Although foreign films and series are usually dubbed into German (unlike countries such as Sweden and Poland), the strong presence of the American way of life in the media had an influence on popular German culture and language. Due to the continuing triumph of English and American music since the 1960s, generations of Germans have been widely exposed to English during their adolescence. English soon acquired the status of a fashionable language, and this continues today.
+Since 1990 foreign (mostly American) movies and television series have begun to dominate Bulgarian broadcasting. Foreign films and series are either dubbed (mainly by the national television and other bigger television companies, nationally broadcast) or subtitled (mainly at smaller private television companies). However, whatever the way in which they are translated, the strong presence of foreign way of life in the media has influenced Bulgarian culture and language. Due to the continuing triumph of English and American music since the 1960s (much more since 1990), Bulgarians were exposed to a lot of English during their adolescence. English quickly acquired the status of a ‘cool/hip’ language in certain areas, which it has kept up to the present day. 
 
-The continued popularity of English is reflected in the sheer number of loan words from the English language (Anglicisms). A systematic investigation of neologisms in German newspapers since 2000 revealed that about one third of the neologisms are complete or partial Anglicisms \cite{Lemni1}. In most cases the words fill a vocabulary gap—they complement native German words rather than compete with them. However, Anglicisms have started to replace existing German vocabulary in some areas. The use of English titles in job advertisements is one example, especially for executive positions (e.\,g., \textit{Human Resource Manager} instead of \textit{Personalleiter}). Product advertisements also have a strong tendency to overuse Anglicisms. In 2003, Endmark conducted a study of the use of English advertising slogans by German companies. The study revealed that almost all of the 12 slogans investigated were misunderstood by more than half of the respondents; as a result the companies replaced them with German equivalents. This example demonstrates how important it is to raise awareness about the risk of excluding large parts of the population from participating fully in the information society, especially those who are less familiar with English.
+During the last 20 years there has been a noticeable trend towards the "internationalisation" of the Bulgarian lexicon as a result of the influence of English. Bulgarian has accepted new words, meanings and collocations originating predominantly from English (so-called Anglicisms), although many others have been taken from other European and non-European languages.
 
-\subsection{Official Language Protection in Germany}
+In the Dictionary of New Words in Bulgarian (2010)  \cite{NWDict} which records new words, phraseology and terminological expressions from the past 20 years, about 4300 new lexical units have been registered. Of these about a quarter (about 1020) are borrowings from English. There are a number of terminological areas in which the lexicon has developed almost entirely under the influence of English: computer technology and the internet (\textit{{fayl}} [file], \textit{{sayt}} [site]), finances, economics and business (\textit{{dilar}} [dealer], \textit{{broker}} [broker]), contemporary music (\textit{{didzhey}} [dj], \textit{{tehno}} [techno], \textit{{klip}} [clip]), sport (\textit{{dzhoging}} [jogging], \textit{{bodibilding}} [bodybuilding]). The influx of English borrowings has also been seen in commonly used words — e.g. \textit{{toster}} [toaster], \textit{{stiker}} [sticker], \textit{{bodigard}} [bodyguard], and teenage slang.
 
-Germany has no institutional body responsible for developing or implementing a policy to protect the German language. However, there are a number of non-governmental, publicly-funded organisations that play an active role in the promotion of the German language. The Goethe Institute works in partnership with the Federal Foreign Office, offering German language courses all over the world to strengthen the international standing of the German language. Other organisations that raise awareness about the German language and promote German language culture include the German Academy for Language and Literature (DASD) and the Society for the German Language (GfDS), which has been charged by the German Bundestag [Federal Parliament] with controlling the language of legislative texts. The Institute for the German Language (IDS) is the central research centre for German. 
+The dictionary also records over 700 new word meanings, the majority of which have arisen under the influence of English. These are semantic calques, many of which are in the area of computer terminology: \textit{{mishka}} [mouse], \textit{{papka}} [folder], \textit{{glasova poshta}} [voice mail], etc. The influence of English in these cases is not always obvious since it typically affects the word senses, rather then formal composition of words. 
 
-In addition, individual authors contribute to linguistic awareness by discussing undesirable developments such as the widespread use of incorrect apostrophes (\textit{Maria’s Haus} instead of the correct \textit{Marias Haus}), business jargon and neologisms. The best-known author of this type is Bastian Sick \cite{Sick1} and his magazine column \textit{Zwiebelfisch} \cite{Sick2}. Private initiatives usually target Anglicisms: the Verein Deutsche Sprache (VDS) initiative annually awards its \textit{Kulturpreis Deutsche Sprache} [cultural prize for the German language] for creative contributions to the development of the German language. (In 2011, Udo Lindenberg, a German singer, won the award.) The \textit{Aktion lebendiges Deutsch} [action for lively German] campaign regularly organises contests to Germanise egregious Anglicisms.
+Many of the new borrowings from English cause difficulties for speakers of Bulgarian. Some are difficult to pronounce – \textit{{blokbastar}} [blockbuster], \textit{{marchandayzing}} [merchandising], while others are difficult to adapt morphologically — some words give rise to uncertainty when used in the plural for example, \textit{{bodigardi}} or \textit{{bodigardove}} [bodyguards], \textit{{chipseti}} or \textit{{chipsetove}} [chipsets]. Older generation Bulgarians who do not speak English find these borrowings hard to understand. 
 
-Germany does not have a language academy that advises on preferred language usage as do the Académie Française in France and the Academía Real in Spain. The Duden dictionary used to be a prescriptive source for German spelling and grammar, but it now takes a more descriptive approach \cite{Schn1}. 
+A new phenomenon unknown in Bulgarian before the 1990’s is the graphic representation of many foreign words in the Latin alphabet, in particular English borrowings. A particular case in point are abbreviations (such as CV, CD-ROM, PR), as well as widely used words such as \textit{internet}, or even prefixed component parts such \textit{e-} for electronic. The use of Latin is particularly prevalent in certain specialised areas such as: computer technology, in the names of companies, commercial establishments etc., but also in commonly used language, such as advertising. Some people are worried that the use of the Latin alphabet for writing Bulgarian (called \textit{{shlyokavitsa} /shl’okavitsa/} and used mainly in unofficial modes — sms, e-mails, etc.) \cite{shlyokavica} will somehow affect the quality of spoken and written Bulgarian and eliminate the use of the distinctive Cyrillic alphabet.
 
-Political measures to influence or modify the German language are rare. After 10 years’ of discussion, Austria, Germany, Liechtenstein and Switzerland agreed on a spelling reform in 2006. The original reform was modified and weakened, and it gave writers more freedom. The new spelling conventions were not accepted universally; many large newspapers and publishers use a mixture of old and new spelling conventions.
+The few examples given demonstrate the importance of raising awareness of developments which might lead to the risk of excluding large groups from participation in the information society, namely those who are not familiar with English.
 
-\boxtext{Austria, Germany, Liechtenstein and Switzerland agreed on a spelling reform in 2006.}
+\subsection{Official Language Protection in Bulgarian}
 
-There are almost no measures designed to protect the official status of the German language. In December 2008, several politicians and private associations (most notably the VDS) called for an amendment to the constitution that would make German the official language of the Federal Republic of Germany, similar to Austria ans Swiss. This was rejected by the German Bundestag but is still a hot topic. In 2004, the government considered but failed to introduce a quota for radio stations (like that found in France) on how much music must be sung in German. 
+Bulgarian is the official language in the Republic of Bulgaria, as stated in the Bulgarian constitution. Constituted by decree of the Council of Ministers, the Institute for Bulgarian Language of the Bulgarian Academic of Science is the official institution which observes changes in the Bulgarian language, determines literary norms and reflects these changes in both orthography and speech. Its primary tasks include research in Bulgarian linguistics, general, theoretical, applied and computational linguistics, as well as the preparation of a comprehensive dictionary of the Bulgarian language, and the maintenance of its archival materials. Other research projects investigate Bulgarian dialects in and outside Bulgaria, including issues of language policy within the framework of European integration. Further tasks include the assembly of linguistic corpora and databases, and laying the linguistic groundwork for computational software and applications. Over the past 60 years as a 
+ product of these functions the Institute has published the academic journal "Balgarski ezik" [Bulgarian Language] and has provided information and advice through its Language service. Regular broadcasts on Bulgarian National Radio are also provided and until recently and collaboration with Bulgarian National Television has produced "Ezik moy" [My Language] broadcast. 
 
-The above examples illustrate the disadvantageous situation of the German language when compared, for example, to French, which gets strong financial backing from the global community of French speakers (\textit{Francophonie}). The comparably low level of cultural identity associated with the contemporary German language certainly encourages an attitude of tolerance and openness towards cultural diversity, but it can also pose a threat to maintaining a certain standard of expressivity for German.
+In parallel with these activities many of the national and local daily newspapers carry articles concerning matters of language: for example the regular column in the "Trud" national daily newspaper, written by professors of the University of Sofia. Since 2002 the University of Sofia has published "Rodna rech" [Native tongue], a journal whose main aim is to respond to a range of current language issues and assist in raising linguistic culture amongst Bulgarian society. 
+
+The first academic spelling dictionary was published in 1983 and reflected the accepted standards of spelling and speech. In 2002 a new spelling dictionary was published which was augmented by new words and certain changes which mirrored the development of the language. As well as dictionaries which serve to define standard language, other spelling and pronunciation dictionaries are also published to reflect standard usage. Numerous periodicals connected with problems of spelling and pronunciation are also published on a regular basis. 
+
+Most of these activities are of purely academic interest and are not sufficiently popular among the younger population in particular. Media language seeks to attract and entertain and in many cases deviates from the proscriptions of standard usage. No official quotas regulate the percentage of Bulgarian language music song (even on the National Radio and Television). This should be compared to the regulations for example in France, Hungary, Slovenia. Nevertheless, the current Law on Radio and Television states that Bulgarian National Radio shall set aside for the creation and performance of Bulgarian music and radio drama not less than 5\% of the subsidy of the state budget; while Bulgarian National Television shall set aside not less than 10\% of the same subsidy for Bulgarian television film production. 
+
+The most recent orthographic reform was carried out in 1945. Its aim was to bring the spelling of Bulgarian up to date and consisted of the removal of certain letters related historical orthographic forms. On a number of occasions members of the Bulgarian National Assembly have submitted draft versions of a new Law on Bulgarian Language primarily in the aims of preserving the purity of the language. These have led to long and rather emotional debates. In 2007 the Law on Transliteration was passed in the aims of standardising the diverse practices of rendering words (personal names) in Latin letters.
+
+The situation of the Bulgarian language is disadvantageous when compared to languages such as French, which is strongly promoted by the global community of French-speaking peoples within the so-called Francophone Union. The wide usage of Language technology can make an important contribution in this area by offering media, internet and mobile communications sophisticated language services — spell and grammar checkers, style correction, dictionary checks for synonyms, and the correct pronunciation of words.
 
 \subsection{Language in Education}
 
-The first study published by the OECD Programme for International Student Assessment (PISA) in 2000 revealed that German students had below average reading literacy. Students from immigrant families had particularly poor results. The ensuing debate increased public awareness about the importance of language learning, especially for socially integrating immigrants. Using the recommendations of the OECD, Germany has adopted several laws on early language training in the last decade. One example is the \textit{Gesetz zur vorschulischen Sprachförderung} [Law for the Promotion of Pre-School Language Learning], which came into effect in April 2008 in Berlin, a city with a very high number of children whose native language is not German. This means more than 90\% of the children in some parts of the Berlin Neukölln district. The law introduces a compulsory German test for children who did not attend kindergarten before enrolling in school, and provides enhanced language training for those that have insufficient German language skills. Measures such as the language law in Berlin have been successful. The 2009 PISA study showed that reading literacy among Germans had significantly improved since 2000, in particular for children from immigrant families. However, there are still major differences in language skills between students with and without a native-language background compared to other countries with a similar situation. The differences are particularly salient in Austria, which is among the three OECD countries that show the widest gap between native and immigrant skills in reading literacy among young people \cite{Pisa1}.
+From the 19th century onwards Bulgarian language and literature has had a very important role in the education. According to the legislation in Bulgaria, all education and teaching provided as part of the current state curriculum, from pre-school through to university level, must be in Bulgarian. Special arrangements exist for children whose mother tongue is not Bulgarian. The study of Bulgarian is compulsory for the elementary and secondary school.
 
-The use of the German language has become critical to immigration policy in Germany. The law on controlling and limiting immigration as well as regulating the residence and integration of migrants that came into force in 2005 puts a special emphasis on the need to learn German in integration classes. These classes include 600 hours of language teaching plus a 30-hour introduction to German history, culture and law. Immigrants who do not participate in these integration classes may have their state benefits reduced, or encounter difficulties when they renew their residence permits. Participation in the classes is also a prerequisite for obtaining permanent residency in Germany.
+In PISA‘2009 \cite{oecd} (the capacity to use scientific knowledge, to identify questions and to draw evidence) Bulgaria is in 46th place out of 65 countries. In PISA‘2006 Bulgaria is in 43th place out of 55 countries. In PISA‘2000 — in 33th place out of 41 countries. 
+In PIRLS‘2006 \cite{nces} (reading literacy as the ability to understand and use those written language forms required by society) Bulgaria was in 14th place with 547 points. Again the results were lower than in PIRLS’2001 — 4th place with 550 points.
 
-Language skills are a key qualification for education and personal as well as professional communication. Yet, German plays a relatively minor role as a school subject in secondary education. According to OECD figures published in 2003, German language instruction forms about 20\% of the curriculum for nine to eleven year old pupils, compared with almost 33\% native language instruction in France, Greece and the Netherlands \cite{kmk1}.
+The Bulgarian PISA and PIRLS results can be used as an indicator (or International Benchmark) to determine to what extent international educational standards are satisfied within the National School Curriculum. In 2009 the Bulgarian students demonstrated basic literacy and almost half of them found it difficult to interpret and analyse a text. 
 
-\boxtext{German plays a relatively minor role as a school subject in secondary education.}
+The insufficiencies of Bulgarian language teaching in high schools (for example) can be summarised in a number of points: insufficient allocated time – 36 hours (lessons) annually; non-communicative organisation of the teaching process; inadequate content.
 
-Increasing the amount of German language instruction in schools is one possible step towards providing students with the language skills they require for active participation in society. Language technology can make an important contribution in this respect by offering computer-assisted language learning (CALL) systems that allow students to experience language in an attractive way, e.\,g., by linking vocabulary in digital texts to definitions or to audio or video files that supply additional information such as pronunciation.
+According to the most recent State Educational Requirements Bulgarian language teaching is conducted within the framework of a cultural and education study sector — Bulgarian Language and Literature. This sector is traditional within Bulgarian schools and the universities train specialist — middle and high-school teachers in this subject. One of the ways of increasing the effectiveness of Bulgarian language teaching is for it to be focused upon as a specific and important scientific area. Although traditionally seen as a humanitarian discipline, linguistics is concerned with the formulation of rules according to which language units are inter-combined, and is thus close to the sciences. 
+
+At university level, there is a general shortage of courses in Bulgarian (at some Universities) that would enable future experts for successful professional communication and appropriate functional literacy.
+
+Language skills are the key qualification needed in education as well as for personal and professional communication. Increasing the volume of Bulgarian language teaching in schools is one possible step towards providing students with the language skills required for active participation in society. Language technology can make an important contribution here by offering so-called computer-assisted language learning (CALL) systems. Such systems allow students to experience language through play; for example by linking special vocabulary in an electronic text to comprehensible definitions or to audio or video files supplying additional information, e.g., the pronunciation of a word. 
 
 \subsection{International Aspects}
 
-Germany is often referred to as the land of \textit{Dichter und Denker} [poets and thinkers] due to its immense contributions to literature, philosophy and science. The works of authors such as Goethe, Kafka and Hesse have gained international fame; the philosophical ideas of Kant, Hegel, Marx and Nietzsche as well as Freud's theory of psychoanalysis have made a lasting impact on modern culture. Scientists from German-speaking countries have won numerous Nobel Prizes in literature, economy, physics, chemistry and medicine.
+The usage and influence of the Bulgarian language beyond the borders of Bulgaria and its speakers is limited. For many years the Ministry of Education, Youth and Science has held competitions to send Bulgarian university lecturers to work as lectors in Bulgarian language, literature and culture in a number of foreign universities where Bulgarian is studied. The Ministry of Culture established the National Culture Fund which holds regular competitions for the translation of Bulgarian literature into foreign languages. Translations of the works of classical Bulgarian writers, such as Hristo Botev and Ivan Vazov, into almost all European languages have, of course, been in existence for many years. 
 
-At the beginning of the 20th century, German-speaking countries were at the forefront of scientific disciplines, and German was the major language of science -- 30\% of scientific publications were written in German. Since then, the importance of German as a scientific language has dramatically decreased. Less than 5\% of scientific publications are currently written in German -- most of them in disciplines such as law, philosophy and theology \cite{joy1}. This situation can only partly be attributed to a decline in scientific contributions from German-speaking countries. Even in the universities of these countries, German is strongly challenged or has even been overtaken by English as the language of publication.
+Bulgaria has a great number of world famous singers (Nikolay Gyaurov, Gena Dimitrova, Boris Hristov, Valya Balkanska), authors and artists (Hristo Yavashev, Donyo Donev, Yuliya Krasteva, Tsvetan Todorov) among many others. The poet, Pencho Slaveikov (1866-1912), a central figure in Bulgarian literature, is the only Bulgarian to have been nominated for the Nobel Prize. Outside certain narrow specialised circles overseas where the Bulgarian languages is taught and studied, Bulgarian is an unknown and exotic language.
 
-\boxtext{The importance of German as a scientific language has dramatically decreased.}
+As everywhere in the scientific world, Bulgarian scientists face a great deal of pressure to publish in visible (usually international) journals, most of which are now in the English language. The situation is similar in the business world. In many large and internationally active companies, English has become the lingua franca, both in written and oral communication. At the same time 44\% of mature Bulgarians do not speak a foreign languages according to research published by the European statistical service, Eurostat \cite{epp}, in 2009. 
 
-The same goes for the business world. In many large companies operating across borders, English has become the lingua franca for written (e-mails and documents) and oral communication (presentations and meetings). Such developments strongly affect the status of German as a foreign language. Pragmatic reasons for learning German, such as better job market chances, have lost their importance, and German is losing more ground to English and recently to Chinese. 
+Bulgarian has acquired the status as an official administrative language of the European Union on the same basis as English, German and French, since the European Union is based on solidarity and equality amongst its members. Since the 1st January 2007, Bulgarian has been used in the following situations in the context of relations between Bulgaria and the EU:
 
-\boxtext{German is one of the three official working languages of the European Commission, but in the EU’s official business it is hardly used.}
+\begin{itemize}
+\item The official bulletin containing the rights of citizens and the texts of EU law is published in Bulgarian.
+\item The Bulgarian authorities are entitled to speak in Bulgarian in Council of the European Union.
+\item Bulgarian citizens are entitled to use Bulgarian in their correspondence with the European institutions.
+\end{itemize}
 
-In the European Union, German is one of the three official working languages of the European Commission (along with English and French), but in practice, German is hardly used in the EU’s official business. Only 3\% of the documents sent by the European Commission to the Member States are written in German \cite{joy1}. Recently political action was taken to address this problem. In 2006, Norbert Lammert, the President of the German Bundestag, wrote a letter to the European Commission saying that the German Bundestag will reject contracts and similar documents if a German translation is not available. Language technology can address this challenge by offering services such as machine translation and cross-lingual information retrieval to reduce the personal and economic disadvantages facing non-native English speakers in Europe.
+The fact of Bulgaria’s membership of the European Union together with the idea of unity and diversity, globalisation while preserving national identity, provides a real opportunity for the egalitarian use of Bulgarian together with the major European languages.
 
-\subsection{German on the Internet}
+Language technology can address this challenge from a different perspective by offering services such as machine translation or cross-lingual information retrieval to foreign language text and thus help diminish personal and economic disadvantages naturally faced by non-native speakers of English.
 
-In 2010, almost 70\% of the German population and 74.8\% of the Austrian population were Internet users and most said they were online every day \cite{ard1,ict1}. The percentage of young people using the Internet is even higher in both countries. The strong presence of German on the Web is also mirrored by the fact that the German Wikipedia is the second largest Wikipedia after English (not including automatically translated versions like the Thai Wikipedia).
 
-\boxtext{The German Wikipedia is the second largest Wikipedia after English.}
+\subsection{Bulgarian on the Internet}
 
-With about 14 million Internet domains in November 2010, the .de top-level country domain for Germany is the world’s largest country extension, and it is the second largest extension after the .com domain \cite{denic1,ebrands1}. This dominant Internet presence suggests that there is a vast amount of German language data on the Web. In addition, some bilingual resources such as the LEO online dictionary are available for free \cite{leo1}.
+Bulgarian internet usership in 2009 increased by 31\% in comparison with 2007 and already 46\% of the total population uses the internet. According to a study by gemiusAudience \cite{gemius}, published in the report "Do you CEE?" \cite{inetcee} Bulgaria is amongst the countries with the highest percentage of internet penetration.
 
-\boxtext{Germany's .de top-level domain is the\\ world’s largest country extension.}
+According to data published by internetworldstats.co \cite{inetworldstat} there are about 3.5 million internet users in Bulgaria, and after the statistics published by Gemius the growth of sites observed by analysts is almost 10.7\% on an annual basis. In 2010 there was a further 5\% increase in usership.
 
-The growing importance of the Internet is critical for language technology. The vast amount of digital language data is a key resource for analysing the usage of natural language, in particular, for collecting statistical information about patterns. And the Internet offers a wide range of application areas for language technology. 
+In addition to the ubiquitous international web sites, the most popular web sites on the Bulgarian part of the Internet are Bulgarian news portals (dir.bg, gbg.bg news.bg, etc.). Bulgarian Wikipedia as an important source for natural language processing contains app. 117\,000 articles, a considerably smaller size than the biggest Wikipedias – English, German and French – but in the number of articles it is in the 34th position \cite{metadata} among 270 Wikipedias in other languages. 
 
-The most commonly used web application is search, which involves the automatic processing of language on multiple levels as will be shown in more detail later. Web search involves sophisticated language technology that differs for each language. For the German language, for example, this involves matching \textit{ä} and \textit{ae}, or taking capitalisation into account to distinguish between nouns and verbs, for example, \textit{Fliegen} [flies] and \textit{fliegen} [to fly]. 
+It is often claimed that English dominates computers and the internet, and that those wishing to use either must first learn English. That may have been true in the early days of the technology but lack of English is no longer the barrier it once was. What began as an anglophone phenomenon has rapidly become a multilingual affair. Software has been made capable of displaying many different kinds of script. Many corporate websites now employ multilingual strategies making choice of language a ‘user preference’. Machine translation of web content is only a mouse-click away.
 
-One important aspect of equal opportunities in Germany and other European countries is the \textit{Gesetz zur Gleichstellung behinderter Menschen} [Law on Equal Opportunities for the Disabled], which came into force in 2002, and addresses the issue of \textit{Barrierefreie Informationstechnik} [barrier-free information technology]. It enjoins public agencies to make sure that the disabled can use their websites and Internet services without any restrictions. User-friendly language technology tools provide speech synthesis, for example, to enunciate the content of web pages for the blind. Internet users and providers of web content can also use language technology in less obvious ways, for example, by automatically translating web page contents from one language into another. Despite the high cost of manually translating this content, comparatively little language technology has been developed and applied to the issue of website translation in light of the supposed need. This may be due to the complexity of the German language and to the range of different technologies involved in typical applications.
+For language technology, the growing importance of the internet is important in two ways. On the one hand, the large amount of digitally available language data represents a rich source for analysing the usage of natural language, in particular by collecting statistical information. On the other hand, the internet offers a wide range of application areas involving language technology. 
 
-The next chapter gives an introduction to language technology and its core application areas, together with an evaluation of current language technology support for German.
+One important aspect of equal opportunities the Law on Equal Opportunities for the Disabled, which came into force in 2002, and addresses the issue of barrier-free information technology. It enjoins public agencies to make sure that the disabled can use their websites and Internet services without any restrictions. User-friendly language technology tools are a key solution to this requirement by offering for example speech synthesis to enunciate the content of web pages for the blind.
+
+Internet users and providers of web content can also use language technology in less obvious ways, for example, by automatically translating web page contents from one language into another. Despite the high cost of manually translating this content, comparatively little language technology has been developed and applied to the issue of website translation in light of the supposed need. This may be due to the complexity of the Bulgarian language and to the range of different technologies involved in typical applications.
+
+The next chapter gives an introduction to language technology and its core application areas, together with an evaluation of current language technology support for Bulgarian. 
 \end{multicols}
 
 \clearpage
 
 % --------------------------------------------------------------------------
-\ssection[Language Technology Support for German]{Language Technology Support\newline for German}
+\ssection[Language Technology Support for Bulgarian]{Language Technology Support\newline for Bulgarian}
 
 \begin{multicols}{2}
 
