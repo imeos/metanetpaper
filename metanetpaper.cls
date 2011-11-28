@@ -307,7 +307,7 @@
 }
 
 % For IPA characters
-\newcommand\lingua[1]{[ {\selectfont\linguistics #1} ]}
+\newcommand\lingua[1]{[{\selectfont\linguistics #1}]}
 
 
 % Lines
