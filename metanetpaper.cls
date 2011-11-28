@@ -79,6 +79,8 @@
   \newfontfamily\futurabook{Futura Book}
   \newfontfamily\futuramedium{Futura Medium}
 \setmonofont[Scale=0.7]{DejaVu Sans Mono}
+  \newfontfamily\linguistics[Scale=0.8]{DejaVu Serif}
+
 
 
 % Colors                                             
@@ -303,6 +305,9 @@
   \colorrule{grey3}{0.5\textwidth-3.5mm}{1.5pt}
   \end{center}
 }
+
+% For IPA characters
+\newcommand\lingua[1]{[ {\selectfont\linguistics #1} ]}
 
 
 % Lines
