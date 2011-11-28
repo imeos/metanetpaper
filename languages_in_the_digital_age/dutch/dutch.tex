@@ -1,16 +1,16 @@
-%                                     MMMMMMMMM                                         
-%                                                                             
-%  MMO    MM   MMMMMM  MMMMMMM   MM    MMMMMMMM   MMD   MM  MMMMMMM MMMMMMM   
-%  MMM   MMM   MM        MM     ?MMM              MMM$  MM  MM         MM     
-%  MMMM 7MMM   MM        MM     MM8M    MMMMMMM   MMMMD MM  MM         MM     
-%  MM MMMMMM   MMMMMM    MM    MM  MM             MM MMDMM  MMMMMM     MM     
-%  MM  MM MM   MM        MM    MMMMMM             MM  MMMM  MM         MM     
+%                                     MMMMMMMMM
+%
+%  MMO    MM   MMMMMM  MMMMMMM   MM    MMMMMMMM   MMD   MM  MMMMMMM MMMMMMM
+%  MMM   MMM   MM        MM     ?MMM              MMM$  MM  MM         MM
+%  MMMM 7MMM   MM        MM     MM8M    MMMMMMM   MMMMD MM  MM         MM
+%  MM MMMMMM   MMMMMM    MM    MM  MM             MM MMDMM  MMMMMM     MM
+%  MM  MM MM   MM        MM    MMMMMM             MM  MMMM  MM         MM
 %  MM     MM   MMMMMM    MM   MM    MM            MM   MMM  MMMMMMM    MM
 %
 %
 %            - META-NET Language Whitepaper | German paper -
 %
-% 
+%
 % ----------------------------------------------------------------------------
 
 \documentclass[]{../../metanetpaper}
@@ -40,7 +40,7 @@ Remco van Veenendaal~ {\small TST-centrale}
 }
 
 \editors{
-  Georg Rehm, Hans Uszkoreit\\(XXX, \textcolor{grey1}{editors})
+  Georg Rehm, Hans Uszkoreit\\(\textcolor{grey1}{redactie})
 }
 
 \begin{document}
@@ -48,30 +48,44 @@ Remco van Veenendaal~ {\small TST-centrale}
 % Mocktitle
 \maketitle
 \null
-\pagestyle{empty} 
+\pagestyle{empty}
 
-\centerline{META-NET -- office@meta-net.eu -- http://www.meta-net.eu}
 
-\vfill
+\FundingLNotice{\selectlanguage{german}
+ De ontwikkeling van dit witboek is gefinancierd door het Zevende Kaderprogramma en het  ondersteuningsprogramma voor ICT-beleid van de Europese Commissie onder de contracten T4ME (Toewijzingsovereenkomst 249119), CESAR (Toewijzingsovereenkomst 271022), META-NET4U (Toewijzingsovereenkomst 270893) en META-NORD (Toewijzingsovereenkomst 270899).}
 
-\begin{small}
-  \selectlanguage{dutch}
-De ontwikkeling van dit witboek is gefinancierd door het Zevende Kaderprogramma en het  ondersteuningsprogramma voor ICT-beleid van de Europese Commissie onder de contracten T4ME (Toewijzingsovereenkomst 249119), CESAR (Toewijzingsovereenkomst 271022), META-NET4U (Toewijzingsovereenkomst 270893) en META-NORD (Toewijzingsovereenkomst 270899).
-\end{small}
-
-\bigskip
-\begin{small}
-  \selectlanguage{english}
+\FundingRNotice{\selectlanguage{english}
   The development of this white paper has been funded by the Seventh
   Framework Programme and the ICT Policy Support Programme of the
-  European Commission under the contracts T4ME (Grant Agreement 249119),
-  CESAR (Grant Agreement 271022), METANET4U (Grant Agreement 270893)
-  and META-NORD (Grant Agreement 270899).
-\end{small}
+  European Commission under the contracts T4ME (Grant Agreement
+  249119), CESAR (Grant Agreement 271022), METANET4U (Grant Agreement
+  270893) and META-NORD (Grant Agreement 270899).}
 
-\clearpage
+\makefundingnotice
 
-\pagenumbering{Roman} 
+
+% \centerline{META-NET -- office@meta-net.eu -- http://www.meta-net.eu}
+
+% \vfill
+
+% \begin{small}
+%   \selectlanguage{dutch}
+% De ontwikkeling van dit witboek is gefinancierd door het Zevende Kaderprogramma en het  ondersteuningsprogramma voor ICT-beleid van de Europese Commissie onder de contracten T4ME (Toewijzingsovereenkomst 249119), CESAR (Toewijzingsovereenkomst 271022), META-NET4U (Toewijzingsovereenkomst 270893) en META-NORD (Toewijzingsovereenkomst 270899).
+% \end{small}
+
+% \bigskip
+% \begin{small}
+%   \selectlanguage{english}
+%   The development of this white paper has been funded by the Seventh
+%   Framework Programme and the ICT Policy Support Programme of the
+%   European Commission under the contracts T4ME (Grant Agreement 249119),
+%   CESAR (Grant Agreement 271022), METANET4U (Grant Agreement 270893)
+%   and META-NORD (Grant Agreement 270899).
+% \end{small}
+
+% \clearpage
+
+\pagenumbering{Roman}
 \setcounter{page}{5}
 \pagestyle{scrheadings}
 
@@ -90,18 +104,18 @@ META-NET, een `Network of Excellence' gefinancierd door de Europese Commissie, h
 
 META-NET bestaat tegenwoordig uit 54 onderzoekscentra in 33 landen (p.~\pageref{metanetmembers}) die werken met belanghebbenden uit XXX commerci{\"e}le bedrijven, overheidsagentschappen, onderzoeksorganisaties, softwarebedrijven, technologieleveranciers en Europese universiteiten. Samen cre{\"e}ren zij een gemeenschappelijke technologievisie en ontwikkelen daarbij een strategische onderzoeksagenda die laat zien hoe taaltechnologische toepassingen lacunes in het onderzoek aan kunnen pakken tegen 2020.
 
-XXX The authors of this document are grateful to the authors of the White Paper on German for permission to re-use selected language-independent materials from their document. 
+De auteurs van dit document bedanken de auteurs van het taalwitboek voor het Duits voor de toestemming om geselecteerd taalonafhankelijk materiaal uit hun witboek hier te hergebruiken.
 }
 
 \ParallelRText{\selectlanguage{english}
-This white paper is part of a series that promotes knowledge about language technology and its potential. It addresses journalists, politicians, language communities, and others. 
+This white paper is part of a series that promotes knowledge about language technology and its potential. It addresses journalists, politicians, language communities, and others.
 The availability and use of language technology in Europe varies between languages. Consequently, the actions that are required to further support research and development of language technologies also differ. The required actions depend on many factors, such as the complexity of a given language and the size of its community.
 
 META-NET, a Network of Excellence funded by the European Commission, has conducted an  analysis of current language resources and technologies in this white paper series (p.~\pageref{whitepaperseries}). The analysis focused on the 23 official European languages as well as other important national and regional languages in Europe. The results of this analysis suggest that there are tremendous deficits in technology support and significant research gaps for each language. The given detailed expert analysis and assessment of the current situation will help maximise the impact of additional research.
 
 META-NET currently consists of 54 research centres from 33 European countries (p.~\pageref{metanetmembers}). META-NET is working with stakeholders from economy (software companies, technology providers and users), government, research, non-governmental organisations, education, and language communities in  creating a common technology vision and strategic research agenda for multilingual Europe 2020.
 
-The authors are grateful to the authors of the White Paper on German for permission to re-use selected language-independent materials from their document. } 
+The authors are grateful to the authors of the White Paper on German for permission to re-use selected language-independent materials from their document. }
 
 
 \ParallelPar
@@ -111,7 +125,7 @@ The authors are grateful to the authors of the White Paper on German for permiss
 
 
 % --------------------------------------------------------------------------
-\bsection*{XXX --- Table of Contents}
+\bsection*{Inhoudsopgave --- Table of Contents}
 
 \tableofcontents
 
@@ -123,7 +137,7 @@ The authors are grateful to the authors of the White Paper on German for permiss
 
 % --------------------------------------------------------------------------
 \setcounter{page}{1}
-\pagenumbering{arabic} 
+\pagenumbering{arabic}
 \pagestyle{scrheadings}
 
 
@@ -136,10 +150,10 @@ The authors are grateful to the authors of the White Paper on German for permiss
 \begin{multicols}{2}
 
     In de laatste zestig jaar is Europa een aparte politieke en economische structuur geworden, maar op cultureel en taalkundig gebied is het nog zeer divers. Dit heeft als consequentie dat van het Portugees tot het Pools en van het Italiaans tot het Iers alledaagse communicatie en communicatie op het gebied van het bedrijfsleven en politiek onvermijdelijk tegen taalgrenzen aanloopt. De instituten van de Europese Unie besteden ongeveer een miljard euro per jaar om hun beleid van meertaligheid te behouden, d.w.z. aan het vertalen van teksten en het tolken bij gesproken communicatie. Maar hoeft dit wel zo'n last te zijn? Moderne taaltechnologie en taalkundig onderzoek kunnen een significante bijdrage leveren aan het slechten van deze taalkundige grenzen. Taaltechnologie zal, wanneer het gecombineerd wordt met intelligente toestellen en toepassingen, in de toekomst in staat zijn Europeanen te helpen op een eenvoudige manier met elkaar te praten en met elkaar zaken te doen zelfs als ze geen gemeenschappelijke taal spreken.
-   
+
  \boxtext{Taaltechnologie bouwt bruggen \\ voor de toekomst van Europa }
 
-    De Nederlandse economie heeft veel baat bij de XXX �{\'e}ngemaakte Europese markt. In 2010 besloeg handel binnen de EU meer dan 74\% van de Nederlandse export \cite{CBSStats}.  Maar taalgrenzen kunnen de bedrijvigheid tot stilstand brengen, vooral voor het MKB, dat niet de financi{\"e}le middelen heeft om de situatie te veranderen. Het enige (ondenkbare) alternatief voor dit meertalige Europa zou zijn dat wordt toegestaan dat {\'e}{\'e}n enkele taal een dominante positie inneemt en op termijn alle andere talen zou vervangen.
+    De Nederlandse economie heeft veel baat bij de {\'e}{\'e}ngemaakte Europese markt. In 2010 besloeg handel binnen de EU meer dan 74\% van de Nederlandse export \cite{CBSStats}.  Maar taalgrenzen kunnen de bedrijvigheid tot stilstand brengen, vooral voor het MKB, dat niet de financi{\"e}le middelen heeft om de situatie te veranderen. Het enige (ondenkbare) alternatief voor dit meertalige Europa zou zijn dat wordt toegestaan dat {\'e}{\'e}n enkele taal een dominante positie inneemt en op termijn alle andere talen zou vervangen.
 
     Een klassieke manier om de taalgrenzen te overwinnen is het leren van vreemde talen. Maar zonder technologische ondersteuning is het leren beheersen van de 23 offici{\"e}le talen van de lidstaten van de Europese Unie en ongeveer 60 andere Europese talen een onoverkomelijk obstakel voor de burgers van Europa, zijn economie, het politieke debat en wetenschappelijke vooruitgang.
 
@@ -174,7 +188,7 @@ The authors are grateful to the authors of the White Paper on German for permiss
 
 We zijn getuige van een digitale revolutie die een dramatisch effect heeft op de communicatie- en informatiemaatschappij. Recente ontwikkelingen in de digitale informatie- en communicatietechnologie worden soms vergeleken met de uitvinding van de boekdrukkunst. Wat kan deze analogie ons vertellen over de toekomst van de Europese informatiemaatschappij en onze talen in het bijzonder?
 
-\boxtext{XXX De digitale revolutie lijkt de uitvinding \\ van de boekdrukkunst.}
+\boxtext{We zijn getuige van een digitale revolutie vergelijkbaar met de uitvinding van de boekdrukkunst.}
 
  Na de uitvinding van de boekdrukkunst werden ware doorbraken in communicatie- en kennisuitwisseling verwezenlijkt door bijv. de vertaling van de Bijbel in de lokale taal. In de daarop volgende eeuwen werden culturele technieken ontwikkeld om beter om te gaan met taalverwerking en kennisuitwisseling:
     \begin{itemize}
@@ -202,7 +216,7 @@ We zijn getuige van een digitale revolutie die een dramatisch effect heeft op de
 
 
 \subsection{Taalgrenzen staan de Europese Informatiemaatschappij in de Weg}
-  
+
     We kunnen niet precies voorspellen hoe de toekomstige informatiemaatschappij eruit gaat zien. Maar het is zeer waarschijnlijk dat de revolutie in de communicatietechnologie mensen die verschillende talen spreken op nieuwe manieren bij elkaar zal brengen. Dat legt druk op individuen om nieuwe talen te leren en vooral op ontwikkelaars om nieuwe technologische toepassingen te maken om wederzijds begrip en toegang tot deelbare kennis te verzekeren.
 
 \boxtext{In een globale economische en informatieruimte interageren meer talen, sprekers en inhoud.}
@@ -219,7 +233,7 @@ Het is verrassend dat deze overal aanwezige digitale tweedeling niet veel publie
 
 \boxtext{De ongeveer 80 talen van Europa zijn een van onze  belangrijkste culturele bezittingen.}
 
-    De ongeveer 80 talen van Europa zijn een van zijn rijkste en belangrijkste culturele bezittingen, en een vitaal onderdeel van Europa's unieke sociale model \cite{EC2}.  Hoewel talen zoals Engels en Spaans waarschijnlijk zullen overleven in de opkomende digitale marktplaats, zouden veel Europese talen irrelevant kunnen worden in een genetwerkte maatschappij. Dit zou Europa's globale status verzwakken, en ingaan tegen het strategische doel om gelijke deelname voor iedere Europese burger te verzekeren ongeacht taal. 
+    De ongeveer 80 talen van Europa zijn een van zijn rijkste en belangrijkste culturele bezittingen, en een vitaal onderdeel van Europa's unieke sociale model \cite{EC2}.  Hoewel talen zoals Engels en Spaans waarschijnlijk zullen overleven in de opkomende digitale marktplaats, zouden veel Europese talen irrelevant kunnen worden in een genetwerkte maatschappij. Dit zou Europa's globale status verzwakken, en ingaan tegen het strategische doel om gelijke deelname voor iedere Europese burger te verzekeren ongeacht taal.
 
 Volgens een UNESCO rapport over meertaligheid zijn talen een essentieel medium om fundamentele rechten uit te oefenen zoals politieke expressie, onderwijs en deelname aan de maatschappij \cite{Unesco1}.
 
@@ -239,7 +253,7 @@ Volgens een UNESCO rapport over meertaligheid zijn talen een essentieel medium o
 
     Taaltechnologie bestaat uit een aantal essenti{\"e}le toepassingen die processen mogelijk maken in een groter toepassingskader. Het doel van de META-NET taalwitboeken is om vast te stellen hoe matuur deze kerntechnologie{\"e}n zijn voor iedere Europese taal.
 
-\boxtext{XXX Europa benötigt für alle Sprachen robuste und preiswerte Sprachtechnologie.}
+\boxtext{Europa heeft voor alle talen robuuste en betaalbare taaltechnologie nodig.}
 
 Om onze positie aan de frontlinie van de globale innovatie te behouden heeft Europa taaltechnologie nodig die aangepast is aan alle Europese talen, die robuust en betaalbaar is, en nauw ge{\"\i}ntegreerd in belangrijke softwareomgevingen. Zonder taaltechnologie zullen we niet in staat zijn een werkelijk effectieve interactieve multimedia en meertalige gebruikerservaring te bereiken in de nabije toekomst.
 
@@ -251,9 +265,9 @@ Om onze positie aan de frontlinie van de globale innovatie te behouden heeft Eur
 
     Zoals voor de meeste technologie{\"e}n geldt, zijn ook de eerste taaltoepassingen zoals stemgebaseerde gebruikersinterfaces en dialoogsystemen ontwikkeld voor zeer gespecialiseerde domeinen, en zij laten vaak beperkte performantie zien. Maar er zijn enorme marktmogelijkheden in de onderwijs- en entertainmentsectoren voor de integratie van taaltechnologie{\"e}n in `games', cultureelerfgoedsites, `edutainment' pakketten, bibliotheken, simulatieomgevingen en trainingprogramma's. Mobiele informatiediensten, software voor het computerondersteund leren van talen, eLearning-omgevingen, gereedschappen voor zelfevaluatie en software voor plagiaatdetectie zijn maar enkele van de toepassingsgebieden waar taaltechnologie een belangrijke rol kan spelen. De populariteit van socialemediatoepassingen zoals Twitter en Facebook suggereren additionele noden voor gesofisticeerde taaltechnologie{\"e}n die het plaatsen van berichten kunnen controleren, discussies kunnen samenvatten, trends in opinievorming kunnen suggereren, emotionele reacties kunnen detecteren, en schendingen van copyright kunnen identificeren of misbruik opsporen.
 
-\boxtext{XXX Taaltechnologie helpt de `handicap' van taaldiversiteit overwinnen.} 
+\boxtext{Taaltechnologie draagt ertoe bij de `handicap' van taaldiversiteit te overwinnen.}
 
-    Taaltechnologie biedt de Europese Unie een enorm potentieel. Het kan ertoe bijdragen de complexe kwestie van meertaligheid in Europa aan te pakken --- het feit dat verschillende talen op natuurlijke wijze naast elkaar bestaan in Europese bedrijven, organisaties en scholen. Maar burgers moeten kunnen communiceren over deze taalgrenzen heen dwars door de Europese Gemeenschappelijk Markt, en taaltechnologie kan helpen deze laatste barri{\`e}re te overwinnen en daarmee het vrije en open gebruik van individuele talen ondersteunen. 
+    Taaltechnologie biedt de Europese Unie een enorm potentieel. Het kan ertoe bijdragen de complexe kwestie van meertaligheid in Europa aan te pakken --- het feit dat verschillende talen op natuurlijke wijze naast elkaar bestaan in Europese bedrijven, organisaties en scholen. Maar burgers moeten kunnen communiceren over deze taalgrenzen heen dwars door de Europese Gemeenschappelijk Markt, en taaltechnologie kan helpen deze laatste barri{\`e}re te overwinnen en daarmee het vrije en open gebruik van individuele talen ondersteunen.
 
 Als we nog verder in de toekomst kijken zal innovatieve Europese meertalige taaltechnologie een maatstaf bieden voor onze globale partners wanneer zij hun eigen meertalige gemeenschappen hiervan willen voorzien. Taaltechnologie kan gezien worden als een vorm van `ondersteunende technologie' die de `handicap' van taaldiversiteit helpt overwinnen en de taalgemeenschappen toegankelijker voor elkaar maakt.
 
@@ -261,11 +275,11 @@ Als we nog verder in de toekomst kijken zal innovatieve Europese meertalige taal
 
 \subsection{Uitdagingen voor Taaltechnologie}
 
-Hoewel taaltechnologie aanzienlijke vooruitgang geboekt heeft in de laatste paar jaar is het huidige tempo van de technologische vooruitgang en productinnovatie te langzaam. 
+Hoewel taaltechnologie aanzienlijke vooruitgang geboekt heeft in de laatste paar jaar is het huidige tempo van de technologische vooruitgang en productinnovatie te langzaam.
 
 \boxtext{Het huidige tempo van de technologische vooruitgang is te langzaam.}
 
-Veelgebruikte technologie{\"e}n zoals programma's voor spellings- en grammaticacontrole in tekstverwerkers zijn typisch eentalig, en zijn alleen beschikbaar voor een handjevol talen. Online diensten voor automatisch vertalen zijn nuttig om snel een redelijke benadering van de inhoud van een document te genereren maar zijn nog hoogst problematisch als het gaat om zeer accurate en volledige vertalingen. 
+Veelgebruikte technologie{\"e}n zoals programma's voor spellings- en grammaticacontrole in tekstverwerkers zijn typisch eentalig, en zijn alleen beschikbaar voor een handjevol talen. Online diensten voor automatisch vertalen zijn nuttig om snel een redelijke benadering van de inhoud van een document te genereren maar zijn nog hoogst problematisch als het gaat om zeer accurate en volledige vertalingen.
 
 Door de complexiteit van natuurlijke taal is het modelleren van ons taalgebruik in software en het testen ervan in de praktijk een lange en kostbare zaak die duurzame financieringstoezeggingen vereist. Europa moet daarom zijn pioniersrol behouden in het aangaan van de technologische uitdagingen voor een meertalige taalgemeenschap door nieuwe methodes uit te vinden om de ontwikkeling voor het hele gebied te versnellen. Dit zou zowel computationele innovaties als technieken zoals crowdsourcing kunnen omvatten.
 
@@ -273,7 +287,7 @@ Door de complexiteit van natuurlijke taal is het modelleren van ons taalgebruik 
 
  Om te illustreren hoe computers met taal omgaan en waarom het moeilijk is ze te programmeren om taal te gebruiken bekijken we kort hoe mensen eerste en tweede talen verwerven, en daarna hoe taaltechnologiesystemen werken.
 
-\boxtext{XXX Der Mensch eignet sich Sprachfertigkeiten durch das Lernen anhand von Beispielen sowie zugrunde liegender Sprachregeln an.}
+\boxtext{De mens maakt zich, door te leren aan de hand van voorbeelden, taalvaardigheden en de daaraan ten grondslag liggende taalregels eigen.}
 
  Mensen verwerven taalvaardigheden op twee verschillende manieren. Baby's verwerven een taal door te luisteren naar de interactie tussen de ouders, broers en zussen en andere familieleden. Vanaf een jaar of twee produceren kinderen hun eerste woorden en korte woordcombinaties. Dit is alleen mogelijk omdat mensen een genetisch bepaalde aanleg hebben om te imiteren en daarna te rationaliseren wat ze horen.
 
@@ -288,7 +302,7 @@ Door de complexiteit van natuurlijke taal is het modelleren van ons taalgebruik 
     Aangezien de sterktes en zwaktes van statistische en regelgebaseerde systemen complementair neigen te zijn, richt het huidige onderzoek zich op hybride benaderingen die de twee methodologie{\"e}n combineert. Tot nu toe zijn die benaderingen echter minder succesvol geweest in industri{\"e}le toepassingen dan in het onderzoekslaboratorium.
 
     Zoals we gezien hebben in dit hoofdstuk maken veel wijdverbreide toepassingen in de moderne informatiemaatschappij intensief gebruik van taaltechnologie. Vanwege de meertaligheid van de gemeenschap geldt dat in het bijzonder voor de Europese economische en informatieruimte. Hoewel taaltechnologie enorme vooruitgang geboekt heeft in de laatste paar jaar, ligt er nog een enorm potentieel om de kwaliteit van taaltechnologiesystemen te verbeteren. In de volgende secties zullen we de rol van het Nederlands in de informatiemaatschappij beschrijven en de huidige toestand van taaltechnologie voor het Nederlands evalueren.
- 
+
 \end{multicols}
 
 \clearpage
@@ -317,7 +331,7 @@ Met ongeveer 23 miljoen moedertaalsprekers is het Nederlands de achtste meest ge
 
 Het Nederlands vertoont enkele specifieke karakteristieken, die bijdragen aan de rijkdom van de taal door het sprekers mogelijk te maken idee{\"e}n tot uitdrukking te brengen op een groot aantal ver-schillende manieren. Een zo'n karakteristiek is dat het vrij gebruikelijk is om niet-onderwerpen vooraan in de zin te zetten (veel gebruikelijker dan in het Engels). Neem bijv. de Engelse zin \textit{The woman was going to the store every day.} In het Engels zijn er maar beperkte mogelijkheden om een andere woordvolgorde te gebruiken, maar in het Nederlandse equivalent kan bijna iedere woordgroep vooraan in de zin staan:
 
-\boxtext{XXX Bestimmte linguistische Merkmale des Deutschen stellen für Computer eine Herausforderung dar.}
+\boxtext{Bepaalde eigenschappen van het Nederlands vormen uitdagingen voor automatische verwerking ervan door computers.}
 
 \begin{itemize}
 \item De vrouw ging elke dag naar de winkel
@@ -326,7 +340,7 @@ Het Nederlands vertoont enkele specifieke karakteristieken, die bijdragen aan de
 \end{itemize}
 
 \boxtext{De woordvolgorde in het Nederlands is relatief vrij.}
-  
+
 
     De woordvolgorde in het Nederlands is dan ook veel vrijer dan in het Engels (maar niet zo vrij als in het Duits).
     Het Nederlands heeft een vrij productief verschijnsel van woordvorming door nieuwe samenstellingen te maken, hoewel het gebruik en de productiviteit niet zo extreem zijn als in het Duits. Desondanks komen nieuwgevormde samenstellingen frequent voor en zij zijn moeilijk te verwerken voor taaltechnologie.
@@ -439,7 +453,7 @@ Het Nederlands vertoont enkele specifieke karakteristieken, die bijdragen aan de
 \ssection[Taaltechnologische Ondersteuning voor het Nederlands]{Taaltechnologische Ondersteuning voor het Nederlands}
 
 \begin{multicols}{2}
-    Taaltechnologie{\"e}n zijn informatietechnologie{\"e}n die specifiek ingericht zijn voor het verwerken van taal zoals gebruikt door mensen. Daarom worden deze technologie{\"e}n in het Engels ook vaak aangeduid met de term `Human Language Technology'. Mensentaal komt voor in gesproken en geschreven vorm. Spraak is de oudste en meest natuurlijke manier van taalcommunicatie, maar complexe informatie en de meeste kennis die mensen hebben worden bijgehouden en overgedragen in geschreven teksten. Spraak- en teksttechnologie{\"e}n verwerken of produceren taal in deze twee realisatiewijzes. Maar taal heeft ook aspecten die gedeeld worden tussen spraak en tekst zoals woordenboeken, de meeste grammatica en de betekenis van zinnen. Daarom vallen grote delen van de taaltechnologie niet alleen onder spraaktechnologie{\"e}n of alleen onder teksttechnologie{\"e}n. Daartoe behoren ook de technologie{\"e}n die taal met kennis verbinden. De illustratie~\ref{fig:ltincontext_nl} toont het taaltechnologielandschap. 
+    Taaltechnologie{\"e}n zijn informatietechnologie{\"e}n die specifiek ingericht zijn voor het verwerken van taal zoals gebruikt door mensen. Daarom worden deze technologie{\"e}n in het Engels ook vaak aangeduid met de term `Human Language Technology'. Mensentaal komt voor in gesproken en geschreven vorm. Spraak is de oudste en meest natuurlijke manier van taalcommunicatie, maar complexe informatie en de meeste kennis die mensen hebben worden bijgehouden en overgedragen in geschreven teksten. Spraak- en teksttechnologie{\"e}n verwerken of produceren taal in deze twee realisatiewijzes. Maar taal heeft ook aspecten die gedeeld worden tussen spraak en tekst zoals woordenboeken, de meeste grammatica en de betekenis van zinnen. Daarom vallen grote delen van de taaltechnologie niet alleen onder spraaktechnologie{\"e}n of alleen onder teksttechnologie{\"e}n. Daartoe behoren ook de technologie{\"e}n die taal met kennis verbinden. De illustratie~\ref{fig:ltincontext_nl} toont het taaltechnologielandschap.
 
 
 \begin{figure*}[htb]
@@ -447,7 +461,7 @@ Het Nederlands vertoont enkele specifieke karakteristieken, die bijdragen aan de
  % \vspace{-25mm}
   \center
   \includegraphics[width=\textwidth]{../_media/dutch/language_technologies}
-  \caption{XXX Sprachtechnologie im Kontext}
+  \caption{Het taaltechnologielandschap}
   \label{fig:ltincontext_nl}
   \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
@@ -455,25 +469,25 @@ Het Nederlands vertoont enkele specifieke karakteristieken, die bijdragen aan de
 
 Bij onze communicatie vermengen we taal met andere manieren van communicatie en met andere informatiemedia. We combineren spraak met gebaren en gezichtsuitdrukkingen. Digitale teksten worden gecombineerd met plaatjes en geluiden. Films kunnen taal in gesproken en geschreven vorm bevatten. Daarom overlappen spraak- en teksttechnologie{\"e}n en interageren zij met vele andere technologie{\"e}n die het verwerken van multimodale communicatie en multimedia documenten vergemakkelijken.
 
-XXX
-Im Folgenden werden wir uns mit den Hauptanwendungsbereichen der Sprachtechnologie beschäftigen, insbesondere mit Sprachüberprüfung, Websuche, Sprach\-inter\-aktion und maschineller Übersetzung. Dies umfasst Anwendungen und Basistechnologien wie beispielsweise
+
+In de volgende secties zullen we de kerntoepassingsgebieden van de taaltechnologie beschrijven, in het bijzonder taalcontrole, zoeken op het web, spraakinteractie en automatische vertaling. Deze toepassingen omvatten het gebruik van basistechnologie{\"e}n zoals bijvoorbeeld:
 
 \begin{itemize}
-\item Rechtschreibkorrektur
-\item Unterstützung bei der Texterstellung
-\item Computergestützter Spracherwerb
-\item Informationssuche
-\item Informationsextraktion
-\item Textzusammenfassung
-\item Frage-Antwort-Systeme
-\item Spracherkennung 
-\item Sprachsynthese
+\item spellingscontrole
+\item auteursondersteuning
+\item computergesteund taalleren
+\item zoeken naar informatie
+\item extractie van informatie
+\item tekstsamenvatting
+\item vraag-antwoordsystemen
+\item taaldetectie
+\item spraaksynthese
 \end{itemize}
 
-Sprachtechnologie ist ein etabliertes Forschungsgebiet mit weitreichender Grundlagenliteratur. Der interessierte Leser sei auf \cite{carstensen-etal1, jurafsky-martin01, manning-schuetze1, lt-world1, lt-survey1} verwiesen.
+Taaltechnologie is gevestigd onderzoeksgebied, met een uitgebreide basisliteratuur. De ge{\"\i}nteresseerde lezer verwijzen we naar
+\cite{carstensen-etal1, jurafsky-martin01, manning-schuetze1, lt-world1, lt-survey1}.
 
-Bevor wir die oben genannten Anwendungsbereiche genauer behandeln, werden wir zunächst die Architektur eines typischen sprachtechnologischen Systems beschreiben. 
-XXX
+Voordat we boven genoemde toepassingsgebieden nader behandelen, zullen we eerst de architectuur van een typisch taalverwerkingssysteem beschrijven. 
 
 \subsection[Toepassingsarchitecturen voor Taaltechnologie]{Toepassingsarchitecturen voor Taaltechnologie}
 
@@ -481,7 +495,7 @@ Typische softwaretoepassingen voor taalverwerking bestaan uit meerdere component
 \begin{figure*}[b]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
-  %\vspace{-5mm} 
+  %\vspace{-5mm}
   \includegraphics[width=\textwidth]{../_media/dutch/text_processing_app_architecture}
   \caption{Een Typische Toepassingsarchitectuur voor Tekstverwerking}
   \label{fig:textprocessingarch_de}
@@ -496,15 +510,14 @@ Typische softwaretoepassingen voor taalverwerking bestaan uit meerdere component
 %
     Taakspecifieke modules voeren dan allerlei operaties uit zoals automatische samenvatting van een inputtekst, zoeken in een databank en vele andere. Beneden zullen we \textbf{kerntoepassingsgebieden} illustreren en enkele van de modules van de verschillende architecturen in iedere sectie voor het voetlicht brengen. De architecturen zoals hier geschetst zijn sterk vereenvoudigd en ge{\"\i}dealiseerd, en dienen vooral om de complexiteit van taaltechnologische toepassingen op een algemeen begrijpelijke manier duidelijk te maken.
 
-    Na de introductie van de kerntoepassingsgebieden zullen we een kort overzicht geven van de situatie in taaltechnologieonderzoek en -onderwijs, en we sluiten af met een overzicht van (in het verleden) gefinancierde programma's. Tot slot presenteren we, in tabelvorm, een inschatting door experts van de situatie met betrekking tot essenti{\"e}le taaltechnologische software en data langs een aantal dimensies, zoals beschikbaarheid, maturiteit, en kwaliteit (XXX Abbildung~\ref{fig:lrlttable_de}) . Deze tabel geeft een goed overzicht van de situatie voor taaltechnologie voor het Nederlands.
+    Na de introductie van de kerntoepassingsgebieden zullen we een kort overzicht geven van de situatie in taaltechnologieonderzoek en -onderwijs, en we sluiten af met een overzicht van (in het verleden) gefinancierde programma's. Tot slot presenteren we, in tabelvorm, een inschatting door experts van de situatie met betrekking tot essenti{\"e}le taaltechnologische software en data langs een aantal dimensies, zoals beschikbaarheid, maturiteit, en kwaliteit (Figuur~\ref{fig:lrlttable_de}) . Deze tabel geeft een goed overzicht van de situatie voor taaltechnologie voor het Nederlands.
 
-XXX
-im Text fett gedruckte Anwendungen und Ressourcen sind ebenfalls in dieser Abbildung zu finden. Im Anschluss wird das Deutsche im Hinblick auf die sprachtechnologische Unterstützung mit anderen Sprachen verglichen, die im Rahmen dieser Weißbuchserie untersucht wurden.
+De in de tekst vet gedrukte toepassingen en taalbronnen zijn eveneens in deze tabel te vinden. Daarna wordt er een vergelijking gemaakt met betrekking tot  taaltechnologische ondersteuning tussen het Nederlands en de andere talen die in deze witboekserie onderzocht zijn.
 
 
-\subsection{Kerntoepassingsgebieden} 
+\subsection{Kerntoepassingsgebieden}
 
-%In diesem Abschnitt konzentrieren wir uns auf die wichtigsten sprachtechnologischen Anwendungen und Ressourcen und geben einen Überblick über Aktivitäten im Bereich Sprachtechnologie in Deutschland, Österreich und in der Schweiz. 
+%In diesem Abschnitt konzentrieren wir uns auf die wichtigsten sprachtechnologischen Anwendungen und Ressourcen und geben einen Überblick über Aktivitäten im Bereich Sprachtechnologie in Deutschland, Österreich und in der Schweiz.
 
 
 \begin{figure*}[t]
@@ -541,9 +554,9 @@ im Text fett gedruckte Anwendungen und Ressourcen sind ebenfalls in dieser Abbil
 
 
 
-    Dit vereist hetzij de formulering van taalspecifieke grammaticaregels, d.w.z. een hoge mate van expertise en manueel werk, hetzij het gebruik van een zogenaamd statistisch taalmodel. Zulke modellen berekenen de waarschijnlijkheid van het voorkomen van een bepaald woord in een specifieke context (d.w.z. de woorden ervoor en erna). Zo is bijvoorbeeld \emph{hij verwondt} een veel waarschijnlijkere woordsequentie dan \emph{hij verwond}. Een statistisch taalmodel kan automatisch worden afgeleid van een grote hoeveelheid (correcte) taaldata (d.w.z., een corpus) (XXXsiehe Abbildung~\ref{fig:langcheckingaarch_de}). Tot nu toe zijn deze benaderingen het meest toegepast en ge{\"e}valueerd op Engelse taaldata. Maar ze zijn niet per se eenvoudig over te zetten naar het Nederlands met zijn flexibelere woordvolgorde, combinaties van werkwoorden en scheidbare prefixen, samenstellingen, en kruisende afhankelijkheden.
+    Dit vereist hetzij de formulering van taalspecifieke grammaticaregels, d.w.z. een hoge mate van expertise en manueel werk, hetzij het gebruik van een zogenaamd statistisch taalmodel. Zulke modellen berekenen de waarschijnlijkheid van het voorkomen van een bepaald woord in een specifieke context (d.w.z. de woorden ervoor en erna). Zo is bijvoorbeeld \emph{hij verwondt} een veel waarschijnlijkere woordsequentie dan \emph{hij verwond}. Een statistisch taalmodel kan automatisch worden afgeleid van een grote hoeveelheid (correcte) taaldata (d.w.z., een corpus) (zie Figuur~\ref{fig:langcheckingaarch_de}). Tot nu toe zijn deze benaderingen het meest toegepast en ge{\"e}valueerd op Engelse taaldata. Maar ze zijn niet per se eenvoudig over te zetten naar het Nederlands met zijn flexibelere woordvolgorde, combinaties van werkwoorden en scheidbare prefixen, samenstellingen, en kruisende afhankelijkheden.
 
-\boxtext{XXX Der Einsatz der Sprachprüfung ist nicht auf Textverarbeitungsprogramme beschränkt. Sie ist auch zur Autorenunterstützung anwendbar.}
+\boxtext{Taalcontrole kan niet alleen in taalverwerkingsprogramma's gebruikt worden, maar ook bij auteursondersteuning.}
 
     Het gebruik van taalcontrolesoftware is niet beperkt tot tekstverwerkers, maar kan ook toegepast worden in systemen voor auteursondersteuning. Met het stijgende aantal technische producten is in de laatste decennia ook de hoeveelheid technische documentatie snel toegenomen. Uit angst voor klachten van klanten over verkeerd gebruik en schadeclaims voortkomend uit slechte of slecht begrepen instructies, zijn bedrijven meer en meer begonnen zich te richten op de kwaliteit van technische documentatie, terwijl ze tegelijkertijd de internationale markt bedienen. Vooruitgang in de verwerking van natuurlijke taal hebben geleid tot de ontwikkeling van software voor auteursondersteuning, die de schrijver van technische documentatie assisteert om vocabulaire en zinsstructuren te gebruiken die consistent zijn met bepaalde regels en (bedrijfs)specifieke terminologiebeperkingen.
 
@@ -570,7 +583,7 @@ im Text fett gedruckte Anwendungen und Ressourcen sind ebenfalls in dieser Abbil
 
     Voor een meer gesofisticeerd verzoek om informatie is echter de integratie van diepere taalkundige kennis essentieel. In de onderzoekslaboratoria hebben experimenten met voor machines leesbare thesauri en ontologische taalbronnen zoals WordNet (of het equivalent EuroWordNet Nederlands), verbeteringen laten zien door het mogelijk te maken een pagina te vinden op basis van synoniemen van de zoektermen, bijv. \emph{kernenergie} en \emph{nucleaire energie}, of zelfs losser gerelateerde termen.
 
-    De volgende generatie zoekmachines zal meer gesofisticeerde taaltechnologie moeten bevatten. Als een zoekopdracht bestaat uit een vraag of een ander type zin dan simpelweg een lijstje trefwoorden, dan vereist het ophalen van relevante antwoorden voor deze zoekopdracht een analyse van deze zin op syntactisch en semantisch niveau (XXX siehe Abbildung~\ref{fig:websearcharch_de}) evenals de beschikbaarheid van een index die het mogelijk maakt snel de relevante documenten op te halen. Stelt u zich bijvoorbeeld voor dat een gebruiker als zoekopdracht ingeeft: `Geef me een lijst van alle bedrijven die overgenomen zijn door andere bedrijven in de laatste vijf jaar'. Voor een bevredigend antwoord moet er syntactische ontleding (parsing) toegepast worden om de grammaticale structuur van de zin te analyseren en te bepalen dat de gebruiker zoekt naar bedrijven die overgenomen zijn en niet bedrijven die overgenomen hebben. Ook de uitdrukking \emph{in de laatste vijf jaar} moet verwerkt worden om te bepalen naar welke jaren het precies verwijst.
+    De volgende generatie zoekmachines zal meer gesofisticeerde taaltechnologie moeten bevatten. Als een zoekopdracht bestaat uit een vraag of een ander type zin dan simpelweg een lijstje trefwoorden, dan vereist het ophalen van relevante antwoorden voor deze zoekopdracht een analyse van deze zin op syntactisch en semantisch niveau (zie Figuur~\ref{fig:websearcharch_de}) evenals de beschikbaarheid van een index die het mogelijk maakt snel de relevante documenten op te halen. Stelt u zich bijvoorbeeld voor dat een gebruiker als zoekopdracht ingeeft: `Geef me een lijst van alle bedrijven die overgenomen zijn door andere bedrijven in de laatste vijf jaar'. Voor een bevredigend antwoord moet er syntactische ontleding (parsing) toegepast worden om de grammaticale structuur van de zin te analyseren en te bepalen dat de gebruiker zoekt naar bedrijven die overgenomen zijn en niet bedrijven die overgenomen hebben. Ook de uitdrukking \emph{in de laatste vijf jaar} moet verwerkt worden om te bepalen naar welke jaren het precies verwijst.
 
     Tot slot moet de verwerkte zoekopdracht vergeleken worden met een gigantische hoeveelheid ongestructureerde data om het stukje of de stukjes informatie te vinden waar de gebruiker naar zoekt. Dit wordt gewoonlijk \emph{information retrieval} genoemd en omvat het zoeken naar en rangschikken van relevante documenten. Bovendien moeten we om een lijst van bedrijven te genereren ook de informatie extraheren dat een bepaalde karakterreeks in een document verwijst naar de naam van een bedrijf. Dat soort informatie wordt beschikbaar gemaakt door herkenning van benoemde entiteiten met behulp van zogenaamde named-entity recognizers.
 
@@ -579,10 +592,10 @@ im Text fett gedruckte Anwendungen und Ressourcen sind ebenfalls in dieser Abbil
     In Nederland zijn verschillende bedrijven actief op deze gebieden, waaronder AskNow Solutions, Carp Technologies, GridLine, Irion Technologies, Knowledge Concepts, MediaLab Solutions, RightNow! (voorheen Q-Go), TextKernel, en andere. In Belgi{\"e} zijn Natlanco, InterSystems (voorheen i.Know), ICMS, Aktor Technologies, Mentoring Systems en CrossMinder actief op deze gebieden.
 
     De focus van de ontwikkeling ligt voor deze bedrijven in het leveren van bijkomende functionaliteit en geavanceerde zoekmachines voor portalen gericht op specifieke onderwerpen door gebruik te maken van onderwerpsrelevante semantiek. Vanwege de steeds nog hoge vereisten aan verwerkingskracht zijn zulke zoekmachines alleen economisch rendabel op relatief kleine tekstcorpora. De benodigde verwerkingstijd gaat al snel die van een gewone statistische zoekmachine (bijv. Google) met een factor van een ordegrootte van enkele duizenden te boven. Deze zoekmachines stellen ook hoge eisen aan onderwerpspecifieke domeinmodellering, waardoor het niet mogelijk is ze te gebruiken op de schaal van het web.
-  
+
 \subsubsection{Spraakinteractie}
 
-  Spraakinteractie is een van de vele toepassingsgebieden die afhankelijk zijn van spraaktechnologie, d.w.z. technologie{\"e}n om gesproken taal te verwerken. Spraaktechnologie wordt gebruikt om interfaces te cre{\"e}ren die een gebruiker in staat stellen te werken met machines via gesproken taal in plaats van via een grafisch scherm, een toetsenbord, en een muis. Vandaag de dag worden deze stemgestuurde interfaces (`voice user interfaces', VUIs) gebruikt voor het gedeeltelijk of geheel automatiseren van diensten die aangeboden worden door bedrijven aan hun klanten, medewerkers, of partners via de telefoon (XXX siehe Abbildung~\ref{fig:dialoguearch_de}). Bedrijfsdomeinen die een grootschalig beroep doen op VUIs zijn bankieren, logistiek, openbaar vervoer, en telecommunicatie. Spraaktechnologie wordt ook gebruikt als interface naar specifieke apparaten, bijv. navigatiesystemen in de auto, en als alternatief voor de input/output modaliteiten van grafische  gebruikersinterfaces, bijv.  in `smart phones', d.w.z. intelligente mobiele telefoons.
+  Spraakinteractie is een van de vele toepassingsgebieden die afhankelijk zijn van spraaktechnologie, d.w.z. technologie{\"e}n om gesproken taal te verwerken. Spraaktechnologie wordt gebruikt om interfaces te cre{\"e}ren die een gebruiker in staat stellen te werken met machines via gesproken taal in plaats van via een grafisch scherm, een toetsenbord, en een muis. Vandaag de dag worden deze stemgestuurde interfaces (`voice user interfaces', VUIs) gebruikt voor het gedeeltelijk of geheel automatiseren van diensten die aangeboden worden door bedrijven aan hun klanten, medewerkers, of partners via de telefoon (zie Figuur~\ref{fig:dialoguearch_de}). Bedrijfsdomeinen die een grootschalig beroep doen op VUIs zijn bankieren, logistiek, openbaar vervoer, en telecommunicatie. Spraaktechnologie wordt ook gebruikt als interface naar specifieke apparaten, bijv. navigatiesystemen in de auto, en als alternatief voor de input/output modaliteiten van grafische  gebruikersinterfaces, bijv.  in `smart phones', d.w.z. intelligente mobiele telefoons.
 
 \boxtext{Sprachtechnologie ermöglicht Schnittstellen, über die ein Nutzer mittels gesprochener Sprache interagieren kann.}
 
@@ -642,20 +655,20 @@ im Text fett gedruckte Anwendungen und Ressourcen sind ebenfalls in dieser Abbil
 
     Vanaf de late jaren tachtig van de vorige eeuw kwam er, aangezien de computationele kracht toenam en minder duur werd, meer belangstelling voor statistische modellen voor MT. De parameters van deze statistische modellen worden afgeleid uit de analyse van tweetalige tekstcorpora, zoals het \emph{Europarl} parallelle corpus, dat de notulen van het Europees Parlement bevat in 11 Europese talen. Als er genoeg data zijn werkt statistische MT goed genoeg om een benadering van de betekenis van een tekst in een vreemde taal te verkrijgen. Maar, in tegenstelling tot kennisgedreven systemen, produceert statistische (of datagedreven) MT vaak ongrammaticale output. Anderzijds kan datagedreven MT, naast het voordeel dat minder menselijke inspanning vereist is voor het schrijven van de grammatica, ook eigenaardigheden van de taal die minder makkelijke te vangen zijn in kennisgedreven systemen afdekken, zoals idiomatische uitdrukkingen.
 
-    Aangezien de sterktes en zwaktes van de kennis- en datagedreven MT (XXX siehe Abbildung~\ref{fig:mtarch_de}) complementair zijn, richten onderzoekers zich tegenwoordig unaniem op hybride benaderingen waarin methodologie{\"e}n van beide gecombineerd worden. Dit kan op verschillende manieren gedaan worden. E{\'e}n mogelijkheid is om zowel kennisgedreven als datagedreven systemen te gebruiken en een selectiemodule de beste output te laten kiezen voor iedere zin. Voor langere zinnen zal echter geen enkel resultaat perfect zijn. Een betere oplossing is het om de beste delen van zinnen van meervoudige output te combineren, maar dat kan behoorlijk complex zijn omdat niet altijd evident is welke delen van meervoudige alternatieven corresponderen en gealigneerd moeten worden.
+    Aangezien de sterktes en zwaktes van de kennis- en datagedreven MT (Zie Figuur~\ref{fig:mtarch_de}) complementair zijn, richten onderzoekers zich tegenwoordig unaniem op hybride benaderingen waarin methodologie{\"e}n van beide gecombineerd worden. Dit kan op verschillende manieren gedaan worden. E{\'e}n mogelijkheid is om zowel kennisgedreven als datagedreven systemen te gebruiken en een selectiemodule de beste output te laten kiezen voor iedere zin. Voor langere zinnen zal echter geen enkel resultaat perfect zijn. Een betere oplossing is het om de beste delen van zinnen van meervoudige output te combineren, maar dat kan behoorlijk complex zijn omdat niet altijd evident is welke delen van meervoudige alternatieven corresponderen en gealigneerd moeten worden.
 
-\boxtext{Voor het Nederlands is automatisch vertalen bijzonder uitdagend.} 
+\boxtext{Voor het Nederlands is automatisch vertalen bijzonder uitdagend.}
 
 Voor het Nederlands is MT bijzonder uitdagend. De mogelijkheid om willekeurig nieuwe woorden te cre{\"e}ren door samenstelling maakt woordenboekanalyse en woordenboekafdekking moeilijk; relatief vrije woordvolgorde, gespleten werkwoordconstructies en R-pronomina zijn eveneens problematisch voor analyse.
 
-    Leidende commerci{\"e}le MT-systemen uit het verleden zoals Systran, Globalink, LOGOS, METAL (en zijn spin-offs, LANT (tegenwoordig Xplanation), GMS and Lucy Software), en LMT ontwikkeld door IBM (dat de basis vormt voor Linguatec en Lingenio), dekten nooit het Nederlands af, waarschijnlijk om dat het niet interessant was vanuit commercieel oogpunt. 
+    Leidende commerci{\"e}le MT-systemen uit het verleden zoals Systran, Globalink, LOGOS, METAL (en zijn spin-offs, LANT (tegenwoordig Xplanation), GMS and Lucy Software), en LMT ontwikkeld door IBM (dat de basis vormt voor Linguatec en Lingenio), dekten nooit het Nederlands af, waarschijnlijk om dat het niet interessant was vanuit commercieel oogpunt.
    %
 \begin{figure*}[tb]
   \centering
   \setlength{\tabcolsep}{0.17em}
   \small
   \begin{tabular}{>{\columncolor{corange1}}cccccccccccccccccccccccc}
-    & \multicolumn{22}{>{\columncolor{corange1}}c}{XXX Zielsprache -- \textcolor{grey1}{Target language}}\\\addlinespace[{-.009cm}]
+    & \multicolumn{22}{>{\columncolor{corange1}}c}{Doeltaal -- \textcolor{grey1}{Target language}}\\\addlinespace[{-.009cm}]
     \rowcolor{corange1}  & EN & BG & DE & CS & DA & EL & ES & ET & FI & FR & HU & IT & LT & LV & MT & NL & PL & PT & RO & SK & SL & SV\\
     EN & -- & \textcolor{blue}{40.5} & \textcolor{blue}{46.8} & \textcolor{green2}{52.6} & \textcolor{green2}{50.0} & \textcolor{blue}{41.0} & \textcolor{green2}{55.2} & \textcolor{purple}{34.8} & \textcolor{purple}{38.6} & \textcolor{green2}{50.1} & \textcolor{purple}{37.2} & \textcolor{green2}{50.4} & \textcolor{purple}{39.6} & \textcolor{blue}{43.4} & \textcolor{purple}{39.8} & \textcolor{green2}{52.3} & \textcolor{blue}{49.2} & \textcolor{green2}{55.0} & \textcolor{blue}{49.0} & \textcolor{blue}{44.7} & \textcolor{green2}{50.7} & \textcolor{green2}{52.0}\\
     BG & \textcolor{green}{61.3} & -- & \textcolor{purple}{38.7} & \textcolor{purple}{39.4} & \textcolor{purple}{39.6} & \textcolor{purple}{34.5} & \textcolor{blue}{46.9} & \textcolor{red3}{25.5} & \textcolor{red3}{26.7} & \textcolor{blue}{42.4} & \textcolor{red3}{22.0} & \textcolor{blue}{43.5} & \textcolor{red3}{29.3} & \textcolor{red3}{29.1} & \textcolor{red3}{25.9} & \textcolor{blue}{44.9} & \textcolor{purple}{35.1} & \textcolor{blue}{45.9} & \textcolor{purple}{36.8} & \textcolor{purple}{34.1} & \textcolor{purple}{34.1} & \textcolor{purple}{39.9}\\
@@ -680,7 +693,7 @@ Voor het Nederlands is MT bijzonder uitdagend. De mogelijkheid om willekeurig ni
     SL & \textcolor{green}{61.0} & \textcolor{purple}{33.1} & \textcolor{purple}{37.9} & \textcolor{blue}{43.5} & \textcolor{blue}{42.6} & \textcolor{purple}{34.0} & \textcolor{blue}{47.0} & \textcolor{purple}{31.1} & \textcolor{red3}{28.8} & \textcolor{purple}{38.2} & \textcolor{red3}{25.7} & \textcolor{blue}{42.3} & \textcolor{purple}{34.6} & \textcolor{purple}{37.3} & \textcolor{purple}{30.0} & \textcolor{blue}{45.9} & \textcolor{purple}{38.2} & \textcolor{blue}{44.1} & \textcolor{purple}{35.8} & \textcolor{purple}{38.9} & -- & \textcolor{blue}{42.7}\\
     SV & \textcolor{green2}{58.5} & \textcolor{red3}{26.9} & \textcolor{blue}{41.0} & \textcolor{purple}{35.6} & \textcolor{blue}{46.6} & \textcolor{purple}{33.3} & \textcolor{blue}{46.6} & \textcolor{red3}{27.4} & \textcolor{purple}{30.9} & \textcolor{purple}{38.9} & \textcolor{red3}{22.7} & \textcolor{blue}{42.0} & \textcolor{red3}{28.2} & \textcolor{purple}{31.0} & \textcolor{red3}{23.7} & \textcolor{blue}{45.6} & \textcolor{purple}{32.2} & \textcolor{blue}{44.2} & \textcolor{purple}{32.7} & \textcolor{purple}{31.3} & \textcolor{purple}{33.5} & --\\
     \end{tabular}
-  \caption{xxx Maschinelle Übersetzung zwischen 22 EU-Sprachen -- \textcolor{grey1}{Machine translation between 22 EU-languages \cite{euro1}}}
+  \caption{Automatische vertaling tussen 22 EU-talen -- \textcolor{grey1}{Machine translation between 22 EU-languages \cite{euro1}}}
   \label{fig:euromatrix_de}
 \end{figure*}
 %
@@ -696,7 +709,7 @@ Voor het Nederlands is MT bijzonder uitdagend. De mogelijkheid om willekeurig ni
     Evaluatiecampagnes dragen ertoe bij de kwaliteit van automatische vertaalsystemen, de verschillende benaderingen, en de status van de systemen voor de verschillende taalparen te vergelijken. Tabel~\ref{fig:euromatrix_de}, die opgesteld is tijdens het Europese Euromatrix+ project, laat de paarsgewijze performantie voor 22 van de 23 offici{\"e}le EU-talen zien (Het Iers werd niet vergeleken). De resultaten zijn gerangschikt naar een BLEU score, waarin hogere scores corresponderen met betere vertalingen \cite{bleu1}.   Een menselijke vertaler zou een score halen van rond de 80 punten.
 
     De beste resultaten (in groen en blauw) werden bereikt voor talen die profiteren van een aanzienlijke onderzoeksinspanning in geco-ordineerde programma's en van het bestaan van vele parallelle corpora (bijv. Engels, Frans, Nederlands, Spaans en Duits). De talen met minder goede resultaten staan weergegeven in rood. Deze talen ontberen zulke ontwikkelingsinspanningen of verschillen structureel heel erg van andere talen (bijv. Hongaars, Maltees en Fins).
-    
+
 \subsection{Taaltechnologie `Achter de Schermen' }
 
     Het bouwen van taaltechnologische toepassingen omvat een reeks van subtaken die niet altijd aan de oppervlakte komen op het niveau van de interactie met de gebruiker, maar die significante functionaliteit bieden `onder de motorkap' van het systeem. Daarom vormen zij belangrijke onderzoeksthema's, die in de academische wereld individuele subdisciplines binnen de computationele taalkunde zijn geworden.
@@ -710,13 +723,13 @@ Voor het Nederlands is MT bijzonder uitdagend. De mogelijkheid om willekeurig ni
 
  Hoewel dit overduidelijk verwant is aan het eerder genoemde kerngebied van het zoeken op het web, is QA tegenwoordig vooral een overkoepelende term voor onderzoeksvragen zoals wat voor typen vragen onderscheiden moeten worden en hoe ze behandeld moeten worden, hoe een verzameling documenten die mogelijk het antwoord bevatten geanalyseerd en vergeleken moeten worden (geven ze tegenstrijdige antwoorden?), en hoe specifieke informatie - het antwoord - op betrouwbare manier onttrokken kan worden aan een document, zonder daarbij de context te negeren, wat onte-recht zou zijn.
 
-\boxtext{XXX Sprachtechnologieanwendungen bieten hinter den Kulissen häufig wichtige Servicefunktionen.}
+\boxtext{Taaltechnologische toepassingen bieden achter de schermen vaak significante functionaliteit.}
 
     Dit is op zijn beurt weer verwant aan de taak van informatie-extractie (IE), een gebied dat bijzonder populair en invloedrijk was ten tijde van de `statistische omslag' in de computationele taalkunde, in de vroege jaren negentig van de vorige eeuw. IE beoogt specifieke stukken informatie te identificeren in specifieke klassen documenten; bijvoorbeeld het detecteren van de belangrijkste spelers bij bedrijfsovernames zoals gerapporteerd in krantenberichten. Een ander scenario waarop gewerkt is wordt gevormd door rapporten over terroristische voorvallen, waarbij het probleem is om een tekst af te beelden op een templaat dat de dader, het doelwit, de tijd en de plaats van het voorval, en het resultaat van het voorval beschrijft. Het vullen van domeinspecifieke templaten is een centrale karakteristiek van IE, dat om deze reden een ander voorbeeld is van een technologie `achter de schermen' die een goed afgebakend onderzoeksgebied vormt maar voor praktische doeleinden ingebed moet worden in een gepaste toepassingsomgeving.
 
     Twee `grensgevallen', die soms de rol spelen van zelfstandige toepassing en soms die van een ondersteunende component `onder de motorkap', zijn tekstsamenvatting en tekstgeneratie. Samenvatting verwijst vanzelfsprekend naar de taak om een lange tekst kort te maken, wordt gebruikt in vrijwel iedere zoekmachine om een fragment van een gevonden document te leveren, en wordt bijvoorbeeld ook als functionaliteit aangeboden in MS Word. Het werkt grotendeels op statistische basis, door eerst `belangrijke' woorden in een tekst te identificeren (d.w.z., bijvoorbeeld woorden die een hoge frequentie hebben in deze tekst maar beduidend minder frequent zijn in algemeen taalgebruik) en vervolgens die zinnen te identificeren die veel `belangrijke' woorden bevatten. Die zinnen worden dan aangeduid in het document of eruit ge{\"e}xtraheerd, en vormen zo de samenvatting. Onder dit scenario, dat verreweg het populairst is, is samenvatting identiek aan zinsextractie: de tekst wordt gereduceerd tot een deelverzameling van de zinnen van de tekst. Alle commerci{\"e}le samenvatters maken gebruik van dit idee. Een alternatieve benadering, waar wat onderzoek aan gewijd wordt, is om daadwerkelijk nieuwe zinnen te synthetiseren, d.w.z. om een samenvatting van zinnen te construeren die niet in die vorm in de brontekst voorkomen. Dit vereist een dieper begrip van de tekst en is daarom veel minder robuust. Over het algemeen is een tekstgenerator niet een zelfstandige toepassing maar ingebed in een grotere softwareomgeving, bijv. in een klinisch informatiesysteem waar pati{\"e}ntendata worden verzameld, opgeslagen en verwerkt en het genereren van een rapport slechts een van de vele functionaliteiten is.
 
-\boxtext{Voor het Nederlands is de situatie in vele onderzoeksgebieden veel minder ontwikkeld dan voor het Engels.} 
+\boxtext{Voor het Nederlands is de situatie in vele onderzoeksgebieden veel minder ontwikkeld dan voor het Engels.}
 
     Voor het Nederlands is de situatie in al deze onderzoeksgebieden veel minder ontwikkeld dan voor het Engels, waar vraagbeantwoording, informatie-extractie en samenvatting sinds de negentiger jaren van de vorige eeuw het onderwerp zijn geweest van talloze open competities, vooral georganiseerd door DARPA/NIST in de Verenigde Staten. Deze competities hebben het technisch niveau flink verbeterd, maar de focus heeft altijd gelegen op het Engels; enkele competities hebben meertalige sporen toegevoegd, maar het Nederlands was nooit prominent, hoewel enkele uitdagingen georganiseerd werden vanuit Vlaanderen \cite{SemEval}.  Daartegenover staat dat onderzoek aan vraagbeantwoording werd bevorderd door het IMIX-programma dat zich richtte op Interactieve Multimodale Informatie-eXtractie toegepast op Nederlandse bronnen \cite{IMIX}.  In dit programma zijn een vraag-antwoordsysteem met spraakinput en -output en met ondersteuning voor vervolgvragen ontwikkeld voor het algemene domein en {\'e}{\'e}n voor het medische domein. Eveneens zijn er systemen ontwikkeld om tekstuele output te genereren in combinatie met andere modaliteiten, en systemen voor dialoogmanagement om alle modules met elkaar te verbinden. Het bedrijf RightNow! (voorheen Q-GO) uit Nederland is zeer succesvol geweest op het gebied van tekstuele vraag-antwoordsystemen die werken via chats of e-mail. De universiteit van Eindhoven (IPO) heeft gewerkt op een taal- en spraakgeneratiesysteem, dat later verworven is door Polderland (en nu waarschijnlijk eigendom is van Knowledge Concepts), maar het lijkt nauwelijks gebruikt te zijn buiten het oorspronkelijke doel \cite{Theune:2003}.  De universiteit van Tilburg heeft gewerkt aan het samenvatten van meerdere documenten (daarbij verschillende boodschappen over hetzelfde onderwerp integrerend) in het STEVIN DAESO project \cite{DAESO}.  Desondanks zijn er nauwelijks geannoteerde corpora of andere taalbronnen voor deze taken.
 
@@ -725,9 +738,10 @@ Voor het Nederlands is MT bijzonder uitdagend. De mogelijkheid om willekeurig ni
     In de academische wereld zijn er excellente centra op het gebied van de taaltechnologie, bijv. de KU Leuven, de Universiteit van Gent, de Radboud Universiteit Nijmegen en de Universiteit van Twente voor spraaktechnologie, de universiteiten van Tilburg en Antwerpen voor `machine learning' technieken in de taaltechnolo-gie, de Universiteit van Utrecht en de KU Leuven voor taaltechnologie en automatisch vertalen, Groningen en Amsterdam voor automatisch ontleden, Amsterdam voor `sentiment mining', etc. Het is echter zeer moeilijk om studenten aan te trekken naar het veld van de taaltechnologie. Mogelijke oorzaken hiervoor kunnen zijn: de relatief slechte zichtbaarheid van taaltechnologie in de universitaire curricula, en het feit dat de meest taaltechnologische onderzoeksgroepen in de geesteswetenschappen zitten (studenten daar zijn niet geneigd een technische blik op taal te ontwikkelen, wat vereist is voor taaltechnologie).
 
     De academische spelers in Nederland en Vlaanderen richten zich niet noodzakelijkerwijs op het Nederlands: bij het onderzoek ligt de focus typisch op het Engels om zinnige vergelijkingen te kunnen maken met resultaten van buitenlandse onderzoekers. Desondanks zijn verschillende onderzoekers actief op het gebied van het computerondersteunde taalonderwijs, waar taal- en spraaktechnologie ingezet worden om de taalvaardigheden van eerste- en tweedetaalleerders te verbeteren. Relevante organisaties zijn o.a. de RU Nijmegen, de Universiteit van Antwerpen Linguapolis and KULAK.
-    
- \subsection{Taaltechnologische industrie en Programma's}
-XXX we merged the two sections to save the TOC from breaking on two pages, new headline could be 
+
+ \subsection{Taaltechnologische industrie en programma's}
+%XXX we merged the two sections to save the TOC from breaking on two pages, new headline could be
+%JO: OK
 
 \subsubsection{Taaltechnologische industrie}
 
@@ -752,31 +766,31 @@ XXX we merged the two sections to save the TOC from breaking on two pages, new h
 
 \subsection{De Beschikbaarheid van Gereedschappen en Data}
 
-    De volgende tabel vat de huidige toestand van ondersteuning voor taaltechnologie voor het Nederlands samen (XXX Abbildung~\ref{fig:lrlttable_de}). De scores voor bestaande technologie{\"e}n en data zijn gegenereerd door leidende experts in het vakgebied die schattingen gemaakt hebben van 0 (zeer laag) tot 6 (zeer hoog) voor zeven criteria.
+    De huidige toestand van ondersteuning voor taaltechnologie voor het Nederlands wordt samengevat in Tabel~\ref{fig:lrlttable_de). De scores voor bestaande technologie{\"e}n en data zijn gegenereerd door leidende experts in het vakgebied die schattingen gemaakt hebben van 0 (zeer laag) tot 6 (zeer hoog) voor zeven criteria.
 
 
 \begin{figure*}[htb]
   \centering
 \begin{tabular}{>{\columncolor{orange1}}p{.33\linewidth}@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c}
   \rowcolor{orange1}
-   \cellcolor{white}&\begin{sideways}\makecell[l]{Quantität}\end{sideways}
-  &\begin{sideways}\makecell[l]{\makecell[l]{Verfügbarkeit} }\end{sideways} &\begin{sideways}\makecell[l]{Qualität}\end{sideways}
-  &\begin{sideways}\makecell[l]{Abdeckung}\end{sideways} &\begin{sideways}\makecell[l]{Ausgereiftheit}\end{sideways} &\begin{sideways}\makecell[l]{Nachhaltigkeit}\end{sideways} &\begin{sideways}\makecell[l]{Adaptierbarkeit~~}\end{sideways} \\ \addlinespace
-  \multicolumn{8}{>{\columncolor{orange2}}l}{Sprachtechnologie: Werkzeuge, Technologien und Anwendungen} \\\addlinespace
- XXX Speech Recognition&2,4&4,8&4,8&3,6&4,8&4,8&2,4\\ \addlinespace
-Speech Synthesis&2,4&2,4&4,8&4,8&4,8&3,6&1,2\\ \addlinespace
-Grammatical Analysis&3,6&5,4&4,8&3,6&4,8&3,6&1,8\\ \addlinespace
-Semantic Analysis&0,8&4&3&3&2,4&1,6&1,6\\ \addlinespace
-Text Generation&1,2&2,4&3,6&3&2,4&2,4&2,4\\ \addlinespace
-Machine Translation&6&6&2,4&4,8&3,6&1,2&2,4\\ \addlinespace
-  \multicolumn{8}{>{\columncolor{orange2}}l}{Sprachressourcen: Ressourcen, Daten und Wissensbanken} \\\addlinespace
-Text corpora&2,4&6&4,8&2,4&4,2&4,8&2,4\\ \addlinespace
-Speech corpora&2,4&4,8&6&4,8&4,8&4,8&1,2\\ \addlinespace
-Parallel corpora&1,2&6&3,6&2,4&4,8&2,4&1,2\\ \addlinespace
-Lexical resources&3&4,8&4,2&3,7&4,2&4,8&1,2\\ \addlinespace
-Grammars&1,2&4,8&3,6&2,5&4,8&2,4&1,2\\ \addlinespace
+   \cellcolor{white}&\begin{sideways}\makecell[l]{Kwantiteit}\end{sideways}
+  &\begin{sideways}\makecell[l]{\makecell[l]{Beschikbaarheid} }\end{sideways} &\begin{sideways}\makecell[l]{Kwaliteit}\end{sideways}
+  &\begin{sideways}\makecell[l]{Overdekking}\end{sideways} &\begin{sideways}\makecell[l]{Maturiteit}\end{sideways} &\begin{sideways}\makecell[l]{Duurzaamheid}\end{sideways} &\begin{sideways}\makecell[l]{Aanpasbaarheid~~}\end{sideways} \\ \addlinespace
+  \multicolumn{8}{>{\columncolor{orange2}}l}{Taaltechnologie: Hulpmiddelen, Technologie{\"e}n en Toepassingen} \\\addlinespace
+Spraakherkenning&2,4&4,8&4,8&3,6&4,8&4,8&2,4\\ \addlinespace
+Spraaksynthese&2,4&2,4&4,8&4,8&4,8&3,6&1,2\\ \addlinespace
+Grammaticale analyse&3,6&5,4&4,8&3,6&4,8&3,6&1,8\\ \addlinespace
+Semantische analyse&0,8&4&3&3&2,4&1,6&1,6\\ \addlinespace
+Tekstgeneratie&1,2&2,4&3,6&3&2,4&2,4&2,4\\ \addlinespace
+Automatisch vertalen&6&6&2,4&4,8&3,6&1,2&2,4\\ \addlinespace
+  \multicolumn{8}{>{\columncolor{orange2}}l}{Taalbronnen: Data en Kennisbanken} \\\addlinespace
+Tekstcorpora&2,4&6&4,8&2,4&4,2&4,8&2,4\\ \addlinespace
+Spraakcorpora&2,4&4,8&6&4,8&4,8&4,8&1,2\\ \addlinespace
+Parallelle corpora&1,2&6&3,6&2,4&4,8&2,4&1,2\\ \addlinespace
+Lexicale taalbronnen&3&4,8&4,2&3,7&4,2&4,8&1,2\\ \addlinespace
+Grammatica's&1,2&4,8&3,6&2,5&4,8&2,4&1,2\\ \addlinespace
   \end{tabular}
-  \caption{XXX Stand der Sprachtechnologieunterstützung für das Deutsche}
+  \caption{Status van de taaltechnologische ondersteuning voor het Nederlands}
   \label{fig:lrlttable_de}
 \end{figure*}
 
@@ -801,7 +815,7 @@ De huidige toestand van taaltechnologische ondersteuning  varieert behoorlijk va
 De talen werden verdeeld over clusters op basis van de volgende vijfpuntsschaal:
 
 \begin{enumerate}
-\item Uitstekende ondersteuning 
+\item Uitstekende ondersteuning
 \item Goede ondersteuning
 \item Gematigde ondersteuning
 \item  Fragmentarische ondersteuning
@@ -851,56 +865,57 @@ De tabellen ~\ref{fig:speech_cluster_de} tot~\ref{fig:resources_cluster_de}  lat
   \small
   \centering
   \begin{tabular}
-  { 
+  {
   >{\columncolor{corange5}}p{.13\linewidth}@{\hspace{.040\linewidth}}
   >{\columncolor{corange4}}p{.13\linewidth}@{\hspace{.040\linewidth}}
   >{\columncolor{corange3}}p{.13\linewidth}@{\hspace{.040\linewidth}}
   >{\columncolor{corange2}}p{.13\linewidth}@{\hspace{.040\linewidth}}
-  >{\columncolor{corange1}}p{.13\linewidth} 
+  >{\columncolor{corange1}}p{.13\linewidth}
   }
-  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Uitstekende}} & 
+  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Uitstekende}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Goede}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Gematigde}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Fragmentarische}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{Zwakke of geen}} \\ 
-  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Ondersteuning}} & 
+  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{Zwakke of geen}} \\
+  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Ondersteuning}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Ondersteuning}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Ondersteuning}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Ondersteuning}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{Ondersteuning}} \\ \addlinespace
 
-  & \vspace*{0.5mm}Engels 
-  & \vspace*{0.5mm}Duits \newline   
-  Italiaans \newline  
-  Fins \newline 
-  Frans \newline 
-  Nederlands \newline 
-  Portugees \newline 
+  & \vspace*{0.5mm}Engels
+  & \vspace*{0.5mm}Duits \newline
+  Fins \newline
+  Frans \newline
+  Italiaans \newline
+  Nederlands \newline
+  Portugees \newline
   Spaans \newline
-  Tsjechisch \newline 
-  & \vspace*{0.5mm}Baskisch \newline 
-  Bulgaars \newline 
-  Deens \newline 
-  Ests \newline 
-  Galicisch \newline 
-  Grieks \newline  
-  Iers \newline  
-  Catalaans \newline 
-  Noors \newline 
-  Pools \newline 
-  Zweeds \newline
-  Servisch \newline 
-  Slowaaks \newline 
-  Sloveens \newline 
-  Hongaars \newline
-  & \vspace*{0.5mm}IJslands \newline  
-  Croatisch \newline 
-  Lets \newline 
-  Litouws \newline 
-  Maltees \newline 
+  Tsjechisch \newline
+  & \vspace*{0.5mm}Baskisch \newline
+  Bulgaars \newline
+  Catalaans \newline
+  Deens \newline
+  Ests \newline
+  Galicisch \newline
+  Grieks \newline
+ Hongaars \newline 
+ Iers \newline
+  Noors \newline
+  Pools \newline
+  Servisch \newline
+  Slowaaks \newline
+  Sloveens \newline
+   Zweeds \newline
+  & \vspace*{0.5mm}
+  Croatisch \newline
+ IJslands \newline
+  Lets \newline
+  Litouws \newline
+  Maltees \newline
   Roemeens \\
   \end{tabular}
-  \caption{XXX Verarbeitung gesprochener Sprache: Stand der Unterstützung für 30 europäische Sprachen}
+  \caption{Spraakverwerking: Status van de ondersteuning voor 30 Europese talen}
   \label{fig:speech_cluster_de}
 \end{figure*}
 
@@ -913,51 +928,52 @@ De tabellen ~\ref{fig:speech_cluster_de} tot~\ref{fig:resources_cluster_de}  lat
   >{\columncolor{corange4}}p{.13\linewidth}@{\hspace{.040\linewidth}}
   >{\columncolor{corange3}}p{.13\linewidth}@{\hspace{.040\linewidth}}
   >{\columncolor{corange2}}p{.13\linewidth}@{\hspace{.040\linewidth}}
-  >{\columncolor{corange1}}p{.13\linewidth} 
+  >{\columncolor{corange1}}p{.13\linewidth}
   }
-  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Uitstekende}} & 
+  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Uitstekende}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Goede}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Gematigde}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Fragmentarische}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{Zwakke of geen}} \\ 
-  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Ondersteuning}} & 
+  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{Zwakke of geen}} \\
+  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Ondersteuning}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Ondersteuning}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Ondersteuning}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Ondersteuning}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{Ondersteuning}} \\ \addlinespace
 
-  & \vspace*{0.5mm}Engels  
-  & \vspace*{0.5mm}Frans \newline 
-  Spanisch 
-  & \vspace*{0.5mm}Duits \newline 
-  Italiaans \newline 
-  Catalaans \newline 
-  Nederlands \newline 
-  Pools \newline 
-  Roemeens \newline 
-  Hongaars 
-  & \vspace*{0.5mm}Baskisch \newline 
-  Bulgaars \newline 
-  Deens \newline 
-  Ests \newline 
-  Fins \newline 
-  Galicisch \newline 
-  Grieks \newline 
-  Iers \newline 
-  IJslands \newline 
-  Croatisch \newline 
-  Lets \newline 
-  Litouws \newline 
-  Maltees \newline 
-  Noors \newline 
-  Portugees \newline 
-  Zweeds \newline 
-  Servisch \newline 
-  Slowaaks \newline 
-  Sloveens \newline 
-  Tsjechisch \newline
+  & \vspace*{0.5mm}Engels
+  & \vspace*{0.5mm}Frans \newline
+  Spanisch
+  & \vspace*{0.5mm}
+  Catalaans \newline
+Duits \newline
+  Hongaars \newline
+  Italiaans \newline
+  Nederlands \newline
+  Pools \newline
+  Roemeens \newline
+  & \vspace*{0.5mm}Baskisch \newline
+  Bulgaars \newline
+  Croatisch \newline
+ Deens \newline
+  Ests \newline
+  Fins \newline
+  Galicisch \newline
+  Grieks \newline
+  Iers \newline
+  IJslands \newline
+    Lets \newline
+  Litouws \newline
+  Maltees \newline
+  Noors \newline
+  Portugees \newline
+   Servisch \newline
+  Sloveens \newline
+  Slowaaks \newline
+ Tsjechisch \newline
+  Zweeds \newline
   \end{tabular}
-  \caption{XXX Maschinelle Übersetzung: Stand der Unterstützung für 30 europäische Sprachen}
+  \caption{Automatisch vertalen: Status van de ondersteuning voor 30 Europese talen}
   \label{fig:mt_cluster_de}
 \end{figure*}
 
@@ -970,51 +986,52 @@ De tabellen ~\ref{fig:speech_cluster_de} tot~\ref{fig:resources_cluster_de}  lat
   >{\columncolor{corange4}}p{.13\linewidth}@{\hspace{.040\linewidth}}
   >{\columncolor{corange3}}p{.13\linewidth}@{\hspace{.040\linewidth}}
   >{\columncolor{corange2}}p{.13\linewidth}@{\hspace{.040\linewidth}}
-  >{\columncolor{corange1}}p{.13\linewidth} 
+  >{\columncolor{corange1}}p{.13\linewidth}
   }
-  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Uitstekende}} & 
+  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Uitstekende}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Goede}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Gematigde}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Fragmentarische}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{Zwakke of geen}} \\ 
-  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Ondersteuning}} & 
+  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{Zwakke of geen}} \\
+  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Ondersteuning}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Ondersteuning}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Ondersteuning}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Ondersteuning}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{Ondersteuning}} \\ \addlinespace
 
-  & \vspace*{0.5mm}Engels 
-  & \vspace*{0.5mm}Duits \newline 
-  Frans \newline 
-  Italiaans \newline 
-  Nederlands \newline 
+  & \vspace*{0.5mm}Engels
+  & \vspace*{0.5mm}Duits \newline
+  Frans \newline
+  Italiaans \newline
+  Nederlands \newline
   Spaans 
-  & \vspace*{0.5mm}Baskisch \newline 
-  Bulgaars \newline 
-  Deens \newline 
-  Fins \newline 
-  Galicisch \newline 
-  Grieks \newline 
-  Catalaans \newline 
-  Noors \newline 
-  Pools \newline 
-  Portugees \newline 
-  Roemeens \newline 
-  Zweeds \newline 
-  Slowaaks \newline 
-  Sloveens \newline 
-  Tsjechisch \newline 
-  Hongaars \newline 
-  & \vspace*{0.5mm}Ests \newline 
-  Iers \newline 
-  IJslands \newline 
-  Croatisch \newline 
-  Lets \newline 
-  Litouws \newline 
-  Maltees \newline 
-  Servisch \\
+  & \vspace*{0.5mm}Baskisch \newline
+  Bulgaars \newline
+  Catalaans \newline
+ Deens \newline
+  Fins \newline
+  Galicisch \newline
+  Grieks \newline
+ Hongaars \newline
+    Noors \newline
+  Pools \newline
+  Portugees \newline
+  Roemeens \newline
+  Sloveens \newline
+   Slowaaks \newline
+  Tsjechisch \newline
+  Zweeds \newline
+  & \vspace*{0.5mm}
+  Croatisch \newline
+Ests \newline
+  Iers \newline
+  IJslands \newline
+  Lets \newline
+  Litouws \newline
+  Maltees \newline
+  Servisch 
   \end{tabular}
-  \caption{XXX Textanalyse: Stand der Unterstützung für 30 europäische Sprachen}
+  \caption{Tekstanalyse: Status van de ondersteuning voor 30 Europese talen}
   \label{fig:text_cluster_de}
 \end{figure*}
 
@@ -1027,51 +1044,51 @@ De tabellen ~\ref{fig:speech_cluster_de} tot~\ref{fig:resources_cluster_de}  lat
   >{\columncolor{corange4}}p{.13\linewidth}@{\hspace{.040\linewidth}}
   >{\columncolor{corange3}}p{.13\linewidth}@{\hspace{.040\linewidth}}
   >{\columncolor{corange2}}p{.13\linewidth}@{\hspace{.040\linewidth}}
-  >{\columncolor{corange1}}p{.13\linewidth} 
+  >{\columncolor{corange1}}p{.13\linewidth}
   }
-  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Uitstekende}} & 
+  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Uitstekende}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Goede}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Gematigde}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Fragmentarische}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{Zwakke of geen}} \\ 
-  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Ondersteuning}} & 
+  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{Zwakke of geen}} \\
+  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Ondersteuning}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Ondersteuning}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Ondersteuning}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Ondersteuning}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{Ondersteuning}} \\ \addlinespace
-  
-  & \vspace*{0.5mm}Engels 
-  & \vspace*{0.5mm}Duits \newline 
-    Frans \newline 
+
+  & \vspace*{0.5mm}Engels
+  & \vspace*{0.5mm}Duits \newline
+    Frans \newline
+ Hongaars \newline
 	Italiaans \newline
-    Nederlands \newline 
-	Pools \newline 
-    Zweeds \newline 
-    Spaans \newline
-    Tsjechisch\newline 
-    Hongaars 
-  & \vspace*{0.5mm}  Baskisch \newline 
-    Bulgaars \newline 
-    Deens \newline 
-    Ests \newline 
-    Fins \newline 
-    Galicisch \newline 
-    Grieks \newline 
-    Catalaans \newline 
-    Croatisch \newline 
-    Noors \newline 
-    Portugees \newline 
-    Roemeens \newline 
-    Servisch \newline 
-    Slowaaks \newline 
+    Nederlands \newline
+	Pools \newline
+       Spaans \newline
+    Tsjechisch\newline
+    Zweeds 
+  & \vspace*{0.5mm}  Baskisch \newline
+    Bulgaars \newline
+    Catalaans \newline
+    Croatisch \newline
+  Deens \newline
+    Ests \newline
+    Fins \newline
+    Galicisch \newline
+    Grieks \newline  
+    Noors \newline
+    Portugees \newline
+    Roemeens \newline
+    Servisch \newline
     Sloveens \newline
-  &  \vspace*{0.5mm} Iers \newline 
-    IJslands \newline 
-    Lets \newline 
-    Litouws \newline 
-    Maltees \\
+ Slowaaks \newline
+      &  \vspace*{0.5mm} Iers \newline
+    IJslands \newline
+    Lets \newline
+    Litouws \newline
+    Maltees 
   \end{tabular}
-  \caption{XXX Sprach- und Textressourcen: Stand für 30 europäische Sprachen}
+  \caption{Taaldata: Status van de ondersteuning voor 30 Europese talen}
   \label{fig:resources_cluster_de}
 \end{figure*}
 
@@ -1082,7 +1099,7 @@ De tabellen ~\ref{fig:speech_cluster_de} tot~\ref{fig:resources_cluster_de}  lat
 
 \begin{multicols}{2}
 
-    META-NET is een `Network of Excellence' gefinancierd door de Europese Commissie. Het netwerk bestaat momenteel uit 47 leden uit 31 Europese landen. META-NET organiseert de Meertalige Europese TechnologieAlliantie (META), een groeiende gemeenschap van taaltechnologische experts en organisaties in Europa.
+    META-NET is een `Network of Excellence' gefinancierd door de Europese Commissie \cite{rehm2011}. Het netwerk bestaat momenteel uit 54 leden uit 33 Europese landen. META-NET organiseert de Meertalige Europese TechnologieAlliantie (META), een groeiende gemeenschap van taaltechnologische experts en organisaties in Europa.
 
     META-NET werkt samen met andere initiatieven zoals de Common Language Resources and Technology Infrastructure (CLARIN), die ertoe bijdraagt digitaal geesteswetenschappelijk onderzoek in Europa te faciliteren. META-NET maakt zich sterk voor de technologische fundamenten voor een waarlijk meertalige Europese informatiemaatschappij die:
     \begin{itemize}
@@ -1125,22 +1142,22 @@ META-NET is op 1 februari 2010 van start gegaan met als doel het bevorderen van 
 
 \begin{multicols}{2}
 
-During the last 60 years, Europe has become a distinct political and economic structure. Culturally and linguistically it is rich and diverse. However, from Portuguese to Polish and Italian to Icelandic, everyday communication between Europe’s citizens, within business and among politicians is inevitably confronted with language barriers. The EU's institutions spend about a billion euros a year on maintaining their policy of multilingualism, i.\,e., translating texts and interpreting spoken communication. Does this have to be such a burden? Language technology and linguistic research can make a significant contribution to removing the linguistic borders. Combined with intelligent devices and applications, language technology will help Europeans talk and do business together even if they do not speak a common language. 
+During the last 60 years, Europe has become a distinct political and economic structure. Culturally and linguistically it is rich and diverse. However, from Portuguese to Polish and Italian to Icelandic, everyday communication between Europe’s citizens, within business and among politicians is inevitably confronted with language barriers. The EU's institutions spend about a billion euros a year on maintaining their policy of multilingualism, i.\,e., translating texts and interpreting spoken communication. Does this have to be such a burden? Language technology and linguistic research can make a significant contribution to removing the linguistic borders. Combined with intelligent devices and applications, language technology will help Europeans talk and do business together even if they do not speak a common language.
 
 \boxtext{Language technology builds bridges.}
 
- The Dutch economy takes great advantage of the European single market: In 2010, trade within the EU accounted for more than 74\% of Dutch exports \cite{CBSStats}. But language barriers can bring business to a halt, especially for SMEs who do not have the financial means to reverse the situation. The only (unthinkable) alternative to a multilingual Europe would be to allow a single language to take a dominant position, to replace all other languages. 
-One way to overcome the language barrier is to learn foreign languages. Yet without technological support, mastering the 23 official languages of the member states of the European Union and some 60 other European languages is an insurmountable obstacle for Europe’s citizens, economy, political debate, and scientific progress. 
+ The Dutch economy takes great advantage of the European single market: In 2010, trade within the EU accounted for more than 74\% of Dutch exports \cite{CBSStats}. But language barriers can bring business to a halt, especially for SMEs who do not have the financial means to reverse the situation. The only (unthinkable) alternative to a multilingual Europe would be to allow a single language to take a dominant position, to replace all other languages.
+One way to overcome the language barrier is to learn foreign languages. Yet without technological support, mastering the 23 official languages of the member states of the European Union and some 60 other European languages is an insurmountable obstacle for Europe’s citizens, economy, political debate, and scientific progress.
 
-The solution is to build key enabling technologies: language technologies will offer European stakeholders tremendous advantages, not only within the common European market, but also in trade relations with non-European countries, especially emerging economies. Language technology solutions will eventually serve as a unique bridge between Europe's languages. An indespensable prerequisite for their development is first to carry out a systematic analysis of the linguistic particularities of all European languages, and the current state of language technology support for them.  
-    
-The automated translation and speech processing tools currently available on the market fall short of the envisaged goals. The dominant actors in the field are primarily privately-owned for-profit enterprises based in Northern America. As early as the late 1970s, the EU realised the profound relevance of language technology as a driver of European unity, and began funding its first research projects, such as EUROTRA. At the same time, national projects were set up that generated valuable results, but never led to a concerted European effort. In contrast to these highly selective funding efforts, other multilingual societies such as India (22 official languages) and South Africa (11 official languages) have set up long-term national programmes for language research and technology development. 
+The solution is to build key enabling technologies: language technologies will offer European stakeholders tremendous advantages, not only within the common European market, but also in trade relations with non-European countries, especially emerging economies. Language technology solutions will eventually serve as a unique bridge between Europe's languages. An indespensable prerequisite for their development is first to carry out a systematic analysis of the linguistic particularities of all European languages, and the current state of language technology support for them.
+
+The automated translation and speech processing tools currently available on the market fall short of the envisaged goals. The dominant actors in the field are primarily privately-owned for-profit enterprises based in Northern America. As early as the late 1970s, the EU realised the profound relevance of language technology as a driver of European unity, and began funding its first research projects, such as EUROTRA. At the same time, national projects were set up that generated valuable results, but never led to a concerted European effort. In contrast to these highly selective funding efforts, other multilingual societies such as India (22 official languages) and South Africa (11 official languages) have set up long-term national programmes for language research and technology development.
 
 The predominant actors in LT today rely on imprecise statistical approaches that do not make use of deeper linguistic methods and knowledge. For example, sentences are often automatically translated by comparing each new sentence against thousands of sentences previously translated by humans. The quality of the output largely depends on the size and quality of the available  data. While the automatic translation of simple sentences in languages with sufficient amounts of available textual data can achieve useful results, shallow statistical methods are doomed to fail in the case of languages with a much smaller body of sample data or in the case of sentences with complex, non-repetitive structures. Analysing the deeper structural properties of languages is the only way forward if we want to build applications that perform well across the entire range of European languages.
 
 \boxtext{Language technology is a key for the future.}
 
-The European Union is thus funding projects such as EuroMatrix and EuroMatrix+ (since 2006) and iTranslate4 (since 2010) that carry out basic and applied research, and generate resources for establishing high quality language technology solutions for all European languages. 
+The European Union is thus funding projects such as EuroMatrix and EuroMatrix+ (since 2006) and iTranslate4 (since 2010) that carry out basic and applied research, and generate resources for establishing high quality language technology solutions for all European languages.
 European research in the area of language technology has already achieved a number of successes. For example, the translation services of the European Union now use the Moses open-source machine translation software, which has been mainly developed in European research projects. The Dutch-Flemish programmes CGN and STEVIN have made available a significant amount of basic resources, carried out some research, and stimulated the market for language technology. With it, a first step in securing the position of Dutch in the modern communication and information society has been taken. Rather than building on the outcomes of its research projects, Europe has tended to pursue isolated research activities with a less pervasive impact on the market. The economic value of even the earliest efforts can be seen in the number of spin-offs. A company such as Trados, which was founded back in 1984, was sold to the UK-based SDL in 2005.
 
 \boxtext{Language Technology helps unify Europe.}
@@ -1171,7 +1188,7 @@ After Gutenberg’s invention, real breakthroughs in communication were accompli
 \item the development of official languages made it possible for citizens to communicate within certain (often political) boundaries;
 \item the teaching and translation of languages enabled exchanges across languages;
 \item the creation of editorial and bibliographic guidelines assured the quality of printed material;
-\item the creation of different media like newspapers, radio, television, books, and other formats satisfied different communication needs. 
+\item the creation of different media like newspapers, radio, television, books, and other formats satisfied different communication needs.
 \end{itemize}
 
 In the past twenty years, information technology has helped to automate and facilitate many processes:
@@ -1221,7 +1238,7 @@ Language technology targeting all forms of written text and spoken discourse can
 \item translate web pages via an online service.
 \end{itemize}
 
-Language technology consists of a number of core applications that enable processes within a larger application framework. The purpose of the META-NET language white papers is to focus on how ready these core enabling technologies are for each European language. 
+Language technology consists of a number of core applications that enable processes within a larger application framework. The purpose of the META-NET language white papers is to focus on how ready these core enabling technologies are for each European language.
 
 \boxtext{Europe needs robust and affordable language technology for all European languages.}
 
@@ -1231,7 +1248,7 @@ To maintain our position in the frontline of global innovation, Europe will need
 
 In the world of print, the technology breakthrough was the rapid duplication of an image of a text using a suitably powered printing press. Human beings had to do the hard work of looking up, assessing, translating, and summarising knowledge. We had to wait until Edison to record spoken language – and again his technology simply made analogue copies.
 
-Language technology can now simplify and automate the processes of translation, content production, and knowledge management for all European languages. It can also empower intuitive speech-based interfaces for household electronics, machinery, vehicles, computers and robots. Real-world commercial and industrial applications are still in the early stages of development, yet R\&D achievements are creating a genuine window of opportunity. For example, machine translation is already reasonably accurate in specific domains, and experimental applications provide multilingual information and knowledge management, as well as content production, in many European languages. 
+Language technology can now simplify and automate the processes of translation, content production, and knowledge management for all European languages. It can also empower intuitive speech-based interfaces for household electronics, machinery, vehicles, computers and robots. Real-world commercial and industrial applications are still in the early stages of development, yet R\&D achievements are creating a genuine window of opportunity. For example, machine translation is already reasonably accurate in specific domains, and experimental applications provide multilingual information and knowledge management, as well as content production, in many European languages.
 
 As with most technologies, the first language applications such as voice-based user interfaces and dialogue systems were developed for specialised domains, and often exhibit limited performance. However, there are huge market opportunities in the education and entertainment industries for integrating language technologies into games, edutainment packages, libraries, simulation environments and training programmes. Mobile information services, computer-assisted language learning software, eLearning environments, self-assessment tools and plagiarism detection software are just some of the application areas in which language technology can play an important role. The popularity of social media applications like Twitter and Facebook suggest a need for sophisticated language technologies that can monitor posts, summarise discussions, suggest opinion trends, detect emotional responses, identify copyright infringements or track misuse.
 
@@ -1241,7 +1258,7 @@ Language technology represents a tremendous opportunity for the European Union. 
 
 \subsection{Challenges Facing Language Technology}
 
-Although language technology has made considerable progress in the last few years, the current pace of technological progress and product innovation is too slow. Widely-used technologies such as the spelling and grammar correctors in word processors are typically monolingual, and are only available for a handful of languages. Online machine translation services, although useful for quickly generating a reasonable approximation of a document’s contents, are fraught with difficulties when highly accurate and complete translations are required. 
+Although language technology has made considerable progress in the last few years, the current pace of technological progress and product innovation is too slow. Widely-used technologies such as the spelling and grammar correctors in word processors are typically monolingual, and are only available for a handful of languages. Online machine translation services, although useful for quickly generating a reasonable approximation of a document’s contents, are fraught with difficulties when highly accurate and complete translations are required.
 
 \boxtext{The current pace of technological progress is too slow.}
 
@@ -1251,21 +1268,21 @@ Due to the complexity of human language, modelling our tongues in software and t
 
 To illustrate how computers handle language and why it is difficult to program them to process different tongues, let’s look briefly at the way humans acquire first and second languages, and then see how language technology systems work.
 
-Humans acquire language skills in two different ways. Babies acquire a language by listening to the real interactions between their parents, siblings and other family members. From the age of about two, children produce their first words and short phrases. This is only possible because humans have a genetic disposition to imitate and then rationalise what they hear. 
+Humans acquire language skills in two different ways. Babies acquire a language by listening to the real interactions between their parents, siblings and other family members. From the age of about two, children produce their first words and short phrases. This is only possible because humans have a genetic disposition to imitate and then rationalise what they hear.
 
 Learning a second language at an older age requires more cognitive effort, largely because the child is not immersed in a language community of native speakers. At school, foreign languages are usually acquired by learning grammatical structure, vocabulary and spelling using drills that describe linguistic knowledge in terms of abstract rules, tables and examples.
 
 \boxtext{Humans acquire language skills in two different ways: learning examples and learning the underlying language rules.}
 
-Moving now to language technology, the two main types of systems acquire language capabilities in a similar manner. Statistical (or data-driven) approaches obtain linguistic knowledge from vast collections of concrete example texts. While it is sufficient to use text in a single language for training, e.\,g., a spell checker, parallel texts in two (or more) languages have to be available for training a machine translation system. The machine learning algorithm then learns patterns of how words, short phrases and complete sentences are translated. 
+Moving now to language technology, the two main types of systems acquire language capabilities in a similar manner. Statistical (or data-driven) approaches obtain linguistic knowledge from vast collections of concrete example texts. While it is sufficient to use text in a single language for training, e.\,g., a spell checker, parallel texts in two (or more) languages have to be available for training a machine translation system. The machine learning algorithm then learns patterns of how words, short phrases and complete sentences are translated.
 
 This statistical approach usually requires millions of sentences to boost performance quality. This is one reason why search engine providers are eager to collect as much written material as possible. Spelling correction in word processors, and services such as Google Search and Google Translate, all rely on statistical approaches. The great advantage of statistics is that the machine learns quickly in a continuous series of training cycles, even though quality can vary randomly.
 
-The second approach to language technology, and to machine translation in particular, is to build rule-based systems. Experts in the fields of linguistics, computational linguistics and computer science first have to encode grammatical analyses (translation rules) and compile vocabulary lists (lexicons). This is very time consuming and labour intensive. Some of the leading rule-based machine translation systems have been under constant development for more than 20 years. The great advantage of rule-based systems is that the experts have more detailed control over the language processing. This makes it possible to systematically correct mistakes in the software and give detailed feedback to the user, especially when rule-based systems are used for language learning. However, due to the high cost of this work, rule-based language technology has so far only been developed for a few major languages. 
+The second approach to language technology, and to machine translation in particular, is to build rule-based systems. Experts in the fields of linguistics, computational linguistics and computer science first have to encode grammatical analyses (translation rules) and compile vocabulary lists (lexicons). This is very time consuming and labour intensive. Some of the leading rule-based machine translation systems have been under constant development for more than 20 years. The great advantage of rule-based systems is that the experts have more detailed control over the language processing. This makes it possible to systematically correct mistakes in the software and give detailed feedback to the user, especially when rule-based systems are used for language learning. However, due to the high cost of this work, rule-based language technology has so far only been developed for a few major languages.
 
 \boxtext{The two main types of language technology systems acquire language in a similar manner.}
 
-As the strengths and weaknesses of statistical and rule-based systems tend to be complementary, current research focusses on hybrid approaches that combine the two methodologies. However, these approaches have so far been less successful in industrial applications than in the research lab. 
+As the strengths and weaknesses of statistical and rule-based systems tend to be complementary, current research focusses on hybrid approaches that combine the two methodologies. However, these approaches have so far been less successful in industrial applications than in the research lab.
 
 As we have seen in this chapter, many applications widely used in today’s information society rely heavily on language technology, particularly in Europe’s economic and information space. Although this technology has made considerable progress in the last few years, there is still huge potential to improve the quality of language technology systems. In the next section, we describe the role of Dutch in European information society and assess the current state of language technology for the Dutch language.
 \end{multicols}
@@ -1293,12 +1310,12 @@ As we have seen in this chapter, many applications widely used in today’s info
 
 \subsection{Particularities of the Dutch Language}
 
-    The Dutch language exhibits some specific characteristics, which contribute to the richness of the language by allowing the speakers to express ideas in a large variety of ways. One such particularity is that it is quite common to put non-subjects sentence-initially (much more common than in English). 
+    The Dutch language exhibits some specific characteristics, which contribute to the richness of the language by allowing the speakers to express ideas in a large variety of ways. One such particularity is that it is quite common to put non-subjects sentence-initially (much more common than in English).
 
 \boxtext{Certain linguistic characteristics of Dutch are challenges for computational processing.}
 
 For example, consider the English sentence \emph{The woman was going to the store every day.} In English, there are very limited possibilities to use a different word order in this sentence, but in the Dutch equivalent almost any phrase can be the initial phrase in the sentence:\\
-\begin{itemize}    
+\begin{itemize}
     \item De vrouw ging elke dag naar de winkel.\\
     \item Elke dag ging de vrouw naar de winkel.\\
     \item Naar de winkel ging de vrouw elke dag.\\
@@ -1377,7 +1394,10 @@ Language skills are the key qualification needed in education as well as for per
 
 The education of Dutch `extra muros' is also systematically monitored via studies performed by or under the supervision of the Dutch Language Union \cite{NTUOnderwijs}.  The Dutch Language Union focus involves not only research but also concrete policy and practical guidelines for addressing problems in areas such as spelling, reading skills, language competence of teachers, language and/or educational retardation, education in literature, and others.
 
-%\boxtext{XXX Language skills are a key qualification for education and for personal and professional communication. Yet German plays a relatively minor role as a school subject in secondary education.}
+%\boxtext{XXX Language skills are a key qualification for education and for personal and professional communication.}
+%XXX JO: I removed the second sentence here. but if included, the Dutch variant should be added as well
+%Dutch variant: Taalvaardigheden vormen een essenti{\"e}le kwalificatie voor onderwijs en voor persoonlijke en professionele communicatie.
+
 
 Continuous attention to Dutch language teaching in schools is essential for providing students with the language skills required for an active participation in society. Language technology can make an important contribution here by offering so-called computer-assisted language learning (CALL) systems, which allow students to experience language in a playful way, for example by linking special vocabulary in electronic text to comprehensible definitions or to audio or video files supplying additional information, e.g., the pronunciation of a word.
 
@@ -1435,19 +1455,19 @@ Language technology is used to develop software systems designed to handle human
   \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
 
-When we communicate, we combine language with other modes of communication and information media – for example speaking can involve gestures and facial expressions. Digital texts link to pictures and sounds. Movies may contain language in spoken and written form. In other words, speech and text technologies overlap and interact with other multimodal communication and multimedia technologies.\\ 
-In this section, we will discuss the main application areas of language technology, i.\,e., language checking, web search, speech interaction, and machine translation. These applications and basic technologies include 
+When we communicate, we combine language with other modes of communication and information media – for example speaking can involve gestures and facial expressions. Digital texts link to pictures and sounds. Movies may contain language in spoken and written form. In other words, speech and text technologies overlap and interact with other multimodal communication and multimedia technologies.\\
+In this section, we will discuss the main application areas of language technology, i.\,e., language checking, web search, speech interaction, and machine translation. These applications and basic technologies include
 
 \begin{itemize}
 \item spelling correction
 \item authoring support
 \item computer-assisted language learning
-\item information retrieval 
+\item information retrieval
 \item information extraction
 \item text summarisation
 \item question answering
-\item speech recognition 
-\item speech synthesis 
+\item speech recognition
+\item speech synthesis
 \end{itemize}
 
 Language technology is an established area of research with an extensive set of introductory literature. The interested reader is referred to the following references:  \cite{carstensen-etal1, jurafsky-martin01, manning-schuetze1, lt-world1, lt-survey1}.
@@ -1479,7 +1499,7 @@ In the remainder of this section, we firstly introduce the core application area
 
 \subsection{Core Application Areas}
 
-In this section, we focus on the most important LT tools and resources, and provide an overview of LT activities. 
+In this section, we focus on the most important LT tools and resources, and provide an overview of LT activities.
 
 \subsubsection{Language Checking}
 
@@ -1532,7 +1552,7 @@ Proofing tools for Dutch that were incorporated in Microsoft products were devel
   \colorrule{grey3}{\textwidth}{1.5pt}
  \end{figure*}
 
-Searching the Web, intranets or digital libraries is probably the most widely used yet largely underdeveloped language technology application today. The search engine Google, which started in 1998, is nowadays used for about 80\% of all search queries world-wide \cite{Spiegel}. The verb \emph{googelen} even has an entry in the Dutch Van Dale dictionary. The Google search interface and results page display has not significantly changed since the first version. However, in the current version, Google offers spelling correction for misspelled words and incorporates basic semantic search capabilities that can improve search accuracy by analysing the meaning of terms in a search query context \cite{pc1}. The Google success story shows that a large volume of data and efficient indexing techniques can deliver satisfactory results using a statistical approach to language processing. 
+Searching the Web, intranets or digital libraries is probably the most widely used yet largely underdeveloped language technology application today. The search engine Google, which started in 1998, is nowadays used for about 80\% of all search queries world-wide \cite{Spiegel}. The verb \emph{googelen} even has an entry in the Dutch Van Dale dictionary. The Google search interface and results page display has not significantly changed since the first version. However, in the current version, Google offers spelling correction for misspelled words and incorporates basic semantic search capabilities that can improve search accuracy by analysing the meaning of terms in a search query context \cite{pc1}. The Google success story shows that a large volume of data and efficient indexing techniques can deliver satisfactory results using a statistical approach to language processing.
 
 For more sophisticated information requests, it is essential to integrate deeper linguistic knowledge to facilitate text interpretation. Experiments using \textbf{lexical resources} such as machine-readable thesauri or ontological language resources like WordNet (or the equivalent Dutch EuroWordNet) have demonstrated improvements in finding pages using synonyms of the original search terms, such as \textit{Atomkraft} {[}atomic energy{]}, \textit{Kernenergie} {[}atomic power{]} and \textit{Nuklearenergie} {[}nuclear energy{]}, or even more loosely related terms.
 
@@ -1563,12 +1583,12 @@ Speech interaction is one of many application areas that depend on speech techno
   \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
 
-Speech interaction technology comprises four technologies: 
+Speech interaction technology comprises four technologies:
 
 \begin{enumerate}
-\item Automatic \textbf{speech recognition} (ASR) determines which words are actually spoken in a given sequence of sounds uttered by a user.  
+\item Automatic \textbf{speech recognition} (ASR) determines which words are actually spoken in a given sequence of sounds uttered by a user.
 \item Natural language understanding analyses the syntactic structure of a user’s utterance and interprets it according to the system in question.
-\item Dialogue management determines which action to take given the user input and system functionality.   
+\item Dialogue management determines which action to take given the user input and system functionality.
 \item \textbf{Speech synthesis} (text-to-speech or TTS) transforms the system’s reply into sounds for the user.
 \end{enumerate}
 
@@ -1599,8 +1619,8 @@ Interfaces in speech interaction have been considerably standardised during the 
   \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
 
-The idea of using digital computers to translate natural languages can be traced back to 1946 and was followed by substantial funding for research during the 1950s and again in the 1980s. 
-Yet machine translation (MT) still cannot deliver on its initial promise of providing across-the-board automated translation.  
+The idea of using digital computers to translate natural languages can be traced back to 1946 and was followed by substantial funding for research during the 1950s and again in the 1980s.
+Yet machine translation (MT) still cannot deliver on its initial promise of providing across-the-board automated translation.
 
 \boxtext{At its basic level, Machine Translation simply substitutes words in one natural language with words in another language.}
 
@@ -1614,9 +1634,9 @@ However, in order to produce a good translation of less restricted texts, larger
 
 One way to build an MT system is to use linguistic rules. For translations between closely related languages, a translation using direct substitution may be feasible in cases such as the above example. However, rule-based (or linguistic knowledge-driven) systems often analyse the input text and create an intermediary symbolic representation from which the target language text can be generated. The success of these methods is highly dependent on the availability of extensive lexicons with morphological, syntactic, and semantic information, and large sets of grammar rules carefully designed by skilled linguists. This is a very long and therefore costly process.
 
-In the late 1980s when computational power increased and became cheaper, interest in statistical models for machine translation began to grow. Statistical models are derived from analysing bilingual text corpora, \textbf{parallel corpora}, such as the Europarl parallel corpus, which contains the proceedings of the European Parliament in 11 European languages. Given enough data, statistical MT works well enough to derive an approximate meaning of a foreign language text by processing parallel versions and finding plausible patterns of words. Unlike knowledge-driven systems, however, statistical (or data-driven) MT systems often generate ungrammatical output. Data-driven MT is advantageous because less human effort is required, and it can also cover special particularities of the language (e.\,g., idiomatic expressions) that are often ignored in knowledge-driven systems. 
+In the late 1980s when computational power increased and became cheaper, interest in statistical models for machine translation began to grow. Statistical models are derived from analysing bilingual text corpora, \textbf{parallel corpora}, such as the Europarl parallel corpus, which contains the proceedings of the European Parliament in 11 European languages. Given enough data, statistical MT works well enough to derive an approximate meaning of a foreign language text by processing parallel versions and finding plausible patterns of words. Unlike knowledge-driven systems, however, statistical (or data-driven) MT systems often generate ungrammatical output. Data-driven MT is advantageous because less human effort is required, and it can also cover special particularities of the language (e.\,g., idiomatic expressions) that are often ignored in knowledge-driven systems.
 
-The strengths and weaknesses of knowledge-driven and data-driven machine translation tend to be complementary, so that nowadays researchers focus on hybrid approaches that combine both methodologies. One such approach uses both knowledge-driven and data-driven systems, together with a selection module that decides on the best output for each sentence. However, results for sentences longer than, say, 12 words, will often be far from perfect. A more effective solution is to combine the best parts of each sentence from multiple outputs; this can be fairly complex, as corresponding parts of multiple alternatives are not always obvious and need to be aligned. 
+The strengths and weaknesses of knowledge-driven and data-driven machine translation tend to be complementary, so that nowadays researchers focus on hybrid approaches that combine both methodologies. One such approach uses both knowledge-driven and data-driven systems, together with a selection module that decides on the best output for each sentence. However, results for sentences longer than, say, 12 words, will often be far from perfect. A more effective solution is to combine the best parts of each sentence from multiple outputs; this can be fairly complex, as corresponding parts of multiple alternatives are not always obvious and need to be aligned.
 
 \boxtext{Machine Translation is particularly challenging for the Dutch language.}
 
@@ -1641,13 +1661,13 @@ Building language technology applications involves a range of subtasks that do n
 \textit{Question: How old was Neil Armstrong when he stepped on the moon?}\\
 \textit{Answer: 38.}
 
-While question answering is obviously related to the core area of web search, it is nowadays an umbrella term for such research issues as which different types of questions exist, and how they should be handled; how a set of documents that potentially contain the answer can be analysed and compared (do they provide conflicting answers?); and how specific information (the answer) can be reliably extracted from a document without ignoring the context. 
+While question answering is obviously related to the core area of web search, it is nowadays an umbrella term for such research issues as which different types of questions exist, and how they should be handled; how a set of documents that potentially contain the answer can be analysed and compared (do they provide conflicting answers?); and how specific information (the answer) can be reliably extracted from a document without ignoring the context.
 
 \boxtext{Language technology applications often provide significant service functionalities "behind the scenes” of larger software systems.}
 
-Question answering is in turn related to information extraction (IE), an area that was extremely popular and influential when computational linguistics took a statistical turn in the early 1990s. IE aims to identify specific pieces of information in specific classes of documents, such as the key players in company takeovers as reported in newspaper stories. Another common scenario that has been studied is reports on terrorist incidents. The task here consists of mapping appropriate parts of the text to a template that specifies the perpetrator, target, time, location and results of the incident. Domain-specific template-filling is the central characteristic of IE, which makes it another example of a “behind the scenes” technology that forms a well-demarcated research area, which in practice needs to be embedded into a suitable application environment. 
+Question answering is in turn related to information extraction (IE), an area that was extremely popular and influential when computational linguistics took a statistical turn in the early 1990s. IE aims to identify specific pieces of information in specific classes of documents, such as the key players in company takeovers as reported in newspaper stories. Another common scenario that has been studied is reports on terrorist incidents. The task here consists of mapping appropriate parts of the text to a template that specifies the perpetrator, target, time, location and results of the incident. Domain-specific template-filling is the central characteristic of IE, which makes it another example of a “behind the scenes” technology that forms a well-demarcated research area, which in practice needs to be embedded into a suitable application environment.
 
-    Text summarisation and \textbf{text generation} are two borderline areas that can act either as standalone applications or play a supporting role. Summarisation attempts to give the essentials of a long text in a short form, and is one of the features available in Microsoft Word. It mostly uses a statistical approach to identify the “important” words in a text (i.\,e., words that occur very frequently in the text in question but less frequently in general language use) and determine which sentences contain the most of these “important” words. These sentences are then extracted and put together to create the summary. In this very common commercial scenario, summarisation is simply a form of sentence extraction, and the text is reduced to a subset of its sentences. An alternative approach, for which some research has been carried out, is to generate brand new sentences that do not exist in the source text. 
+    Text summarisation and \textbf{text generation} are two borderline areas that can act either as standalone applications or play a supporting role. Summarisation attempts to give the essentials of a long text in a short form, and is one of the features available in Microsoft Word. It mostly uses a statistical approach to identify the “important” words in a text (i.\,e., words that occur very frequently in the text in question but less frequently in general language use) and determine which sentences contain the most of these “important” words. These sentences are then extracted and put together to create the summary. In this very common commercial scenario, summarisation is simply a form of sentence extraction, and the text is reduced to a subset of its sentences. An alternative approach, for which some research has been carried out, is to generate brand new sentences that do not exist in the source text.
 
 \boxtext{For the Dutch language, research in most text technologies is much less developed than for the English language.}
 
@@ -1658,7 +1678,7 @@ For Dutch, the situation in all these research areas is much less developed than
     In academia there are a number of excellent centres in the area of human language technology, e.g.  KU Leuven, Ghent university, Radboud University Nijmegen and University of Twente for speech technology, Tilburg and Antwerp universities for machine learning techniques in NLP, Utrecht University, and Leuven for NLP and machine translation, Groningen and Amsterdam for parsing, Amsterdam for sentiment mining and parsing, etc. It is, however, very difficult to attract students for the NLP field. Possible causes for this may be the relative low visibility of NLP in the university curricula and the fact that many NLP research groups are in the humanities (students there do not easily take a technical view on language, as is required for NLP).
 
     The academic players in the Netherlands and Flanders do not necessarily focus on the Dutch language: in research the focus is typically on English in order to be able to make sensible comparisons with researchers abroad. Nevertheless, several researchers are active in the area of Computer Aided Language Learning (CALL), where language and speech technology is used to increase language skills of first and second language learners. Relevant organisations include RU Nijmegen, University of Antwerp Linguapolis and KULAK.
-  
+
 \subsection{Language Technology Industry and Programs}
 
   \subsubsection{Language Technology Industry}
@@ -1670,7 +1690,7 @@ For Dutch, the situation in all these research areas is much less developed than
     One problem for marketing LT is that LT is not clearly visible because it is hidden as an integrated part of a more encompassing product or service, even though it is a component of products and services used by many users (e.g. search on the internet, texting on mobile phones, etc.).
 
     Even though there are many players in the Netherlands and Flanders, this does not imply that their focus is also on the Dutch language. For industry, the Dutch language is commercially less interesting than other languages, and the necessary investments can often not be justified by the small Dutch-language market.
-    
+
 \subsubsection{Language Technology Programs}
 
   Activities for the Dutch language have to be promoted and supported explicitly. Fortunately, this has been done in several programmes and projects over the last one and a half decade. Thus a Dutch language spoken train information system was developed as a carrier for research in speech analysis and generation, in language analysis and generation, and in dialogue management in the OVIS programme in the late nineties. The NL-Translex project was already mentioned above. Flanders had a short term programme on LT in the mid nineties. The IMIX programme, mentioned above, carried out research using systems for the Dutch language.  In the IOP MMI (Innovation Research Programme on Man Machine Interaction) and CATCH \cite{CATCH} programs language and speech technology have been used as tools for man machine interfaces and disclosing cultural heritage. Most prominent in their focus on the Dutch language are the joint Netherlands-Flanders CGN and STEVIN programmes. These have yielded significant progress in the availability of basic resources (data and tools) for the Dutch language, some initial research and several end user applications. Though some of the results achieved in these projects can be exploited in industry and in academia (e.g. in the CLARIN-NL research infrastructure \cite{CLARIN-NL} ) the prospects for optimally exploiting these results in actual research and in industry further are grim, since it appears not to have the focus of attention of the government in the Netherlands, and research has been reorganised so that it has become more difficult to get funding for discipline-specific programmes. The situation is probably a bit more positive in Flanders, though. Furthermore, some prerequisites for exploiting the potential are in place, such as visibility and accessibility of the resources produced in earlier programmes via the TST-Centrale (Dutch HLT Agency).
@@ -1682,7 +1702,7 @@ For Dutch, the situation in all these research areas is much less developed than
   It is therefore of the utmost importance that the activities started with the CGN and STEVIN programmes are continued, so that the scientific and commercial opportunities lying around the corner are optimally taken advantage of and the Dutch language and their native speakers can play a lasting role in the modern information and communication society also at the European level.
 
 As we have seen, previous programmes have led to the development of a number of LT tools and resources for the Dutch language. The following section summarises the current state of LT support for Dutch.
-  
+
 \subsection{Availability of Tools and Resources}
 
 Figure~\ref{fig:lrlttable_en} provides a rating for language technology support for the Dutch language. This rating of existing tools and resources was generated by leading experts in the field who provided estimates based on a scale from 0 (very low) to 6 (very high) using seven criteria.
@@ -1730,7 +1750,7 @@ From this, it is clear that more efforts need to be directed into the creation o
 
 \subsection{Cross-language comparison}
 
-The current state of LT support varies considerably from one language community to another. In order to compare the situation between languages, this section will present an evaluation based on two sample application areas (machine translation and speech processing) and one underlying technology (text analysis), as well as basic resources needed for building LT applications. The languages were categorised using the following five-point scale: 
+The current state of LT support varies considerably from one language community to another. In order to compare the situation between languages, this section will present an evaluation based on two sample application areas (machine translation and speech processing) and one underlying technology (text analysis), as well as basic resources needed for building LT applications. The languages were categorised using the following five-point scale:
 
 \begin{enumerate}
 \item Excellent support
@@ -1760,7 +1780,7 @@ Figures~\ref{fig:speech_cluster_en} to~\ref{fig:resources_cluster_en} show that,
 
 \emph{In this series of white papers, we have made an important effort by assessing the language technology support for 30 European languages, and by providing a high-level comparison across these languages. By identifying the gaps, needs and deficits, the European language technology community and its related stakeholders are now in a position to design a large scale research and development programme aimed at building a truly multilingual, technology-enabled communication across Europe.}
 
-The results of this white paper series show that there is a dramatic difference in language technology support for the various European languages. While there are good quality software and resources available for some languages and application areas, others, usually smaller languages, have substantial gaps. Many languages lack basic technologies for text analysis and the essential resources. Others have basic tools and resources but the implementation of for example semantic methods is still far away. Therefore a large-scale effort is needed to attain the ambitious goal of providing high-quality language technology support for all European languages, for example through high quality machine translation. 
+The results of this white paper series show that there is a dramatic difference in language technology support for the various European languages. While there are good quality software and resources available for some languages and application areas, others, usually smaller languages, have substantial gaps. Many languages lack basic technologies for text analysis and the essential resources. Others have basic tools and resources but the implementation of for example semantic methods is still far away. Therefore a large-scale effort is needed to attain the ambitious goal of providing high-quality language technology support for all European languages, for example through high quality machine translation.
 
    The situation of Dutch concerning language technology support gives rise to cautious optimism. Supported by larger research programs in the past, there exists a language technology industry and research scene in the Low Countries, which consists mostly of SMEs but is already partially organised.
 
@@ -1771,7 +1791,7 @@ The results of this white paper series show that there is a dramatic difference 
 
 Finally there is a lack of continuity in research and development funding. Short-term coordinated programmes tend to alternate with periods of sparse or zero funding. In addition, there is an overall lack of coordination with programmes in other EU countries and at the European Commission level.
 
-The long term goal of META-NET is to enable the creation of high-quality language technology for all languages. This requires all stakeholders - in politics, research, business, and society - to unite their efforts. The resulting technology will help tear down existing barriers and build bridges between Europe’s languages, paving the way for political and economic unity through cultural diversity. 
+The long term goal of META-NET is to enable the creation of high-quality language technology for all languages. This requires all stakeholders - in politics, research, business, and society - to unite their efforts. The resulting technology will help tear down existing barriers and build bridges between Europe’s languages, paving the way for political and economic unity through cultural diversity.
 \end{multicols}
 
 \clearpage
@@ -1785,50 +1805,50 @@ The long term goal of META-NET is to enable the creation of high-quality languag
   >{\columncolor{corange4}}p{.13\linewidth}@{\hspace{.040\linewidth}}
   >{\columncolor{corange3}}p{.13\linewidth}@{\hspace{.040\linewidth}}
   >{\columncolor{corange2}}p{.13\linewidth}@{\hspace{.040\linewidth}}
-  >{\columncolor{corange1}}p{.13\linewidth} 
+  >{\columncolor{corange1}}p{.13\linewidth}
   }
-  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Excellent}} & 
+  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Excellent}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Good}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Moderate}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Fragmentary}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{Weak/no}} \\ 
-  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} & 
+  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{Weak/no}} \\
+  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{support}} \\ \addlinespace
-  
+
 & \vspace*{0.5mm}English
 & \vspace*{0.5mm}
-Czech \newline 
-Dutch \newline 
-Finnish \newline 
-French \newline 
-German \newline   
-Italian \newline  
-Portuguese \newline 
+Czech \newline
+Dutch \newline
+Finnish \newline
+French \newline
+German \newline
+Italian \newline
+Portuguese \newline
 Spanish \newline
-& \vspace*{0.5mm}Basque \newline 
-Bulgarian \newline 
-Catalan \newline 
-Danish \newline 
-Estonian \newline 
-Galician\newline 
-Greek \newline  
+& \vspace*{0.5mm}Basque \newline
+Bulgarian \newline
+Catalan \newline
+Danish \newline
+Estonian \newline
+Galician\newline
+Greek \newline
 Hungarian  \newline
-Irish \newline  
-Norwegian \newline 
-Polish \newline 
-Serbian \newline 
-Slovak \newline 
-Slovene \newline 
+Irish \newline
+Norwegian \newline
+Polish \newline
+Serbian \newline
+Slovak \newline
+Slovene \newline
 Swedish \newline
 & \vspace*{0.5mm}
-Croatian \newline 
-Icelandic \newline  
-Latvian \newline 
-Lithuanian \newline 
-Maltese \newline 
+Croatian \newline
+Icelandic \newline
+Latvian \newline
+Lithuanian \newline
+Maltese \newline
 Romanian\\
 \end{tabular}
 \caption{Speech processing: state of language technology support for 30 European languages}
@@ -1844,51 +1864,51 @@ Romanian\\
   >{\columncolor{corange4}}p{.13\linewidth}@{\hspace{.040\linewidth}}
   >{\columncolor{corange3}}p{.13\linewidth}@{\hspace{.040\linewidth}}
   >{\columncolor{corange2}}p{.13\linewidth}@{\hspace{.040\linewidth}}
-  >{\columncolor{corange1}}p{.13\linewidth} 
+  >{\columncolor{corange1}}p{.13\linewidth}
   }
-  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Excellent}} & 
+  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Excellent}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Good}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Moderate}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Fragmentary}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{Weak/no}} \\ 
-  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} & 
+  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{Weak/no}} \\
+  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{support}} \\ \addlinespace
-  
-& \vspace*{0.5mm} English 
-& \vspace*{0.5mm} 
-French \newline 
+
+& \vspace*{0.5mm} English
+& \vspace*{0.5mm}
+French \newline
 Spanish
 & \vspace*{0.5mm}
-Catalan \newline 
-Dutch \newline 
-German \newline 
+Catalan \newline
+Dutch \newline
+German \newline
 Hungarian \newline
-Italian \newline 
-Polish \newline 
-Romanian \newline 
-& \vspace*{0.5mm}Basque \newline 
-Bulgarian \newline 
-Croatian \newline 
+Italian \newline
+Polish \newline
+Romanian \newline
+& \vspace*{0.5mm}Basque \newline
+Bulgarian \newline
+Croatian \newline
 Czech \newline
-Danish \newline 
-Estonian \newline 
-Finnish \newline 
-Galician \newline 
-Greek \newline 
-Icelandic \newline 
-Irish \newline 
-Latvian \newline 
-Lithuanian \newline 
-Maltese \newline 
-Norwegian \newline 
-Portuguese \newline 
-Serbian \newline 
-Slovak \newline 
-Slovene \newline 
-Swedish \newline 
+Danish \newline
+Estonian \newline
+Finnish \newline
+Galician \newline
+Greek \newline
+Icelandic \newline
+Irish \newline
+Latvian \newline
+Lithuanian \newline
+Maltese \newline
+Norwegian \newline
+Portuguese \newline
+Serbian \newline
+Slovak \newline
+Slovene \newline
+Swedish \newline
 \end{tabular}
 \caption{Machine translation: state of language technology support for 30 European languages}
 \label{fig:mt_cluster_en}
@@ -1903,14 +1923,14 @@ Swedish \newline
   >{\columncolor{corange4}}p{.13\linewidth}@{\hspace{.040\linewidth}}
   >{\columncolor{corange3}}p{.13\linewidth}@{\hspace{.040\linewidth}}
   >{\columncolor{corange2}}p{.13\linewidth}@{\hspace{.040\linewidth}}
-  >{\columncolor{corange1}}p{.13\linewidth} 
+  >{\columncolor{corange1}}p{.13\linewidth}
   }
-  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Excellent}} & 
+  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Excellent}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Good}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Moderate}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Fragmentary}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{Weak/no}} \\ 
-  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} & 
+  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{Weak/no}} \\
+  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
@@ -1918,35 +1938,35 @@ Swedish \newline
 
 & \vspace*{0.5mm}English
 & \vspace*{0.5mm}
-  Dutch \newline 
-  French \newline 
-  German \newline 
-  Italian \newline 
+  Dutch \newline
+  French \newline
+  German \newline
+  Italian \newline
   Spanish
-& \vspace*{0.5mm}Basque \newline 
-  Bulgarian \newline 
-  Catalan \newline 
-  Czech \newline 
-  Danish \newline 
-  Finnish \newline 
-  Galician \newline 
-  Greek \newline 
-  Hungarian \newline 
-  Norwegian \newline 
-  Polish \newline 
-  Portuguese \newline 
-  Romanian \newline 
-  Slovak \newline 
-  Slovene \newline 
-  Swedish \newline 
+& \vspace*{0.5mm}Basque \newline
+  Bulgarian \newline
+  Catalan \newline
+  Czech \newline
+  Danish \newline
+  Finnish \newline
+  Galician \newline
+  Greek \newline
+  Hungarian \newline
+  Norwegian \newline
+  Polish \newline
+  Portuguese \newline
+  Romanian \newline
+  Slovak \newline
+  Slovene \newline
+  Swedish \newline
 & \vspace*{0.5mm}
-  Croatian \newline 
-  Estonian \newline 
-  Icelandic \newline 
-  Irish \newline 
-  Latvian \newline 
-  Lithuanian \newline 
-  Maltese \newline 
+  Croatian \newline
+  Estonian \newline
+  Icelandic \newline
+  Irish \newline
+  Latvian \newline
+  Lithuanian \newline
+  Maltese \newline
   Serbian \\
   \end{tabular}
 \caption{Text analysis: state of language technology support for 30 European languages}
@@ -1962,53 +1982,53 @@ Swedish \newline
   >{\columncolor{corange4}}p{.13\linewidth}@{\hspace{.040\linewidth}}
   >{\columncolor{corange3}}p{.13\linewidth}@{\hspace{.040\linewidth}}
   >{\columncolor{corange2}}p{.13\linewidth}@{\hspace{.040\linewidth}}
-  >{\columncolor{corange1}}p{.13\linewidth} 
+  >{\columncolor{corange1}}p{.13\linewidth}
   }
-  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Excellent}} & 
+  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Excellent}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Good}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Moderate}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Fragmentary}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{Weak/no}} \\ 
-  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} & 
+  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{Weak/no}} \\
+  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{support}} \\ \addlinespace
-    
+
 & \vspace*{0.5mm}English
-& \vspace*{0.5mm} 
-    Czech \newline 
-    Dutch \newline 
-    French \newline 
-    German \newline 
+& \vspace*{0.5mm}
+    Czech \newline
+    Dutch \newline
+    French \newline
+    German \newline
     Hungarian \newline
     Italian \newline
     Polish \newline
     Spanish \newline
-    Swedish \newline 
-& \vspace*{0.5mm} Basque\newline 
-    Bulgarian\newline 
-    Catalan \newline 
-    Croatian \newline 
-    Danish \newline 
-    Estonian \newline 
-    Finnish \newline 
-    Galician \newline 
-    Greek \newline 
-    Norwegian \newline 
-    Portuguese \newline 
-    Romanian \newline 
-    Serbian \newline 
-    Slovak \newline 
+    Swedish \newline
+& \vspace*{0.5mm} Basque\newline
+    Bulgarian\newline
+    Catalan \newline
+    Croatian \newline
+    Danish \newline
+    Estonian \newline
+    Finnish \newline
+    Galician \newline
+    Greek \newline
+    Norwegian \newline
+    Portuguese \newline
+    Romanian \newline
+    Serbian \newline
+    Slovak \newline
     Slovene \newline
 &  \vspace*{0.5mm}
-    Icelandic \newline 
-    Irish \newline 
-    Latvian \newline 
-    Lithuanian \newline 
+    Icelandic \newline
+    Irish \newline
+    Latvian \newline
+    Lithuanian \newline
     Maltese  \\
   \end{tabular}
-  \caption{Speech and text resources: State of support for 30 European languages}  
+  \caption{Speech and text resources: State of support for 30 European languages}
   \label{fig:resources_cluster_en}
 \end{figure*}
 
@@ -2030,9 +2050,9 @@ META-NET stimulates and promotes multilingual technologies for all European lang
 
 META-NET launched on 1 February 2010 with the goal of advancing research in language technology (LT). The network supports a Europe that unites as a single digital market and information space. META-NET has conducted several activities that further its goals. META-VISION, META-SHARE and META-RESEARCH are the network’s three lines of action.
 
-\textbf{META-VISION} fosters a dynamic and influential stakeholder community that unites around a shared vision and a common strategic research agenda (SRA). The main focus of this activity is to build a coherent and cohesive LT community in Europe by bringing together representatives from highly fragmented and diverse groups of stakeholders. In the first year of META-NET, presentations at the FLaReNet Forum (Spain), Language Technology Days (Luxembourg), JIAMCATT 2010 (Luxembourg), LREC 2010 (Malta), EAMT 2010 (France) and ICT 2010 (Belgium) centred on public outreach. According to initial estimates, META-NET has already contacted more than 2,500 LT professionals to develop its goals and visions with them. At the META-FORUM 2010 event in Brussels, META-NET communicated the initial results of its vision building process to more than 250 participants. In a series of interactive sessions, the participants provided feedback on the visions presented by the network. 
+\textbf{META-VISION} fosters a dynamic and influential stakeholder community that unites around a shared vision and a common strategic research agenda (SRA). The main focus of this activity is to build a coherent and cohesive LT community in Europe by bringing together representatives from highly fragmented and diverse groups of stakeholders. In the first year of META-NET, presentations at the FLaReNet Forum (Spain), Language Technology Days (Luxembourg), JIAMCATT 2010 (Luxembourg), LREC 2010 (Malta), EAMT 2010 (France) and ICT 2010 (Belgium) centred on public outreach. According to initial estimates, META-NET has already contacted more than 2,500 LT professionals to develop its goals and visions with them. At the META-FORUM 2010 event in Brussels, META-NET communicated the initial results of its vision building process to more than 250 participants. In a series of interactive sessions, the participants provided feedback on the visions presented by the network.
 
-\textbf{META-SHARE} creates an open, distributed facility for exchanging and sharing resources. The peer-to-peer network of repositories will contain language data, tools and web services that are documented with high-quality metadata and organised in standardised categories. The resources can be readily accessed and uniformly searched. The available resources include free, open source materials as well as restricted, commercially available, fee-based items. META-SHARE targets existing language data, tools and systems as well as new and emerging products that are required for building and evaluating new technologies, products and services. The reuse, combination, repurposing and re-engineering of language data and tools plays a crucial role. META-SHARE will eventually become a critical part of the LT marketplace for developers, localisation experts, researchers, translators and language professionals from small, mid-sized and large enterprises. META-SHARE addresses the full development cycle of LT—from research to innovative products and services. A key aspect of this activity is establishing META-SHARE as an important and valuable part of a European and global infrastructure for the LT community. 
+\textbf{META-SHARE} creates an open, distributed facility for exchanging and sharing resources. The peer-to-peer network of repositories will contain language data, tools and web services that are documented with high-quality metadata and organised in standardised categories. The resources can be readily accessed and uniformly searched. The available resources include free, open source materials as well as restricted, commercially available, fee-based items. META-SHARE targets existing language data, tools and systems as well as new and emerging products that are required for building and evaluating new technologies, products and services. The reuse, combination, repurposing and re-engineering of language data and tools plays a crucial role. META-SHARE will eventually become a critical part of the LT marketplace for developers, localisation experts, researchers, translators and language professionals from small, mid-sized and large enterprises. META-SHARE addresses the full development cycle of LT—from research to innovative products and services. A key aspect of this activity is establishing META-SHARE as an important and valuable part of a European and global infrastructure for the LT community.
 
 \textbf{META-RESEARCH} builds bridges to related technology fields. This activity seeks to leverage advances in other fields and to capitalise on innovative research that can benefit language technology. In particular, this activity wants to bring more semantics into machine translation (MT), optimise the division of labour in hybrid MT, exploit context when computing automatic translations and prepare an empirical base for MT. META-RESEARCH is working with other fields and disciplines, such as machine learning and the Semantic Web community. META-RESEARCH focuses on collecting data, preparing data sets and organising language resources for evaluation purposes; compiling inventories of tools and methods; and organising workshops and training events for members of the community. This activity has already clearly identified aspects of MT where semantics can impact current best practices. In addition, the activity has created recommendations on how to approach the problem of integrating semantic information in MT. META-RESEARCH is also finalising a new language resource for MT, the Annotated Hybrid Sample MT Corpus, which provides data for English-German, English-Spanish and English-Czech language pairs. META-RESEARCH has also developed software that collects multilingual corpora that are hidden on the Web.
 \end{multicols}
@@ -2045,11 +2065,11 @@ META-NET launched on 1 February 2010 with the goal of advancing research in lang
 \appendix
 \addtocontents{toc}{\protect\bigskip}
 
-\bsection[Literaturverweise --- References]{XXXLiteraturverweise --- References}
+\bsection[Bibliografie --- References]{Bibliografie --- References}
 \bibliographystyle{unsrt} % What is the difference between "unsrt" und "is-unsrt"?
 %\bibliographystyle{is-unsrt}
 \bibliography{dutch}
-  
+
 \cleardoublepage
 
 \bsection[META-NET Leden -- META-NET Members]{META-NET Leden --- META-NET Members}
@@ -2068,27 +2088,27 @@ META-NET launched on 1 February 2010 with the goal of advancing research in lang
   Finnland & \textcolor{grey1}{Finland} & Computational Cognitive Systems Research Group, Aalto University: Timo Honkela\\ \addlinespace
   & & Department of Modern Languages, University of Helsinki: Kimmo Koskenniemi, Krister Lindén \\ \addlinespace
   Frankreich & \textcolor{grey1}{France} & Centre National de la Recherche Scientifique, Laboratoire d'Informatique pour la Mécanique et les Sciences de l'Ingénieur: Joseph Mariani \\ \addlinespace
-  & & Evaluations and Language Resources Distribution Agency: Khalid Choukri\\ \addlinespace 
+  & & Evaluations and Language Resources Distribution Agency: Khalid Choukri\\ \addlinespace
   Griechenland & \textcolor{grey1}{Greece} & R.C. “Athena”, Institute for Language and Speech Processing: Stelios Piperidis\\ \addlinespace
-  Großbritannien & \textcolor{grey1}{UK} & 
-  School of Computer Science, University of Manchester: Sophia Ananiadou \\ \addlinespace 
-  & & Institute for Language, Cognition and Computation, Center for Speech Technology Research, University of Edinburgh: Steve Renals \\ \addlinespace 
-  & & Research Institute of Informatics and Language Processing, University of Wolverhampton: Ruslan Mitkov \\ \addlinespace 
+  Großbritannien & \textcolor{grey1}{UK} &
+  School of Computer Science, University of Manchester: Sophia Ananiadou \\ \addlinespace
+  & & Institute for Language, Cognition and Computation, Center for Speech Technology Research, University of Edinburgh: Steve Renals \\ \addlinespace
+  & & Research Institute of Informatics and Language Processing, University of Wolverhampton: Ruslan Mitkov \\ \addlinespace
   Irland & \textcolor{grey1}{Ireland} & School of Computing, Dublin City University: Josef van Genabith\\ \addlinespace
   Island & \textcolor{grey1}{Iceland} & School of Humanities, University of Iceland: Eiríkur Rögnvaldsson\\ \addlinespace
   Italien & \textcolor{grey1}{Italy} & Consiglio Nazionale delle Ricerche, Istituto di Linguistica Computazionale “Antonio Zampolli”: Nicoletta Calzolari\\ \addlinespace
-  & & Human Language Technology Research Unit, Fondazione Bruno Kessler:\newline Bernardo Magnini\\ \addlinespace 
+  & & Human Language Technology Research Unit, Fondazione Bruno Kessler:\newline Bernardo Magnini\\ \addlinespace
   Kroatien & \textcolor{grey1}{Croatia} & Institute of Linguistics, Faculty of Humanities and Social Science, University of Zagreb: Marko Tadić \\ \addlinespace
-  Lettland & \textcolor{grey1}{Latvia} & Tilde: Andrejs Vasiļjevs\\ \addlinespace 
+  Lettland & \textcolor{grey1}{Latvia} & Tilde: Andrejs Vasiļjevs\\ \addlinespace
   & & Institute of Mathematics and Computer Science, University of Latvia: Inguna Skadiņa\\ \addlinespace
   Litauen & \textcolor{grey1}{Lithuania} & Institute of the Lithuanian Language: Jolanta Zabarskaitė\\ \addlinespace
   Luxemburg & \textcolor{grey1}{Luxembourg} & Arax Ltd.: Vartkes Goetcherian\\ \addlinespace
   Malta & \textcolor{grey1}{Malta} & Department Intelligent Computer Systems, University of Malta: Mike Rosner\\ \addlinespace
-  Niederlande & \textcolor{grey1}{Netherlands} & Utrecht Institute of Linguistics, Utrecht University: Jan Odijk\\ \addlinespace 
+  Niederlande & \textcolor{grey1}{Netherlands} & Utrecht Institute of Linguistics, Utrecht University: Jan Odijk\\ \addlinespace
   & & Computational Linguistics, University of Groningen: Gertjan van Noord\\ \addlinespace
-  Norwegen & \textcolor{grey1}{Norway} & Department of Linguistic, University of Bergen: Koenraad De Smedt\\ \addlinespace 
+  Norwegen & \textcolor{grey1}{Norway} & Department of Linguistic, University of Bergen: Koenraad De Smedt\\ \addlinespace
   & & Department of Informatics, Language Technology Group, University of Oslo:\newline Stephan Oepen \\ \addlinespace
-  Österreich & \textcolor{grey1}{Austria} & Zentrum für Translationswissenschaft, Universität Wien: Gerhard Budin\\ \addlinespace 
+  Österreich & \textcolor{grey1}{Austria} & Zentrum für Translationswissenschaft, Universität Wien: Gerhard Budin\\ \addlinespace
   Polen & \textcolor{grey1}{Poland} & Institute of Computer Science, Polish Academy of Sciences: Adam Przepiórkowski, Maciej Ogrodniczuk \\ \addlinespace
   & & University of Łódź: Barbara Lewandowska-Tomaszczyk, Piotr Pęzik\\ \addlinespace
   & & Department of Computer Linguistics and Artificial Intelligence, Adam Mickiewicz University: Zygmunt Vetulani \\ \addlinespace
@@ -2096,17 +2116,17 @@ META-NET launched on 1 February 2010 with the goal of advancing research in lang
   & & Spoken Language Systems Laboratory, Institute for Systems Engineering and Computers: Isabel Trancoso \\ \addlinespace
   Rumänien & \textcolor{grey1}{Romania} & Research Institute for Artificial Intelligence, Romanian Academy of Sciences:\newline Dan Tufiș \\ \addlinespace
   & & Faculty of Computer Science, University Alexandru Ioan Cuza of Iași: Dan Cristea \\ \addlinespace
-  Schweden & \textcolor{grey1}{Sweden} & Department of Swedish, University of Gothenburg: Lars Borin \\ \addlinespace 
-  Schweiz & \textcolor{grey1}{Switzerland} & Idiap Research Institute: Hervé Bourlard \\ \addlinespace 
+  Schweden & \textcolor{grey1}{Sweden} & Department of Swedish, University of Gothenburg: Lars Borin \\ \addlinespace
+  Schweiz & \textcolor{grey1}{Switzerland} & Idiap Research Institute: Hervé Bourlard \\ \addlinespace
   Serbien & \textcolor{grey1}{Serbia} & University of Belgrade, Faculty of Mathematics: Duško Vitas, Cvetana Krstev,\newline Ivan Obradović \\ \addlinespace
-  & & Pupin Institute: Sanja Vranes \\ \addlinespace  
-  Slowakei & \textcolor{grey1}{Slovakia} & Ľudovít Štúr Institute of Linguistics, Slovak Academy of Sciences: Radovan Garabík \\ \addlinespace 
-  Slowenien & \textcolor{grey1}{Slovenia} & Jozef Stefan Institute: Marko Grobelnik \\ \addlinespace 
-  Spanien & \textcolor{grey1}{Spain} & Barcelona Media: Toni Badia, Maite Melero \\ \addlinespace 
-  & & Institut Universitari de Lingüística Aplicada, Universitat Pompeu Fabra: Núria Bel \\ \addlinespace 
-  & & Aholab Signal Processing Laboratory, University of the Basque Country:\newline Inma Hernaez Rioja \\ \addlinespace 
-  & & Center for Language and Speech Technologies and Applications, Universitat Politècnica de Catalunya:  Asunción Moreno \\ \addlinespace 
-  & & Department of Signal Processing and Communications, University of Vigo:\newline Carmen García Mateo \\ \addlinespace 
+  & & Pupin Institute: Sanja Vranes \\ \addlinespace
+  Slowakei & \textcolor{grey1}{Slovakia} & Ľudovít Štúr Institute of Linguistics, Slovak Academy of Sciences: Radovan Garabík \\ \addlinespace
+  Slowenien & \textcolor{grey1}{Slovenia} & Jozef Stefan Institute: Marko Grobelnik \\ \addlinespace
+  Spanien & \textcolor{grey1}{Spain} & Barcelona Media: Toni Badia, Maite Melero \\ \addlinespace
+  & & Institut Universitari de Lingüística Aplicada, Universitat Pompeu Fabra: Núria Bel \\ \addlinespace
+  & & Aholab Signal Processing Laboratory, University of the Basque Country:\newline Inma Hernaez Rioja \\ \addlinespace
+  & & Center for Language and Speech Technologies and Applications, Universitat Politècnica de Catalunya:  Asunción Moreno \\ \addlinespace
+  & & Department of Signal Processing and Communications, University of Vigo:\newline Carmen García Mateo \\ \addlinespace
   Tschechien & \textcolor{grey1}{Czech Republic} & Institute of Formal and Applied Linguistics, Charles University in Prague: Jan Hajič \\ \addlinespace
   Ungarn & \textcolor{grey1}{Hungary} & Research Institute for Linguistics, Hungarian Academy of Sciences: Tamás Váradi\\  \addlinespace
   & & Department of Telecommunications and Media Informatics, Budapest University of Technology and Economics: Géza Németh and Gábor Olaszy\\ \addlinespace
@@ -2122,7 +2142,7 @@ META-NET launched on 1 February 2010 with the goal of advancing research in lang
   \center
   %\fbox{-- META-NET group picture omitted to keep the size of the PDF file small. --}
   \includegraphics[width=\textwidth]{../_media/meta-net_team.jpg}
-  \caption{XXX Etwa 100 Experten des Gebiets Sprachtechnologie -- Repräsentanten der in META-NET vertretenen Länder und Sprachen -- diskutierten und finalisierten die zentralen Ergebnisse der Weißbuch-Serie bei einem META-NET-Treffen in Berlin am 21./22.~Oktober 2011. --- \textcolor{grey1}{About 100 language technology experts -- representatives of the countries and languages represented in META-NET -- discussed and finalised the key results and messages of the White Paper Series at a META-NET meeting in Berlin, Germany, on October 21/22, 2011.}}
+  \caption{Ongeveer 100 Experts op het gebied van de taaltechnologie -- afgezanten van de in META-NET vertegenwoordigde landen en talen  -- dicussieerden en finaliseerden de belangrijkste conclusies van de witboekserie op een META-NET-bijeenkomst in Berlijn op 21/2.~oktober 2011. --- \textcolor{grey1}{About 100 language technology experts -- representatives of the countries and languages represented in META-NET -- discussed and finalised the key results and messages of the White Paper Series at a META-NET meeting in Berlin, Germany, on October 21/22, 2011.}}
   \medskip
   \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
@@ -2138,36 +2158,37 @@ META-NET launched on 1 February 2010 with the goal of advancing research in lang
   \begin{tabularx}{\textwidth}{lllll} \toprule\addlinespace
   %\begin{tabulary}{170mm}{LLL} \toprule
   &Baskisch & Basque & euskara& \\
-  &Bulgarisch & Bulgarian & български& \\
-  &Dänisch & Danish & dansk& \\
-  &Deutsch & German & Deutsch& \\
-  &Englisch & English & English& \\
-  &Estnisch & Estonian & eesti& \\
-  &Finnisch & Finnish & suomi& \\
-  &Französisch & French & français& \\
-  &Galizisch & Galician & galego& \\
-  &Griechisch & Greek & ελληνικά& \\
-  &Isländisch & Icelandic & íslenska& \\
-  &Irisch & Irish & Gaeilge& \\
-  &Italienisch & Italian & italiano& \\
-  &Katalanisch & Catalan & català& \\
-  &Kroatisch & Croatian & hrvatski& \\
-  &Lettisch & Latvian & latviešu valoda& \\
-  &Litauisch & Lithuanian & lietuvių kalba& \\
-  &Maltesisch & Maltese & Malti& \\
-  &Niederländisch & Dutch & Nederlands& \\
-  &Norwegisch Bokmål & Norwegian Bokmål & bokmål& \\
-  &Norwegisch Nynorsk & Norwegian Nynorsk & nynorsk& \\
-  &Polnisch & Polish & polski& \\
-  &Portugiesisch & Portuguese & português& \\
-  &Rumänisch & Romanian & română& \\
-  &Serbisch & Serbian & српски& \\
-  &Slowakisch & Slovak & slovenčina& \\
-  &Slowenisch & Slovene & slovenščina& \\
-  &Spanisch & Spanish & español& \\
-  &Schwedisch & Swedish & svenska& \\
-  &Tschechisch & Czech & čeština& \\
-  &Ungarisch & Hungarian & magyar& \\ \addlinespace \bottomrule
+  &Bulgaars & Bulgarian & български& \\
+  &Catalaans & Catalan & català& \\
+  &Croatisch & Croatian & hrvatski& \\  
+&Deens & Danish & dansk& \\
+  &Duits & German & Deutsch& \\
+  &Engels & English & English& \\
+  &Ests & Estonian & eesti& \\
+  &Fins & Finnish & suomi& \\
+  &Frans & French & français& \\
+  &Galicisch & Galician & galego& \\
+  &Grieks & Greek & ελληνικά& \\
+  &Hongaars & Hungarian & magyar& \\
+  &Iers & Irish & Gaeilge& \\
+  &IJslands & Icelandic & íslenska& \\
+  &Italiaans & Italian & italiano& \\
+  &Lets & Latvian & latviešu valoda& \\
+  &Litouws & Lithuanian & lietuvių kalba& \\
+  &Maltees & Maltese & Malti& \\
+  &Nederlands & Dutch & Nederlands& \\
+  &Noors Bokmål & Norwegian Bokmål & bokmål& \\
+  &Noors Nynorsk & Norwegian Nynorsk & nynorsk& \\
+  &Pools & Polish & polski& \\
+  &Portugees & Portuguese & português& \\
+  &Roemeens & Romanian & română& \\
+  &Servisch & Serbian & српски& \\
+  &Sloveens & Slovene & slovenščina& \\
+  &Slowaaks & Slovak & slovenčina& \\
+  &Spaans & Spanish & español& \\
+  &Tsjechisch & Czech & čeština& \\
+  &Zweeds & Swedish & svenska& \\
+\addlinespace \bottomrule
 \end{tabularx}
 
-\end{document}
+\end{document} 
