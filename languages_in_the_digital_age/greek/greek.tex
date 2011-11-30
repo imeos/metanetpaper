@@ -14,7 +14,7 @@
 
 \documentclass[]{../../metanetpaper}
 
-\usepackage{multicol,framed,lipsum} % FIXME: Which of these are really eeded?
+\usepackage{multicol}
 
 %!TEX TS-program = xelatex
 \RequireXeTeX %Force XeTeX check
@@ -96,6 +96,8 @@ As of November 2011, META-NET consists of 54 research centres from 33 European c
 % --------------------------------------------------------------------------
 \bsection*{Πίνακας Περιεχομένων --- Table of Contents}
 
+\selectlanguage{english}
+\renewcommand\contentsname{}
 \tableofcontents
 
 \addtocontents{toc}{\protect\thispagestyle{empty}\protect}
@@ -348,7 +350,7 @@ As of November 2011, META-NET consists of 54 research centres from 33 European c
 Τα Ελληνικά είναι μια γλώσσα με δυνατότητα παράλειψης των προσωπικών αντωνυμιών (pro-drop), όταν αυτές υποδηλώνονται μορφολογικά ή πραγματολογικά. Τη διαδικασία αναγνώρισης της παραλειπόμενης αντωνυμίας βοηθά το γεγονός ότι τα ρήματα περιλαμβάνουν ένα μόρφημα του προσώπου το οποίο συμφωνεί με την αντωνυμία ως προς το πρόσωπο και τον αριθμό. Συνήθως, οι προσωπικές αντωνυμίες 1ου και 2ου προσώπου του ενικού παραλείπονται (\textit{εγώ}, \textit{εσύ}). Η παρουσία τους υποδηλώνει έμφαση. Επομένως, η αγγλική πρόταση
 
 \begin{itemize}
-\item I am leaving.
+\item[] I am leaving.
 \end{itemize}
 
 μπορεί να αποδοθεί στα Ελληνικά ως
@@ -465,7 +467,7 @@ As of November 2011, META-NET consists of 54 research centres from 33 European c
 \item σύνθεση φωνής
 \end{itemize}
 
-Η Γλωσσική τεχνολογία αποτελεί μια καθιερωμένη ερευνητική περιοχή με πλούσιο εισαγωγικό βιβλιογραφικό υλικό. Παρατίθενται ενδεικτικά οι ακόλουθες βιβλιογραφικές αναφορές: \cite{jurafsky-martin01} \cite{manning-schuetze1} \cite{lt-world1} \cite{lt-survey1}.
+Η Γλωσσική τεχνολογία αποτελεί μια καθιερωμένη ερευνητική περιοχή με πλούσιο εισαγωγικό βιβλιογραφικό υλικό. Παρατίθενται ενδεικτικά οι ακόλουθες βιβλιογραφικές αναφορές: \cite{jurafsky-martin01,manning-schuetze1,lt-world1,lt-survey1}.
 
 Πριν την ανάλυση των ανωτέρω πεδίων εφαρμογών θα περιγραφεί σύντομα η αρχιτεκτονική ενός τυπικού συστήματος ΓΤ. 
 
@@ -1473,7 +1475,7 @@ In this section, we will discuss the main application areas of language technolo
   \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
 
-Language technology is an established area of research with an extensive set of introductory literature. The interested reader is referred to the following references:  \cite{jurafsky-martin01, manning-schuetze1, lt-world1, lt-survey1}.
+Language technology is an established area of research with an extensive set of introductory literature. The interested reader is referred to the following references:  \cite{jurafsky-martin01,manning-schuetze1,lt-world1,lt-survey1}.
 
 Before discussing the above application areas, we will briefly describe the architecture of a typical LT system.
 
@@ -2064,13 +2066,13 @@ META-NET launched on 1 February 2010 with the goal of advancing research in lang
 \appendix
 \addtocontents{toc}{\protect\bigskip}
 
-\bsection[Παραπομπές -- References]{Παραπομπές --- References}
+\selectlanguage{english}\bsection[Παραπομπές -- References]{Παραπομπές --- References}
 \bibliographystyle{unsrt}
 \bibliography{greek_references}
   
 \cleardoublepage
 
-\bsection[Μέλη του META-NET -- META-NET Members]{Μέλη του META-NET --- META-NET Members}
+\selectlanguage{english}\bsection[Μέλη του META-NET -- META-NET Members]{Μέλη του META-NET --- META-NET Members}
 \label{metanetmembers}
 
 \small
@@ -2145,7 +2147,7 @@ META-NET launched on 1 February 2010 with the goal of advancing research in lang
 
 \cleardoublepage
 
-\bsection[Σειρά Λευκών Βίβλων του META-NET -- The META-NET White Paper Series]{Σειρά Λευκών Βίβλων του META-NET --- The META-NET\ \ \ \ \ \ White Paper Series}
+\selectlanguage{english}\bsection[Σειρά Λευκών Βίβλων του META-NET -- The META-NET White Paper Series]{Σειρά Λευκών Βίβλων του META-NET --- The META-NET\ \ \ \ \ \ White Paper Series}
 \label{whitepaperseries}
 
 \vspace*{-5mm}
