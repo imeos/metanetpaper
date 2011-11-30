@@ -35,7 +35,8 @@
 \RequirePackage{mathabx} % Mathematical symbols
 \RequirePackage[xetex]{color} % Colorize and customize the headings
 \RequirePackage{titlesec} % Generate TOC with hyperlinks inside document, no border, no color
-\RequirePackage[colorlinks=true, linkcolor=black, citecolor=black, urlcolor=black]{hyperref}
+%\RequirePackage[colorlinks=true, linkcolor=black, citecolor=black, urlcolor=black]{hyperref}
+\RequirePackage{url}
 \RequirePackage{wallpaper} % Custom background-images
 \RequirePackage[T1]{fontenc} % XeLaTeX packages 
 \RequirePackage{fontspec}
@@ -169,6 +170,7 @@
   % Redefine bilingual \sections
   % Unstarred bsections will be added to the appendix of the TOC
 \newcounter{bsectioncounter}
+\renewcommand{\thebsectioncounter}{\Alph{bsectioncounter}}
 \newcommand{\bsection}{\@ifstar
                      \bsectionStar%
                      \bsectionNoStar%
@@ -178,9 +180,9 @@
   \stepcounter{bsectioncounter}
   \ifx#1\@null
   \ifsecondargument
-    \addcontentsline{toc}{section}{\Alph{bsectioncounter}\hskip0.75em #2}
+    \addsec{\thebsectioncounter\hskip0.75em #2}
   \else
-    \addcontentsline{toc}{section}{\Alph{bsectioncounter}\hskip0.75em #1}
+    \addsec{\thebsectioncounter\hskip0.75em #1}
   \fi
   \ThisCenterWallPaper{1}{../_media/section_bg.pdf}
   % Numbering
@@ -188,7 +190,7 @@
     \textsf{%
       \fontsize{24}{24}\selectfont{%
         \textcolor{red}{%
-          \Alph{bsectioncounter}\\
+          \thebsectioncounter\\
         }
       }
     }
@@ -291,7 +293,7 @@
 
 
 % URL style
-\urlstyle{same}
+%\urlstyle{same} % only works with hyperref package
 
 
 % Marginal notes
