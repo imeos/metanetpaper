@@ -14,8 +14,8 @@
 % ----------------------------------------------------------------------------
 
 \documentclass[]{../../metanetpaper}
-
-\usepackage[german, english]{babel}
+\usepackage{polyglossia}
+\setotherlanguages{maltese,english,german}
 
 %!TEX TS-program = xelatex
 \RequireXeTeX %Force XeTeX check
@@ -49,23 +49,23 @@
 \pagestyle{empty} 
 
 
-\FundingLNotice{
-  \selectlanguage{german}
-  Die Autoren dieses Dokuments Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\\
+\FundingLNotice{\selectlanguage{maltese} 
+  Il-pubblikatur huwa grat lejn l-awturi tal-white paper Ġermaniża għall-permess li jirriproduċi materjal mill-white paper imsemmija.  Grazzi lil Ritianne Stanyer u Roberta Abela għat-translazzjoni ta' dan id-dokument.
+
+  \bigskip L-iżvilupp ta’ din il-white paper ġie ffinanzjat mis-Seba' Programm ta' Qafas u l-Programm ta' Appoġġ għall-Politika dwar l-ICT tal-Kummissjoni Ewropea taħt il-kuntratti T4ME (Grant Agreement 249119), CESAR (Grant Agreement 271022), METANET4U (Grant Agreement 270893) u META-NORD (Grant Agreement 270899).}
+
+\FundingRNotice{\selectlanguage{english} The authors of this document
+  are grateful to the authors of the White Paper on German for
+  permission to re-use selected language-independent materials from
+  their document.
   
-  Die Ausarbeitung dieses Weißbuchs wurde mit Mitteln aus dem Siebten
-  Rahmenprogramm und dem Programm zur Unter-stützung der Politik für
-  Informations- und Kommunikationstechnologien der Europäischen
-  Kommission im Rahmen der Verträge T4ME (Finanzhilfevereinbarung
-  249119), CESAR (Finanzhilfevereinbarung 271022), METANET4U
-  (Finanzhilfevereinbarung 270893) und META-NORD
-  (Finanzhilfevereinbarung 270899) finanziert.
-}
-\FundingRNotice{
-  \selectlanguage{english} The authors of this document are grateful to the authors of the White Paper on German for permission to re-use selected language-independent materials from their document.  
-  
-  The development of this white paper has been funded by the Seventh Framework Programme and the ICT Policy Support Programme of the European Commission under the contracts T4ME (Grant Agreement 249119), CESAR (Grant Agreement 271022), METANET4U (Grant Agreement 270893) and META-NORD (Grant Agreement 270899).
-}
+  \bigskip
+  The development of this white paper has been funded by the Seventh
+  Framework Programme and the ICT Policy Support Programme of the
+  European Commission under the contracts T4ME (Grant Agreement
+  249119), CESAR (Grant Agreement 271022), METANET4U (Grant Agreement
+  270893) and META-NORD (Grant Agreement 270899).}
+
 \makefundingnotice
 
 
