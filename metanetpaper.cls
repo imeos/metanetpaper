@@ -197,7 +197,7 @@
   \end{center}
   \vspace*{-6mm}
   % original language
-  \begin{minipage}[t]{80mm}
+  \begin{minipage}[t]{79mm}
       \color{red}
       \textsf{%
         \begin{flushright}%
@@ -212,7 +212,7 @@
       }
   \end{minipage}
   % spacing between colums
-  \begin{minipage}[t]{5mm}\ \end{minipage}
+  \begin{minipage}[t]{6mm}\ \end{minipage}
   % english version
   \begin{minipage}[t]{81mm}
     \color{grey1}
@@ -234,7 +234,7 @@
   \vspace*{1mm}
   \ThisCenterWallPaper{1}{../_media/section_bg.pdf}
   % original language
-  \begin{minipage}[t]{80mm}
+  \begin{minipage}[t]{79mm}
       \color{red}
       \textsf{%
         \begin{flushright}%
@@ -249,7 +249,7 @@
       }
   \end{minipage}
   % spacing between colums
-  \begin{minipage}[t]{5mm}\ \end{minipage}
+  \begin{minipage}[t]{6mm}\ \end{minipage}
   % english version
   \begin{minipage}[t]{81mm}
     \color{grey1}
