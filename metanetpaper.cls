@@ -293,7 +293,8 @@
 
 
 % URL style
-\urlstyle{rm}
+\urlstyle{same} 
+%\urlstyle{rm}
 
 
 % Marginal notes

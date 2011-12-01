@@ -15,15 +15,15 @@
 %!TEX TS-program = xelatex
 \RequireXeTeX %Force XeTeX check
 
-\usepackage{polyglossia}
-\setotherlanguages{english}
+%\usepackage{polyglossia}
+%\setotherlanguages{english}
 
 \title{The English Language in the Digital Age --- ~}
 
 \subtitle{~ --- White Paper Series}
 
 \author{
-  Sophia Ananidou~ {\small University of Manchester}\\
+  Sophia Ananiadou~ {\small University of Manchester}\\
   Paul Thompson~ {\small University of Manchester}\\
   John McNaught~ {\small University of Manchester}
 }
@@ -39,18 +39,18 @@
 \null
 \pagestyle{empty} 
 
-\FundingLNotice{\selectlanguage{english} 
+\FundingLNotice{
   The development of this white paper has been funded by the Seventh
   Framework Programme and the ICT Policy Support Programme of the
   European Commission under the contracts T4ME (Grant Agreement
   249119), CESAR (Grant Agreement 271022), METANET4U (Grant Agreement
   270893) and META-NORD (Grant Agreement 270899).}
  
-\FundingRNotice{\selectlanguage{english} 
+\FundingRNotice{
   \textcolor{black}{The authors of this document
     are grateful to the authors of the White Paper on German for
     permission to re-use selected language-independent materials from
-    their document. Furthermore, the authors would like to thank Kevin B. Cohen (University of Colorado and The MITRE Corporation, USA), Yoshinobu Kano (National Institute of Informatics, Japan), Ioannis Korkotzelos (University of Manchester, UK), BalaKrishna Kolluru (University of Manchester), Tayuka Matzuzaki (University of Tokyo, Japan), Chikashi Nobata (Yahoo Labs, USA), Naoaki Okazaki (Tohoku University, Japan), Martha Palmer (University of Colorado, USA), Sampo Pyysalo (University of Manchester), Rafal Rak (University of Manchester), Yoshimasa Tsuruoka (University of Tokyo), for their contributions to this White Paper.}}
+    their document. Furthermore, the authors would like to thank Kevin B. Cohen (University of Colorado and The MITRE Corporation, USA), Yoshinobu Kano (National Institute of Informatics, Japan), Ioannis Korkotzelos (University of Manchester, UK), BalaKrishna Kolluru (University of Manchester), Tayuka Matzuzaki (University of Tokyo, Japan), Chikashi Nobata (Yahoo Labs, USA), Naoaki Okazaki (Tohoku University, Japan), Martha Palmer (University of Colorado, USA), Sampo Pyysalo (University of Manchester), Rafal Rak (University of Manchester) and Yoshimasa Tsuruoka (University of Tokyo), for their contributions to this white paper.}}
 
 \makefundingnotice
 
@@ -63,7 +63,6 @@
 % --------------------------------------------------------------------------
 \ssection*{Preface}
 
-\selectlanguage{english}
 This white paper is part of a series that promotes knowledge about language technology and its potential. It addresses journalists, politicians, language communities, educators and others. 
 The availability and use of language technology in Europe varies between languages. Consequently, the actions that are required to further support research and development of language technologies also differ. The required actions depend on many factors, such as the complexity of a given language and the size of its community.
 
@@ -82,8 +81,7 @@ As of November 2011, META-NET consists of 54 research centres from 33 European c
 \tableofcontents
 
 \addtocontents{toc}{\protect\thispagestyle{empty}\protect}
-%\addtocontents{toc}{\protect\vspace*{-4mm}\protect}
-\addtocontents{toc}{\Large\textsf{\centerline{THE ENGLISH LANGUAGE IN THE DIGITAL AGE}}\normalsize\par}
+\addtocontents{toc}{{\protect\vspace*{-20mm}\protect}}
 
 \cleardoublepage
 
@@ -113,9 +111,9 @@ The predominant actors in language technology today rely on imprecise statistica
 
 The European Union has therefore decided to fund projects such as EuroMatrix and EuroMatrixPlus (since 2006) and iTranslate4 (since 2010) that carry out basic and applied research, and generate resources for establishing high quality language technology solutions for all European languages. Analysing the deeper structural properties of languages is the only way forward if we want to build applications that perform well across the entire range of European languages.
 
-European research in this area has already achieved a number of successes. For example, the translation services of the European Union now use the MOSES open-source machine translation software, which has been mainly developed through European research projects. In general, Europe has tended to pursue isolated research activities with a less pervasive impact on the market. However, the potential economic value of these activities can be evidenced in companies such as the UK-based SDL, which offers a range of language technologies, and has 60 offices in 35 different countries.
-
 \boxtext{Language Technology helps to unify Europe.}
+
+European research in this area has already achieved a number of successes. For example, the translation services of the European Union now use the MOSES open-source machine translation software, which has been mainly developed through European research projects. In general, Europe has tended to pursue isolated research activities with a less pervasive impact on the market. However, the potential economic value of these activities can be evidenced in companies such as the UK-based SDL, which offers a range of language technologies, and has 60 offices in 35 different countries.
 
 Drawing on the insights gained so far, it appears that today’s `hybrid' language technology, which mixes deep processing with statistical methods, will be able to bridge the gap between all European languages and beyond. As this series of white papers shows, there is a dramatic difference in the state of readiness with respect to language solutions and the state of research between Europe’s member states. Whilst English is the language on which most language technology research has been carried out, the assessment detailed in this report reveals that there are still many issues that must be addressed in order for English language technology to reach its full potential. However, the thriving language technology community that exists in English-speaking countries, both in Europe and worldwide, means that there are excellent prospects for further positive developments to be made.
 
@@ -130,7 +128,6 @@ This white paper series complements other strategic actions taken by META-NET (s
 \ssection[Languages at Risk: a Challenge for Language Technology]{Languages at Risk: a Challenge for\newline Language Technology}
 
 \begin{multicols}{2}
-
 We are witnesses to a digital revolution that is dramatically impacting communication and society. Recent developments in information and communication technology are sometimes compared to Gutenberg’s invention of the printing press. What can this analogy tell us about the future of the European information society and our languages in particular?
 
 \boxtext{The digital revolution is comparable to Gutenberg’s invention of the printing press.}
@@ -164,7 +161,7 @@ Although these tools and applications are helpful, they are not yet capable of s
 
 We cannot predict exactly what the future information society will look like. However, there is a strong likelihood that the revolution in communication technology will be bringing together people who speak different languages in new ways. This is putting pressure both on individuals to learn new languages and especially on developers to create new technologies that will ensure mutual understanding and access to shareable knowledge. In the global economic and information space, there is increasing interaction between different languages, speakers and content, thanks to new types of media. The current popularity of social media (Wikipedia, Facebook, Twitter, Google+) is only the tip of the iceberg.
 
-\boxtext{The global economy and information space confronts us with different languages, speakers and content.}
+\boxtext{The global economy and information\\ space confronts us with different\\ languages, speakers and content.}
 
 Today, we can transmit gigabytes of text around the world in a few seconds before we recognise that it is in a language that we do not understand. According to a report from the European Commission, 57\% of Internet users in Europe purchase goods and services in languages that are not their native language; English is the most common foreign language, followed by French, German and Spanish. 55\% of users read content in a foreign language, while 35\% use another language to write e-mails or post comments on the Web \cite{EC1}. A few years ago, English might have been the lingua franca of the Web -- the vast majority of content on the Web was in English -- but the situation has now drastically changed. The amount of online content in other European (as well as Asian and Middle Eastern) languages has exploded.
 
@@ -174,7 +171,7 @@ Surprisingly, this ubiquitous digital divide caused by language borders has gain
 
 While the printing press helped to further the exchange of information throughout Europe, it also led to the extinction of many languages. Regional and minority languages were rarely printed, and languages such as Cornish and Dalmatian were limited to oral forms of transmission, which in turn restricted their scope of use. Will the Internet have the same impact on our modern languages?
 
-\boxtext{The variety of languages in Europe is one of its richest and most important cultural assets.}
+\boxtext{The variety of languages in Europe is one of its\\ richest and most important cultural assets.}
 
 Europe’s approximately 80 languages are one of our richest and most important cultural assets, and a vital part of this unique social model \cite{EC2}. While languages such as English and Spanish are likely to survive in the emerging digital marketplace, many languages could become irrelevant in a networked society. This would weaken Europe’s global standing, and run counter to the goal of ensuring equal participation for every citizen regardless of language. According to a UNESCO report on multilingualism, languages are an essential medium for the enjoyment of fundamental rights, such as political expression, education and participation in society \cite{Unesco1}.
 
@@ -214,7 +211,7 @@ Language technology represents a tremendous opportunity for the European Union. 
 
 Although language technology has made considerable progress in the last few years, the current pace of technological progress and product innovation is too slow. Widely-used technologies such as the spelling and grammar correctors in word processors are typically monolingual, and are only available for a handful of languages. Online machine translation services, although useful for quickly generating a reasonable approximation of a document’s contents, are fraught with difficulties when highly accurate and complete translations are required. Due to the complexity of human language, modelling our tongues in software and testing them in the real world is a long, costly business that requires sustained funding commitments. Europe must therefore maintain its pioneering role in facing the technological challenges of a multiple-language community by inventing new methods to accelerate development right across the map. These could include both computational advances and techniques such as crowdsourcing.
 
-\boxtext{The current pace of technological progress is too slow.}
+\boxtext{The current pace of technological\\ progress is too slow.}
 
 \subsection{Language Acquisition in Humans and Machines}
 
@@ -254,7 +251,7 @@ Within Europe, English is the most commonly used language in the United Kingdom.
     
 In addition to English, the UK has further recognised regional languages, according to the European Charter for Regional or Minority Languages (ECRML), i.\,e., Welsh, Scottish Gaelic, Cornish, Irish, Scots, and its regional variant Ulster Scots. Since February 2011, the Welsh language (which is spoken by approximately 20\% of the population of Wales) has shared official status with English in Wales \cite{Leg2}.  The large number of British Asians (approximately 2.3 million or 4\% of the population, according to the 2001 census) give rise to other languages being spoken in the UK, most notably Punjabi and Bengali. 
     
-\boxtext{English is a (co)-official language in 53 countries worldwide.}    
+\boxtext{English is a (co)-official language\\ in 53 countries worldwide.}    
     
 Due to global spread of English, a large number of dialects have developed. Major dialects such as American English and Australian English can be split into a number of sub-dialects. In recent times, differences in grammar between the dialects have become relatively minor, with major variations being mainly limited to pronunciation and, to some extent, vocabulary, e.\,g., \textit{bairn} (child) in northern England and Scotland.         
     
@@ -292,7 +289,7 @@ The online edition of the Oxford English Dictionary is updated four times per ye
              
 Within Europe, English can today be considered the most commonly used language, with 51\% of EU citizens speaking it either as a mother tongue or a foreign language, according to a EUROBAROMETER survey \cite{europa}. Considering non-native speakers of English in the EU, 38\% state that they have sufficient English skills to hold a conversation. English is the most widely known language apart from the mother tongue in 19 of the 29 countries polled, with particularly high percentages of speakers in Sweden (89\%), Malta (88\%) and the Netherlands (87\%).
     
-\boxtext{51\% of EU citizens speak English as another tongue or foreign language.}  
+\boxtext{51\% of EU citizens speak English as\\ another tongue or foreign language.}
 
 \subsection{Language Cultivation in The UK}
 
@@ -334,13 +331,13 @@ In 2010, 30.1 million adults in the UK (approximately 60\%) used the Internet al
 
 In 2010, there were an estimated 536 million users of the English language Internet, constituting 27.3\% of all Internet users \cite{stats2}. This makes the English Internet the most used in the world -- only the Chinese Internet comes anywhere close, with 445 million users. The third most popular language is Spanish, with about 153 million users.
 
-\boxtext{The English language internet is the most used in the world.}
+\boxtext{The English language internet\\ is the most used in the world.}
     
 With 9.1 million registrations in February 2011, the UK's top-level country domain, \textit{.uk} is the fifth most popular extension in the world. It is also the second most used country-specific extension, beaten only by the Germany's \textit{.de} extension \cite{stats3}.
     
 The growing importance of the Internet is critical for language technology in two ways. On the one hand, the large amount of digitally available language data represents a rich source for analysing the usage of natural language, in particular by collecting statistical information. On the other hand, the Internet offers a wide range of application areas that can be improved through the use of language technology.
 
-\boxtext{With about 9 million Internet domains, the  \textit{.uk} extension is the world's second most popular country-specific extension.}
+\boxtext{With about 9 million Internet domains,\\ the \textit{.uk} extension is the world's second most popular country-specific extension.}
 
 The most commonly used web application is web search, which involves the automatic processing of language on multiple levels, as we will see in more detail in the next chapter. It involves sophisticated language technology, which differs for each language. For English, this may consist of matching spelling variations (e.\,g., British/American variations such as \textit{colour/color}), or using context to distinguish whether the word \textit{fly} refers to a noun (insect) or verb.
   
@@ -348,7 +345,7 @@ It is an expressed political aim in the UK and other European countries to ensur
   
 Internet users and providers of web content can also profit from language technology in less obvious ways, e.\,g., in the automatic translation of web contents from one language into another. Considering the high costs associated with manually translating these contents, it may be surprising how little usable language technology is built-in, compared to the anticipated need. However, it becomes less surprising if we consider the complexity of the English language, which has been partially highlighted above, and the number of technologies involved in typical language technology applications.
 
-\boxtext{The UK's Equality Act of 2010 makes it a legal requirement for companies and organisations to make their websites and Internet services accessible to the disabled.}
+\boxtext{The UK's Equality Act of 2010 makes it a\\ legal requirement for companies and organisations to make their websites and Internet services accessible to the disabled.}
 
 The next chapter presents an introduction to language technology and its core application areas, together with an evaluation of current language technology support for English.
 \end{multicols}
@@ -442,9 +439,9 @@ Handling these kinds of errors usually requires an analysis of the context. This
 
 Language checking is not limited to word processors; it is also used in “authoring support systems”, i.\,e., software environments in which manuals and other documentation are written to special standards for complex IT, healthcare, engineering and other products. Fearing customer complaints about incorrect use and damage claims resulting from poorly understood instructions, companies are increasingly focussing on the quality of technical documentation, while targeting the international market (via translation or localisation) at the same time. As a result, attempts were made to develop a controlled, simplified technical English that would make it easier for native and non-native readers to understand the instructional text. An example is \textit{ASD-STE100} \cite{asd}, originally developed for aircraft maintenance manuals, but suitable for other technical manuals. This controlled language contains a fixed basic vocabulary of approximately 1000 words, together with rules for simplifying the sentence structures. Examples of these rules include using only approved meanings for words, as specified in the dictionary (to avoid ambiguity), not writing more than three nouns together, always using the active voice in instruction sentences, and ensuring that such sentences do not exceed a maximum length. Following such rules can make documentation easier to translate into other languages and can also improve the quality of results produced by MT software. The specification is maintained and kept up-to-date by the Simplified Technical English Maintenance Group (STEMG), which consists of members in several different European countries.
 
-\boxtext{The use of language checking is not limited to word processors. It also applies to authoring support systems.}
-
 Advances in natural language processing have led to the development of authoring support software, which helps the writer of technical documentation use vocabulary and sentence structures that are consistent with industry rules and (corporate) terminology restrictions. The HyperSTE software \cite{hss}, developed by Tedopres International, is such an example, which is based on the \textit{ASD-STE100 specification}.
+
+\boxtext{The use of language checking is not limited\\ to word processors. It also applies to\\ authoring support systems.}
 
 Besides spell checkers and authoring support, language checking is also important in the field of computer-assisted language learning. Language checking applications additionally automatically correct search engine queries, as found in Google’s \textit{Did you mean \dots} suggestions.
 
@@ -463,7 +460,7 @@ Searching the Web is probably the most widely used language technology applicati
 
 For more sophisticated information requests, it is essential to integrate deeper linguistic knowledge to facilitate text interpretation. Experiments using \textbf{lexical resources} such as machine-readable thesauri or ontological language resources (e.\,g., WordNet) have shown improvements by allowing pages to be found containing synonyms of the entered search term, e.\,g., the clever search engine \cite{clev}. For example, if the search term \textit{nuclear power} is entered into this engine, the search will be expanded to locate also those pages containing the terms \textit{atomic power, atomic energy} or \textit{nuclear energy}. Even more loosely related terms may also be used.
 
-\boxtext{The next generation of search engines will have to include much more sophisticated language technology.}
+\boxtext{The next generation of search engines\\ will have to include much more sophisticated language technology.}
 
 The next generation of search engines will have to include much more sophisticated language technology, especially to deal with search queries consisting of a question or other sentence type rather than a list of keywords. For the query, \textit{Give me a list of all companies that were taken over by other companies in the last five years}, a syntactic as well as a \textbf{semantic analysis} is required. Thee system also needs to provide an index to quickly retrieve relevant documents. A satisfactory answer will require syntactic parsing to analyse the grammatical structure of the sentence and determine that the user wants companies that have been acquired, rather than companies that have acquired other companies. For the expression \textit{last five years}, the system needs to determine the relevant range of years, taking into account the present year. Thee query then needs to be matched against a huge amount of unstructured data to find the pieces of information that are relevant to the user’s request. This process is called information retrieval, and involves searching and ranking relevant documents. To generate a list of companies, the system also needs to recognise that a particular string of words in a document represents a company name, using a process called named entity recognition.
 
@@ -475,8 +472,6 @@ The first search engines for English appeared in 1993, with many having come and
 
 \subsubsection{Speech Interaction}
 
-Speech interaction is one of many application areas that depend on speech technology, i.\,e., technologies for processing spoken language. Speech interaction technology is used to create interfaces that enable users to interact in spoken language instead of using a graphical display, keyboard and mouse. Today, these voice user interfaces (VUI) are used for partially or fully automated telephone services provided by companies to customers, employees or partners. Business domains that rely heavily on VUIs include banking, supply chain, public transportation and telecommunications. Other uses of speech interaction technology include interfaces to in-car satellite navigation systems and the use of spoken language as an alternative to the graphical or touchscreen interfaces in smartphones. Speech interaction technology comprises four technologies:
-
 \begin{figure*}[htb]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
@@ -485,6 +480,8 @@ Speech interaction is one of many application areas that depend on speech techno
   \label{fig:dialoguearch_en}
   \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
+
+Speech interaction is one of many application areas that depend on speech technology, i.\,e., technologies for processing spoken language. Speech interaction technology is used to create interfaces that enable users to interact in spoken language instead of using a graphical display, keyboard and mouse. Today, these voice user interfaces (VUI) are used for partially or fully automated telephone services provided by companies to customers, employees or partners. Business domains that rely heavily on VUIs include banking, supply chain, public transportation and telecommunications. Other uses of speech interaction technology include interfaces to in-car satellite navigation systems and the use of spoken language as an alternative to the graphical or touchscreen interfaces in smartphones. Speech interaction technology comprises four technologies:
 
 \begin{enumerate}
 \item Automatic \textbf{speech recognition} (ASR) determines which words are actually spoken in a given sequence of sounds uttered by a user.   
@@ -495,9 +492,9 @@ Speech interaction is one of many application areas that depend on speech techno
 
 One of the major challenges of ASR systems is to accurately recognise the words that a user utters. This means restricting the range of possible user utterances to a limited set of keywords, or manually creating language models that cover a large range of natural language utterances. Using machine learning techniques, language models can also be generated automatically from \textbf{speech corpora}, i.\,e., large collections of speech audio files and text transcriptions. Restricting utterances usually forces people to use the voice user interface in a rigid way and can damage user acceptance. However, the creation, tuning and maintenance of rich language models will significantly increase costs. VUIs that employ language models and initially allow a user to express their intent more flexibly -- prompted by a \textit{How may I help you?} greeting -- are better accepted by users.
 
-\boxtext{Speech interaction is the basis for interfaces that allow a user to interact with spoken language.}
-
 Companies tend to use pre-recorded utterances by professional speakers to generate the output of the voice user interface. For static utterances, where the wording does not depend on particular contexts of use or personal user data, this can deliver a rich user experience. However, more dynamic content in an utterance may suffer from unnatural intonation because bits of audio files have simply been strung together. Through optimisation, today’s TTS systems are getting better at producing natural-sounding dynamic utterances.
+
+\boxtext{Speech interaction is the basis for interfaces that allow a user to interact with spoken language.}
 
 Interfaces in speech interaction have been considerably standardised during the last decade in terms of their various technological components. There has also been strong market consolidation in speech recognition and speech synthesis. The national markets in the G20 countries (economically resilient countries with high populations) have been dominated by just five global players, with Nuance (USA) and Loquendo (Italy) being the most prominent players in Europe. In 2011, Nuance announced the acquisition of Loquendo, which represents a further step in market consolidation.
 
@@ -511,17 +508,6 @@ Looking ahead, there will be significant changes, due to the spread of smartphon
 
 The idea of using digital computers to translate natural languages can be traced back to 1946 and was followed by substantial funding for research during the 1950s and again in the 1980s. Yet \textbf{machine translation} (MT) still cannot deliver on its initial promise of providing across-the-board automated translation.
 
-\boxtext{At its basic level, Machine Translation simply substitutes words in one natural language with words in another language.}
-
-The most basic approach to machine translation is the automatic replacement of words in a text written in one natural language with the equivalent words of another language. This can be useful in subject domains that have a very restricted, formulaic language, such as weather reports. However, in order to produce a good translation of less restricted texts, larger text units (phrases, sentences, or even whole passages) need to be matched to their closest counterparts in the target language. The major difficulty is that human language is ambiguous. Ambiguity creates challenges on multiple levels, such as word sense disambiguation on the lexical level (a \textit{jaguar} is a brand of car or an animal) or the attachment of prepositional phrases on the syntactic level as in:
-
-\begin{itemize}
-\item The policeman observed the man with the telescope.
-\item The policeman observed the man with the revolver.
-\end{itemize}
-
-One way to build an MT system is to use linguistic rules. For translations between closely related languages, a translation using direct substitution may be feasible in cases such as the above example. However, rule-based (or linguistic knowledge-driven) systems often analyse the input text and create an intermediary symbolic representation from which the target language text can be generated. The success of these methods is highly dependent on the availability of extensive lexicons with morphological, syntactic and semantic information, and large sets of grammar rules carefully designed by skilled linguists. This is a very long and therefore costly process.
-
 \begin{figure*}[htb]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
@@ -530,6 +516,17 @@ One way to build an MT system is to use linguistic rules. For translations betwe
   \label{fig:mtarch_en}
   \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
+
+\boxtext{At its basic level, Machine Translation simply substitutes words in one natural language with words in another language.}
+
+The most basic approach to machine translation is the automatic replacement of words in a text written in one natural language with the equivalent words of another language. This can be useful in subject domains that have a very restricted, formulaic language, such as weather reports. However, in order to produce a good translation of less restricted texts, larger text units (phrases, sentences, or even whole passages) need to be matched to their closest counterparts in the target language. The major difficulty is that human language is ambiguous. Ambiguity creates challenges on multiple levels, such as word sense disambiguation on the lexical level (a \textit{jaguar} is a brand of car or an animal) or the attachment of prepositional phrases on the syntactic level:
+
+\begin{itemize}
+\item The policeman observed the man with the telescope.
+\item The policeman observed the man with the revolver.
+\end{itemize}
+
+One way to build an MT system is to use linguistic rules. For translations between closely related languages, a translation using direct substitution may be feasible in cases such as the above example. However, rule-based (or linguistic knowledge-driven) systems often analyse the input text and create an intermediary symbolic representation from which the target language text can be generated. The success of these methods is highly dependent on the availability of extensive lexicons with morphological, syntactic and semantic information, and large sets of grammar rules carefully designed by skilled linguists. This is a very long and therefore costly process.
 
 In the late 1980s, when computational power increased and became cheaper, interest in statistical models for machine translation began to grow. Statistical models are derived from analysing bilingual text corpora, called \textbf{parallel corpora}, such as the Europarl parallel corpus, which contains the proceedings of the European Parliament in 11 European languages. Given enough data, statistical MT works well enough to derive an approximate meaning of a foreign language text by processing parallel versions and finding plausible patterns of words. Unlike knowledge-driven systems, however, statistical (or data-driven) MT systems often generate ungrammatical output. Data-driven MT is advantageous because less human effort is required, and it can also cover special particularities of the language (e.\,g., idiomatic expressions) that are often ignored in knowledge-driven systems.
 
@@ -592,7 +589,7 @@ While question answering is obviously related to the core area of web search, it
 
 \boxtext{Language technology applications often provide significant service functionalities behind the scenes of larger software systems.}
 
-Text summarisation and \textbf{text generation} are two borderline areas that can act either as standalone applications or play a supporting role. Summarisation attempts to give the essentials of a long text in a short form, and is one of the features available in Microsoft Word. It uses a mostly statistical approach to identify the “important” words in a text (i.\,e., words that occur very frequently in the text in question but less frequently in general language use) and determine which sentences contain the most of these “important” words. These sentences are then extracted and combined together to create the summary. In this very common commercial scenario, summarisation is simply a form of sentence extraction, in which the text is reduced to a subset of its sentences. An alternative approach, for which some research has been carried out, is to generate brand new sentences that do not exist in the source text. This requires a deeper understanding of the text, which means that, currently, this approach is far less robust. On the whole, a text generator is rarely used as a stand-alone application, but rather is embedded into a larger software environment, such as a clinical information system that collects, stores and processes patient data. Creating reports is just one of many applications for text summarisation.
+Text summarisation and \textbf{text generation} are two borderline areas that can act either as standalone applications or play a supporting role. Summarisation attempts to give the essentials of a long text in a short form, and is one of the features available in Microsoft Word. It uses a mostly statistical approach to identify the “important” words in a text (i.\,e., words that occur very frequently in the text in question but less frequently in general language use) and determine which sentences contain the most of these important words. These sentences are then extracted and combined together to create the summary. In this very common commercial scenario, summarisation is simply a form of sentence extraction, in which the text is reduced to a subset of its sentences. An alternative approach, for which some research has been carried out, is to generate brand new sentences that do not exist in the source text. This requires a deeper understanding of the text, which means that, currently, this approach is far less robust. On the whole, a text generator is rarely used as a stand-alone application, but rather is embedded into a larger software environment, such as a clinical information system that collects, stores and processes patient data. Creating reports is just one of many applications for text summarisation.
 
 For English, question answering, information extraction and summarisation have been the subject of numerous open competitions since the 1990s, primarily organised by DARPA/NIST in the United States, which have significantly improved the state of the art. For example, the annual TREC (Text REtrieval Conference) series included a question-answering track between 1999 and 2007. Recently, freely accessible tools have been developed that reason and compute answers. These include True Knowledge, developed in the UK, and Wolfram Alpha, developed in the USA. Question-answering systems in more specialist domains have also begun to emerge, such as the EAGLi system for questions answering in the Genomics literature, developed at the University of Applied Sciences, Geneva.
 
@@ -606,8 +603,8 @@ In terms of teaching in the UK, courses with a large element of natural language
 
 \subsection{National Projects and Initiatives}
 
-The first working demonstration of an LT system took place in the 1950s. This system constituted a Russian--English Machine Translation (MT) system, developed by IBM and Georgetown University. The company SYSTRAN, which was founded in 1968, had the original aim of processing the same language pair for the United States Airforce. SYSTRAN still exists today, as described in the \textit{Machine translation} section above.
-
+The first working demonstration of an LT system took place in the 1950s. This system constituted a Russian--English Machine Translation (MT) system, developed by IBM and Georgetown University. The company SYSTRAN, which was founded in 1968, had the original aim of processing the same language pair for the United States Airforce. SYSTRAN still exists today, as described in the \textit{Machine translation} section above. 
+%
 An early LT program, EUROTRA, was an ambitious Machine Translation (MT) project inspired by the modest success of SYSTRAN, and established and funded by the European Commission from the late 1970s until 1994. The project was motivated by one of the founding principles of the EU: that all citizens had the right to read any and all proceedings of the Commission in their own language. A large network of European computational linguists embarked upon the EUROTRA project with the hope of creating a state-of-the-art MT system for the then seven, later nine, official languages of the European Community. However, as time passed, expectations became tempered; “Fully Automatic High Quality Translation” was not a reasonably attainable goal. The true character of EUROTRA was eventually acknowledged to be pre-competitive research, rather than prototype development. While EUROTRA never delivered a working MT system, the project made a far-reaching long-term impact on the nascent language industries in European member states.
 
 The Alvey Programme was the dominating focus of Information Technology research in the UK between 1983 and 1988. Amongst the areas of focus was Man Machine Interaction. The programme funded three projects at the Universities of Cambridge, Edinburgh and Lancaster to provide tools for use in natural language processing research. The tools, i.\,e., a morphological analyser, parsers, a grammar and lexicon were usable individually as well as together -- integrated by a grammar development environment -- forming a complete system for the morphological, syntactic and semantic analysis of a considerable subset of English.
@@ -616,7 +613,7 @@ The creation of the British National Corpus (BNC) was a major project that took 
 
 Corpora of other varieties of English are also being collected. The International Corpus of English (ICE), whose collection began in 1990, involves 23 research teams around the world, who are preparing electronic corpora of their own national or regional variety of English. Each team is producing a corpus consisting of one million words of spoken and written English produced after 1989. The Corpus of Contemporary American English (COCA) consists of 425 million words, equally divided among spoken, fiction, popular magazines, newspapers and academic texts, consisting of 20 million words each year from 1990 to 2011.
 
-AKT (2000-2007), was a multi-million pound collaboration between five UK universities, with the aim of enhancing information and knowledge management in the age of the World Wide Web. The team of 119 staff was interdisciplinary, involving leading figures in the worlds of multimedia, natural language and computational linguistics, agents, artificial intelligence, formal methods, machine learning and e-science. The research conducted on the project formed an important contribution to the semantic web, in which the use of LT technologies played a central role. The AKT collaboration was a significant success in terms of papers published, grants awarded (36 other projects), students trained and international impact. It was rated as ``outstanding'' by the review panel.  The collaboration placed major importance on making links with industrial partners, and finally it led to the founding of a number of spin-off companies. A follow-up project, ``EnAKTing the Unbounded Data Web: Challenges in Web Science'', is currently ongoing.
+AKT (2000-2007), was a multi-million pound collaboration between five UK universities, with the aim of enhancing information and knowledge management in the age of the World Wide Web. The team of 119 staff was interdisciplinary, involving leading figures in the worlds of multimedia, natural language and computational linguistics, agents, artificial intelligence, formal methods, machine learning and e-science. The research conducted on the project formed an important contribution to the semantic web, in which the use of LT played a central role. The AKT collaboration was a significant success in terms of papers published, grants awarded (36 other projects), students trained and international impact. It was rated as ``outstanding'' by the review panel.  The collaboration placed major importance on making links with industrial partners, and finally it led to the founding of a number of spin-off companies. A follow-up project, ``EnAKTing the Unbounded Data Web: Challenges in Web Science'', is currently ongoing.
 
 Since many LT applications make use of similar sets of processing components, such as tokenizers, taggers, parsers, named entity recognisers, etc., the speed with which new applications can be developed can be greatly increased if such processing components can be reused and repurposed in flexible ways to create a range of different LT applications. Two systems which support the user in creating new applications from existing libraries of processing components are the University of Sheffield's GATE system, which has been under development for over 15 years, and the more recent U-Compare system, which was developed as part of a collaboration between the Universities of Tokyo, Manchester and Colorado. Whilst current components in U-Compare mainly deal with English, the library will be extended as part of META-NET to cover a number of different European languages. 
 
@@ -626,15 +623,13 @@ As we have seen, previous programmes have led to the development of a large numb
 
 Figure~\ref{fig:lrlttable_en} provides a general picture of the current state of language technology support for the English language. This rating of existing tools and resources was generated by leading experts in the field who provided estimates based on a scale from 0 (very low) to 6 (very high) using seven different criteria.
 
-% FIXME FIXME FIXME -- THE TABLE NEEDS TO BE CHECKED!
-
 \begin{figure*}[htb]
 \centering
 \begin{tabular}{>{\columncolor{orange1}}p{.33\linewidth}@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c}
 \rowcolor{orange1}
  \cellcolor{white}&\begin{sideways}\makecell[l]{Quantity}\end{sideways}
 &\begin{sideways}\makecell[l]{\makecell[l]{Availability} }\end{sideways} &\begin{sideways}\makecell[l]{Quality}\end{sideways}
-&\begin{sideways}\makecell[l]{Coverage}\end{sideways} &\begin{sideways}\makecell[l]{Maturity}\end{sideways} &\begin{sideways}\makecell[l]{Sustainability}\end{sideways} &\begin{sideways}\makecell[l]{Adaptability}\end{sideways} \\ \addlinespace
+&\begin{sideways}\makecell[l]{Coverage}\end{sideways} &\begin{sideways}\makecell[l]{Maturity}\end{sideways} &\begin{sideways}\makecell[l]{Sustainability~~}\end{sideways} &\begin{sideways}\makecell[l]{Adaptability}\end{sideways} \\ \addlinespace
 \multicolumn{8}{>{\columncolor{orange2}}l}{Language Technology: Tools, Technologies and Applications} \\ \addlinespace
 Speech Recognition	& 5 & 3 & 5 & 5 & 4 & 2 & 3 \\ \addlinespace
 Speech Synthesis        & 5 & 3 & 4.5 & 5.5 & 4 & 2 & 3 \\ \addlinespace
@@ -713,9 +708,7 @@ Our findings show that the only alternative is to make a substantial effort to i
 The long-term goal of META-NET is to enable the creation of high-quality language technology for all languages. This requires all stakeholders -- in politics, research, business and society -- to unite their efforts. The resulting technology will help to tear down existing barriers and to build bridges between Europe’s languages, thus paving the way for political and economic unity through cultural diversity.  
 \end{multicols}
 
-\clearpage
-
-\begin{figure*}[t]
+\begin{figure*}[ht]
   \small
   \centering
   \begin{tabular}
@@ -774,7 +767,7 @@ Romanian\\
 \label{fig:speech_cluster_en}
 \end{figure*}
 
-\begin{figure*}[b]
+\begin{figure*}[hb]
   \small
   \centering
   \begin{tabular}
@@ -833,7 +826,7 @@ Swedish \newline
 \label{fig:mt_cluster_en}
 \end{figure*}
 
-\begin{figure*}[t]
+\begin{figure*}[ht]
   \small
   \centering
   \begin{tabular}
@@ -892,7 +885,7 @@ Swedish \newline
 \label{fig:text_cluster_en}
 \end{figure*}
 
-\begin{figure*}[b]
+\begin{figure*}[hb]
   \small
   \centering
   \begin{tabular}
@@ -951,7 +944,7 @@ Swedish \newline
   \label{fig:resources_cluster_en}
 \end{figure*}
 
-\clearpage
+\cleardoublepage
 
 % --------------------------------------------------------------------------
 \ssection[About META-NET]{About META-NET}
@@ -982,7 +975,7 @@ META-NET launched on 1 February 2010 with the goal of advancing research in lang
 \cleardoublepage
 
 \appendix
-\addtocontents{toc}{\protect\bigskip}
+%\addtocontents{toc}{\protect\smallskip}
 
 \ssection[References]{References}
 \bibliographystyle{unsrt}
