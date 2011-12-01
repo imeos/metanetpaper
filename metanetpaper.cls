@@ -295,7 +295,7 @@
 
 
 % URL style
-\urlstyle{same} % only works with hyperref package
+\urlstyle{rm}
 
 
 % Marginal notes
