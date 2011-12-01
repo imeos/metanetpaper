@@ -180,7 +180,6 @@
   \stepcounter{bsectioncounter}
   \ifx#1\@null
   \ifsecondargument
-	\bsection*{Inhaltsverzeichnis --- Table of Contents}
 	\addsec{\thebsectioncounter\hskip0.75em #2}    
     %\addcontentsline{section}{\thebsectioncounter\hskip0.75em #2}  Appendix not in ToC
   \else
