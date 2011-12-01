@@ -180,9 +180,12 @@
   \stepcounter{bsectioncounter}
   \ifx#1\@null
   \ifsecondargument
-    \addcontentsline{section}{\thebsectioncounter\hskip0.75em #2}
+	\bsection*{Inhaltsverzeichnis --- Table of Contents}
+	\addsec{\thebsectioncounter\hskip0.75em #2}    
+    %\addcontentsline{section}{\thebsectioncounter\hskip0.75em #2}  Appendix not in ToC
   \else
-    \addcontentsline{section}{\thebsectioncounter\hskip0.75em #1}
+    \addsec{\thebsectioncounter\hskip0.75em #1}
+    %\addcontentsline{section}{\thebsectioncounter\hskip0.75em #1}
   \fi
   \ThisCenterWallPaper{1}{../_media/section_bg.pdf}
   % Numbering
