@@ -9,8 +9,10 @@
 %
 %
 %            - META-NET Language Whitepaper | Hungarian paper -
+%
+% ----------------------------------------------------------------------------
 
-\documentclass[]{../metanetpaper}
+\documentclass[]{../../metanetpaper}
 
 \usepackage{booktabs}
 \usepackage{longtable}
@@ -32,13 +34,6 @@
 \subtitle{White Paper Series --- Fehér könyvek sorozat}
 
 \author{
-  Simon Eszter \\
-  Lendvai Piroska \\
-  Németh Géza \\
-  Olaszy Gábor\\
-  Vicsi Klára\\
-}
-\authoraffiliation{
   Simon Eszter~ {\small MTA Nyelvtudományi Intézet}\\
   Lendvai Piroska~ {\small MTA Nyelvtudományi Intézet}\\
   Németh Géza~ {\small BME} \\
@@ -55,31 +50,20 @@
 
 \maketitle
 
-% ---------------- Mocktitle ------------------
 \null
 \pagestyle{empty} 
 
-\centerline{META-NET -- office@meta-net.eu -- http://www.meta-net.eu}
+\FundingLNotice{\selectlanguage{hungarian}\vskip2mm
+  A fehér könyv megírását az Európai Bizottság 7. keretprogramja és ICT PSP programja támogatta a T4ME (szerződésszám: 249119), a CESAR (szerződésszám: 271022), a METANET4U (szerződésszám: 270893) és a META-NORD (szerződésszám: 270899) projekteken keresztül.}
 
-\vfill
-
-\begin{small}
-  \selectlanguage{hungarian}
-  A fehér könyv megírását az Európai Bizottság 7. keretprogramja és ICT PSP programja támogatta a T4ME (szerződésszám: 249119), a CESAR (szerződésszám: 271022), a METANET4U (szerződésszám: 270893) és a META-NORD (szerződésszám: 270899) projekteken keresztül.
-\end{small}
-
-\bigskip
-\begin{small}
-  \selectlanguage{english}
+\FundingRNotice{\selectlanguage{english}\vskip2mm
   The development of this white paper has been funded by the Seventh
   Framework Programme and the ICT Policy Support Programme of the
   European Commission under the contracts T4ME (Grant Agreement 249119),
   CESAR (Grant Agreement 271022), METANET4U (Grant Agreement 270893)
-  and META-NORD (Grant Agreement 270899).
-\end{small}
+  and META-NORD (Grant Agreement 270899).}
 
-\clearpage
-% ------------- End of mocktitle ----------------
+\makefundingnotice
 
 \pagenumbering{Roman} 
 \setcounter{page}{5}
@@ -92,14 +76,15 @@
 \bsection*{Előszó --- Preface}
 
 \begin{Parallel}[c]{78mm}{78mm}
-\ParallelLText{\selectlanguage{hungarian}
+\ParallelLText{
+\selectlanguage{hungarian}\vskip2mm
 Ez a fehér könyv egy sorozat részét képezi, amelynek célja, hogy felhívja a figyelmet a nyelvtechnológiára és az abban rej\-lő lehetőségekre. Elsősorban oktatókat, újságírókat, politikusokat és nyelvi kö\-zös\-sé\-ge\-ket szólít meg. Az európai nyelvek nyelvtechnológiai feldolgozottsága és a nyelvtechnológia elterjedtsége meglehetősen eltérő. Ezért a nyelvtechnológia fej\-lődéséhez és a kutatás elősegítéséhez szükséges lépések is nyelvenként mások és mások, és olyan különféle tényezőkön múlnak, mint az adott nyelv összetettsége, vagy a nyelvet hasz\-ná\-ló közösség nagysága.
 
 A META-NET, az Európai Bizottság által alapított hálózat felmérést végzett a rendelkezésre álló nyelvi erőforrásokról és technológiákról (lásd a \pageref{whitepaperseries}.~oldalt). Ez a felmérés a 23 hivatalos európai nyelv mellett egyéb nemzeti és regionális nyelvekre is kiterjed, és eredményei rámutatnak az egyes nyelvek terén fellelhető kutatási hiányosságokra. Egy, a jelenlegi helyzetet bemutató részletes szakértői elemzés és értékelés segíthet a további kutatások hatásának maximalizálásában.
 
 A META-NET 33 ország 54 kutatóközpontjából áll (2011.~novemberi helyzet szerint, lásd a \pageref{metanetmembers}.~oldalt), akik a területtel foglalkozó vállalkozásokkal, kormányzati szervekkel, kutatószervezetekkel, szoftvercégekkel, szolgáltatókkal és európai egyetemekkel dolgoznak együtt. Egységes technológiai víziót alkotva egy olyan stratégiai kutatási terv létrehozásán dolgoznak, amelyben megfogalmazzák, hogyan tudnak a nyelvtechnológiai alkalmazások a kutatási hiányosságokon enyhíteni a 2020-ig terjedő időszakban.}
 
-\ParallelRText{\selectlanguage{english}
+\ParallelRText{\selectlanguage{english}\vskip-2mm
 This white paper is part of a series that promotes knowledge about language technology and its potential. It addresses journalists, politicians, language communities, educators and others. The availability and use of language technology in Europe varies between languages. Consequently, the actions that are required to further support research and development of language technologies also differ. The required actions depend on many factors, such as the complexity of a given language and the size of its community.
 
 META-NET, a Network of Excellence funded by the European Commission, has conducted an analysis of current language resources and technologies in this white paper series (p.~\pageref{whitepaperseries}). The analysis focused on the 23 official European languages as well as other important national and regional languages in Europe. The results of this analysis suggest that there are tremendous deficits in technology support and significant research gaps for each language. The given detailed expert analysis and assessment of the current situation will help maximise the impact of additional research.
@@ -459,8 +444,8 @@ A nyelvtechnológiai rendszerek olyan szoft\-ve\-rek, amelyek kifejezetten a ter
 \begin{figure*}[htb]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
-  \includegraphics[width=\textwidth]{../_media/german/language_technologies}
-  \caption{Sprachtechnologie im Kontext}
+  \includegraphics[width=\textwidth]{../_media/hungarian/language_technologies}
+  \caption{Természetesnyelv-feldolgozás}
   \label{fig:ltincontext_de}
   \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
@@ -492,8 +477,8 @@ A tipikus nyelvtechnológiai alkalmazások több komponensből állnak össze, a
 \begin{figure*}[htb]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
-  \includegraphics[width=\textwidth]{../_media/german/text_processing_app_architecture}
-  \caption{Eine typische Architektur zur Verarbeitung von Texten}
+  \includegraphics[width=\textwidth]{../_media/hungarian/text_processing_app_architecture}
+  \caption{Egy tipikus szövegfeldolgozó alkalmazás felépítése}
   \label{fig:textprocessingarch_de}
   \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
@@ -534,8 +519,8 @@ A nyelvi ellenőrzők használata nem csak a szövegszerkesztőkre korlátozódi
 \begin{figure*}[htb]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
-  \includegraphics[width=\textwidth]{../_media/german/language_checking}
-  \caption{Sprachüberprüfung (statistisch; regelbasiert)}
+  \includegraphics[width=\textwidth]{../_media/hungarian/language_checking}
+  \caption{Nyelvi ellenőrzés (balra: szabályalapú, jobbra: statisztikai)}
   \label{fig:langcheckingaarch_de}
   \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
@@ -553,8 +538,8 @@ A weben, intraneten vagy digitális könyv\-tá\-rak\-ban való keresés valósz
 \begin{figure*}[htb]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
-  \includegraphics[width=\textwidth]{../_media/german/web_search_architecture}
-  \caption{Websuche}
+  \includegraphics[width=\textwidth]{../_media/hungarian/web_search_architecture}
+  \caption{A webes keresés architektúrája}
   \label{fig:websearcharch_de}
   \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
@@ -586,8 +571,8 @@ A beszédtechnológia szolgáltatja az alapot olyan interfészek előállítás�
 \begin{figure*}[htb]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center 
-  \includegraphics[width=\textwidth]{../_media/german/simple_speech-based_dialogue_architecture}
-  \caption{Sprachdialogsystem}
+  \includegraphics[width=\textwidth]{../_media/hungarian/simple_speech-based_dialogue_architecture}
+  \caption{Egyszerű beszédalapú dialógus felépítése}
   \label{fig:dialoguearch_de}
   \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
@@ -633,8 +618,8 @@ A feladat egyik megközelítési módja nyelvtani szabályokon alapul. Közeli r
 \begin{figure*}[htb]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
-  \includegraphics[width=\textwidth]{../_media/german/machine_translation}
-  \caption{Maschinelle Übersetzung (statistisch; regelbasiert)}
+  \includegraphics[width=\textwidth]{../_media/hungarian/machine_translation}
+  \caption{Gépi fordítás (fent: statisztikai, lent: szabályalapú)}
   \label{fig:mtarch_de}
   \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
@@ -2090,8 +2075,7 @@ META-NET launched on 1 February 2010 with the goal of advancing research in lang
 
 \begin{figure*}[htbp]
   \center
-  %\includegraphics[width=\textwidth]{../_media/meta-net_team.jpg}
-   \fbox{Dummy -- we'll include the group photo of our META-NET meeting in Berlin here}
+  \includegraphics[width=\textwidth]{../_media/meta-net_team.jpg}
   \caption{Több mint 100 nyelvtechnológus szakértő -- a META-NET-ben részt vevő országok és nyelvek képviselői -- vitatta meg és véglegesítette a fehér könyvek sorozat főbb kérdéseit egy META-NET találkozón Berlinben, 2011. október 21-22-én. --- \textcolor{grey1}{About 100 language technology experts -- representatives of the countries and languages represented in META-NET -- discussed and finalised the key results and messages of the White Paper Series at a META-NET meeting in Berlin, Germany, on October 21/22, 2011.}}
 \end{figure*}
 

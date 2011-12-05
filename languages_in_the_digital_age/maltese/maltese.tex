@@ -12,6 +12,13 @@
 
 \documentclass[]{../../metanetpaper}
 
+%!TEX TS-program = xelatex
+\RequireXeTeX %Force XeTeX check
+
+\usepackage{polyglossia}
+\setotherlanguages{maltese,english}
+
+%REMOVE?
 \usepackage{booktabs}
 \usepackage{longtable}
 \usepackage{tabulary}
@@ -20,9 +27,7 @@
 \usepackage{makecell}
 \usepackage{multirow}
 \usepackage{colortbl}
-\usepackage{polyglossia}
 \usepackage{multicol,framed,lipsum}
-\setotherlanguages{maltese,english}
 
 % ----------------------------------------------------------------------------
 %PACKAGES INCLUDED BY UNI MALTA
@@ -37,10 +42,6 @@
 % ----------------------------------------------------------------------------
 
 
-%!TEX TS-program = xelatex
-\RequireXeTeX %Force XeTeX check
-
-
 \title{Il-Lingwa Maltija\ \ \ \ \ \ fil-Era\ \ \ \ \ Diġitali --- The Maltese Language\ \ \ \ in the\ \ \ \ \ Digital Age}
 
 \subtitle{White Paper Series --- Serje ta’ White Papers}
@@ -50,16 +51,18 @@
   Jan Joachimsen~ {\small University of Malta}  
 }
 
+%FIXME: Please translate "Herausgeber" to Maltese!
 \editors{
   Georg Rehm, Hans Uszkoreit\\(Herausgeber, \textcolor{grey1}{editors})
 }
 
 \begin{document}
 
-\renewcommand*{\figureformat}{\sffamily\thefigure\autodot}
+%\renewcommand*{\figureformat}{\sffamily\thefigure\autodot}
 
 \maketitle
 
+\null
 \pagestyle{empty} 
 
 \FundingLNotice{\selectlanguage{maltese} 
@@ -206,6 +209,8 @@ Għalkemm għodod u applikazzjonijiet bħal dawn huma utli, bħalissa ma jistgħ
   
 Ma nistgħux inbassru b’mod preċiż kif se tkun is-soċjetà tal-informazzjoni tal-ġejjieni. Meta niġu biex niddiskutu strateġija għall-enerġija Ewropea jew politika barranija komuni, aħna nistgħu nkunu nixtiequ nisimgħu l-ministri tal-affarijiet barranin Ewropej jitkellmu bil-lingwa nattiva tagħhom. Aħna għandna mnejn nixtiequ pjattaforma fejn in-nies, li jitkellmu lingwi differenti u li għandhom profiċjenza diversa fil-lingwi, jistgħu jiddiskutu xi suġġett partikolari waqt li t-teknoloġija tiġbor l-opinjonijiet tagħhom awtomatikament u tiġġenera sommarji. Aħna nistgħu wkoll inkunu rridu nitkellmu ma’ help desk ta’ assigurazzjoni tas-saħħa li tinsab f’pajjiż barrani.
 
+%FIXME: Missing box texts!
+
 Huwa ċar li l-ħtiġijiet ta’ komunikazzjoni għandhom kwalità differenti meta mqabbla ma’ ftit snin ilu. F’ekonomija globali u spazju ta’ informazzjoni, aktar lingwi, kelliema u kontenut  jikkonfrontawna u jirrikjeduna li ninteraġixxu malajr ma’ tipi ġodda ta’ midja. Il-popolarità kurrenti ta’ midja soċjali (Wikipedia, Facebook, Twitter u YouTube) hija biss parti żgħira minn stampa akbar.
 
 Illum, aħna nistgħu nittrażmettu gigabytes ta’ test madwar id-dinja fi ftit sekondi qabel nagħrfu li huwa b’lingwa li aħna ma nifhmux. Skont rapport riċenti mitlub mill-Kummissjoni Ewropea, 57\% tal- utenti tal-Internet fl-Ewropa jixtru oġġetti u servizzi b’lingwi li mhumiex il-lingwa nattiva tagħhom. (l-Ingliż huwa l-ilsien barrani l-aktar komuni segwit mill-Franċiż, il-Ġermaniż u l-Ispanjol.) 55\% tal-utenti jaqraw kontenut f'lingwa barranija filwaqt li 35\% biss jużaw lingwa oħra biex jiktbu ittri elettroniċi jew jibagħtu kummenti fuq il-web\cite{EC1}.  Ftit snin ilu, l-Ingliż seta’ kien il-\emph{lingua franca} tal-web—il-maġġoranza l-kbira tal-kontenut fuq il-web kien bl-Ingliż—iżda s-sitwazzjoni issa nbidlet drastikament. L-ammont ta’ kontenut fuq l-internet b’lingwi oħra (partikolarment lingwi tal-Asja u Għarab) kiber f'daqqa waħda.
@@ -285,7 +290,7 @@ Il-qalba Semitika tal-Malti tnisslet mill-konkwista Għarbija fit-870 AD u l-pop
 \item
 \gll Il-ħold-up sar minn żagħżugħ li kien liebes nuċċali skur tax-xemx.
 the-hold-up happened from young.man that was wearing glasses dark of.the-sun
-\glt `The robbery was committed by a young man who was wearing dark sunglasses.'
+\glt [The robbery was committed by a young man who was wearing dark sunglasses.]
 \glend
 \end{examples}
 
@@ -449,7 +454,7 @@ Il-metodu deskritt aktar kmieni, applikat għall-kliem funzjonali Maltin, jiġġ
     
 Ir-riżultati eżatti tat-tfittxijiet fil-Google (imwettqa fit-8 ta’ Lulju, 2011) u l-estrapolazzjoni tagħhom tista’ tiġi ttraċċata lura fit-Tabella A u t-Tabella B hawn taħt. Il-kolonna f/m (jiġifieri frekwenza għal kull miljun) tidentifika kemm il-kelma rispettiva sseħħ ta’ spiss f’miljun, fil-korpus MLRS. Pereżempju, fit-Tabella A, il-kelma \emph{għal} ‘for’ tidher kważi 3731 darba f’miljun kelma. It-tiftix tal-Google għall-kelma \emph{għal} tirriżulta f’94,300 paġna b’mill-anqas okkażjoni waħda ta’ \emph{għal} fuq paġna web taħt id-dominju .mt f'Malta. Multiplikazzjoni ta’ miljun u diviżjoni b’3730.96 jagħti ammont stmat ta’ 25,274,996 każ ta’ kull kelma Maltija fuq il-paġni taħt id-dominju .mt ġewwa Malta. Jekk wieħed jagħmel dan il-kalkolu għall-kliem l-ieħor fit-tabella u jsib il-medja tar-riżultati, wieħed jasal għal numru ftit anqas minn 50 miljun kelma. Għall-paġni web madwar id-dinja kollha elenkati taħt id-dominju .mt, ir-riżultati huma għaxar darbiet ogħla.
 
-\begin{table}[htbp]
+\begin{figure*}[tb]
 \centering
 \begin{tabular}{|c|c|c|c|} %tabular* doesn't compile!
 \hline
@@ -473,9 +478,9 @@ Medja & & & 48,013,952 \\
 \end{tabular}
 \caption{Tfittxija bil-Google, ristretta għad-dominju .mt u r-reġjun ta’ Malta}
 \label{table:Google_A_mt}
-\end{table}%
+\end{figure*}
 
-\begin{table}[htbp]
+\begin{figure*}[tb]
 \centering
 \begin{tabular}{|c|c|c|c|} %tabular* doesn't compile!
 \hline
@@ -499,7 +504,7 @@ Medja & & & 518,724,430 \\
 \end{tabular} 
 \caption{Tfittxija bil-Google, ristretta għad-dominju .mt biss}
 \label{table:Google_B_mt}
-\end{table}%
+\end{figure*}
 
 Naturalment, għal studju serju, din it-tfittxija u l-estrapolazzjoni jkollhom jinkludu aktar kliem biex jaslu għal numri aktar affidabbli għall-ammont ta’ Malti fuq l-internet. Iżda meta wieħed iqabbel ir-riżultati mat-Tabella 3 f’\cite{Kilgarriff-Grefenstette:2003}, wieħed jista’ jgħid li ż-żewġ numri huma baxxi ħafna: għall-paġni web f’Malta biss, l-ammont huwa aktar mil-Latvjan u anqas mill-Iżlandiż għaxar snin ilu (in-numri fit-Tabella 3 ġew ikkalkulati f’Marzu 2001). Għall-paġni web dinjin, l-ammont tal-Malti huwa aktar mill-Ungeriż u anqas miċ-Ċek għaxar snin ilu. Minħabba li ``l-proporzjon ta’ testi mhux bl-Ingliż għall-Ingliż qed jikber'' \cite{Kilgarriff-Grefenstette:2003}, il-Malti jista’ jkun saħansitra rappreżentat anqas fuq l-internet illum mil-lingwi li għadhom kemm issemmew.
 
@@ -522,7 +527,8 @@ Barra minn Malta, kollezzjoni kbira ta’ testi bil-Malti tinsab fi ħdan il-EUR
 
 Teknoloġiji lingwistiċi huma teknoloġiji ta’ informazzjoni li huma speċjalizzati biex jittrattaw il-lingwa umana. Għalhekk dawn it-teknoloġiji huma wkoll ta’ spiss ikorporati taħt it-terminu Teknoloġija Lingwistika Umana. Il-lingwa umana sseħħ fil-forma mitkellma u miktuba. Filwaqt li t-taħdit huwa l-eqdem u l-aktar mod naturali ta’ komunikazzjoni lingwistika, l-informazzjoni kumplessa u l-biċċa l-kbira tal-għarfien uman jinżammu u jiġu trażmessi f’testi miktubin. Teknoloġiji ta’ taħdit u testi jipproċessaw jew jipproduċu lingwa f'dawn iż-żewġ modi ta’ produzzjoni. Iżda l-lingwa għandha wkoll aspetti li huma maqsuma bejn taħdit u testi bħal dizzjunarji, il-biċċa l-kbira tal-grammatika u t-tifsir ta’ sentenzi. Għaldaqstant partijiet kbar mit-teknoloġija lingwistika ma jistgħux jiġu inklużi taħt teknoloġiji tat-taħdit inkella tat-testi. Fost dawn hemm teknoloġiji li jorbtu l-lingwa mal-għarfien. Ir-rappreżentazzjoni fuq il-lemin turi l-pajsaġġ grafiku tat-Teknoloġija Lingwistika. Fil-komunikazzjoni tagħna aħna nħalltu l-lingwa ma’ modi oħra ta’ komunikazzjoni u mezzi oħra ta’ informazzjoni. Aħna norbtu t-taħdit ma’ ġesti u espressjonijiet tal-wiċċ. Testi diġitali jingħaqdu ma’ stampi u ħsejjes. Il-films jistgħu jinkludu lingwa f’forma mitkellma u miktuba. Għaldaqstant teknoloġiji ta’ taħdit u testi jikkoinċidu u jinteraġixxu ma’ ħafna teknoloġiji oħra li jiffaċilitaw l-ipproċessar ta’ komunikazzjoni multimodali u dokumenti multimidjali.
 
-\begin{figure*}[htb]
+%FIXME: Please translate the caption to Maltese
+ \begin{figure*}[htb]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
   \includegraphics[width=\textwidth]{../_media/maltese/language_technologies}
@@ -530,6 +536,8 @@ Teknoloġiji lingwistiċi huma teknoloġiji ta’ informazzjoni li huma speċjal
   \label{fig:ltincontext_de}
   \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
+
+%FIXME: I think something is missing here: The paragraph starting with "In this section, we will discuss..." plus the item list in the English version. Please double-check with the English version!
 
 \subsection{Arkitetturi ta’ Applikazzjonijiet}
 
@@ -610,6 +618,7 @@ Barra minn CD ta’ dizzjunarju interattiv bl-istampi \cite{Sciriha:1997}, sal-l
 
 L-interazzjoni tat-taħdit hija l-bażi għall-ħolqien ta’ interfaces li jippermettu lill-utent biex jinteraġixxi ma’ magni billi juża l-lingwa mitkellma aktar milli, pereżempju, stampa grafika, tastiera, u mouse. Illum, l-interfaces għall-vuċi (VUIs) huma normalment użati għal offerti ta’ servizzi ta’ awtomatizzazzjoni parzjali jew kompluti pprovduti mill-kumpaniji lill-klijenti tagħhom, l-impjegati jew l-imsieħba permezz tat-telefon. Dominji ta’ negozju li jiddependu ħafna fuq VUIs huma l-banek, il-loġistika, it-trasport pubbliku, u t-telekomunikazzjonijiet. Użi oħra tat-Teknoloġija għall-Interazzjoni tat-Taħdit huma interfaces għal apparat partikolari, eż. sistemi ta’ navigazzjoni fil-karozza, u l-użu tal-lingwa mitkellma bħala alternattiva għall-modalitajiet ta’ input/output ta’ interfaces grafiċi għall-utent, eż. fl-ismartphones.
 
+%FIXME: Missing translation
 \boxtext{Sprachliche Interaktion ist die Grundlage für die Schaffung von Schnittstellen, über die ein Nutzer mittels gesprochener Sprache interagieren kann statt über eine grafische Anzeige, Tastatur und Maus.}
 
 \begin{figure*}[htb]
@@ -1195,7 +1204,7 @@ Drawing on the insights gained so far, it appears that today’s 'hybrid' langua
 
 According to the assessment detailed in this report, the achievement of a breakthrough in Maltese language technology requires a whole cycle of changes involving content providers, developers and users of language technology. Some changes in national language policy must be implemented before any breakthroughs for the Maltese language can be achieved.
 
-META-NET’s long-term goal is to introduce high-quality language technology for all languages in order to achieve political and economic unity through cultural diversity. The technology will help tear down existing barriers and build bridges between Europe’s languages. This requires all stakeholders - in politics, research, business, and society - to unite their efforts for the future.
+META-NET’s vision is high-quality language technology for all languages that supports political and economic unity through cultural diversity. This technology will help tear down existing barriers and build bridges between Europe’s languages. This requires all stakeholders -- in politics, research, business, and society -- to unite their efforts for the future.
 
 This whitepaper series complements other strategic actions taken by META-NET (see the appendix for an overview). Up-to-date in-formation such as the current version of the META-NET vision paper\cite{Meta1}  or the Strategic Research Agenda (SRA) can be found on the META-NET web site: http://www.meta-net.eu.
 
@@ -1209,7 +1218,7 @@ This whitepaper series complements other strategic actions taken by META-NET (se
 
 We are witnesses to a digital revolution that is dramatically impacting communication and society. Recent developments in information and communication technology are sometimes compared to Gutenberg’s invention of the printing press. What can this analogy tell us about the future of the European information society and our languages in particular?
 
-\boxtext{We are witnessing a digital revolution that is comparable to Gutenberg’s invention of the printing press.}
+\boxtext{The digital revolution is comparable to Gutenberg’s invention of the printing press.}
 
 After Gutenberg’s invention, real breakthroughs in communication were accomplished by efforts such as Luther’s translation of the Bible into vernacular language. In subsequent centuries, cultural techniques have been developed to better handle language processing and knowledge exchange:
 
@@ -1240,7 +1249,7 @@ Although these tools and applications are helpful, they are not yet capable of s
 
 We cannot predict exactly what the future information society will look like. However, there is a strong likelihood that the revolution in communication technology is bringing together people who speak different languages in new ways. This is putting pressure both on individuals to learn new languages and especially on developers to create new technology applications to ensure mutual understanding and access to shareable knowledge. In the global economic and information space, there is increasing interaction between different languages, speakers and content thanks to new types of media. The current popularity of social media (Wikipedia, Facebook, Twitter, YouTube, and, recently, Google+) is only the tip of the iceberg.
 
-\boxtext{A global economy and information space confronts us with different languages, speakers and content.}
+\boxtext{The global economy and information space confronts us with different languages, speakers and content.}
 
 Today, we can transmit gigabytes of text around the world in a few seconds before we recognise that it is in a language that we do not understand. According to a recent report from the European Commission, 57\% of Internet users in Europe purchase goods and services in languages that are not their native language; English is the most common foreign language followed by French, German and Spanish. 55\% of users read content in a foreign language while 35\% use another language to write e-mails or post comments on the Web \cite{EC1}. A few years ago, English might have been the lingua franca of the Web—the vast majority of content on the Web was in English—but the situation has now drastically changed. The amount of online content in other European (as well as Asian and Middle Eastern) languages has exploded.
 
@@ -1340,7 +1349,7 @@ the-hold-up happened from young.man that was wearing glasses dark of.the-sun
 \glend
 \end{examples}
 
-One remarkable fact about Maltese is that despite its relatively small number of speakers and the small area in which it is spoken, there is a comparatively rich number of variants or dialects. In general, a main distinction can be made between the Standard variety spoken in the urban areas like Valletta and Sliema and non-standard varieties spoken in the rural areas. Outside of Malta, the Maltese spoken in Australia has developed into an ethnolect of its own called \emph{Maltraljan}. It differs from Standard Maltese mainly in terms of its lexicon (i.e., the vocabulary) that is the result of extensively borrowing words from (Australian) English and subsequent change in meaning. 
+One remarkable fact about Maltese is that despite its relatively small number of speakers and the small area in which it is spoken, there is a comparatively rich number of variants or dialects. In general, a main distinction can be made between the Standard variety spoken in the urban areas like Valletta and Sliema and non-standard varieties spoken in the rural areas. Outside of Malta, the Maltese spoken in Australia has developed into an ethnolect of its own called \emph{Maltraljan}. It differs from Standard Maltese mainly in terms of its lexicon (i.\,e., the vocabulary) that is the result of extensively borrowing words from (Australian) English and subsequent change in meaning. 
 
 With English being the second official language in Malta, many Maltese are bilingual. Between the poles of monolingualism and full bilingualism, there is a continuum of language-mixing and codeswitching. Most Maltese speak only Maltese at home and among each other. English, on the other hand, is the language used in the written context of higher education and in communication with foreigners. 
 
@@ -1388,31 +1397,31 @@ As the English translations try to show, the different word orders have a differ
 
 \boxtext{Maltese words can change internally during inflection and derivation.}
 
-As a Semitic language, Maltese shows a non-concatenative morphology, i.e. inflected and derived word forms change internally:
+As a Semitic language, Maltese shows a non-concatenative morphology, i.\,e., inflected and derived word forms change internally:
 
-In languages like English, word forms are made up of stems and affixes, i.e. concatenatively. The verb \emph{shoot} can be inflected for third person by attaching the affix \emph{-s} to the stem as in \emph{(he) shoot-s}. Also, from the verbal stem a noun can be derived by adding the affix \emph{-er} as in \emph{shoot-er}. Hence both inflection and derivation take place without internal changes to the structure, i.e. concatenatively. 
+In languages like English, word forms are made up of stems and affixes, i.\,e., concatenatively. The verb \emph{shoot} can be inflected for third person by attaching the affix \emph{-s} to the stem as in \emph{(he) shoot-s}. Also, from the verbal stem a noun can be derived by adding the affix \emph{-er} as in \emph{shoot-er}. Hence both inflection and derivation take place without internal changes to the structure, i.\,e., concatenatively. 
 
 In Maltese, there is a mixture of stem-based and root-and-pattern-based morphology. In the Semitic component, the basic ``unit'' within a word is often not a stem but a root made up of three (sometimes four) consonants in a fixed order that carry a general meaning. Word stems with their specific meaning are formed by arranging the consonants according to a certain pattern. For example, the root \emph{k-t-b} carries the meaning of everything connected with ``writing''. In the following, patterns are represented as numbers \textbf{1,2,3} for the root consonants and \textbf{v} for the vowels between them, for example \textbf{1v2v3}. By applying the pattern \textbf{1v2v3} and filling the vowel positions between the root consonants \textbf{1,2} and \textbf{3} with the vowel sequence \textbf{i-e}, one gets the perfective verb \emph{kiteb} `he wrote'. Inflection of this verb for plural takes place by affixation of the plural affix \emph{-u}, giving the form \emph{kitbu} `they wrote'. Applying the pattern \textbf{1v22v:3} (\textbf{v:} stands for a long vowel) to the root renders the agent noun \emph{kittieb} `writer'. Inflection of the noun by adding the affix \emph{-a} gives the plural \emph{kittieba} `writers'. Note that the plural suffix \emph{-a} looks similar to the feminine marker \emph{-a} so that \emph{kittieba} could also refer to a female writer. The other Semitic Maltese plural suffixes are \emph{-in} as in \emph{mħallef} `judge', \emph{mħallfin} `judges'; \emph{-at/-iet} as in \emph{kittieba} `(female) writer', \emph{kittiebat} `(female) writers'; \emph{-ijiet} as in \emph{żmien} `time', \emph{żminijiet} `times'.
 
-Plural nouns in Maltese can also be formed non-concatenatively (the so-called broken plural forms), i.e. no affixation takes place, but the noun is changed internally, e.g. \emph{ktieb} `book' vs. \emph{kotba} `books'.
+Plural nouns in Maltese can also be formed non-concatenatively (the so-called broken plural forms), i.\,e., no affixation takes place, but the noun is changed internally, e.\,g., \emph{ktieb} `book' vs. \emph{kotba} `books'.
 
 Loan verbs today are mostly imported using a special verb class that can accommodate undigested stems. For example, the English stem \emph{park-} became the basis of the Maltese verb forms \emph{pparkjajt, pparkjat, pparkja} `I/ she/ he parked'. Today, this formerly marginal Semitic special verb class has increased in size due to the influx of English loan verbs. It is highly productive, often giving way to \emph{ad-hoc} loans of English verbs which already have a Semitic counterpart in Maltese. For example `to download (a file)' can be expressed using the Semitic verb \emph{niżżel} (originally meaning `he caused to come down'). Taking the English stem \emph{download} and importing it via the special verb class instead gives forms like \emph{ddawnlowdjajt, ddawnlowdjat, ddawnlowdja} `I/ she/ he down-loaded'. This strategy is often criticized as corrupting the language \cite{Fabri:2011a}.
 
 \boxtext{The Maltese temporal system is marked for aspect.}
 
-Verbs in Maltese are marked for aspect, i.e. as to whether an action is completed (perfective) or not completed (imperfective) -- for a full account on tense and aspect in Maltese, see \cite{Fabri:1995} and \cite{Ebert:2000}. In the absence of any other grammatical markers, verbs in the perfective are interpreted as ``past tense'' and verbs in the imperfective as ``present tense'': \emph{Andrew kiteb} `Andrew wrote'; \emph{Andrew jikteb} `An-drew writes'. Combination of the imperfective verb with \emph{kien}, the perfective form of the verb for `to be', expresses habitual past: \emph{Andrew kien jikteb} `Andrew used to write'. Adding word \emph{qed} `progressive' (like the English \emph{-ing} form) gives \emph{Andrew kien qed jikteb} `Andrew was writing' etc.
+Verbs in Maltese are marked for aspect, i.\,e., as to whether an action is completed (perfective) or not completed (imperfective) -- for a full account on tense and aspect in Maltese, see \cite{Fabri:1995} and \cite{Ebert:2000}. In the absence of any other grammatical markers, verbs in the perfective are interpreted as ``past tense'' and verbs in the imperfective as ``present tense'': \emph{Andrew kiteb} `Andrew wrote'; \emph{Andrew jikteb} `An-drew writes'. Combination of the imperfective verb with \emph{kien}, the perfective form of the verb for `to be', expresses habitual past: \emph{Andrew kien jikteb} `Andrew used to write'. Adding word \emph{qed} `progressive' (like the English \emph{-ing} form) gives \emph{Andrew kien qed jikteb} `Andrew was writing' etc.
 
 Maltese verbs do not have morphological infinitives. Thus, in complex predicates like in the English sentence `Andrew wants to write', both verbs are morphologically finite: \emph{Andrew irid jikteb} (literally: `Andrew he wants he writes') even though semantically, \emph{jikteb} is not finite.  
 
 \subsection{Recent Developments}
 
-With the rise of English to the status of an international language and language of technology after the Second World War, the number of English loan words in Maltese has grown to a great extent. Many of them have become ``nativised'', i.e. they are adopted in regular use so much that even derived Semitic words cannot re-place them. For example, instead of the commonly used word \emph{ajruport} (from English \emph{airport}), the Semitic word \emph{mitjar} once was proposed (derived from \emph{tar} `he flew'). However, it became never accepted by the language community. On the other hand, loan words enter the language very rapidly, being imported spontaneously, even though there are already proper Maltese words for them (for example \emph{ddawnlowdja} vs \emph{niżżel} `he downloaded'). This fuels fears among some that the language might become ``corrupted'' \cite{Fabri:2011a}.
+With the rise of English to the status of an international language and language of technology after the Second World War, the number of English loan words in Maltese has grown to a great extent. Many of them have become ``nativised'', i.\,e., they are adopted in regular use so much that even derived Semitic words cannot re-place them. For example, instead of the commonly used word \emph{ajruport} (from English \emph{airport}), the Semitic word \emph{mitjar} once was proposed (derived from \emph{tar} `he flew'). However, it became never accepted by the language community. On the other hand, loan words enter the language very rapidly, being imported spontaneously, even though there are already proper Maltese words for them (for example \emph{ddawnlowdja} vs \emph{niżżel} `he downloaded'). This fuels fears among some that the language might become ``corrupted'' \cite{Fabri:2011a}.
 
 Another recent development for Maltese is its status as an official language of the European Union. This has both advantages and disadvantages \cite{Fabri:2011a}. On the one hand, Maltese has finally become an internationally recognized language, a status that it did not have for a long time, being marginalized as a ``kitchen language'' centuries before. On the other hand, Maltese EU translators are confronted with certain challenges: many technical and legal terms have yet to be ``invented'' for Maltese. This results eventually in lexical expansion of the language (definitely a positive aspect), which, however, has to be coordinated by a central body so that individual translators do not come up with different terms for the same concepts independently from each other (which is a serious problem). The central body to deal with this challenge is the National Council for the Maltese Language (\emph{Il-Kunsill Nazzjonali tal-Ilsien Malti}).
 
 Other developments in recent years concern the Maltese orthography. Maltese (together with English) became the official language of Malta on January 1, 1934 – in the orthography released by the Union of Maltese Writers (\emph{Għaqda tal-Kittieba tal-Malti}) in 1924. Since then, the orthography has undergone three revisions (1984, 1992 and 2008).
 
-The last reform was released in 2008. Its aim was to reduce writers' insecurities that resulting from a considerable number of spelling variants for certain words. As the \emph{Kunsill’s} (2008a) document \emph{Deċiżjonijiet 1} points out, the great number of variants could be reduced by finding a consistent balance between grammatical and phonetic spelling. Thus the four variants \emph{zobtu, zoptu, sobtu} and \emph{soptu} (`suddenly, unexpectedly') could be reduced to the two variants \emph{zoptu} for \lingua{'zɔp.tʊ} and \emph{soptu} for \lingua{'sɔp.tʊ}. For a similar reason, the word \emph{skond} \lingua{skɔnt} `according to', was changed to \emph{skont} since its other grammatical forms do not justify spelling with \emph{d} (derived from Italian \emph{secondo}), as e.g. \emph{skontok} \lingua{'skɔn.tɔk} `according to you'.
+The last reform was released in 2008. Its aim was to reduce writers' insecurities that resulting from a considerable number of spelling variants for certain words. As the \emph{Kunsill’s} (2008a) document \emph{Deċiżjonijiet 1} points out, the great number of variants could be reduced by finding a consistent balance between grammatical and phonetic spelling. Thus the four variants \emph{zobtu, zoptu, sobtu} and \emph{soptu} (`suddenly, unexpectedly') could be reduced to the two variants \emph{zoptu} for \lingua{'zɔp.tʊ} and \emph{soptu} for \lingua{'sɔp.tʊ}. For a similar reason, the word \emph{skond} \lingua{skɔnt} `according to', was changed to \emph{skont} since its other grammatical forms do not justify spelling with \emph{d} (derived from Italian \emph{secondo}), as, e.\,g., \emph{skontok} \lingua{'skɔn.tɔk} `according to you'.
 
 For the third area (loan words), the principle remains to write loan words according to the Maltese orthography if they are regarded as ``nativised'' and if it does not result in conflicts with the pronunciation or with other Maltese writing rules. However, many Maltese prefer to write English loan words with their original spelling, since they have become used to them. In fact, during a public seminar on the treatment of English loan words in April 2008, there were emotional discussions among the audience when it came to words like \emph{email} and their proposed new spellings as \emph{imejl}. Factors like the habits of a language community make the standardisation of spellings even more difficult than finding the balance between grammatical and phonetic principles. 
 
@@ -1437,11 +1446,11 @@ The motivation behind the Maltese Language Act was the idea that one national la
 
 Particularly in a bilingual society like in Malta, several aspects play a role when it comes to language in education. 
 
-One aspect is the language of instruction, i.e. the language that is used officially by the teachers during lessons in school or in seminars at university. 
+One aspect is the language of instruction, i.\,e., the language that is used officially by the teachers during lessons in school or in seminars at university. 
 
 Another factor is the language used in certain school books. With English being the language of technology and natural sciences, most of the school books on these topics are in English. In fact, efforts to translate technical and scientific terms into Maltese have encountered several problems, one of them being the acceptance by the language community. Hence the school subjects, too, possibly determine the language of instruction for certain lessons, although it can also be that English school books (and the English terminology contained therein) are used while the language of instruction is Maltese.
 
-Yet another aspect is the language used by individuals. Bilingual speakers not only use different languages in different social settings (``domains''), e.g. Maltese with the family at home, English with foreigners, Maltese or English during school lessons etc. They also tend to mix both languages, either by language mixing (e.g. English words are mixed into a conversation conducted in Maltese) or by code-switching (e.g. a conversation in Maltese switches to English and back again, with the English parts being larger than just single words, often consisting of several sentences). Thus even during school lessons that are taught in one language, conversations between teachers and students can switch between the languages \cite{Camilleri:1995}.
+Yet another aspect is the language used by individuals. Bilingual speakers not only use different languages in different social settings (``domains''), e.\,g., Maltese with the family at home, English with foreigners, Maltese or English during school lessons etc. They also tend to mix both languages, either by language mixing (e.\,g., English words are mixed into a conversation conducted in Maltese) or by code-switching (e.\,g., a conversation in Maltese switches to English and back again, with the English parts being larger than just single words, often consisting of several sentences). Thus even during school lessons that are taught in one language, conversations between teachers and students can switch between the languages \cite{Camilleri:1995}.
 
 Keeping these three factors in mind, it becomes clear that the actual exposure of students to the respective language in schools or at the university is something different from the chosen language of instruction.
 
@@ -1455,11 +1464,11 @@ As can be seen from the examples above, despite the fact that both Maltese and E
 
 This distribution of Maltese being used mainly as the spoken medium and English mainly as the written medium bears a certain risk, as it can have an impact on different skills of its native speakers when it comes to speaking, reading or writing. In order to give reasons to this statement, one has to look at the basic characteristics of spoken and written language.
 
-In general, written texts differ from spoken discourse in a number of ways. What they have in common is that both are ways of transferring information between two parties, i.e. speaker and hearer, and writer and reader, respectively. However, they differ in the way information is passed on between them. Putting it in a simple way, a written text, unlike spoken discourse, is set outside a concrete interactive communicative situation. Spoken discourse, on the one hand, depends on the interaction between speaker and hearer. The speaker has to structure the information in a certain way. This is important because of the limited human short-term memory: a hearer in a conversation can only take in a certain amount of in-formation before he has to interrupt and ask the speaker to make sure that he understood. 
+In general, written texts differ from spoken discourse in a number of ways. What they have in common is that both are ways of transferring information between two parties, i.\,e., speaker and hearer, and writer and reader, respectively. However, they differ in the way information is passed on between them. Putting it in a simple way, a written text, unlike spoken discourse, is set outside a concrete interactive communicative situation. Spoken discourse, on the one hand, depends on the interaction between speaker and hearer. The speaker has to structure the information in a certain way. This is important because of the limited human short-term memory: a hearer in a conversation can only take in a certain amount of in-formation before he has to interrupt and ask the speaker to make sure that he understood. 
 
-A written text, on the other hand, is non-interactive in so far as the reader cannot ask for more specific information. He can however, browse back and forth in the text (something that a hearer cannot do in discourse). In that way, a written text itself serves as the long-term memory for the reader. Thus, a written text structures information differently than would be done in a spoken conversation. For example, a text has to provide more background information in order to provide a common ground with the reader before the actual information flow starts. This is not a problem, given that a text can serve as a long-term memory for the reader. In fact, it allows for a more elaborated structure than spoken discourse, i.e. it usually contains longer sentences and a higher number of subordinate clauses. 
+A written text, on the other hand, is non-interactive in so far as the reader cannot ask for more specific information. He can however, browse back and forth in the text (something that a hearer cannot do in discourse). In that way, a written text itself serves as the long-term memory for the reader. Thus, a written text structures information differently than would be done in a spoken conversation. For example, a text has to provide more background information in order to provide a common ground with the reader before the actual information flow starts. This is not a problem, given that a text can serve as a long-term memory for the reader. In fact, it allows for a more elaborated structure than spoken discourse, i.\,e., it usually contains longer sentences and a higher number of subordinate clauses. 
 
-This register (i.e. ``language style'') distinction is what in the literature (e.g. Biber, 1991) has been dubbed \emph{oral} versus \emph{literate} text structures. Of course, a text can also be written in an oral register that resembles spoken conversations (e.g. in forum chats or informal emails). But it is not the register normally used in e.g. essays. Ideally, native speakers acquire the literate register already from an early age on, e.g. by their parents reading stories to them. Later in school, this knowledge is deepened by active exercise in writing essays, for example.
+This register (i.\,e., ``language style'') distinction is what in the literature (e.\,g., Biber, 1991) has been dubbed \emph{oral} versus \emph{literate} text structures. Of course, a text can also be written in an oral register that resembles spoken conversations (e.\,g., in forum chats or informal emails). But it is not the register normally used in, e.\,g., essays. Ideally, native speakers acquire the literate register already from an early age on, e.\,g., by their parents reading stories to them. Later in school, this knowledge is deepened by active exercise in writing essays, for example.
 
 A literate register develops over time in a language with a literary tradition. Maltese, compared to its short history as an officially written language (since 1934) has a long and rich literary history. Even though the oldest literature discovered is very sparse (\emph{Il Cantilena} by Pietro Caxaro, dating back to about 1450), a literary tradition started to form around the 1740s. In the 19th century, the amount of literature in Maltese was growing \cite{Fabri:2011a}, and with it, Maltese was expanding. Today it is a language with a fully fledged literate register. 
 
@@ -1468,11 +1477,11 @@ This register, however, needs to be exercised in order to keep up the status of 
 
 \subsection{International Aspects}
 
-Bearing the previous sections in mind, it should be clear now that the international aspects of Maltese differ to a great extent from other languages. With under a million native speakers worldwide, Maltese is considered a ``lesser-spoken'' language. In its history, it was not the language of occupiers but rather one of the occupied. As a result of this, Maltese has never become what is traditionally considered an international language or lingua franca as was the case for e.g. Latin, Spanish, Portuguese or English, all of which can be considered as the languages of conquerors. It did spread to other countries, where it is still spoken today (Australia, Canada, USA and UK), but only as a community language. It took nearly 200 years from the first interest of Maltese grammarians in their own language until it eventually gained the status of an official language. And even then, the other official language, English, still served as the language for international relations. 
+Bearing the previous sections in mind, it should be clear now that the international aspects of Maltese differ to a great extent from other languages. With under a million native speakers worldwide, Maltese is considered a ``lesser-spoken'' language. In its history, it was not the language of occupiers but rather one of the occupied. As a result of this, Maltese has never become what is traditionally considered an international language or lingua franca as was the case for, e.\,g., Latin, Spanish, Portuguese or English, all of which can be considered as the languages of conquerors. It did spread to other countries, where it is still spoken today (Australia, Canada, USA and UK), but only as a community language. It took nearly 200 years from the first interest of Maltese grammarians in their own language until it eventually gained the status of an official language. And even then, the other official language, English, still served as the language for international relations. 
 
 A change for Maltese to become an internationally visible language came with Malta's joining of the EU in 2004. Since then, it has been an official language inside the European Union, with all the benefits and challenges which are connected to this status.
 
-Academically, the interest in Maltese as subject of science goes back to as far as 1603 when Hieronymus Megiser published his \emph{Thesaurus Polyglottus}, which included a list of Maltese words. The first scholar to systematically explore and promote the Maltese language was Mikiel Anton Vassalli. He published a grammar (1790), a dictionary (1797) and several alphabets (1788 and 1790) for Maltese and today is called ``the father of the Maltese Language'' (Brincat 2011). In the 20th century, Sutcliffe's Grammar of the Maltese Language (1936) was published. From the 1960s, Maltese language Linguistics gained wider international academic aware-ness through the publications by Joseph Aquilina (e.g. \emph{Papers in Maltese Linguistics} (1961) and \emph{Maltese-English Dictionary}, two volumes (1987 and 1990)). Since then, more and more scholars outside Malta have taken an interest in Maltese. 2007 saw the foundation of the International Association of Maltese Linguistics (\emph{Għaqda Internazzjonali tal-Lingwistika Maltija})\cite{GHILM2} , an association of linguists who are interested in the Maltese language. The main aim of GĦILM, as stated on its website, is to provide ``a connection between interested scholars from all subdisciplines of Linguistics'', thus facilitating research on Maltese. It also wants to bring together people from different backgrounds who work with the Maltese language (linguists, translators, students and others).
+Academically, the interest in Maltese as subject of science goes back to as far as 1603 when Hieronymus Megiser published his \emph{Thesaurus Polyglottus}, which included a list of Maltese words. The first scholar to systematically explore and promote the Maltese language was Mikiel Anton Vassalli. He published a grammar (1790), a dictionary (1797) and several alphabets (1788 and 1790) for Maltese and today is called ``the father of the Maltese Language'' (Brincat 2011). In the 20th century, Sutcliffe's Grammar of the Maltese Language (1936) was published. From the 1960s, Maltese language Linguistics gained wider international academic aware-ness through the publications by Joseph Aquilina (e.\,g., \emph{Papers in Maltese Linguistics} (1961) and \emph{Maltese-English Dictionary}, two volumes (1987 and 1990)). Since then, more and more scholars outside Malta have taken an interest in Maltese. 2007 saw the foundation of the International Association of Maltese Linguistics (\emph{Għaqda Internazzjonali tal-Lingwistika Maltija})\cite{GHILM2} , an association of linguists who are interested in the Maltese language. The main aim of GĦILM, as stated on its website, is to provide ``a connection between interested scholars from all subdisciplines of Linguistics'', thus facilitating research on Maltese. It also wants to bring together people from different backgrounds who work with the Maltese language (linguists, translators, students and others).
 
 
 \subsection{Maltese on the Internet}
@@ -1486,7 +1495,7 @@ Languages other than respondents' own used to read or watch content on the inter
 
 When writing on the internet, numbers in favour of Maltese are higher than when reading or watching content: 87 per cent claimed they used Maltese, 85 per cent English and 8 per cent Italian. 
 
-The reason for the majority to use English as the language for consuming online content may be just the limited number of websites in Maltese rather than the favour for English \emph{per se}. Remember that most respondents did not regard English as their own language and that the usage of Maltese increased when producing content on the web, even though this use of Maltese in most cases takes place in chat forums and social platforms, hence in a colloquial style, i.e. in the oral register. 
+The reason for the majority to use English as the language for consuming online content may be just the limited number of websites in Maltese rather than the favour for English \emph{per se}. Remember that most respondents did not regard English as their own language and that the usage of Maltese increased when producing content on the web, even though this use of Maltese in most cases takes place in chat forums and social platforms, hence in a colloquial style, i.\,e., in the oral register. 
 
 A peculiarity about the Maltese used by the younger generation in social platforms and chat forums is its phonetic spelling, without the silent characters like \emph{għ} and \emph{h}. Thus \emph{għax} `because' is written as \emph{ax}, \emph{tiegħi} `my' as \emph{tiei} etc. The reason for this may be the late introduction of Maltese special characters into the PC world. Although Maltese has been implemented in the Unicode framework since its inception, computers and operation systems followed much later. The \emph{Maltese Standards Authority} only released a standardized Maltese keyboard layout in 2002, and Microsoft's Windows operating system has been available in a Maltese language version since as late as 2006 (with Windows XP). In the case of mobile phones, the special Maltese letters are still not implemented. Hence it remains to be seen whether the \emph{ad-hoc} orthography of the chat forums will give way to a spelling with special characters once they are available on mobile phones or whether this phonetic orthography will survive as a ``sociolect'' of the younger generation \cite{Fabri:2011b}.
 
@@ -1496,15 +1505,15 @@ A first look at the number of Wikipedia entries (on June 1st, 2011) showed that 
 
 Comparing the number of top level domains (TLD), the TLD .mt occupies rank 213 (out of 358) with an unspecified number of registered .mt domains (a member of the Network Information Centre Malta gave an estimate of about 5,000), opposed to 21,336,063 registered domains for .com (commercial, rank 1) and 5,459,604 domains for .de (Germany, rank 2). Of course, the number of registered domains does not tell anything about the language in which the pages under a certain domain are written.
 
-Some rough numbers of the amount of Maltese language on the internet can be calculated using a procedure proposed by \cite{Kilgarriff-Grefenstette:2003}\cite{Gatt1en}. The basic idea is that function words (e.g. \emph{but, for, this} etc) are more frequent than content words (e.g. nouns, verbs, adjectives) and form a finite set in a language. Also, the percentage of the function words in a language is stable in a text sample as the size of the sample increases (Zipf's Law). Thus, one can calculate the amount of words for any language on the internet as follows: 
+Some rough numbers of the amount of Maltese language on the internet can be calculated using a procedure proposed by \cite{Kilgarriff-Grefenstette:2003}\cite{Gatt1en}. The basic idea is that function words (e.\,g., \emph{but, for, this} etc) are more frequent than content words (e.\,g., nouns, verbs, adjectives) and form a finite set in a language. Also, the percentage of the function words in a language is stable in a text sample as the size of the sample increases (Zipf's Law). Thus, one can calculate the amount of words for any language on the internet as follows: 
 
-In the first step, one calculates the amount of selected function words of Maltese in a corpus (i.e. a text collection) whose size is known. In the second step, one uses a search engine (e.g. Google) to find out the frequency for the same function words on the web. In the third step, the frequency from the corpus count is extrapolated to the Google search and then an average is calculated for the frequency of function words in the search results.
+In the first step, one calculates the amount of selected function words of Maltese in a corpus (i.\,e., a text collection) whose size is known. In the second step, one uses a search engine (e.\,g., Google) to find out the frequency for the same function words on the web. In the third step, the frequency from the corpus count is extrapolated to the Google search and then an average is calculated for the frequency of function words in the search results.
 
 Some restrictions of this method should be mentioned: Firstly, the numbers gained by this method are only page hits. For example, 94,300 Google hits for the word \emph{għal} `for’ are not 94,300 instances of the word on the internet, but 94,300 web pages which contain the word \emph{għal} at least once. Secondly, the search only finds web pages which have an individual URL \cite{Kilgarriff-Grefenstette:2003}. Pages that are only accessible via a web interface are not retrieved in the web search. Thirdly, a search engine will only search for a string irrespective of its environment on a web page. It does not make judgements about whether a certain string is actually a word of a language. 
 
 Applied to Maltese function words, the method described above generates different estimates for Maltese. For websites in the domain .mt situated in Malta, the estimated size is 50 million words, while for.mt websites in all regions the size is 500 million words. The reason for this difference is that a lot of .mt domains are reserved for servers outside Malta.
 
-The exact results of the Google searches (conducted on July 8, 2011) and their extrapolation can be retraced in Table~\ref{table:Google_A_en} and Table~\ref{table:Google_B_en} below. The column f/m (i.e. frequency per million) identifies how often in a million words the respective word occurs in the MLRS corpus. For example, in Table~\ref{table:Google_A_en}, the word \emph{għal} `for’ appears nearly 3731 times among a million words. The Google search for \emph{għal} results in 94,300 pages with at least one instance of \emph{għal} on a web page under the domain .mt in Malta. Multiplication by 1 million and division by 3730.96 makes an estimated 25,274,996 instances of any Maltese word on pages under the domain .mt inside Malta. If one does this calculation for the other words in the table and averages the results, one arrives at a number slightly less than 50 million words. For all webpages worldwide listed under the domain .mt, the results are ten times as high.
+The exact results of the Google searches (conducted on July 8, 2011) and their extrapolation can be retraced in Table~\ref{table:Google_A_en} and Table~\ref{table:Google_B_en} below. The column f/m (i.\,e., frequency per million) identifies how often in a million words the respective word occurs in the MLRS corpus. For example, in Table~\ref{table:Google_A_en}, the word \emph{għal} `for’ appears nearly 3731 times among a million words. The Google search for \emph{għal} results in 94,300 pages with at least one instance of \emph{għal} on a web page under the domain .mt in Malta. Multiplication by 1 million and division by 3730.96 makes an estimated 25,274,996 instances of any Maltese word on pages under the domain .mt inside Malta. If one does this calculation for the other words in the table and averages the results, one arrives at a number slightly less than 50 million words. For all webpages worldwide listed under the domain .mt, the results are ten times as high.
 
 \begin{figure*}[tb]
 \setlength{\tabcolsep}{2.5em}
@@ -1576,7 +1585,7 @@ The websites of the Maltese TV and radio stations show a mixture of both English
 
 Outside Malta, a big collection for Maltese texts is within the EUR-Lex\cite{EURLex1} that hosts all official law and other documents of the European Union since 1951 in its 23 official languages.
 
-Many if not all of these openly available web documents are used in corpus projects, e.g. the \emph{JRC-Acquis Multilingual Parallel Corpus}\cite{JRC-Acquis1}, which is a parallel corpus containing the complete text of the European Union Law in 22 languages. Another corpus that contains a growing number of visible web documents in Maltese is the corpus on the MLRS (Maltese Language Resource Server)\cite{MLRS1}.
+Many if not all of these openly available web documents are used in corpus projects, e.\,g., the \emph{JRC-Acquis Multilingual Parallel Corpus}\cite{JRC-Acquis1}, which is a parallel corpus containing the complete text of the European Union Law in 22 languages. Another corpus that contains a growing number of visible web documents in Maltese is the corpus on the MLRS (Maltese Language Resource Server)\cite{MLRS1}.
 \end{multicols}
 
 \clearpage
@@ -1652,7 +1661,7 @@ Anyone who has used a word processor such as Microsoft Word knows that it has a 
   Miss steaks aye can knot sea.
 \end{quote}
 
-For handling this type of error, analysis of the context is needed in many cases, e.g., for deciding in which position in a Maltese verb the silent \emph{għ} has to be written, as in:
+For handling this type of error, analysis of the context is needed in many cases, e.\,g., for deciding in which position in a Maltese verb the silent \emph{għ} has to be written, as in:
 
 \begin{enumerate} %[(a)]
 \item \emph{... in-negozjati li kien għamel il-Gvern ...}\\
@@ -1664,9 +1673,9 @@ For handling this type of error, analysis of the context is needed in many cases
 \item *\emph{... in-negozjati li kien agħmel il-Gvern ...}
 \end{enumerate}
  
-Both \emph{għamel} `he made' and \emph{agħmel} `make!' are pronounced [ˈɐː.mɛl].
+Both \emph{għamel} `he made' and \emph{agħmel} `make!' are pronounced \lingua{ˈɐː.mɛl}.
 
-This either requires the formulation of language-specific grammar rules, involving a high degree of expertise and manual labour, or the use of a so-called statistical language model.  Such models calculate the probability of a particular word occurring in a specific environment (i.e., the preceding and following words). For example, \emph{kien għamel} is much more probable word sequence than \emph{kien agħmel}. A statistical language model can be automatically derived using a large amount of (correct) language data (i.e. a corpus). Up to now, these approaches have mostly been developed and evaluated using English language data. However, they do not necessarily transfer well to highly inflectional languages like Maltese, where a given word type, such as a verb, can yield a large number of orthographic forms. 
+This type of analysis either needs to draw on language-specific \textbf{grammars} laboriously coded into the software by experts, or on a statistical language model. In this case, a model calculates the probability of a particular word as it occurs in a specific position (e.\,g., between the words that precede and follow it). For example, \emph{kien għamel} is much more probable word sequence than \emph{kien agħmel}. A statistical language model can be automatically derived using a large amount of (correct) language data, a \textbf{text corpus}. Up to now, these approaches have mostly been developed and evaluated using English language data. However, they do not necessarily transfer well to highly inflectional languages like Maltese, where a given word type, such as a verb, can yield a large number of orthographic forms. 
 
 \begin{figure*}[htb]
   \colorrule{grey3}{\textwidth}{1.5pt}
@@ -1686,7 +1695,7 @@ A statistical spell checker making use of such a principle was developed by \cit
 
 Other attempts to develop a spell-checker for Maltese include an online checker that has been developed by Ramon Casha of the Linux User Group\cite{Linux-spellcheck1}.  This is based on a wordlist of around 1 million word types originally collected from various corpora, and subsequently extended by various rules for handling inflections. Its accuracy has not been officially established. Microsoft has also been working on a spell checker for inclusion with their Maltese language interface pack though it is not clear when this will be released.
 
-The use of language checking is not limited to word processing tools. Language checking is also applied to automatically correct queries sent to search engines, e.g. Google’s \emph{Did you mean…} suggestions. Other application areas include various kinds of authoring support software. 
+The use of language checking is not limited to word processing tools. Language checking is also applied to automatically correct queries sent to search engines, e.\,g., Google’s \emph{Did you mean…} suggestions. Other application areas include various kinds of authoring support software. 
 
 As a result of the rapid increase in demand for technical products, many companies have begun to focus increasingly on the quality of technical documentation in the face of potential customer complaints about wrong linguistic usage and damage claims resulting from bad or badly understood instructions. Authoring support software can assist the writer of technical documentation to use vocabulary and sentence structures that are consistent with certain formally expressed rules and (corporate) terminology restrictions.
 
@@ -1708,15 +1717,15 @@ An evolving area of language technology is computer-assisted language learning b
 
 Search on the web, in intranets, or in digital libraries is probably the most widely used and yet underdeveloped language technology today. The search engine Google, which started in 1998, is nowadays used for about 80\% of all search queries world-wide\cite{spi1}. Since 2004, the verb \emph{to google} even has an entry in the \emph{Cambridge Advanced Learner’s Dictionary}. Neither the search interface nor the presentation of the retrieved results has significantly changed since the first version. In the current version, Google offers spelling correction for misspelled words and also, in 2009, incorporated basic semantic search capabilities into their algorithmic mix\cite{pc1}, which can improve search accuracy by analyzing the meaning of the query terms in context. The success story of Google shows that with a lot of data at hand and efficient indexing techniques a mainly statistical approach can lead to satisfactory results.  
 
-However, for more sophisticated information requests, the integration of deeper linguistic knowledge is essential. In the research labs, experiments using machine-readable thesauri and ontological language resources like WordNet have shown improvements by allowing a page to be found on the basis of synonyms of the search terms, e.g. German \emph{Atomkraft, Kernenergie and Nuklearenergie} (atomic energy, atomic power, and nuclear energy) or even more loosely related terms. 
+However, for more sophisticated information requests, the integration of deeper linguistic knowledge is essential. In the research labs, experiments using \textbf{lexical resources} such as machine-readable thesauri and ontological language resources like WordNet have shown improvements by allowing a page to be found on the basis of synonyms of the search terms, e.\,g., German \emph{Atomkraft, Kernenergie and Nuklearenergie} (atomic energy, atomic power, and nuclear energy) or even more loosely related terms. 
 
 \boxtext{The next generation of search engines will have to include much more sophisticated language technology.}
 
-The next generation of search engines will have to include much more sophisticated language technology. If a search query consists of a question or another type of sentence rather than a list of key-words, retrieving relevant answers to this query requires an analysis of this sentence at a syntactic and semantic level as well as the availability of an index that allows for a fast retrieval of the relevant documents. For example, imagine a user inputs the query ``Give me a list of all companies that were taken over by other companies in the last five years''. For a satisfactory answer, syntactic parsing needs to be applied to analyze the grammatical structure of the sentence and determine that the user is looking for companies that have been taken over and not companies that took over others. Also, the expression \emph{last five years} needs to be processed in order to find out which years it refers to. 
+The next generation of search engines will have to include much more sophisticated language technology. If a search query consists of a question or another type of sentence rather than a list of key-words, retrieving relevant answers to this query requires a syntactic and \textbf{semantic analysis} of the sentence as well as the availability of an index that allows for a fast retrieval of the relevant documents. For example, imagine a user inputs the query ``Give me a list of all companies that were taken over by other companies in the last five years''. For a satisfactory answer, syntactic parsing needs to be applied to analyze the grammatical structure of the sentence and determine that the user is looking for companies that have been taken over and not companies that took over others. Also, the expression \emph{last five years} needs to be processed in order to find out which years it refers to. 
 
 Finally, the processed query needs to be matched against a huge amount of unstructured data in order to find the piece or pieces of information the user is looking for. This is commonly referred to as information retrieval and involves the search for and ranking of relevant documents. In addition, generating a list of companies, we also need to extract the information that a particular string of words in a document actually refers to a company name. This kind of information is made available by so-called named-entity recognizers. 
 
-Even more demanding is the attempt to match a query to documents written in a different language. For cross-lingual information retrieval, we have to automatically translate the query to all possible source languages and transfer the retrieved information back to the target language. The increasing percentage of data available in non-textual formats drives the demand for services enabling multimedia information retrieval, i.e., information search on images, audio, and video data. For audio and video files, this involves a \textbf{speech recognition} module to convert speech content into text or a phonetic representation, to which user queries can be matched.
+Even more demanding is the attempt to match a query to documents written in a different language. For cross-lingual information retrieval, we have to automatically translate the query to all possible source languages and transfer the retrieved information back to the target language. The increasing percentage of data available in non-textual formats drives the demand for services enabling multimedia information retrieval, i.\,e., information search on images, audio, and video data. For audio and video files, this involves a \textbf{speech recognition} module to convert speech content into text or a phonetic representation, to which user queries can be matched.
 
 In Malta, there are a number of search websites that are specifically oriented towards Malta\cite{philb1}. In addition there are a small number of Malta based SMEs that incorporate relatively sophisticated language processing techniques within search applications. Charonite\cite{charonite1}, for example, is a local SME dealing with search engine optimization. However, at the time of writing there are no commercially available search engines that are specifically oriented towards the Maltese language, apart from a prototype for cross lingual in-formation retrieval developed within the scope of LT4EL\cite{let1}, a European FP6 research project which used multilingual language technology tools and semantic encoding techniques for improving the retrieval of learning material. 
 
@@ -1742,11 +1751,13 @@ Speech interaction technology comprises four technologies:
 \item \textbf{Speech synthesis} (text-to-speech or TTS) transforms the system’s reply into sounds for the user.
 \end{enumerate}
 
-One of the major challenges is to have an ASR system recognize the words uttered by a user as precisely as possible. This requires either a restriction of the range of possible user utterances to a limited set of keywords, or the manual creation of language models that cover a large range of natural language user utterances. Whereas the former results in a rather rigid and inflexible usage of a VUI and possibly causes a poor user acceptance, the creation, tuning and maintenance of language models may increase the costs significantly. However, VUIs that employ language models and initially allow users to flexibly express their intentions – evoked, e.g., by a \emph{How may I help you} greeting – show both a higher automation rate and a higher user acceptance and may therefore be considered as advantageous over a less flexible directed dialogue approach. For the output part of a VUI, companies tend to use pre-recorded utterances of professional – ideally corporate – speakers. For static utterances, in which the wording does not depend on the particular contexts of use or the personal data of the given user, this will result in a rich user experience. However, the more dynamic content an utterance needs to consider, the more the user experience may suffer from a poor prosody resulting from concatenating single audio files. In contrast, today’s TTS systems prove superior, though optimizable, regarding the prosodic naturalness of dynamic utterances.  
+One of the major challenges is to have an ASR system recognize the words uttered by a user as precisely as possible. This requires either a restriction of the range of possible user utterances to a limited set of keywords, or the manual creation of language models that cover a large range of natural language user utterances. Using machine learning techniques, language models can also be generated automatically from \textbf{speech corpora}, i.\,e., large collections of speech audio files and text transcriptions. Restricting utterances usually forces people to use the voice user interface in a rigid way and can damage user acceptance; but the creation, tuning and maintenance of rich language models will significantly increase costs. VUIs that employ language models and initially allow a user to express their intent more flexibly -- prompted by a \textit{How may I help you?} greeting -- are better accepted by users.
+
+Companies tend to use pre-recorded utterances of professional speakers for generating the output of the voice user interface. For static utterances, where the wording does not depend on the particular contexts of use or the personal user data, this can deliver a rich user experience.  But more dynamic content in an utterance may suffer from unnatural intonation because bits of audio files have simply been strung together. Through optimisation, today’s TTS systems are getting better at producing natural-sounding dynamic utterances.
 
 \boxtext{Speech interaction is the basis for creating interfaces that allow a user to interact with spoken language instead of a graphical dis-play, keyboard and mouse.}
 
-During last decade, the market for Speech interaction technology underwent a strong standardization with respect to the interfaces between different technology components, as well as to the standards for creating particular software artifacts for a given application. There also has been strong market consolidation within the last ten years, particularly in the field of ASR and TTS. Here, the national markets in the G20 countries – i.e. economically strong countries with a considerable population - are dominated by less than 5 players worldwide, with Nuance and Loquendo being the most prominent ones in Europe.
+Interfaces in speech interaction have been considerably standardised during the last decade in terms of their various technological components. There has also been strong market consolidation in speech recognition and speech synthesis. The national markets in the G20 countries (economically resilient countries with high populations) have been dominated by just five global players, with Nuance (USA) and Loquendo (Italy) being the most prominent players in Europe. In 2011, Nuance announced the acquisition of Loquendo, which represents a further step in market consolidation.
 
 Most speech interaction technology development in Malta has concentrated on text-to-speech (TTS). Some pioneering work was initially carried out by \cite{Micallef:1997} and this was followed by a number of Master’s dissertations \cite{Farrugia:2005}. Some work on a web-based TTS system was initiated by \cite{Buhagiar-Micallef:2008}.
 
@@ -1771,7 +1782,7 @@ The idea of using digital computers for translation of natural languages came up
 
 \boxtext{At its basic level, Machine Translation simply substitutes words in one natural language with words in another language.}
 
-At its basic level, MT simply substitutes words in one natural language by words in another. This can be useful in subject domains with a very restricted, formulaic language, e.g., weather reports. However, for a good translation of less standardized texts, larger text units (phrases, sentences, or even whole passages) need to be matched to their closest counterparts in the target language. The major difficulty here lies in the fact that human language is ambiguous, which yields challenges on multiple levels, e.g., word sense disambiguation on the lexical level (`Jaguar' can mean a car or an animal) or the attachment of prepositional phrases on the syntactic level as in:
+The most basic approach to machine translation is the automatic replacement of the words in a text written in one natural language with the equivalent words of another language. This can be useful in subject domains with a very restricted, formulaic language, e.\,g., weather reports. However, for a good translation of less standardized texts, larger text units (phrases, sentences, or even whole passages) need to be matched to their closest counterparts in the target language. The major difficulty here lies in the fact that human language is ambiguous, which yields challenges on multiple levels, e.\,g., word sense disambiguation on the lexical level (`Jaguar' can mean a car or an animal) or the attachment of prepositional phrases on the syntactic level as in:
 
 \begin{enumerate} %[(a)]
 \item \emph{Il-Kuntistabbli osserva lir-ragel bit-teleskopju.}\\
@@ -1780,7 +1791,7 @@ At its basic level, MT simply substitutes words in one natural language by words
 `The policeman observed the man with the revolver.'
 \end{enumerate}
 
-One way of approaching the task is based on linguistic rules. For translations between closely related languages, a direct translation may be feasible in cases like the example above. But often rule-based (or knowledge-driven) systems analyze the input text and create an intermediary, symbolic representation, from which the text in the target language is generated. The success of these methods is highly dependent on the availability of extensive \textbf{lexicons} with morphological, syntactic, and semantic information, and large sets of \textbf{grammar rules} carefully designed by a skilled linguist.
+One way of approaching the task is based on linguistic rules. For translations between closely related languages, a direct translation may be feasible in cases like the example above. But often rule-based (or knowledge-driven) systems analyze the input text and create an intermediary, symbolic representation, from which the text in the target language is generated. The success of these methods is highly dependent on the availability of extensive lexicons with morphological, syntactic, and semantic information, and large sets of grammar rules carefully designed by a skilled linguist.
 
 Beginning in the late 1980s, as computational power increased and became less expensive, more interest was shown in statistical models for MT. The parameters of these statistical models are derived from the analysis of bilingual text corpora, such as the Europarl \textbf{parallel corpus}, which contains the proceedings of the European Parliament in 11 European languages. Given enough data, statistical MT works well enough to derive an approximate meaning of a foreign language text. However, unlike knowledge-driven systems, statistical (or data-driven) MT often generates ungrammatical output. On the other hand, besides the advantage that less human effort is required for grammar writing, data-driven MT can also cover particularities of the language that go missing in knowledge-driven systems, for example idiomatic expressions. 
 
@@ -1792,11 +1803,11 @@ In Malta work carried out in Machine Translation has been restricted to just a f
 
 Like in so many other areas, the underlying problem is a lack of sufficient quantities of suitably annotated bilingual data. For this reason, perhaps, the benchmark system against which to judge advances remains Google Translate.
 
-The quality of MT systems is still considered to have huge improvement potential. Challenges include the adaptability of the language resources to a given subject domain or user area and the integration into existing workflows with term bases and translation memories. In addition, most of the current systems are English-centred and support only few languages from and into other languages, which leads to frictions in the total translation workflow, and e.g. forces MT users to learn different lexicon coding tools for different systems.
+The quality of MT systems is still considered to have huge improvement potential. Challenges include the adaptability of the language resources to a given subject domain or user area and the integration into existing workflows with term bases and translation memories. In addition, most of the current systems are English-centred and support only few languages from and into other languages, which leads to frictions in the total translation workflow, and, e.\,g., forces MT users to learn different lexicon coding tools for different systems.
 
 Evaluation campaigns allow for comparing the quality of MT systems, the various approaches and the status of MT systems for the different languages. Figure~\ref{fig:euromatrix_mt} (p.~\pageref{fig:euromatrix_mt}), which was prepared during the EC Euromatrix+ project, shows the pairwise performances obtained for 22 of the 23 official EU languages (Irish was not compared). The results are ranked according to a BLEU score, which indicates higher scores for better translations \cite{bleu1}. A human translator would normally achieve a score of around 80 points.
 
-The best results (shown in green and blue) were achieved by languages that benefit from considerable research efforts, within coordinated programs, and from the existence of many parallel corpora (e.g. English, French, Dutch, Spanish, German), the worst (in red) by languages that did not benefit from similar efforts, or that are very different from other languages (e.g. Hungarian, Maltese, Finnish).
+The best results (shown in green and blue) were achieved by languages that benefit from considerable research efforts, within coordinated programs, and from the existence of many parallel corpora (e.\,g., English, French, Dutch, Spanish, German), the worst (in red) by languages that did not benefit from similar efforts, or that are very different from other languages (e.\,g., Hungarian, Maltese, Finnish).
 
 \subsection{Other Application Areas}
 
@@ -1811,9 +1822,9 @@ While question answering is obviously related to the core area of web search, it
 
 \boxtext{Language technology applications often provide significant service functionalities "behind the scenes” of larger software systems.}
 
-This is in turn related to the information extraction (IE) task, an area that was extremely popular and influential at the time of the ``statistical turn'' in Computational Linguistics, in the early 1990s. IE aims at identifying specific pieces of information in specific classes of documents; this could be e.g. the detection of the key players in company takeovers as reported in newspaper stories. Another scenario that has been worked on is reports on terrorist incidents, where the problem is to map the text to a template specifying the perpetrator, the target, time and location of the incident, and the results of the incident. Domain-specific template-filling is the central characteristic of IE, which for this reason is another example of a ``behind the scenes'' technology that constitutes a well-demarcated research area but for practical purposes then needs to be embedded into a suitable application environment. 
+This is in turn related to the information extraction (IE) task, an area that was extremely popular and influential at the time of the ``statistical turn'' in Computational Linguistics, in the early 1990s. IE aims at identifying specific pieces of information in specific classes of documents; this could be, e.\,g., the detection of the key players in company takeovers as reported in newspaper stories. Another scenario that has been worked on is reports on terrorist incidents, where the problem is to map the text to a template specifying the perpetrator, the target, time and location of the incident, and the results of the incident. Domain-specific template-filling is the central characteristic of IE, which for this reason is another example of a ``behind the scenes'' technology that constitutes a well-demarcated research area but for practical purposes then needs to be embedded into a suitable application environment. 
 
-Two ``borderline'' areas, which sometimes play the role of standalone application and sometimes that of supportive, ``under the hood'' component are text summarization and \textbf{text generation}. Summarization, obviously, refers to the task of making a long text short, and is offered for instance as a functionality within MS Word. It works largely on a statistical basis, by first identifying `important' words in a text (that is, for example, words that are highly frequent in this text but markedly less frequent in general language use) and then determining those sentences that contain many important words. These sentences are then marked in the document, or extracted from it, and are taken to constitute the summary. In this scenario, which is by far the most popular one, summarization equals sentence extraction: the text is reduced to a subset of its sentences. All commercial summarizers make use of this idea. An alternative approach, to which some research is devoted, is to actually synthesize \emph{new} sentences, i.e., to build a summary of sentences that need not show up in that form in the source text. This requires a certain amount of deeper understanding of the text and therefore is much less robust. All in all, a text generator is in most cases not a stand-alone application but embedded into a larger software environment, such as into the clinical information system where patient data is collected, stored and processed, and report generation is just one of many functionalities.
+Two ``borderline'' areas, which sometimes play the role of standalone application and sometimes that of supportive, ``under the hood'' component are text summarization and \textbf{text generation}. Summarization, obviously, refers to the task of making a long text short, and is offered for instance as a functionality within MS Word. It works largely on a statistical basis, by first identifying `important' words in a text (that is, for example, words that are highly frequent in this text but markedly less frequent in general language use) and then determining those sentences that contain many important words. These sentences are then marked in the document, or extracted from it, and are taken to constitute the summary. In this scenario, which is by far the most popular one, summarization equals sentence extraction: the text is reduced to a subset of its sentences. All commercial summarizers make use of this idea. An alternative approach, to which some research is devoted, is to actually synthesize \emph{new} sentences, i.\,e., to build a summary of sentences that need not show up in that form in the source text. This requires a certain amount of deeper understanding of the text and therefore is much less robust. All in all, a text generator is in most cases not a stand-alone application but embedded into a larger software environment, such as into the clinical information system where patient data is collected, stored and processed, and report generation is just one of many functionalities.
 
 \subsection{Educational Programmes}
 
@@ -1849,7 +1860,7 @@ Curiously, Malta does not lack for LT-related international events. LREC 2010 wa
 
 \subsection{National Projects and Initiatives}
 
-Malta joined the EU in 2004 and this event immediately conferred to Maltese the status of being an official EU language. With this status came new obligations - in particular to translate large quantities of official documents, and in addition, a recognition, at European level, that as a national language, it should have ``first-class'' status from a technological as well as a social perspective, and be accorded all the rights and privileges enjoyed by ``larger'' European languages (i.e. having larger numbers of native speakers). 
+Malta joined the EU in 2004 and this event immediately conferred to Maltese the status of being an official EU language. With this status came new obligations - in particular to translate large quantities of official documents, and in addition, a recognition, at European level, that as a national language, it should have ``first-class'' status from a technological as well as a social perspective, and be accorded all the rights and privileges enjoyed by ``larger'' European languages (i.\,e., having larger numbers of native speakers). 
 
 The government’s National IT Strategy 2008-10 included a number of objectives related to Maltese Language including (i) the development of online government in Maltese, (ii) creation of Maltese language tools, in collaboration with the University, and (iii) support for Maltese online communities. At the time of writing in 2011, not all the objectives have been realized. However the longer term effects of this strategy are beginning to take shape. 
 
@@ -2322,9 +2333,9 @@ META-NET launched on 1 February 2010 with the goal of advancing research in lang
 \begin{figure*}[htbp]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
-  %\fbox{-- META-NET group picture omitted to keep the size of the PDF file small. --}
-  \includegraphics[width=\textwidth]{../_media/meta-net_team.jpg}
-  \caption{Kważi 100 esperti tat-teknoloġija lingwistika -- rappreżentanti tal-pajjiżi u tal-lingwi li huma rappreżentati f'META-NET -- ddiskutew u ffinalizzaw ir-riżultati ewlenin u l-messaġġi ta' Serje ta’ White Papers tal-META-NET f'laqgħa f'Berlin, fil-Ġermanja, dwar Ottubru 21/22, 2011. --- \textcolor{grey1}{About 100 language technology experts -- representatives of the countries and languages represented in META-NET -- discussed and finalised the key results and messages of the White Paper Series at a META-NET meeting in Berlin, Germany, on October 21/22, 2011.}}
+%\fbox{-- META-NET group picture omitted to keep the size of the PDF file small. --}
+ \includegraphics[width=\textwidth]{../_media/meta-net_team.jpg}
+ \caption{Kważi 100 esperti tat-teknoloġija lingwistika -- rappreżentanti tal-pajjiżi u tal-lingwi li huma rappreżentati f'META-NET -- ddiskutew u ffinalizzaw ir-riżultati ewlenin u l-messaġġi ta' Serje ta’ White Papers tal-META-NET f'laqgħa f'Berlin, fil-Ġermanja, dwar Ottubru 21/22, 2011. --- \textcolor{grey1}{About 100 language technology experts -- representatives of the countries and languages represented in META-NET -- discussed and finalised the key results and messages of the White Paper Series at a META-NET meeting in Berlin, Germany, on October 21/22, 2011.}}
   \medskip
   \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
