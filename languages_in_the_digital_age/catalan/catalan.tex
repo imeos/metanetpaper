@@ -16,17 +16,15 @@
 \documentclass[]{../../metanetpaper}
 
 %!TEX TS-program = xelatex
-\RequireXeTeX %Force XeTeX check
+%\RequireXeTeX %Force XeTeX check
 
 \usepackage{polyglossia}
 \setotherlanguages{catalan,english}
 
 
-\title{Les llengües en la societat de la informació europea --- Languages in the European Information Society}
-%FIXME: title needs to be "The Catalan Language in the Digital Age"
+\title{La llengua catalana a l'era digital --- The Catalan Language in the Digital Age}
 
-\subtitle{White Paper Series --- Weißbuch-Serie}
-%FIXME: "white paper" and "white paper series" in Catalan?
+\subtitle{White Paper Series --- Sèrie de Llibres Blancs}
 
 \author{
  Asunción Moreno~ {\small Universitat Politècnica de Catalunya}\\
@@ -36,13 +34,41 @@
  Sisco Vallverdú~{\small Universitat Politècnica de Catalunya}
 }
 \editors{
-  Georg Rehm, Hans Uszkoreit\\(Herausgeber, \textcolor{grey1}{editors})
-%FIXME: "editors" in catalan
+  Georg Rehm, Hans Uszkoreit\\(editors, \textcolor{grey1}{editors})
 }
 
 \begin{document}
 
 \maketitle
+
+\null
+\pagestyle{empty} 
+
+\FundingLNotice{\selectlanguage{catalan} The authors of this document
+  are grateful to the authors of the White Paper on German for
+  permission to re-use selected language-independent materials from
+  their document.
+  
+  \bigskip
+  The development of this white paper has been funded by the Seventh
+  Framework Programme and the ICT Policy Support Programme of the
+  European Commission under the contracts T4ME (Grant Agreement
+  249119), CESAR (Grant Agreement 271022), METANET4U (Grant Agreement
+  270893) and META-NORD (Grant Agreement 270899).}
+
+\FundingRNotice{\selectlanguage{english} The authors of this document
+  are grateful to the authors of the White Paper on German for
+  permission to re-use selected language-independent materials from
+  their document.
+  
+  \bigskip
+  The development of this white paper has been funded by the Seventh
+  Framework Programme and the ICT Policy Support Programme of the
+  European Commission under the contracts T4ME (Grant Agreement
+  249119), CESAR (Grant Agreement 271022), METANET4U (Grant Agreement
+  270893) and META-NORD (Grant Agreement 270899).}
+
+\makefundingnotice
 
 \pagenumbering{Roman} 
 \setcounter{page}{5}
@@ -78,13 +104,11 @@ As of November 2011, META-NET consists of 54 research centres from 33 European c
 
 
 % --------------------------------------------------------------------------
-\bsection*{Inhaltsverzeichnis --- Table of Contents}
-%FIXME: "table of contents" in Catalan
+\bsection*{Taula de Continguts --- Table of Contents}
 
 \tableofcontents
-%FIXME -"The Catalan Language in the Digital Age" in Catalan
 \addtocontents{toc}{\protect\thispagestyle{empty}\protect}
-\addtocontents{toc}{{\Large\textsf{\centerline{DIE DEUTSCHE SPRACHE IM DIGITALEN ZEITALTER}}\par}}
+\addtocontents{toc}{{\Large\textsf{\centerline{La LLENGUA CATALANA A L'ERA DIGITAL}}\par}}
 
 \cleardoublepage
 
@@ -558,32 +582,31 @@ La taula es pot resumir amb els següents punts clau, que remarquen els aspectes
 \item Existeixen estàndards per la semàntica a nivell de paraula (RDF, OWL, etc.); tot i així, no és senzill aplicar-los a tasques de processament del llenguatge natural. 
 \item Actualment, el processament de la parla es troba en una fase més madura que el processament del llenguatge natural de textos escrits. 
 \item Hi ha molts grups que treballen en traducció automàtica, especialment entre el català i el castellà.
-\item  S’ha aconseguit dissenyar amb èxit aplicacions particulars d’alta qualitat, però és pràcticament impossible proposar solucions estandarditzades donada la situació actual relativa al finançament. 
+\item  S’ha aconseguit dissenyar amb èxit aplicacions particulars d’alta qualitat, però és pràcticament impossible proposar solucions estandarditzades donada la situació actual relativa al finançament.
 \end{itemize}
 
 \subsection{Comparació entre llengües}
 
-%FIXME: the following needs to be translated.
-
-The current state of LT support varies considerably from one language community to another. In order to compare the situation between languages, this section will present an evaluation based on two sample application areas (machine translation and speech processing) and one underlying technology (text analysis), as well as basic resources needed for building LT applications. The languages were categorised using the following five-point scale: 
+L'estat actual del suport a les tecnologies de llenguatge varia considerablement d'una comunitat lingüística a una altra. Per tal de comparar la situació entre llengües, aquesta secció presentarà una avaluació basada en dos exemples d'àrees d'aplicació de les tecnologies del llenguatge (traducció automàtica i processat de la parla) i una tecnologia subjacent (anàlisi de textos), així com recursos bàsics necessaris per construir aplicacions de les tecnologies del llenguatge.
+Les llengües es van classificar utilitzant l'escala de cinc punts següent:
 
 \begin{enumerate}
-\item Excellent support
-\item Good support
-\item Moderate support
-\item Fragmentary support
-\item Weak or no support
+\item Suport exceŀlent
+\item Suport bo
+\item Suport moderat
+\item Suport parcial
+\item Suport feble o inexistent
 \end{enumerate}
 
-LT support was measured according to the following criteria:
+El suport a les tecnologies del llenguatge es va mesurar d'acord amb els criteris següents:
 
-\textbf{Speech Processing:} Quality of existing speech recognition technologies, quality of existing speech synthesis technologies, coverage of domains, number and size of existing speech corpora, amount and variety of available speech-based applications.
+\textbf{Processament de la parla:} Qualitat de les tecnologies de reconeixement de la parla existents, qualitat de les tecnologies de síntesi de veu  existents, cobertura de dominis de la parla, nombre i mida dels corpora de la parla existents, quantitat i varietat de les aplicacions basades en la parla disponible.
 
-\textbf{Machine Translation:} Quality of existing MT technologies, number of language pairs covered, coverage of linguistic phenomena and domains, quality and size of existing parallel corpora, amount and variety of available MT applications.
+\textbf{Traducció automàtica:} Qualitat de les tecnologies de traducció automàtica existents, nombre de parelles de llengues cobertes, cobertura de dominis i fenòmens lingüístics, qualitat i mida dels corpora paraŀlels existents, quantitat i varietat d'aplicacions de traducció automàtica disponibles.
 
-\textbf{Text Analysis:} Quality and coverage of existing text analysis technologies (morphology, syntax, semantics), coverage of linguistic phenomena and domains, amount and variety of available applications, quality and size of existing (annotated) text corpora, quality and coverage of existing lexical resources (e.\,g., WordNet) and grammars.
+\textbf{Anàlisi del text:} Qualitat i cobertura de les tecnologies d'anàlisi de texts existents (morfologia, sintàxi, semàntiques), cobertura de dominis i fenòmens lingüístics, quantitat i varietat d'aplicacions disponibles, qualitat i mida dels corpora (etiquetats) de text existents, qualitat i cobertura dels recursos lèxics (p. ex: WordNet) i gramàtiques.
 
-\textbf{Resources:} Quality and size of existing text corpora, speech corpora and parallel corpora, quality and coverage of existing lexical resources and grammars.
+\textbf{Recursos:} Qualitat i mida dels corpora de text existents, corpora de la parla i corpora paraŀlels, qualitat i cobertura de recursos lèxics i gramaticals existents.
 
 \begin{figure*}
 \small
@@ -1638,16 +1661,14 @@ META-NET launched on 1 February 2010 with the goal of advancing research in lang
 \appendix
 \addtocontents{toc}{\protect\bigskip}
 
-\bsection[Literaturverweise -- References]{Literaturverweise --- References}
-%FIXME - "References" in Catalan
+\bsection[Literaturverweise -- References]{Referències --- References}
 \bibliographystyle{unsrt} % What is the difference between "unsrt" und "is-unsrt"?
 %\bibliographystyle{is-unsrt}
 \bibliography{references_ca}
   
 \cleardoublepage
 
-\bsection[Organitzacions membres -- META-NET Members]{Organitzacions membres --- META-NET Members}
-%FIXME - "META-NET Members" in Catalan
+\bsection[Membres de META-NET -- META-NET Members]{Membres de META-NET --- META-NET Members}
 \label{metanetmembers}
 
 \small
@@ -1716,16 +1737,16 @@ META-NET launched on 1 February 2010 with the goal of advancing research in lang
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
   %\fbox{-- META-NET group picture omitted to keep the size of the PDF file small. --}
-  \includegraphics[width=\textwidth]{../_media/meta-net_team.jpg}
-  \caption{Etwa 100 Experten des Gebiets Sprachtechnologie -- Repräsentanten der in META-NET vertretenen Länder und Sprachen -- diskutierten und finalisierten die zentralen Ergebnisse der Weißbuch-Serie bei einem META-NET-Treffen in Berlin am 21./22.~Oktober 2011. --- \textcolor{grey1}{About 100 language technology experts -- representatives of the countries and languages represented in META-NET -- discussed and finalised the key results and messages of the White Paper Series at a META-NET meeting in Berlin, Germany, on October 21/22, 2011.}}
+%  \includegraphics[width=\textwidth]{../_media/meta-net_team.jpg}
+  \caption{Prop de 100 experts en tecnologies del llenguatge -- representants dels països i idiomes representats a META-NET --  van discutir i concloure els resultats clau i missatges de la sèrie de llibres blancs a la reunió de META-NET a Berlin, Alemanya el 21/22 d'octubre de 2011. ---
+ \textcolor{grey1}{About 100 language technology experts -- representatives of the countries and languages represented in META-NET -- discussed and finalised the key results and messages of the White Paper Series at a META-NET meeting in Berlin, Germany, on October 21/22, 2011.}}
   \medskip
   \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
 
 \cleardoublepage
 
-\bsection[Die META-NET Weissbuch-Serie -- The META-NET White Paper Series]{Die META-NET Weissbuch-Serie --- The META-NET\ \ \ \ \ \ White Paper Series}
-%FIXME: "The META-NET White Paper Series" in Catalan
+\bsection[La sèrie de llibres blancs de META-NET -- The META-NET White Paper Series]{La sèrie de llibres blancs de META-NET --- The META-NET\ \ \ \ \ \ White Paper Series}
 \label{whitepaperseries}
 
 \vspace*{-5mm}
