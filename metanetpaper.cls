@@ -628,6 +628,12 @@
     \end{titlepage}
   }
 }
+
+\DeclareOption{screen}{%
+  % Define papersize for cover 210x279mm + 0mm bleed
+  \geometry{paperwidth=210mm, paperheight=279mm, top=21mm, bottom=34mm, left=24mm, right=21mm}%
+  
+}
 \ProcessOptions\relax
 
 \endinput
