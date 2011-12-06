@@ -44,6 +44,8 @@
 \null
 \pagestyle{empty} 
 
+%FIXME: translation of funding notice
+
 \FundingLNotice{\selectlanguage{catalan} The authors of this document
   are grateful to the authors of the White Paper on German for
   permission to re-use selected language-independent materials from
@@ -102,9 +104,9 @@ As of November 2011, META-NET consists of 54 research centres from 33 European c
 
 \cleardoublepage
 
-%FIXME: shorter word for "taula de Continguts"
+%FIXME: shorter word in TOC for for "TAULE DE CONTINGUTS"
 % --------------------------------------------------------------------------
-\bsection*{Taula de Continguts --- Table of Contents}
+\bsection*{Continguts --- Table of Contents}
 
 \tableofcontents
 \addtocontents{toc}{\protect\thispagestyle{empty}\protect}
@@ -405,7 +407,7 @@ Les tecnologies del llenguatge són tecnologies de la informació especialitzade
   \vspace{-25mm}
   \center
   \includegraphics[width=\textwidth]{../_media/catalan/language_technologies}
-  \caption{FIXME:Language technology in context, and reference}
+  \caption{FIXME:Language technology in context}
   \label{fig:ltincontext_ca}
   \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
@@ -1269,7 +1271,9 @@ After introducing the core application areas, we will give a short overview of t
 
 \subsubsection{Language Checking}
 
-\begin{figure*}[t]
+Anyone using a word processing tool such as Microsoft Word has come across a spell checking component that indicates spelling mistakes and proposes corrections. Forty years after the first spelling correction program by Ralph Gorin, language checkers nowadays do not simply compare the list of extracted words against a dictionary of correctly spelled words, but have become increasingly sophisticated. 
+
+\begin{figure*}[htb]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
   \includegraphics[width=\textwidth]{../_media/english/language_checking}
@@ -1278,9 +1282,11 @@ After introducing the core application areas, we will give a short overview of t
   \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
 
-Anyone using a word processing tool such as Microsoft Word has come across a spell checking component that indicates spelling mistakes and proposes corrections. Forty years after the first spel-ling correction program by Ralph Gorin, language checkers nowadays do not simply compare the list of extracted words against a dictionary of correctly spelled words, but have become increasingly sophisticated. In addition to language-dependent algorithms for handling morphology (e.g. plural formation), some are now capable of recognising syntax–related errors, such as a missing verb or a verb that does not agree with its subject in person and number, e.g. in ‘She write a letter.’ 
+In addition to language-dependent algorithms for handling morphology (e.g. plural formation), some are now capable of recognising syntax–related errors, such as a missing verb or a verb that does not agree with its subject in person and number, e.g. in ‘She write a letter.’ 
 
-This either requires the formulation of language-specific grammar rules, i.e. a high degree of expertise and manual labour, or the use of a so-called statistical language model. Such models calculate the probability of a particular word occurring in a specific environment (i.e., the preceding and following words). For example, llibre anglès is a much more probable word sequence than llibre anglesa. A statistical language model can be automatically derived using a large amount of (correct) language data (i.e. a corpus). Up to now, these approaches have mostly been developed and evaluated on English language data. However, they do not necessarily transfer straightforwardly to Catalan with its flexible word order and richer inflection. 
+Language checking (see figure~\ref{fig:langcheckingaarch_en}) either requires the formulation of language-specific grammar rules, i.e. a high degree of expertise and manual labour, or the use of a so-called statistical language model. Such models calculate the probability of a particular word occurring in a specific environment (i.e., the preceding and following words).
+
+For example, llibre anglès is a much more probable word sequence than llibre anglesa. A statistical language model can be automatically derived using a large amount of (correct) language data (i.e. a corpus). Up to now, these approaches have mostly been developed and evaluated on English language data. However, they do not necessarily transfer straightforwardly to Catalan with its flexible word order and richer inflection. 
 
 The use of Language Checking is not limited to word processing tools. It is also applied in authoring support systems. Accompanying the rising number of technical products, the amount of technical documentation has rapidly increased over the last decades. Fearing customer complaints about wrong usage and damage claims resulting from bad or badly understood instructions, companies have begun to focus increasingly on the quality of technical documentation, and at the same time targeting the international market. Advances in natural language processing lead to the development of authoring support software, which assists the writer of technical documentation to use vocabulary and sentence structures consistent with certain rules and (corporate) terminology restrictions.
 
@@ -1391,7 +1397,9 @@ In addition, most of the existing parallel corpora are between Spanish and Catal
 
 Building Language Technology applications involves a range of subtasks that do not always surface at the level of interaction with the user, but provide significant service functionalities ‘under the hood’ of the system. Therefore, they constitute important research issues that have become individual sub-disciplines of Computational Linguistics in academia. 
 
-Question answering has become an active area of research, for which annotated corpora have been built and scientific competitions have been started. The idea is to move from keyword-based search (to which the engine responds with a whole collection of potentially relevant documents) to the scenario of the user asking a concrete question and the system providing a single answer: \\
+Question answering has become an active area of research, for which annotated corpora have been built and scientific competitions have been started.
+
+The idea is to move from keyword-based search (to which the engine responds with a whole collection of potentially relevant documents) to the scenario of the user asking a concrete question and the system providing a single answer: \\
 \textit{‘At what age did Neil Armstrong step on the moon?’}\\
 \textit{’38’.}
 
@@ -1787,7 +1795,7 @@ META-NET launched on 1 February 2010 with the goal of advancing research in lang
 \appendix
 \addtocontents{toc}{\protect\bigskip}
 
-\bsection[Literaturverweise -- References]{Referències --- References}
+\bsection[Referències -- References]{Referències --- References}
 \bibliographystyle{unsrt} % What is the difference between "unsrt" und "is-unsrt"?
 %\bibliographystyle{is-unsrt}
 \bibliography{references_ca}
