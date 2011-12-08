@@ -8,18 +8,18 @@
 
 \subtitle{White Paper Series --- Valkoiset kirjat}
 
-\author{
-  Kimmo Koskenniemi \\
-  Krister Lindén \\
-  Lauri Carlson \\
-  Martti Vainio \\
-  Antti Arppe \\
-  Mietta Lennes \\
-  Hanna Westerlund \\
-  Mirka Hyvärinen \\
-  Pirkko Nuolijärvi \\
-  Aino Piehl
-}
+%\author{
+%  Kimmo Koskenniemi \\
+%  Krister Lindén \\
+%  Lauri Carlson \\
+%  Martti Vainio \\
+%  Antti Arppe \\
+%  Mietta Lennes \\
+%  Hanna Westerlund \\
+%  Mirka Hyvärinen \\
+%  Pirkko Nuolijärvi \\
+%  Aino Piehl
+%}
 
 %  Helsingin yliopisto \\
 %  University of Helsinki \\
@@ -27,7 +27,7 @@
 %  Kotimaisten kielten tutkimuskeskus \\
 %  Research Institute for the Languages of Finland
 
-\authoraffiliation{
+\author{
   Kimmo Koskenniemi~ {\small Helsingin yliopisto}\\
   Krister Lindén~ {\small Helsingin yliopisto}\\
   Lauri Carlson~ {\small Helsingin yliopisto}\\
@@ -40,9 +40,13 @@
   Aino Piehl~ {\small KOTUS}
 }
 
+%\editors{
+%	Hanna Westerlund\\(toimittaja, \textcolor{grey1}{editor})
+%}
 \editors{
-	Hanna Westerlund\\(toimittaja, \textcolor{grey1}{editor})
+  Georg Rehm, Hans Uszkoreit\\(Herausgeber, \textcolor{grey1}{editors})
 }
+
 
 
 
@@ -53,27 +57,39 @@
 \null
 \pagestyle{empty} 
 
-\centerline{META-NET -- office@meta-net.eu -- http://www.meta-net.eu}
+%\centerline{META-NET -- office@meta-net.eu -- http://www.meta-net.eu}
 
-\vfill
-
-\begin{small}
-  \selectlanguage{finnish}
+\FundingLNotice{
+\selectlanguage{finnish} 
+Tämän raportin tekijät ovat kiitollisia saksankielisen META-NET
+valkoisen kirjan tekijöille luvasta käyttää raporttinsa kielestä
+riippumattomien osioiden tekstejä osana tämän raportin
+englanninkielistä osuutta sekä lähteenä suomenkieliselle
+käännökselle\cite{lwpgerman}.
+  
+  \bigskip
   Tämän valkoisen kirjan tuottamiseen on myönnetty rahoitusta Euroopan 
   komission seitsemännestä puiteohjelmasta ja tieto- ja viestintäteknologioiden
   tukiohjelmasta seuraavien sopimusten perusteella T4ME (rahoitussopimus 249119), 
-  CESAR (rahoitussopimus 271022), METANET4U (rahoitussopimus 270893) ja META-NORD (rahoitussopimus 270899).
-\end{small}
+  CESAR (rahoitussopimus 271022), METANET4U (rahoitussopimus 270893) ja META-NORD (rahoitussopimus 270899).}
 
-\bigskip
-\begin{small}
-  \selectlanguage{english}
+\FundingRNotice{\selectlanguage{english} The authors of this document
+  are grateful to the authors of the White Paper on German for
+  permission to re-use selected language-independent materials from
+  their document \cite{lwpgerman}.
+  
+  \bigskip
   The development of this white paper has been funded by the Seventh
   Framework Programme and the ICT Policy Support Programme of the
-  European Commission under the contracts T4ME (Grant Agreement 249119),
-  CESAR (Grant Agreement 271022), METANET4U (Grant Agreement 270893)
-  and META-NORD (Grant Agreement 270899).
-\end{small}
+  European Commission under the contracts T4ME (Grant Agreement
+  249119), CESAR (Grant Agreement 271022), METANET4U (Grant Agreement
+  270893) and META-NORD (Grant Agreement 270899).}
+
+\makefundingnotice
+
+\pagenumbering{Roman} 
+\setcounter{page}{5}
+\pagestyle{scrheadings}
 
 \clearpage
 
@@ -1055,7 +1071,7 @@ multimodaalisen kommunikaation ja multimediatiedostojen tuottamisen.
 \begin{figure}[h!]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
-  \includegraphics[width=\textwidth]{_media/finnish/language_technologies}
+  \includegraphics[width=\textwidth]{../_media/finnish/language_technologies}
   \caption{Kieliteknologia kontekstissa}
   \label{fig:ltincontext-fin}
   \colorrule{grey3}{\textwidth}{1.5pt}
@@ -1100,7 +1116,7 @@ moduulia kuvaavat tekstinsyötön rakennetta ja tarkoitusta:
 \begin{figure}[h!]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
-  \includegraphics[width=\textwidth]{_media/finnish/text_processing_app_architecture}
+  \includegraphics[width=\textwidth]{../_media/finnish/text_processing_app_architecture}
   \caption{Tyypillinen tekstinkäsittelyn arkkitehtuuri}
   \label{fig:textprocessingarch-fin}
   \colorrule{grey3}{\textwidth}{1.5pt}
@@ -1140,7 +1156,7 @@ taulukon muodossa lopuksi.
 
 Tässä osiossa keskitytään tärkeimpiin kieliteknologisiin
 työkaluihin ja kieliaineistoihin ja esitetään katsaus kieliteknologiaan
-Suomessa.  \underline{Alleviivatut} työkalut ja kieliaineistot
+Suomessa.  \textbf{Alleviivatut} työkalut ja kieliaineistot
 löytyvät myös yhteenvetotaulukosta.
 
 
@@ -1151,7 +1167,7 @@ Useimmat tekstinkäsittelyohjelmia käyttäneet tietävät, että oikeinkirjoitu
 tarkistin tuo esiin kirjoitusvirheet niitä korostamalla ja ehdottaa niihin
 korjauksia. Ensimmäiset oikeinkirjoitusta tarkistavat ohjelmat
 vertasivat tekstistä irrotettuja sanoja sanakirjaan. Tarkistimet ovat niistä ajoista 
-kehittyneet, ne tunnistavat jo kielikohtaisten \underline{kieliopillisen analyysin}
+kehittyneet, ne tunnistavat jo kielikohtaisten \textbf{kieliopillisen analyysin}
 algoritmien avulla sanojen morfologiasta johtuvia virheitä tekstissä 
 (esim. monikon muodostus) ja syntaktisia ongelmia, kuten
 puuttuvan verbin tai kongruenssivirheen (\textit{me *kirjoittaa
@@ -1177,7 +1193,7 @@ isolla kirjaimella vai ei:
 \item[] \textit{Muista ottaa Kaneli mukaan.}
 \end{itemize}
 Vastaavissa tapauksissa tarvitaan joko
-kielikohtaisten \underline{kielioppien} muotoilemista, toisin
+kielikohtaisten \textbf{kielioppien} muotoilemista, toisin
 sanoen paljon kielitieteellistä osaamista ja
 käsityötä, tai vaihtoehtoisesti voidaan käyttää apuna tilastollisia
 kielimalleja laskemaan, millä todennäköisyydellä tietyn sanan voidaan odottaa 
@@ -1187,7 +1203,7 @@ esiintyy paljon todennäköisemmin ainesanana kuin
 erisnimenä. Tilastollinen kielimalli voidaan johtaa aineistosta
 automaattisesti, kunhan käytettävissä on tarpeeksi suuri määrä
 (virheetöntä) kieliainesta, eli tehtävään soveltuva
-\underline{tekstikorpus}. Tähän asti tilastollisia malleja on enimmäkseen kehitetty
+\textbf{tekstikorpus}. Tähän asti tilastollisia malleja on enimmäkseen kehitetty
 ja arvioitu englanninkielistä kieliainesta varten. Mallit eivät kuitenkaan
 ole siirrettävissä suoraan suomen kielen käsittelyyn, johtuen mm.
 suomen suhteellisen vapaasta sanajärjestyksestä, yhdyssanojen
@@ -1196,7 +1212,7 @@ muodostuksesta ja sanojen taipumisesta.
 \begin{figure}[h!]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
-  \includegraphics[width=\textwidth]{_media/finnish/language_checking}
+  \includegraphics[width=\textwidth]{../_media/finnish/language_checking}
   \caption{Kielentarkistus (tilastollinen; sääntöpohjainen)}
   \label{fig:langcheckingarch-fin}
   \colorrule{grey3}{\textwidth}{1.5pt}
@@ -1263,8 +1279,8 @@ materiaalia ja tehokkaat indeksointitekniikat, tuottaa tilastolliseen malliin
 perustuva menetelmä tyydyttäviä tuloksia.
 
 Kehittyneempiä tiedonhakutarpeita varten on syytä yhdistää
-syvempi kielitieteellinen tietämys \underline{semanttiseen analyysiin}.
-Kokeilut, joissa on hyödynnetty \underline{leksikaalisia resursseja} kuten koneluettavat
+syvempi kielitieteellinen tietämys \textbf{semanttiseen analyysiin}.
+Kokeilut, joissa on hyödynnetty \textbf{leksikaalisia resursseja} kuten koneluettavat
 käsitesanakirjat tai ontologiapohjaiset kieliresurssit
 (esim. FinnWordNet) ovat osoittaneet edistymistä osumatarkkuudessa, kun niiden 
 avulla on voitu hyödyntää alkuperäisten hakusanojen ja termien synonyymejä, kuten
@@ -1277,7 +1293,7 @@ voidaan hyödyntää.
 \begin{figure}[h!]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
-  \includegraphics[width=\textwidth]{_media/finnish/web_search_architecture}
+  \includegraphics[width=\textwidth]{../_media/finnish/web_search_architecture}
   \caption{Haku verkossa}
   \label{fig:websearcharch-fin}
   \colorrule{grey3}{\textwidth}{1.5pt}
@@ -1342,7 +1358,7 @@ vaihtoehtona älypuhelimen ohjaamisessa.
 Puheteknologiat sisältävät neljä aluetta:
 \begin{enumerate}
 
-\item Automaattinen \underline{puheentunnistus} määrittelee, mitkä
+\item Automaattinen \textbf{puheentunnistus} määrittelee, mitkä
     sanat todella sisältyvät tiettyyn äänten sekvenssiin käyttäjän
     tuottamassa
     puheessa.
@@ -1354,7 +1370,7 @@ Puheteknologiat sisältävät neljä aluetta:
 \item Dialoginhallinta päättelee, mihin toimenpiteisiin on syytä ryhtyä
 	ottaen huomioon käyttäjän antama syöte ja järjestelmän toimintaperiaate.
 
-\item \underline{Puhesynteesi} muuttaa järjestelmän vastauksen
+\item \textbf{Puhesynteesi} muuttaa järjestelmän vastauksen
     ääneksi käyttäjää
     varten.
 
@@ -1364,7 +1380,7 @@ Puheteknologiat sisältävät neljä aluetta:
   \begin{figure}[h!]
     \colorrule{grey3}{\textwidth}{1.5pt}
     \center
-    \includegraphics[width=\textwidth]{_media/finnish/simple_speech-based_dialogue_architecture}
+    \includegraphics[width=\textwidth]{../_media/finnish/simple_speech-based_dialogue_architecture}
     \caption{Puheeseen pohjautuva dialogijärjestelmä}
     \label{fig:dialoguearch-fin}
     \colorrule{grey3}{\textwidth}{1.5pt}
@@ -1376,7 +1392,7 @@ puheilmausten rajoittamista siten, että mahdollinen syöte saa sisältää vain
 asiasanalistan jäseniä. Toinen vaihtoehto on luoda käsityönä kielimalleja,
 jotka kattavat suuren määrän luonnollisen kielenkäytön kokonaisia
 ilmauksia. Koneoppimisen teknologioiden avulla voidaan kielimallit
-myös tuottaa automaattisesti laajoista \underline{puhekorpuksista}, jotka ovat
+myös tuottaa automaattisesti laajoista \textbf{puhekorpuksista}, jotka ovat
 puhutun kielen kokoelmia puheäänitiedostoineen ja tekstin
 transkriptioineen. Ilmausten rajoittaminen pakottaa kuitenkin ihmiset
 käyttämään puhekäyttöliittymää ennalta määritellyllä tavalla, mikä heikentää järjestelmän
@@ -1457,7 +1473,7 @@ käyttäjille keskitettyinä palveluina.
 Idea tietokoneiden hyödyntämisestä luonnollisten kielten
 kääntämisessä syntyi jo vuonna 1946, ja ala sai merkittävää 
 tutkimusrahoitusta heti 1950-luvulla ja uudelleen 1980-luvulla. Siitä
-huolimatta ei konekääntämisen (MT) alalla vielä tähän päivään mennessä
+huolimatta ei \textbf{konekääntämisen} (MT) alalla vielä tähän päivään mennessä
 ole pystytty saavuttamaan alkuperäistä tavoitetta kaikkien
 käytettävissä olevasta automaattisesta kääntimestä.
 
@@ -1496,7 +1512,7 @@ pitkä ja tulee siksi usein kalliiksi.
 tekniikka halpeni, kiinnostus konekääntämisen tilastollisia malleja
 kohtaan heräsi jälleen. Tilastolliset mallit ovat kehittyneet
 kaksikielisten tekstikorpusten analysoinnin pohjalta, esimerkkinä
-Europarl-\underline{rinnakkaiskorpus}, joka sisältää Euroopan parlamentin
+Europarl-\textbf{rinnakkaiskorpus}, joka sisältää Euroopan parlamentin
 puheenvuorot 11 eurooppalaisella kielellä. Kun aineistoa on tarpeeksi,
 tilastollinen konekäännin saavuttaa riittävän tarkkuuden tuottamalla
 vieraan kielen merkityksen likiarvoja. Se tuottaa todennäköisistä
@@ -1512,7 +1528,7 @@ järjestelmissä.
 \begin{figure}[h!]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
-  \includegraphics[width=\textwidth]{_media/finnish/machine_translation}
+  \includegraphics[width=\textwidth]{../_media/finnish/machine_translation}
   \caption{Konekäännös (tilastollinen; sääntöpohjainen)}
   \label{fig:mtarch-fin}
   \colorrule{grey3}{\textwidth}{1.5pt}
@@ -1662,7 +1678,7 @@ toimivasta hyvin rajattavissa olevan tutkimuksen sovelluksesta.
 
 \boxtext{Useimpien suomen kielen tekstiteknologioiden tilanne on huonompi kuin englannin.}
 
-Lyhennelmän tuottaminen teksteistä ja \underline{tekstin tuottaminen}
+Lyhennelmän tuottaminen teksteistä ja \textbf{tekstin tuottaminen}
 yleensäkin ovat kaksi toisiinsa rajoittuvaa alaa, jotka voivat toimia joko
 itsenäisinä sovelluksina tai tukisovelluksina. Lyhennelmän tuottaminen pyrkii kopioimaan 
 pitkän tekstin sisältämät oleelliset asiat tiiviiseen muotoon ja se on esimerkiksi
@@ -1998,7 +2014,7 @@ kielioppien laatu ja kattavuus
  ranska \newline
  tšekki \newline
  saksa \newline
- suomi \newline
+ \textbf{suomi} \newline
  & \vspace*{0.5mm}
  baski \newline
  bulgaria \newline
@@ -2078,7 +2094,7 @@ kielioppien laatu ja kattavuus
  serbia \newline
  slovakki \newline
  sloveeni \newline
- suomi \newline
+ \textbf{suomi} \newline
  tšekki \newline
  tanska \newline
  viro \newline
@@ -2131,7 +2147,7 @@ kielioppien laatu ja kattavuus
  tšekki \newline
  slovakki \newline
  sloveeni \newline
- suomi \newline
+ \textbf{suomi} \newline
  unkari \newline
  &\vspace*{0.5mm}
  iiri \newline 
@@ -2195,7 +2211,7 @@ kielioppien laatu ja kattavuus
   serbia \newline
   slovakki \newline
   sloveeni \newline  
-  suomi \newline 
+  \textbf{suomi} \newline 
   tanska \newline
   viro \newline
   & \vspace*{0.5mm}
@@ -2305,8 +2321,8 @@ tulevaisuuden eteen.
 \boxtext{The Multilingual Europe Technology Alliance (META)}
 
 META-NET on Euroopan komission rahoittama huippuosaamisen
-verkosto. Verkosto muodostuu 47 tutkimuskeskuksesta 31 Euroopan
-maassa. META-NET toimii Monikielisen Euroopan teknologiaverkoston
+verkosto. Verkosto muodostuu 54 tutkimuskeskuksesta 33 Euroopan
+maassa\cite{rehm2011}. META-NET toimii Monikielisen Euroopan teknologiaverkoston
 (META) taustavoimana. META on Euroopan kieliteknologian
 ammattilaisista ja organisaatiosta koostuva nopeasti kasvava verkosto.
 
@@ -2432,7 +2448,7 @@ to GaelicIcelandic, everyday communication between Europe’s citizens
 as well as communication in the spheres of business and politics is
 inevitably confronted by language barriers. The EU’s institutions
 spend about a billion euros a year on maintaining their policy of
-multilingualism, i.e., translating texts and interpreting spoken
+multilingualism, i.\,e., translating texts and interpreting spoken
 communication. Yet does this have to be such a burden?  Modern
 language technology and linguistic research can make a significant
 contribution to pulling down these linguistic borders. When combined
@@ -2523,7 +2539,7 @@ and beyond. As this series of white papers shows, there is a dramatic
 difference in the state of readiness with respect to language
 solutions and the state of research between Europe’s member states.
 
-This whitepaper series complements other strategic actions taken by
+This white paper series complements other strategic actions taken by
 META-NET (see the appendix for an overview). Up-to-date information
 such as the current version of the META-NET vision paper \cite{Vision}
 or the Strategic Research Agenda (SRA) can be found on the META-NET
@@ -2781,7 +2797,7 @@ language gets harder with age.
 The two main types of language technology systems ‘acquire’ language
 capabilities in a similar manner. Statistical (or ‘data-driven’) approaches
 obtain linguistic knowledge from vast collections of concrete example texts.
-While it is sufficient to use text in a single language for training, e.g., a
+While it is sufficient to use text in a single language for training, e.\,g., a
 spell checker, parallel texts in two (or more) languages have to be available
 for training a machine translation system. The machine learning algorithm then
 “learns” patterns of how words, short phrases and complete sentences are
@@ -2916,9 +2932,9 @@ pronoun
 
 Each noun in Finnish is capable of having some 2,000 distinct forms
 and verbs more than 12,000 forms. The number of distinct forms derives
-from the agglutinative nature of Finnish, i.e. several layers of
+from the agglutinative nature of Finnish, i.\,e., several layers of
 inflectional affixes can be stacked,
-e.g. \textit{halu}+\textit{tu}+\textit{imm}+\textit{i}+\textit{lla}+\textit{mme}+\textit{ko}
+e.\,g. \textit{halu}+\textit{tu}+\textit{imm}+\textit{i}+\textit{lla}+\textit{mme}+\textit{ko}
 would express the verbal root for desiring and endings for expressing
 elements “desire, something that is, most, on, our, question”.
 
@@ -2965,7 +2981,7 @@ distinction of old and new information:
 \end{itemize}
 
 Syntactic roles are marked using inflectional marking. Therefore the word order
-is relatively free, i.e. subjects and objects are identified by their case
+is relatively free, i.\,e., subjects and objects are identified by their case
 rather than their relative position in the sentence:
 \begin{itemize}
 \item \textit{\foreignlanguage{finnish}{\textit{Poika osti kirjan.}}
@@ -3229,7 +3245,7 @@ possible to follow the development of the registrations within a
 certain period of time. For example in January 2000, about 10 years
 ago, a total of 357 new .fi -domains were registered, whereas in 2011,
 a total of 164 new .fi -domains were registered on April 5th alone,
-i.e. during one day only. There are now more than 270,000 registered
+i.\,e., during one day only. There are now more than 270,000 registered
 .fi -domains. Based on the Google-results (April 5, 2011) the number
 of other web sites besides the .fi-domains is approximately
 110,000. That would add up to an estimate of almost 300, 000 Finnish
@@ -3247,7 +3263,7 @@ involves the automatic processing of language on multiple levels, as
 we will see in more detail the second part of this paper. It involves
 sophisticated Language Technology, differing for each language. For
 Finnish, this includes coping with polysemy
-i.e. words denoting the same thing, e.g.
+i.\,e., words denoting the same thing, e.\,g.,
 \textit{\foreignlanguage{finnish}{\textit{kuusi}}} (six) or
 \textit{\foreignlanguage{finnish}{\textit{kuusi}}} (spruce tree).
 
@@ -3278,7 +3294,7 @@ language technology tools offer the principal solution to satisfy this
 regulation, for example by offering speech synthesis for the blind.
 
 Internet users and providers of web content can also profit from
-Language Technology in less obvious ways, e.g., if it is used to
+Language Technology in less obvious ways, e.\,g., if it is used to
 automatically translate web contents from one language into
 another. Considering the high costs associated with manually
 translating these contents, comparatively little usable Language
@@ -3316,7 +3332,7 @@ multimodal communication and multimedia documents.
 \begin{figure}[h!]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
-  \includegraphics[width=\textwidth]{_media/english/language_technologies}
+  \includegraphics[width=\textwidth]{../_media/english/language_technologies}
   \caption{Language technology in context}
   \label{fig:ltincontext-eng}
   \colorrule{grey3}{\textwidth}{1.5pt}
@@ -3324,7 +3340,7 @@ multimodal communication and multimedia documents.
 
 
 In the following, we will discuss the main application areas of
-language technology, i.e., language checking, web search, speech
+language technology, i.\,e., language checking, web search, speech
 technology, and machine translation. This includes
 applications and basic technologies such as
 \begin{itemize}
@@ -3362,7 +3378,7 @@ input:
 \begin{figure}[h!]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
-  \includegraphics[width=\textwidth]{_media/english/text_processing_app_architecture}
+  \includegraphics[width=\textwidth]{../_media/english/text_processing_app_architecture}
   \caption{A Typical Text Processing Architecture}
   \label{fig:textprocessingarch-eng}
   \colorrule{grey3}{\textwidth}{1.5pt}
@@ -3375,9 +3391,9 @@ detects the input language, and so on.
 \item Grammatical analysis: finds the verb, its objects, modifiers and
 other parts of speech as well as detects the sentence structure.
 
-\item Semantic analysis: performs disambiguation (i.e., computes the
+\item Semantic analysis: performs disambiguation (i.\,e., computes the
 appropriate meaning of words in a given context); resolves anaphora
-(i.e., which pronouns refer to which nouns in the sentence) and
+(i.\,e., which pronouns refer to which nouns in the sentence) and
 substitute expressions; and represents the meaning of the sentence in
 a machine-readable way.
 \end{enumerate}
@@ -3399,7 +3415,7 @@ language is then summarised in tabular form.
 
 In this section, we focus on the most important LT tools and
 resources, and give an overview of LT activities in Finland. Tools and
-resources that are \underline{underlined} in the text can also be
+resources that are \textbf{bold-faced} in the text can also be
 found in the summary table.
 
 
@@ -3410,11 +3426,11 @@ Anyone who has used a word processor knows that a spelling checker highlights
 spelling mistakes and proposes corrections.  The first spelling correction programs compared
 a list of extracted words against a dictionary of correctly spelled
 words. Today these programs are far more sophisticated. Using
-language-dependent algorithms for \underline{grammatical analysis},
+language-dependent algorithms for \textbf{grammatical analysis},
 they detect errors
-related to morphology (e.g., plural formation) as well as
+related to morphology (e.\,g., plural formation) as well as
 syntax–related errors, such as a missing verb or a conflict of
-verb-subject agreement (e.g.,
+verb-subject agreement (e.\,g.,
 \textit{\foreignlanguage{finnish}{\textit{me *kirjoittaa kirjeen}}}
  [a similar concept in English would be
 \textit{she *write a letter}]).
@@ -3439,15 +3455,15 @@ Finnish or not:
 \item   {\textit{[Remember to take Kaneli with you.]} }
 \end{itemize}
 This type of analysis either needs to draw on language-specific
-\underline{grammars} laboriously coded into the software by experts, or on a
+\textbf{grammars} laboriously coded into the software by experts, or on a
 statistical language model. In this case, a model calculates the
 probability of a particular word as it occurs in a specific position
-(e.g., between the words that precede and follow it). For example,
+(e.\,g., between the words that precede and follow it). For example,
  {\foreignlanguage{finnish}{\textit{kaneli}}} is a much more probable
  as a noun than a proper noun
  {\foreignlanguage{finnish}{\textit{Kaneli}}}.
 A statistical language model can be automatically created by using a
-large amount of (correct) language data (called a \underline{text corpus}).
+large amount of (correct) language data (called a \textbf{text corpus}).
 Most
 of these two approaches have been developed around data from
 English. Neither approach can transfer easily to Finnish because the
@@ -3457,7 +3473,7 @@ richer inflection system.
 \begin{figure}[h!]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
-  \includegraphics[width=\textwidth]{_media/english/language_checking}
+  \includegraphics[width=\textwidth]{../_media/english/language_checking}
   \caption{Language checking (statistical; rule-based)}
   \label{fig:langcheckingarch-eng}
   \colorrule{grey3}{\textwidth}{1.5pt}
@@ -3466,7 +3482,7 @@ richer inflection system.
 \boxtext{The use of language checking is not limited to word processors; it also applies to authoring support systems.}
 
 Language checking is not limited to word processors; it is also used
-in “authoring support systems”, i.e., software environments in which
+in “authoring support systems”, i.\,e., software environments in which
 manuals and other documentation are written to special standards for
 complex IT, healthcare, engineering and other products. Fearing
 customer complaints about incorrect use and damage claims resulting
@@ -3518,9 +3534,9 @@ a large volume of available data and efficient indexing techniques can
 deliver satisfactory results for a statistically-based approach.
 
 For more sophisticated information requests, it is essential to
-integrate deeper linguistic knowledge to \underline{semantic
-analysis}. Experiments using \underline{lexical resources} such
-as machine-readable thesauri or ontological language resources (e.g.,
+integrate deeper linguistic knowledge to \textbf{semantic
+analysis}. Experiments using \textbf{lexical resources} such
+as machine-readable thesauri or ontological language resources (e.\,g.,
 WordNet for English or the equivalent Finnish FinnWordNet) have
 demonstrated improvements in finding pages using synonyms of the
 original search terms, such as
@@ -3532,7 +3548,7 @@ or even more loosely related terms.
 \begin{figure}[h!]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
-  \includegraphics[width=\textwidth]{_media/english/web_search_architecture}
+  \includegraphics[width=\textwidth]{../_media/english/web_search_architecture}
   \caption{Web Search}
   \label{fig:websearcharch-eng}
   \colorrule{grey3}{\textwidth}{1.5pt}
@@ -3595,7 +3611,7 @@ interfaces in smartphones.
 
 Speech technology comprises four technologies:
 \begin{enumerate}
-\item Automatic \underline{speech recognition} (ASR) determines which words are actually
+\item Automatic \textbf{speech recognition} (ASR) determines which words are actually
     spoken in a given sequence of sounds uttered by a user.
 
 \item Natural language understanding analyses the syntactic structure of a user’s
@@ -3604,14 +3620,14 @@ Speech technology comprises four technologies:
 \item Dialogue management determines which action to take given the user input
     and system functionality.
 
-\item \underline{Speech synthesis} (text-to-speech or TTS) transforms the system’s reply into
+\item \textbf{Speech synthesis} (text-to-speech or TTS) transforms the system’s reply into
     sounds for the user.
 \end{enumerate}
 
   \begin{figure}[h!]
     \colorrule{grey3}{\textwidth}{1.5pt}
     \center
-    \includegraphics[width=\textwidth]{_media/english/simple_speech-based_dialogue_architecture}
+    \includegraphics[width=\textwidth]{../_media/english/simple_speech-based_dialogue_architecture}
     \caption{Speech-based dialogue system}
     \label{fig:dialoguearch-eng}
     \colorrule{grey3}{\textwidth}{1.5pt}
@@ -3621,7 +3637,7 @@ One of the major challenges of ASR systems is to accurately recognise the words
 a user utters. This means restricting the range of possible user utterances to
 a limited set of keywords, or manually creating language models that cover a
 large range of natural language utterances. Using machine learning techniques,
-language models can also be generated automatically from \underline{speech corpora}, i.e.,
+language models can also be generated automatically from \textbf{speech corpora}, i.\,e.,
 large collections of speech audio files and text transcriptions. Restricting
 utterances usually forces people to use the voice user interface in a rigid way
 and can damage user acceptance; but the creation, tuning and maintenance of
@@ -3692,7 +3708,7 @@ users.
 
 The idea of using digital computers to translate natural languages goes back to
 1946 and was followed by substantial funding for research during the 1950s and
-again in the 1980s. Yet machine translation (MT) still cannot meet its initial
+again in the 1980s. Yet \textbf{machine translation} (MT) still cannot meet its initial
 promise of across-the-board automated translation.
 
 The most basic approach to machine translation is to automatically replace the
@@ -3727,19 +3743,19 @@ linguists. This is a very long and therefore costly process.
 In the late 1980s when computational power increased and became cheaper, there
 was more interest in statistical models for machine translation. Statistical
 models are derived from analysing bilingual text corpora, such as the Europarl
-\underline{parallel corpus}, which contains the proceedings of the European Parliament in
+\textbf{parallel corpus}, which contains the proceedings of the European Parliament in
 11 European languages. Given enough data, statistical MT works well enough to
 derive an approximate meaning of a foreign language text by processing parallel
 versions and finding plausible patterns of words. But unlike knowledge-driven
 systems, statistical (or data-driven) MT often generates ungrammatical output.
 Data-driven MT is advantageous because less human effort is required, and it
-can also cover special particularities of the language (e.g., idiomatic
+can also cover special particularities of the language (e.\,g., idiomatic
 expressions) that can get ignored in knowledge-driven systems.
 
 \begin{figure}[h!]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
-  \includegraphics[width=\textwidth]{_media/english/machine_translation}
+  \includegraphics[width=\textwidth]{../_media/english/machine_translation}
   \caption{Machine translation (statistical; rule-based)}
   \label{fig:mtarch-eng}
   \colorrule{grey3}{\textwidth}{1.5pt}
@@ -3793,10 +3809,10 @@ achieve a score of around 80 points.
 
 The best results (in green and blue) were achieved by languages that
 benefit from a considerable research effort in coordinated programs
-and from the existence of many parallel corpora (e.g., English,
+and from the existence of many parallel corpora (e.\,g., English,
 French, Dutch, Spanish and German). The languages with poorer results
 are shown in red. These languages either lack such development efforts
-or are structurally very different from other languages (e.g.,
+or are structurally very different from other languages (e.\,g.,
 Hungarian, Maltese and Finnish).
 
 
@@ -3843,11 +3859,11 @@ needs to be embedded into a suitable application environment.
 
 \boxtext{For the Finnish language, research in most text technologies is much less developed than for the English language.}
 
-Text summarization and \underline{text generation} are two borderline areas that can act
+Text summarization and \textbf{text generation} are two borderline areas that can act
 either as standalone applications or play a supporting role “under the hood”.
 Summarization attempts to give the essentials of a long text in a short form,
 and is one of the features available in Microsoft Word. It mostly uses a
-statistical approach to identify the “important” words in a text (i.e., words
+statistical approach to identify the “important” words in a text (i.\,e., words
 that occur very frequently in the text in question but less frequently in
 general language use) and determine which sentences contain the most of these
 “important” words. These sentences are then extracted and put together to
@@ -4102,7 +4118,7 @@ LT support was measured according to the following criteria:
        linguistic phenomena and domains, amount and variety of
        available applications, quality and size of existing
        (annotated) text corpora, quality and coverage of existing
-       lexical resources (e.g., WordNet) and grammars
+       lexical resources (e.\,g., WordNet) and grammars
 \item Resources: Quality and size of existing text corpora, speech
        corpora and parallel corpora, quality and coverage of existing
        lexical resources and grammars
@@ -4134,7 +4150,7 @@ LT support was measured according to the following criteria:
 & \vspace*{0.5mm}
 Czech \newline 
 Dutch \newline 
-Finnish \newline 
+\textbf{Finnish} \newline 
 French \newline 
 German \newline   
 Italian \newline  
@@ -4207,7 +4223,7 @@ Croatian \newline
 Czech \newline
 Danish \newline 
 Estonian \newline 
-Finnish \newline 
+\textbf{Finnish} \newline 
 Galician \newline 
 Greek \newline 
 Icelandic \newline 
@@ -4260,7 +4276,7 @@ Swedish \newline
   Catalan \newline 
   Czech \newline 
   Danish \newline 
-  Finnish \newline 
+  \textbf{Finnish} \newline 
   Galician \newline 
   Greek \newline 
   Hungarian \newline 
@@ -4326,7 +4342,7 @@ Swedish \newline
     Croatian \newline 
     Danish \newline 
     Estonian \newline 
-    Finnish \newline 
+    \textbf{Finnish} \newline 
     Galician \newline 
     Greek \newline 
     Norwegian \newline 
@@ -4357,7 +4373,7 @@ number of industrial applications such as spoken dialogue and dictation
 systems, especially for special languages. The need for language resources both
 for text and speech technologies is evident. Text analysis components already
 cover the linguistic phenomena of Finnish to a certain extent and form part of
-many applications, e.g. spelling correction and function on a satisfactory
+many applications, e.\,g. spelling correction and function on a satisfactory
 level.
 
 For building more sophisticated applications, such as machine translation,
@@ -4442,8 +4458,8 @@ business, and society - to unite their efforts for the future.
 \boxtext{The Multilingual Europe Technology Alliance (META)}
 
 META-NET is a Network of Excellence funded by the European
-Commission. The network currently consists of 47 members from 31
-European countries. META-NET fosters the Multilingual Europe
+Commission. The network currently consists of 54 members from 33
+European countries\cite{rehm2011}. META-NET fosters the Multilingual Europe
 Technology Alliance (META), a growing community of language technology
 professionals and organisations in Europe.
 
@@ -4544,16 +4560,17 @@ multilingual corpora that are hidden on the Web.
 \addtocontents{toc}{\protect\bigskip}
 
 \bsection[Viitteet -- References]{Viitteet --- References}
-\bibliographystyle{plain}
+\bibliographystyle{unsrt}
 \bibliography{finnish_references}
   
 \cleardoublepage
 
+%\bsection{Jäsenet -- Members}
+\bsection[META-NET Jäsenet -- META-NET Members]{META-NET Jäsenet --- META-NET Members}
+\label{metanetmembers}
 
-\bsection{Jäsenet -- Members}
-
-Taulukossa esitellään META-NET –verkostoon osallistuvat
-tutkimuslaitokset ja niiden edustajat.
+%Taulukossa esitellään META-NET –verkostoon osallistuvat
+%tutkimuslaitokset ja niiden edustajat.
 
 \small
 \begin{longtable}{@{}llp{113mm}@{}}
@@ -4606,7 +4623,7 @@ Sveitsi & \textcolor{grey1}{Switzerland} & Idiap Research Institute: Hervé Bour
 Tanska &  \textcolor{grey1}{Denmark} & Centre for Language Technology, University of Copenhagen: \newline Bolette Sandford Pedersen, Bente Maegaard\\ \addlinespace
 Tšekin tasavalta & \textcolor{grey1}{Czech Republic} & Institute of Formal and Applied Linguistics, Charles University in Prague: Jan Hajič \\ \addlinespace
 Unkari & \textcolor{grey1}{Hungary} & Research Institute for Linguistics, Hungarian Academy of Sciences: Tamás Váradi\\  \addlinespace
-  & & Department of Telecommunications and Media Informatics, Budapest University of Technology and Economics: Géza Németh and Gábor Olaszy\\ \addlinespace
+  & & Department of Telecommunications and Media Informatics, Budapest University of Technology and Economics: Géza Németh, Gábor Olaszy\\ \addlinespace
 Viro & \textcolor{grey1}{Estonia} & Institute of Computer Science, University of Tartu: Tiit Roosmaa, Kadri Vider\\ \addlinespace
 Yhdistyneet Kuningaskunnat & \textcolor{grey1}{UK} & 
   School of Computer Science, University of Manchester: Sophia Ananiadou \\ \addlinespace 
@@ -4619,55 +4636,60 @@ Yhdistyneet Kuningaskunnat & \textcolor{grey1}{UK} &
 \renewcommand*{\captionformat}{}
 
 \begin{figure*}[htbp]
+  \colorrule{grey3}{\textwidth}{1.5pt}
   \center
-  %\includegraphics[width=\textwidth]{../_media/meta-net_team.jpg}
-  \fbox{Dummy -- we'll include the group photo of our META-NET meeting in Berlin here}
+  \includegraphics[width=\textwidth]{../_media/meta-net_team.jpg}
+  %\fbox{Dummy -- we'll include the group photo of our META-NET meeting in Berlin here}
   \caption{Lähes 100 kieliteknologian asiantuntijaa, jotka edustavat META-NET -hankkeen
 jäsenmaita ja kansallisia kieliä,  viimeistelivät META-NET valkoisten kirjojen
 julkaisusarjan keskeiset tulokset ja sanoman META-NET -hankkeen Berliinissä,
 Saksassa pidetyssä kokouksessa 21-22.10.2011. --- \textcolor{grey1}{About 100 language technology experts -- representatives of the countries and languages represented in META-NET -- discussed and finalised the key results and messages of the White Paper Series at a META-NET meeting in Berlin, Germany, on October 21/22, 2011.}}
+  \medskip
+  \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
 
 \cleardoublepage
 
-%META-NET White Paper -sarja Kielet Euroopan
- tietoyhteiskunnassa kattaa seuraavat 31 kieltä:
- 
-\bsection[Die META-NET Weissbuch-Serie -- The META-NET White Paper Series]{Die META-NET Weissbuch-Serie --- The META-NET\ \ \ \ \ \ White Paper Series} 
- \center
- 
- \begin{tabular}{l|l|l}
- \hline baski & Basque & euskara\\
- \hline bulgaria & Bulgarian & български\\
- \hline englanti & English & English\\
- \hline espanja & Spanish & español\\
- \hline galicia & Galician & galego\\
- \hline hollanti & Dutch & Nederlands\\
- \hline iiri & Irish & Gaeilge\\
- \hline islanti & Icelandic & íslenska\\
- \hline italia & Italian & italiano\\
- \hline katalaani & Catalan & català\\
- \hline kreikka & Greek & ελληνικά\\
- \hline kroatia & Croatian & hrvatski\\
- \hline latvia & Latvian & latviešu valoda\\
- \hline liettua & Lithuanian & lietuvių kalba\\
- \hline malta & Maltese & Malti\\
- \hline norjan bokmål & Norwegian Bokmål & bokmål\\
- \hline norjan nynorsk & Norwegian Nynorsk & nynorsk\\
- \hline puola & Polish & polski\\
- \hline portugali & Portuguese & português\\
- \hline ranska & French & français\\
- \hline romania & Romanian & română\\
- \hline ruotsi & Swedish & svenska\\
- \hline saksa & German & Deutsch\\
- \hline serbia & Serbian & српски\\
- \hline slovakki & Slovak & slovenčina\\
- \hline sloveeni & Slovene & slovenščina\\
- \hline suomi & Finnish & suomi\\
- \hline tanska & Danish & dansk\\
- \hline tšekki & Czech & čeština\\
- \hline unkari & Hungarian & magyar\\
- \hline viro & Estonian & eesti\\
- \end{tabular}
+\bsection[META-NET valkoiset kirjat -- The META-NET White Paper
+Series]{META-NET\ \ \ \ \ \  valkoiset kirjat --- The META-NET\ \ \ \ \ \ White Paper Series}
+\label{whitepaperseries}
+
+\vspace*{-5mm}
+\centering
+  \setlength{\tabcolsep}{2em}
+  \begin{tabularx}{\textwidth}{lllll} \toprule\addlinespace
+&baski & Basque & euskara\\
+&bulgaria & Bulgarian & български\\
+&englanti & English & English\\
+&espanja & Spanish & español\\
+ &galicia & Galician & galego\\
+ &hollanti & Dutch & Nederlands\\
+ &iiri & Irish & Gaeilge\\
+ &islanti & Icelandic & íslenska\\
+ &italia & Italian & italiano\\
+ &katalaani & Catalan & català\\
+ &kreikka & Greek & ελληνικά\\
+ &kroatia & Croatian & hrvatski\\
+ &latvia & Latvian & latviešu valoda\\
+ &liettua & Lithuanian & lietuvių kalba\\
+ &malta & Maltese & Malti\\
+ &norjan bokmål & Norwegian Bokmål & bokmål\\
+ &norjan nynorsk & Norwegian Nynorsk & nynorsk\\
+ &puola & Polish & polski\\
+ &portugali & Portuguese & português\\
+ &ranska & French & français\\
+ &romania & Romanian & română\\
+ &ruotsi & Swedish & svenska\\
+ &saksa & German & Deutsch\\
+ &serbia & Serbian & српски\\
+ &slovakki & Slovak & slovenčina\\
+ &sloveeni & Slovene & slovenščina\\
+ &suomi & Finnish & suomi\\
+ &tanska & Danish & dansk\\
+ &tšekki & Czech & čeština\\
+ &unkari & Hungarian & magyar\\
+ &viro & Estonian & eesti\\
+\addlinespace \bottomrule
+\end{tabularx}
 
 \end{document}
