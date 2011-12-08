@@ -4,34 +4,49 @@
 \usepackage[finnish, english]{babel}
 
 
-\title{Die Deutsche Sprache im Digitalen Zeitalter --- The German Language in the Digital Age}
+\title{Suomen kieli digitaalisella aikakaudella --- The Finnish Language in the Digital Age}
 
-\subtitle{White Paper Series --- Weißbuch-Serie}
+\subtitle{White Paper Series --- Valkoiset kirjat}
+
+%\author{
+%  Kimmo Koskenniemi \\
+%  Krister Lindén \\
+%  Lauri Carlson \\
+%  Martti Vainio \\
+%  Antti Arppe \\
+%  Mietta Lennes \\
+%  Hanna Westerlund \\
+%  Mirka Hyvärinen \\
+%  Pirkko Nuolijärvi \\
+%  Aino Piehl
+%}
+
+%  Helsingin yliopisto \\
+%  University of Helsinki \\
+
+%  Kotimaisten kielten tutkimuskeskus \\
+%  Research Institute for the Languages of Finland
 
 \author{
-  Kimmo Koskenniemi \\
-  Krister Lindén \\
-  Lauri Carlson \\
-  Martti Vainio \\
-  Antti Arppe \\
-  Mietta Lennes \\
-  Hanna Westerlund \\
-  Mirka Hyvärinen \\
-  Helsingin yliopisto --
-  University of Helsinki \\
-  Pirkko Nuolijärvi \\
-  Aino Piehl \\
-  Kotimaisten kielten tutkimuskeskus \\
-  Research Institute for the Languages of Finland
+  Kimmo Koskenniemi~ {\small Helsingin yliopisto}\\
+  Krister Lindén~ {\small Helsingin yliopisto}\\
+  Lauri Carlson~ {\small Helsingin yliopisto}\\
+  Martti Vainio~ {\small Helsingin yliopisto}\\
+  Antti Arppe~ {\small Helsingin yliopisto}\\
+  Mietta Lennes~ {\small Helsingin yliopisto}\\
+  Hanna Westerlund~ {\small Helsingin yliopisto}\\
+  Mirka Hyvärinen~ {\small Helsingin yliopisto}\\
+  Pirkko Nuolijärvi~ {\small KOTUS}\\
+  Aino Piehl~ {\small KOTUS}
 }
 
-\authoraffiliation{
-  Max Mustermann~ {\small DFKI}\\
-}
-
+%\editors{
+%	Hanna Westerlund\\(toimittaja, \textcolor{grey1}{editor})
+%}
 \editors{
   Georg Rehm, Hans Uszkoreit\\(Herausgeber, \textcolor{grey1}{editors})
 }
+
 
 
 
@@ -42,49 +57,58 @@
 \null
 \pagestyle{empty} 
 
-\centerline{META-NET -- office@meta-net.eu -- http://www.meta-net.eu}
+%\centerline{META-NET -- office@meta-net.eu -- http://www.meta-net.eu}
 
-\vfill
+\FundingLNotice{
+\selectlanguage{finnish} 
+Tämän raportin tekijät ovat kiitollisia saksankielisen META-NET
+valkoisen kirjan tekijöille luvasta käyttää raporttinsa kielestä
+riippumattomien osioiden tekstejä osana tämän raportin
+englanninkielistä osuutta sekä lähteenä suomenkieliselle
+käännökselle\cite{lwpgerman}.
+  
+  \bigskip
+  Tämän valkoisen kirjan tuottamiseen on myönnetty rahoitusta Euroopan 
+  komission seitsemännestä puiteohjelmasta ja tieto- ja viestintäteknologioiden
+  tukiohjelmasta seuraavien sopimusten perusteella T4ME (rahoitussopimus 249119), 
+  CESAR (rahoitussopimus 271022), METANET4U (rahoitussopimus 270893) ja META-NORD (rahoitussopimus 270899).}
 
-\begin{small}
-  \selectlanguage{finnish}
-  Die Ausarbeitung dieses Weißbuchs wurde mit Mitteln aus dem Siebten
-  Rahmenprogramm und dem Programm zur Unter-stützung der Politik für
-  Informations- und Kommunikationstechnologien der Europäischen
-  Kommission im Rahmen der Verträge T4ME (Finanzhilfevereinbarung
-  249119), CESAR (Finanzhilfevereinbarung 271022), METANET4U
-  (Finanzhilfevereinbarung 270893) und META-NORD
-  (Finanzhilfevereinbarung 270899) finanziert.
-\end{small}
-
-\bigskip
-\begin{small}
-  \selectlanguage{english}
+\FundingRNotice{\selectlanguage{english} The authors of this document
+  are grateful to the authors of the White Paper on German for
+  permission to re-use selected language-independent materials from
+  their document \cite{lwpgerman}.
+  
+  \bigskip
   The development of this white paper has been funded by the Seventh
   Framework Programme and the ICT Policy Support Programme of the
-  European Commission under the contracts T4ME (Grant Agreement 249119),
-  CESAR (Grant Agreement 271022), METANET4U (Grant Agreement 270893)
-  and META-NORD (Grant Agreement 270899).
-\end{small}
+  European Commission under the contracts T4ME (Grant Agreement
+  249119), CESAR (Grant Agreement 271022), METANET4U (Grant Agreement
+  270893) and META-NORD (Grant Agreement 270899).}
+
+\makefundingnotice
+
+\pagenumbering{Roman} 
+\setcounter{page}{5}
+\pagestyle{scrheadings}
 
 \clearpage
 
 \bsection*{Esipuhe --- Preface}
 \begin{Parallel}[c]{78mm}{78mm}
 \ParallelLText{\selectlanguage{finnish}
-Julkaisusarjan META-NET White Paper Series tavoitteena on edistää tietämystä
-kieliteknologiasta ja sen tarjoamista mahdollisuuksista. Tämän julkaisun
-tavoitteena on herättää opettajia, toimittajia, poliitikkoja, kieliyhteisöjä ja
+META-NET Valkoiset kirjat -julkaisusarjan tavoitteena on edistää tietämystä
+kieliteknologiasta ja sen tarjoamista mahdollisuuksista. Tämän julkaisu
+haluaa herättää opettajia, toimittajia, poliitikkoja, kieliyhteisöjä ja
 kaikkia muitakin kieltä käyttäviä pohtimaan oman äidinkielensä merkitystä.
 
 Euroopan kielten kieliteknologisten sovellusten saatavuus vaihtelee. Niinpä
 myös toimenpiteet, joita jatkossa tarvitaan tukemaan kieliteknologioiden
-tutkimuksen ja kehityksen eteen tehtävää työtä, ovat eri kielten kohdalla
-erilaisia ja niihin vaikuttavat esimerkiksi kyseisen kielen ominaispiirteet ja
-kieliyhteisön koko.
+tutkimusta ja kehitystä, ovat eri kielten kohdalla 
+erilaisia ja ne riippuvat kyseisen kielen ominaispiirteistä ja
+kieliyhteisön koosta.
 
-Euroopan komission rahoittaman META-NET huippuosaamisen verkoston tekemä kartoitus
-sisältää Euroopan 23 virallisen kielen lisäksi tärkeiden kansallisten ja
+Euroopan komission rahoittaman META-NET -huippuosaamisen verkoston kartoitustyö
+kattaa Euroopan 23 virallisen kielen ja lisäksi sen tärkeiden kansallisten ja
 paikallisten kielten kieliresurssien ja teknologioiden tilannekatsaukset.
 Tulosten perusteella voidaan päätellä, että kaikkien kartoitettujen kielten
 tutkimus kärsii merkittävästä resurssien puutteesta heijastuen tutkimukseen ja
@@ -92,12 +116,12 @@ tuotekehitykseen. Alan asiantuntijoita kuullen ja tilannetta realistisesti
 arvioiden kartoituksen tekijät nostavat esiin tutkimuksen ja tuotekehityksen
 tarpeita ja riskitekijöitä.
 
-META-NET koostuu 31 valtion 47 tutkimuskeskuksesta, jotka työskentelevät
-yhteistyössä useiden toimijoiden ja intressiryhmien kanssa. Mukana on
+META-NET koostuu 31 valtion 47 tutkimuskeskuksesta, jotka tekevät
+yhteistyötä useiden toimijoiden ja intressiryhmien kanssa. Mukana on
 liikeyrityksiä, julkisen hallinnon yksiköitä, teollisuuden edustajia,
 tutkimusyksiköitä, tietotekniikan alan yrityksiä, teknologian tuottajia ja
-eurooppalaisia yliopistoja. Yhteistyön tuloksena on syntymässä teknologinen
-visio osana strategista tutkimuslinjausta, jossa osoitetaan, miten
+eurooppalaisia yliopistoja. Työn tuloksena on syntymässä teknologinen
+visio osana strategista tutkimuslinjausta osoittamaan, miten
 kieliteknologiat tulevat auttamaan Euroopan tutkimusyhteisöä ratkaisemaan
 keskeisiä tutkimuskysymyksiä vuoteen 2020 mennessä.
 }
@@ -164,19 +188,19 @@ applications can address any research gaps by 2020.
 Eurooppaan on viimeisen 60 vuoden kuluessa syntynyt selkeä poliittinen
 ja taloudellinen, mutta samalla monikulttuurinen ja kielellisesti
 moniulotteinen rakenne. Sen kansalaisten tarpeet viestiä keskenään eri
-kielillä portugalin kielestä puolaan ja italiasta islantiin samoin
-kuin yritysmaailman ja politiikan sisäinen viestintä joutuvat siten
+kielillä portugalin kielestä puolaan ja italiasta islantiin, samoin
+kuin yritysmaailman ja politiikan sisäinen viestintä, joutuvat siten
 väistämättä kohtaamaan kielellisiä esteitä. EU:n instituutioiden
 monikielisyyttä säilyttävän politiikan kustannukset, jotka syntyvät
 tekstien kääntämisestä ja puhetilanteiden tulkkaamisesta, ovat
-vuosittain noin miljardi euroa. Onko meillä vaihtoehtoa näin suurelle
-taloudelliselle taakalle? Moderni kieliteknologia ja kielitiede voivat
-merkittävästi auttaa poistamaan monikielisyydestä syntyviä
-esteitä. Kun kieliteknologiaa tulevaisuudessa hyödynnetään älykkäissä
-tuotteissa ja sovelluksissa yhä enemmän, voidaan sen avulla
+vuosittain noin miljardi euroa. Olisiko meillä vaihtoehtoa näin suurelle
+taloudelliselle taakalle? Tämän päivän kieliteknologinen ja kielitieteellinen 
+tietämys auttaa merkittävällä tavalla monikielisyydestä syntyvien esteiden 
+poistamisessa. Kun kieliteknologiaa tulevaisuudessa hyödynnetään älykkäissä
+tuotteissa ja sovelluksissa entistä enemmän, voidaan sen avulla
 tarjota Euroopan kansalaisille mahdollisuus keskustella ja käydä
 kauppaa keskenään vaivattomasti kansallisilla kielillä ilman, että
-kaikkien pitäisi hallita yksi kaikille yhteinen kieli.
+meidät kaikki pakotetaan hallitsemaan yhtä kaikille yhteistä kieltä.
 
 Suomalaiset yritykset käyvät entistä enemmän kauppaa Euroopan sisällä.
 Tammi-heinäkuussa 2011 Euroopan maiden osuus Suomen tuonnin
@@ -184,28 +208,27 @@ kokonaismäärästä oli reilu 77\% ja viennin noin 73\% \cite{SVT}.
 Kommunikaation esteet voivat kuitenkin vaikuttaa haitallisesti
 kansainväliseen kauppaan, mistä kärsivät erityisesti pienet ja
 keskisuuret yritykset, joilla ei ole taloudellisia mahdollisuuksia
-korjata tilannetta. Ainoa, joskin kestämätön vaihtoehto olisi uhrata
-Euroopan monikielisyys kaupan alalla ja päästää yksi kieli
-hallitsevaan asemaan korvaamaan ajan mittaan kaikki muut kaupan
-kielet.
+vaikuttaa asiaan. Ainoa, joskin kestämättömältä tuntuva vaihtoehto olisi uhrata
+Euroopan monikielisyys kaupan alalla ja sallia yhden kielen hallitseva asema ja
+hyväksyä riski, että se tulee ajan mittaan korvaamaan kaikki muut
+kielet kaupankäynnissä.
 
 Perinteinen tapa ylittää kielellisiä raja-aitoja on opetella vieraita
-kieliä. Ilman teknologian apua käy tarve hallita Euroopan unionin
-jäsenvaltioiden 23 virallista kieltä sekä noin 60 muuta eurooppalaista
-kieltä niiden lisäksi kuitenkin ylipääsemättömäksi. Kielten määrästä
-muodostuu este maanosamme kansalaisten ja talouden, poliittisen
+kieliä. Ilman teknologian apua Euroopan unionin
+jäsenvaltioiden 23 virallisen kielen ja lisäksi noin 60 muun eurooppalaisen
+kielen hallitseminen käy kuitenkin helposti ylivoimaiseksi. Kielten määrästä
+muodostuu este maanosamme kansalaisten ja sen talouden, poliittisen
 vuoropuhelun ja tieteellisen kehityksen tielle.
 
-Ratkaisuksi tilanteeseen ehdotetaan keskeisten kieliteknologisten
-sovellusten ja teknologioiden rakentamista vastaamaan viestinnän
+Ratkaisuksi tilanteeseen ehdotamme keskeisten kieliteknologisten
+sovellusten ja teknologioiden kehittämistä vastaamaan viestinnällisiin
 tarpeisiin. Ne tulevat tarjoamaan eurooppalaisille toimijoille
 merkittäviä etuja, ei ainoastaan Euroopan yhteismarkkina-alueen
-sisällä, vaan myös Euroopan ja kolmansien maiden, erityisesti
-kehittyvien nousevien talousmahtien, välisissä
-kauppasuhteissa. Tavoitteen saavuttaminen ja Euroopan kulttuurisen
-monimuotoisuuden säilyttäminen edellyttävät, että lähdemme aluksi
-liikkeelle kartoittamalla kaikkien Euroopan kielten ominaispiirteitä
-sekä selvittämällä millaista tukea nyt käytettävissä olevat
+sisällä, vaan myös Euroopan ja kolmansien maiden ja erityisesti
+niiden nousevien talousmahtien välisissä kauppasuhteissa. Tavoitteen 
+saavuttaminen ja Euroopan kulttuurisen monimuotoisuuden säilyttäminen lähtee
+liikkeelle siten, että aloitamme kartoittamalla kaikkien Euroopan kielten ominaispiirteitä
+sekä selvittämällä, millaista tukea nyt käytettävissä olevat
 kielikohtaiset kieliteknologiat niille tarjoavat. Kieliteknologiset
 sovellukset tulevat ennen pitkää palvelemaan meitä kaikkia Euroopan 
 kielet yhdistävinä rakenteina.
@@ -219,16 +242,16 @@ yksityisomistuksessa olevia tuottoa tavoittelevia yrityksiä. Euroopan unionissa
 ymmärrettiin jo 1970-luvun lopulla kieliteknologian merkitys Euroopan
 yhtenäisyyden edistäjänä, ja EU ryhtyi tuolloin rahoittamaan ensimmäisiä omia
 tutkimushankkeitaan, esimerkkinä EUROTRA -hanke. Samoihin aikoihin
-käynnistettiin myös kansallisia hankkeita, jotka tuottivat arvokkaita tuloksia,
+käynnistettiin kansallisia hankkeita, jotka tuottivat arvokasta tietoa,
 mutta eivät kuitenkaan johtaneet yhteiseurooppalaisiin sovelluksiin
-käytännössä. Vastakohtana Euroopan valikoivalle rahoituksen suuntaamiselle muut
+käytännössä. Vastakohtana Euroopan valikoivalle rahoituspolitiikalle muut
 monikieliset yhteiskunnat kuten Intia (22 virallista kieltä) ja Etelä-Afrikka
 (11 virallista kieltä) ovat viime aikoina perustaneet kansallisia pitkän
 tähtäimen kieliteknologian tutkimuksen ja teknologisen kehityksen ohjelmia.
 
 Alan hallitsevat kieliteknologian toimijat luottavat nykyisin tilastollisiin
 lähestymistapoihin, joissa kielen syviä rakenteita analysoivia
-kielitieteellisiä menetelmiä tai tietämystä ei hyödynnetä. Esimerkiksi
+kielitieteellisiä menetelmiä tai tietämystä ei juuri hyödynnetä. Esimerkiksi
 virkkeitä käännetään automaattisesti vertaamalla tuntematonta virkettä
 tuhansiin ihmisen jo kääntämiin virkkeisiin, jolloin tuloksen laatu riippuu
 pitkälti käytettävissä olevan verrannaisaineiston määrästä ja laadusta. Jos
@@ -243,15 +266,15 @@ ja EuroMatrixPlus (vuodesta 2006) sekä iTranslate4 (vuodesta 2010), joissa
 tehdään sekä perustutkimusta että soveltavaa tutkimusta ja luodaan resursseja
 korkealuokkaisten kieliteknologisten ratkaisujen vakiinnuttamiseksi kaikkiin
 eurooppalaisiin kieliin. Kielten syvempien rakenteellisten ominaisuuksien
-analyysi on ainoa ratkaisu, kun pyrkimyksemme on rakentaa kaikkien Euroopan
+analyysi on ainoa ratkaisu, kun pyrkimyksemme on tuottaa kaikkien Euroopan
 kielten kannalta käyttökelpoisia sovelluksia.
 
-Eurooppalainen tutkimus tällä alueella on jo saavuttanut menestystä.
-Esimerkiksi Euroopan unionin käännösyksikkö käyttää nykyisin avoimen
-lähdekoodin MOSES -konekäännösohjelmistoa, joka on suurimmaksi osaksi kehitetty
-Euroopan tutkimushankkeiden puitteissa. Sen sijaan että rakentaisi jo
+Alan eurooppalainen tutkimus on jo saavuttanut tuloksia. Esimerkiksi Euroopan 
+unionin käännösyksikkö käyttää nykyisin avoimen lähdekoodin MOSES -konekäännösohjelmistoa, 
+joka on suurimmaksi osaksi kehitetty
+Euroopan tutkimushankkeiden puitteissa. Sen sijaan, että rakentaisi jo
 päättyneiden tutkimusprojektien varaan, Euroopalla on ollut tapana ryhtyä
-erillisiin tutkimushankkeisiin, joilla on vähemmän läpitunkeva vaikutus
+erillisiin tutkimushankkeisiin, joilla on vähemmän kattava vaikutus
 markkinoihin. Oheisyritysten määrä on yksi mahdollinen kriteeri, kun arvioidaan
 aikaisempien hankkeiden taloudellista vaikutusta. Esimerkiksi jo vuonna 1984
 perustettu Trados myytiin Britanniassa toimivalle SDL:lle vuonna 2005.
@@ -260,8 +283,8 @@ perustettu Trados myytiin Britanniassa toimivalle SDL:lle vuonna 2005.
 
 META-NETin pitkän tähtäimen tavoite on tuoda korkealuokkaista
 kieliteknologiaa kaikkien kielten saataville, jotta poliittinen ja 
-taloudellinen yhtenäisyys saavutetaan kulttuurinen monimuotoisuus
-säilyttäen. Teknologia tulee auttamaan olemassa olevien esteiden
+taloudellinen yhtenäisyys voidaan saavuttaa kulttuurinen monimuotoisuus
+säilyttäen. Teknologia tulee avustamaan olemassa olevien esteiden
 poistamisessa ja yhteyksien rakentamisessa Euroopan kielten
 välille. Tarvittava teknologinen kehitys edellyttää, että kaikki
 toimijat politiikan, tutkimuksen kuin yhteiskunnan saralla yhdistävät
@@ -272,16 +295,13 @@ yhdistyy tilastollisiin malleihin. Uskomme niitä hyödyntävän modernin
 kieliteknologian mahdollisuuksiin rakentaa yhteyksiä Euroopan kielten
 välille. Tässä raportissa kuvataan Euroopan jäsenvaltioiden
 kieliteknologian tutkimuksen tilannetta ja kartoitetaan käytettävissä
-olevien ratkaisujen valmiusastetta kussakin META-NET jäsenmaassa.
+olevien ratkaisujen valmiusastetta kussakin META-NETin jäsenmaassa.
 
-Valkoisten kirjojen sarja META-NET White Paper Series on olennainen
-osa META-NETin tehtäväkenttää ja pohjana sen edistämille strategisille
-toimenpiteille. META-NET julkaisee ajantasaista tietoa toiminnastaan,
-kuten visiopaperin \cite{Vision} ja strategisen tutkimussuunnitelman
-verkkosivuilla \url{http://www.meta-net.eu}.
+META-NET Valkoiset kirjat -julkaisusarja on hankkeen keskeisiä tehtäviä ja 
+se toimii pohjana strategisille toimenpide-ehdotuksille. META-NET julkaisee 
+ajantasaista tietoa toiminnastaan, kuten visiopaperin \cite{Vision} ja 
+strategisen tutkimussuunnitelman, verkkosivuillaan \url{http://www.meta-net.eu}.
 
-Olemme todistamassa digitaalista vallankumousta, jolla on dramaattiset
-vaikutukset viestintään ja yhteiskuntaan.
 
 \end{multicols}
 
@@ -290,17 +310,16 @@ vaikutukset viestintään ja yhteiskuntaan.
 \ssection[Uhka kansalliskielille on haaste kieliteknologialle]{Uhka kansalliskielille on haaste kieliteknologialle}
 \begin{multicols}{2}
 
-\boxtext{Olemme todistamassa digitaalista vallankumousta, jolla on dramaattiset vaikutukset viestintään ja yhteiskuntaan.}
-Olemme todistamassa digitaalista vallankumousta, jolla on dramaattiset
-vaikutukset viestintään ja yhteiskuntaan. Tieto- ja viestintätekniikan
-viimeaikaista kehitystä on toisinaan verrattu Gutenbergin keksimään
-kirjapainotaitoon. Mitä ajatuksia vertaus meissä herättää ja millaisia
-oletuksia voidaan tehdä Euroopan tietoyhteiskunnan ja erityisesti kieltemme
-tulevaisuudesta sen pohjalta?
+\boxtext{Digitaalisen vallankumouksen vaikutukset yhteiskuntaan tulevat olemaan merkittäviä.}	
+Olemme todistamassa digitaalista vallankumousta, jonka vaikutukset 
+viestinnän toimivuuteen ja sitä kautta koko yhteiskuntaan tulevat olemaan merkittäviä. 
+Tieto- ja viestintätekniikan viimeaikaista kehitystä on toisinaan verrattu Gutenbergin keksimään
+kirjapainotekniikkaan. Millaisia oletuksia Euroopan tietoyhteiskunnan ja erityisesti kieltemme
+tulevaisuudesta voimme vertauksen pohjalta tehdä?
 
 Gutenbergin keksinnöstä seurasi todellisia läpimurtoja viestinnässä ja tiedon
 siirrossa, kuten Lutherin Raamatun käännös kansankielelle. Gutenbergin
-ajan jälkeen kuluneina vuosisatoina on kehitetty eri kulttuurien motivoimia
+ajan jälkeen kuluneina vuosisatoina on kehitetty eri kulttuurien tarpeisiin monenlaisia
 teknikoita parantamaan kielenkäsittelyä ja tietämyksen siirtoa:
 \begin{itemize}
 \item suurten kielten ortografinen ja kieliopillinen standardisointi mahdollisti
@@ -312,10 +331,9 @@ tiettyjen (usein poliittisten) rajojen sisällä;
 \item kielten opetus ja kääntäminen mahdollisti kieltenvälisen viestinnän;
 
 \item tekstin toimittamisen ja bibliografian laatimisen suositusten luominen takasi
-painotuotteiden laadun saatavuuden;
+painotuotteiden laadun;
 
-\item erilaisten viestintämuotojen kuten sanomalehdet, radio, televisio, kirjat ja
-muut formaatit tyydyttivät erilaisia viestinnällisiä tarpeita.
+\item erilaiset viestintäkanavat, kuten sanomalehti, radio, televisio ja kirja, tyydyttivät erilaisia viestinnällisiä tarpeita.
 \end{itemize}
 Informaatioteknologia on kuluneiden kahdenkymmenen vuoden aikana auttanut
 automatisoimaan asioita ja helpottanut monia toimintojamme arjessa:
@@ -329,10 +347,10 @@ PowerPoint;
 
 \item sähköposti lähettää ja vastaanottaa tiedostoja nopeammin kuin faksi;
 
-\item voimme puhua edullisia tai jopa ilmaisia Internet-puheluja ja kokoontua
-virtuaalisesti verkkokeskusteluohjelmien kautta;
+\item voimme puhua edullisia tai jopa ilmaisia Internet-puheluja ja kokoontua 
+virtuaalisesti verkkokeskusteluohjelmien avulla;
 
-\item äänen ja kuvan koodausformaatit tekevät multimediasisällön jakamisen helpoksi;
+\item äänen ja kuvan tallennusformaatit tekevät multimediasisällön jakamisen helpoksi;
 
 \item hakukoneet tarjoavat asiasanaperusteista verkkosivujen hakumahdollisuutta;
 
@@ -350,14 +368,14 @@ jossa tieto ja tavarat voivat liikkua vapaasti.
 \subsection{Kielten väliset rajat esteenä Euroopan tietoyhteiskunnan kehitykselle}
 
 
-\boxtext{Maailmanlaajuisten talousmarkkinoiden ja tiedonkulun alueella yhä enemmän kieliä, puhujia ja sisältöä on jatkuvassa vuorovaikutuksessa keskenään.}
+\boxtext{Yhä enemmän kieliä, puhujia ja sisältöä on jatkuvassa vuorovaikutuksessa keskenään.}
 Emme kykene ennustamaan tarkasti, millaiselta tulevaisuuden
 informaatioyhteiskunta näyttää, mutta on hyvin todennäköistä, että
 tietotekniikan vallankumous tuo eri kieliä puhuvia ihmisiä yhteen uusilla
 tavoin. Kansalaisille syntyy tarpeita oppia uusia kieliä ja sovellusten
 kehittäjille tilaus luoda uusia teknologisia sovelluksia, joiden avulla voidaan 
-varmistaa, että ymmärrämme toisiamme varmasti ja saavutamme kaiken mahdollisen tiedon.
-Maailmanlaajuisten talousmarkkinoiden ja tiedonkulun alueella yhä enemmän
+varmistaa, että ymmärrämme toisiamme ja saavutamme kaiken tarvitsemamme tiedon.
+Maailmanlaajuisten talousmarkkinoiden alueella ja tiedonkulun kentällä yhä enemmän
 kieliä, puhujia ja sisältöä on jatkuvassa vuorovaikutuksessa keskenään uusien
 viestintävälineiden avulla entistä nopeammin. Sosiaalisen median (Wikipedia,
 Facebook, Twitter, YouTube, ja uusimpana Google+) suuri suosio on vain
@@ -368,7 +386,7 @@ muutamassa sekunnissa huomaamatta, että toimimme kielellä, jota emme
 edes ymmärrä. Euroopan komission tuoreen raportin mukaan 57\%
 Internetin käyttäjistä Euroopassa ostaa tavaroita ja palveluja
 käyttäen muuta kuin äidinkieltään kaupanteossa. Englanti on kaikkein
-tavallisin vieras kieli, seuraavina ranska, saksa ja espanja. 55\%
+tavallisin vieras kieli, ja seuraavina tulevat ranska, saksa ja espanja. 55\%
 käyttäjistä lukee sisältöä vieraalla kielellä, kun taas vain 35\%
 käyttää vierasta kieltä kirjoittaessaan sähköposteja tai lisätessään
 kommentteja verkkoon \cite{EC-prefer}. Vielä muutama vuosi sitten
@@ -379,8 +397,8 @@ kuin Aasian ja Lähi-idän kielillä tuotetun sisällön määrä on
 kasvanut räjähdysmäisesti.
 
 Kielellisten raja-aitojen aiheuttama kuilu sähköisessä kanssakäymisessä  
-on saanut hämmästyttävän vähän julkista huomiota. Se nostaa kuitenkin
-esiin seuraavan vakavasti otettavan kysymyksen: Mitkä Euroopan kielistä  
+on saanut hämmästyttävän vähän julkista huomiota. Sen tiedostaminen nostaa kuitenkin
+esiin oleellisen kysymyksen: Mitkä Euroopan kielistä  
 tulevat kukoistamaan verkottuneessa tieto- ja osaamisyhteiskunnassa, ja mitkä katoamaan?
 
 
@@ -395,10 +413,10 @@ kieli, käytettiin vain suullisessa viestinnässä, mikä puolestaan
 rajoitti niiden käytön alaa. Tuleeko Internetillä olemaan sama
 vaikutus kieleemme?
 
- \boxtext{Euroopan kielten kirjo on sen tärkeimpiä voimavaroja.} 
+\boxtext{Euroopan kielten moninaisuus on sen tärkeimpiä voimavaroja.} 
 Euroopan noin 80 kieltä muodostavat yhden sen rikkaimmista ja
 tärkeimmistä kulttuurien varaan rakentuvista kilpailuvalteista
-\cite{EC-multi}. Vaikka isot kielet kuten englanti ja espanja tulevat
+\cite{EC-multi}. Vaikka isot kielet, kuten englanti ja espanja, tulevat
 todennäköisesti selviytymään kasvavilla digitaalisilla markkinoilla,
 voivat monet eurooppalaisista kielistä joutua verkostoituneessa
 yhteiskunnassa yhdentekevän kielen asemaan. Tällainen kehitys
@@ -406,7 +424,7 @@ heikentäisi Euroopan asemaa maailmassa ja haittaisi Euroopan
 strategiaan sisältyvää tavoitetta taata kaikille Euroopan kansalaisille
 yhtäläinen oikeus osallistumiseen kielestä riippumatta. 
 Unescon raportti monikielisyydestä osoittaa, että kielet
-ovat elintärkeässä asemassa perusoikeuksien turvaamisessa, joita ovat
+ovat elintärkeitä perusoikeuksien turvaamisessa, joita ovat
 esimerkiksi oikeus koulutukseen, oikeus ilmaista poliittinen mielipiteensä 
 ja oikeus osallistua yhteiskunnalliseen toimintaan \cite{UN-mid}.
 
@@ -414,7 +432,7 @@ ja oikeus osallistua yhteiskunnalliseen toimintaan \cite{UN-mid}.
 \subsection{Kieliteknologia tukee kielten säilymistä}
 
 
-Aikaisemmat toimet kielen säilymisen puolesta ovat kohdistuneet kielen
+Tähän asti toimenpiteet kielen säilymisen puolesta ovat kohdistuneet lähinnä kielen
 opetukseen ja kääntämiseen. Eurooppalaiset käännöstoiminnan, tulkkauksen 
 ja lokalisoinnin markkinat vuonna 2008
 olivat 8,4 miljardin euron arvoiset ja niiden odotetaan yhä kasvavan
@@ -425,13 +443,14 @@ kansallisia kieliä voidaan käyttää laaja-alaisesti kaikkiin
 tarkoituksiin. Tarkoituksenmukainen teknologia on avuksi tavoitteen 
 saavuttamisessa samalla tavoin kuin teknologia ratkaisee mm. kuljetuksen ja 
 energiatalouden kysymyksiä ja vastaa erityisryhmien tarpeisiin.
-\boxtext{Kieliteknologiat auttavat ihmisiä tekemään yhteistyötä, hoitamaan liikeasioita, jakamaan tietoa ja ottamaan osaa monikieliseen sosiaaliseen ja poliittiseen keskusteluun.}
+\boxtext{Kieliteknologiat auttavat meitä ottamaan osaa monikieliseen 
+sosiaaliseen ja poliittiseen keskusteluun.}
 Kieliteknologian tutkimuskohteita ovat kaikki kirjoitetun ja puhutun kielen
-muodot. Sovellukset auttavat ihmisiä tekemään yhteistyötä, hoitamaan
+muodot. Sovellukset auttavat meitä tekemään yhteistyötä, hoitamaan
 liikeasioita, jakamaan tietoa ja ottamaan osaa sosiaaliseen ja poliittiseen
 keskusteluun kielellisistä rajoitteista ja tietotekniikan taidoista
 riippumatta. Usein ne toimivat apunamme näkymättömällä tavalla monimutkaisten
-tietokonejärjestelmien syvyyksissä ja auttavat meitä:
+tietokonejärjestelmien syvyyksissä ja auttavat:
 \begin{itemize}
 \item löytämään tietoa Internetin hakukoneen avulla;
 
@@ -446,11 +465,11 @@ tietokonejärjestelmien syvyyksissä ja auttavat meitä:
 
 Kieliteknologiat koostuvat erilaisista keskeisistä ydinteknologioista, joita
 käytetään laajemmissa tehtäväkokonaisuuksissa monenlaisten tehtävien
-suorittamiseen. Tavoitteena META-NET valkoisten kirjojen julkaisusarjassa 
-Language White Papers tavoite on selvittää, missä vaiheessa eurooppalaisten
-kielten ydinteknologiat tänään ovat.
+suorittamiseen. Tavoitteena META-NET valkoisten kirjojen julkaisusarjassa on 
+selvittää, missä vaiheessa eurooppalaisten kielten ydinteknologiat tänään ovat.
 
-\boxtext{Eurooppa tarvitsee kaikille sen kielille sovitettua vakaata, kohtuuhintaista ja tärkeimpiin ohjelmistoympäristöihin tiiviisti integroitua kieliteknologiaa.}
+\boxtext{Eurooppa tarvitsee vakaata, kohtuuhintaista 
+ja tärkeimpiin ohjelmistoympäristöihin integroitua kieliteknologiaa.}
 Jotta voisimme säilyttää asemamme kehityksen etujoukoissa maailmassa,
 tarvitsemme kaikille Euroopan kielille sovitettua kieliteknologiaa, joka on
 vakaata, kohtuuhintaista ja tärkeimpiin ohjelmistoympäristöihin tiiviisti
@@ -464,15 +483,15 @@ monikielisistä sovelluksista lähitulevaisuudessa.
 
 
 Painotuotteiden maailmassa todellinen teknologinen läpimurto oli paperilla
-olevan kuvan (tekstin) nopea monistaminen sopivalla käyttövoimalla toimivan
-kirjapainokoneen avulla. Ihmisten piti tuolloin tehdä tiedon etsimisen,
-omaksumisen, kääntämisen ja tiivistämisen edellyttämä raaka työ. Puheen
-nauhoittamiseksi piti odottaa Edisonia – ja tämäkin teknologia tuotti
-pelkästään analogisia kopioita.
+olevan kuvan (tekstin) nopea monistaminen käyettävissä olevalla tekniikalla toimivan
+kirjapainokoneen avulla. Ihmisten piti noina aikoina tehdä tiedon etsimisen,
+omaksumisen, kääntämisen ja tiivistämisen edellyttämä työ käsityönä. Puheen
+nauhoittamiseksi piti odottaa Edisonia – ja silloinkin tuloksena oli
+vain analogisia kopioita.
 
 Nykyisin kieliteknologia tarjoaa mahdollisuuden automatisoida kääntämisen,
 sisällöntuotannon ja tietämyksen hallinnan prosesseja kaikilla Euroopan
-kielillä. Sitä tarvitaan myös mahdollistamaan intuitiivisia kieleen tai
+kielillä. Sitä tarvitaan myös mahdollistamaan helppokäyttöisiä kieleen tai
 puheeseen pohjautuvia käyttöliittymiä kotitalouksille suunnattuihin
 elektronisiin tuotteisiin, ajoneuvoihin, tietokoneisiin ja robotteihin. Vaikka
 kaupalliset ja teolliset sovellukset ovat todellisuudessa vielä kehityksen
@@ -487,24 +506,24 @@ kuten äänipohjaiset käyttöliittymät ja dialogijärjestelmät, kehitettiin h
 erikoistuneille aloille ja niiden suorituskyky on usein rajallinen. Toisaalta
 opettamisen puolella ja viihdeteollisuudessa löytyy huikeita kaupallisia
 mahdollisuuksia integroida kieliteknologioita peleihin,
-kulttuuriperintösivustoihin, opetusviihdepaketteihin, kirjastoihin, erilaisiin 
+kulttuuriperintösivustoihin, opetusviihdepaketteihin, kirjastojen palveluihin, erilaisiin 
 simulaatioympäristöihin ja harjoitteluohjelmiin. Mobiilit tietopalvelut,
 tietokoneavusteinen kielen oppiminen, verkko-opetusympäristöt, itsearvioinnin
 työkalut ja plagioinnin tunnistusohjelmat ovat vain joitakin esimerkkejä
 sovellusaloista, joissa kieliteknologialla voi olla tärkeä rooli. Sosiaalisen
 median sovellusten kuten Twitterin tai Facebookin suosio osoittaa, että
 jatkossakin tarvitaan kehittyneitä kieliteknologioita, joiden avulla voidaan
-tarkkailla viestiliikennettä, tehdä yhteenvetoja keskusteluista, osoittaa
-trendejä kyselyihin perustuen, havaita tunteellisia reaktioita, tunnistaa
-tekijänoikeuksien loukkauksia tai jäljittää väärinkäyttöä.
+tarkkailla viestiliikennettä, tehdä yhteenvetoja keskusteluista, havaita
+trendejä erilaisten kyselyjen perusteella, dokumentoida tunnepohjaisia reaktioita tai tunnistaa 
+tekijänoikeusloukkauksia.
 
-\boxtext{Kieliteknologia auttaa vastaamaan Euroopan moninaisiin monikielisyyden haasteisiin.}
+\boxtext{Kieliteknologia auttaa vastaamaan monikielisyyden haasteisiin.}
 Kieliteknologia tarjoaa Euroopan unionille monenlaisia ratkaisuja. Se auttaa
 meitä vastaamaan Euroopan moninaisiin monikielisyyden haasteisiin – siihen
 arkipäivään, jossa eri kielet elävät luonnostaan sovussa eurooppalaisessa
 liike-elämässä, organisaatioissa ja kouluissa. Mutta kansalaisten tulee voida
 kommunikoida ristiin rastiin Euroopan yhteismarkkina-alueella kielten rajojen
-yli ja tätä kieliteknologia voi edesauttaa tarjoamalla ratkaisuja, jotka ovat
+yli - ja tätä kieliteknologia voi edesauttaa tarjoamalla ratkaisuja, jotka ovat
 kaikkien kansalaisten saavutettavissa ja joiden avulla kommunikointi
 onnistuu kaikilla kielillä. Kieliteknologia voidaan nähdä avustavana
 teknologiana, kun ratkaistaan kielellisen monimuotoisuuden kysymyksiä ja
@@ -536,14 +555,14 @@ Euroopan tulee siksi pitää kiinni edelläkävijän roolistaan monikielisen
 yhteisön teknologisten haasteiden kohtaamisessa ja kehittää uusia menetelmiä
 kehityksen nopeuttamiseksi koko Euroopassa. Nämä voivat tarkoittaa sekä
 tietoteknisiä edistysaskeleita että uusia tekniikoita, kuten yleisön
-osallistamisen menetelmä kansalaisten tietämyksen voidaan hyödyntämiseen.
+osallistamisen menetelmä kansalaisten tietämyksen hyödyntämisessä.
 
 
 
 \subsection{Kielen omaksumisesta}
 
 
-Ennen kuin lähdemme käsittelemään sitä, miten tietokoneet käsittelevät
+Ennen kuin lähdemme pohtimaan tarkemmin sitä, miten tietokoneet käsittelevät
 kieliainesta ja miksi niitä on vaikeaa ohjelmoida hyödyntämään kieltä,
 tarkastelemme lyhyesti ihmisten ensimmäisen ja toisen kielen omaksumista ja sen
 jälkeen tutustumme tarkemmin kieliteknologisten järjestelmien toimintaan.
@@ -554,22 +573,22 @@ ja osallistumalla itse aitoihin vuorovaikutustilanteisiin
 vanhempiensa, sisarustensa ja muiden perheenjäsenten kanssa. Noin
 kaksivuotiaista eteenpäin lapset alkavat tuottaa sanoja ja lyhyitä
 fraaseja itse. Tämä on mahdollista ainoastaan siksi, että ihmisillä on
-geneettinen taipumus matkimiseen ja kuulemansa järkiperäistämiseen.
+geneettinen taipumus matkimiseen ja kuulemansa puheen analysointiin.
 
 Vanhempana lapsen vieraan kielen oppiminen vaatii enemmän vaivannäköä, pääosin
 siksi, että oppija ei enää ole osa kieltä äidinkielenään puhuvien kieliyhteisöä.
 Koulussa vieraat kielet usein omaksutaan opettelemalla kielen kieliopillista
-rakennetta, sanastoa ja oikeinkirjoitusta käyttäen harjoituksia, jotka kuvaavat
+rakennetta, sanastoa ja oikeinkirjoitusta harjoitusten avulla, jotka kuvaavat
 käsitystämme kyseisestä kielestä abstraktien sääntöjen, taulukoiden ja
-esimerkkien avulla. Vieraan kielen oppiminen vaikeutuu iän myötä.
-\boxtext{Kieliteknologisten menetelmien kaksi päätyyppiä oppivat tietoa kielestä samalla tavoin.}
+esimerkkien kautta. Vieraan kielen oppiminen vaikeutuu iän myötä.
+\boxtext{Kieliteknologisten menetelmien päätyypit oppivat tietoa kielestä samalla tavoin.}
 Kieliteknologisten menetelmien kaksi päätyyppiä oppivat tietoa kielestä samalla
 tavoin. Tilastolliset (tai ‘aineistolähtöiset’) lähestymistavat eristävät
 kielitietoa valtavista aitojen esimerkkitekstien kokoelmista. Vaikka
-esimerkiksi oikeinkirjoituksen tarkistimelle riittää yksikielinen teksti
-harjoituttamiseen, konekäännösjärjestelmien harjoituttamiseen tarvitaan
+esimerkiksi oikeinkirjoituksen tarkistimelle riittää harjoitusaineisoksi yksikielinen teksti, 
+konekäännösjärjestelmien treenaamiseen tarvitaan
 rinnakkaistekstejä kahdesta tai useammasta kielestä. Konekäännösalgoritmi oppii
-rakenteita ja päättelee, miten sanat, lyhyet fraasit ja kokonaiset virkkeet on
+niiden rakenteita ja päättelee, miten sanat, lyhyet fraasit ja kokonaiset virkkeet on
 niissä käännetty.
 
 Tilastollinen lähestymistapa saattaa edellyttää miljoonien virkkeiden
@@ -600,7 +619,7 @@ toistaiseksi koettu enemmän tutkimuslaboratoriossa kuin teollisten sovellusten
 maailmassa.
 
 Kuten olemme tässä osiossa nähneet, monet nykyisessä informaatioyhteiskunnassa
-hyödynnettävät sovellukset perustuvat kieliteknologisiin menetelmiin, mikä on
+hyödynnettävät sovellukset perustuvat kieliteknologisiin menetelmiin. Tämä on
 erityisen tyypillistä Euroopan monikieliselle talousmarkkinoiden ja tiedonjaon
 alueelle. Vaikka kieliteknologian parissa on viime vuosina saavutettu
 merkittäviä edistysaskeleita, on kieliteknologisten järjestelmien laadullisessa
@@ -619,14 +638,14 @@ arvioidaan kieliteknologian tämänhetkistä tilaa suomen kielen näkökulmasta.
 
 
 Suomen kieltä puhuu äidinkielenään Suomessa noin 4,8 miljoonaa ihmistä, ja
-suomi on noin 0,5 miljoonan suomalaisen toinen kieli. Suomea puhutaan myös
+se on noin 0,5 miljoonan suomalaisen toinen kieli. Suomea puhutaan myös
 Ruotsissa, Virossa, Venäjällä, Yhdysvalloissa ja Australiassa.
 
 \boxtext{Suomen kieli on yksi Euroopan unionin virallisista kielistä}
-Suomen kieli on yksi Euroopan unionin virallisista kielistä. Suomen
-perustuslain ja kielilain mukaan suomi on ruotsin ohella Suomen toinen
-kansalliskieli. Lisäksi suomi on Ruotsin virallinen vähemmistökieli (vuonna
-2011 lähinnä Pohjois- ja Keski-Ruotsin kunnissa). Suomen ja ruotsin lisäksi
+Suomen perustuslain ja kielilain mukaan suomi on ruotsin ohella Suomen toinen
+kansalliskieli. Lisäksi suomi on Ruotsin virallinen vähemmistökieli (vuonna 
+2011 lähinnä Pohjois- ja Keski-Ruotsin kunnissa). Suomen kieli on yksi 
+Euroopan unionin virallisista kielistä. Suomen ja ruotsin lisäksi
 Suomessa on vanhastaan käytetty kolmea saamen kieltä, pohjoissaamea,
 inarinsaamea ja koltansaamea, Suomen romanikieltä, karjalan kieltä ja kahta
 viittomakieltä. Lähinnä 1800-luvulta lähtien Suomessa on asunut myös venäjän-
@@ -666,7 +685,7 @@ ole kieliopillista sukua eikä artikkeleita.
 Suomen kielen leimallisimpia piirteitä on, että kirjoitus pääosin vastaa
 ääntöasua. Sanan pääpaino on ensimmäisellä tavulla.
 
-\boxtext{Suomen kielen ominaispiirteitä on rikas taivutusjärjestelmä.}
+\boxtext{Suomen kielessä on rikas taivutusjärjestelmä.}
 Suomen kielen ominaispiirteitä on rikas taivutusjärjestelmä. Sanat jakautuvat
 kolmeen pääryhmään: Nomineilla on sija- ja lukutaivutus, ja adjektiivit
 kongruoivat pääsanansa kanssa (\textit{isossa talossa}, \textit{isoissa taloissa}), verbeillä on
@@ -755,7 +774,7 @@ tutkimuskeskuksen tehtävä.
 
 \subsection{Suomen kielen huolto}
 
- \boxtext{Suomen kielen virallinen huolto on lain ja asetuksen mukaan Kotimaisten kielten tutkimuskeskuksen tehtävä.}
+\boxtext{Suomen kielen huolto kuuluu KOTUKSEN tehtäviin.}
 Suomen kielen virallinen huolto on lain ja asetuksen mukaan Kotimaisten kielten
 tutkimuskeskuksen tehtävä. Tutkimuskeskus antaa suosituksia, opastaa, kouluttaa
 sekä kartuttaa ja pitää yllä ajantasaisia suomen kielen tietokantoja.
@@ -783,10 +802,10 @@ yhteistyötä lainlaatijoiden kanssa.
 Noin 56 000 lasta aloittaa vuosittain koulunkäyntinsä suomalaisessa
 peruskoulussa integroidussa yhdeksänvuotisessa koulujärjestelmässä. Suomen
 kielellä on tärkeä asema kaikkien vuosikurssien opetussuunnitelmassa, jossa
-määritellään opetustuntien kokonaismäärä, mutta opetuksen jakautumisesta eri
-vuosiluokkien osalle voidaan päättää paikallisesti. Peruskoulun yhdeksän vuoden
+määritellään opetustuntien kokonaismäärä. Opetuksen jakautumisesta eri
+vuosiluokkien osalle voidaan sitten päättää paikallisesti. Peruskoulun yhdeksän vuoden
 kuluessa oppilaat osallistuvat yhteensä 1554 äidinkielen ja kirjallisuuden oppitunnille.
-\boxtext{Suomi on osallistunut kaikille neljälle PISA-arviointikierrokselle vuosina 2000, 2003, 2006 ja 2009.}
+\boxtext{Suomi on menestynyt kaikilla PISA-arviointikierroksilla.}
 Suomi on osallistunut kaikille neljälle PISA-arviointikierrokselle
 vuosina 2000, 2003, 2006 ja 2009. Testitulokset osoittavat, että
 perusopetus on ollut suomalainen menestystarina siitäkin huolimatta,
@@ -794,7 +813,7 @@ että erot tyttöjen ja poikien suoritustasoissa ovat PISA-arvioihin
 osallistuneiden maiden suurimmat \cite{Literacy}. Vuonna 2009 lukutaito 
 oli arvioinnin keskeinen osa-alue, ja suomalaisten oppilaiden
 suoritusten keskiarvo arvioitiin edellisten PISA-kierrosten tavoin
-kolmanneksi parhaaksi. Lukutaito oli tuolloin arvioinnissa keskeinen osa-alue, 
+kolmanneksi parhaaksi. Lukutaito oli tuolloin arvioinnin keskeinen osa-alue, 
 ja suomalaisten oppilaiden suoritusten keskiarvo
 arvioitiin edellisten PISA-kierrosten tavoin kolmanneksi parhaaksi
 \cite{Pisa2006}. Lukemista tuetaan myös muilla keinoin,
@@ -835,7 +854,7 @@ useimmissa tutkinto-ohjelmissa \cite{Board}.
 \subsection{Kansainvälisiä näkökulmia}
 
 
-\boxtext{Suomen kieli on 1900-luvun lopulle asti ollut kansainvälisissä yhteyksissä vastaanottava kieli. Maailman kaunokirjallisuus ja tieteen saavutukset on saatu Suomeen käännösten välityksellä.}
+\boxtext{Suomen kieli on ollut kansainvälisissä yhteyksissä vastaanottava kieli.}
 Suomen kieli on 1900-luvun lopulle asti ollut kansainvälisissä
 yhteyksissä vastaanottava kieli. Maailman kaunokirjallisuus ja tieteen
 saavutukset on saatu Suomeen käännösten välityksellä. Myös
@@ -907,7 +926,7 @@ pragmaattisista syistä valitsevat englannin: mitä useammat
 asiantuntijat käyttävät kieltä, sitä parempia ja luontevampia
 ilmauksia siihen muodostuu – ja päinvastoin.
 
-Kieliteknologiaa voitaisiin varmaankin käyttää nykyistä suuremmassa
+Kieliteknologiaa voitaisiin käyttää nykyistä suuremmassa
 määrin avuksi. Esimerkiksi laajapohjaisemmat ja nopeammin päivittyvät
 esimerkiksi hallinnon termien ja fraasien tietokannat olisivat
 varmasti avuksi sekä kääntäjille ja tulkeille että virkamiehille,
@@ -920,7 +939,7 @@ siinä päästäisiin työntekoa hyödyttävälle laatutasolle.
 \subsection{Suomen kieli ja Internet}
 
 
-\boxtext{Vuonna 2009 Suomessa oli lähes 1,5 miljoonaa laajkaistaliittymää ja reilusti yli miljoona langatonta yhteyttä.}	
+\boxtext{Suomessa oli lähes 1,5 miljoonaa laajakaistaliittymää vuonna 2009.}	
 Tietokonetta käyttävien suomalaisten talouksien lukumäärä nousi
 tasaisesti vuosina 2000 - 2009 alun 47 prosentista peräti 81
 prosenttiin \cite{OECD-ICT}. Langallisten laajakaistaliittymien osalta
@@ -1039,15 +1058,24 @@ tiedonvälityksen kanava. Puhe- ja tekstiteknologiat käsittelevät tai
 tuottavat kielen eri muotoja, vaikka molemmissa tarvitaan apuna
 sanakirjoja, kielioppisääntöjä ja tietoa merkityksestä.
 
-Kuvassa \ref{X} esitetään kieliteknologian kentän
-osa-alueet.  Viestiessämme yhdistämme kielen muihin viestinnän ja
+Kuvassa \ref{fig:ltincontext-fin} esitetään kieliteknologian kentän
+osa-alueet.  Yhdistämme kielellisen viestinnän muihin viestinnän ja
 informaation tuottamisen tapoihin, esimerkiksi puhe voi sisältää
-eleitä ja kasvojen ilmeitä. Sähköisessä muodossa olevat tekstit taas
+eleitä ja kasvonilmeitä. Sähköisessä muodossa olevat tekstit taas
 linkittyvät kuviin ja ääniin - elokuvien kieli voi esimerkiksi olla
 sekä puhutussa että kirjoitetussa muodossa. Puheteknologiat ja
 tekstiteknologiat limittyvät siten keskenään ja ovat
 vuorovaikutuksessa muiden teknologioiden kanssa, jotka mahdollistavat
 multimodaalisen kommunikaation ja multimediatiedostojen tuottamisen.
+
+\begin{figure}[h!]
+  \colorrule{grey3}{\textwidth}{1.5pt}
+  \center
+  \includegraphics[width=\textwidth]{../_media/finnish/language_technologies}
+  \caption{Kieliteknologia kontekstissa}
+  \label{fig:ltincontext-fin}
+  \colorrule{grey3}{\textwidth}{1.5pt}
+\end{figure}
 
 Seuraavassa tarkastellaan kieliteknologian tärkeimpiä sovellusaloja,
 toisin sanoen kielentarkistusta, hakukonetta, puhesovelluksia ja
@@ -1081,9 +1109,19 @@ kieliteknologiajärjestelmän arkkitehtuuri lyhyesti alla.
 
 Kielenkäsittelyn sovellusohjelmat koostuvat tavallisesti useista
 komponenteista, jotka kuvastavat kielen eri ominaisuuksia. Kuva
-\ref{X} esittää tyypillisen tekstinkäsittelyn arkkitehtuurin
-yksinkertaistetussa muodossa. Ensimmäiset kolme moduulia kuvaavat
-tekstinsyötön rakennetta ja tarkoitusta:
+\ref{fig:textprocessingarch-fin} esittää tyypillisen tekstinkäsittelyn
+arkkitehtuurin yksinkertaistetussa muodossa. Ensimmäiset kolme
+moduulia kuvaavat tekstinsyötön rakennetta ja tarkoitusta:
+
+\begin{figure}[h!]
+  \colorrule{grey3}{\textwidth}{1.5pt}
+  \center
+  \includegraphics[width=\textwidth]{../_media/finnish/text_processing_app_architecture}
+  \caption{Tyypillinen tekstinkäsittelyn arkkitehtuuri}
+  \label{fig:textprocessingarch-fin}
+  \colorrule{grey3}{\textwidth}{1.5pt}
+\end{figure}
+
 \begin{enumerate}
 \item Esiprosessointi puhdistaa dataa, analysoi tai poistaa muotoiluja,
  päättelee lähtökielen, jne.
@@ -1100,9 +1138,9 @@ merkitysrakenteen koneen luettavassa muodossa.
 
 Tekstin analyysin jälkeen tehtäväkohtaiset moduulit pääsevät
 suorittamaan muita operaatioita, kuten automaattista lyhennelmien
-tuottamista ja tietokantahakuja. Näinkin yksinkertaistettuna
-kuvaus sovellusarkkitehtuurista kertoo paljon kieliteknologisten sovellusten 
-monimutkaisuudesta.
+tuottamista ja tietokantahakuja. Näinkin yksinkertaistettu
+kuvaus sovellusarkkitehtuurista jo paljastaa kieliteknologisten sovellusten 
+monimutkaisuuden.
 
 Kieliteknologian sovellusalojen esittelyn jälkeen kuvataan kieliteknologian 
 tutkimuksen ja opetuksen tilanne maassamme lyhyesti ja lopuksi esitellään 
@@ -1118,23 +1156,22 @@ taulukon muodossa lopuksi.
 
 Tässä osiossa keskitytään tärkeimpiin kieliteknologisiin
 työkaluihin ja kieliaineistoihin ja esitetään katsaus kieliteknologiaan
-Suomessa.  \underline{Alleviivatut} työkalut ja kieliaineistot
+Suomessa.  \textbf{Alleviivatut} työkalut ja kieliaineistot
 löytyvät myös yhteenvetotaulukosta.
 
 
 
 \subsubsection{Kielentarkistus}
 
-
 Useimmat tekstinkäsittelyohjelmia käyttäneet tietävät, että oikeinkirjoituksen 
 tarkistin tuo esiin kirjoitusvirheet niitä korostamalla ja ehdottaa niihin
 korjauksia. Ensimmäiset oikeinkirjoitusta tarkistavat ohjelmat
 vertasivat tekstistä irrotettuja sanoja sanakirjaan. Tarkistimet ovat niistä ajoista 
-kehittyneet. Ne tunnistavat kielikohtaisten \underline{kieliopillisen analyysin}
+kehittyneet, ne tunnistavat jo kielikohtaisten \textbf{kieliopillisen analyysin}
 algoritmien avulla sanojen morfologiasta johtuvia virheitä tekstissä 
 (esim. monikon muodostus) ja syntaktisia ongelmia, kuten
 puuttuvan verbin tai kongruenssivirheen (\textit{me *kirjoittaa
-kirjeen}). Useimmat oikeinkirjoituksen tarkistimet eivät kuitenkaan
+kirjeen}). Useimmat englannin oikeinkirjoituksen tarkistimet eivät kuitenkaan
 löydä virheitä seuraavasta englanninkielisestä tekstistä:
 \begin{itemize} \item[] {\foreignlanguage{english}{\textit{I have a
 spelling checker,}}}
@@ -1147,9 +1184,8 @@ spelling checker,}}}
                 {\textit{Miss steaks aye can knot sea.}}} \cite{Surprise}
 \end{itemize}
 
-Tämänkaltaisten virheiden löytyminen edellyttää yleensä
-käyttöympäristön tutkimusta, esimerkiksi oheisessa tapauksessa
-ohjelman pitäisi päätellä, tulisiko sanan alkaa 
+Tämänkaltaisten virheiden löytyminen edellyttää yleensä tietoa
+käyttöympäristöstä, esimerkkinä sen päättäminen, tulisiko sanan alkaa
 isolla kirjaimella vai ei:
 \begin{itemize}
 \item[] \textit{Muista ottaa kaneli mukaan.}
@@ -1157,7 +1193,7 @@ isolla kirjaimella vai ei:
 \item[] \textit{Muista ottaa Kaneli mukaan.}
 \end{itemize}
 Vastaavissa tapauksissa tarvitaan joko
-kielikohtaisten \underline{kielioppien} muotoilemista, toisin
+kielikohtaisten \textbf{kielioppien} muotoilemista, toisin
 sanoen paljon kielitieteellistä osaamista ja
 käsityötä, tai vaihtoehtoisesti voidaan käyttää apuna tilastollisia
 kielimalleja laskemaan, millä todennäköisyydellä tietyn sanan voidaan odottaa 
@@ -1167,24 +1203,33 @@ esiintyy paljon todennäköisemmin ainesanana kuin
 erisnimenä. Tilastollinen kielimalli voidaan johtaa aineistosta
 automaattisesti, kunhan käytettävissä on tarpeeksi suuri määrä
 (virheetöntä) kieliainesta, eli tehtävään soveltuva
-\underline{tekstikorpus}. Tähän asti tilastollisia malleja on enimmäkseen kehitetty
+\textbf{tekstikorpus}. Tähän asti tilastollisia malleja on enimmäkseen kehitetty
 ja arvioitu englanninkielistä kieliainesta varten. Mallit eivät kuitenkaan
 ole siirrettävissä suoraan suomen kielen käsittelyyn, johtuen mm.
 suomen suhteellisen vapaasta sanajärjestyksestä, yhdyssanojen
 muodostuksesta ja sanojen taipumisesta.
 
- \boxtext{Kielentarkistus ei toimintona sisälly ainoastaan tekstinkäsittelyohjelmiin, vaan sitä käytetään myös kirjoittajan apuvälineohjelmistoissa.}
+\begin{figure}[h!]
+  \colorrule{grey3}{\textwidth}{1.5pt}
+  \center
+  \includegraphics[width=\textwidth]{../_media/finnish/language_checking}
+  \caption{Kielentarkistus (tilastollinen; sääntöpohjainen)}
+  \label{fig:langcheckingarch-fin}
+  \colorrule{grey3}{\textwidth}{1.5pt}
+\end{figure}
+
+\boxtext{Kielentarkistus on myös kirjoittajan apuväline.}
 
 Kielentarkistustoiminto ei sisälly ainoastaan
 tekstinkäsittelyohjelmiin, vaan se löytyy myös kirjoittajan
-apuvälineistä, vaikkapa ohjelmista, joilla kirjoitetaan käsikirjoja ja muuta
+apuvälineistä, vaikkapa ohjelmista, joiden avulla kirjoitetaan käsikirjoja ja muuta
 dokumentaatiota noudattaen tietyn erikoisalan, esimerkiksi
 terveydenhuollon tai rakennustekniikan, usein monimutkaisia
 standardeja. Lähdettyään kansainvälisille markkinoille kääntämisen ja 
-lokalisoinnin avulla, monet yritykset ovat alkaneet
+lokalisoinnin avulla monet yritykset ovat alkaneet
 panostaa entistä enemmän teknisen dokumentoinnin laatuun. Ne haluavat
 välttyä asiakkaiden valituksilta ja vahingonkorvausvaatimuksilta,
-jotka ovat usein tuloksena huonosti ymmärretyistä ohjeista johtuvasta
+jotka ovat usein tulosta huonosti ymmärretyistä ohjeista johtuvasta
 tuotteen virheellisestä käytöstä. Luonnollisen kielen
 käsittelyn edistyminen on tuottanut parempia kirjoittajan
 apuvälineitä, jotka auttavat teknisen dokumentaation kirjoittajaa 
@@ -1234,8 +1279,8 @@ materiaalia ja tehokkaat indeksointitekniikat, tuottaa tilastolliseen malliin
 perustuva menetelmä tyydyttäviä tuloksia.
 
 Kehittyneempiä tiedonhakutarpeita varten on syytä yhdistää
-syvempi kielitieteellinen tietämys \underline{semanttiseen analyysiin}.
-Kokeilut, joissa on hyödynnetty \underline{leksikaalisia resursseja} kuten koneluettavat
+syvempi kielitieteellinen tietämys \textbf{semanttiseen analyysiin}.
+Kokeilut, joissa on hyödynnetty \textbf{leksikaalisia resursseja} kuten koneluettavat
 käsitesanakirjat tai ontologiapohjaiset kieliresurssit
 (esim. FinnWordNet) ovat osoittaneet edistymistä osumatarkkuudessa, kun niiden 
 avulla on voitu hyödyntää alkuperäisten hakusanojen ja termien synonyymejä, kuten
@@ -1245,7 +1290,16 @@ avulla on voitu hyödyntää alkuperäisten hakusanojen ja termien synonyymejä,
 ja myös vähemmän toisiinsa sidoksissa olevia termejä
 voidaan hyödyntää.
 
-\boxtext{Seuraavan hakukoneiden sukupolven on syytä perustua paljonkehittyneempään kieliteknologiaan.}
+\begin{figure}[h!]
+  \colorrule{grey3}{\textwidth}{1.5pt}
+  \center
+  \includegraphics[width=\textwidth]{../_media/finnish/web_search_architecture}
+  \caption{Haku verkossa}
+  \label{fig:websearcharch-fin}
+  \colorrule{grey3}{\textwidth}{1.5pt}
+ \end{figure}
+
+\boxtext{Tulevaisuuden hakukoneet perustuvat kehittyneempään kieliteknologiaan.}
 
 Seuraavan hakukoneiden sukupolven on syytä perustua paljon
 kehittyneempään kieliteknologiaan, kun tavoitteena on
@@ -1273,9 +1327,9 @@ automaattisen kääntämisen kaikille mahdollisille lähtökielille ja sen
 jälkeen tulosten kääntämisen takaisin kohdekielelle.
 
 Tietoa varastoidaan nykyisin entistä enemmän muutoinkin kuin
-tekstinä joten tarvitaan tiedonhakua multimediasta, josta haetaan kuvia, 
+tekstinä. Tarvitaan multimediatiedonhakua, kun etsitään kuvia, 
 äänitiedostoja ja videomateriaalia. Ääni- ja videotiedostojen käsittelyssä 
-puheentunnistuksen moduulin tulee konvertoida puheaines tekstiksi 
+puheentunnistuksen moduulin tulee muuntaa puheaines tekstiksi 
 (tai foneettiseen muotoon), jotta sitä voidaan verrata käyttäjän kyselyyn.
 
 Suomessa on vain muutama aktiivisesti hakuteknologioita kehittävä ja soveltava 
@@ -1290,9 +1344,9 @@ Suomessa ole vireillä laajamittaisia hakukoneteknologiaprojekteja.
 \subsubsection{Puheteknologia}
 
 
-\boxtext{Puheteknologioita tarvitaan käyttöliittymiin, kun halutaan keskustella koneen kanssa puheen avulla graafisen näytön, näppäimistön tai hiiren sijaan.}
+\boxtext{Puheteknologioita tarvitaan, kun halutaan kommunikoida koneen kanssa puheen avulla.}
 
-Puheteknologioita tarvitaan käyttöliittymiin, kun halutaan keskustella koneen 
+Puheteknologioita tarvitaan mukaan käyttöliittymiin, kun halutaan keskustella koneen 
 kanssa puheen avulla graafisen näytön, näppäimistön tai hiiren sijaan. 
 Puhekäyttöliittymiä (Voice User Interface, VUI) käytetäänkin nykyään usein osittain tai täysin
 automatisoiduissa puhelinpalveluissa. Erityisen paljon niitä hyödyntäviä aloja ovat 
@@ -1304,7 +1358,7 @@ vaihtoehtona älypuhelimen ohjaamisessa.
 Puheteknologiat sisältävät neljä aluetta:
 \begin{enumerate}
 
-\item Automaattinen \underline{puheentunnistus} määrittelee, mitkä
+\item Automaattinen \textbf{puheentunnistus} määrittelee, mitkä
     sanat todella sisältyvät tiettyyn äänten sekvenssiin käyttäjän
     tuottamassa
     puheessa.
@@ -1313,56 +1367,66 @@ Puheteknologiat sisältävät neljä aluetta:
     ilmaisun syntaktisen rakenteen analyysin ja sen tulkinnan kyseisen
     järjestelmän mukaisesti.
 
-\item Dialoginhallinta päättelee mihin toimenpiteisiin on syytä ryhtyä
-    ottaen huomioon käyttäjän antaman syötteen ja systeemin toiminnan.
+\item Dialoginhallinta päättelee, mihin toimenpiteisiin on syytä ryhtyä
+	ottaen huomioon käyttäjän antama syöte ja järjestelmän toimintaperiaate.
 
-\item \underline{Puhesynteesi} muuttaa järjestelmän vastauksen
+\item \textbf{Puhesynteesi} muuttaa järjestelmän vastauksen
     ääneksi käyttäjää
     varten.
 
 \end{enumerate}
+
+\clearpage
+  \begin{figure}[h!]
+    \colorrule{grey3}{\textwidth}{1.5pt}
+    \center
+    \includegraphics[width=\textwidth]{../_media/finnish/simple_speech-based_dialogue_architecture}
+    \caption{Puheeseen pohjautuva dialogijärjestelmä}
+    \label{fig:dialoguearch-fin}
+    \colorrule{grey3}{\textwidth}{1.5pt}
+  \end{figure}
+
 Eräs puheteknologiajärjestelmien haasteista on tunnistaa käyttäjän
 puheesta sanat oikein. Tämä merkitsee käytännössä käyttäjän
-puheilmausten rajoittamista siten, että se sisältää vain rajoitetun
-asiasanalistan. Toinen vaihtoehto on luoda käsityönä kielimalleja,
-jotka kattavat suuren määrän luonnollisen kielenkäytön
+puheilmausten rajoittamista siten, että mahdollinen syöte saa sisältää vain rajoitetun
+asiasanalistan jäseniä. Toinen vaihtoehto on luoda käsityönä kielimalleja,
+jotka kattavat suuren määrän luonnollisen kielenkäytön kokonaisia
 ilmauksia. Koneoppimisen teknologioiden avulla voidaan kielimallit
-myös tuottaa automaattisesti laajoista \underline{puhekorpuksista}, jotka ovat
+myös tuottaa automaattisesti laajoista \textbf{puhekorpuksista}, jotka ovat
 puhutun kielen kokoelmia puheäänitiedostoineen ja tekstin
-transkriptioineen. Ilmausten rajoittaminen kuitenkin pakottaa ihmiset
-käyttämään puhekäyttöliittymää ennalta määritellysti, mikä heikentää järjestelmän
+transkriptioineen. Ilmausten rajoittaminen pakottaa kuitenkin ihmiset
+käyttämään puhekäyttöliittymää ennalta määritellyllä tavalla, mikä heikentää järjestelmän
 käytettävyyttä. Toisaalta kattavien kielimallien luominen, hienosäätö
 ja ylläpito nostavat kustannuksia. Puhekäyttöliittymät, jotka hyödyntävät kielimalleja ja
 heti alussa antavat käyttäjän kertoa asiansa joustavammin —
-ja aloittavat tervehtimällä \textit{Miten voin auttaa?} — ovat usein
-pitkälle automatisoituja ja käyttäjien helpommin hyväksyttävissä.
+ja aloittavat vaikkapa tervehtimällä asiakasta ilmauksella\textit{Miten voin auttaa?} — ovat usein
+pitkälle automatisoituja ja siten käyttäjien helpommin hyväksyttävissä ihmisen korvaajaksi.
 
-Yritykset tapaavat käyttää ammattipuhujien etukäteen äänittämiä
-ilmauksia tuottamaan puhekäyttöliittymän tuottamia ilmauksia. Kun
-ilmaus on staattinen, eikä sen sanamuoto riipu käyttöympäristöstä tai
-käyttäjäkohtaisesta tiedosta, voi menetelmä voi tuottaa miellyttävän
-käyttäjäkokemuksen. Mutta ilmaus voi kärsiä epäluonnollisesta puhetavasta, 
+Yritykset tapaavat käyttää ammattipuhujien etukäteen äänittämää
+puhemateriaalia suoraan puhekäyttöliittymän tuottamiksi ilmauksiksi. Kun
+ilmaus on pysyvää laatua, eikä sen sanamuoto riipu käyttöympäristöstä tai
+käyttäjäkohtaisesta tiedosta, voi menetelmä tuottaa miellyttävän
+käyttäjäkokemuksen. Mutta tulos voi tuntua epäluonnolliselta, 
 koska äänitiedostojen palaset on menetelmässä yksinkertaisesti liimattu yhteen. 
-Uuden teknologian puhesynteesijärjestelmät ovat edeltäjiään parempia ja 
-ne pyrkivät luonnollisen tuntuisia ilmauksiin.
+Uuden teknologian puhesynteesijärjestelmät ovat tässä suhteessa edeltäjiään parempia, 
+kun luonnollisuus on otettu selkeämmin tavoitteeksi.
 
 Puheteknologiasovellusten käyttöliittymien teknologiset komponentit
-ovat olleet merkittävän standardoinnin kohteena kuluneen vuosikymmenen
-aikana. Puheentunnistuksen ja puhesynteesin markkinat ovat kokeneet
-voimakkaan keskittymisen. Viisi globaalia toimijaa on hallinnut G20-valtioiden 
+ovat olleet laajan standardointityön kohteena kuluneen vuosikymmenen
+aikana. Puheentunnistuksen ja puhesynteesin markkinat ovat samalla keskittyneet. 
+Viisi alan globaalia toimijaa ovat hallinneet G20-valtioiden 
 (taloudellisesti kestävällä pohjalla olevien valtioiden) kansallisia markkinoita, 
 joista yhdysvaltalainen Nuance ja italialainen Loquendo ovat olleet vahvoja Euroopan
 markkinoilla. Vuonna 2011 Nuance ilmoitti ostaneensa Loquendon, mikä
-kertoo siitä, että markkinoiden keskittyminen on ottanut vielä yhden
-askeleen eteenpäin.
+osoittaa markkinoiden keskittyvän edelleen.
 
 Puheteknologian tutkimusta on tehty Suomessa 1960-luvulta asti ja
 tuloksena on ollut kansainvälisestikin vaikuttavia tuotteita,
 esimerkiksi kannettava Synte 2 -puhesynteesi, joka kehitettiin
 silloisen Teknillisen korkeakoulun (nykyinen Aalto-yliopisto)
-akustiikan ja äänenkäsittelytekniikan laboratoriossa 1970-luvulla, ja
-foneettinen kirjoituskone 1980-luvulla. Joitakin yksittäisiä
-puheteknologisia tuotteita on myös saatu markkinoille 1990-luvun alun
+akustiikan ja äänenkäsittelytekniikan laboratoriossa 1970-luvulla. Toinen esimerkki on 
+1980-luvulla kehitetty foneettinen kirjoituskone. Joitakin yksittäisiä
+puheteknologisia tuotteita on myös tuotu markkinoille 1990-luvun alun
 jälkeen, mutta niiden asiakaskunta on rajoittunut lähinnä
 erityisryhmiin. Sekä julkisella että yksityisellä sektorilla on panostettu 
 merkittäviin tutkimus- ja kehityshankkeisiin, jotka alkavat tuottaa tulosta 
@@ -1404,18 +1468,18 @@ käyttäjille keskitettyinä palveluina.
 \subsubsection{Konekääntäminen}
 
 
-\boxtext{Konekääntämisen peruslähtökohta on korvata yhdellä luonnollisella kielellä kirjoitetun tekstin sanat automaattisesti toisen vastaavan kielen sanoilla.}
+\boxtext{Konekääntämisessä korvataan lähtökielen sanat automaattisesti kohdekielen sanoilla.}
 
 Idea tietokoneiden hyödyntämisestä luonnollisten kielten
-kääntämisessä syntyi jo vuonna 1946, ja alalle myönnettiin huomattavaa
+kääntämisessä syntyi jo vuonna 1946, ja ala sai merkittävää 
 tutkimusrahoitusta heti 1950-luvulla ja uudelleen 1980-luvulla. Siitä
-huolimatta ei konekääntämisen (MT) alalla vielä tähän päivään mennessä
-ole pystytty toteuttamaan alkuperäistä tavoitetta kaikkien
+huolimatta ei \textbf{konekääntämisen} (MT) alalla vielä tähän päivään mennessä
+ole pystytty saavuttamaan alkuperäistä tavoitetta kaikkien
 käytettävissä olevasta automaattisesta kääntimestä.
 
 Konekääntämisen peruslähtökohta on korvata yhdellä luonnollisella
 kielellä kirjoitetun tekstin sanat automaattisesti toisen kielen
-vastaavilla sanoilla.  Lähestymistapa voi olla hyödyllinen
+vastineilla.  Lähestymistapa voi olla hyödyllinen
 tapauksessa, jossa tekstit käsittelevät sellaisia aihealueita, joiden
 kieli on hyvin rajoittunutta ja muodollista, kuten esimerkiksi
 sääraportteja. Mutta kun tavoitteena on tuottaa laadukas käännös
@@ -1432,24 +1496,23 @@ taivutuspäätteen tulkinta syntaksin tasolla, esimerkiksi:
 \item[] \textit{Poliisi tarkkaili miestä kiikarilla.}
 \end{itemize}
 
-Konekäännösjärjestelmiä voidaan rakentaa myös on hyödyntämällä
+Konekäännösjärjestelmiä voidaan rakentaa myös hyödyntämällä
 kielitieteellisiä sääntöjä. Kun kääntäminen tapahtuu sukukielten
-välillä, voi suoran korvaamisen menetelmä olla järkevä tapauksissa,
-joita yllä oleva esimerkki edustaa. Mutta sääntöpohjaiset (tai
+välillä, voi suoran korvaamisen menetelmä olla järkevä. Mutta sääntöpohjaiset (tai
 kielitieteelliseen tietoon pohjautuvat) järjestelmät usein analysoivat
-lähtötekstin ja luovat symbolinen representaation välivaiheen, josta
-kohdekielinen teksti voidaan generoida. Näiden menetelmien
-onnistumisaste on täysin riippuvainen siitä, onko saatavilla laajoja
-sanastoja joihin morfologista, syntaktista ja semanttista tietoa on
-koodattuna, sekä osaavien lingvistien koostamia laajoja
-kieliopillisten sääntöjen kokoelmia. Kokonaisuudessaan prosessi on
+lähtötekstin ja luovat symbolisen representaation välivaiheen, josta
+kohdekielinen teksti voidaan sitten generoida. Näiden menetelmien
+toimivuus ja lopputuloksen laatu ovat täysin riippuvaisia siitä, onko saatavilla laajoja
+sanastoja, joihin morfologista, syntaktista ja semanttista tietoa on
+koodattu ja onko asiansa osaavien lingvistien koostamia laajoja
+kieliopillisten sääntöjen kokoelmia käytettävissä. Kokonaisuudessaan prosessi on
 pitkä ja tulee siksi usein kalliiksi.
 
 1980-luvun loppupuolella, kun tietokoneiden tehokkuus kasvoi ja
 tekniikka halpeni, kiinnostus konekääntämisen tilastollisia malleja
 kohtaan heräsi jälleen. Tilastolliset mallit ovat kehittyneet
-kaksikielisten tekstikorpusten analysoinnista, esimerkkinä
-Europarl-\underline{rinnakkaiskorpus}, joka sisältää Euroopan parlamentin
+kaksikielisten tekstikorpusten analysoinnin pohjalta, esimerkkinä
+Europarl-\textbf{rinnakkaiskorpus}, joka sisältää Euroopan parlamentin
 puheenvuorot 11 eurooppalaisella kielellä. Kun aineistoa on tarpeeksi,
 tilastollinen konekäännin saavuttaa riittävän tarkkuuden tuottamalla
 vieraan kielen merkityksen likiarvoja. Se tuottaa todennäköisistä
@@ -1459,22 +1522,31 @@ tilastolliset (tai aineistopohjaiset) konekääntimet tuottavat usein
 kieliopillisesti heikkoa tulosta.  Aineistopohjaisen konekääntämisen
 hyöty syntyy siitä, että se edellyttää vähemmän inhimillistä työtä ja
 kattaa myös kielikohtaisia ominaispiirteitä (esim. idiomaattiset
-ilmaukset), jotka saattava jäädä huomaamatta tietämyspohjaisissa
+ilmaukset), jotka saattava jäädä ilman huomiota tietämyspohjaisissa
 järjestelmissä.
+
+\begin{figure}[h!]
+  \colorrule{grey3}{\textwidth}{1.5pt}
+  \center
+  \includegraphics[width=\textwidth]{../_media/finnish/machine_translation}
+  \caption{Konekäännös (tilastollinen; sääntöpohjainen)}
+  \label{fig:mtarch-fin}
+  \colorrule{grey3}{\textwidth}{1.5pt}
+\end{figure}
 
 \boxtext{Konekääntäminen on erityisen haastavaa suomen kielen osalta.}
 
 Tietämyspohjaisen ja aineistopohjaisen konekääntämisen vahvuudet ja
 heikkoudet tapaavat olla toisiaan täydentäviä, joten nykyisin tutkijat
-keskittyvät hybridiratkaisuihin, jotka yhdistävät molemmat
-menetelmät. Eräs lähestymistapa käyttää sekä tietämyspohjaisia että
-aineistopohjaisia järjestelmiä yhdessä valintamoduulin päättäessä mikä
-virkkeen vaihtoehtoisista vastineista on paras.  Tulokset pidempien
-kuin noin 12 sanan virkkeiden osalta ovat usein kaikkea muuta kuin
-täydellisiä. Parempi ratkaisu onkin yhdistää useamman vastinevirkkeen
-parhaat palat: tämä prosessi voi olla suhteellisen monimutkainen, kun
-useiden vaihtoehtojen toisiaan vastaavat palaset eivät aina ole
-itsestään selviä ja ne tulee pystyä kohdistamaan toisiinsa
+keskittyvät molemmat menetelmät yhdistäviin hybridiratkaisuihin. 
+On myös kokeiltu lähestymistapaa, jossa käytetään sekä tietämyspohjaisia että
+aineistopohjaisia järjestelmiä yhdessä, jolloin tarvitaan erillinen valintaosio 
+tekemään valinta vaihtoehtoisisten vastineiden välillä.  Tulokset pidempien kuin noin 12 sanan 
+virkkeiden osalta ovat usein vähemmän hyviä. Paremmaksi ratkaisuksi on osoittautunut 
+parhaiden palojen yhdistäminen useammasta vastineeksi ehdotetusta virkkestä. 
+Tällöin prosessi voi tosin olla suhteellisen monimutkainen, kun
+ei aina ole ilmeistä, mitkä palaset monista vaihtoehdoista parhaiten vastaavat
+toisiaan, ja palaset tulisi lisäksi pystyä kohdistamaan toisiinsa
 luotettavasti.
 
 Suomi ei ehtinyt mukaan ensimmäisen sukupolven konekäännöshankkeisiin,
@@ -1496,68 +1568,86 @@ tilastollisille konekäännösjärjestelmille. Aalto-yliopistossa toimiva
 tutkimusryhmä työskentelee suomen kielen morfologian ja tilastollisen
 konekäännöksen kysymysten parissa.
 
-Konekäännösjärjestelmien laadun parantamisessa on jatkossa valtavasti
-potentiaalia. Haasteena on kieliresurssien sovittaminen tietyn alan
-tarpeisiin ja teknologian integrointi työnkulun prosesseihin, jotka jo
-sisältävät termitietokannat ja käännösmuistit. Toinen ongelma on, että
-useimmat nykyisistä järjestelmistä ovat englantikeskeisiä ja tukea
-löytyy vain harvalle kielelle suomesta tai suomeen käännettäessä. Tämä
-johtaa kitkaan käännöksen työnkulussa ja pakottaa konekäännöstuotteen
-käyttäjät opettelemaan erilaisia sanaston koodaustyökaluja eri
-järjestelmiä varten.
+Konekäännösjärjestelmien laadun parantamisessa on jatkossa paljon
+potentiaalia. Haasteena ovat kieliresurssien sovittaminen tietyn alan
+tarpeisiin ja toisaalta teknologian integrointi työnkulun prosesseihin, joihin 
+termitietokannat ja käännösmuistit jo sisältyvät. Lisäksi useimmat nykyisistä 
+järjestelmistä ovat on tehty englannin kääntämistä varten, ja tukea
+löytyy vain harvalle kielelle suomesta tai suomeen käännettäessä. Käännöksen 
+työnkulku monimutkaistuu, jos konekäännöohjelman käyttäjä joutuu opettelemaan 
+erilaisia sanaston koodaustyökaluja eri järjestelmiä varten.
 
-Arviointikampanjat auttavat vertaamaan konekäännösjärjestelmien
-laatua, eri lähestymistapoja ja järjestelmien tilannetta eri
-kieliparien suhteen. Taulukko \ref{X} sisältää Euromatrix+ -projektin aikana 
-kootut 22 virallisen EU-kielen tulokset kielipareittain (Gaelin kieli ei ollut 
-vertailussa mukana). Tulokset on arvioitu BLEU-pistein, joissa paremman 
-käännöksen pistemäärä on aina korkeampi \cite{BLEU}. Ihminen saisi käännöstehtävästä
-keskimäärin 80 pistettä.
+Konekäännösjärjestelmien arviointihankkeiden tulokset auttavat niiden
+laadun vertailussa, ne selventävät eri lähestymistapoja ja tarjoavat
+tietoa siitä, millaisessa tilanteessa eri kieliparit ovat. Kuva
+\ref{fig:euromatrix} sisältää Euromatrix+ -projektin aikana kootut
+tuolloin 22 virallisen EU-kielen tulokset kielipareittain (Gaelin
+kieli ei ollut vertailussa mukana). Tulokset on arvioitu BLEU-pistein,
+joissa paremman käännöksen pistemäärä on aina korkeampi
+\cite{BLEU}. Ihminen saisi käännöstehtävästä keskimäärin 80 pistettä.
 
 Parhaimmat pisteet (taulukossa vihreällä ja sinisellä värillä) saivat
-kielet, joihin on panostettu yhteistyöhankkeiden kautta ja joiden
-tutkijoilla on käytössään useita rinnakkaiskorpuksia (esimerkkeinä
-englanti, ranska, hollanti, espanja ja saksa). Taulukossa on
-punaisella merkitty huonoimmat tulokset.  Näihin kieliin joko ei ole
-panostettu kehityshankkeiden rahoittamisen kautta tai ne ovat
-rakenteellisesti hyvin paljon muista tutkimuksen kielistä poikkeavia
-(esimerkkeinä unkari, malta ja suomi).
+kielet, joihin on panostettu perustamalla yhteistyöprojekteja ja
+joiden tutkijoilla on käytössään useita rinnakkaiskorpuksia
+(esimerkkeinä englanti, ranska, hollanti, espanja ja
+saksa). Taulukossa on punaisella merkitty huonoimmat tulokset.  Näiden
+kielten kehittämiseen ei joko ole panostettu hankerahoitusta tai ne
+ovat rakenteellisesti erityisen paljon muista tutkituista kielistä
+poikkeavia (esimerkkeinä unkari, malta ja suomi).
 
-
-% \textbf{[[[ISO TAULUKKO PUUTTUU TÄSTÄ. SEMMOINEN MATRIISI TÄYNNÄ PIENIÄ
-% LUKUJA. EI PALJON KAKSIKIELISYYTTÄ KUITENKAAN.]]]}
-
-
-
-
-
-
-% \textbf{Kuva Konekäännösjärjestelmien suorituskyvyn arviointi
-%   kielipareittain Euromatrix+ -projektissa -- Performance of Machine
-%   Translation for Language Pairs in the Euromatrix+
-% Project}
+\begin{sidewaysfigure}
+\centering
+\setlength{\tabcolsep}{0.4em}
+\begin{tabular}{>{\columncolor{orange1}}cccccccccccccccccccccccc}
+    \small
+  & \multicolumn{22}{>{\columncolor{orange1}}c}{Kohdekieli -- Target Language}\\\addlinespace[{-.009cm}]
+  \rowcolor{orange1}  & EN & BG & DE & CS & DA & EL & ES & ET & FI & FR & HU & IT & LT & LV & MT & NL & PL & PT & RO & SK & SL & SV\\
+  EN & -- & \textcolor{blue}{40.5} & \textcolor{blue}{46.8} & \textcolor{green2}{52.6} & \textcolor{green2}{50.0} & \textcolor{blue}{41.0} & \textcolor{green2}{55.2} & \textcolor{purple}{34.8} & \textcolor{purple}{38.6} & \textcolor{green2}{50.1} & \textcolor{purple}{37.2} & \textcolor{green2}{50.4} & \textcolor{purple}{39.6} & \textcolor{blue}{43.4} & \textcolor{purple}{39.8} & \textcolor{green2}{52.3} & \textcolor{blue}{49.2} & \textcolor{green2}{55.0} & \textcolor{blue}{49.0} & \textcolor{blue}{44.7} & \textcolor{green2}{50.7} & \textcolor{green2}{52.0}\\
+  BG & \textcolor{green}{61.3} & -- & \textcolor{purple}{38.7} & \textcolor{purple}{39.4} & \textcolor{purple}{39.6} & \textcolor{purple}{34.5} & \textcolor{blue}{46.9} & \textcolor{red3}{25.5} & \textcolor{red3}{26.7} & \textcolor{blue}{42.4} & \textcolor{red3}{22.0} & \textcolor{blue}{43.5} & \textcolor{red3}{29.3} & \textcolor{red3}{29.1} & \textcolor{red3}{25.9} & \textcolor{blue}{44.9} & \textcolor{purple}{35.1} & \textcolor{blue}{45.9} & \textcolor{purple}{36.8} & \textcolor{purple}{34.1} & \textcolor{purple}{34.1} & \textcolor{purple}{39.9}\\
+  DE & \textcolor{green2}{53.6} & \textcolor{red3}{26.3} & -- & \textcolor{purple}{35.4} & \textcolor{blue}{43.1} & \textcolor{purple}{32.8} & \textcolor{blue}{47.1} & \textcolor{red3}{26.7} & \textcolor{red3}{29.5} & \textcolor{purple}{39.4} & \textcolor{red3}{27.6} & \textcolor{blue}{42.7} & \textcolor{red3}{27.6} & \textcolor{purple}{30.3} & \textcolor{red2}{19.8} & \textcolor{green2}{50.2} & \textcolor{purple}{30.2} & \textcolor{blue}{44.1} & \textcolor{purple}{30.7} & \textcolor{red3}{29.4} & \textcolor{purple}{31.4} & \textcolor{blue}{41.2}\\
+  CS & \textcolor{green2}{58.4} & \textcolor{purple}{32.0} & \textcolor{blue}{42.6} & -- & \textcolor{blue}{43.6} & \textcolor{purple}{34.6} & \textcolor{blue}{48.9} & \textcolor{purple}{30.7} & \textcolor{purple}{30.5} & \textcolor{blue}{41.6} & \textcolor{red3}{27.4} & \textcolor{blue}{44.3} & \textcolor{purple}{34.5} & \textcolor{purple}{35.8} & \textcolor{red3}{26.3} & \textcolor{blue}{46.5} & \textcolor{purple}{39.2} & \textcolor{blue}{45.7} & \textcolor{purple}{36.5} & \textcolor{blue}{43.6} & \textcolor{blue}{41.3} & \textcolor{blue}{42.9}\\
+  DA & \textcolor{green2}{57.6} & \textcolor{red3}{28.7} & \textcolor{blue}{44.1} & \textcolor{purple}{35.7} & -- & \textcolor{purple}{34.3} & \textcolor{blue}{47.5} & \textcolor{red3}{27.8} & \textcolor{purple}{31.6} & \textcolor{blue}{41.3} & \textcolor{red3}{24.2} & \textcolor{blue}{43.8} & \textcolor{red3}{29.7} & \textcolor{purple}{32.9} & \textcolor{red3}{21.1} & \textcolor{blue}{48.5} & \textcolor{purple}{34.3} & \textcolor{blue}{45.4} & \textcolor{purple}{33.9} & \textcolor{purple}{33.0} & \textcolor{purple}{36.2} & \textcolor{blue}{47.2}\\
+  EL & \textcolor{green2}{59.5} & \textcolor{purple}{32.4} & \textcolor{blue}{43.1} & \textcolor{purple}{37.7} & \textcolor{blue}{44.5} & -- & \textcolor{green2}{54.0} & \textcolor{red3}{26.5} & \textcolor{red3}{29.0} & \textcolor{blue}{48.3} & \textcolor{red3}{23.7} & \textcolor{blue}{49.6} & \textcolor{red3}{29.0} & \textcolor{purple}{32.6} & \textcolor{red3}{23.8} & \textcolor{blue}{48.9} & \textcolor{purple}{34.2} & \textcolor{green2}{52.5} & \textcolor{purple}{37.2} & \textcolor{purple}{33.1} & \textcolor{purple}{36.3} & \textcolor{blue}{43.3}\\
+  ES & \textcolor{green}{60.0} & \textcolor{purple}{31.1} & \textcolor{blue}{42.7} & \textcolor{purple}{37.5} & \textcolor{blue}{44.4} & \textcolor{purple}{39.4} & -- & \textcolor{red3}{25.4} & \textcolor{red3}{28.5} & \textcolor{green2}{51.3} & \textcolor{red3}{24.0} & \textcolor{green2}{51.7} & \textcolor{red3}{26.8} & \textcolor{purple}{30.5} & \textcolor{red3}{24.6} & \textcolor{blue}{48.8} & \textcolor{purple}{33.9} & \textcolor{green2}{57.3} & \textcolor{purple}{38.1} & \textcolor{purple}{31.7} & \textcolor{purple}{33.9} & \textcolor{blue}{43.7}\\
+  ET & \textcolor{green2}{52.0} & \textcolor{red3}{24.6} & \textcolor{purple}{37.3} & \textcolor{purple}{35.2} & \textcolor{purple}{37.8} & \textcolor{red3}{28.2} & \textcolor{blue}{40.4} & -- & \textcolor{purple}{37.7} & \textcolor{purple}{33.4} & \textcolor{purple}{30.9} & \textcolor{purple}{37.0} & \textcolor{purple}{35.0} & \textcolor{purple}{36.9} & \textcolor{red3}{20.5} & \textcolor{blue}{41.3} & \textcolor{purple}{32.0} & \textcolor{purple}{37.8} & \textcolor{red3}{28.0} & \textcolor{purple}{30.6} & \textcolor{purple}{32.9} & \textcolor{purple}{37.3}\\
+  FI & \textcolor{blue}{49.3} & \textcolor{red3}{23.2} & \textcolor{purple}{36.0} & \textcolor{purple}{32.0} & \textcolor{purple}{37.9} & \textcolor{red3}{27.2} & \textcolor{purple}{39.7} & \textcolor{purple}{34.9} & -- & \textcolor{red3}{29.5} & \textcolor{red3}{27.2} & \textcolor{purple}{36.6} & \textcolor{purple}{30.5} & \textcolor{purple}{32.5} & \textcolor{red2}{19.4} & \textcolor{blue}{40.6} & \textcolor{red3}{28.8} & \textcolor{purple}{37.5} & \textcolor{red3}{26.5} & \textcolor{red3}{27.3} & \textcolor{red3}{28.2} & \textcolor{purple}{37.6}\\
+  FR & \textcolor{green}{64.0} & \textcolor{purple}{34.5} & \textcolor{blue}{45.1} & \textcolor{purple}{39.5} & \textcolor{blue}{47.4} & \textcolor{blue}{42.8} & \textcolor{green}{60.9} & \textcolor{red3}{26.7} & \textcolor{purple}{30.0} & -- & \textcolor{red3}{25.5} & \textcolor{green2}{56.1} & \textcolor{red3}{28.3} & \textcolor{purple}{31.9} & \textcolor{red3}{25.3} & \textcolor{green2}{51.6} & \textcolor{purple}{35.7} & \textcolor{green}{61.0} & \textcolor{blue}{43.8} & \textcolor{purple}{33.1} & \textcolor{purple}{35.6} & \textcolor{blue}{45.8}\\
+  HU & \textcolor{blue}{48.0} & \textcolor{red3}{24.7} & \textcolor{purple}{34.3} & \textcolor{purple}{30.0} & \textcolor{purple}{33.0} & \textcolor{red3}{25.5} & \textcolor{purple}{34.1} & \textcolor{red3}{29.6} & \textcolor{red3}{29.4} & \textcolor{purple}{30.7} & -- & \textcolor{purple}{33.5} & \textcolor{red3}{29.6} & \textcolor{purple}{31.9} & \textcolor{red2}{18.1} & \textcolor{purple}{36.1} & \textcolor{red3}{29.8} & \textcolor{purple}{34.2} & \textcolor{red3}{25.7} & \textcolor{red3}{25.6} & \textcolor{red3}{28.2} & \textcolor{purple}{30.5}\\
+  IT & \textcolor{green}{61.0} & \textcolor{purple}{32.1} & \textcolor{blue}{44.3} & \textcolor{purple}{38.9} & \textcolor{blue}{45.8} & \textcolor{blue}{40.6} & \textcolor{red3}{26.9} & \textcolor{red3}{25.0} & \textcolor{red3}{29.7} & \textcolor{green2}{52.7} & \textcolor{red3}{24.2} & -- & \textcolor{red3}{29.4} & \textcolor{purple}{32.6} & \textcolor{red3}{24.6} & \textcolor{green2}{50.5} & \textcolor{purple}{35.2} & \textcolor{green2}{56.5} & \textcolor{purple}{39.3} & \textcolor{purple}{32.5} & \textcolor{purple}{34.7} & \textcolor{blue}{44.3}\\
+  LT & \textcolor{green2}{51.8} & \textcolor{red3}{27.6} & \textcolor{purple}{33.9} & \textcolor{purple}{37.0} & \textcolor{purple}{36.8} & \textcolor{red3}{26.5} & \textcolor{red3}{21.1} & \textcolor{purple}{34.2} & \textcolor{purple}{32.0} & \textcolor{purple}{34.4} & \textcolor{red3}{28.5} & \textcolor{purple}{36.8} & -- & \textcolor{blue}{40.1} & \textcolor{red3}{22.2} & \textcolor{purple}{38.1} & \textcolor{purple}{31.6} & \textcolor{purple}{31.6} & \textcolor{red3}{29.3} & \textcolor{purple}{31.8} & \textcolor{purple}{35.3} & \textcolor{purple}{35.3}\\
+  LV & \textcolor{green2}{54.0} & \textcolor{red3}{29.1} & \textcolor{purple}{35.0} & \textcolor{purple}{37.8} & \textcolor{purple}{38.5} & \textcolor{red3}{29.7} & \textcolor{red2}{8.0} & \textcolor{purple}{34.2} & \textcolor{purple}{32.4} & \textcolor{purple}{35.6} & \textcolor{red3}{29.3} & \textcolor{purple}{38.9} & \textcolor{purple}{38.4} & -- & \textcolor{red3}{23.3} & \textcolor{blue}{41.5} & \textcolor{purple}{34.4} & \textcolor{purple}{39.6} & \textcolor{purple}{31.0} & \textcolor{purple}{33.3} & \textcolor{purple}{37.1} & \textcolor{purple}{38.0}\\
+  MT & \textcolor{green}{72.1} & \textcolor{purple}{32.2} & \textcolor{purple}{37.2} & \textcolor{purple}{37.9} & \textcolor{purple}{38.9} & \textcolor{purple}{33.7} & \textcolor{blue}{48.7} & \textcolor{red3}{26.9} & \textcolor{red3}{25.8} & \textcolor{blue}{42.4} & \textcolor{red3}{22.4} & \textcolor{blue}{43.7} & \textcolor{purple}{30.2} & \textcolor{purple}{33.2} & -- & \textcolor{blue}{44.0} & \textcolor{purple}{37.1} & \textcolor{blue}{45.9} & \textcolor{purple}{38.9} & \textcolor{purple}{35.8} & \textcolor{blue}{40.0} & \textcolor{blue}{41.6}\\
+  NL & \textcolor{green2}{56.9} & \textcolor{red3}{29.3} & \textcolor{blue}{46.9} & \textcolor{purple}{37.0} & \textcolor{blue}{45.4} & \textcolor{purple}{35.3} & \textcolor{blue}{49.7} & \textcolor{red3}{27.5} & \textcolor{red3}{29.8} & \textcolor{blue}{43.4} & \textcolor{red3}{25.3} & \textcolor{blue}{44.5} & \textcolor{red3}{28.6} & \textcolor{purple}{31.7} & \textcolor{red3}{22.0} & -- & \textcolor{purple}{32.0} & \textcolor{blue}{47.7} & \textcolor{purple}{33.0} & \textcolor{purple}{30.1} & \textcolor{purple}{34.6} & \textcolor{blue}{43.6}\\
+  PL & \textcolor{green}{60.8} & \textcolor{purple}{31.5} & \textcolor{blue}{40.2} & \textcolor{blue}{44.2} & \textcolor{blue}{42.1} & \textcolor{purple}{34.2} & \textcolor{blue}{46.2} & \textcolor{red3}{29.2} & \textcolor{red3}{29.0} & \textcolor{blue}{40.0} & \textcolor{red3}{24.5} & \textcolor{blue}{43.2} & \textcolor{purple}{33.2} & \textcolor{purple}{35.6} & \textcolor{red3}{27.9} & \textcolor{blue}{44.8} & -- & \textcolor{blue}{44.1} & \textcolor{purple}{38.2} & \textcolor{purple}{38.2} & \textcolor{purple}{39.8} & \textcolor{blue}{42.1}\\
+  PT & \textcolor{green}{60.7} & \textcolor{purple}{31.4} & \textcolor{blue}{42.9} & \textcolor{purple}{38.4} & \textcolor{blue}{42.8} & \textcolor{blue}{40.2} & \textcolor{green}{60.7} & \textcolor{red3}{26.4} & \textcolor{red3}{29.2} & \textcolor{green2}{53.2} & \textcolor{red3}{23.8} & \textcolor{green2}{52.8} & \textcolor{red3}{28.0} & \textcolor{purple}{31.5} & \textcolor{red3}{24.8} & \textcolor{blue}{49.3} & \textcolor{purple}{34.5} & -- & \textcolor{purple}{39.4} & \textcolor{purple}{32.1} & \textcolor{purple}{34.4} & \textcolor{blue}{43.9}\\
+  RO & \textcolor{green}{60.8} & \textcolor{purple}{33.1} & \textcolor{purple}{38.5} & \textcolor{purple}{37.8} & \textcolor{blue}{40.3} & \textcolor{purple}{35.6} & \textcolor{green2}{50.4} & \textcolor{red3}{24.6} & \textcolor{red3}{26.2} & \textcolor{blue}{46.5} & \textcolor{red3}{25.0} & \textcolor{blue}{44.8} & \textcolor{red3}{28.4} & \textcolor{red3}{29.9} & \textcolor{red3}{28.7} & \textcolor{blue}{43.0} & \textcolor{purple}{35.8} & \textcolor{blue}{48.5} & -- & \textcolor{purple}{31.5} & \textcolor{purple}{35.1} & \textcolor{purple}{39.4}\\
+  SK & \textcolor{green}{60.8} & \textcolor{purple}{32.6} & \textcolor{purple}{39.4} & \textcolor{blue}{48.1} & \textcolor{blue}{41.0} & \textcolor{purple}{33.3} & \textcolor{blue}{46.2} & \textcolor{red3}{29.8} & \textcolor{red3}{28.4} & \textcolor{purple}{39.4} & \textcolor{red3}{27.4} & \textcolor{blue}{41.8} & \textcolor{purple}{33.8} & \textcolor{purple}{36.7} & \textcolor{red3}{28.5} & \textcolor{blue}{44.4} & \textcolor{purple}{39.0} & \textcolor{blue}{43.3} & \textcolor{purple}{35.3} & -- & \textcolor{blue}{42.6} & \textcolor{blue}{41.8}\\
+  SL & \textcolor{green}{61.0} & \textcolor{purple}{33.1} & \textcolor{purple}{37.9} & \textcolor{blue}{43.5} & \textcolor{blue}{42.6} & \textcolor{purple}{34.0} & \textcolor{blue}{47.0} & \textcolor{purple}{31.1} & \textcolor{red3}{28.8} & \textcolor{purple}{38.2} & \textcolor{red3}{25.7} & \textcolor{blue}{42.3} & \textcolor{purple}{34.6} & \textcolor{purple}{37.3} & \textcolor{purple}{30.0} & \textcolor{blue}{45.9} & \textcolor{purple}{38.2} & \textcolor{blue}{44.1} & \textcolor{purple}{35.8} & \textcolor{purple}{38.9} & -- & \textcolor{blue}{42.7}\\
+  SV & \textcolor{green2}{58.5} & \textcolor{red3}{26.9} & \textcolor{blue}{41.0} & \textcolor{purple}{35.6} & \textcolor{blue}{46.6} & \textcolor{purple}{33.3} & \textcolor{blue}{46.6} & \textcolor{red3}{27.4} & \textcolor{purple}{30.9} & \textcolor{purple}{38.9} & \textcolor{red3}{22.7} & \textcolor{blue}{42.0} & \textcolor{red3}{28.2} & \textcolor{purple}{31.0} & \textcolor{red3}{23.7} & \textcolor{blue}{45.6} & \textcolor{purple}{32.2} & \textcolor{blue}{44.2} & \textcolor{purple}{32.7} & \textcolor{purple}{31.3} & \textcolor{purple}{33.5} & --\\
+  \end{tabular}
+\label{tab:euromatrix}
+\caption{Konekäännös 22 EU-kielen välillä --- \textcolor{grey1}{Machine translation between 22 EU-languages \cite{BLEU}}}
+\label{fig:euromatrix}
+\end{sidewaysfigure}
 
 
 \subsection{Muut sovellusalat}
 
-\boxtext{Kieliteknologiasovellusten rakentaminen edellyttää suurta määrää erilaisia tehtäviä, jotka eivät aina näy järjestelmän ja käyttäjän välisessä vuorovaikutustilanteessa.}
+\boxtext{Kieliteknologisten järjestelmien osat eivät aina näy käyttäjälle.}
 
-Kieliteknologiasovellukset sisältävät usein paljon 
-erilaisia palasia, jotka eivät aina näy järjestelmän ja käyttäjän
-välisessä vuorovaikutustilanteessa, vaan ne toimivat järjestelmän
-sisuksissa tarjoten kuitenkin käyttäjälle merkittäviä
-palveluita. Sovellusten kehitys edellyttää panostamista keskeisiin
-tutkimuskysymyksiin, ja monista sovelluksista onkin vähitellen
-kehittynyt oma erillinen tutkimushaaransa tietokonelingvistiikan
-käsitteen alle.
+Kieliteknologiajärjestelmät sisältävät usein paljon erilaisia piilossa olevia sovelluksia, 
+joita järjestelmän käyttäjä ei havaitse, koska ne toimivat piilossa järjestelmän
+sisuksissa tuottaen kuitenkin käyttäjälle tärkeitä palveluja. Sovellusten kehitys 
+edellyttää monitieteistä tutkimusta, ja monista sovelluksista onkin vähitellen
+kehittynyt oma erillinen tutkimushaaransa tietokonelingvistiikan kattokäsitteen alle.
 
-Esimerkiksi kysymysvastausjärjestelmät ovat aktiivinen tutkimusala,
+Esimerkiksi kysymysvastausjärjestelmien kehittäminen on aktiivinen tutkimusala,
 jonka puitteissa on rakennettu annotoituja kieliaineistoja ja
 järjestetty tieteellisiä kilpailuja. Kysymysvastausjärjestelmä on monimutkaisempi 
-kuin asiasanapohjaiset hakukyselyt, joissa hakukone vastaa
-tuottamalla näkyville valikoiman mahdollisesti hakua vastaavia
-dokumentteja. Käyttäjä voi tehdä konkreettisen kysymyksen ja saada siihen 
-yhden ainoan vastauksen. Esimerkiksi:
+kuin asiasanapohjainen hakukysely, joissa hakukone tuottaa kysymykseen vastaukseksi
+listan valikoiman mahdollisesti hakua vastaavista kokonaisista dokumenteista. Sen käyttäjä 
+voi tehdä konkreettisen kysymyksen ja saada siihen järjestelmältä suoran ja yhden ainoan 
+vastauksen. Esimerkiksi:
 \begin{itemize}
 \item[] \textit{Kysymys: Miten vanha Neil Armstrong oli astuessaan
  kuun pinnalle?}
@@ -1566,37 +1656,32 @@ yhden ainoan vastauksen. Esimerkiksi:
 \end{itemize}
 
 Vaikka kysymysvastausjärjestelmät ovat selvästi osa hakukyselyjen
-ydintä, on termi nykyisin kattotermi sellaisille tutkimuskysymyksille
-kuten mitä eri kysymystyyppejä kielissä on, ja miten niitä pitäisi
+ydintä, se kattaa monenlaisia tutkimuskysymyksiä, 
+kuten esimerkiksi mitä eri kysymystyyppejä kielissä on, ja miten niitä pitäisi
 käsitellä; miten tietyn kokoelman dokumentteja voidaan analysoida ja
-verrata toisiinsa, jotta saadaan selville sisältävätkö ne toisiinsa
-nähden ristiriitaisia vastauksia kysymykseen; ja miten tietty tiedon
-palanen (vastaus) voidaan luotettavasti eristää dokumentista sen
-käyttöympäristö myös huomioiden.
+verrata toisiinsa, jotta saadaan selville, sisältävätkö ne toisiinsa
+nähden ristiriitaisia vastauksia kysymykseen; ja miten hyödyntämällä tietoa 
+aihealueesta tietty tiedon palanen (vastaus) voidaan löytää dokumentista luotettavalla tavalla.
 
-Kysymykset liittyvät edelleen tiedon eristämiseen (IE), joka saavutti
+Tutkimuskohteena kysymykset liittyvät myös tiedon eristämiseen (IE), joka saavutti
 tutkimusalana suosiota, kun tietokonelingvistiikan painopiste siirtyi
 tilastollisten menetelmien tutkimukseen 1990-luvun
 alkupuolella. Tiedon eristämisen menetelmien tavoitteena on tunnistaa
 yksilöityjä tiedonpalasia rajatuista dokumenttityypeistä, kuten
-keskeisiä toimijoita yritysvaltauksissa sen perusteella miten
+keskeisiä toimijoita yritysvaltauksissa sen perusteella, miten
 kaupoista on sanomalehtiartikkeleissa raportoitu.  Raportit
-terroristien aiheuttamista välikohtauksista muodostavat toisen
-tavallisen tutkimuskohteen. Tässä yhteydessä ongelmana on yhdistää
+terrorismista muodostavat toisen tavallisen tutkimuskohteen, jolloin tehtävänä on yhdistää
 aito teksti prototyyppiin, jossa tapahtuman tekijä, kohde, ajankohta,
 sijainti ja seuraamukset määritellään. Alakohtainen mallintaminen on
-ominaista tiedon eristämiselle ja se onkin toinen esimerkki
-teknologiasta, joka toimii sovelluksen taka-alalla hyvin rajattuna
-tutkimuskohteena ja joka käytännössä tarvitsee vain sisällyttää
-sopivaan sovellusympäristöön.
+ominaista tiedon eristämiselle ja onkin toinen esimerkki järjestelmässä taka-alalla 
+toimivasta hyvin rajattavissa olevan tutkimuksen sovelluksesta.
 
-\boxtext{Useimpien tekstiteknologioiden tilanne on suomen suhteen paljon huonompi kuin englannin.}
+\boxtext{Useimpien suomen kielen tekstiteknologioiden tilanne on huonompi kuin englannin.}
 
-Lyhennelmien tuottaminen teksteistä ja \underline{tekstin tuottaminen}
+Lyhennelmän tuottaminen teksteistä ja \textbf{tekstin tuottaminen}
 yleensäkin ovat kaksi toisiinsa rajoittuvaa alaa, jotka voivat toimia joko
-itsenäisinä sovelluksina tai tukisovelluksina
-taka-alalla. Lyhennelmien tuottaminen pyrkii antamaan pitkän tekstin
-sisältämät oleelliset asiat tiiviissä muodossa ja se on esimerkiksi
+itsenäisinä sovelluksina tai tukisovelluksina. Lyhennelmän tuottaminen pyrkii kopioimaan 
+pitkän tekstin sisältämät oleelliset asiat tiiviiseen muotoon ja se on esimerkiksi
 eräs Microsoft Wordin toiminnoista. Sovellus käyttää pääasiassa
 tilastollista menetelmää tekstin keskeisten sanojen tunnistamiseen
 (toisin sanoen sanojen, jotka esiintyvät kyseisessä tekstissä hyvin
@@ -1605,32 +1690,32 @@ yleensä) ja päättelee, mitkä virkkeet sisältävät eniten tällaisia
 keskeisiä sanoja. Kyseiset virkkeet eristetään ja liitetään toisiinsa
 tiivistelmän luomiseksi. Tässä varsin tavallisessa ja usein
 kaupallisessa sovelluksessa tiivistäminen on yksinkertaisesti
-virkkeiden eristämistä ja näin teksti tiivistyy osaan alkuperäisistä
-virkkeistä. Vaihtoehtoinen ja jo jokin verran tutkittu lähestymistapa
-on sellaisten täysin uusien virkkeiden generointi, jotka eivät esiinny
+virkkeiden eristämistä ja näin tiivistelmä muodostuu alkuperäisistä
+virkkeistä sellaisinaan. Vaihtoehtoinen ja jo jokin verran tutkittu lähestymistapa
+on täysin uudenlaisten virkkeiden generointi, jotka eivät esiinny
 sellaisinaan lähtötekstissä. Prosessi edellyttää tekstin syvempää
 ymmärtämistä, mikä tarkoittaa käytännössä myös sitä, että sovellus on
-vähemmän vakaa. Tekstin tuottamisen sovellus on loppujen lopuksi
-harvemmin käytössä itsenäisenä, vaan se on useimmiten upotettu
-laajempaan ohjelmistoympäristöön, kuten lääketieteelliseen
+ainakin toistaiseksi selvästi vähemmän vakaa. Tekstin tuottamisen sovellus on lopulta
+harvemmin käytössä itsenäisenä vaan useimmiten upotettuna
+laajempaan ohjelmistoympäristöön, kuten esimerkiksi lääketieteelliseen
 potilastietoja keräävään, säilyttävään ja prosessoivaan
-tietojärjestelmään. Raporttien tuottaminen on siis vain yksi tekstin
-lyhennelmien tuottamisen sovellusaloista.
+tietojärjestelmään. Raporttien tuottaminen on yksi lyhennelmän 
+tuottamisen teknologian monista sovelluksista.
 
-Useimpien tekstiteknologioiden tilanne on suomen suhteen paljon
+Useimpien tekstiteknologioiden tilanne on suomen kielen osalta paljon
 huonompi kuin englannin, jossa kysymysvastausjärjestelmät, tiedon
 eristäminen ja tekstin tiivistelmien tuottamisen menetelmät ovat
 1990-luvun jälkeen olleet useiden avoimien kilpailujen
 aiheena. Kilpailuja on pääasiallisesti järjestänyt DARPA/ NIST
 Yhdysvalloissa ja niiden kautta on pystytty merkittävästi parantamaan
-alan tilannetta, mutta vain englannin kielen suhteen, eikä suomen
-kieli ole ollut hankkeissa mukana. Suomen kielestä ei siten myöskään
+alan tilannetta, mutta vain englannin kielen suhteen, suomen kieli
+kun ei ole ollut hankkeissa mukana. Suomen kielestä ei siten myöskään
 ole tuloksena saatu annotoituja korpuksia tai muita
 resursseja. Puhtaasti tilastollisiin menetelmiin pohjautuvat
 tiivistämisjärjestelmät ovat usein riittävän riippumattomia kielestä,
 ja joitakin tutkimusprototyyppejä onkin saatavilla. Uudelleen
 käytettävät komponentit ovat tekstin tuottamisen puolella
-perinteisesti rajoittuneet pintamuotojen tuottamisen moduuleihin ja
+perinteisesti rajoittuneet pintamuotojen tuottamisen osioihin, ja
 jälleen suurin osa ohjelmista on tehty englantia varten.
 
 
@@ -1653,17 +1738,16 @@ päättyi vuonna 2007, mutta suomalaisissa yliopistoissa kirjoilla
 olevat opiskelijat voivat hakea tiedekunniltaan joustavien opintojen
 (JOO) opinto-oikeutta kieliteknologian kurssien suorittamiseen
 verkoston yliopistoissa. KIT-verkoston yliopistot ovat
-Aalto-yliopisto, Helsingin yliopisto, Itä-Suomen yliopisto, Tampereen
-yliopisto, Tampereen teknillinen yliopisto, Turun yliopisto, Vaasan
+Aalto-yliopisto, Helsingin yliopisto, Itä-Suomen yliopisto, Jyväskylän yliopisto, 
+Tampereen yliopisto, Tampereen teknillinen yliopisto, Turun yliopisto, Vaasan
 yliopisto, Oulun yliopisto ja Åbo Akademi.
 
 Vuosina 2006 – 2009 kieliteknologiasta riittävät perustiedot
-opiskellut opiskelija saattoi kandidaatintutkintonsa suoritettuaan
+opiskellut opiskelija saattoi kandidaatintutkinnon suoritettuaan
 hakeutua maisteriopintoihin Helsingin yliopiston kieliteknologian
-oppiaineeseen.  Maisteriohjelmassa oli mahdollista valita pääaineeksi
-kieliteknologian, puheteknologian tai käännösteknologian ja nämä
-oppiaineet yhdessä muodostivat maisteriohjelman hallinnon ja
-toteuttivat kurssitarjonnan. Vuonna 2009 muodollinen maisteriohjelma
+oppiaineeseen.  Maisteriohjelman opiskelijan oli mahdollista valita pääaineeksi
+kieliteknologia, puheteknologia tai käännösteknologia ja siihen soveltuvat kurssit yhteisestä 
+kurssitarjonnasta. Vuonna 2009 muodollinen maisteriohjelma
 päättyi laitosrakenteiden uudistuessa.  Kandidaattiopintojen ja
 maisteriopintojen eriytymisen myötä opiskelijat voivat hakeutua
 suorittamaan maisterivaihetta kieliteknologian oppiaineeseen ilman
@@ -1671,15 +1755,14 @@ erityistä maisteriohjelmaa.
 
 KIT-tutkijakoulu toimi vuosina 2004 - 2009 osana uutta pohjoismaisen
 tutkijakoulutusyhteistyön tuloksena syntynyttä NGSLT-tutkijakoulua
-(Nordic Graudate School of Language Technology). KIT sai kahdelle
+(Nordic Graudate School of Language Technology). KIT-tutkijakoulu sai kahdelle
 nelivuotiskaudelle viisi opetusministeriön rahoittamaa
 tutkijakoulupaikkaa ja vuonna 2010 se yhdistyi kielentutkimuksen
 LANGNET-tutkijakouluun sen yhdeksi osaohjelmaksi.
 
 Kieliteknologian tutkijoiden riittävä määrällinen koulutus on
-monipuolisen tutkimuksen edellytys ja sitä kautta voidaan päästä
-onnistuneeseen kaupalliseen sovelluksen
-tuotteistamiseen \cite{FinExp}.
+monipuolisen tutkimuksen edellytys, joka puolestaan johtaa
+kaupallisten sovellusten onnistuneeseen tuotteistamiseen \cite{FinExp}.
 
 
 \subsection{Kansalliset hankkeet}
@@ -1696,7 +1779,7 @@ kahden laajan teknologiaohjelman kautta USIX (Uusi käyttäjäkeskeinen
 tietotekniikka) 1999 – 2002 and FENIX (Vuorovaikutteinen
 tietotekniikka) 2003 – 2007.
 
-USIX –teknologiaohjelman tavoitteena oli nostaa esiin tuotteiden ja
+USIX–teknologiaohjelman tavoitteena oli nostaa esiin tuotteiden ja
 teknologioiden käyttäjien ja kuluttajien tarpeita tarjoamalla
 suomalaisille yrityksille ja tutkimuslaitoksille rahoitusta niiden
 kehittämiseen. Ohjelman puitteissa tunnistettuja ydinteknologioita
@@ -1705,9 +1788,9 @@ ja hakukäyttöliittymät. Ohjelman aikana rahoitusta sai 181 hanketta,
 joiden yhteenlaskettu volyymi oli 84 miljoonaa euroa, joista 44
 miljoonaa tuli Tekesin kautta. 29 prosenttia hankkeista oli
 tutkimushankkeita. Esimerkkejä luonnollisen kielen USIX
-tutkimushankkeista ovat WEBSOM jossa kehitettiin itseorganisoituvien
+tutkimushankkeista ovat WEBSOM, jossa kehitettiin itseorganisoituvien
 karttojen (Self-Organizing Map, SOM) teknologioita ja GILTA
-tavoitteena laajojen tekstiainesten hallinta, INTERACT, STT
+tavoitteenaan laajojen tekstiainesten hallinta, INTERACT, STT
 Speech-to-Text (suomen kielen foneemisen puheentunnistuksen tutkimus
 ja kehitys), Suomen puheteknologian kentän yhteishanke SuoPuhe, Noise
 Robust Multilingual Speech Recognition, Dictionaries and language
@@ -1717,7 +1800,7 @@ yritysten yhteistyönä. Monet kaupalliset USIX-ohjelman sisällä
 kehitetyt tuotteet ovat tänään saatavissa kaupallisilla
 markkinoilla \cite{LoppuUSIX}.
 
-FENIX –teknologianohjelman puitteissa toteutettiin useita luonnollisen
+FENIX–teknologianohjelman puitteissa toteutettiin useita luonnollisen
 kielen käsittelyn hankkeita, joista esimerkkeinä mainittakoon FENIX 4M
 (Mobile and Multilingual Maintenance Man) ja FinnONTO (Semantic Web
 Ontologies) Helsingin yliopistossa, New methods and applications in
@@ -1747,12 +1830,12 @@ State Transducer Technology), OMor (Open Source Morphologies),
 FinnWordNet ja FinnTreeBank ovat esimerkkejä edelleen käynnissä
 olevista projekteista.
 
-Helsingin yliopiston kieliteknologian oppiaine oli aktiivinen myös
-pohjoismaisessa yhteistyössä vuosina 2000 – 2004 osallistumalla
+Helsingin yliopiston kieliteknologian oppiaine teki aktiivisesti myös
+pohjoismaista yhteistyötä vuosina 2000 – 2004 osallistumalla
 useisiin Pohjoismaisen ministerineuvoston NordForskin kautta
 rahoittamiin kieliteknologiaohjelman \textit{Språgteknologiprogram}
 hankkeisiin. Suomen kieliteknologian dokumentointikeskus FiLT
-perustettiin edistämään tietoa kieliteknologian kaupallisista ja
+perustettiin keräämään tietoa kieliteknologian kaupallisista ja
 akateemisista toimijoista, tutkimuksesta, resursseista ja tuotteista
 sekä niiden saatavuudesta.
 
@@ -1765,11 +1848,11 @@ kieliteknologian työkaluista ja kieliaineistoista.
 \subsection{Kieliteknologiset työkalut ja kieliaineistot}
 
 
-Taulukossa \ref{X} esitetään kieliteknologisten resurssien
-tämän hetkinen tilanne suomen kielen osalta. Työkalujen ja
+Taulukossa \ref{fig:lrlttable-fin} esitetään kieliteknologisten
+resurssien tämän hetkinen tilanne suomen kielen osalta. Työkalujen ja
 kieliaineistojen arvioinnin suorittivat alan asiantuntijat, jotka
-tuottivat arvioita skaalalla 0 (hyvin matala taso) - 6 (erittäin
-korkea taso) seitsemän kriteerin osalta.
+tuottivat arvioita resursseista skaalalla 0 (hyvin matala taso) - 6
+(erittäin korkea taso) seitsemän kriteerin osalta.
 
 \begin{figure*}[htb]
 \centering
@@ -1793,7 +1876,7 @@ Leksikaaliset resurssit & 3 & 4 & 3,5 & 4 & 3,5 & 3,5 & 3,5\\ \addlinespace
 Kieliopit & 2 & 5 & 4 & 4 & 4 & 3 & 3\\
 \end{tabular}
 \caption{Suomen kielen kieliteknologian tuki}
-\label{fig:lrlttable_en}
+\label{fig:lrlttable-fin}
 \end{figure*}
 
 
@@ -1830,7 +1913,7 @@ Keskeisimmät havainnot suomen kielen osalta voidaan tiivistää seuraavasti:
     kysymysten parissa. Tavallisempaa on valita olemassa oleva työkalu
     ja istuttaa suomen kielen jäsennin sen osaksi, jolloin
     lisensseihin liittyvät kysymykset on huomioitava, eikä työkalua
-    aina enää ole mahdollista käyttää muissa ympäristöissä.
+    aina enää myöhemmin ole mahdollista käyttää muissa ympäristöissä.
 
 \item Suomen kielelle on olemassa vain vähän multimodaalisia
     resursseja eikä käytännössä lainkaan pitkälle kehitettyjä
@@ -1893,7 +1976,7 @@ saatavilla olevien konekäännössovellusten määrä ja laaja-alaisuus
 analyysin teknologioiden laatu ja kattavuus (morfologia, syntaksi,
 semantiikka), kielellisten ilmiöiden ja eri alojen kattaminen,
 (annotoitujen) tekstikorpusten laatu ja määrä, leksikaalisten resurssien
-(esim. WordNet) ja kielioppien laaju ja kattavuus
+(esim. WordNet) ja kielioppien laatu ja kattavuus
 
 \item Kieliaineistot: Olemassaolevien tekstikorpusten, puhekorpusten ja
 rinnakkaisskorpusten laatu ja koko, leksikaalisten resurssien ja
@@ -1931,7 +2014,7 @@ kielioppien laatu ja kattavuus
  ranska \newline
  tšekki \newline
  saksa \newline
- suomi \newline
+ \textbf{suomi} \newline
  & \vspace*{0.5mm}
  baski \newline
  bulgaria \newline
@@ -2011,7 +2094,7 @@ kielioppien laatu ja kattavuus
  serbia \newline
  slovakki \newline
  sloveeni \newline
- suomi \newline
+ \textbf{suomi} \newline
  tšekki \newline
  tanska \newline
  viro \newline
@@ -2064,7 +2147,7 @@ kielioppien laatu ja kattavuus
  tšekki \newline
  slovakki \newline
  sloveeni \newline
- suomi \newline
+ \textbf{suomi} \newline
  unkari \newline
  &\vspace*{0.5mm}
  iiri \newline 
@@ -2103,9 +2186,13 @@ kielioppien laatu ja kattavuus
   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{support}} \\ \addlinespace
     
-& \vspace*{0.5mm} englanti
+& \vspace*{0.5mm}
+  englanti
   & \vspace*{0.5mm}
+  espanja \newline
   hollanti \newline
+  italia \newline
+  puola \newline
   ranska \newline
   ruotsi \newline
   saksa  \newline
@@ -2124,7 +2211,7 @@ kielioppien laatu ja kattavuus
   serbia \newline
   slovakki \newline
   sloveeni \newline  
-  suomi \newline 
+  \textbf{suomi} \newline 
   tanska \newline
   viro \newline
   & \vspace*{0.5mm}
@@ -2134,17 +2221,17 @@ kielioppien laatu ja kattavuus
   liettua \newline
   malta \newline
   \end{tabular}
-  \caption{Kieliaineistojen kieliklusterit}  
-  \label{fig:resources_cluster_en}
+  \caption{Puhe- ja tekstiaineistot: 30 eurooppalaisen kielen tilanne}  
+  \label{fig:resources_cluster_fi}
 \end{figure*}
 
 Kuten taulukot osoittavat, on suomen kieleen panostettu vähemmän
 resursseja kuin Euroopan suuriin kieliin, erityisesti
 englantiin. Kieliteknologiset konekäännössovellukset on arvioitu
-alhaisen tuen luokkaan. Puheteknologian alalla on nykyiset sovellukset
+alhaisen tuen luokkaan. Puheteknologian alalla nykyiset sovellukset
 ovat jo pitkälle tutkittuja ja tuotteistettuja erikoisalojen
-käyttöön. Kieliresurssien osalta tarvitaan lisää laajoja sekä puhe-
-että tekstiaineistoja. Tekstin käsittelyn perussovellukset kuten
+käyttöön. Kieliresurssien osalta tarvitaan lisää laajoja puhe-
+ja tekstiaineistoja. Tekstin käsittelyn perussovellukset kuten
 tavutus ja oikolukuohjelmat toimivat tyydyttävästi.
 
 Kehittyneempien sovellusten rakentamiseen esimerkiksi konekäännöstä
@@ -2161,32 +2248,31 @@ korkealuokkainen konekääntäminen.
 \subsection{Johtopäätökset}
 
 
-\textbf{Language White Paper -sarjan käsillä olevassa raportissa
+\textbf{Tässä META-NET Valkoiset kirjat -julkaisusarjan raportissa
 olemme ensimmäisen kerran kartoittaneet 30 eurooppalaisen kielen
 kieliteknologian tukea ja verranneet Euroopan kielten tilannetta
 keskenään. Euroopan kieliteknologiayhteisö ja sen toimijat ovat
-tunnistaneet alan tarpeita, puutteita ja kehityksen esteitä ja ovat
+tunnistaneet alan tarpeita, puutteita ja kehityksen esteitä ja olemme
 nyt tilanteessa, jossa avautuu mahdollisuus yhdessä suunnitella
-laajamittainen tutkimus- ja kehitysohjelma tavoitteena rakentaa
+laajamittainen tutkimus- ja kehitysohjelma, jossa tavoitteena on rakentaa
 aidosti monikielinen, kieliteknologisesti ajan tasalla oleva
 Eurooppa.}
 
 Euroopan kielten välillä on suuria eroja. Kun joillekin kielille ja
 sovellusaloille löytyy hyvälaatuisia ohjelmistoja ja resursseja,
-joidenkin kielten kohdalla on vielä isojakin puutteita. Monet kielet
+toisten kohdalla on vielä isojakin puutteita. Monet kielet
 ovat vailla toisaalta tekstin analyysin perusteknologioita ja
 toisaalta välttämättömiä resursseja, joiden avulla teknologioita
-voitaisiin kehittää. Joidenkin osalta perustyökalut ja resurssit ovat
+voitaisiin kehittää. Joidenkin kielten perustyökalut ja resurssit ovat
 olemassa, mutta vielä ei ole kyetty takaamaan riittäviä resursseja
-kielen semanttiseen tutkimukseen. On aika ryhtyä toteuttamaan
-kunnianhimoista tavoitetta tuottaa korkealuokkainen, kaikki Euroopan
-kielet kattava konekäännösjärjestelmä.
+kielen semanttiseen tutkimukseen. Nyt on aika toteuttaa haave 
+korkealuokkaisesta, kaikki Euroopan kielet kattavavasta konekäännösjärjestelmästä.
 
-Kieliteknologian perustutkimus sai Suomessa hyvin rahoitetusta 1980-
+Kieliteknologian perustutkimus sai Suomessa hyvin rahoitusta 1980-
 ja 1990-luvuilla, mutta sen jälkeen rahoitus ei ole ollut samalla
-tasolla. Vaikka Tekes ja Suomen Akatemia rahoittivat joitakin
-kieliteknologisia kehityshankkeita 2000-luvulla, näiden hankkeiden
-tuloksia ja sovelluksia ei ole avoimesti ja laaja-alaisesti jaettu
+tasolla. Vaikka Tekes ja Suomen Akatemia rahoittivat useita
+kieliteknologisia kehityshankkeita 2000-luvulla, ei näiden hankkeiden
+tuloksia ja sovelluksia ole avoimesti ja laaja-alaisesti jaettu
 kieliyhteisön käyttöön. Kuten tässä raportissa osoitetaan,
 kieliteknologisten sovellusten saatavuus ja laatu ovat hyväksyttäviä
 vain perussovellusten ja perusresurssien osalta. Suomessa ollaan
@@ -2198,8 +2284,8 @@ työkalu kieliteknologisten moduulien ja työkalujen
 kehitystyössä. Isojen ajantasaisten kieliaineistojen tarve
 kieliteknologisen tutkimuksen ja tuotekehityksen käyttöön kasvaa.
 
-Euroopan laajuisten käynnissä olevien hankkeiden CLARIN (Common
-Language Resources and Technologies Infrastructure) ja META
+Euroopanlaajuisten raportin kirjoittamisen aikaan käynnissä 
+olevien hankkeiden CLARIN (Common Language Resources and Technologies Infrastructure) ja META
 (Multilingual Europe Technology Alliance) tavoitteena on tukea
 kieliteknologisten kieliresurssien ja teknologioiden jakelua ja
 saatavuutta eurooppalaisella tasolla. Suomen kansallisiin tarpeisiin
@@ -2209,7 +2295,7 @@ Tämän raportin tulokset osoittavat, että ainoa kestävä vaihtoehto on
 panostaa suomen kielen kieliteknologioiden kehittämiseen, jotta alan
 tutkimuksen ja tuotekehityksen kentällä voidaan jatkaa hyvin
 aloitettua työtä. Uudenlainen infrastruktuuri ja yhtenäinen
-tutkimusorganisaatio ja niiden mahdollistama kansallinen ja
+tutkimusorganisaatio ja näiden mahdollistama kansallinen ja
 kansainvälinen yhteistyö ovat välttämättömiä. Tutkimus- ja
 kehityshankkeiden rahoitus kärsii jatkuvuuden puutteesta ja lyhyen
 aikavälin ohjelmat vaihtelevat ajanjaksojen kanssa, jolloin rahoitusta
@@ -2217,13 +2303,13 @@ on tarjolla vähän tai ei lainkaan. Resursseja tarvitaan suomen kielen
 laajojen aineistojen keräämiseen, kieliteknologian tutkimukseen,
 teknologioiden kehittämiseen ja tuotekehitykseen.
 
-META-NET -hankkeen pitkä tähtäimen tavoite on tuoda korkealuokkaista
+META-NET -hankkeen pitkän tähtäimen tavoite on tuoda korkealuokkaista
 kieliteknologiaa kaikkien kielten ulottuville, jotta näin
 mahdollistetaan poliittinen ja taloudellinen yhtenäisyys kulttuurinen
 monimuotoisuus säilyttäen. Teknologia tulee auttamaan olemassa olevien
 esteiden poistamisessa ja yhteyksien luomisessa Euroopan kielten
-välillä. Työssä tarvitaan kaikkia toimijoita – niin politiikassa,
-tutkimuksessa, liike-elämässä ja yhteiskunnassa – yhdistämään voimansa
+välille. Työssä tarvitaan kaikkia toimijoita – niin politiikassa,
+tutkimuksessa, liike-elämässä kuin yhteiskunnassakin – yhdistämään voimansa
 tulevaisuuden eteen.
 
 
@@ -2235,8 +2321,8 @@ tulevaisuuden eteen.
 \boxtext{The Multilingual Europe Technology Alliance (META)}
 
 META-NET on Euroopan komission rahoittama huippuosaamisen
-verkosto. Verkosto muodostuu 47 tutkimuskeskuksesta 31 Euroopan
-maassa. META-NET toimii Monikielisen Euroopan teknologiaverkoston
+verkosto. Verkosto muodostuu 54 tutkimuskeskuksesta 33 Euroopan
+maassa\cite{rehm2011}. META-NET toimii Monikielisen Euroopan teknologiaverkoston
 (META) taustavoimana. META on Euroopan kieliteknologian
 ammattilaisista ja organisaatiosta koostuva nopeasti kasvava verkosto.
 
@@ -2280,14 +2366,14 @@ kieliteknologian tutkimusta Euroopassa. Verkosto toimii Euroopan
 puolesta, joka sulautuu yhdeksi sähköisten markkinoiden ja jaetun
 informaation alueeksi. META-NET on jo toteuttanut useista toimintoja,
 jotka edistävät sen pääsyä tavoitteeseensa.  Verkoston kolme
-toimintalinjaa ovat META-VISION, META-SHARE ja \\ META-RESEARCH.
+toimintalinjaa ovat META-VISION, META-SHARE ja META-RESEARCH.
 
 
 
 % Kuvio: META-NET - kolme toimintalinjaa
 
 \textbf{META-VISION} edistää toimivan ja vaikutusvaltaisen yhteisön
-syntymistä, joka yhdistää voimansa yhteisen tavoitteen ja
+syntymistä, joka tulee yhdistämään voimansa yhteisen tavoitteen ja
 tutkimusohjelman (strategic research agenda, SRA)
 toteuttamiseen. Toimintalinjan tärkein tavoite on rakentaa Euroopan
 kieliteknologiayhteisöstä yhtenäinen ja sitoutunut tuomalla yhteen
@@ -2327,8 +2413,8 @@ eurooppalaista ja maailmanlaajuista kieliteknologiayhteisön
 infrastruktuuria.
 
 \textbf{META-RESEARCH} rakentaa yhteyksiä toisiaan lähellä olevien
-teknologisten alojen välille. Pyrkimyksenä on hyödyntää muiden alojen
-kokemuksia ja edistystä ja panostaa innovatiiviseen kieliteknologiseen
+teknologisten alojen välille. Pyrkimyksenä on hyödyntää eri alojen
+kokemuksia ja saavutuksia ja panostaa näin innovatiiviseen kieliteknologiseen
 tutkimukseen. Erityisesti pyritään tuomaan lisää semantiikkaa
 konekääntämiseen, optimoimaan työnjakoa konekääntämisen hybrideissä
 ratkaisuissa sekä hyödyntämään kontekstuaalista tietoa automaattisen
@@ -2340,9 +2426,9 @@ kieliteknologisten työkalujen, menetelmien ja aineistojen luetteloita
 ja järjestää työpajoja ja koulutustapahtumia yhteisön
 jäsenille. Toiminnan tuloksena on jo esimerkiksi syntynyt suosituksia
 semanttisen tiedon integroimisesta konekääntämiseen ja uutta
-kieliaineistoa ollaan viimeistelemässä: Annotated Hybrid Sample MT
+kieliaineistoa ollaan viimeistelemässä. Annotated Hybrid Sample MT
 Corpus tuottaa aineistoa kielipareille englanti-saksa,
-englanti-espanja ja englanti-tšekki; ja verkosta monikielisiä
+englanti-espanja ja englanti-tšekki, ja verkosta monikielisiä
 tekstiaineistoja keräävä ohjelma on jo kehitetty.
 \end{multicols}
 
@@ -2362,7 +2448,7 @@ to GaelicIcelandic, everyday communication between Europe’s citizens
 as well as communication in the spheres of business and politics is
 inevitably confronted by language barriers. The EU’s institutions
 spend about a billion euros a year on maintaining their policy of
-multilingualism, i.e., translating texts and interpreting spoken
+multilingualism, i.\,e., translating texts and interpreting spoken
 communication. Yet does this have to be such a burden?  Modern
 language technology and linguistic research can make a significant
 contribution to pulling down these linguistic borders. When combined
@@ -2453,7 +2539,7 @@ and beyond. As this series of white papers shows, there is a dramatic
 difference in the state of readiness with respect to language
 solutions and the state of research between Europe’s member states.
 
-This whitepaper series complements other strategic actions taken by
+This white paper series complements other strategic actions taken by
 META-NET (see the appendix for an overview). Up-to-date information
 such as the current version of the META-NET vision paper \cite{Vision}
 or the Strategic Research Agenda (SRA) can be found on the META-NET
@@ -2619,7 +2705,7 @@ environments. Without language technology, we will not be able to
 achieve a really effective interactive, multimedia and multilingual
 user experience in the near future.
 
-\subsection{Kieliteknologian mahdollisuuksia --- Opportunities for Language Technology}
+\subsection{Opportunities for Language Technology}
 In the world of print, the technology breakthrough was the rapid duplication of
 an image of a text (a page) using a suitably powered printing press. Human
 beings had to do the hard work of looking up, reading, translating, and
@@ -2711,7 +2797,7 @@ language gets harder with age.
 The two main types of language technology systems ‘acquire’ language
 capabilities in a similar manner. Statistical (or ‘data-driven’) approaches
 obtain linguistic knowledge from vast collections of concrete example texts.
-While it is sufficient to use text in a single language for training, e.g., a
+While it is sufficient to use text in a single language for training, e.\,g., a
 spell checker, parallel texts in two (or more) languages have to be available
 for training a machine translation system. The machine learning algorithm then
 “learns” patterns of how words, short phrases and complete sentences are
@@ -2846,9 +2932,9 @@ pronoun
 
 Each noun in Finnish is capable of having some 2,000 distinct forms
 and verbs more than 12,000 forms. The number of distinct forms derives
-from the agglutinative nature of Finnish, i.e. several layers of
+from the agglutinative nature of Finnish, i.\,e., several layers of
 inflectional affixes can be stacked,
-e.g. \textit{halu}+\textit{tu}+\textit{imm}+\textit{i}+\textit{lla}+\textit{mme}+\textit{ko}
+e.\,g. \textit{halu}+\textit{tu}+\textit{imm}+\textit{i}+\textit{lla}+\textit{mme}+\textit{ko}
 would express the verbal root for desiring and endings for expressing
 elements “desire, something that is, most, on, our, question”.
 
@@ -2895,7 +2981,7 @@ distinction of old and new information:
 \end{itemize}
 
 Syntactic roles are marked using inflectional marking. Therefore the word order
-is relatively free, i.e. subjects and objects are identified by their case
+is relatively free, i.\,e., subjects and objects are identified by their case
 rather than their relative position in the sentence:
 \begin{itemize}
 \item \textit{\foreignlanguage{finnish}{\textit{Poika osti kirjan.}}
@@ -3159,7 +3245,7 @@ possible to follow the development of the registrations within a
 certain period of time. For example in January 2000, about 10 years
 ago, a total of 357 new .fi -domains were registered, whereas in 2011,
 a total of 164 new .fi -domains were registered on April 5th alone,
-i.e. during one day only. There are now more than 270,000 registered
+i.\,e., during one day only. There are now more than 270,000 registered
 .fi -domains. Based on the Google-results (April 5, 2011) the number
 of other web sites besides the .fi-domains is approximately
 110,000. That would add up to an estimate of almost 300, 000 Finnish
@@ -3177,7 +3263,7 @@ involves the automatic processing of language on multiple levels, as
 we will see in more detail the second part of this paper. It involves
 sophisticated Language Technology, differing for each language. For
 Finnish, this includes coping with polysemy
-i.e. words denoting the same thing, e.g.
+i.\,e., words denoting the same thing, e.\,g.,
 \textit{\foreignlanguage{finnish}{\textit{kuusi}}} (six) or
 \textit{\foreignlanguage{finnish}{\textit{kuusi}}} (spruce tree).
 
@@ -3208,7 +3294,7 @@ language technology tools offer the principal solution to satisfy this
 regulation, for example by offering speech synthesis for the blind.
 
 Internet users and providers of web content can also profit from
-Language Technology in less obvious ways, e.g., if it is used to
+Language Technology in less obvious ways, e.\,g., if it is used to
 automatically translate web contents from one language into
 another. Considering the high costs associated with manually
 translating these contents, comparatively little usable Language
@@ -3234,7 +3320,7 @@ technologies process or produce these different forms of language,
 though they both use dictionaries and rules of grammar and semantics.
 This means that language technology (LT) links language to various
 forms of knowledge, independently of the media (speech or text) it is
-expressed in. Figure \ref{X} illustrates the LT
+expressed in. Figure \ref{fig:ltincontext-eng} illustrates the LT
 landscape. When we communicate, we combine language with other modes
 of communication and information media – for example speaking can
 involve gestures and facial expressions. Digital texts link to
@@ -3243,8 +3329,18 @@ form. In other words, speech and text technologies overlap and
 interact with other technologies that facilitate processing of
 multimodal communication and multimedia documents.
 
+\begin{figure}[h!]
+  \colorrule{grey3}{\textwidth}{1.5pt}
+  \center
+  \includegraphics[width=\textwidth]{../_media/english/language_technologies}
+  \caption{Language technology in context}
+  \label{fig:ltincontext-eng}
+  \colorrule{grey3}{\textwidth}{1.5pt}
+\end{figure}
+
+
 In the following, we will discuss the main application areas of
-language technology, i.e., language checking, web search, speech
+language technology, i.\,e., language checking, web search, speech
 technology, and machine translation. This includes
 applications and basic technologies such as
 \begin{itemize}
@@ -3273,10 +3369,20 @@ describe the architecture of a typical LT system.
 \subsection{Application Architectures}
 
 Software applications for language processing typically consist of
-several components that mirror different aspects of language.
-Figure \ref{X} shows a highly simplified architecture that can be found in a
-typical text processing system. The first three modules handle the
-structure and meaning of the text input:
+several components that mirror different aspects of language.  Figure
+\ref{fig:textprocessingarch-eng} shows a highly simplified
+architecture that can be found in a typical text processing system.
+The first three modules handle the structure and meaning of the text
+input:
+
+\begin{figure}[h!]
+  \colorrule{grey3}{\textwidth}{1.5pt}
+  \center
+  \includegraphics[width=\textwidth]{../_media/english/text_processing_app_architecture}
+  \caption{A Typical Text Processing Architecture}
+  \label{fig:textprocessingarch-eng}
+  \colorrule{grey3}{\textwidth}{1.5pt}
+\end{figure}
 
 \begin{enumerate}
 \item Pre-processing: cleans the data, analyses or removes formatting,
@@ -3285,9 +3391,9 @@ detects the input language, and so on.
 \item Grammatical analysis: finds the verb, its objects, modifiers and
 other parts of speech as well as detects the sentence structure.
 
-\item Semantic analysis: performs disambiguation (i.e., computes the
+\item Semantic analysis: performs disambiguation (i.\,e., computes the
 appropriate meaning of words in a given context); resolves anaphora
-(i.e., which pronouns refer to which nouns in the sentence) and
+(i.\,e., which pronouns refer to which nouns in the sentence) and
 substitute expressions; and represents the meaning of the sentence in
 a machine-readable way.
 \end{enumerate}
@@ -3305,11 +3411,11 @@ and resources in terms of various dimensions such as availability,
 maturity and quality. The general situation of LT for the Finnish
 language is then summarised in tabular form.
 
-\subsection{Keskeiset sovellusalat --- Core Application Areas}
+\subsection{Core Application Areas}
 
 In this section, we focus on the most important LT tools and
 resources, and give an overview of LT activities in Finland. Tools and
-resources that are \underline{underlined} in the text can also be
+resources that are \textbf{bold-faced} in the text can also be
 found in the summary table.
 
 
@@ -3320,11 +3426,11 @@ Anyone who has used a word processor knows that a spelling checker highlights
 spelling mistakes and proposes corrections.  The first spelling correction programs compared
 a list of extracted words against a dictionary of correctly spelled
 words. Today these programs are far more sophisticated. Using
-language-dependent algorithms for \underline{grammatical analysis},
+language-dependent algorithms for \textbf{grammatical analysis},
 they detect errors
-related to morphology (e.g., plural formation) as well as
+related to morphology (e.\,g., plural formation) as well as
 syntax–related errors, such as a missing verb or a conflict of
-verb-subject agreement (e.g.,
+verb-subject agreement (e.\,g.,
 \textit{\foreignlanguage{finnish}{\textit{me *kirjoittaa kirjeen}}}
  [a similar concept in English would be
 \textit{she *write a letter}]).
@@ -3349,25 +3455,34 @@ Finnish or not:
 \item   {\textit{[Remember to take Kaneli with you.]} }
 \end{itemize}
 This type of analysis either needs to draw on language-specific
-\underline{grammars} laboriously coded into the software by experts, or on a
+\textbf{grammars} laboriously coded into the software by experts, or on a
 statistical language model. In this case, a model calculates the
 probability of a particular word as it occurs in a specific position
-(e.g., between the words that precede and follow it). For example,
+(e.\,g., between the words that precede and follow it). For example,
  {\foreignlanguage{finnish}{\textit{kaneli}}} is a much more probable
  as a noun than a proper noun
  {\foreignlanguage{finnish}{\textit{Kaneli}}}.
 A statistical language model can be automatically created by using a
-large amount of (correct) language data (called a \underline{text corpus}).
+large amount of (correct) language data (called a \textbf{text corpus}).
 Most
 of these two approaches have been developed around data from
 English. Neither approach can transfer easily to Finnish because the
 language has a flexible word order, unlimited compound building and a
 richer inflection system.
 
+\begin{figure}[h!]
+  \colorrule{grey3}{\textwidth}{1.5pt}
+  \center
+  \includegraphics[width=\textwidth]{../_media/english/language_checking}
+  \caption{Language checking (statistical; rule-based)}
+  \label{fig:langcheckingarch-eng}
+  \colorrule{grey3}{\textwidth}{1.5pt}
+\end{figure}
+
 \boxtext{The use of language checking is not limited to word processors; it also applies to authoring support systems.}
 
 Language checking is not limited to word processors; it is also used
-in “authoring support systems”, i.e., software environments in which
+in “authoring support systems”, i.\,e., software environments in which
 manuals and other documentation are written to special standards for
 complex IT, healthcare, engineering and other products. Fearing
 customer complaints about incorrect use and damage claims resulting
@@ -3379,33 +3494,6 @@ development of authoring support software, which helps the writer of
 technical documentation use vocabulary and sentence structures that
 are consistent with industry rules and (corporate) terminology
 restrictions.
-
-% \textbf{[[[Figure 4. Web search architecture, somehow here. A mess
-% that did not fit in the margin even in the monolingual document.]]]}
-
-%                                     Search
-% 
-%                                     Results
-% 
-%                               Semantic Processing
-% 
-%                                      Query
-% 
-%                                    Analysis
-% 
-%                                       Web
-% 
-%                                      pages
-% 
-%                                 Pre-processing
-% 
-%                                   User query
-% 
-%                                 Pre-processing
-% 
-%                                    Indexing
-% 
-%                              Matching \& Relevance
 
 Finnish has a history of several small Finnish companies and Language
 Service Providers developing products based on various language
@@ -3430,7 +3518,6 @@ mean\dots} suggestions.
 
 \subsubsection{Web Search}
 
-
 Searching the Web, intranets or digital libraries is probably the
 most widely used yet largely underdeveloped language technology
 application today. The Google search engine, which started in 1998,
@@ -3447,9 +3534,9 @@ a large volume of available data and efficient indexing techniques can
 deliver satisfactory results for a statistically-based approach.
 
 For more sophisticated information requests, it is essential to
-integrate deeper linguistic knowledge to \underline{semantic
-analysis}. Experiments using \underline{lexical resources} such
-as machine-readable thesauri or ontological language resources (e.g.,
+integrate deeper linguistic knowledge to \textbf{semantic
+analysis}. Experiments using \textbf{lexical resources} such
+as machine-readable thesauri or ontological language resources (e.\,g.,
 WordNet for English or the equivalent Finnish FinnWordNet) have
 demonstrated improvements in finding pages using synonyms of the
 original search terms, such as
@@ -3457,6 +3544,15 @@ original search terms, such as
 {\foreignlanguage{finnish}{\textit{ydinvoima}}} \textit{[atomic power]} and
 {\foreignlanguage{finnish}{\textit{ydinenergia}}} \textit{[nuclear energy]},
 or even more loosely related terms.
+
+\begin{figure}[h!]
+  \colorrule{grey3}{\textwidth}{1.5pt}
+  \center
+  \includegraphics[width=\textwidth]{../_media/english/web_search_architecture}
+  \caption{Web Search}
+  \label{fig:websearcharch-eng}
+  \colorrule{grey3}{\textwidth}{1.5pt}
+ \end{figure}
 
 \boxtext{The next generation of search engines will have to include much more sophisticated language technology.}
 
@@ -3515,7 +3611,7 @@ interfaces in smartphones.
 
 Speech technology comprises four technologies:
 \begin{enumerate}
-\item Automatic \underline{speech recognition} (ASR) determines which words are actually
+\item Automatic \textbf{speech recognition} (ASR) determines which words are actually
     spoken in a given sequence of sounds uttered by a user.
 
 \item Natural language understanding analyses the syntactic structure of a user’s
@@ -3524,15 +3620,24 @@ Speech technology comprises four technologies:
 \item Dialogue management determines which action to take given the user input
     and system functionality.
 
-\item \underline{Speech synthesis} (text-to-speech or TTS) transforms the system’s reply into
+\item \textbf{Speech synthesis} (text-to-speech or TTS) transforms the system’s reply into
     sounds for the user.
 \end{enumerate}
+
+  \begin{figure}[h!]
+    \colorrule{grey3}{\textwidth}{1.5pt}
+    \center
+    \includegraphics[width=\textwidth]{../_media/english/simple_speech-based_dialogue_architecture}
+    \caption{Speech-based dialogue system}
+    \label{fig:dialoguearch-eng}
+    \colorrule{grey3}{\textwidth}{1.5pt}
+  \end{figure}
 
 One of the major challenges of ASR systems is to accurately recognise the words
 a user utters. This means restricting the range of possible user utterances to
 a limited set of keywords, or manually creating language models that cover a
 large range of natural language utterances. Using machine learning techniques,
-language models can also be generated automatically from \underline{speech corpora}, i.e.,
+language models can also be generated automatically from \textbf{speech corpora}, i.\,e.,
 large collections of speech audio files and text transcriptions. Restricting
 utterances usually forces people to use the voice user interface in a rigid way
 and can damage user acceptance; but the creation, tuning and maintenance of
@@ -3603,7 +3708,7 @@ users.
 
 The idea of using digital computers to translate natural languages goes back to
 1946 and was followed by substantial funding for research during the 1950s and
-again in the 1980s. Yet machine translation (MT) still cannot meet its initial
+again in the 1980s. Yet \textbf{machine translation} (MT) still cannot meet its initial
 promise of across-the-board automated translation.
 
 The most basic approach to machine translation is to automatically replace the
@@ -3638,14 +3743,23 @@ linguists. This is a very long and therefore costly process.
 In the late 1980s when computational power increased and became cheaper, there
 was more interest in statistical models for machine translation. Statistical
 models are derived from analysing bilingual text corpora, such as the Europarl
-\underline{parallel corpus}, which contains the proceedings of the European Parliament in
+\textbf{parallel corpus}, which contains the proceedings of the European Parliament in
 11 European languages. Given enough data, statistical MT works well enough to
 derive an approximate meaning of a foreign language text by processing parallel
 versions and finding plausible patterns of words. But unlike knowledge-driven
 systems, statistical (or data-driven) MT often generates ungrammatical output.
 Data-driven MT is advantageous because less human effort is required, and it
-can also cover special particularities of the language (e.g., idiomatic
+can also cover special particularities of the language (e.\,g., idiomatic
 expressions) that can get ignored in knowledge-driven systems.
+
+\begin{figure}[h!]
+  \colorrule{grey3}{\textwidth}{1.5pt}
+  \center
+  \includegraphics[width=\textwidth]{../_media/english/machine_translation}
+  \caption{Machine translation (statistical; rule-based)}
+  \label{fig:mtarch-eng}
+  \colorrule{grey3}{\textwidth}{1.5pt}
+\end{figure}
 
 \boxtext{Machine Translation is particularly challenging for the Finnish language.}
 
@@ -3685,7 +3799,8 @@ systems.
 
 Evaluation campaigns help compare the quality of MT systems, the
 different approaches and the status of the systems for different
-language pairs. Table \ref{X}, which was prepared during the EC
+language pairs. Figure \ref{fig:euromatrix} (page
+\pageref{fig:euromatrix}), which was prepared during the EC
 Euromatrix+ project, shows the pair-wise performances obtained for 22
 of the 23 official EU languages. (Irish was not compared.). The
 results are ranked according to a BLEU score, which indicates higher
@@ -3694,21 +3809,11 @@ achieve a score of around 80 points.
 
 The best results (in green and blue) were achieved by languages that
 benefit from a considerable research effort in coordinated programs
-and from the existence of many parallel corpora (e.g., English,
+and from the existence of many parallel corpora (e.\,g., English,
 French, Dutch, Spanish and German). The languages with poorer results
 are shown in red. These languages either lack such development efforts
-or are structurally very different from other languages (e.g.,
+or are structurally very different from other languages (e.\,g.,
 Hungarian, Maltese and Finnish).
-
-% \textbf{[[[HUGE matrix missing here. Only two words there: Target
-% Language. (Clearly "Source Language" should too be.)]]]}
-
-
-
-% \textbf{Kuva Konekäännösjärjestelmien suorituskyvyn arviointi
-%   kielipareittain Euromatrix+ -projektissa -- Performance of Machine
-%   Translation for Language Pairs in the Euromatrix+
-% Project}
 
 
 \subsection{Other Application Areas}
@@ -3754,11 +3859,11 @@ needs to be embedded into a suitable application environment.
 
 \boxtext{For the Finnish language, research in most text technologies is much less developed than for the English language.}
 
-Text summarization and \underline{text generation} are two borderline areas that can act
+Text summarization and \textbf{text generation} are two borderline areas that can act
 either as standalone applications or play a supporting role “under the hood”.
 Summarization attempts to give the essentials of a long text in a short form,
 and is one of the features available in Microsoft Word. It mostly uses a
-statistical approach to identify the “important” words in a text (i.e., words
+statistical approach to identify the “important” words in a text (i.\,e., words
 that occur very frequently in the text in question but less frequently in
 general language use) and determine which sentences contain the most of these
 “important” words. These sentences are then extracted and put together to
@@ -3803,7 +3908,7 @@ and a common syllabus. The formal agreement between the universities ended in
 2007 but the students enrolled in Finnish universities can apply for a grant
 from their faculties to take Language Technology courses within the network.
 The KIT Network universities include Aalto University, University of Eastern
-Finland, University of Helsinki, University of Tampere, Technical University of
+Finland, University of Helsinki, University of Jyväskylä, University of Tampere, Technical University of
 Tampere, University of Turku, University of Vaasa, University of Oulu, and Åbo
 Akademi in Turku.
 
@@ -3900,11 +4005,11 @@ current state of LT support for Finnish is summarised.
 
 \subsection{Availability of Tools and Resources}
 
-Table \ref{X} summarises the current state of language technology support
-for the Finnish language. The rating for existing tools and resources was
-generated by leading experts in the field who provided
-estimates based on a scale from 0 (very low) to 6 (very high) according to
-seven criteria.
+Table \ref{fig:lrlttable_en} summarises the current state of language
+technology support for the Finnish language. The rating for existing
+tools and resources was generated by leading experts in the field who
+provided estimates based on a scale from 0 (very low) to 6 (very high)
+according to seven criteria.
 
 \begin{figure*}[htb]
 \centering
@@ -3947,7 +4052,7 @@ The key results for the Finnish language can be summed up as follows:
     the area of speech recognition. Due to the particularities of Finnish, the
     word lists or lexicons required for speech recognition have been
     impractically large. A speech technology research group at the Helsinki
-    University of Technology presented already in 2002 a method for automated
+    University of Technology (Aalto university) presented already in 2002 a method for automated
     word segmentation that enabled reducing the size of the lexicon
     dramatically. This breakthrough has not yet been implemented in the
     commercial sector. Speech synthesis research has moved forward considerably
@@ -4013,7 +4118,7 @@ LT support was measured according to the following criteria:
        linguistic phenomena and domains, amount and variety of
        available applications, quality and size of existing
        (annotated) text corpora, quality and coverage of existing
-       lexical resources (e.g., WordNet) and grammars
+       lexical resources (e.\,g., WordNet) and grammars
 \item Resources: Quality and size of existing text corpora, speech
        corpora and parallel corpora, quality and coverage of existing
        lexical resources and grammars
@@ -4045,7 +4150,7 @@ LT support was measured according to the following criteria:
 & \vspace*{0.5mm}
 Czech \newline 
 Dutch \newline 
-Finnish \newline 
+\textbf{Finnish} \newline 
 French \newline 
 German \newline   
 Italian \newline  
@@ -4118,7 +4223,7 @@ Croatian \newline
 Czech \newline
 Danish \newline 
 Estonian \newline 
-Finnish \newline 
+\textbf{Finnish} \newline 
 Galician \newline 
 Greek \newline 
 Icelandic \newline 
@@ -4171,7 +4276,7 @@ Swedish \newline
   Catalan \newline 
   Czech \newline 
   Danish \newline 
-  Finnish \newline 
+  \textbf{Finnish} \newline 
   Galician \newline 
   Greek \newline 
   Hungarian \newline 
@@ -4218,7 +4323,8 @@ Swedish \newline
   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
   \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{support}} \\ \addlinespace
     
-& \vspace*{0.5mm}English
+& \vspace*{0.5mm}
+    English
 & \vspace*{0.5mm} 
     Czech \newline 
     Dutch \newline 
@@ -4229,13 +4335,14 @@ Swedish \newline
     Polish \newline
     Spanish \newline
     Swedish \newline 
-& \vspace*{0.5mm} Basque\newline 
+& \vspace*{0.5mm}
+    Basque\newline 
     Bulgarian\newline 
     Catalan \newline 
     Croatian \newline 
     Danish \newline 
     Estonian \newline 
-    Finnish \newline 
+    \textbf{Finnish} \newline 
     Galician \newline 
     Greek \newline 
     Norwegian \newline 
@@ -4266,7 +4373,7 @@ number of industrial applications such as spoken dialogue and dictation
 systems, especially for special languages. The need for language resources both
 for text and speech technologies is evident. Text analysis components already
 cover the linguistic phenomena of Finnish to a certain extent and form part of
-many applications, e.g. spelling correction and function on a satisfactory
+many applications, e.\,g. spelling correction and function on a satisfactory
 level.
 
 For building more sophisticated applications, such as machine translation,
@@ -4351,8 +4458,8 @@ business, and society - to unite their efforts for the future.
 \boxtext{The Multilingual Europe Technology Alliance (META)}
 
 META-NET is a Network of Excellence funded by the European
-Commission. The network currently consists of 47 members from 31
-European countries. META-NET fosters the Multilingual Europe
+Commission. The network currently consists of 54 members from 33
+European countries\cite{rehm2011}. META-NET fosters the Multilingual Europe
 Technology Alliance (META), a growing community of language technology
 professionals and organisations in Europe.
 
@@ -4452,17 +4559,18 @@ multilingual corpora that are hidden on the Web.
 \appendix
 \addtocontents{toc}{\protect\bigskip}
 
-\bsection[Literaturverweise -- References]{Literaturverweise --- References}
-%\bibliographystyle{plain}
-%\bibliography{german_references}
+\bsection[Viitteet -- References]{Viitteet --- References}
+\bibliographystyle{unsrt}
+\bibliography{finnish_references}
   
 \cleardoublepage
 
+%\bsection{Jäsenet -- Members}
+\bsection[META-NET Jäsenet -- META-NET Members]{META-NET Jäsenet --- META-NET Members}
+\label{metanetmembers}
 
-\bsection{Jäsenet -- Members}
-
-Taulukossa esitellään META-NET –verkostoon osallistuvat
-tutkimuslaitokset ja niiden edustajat.
+%Taulukossa esitellään META-NET –verkostoon osallistuvat
+%tutkimuslaitokset ja niiden edustajat.
 
 \small
 \begin{longtable}{@{}llp{113mm}@{}}
@@ -4510,12 +4618,12 @@ Serbia & \textcolor{grey1}{Serbia} & University of Belgrade, Faculty of Mathemat
 Slovakia & \textcolor{grey1}{Slovakia} & Ľudovít Štúr Institute of Linguistics, Slovak Academy of Sciences: Radovan Garabík \\ \addlinespace 
 Slovenia & \textcolor{grey1}{Slovenia} & Jožef Stefan Institute: Marko Grobelnik \\ \addlinespace 
 Suomi & \textcolor{grey1}{Finland} & Computational Cognitive Systems Research Group, Aalto University: Timo Honkela\\ \addlinespace
-  & & Department of Modern Languages, University of Helsinki: Kimmo Koskenniemi, Krister Lindén \\ \addlinespace
-Schweiz & \textcolor{grey1}{Switzerland} & Idiap Research Institute: Hervé Bourlard \\ \addlinespace 
+& & Department of Modern Languages, University of Helsinki: Kimmo Koskenniemi, Krister Lindén \\ \addlinespace
+Sveitsi & \textcolor{grey1}{Switzerland} & Idiap Research Institute: Hervé Bourlard \\ \addlinespace 
 Tanska &  \textcolor{grey1}{Denmark} & Centre for Language Technology, University of Copenhagen: \newline Bolette Sandford Pedersen, Bente Maegaard\\ \addlinespace
 Tšekin tasavalta & \textcolor{grey1}{Czech Republic} & Institute of Formal and Applied Linguistics, Charles University in Prague: Jan Hajič \\ \addlinespace
 Unkari & \textcolor{grey1}{Hungary} & Research Institute for Linguistics, Hungarian Academy of Sciences: Tamás Váradi\\  \addlinespace
-  & & Department of Telecommunications and Media Informatics, Budapest University of Technology and Economics: Géza Németh and Gábor Olaszy\\ \addlinespace
+  & & Department of Telecommunications and Media Informatics, Budapest University of Technology and Economics: Géza Németh, Gábor Olaszy\\ \addlinespace
 Viro & \textcolor{grey1}{Estonia} & Institute of Computer Science, University of Tartu: Tiit Roosmaa, Kadri Vider\\ \addlinespace
 Yhdistyneet Kuningaskunnat & \textcolor{grey1}{UK} & 
   School of Computer Science, University of Manchester: Sophia Ananiadou \\ \addlinespace 
@@ -4524,222 +4632,64 @@ Yhdistyneet Kuningaskunnat & \textcolor{grey1}{UK} &
 \end{longtable}
 
 
-
-
-
-%  \end{Parallel}
-
-% The world is almost but not quite ready to have bibliographies
-% in UTF-8. We do not have biblatex/biber stuff installed here,
-% for example. So Our Editorial Highness does this by Hand, now.
-%
-%  \bibliographystyle{plain}
-%  \bibliography{sample}
-\begin{thebibliography}{102}\raggedright
-\bibitem{EiPolkua}
-Arppe, A. 2002.
-\emph{Ei yhtä ainoaa polkua -- Suomalaisia kokemuksia matkalla
-      kieliteknologisesta tutkimuksesta liiketoimintaan.}
-URL:
-\url{http://www.csc.fi/euromap/artikkelit/arppe.phtml.fi}
-
-\bibitem{NoPath}
-Arppe, A. 2002.
-\emph{No Single Path -- Finnish Lessons in the Commercialization of
-      Language Technology Research}.
-Available originally at:
-\url{http://www.hltcentral.org/page-969.shtml}
-
-\bibitem{FinExp}
-Arppe, A. 2003.
-\emph{What has worked and what hasn't in commercializing kieliteknologia --
-      a Finnish experience}.
-\url{http://www.ilsp.gr/hope_files/en/imerida27_03_03.htm}.
-
-\bibitem{Leading}
-Lindén, K., Koskenniemi, K. and Nordgård, T. 2007.
-\emph{Expert Panel Report: The
-Nordic Countries - A Leading Region in Kieliteknologia}.
-\url{http://www.ling.helsinki.fi/laitos/julkaisut/sprakvisreport.pdf}
-
-\bibitem{BLEU}
-Papineni, K., Roukos, S. Ward, T. and Zhu. W.-J. 2002.
-BLEU: A Method for Automatic Evaluation of Machine Translation.
-In \emph{Proceedings of the 40\textsuperscript{th} Annual Meeting of ACL},
-Philadelphia, PA.
-
-\bibitem{EC-prefer}
-European Commission Directorate-General Information Society and Media,
-\emph{User language preferences online}, Flash Eurobarometer \#313, 2011.
-\url{http://ec.europa.eu/public_opinion/flash/fl_313_en.pdf}
-
-\bibitem{EC-size}
-European Commission Directorate-General for Translation,
-\emph{Size of the language industry in the EU}, Kingston Upon Thames, 2009.
-\url{http://ec.europa.eu/dgs/translation/publications/studies}
-
-\bibitem{EC-multi}
-European Commission,
-\emph{Multilingualism: an asset for Europe and a shared commitment},
-Brussels, 2008.
-\url{http://ec.europa.eu/languages/pdf/comm2008_en.pdf}
-
-\bibitem{Tulevaisuus2009}
-Hakulinen et al. 2009.
-\emph{Suomen kielen tulevaisuus -- Kielipoliittinen
-toimintaohjelma}. Kotimaisten kielten tutkimuslaitoksen verkkojulkaisuja 7,
-186–187.
-\url{http://scripta.kotus.fi/www/verkkojulkaisut/julk7/suomen_kielen_tulevaisuus_kotus_verkkojulkaisuja_7.pdf}
-
-\bibitem{hum-ulko}
-\url{http://http://www.helsinki.fi/hum/skl/linkit.htm#ulko}
-
-\bibitem{Education}
-\url{http://www.oph.fi/english/education/higher_education}
-
-\bibitem{Literacy}
-\url{http://www.http://www.oph.fi/english/sources_of_information/pisa/literacy_in_finland}
-
-\bibitem{LoppuFENIX}
-FENIX -- Interactive Computing. 2007. Loppuraportti. Tekes.
-\url{www.tekes.fi/fi/document/42919/fenix_arviointi_pdf}
-
-\bibitem{FinalFENIX}
-FENIX -- Interactive Computing. 2007. Final Report. Tekes.
-\url{www.tekes.fi/en/document/43003/fenix_interactive_computing_pdf}
-
-\bibitem{Board}
-Finnish Board of Education
-\url{http://www.oph.fi/english/sources_of_information/pisa}
-
-\bibitem{natlibstat}
-Statistics at The National Library of Finland, May 2011,
-\url{http://www.nationallibrary.fi/infoe/statistics.html}
-
-\bibitem{OECD2010}
-OECD:n maatutkintaraportti 2010, 119, Better Regulation in Europe:
-Finland. Saatavilla
-\url{http://www.oecd.org/document/9/0,3343,en_2649_34141_45056137_1_1_1_1,00.html}
-
-\bibitem{OECD-mobile}
-OECD Terrestrial mobile wireless broadband subscriptions per 100 inhabitants,
-by technology, June 2010, \url{http://www.oecd.org/}
-
-\bibitem{OECD-wired}
-OECD Fixed (wired) broadband subscriptions per 100 inhabitants, by
-technology, June 2010, \url{http://www.oecd.org/}
-
-\bibitem{OECD-ICT}
-OECD, ICT database and Eurostat, Community Survey on ICT usage in households
-and by individuals, July 2010, \url{http://www.oecd.org/}
-
-\bibitem{Google-rolls}
-\url{http://www.pcworld.com/businesscenter/article/161869/google_rolls_out_semantic_search_capabilities.html}
-
-\bibitem{Pisa2006}
-\url{http://www.pisa2006.helsinki.fi/}
-
-\bibitem{Piehl2008}
-Piehl, A. 2008, Virkamiehet EU:n säädösvalmistelussa: tasapainoilua oman
-kielen ja työkielten välissä, p. 277. Teoksessa Foley, R., Salmi-Tolonen, T.,
-Tukiainen, I. \& Vehmas, B. (toim.), Kielen ja oikeuden kohtaamisia. Heikki E.
-S. Mattilan juhlakirja s. 273–282. Helsinki: Talentum (Abstract in English:
-\url{http://www.kotus.fi/index.phtml?l=en&s=3079}.)
-
-\bibitem{Sitra1998}
-Rauhala-Hayes et al. 1998. Kohti esteetöntä tietoyhteiskuntaa. Sitra.
-\url{http://www.sitra.fi/julkaisut/tietoyhteiskunta/sitra172.pdf?download=Lataa+pdf}
-
-\bibitem{Spiegel}
-\url{http://www.spiegel.de/netzwelt/web/0,1518,619398,00.html}
-
-\bibitem{SVT}
-Suomen virallinen tilasto (SVT): Tavaroiden tuonti, vienti ja kauppatase
-maanosittain, maaryhmittäin ja maittain [verkkojulkaisu]. Helsinki:
-Tullihallitus [viitattu: 13.10.2011].
-Saantitapa: \url{http://www.stat.fi/til/ttvkmmm/index.html}.
-
-\bibitem{SVT-kaa}
-Suomen virallinen tilasto (SVT); Tieto- ja viestintätekniikan käyttö
-[verkkojulkaisu] ISSN=1799-3504.2010. Helsinki: Tilastokeskus [viitattu
-13.5.2010].
-\url{http://tilastokeskus.fi/sutivi_2010_2010_10-26_tie_001_fi.html}
-
-\bibitem{topsites}
-\url{http://www.alexa.com/topsites/countries/FI}
-
-\bibitem{UN-mid}
-UNESCO Director-General,
-\emph{Intersectoral mid-term strategy on languages and multilingualism},
-Paris, 2007.
-\url{http://unesdoc.unesco.org/images/0015/001503/150335e.pdf}
-
-\bibitem{LoppuUSIX}
-USIX - Uusi käyttäjäkeskeinen tietotekniikka. 2003. Loppuraportti. Tekes.
-\url{www.tekes.fi/fi/document/43297/usix_loppuraportti_pdf}
-
-\bibitem{Vision}
-\url{http://www.meta-net.eu/vision/reports/meta-net-vision-paper.pdf}
-
-\bibitem{Surprise}
-Zar, J.H. 1994. “Candidate for a Pullet Surprise”,
-\emph{Journal of Irreproducible Results}, 39(1),
-January/February 1994, page 13 (first verse).
-\url{http://www.jir.com/pullet.html}
-
-\end{thebibliography}
-
-
 \renewcommand*{\figureformat}{}
 \renewcommand*{\captionformat}{}
 
 \begin{figure*}[htbp]
+  \colorrule{grey3}{\textwidth}{1.5pt}
   \center
-  %\includegraphics[width=\textwidth]{../_media/meta-net_team.jpg}
-  \fbox{Dummy -- we'll include the group photo of our META-NET meeting in Berlin here}
-  \caption{Etwa 100 Experten des Gebiets Sprachtechnologie -- Repräsentanten der in META-NET vertretenen Länder und Sprachen -- diskutierten und finalisierten die zentralen Ergebnisse der Weißbuch-Serie bei einem META-NET-Treffen in Berlin am 21./22.~Oktober 2011. --- \textcolor{grey1}{About 100 language technology experts -- representatives of the countries and languages represented in META-NET -- discussed and finalised the key results and messages of the White Paper Series at a META-NET meeting in Berlin, Germany, on October 21/22, 2011.}}
+  \includegraphics[width=\textwidth]{../_media/meta-net_team.jpg}
+  %\fbox{Dummy -- we'll include the group photo of our META-NET meeting in Berlin here}
+  \caption{Lähes 100 kieliteknologian asiantuntijaa, jotka edustavat META-NET -hankkeen
+jäsenmaita ja kansallisia kieliä,  viimeistelivät META-NET valkoisten kirjojen
+julkaisusarjan keskeiset tulokset ja sanoman META-NET -hankkeen Berliinissä,
+Saksassa pidetyssä kokouksessa 21-22.10.2011. --- \textcolor{grey1}{About 100 language technology experts -- representatives of the countries and languages represented in META-NET -- discussed and finalised the key results and messages of the White Paper Series at a META-NET meeting in Berlin, Germany, on October 21/22, 2011.}}
+  \medskip
+  \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
 
 \cleardoublepage
 
-%META-NET White Paper -sarja Kielet Euroopan
- tietoyhteiskunnassa kattaa seuraavat 31 kieltä:
- 
-\bsection[Die META-NET Weissbuch-Serie -- The META-NET White Paper Series]{Die META-NET Weissbuch-Serie --- The META-NET\ \ \ \ \ \ White Paper Series} 
- \center
- 
- \begin{tabular}{l|l|l}
- \hline baski & Basque & euskara\\
- \hline bulgaria & Bulgarian & български\\
- \hline englanti & English & English\\
- \hline espanja & Spanish & español\\
- \hline galicia & Galician & galego\\
- \hline hollanti & Dutch & Nederlands\\
- \hline iiri & Irish & Gaeilge\\
- \hline islanti & Icelandic & íslenska\\
- \hline italia & Italian & italiano\\
- \hline katalaani & Catalan & català\\
- \hline kreikka & Greek & ελληνικά\\
- \hline kroatia & Croatian & hrvatski\\
- \hline latvia & Latvian & latviešu valoda\\
- \hline liettua & Lithuanian & lietuvių kalba\\
- \hline malta & Maltese & Malti\\
- \hline norjan bokmål & Norwegian Bokmål & bokmål\\
- \hline norjan nynorsk & Norwegian Nynorsk & nynorsk\\
- \hline puola & Polish & polski\\
- \hline portugali & Portuguese & português\\
- \hline ranska & French & français\\
- \hline romania & Romanian & română\\
- \hline ruotsi & Swedish & svenska\\
- \hline saksa & German & Deutsch\\
- \hline serbia & Serbian & српски\\
- \hline slovakki & Slovak & slovenčina\\
- \hline sloveeni & Slovene & slovenščina\\
- \hline suomi & Finnish & suomi\\
- \hline tanska & Danish & dansk\\
- \hline tšekki & Czech & čeština\\
- \hline unkari & Hungarian & magyar\\
- \hline viro & Estonian & eesti\\
- \end{tabular}
+\bsection[META-NET valkoiset kirjat -- The META-NET White Paper
+Series]{META-NET\ \ \ \ \ \  valkoiset kirjat --- The META-NET\ \ \ \ \ \ White Paper Series}
+\label{whitepaperseries}
+
+\vspace*{-5mm}
+\centering
+  \setlength{\tabcolsep}{2em}
+  \begin{tabularx}{\textwidth}{lllll} \toprule\addlinespace
+&baski & Basque & euskara\\
+&bulgaria & Bulgarian & български\\
+&englanti & English & English\\
+&espanja & Spanish & español\\
+ &galicia & Galician & galego\\
+ &hollanti & Dutch & Nederlands\\
+ &iiri & Irish & Gaeilge\\
+ &islanti & Icelandic & íslenska\\
+ &italia & Italian & italiano\\
+ &katalaani & Catalan & català\\
+ &kreikka & Greek & ελληνικά\\
+ &kroatia & Croatian & hrvatski\\
+ &latvia & Latvian & latviešu valoda\\
+ &liettua & Lithuanian & lietuvių kalba\\
+ &malta & Maltese & Malti\\
+ &norjan bokmål & Norwegian Bokmål & bokmål\\
+ &norjan nynorsk & Norwegian Nynorsk & nynorsk\\
+ &puola & Polish & polski\\
+ &portugali & Portuguese & português\\
+ &ranska & French & français\\
+ &romania & Romanian & română\\
+ &ruotsi & Swedish & svenska\\
+ &saksa & German & Deutsch\\
+ &serbia & Serbian & српски\\
+ &slovakki & Slovak & slovenčina\\
+ &sloveeni & Slovene & slovenščina\\
+ &suomi & Finnish & suomi\\
+ &tanska & Danish & dansk\\
+ &tšekki & Czech & čeština\\
+ &unkari & Hungarian & magyar\\
+ &viro & Estonian & eesti\\
+\addlinespace \bottomrule
+\end{tabularx}
 
 \end{document}
