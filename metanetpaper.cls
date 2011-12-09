@@ -81,6 +81,14 @@
   \newfontfamily\futuramedium{Futura Medium}
 \setmonofont[Scale=0.7]{DejaVu Sans Mono}
   \newfontfamily\linguistics[Scale=0.8]{DejaVu Serif}
+  
+% Own defs
+  % Editors
+\def\editors#1{\gdef\@editors{#1}}
+\def\@editors{\@latex@warning@no@line{No \noexpand\editors given}}
+  % Autors with affiliation
+\def\authoraffiliation#1{\gdef\@authoraffiliation{#1}}
+\def\@authoraffiliation{\@latex@warning@no@line{No \noexpand\authoraffiliation given}}
 
 
 
@@ -398,9 +406,6 @@
 
 
 % Mocktitle
-  % Editors
-\def\editors#1{\gdef\@editors{#1}}
-\def\@editors{\@latex@warning@no@line{No \noexpand\editors given}}
   % Maketitle
 \renewcommand\maketitle{%
   \begin{titlepage}%  
@@ -663,12 +668,6 @@
   \definecolor{purple}{RGB}{107, 129, 177}   % #7e7fff
   
   % Title & Mocktitle
-    % Editors
-  \def\editors#1{\gdef\@editors{#1}}
-  \def\@editors{\@latex@warning@no@line{No \noexpand\editors given}}
-    % Autors with affiliation
-  \def\authoraffiliation#1{\gdef\@authoraffiliation{#1}}
-  \def\@authoraffiliation{\@latex@warning@no@line{No \noexpand\authoraffiliation given}}
     % Maketitle
   \renewcommand\maketitle{%
     \begin{titlepage}%  
