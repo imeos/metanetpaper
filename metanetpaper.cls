@@ -398,7 +398,7 @@
 
 
 % Mocktitle
-  % Autors with affiliation
+  % Editors
 \def\editors#1{\gdef\@editors{#1}}
 \def\@editors{\@latex@warning@no@line{No \noexpand\editors given}}
   % Maketitle
@@ -515,6 +515,18 @@
 
 % Class options
 % ----------------------------------------------------------------------------
+  % Left text on spine
+\def\SpineLText#1{\gdef\@SpineLText{#1}}
+\def\@SpineLText{\@latex@warning@no@line{No \noexpand\SpineLText given}}
+  % Right text on spine
+\def\SpineRText#1{\gdef\@SpineRText{#1}}
+\def\@SpineRText{\@latex@warning@no@line{No \noexpand\SpineRText given}}
+  % Left text on spine
+\def\quotes#1{\gdef\@quotes{#1}}
+\def\@quotes{\@latex@warning@no@line{No \noexpand\quotes given}}
+
+
+% Set the cover for the printversion
 \DeclareOption{cover}{%
   % Define papersize for cover 420x279mm + 5mm bleed
   \setlength{\paperwidth}{430mm}%
@@ -523,16 +535,6 @@
 %  \setlength{\width}{380mm}%
   
   % Titlepage
-    % Left text on spine
-  \def\SpineLText#1{\gdef\@SpineLText{#1}}
-  \def\@SpineLText{\@latex@warning@no@line{No \noexpand\SpineLText given}}
-    % Right text on spine
-  \def\SpineRText#1{\gdef\@SpineRText{#1}}
-  \def\@SpineRText{\@latex@warning@no@line{No \noexpand\SpineRText given}}
-    % Left text on spine
-  \def\quotes#1{\gdef\@quotes{#1}}
-  \def\@quotes{\@latex@warning@no@line{No \noexpand\quotes given}}
-
     % Maketitle
   \renewcommand\maketitle{%
     \begin{titlepage}%
@@ -629,34 +631,209 @@
   }
 }
 
+
+% Set the ebook version
 \DeclareOption{ebook}{%
   % Define papersize for cover 210x279mm + 0mm bleed
-  \geometry{paperwidth=210mm, paperheight=279mm, top=21mm, bottom=34mm, left=24mm, right=21mm}%
+  \geometry{paperwidth=210mm, paperheight=279mm, top=24mm, bottom=34mm, left=22mm, right=21mm}%
   
   % Colors                                             
-  \definecolor{white}{RGB}{255, 255, 255}                % #FFFFFF
-  \definecolor{printblack}{RGB}{0, 0, 0}           % #141413
-  \definecolor{orange1}{RGB}{255, 109, 50}        % #FF6600
-  \definecolor{orange2}{RGB}{233, 154, 53}     % #FF9900
-  \definecolor{orange3}{RGB}{255, 204, 0}  % #FFCC00
+  \definecolor{white}{RGB}{255, 255, 255}    % #FFFFFF
+  \definecolor{printblack}{RGB}{0, 0, 0}     % #141413
+  \definecolor{orange1}{RGB}{255, 109, 50}   % #FF6600
+  \definecolor{orange2}{RGB}{233, 154, 53}   % #FF9900
+  \definecolor{orange3}{RGB}{255, 204, 0}    % #FFCC00
   \definecolor{corange1}{RGB}{232, 183, 127} % #F5B58E
-  \definecolor{corange2}{RGB}{226, 157, 104}  % #F5A676
+  \definecolor{corange2}{RGB}{226, 157, 104} % #F5A676
   \definecolor{corange3}{RGB}{222, 141, 85}  % #F5975D
   \definecolor{corange4}{RGB}{220, 129, 70}  % #F58845
   \definecolor{corange5}{RGB}{217, 116, 55}  % #F5792C
-  \definecolor{red_dark}{RGB}{146, 22, 32}        % #B72126
-  \definecolor{red}{RGB}{146, 22, 32}              % #C80000
-  \definecolor{red2}{RGB}{230, 134, 133}           % #ff8182
-  \definecolor{red3}{RGB}{189, 62, 68}           % #a83b3b
-  \definecolor{grey1}{RGB}{80, 80, 80}              % #3C3C3C
-  \definecolor{grey2}{RGB}{197, 200, 200}       % #C6C7C8
-  \definecolor{grey3}{RGB}{141, 142, 141}              % #C6C7C8
-  \definecolor{grey4}{RGB}{82, 68, 49}    % #847a6f
-  \definecolor{green}{RGB}{30, 127, 75}    % #1F9863
-  \definecolor{green2}{RGB}{103, 179, 86}         % #81C56B
-  \definecolor{blue}{RGB}{63, 172, 168}           % #44C1C5
-  \definecolor{blue2}{RGB}{91, 182, 177}          % #56D8D8
-  \definecolor{purple}{RGB}{107, 129, 177}         % #7e7fff
+  \definecolor{red_dark}{RGB}{146, 22, 32}   % #B72126
+  \definecolor{red}{RGB}{146, 22, 32}        % #C80000
+  \definecolor{red2}{RGB}{230, 134, 133}     % #ff8182
+  \definecolor{red3}{RGB}{189, 62, 68}       % #a83b3b
+  \definecolor{grey1}{RGB}{80, 80, 80}       % #3C3C3C
+  \definecolor{grey2}{RGB}{197, 200, 200}    % #C6C7C8
+  \definecolor{grey3}{RGB}{141, 142, 141}    % #C6C7C8
+  \definecolor{grey4}{RGB}{82, 68, 49}       % #847a6f
+  \definecolor{green}{RGB}{30, 127, 75}      % #1F9863
+  \definecolor{green2}{RGB}{103, 179, 86}    % #81C56B
+  \definecolor{blue}{RGB}{63, 172, 168}      % #44C1C5
+  \definecolor{blue2}{RGB}{91, 182, 177}     % #56D8D8
+  \definecolor{purple}{RGB}{107, 129, 177}   % #7e7fff
+  
+  % Title & Mocktitle
+    % Editors
+  \def\editors#1{\gdef\@editors{#1}}
+  \def\@editors{\@latex@warning@no@line{No \noexpand\editors given}}
+    % Autors with affiliation
+  \def\authoraffiliation#1{\gdef\@authoraffiliation{#1}}
+  \def\@authoraffiliation{\@latex@warning@no@line{No \noexpand\authoraffiliation given}}
+    % Maketitle
+  \renewcommand\maketitle{%
+    \begin{titlepage}%  
+      % Title
+      \pagestyle{empty}
+      \ThisCenterWallPaper{1}{../_media/titlepage_ebook.pdf}
+      \vspace*{3mm}
+      % Left column
+      \begin{minipage}[t]{83mm}
+        \color{grey2}
+        \textsf{
+          \begin{flushright}
+            % Subtitle
+            \StrBefore{\@subtitle}{ ---} \\
+            \vspace*{5mm}
+            % Title
+            \fontsize{36}{36}\selectfont{%
+              \MakeUppercase{%
+                \protect\StrBehind{\@title}{--- }
+              }
+            }
+          \end{flushright}
+          \vspace*{7mm}
+        }
+      \end{minipage}
+      % spacing between colums
+      \begin{minipage}[t]{5mm}\ \end{minipage}
+      % Right column
+      \begin{minipage}[t]{85mm}
+        \color{white}
+        \textsf{
+          \begin{flushleft}
+            % Subtitle
+            \StrBehind{\@subtitle}{--- } \\
+            \vspace*{5mm}
+            % Title
+            \fontsize{36}{36}\selectfont{%
+              \MakeUppercase{%
+                \protect\StrBefore{\@title}{ ---}
+              }
+            }
+          \end{flushleft}
+          \vspace*{7mm}
+        }
+      \end{minipage}
+      % Authors
+      \begin{Parallel}[c]{81mm}{77mm}
+        \ParallelLText{
+          \
+        }
+        \ParallelRText{
+          \begin{flushleft}
+            \fontsize{14}{24}\selectfont{%
+              \textsf{%
+                \textcolor{white}{%
+                  \@author
+                }
+              }
+            }
+          \end{flushleft}
+        }
+        \ParallelPar
+      \end{Parallel}
+      % Mocktitle
+      \cleardoublepage
+      \ThisCenterWallPaper{1}{../_media/mocktitlepage_ebook.pdf}
+      \vspace*{3mm}
+      % Left column
+      \begin{minipage}[t]{83mm}
+        \color{grey3}
+        \textsf{
+          \begin{flushright}
+            % Subtitle
+            \StrBefore{\@subtitle}{ ---} \\
+            \vspace*{5mm}
+            % Title
+            \fontsize{36}{36}\selectfont{%
+              \MakeUppercase{%
+                \protect\StrBehind{\@title}{--- }
+              }
+            }
+          \end{flushright}
+          \vspace*{7mm}
+        }
+      \end{minipage}
+      % spacing between colums
+      \begin{minipage}[t]{5mm}\ \end{minipage}
+      % Right column
+      \begin{minipage}[t]{85mm}
+        \color{red}
+        \textsf{
+          \begin{flushleft}
+            % Subtitle
+            \StrBehind{\@subtitle}{--- } \\
+            \vspace*{5mm}
+            % Title
+            \fontsize{36}{36}\selectfont{%
+              \MakeUppercase{%
+                \protect\StrBefore{\@title}{ ---}
+              }
+            }
+          \end{flushleft}
+          \vspace*{7mm}
+        }
+      \end{minipage}
+      % Authors
+      \begin{Parallel}[c]{81mm}{77mm}
+        \ParallelLText{
+          \
+        }
+        \ParallelRText{
+          \begin{flushleft}
+            \fontsize{14}{24}\selectfont{%
+              \textsf{%
+                \textcolor{red}{%
+                  \@authoraffiliation
+                }
+              }
+            }
+          \end{flushleft}
+        }
+        \ParallelPar
+      \end{Parallel}
+      \vfill
+       % Left column
+        \begin{minipage}[t]{81mm}\ \end{minipage}
+        % spacing between colums
+        \begin{minipage}[t]{5mm}\ \end{minipage}
+        % Right column
+        \begin{minipage}[t]{85mm}
+          \textsf{\color{red}\@editors}
+        \end{minipage}
+      \clearpage
+    \end{titlepage}
+  }
+  
+  % Makespine
+  \providecommand\makespine{%
+    \clearpage
+    \pagestyle{empty}
+    \ThisCenterWallPaper{1}{../_media/spinepage_ebook.pdf}
+    \vspace*{50mm}
+    % Left column
+    \begin{minipage}[t]{84mm}
+      \color{grey2}%
+      \textsf{%
+        \@SpineLText
+      }
+    \end{minipage}
+    % spacing between colums
+    \begin{minipage}[t]{5mm}\ \end{minipage}
+    % Right column
+    \begin{minipage}[t]{76mm}
+      \color{white}%
+      \textsf{%
+        \@SpineRText
+      }
+    \end{minipage}
+    \vskip10mm
+    \begin{flushleft}
+      \textsf{%
+        \textcolor{white}{\@quotes}
+      }
+    \end{flushleft}
+  }
 }
 \ProcessOptions\relax
 
