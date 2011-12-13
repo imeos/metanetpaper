@@ -750,20 +750,9 @@ Language technology is used to develop software systems designed to handle human
   \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
 
-When we communicate, we combine language with other modes of communication and information media – for example speaking can involve gestures and facial expressions. Digital texts link to pictures and sounds. Movies may contain language in spoken and written form. In other words, speech and text technologies overlap and interact with other multimodal communication and multimedia technologies.\\ 
-In this section, we will discuss the main application areas of language technology, i.\,e., language checking, web search, speech interaction, and machine translation. These applications and basic technologies include 
+ When we communicate, we combine language with other modes of communication and information media – for example speaking can involve gestures and facial expressions. Digital text can contain pictures, charts, sounds, movies, etc. Movies can contain language in spoken and written form. In other words, speech and text technologies overlap and interact with other technologies that facilitate processing of multimodal communication and multimedia documents.
 
-\begin{itemize}
-\item spelling correction
-\item authoring support
-\item computer-assisted language learning
-\item information retrieval 
-\item information extraction
-\item text summarisation
-\item question answering
-\item speech recognition 
-\item speech synthesis 
-\end{itemize}
+In the rest of this section, we first describe the architecture of a typical LT system. After that, we provide an overview of the core application areas, followed by a brief overview of the situation in LT research and education. Finally, the table at the end of the section summarizes an expert assessment of the situation regarding the core LT tools and resources in a number of dimensions such as availability, maturity, or quality.
 
 \begin{figure*}[b]
   \colorrule{grey3}{\textwidth}{1.5pt}
@@ -773,24 +762,327 @@ In this section, we will discuss the main application areas of language technolo
   \label{fig:textprocessingarch_en}
   \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
+In the rest of this section, we first describe the architecture of a typical LT system. After that, we provide an overview of the core application areas, followed by a brief overview of the situation in LT research and education. Finally, the table at the end of the section summarizes an expert assessment of the situation regarding the core LT tools and resources in a number of dimensions such as availability, maturity, or quality.
 
-Language technology is an established area of research with an extensive set of introductory literature. The interested reader is referred to the following references:  \cite{carstensen-etal1, jurafsky-martin01, manning-schuetze1, lt-world1, lt-survey1}.
+  \subsection{Architektura aplikací --- Application Architectures}
 
-Before discussing the above application areas, we will briefly describe the architecture of a typical LT system.
+Software applications for language processing typically consist of several components that mirror different aspects of language and of the task they implement. The figure on the right displays a highly simplified architecture that can be found in a text processing system. The first three modules deal with the structure and meaning of the text input:
+\begin{enumerate}
+  \item Pre-processing: cleaning up the data, removing formatting, detecting the input language, etc.
+  \item Grammatical analysis: finding the verb and its objects, modifiers, etc.; analyzing the sentence structure.
+  \item Semantic analysis: disambiguation (Which meaning of “apple” is the right one in the given context?), resolving coreferential expressions like “she”, “the car”, etc.; representing the meaning of the sentence in a machine-readable way
+\end{enumerate}
+Task-specific modules then perform many different operations such as automatic summarization of an input text, database look-ups and many others.
+  \subsection{Základní aplikační oblasti --- Core Application Areas}
+In the following, we will discuss the main application areas of language technology, i.e., language checking, web search, speech interaction, and machine translation. This includes applications and basic technologies such as
+\begin{itemize}
+  \item spelling correction
+  \item authoring support
+  \item computer-assisted language learning
+  \item information retrieval
+  \item information extraction
+  \item text summarization
+  \item question answering
+  \item speech recognition
+  \item speech synthesis
+\end{itemize}
+Below, we illustrate core application areas and highlight certain modules of the different architectures in each section. For expository reasons, the architectures are highly simplified and idealized.
+  \subsubsection{Jazyková kontrola --- Language Checking}
+  \begin{figure*}[t]
+  \colorrule{grey3}{\textwidth}{1.5pt}
+  \center
+  \includegraphics[width=\textwidth]{../_media/english/language_checking}
+  \caption{Language checking (top: statistical; bottom: rule-based)}
+  \label{fig:langcheckingaarch_en}
+  \colorrule{grey3}{\textwidth}{1.5pt}
+\end{figure*}
+The morphological and syntactic properties of Czech constitute a great challenge for both spelling and grammar checking. Although the corresponding tools already exist for both kinds of checking (first spelling checkers date back to early 1990’s, the development of a first grammar checker for Microsoft Office took much longer time, it has been included as late as in 2005), there are still many issues waiting for an efficient solution.
 
-\subsection{Application Architectures}
+The existing spelling checkers for Czech are based on a dictionary of basic word forms (lemmas) combined with a set of morphological rules enabling the analysis or generation of all correct word forms. Although this simple approach seems to be satisfactory, it has two substantial drawbacks. The first issue concerns the spelling errors which are actually correct word forms appearing in a wrong context. Due to the isolated handling of individual word forms it is virtually impossible to discover such errors; some more advanced error detection algorithms would definitely be useful. The second drawback is the inability to distinguish between real spelling errors and word forms which are correct, but which are missing from the dictionary. Such words will always exist due to the natural enhancement of a lexicon by newly created words, by new scientific or technical terms etc. The ability to capture this distinction would bring the spelling checkers to a new level.
 
-Software applications for language processing typically consist of several components that mirror different aspects of language. While such applications are typically very complex, figure~\ref{fig:textprocessingarch_en} shows a highly simplified architecture of a typical text processing system. The first three modules handle the structure and meaning of the text input:
+Some attempts to make the spelling checking more context sensitive have already been made in the past. For example, one of the most frequent errors is incorrect spelling of personal pronoun \textit{já {[}I{]}} in the genitive, dative, accusative and locative cases. While the forms differ in spelling (\textit{mě} in genitive/accusative and \textit{mně} in dative/locative) their pronounciation is the same. Therefore,  many people write them incorrectly. To determine the correct form automatically theoretically requires a complete analysis of the given sentence because the proper case usually cannot be determined without taking into account syntax and/or verbal valency. This makes a development of a sophisticated grammar checker a challenge.
+
+The solution implemented in Microsoft Word exploits the fact that these pronouns almost exclusively directly follow a preposition. If this preposition requires using only a particular case (like, e.g., the preposition \textit{k {[}to{]}}), then the correct pronominal form can be determined with almost 100\% reliability just on the basis of this local context. The Autocorrect tool of MS Word thus contains a simple list of such prepositions together with the correct pronominal form.
+
+This example demonstrates that a further research of similar morphological or syntactic properties may improve the quality of a contextual spelling checker quite substantially.
+
+Czech proves to be even more difficult for grammar checking than it is for spelling checking. As a language with a great degree of word-order freedom it makes it difficult to apply error pattern checking, a standard method used for languages with stricter word-order like English. The order of words in a Czech sentence is not completely arbitrary (for example, Czech clitics usually occupy a fixed position in the sentence), but in some cases it is even possible to tear apart an adjective from a nominal group and put it almost anywhere in a given sentence, like, e.g., in frequently cited examples \textit{Vánoční nadešel čas {[}Christmas(adj.) came time / A Christmas time has arrived{]}} or \textit{Hrdliččin zval ku lásce hlas {[}The turtle-dove‘s called to love voice / To love called the turtle-dove’s voice{]}}. Such discontinuous constructions, or non-projective constructions, constitute a huge challenge for any grammar checker. The investigation of the Prague Dependency Treebank, a syntactically annotated corpus of Czech, shows that about 14\% of sentences in the corpus contain at least one non-projective construction. This number clearly demonstrates that this phenomenon cannot be ignored.
+
+These constructions make the grammar checking even more difficult for one more reason. The fact that a dependent word may be located very far from its governor also blurs the distinction between correct and incorrect sentences. Let us demonstrate this fact by means of the following example:
+
+\textit{Které děvčata chtěla dostat šaty?\\
+{[}Which girls wanted to\_get dresses?{]}}
+
+This sentence may either be understood as a syntactically correct, but non-projective sentence which can be translated as \textit{Which dresses did the girls want to get?} or as a syntactically incorrect, but projective sentence \textit{Which girls wanted to get dresses?} (This reading is syntactically incorrect because of the wrong form of the interrogative pronoun \textit{Které {[}Which{]}} – the proper form being \textit{Která}.) To resolve this ambiguity is virtually impossible – non-projective constructions are an integral part of the Czech language and their presence in a sentence does not indicate anything unusual.
+
+The syntactic complexity of non-projective constructions in Czech is even higher than the previous example may suggest. A simple Czech sentence may contain more than one such construction, as, e.g. the sentence:
+
+\textit{Tuto knihu jsem se mu rozhodl dát k narozeninám.\\
+{[}Lit.: This book I\_am myself to him decided to\_give to birthday.{]}\\
+{[}I decided to give him this book to his birthday.{]}}
+
+The pattern present in this example, namely the combination of a finite and infinite verb with intertwined dependent constituents, is very productive in Czech and it theoretically allows for an unlimited number of non-projective constructions in a single clause.
+
+Although non-projective constructions constitute a great challenge for grammar checking because they make simple error-pattern based methods insufficient, they are not the only syntactic challenge in Czech. At least equally important seems to be another syntactic property of Czech – its ability to drop a subject of a subsequent sentence if it is clear from the context what the subject would be. Let us present yet another example:
+
+\textit{Sportovci házely plyšáky.\\
+{[}Sportsmen were throwing cuddle-bears.{]}}
+
+This sentence is syntactically incorrect in the most typical reading due to a gender disagreement between the subject (\textit{sportovci} – masc. anim.) and the predicate (\textit{házely} – fem. or masc. inanimate). The situation changes, if we change the context in the following way:
+
+\textit{Dívky křičely. Sportovci házely plyšáky a rozhodčím shnilá rajčata.\\
+{[}Girls shouted. They were throwing cuddle-bears to the sportsman and rotten tomatoes to referees.{]}}
+
+The fact that the subject may be omitted from a sentence makes it extremely difficult for existing grammar checkers of Czech to discover one of the most frequent types of grammatical errors, the errors in subject – predicate agreement. Further improvement may be achieved only if context broader than a single sentence is involved. This constitutes a great challenge for further research.
+
+Although the first generation of spelling and grammar checkers for Czech already exist, other language checking tools do not. For example, in the field of authoring support we face a total lack of tools. This is caused to a certain extent by the fact that Czech is usually a target language for technical documentation of various products, not a source one, and thus the need for authoring tools is not as pressing as it is the case with more widely used languages. Nevertheless, the need for such tools will definitely grow in the future and thus the research in the natural language processing tools in this area will be more important.
+
+ \subsubsection{Webové vyhledávání --- Web Search}
+\begin{figure*}[htb]
+  \colorrule{grey3}{\textwidth}{1.5pt}
+  \center
+  \includegraphics[width=\textwidth]{../_media/english/web_search_architecture}
+  \caption{Web search}
+  \label{fig:websearcharch_en}
+  \colorrule{grey3}{\textwidth}{1.5pt}
+ \end{figure*}
+
+In the Czech Republic, there is a long tradition of using local web search engines. The most widely used web search engines are Seznam.cz, Google.com, Morfeo.cz and Jyxo.cz. Therefore, the situation is rather different from other countries, where Google.com has an 80\% majority. In the local market, there is enough room both for improving existing search engines through academia-industry collaboration, and for introducing a new one (especially if it would be restricted on a specific domain or specific task, e.g. question answering).
+
+To the best of our knowledge, Google's results are considered to be the most relevant. Google started in 1998 and neither the search interface nor the presentation of the retrieved results has significantly changed since the first version. The success story of Google shows that with a lot of data at hand and efficient techniques for indexing these data, a mainly statistically-based approach can lead to satisfactory results.
+
+However, for a more sophisticated information need, integrating deeper linguistic knowledge is essential. In particular, if a search query consists of a question or a complete sentence rather than a list of keywords, retrieving relevant answers to this query requires an analysis of this question or sentence on a syntactic and semantic level as well as the availability of an index that allows for a fast retrieval of relevant documents.
+
+For example, imagine a user inputs the query “Give me a list of all companies that were taken over by other companies in the last five years”. A simple keyword-based approach will not take us very far here. Expanding the query terms by synonyms, for example using an ontological language resource like WordNet, may improve the results. However, for a satisfactory answer, a deeper query analysis is necessary. For example, applying a syntactic parser to analyze the grammatical structure of the sentence, we can determine that the user is looking for companies that have been taken over and not companies that took over others. We also need to process the expression “last five years” to find out which years it refers to.
+
+For Czech, the sentence analysis task is rather complicated, because we must deal (as already mentioned) with rich morphology and free word order. The local search engines have already incorporated some kinds of morphological analyses into their systems, but their quality varies.
+
+Finally, the processed query needs to be matched to a massive amount of unstructured data in order to find the piece or pieces of information the user is looking for. This involves the retrieval and ranking of relevant documents. In addition, generating a list of companies, we also need to extract the information that a particular string of words in a document refers to a company name. This kind of information is tagged using a named-entity recognizer.
+
+We face an additional challenge if we want to match a query to documents written in a different language. For multilingual search, we have to automatically translate the query to all possible source languages and map the retrieved information back to the target language. Again, this requires a linguistic analysis of all texts involved. For users with a very specialized information need, an expansion of the query may require additional knowledge resources like a domain-specific ontology, representing the concepts relevant within the domain and the relationships between those concepts.
+
+The increasing share of data available in non-textual format also drives the demand for services enabling multimedia search, i.e. information search on images, audio and video data. For audio and video files, this involves a speech recognition module to convert speech content into text or a phonetic representation, to which user queries can be matched.  
+  
+    \subsubsection{Jazykové technologie --- Speech Technology}
+ General recognition of spoken Czech is still in its infancy. Simple applications that work with a small vocabulary and grammar have a high reliability, because Czech does not have a complex sound system. The main problems of applications with large vocabularies and more general language models is the large number of inflection forms of words, a relatively free word order and an informal Common Czech. This prevents statistical language modelling methods to achieve results similar to English.
+ \begin{figure*}[htb]
+  \colorrule{grey3}{\textwidth}{1.5pt}
+  \center
+  \includegraphics[width=\textwidth]{../_media/english/simple_speech-based_dialogue_architecture}
+  \caption{Speech-based dialogue system}
+  \label{fig:dialoguearch_en}
+  \colorrule{grey3}{\textwidth}{1.5pt}
+\end{figure*}
+There are several commercial systems with large vocabularies available (SpeechTech s.r.o.\cite{Note11}, OptimSys, s.r.o.\cite{Note12}, NewtonTechnologies, a.s.\cite{Note13}), but they only work in dictation systems with a high quality audio input or very limited language domains like sporting events or parliamentary speeches. It is possible to buy a separate recognition engine with an open Media Resource Control Protocol  interface that allows the involvement of the recognition module into other applications. Companies offer applications generating off-line transcripts of multimedia archives allowing search. All these products have a relatively good configuration option, but they are not open source applications. For development of an open source recognizer of Czech, there is a lack of freely available acoustic training data, which would allow the preparation of free acoustic models for a speaker independent recognizer. Universal open source tools and libraries are available for the speech recognition, but a reliable method is still missing for the recognition of spontaneous Czech speech with all its word forms and free word order.
+Czech speech synthesis has several commercial voices on a good quality level (Eris\cite{Note11}, Acapela Group\cite{Note14}), there are even open-source Czech synthetic voices, but with lower quality (Festival Czech\cite{Note15}, Epos TTS System\cite{Note16}, MBROLA\cite{Note17}). The speech synthesis modules are embeddable into Interactive Voice Response systems that support many open standards. To create more open source voices we are again missing open source audio recordings, which would allow the development of freely available high-quality voices.
+
+Relying on the two technologies mentioned above, dialog systems are also in their developmental infancy. Czech dialog systems without restrictions are the goal of cooperative research of several universities. Some of speech departments are working on many projects in the speech field, being able to offer simple dialog systems, covering most of voice technology.
+
+Research on spoken Czech focuses on improving the language model. In addition to the proven method of increasing the amount of language model training data, which requires time-consuming manual transcriptions, specific procedures are explored for the Czech language.
+
+One line of research concentrates on conversion of spoken Czech to the formal written form, which can be processed by existing methods developed on text corpora.
+
+Apart from simple cases of replacement of suffixes of Common Czech by their literary form, the method needs to address the replacement of whole word phrases by their correct form. Eliminated in a similar manner are the other phenomena of spontaneous speech such as filler words, repairs or listener responses.
+
+The second line of research focuses on the development of syntactic and semantic analysers of Czech with the help of manually annotated tree corpora of written and spoken Czech. In conjunction with a morphological analysis, this method should help address problems of free word order and of the large number of word forms.
+
+Current research on synthesized spoken Czech tries to develop more natural voices. Hopes are placed in advanced syntactic and semantic analysis of input texts, which should significantly improve the n naturalness of utterances.
+  \subsubsection{Strojový překlad --- Machine Translation}
+The idea of using digital computers to translate natural languages can be traced back to 1946 and was followed by substantial funding for research during the 1950s and again in the 1980s. Yet \textbf{machine translation} (MT) still cannot deliver on its initial promise of providing across-the-board automated translation.
+
+\boxtext{At its basic level, Machine Translation simply substitutes words in one natural language with words in another language.}
+The idea of the translation by the computers became attractive for linguists and mathematicians in the Czech Republic very soon after the first experiments with MT in the world (1954 in USA, 1955 in Soviet Union). In January 1960 the first experiment with English-Czech MT of several sentences by the computer of the 1st generation SAPO, made in earlier Czechoslovakia, was carried out due to the efforts of the small research group from Charles University and the Research Institute of Mathematical Machines. The development of the methods used in MT was continuously followed by the university linguistic research group and some experimental rule-based systems of English-Czech and Czech-Russian MT systems were developed for the computers of 2nd generation (made in GDR and in USSR). They were domain-restricted and served mainly for a verification of formally expressed grammatical rules. In the 1990s a prototype of MT between closely related languages was proposed for the pair Czech and Slovak at Charles University (Česílko\cite{Note18}); however, its application fails due to practical reasons (such as high costs connected with its maintenance etc.). The strategy of statistical methods or combination of statistical and rule-based methods was chosen as a more prospective one for the future.
+The most basic approach to machine translation is the automatic replacement of the words in a text written in one natural language with the equivalent words of another language. This can be useful in subject domains that have a very restricted, formulaic language such as weather reports (system METEO\cite{Note19}). However, in order to produce a good translation of less restricted texts, larger text units (phrases, sentences, or even whole passages) need to be matched to their closest counterparts in the target language. The major difficulty is that human language is ambiguous, which presents challenges on multiple levels, for example word sense disambiguation on the lexical level or the attachment of prepositional phrases on the syntactic level.
+
+One way to build an MT system is to use linguistic rules. For translations between closely related languages, a translation using direct substitution may be feasible in cases such as the above example. However, rule-based (or linguistic knowledge-driven) systems often analyse the input text and create an intermediary symbolic representation from which the target language text can be generated. The success of these methods is highly dependent on the availability of extensive lexicons with morphological, syntactic, and semantic information, and large sets of grammar rules carefully designed by skilled linguists. This is a very long and therefore costly process.
+
+\begin{figure*}[htb]
+  \colorrule{grey3}{\textwidth}{1.5pt}
+  \center
+  \includegraphics[width=\textwidth]{../_media/english/machine_translation}
+  \caption{Machine translation (left: statistical; right: rule-based)}
+  \label{fig:mtarch_en}
+  \colorrule{grey3}{\textwidth}{1.5pt}
+\end{figure*}
+For Czech, there are several commercial and academic rule- and lexicon-based translation systems. One of them is based on a linguistic theory elaborated in Prague since 1960s. The system follows the above mentioned analysis-transfer-synthesis scenario. Despite the linguistic adequacy of such approach, the system still suffers from a number of practical difficulties, such as from relatively high error rate of current syntactic analysers and from computational issues related to high number of contextual features that should be taken into account when translating individual words.
+In the late 1980s when computational power increased and became cheaper, interest in statistical models for machine translation began to grow. Statistical models are derived from analysing bilingual text corpora, \textbf{parallel corpora}, such as the Europarl parallel corpus, which contains the proceedings of the European Parliament in 21 European languages (Czech has been added recently and the size of Czech data is still orders of magnitude smaller than for established languages.) Given enough data, statistical MT works well enough to derive an approximate meaning of a foreign language text by processing parallel versions and finding plausible patterns of words. Unlike knowledge-driven systems, however, statistical (or data-driven) MT systems often generate ungrammatical output. Data-driven MT is advantageous because less human effort is required, and it can also cover special particularities of the language (e.\,g., idiomatic expressions) that are often ignored in knowledge-driven systems. 
+Availability of large amounts of bilingual texts is really the key in statistical MT. For Czech, corpora of parallel texts with several other languages are currently being created. The largest data – in total several million pairs of sentences – is available for the English-Czech language pair\cite{Note20}. The corpus contains for example EU law texts, newspaper texts, technical documentation, and electronic books. The most challenging problem related to the contemporary parallel corpora is the quality of alignment (pairing of corresponding parts of a text and its translation). Not only that exact word-to-word linkage is impossible due to differences in morphology and syntax of the two languages, but reliable sentence-to-sentence and sometimes even document-to-document alignment is difficult to achieve too. Needless to say that compilation of such corpora has to be fully automatic – human processing is completely out of question because of the data size.
+
+Languages with rich morphology like Czech also pose specific challenges for state-of-the-art statistical systems: the system has to choose not only the correct word but also the appropriate form to satisfy grammatical context. Very few statistical systems to date can handle morphological richness explicitly and thus often fall short of vocabulary: all the necessary word forms are not available even in large parallel corpora.
+The strengths and weaknesses of knowledge-driven and data-driven machine translation tend to be complementary, so that nowadays researchers focus on hybrid approaches that combine both methodologies. One such approach uses both knowledge-driven and data-driven systems, together with a selection module that decides on the best output for each sentence. However, results for sentences longer than, say, 12 words, will often be far from perfect. A more effective solution is to combine the best parts of each sentence from multiple outputs; this can be fairly complex, as corresponding parts of multiple alternatives are not always obvious and need to be aligned. Another, more challenging approach is to design a new setup that combines the advantages of the two paradigms by integrating the good features of each. For example, making a rule-based system adaptive by adding a module for rule learning, or, making a statistical MT system syntax-aware by adding syntactical constraints.
+
+Completely separate is the question of evaluating MT output quality, both manually and automatically. Experience shows that different systems score differently under various manual evaluations: rule-based systems tend to preserve the meaning better while statistical systems produce output more fluent locally. In e.g. question-answering evaluation, the meaning is more important. On the other hand, local fluency impacts the impression more when the user is directly comparing system outputs. Automatic evaluation (based on the comparison of MT output to one or more manually constructed reference translations) is vital in development of MT systems. It has been shown that such automatic evaluation is unreliable esp. for languages with richer morphology and it is also acknowledged that some automatic fine-grained reporting on MT quality and error types would be very useful.
+\subsection{Informační managment/Jazykové technologie „v zákulisí“ --- Information management/``LT behind the scenes''}
+Building language technology applications involves a range of subtasks that do not always surface at the level of interaction with the user, but they provide significant service functionalities “behind the scenes” of the system in question. They all form important research issues that have now evolved into individual sub-disciplines of computational linguistics. Question answering, for example, is an active area of research for which annotated corpora have been built and scientific competitions have been initiated. The concept of question answering goes beyond keyword-based searches (in which the search engine responds by delivering a collection of potentially relevant documents) and enables users to ask a concrete question to which the system provides a single answer. For example:
+
+\begin{itemize}
+\item[] \textit{Question: How old was Neil Armstrong when he stepped on the moon?}
+\item[] \textit{Answer: 38.}
+\end{itemize}
+
+While question answering is obviously related to the core area of web search, it is nowadays an umbrella term for such research issues as which different types of questions exist, and how they should be handled; how a set of documents that potentially contain the answer can be analysed and compared (do they provide conflicting answers?); and how specific information (the answer) can be reliably extracted from a document without ignoring the context. Question answering is in turn related to information extraction (IE), an area that was extremely popular and influential when computational linguistics took a statistical turn in the early 1990s. IE aims to identify specific pieces of information in specific classes of documents, such as the key players in company takeovers as reported in newspaper stories. Another common scenario that has been studied is reports on terrorist incidents. The task here consists of mapping appropriate parts of the text to a template that specifies the perpetrator, target, time, location and results of the incident. Domain-specific template-filling is the central characteristic of IE, which makes it another example of a “behind the scenes” technology that forms a well-demarcated research area, which in practice needs to be embedded into a suitable application environment.
+\boxtext{Language technology applications often provide significant service functionalities behind the scenes of larger software systems.}
+Text summarisation and \textbf{text generation} are two borderline areas that can act either as standalone applications or play a supporting role. Summarisation attempts to give the essentials of a long text in a short form, and is one of the features available in Microsoft Word. It mostly uses a statistical approach to identify the “important” words in a text (i.\,e., words that occur very frequently in the text in question but less frequently in general language use) and determine which sentences contain the most of these “important” words. These sentences are then extracted and put together to create the summary. In this very common commercial scenario, summarisation is simply a form of sentence extraction, and the text is reduced to a subset of its sentences. An alternative approach, for which some research has been carried out, is to generate brand new sentences that do not exist in the source text.
+An alternative approach, to which some research is devoted, is to actually synthesize new sentences, i.e., to build a summary of sentences that need not show up in that form in the source text. This requires a certain amount of deeper understanding of the text and therefore is much less robust; furthermore, such an approach is to a good extent geared towards a particular domain or text genre, since particular knowledge is needed to perform the step of abstracting from the source text to its “content”. Synthesizing a summary now in turn is a case of text generation - the production of new text, either from other text (as in summarization), or from a set of non-textual data. This can be applied whenever reports are needed that describe how certain data streams develop over time. Such systems have been built for generating weather and air quality reports, or for summaries of medical diagnosis data. However, a text generator is in most cases not a stand-alone application but embedded into a larger software environment, such as into a clinical information system where patient data is collected, stored and processed, and report generation is just one of many functionalities.
+
+There are many Czech research groups working on international (e.g. English) applications. Only a part of the HLT effort in the Czech Republic is dedicated particularly to Czech. There are many NLP-components for Czech, such as spell-checkers, corpora, morphological taggers and valency lexicons, along with a Czech collocation analyser (Word Sketch Engine for Czech, developed at the Masaryk University in Brno, (\cite{Horak2009})) and a manifold research of speech recognition and generation, but not many more complex HLT applications ready to use in the industry.
+
+To the best of our knowledge, there is just one working question-answering system reported for Czech, developed by researchers at the Masaryk University in Brno – UIO (standing for the Czech “Artificial Intelligence of a Monkey”), (\cite{Svoboda2003}). UIO can ask databases and the Web. In its current version, UIO can be used for asking questions about train and coach timetables, cinema and theatre performances, about currency exchange rates, name-days and on the Diderot Encyclopedia. For all domains UIO has an accuracy rate about 80\%. A competing (so far no-name) system is being developed at the University of West Bohemia.
+
+A simple conversational dialog system was developed at the Institute of Formal and Applied Linguistics, Charles University in Prague in collaboration with the Faculty of Cybernetics at the University of West Bohemia in Pilsen and, to a lesser extent, with some other consortium partners in the FP-6 Companions project\cite{Note21}. A human-like avatar converses with seniors about their respective personal photograph collections and life stories (\cite{Ptacek2010}, \cite{Romportl2010}, \cite{GruberTihelka2010}).
+
+The Text-Mining Research Group at the University of West Bohemia is developing a User Profile Generation system (\cite{Grolmus2003}). This system performs text-mining on the documents gathered and viewed by a user. It uses the (user-approved) information to recommend particular documents on further searches as well as to estimate the user’s expertise in a given domain. This application can be used e.g. as a support of digital libraries.
+WebGen, a similarly-named application developed at the Masaryk University in Brno (LSD lab\cite{Note22}) is a dialog-based system that helps visually impaired people generate web presentations in Czech. It is still in development (\cite{BartelPlhak2008}).
+
+The Department of Computer Graphics and Multimedia FIT BUT Faculty of Information Technology at the Brno University of Technology in Brno\cite{Note23} delivered speech-processing software that adds semantic labels to speech transcripts (Speech Tagging, \cite{Smrz2010}). The client side is an HTML user interface in a web browser accessing functionality provided by the server. The server enables upload and analysis of speech records. The user is able to define and manage so called "tags", which are groups of semantically related keywords. If some keyword is found in some record, the record is tagged correspondingly. This service would be useful in e.g. crisis management, when it is suitable to classify phone calls according to words spoken, but, to our knowledge, it has not been employed in real applications yet.
+
+The Faculty of Cybernetics at the University of West Bohemia in Pilsen has developed several speech-based applications for Czech, such as a dialog system with train timetables or a dialog system for students registering for exams on the phone (University VoiceXML information system\cite{Note24}). Their research groups run numerous projects aimed at assisting people with hearing impairments, e.g. by translating between Czech and (Czech) sign language.
+
+Another useful application (developed in Pilsen) is a voice-controlled system for dentists (\cite{Nagy2008}). It works in two modes:  in the first, it reads the record of a tooth in the mouth of the patient. In the second mode, it records the information that the dentist dictates and updates the status of the given tooth. Voice-control is essential there, since the dentist is not allowed to touch either a screen or controls on a dictation device while examining the patient.
+
+The research groups from the University of West Bohemia and from the Institute of Formal and Applied Linguistics at the Charles University in Prague participated in the international MALACH project (MALACH stands for “Multilingual Access to Large Spoken Archives” and means “messenger angel” in Hebrew), (\cite{Psutka2005}). They were in charge of speech recognition and semantic indexing of testimonies recorded in Czech and other Slavic languages. The Charles University now hosts one of the local access points to the archive of testimonies of holocaust survivors. (Other access points are located in the USA, Germany, Hungary, Izrael and Australia)
+
+The nearly 52,000 videotaped testimonies of the Shoah Foundation Institute's Visual History Archive were recorded primarily between 1994 and 1999 in 56 countries and in 32 languages. While the majority of the interviews are with Jewish Holocaust survivors, the archive also includes the testimonies of political prisoners, Sinti and Roma (Gypsy) survivors, Jehovah's Witness survivors, survivors of eugenics policies, and homosexual survivors as well as rescuers and aid providers, liberators, and participants in war crimes trials.
+
+The archive is accessible through an on-line interface, which enables the users browsing and viewing the testimonies, deploying an index of 55 thousand keywords and key phrases. The access point in Prague stores more than 500 testimonies in Czech, with average duration of 2 hours. Other testimonies have to be ordered online from the other access point, which usually takes a few hours.
+\subsubsection{Miscelanea --- Miscellaneous}
+It would be misleading to judge the NLP-HLT research of the respective countries only on the basis of how many resources and applications for their national language they have produced. In fact, there is a vicious circle in the NLP-HLT research for small languages: the grant agencies as well as the government want to support only the best teams. The best teams are the ones that produce the most internationally recognized publications. These are significantly easier to achieve in research that has international impact. While almost any improvement in any issue is interesting to report on big or strategic languages such as English, Chinese or Arabic, a research with the same outcome has a grossly humbler impact when reported on languages that are interesting only for their native speakers. To produce a good publication on a small language, a real breakthrough is needed, whereas, obviously, breakthroughs cannot be counted on to happen regularly.  Besides, even if a language-dependent result for a small language is considered a breakthrough by the local research community, it is still difficult to present to international reviewers who are not familiar with the language.
+Also, language-independent solutions are generally preferred to the language-dependent ones, since their commercial application is cheaper. English is the natural first-choice language to experiment on in the European context, as there are comprehensive high-quality resources available for English. Also, the results are more easily compared within the international community.
+
+As a consequence, national teams focus on English rather than relying on research on their national language. This is to be kept in mind when assessing the quality of national HLT/NLP research and development. A poor inventory of good HLT applications and resources for a small language does not necessarily imply poor research, but it can be a serious indicator of lacking governmental support policy. Targeted governmental support of national-language HLT is vital for language communities whose markets are too small for national-language HLT to be endorsed by the private sector.
+  \subsection{Průmysl a programy jazykových technologií --- LT industry and programs}
+Industrial deployment of language technologies is not widespread in Czechia. Businesses specialized in LT are rare. The same holds for research \& development departments of larger companies.
+
+Web search engines and services (Seznam, Centrum, Google etc.) are nowadays generally capable of performing morphological analysis and lemmatization. Google offers phrase-based machine translation of websites and user-supplied text both to and from Czech. Seznam provides on-line dictionaries between Czech on one side and English, German, French, Italian, Spanish or Russian on the other side. However, they don’t provide translation of running text.
+
+There are companies developing and publishing bilingual electronic dictionaries as Windows applications. These typically contain morphological analysis / lemmatization, some of them also a sort of ontology.
+
+Cell phone manufacturers can use a Czech version of T9.
+
+Office software packages (such as Microsoft Office 2010) provide Czech spellchecking, grammar checking, sometimes also machine translation and automatic speech recognition (voice input).
+
+Phone switchboards and help/information applications employing automatic speech recognition are virtually unheard of. There have been pilot projects with ASR by university teams specialized in ASR (most notably the University of West Bohemia in Pilsen and the Technical University in Liberec) but there is no wide industrial application of such technologies.
+
+Czech speech recognition was commercialized by Newton Technologies company—a spin-off of the Technical University in Liberec.
+
+Most of the government-originating funding programs are maintained by the Czech Science Foundation (GAČR) and focused on basic research. Recently (2009), a new Technological Agency of the Czech Republic (Technologická agentura České republiky, TAČR) has been established, which shall focus on applied research. However, there are probably no LT-related projects funded by TAČR yet.
+  \subsection{Jazykové technologie ve výzkumu a vzdělávání --- LT research and education}
+From the historical point of view, the terms ``computational linguistics'', ``natural language processing'' and ``speech recognition'' have been used for a longer time than the term language technologies, at least in the context of research and education. No matter the name, the disciplines related to natural language comprise a number of related subjects of research and education: theoretical linguistics, corpus linguistics, computer science, mathematics, machine learning etc.
+
+Below, we list Czech institutes and departments focusing on research and education in computational linguistics and language processing. The list also provides information about their core research areas (CL – computational ling., CoL – corpus ling., TL – theoretical ling., ASR – automatic speech recognition) and what study programs they offer, if any.
 
 \begin{enumerate}
-\item Pre-processing: cleans the data, analyses or removes formatting, detects the input languages, and so on.
-\item Grammatical analysis: finds the verb, its objects, modifiers and other parts of speech; detects the sentence structure.
-\item Semantic analysis: performs disambiguation (i.\,e., computes the appropriate meaning of words in a given context); resolves anaphora (i.\,e., which pronouns refer to which nouns in the sentence); represents the meaning of the sentence in a machine-readable way.
+\item Charles University in Prague
+  \begin{itemize}
+  \item Institute of Formal and Applied Linguistics (\textit{http://ufal.mff.cuni.cz}); CL, TL, ASR; BSc, MSc, PhD;
+  \item Institute of Czech National Corpus (\textit{http://ucnk.ff.cuni.cz/english/index.php});CoL; PhD.
+  \item Institute of Theoretical and Computational Linguistics (\textit{http://utkl.ff.cuni.cz}); CL; PhD;
+  \end{itemize}
+\item University of Economics in Prague
+  \begin{itemize}
+  \item Department of information and knowledge engineering (\textit{http://kizi5.vse.cz/});datamining, semantic web, ontologies; BSc, MSc, PhD;
+  \end{itemize}
+\item Czech Technical University in Prague
+  \begin{itemize}
+  \item Department of Cybernetics (\textit{http://cyber.felk.cvut.cz/}); robotics, artifitial   intelligence; BSc, MSc, PhD;
+  \item Department of Circuit Theory (\textit{http://noel.feld.cvut.cz/speechlab/start.php?page=projects\&lang=en\#2});  ASR; BSc, MSc, PhD
+  \end{itemize}
+\item Masaryk University, Brno
+  \begin{itemize}
+  \item Natural Language Processing Centre (\textit{http://nlp.fi.muni.cz/en/nlplab}); CL, ASR; 
+  \item Department of Czech Language (\textit{http://www.muni.cz/phil/211700?lang=en}); CL, TL;	BSc, MSc, PhD;
+  \end{itemize}
+\item Brno University of Technology
+  \begin{itemize}
+  \item Speech Processing Group (\textit{http://speech.fit.vutbr.cz/}); ASR; 
+  \end{itemize}
+  \begin{itemize}
+  \item Natural Language Processing Research Group (\textit{http://www.fit.vutbr.cz/research/groups/nlp/index.php?lang=en}); CL; 
+  \end{itemize}
+\item University of West Bohemia
+  \begin{itemize}
+  \item Department of Cybernetics (\textit{http://www.kky.zcu.cz/en}); ASR; BSc, MSc, PhD;
+  \end{itemize}
+\item Technical University of Liberec
+  \begin{itemize}
+  \item Laboratory of Computer Speech Processing (\textit{https://www.ite.tul.cz/speechlabe/}); ASR; 
+  \end{itemize}
 \end{enumerate}
 
-After analysing the text, task-specific modules can perform other operations, such as automatic summarisation and database look-ups.
+Charles University in Prague, Faculty of Mathematics and Physics is offering the European Master Program in Language and Communication Technologies as a part of its MSc. study program as well as PhD program. Thanks to this activity, the Faculty can welcome students from abroad who also give new impulses to their Czech colleagues.
+
+The natural language research in the private sector is not very common in the Czech Republic and is only represented by small companies (e.g. Lingea, Captaworks, LangSoft) and by spin-offs of university teams (e.g. SpeechTech - University of West Bohemia, Phonexia - University of Technology in Brno).
+
+The study programs the institutes offer emphase both theory and practice. Unfortunately, a demand for such experts is very low in the Czech Republic.
+\subsection{Dostupné nástroje a zdroje pro češtinu --- Availability of tools and resources for Czech}
+The following table summarizes the current state of language technology support for the Czech language. The rating for existing tools and resources is based on assessments of leading experts (0 is worst, 6 is best).
+%TABLE HERE
+\subsubsection{Poznámky k tabulce --- Notes to the table}
+
+\begin{itemize}
+\item While some specific corpora of high quality exist, a very large syntactically annotated corpus is not available.
+\item There is a highly elaborated syntactically annotated corpus for Czech. However, the corpus is not available for free (can be bought via LDC). Several extending annotations (coreference, discourse etc.) are being performed on top of the corpus, but they are not yet finished.
+\item For Czech, a large text corpus exists, but it is not available for automatic processing (only for on-line searching).
+\item Many of the resources lack standardization, i.e., even if they exist, sustainability is not given; concerted programs and initiatives are needed to standardize data and interchange formats.
+\item Semantics is more difficult than syntax; text semantics is more difficult than word and sentence semantics.
+\item Research has been successful in designing particular high quality software, but it is nearly impossible to come up with sustainable and standardized solutions given the current funding situations.
+\item There is an ontological resource for Czech (even mapped to other European ontological resources) but its coverage is limited.
+\item Speech Recognition of Czech is researched at several universities and workplaces but free tools and data are not available.
+\item The main problems of large vocabulary speech recognizers are in specific Czech language modelling.
+\item In the field of speech synthesis, there are available open-source packages, but the speech synthesis with more natural voices is available only in commercial applications.
+\item Czech dialogue systems are very little used due to poor accessibility of high quality speech recognition modules of Czech.
+\item For the web search, there is enough room both for improving existing popular local search engines through the academia-industry collaboration, and for introducing a new one.
+\end{itemize}
+To conclude, in a number of specific areas of Czech language research, we have software with limited functionality and resources with limited scope/complexity available today, and only some of them open-source. Obviously, further research efforts are required to meet the current deficits.
+  \subsection{Porovnání napříč jazyky --- Cross-language comparison}
+    The current state of LT support varies considerably from one language community to another. In order to compare the situation between languages, this section will present an evaluation based on two sample application areas (machine translation and speech processing) and one underlying technology (text analysis), as well as basic resources needed for building LT applications.
+
+    % Figure 1 and 2
 
 
+    % Figure 3 and 4
+
+
+The above tables show that LT resources and tools for Czech clearly do not yet reach the quality and coverage of comparable resources and tools for the English language and some other ‘larger’ languages in EU. And there are still plenty of gaps in English language resources with regard to high quality applications.
+
+Today’s text analysis components and language resources cover the linguistic phenomena of Czech only to a certain extent; they mostly form part of applications involving shallow natural language processing, e.g. spelling correction.
+
+However, for building more sophisticated applications, such as machine translation, there is a clear need for resources and technologies that cover a wider range of linguistic aspects and allow a deep semantic analysis of the input text. By improving the quality and coverage of these basic resources and technologies, we shall be able to open up new opportunities for tackling a vast range of advanced application areas, including high-quality broad-based machine translation.
+
+\subsection{Conclusions}
+
+\emph{In this series of white papers, we have made an important effort by assessing the language technology support for 30 European languages, and by providing a high-level comparison across these languages. By identifying the gaps, needs and deficits, the European language technology community and its related stakeholders are now in a position to design a large scale research and development programme aimed at building a truly multilingual, technology-enabled communication across Europe.}
+The results of this white paper series show that there is a dramatic difference in language technology support between the various European languages. While there are good quality software and resources available for some languages and application areas, others, usually smaller languages, have substantial gaps. Many languages lack basic technologies for text analysis and the essential resources. Others have basic tools and resources but the implementation of for example semantic methods is still far away. Therefore a large-scale effort is needed to attain the ambitious goal of providing high-quality language technology support for all European languages, for example through high quality machine translation. 
+In the case of the Czech language, we can be cautiously optimistic about the current state of language technology support. There is a viable LT research community in the Czech Republic, which has been supported in the past by various research programs. A number of resources and technologies have been produced for Czech. However, the scope of the resources and the range of tools are still very limited when compared to the resources and tools for the English language, and they are simply not sufficient in quality and quantity to develop the kind of technologies required to support a truly multilingual knowledge society.
+
+Nor can we simply transfer technologies already developed and optimized for the English language to handle Czech. English-based systems for parsing (syntactic and grammatical analysis of sentence structure) typically perform far less well on Czech texts, due to the specific characteristics of the Czech language.
+
+The Czech language technology industry dedicated to transforming research into products is currently fragmented and disorganized. Most large companies have either stopped or severely cut their LT efforts, leaving the field to a number of specialized SMEs that are not robust enough to address the internal and the global market with a sustained strategy. 
+
+Our findings show that the only alternative is to make a substantial effort to create LT resources for Czech, and use them to drive forward research, innovation and development. The need for large amounts of data and the extreme complexity of language technology systems makes it vital to develop a new infrastructure and a more coherent research organization to spur greater sharing and cooperation.
+Finally there is a lack of continuity in research and development funding. Short-term coordinated programmes tend to alternate with periods of sparse or zero funding. In addition, there is an overall lack of coordination with programmes in other EU countries and at the European Commission level.
+
+The long term goal of META-NET is to enable the creation of high-quality language technology for all languages. This requires all stakeholders - in politics, research, business, and society - to unite their efforts. The resulting technology will help tear down existing barriers and build bridges between Europe’s languages, paving the way for political and economic unity through cultural diversity. 
+\ssection[About META-NET]{About META-NET}
+
+\begin{multicols}{2}
+META-NET is a Network of Excellence funded by the European Commission. The network currently consists of 54 members from 33 European countries \cite{rehm2011}. META-NET fosters the Multilingual Europe Technology Alliance (META), a growing community of language technology professionals and organisations in Europe. META-NET cooperates with other initiatives like the Common Language Resources and Technology Infrastructure (CLARIN), which is helping to establish digital humanities research in Europe. META-NET fosters the technological foundations for a truly multilingual European information society that:
+
+\begin{itemize}
+\item makes communication and cooperation possible across languages;
+\item provides equal access to information and knowledge in any language;
+\item offers advanced and affordable networked information technology to European citizens.
+\end{itemize}
+
+META-NET stimulates and promotes multilingual technologies for all European languages. The technologies enable automatic translation, content production, information processing and knowledge management for a wide variety of applications and subject domains. The network wants to improve current approaches, so better communication and cooperation across languages can take place. Europeans have an equal right to information and knowledge regardless of language.
+
+META-NET launched on 1 February 2010 with the goal of advancing research in language technology (LT). The network supports a Europe that unites as a single digital market and information space. META-NET has conducted several activities that further its goals. META-VISION, META-SHARE and META-RESEARCH are the network’s three lines of action.
+
+\textbf{META-VISION} fosters a dynamic and influential stakeholder community that unites around a shared vision and a common strategic research agenda (SRA). The main focus of this activity is to build a coherent and cohesive LT community in Europe by bringing together representatives from highly fragmented and diverse groups of stakeholders. In the first year of META-NET, presentations at the FLaReNet Forum (Spain), Language Technology Days (Luxembourg), JIAMCATT 2010 (Luxembourg), LREC 2010 (Malta), EAMT 2010 (France) and ICT 2010 (Belgium) centred on public outreach. According to initial estimates, META-NET has already contacted more than 2,500 LT professionals to develop its goals and visions with them. At the META-FORUM 2010 event in Brussels, META-NET communicated the initial results of its vision building process to more than 250 participants. In a series of interactive sessions, the participants provided feedback on the visions presented by the network. 
+
+\textbf{META-SHARE} creates an open, distributed facility for exchanging and sharing resources. The peer-to-peer network of repositories will contain language data, tools and web services that are documented with high-quality metadata and organised in standardised categories. The resources can be readily accessed and uniformly searched. The available resources include free, open source materials as well as restricted, commercially available, fee-based items. META-SHARE targets existing language data, tools and systems as well as new and emerging products that are required for building and evaluating new technologies, products and services. The reuse, combination, repurposing and re-engineering of language data and tools plays a crucial role. META-SHARE will eventually become a critical part of the LT marketplace for developers, localisation experts, researchers, translators and language professionals from small, mid-sized and large enterprises. META-SHARE addresses the full development cycle of LT—from research to innovative products and services. A key aspect of this activity is establishing META-SHARE as an important and valuable part of a European and global infrastructure for the LT community. 
+
+\textbf{META-RESEARCH} builds bridges to related technology fields. This activity seeks to leverage advances in other fields and to capitalise on innovative research that can benefit language technology. In particular, this activity wants to bring more semantics into machine translation (MT), optimise the division of labour in hybrid MT, exploit context when computing automatic translations and prepare an empirical base for MT. META-RESEARCH is working with other fields and disciplines, such as machine learning and the Semantic Web community. META-RESEARCH focuses on collecting data, preparing data sets and organising language resources for evaluation purposes; compiling inventories of tools and methods; and organising workshops and training events for members of the community. This activity has already clearly identified aspects of MT where semantics can impact current best practices. In addition, the activity has created recommendations on how to approach the problem of integrating semantic information into MT. META-RESEARCH is also finalising a new language resource for MT, the Annotated Hybrid Sample MT Corpus, which provides data for English-German, English-Spanish and English-Czech language pairs. META-RESEARCH has also developed software that collects multilingual corpora that are hidden on the Web.
   \subsection{Členské organizace --- Member Organisations}
     V následující tabulce je uveden seznam organizací a jejich zástupců, které se podílejí na projektu META-NET.
 \begin{tabular*}{\textwidth}{l|p{6cm}|p{4cm}}
