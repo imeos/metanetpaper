@@ -1,4 +1,107 @@
-  \section {Shrnutí --- Executive Summary}
+%                                     MMMMMMMMM                                         
+%                                                                             
+%  MMO    MM   MMMMMM  MMMMMMM   MM    MMMMMMMM   MMD   MM  MMMMMMM MMMMMMM   
+%  MMM   MMM   MM        MM     ?MMM              MMM$  MM  MM         MM     
+%  MMMM 7MMM   MM        MM     MM8M    MMMMMMM   MMMMD MM  MM         MM     
+%  MM MMMMMM   MMMMMM    MM    MM  MM             MM MMDMM  MMMMMM     MM     
+%  MM  MM MM   MM        MM    MMMMMM             MM  MMMM  MM         MM     
+%  MM     MM   MMMMMM    MM   MM    MM            MM   MMM  MMMMMMM    MM
+%
+%
+%            - META-NET Language Whitepaper | German paper -
+% 
+% ----------------------------------------------------------------------------
+  
+\documentclass[]{../../metanetpaper}
+
+%!TEX TS-program = xelatex
+\RequireXeTeX %Force XeTeX check
+
+\usepackage{polyglossia}
+\setotherlanguages{czech,english}
+
+\title{Jazyky v evropské informační společnosti - Čeština --- The Czech Language in the Digital Age}
+\subtitle{White Paper Series --- Weißbuch-Serie}
+
+\author{
+  Jarmila Panevová,
+  Jiří Mírovský,
+  Barbora Vidová Hladká
+}
+\editors{
+  Georg Rehm, Hans Uszkoreit\\(Herausgeber, \textcolor{grey1}{editors})
+}
+%--------------------------------------------------------
+\begin{document}
+
+\maketitle
+
+\null
+\pagestyle{empty} 
+
+\FundingLNotice{\selectlanguage{german}
+  Die Ausarbeitung dieses Weißbuchs wurde mit Mitteln aus dem Siebten
+  Rahmenprogramm und dem Programm zur Unterstützung der Politik für
+  Informations- und Kommunikationstechnologien der Europäischen
+  Kommission im Rahmen der Verträge T4ME (Finanzhilfevereinbarung
+  249119), CESAR (Finanzhilfevereinbarung 271022), METANET4U
+  (Finanzhilfevereinbarung 270893) und META-NORD
+  (Finanzhilfevereinbarung 270899) finanziert.}
+
+\FundingRNotice{\selectlanguage{english}
+  The development of this white paper has been funded by the Seventh
+  Framework Programme and the ICT Policy Support Programme of the
+  European Commission under the contracts T4ME (Grant Agreement
+  249119), CESAR (Grant Agreement 271022), METANET4U (Grant Agreement
+  270893) and META-NORD (Grant Agreement 270899).}
+
+\makefundingnotice
+
+\pagenumbering{Roman} 
+\setcounter{page}{5}
+\pagestyle{scrheadings}
+
+\cleardoublepage
+  % --------------------------------------------------------------------------
+  \bsection*{  --- Preface}
+  \begin{Parallel}[c]{78mm}{78mm}
+  \ParallelLText{
+Tato Bílá kniha je součástí série, která podporuje znalosti jazykových technologií a jejich potenciál. Je určena pedagogům, novinářům, politikům, různým jazykovým komunitám a dalším.
+Dostupnost a využívání jazykových technologií se v Evropě u jednotlivých jazyků liší. V důsledku toho se pro každý jazyk liší také kroky, které je nutné podniknout pro další podporu výzkumu a vývoje jazykových technologií. Tyto plánované postupy závisí na mnoha faktorech, jako je složitost daného jazyka či velikost jeho komunity.
+META-NET (excelentní internetová síť) financovaný Evropskou komisí provedl analýzu současných jazykových zdrojů a technologií. Tato analýza se zaměřila na 23 oficiálních evropských jazyků a na další významné národní a regionální jazyky v Evropě. Výsledky analýzy naznačují, že ve výzkumu každého jazyka je značné množství mezer. Podrobnější expertní analýza a hodnocení současné situace přitom přispějí k maximalizaci účinku dalšího výzkumu a minimalizaci jakýchkoli rizik.
+META-NET se skládá ze 54 výzkumných center z 33 zemí, které pracují s podílníky z komerčních firem, vládních agentur, průmyslu, výzkumných organizací, softwarových firem, evropských univerzit a s poskytovateli technologií. Dohromady mají jednu společnou vizi – vyvíjejí strategický plán výzkumu, který ukazuje, jak aplikace jazykových technologií mohou do roku 2020 vyřešit případné mezery ve výzkumu.
+  }
+
+  \ParallelRText{
+This white paper is part of a series that promotes knowledge about language technology and its potential. It addresses educators, journalists, politicians, language communities and others.
+The availability and use of language technology in Europe varies between languages. Consequently, the actions that are required to further support research and development of language technologies also differ for each language. The required actions depend on many factors, such as the complexity of a given language and the size of its community.
+META-NET, a Network of Excellence funded by the European Commission, has conducted an analysis of current language resources and technologies. This analysis focused on the 23 official European languages as well as other important national and regional languages in Europe. The results of this analysis suggest that there are many significant research gaps for each language. A more detailed expert analysis and assessment of the current situation will help maximize the impact of additional research and minimize any risks.
+META-NET consists of 54 research centres from 33 countries that are working with stakeholders from commercial businesses, government agencies, industry, research organisations, software companies, technology providers and European universities. Together, they are creating a common technology vision while developing a strategic research agenda that shows how language technology applications can address any research gaps by 2020.
+  }
+ \ParallelPar
+\end{Parallel}
+
+\cleardoublepage
+%---------------------------------------
+\bsection*{Inhaltsverzeichnis --- Table of Contents}
+
+\tableofcontents
+
+\addtocontents{toc}{\protect\thispagestyle{empty}\protect}
+\addtocontents{toc}{{\Large\textsf{\centerline{THE CZECH LANGUAGE IN THE DIGITAL AGE}}\par}}
+
+\cleardoublepage
+
+% --------------------------------------------------------------------------
+\setcounter{page}{1}
+\pagenumbering{arabic} 
+\pagestyle{scrheadings}
+
+
+% Start of origin language part
+% --------------------------------------------------------------------------
+
+\ssection [Shrnutí]{Shrnutí --- Executive Summary}
     \boxtext{Jazykové technologie staví mosty pro budoucnost Evropy}
 
 Evropa se během posledních 60 let stala zřetelnou politickou a ekonomickou sítí, přesto je ale kulturně a jazykově stále velmi různorodá. Znamená to, že každodenní komunikace mezi evropskými občany (ať už přecházíme z portugalštiny do polštiny nebo z italštiny do islandštiny) i komunikace v oblasti podnikání a politiky se nevyhnutelně potýká s jazykovou bariérou. Orgány EU utratí asi jednu miliardu eur ročně na překládání textů a tlumočení mluvené komunikace, aby řešily otázku mnohojazyčnosti. Musí to však být taková zátěž? Moderní jazykové technologie (language technology, LT) a lingvistický výzkum mohou významně přispět k bourání jazykových hranic. Když se jazykové technologie spojí s inteligentními zařízeními a aplikacemi, budou v budoucnosti schopné pomáhat Evropanům jednoduše komunikovat a obchodovat, i když nemluví společnou řečí.
@@ -22,7 +125,7 @@ Tento dokument doplňuje řadu dalších činností projektu META-NET (viz pří
 Aktuální informace, např. aktuální verzi plánů projektu META-NET\cite{Meta1}
 nebo strategický plán výzkumu (SRA), najdete na webových stránkách http://www.meta-net.eu.
 
-  \section{Riziko pro naše jazyky a výzva pro jazykové technologie --- Risk for Our Languages and a Challenge for Language Technology}
+  \ssection[Riziko pro naše jazyky a výzva pro jazykové technologie]{Riziko pro naše jazyky a výzva pro jazykové technologie --- Risk for Our Languages and a Challenge for Language Technology}
 
 Jsme svědky digitální revoluce, která dramaticky ovlivňuje komunikaci a společnost. Nedávný vývoj digitálních informačních a komunikačních technologií je někdy srovnáván s Gutenbergovým vynálezem knihtisku. Co nám může tato analogie říct o budoucnosti evropské informační společnosti a zejména o budoucnosti našich jazyků?
 
@@ -99,7 +202,7 @@ Protože silné a slabé stránky statistických systémů a systémů založen�
 
 Jak jsme viděli v této kapitole, mnoho aplikací široce používaných v dnešní informační společnosti do značné míry závisí na jazykových technologiích. To platí zejména o ekonomickém a informačním prostoru Evropy vzhledem k její vícejazyčné komunitě. Ačkoliv jazykové technologie dosáhly v posledních několika letech značného pokroku, je zde ještě velký potenciál pro zlepšení kvality jejich systémů. V následující části popíšeme roli češtiny v evropské informační společnosti a zhodnotíme současný stav jazykových technologií pro češtinu.
 
-  \section{Čeština v evropské informační společnosti --- Czech in the European Information Society}
+  \ssection[Čeština v evropské informační společnosti]{Čeština v evropské informační společnosti --- Czech in the European Information Society}
 
   \subsection{Obecné informace --- General Facts}
 
@@ -205,7 +308,7 @@ Uživatelé internetu a poskytovatelé webových stránek mohou mít z jazykový
 
 Je to ovšem méně překvapivé, uvážíme-li složitost češtiny a počet technologií zahrnutých v jejich typických aplikacích. V další kapitole představíme úvod do jazykových technologií a hlavní oblasti pro jejich aplikaci stejně jako hodnocení současné situace podpory jazykových technologií pro češtinu.
 
-  \section{Podpora jazykových technologií pro češtinu --- Language Technology Support for Czech}
+  \ssection[Podpora jazykových technologií pro češtinu]{Podpora jazykových technologií pro češtinu --- Language Technology Support for Czech}
 
 Jazykové technologie jsou informační technologie, které jsou specializované na práci s přirozeným jazykem. Proto jsou často zahrnuty pod pojem technologie zpracování přirozeného jazyka. Přirozený jazyk se vyskytuje v mluvené i psané formě. Řečové a textové technologie zpracovávají a produkují „jazyk“ v těchto dvou způsobech realizace. Existují ovšem takové stránky jazyka, které jsou sdíleny „řečí“ a „textem“, jako jsou slovníky, většina gramatiky a významů vět. Velké části jazykových technologií proto nelze zařadit ani pod technologii mluvené řeči, ani textu. Mezi ně patří technologie, které spojují jazyk a myšlení. Obrázek vpravo ukazuje oblast jazykových technologií. V rámci komunikace směšujeme jazyk s jinými způsoby komunikace a jinými informačními zdroji. Kombinujeme „řeč“ s gesty a výrazy obličeje. Digitální texty mohou obsahovat obrázky, grafy, zvuky apod. Filmy mohou obsahovat jazyk v mluvené i psané formě. Řečové a textové technologie se tedy překrývají a vzájemně ovlivňují s mnoha dalšími technologiemi, které usnadňují zpracování multimodální komunikace a multimediálních dokumentů.
 
@@ -474,7 +577,7 @@ Výsledky pro češtinu ukazují, že jedinou alternativou je vyvinout značné 
 Narážíme zde také na nedostatek kontinuity financování výzkumu a vývoje. Krátkodobě koordinované programy se obvykle střídají s obdobími řídkého nebo nulového financování. Navíc se zde setkáváme s celkovým nedostatkem koordinace s programy v jiných zemích EU a na úrovni Evropské komise. 
 
 Můžeme tedy konstatovat, že existuje silná potřeba velké, koordinované iniciativy zaměřené na překonávání rozdílů v připravenosti jazykových technologií pro evropské jazyky jako celek. Dlouhodobým cílem projektu META-NET je představit kvalitní jazykové technologie pro všechny jazyky v EU. Tyto technologie pomohou ke stržení stávajících bariér a k budování mostů mezi evropskými jazyky. To zároveň vyžaduje, aby všechny zúčastněné strany – v politice, výzkumu, podnikání a ve společnosti – spojily své úsilí zaměřené na budoucnost.
-  \section{O síti META-NET --- About META-NET}
+  \ssection[O síti META-NET]{O síti META-NET --- About META-NET}
 META-NET je Síť excelence financovaná Evropskou komisí. V současné době se skládá ze 47 členů z 31 evropských zemí. META-NET podporuje Multilingual Europe Technology Alliance (META), rozrůstající se komunitu odborníků na jazykovou technologii a jazykově-technologických organizací v Evropě.
 
 META-NET spolupracuje s dalšími organizacemi, jako je Common Language Resources a Technology Infrastructure (CLARIN), která pomáhá vybudovat digitální výzkum humanitních věd v Evropě. META-NET podporuje technologické nadace pro vytvoření a udržování skutečně mnohojazyčné evropské informační spole
@@ -496,10 +599,24 @@ Tři směry činnosti sítě META-NET
 
 \textbf{META-RESEARCH} navazuje kontakt se souvisejícími technologickými oblastmi. Tato činnost se snaží investovat do pokroku v jiných oblastech a využívat inovativní výzkum, který může obohatit jazykovou technologii. Zejména se snaží zapojit do strojového překladu (Machine Translation, MT) více sémantiku, optimalizovat rozdělení práce v hybridních strojových překladech, využívat při programování automatických překladů kontext a připravovat empirický základ pro strojový překlad. META-RESEARCH spolupracuje s dalšími obory, jako je strojové učení a komunita sémantického webu. META-RESEARCH se zaměřuje na sběr a zpracování dat a uspořádání jazykových zdrojů pro účely hodnocení. Dále se zabývá sestavováním inventáře nástrojů a metod a pořádáním workshopů a vzdělávacích seminářů pro členy své komunity. Tato činnost už jasně definovala ty stránky strojového překladu, kde sémantika může doplňovat současné osvědčené postupy. Navíc ukázala cestu, jak se chopit problému integrace sémantické informace do strojového překladu. META-RESEARCH také dokončuje pro účely strojového překladu nový jazykový zdroj – Annotated Hybrid Sample MT Corpus, který obsahuje data pro tyto dvojice jazyků: angličtinu-němčinu, angličtinu-španělštinu a angličtinu-češtinu. META-RESEARCH také vyvinul software, který shromažďuje vícejazyčné korpusy, které jsou skryté na internetu.
 
+\vfill
+\centerline{office@meta-net.eu -- http://www.meta-net.eu}
+
+\addtocontents{toc}{\protect\clearpage\protect}
+\addtocontents{toc}{\protect\thispagestyle{empty}\protect}
+\addtocontents{toc}{\protect\vspace*{4mm}\protect}
+\addtocontents{toc}{\smallskip{\Large\textsf{\centerline{THE CZECH LANGUAGE IN THE DIGITAL AGE}}\par}}
+
+\setcounter{section}{0}
+\setcounter{figure}{0}
+
+\cleardoublepage
+
+\selectlanguage{english}
 %_-----------------------------------------------------------------------------------
 %ENGLISCH
 %_-----------------------------------------------------------------------------------
-  \section {Shrnutí --- Executive Summary}
+  \ssection [Executive Summary]{Shrnutí --- Executive Summary}
 
 During the last 60 years, Europe has become a distinct political and economic structure. Culturally and linguistically it is rich and diverse. However, from Portuguese to Polish and Italian to Icelandic, everyday communication between Europe’s citizens, within business and among politicians is inevitably confronted with language barriers. The EU's institutions spend about a billion euros a year on maintaining their policy of multilingualism, i.\,e., translating texts and interpreting spoken communication. Does this have to be such a burden? Language technology and linguistic research can make a significant contribution to removing the linguistic borders. Combined with intelligent devices and applications, language technology will help Europeans talk and do business together even if they do not speak a common language.
 The Czech economy takes great advantage from the European single market.
@@ -620,7 +737,7 @@ As the strengths and weaknesses of statistical and rule-based systems tend to be
 
 As we have seen in this chapter, many applications widely used in today’s information society rely heavily on language technology. Due to its multilingual community, this is particularly true of Europe’s economic and information space. Although language technology has made considerable progress in the last few years, there is still huge potential in improving the quality of language technology systems. In the following, we will describe the role of Czech in European information society and assess the current state of language technology for the Czech language.
 
-\section{Čeština v evropské informační společnosti --- Czech in the European Information Society}
+\ssection [Czech in the European Information Society]{Čeština v evropské informační společnosti --- Czech in the European Information Society}
  \subsection{Obecné informace --- General Facts}
 Czech, one of the West Slavonic languages, has about 10 million speakers. Most of them are in the Czech Republic (also called Czechia; hence CR), consisting of three historical regions: Bohe-mia, Moravia and Silesia.\cite{Note1_en} In the other parts of the world, there are about 200 thousand speakers, mostly emigrants and the children of emigrants who left the country in sizable migration waves around World War I and World War II, and the years 1948 and 1968. Many Czech speakers can be found esp. in Austria (mostly in Vienna), Poland, Germany, Ukraine, Croatia (mostly in Daruvar area), in Western Romania (in Banat), in Australia, and Canada. Several tens of thousands of Czechs have continued to live in the Slovak Republic after the split of Czechoslovakia in 1993. However, the largest group of Czech speakers outside of the CR lives in United States, in cities like New York, Chicago or Cleveland and in number of communities in Texas, Wisconsin, Minnesota, and Nebraska. According to a US Census, more than 90,000 Czech speakers lived in United States in 1990.\cite{Note2}
 
@@ -738,7 +855,7 @@ Internet users and providers of web content can also profit from language techno
 
 However, it becomes less surprising if we consider the complexity of the Czech language and the number of technologies involved in typical LT applications. In the next chapter, we will present an introduction to language technology and its core application areas as well as an evaluation of the current situation of LT support for Czech.
 
-\section{Podpora jazykových technologií pro češtinu --- Language Technology Support for Czech}
+\ssection[Language Technology Support for Czech]{Podpora jazykových technologií pro češtinu --- Language Technology Support for Czech}
 Language technology is used to develop software systems designed to handle human language and are therefore often called “human language technology”. Human language comes in spoken and written forms. While speech is the oldest and in terms of human evolution the most natural form of language communication, complex information and most human knowledge is stored and transmitted through the written word. Speech and text technologies process or produce these different forms of language, using dictionaries, rules of grammar, and semantics. This means that language technology (LT) links language to various forms of knowledge, independently of the media (speech or text) in which it is expressed. Figure~\ref{fig:ltincontext_en} illustrates the LT landscape.
 
 \begin{figure*}[htb]
