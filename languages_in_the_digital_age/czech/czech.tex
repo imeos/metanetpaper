@@ -1305,12 +1305,6 @@ To conclude, in a number of specific areas of Czech language research, we have s
 \subsection{Porovnání napříč jazyky --- Cross-language comparison}
     The current state of LT support varies considerably from one language community to another. In order to compare the situation between languages, this section will present an evaluation based on two sample application areas (machine translation and speech processing) and one underlying technology (text analysis), as well as basic resources needed for building LT applications.
 
-    % Figure 1 and 2
-
-
-    % Figure 3 and 4
-
-
 The above tables show that LT resources and tools for Czech clearly do not yet reach the quality and coverage of comparable resources and tools for the English language and some other ‘larger’ languages in EU. And there are still plenty of gaps in English language resources with regard to high quality applications.
 
 Today’s text analysis components and language resources cover the linguistic phenomena of Czech only to a certain extent; they mostly form part of applications involving shallow natural language processing, e.g. spelling correction.
@@ -1331,7 +1325,231 @@ Our findings show that the only alternative is to make a substantial effort to c
 Finally there is a lack of continuity in research and development funding. Short-term coordinated programmes tend to alternate with periods of sparse or zero funding. In addition, there is an overall lack of coordination with programmes in other EU countries and at the European Commission level.
 
 The long term goal of META-NET is to enable the creation of high-quality language technology for all languages. This requires all stakeholders - in politics, research, business, and society - to unite their efforts. The resulting technology will help tear down existing barriers and build bridges between Europe’s languages, paving the way for political and economic unity through cultural diversity.
-\end{multicols} 
+\end{multicols}
+
+\clearpage
+
+\begin{figure*}[t]
+\small
+\centering
+\begin{tabular}
+{ % defines color for each column.
+>{\columncolor{corange5}} p{.17\linewidth}@{\hspace{.027\linewidth}}
+>{\columncolor{corange4}}p{.17\linewidth}@{\hspace{.027\linewidth}}
+>{\columncolor{corange3}}p{.17\linewidth}@{\hspace{.027\linewidth}}
+>{\columncolor{corange2}}p{.17\linewidth}@{\hspace{.027\linewidth}}
+>{\columncolor{corange1}}p{.17\linewidth} 
+}
+\rowcolor{orange1} % redefines color for all columns in row 1
+\begin{center}\vspace*{-2mm}\textbf{Cluster 1}\end{center} & 
+\begin{center}\vspace*{-2mm}\textbf{Cluster 2}\end{center} & 
+\begin{center}\vspace*{-2mm}\textbf{Cluster 3}\end{center} & 
+\begin{center}\vspace*{-2mm}\textbf{Cluster 4}\end{center} & 
+\begin{center}\vspace*{-2mm}\textbf{Cluster 5}\end{center} \\ \addlinespace
+
+& \vspace*{0.5mm}Angličtina
+& \vspace*{0.5mm}
+Čeština \newline 
+Finština \newline 
+Francouzština \newline 
+Holandština \newline 
+Italština \newline  
+Němčina \newline   
+Portugalština \newline 
+Španělština \newline
+& \vspace*{0.5mm}Baskičtina \newline 
+Bulharština \newline 
+Dánština \newline 
+Estonština \newline 
+Galicijština\newline 
+Irština \newline  
+Katalánština \newline 
+Maďarština  \newline
+Norština \newline 
+Polština \newline 
+Řečtina \newline  
+Srbština \newline 
+Slovenština \newline 
+Slovinština \newline 
+Švédština \newline
+& \vspace*{0.5mm}
+Chorvatština \newline 
+Islandština \newline  
+Litevština \newline 
+Lotyština \newline 
+Maltština \newline 
+Rumunština\\
+\end{tabular}
+\label{fig:speech_cluster}
+\caption{Jazykové skupiny pro zpracování mluvené řeči}
+\end{figure*}
+
+\begin{figure*}[b]
+\small
+\centering
+\begin{tabular}
+{ % defines color for each column.
+>{\columncolor{corange5}} p{.17\linewidth}@{\hspace{.027\linewidth}}
+>{\columncolor{corange4}}p{.17\linewidth}@{\hspace{.027\linewidth}}
+>{\columncolor{corange3}}p{.17\linewidth}@{\hspace{.027\linewidth}}
+>{\columncolor{corange2}}p{.17\linewidth}@{\hspace{.027\linewidth}}
+>{\columncolor{corange1}}p{.17\linewidth} 
+}
+\rowcolor{orange1} % redefines color for all columns in row 1
+\begin{center}\vspace*{-2mm}\textbf{Cluster 1}\end{center} & 
+\begin{center}\vspace*{-2mm}\textbf{Cluster 2}\end{center} & 
+\begin{center}\vspace*{-2mm}\textbf{Cluster 3}\end{center} & 
+\begin{center}\vspace*{-2mm}\textbf{Cluster 4}\end{center} & 
+\begin{center}\vspace*{-2mm}\textbf{Cluster 5}\end{center} \\ \addlinespace
+
+& \vspace*{0.5mm} Angličtina 
+& \vspace*{0.5mm} 
+Francouzština \newline 
+Španělština
+& \vspace*{0.5mm}
+Holandština \newline 
+Italština \newline 
+Katalánština \newline 
+Maďarština \newline
+Němčina \newline 
+Polština \newline 
+Rumunština \newline 
+& \vspace*{0.5mm}Baskičtina \newline 
+Bulharština \newline 
+Chorvatština \newline 
+Čeština \newline
+Dánština \newline 
+Estonština \newline 
+Finština \newline 
+Galicijština \newline 
+Islandština \newline 
+Irština \newline 
+Litevština \newline 
+Lotyština \newline 
+Maltština \newline 
+Norština \newline 
+Portugalština \newline 
+Řečtina \newline 
+Srbština \newline 
+Slovenština \newline 
+Slovinština \newline 
+Švédština \newline 
+\end{tabular}
+\label{fig:mt_cluster}
+\caption{Jazykové skupiny pro strojový překlad}
+\end{figure*}
+
+\begin{figure*}[t]
+  \small
+  \centering
+  \begin{tabular}
+{ % defines color for each column.
+>{\columncolor{corange5}} p{.17\linewidth}@{\hspace{.027\linewidth}}
+>{\columncolor{corange3}}p{.17\linewidth}@{\hspace{.027\linewidth}}
+>{\columncolor{corange3}}p{.17\linewidth}@{\hspace{.027\linewidth}}
+>{\columncolor{corange2}}p{.17\linewidth}@{\hspace{.027\linewidth}}
+>{\columncolor{corange1}}p{.17\linewidth} 
+}
+\rowcolor{orange1} % redefines color for all columns in row 1
+\begin{center}\vspace*{-2mm}\textbf{Cluster 1}\end{center} & 
+\begin{center}\vspace*{-2mm}\textbf{Cluster 2}\end{center} & 
+\begin{center}\vspace*{-2mm}\textbf{Cluster 3}\end{center} & 
+\begin{center}\vspace*{-2mm}\textbf{Cluster 4}\end{center} & 
+\begin{center}\vspace*{-2mm}\textbf{Cluster 5}\end{center} \\ \addlinespace
+
+& \vspace*{0.5mm}Angličtina
+& \vspace*{0.5mm}
+  Francouzština \newline 
+  Holandština \newline 
+  Italština \newline 
+  Němčina \newline 
+  Španělština
+& \vspace*{0.5mm}Baskičtina \newline 
+  Bulharština \newline 
+  Čeština \newline 
+  Dánština \newline 
+  Finština \newline 
+  Galicijština \newline 
+  Katalánština \newline 
+  Maďarština \newline 
+  Norština \newline 
+  Polština \newline 
+  Portugalština \newline 
+  Rumunština \newline 
+  Řečtina \newline 
+  Slovenština \newline 
+  Slovinština \newline 
+  Švédština \newline 
+& \vspace*{0.5mm}
+  Chorvatština \newline 
+  Estonština \newline 
+  Irština \newline 
+  Islandština \newline 
+  Litevština \newline 
+  Lotyština \newline 
+  Maltština \newline 
+  Srbština \\
+  \end{tabular}
+\label{fig:text_cluster}
+\caption{Jazykové skupiny pro analýzu textu}
+\end{figure*}
+
+\begin{figure*}[b]
+  \small
+  \centering
+\begin{tabular}
+{ % defines color for each column.
+>{\columncolor{corange5}} p{.17\linewidth}@{\hspace{.027\linewidth}}
+>{\columncolor{corange4}}p{.17\linewidth}@{\hspace{.027\linewidth}}
+>{\columncolor{corange3}}p{.17\linewidth}@{\hspace{.027\linewidth}}
+>{\columncolor{corange2}}p{.17\linewidth}@{\hspace{.027\linewidth}}
+>{\columncolor{corange1}}p{.17\linewidth} 
+}
+\rowcolor{orange1} % redefines color for all columns in row 1
+\begin{center}\vspace*{-2mm}\textbf{Cluster 1}\end{center} & 
+\begin{center}\vspace*{-2mm}\textbf{Cluster 2}\end{center} & 
+\begin{center}\vspace*{-2mm}\textbf{Cluster 3}\end{center} & 
+\begin{center}\vspace*{-2mm}\textbf{Cluster 4}\end{center} & 
+\begin{center}\vspace*{-2mm}\textbf{Cluster 5}\end{center} \\ \addlinespace
+    
+& \vspace*{0.5mm}Angličtina
+& \vspace*{0.5mm} 
+    Čeština \newline 
+    Francouzština \newline 
+    Holandština \newline 
+    Italština \newline
+    Maďarština \newline
+    Němčina \newline 
+    Polština \newline
+    Španělština \newline
+    Švédština \newline 
+& \vspace*{0.5mm} Baskičtina\newline 
+    Bulharština\newline 
+    Chorvatština \newline 
+    Dánština \newline 
+    Estonština \newline 
+    Finština \newline 
+    Galicijština \newline 
+    Katalánština \newline 
+    Norština \newline 
+    Portugalština \newline 
+    Rumunština \newline 
+    Řečtina \newline 
+    Srbština \newline 
+    Slovenština \newline 
+    Slovinština \newline
+&  \vspace*{0.5mm}
+    Irština \newline 
+    Islandština \newline 
+    Litevština \newline 
+    Lotyština \newline 
+    Maltština  \\
+  \end{tabular}
+  \label{fig:resources_cluster}
+  \caption{Jazykové skupiny pro jazykové zdroje}
+\end{figure*}
+
+
 \clearpage
 %-----------------------------------------
 
