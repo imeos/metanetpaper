@@ -25,14 +25,17 @@
 \title{La llengua catalana a l'era digital --- The Catalan Language\ \ \ \ in the\ \ \ \ Digital Age}
 
 \subtitle{White Paper Series --- Sèrie de Llibres Blancs}
-%FIXME: one line per author
+%DONE: one line per author
 \author{
- Asunción Moreno~ {\small Universitat Politècnica de Catalunya}\\
- Núria Bel~{\small Universitat Pompeu Fabra}\\ 
- Eva Revilla~{\small Universitat Pompeu Fabra}\\
- Emília Garcia~{\small Universitat Politècnica de Catalunya}\\
- Sisco Vallverdú~{\small Universitat Politècnica de Catalunya}
+ Asunción Moreno~ {\small [UPC]}\\
+ Núria Bel~{\small [UPF]}\\ 
+ Eva Revilla~{\small [UPF]}\\
+ Emília Garcia~{\small [UPC]}\\
+ Sisco Vallverdú~{\small [UPC]}\\
+ \footnotesize{[UPC]} ~ \small{Universitat Politècnica de Catalunya}\\
+ \footnotesize{[UPF]} ~ \small{Universitat Pompeu Fabra}
 }
+
 \editors{
   Georg Rehm, Hans Uszkoreit\\(editors)
 }
@@ -44,19 +47,19 @@
 \null
 \pagestyle{empty} 
 
-%FIXME: translation of funding notice
+%DONE: translation of funding notice
 
-\FundingLNotice{\selectlanguage{catalan} The authors of this document
-  are grateful to the authors of the White Paper on German for
-  permission to re-use selected language-independent materials from
-  their document.
+\FundingLNotice{\selectlanguage{catalan} Els autors d'aquest document 
+agraeixen als autors del Llibre Blanc en Alemany el permís per 
+reutilitzar fragments del seu document independents de la llengua.
   
   \bigskip
-  The development of this white paper has been funded by the Seventh
-  Framework Programme and the ICT Policy Support Programme of the
-  European Commission under the contracts T4ME (Grant Agreement
-  249119), CESAR (Grant Agreement 271022), METANET4U (Grant Agreement
-  270893) and META-NORD (Grant Agreement 270899).}
+  El desenvolupament d'aquest document ha estat finançat pel Setè 
+  Programa Marc i el Programa de Suport a Polítiques de les TIC 
+  de la Comissió Europea amb els contractes T4ME (acord de 
+  subvenció 249119), CESAR (acord de subvenció 271022), 
+  METANET4U (acord de subvenció del 270 893) i META-NORD 
+  (acord de subvenció 270899).}
 
 \FundingRNotice{\selectlanguage{english} The authors of this document
   are grateful to the authors of the White Paper on German for
@@ -104,9 +107,9 @@ As of November 2011, META-NET consists of 54 research centres from 33 European c
 
 \cleardoublepage
 
-%FIXME: shorter word in TOC for for "TAULE DE CONTINGUTS"
+%DONE: shorter word in TOC for for "TAULA DE CONTINGUTS"
 % --------------------------------------------------------------------------
-\bsection*{Continguts --- Table of Contents}
+\bsection*{Sumari --- Table of Contents}
 
 \tableofcontents
 \addtocontents{toc}{\protect\thispagestyle{empty}\protect}
@@ -400,14 +403,14 @@ De totes aquestes dades, podem concloure que, tot i ser relativament petita, la 
 
 Les tecnologies del llenguatge són tecnologies de la informació especialitzades per tractar amb el llenguatge humà. Per tant, aquests tecnologies sovint s’inclouen dins del terme de Tecnologia del Llenguatge Humà. El llenguatge humà el trobem plasmat en les formes parlada i escrita. Mentre la parla és el mode més antic i més natural de comunicació lingüística, la informació complexa i la majoria del coneixement humà es mantenen i es transmeten a través de textos escrits. Les tecnologies del text i de la parla processen i produeixen la llengua en aquests dos modes de realització. Però la llengua també té aspectes compartits entre el text i la parla com els diccionaris, la major part de la gramàtica i el significat de les oracions. Així doncs, gran part de la tecnologia de la llengua no es pot incloure sota l’etiqueta de tecnologies de la parla o del text. Entre aquestes es troben totes aquelles tecnologies que enllacen la llengua amb el coneixement.
 
- La figura de la dreta iŀlustra el mapa de la tecnologia de la llengua. Quan ens comuniquem barregem la llengua amb altres modes de comunicació i altres mitjans d’informació. Combinem la parla amb expressions gestuals i facials. Els textos digitals es combinen amb imatges i sons. Les peŀlícules poden contenir informació lingüística tant en la forma parlada com escrita. Així doncs, les tecnologies de la parla i del text es solapen i interactuen amb moltes altres tecnologies que faciliten el processament de la comunicació multimodal i dels documents multimèdia.
+ La figura \ref{fig:ltincontext_ca} iŀlustra el mapa de la tecnologia de la llengua. Quan ens comuniquem barregem la llengua amb altres modes de comunicació i altres mitjans d’informació. Combinem la parla amb expressions gestuals i facials. Els textos digitals es combinen amb imatges i sons. Les peŀlícules poden contenir informació lingüística tant en la forma parlada com escrita. Així doncs, les tecnologies de la parla i del text es solapen i interactuen amb moltes altres tecnologies que faciliten el processament de la comunicació multimodal i dels documents multimèdia.
 
 \begin{figure*}[htb]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \vspace{-25mm}
   \center
   \includegraphics[width=\textwidth]{../_media/catalan/language_technologies}
-  \caption{FIXME:Language technology in context}
+  \caption{Context de les tecnologies del llenguatge}
   \label{fig:ltincontext_ca}
   \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
@@ -415,7 +418,7 @@ Les tecnologies del llenguatge són tecnologies de la informació especialitzade
 
 \subsection[Arquitectures de les aplicacions de tecnologies del llenguatge]{Arquitectures de\newline les aplicacions de tecnologies del llenguatge}
 
-Les aplicacions de programari típiques per al processament de la llengua consisteixen en diversos components que reflecteixen diferents aspectes de la llengua i de la tasca que implementen. La figura de la dreta mostra una arquitectura molt simplificada tal com la podem trobar en un sistema de processament de text. Els tres primers mòduls tenen a veure amb l’estructura i el significat del text d’entrada:
+Les aplicacions de programari típiques per al processament de la llengua consisteixen en diversos components que reflecteixen diferents aspectes de la llengua i de la tasca que implementen. La figura \ref{fig:textprocessingarch_ca} mostra una arquitectura molt simplificada tal com la podem trobar en un sistema de processament de text. Els tres primers mòduls tenen a veure amb l’estructura i el significat del text d’entrada:
 \begin{itemize}
 \item Preprocessat: netejar les dades, eliminar la formatació, detectar la llengua d’entrada, substituir “5è” per “cinquè”, etc.
 \item Anàlisi gramatical: trobar el verb i els seus objectes, modificadors, etc.; detectar l’estructura de l’oració.
@@ -429,7 +432,7 @@ Els mòduls específics per a cada tasca realitzen diferents operacions com ara 
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
   \vspace{-5mm} \includegraphics[width=\textwidth]{../_media/catalan/text_processing_app_architecture}
-  \caption{FIXME: A typical text processing architecture}
+  \caption{Arquitectura típica d'una aplicació de processament de text}
   \label{fig:textprocessingarch_ca}
   \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
@@ -445,14 +448,14 @@ Després d’introduir les àrees principals d’aplicació, mostrarem una descr
 
 Qualsevol persona que hagi utilitzat algun processador de textos, com ara el Microsoft Word, haurà vist que aquests programes solen disposar d’una eina que detecta errors ortogràfics i proposa possibles correccions. Quaranta anys després del primer corrector automàtic dissenyat per Ralph Gorin, els programes actuals no es limiten a comparar les paraules utilitzades amb les que conté un diccionari, sinó que fan servir procediments cada cop més sofisticats. A més a més d’incloure algorismes dependents de la llengua que permeten analitzar aspectes morfològics (com per exemple la formació del plural), alguns poden fins i tot reconèixer errors sintàctics, com ara un verb mal conjugat (per exemple, ‘Ella escrius una carta’).
 
-Per aconseguir aquestes prestacions, és necessari formular les regles gramaticals de cada llengua, una tasca manual que requereix uns grans coneixements sobre la matèria, o bé utilitzar els anomenats models estadístics de la llengua. Aquests models permeten calcular la probabilitat que una paraula concreta aparegui en un determinat entorn (és a dir, les paraules anteriors i posteriors). Per exemple, llibre anglès és una seqüència de paraules molt més probable que no pas llibre anglesa. Un model estadístic es pot obtenir automàticament a partir d’una gran quantitat de dades lingüístiques correctes (és a dir, un corpus). Fins al dia d’avui, aquests mètodes s’han desenvolupat i avaluat principalment en anglès. Malauradament, és difícil transferir-los directament al català, que té una inflexió més rica i un ordre sintàctic de les paraules més flexible.
+Un corrector lingüístic \ref{fig:langcheckingaarch_ca} d'aquestes prestacions requereix formular les regles gramaticals de cada llengua, una tasca manual que requereix uns grans coneixements sobre la matèria, o bé utilitzar els anomenats models estadístics de la llengua. Aquests models permeten calcular la probabilitat que una paraula concreta aparegui en un determinat entorn (és a dir, les paraules anteriors i posteriors). Per exemple, llibre anglès és una seqüència de paraules molt més probable que no pas llibre anglesa. Un model estadístic es pot obtenir automàticament a partir d’una gran quantitat de dades lingüístiques correctes (és a dir, un corpus). Fins al dia d’avui, aquests mètodes s’han desenvolupat i avaluat principalment en anglès. Malauradament, és difícil transferir-los directament al català, que té una inflexió més rica i un ordre sintàctic de les paraules més flexible.
 
 \begin{figure*}[htb]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \vspace{-9mm}
   \center
   \includegraphics[width=\textwidth]{../_media/catalan/language_checking}
-  \caption{FIXME: Language checking (top: statistical; bottom: rule-based)}
+  \caption{Corrector lingüístic (a dalt: estadístic, a baix: basat en regles)}
   \label{fig:langcheckingaarch_ca}
   \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
@@ -479,14 +482,14 @@ La propera generació de motors de cerca haurà d’incloure una tecnologia de l
   \center
   \includegraphics[width=\textwidth]{../_media/catalan/web_search_architecture}
   \vspace{-5mm}
-  \caption{FIXME: Web search}
+  \caption{Cercador web}
   \label{fig:websearcharch_ca}
   \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
 
-Finalment, la consulta processada s’ha de comparar amb una enorme quantitat de dades no estructurades per tal de trobar la informació que l'usuari està cercant. Aquest procés es coneix habitualment com a ‘\underline{recuperació d'informació}’ i implica la cerca i la classificació dels documents rellevants. A més a més, per poder generar una llista d’empreses, cal tenir la capacitat de detectar que una cadena determinada de paraules en un document es refereix a un nom d'empresa. Aquest tipus de informació es pot obtenir amb els anomenats \underline{reconeixedors de noms d’entitats}.
+Finalment, la consulta processada s’ha de comparar amb una enorme quantitat de dades no estructurades per tal de trobar la informació que l'usuari està cercant. Aquest procés es coneix habitualment com a ‘recuperació d'informació’ i implica la cerca i la classificació dels documents rellevants. A més a més, per poder generar una llista d’empreses, cal tenir la capacitat de detectar que una cadena determinada de paraules en un document es refereix a un nom d'empresa. Aquest tipus de informació es pot obtenir amb els anomenats reconeixedors de noms d’entitats.
 
-El fet d’intentar trobar la resposta en documents escrits en una llengua diferent de la llengua de consulta és un repte encara més gran. Per fer-lo possible, cal traduir automàticament la consulta a totes les llengües en les quals és possible trobar la resposta, i després traduir la informació trobada a la llengua original. Per altra banda, l’augment de la quantitat d’informació en formats no textuals fa que cada vegada sigui més necessària l’aparició de serveis que permetin \underline{cercar informació en entorns multimèdia}, és a dir, imatges, àudio i vídeo. El cas de fitxers d’àudio i vídeo implica utilitzar sistemes de \underline{reconeixement automàtic de la parla} per convertir la veu en un text en el qual es pugui cercar la informació de la consulta. 
+El fet d’intentar trobar la resposta en documents escrits en una llengua diferent de la llengua de consulta és un repte encara més gran. Per fer-lo possible, cal traduir automàticament la consulta a totes les llengües en les quals és possible trobar la resposta, i després traduir la informació trobada a la llengua original. Per altra banda, l’augment de la quantitat d’informació en formats no textuals fa que cada vegada sigui més necessària l’aparició de serveis que permetin cercar informació en entorns multimèdia, és a dir, imatges, àudio i vídeo. El cas de fitxers d’àudio i vídeo implica utilitzar sistemes de \underline{reconeixement automàtic de la parla} per convertir la veu en un text en el qual es pugui cercar la informació de la consulta. 
 
 Les petites i mitjanes empreses com Inbenta \cite{CAT-inbenta} o RightNow  (anteriorment q-go \cite{CAT-rightnow}) ofereixen motors de cerca amb informació semàntica en català.
 
@@ -503,7 +506,7 @@ Algunes de les àrees empresarials que depenen fortament d’aquest tipus d’in
   \vspace{-9mm}
   \center  \includegraphics[width=\textwidth]{../_media/catalan/simple_speech-based_dialogue_architecture}
   \center
-  \caption{FIXME: Speech-based dialogue system}
+  \caption{Sistema de diàleg basat en veu}
   \label{fig:dialoguearch_ca}
   \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
@@ -516,7 +519,7 @@ En el seu nucli, la interacció per la parla consta de les quatre tecnologies se
 \item La \underline{síntesi de veu} s’utilitza per transformar un text en sons perquè l’usuari pugui rebre la resposta del sistema en forma de senyal d’àudio. 
 \end{itemize}
 
-Un dels reptes més grans és aconseguir tenir un sistema automàtic que reconegui les paraules que pronuncia l’usuari de la manera més precisa possible. Per a això cal o bé restringir el rang de paraules possibles acceptades pel sistema a un conjunt de paraules clau, o bé crear manualment \underline{models de la llengua} que donin cobertura a un ampli ventall de possibles frases que l’usuari pot pronunciar de forma natural. Mentre la primera opció ofereix una opció força rígida i inflexible que probablement es reflectirà en una baixa acceptació per part dels usuaris, la creació, l’ajust i el manteniment dels models de la llengua pot incrementar significativament els costos. Tot i això, les interfícies orals que fan servir models de la llengua i que permeten que inicialment l’usuari expressi de forma flexible la seva intenció (per exemple, saludant-lo amb un \textit{Com puc ajudar-lo?}) mostren una taxa d’automatització més alta i una acceptació més gran per part dels usuaris, de manera que es poden considerar sistemes avantatjats respecte als mètodes, menys flexibles, de \textit{diàleg dirigit}.
+Un dels reptes més grans és aconseguir tenir un sistema automàtic que reconegui les paraules que pronuncia l’usuari de la manera més precisa possible. Per a això cal o bé restringir el rang de paraules possibles acceptades pel sistema a un conjunt de paraules clau, o bé crear manualment models de la llengua que donin cobertura a un ampli ventall de possibles frases que l’usuari pot pronunciar de forma natural. Mentre la primera opció ofereix una opció força rígida i inflexible que probablement es reflectirà en una baixa acceptació per part dels usuaris, la creació, l’ajust i el manteniment dels models de la llengua pot incrementar significativament els costos. Tot i això, les interfícies orals que fan servir models de la llengua i que permeten que inicialment l’usuari expressi de forma flexible la seva intenció (per exemple, saludant-lo amb un \textit{Com puc ajudar-lo?}) mostren una taxa d’automatització més alta i una acceptació més gran per part dels usuaris, de manera que es poden considerar sistemes avantatjats respecte als mètodes, menys flexibles, de \textit{diàleg dirigit}.
 
 Per proporcionar una resposta als usuaris dins del marc d’una interfície oral, les empreses tendeixen molt sovint a utilitzar paraules o frases enregistrades per un locutor professional. En casos estàtics, en els quals la pronunciació no depèn del context, aquesta opció proporciona resultats satisfactoris. En canvi, si la pronunciació concreta és important per al missatge, l’experiència de l’usuari es veu molt perjudicada per la pobra prosòdia que resulta de la simple concatenació d’arxius d’àudio. Per reduir aquest problema, els sistemes de síntesi de veu actuals tenen en compte la naturalesa dinàmica de la prosòdia de les frases, i aconsegueixen uns millors, encara que millorables, resultats. 
 
@@ -538,12 +541,12 @@ La idea de fer servir ordinadors per realitzar traduccions automàtiques va ser 
   \center
   \includegraphics[width=\textwidth]{../_media/catalan/machine_translation}
   \vspace{-2mm}
-  \caption{FIXME: Machine translation (left: stastical; right: rule-based)}
+  \caption{Traducció automàtica (a l'esquerra: estadística, a la dreta: basat en regles)}
   \label{fig:mtarch_ca}
   \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
 
-En la seva aproximació més bàsica, la traducció automàtica simplement substitueix cada paraula de la llengua original per la seva equivalent en la llengua objecte. Aquesta opció pot ser útil en alguns dominis amb un vocabulari molt restringit, com ara els informes meteorològics, o en casos de llengües molt properes. Tot i això, per aconseguir una bona traducció de textos menys estandarditzats, s’han d’analitzar unitats de text més llargues (frases o passatges sencers) per trobar la correspondència més adient en la llengua objecte. La dificultat més gran d’aquest aspecte és que la llengua humana és ambigua, i això implica diversos reptes, com ara \underline{trobar el sentit correcte d’una paraula} (‘Jaguar’ pot ser un cotxe o un animal, per exemple) o la inclusió de frases preposicionals a un nivell sintàctic, com per exemple:
+En la seva aproximació més bàsica, la traducció automàtica simplement substitueix cada paraula de la llengua original per la seva equivalent en la llengua objecte. Aquesta opció pot ser útil en alguns dominis amb un vocabulari molt restringit, com ara els informes meteorològics, o en casos de llengües molt properes. Tot i això, per aconseguir una bona traducció de textos menys estandarditzats, s’han d’analitzar unitats de text més llargues (frases o passatges sencers) per trobar la correspondència més adient en la llengua objecte. La dificultat més gran d’aquest aspecte és que la llengua humana és ambigua, i això implica diversos reptes, com ara trobar el sentit correcte d’una paraula (‘Jaguar’ pot ser un cotxe o un animal, per exemple) o la inclusió de frases preposicionals a un nivell sintàctic, com per exemple:
 \begin{itemize}
 \item \textit{Passejava amb el nen cantant.}
 \item \textit{T1: I was walking with the singer child.}
@@ -628,17 +631,17 @@ La següent taula proporciona un resum de la situació actual de la tecnologia d
 
 Reconeixement de la parla	&3&3&3&3&3&3&2 \\ \addlinespace
 Síntesi de veu &4&2&4&4&5&4&2\\ \addlinespace
-Anàlisi de text &3&2.5&4&4&4&2.5&2.5\\ \addlinespace
-Interpretació de text &1&1&2&1&1&1&1\\ \addlinespace
-Generació de llenguatge &1&2&3&1&3&3&1\\ \addlinespace
+Anàlisi gramatical &3&2.5&4&4&4&2.5&2.5\\ \addlinespace
+Anàlisi semàntic &1&1&2&1&1&1&1\\ \addlinespace
+Generació de text &1&2&3&1&3&3&1\\ \addlinespace
 Traducció automàtica &3&3&2&3&4&1&2\\ \addlinespace
 
 \multicolumn{8}{>{\columncolor{orange2}}l}{\textcolor{black}{Recursos lingüístics: recursos, dades, bases de coneixement}} \\ \addlinespace
 
-Corpora textual &3&2.5&3.5&3&3&2.5&2.5\\ \addlinespace
-Corpora de veu &3&5&3&2&3&3&2\\ \addlinespace
-Parallel corpora &2&1&2.5&2.5&2&2&1\\ \addlinespace
-Corpus paraŀlels &2&1&2&2&2&1&1\\ \addlinespace
+Corpora textuals &3&2.5&3.5&3&3&2.5&2.5\\ \addlinespace
+Corpora orals &3&5&3&2&3&3&2\\ \addlinespace
+Corpora paraŀlels &2&1&2&2&2&1&1\\ \addlinespace
+Recursos lèxics &2.5&2&3&2.5&3&3&2.5\\ \addlinespace
 Gramàtiques &2&3&2&2&2&2&2\\
 \end{tabular}
  \caption{Estat del suport a les tecnologies del llenguatge pel Català}
@@ -1305,17 +1308,17 @@ Besides spell checkers and authoring support, Language Checking is also importan
   \colorrule{grey3}{\textwidth}{1.5pt}
  \end{figure*}
 
-Search on the web, in intranets or in digital libraries, is probably the most widely used and yet underdeveloped Language Techno-logy today. The search engine Google, which started in 1998, is nowadays used for about 80\% of all search queries world-wide \cite{CAT-Nota22}. 
+Search on the web, in intranets or in digital libraries, is probably the most widely used and yet underdeveloped Language Technology today. The search engine Google, which started in 1998, is nowadays used for about 80\% of all search queries world-wide \cite{CAT-Nota22}. 
 
 Neither the search interface nor the presentation of the retrieved results has significantly changed since the first version. In the current version, Google offers a spelling correction facility for misspelled words, including Catalan, and, in 2009, they incorporated basic semantic search capabilities into their algorithmic mix \cite{CAT-Nota23}, which can improve search accuracy by analysing the meaning of the query terms in context. The success story of Google shows that with a lot of data at hand and efficient techniques for indexing these data, a mainly statistically-based approach can lead to satisfactory results. 
 
 However, for a more sophisticated request for information, integrating deeper linguistic knowledge is essential. In the research labs, experiments using machine-readable thesauri and ontological language resources like WordNet have shown improvements by allowing the possibility of finding a page on the basis of synonyms of the search terms, or even more loosely related terms. Again, these developments require language specific resources. A Catalan WordNet has been developed by the research centre TALP at Universitat Politècnica de Catalunya. The Catalan WordNet is freely available \cite{CAT-Nota24}.
 
-The next generation of search engines will have to include much more sophisticated Language Technology. If a search query consists of a question or another type of sentence rather than a list of keywords, retrieving relevant answers to this query requires an analysis of this sentence on a syntactic and semantic level as well as the availability of an index that allows for a fast retrieval of the relevant documents. For example, imagine a user inputs the query ‘Give me a list of all companies that were taken over by other companies in the last five years’. For a satisfactory answer, syntactic \underline{parsing} needs to be applied to analyse the grammatical structure of the sentence and determine that the user is looking for companies that have been taken over and not companies that took over others. Also, the expression last five years needs to be processed in order to find out which years it refers to. 
+The next generation of search engines will have to include much more sophisticated Language Technology. If a search query consists of a question or another type of sentence rather than a list of keywords, retrieving relevant answers to this query requires an analysis of this sentence on a syntactic and semantic level as well as the availability of an index that allows for a fast retrieval of the relevant documents. For example, imagine a user inputs the query ‘Give me a list of all companies that were taken over by other companies in the last five years’. For a satisfactory answer, \underline{syntactic parsing} needs to be applied to analyse the grammatical structure of the sentence and determine that the user is looking for companies that have been taken over and not companies that took over others. Also, the expression last five years needs to be processed in order to find out which years it refers to. 
 
-Finally, the processed query needs to be matched against a huge amount of unstructured data in order to find the piece or pieces of information the user is looking for. This is commonly referred to as \underline{information retrieval} and involves the search for and ranking of relevant documents. In addition, generating a list of companies, we also need to extract the information that a particular string of words in a document refers to a company name. This kind of information is made available by so-called \underline{named-entity recognizers}. 
+Finally, the processed query needs to be matched against a huge amount of unstructured data in order to find the piece or pieces of information the user is looking for. This is commonly referred to as information retrieval and involves the search for and ranking of relevant documents. In addition, generating a list of companies, we also need to extract the information that a particular string of words in a document refers to a company name. This kind of information is made available by so-called named-entity recognizers. 
 
-Even more demanding is the attempt to match a query to documents written in a different language. For \underline{cross-lingual information retrieval}, we have to automatically translate the query to all possible source languages and transfer the retrieved information back to the target language. The increasing percentage of data available in non-textual formats drives the demand for services enabling \underline{multimedia information retrieval}, i.e., information search on images, audio, and video data. For audio and video files, this involves a \underline{speech recognition} module to convert speech content into text or a phonetic representation, to which user queries can be matched.
+Even more demanding is the attempt to match a query to documents written in a different language. For cross-lingual information retrieval, we have to automatically translate the query to all possible source languages and transfer the retrieved information back to the target language. The increasing percentage of data available in non-textual formats drives the demand for services enabling multimedia information retrieval, i.e., information search on images, audio, and video data. For audio and video files, this involves a \underline{speech recognition} module to convert speech content into text or a phonetic representation, to which user queries can be matched.
 
 Small and Medium Enterprises such as Inbenta \cite{CAT-inbenta} or RightNow (formerly q-go \cite{CAT-rightnow}) offer specific semantic search engines, including those that are developed for Catalan.
 
@@ -1341,7 +1344,7 @@ At its core, speech interaction comprises the following four different technolog
 \item \underline{Dialogue Management} is required for determining, on the part of the system the user interacts with, which action shall be taken given the user’s input and the system’s functionality.
 \item \underline{Speech Synthesis} (Text-to-Speech, TTS) technology is employed for transforming the wording of that utterance into sounds that will be output to the user. 
 \end{itemize}
-One of the major challenges is to have an ASR system recognise the words uttered by a user as precisely as possible. This requires either a restriction of the range of possible user utterances to a limi-ted set of keywords, or the manual creation of language models that cover a large range of natural language user utterances. Whereas the former results in a rather rigid and inflexible usage of a VUI and possibly causes a poor user acceptance, the creation, tuning and maintenance of \underline{language models} may increase the costs significantly. However, VUIs that employ language models and initially allow a user to flexibly express their intent – evoked, e.g., by a \textit{How may I help you} greeting – show both a higher automation rate and a higher user acceptance and may therefore be considered as advantageous over a less flexible \textit{directed dialogue} approach.
+One of the major challenges is to have an ASR system recognise the words uttered by a user as precisely as possible. This requires either a restriction of the range of possible user utterances to a limi-ted set of keywords, or the manual creation of language models that cover a large range of natural language user utterances. Whereas the former results in a rather rigid and inflexible usage of a VUI and possibly causes a poor user acceptance, the creation, tuning and maintenance of language models may increase the costs significantly. However, VUIs that employ language models and initially allow a user to flexibly express their intent – evoked, e.g., by a \textit{How may I help you} greeting – show both a higher automation rate and a higher user acceptance and may therefore be considered as advantageous over a less flexible \textit{directed dialogue} approach.
 
 For the output part of a VUI, companies tend to use pre-recorded utterances of professional – ideally corporate – speakers a lot. For static utterances, in which the wording does not depend on the particular contexts of use or the personal data of the given user, this will result in a rich user experience. However, the more dynamic content an utterance needs to consider, the more the user experience may suffer from a poor prosody resulting from concatenating single audio files. In contrast, today’s TTS systems prove superior, though optimisable, regarding the prosodic naturalness of dynamic utterances.  
 
@@ -1364,14 +1367,14 @@ The idea of using digital computers for translation of natural languages came up
   \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
 
-At its basic level, MT simply substitutes words in one natural language by words in another. This can be useful in subject domains with a very restricted, formulaic language, e.g., weather reports or for closely related languages. However, for a good translation of less standardised texts, larger text units (phrases, sentences, or even whole passages) need to be matched to their closest counterparts in the target language. The major difficulty here lies in the fact that human language is ambiguous, which yields challenges on multiple levels, e.g., \underline{word sense disambiguation} on the lexical level (‘Jaguar’ can mean a car or an animal) or the attachment of prepositional phrases on the syntactic level as in:
+At its basic level, MT simply substitutes words in one natural language by words in another. This can be useful in subject domains with a very restricted, formulaic language, e.g., weather reports or for closely related languages. However, for a good translation of less standardised texts, larger text units (phrases, sentences, or even whole passages) need to be matched to their closest counterparts in the target language. The major difficulty here lies in the fact that human language is ambiguous, which yields challenges on multiple levels, e.g., word sense disambiguation on the lexical level (‘Jaguar’ can mean a car or an animal) or the attachment of prepositional phrases on the syntactic level as in:
 \begin{itemize}
 \item \textit{Passejava amb el nen cantant.}
 \item \textit{T1: I was walking with the singer child.}
 \item \textit{T2: I was walking and singing with the child.}
 \end{itemize}
 
-One way of approaching the task is based on linguistic rules. For translations between closely related languages, a direct translation may be feasible in cases like the example above. But often rule-based (or knowledge-driven) systems analyse the input text and create an intermediary, symbolic representation, from which the text in the target language is generated. The success of these methods is highly dependent on the availability of extensive \underline{lexica} with morphological, syntactic, and semantic information, and large sets of \underline{grammar} rules carefully designed by a skilled linguist.
+One way of approaching the task is based on linguistic rules. For translations between closely related languages, a direct translation may be feasible in cases like the example above. But often rule-based (or knowledge-driven) systems analyse the input text and create an intermediary, symbolic representation, from which the text in the target language is generated. The success of these methods is highly dependent on the availability of extensive \underline{lexica} with morphological, syntactic, and semantic information, and large sets of \underline{grammar rules} carefully designed by a skilled linguist.
 
 Beginning in the late 1980s, as computational power increased and became less expensive, more interest was shown in statistical mo-dels for MT. The parameters of these statistical models are derived from the analysis of bilingual text corpora, such as the Europarl parallel corpus, which contains the proceedings of the European Parliament in 11 European languages. Given enough data, statistical MT works well enough to derive an approximate meaning of a foreign language text. However, unlike knowledge-driven systems, statistical (or data-driven) MT often generates ungrammatical output. On the other hand, besides the advantage that less human effort is required for grammar writing, data-driven MT can also cover particularities of the language that go missing in knowledge-driven systems, for example idiomatic expressions. 
 
@@ -1456,8 +1459,8 @@ Machine translation &3&3&2&3&4&1&2\\ \addlinespace
 \multicolumn{8}{>{\columncolor{orange2}}l}{Language Resources: Resources, Data and Knowledge Bases} \\ \addlinespace
 Text corpora &3&2.5&3.5&3&3&2.5&2.5\\ \addlinespace
 Speech corpora &3&5&3&2&3&3&2\\ \addlinespace
-Parallel corpora &2&1&2.5&2.5&2&2&1\\ \addlinespace
-Lexical resources &2&1&2&2&2&1&1\\ \addlinespace
+Parallel corpora &2&1&2&2&2&1&1\\ \addlinespace
+Lexical resources &2.5&2&3&2.5&3&3&2.5\\ \addlinespace
 Grammars &2&3&2&2&2&2&2\\
 \end{tabular}
 \caption{State of language technology support for Catalan}
