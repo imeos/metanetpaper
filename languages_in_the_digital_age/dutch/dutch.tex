@@ -40,7 +40,7 @@ Remco van Veenendaal~ {\small TST-centrale}
 }
 
 \editors{
-  Georg Rehm, Hans Uszkoreit\\(\textcolor{grey1}{redactie})
+  Georg Rehm, Hans Uszkoreit\\(redactie, \textcolor{grey1}{editors})
 }
 
 \begin{document}
@@ -670,7 +670,7 @@ In deze sectie richten we ons op de belangrijkste taaltechnologische hulpmiddele
     E{\'e}n manier om een MT-systeem te bouwen is gebaseerd op taalkundige regels. Voor vertaling tussen nauw verwante talen is een directe vertaling misschien mogelijk voor simpele gevallen. Maar vaak is het nodig dat een regelgebaseerd (of kennisgedreven) systeem de ingevoerde tekst analyseert en een intermediaire symbolische representatie maakt van waaruit de tekst in de doeltaal gegenereerd wordt. Het succes van deze methodes is sterk afhankelijk van de beschikbaarheid van uitgebreide lexicons met morfologische, syntactische, en semantische informatie, en grote verzamelingen van grammaticaregels die zorgvuldig ontworpen zijn door een vaardig taalkundige. Dit is een tijdsintensief en daarom kostbaar proces.
 
 
-    Vanaf de late jaren tachtig van de vorige eeuw kwam er, aangezien de computationele kracht toenam en minder duur werd, meer belangstelling voor statistische modellen voor MT. De parameters van deze statistische modellen worden afgeleid uit de analyse van tweetalige \textbf{parallelle tekstcorpora}, zoals het \emph{Europarl} parallelle corpus, dat de notulen van het Europees Parlement bevat in 11 Europese talen. Als er genoeg data zijn werkt statistische MT goed genoeg om een benadering van de betekenis van een tekst in een vreemde taal te verkrijgen. Maar, in tegenstelling tot kennisgedreven systemen, produceert statistische (of datagedreven) MT vaak ongrammaticale output. Anderzijds kan datagedreven MT, naast het voordeel dat minder menselijke inspanning vereist is voor het schrijven van de grammatica, ook eigenaardigheden van  taal die vaak genegeerd worden in kennisgedreven systemen afdekken, zoals idiomatische uitdrukkingen.
+    Vanaf de late jaren tachtig van de vorige eeuw kwam er, aangezien de computationele kracht toenam en minder duur werd, meer belangstelling voor statistische modellen voor MT. De parameters van deze statistische modellen worden afgeleid uit de analyse van tweetalige \textbf{parallelle tekstcorpora}, zoals het \emph{Europarl} parallelle corpus, dat de notulen van het Europees Parlement bevat in 21 Europese talen. Als er genoeg data zijn werkt statistische MT goed genoeg om een benadering van de betekenis van een tekst in een vreemde taal te verkrijgen. Maar, in tegenstelling tot kennisgedreven systemen, produceert statistische (of datagedreven) MT vaak ongrammaticale output. Anderzijds kan datagedreven MT, naast het voordeel dat minder menselijke inspanning vereist is voor het schrijven van de grammatica, ook eigenaardigheden van  taal die vaak genegeerd worden in kennisgedreven systemen afdekken, zoals idiomatische uitdrukkingen.
 
     Aangezien de sterktes en zwaktes van de kennis- en datagedreven MT (Zie Figuur~\ref{fig:mtarch_de}) complementair zijn, richten onderzoekers zich tegenwoordig unaniem op hybride benaderingen waarin methodologie{\"e}n van beide gecombineerd worden. Dit kan op verschillende manieren gedaan worden. E{\'e}n mogelijkheid is om zowel kennisgedreven als datagedreven systemen te gebruiken en een selectiemodule de beste output te laten kiezen voor iedere zin. Voor langere zinnen zal echter geen enkel resultaat perfect zijn. Een betere oplossing is het om de beste delen van zinnen van meervoudige output te combineren, maar dat kan behoorlijk complex zijn omdat niet altijd evident is welke delen van meervoudige alternatieven corresponderen en gealigneerd moeten worden.
 
@@ -783,7 +783,7 @@ Zoals zojuist beschreven hebben eerdere programma's gelied tot de ontwikkeling v
 
 \subsection{De Beschikbaarheid van Gereedschappen en Data}
 
-    De huidige toestand van ondersteuning voor taaltechnologie voor het Nederlands wordt samengevat in Figuur~\ref{fig:lrlttable_de). De scores voor bestaande technologie{\"e}n en data zijn gegenereerd door leidende experts in het vakgebied die schattingen gemaakt hebben van 0 (zeer laag) tot 6 (zeer hoog) voor zeven criteria.
+    De huidige toestand van ondersteuning voor taaltechnologie voor het Nederlands wordt samengevat in Figuur~\ref{fig:lrlttable_de}. De scores voor bestaande technologie\"{e}n en data zijn gegenereerd door leidende experts in het vakgebied die schattingen gemaakt hebben van 0 (zeer laag) tot 6 (zeer hoog) voor zeven criteria.
 
 
 \begin{figure*}[htb]
@@ -791,7 +791,7 @@ Zoals zojuist beschreven hebben eerdere programma's gelied tot de ontwikkeling v
 \begin{tabular}{>{\columncolor{orange1}}p{.33\linewidth}@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c}
   \rowcolor{orange1}
    \cellcolor{white}&\begin{sideways}\makecell[l]{Kwantiteit}\end{sideways}
-  &\begin{sideways}\makecell[l]{\makecell[l]{Beschikbaarheid} }\end{sideways} &\begin{sideways}\makecell[l]{Kwaliteit}\end{sideways}
+  &\begin{sideways}\makecell[l]{\makecell[l]{Beschikbaarheid}~~~}\end{sideways} &\begin{sideways}\makecell[l]{Kwaliteit}\end{sideways}
   &\begin{sideways}\makecell[l]{Overdekking}\end{sideways} &\begin{sideways}\makecell[l]{Maturiteit}\end{sideways} &\begin{sideways}\makecell[l]{Duurzaamheid}\end{sideways} &\begin{sideways}\makecell[l]{Aanpasbaarheid~~}\end{sideways} \\ \addlinespace
   \multicolumn{8}{>{\columncolor{orange2}}l}{Taaltechnologie: Hulpmiddelen, Technologie{\"e}n en Toepassingen} \\\addlinespace
 Spraakherkenning&2,4&4,8&4,8&3,6&4,8&4,8&2,4\\ \addlinespace
@@ -905,7 +905,7 @@ De tabellen ~\ref{fig:speech_cluster_de} tot~\ref{fig:resources_cluster_de}  lat
   Fins \newline
   Frans \newline
   Italiaans \newline
-  Nederlands \newline
+  \textbf{Nederlands} \newline
   Portugees \newline
   Spaans \newline
   Tsjechisch \newline
@@ -966,7 +966,7 @@ De tabellen ~\ref{fig:speech_cluster_de} tot~\ref{fig:resources_cluster_de}  lat
 Duits \newline
   Hongaars \newline
   Italiaans \newline
-  Nederlands \newline
+    \textbf{Nederlands}  \newline
   Pools \newline
   Roemeens \newline
   & \vspace*{0.5mm}Baskisch \newline
@@ -1020,7 +1020,7 @@ Duits \newline
   & \vspace*{0.5mm}Duits \newline
   Frans \newline
   Italiaans \newline
-  Nederlands \newline
+    \textbf{Nederlands}  \newline
   Spaans
   & \vspace*{0.5mm}Baskisch \newline
   Bulgaars \newline
@@ -1079,7 +1079,7 @@ Ests \newline
     Frans \newline
  Hongaars \newline
 	Italiaans \newline
-    Nederlands \newline
+      \textbf{Nederlands}  \newline
 	Pools \newline
        Spaans \newline
     Tsjechisch\newline
@@ -1183,7 +1183,7 @@ Drawing on the insights gained so far, today’s hybrid language technology mixi
 
 META-NET’s vision is high-quality language technology for all languages that supports political and economic unity through cultural diversity. This technology will help tear down existing barriers and build bridges between Europe’s languages. This requires all stakeholders -- in politics, research, business, and society -- to unite their efforts for the future.
 
-This whitepaper series complements the other strategic actions taken by META-NET (see the appendix for an overview). Up-to-date information such as the current version of the META-NET vision paper \cite{Meta1} or the Strategic Research Agenda (SRA) can be found on the META-NET web site: http://www.meta-net.eu.
+This white paper series complements the other strategic actions taken by META-NET (see the appendix for an overview). Up-to-date information such as the current version of the META-NET vision paper \cite{Meta1} or the Strategic Research Agenda (SRA) can be found on the META-NET web site: http://www.meta-net.eu.
 \end{multicols}
 
 \clearpage
@@ -1652,7 +1652,7 @@ However, in order to produce a good translation of less restricted texts, larger
 
 One way to build an MT system is to use linguistic rules. For translations between closely related languages, a translation using direct substitution may be feasible in cases such as the above example. However, rule-based (or linguistic knowledge-driven) systems often analyse the input text and create an intermediary symbolic representation from which the target language text can be generated. The success of these methods is highly dependent on the availability of extensive lexicons with morphological, syntactic, and semantic information, and large sets of grammar rules carefully designed by skilled linguists. This is a very long and therefore costly process.
 
-In the late 1980s when computational power increased and became cheaper, interest in statistical models for machine translation began to grow. Statistical models are derived from analysing bilingual text corpora, \textbf{parallel corpora}, such as the Europarl parallel corpus, which contains the proceedings of the European Parliament in 11 European languages. Given enough data, statistical MT works well enough to derive an approximate meaning of a foreign language text. Unlike knowledge-driven systems, however, statistical (or data-driven) MT systems often generate ungrammatical output. Data-driven MT is advantageous because less human effort is required, and it can also cover special particularities of the language (e.\,g., idiomatic expressions) that are often ignored in knowledge-driven systems.
+In the late 1980s when computational power increased and became cheaper, interest in statistical models for machine translation began to grow. Statistical models are derived from analysing bilingual text corpora, \textbf{parallel corpora}, such as the Europarl parallel corpus, which contains the proceedings of the European Parliament in 21 European languages. Given enough data, statistical MT works well enough to derive an approximate meaning of a foreign language text. Unlike knowledge-driven systems, however, statistical (or data-driven) MT systems often generate ungrammatical output. Data-driven MT is advantageous because less human effort is required, and it can also cover special particularities of the language (e.\,g., idiomatic expressions) that are often ignored in knowledge-driven systems.
 
 The strengths and weaknesses of knowledge-driven and data-driven machine translation tend to be complementary, so that nowadays researchers focus on hybrid approaches that combine both methodologies. One such approach uses both knowledge-driven and data-driven systems, together with a selection module that decides on the best output for each sentence. However, results for sentences longer than, say, 12 words, will often be far from perfect. A more effective solution is to combine the best parts of each sentence from multiple outputs; this can be fairly complex, as corresponding parts of multiple alternatives are not always obvious and need to be aligned.
 
@@ -1732,7 +1732,7 @@ Figure~\ref{fig:lrlttable_en} provides a rating for language technology support 
 \rowcolor{orange1}
  \cellcolor{white}&\begin{sideways}\makecell[l]{Quantity}\end{sideways}
 &\begin{sideways}\makecell[l]{\makecell[l]{Availability} }\end{sideways} &\begin{sideways}\makecell[l]{Quality}\end{sideways}
-&\begin{sideways}\makecell[l]{Coverage}\end{sideways} &\begin{sideways}\makecell[l]{Maturity}\end{sideways} &\begin{sideways}\makecell[l]{Sustainability}\end{sideways} &\begin{sideways}\makecell[l]{Adaptability}\end{sideways} \\ \addlinespace
+&\begin{sideways}\makecell[l]{Coverage}\end{sideways} &\begin{sideways}\makecell[l]{Maturity}\end{sideways} &\begin{sideways}\makecell[l]{Sustainability~~~}\end{sideways} &\begin{sideways}\makecell[l]{Adaptability}\end{sideways} \\ \addlinespace
 \multicolumn{8}{>{\columncolor{orange2}}l}{Language Technology: Tools, Technologies and Applications} \\ \addlinespace
  Speech Recognition&2.4&4.8&4.8&3.6&4.8&4.8&2.4\\ \addlinespace
 Speech Synthesis&2.4&2.4&4.8&4.8&4.8&3.6&1.2\\ \addlinespace
@@ -1839,7 +1839,7 @@ The long term goal of META-NET is to enable the creation of high-quality languag
 & \vspace*{0.5mm}English
 & \vspace*{0.5mm}
 Czech \newline
-Dutch \newline
+  \textbf{Dutch} \newline
 Finnish \newline
 French \newline
 German \newline
@@ -1901,7 +1901,7 @@ French \newline
 Spanish
 & \vspace*{0.5mm}
 Catalan \newline
-Dutch \newline
+  \textbf{Dutch}  \newline
 German \newline
 Hungarian \newline
 Italian \newline
@@ -1956,7 +1956,7 @@ Swedish \newline
 
 & \vspace*{0.5mm}English
 & \vspace*{0.5mm}
-  Dutch \newline
+    \textbf{Dutch}  \newline
   French \newline
   German \newline
   Italian \newline
@@ -2016,7 +2016,7 @@ Swedish \newline
 & \vspace*{0.5mm}English
 & \vspace*{0.5mm}
     Czech \newline
-    Dutch \newline
+      \textbf{Dutch}  \newline
     French \newline
     German \newline
     Hungarian \newline
@@ -2176,7 +2176,7 @@ META-NET launched on 1 February 2010 with the goal of advancing research in lang
 
 \vspace*{-5mm}
 \centering
-  \setlength{\tabcolsep}{2em}
+  \setlength{\tabcolsep}{2.5em}
   \begin{tabularx}{\textwidth}{lllll} \toprule\addlinespace
   %\begin{tabulary}{170mm}{LLL} \toprule
   &Baskisch & Basque & euskara& \\
