@@ -20,8 +20,8 @@
 \usepackage{polyglossia}
 \setotherlanguages{czech,english}
 
-\title{Jazyky v evropské informační společnosti - Čeština --- The Czech Language in the Digital Age}
-\subtitle{White Paper Series --- Weißbuch-Serie}
+\title{Čeština v digitálním věku --- The Czech Language in the Digital Age}
+\subtitle{Série Bílé knihy META-NET --- White Paper Series} % Please adapt the Czech part
 
 \author{
   Jarmila Panevová,
@@ -40,13 +40,7 @@
 \pagestyle{empty} 
 
 \FundingLNotice{\selectlanguage{german}
-  Die Ausarbeitung dieses Weißbuchs wurde mit Mitteln aus dem Siebten
-  Rahmenprogramm und dem Programm zur Unterstützung der Politik für
-  Informations- und Kommunikationstechnologien der Europäischen
-  Kommission im Rahmen der Verträge T4ME (Finanzhilfevereinbarung
-  249119), CESAR (Finanzhilfevereinbarung 271022), METANET4U
-  (Finanzhilfevereinbarung 270893) und META-NORD
-  (Finanzhilfevereinbarung 270899) finanziert.}
+ Práce na této Bílé knize byla financována 7. Rámcovým programem Evropské komise a Programem na podporu politiky informačních a komunikačních technologií (ICT Policy Support Programme of the European Commission) na základě smluv T4ME (grantové dohoda 249119), CESAR (grantová dohoda 271022), METANET4U (grantová dohoda 270893) a META-NORD (grantová dohoda 270899).}
 
 \FundingRNotice{\selectlanguage{english}
   The development of this white paper has been funded by the Seventh
@@ -62,9 +56,11 @@
 \pagestyle{scrheadings}
 
 \cleardoublepage
-  % --------------------------------------------------------------------------
-  \bsection*{  --- Preface}
-  \begin{Parallel}[c]{78mm}{78mm}
+
+% --------------------------------------------------------------------------
+
+\bsection*{ ... --- Preface}
+\begin{Parallel}[c]{78mm}{78mm}
   \ParallelLText{
 Tato Bílá kniha je součástí série, která podporuje znalosti jazykových technologií a jejich potenciál. Je určena pedagogům, novinářům, politikům, různým jazykovým komunitám a dalším.
 Dostupnost a využívání jazykových technologií se v Evropě u jednotlivých jazyků liší. V důsledku toho se pro každý jazyk liší také kroky, které je nutné podniknout pro další podporu výzkumu a vývoje jazykových technologií. Tyto plánované postupy závisí na mnoha faktorech, jako je složitost daného jazyka či velikost jeho komunity.
@@ -88,7 +84,7 @@ META-NET consists of 54 research centres from 33 countries that are working with
 \tableofcontents
 
 \addtocontents{toc}{\protect\thispagestyle{empty}\protect}
-\addtocontents{toc}{{\Large\textsf{\centerline{THE CZECH LANGUAGE IN THE DIGITAL AGE}}\par}}
+\addtocontents{toc}{{\Large\textsf{\centerline{Čeština v digitálním věku}}\par}} % Please capitalize all letters
 
 \cleardoublepage
 
@@ -102,6 +98,10 @@ META-NET consists of 54 research centres from 33 countries that are working with
 % --------------------------------------------------------------------------
 
 \ssection [Shrnutí]{Shrnutí --- Executive Summary}
+
+\selectlanguage{czech}
+\begin{multicols}{2}
+    
     \boxtext{Jazykové technologie staví mosty pro budoucnost Evropy}
 
 Evropa se během posledních 60 let stala zřetelnou politickou a ekonomickou sítí, přesto je ale kulturně a jazykově stále velmi různorodá. Znamená to, že každodenní komunikace mezi evropskými občany (ať už přecházíme z portugalštiny do polštiny nebo z italštiny do islandštiny) i komunikace v oblasti podnikání a politiky se nevyhnutelně potýká s jazykovou bariérou. Orgány EU utratí asi jednu miliardu eur ročně na překládání textů a tlumočení mluvené komunikace, aby řešily otázku mnohojazyčnosti. Musí to však být taková zátěž? Moderní jazykové technologie (language technology, LT) a lingvistický výzkum mohou významně přispět k bourání jazykových hranic. Když se jazykové technologie spojí s inteligentními zařízeními a aplikacemi, budou v budoucnosti schopné pomáhat Evropanům jednoduše komunikovat a obchodovat, i když nemluví společnou řečí.
@@ -122,10 +122,14 @@ Evropský výzkum dosáhl v této oblasti již řady úspěchů. Například př
 Na základě dosud získaných poznatků se zdá, že dnešní „hybridní“ jazykové technologie zahrnující hloubkové zpracování i statistické metody umožní překlenout propast mezi všemi evropskými jazyky. Jak tato série Bílých knih ukazuje, členské státy v Evropě se značně liší v ochotě a připravenosti řešit jazykové otázky. Velké rozdíly jsou také v oblasti výzkumu. Čeština patří mezi „menší“ jazyky EU, a proto je zapotřebí nejprve provádět další specializované výzkumy, než pro ni budou jazykové technologie skutečně účinné a než budou moci sloužit pro každodenní použití.
 Dlouhodobým cílem projektu META-NET je představit kvalitní jazykové technologie pro všechny jazyky v EU. Tyto technologie pomohou evropským jazykům překonat dosavadní bariéry a navázat vzájemné spojení. To vyžaduje, aby všechny zúčastněné strany – v politice, výzkumu, podnikání i společnosti – spojily v budoucnosti své síly.
 Tento dokument doplňuje řadu dalších činností projektu META-NET (viz příloha).
-Aktuální informace, např. aktuální verzi plánů projektu META-NET\cite{Meta1}
-nebo strategický plán výzkumu (SRA), najdete na webových stránkách http://www.meta-net.eu.
+Aktuální informace, např. aktuální verzi plánů projektu META-NET \cite{Meta1} nebo strategický plán výzkumu (SRA), najdete na webových stránkách http://www.meta-net.eu.
+\end{multicols}
+\clearpage
+%-----------------------------
 
-  \ssection[Riziko pro naše jazyky a výzva pro jazykové technologie]{Riziko pro naše jazyky a výzva pro jazykové technologie --- Risk for Our Languages and a Challenge for Language Technology}
+\ssection[Riziko pro naše jazyky a výzva pro jazykové technologie]{Riziko pro naše jazyky a výzva pro jazykové technologie --- Risk for Our Languages and a Challenge for Language Technology}
+
+\begin{multicols}{2}
 
 Jsme svědky digitální revoluce, která dramaticky ovlivňuje komunikaci a společnost. Nedávný vývoj digitálních informačních a komunikačních technologií je někdy srovnáván s Gutenbergovým vynálezem knihtisku. Co nám může tato analogie říct o budoucnosti evropské informační společnosti a zejména o budoucnosti našich jazyků?
 
@@ -149,17 +153,23 @@ V uplynulých dvaceti letech pomohly informační technologie zautomatizovat a u
       \item sociální platformy médií jako Facebook, Twitter a Google+ ulehčují komunikaci, spolupráci a sdílení informací.
     \end{itemize}
 Ačkoli jsou tyto prostředky a aplikace prospěšné, stále ještě nejsou schopné dlouhodobě podporovat fungující, vícejazyčnou evropskou společnost všude tam, kam mohou volně proudit informace a zboží.
-  \subsection{Jazykové bariéry brzdí evropskou informační společnost --- Language Borders Hinder the European Information Society}
+  
+\subsection{Jazykové bariéry brzdí evropskou informační společnost --- Language Borders Hinder the European Information Society}
+
 Nemůžeme přesně předvídat, jak bude informační společnost v budoucnosti vypadat. Je ovšem velmi pravděpodobné, že revoluce v komunikačních technologiích spojí lidi mluvící různými jazyky novými cestami. To donutí jednotlivce učit se nové jazyky a zvláště projektanty vytvářet nové technologické aplikace, aby zajistili vzájemné porozumění a přístup ke sdíleným vědomostem. V globálním ekonomickém a informačním světě se vzájemně ovlivňuje více jazyků, mluvčích a obsahů pomocí nových typů médií rychleji. Současná obliba sociálních sítí (Wikipedia, Facebook, Twitter, YouTube a nově Google+) je pouze špičkou ledovce.
 
 V současné době můžeme během pár vteřin přenést gigabyty textu po celém světě, než příjemce zjistí, že je v jazyce, kterému nerozumí. Podle nedávné zprávy Evropské komise 57\% uživatelů internetu v Evropě nakupuje zboží a služby v jazycích, které nejsou jejich jazyky mateřskými. (Angličtina je nejběžnějším cizím jazykem, následuje francouzština, němčina a španělština.) 55\% uživatelů v cizím jazyce čte, zatímco pouze 35\% používá jiný jazyk k psaní e-mailů nebo posílání komentářů na web.\cite{EC1} Před několika lety se angličtina mohla stát společným jazykem webu – převážná většina obsahu na webu byla v angličtině – ale situace se nyní zcela změnila. Množství on-line obsahu v jiných evropských (stejně jako asijských a středovýchodních) jazycích rapidně vzrostlo.
 
 Tato všudypřítomná digitální propast si kvůli jazykovým hranicím překvapivě nezískala příliš pozornosti veřejnosti. Přesto ale vzbuzuje velmi naléhavou otázku: které evropské jazyky budou prosperovat v propojené informační a znalostní společnosti a které jsou odsouzeny k záhubě?
-  \subsection{Naše jazyky v ohrožení --- Our Languages at Risk }
+
+\subsection{Naše jazyky v ohrožení --- Our Languages at Risk }
+
 Zatímco knihtisk pomohl zvýšit výměnu informací v Evropě, zároveň také vedl k zániku mnoha evropských jazyků. Regionální a menšinové jazyky byly tištěny zřídka a jazyky jako cornwallština a dalmátština se omezily na ústní podobu, což postupně zmenšilo rozsah jejich užívání. Bude mít internet stejný dopad na naše jazyky?
 
 Evropské jazyky, celkem jich je asi 80, jsou jedním z nejbohatších a nejdůležitějších kulturních vlastnictví a jsou podstatnou součástí jedinečného evropského modelu.\cite{EC2} Zatímco jazyky jako angličtina a španělština na nově vznikajícím digitálním trhu pravděpodobně přežijí, mnoho evropských jazyků by se mohlo stát v tzv. síťové společnosti bezvýznamnými. To by oslabilo světové postavení Evropy a šlo proti strategickým cílům, které slibují rovnocenné zapojení každého evropského občana bez ohledu na jeho jazyk. Podle zprávy organizace UNESCO o vícejazyčnosti jsou jazyky zásadním vyjadřovacím prostředkem pro užívání základních práv, jako je svoboda politického projevu, vzdělávání se a zapojení do společnosti.\cite{Unesco1}
-  \subsection{Jazykové technologie jsou technologiemi klíčovými --- Language Technology is a Key Enabling Technology }
+
+\subsection{Jazykové technologie jsou technologiemi klíčovými --- Language Technology is a Key Enabling Technology }
+
 Investiční snahy věnované udržování jazyků se v minulosti zaměřovaly na jazykové vzdělávání a překlad. Podle jednoho odhadu se v roce 2008 evropský trh pro překlad, interpretaci, softwarovou lokalizaci a internetovou globalizaci pohyboval na úrovni 8,4 miliard € a předpokládá se, že ročně vzroste o 10\%.\cite{EC3} Přesto toto číslo pokrývá pouze malou část současných a budoucích potřeb v mezijazykové komunikaci. Nejpřesvědčivější řešení, které by zajistilo rozsah i hloubku užívání jazyků v Evropě pro budoucnost, je užívání vhodných technologií, právě tak, jako když užíváme technologie např. pro řešení dopravy, energetických potřeb či potřeb pro handicapované.
 
 Digitální jazyková technologie (zaměřující se na všechny formy psaného textu a mluveného diskurzu) pomáhá lidem spolupracovat, podnikat, sdílet znalosti a podílet se na sociální a politické debatě, a to bez ohledu na jazykové bariéry a počítačové dovednosti. Tato technologie pracuje často neviditelně uvnitř komplexního softwarového systému, aby nám pomohla:
@@ -173,7 +183,8 @@ Digitální jazyková technologie (zaměřující se na všechny formy psaného 
 Jazykové technologie se skládají z několika klíčových aplikací, které umožňují procesy v rámci širšího aplikačního systému. Účelem Bílých knih META-NET orientovaných na jazyk je zaměřit se na to, jak jsou pro jednotlivé evropské jazyky tyto základní technologie připravené.
 
 Abychom si udrželi přední pozici v žebříčku inovačního potenciálu (Global Innovation), bude Evropa potřebovat jazykové technologie přizpůsobené všem evropským jazykům, které budou silné, dostupné a pevně integrované do klíčových softwarových prostředí. Bez jazykových technologií nebudeme v blízké budoucnosti schopni dosáhnout skutečně efektivních interaktivních, multimediálních a vícejazyčných uživatelských zkušeností.
-  \subsection{Příležitosti pro jazykové technologie --- Opportunities for Language Technology }
+
+\subsection{Příležitosti pro jazykové technologie --- Opportunities for Language Technology }
 
 Ve světě tisku bylo technologickým průlomem rychlé množení stran textu za použití vhodné tiskárny. Lidé museli vynakládat usilovnou práci na to, aby vyhledávali, četli, překládali a shrnovali poznatky. Museli jsme čekat až na Edisona, abychom mohli nahrávat mluvený jazyk – a jeho technologie opět jednoduše dělala analogové kopie.
 Digitální jazyková technologie může nyní zautomatizovat samotné procesy překladu, produkci textů a management znalostí pro všechny evropské jazyky. Může také posílit intuitivní jazyková\/řečová rozhraní pro domácí elektroniku, spotřebiče, prostředky, počítače a roboty. Reálné komerční a průmyslové aplikace jsou stále ještě v počátcích svého vývoje. Přesto úspěchy výzkumu a vývoje vytvářejí velké příležitosti. Například strojový překlad už je v určitých oblastech poměrně hodně přesný a některé experimentální aplikace poskytují multilinguální informační a znalostní management stejně jako produkci textů (v mnoha evropských jazycích).
@@ -183,9 +194,13 @@ První jazykové aplikace jako hlasová uživatelská rozhraní a dialogové sys
 Jazykové technologie představují velkou příležitost pro Evropskou unii. Mohou pomoci řešit složitou problematiku vícejazyčnosti v Evropě, tj. skutečnost, že vedle sebe v rámci evropského podnikání, organizací a škol mohou existovat odlišné přirozené jazyky. Občané však potřebují komunikovat přes tyto jazykové hranice křižující společný evropský trh a jazykové technologie mohou pomoci překonat tuto poslední bariéru tím, že podpoří volné a otevřené užívání jednotlivých jazyků. Podíváme-li se ještě více do budoucnosti, inovativní evropská vícejazyčná jazyková technologie bude sloužit jako měřítko pro naše světové partnery, kteří ji mohou uplatnit pro své vlastní vícejazyčné komunity. Jazykové technologie mohou být chápány jako forma „pomocné“ technologie, která pomáhá překonat „handicap“ jazykové diversity a navzájem zpřístupňuje jazykové komunity.
 
 Jednou oblastí výzkumu je také využití jazykových technologií pro záchranné akce v oblastech postižených katastrofami, kde výkonnost může být otázkou života a smrti: budoucí inteligentní roboti s  mezijazykovými schopnostmi mají potenciál zachraňovat lidské životy.
-  \subsection{Výzvy pro jazykové technologie --- Challenges Facing Language Technology }
+
+\subsection{Výzvy pro jazykové technologie --- Challenges Facing Language Technology }
+
 Ačkoliv v několika posledních letech dosáhly jazykové technologie značného pokroku, současné tempo technologického vývoje a inovace produktů je příliš pomalé. Široce používané technologie jako korektory pravopisu a gramatiky v textových editorech jsou typicky jednojazyčné a jsou k dispozici pouze pro hrstku jazyků. Využití on-line služeb strojového překladu, ačkoli jsou užitečné pro rychlé generování přiměřeně odpovídajících textů, je problematické, když potřebujeme přesné a úplné překlady. Vzhledem ke složitosti přirozeného jazyka je modelování našich jazyků v oblasti softwaru a jejich testování v reálném světě zdlouhavé, nákladné a vyžaduje trvalé finanční závazky. Evropa proto musí zachovat svoji průkopnickou úlohu při řešení technologických otázek týkajících se vícejazyčných komunit tím, že bude vymýšlet nové způsoby k urychlení vývoje na celém území. To by mohlo zahrnovat i komputační pokroky a techniky jako crowdsourcing („spolutvorba“, „moudrost davu“).
-  \subsection{Osvojování jazyka u lidí a u strojů --- Language Acquisition in Humans and Machines}
+
+\subsection{Osvojování jazyka u lidí a u strojů --- Language Acquisition in Humans and Machines}
+
 Pro ilustraci, jak počítače zacházejí s jazykem a proč je obtížné naprogramovat jazyky pro počítače, se krátce podívejme na to, jak si lidé osvojují první a druhý jazyk, a pak uvidíme, jak fungují systémy jazykových technologií.
 
 Lidé si osvojují jazykové dovednosti dvěma různými způsoby. Děti si osvojují jazyk posloucháním reálných interakcí mezi rodiči, sourozenci a ostatními členy rodiny. Přibližně od druhého roku říkají první slova a krátké věty. To je možné jen díky tomu, že lidé mají genetickou dispozici napodobovat a poté racionalizovat to, co slyší.
@@ -201,9 +216,13 @@ Druhý přístup k jazykové technologii a strojovému překladu je vytvořit sy
 Protože silné a slabé stránky statistických systémů a systémů založených na pravidlech mají tendenci se doplňovat, zaměřuje se současný výzkum na hybridní přístupy, které obě metody spojují. Tyto přístupy jsou ale v průmyslových aplikacích zatím méně úspěšné než ve výzkumné laboratoři.
 
 Jak jsme viděli v této kapitole, mnoho aplikací široce používaných v dnešní informační společnosti do značné míry závisí na jazykových technologiích. To platí zejména o ekonomickém a informačním prostoru Evropy vzhledem k její vícejazyčné komunitě. Ačkoliv jazykové technologie dosáhly v posledních několika letech značného pokroku, je zde ještě velký potenciál pro zlepšení kvality jejich systémů. V následující části popíšeme roli češtiny v evropské informační společnosti a zhodnotíme současný stav jazykových technologií pro češtinu.
+\end{multicols}
+\clearpage
+%------------------------------------
 
-  \ssection[Čeština v evropské informační společnosti]{Čeština v evropské informační společnosti --- Czech in the European Information Society}
+\ssection[Čeština v evropské informační společnosti]{Čeština v evropské informační společnosti --- Czech in the European Information Society}
 
+\begin{multicols}{2}
   \subsection{Obecné informace --- General Facts}
 
 Česká republika (dále ČR) se skládá ze tří historických částí: Čech, Moravy a Slezska. Jazyk používaný ve všech třech „zemích“ je čeština, jeden ze západoslovanských jazyků. Čeština má asi 10 milionů mluvčích.\cite{Note1_cs} V jiných částech světa mluví česky asi 200 000 mluvčích, jde převážně o emigranty a jejich děti, kteří opustili zemi ve velkých migračních vlnách po první a druhé světové válce a mezi lety 1948 a 1968. Mnoho mluvčích češtiny lze nalézt hlavně v Rakousku (zejména ve Vídni), Polsku, Německu, Ukrajině, Chorvatsku (většinou v oblasti Daruvaru), v západním Rumunsku (v Banátu), v Austrálii a v Kanadě. Několik desítek tisíc Čechů stále žije i po rozdělení Československa v roce 1993 ve Slovenské republice. Největší skupina českých mluvčích mimo ČR ale žije ve Spojených státech, ve městech jako New York, Chicago a Cleveland a v mnoha komunitách v Texasu, Wisconsinu, Minnesotě a Nebrasce. Podle amerického sčítání lidu žilo ve Spojených státech v roce 1990 více než 90 000 českých mluvčích.\cite{Note2}
@@ -215,7 +234,9 @@ Jak jsme viděli v této kapitole, mnoho aplikací široce používaných v dne�
 Většina lidí dává v běžné komunikaci přednost spíše jiným varietám jazyka než spisovné češtině. Nejrozšířenější varietou je tzv. obecná čeština (založená na středočeském interdialektu), na Moravě a ve Slezsku se zbytek dialektů (hanáčtina, laština, moravská slovenština) aktivně používá v mluvené podobě, v Čechách jsou slyšet stopy severovýchodních a jihozápadních dialektů.\cite{Note3} Obecná čeština a dialekty se liší od spisovné češtiny především v morfologii, méně ve slovní zásobě a výslovnosti, další rozdíly jsou okrajové. Všechny variety češtiny jsou vzájemně srozumitelné. Pro cizince, kteří studují češtinu, je však často matoucí tzv. střídání kódů přítomné v komunikaci jednotlivých rodilých mluvčích a závislé na tom, zda se jedná o komunikaci oficiální či soukromou, jaké je vzdělání mluvčího atd.
 
 Čeština spolu se slovenštinou, polštinou a horní a dolní lužickou srbštinou patří do západní slovanské skupiny. Čeština se ovšem od ostatních slovanských jazyků oddělila řadou změn, z nichž většina proběhla v 10. až 16. století (hláskové změny jako a’> ě, g > h, r’> ř; v 15. století čeština ztratila duál a dva slovanské minulé časy – aorist a imperfektum); na druhou stranu většího významu nabyl slovesný vid a vzrostl počet deklinací. Pro písemnou formu se používala středověká latinská abeceda, později (na počátku 15. století) byla náboženským reformátorem Janem Husem zavedena diakritická znaménka („háček“ pro palatální/palatalizované souhlásky – ť, ď, ň, ř, š, ť, ž; „čárka“ pro dlouhé samohlásky – á, é, í, ó, ú, ý), jediná spřežka, která se v moderní češtině zachovala, je ch, pro dlouhé u byl zaveden speciální znak – ů (ze sekvence změn ó > uo > ů).
-  \subsection{Specifika češtiny --- Particularities of the Czech Language }
+
+\subsection{Specifika češtiny --- Particularities of the Czech Language }
+
 Čeština je vysoce flektivní jazyk s velmi složitou morfologií. Deklinace podstatných jmen rozlišuje 7 pádů (nominativ, genitiv, dativ, akuzativ, vokativ, lokál, instrumentál), 2 čísla (singulár, plurál) a 4 rody (maskulinum životné, maskulinum neživotné, femininum, neutrum); každá kategorie má několik typů deklinace (např. neživotné maskulinum má ve školních mluvnicích dva typy deklinace „hrad“ a „stroj“ s gen. sg. „hrad\textbf{u}“, resp. „stroj\textbf{e}“; některá podstatná jména řazená pod vzor „hrad“ mají ovšem v gen. sg. koncovku –a („les\textbf{a}“), některá mají koncovky obě („bez rybník\textbf{u}“, „do rybník\textbf{a}“).
 
 Jmenný rod je jen částečně ovlivněn rodem přirozeným, většinou je určen zakončením lemmatu (základní tvar slova), i když zakončení samo ne vždy jednoznačně vyjadřuje rod. Pro cizince to znamená učit se nová slova i s jejich rodem podobně jako v němčině – německé slovníky uvádějí podstatná jména s jejich členy „der/die/das“ (v češtině je také ve slovníku nutno uvést jejich rod, viz např. „nů\textbf{ž}“ – mask. než. , „mří\textbf{ž}“ – fem., „tabul\textbf{e}“ – fem., „pol\textbf{e}“ – neutr.).
@@ -251,7 +272,8 @@ Možnost měnit slovosled způsobuje tzv. vzdálené závislosti (jako v př. (7
 
  (7)	\textit{Tu knihu se Pavel rozhodl do knihovny vrátit až zítra.}\\
 
-  \subsection{Současný vývoj --- Recent Developments}
+\subsection{Současný vývoj --- Recent Developments}
+
 Ačkoli si český jazyk zachovává 98\% své slovní zásoby z praslovanštiny, není zcela imunní vůči vlivu ostatních jazyků.\cite{Note5} Do 19. století byla hlavním jazykem, se kterým byla čeština v kontaktu, němčina (viz např. slova jako „knedlík“ {[}der Knődel{]}, „šunka“ {[}der Schinken{]}, „taška“ {[}die Tasche{]}, „brýle“ {[}die Brille{]}, „blok“ {[}der Block{]}, „cihla“ {[}der Ziegel{]}, „muset“ {[}műssen{]}).
 
 Ve 20. století bylo území dnešní České republiky pod politickým vlivem Ruska (SSSR) a čeština přijala nová slova spojená s politikou a socialistickou ideologií. V poslední době tato slova postupně vymizela nebo se stala pro mladší generaci neznámá, stejně jako vymizely pojmy a předměty, ke kterým odkazovala („kulak“ {[}bohatý zemědělec{]}, „pětiletka“ {[}pětiletý ekonomický plán{]}, „celiny“ {[}velká pole{]}, „chozrasčot“ {[}státní ekonomický plán{]}, „prověrka“ {[}prověřování osob{]}).
@@ -269,7 +291,8 @@ Na druhou stranu čeština obohatila mezinárodní slovní zásobu slovem „rob
 Ve třech dílech, které editovala Olga Martincová a kol. (viz \cite{Martincova_cs}), byla publikována kniha neologismů v češtině.
 
 Údaje uvedené v této kapitole věnující se vzájemnému vlivu jazyků v blízkém kontaktu jsou pro rozvoj české slovní zásoby okrajové a nepředstavují žádné nebezpečí pro systém české vědecké terminologie.
-  \subsection{Kultivace jazyka v České republice --- Language Cultivation in the Czech Republic}
+  
+\subsection{Kultivace jazyka v České republice --- Language Cultivation in the Czech Republic}
 
 V kapitole Obecné informace jsme zmínili, že jazykovou politiku v ČR v praxi ovlivňuje Ústav pro jazyk český Akademie věd České republiky. Jeho důležitou součástí je jazyková poradna. Zkušení lingvisté, kteří zde pracují, odpovídají na otázky veřejnosti psanou formou, e-mailem nebo přímo po telefonu. Jako reakce na velký zájem z řad občanské společnosti o jazykovou kulturu a problémy jazykového plánování vznikají praktické populárně naučné příručky. Máme na mysli např. příručky „Na co se nás často ptáte“ (\cite{Cerna}), „Jak používat čárku a další interpunkční znaménka“ (\cite{Janovec}). Ústav pro jazyk český poskytuje jako doplňující služby pro veřejnost i speciální webové stránky.\cite{Note6}
 
@@ -278,7 +301,9 @@ Na druhou stranu je hlavní proud jazykové politiky v ČR daleko od normativní
 V ČR je mnoho prostoru pro jazykové diskuse spojené s jazykovou politikou a jazykovým plánováním stejně jako s výsledky výzkumu (Jazykovědné sdružení ČR, Pražský lingvistický kroužek, Kruh přátel českého jazyka). Zvláštní pozornost otázkám jazykové kultivace je věnována v časopise Naše řeč.
 
 Výsledky širokých diskusí se odrážejí v normativních mluvnicích a v dalších normativních příručkách. Popisy jazyka jsou v nich formulovány jako doporučení pro uživatele, kteří se zajímají o kulturní způsob vyjadřování ve svém mateřském jazyce. Používání normativních příruček je Ministerstvem školství, mládeže a tělovýchovy ČR požadováno na základních a středních školách.
-  \subsection{Jazyk ve vzdělávání --- Language in Education}
+  
+\subsection{Jazyk ve vzdělávání --- Language in Education}
+
 Český jazyk je povinný předmět na všech typech základních a středních škol. Patří také mezi povinné předměty maturitní zkoušky. Nicméně předmět „český jazyk a literatura“ zahrnuje výuku jazyka (gramatiky a dalších jazykových dovedností) a literatury (včetně některých pojmů z literární teorie). Protože ve školních osnovách není žádný předmět, který by obsahoval světovou literaturu, její stručný přehled je zahrnut také do „českého jazyka a literatury“. Asi před 4–5 lety proběhla diskuse mezi odborníky na didaktiku, psychologii, český jazyk a literaturu a Ministerstvem školství, mládeže a tělovýchovy o rozdělení předmětu na český jazyk na jedné straně a českou a světovou literaturu na straně druhé. Diskuse bohužel nebyla úspěšná a situace se v tomto ohledu nezměnila.
 
 V ČR nejsou žádné závažné problémy spojené s jazykovým vzděláváním cizinců jako ve Francii nebo v Německu. Nicméně znalost češtiny doložená certifikáty vydávanými akreditovanými institucemi (např. Ústavem jazykové a odborné přípravy Univerzity Karlovy v Praze, Českými centry v Berlíně, Londýně, Moskvě a na Varšavské univerzitě) o žadatelově dosažení odpovídajícího stupně znalostí češtiny je nutná pro konkrétní profese stejně jako pro vysokoškolské studium žadatelů, kteří se ucházejí o studium podle plánu platného pro české studenty. Tento certifikát potvrzuje určitou úroveň znalostí češtiny. Úrovně A1, A2, B1, B2, C1, C2 jsou stanoveny podle „Společného evropského referenčního rámce pro jazyky: učení, vyučování, hodnocení“, který byl sestaven Radou Evropy.\cite{Note7} Úroveň A1 znamená, že žadatel je schopen rozumět češtině v běžných, každodenních situacích, zatímco úroveň C2 kvalifikuje žadatele jako osobu, která rozumí česky velmi dobře a mluví česky plynně ve všech situacích.
@@ -290,13 +315,16 @@ Pro procvičení české morfologie a syntaxe byl navržen a realizován systém
 Další typ nástroje pro výuku a procvičování češtiny byl původně vyvinutý pro francouzské studenty učící se češtinu jako cizí jazyk. Nazývá se CETLEF\cite{Note9cs} a je to webová aplikace obsahující cvičení na skloňování, která po studentech vyžadují, aby na vynechané místo doplnili správný tvar slova v určitém syntaktickém kontextu. Tento systém je příkladem pomůcky pro výuku podporovanou počítačem (CALL), protože používá některé techniky počítačového zpracování přirozeného jazyka. Ty se jednak používají pro analýzu toho, co student vytvoří, s cílem poskytnout mu lingvisticky orientovanou zpětnou vazbu k jeho chybám, jednak obohacuje pedagogické prostředí o automaticky generovanou lingvistickou anotaci. Myšlenka chybové diagnostiky je taková, že většina chybných forem, v jazyce existujících či neexistujících, může být uměle reprodukována pomocí odpovídající předlohy pro flexi (obsahující paradigmata koncovek a kontextová pravidla morfologických alternací). Chyby jsou tedy vysvětlitelné porušením morfologických kategorií. Diagnostika se provádí porovnáním studentských prací s dynamicky generovanými hypotetickými tvary slov. Pro označování chyb a pro vytváření zpětné vazby se používají nejpravděpodobnější interpretace vybrané malým počtem heuristických pravidel. CETLEF se také používá jako alternativní zdroj žákovských dat vhodných pro výzkum osvojování druhého jazyka. Vedle žákovských korpusů obsahujících zejména eseje studentů umožňuje žákovská jazyková produkce vzniklá při gramatických cvičeních zaměřit se i na některé specifičtější aspekty cílového jazyka. To může být výhodou při studiu způsobu osvojování si tak složitých systémů, jako je skloňování v češtině.
 
 Souhrn žákovských chyb ve speciálních korpusech (tzv. žákovských korpusech) je také slibným využitím počítačů v procesu výuky a studia jazyků. Chyby jsou klasifikovány podle svých zdrojů a reflektovány jsou také zpětné vazby mezi učiteli a studenty (viz webové stránky Technické univerzity v Liberci\cite{Note10}).
-  \subsection{Mezinárodní aspekty --- International Aspects}
+
+\subsection{Mezinárodní aspekty --- International Aspects}
+
 Česká republika je malá země, rozkládá se na ploše 78 867 km$^{\textrm{2}}$, hovoří se zde málo rozšířeným jazykem – češtinou. Po porážce v bitvě na Bílé hoře v roce 1620 byla spisovná čeština kvůli německému tlaku na pokraji vymizení. Ale díky soustavnému úsilí českých spisovatelů, básníků, překladatelů a učitelů v době národního obrození přežila. Tyto snahy ovlivnily podobu spisovné češtiny a způsobily rozdíly mezi normou spisovné češtiny a jejími opravdu používanými mluvenými variantami, jak je uvedeno výše v kapitole Obecné informace. Od konce 18. století byly vytvořeny podmínky pro rozvoj bohatého kulturního života: psala se a publikovala beletrie, poezie i odborné texty z různých oblastí. Mnoho knih psaných v češtině bylo překládáno do cizích jazyků (zejména od konce 19. století). Kromě mnoha jiných zde uvádíme „Osudy dobrého vojáka Švejka“ (napsal je Jaroslav Hašek v roce 1923, přeloženy byly do 54 jazyků), romány Karla Čapka a Bohumila Hrabala, abychom zmínili nejznámější spisovatele 20. století. Český básník Jaroslav Seifert obdržel Nobelovu cenu za literaturu (v roce 1984). Jeden z nejslavnějších současných světových spisovatelů Milan Kundera, narozený v Československu, napsal své první knihy v češtině. Po emigraci publikuje své romány a eseje ve francouzštině.
 
 V 19. století ustanovil J. S. Presl (1791–1849) české botanické a chemické názvosloví. V současné době podléhá komunikace ve vědě v ČR změnám charakteristickým pro globalizaci světa a je ovlivněna nově otevřenými možnostmi českých vědců být v pravidelném kontaktu se světovou vědou. Hlavním prostředkem vědecké komunikace se stala angličtina. Týká se to především technických a přírodovědných oborů. Humanitní obory, obzvláště ty, které se zabývají českou historií, jazykem a folklórem, nejsou angličtinou ovlivněny tak hluboce. Nově zavedená vládní hodnotící kritéria pro výsledky výzkumu ovšem vyvíjejí na vědeckou komunitu velký tlak, aby angličtinu používala.
 
 Diskuse o nebezpečí vymizení malého národního jazyka z procesu komunikace mezi vědci však dospěla k závěru, že čeština přežije a bude sloužit jako prostředek vnitřní komunikace ve vědě stejně jako v jiných komunikačních oblastech, jako jsou masmédia, ekonomika, právo, průmysl atd.
-  \subsection{Čeština na internetu --- Czech on the Internet}
+
+\subsection{Čeština na internetu --- Czech on the Internet}
 
 V roce 2010 bylo uživateli internetu téměř 60\% Čechů. Většina z nich uvedla, že je on-line každý den. Mezi mladými lidmi je procento uživatelů ještě vyšší. V lednu 2011 bylo registrováno více než 750 tisíc domén \emph{.cz}. Tato čísla nám dávají matnou představu o obrovském množství dat v češtině dostupných na webu.
 
@@ -307,13 +335,19 @@ Nejčastěji používanou webovou aplikací je pravděpodobně webový vyhledáv
 Uživatelé internetu a poskytovatelé webových stránek mohou mít z jazykových technologií také užitek, a to méně obvyklým způsobem, například pokud je použijí pro automatický překlad webových stránek z jednoho jazyka do druhého. Uvážíme-li vysoké náklady spojené s ručním překladem těchto stránek, může nás překvapit, jak málo jsou jazykové technologie z tohoto hlediska využívány ve srovnání s předpokládanými potřebami.
 
 Je to ovšem méně překvapivé, uvážíme-li složitost češtiny a počet technologií zahrnutých v jejich typických aplikacích. V další kapitole představíme úvod do jazykových technologií a hlavní oblasti pro jejich aplikaci stejně jako hodnocení současné situace podpory jazykových technologií pro češtinu.
+\end{multicols}
+\clearpage
+%------------------------------------
 
-  \ssection[Podpora jazykových technologií pro češtinu]{Podpora jazykových technologií pro češtinu --- Language Technology Support for Czech}
+\ssection[Podpora jazykových technologií pro češtinu]{Podpora jazykových technologií pro češtinu --- Language Technology Support for Czech}
+\begin{multicols}{2}
 
 Jazykové technologie jsou informační technologie, které jsou specializované na práci s přirozeným jazykem. Proto jsou často zahrnuty pod pojem technologie zpracování přirozeného jazyka. Přirozený jazyk se vyskytuje v mluvené i psané formě. Řečové a textové technologie zpracovávají a produkují „jazyk“ v těchto dvou způsobech realizace. Existují ovšem takové stránky jazyka, které jsou sdíleny „řečí“ a „textem“, jako jsou slovníky, většina gramatiky a významů vět. Velké části jazykových technologií proto nelze zařadit ani pod technologii mluvené řeči, ani textu. Mezi ně patří technologie, které spojují jazyk a myšlení. Obrázek vpravo ukazuje oblast jazykových technologií. V rámci komunikace směšujeme jazyk s jinými způsoby komunikace a jinými informačními zdroji. Kombinujeme „řeč“ s gesty a výrazy obličeje. Digitální texty mohou obsahovat obrázky, grafy, zvuky apod. Filmy mohou obsahovat jazyk v mluvené i psané formě. Řečové a textové technologie se tedy překrývají a vzájemně ovlivňují s mnoha dalšími technologiemi, které usnadňují zpracování multimodální komunikace a multimediálních dokumentů.
 
 V dalším textu popíšeme architekturu typického systému jazykových technologií. Následně podáme přehled základních aplikačních oblastí a stručně shrneme situaci jazykových technologií ve výzkumu a vzdělávání v ČR. Tabulka v závěru této části poskytuje vyhodnocení situace v nástrojích a datových zdrojích jazykových technologií z několika aspektů, jako je např. dostupnost, vyzrálost a kvalita.
-  \subsection{Architektura aplikací --- Application Architectures}
+
+\subsection{Architektura aplikací --- Application Architectures}
+
 Typické softwarové aplikace pro zpracování jazyka se skládají z komponent, které zohledňují různé aspekty jazyka a aspekty úlohy, kterou automatizují. Obrázek 2 znázorňuje vysoce zjednodušenou architekturu systému pro zpracování textů. První tři moduly se týkají struktury a významu textového vstupu:
 \begin{enumerate}
   \item Předzpracování: čištění dat; odstranění formátování; detekce vstupního jazyka atd.
@@ -321,7 +355,9 @@ Typické softwarové aplikace pro zpracování jazyka se skládají z komponent,
   \item Sémantická analýza: desambiguace významu (Jaký je správný význam slova „zámek“ v daném kontextu?); určování koreferenčních vztahů (jako „ona“, „jeho auto“, aj.); počítačová reprezentace významu věty.
 \end{enumerate}
 Specializované moduly následně provádějí mnoho různých úloh, jako je např. automatické shrnutí vstupního textu, databázové dotazy.
-  \subsection{Základní aplikační oblasti --- Core Application Areas}
+
+\subsection{Základní aplikační oblasti --- Core Application Areas}
+
 Dále rozebíráme hlavní aplikační oblasti jazykových technologií, jako je kontrola pravopisu, webové vyhledávání, hlasové ovládání a strojový překlad. Oblasti zahrnují aplikace a základní technologie, např.
 \begin{itemize}
   \item oprava pravopisu,
@@ -336,7 +372,7 @@ Dále rozebíráme hlavní aplikační oblasti jazykových technologií, jako je
 \end{itemize}
 Pro každou aplikační oblast ilustrujeme vybrané moduly různých architektur, které záměrně popisujeme zjednodušeně.
 
-  \subsubsection{Jazyková kontrola --- Language Checking}
+\subsubsection{Jazyková kontrola --- Language Checking}
 Morfologické a syntaktické vlastnosti češtiny představují velkou výzvu jak pro kontrolu překlepů, tak i pro kontrolu gramatické správnosti českých textů. Ačkoli již existují nástroje pro oba typy kontrol (první nástroje na kontrolu překlepů byly vyvinuty na začátku 90. let; vývoj prvního gramatického korektoru pro Microsoft Office trval mnohem déle, uživatelé se s ním mohli seznámit až v roce 2005), zůstává stále mnoho témat čekajících na efektivní řešení.
 
 Existující nástroje na kontrolu překlepů pro češtinu jsou založeny na slovníku lemmat, zkombinovaném se sadou morfologických pravidel dovolujících analýzu nebo generování všech správných slovních forem. Ačkoli se tento jednoduchý postup zdá vyhovující, má dvě podstatné nevýhody. První z nich se týká překlepů, jež jsou ve skutečnosti správnými slovními tvary, které jsou nesprávné pouze v daném kontextu. V důsledku izolovaného zpracovávání jednotlivých slovních tvarů z textu je prakticky nemožné takovéto chyby objevit, proto by bylo velmi užitečné vyvinout pokročilejší algoritmy kontextové detekce chyb. Druhou nevýhodou je neschopnost rozeznat opravdové překlepy a ty slovní tvary, které jsou sice správné, ale nejsou obsaženy ve slovníku. Taková slova budou vždy existovat například v důsledku přirozeného obohacování slovní zásoby nově vytvořenými nebo přejatými slovy, novými vědeckými a odbornými termíny apod. Schopnost zachycovat tato slova by kontrolu překlepů pozvedla na kvalitativně novou úroveň.
@@ -370,7 +406,9 @@ Tato věta je syntakticky nesprávná v typickém čtení, protože obsahuje nes
 Skutečnost, že podmět může být z věty vynechán, výrazně ztěžuje existujícím nástrojům na kontrolu gramatické správnosti nalezení jednoho z nejčastějších typů gramatických chyb v češtině, neshody mezi podmětem a přísudkem. Dalšího vylepšení těchto nástrojů proto může být dosaženo pouze, pokud budeme chyby hledat v širším kontextu než v rámci jedné věty. Tento přístup však představuje velký úkol pro další výzkum.
 
 Ačkoli první generace kontrolních jazykových nástrojů pro češtinu existuje, u ostatních nástrojů je situace horší. Například v oblasti autorské podpory existuje absolutní nedostatek nástrojů. To je způsobeno do určité míry skutečností, že čeština je obvykle cílovým a nikoli zdrojovým jazykem pro technickou dokumentaci nejrůznějších výrobků. Proto není potřeba takovýchto nástrojů tak naléhavá, jako je tomu u větších jazyků. Přesto však potřeba těchto a podobných nástrojů v budoucnu poroste a výzkum v oblasti zpracování přirozeného jazyka bude stále důležitější.
-  \subsubsection{Webové vyhledávání --- Web Search}
+  
+\subsubsection{Webové vyhledávání --- Web Search}
+
 V České republice se tradičně hojně využívají domácí internetové vyhledávače. V současné době česká internetová populace nejčastěji využívá Seznam.cz, Google.com, Morfeo.cz a Jyxo.cz. Z toho vidíme, že situace je poněkud odlišná od ostatních zemí, kde má Google.com 80\% většinu. Na domácím trhu je dostatek prostoru jak pro vylepšení existujících vyhledávačů pomocí spolupráce akademického světa s průmyslem, tak i pro případné uvedení nové služby, zejména pokud by byla omezena na konkrétní obor či úkol, například zodpovídání otázek.
 
 Pokud je nám známo, výsledky Googlu jsou považovány za nejrelevantnější. Google zahájil svůj provoz v roce 1998 a od té doby se příliš nezměnilo ani uživatelské rozhraní pro zadávání otázek, ani forma zobrazování výsledků. Příběh úspěchu vyhledávače Google ukazuje, že s využitím efektivních indexovacích technik a s dostatkem dat k dispozici může ryze statistický přístup vést k uspokojivým výsledkům.
@@ -386,7 +424,9 @@ A konečně, zpracovaný dotaz je třeba porovnat s velkým množstvím nestrukt
 Úkol je možno ještě zesložitit, pokud chceme vyhodnocovat dotaz nad dokumenty psanými v jiném jazyce. Pro vícejazyčné vyhledávání je třeba automaticky přeložit dotaz do všech dostupných zdrojových jazyků a získanou informaci přeložit zpět do cílového jazyka. Tento úkol opět zahrnuje lingvistickou analýzu. Pro uživatele se specifickými informačními potřebami může rozšíření dotazu vyžadovat dodatečné zdroje informací jako například doménově specifickou ontologii reprezentující vztahy mezi jednotlivými pojmy.
 
 Vzrůstající podíl sdílení dat v netextových formátech rovněž zvyšuje poptávku po službách umožňujících multimediální vyhledávání, tj. vyhledávání v obrázcích, audio a video datech. Pro audio a video soubory je tudíž potřeba zapojit modul pro rozpoznávání řeči, který převede mluvenou řeč do textové či fonetické reprezentace, ve které pak můžeme vyhledávat odpovědi na uživatelovy dotazy.
-  \subsubsection{Jazykové technologie --- Speech Technology}
+
+\subsubsection{Jazykové technologie --- Speech Technology}
+
 Obecné rozpoznávání mluvené češtiny je stále v začátcích. Jednoduché aplikace s malým slovníkem a gramatikou dosahují vysoké spolehlivosti i díky jednoduchému fonetickému systému češtiny. Hlavním problémem velkých aplikací s rozsáhlým slovníkem a obecnějším jazykovým modelem češtiny je vysoký počet slovních tvarů, relativně volný slovosled a nespisovné tvary. Tyto zvláštnosti zatím brání dosažení podobné úspěšnosti rozpoznávání s pomocí klasických statistických metod, jako existují pro angličtinu. Existuje několik komerčních systémů s velkými slovníky (SpeechTech s.r.o.\cite{Note11}, OptimSys, s.r.o.\cite{Note12}, NewtonTechnologies, a.s.\cite{Note13}), které však pracují buď jako diktovací aplikace s velmi kvalitním zvukovým vstupem, nebo mají silně omezenou jazykovou doménu např. na sportovní nebo parlamentní přenosy. Je možné zakoupit samostatný modul rozpoznávání mluvené řeči s podporou rozhraní Media Resource Control Protocol, který umožňuje začlenění této technologie i do jiných aplikací. Firmy nabízejí aplikace generující off-line přepis multimediálních archivů a jejich prohledávání. Všechny tyto programy mají relativně dobré konfigurační možnosti, ale nespadají do oblasti open-source. K vývoji rozpoznávače mluvené češtiny jako open-source v současnosti chybí open-source akustická data, která by umožnila přípravu volně dostupných akustických modelů nezávislých na mluvčích. Nástroje a knihovny nutné pro přípravu takového systému jsou k dispozici, ale navíc stále chybí spolehlivější metoda rozpoznávání pro češtinu se všemi jejími slovními tvary a volným slovosledem.
 
 Syntéza mluvené češtiny má několik komerčních systémů na dobré úrovni (Eris\cite{Note11}, Acapela Group\cite{Note14}), navíc i open-source aplikace pro syntézu hlasu, bohužel zatím s nižší kvalitou (Festival Czech\cite{Note15}, Epos TTS System\cite{Note16}, MBROLA\cite{Note17}).
@@ -400,7 +440,9 @@ Současný výzkum mluvené češtiny se zaměřuje na zlepšení jazykového mo
 Druhý směr výzkumu se zaměřuje na vývoj syntaktických a sémantických analyzátorů vyvíjených s pomocí anotovaných stromových korpusů psané a mluvené češtiny.  Ve spojení s morfologickou analýzou by tato metoda měla pomoci se zpracováním volného slovosledu a velkého množství slovních tvarů.
 
 Výzkum syntézy mluvené češtiny se snaží vyvinout přirozenější hlasy. Naděje se vkládá do pokročilejší syntaktické a sémantické analýzy vstupních textů, která by měla podstatně zlepšit přirozenost promluvy.
-  \subsubsection{Strojový překlad --- Machine Translation}
+
+\subsubsection{Strojový překlad --- Machine Translation}
+
 Nápad využít digitální počítače pro překlad přirozených jazyků pochází od A. D. Boothe z roku 1946. V padesátých letech 20. st. a po určité pauze opět od let osmdesátých bylo do tohoto směru výzkumu investováno značné množství prostředků. I přesto strojový překlad (machine translation, MT) dodnes nesplňuje vysoká očekávání, jak byla formulována v prvních letech.
 
 Na území České republiky nápad překladu prováděného počítači velmi zaujal lingvisty a matematiky záhy po prvních pokusech s překladem ve světě (1954 v USA, 1955 v Sovětském svazu). V lednu 1960 byl proveden první pokus přeložit několik vět z angličtiny do češtiny na počítači SAPO první generace, který byl vyroben v tehdejším Československu. Za pokusy stála malá skupina badatelů z Karlovy univerzity a Výzkumného ústavu matematických strojů. Univerzitní skupina pokračovala ve vývoji metod strojového překladu i dále a pro počítače druhé generace (z NDR a SSSR) byly vytvořeny experimentální pravidlové systémy pro anglicko-český a česko-ruský překlad. Systémy byly omezeny na úzkou doménu textů a sloužily především jako potvrzení správnosti formálně zapsaných gramatických pravidel. V devadesátých letech 20. st. byl navržen prototyp překladu mezi blízkými jazyky, konkrétně mezi češtinou a slovenštinou, systém Česílko\cite{Note18}. V praxi se tento systém bohužel nepoužívá zejména kvůli náročné údržbě. Následný výzkum vkládá více nadějí do statistických metod nebo kombinace statistických a pravidlových metod.
@@ -422,7 +464,7 @@ Alternativní, a samozřejmě obtížnější, je možnost navrhnout nový pří
 
 Zcela samostatnou otázku pak představuje úloha vyhodnocování kvality strojového překladu, ať již ručně nebo strojově. Zkušenosti ukazují, že různé přístupy překladu jsou různě úspěšné v různých ohledech: pravidlové systémy mají větší šanci zachovat význam, statistické systémy produkují výstup, který je plynulejší na úrovni krátkých sousloví. Například v úloze odpovídání na otázky sice lokální plynulost ve srovnání s jinými systémy dobře působí na uživatele, ale přesnost odpovědí může utrpět. Automatické vyhodnocování kvality (založené na porovnání výstupu MT s lidským překladem) je zcela zásadní pro vývoj zejm. statistických modelů. Ukazuje se však, že většina automatických hodnocení kvality je nespolehlivá, a to ještě výrazněji pro jazyky s bohatou morfologií. Pro vývoj systémů strojového překladu by též velmi pomohly nástroje, které klasifikují a podrobně zobrazí chyby ve výstupu.
 
-  \subsection{Informační managment/Jazykové technologie „v zákulisí“ --- Information management/``LT behind the scenes''}
+\subsection{Informační managment/Jazykové technologie „v zákulisí“ --- Information management/``LT behind the scenes''}
 
 Vytváření aplikací jazykových technologií zahrnuje celou řadu podúloh, které sice komunikují s uživatelem omezeně, ale poskytují zásadní funkcionality systémů. Tím formulují důležitá výzkumná témata, ze kterých vznikají samostatné disciplíny komputační lingvistiky.
 
@@ -458,13 +500,17 @@ Výzkumné skupiny Západočeské univerzity a ÚFAL UK MFF spolupracovaly v mez
 Organizace Shoah Foundation Institute´s Visual History Archiv pořídila v letech 1994-1999 v 56 zemích a ve 32 jazycích téměř 52 tis. videonahrávek výpovědí. Většina rozhovorů jsou s přeživšími Židy, dále s politickými vězni, Romy a Sinty, Svědky Jehovovými, a dále s těmi, co přežili experimenty zušlechťování lidské rasy, homosexuály, zachránci a osvoboditeli a účastníky soudních procesů s válečnými zločinci.
 
 Archiv je přístupný on-line přes rozhraní, které umožňuje uživatelům listovat výpověďmi a prohlížet je s využitím indexu 55 tis. klíčových slov a  frází. Pražské přístupové místo uchovává více než 500 výpovědí v češtině, každá výpověď trvá průměrně dvě hodiny. Další výpovědi musí být objednány on-line z jiných přístupových míst, což většinou trvá několik hodin.
-  \subsubsection{Miscelanea --- Miscellaneous}
-kazuje se, že posuzovat úroveň národního výzkumu a vývoje v oblasti jazykových technologií a zpracování řeči výhradně podle množství dostupných datových zdrojů a funkčních aplikací pro daný jazyk by bylo krajně zavádějící. Tak se udržuje začarovaný kruh: národní vlády i grantové agentury chtějí podporovat jen ty nejlepší výzkumné týmy. Nejlepšími týmy jsou podle scientometrických ukazatelů ty, které dosáhly největšího množství mezinárodně uznávaných publikací. Ovšem mezinárodních publikací se nesrovnatelně lépe dosahuje s mezinárodně zajímavým výzkumným tématem. Tematizujeme-li velké a strategické jazyky, jako je například angličtina, čínština nebo arabština, sebemenší pokrok je mezinárodně zajímavý a má tak naději na dobře hodnocenou publikaci. Naproti tomu stejný výsledek na jazyku, který běžně používá pouze malé společenství jeho rodilých mluvčích, má logicky mnohem menší mezinárodní dopad, a tudíž mnohem menší naději na prezentaci v prestižních médiích. Mezinárodně uznávaného hodnocení tak ve výzkumu malých jazyků zpravidla dosáhne jenom opravdový průlom v některé z mezinárodně řešených problematik. Takový nepochybný průlom je však ve vědě spíše svátkem než pravidlem. Navíc, jde-li o dobrý výsledek vázaný na problém jazykově specifický, je často nemožné ho přesvědčivě podat recenzentům, kteří daný jazyk neovládají, například v přísně omezeném rozsahu konferenčního abstraktu.
+
+\subsubsection{Miscelanea --- Miscellaneous}
+
+Ukazuje se, že posuzovat úroveň národního výzkumu a vývoje v oblasti jazykových technologií a zpracování řeči výhradně podle množství dostupných datových zdrojů a funkčních aplikací pro daný jazyk by bylo krajně zavádějící. Tak se udržuje začarovaný kruh: národní vlády i grantové agentury chtějí podporovat jen ty nejlepší výzkumné týmy. Nejlepšími týmy jsou podle scientometrických ukazatelů ty, které dosáhly největšího množství mezinárodně uznávaných publikací. Ovšem mezinárodních publikací se nesrovnatelně lépe dosahuje s mezinárodně zajímavým výzkumným tématem. Tematizujeme-li velké a strategické jazyky, jako je například angličtina, čínština nebo arabština, sebemenší pokrok je mezinárodně zajímavý a má tak naději na dobře hodnocenou publikaci. Naproti tomu stejný výsledek na jazyku, který běžně používá pouze malé společenství jeho rodilých mluvčích, má logicky mnohem menší mezinárodní dopad, a tudíž mnohem menší naději na prezentaci v prestižních médiích. Mezinárodně uznávaného hodnocení tak ve výzkumu malých jazyků zpravidla dosáhne jenom opravdový průlom v některé z mezinárodně řešených problematik. Takový nepochybný průlom je však ve vědě spíše svátkem než pravidlem. Navíc, jde-li o dobrý výsledek vázaný na problém jazykově specifický, je často nemožné ho přesvědčivě podat recenzentům, kteří daný jazyk neovládají, například v přísně omezeném rozsahu konferenčního abstraktu.
 
 Dalším nepříznivým faktorem pro výzkum a vývoj jazykových technologií přímo na malých jazycích je fakt, že nejvíce oceňovanými řešeními jsou řešení nezávislá na konkrétním jazyku. Jejich komerční aplikace je totiž mnohem levnější než jazykově specifická řešení. Výsledky jednotlivých výzkumných týmů se nejlépe porovnávají na stejném jazyku. Nejobvyklejším cizím jazykem je pro Evropany angličtina. Kromě toho pro ni existují nejpočetnější a nejkvalitnější jazykové zdroje. Proto není nikterak překvapující, že evropský výzkum a vývoj jazykově nezávislých technologií vychází převážně z experimentů prováděných na angličtině.
 
 V důsledku jmenovaných vlivů se národní týmy soustřeďují spíše na angličtinu než na svůj mateřský jazyk. To je třeba zohlednit při posuzování úrovně národního výzkumu v oblasti jazykových technologií a zpracování přirozeného jazyka. Chudý inventář jazykových zdrojů a chybějící aplikace pro daný jazyk neznamenají nutně špatnou úroveň oboru v dané zemi jako takového, ale naopak můžou být závažným příznakem chybějící vládní jazykové politiky. Pro jazyková společenství, která jsou příliš malá na to, aby výzkum a vývoj národních jazykových technologií byl ekonomicky zajímavý pro soukromý sektor. V těchto případech je cílená vládní podpora jazykových technologií pro národní jazyk naprosto nezbytná.
-  \subsection{Průmysl a programy jazykových technologií --- LT industry and programs}
+
+\subsection{Průmysl a programy jazykových technologií --- LT industry and programs}
+
 Průmyslový rozvoj jazykových technologií není v České republice zdaleka rozšířen, podnikání v oblasti jazykových technologií je spíše vzácné. Stejná situace je i ve vědeckých a výzkumných odděleních větších společností.
 
 V současné době využívají webové vyhledávače a webové služby (Seznam, Centrum, Google aj.) morfologickou analýzu a lematizaci. Google nabízí tzv. frázový strojový překlad webových stránek i vlastních textů uživatelů z a do češtiny. Seznam nabízí dvoujazyčné on-line slovníky s češtinou na jedné straně a s angličtinou, němčinou, francouzštinou, španělštinou a ruštinou na straně druhé.
@@ -480,7 +526,9 @@ Nahrávky telefonních hovorů a aplikace pro poskytování nápovědy/informac�
 Rozpoznávání mluvené češtiny komercializovala společnost Newton Technologies, coby spinoff Technické univerzity v Liberci.
 
 Většina vládou financovaných programů je spravována Grantovou agenturou České republiky (GAČR) s důrazem na základní výzkum. V roce 2009 byla založena Technologická agentura České republiky (TAČR) s ambicemi finančně podporovat aplikovaný výzkum. Domníváme se ale, že tato agentura doposud nefinancovala projekt zaměřený na jazykové technologie.
-  \subsection{Jazykové technologie ve výzkumu a vzdělávání --- LT research and education}
+
+\subsection{Jazykové technologie ve výzkumu a vzdělávání --- LT research and education}
+
 Pojmy „počítačová lingvistika“, „počítačové zpracování přirozeného jazyka“ a „rozpoznání mluvené řeči“ jsou podstatně starší než pojem jazykové technologie, alespoň z pohledu výzkumu a vzdělávání. Bez ohledu na terminologii, obory, které se věnují přirozenému jazyku, zahrnují i obory výzkumu a vzdělávání, jako je teoretická lingvistika, korpusová lingvistika, informatika, matematika, strojové učení aj.
 
 V České republice působí několik institucí, které věnují svůj výzkum a výuku počítačovému zpracování přirozeného jazyka. Níže uvádíme jejich seznam včetně informací, na jaký podobor se zaměřují (PL – počítačová lingvistika, KL – korpusová l., TL – teoretická l., ASR – rozpoznávání mluvené řeči) a jaké studijní programy nabízejí.
@@ -526,12 +574,14 @@ Univerzita Karlova v Praze, Matematicko-fyzikální fakulta (UK MFF) nabízí ev
 Výzkum přirozeného jazyka v privátní sféře není v ČR rozšířen a zabývají se jím spíše menší firmy (např. Lingea, Captaworks, Langsoft) a spinoffy založené univerzitními týmy (např. SpeechTech,- ZČU Plzeň, Phonexia – VUT Brno).
 
 Studijní programy vzdělávacích institucí jsou zaměřeny jak na teoretické znalosti, tak i na aplikace. Bohužel, poptávka po odbornících těchto programů je v ČR nízká.
-  \subsection{Dostupné nástroje a zdroje pro češtinu --- Availability of tools and resources for Czech}
+
+\subsection{Dostupné nástroje a zdroje pro češtinu --- Availability of tools and resources for Czech}
   
 Následující tabulka podává přehled aktuálního stavu dostupných jazykových technologií pro češtinu. Ohodnocení jednotlivých nástrojů a zdrojů je založeno na odborném odhadu expertů v daném oboru (0 nejhorší, 6 nejlepší). 
 
     % Table here
-  \subsubsection{Poznámky k tabulce --- Notes to the table}
+\subsubsection{Poznámky k tabulce --- Notes to the table}
+
 \begin{itemize}
 \item Existuje sice řada specifických korpusů, ale syntakticky anotovaný korpus češtiny žádoucího rozsahu neexistuje.
 \item Existuje velmi komplexní syntakticky anotovaný korpus pro češtinu, není však zdarma (dá se koupit přes Linguistic Data Consortium). Na tomto korpusu probíhají navazující anotace (koreference, diskurz), nejsou ale ještě dokončeny.
@@ -548,7 +598,9 @@ Následující tabulka podává přehled aktuálního stavu dostupných jazykov�
 \end{itemize}
 
 Na závěr můžeme konstatovat, že v řadě konkrétních oblastí výzkumu českého jazyka máme v současné době k dispozici software s omezenou funkčností a prostředky s omezeným rozsahem a jen některé z nich jsou publikovány jako open-source. Je nasnadě, že další výzkumné snahy musí směřovat k současným nedostatkům.
-  \subsection{Porovnání napříč jazyky --- Cross-language comparison}
+
+\subsection{Porovnání napříč jazyky --- Cross-language comparison}
+
 Aktuální stav podpory jazykových technologií se liší napříč jazykovými skupinami. V této části prezentujeme vyhodnocení dvou aplikačních oblastí (strojový překlad a zpracování mluvené řeči) a jedné základní technologie (analýza textu) spolu s vyhodnocením datových zdrojů nezbytných pro vytváření aplikací jazykových technologií. 
 
 
@@ -563,7 +615,9 @@ Z výše uvedených tabulek vyplývá, že jazykově-technologické prostředky 
 Současné komponenty analýzy textu a jazykové zdroje zahrnují jazykové jevy češtiny jen do určité míry; většinou jsou součástí aplikace pro povrchové zpracování přirozeného jazyka, např. opravu pravopisných chyb. 
 
 Pro vybudování propracovanějších aplikací, jako je strojový překlad, jsou však zřejmě potřebné zdroje a technologie, které pokrývají širší spektrum jazykových aspektů a umožňují hloubkovou sémantickou analýzu vstupního textu. Zlepšením kvality a rozsahu těchto základních zdrojů a technologií bude možné nalézt další moderní aplikační oblastí, včetně vysoce kvalitního strojového překladu vybudovaného na dobrých základech.
-  \subsection{Závěr --- Conclusions}
+
+\subsection{Závěr --- Conclusions}
+
 V této řadě Bílých knih jsme vyvinuli snahu o zhodnocení podpory jazykových technologií pro 30 evropských jazyků a na vysoké úrovni jsme provedli srovnání napříč těmito jazyky. Díky nalezení nedostatků, potřeb a deficitů jsou společenství evropských jazykových technologií a ostatní zainteresované strany nyní schopny navrhnout rozsáhlý program výzkumu a vývoje s cílem vybudovat opravdu vícejazyčnou, technicky zdatnou Evropu. Viděli jsme, že mezi evropskými jazyky jsou velké rozdíly. Zatímco pro některé jazyky a oblasti použití máme kvalitní software a zdroje, jiné (obvykle „menší“ jazyky) mají značné nedostatky. Mnohým jazykům chybí základní technologie pro analýzu textu a nezbytné zdroje pro rozvoj těchto technologií. Jiné jazyky základní nástroje a zdroje mají, ale nejsou ještě schopny investovat do sémantického zpracování. Z tohoto důvodu je třeba vyvinout ještě velké úsilí k dosažení ambiciózního cíle poskytovat kvalitní strojový překlad mezi všemi evropskými jazyky. 
 
 V případě českého jazyka můžeme být v souvislosti s podporou jazykových technologií mírně optimističtí. V České republice je fungující jazykově-technologická výzkumná komunita, která má poměrně dlouhou tradici a byla v minulosti podpořena různými výzkumnými programy. Pro češtinu byla vytvořena řada zdrojů a technologií. Ve srovnání s prostředky a nástroji pro angličtinu je však rozsah zdrojů a nástrojů stále velmi omezený a kvalitou a množstvím stále ještě nedostačující pro vývoj technologií potřebných pro podporu skutečně mnohojazyčné společnosti založené na znalostech. 
@@ -577,7 +631,13 @@ Výsledky pro češtinu ukazují, že jedinou alternativou je vyvinout značné 
 Narážíme zde také na nedostatek kontinuity financování výzkumu a vývoje. Krátkodobě koordinované programy se obvykle střídají s obdobími řídkého nebo nulového financování. Navíc se zde setkáváme s celkovým nedostatkem koordinace s programy v jiných zemích EU a na úrovni Evropské komise. 
 
 Můžeme tedy konstatovat, že existuje silná potřeba velké, koordinované iniciativy zaměřené na překonávání rozdílů v připravenosti jazykových technologií pro evropské jazyky jako celek. Dlouhodobým cílem projektu META-NET je představit kvalitní jazykové technologie pro všechny jazyky v EU. Tyto technologie pomohou ke stržení stávajících bariér a k budování mostů mezi evropskými jazyky. To zároveň vyžaduje, aby všechny zúčastněné strany – v politice, výzkumu, podnikání a ve společnosti – spojily své úsilí zaměřené na budoucnost.
-  \ssection[O síti META-NET]{O síti META-NET --- About META-NET}
+\end{multicols}
+\clearpage
+%---------------------------------------
+  
+\ssection[O síti META-NET]{O síti META-NET --- About META-NET}
+\begin{multicols}{2}
+
 META-NET je Síť excelence financovaná Evropskou komisí. V současné době se skládá ze 47 členů z 31 evropských zemí. META-NET podporuje Multilingual Europe Technology Alliance (META), rozrůstající se komunitu odborníků na jazykovou technologii a jazykově-technologických organizací v Evropě.
 
 META-NET spolupracuje s dalšími organizacemi, jako je Common Language Resources a Technology Infrastructure (CLARIN), která pomáhá vybudovat digitální výzkum humanitních věd v Evropě. META-NET podporuje technologické nadace pro vytvoření a udržování skutečně mnohojazyčné evropské informační spole
@@ -588,7 +648,9 @@ nosti:
       \item nabízí evropským občanům moderní a cenově dostupnou síťovou informační technologii.
     \end{itemize}
 META-NET podněcuje a podporuje vícejazyčné technologie pro všechny evropské jazyky. Tyto technologie umožňují automatický překlad, produkci textů, zpracování informací a management znalostí pro širokou škálu aplikací a specializovaných oborů. Tato síť chce zlepšit současné přístupy, aby mezi jazyky existovala lepší komunikace a spolupráce. Evropané mají stejné právo na informace a znalosti bez ohledu na jazyk.
-  \subsection{Směry výzkumu --- Lines of Action}
+
+\subsection{Směry výzkumu --- Lines of Action}
+
 META-NET zahájil svou činnost 1. února 2010 s cílem zlepšit výzkum v oblasti jazykových technologií (Language Technology, LT). Síť podporuje Evropu, kterou spojuje v jednotný, digitální trh a informační prostor. META-NET podnikl několik dalších aktivit, které napomáhají jeho cílům. META-VISION, META-SHARE a META-RESEARCH představují tři směry jeho činnosti.
 
 Tři směry činnosti sítě META-NET
@@ -598,6 +660,8 @@ Tři směry činnosti sítě META-NET
 \textbf{META-SHARE} vytváří otevřený nástroj pro výměnu a sdílení zdrojů. Repozitář tzv. sítě peer-to-peer („klient-klient“) obsahuje jazyková data, nástroje a webové služby, které jsou dokumentovány kvalitními metadaty a organizovány ve standardizovaných kategoriích. Takové zdroje je snadné získat a jsou i jednotně prohledávány. Tyto dostupné zdroje zahrnují jednak volné materiály z otevřených zdrojů, jednak materiály omezené, komerčně dostupné a placené. META-SHARE se zaměřuje na existující jazyková data, nástroje a systémy stejně jako na nové a nově vznikající produkty, které jsou potřebné pro budování a hodnocení nových technologií, produktů a služeb. Klíčovou roli hraje opětovné použití, kombinace, změna využití a reorganizace jazykových dat a nástrojů. META-SHARE se nakonec stane důležitou součástí trhu s jazykovými technologiemi pro projektanty, odborníky na lokalizaci, výzkumníky, překladatele a jazykovědce z malých, středních a velkých podniků. META-SHARE pokrývá celý vývojový cyklus jazykové technologie – od výzkumu po inovativní výrobky a služby. Klíčovým aspektem této činnosti je prokázat, že META-SHARE je pro komunitu jazykových technologií důležitou a cennou součástí evropské a světové infrastruktury.
 
 \textbf{META-RESEARCH} navazuje kontakt se souvisejícími technologickými oblastmi. Tato činnost se snaží investovat do pokroku v jiných oblastech a využívat inovativní výzkum, který může obohatit jazykovou technologii. Zejména se snaží zapojit do strojového překladu (Machine Translation, MT) více sémantiku, optimalizovat rozdělení práce v hybridních strojových překladech, využívat při programování automatických překladů kontext a připravovat empirický základ pro strojový překlad. META-RESEARCH spolupracuje s dalšími obory, jako je strojové učení a komunita sémantického webu. META-RESEARCH se zaměřuje na sběr a zpracování dat a uspořádání jazykových zdrojů pro účely hodnocení. Dále se zabývá sestavováním inventáře nástrojů a metod a pořádáním workshopů a vzdělávacích seminářů pro členy své komunity. Tato činnost už jasně definovala ty stránky strojového překladu, kde sémantika může doplňovat současné osvědčené postupy. Navíc ukázala cestu, jak se chopit problému integrace sémantické informace do strojového překladu. META-RESEARCH také dokončuje pro účely strojového překladu nový jazykový zdroj – Annotated Hybrid Sample MT Corpus, který obsahuje data pro tyto dvojice jazyků: angličtinu-němčinu, angličtinu-španělštinu a angličtinu-češtinu. META-RESEARCH také vyvinul software, který shromažďuje vícejazyčné korpusy, které jsou skryté na internetu.
+
+\end{multicols}
 
 \vfill
 \centerline{office@meta-net.eu -- http://www.meta-net.eu}
@@ -616,29 +680,36 @@ Tři směry činnosti sítě META-NET
 %_-----------------------------------------------------------------------------------
 %ENGLISCH
 %_-----------------------------------------------------------------------------------
-  \ssection [Executive Summary]{Shrnutí --- Executive Summary}
-
+  
+\ssection [Executive Summary]{Shrnutí --- Executive Summary}
+\begin{multicols}{2}
 During the last 60 years, Europe has become a distinct political and economic structure. Culturally and linguistically it is rich and diverse. However, from Portuguese to Polish and Italian to Icelandic, everyday communication between Europe’s citizens, within business and among politicians is inevitably confronted with language barriers. The EU's institutions spend about a billion euros a year on maintaining their policy of multilingualism, i.\,e., translating texts and interpreting spoken communication. Does this have to be such a burden? Language technology and linguistic research can make a significant contribution to removing the linguistic borders. Combined with intelligent devices and applications, language technology will help Europeans talk and do business together even if they do not speak a common language.
 The Czech economy takes great advantage from the European single market.
 But language barriers can bring business to a halt, especially for SMEs who do not have the financial means to reverse the situation. The only (unthinkable) alternative to a multilingual Europe would be to allow a single language to take a dominant position, to replace all other languages. One way to overcome the language barrier is to learn foreign languages. Yet without technological support, mastering the 23 official languages of the European Union and some 60 other European languages is an insurmountable obstacle for Europe’s citizens, economy, political debate, and scientific progress.
 The solution is to build key enabling technologies: language technologies will offer European stakeholders tremendous advantages, not only within the common European market, but also in trade relations with non-European countries, especially emerging economies. Language technology solutions will eventually serve as a unique bridge between Europe's languages. An indespensable prerequisite for their development is first to carry out a systematic analysis of the linguistic particularities of all European languages, and the current state of language technology support for them.      
 \boxtext{Language technology as a key for the future}
+
 The automated translation and speech processing tools currently available on the market fall short of the envisaged goals. The dominant actors in the field are primarily privately-owned for-profit enterprises based in Northern America. As early as the late 1970s, the EU realised the profound relevance of language technology as a driver of European unity, and began funding its first research projects, such as EUROTRA. At the same time, national projects were set up that generated valuable results, but never led to a concerted European effort. In contrast to these highly selective funding efforts, other multilingual societies such as India (22 official languages) and South Africa (11 official languages) have set up long-term national programmes for language research and technology development.
 The predominant actors in LT today rely on imprecise statistical approaches that do not make use of deeper linguistic methods and knowledge. For example, sentences are often automatically translated by comparing each new sentence against thousands of sentences previously translated by humans. The quality of the output largely depends on the size and quality of the available  data. While the automatic translation of simple sentences in languages with sufficient amounts of available textual data can achieve useful results, shallow statistical methods are doomed to fail in the case of languages with a much smaller body of sample data or in the case of sentences with complex, non-repetitive structures. Analysing the deeper structural properties of languages is the only way forward if we want to build applications that perform well across the entire range of European languages.
 
 \boxtext{Language technology is a key for the future.}
+
 The European Union is thus funding projects such as EuroMatrix and EuroMatrix+ (since 2006) and iTranslate4 (since 2010), which carry out basic and applied research, and generate resources for establishing high quality language technology solutions for all European languages. 
 European research in the area of language technology has already achieved a number of successes. For example, the translation services of the European Union now use the Moses open-source machine translation software, which has been mainly developed in European research projects.
 Rather than building on the outcomes of these research projects, Europe has tended to pursue isolated research activities with a less pervasive impact on the market. The economic value of even the earliest efforts can be seen in the number of spin-offs. A company such as Trados, which was founded back in 1984, was sold to the UK-based SDL in 2005.
 
 \boxtext{Language Technology helps to unify Europe.}
+
 Drawing on the insights gained so far, it appears that today’s ‘hybrid’ language technology mixing deep processing with statistical methods will be able to bridge the gap between all European languages and beyond. As this series of white papers shows, there is a dramatic difference in the state of readiness with respect to language solutions and the state of research between Europe’s member states. Czech is one of the ‘smaller’ EU languages and needs further research before truly effective language technology solutions are ready for everyday use.
 META-NET’s vision is high-quality language technology for all languages that supports political and economic unity through cultural diversity. This technology will help tear down existing barriers and build bridges between Europe’s languages. This requires all stakeholders -- in politics, research, business, and society -- to unite their efforts for the future.
 
 This whitepaper series complements the other strategic actions taken by META-NET (see the appendix for an overview). Up-to-date information such as the current version of the META-NET vision paper \cite{Meta1} or the Strategic Research Agenda (SRA) can be found on the META-NET web site: http://www.meta-net.eu.
+\end{multicols}
+\clearpage
+%----------------------------
 
 \ssection[Languages at Risk: a Challenge for Language Technology]{Languages at Risk: a Challenge for\newline Language Technology}
-
+\begin{multicols}{2}
 We are witnesses to a digital revolution that is dramatically impacting communication and society. Recent developments in information and communication technology are sometimes compared to Gutenberg’s invention of the printing press. What can this analogy tell us about the future of the European information society and our languages in particular?
 
 \boxtext{The digital revolution is comparable to Gutenberg’s invention of the printing press.}
@@ -684,6 +755,7 @@ While the printing press helped step up the exchange of information in Europe, i
 \boxtext{The variety of languages in Europe is one of its richest and most important cultural assets.}
 
 Europe’s approx.~80 languages are one of our richest and most important cultural assets, and a vital part of this unique social model \cite{EC2}. While languages such as English and Spanish are likely to survive in the emerging digital marketplace, many languages could become irrelevant in a networked society. This would weaken Europe’s global standing, and run counter to the goal of ensuring equal participation for every citizen regardless of language. According to a UNESCO report on multilingualism, languages are an essential medium for the enjoyment of fundamental rights, such as political expression, education and participation in society \cite{Unesco1}.
+
 \subsection{Language Technology is a Key Enabling Technology}
 
 In the past, investments in language preservation focused primarily on language education and translation. According to one estimate, the European market for translation, interpretation, software localisation and website globalisation was €8.4 billion in 2008 and is expected to grow by 10\% per annum \cite{EC3}. Yet this figure covers just a small proportion of current and future needs in communicating between languages. The most compelling solution for ensuring the breadth and depth of language usage in Europe tomorrow is to use appropriate technology, just as we use technology to solve our transport and energy needs among others.
@@ -704,12 +776,14 @@ Language technology consists of a number of core applications that enable proces
 To maintain our position in the frontline of global innovation, Europe will need language technology, tailored to all European languages, that is robust and affordable and can be tightly integrated within key software environments. Without language technology, we will not be able to achieve a really effective interactive, multimedia and multilingual user experience in the near future.
 
 \subsection{Opportunities for Language Technology}
+
 In the world of print, the technology breakthrough was the rapid duplication of an image of a text using a suitably powered printing press. Human beings had to do the hard work of looking up, assessing, translating, and summarising knowledge. We had to wait until Edison to record spoken language – and again his technology simply made analogue copies.
 
 Language technology can now simplify and automate the processes of translation, content production, and knowledge management for all European languages. It can also empower intuitive speech-based interfaces for household electronics, machinery, vehicles, computers and robots. Real-world commercial and industrial applications are still in the early stages of development, yet R\&D achievements are creating a genuine window of opportunity. For example, machine translation is already reasonably accurate in specific domains, and experimental applications provide multilingual information and knowledge management, as well as content production, in many European languages. 
 As with most technologies, the first language applications such as voice-based user interfaces and dialogue systems were developed for specialised domains, and often exhibit limited performance. However, there are huge market opportunities in the education and entertainment industries for integrating language technologies into games, edutainment packages, libraries, simulation environments and training programmes. Mobile information services, computer-assisted language learning software, eLearning environments, self-assessment tools and plagiarism detection software are just some of the application areas in which language technology can play an important role. The popularity of social media applications like Twitter and Facebook suggest a need for sophisticated language technologies that can monitor posts, summarise discussions, suggest opinion trends, detect emotional responses, identify copyright infringements or track misuse.
 
 \boxtext{Language technology helps overcome the “disability” of linguistic diversity.}
+
 Language technology represents a tremendous opportunity for the European Union. It can help to address the complex issue of multilingualism in Europe – the fact that different languages coexist naturally in European businesses, organisations and schools. However, citizens need to communicate across the language borders of the European Common Market, and language technology can help overcome this final barrier, while supporting the free and open use of individual languages. Looking even further ahead, innovative European multilingual language technology will provide a benchmark for our global partners when they begin to support their own multilingual communities. Language technology can be seen as a form of “assistive” technology that helps overcome the “disability” of linguistic diversity and makes language communities more accessible to each other. Finally, one active field of research is the use of language technology for rescue operations in disaster areas, where performance can be a matter of life and death: Future intelligent robots with cross-lingual language capabilities have the potential to save lives.
 
 \subsection{Challenges Facing Language Technology}
@@ -736,9 +810,15 @@ The second approach to language technology, and to machine translation in partic
 As the strengths and weaknesses of statistical and rule-based systems tend to be complementary, current research focuses on hybrid approaches that combine the two methodologies. However, these approaches have so far been less successful in industrial applications than in the research lab.
 
 As we have seen in this chapter, many applications widely used in today’s information society rely heavily on language technology. Due to its multilingual community, this is particularly true of Europe’s economic and information space. Although language technology has made considerable progress in the last few years, there is still huge potential in improving the quality of language technology systems. In the following, we will describe the role of Czech in European information society and assess the current state of language technology for the Czech language.
+\end{multicols}
+\clearpage
+%-------------------------------
 
 \ssection [Czech in the European Information Society]{Čeština v evropské informační společnosti --- Czech in the European Information Society}
- \subsection{Obecné informace --- General Facts}
+\begin{multicols}{2}
+
+\subsection{Obecné informace --- General Facts}
+
 Czech, one of the West Slavonic languages, has about 10 million speakers. Most of them are in the Czech Republic (also called Czechia; hence CR), consisting of three historical regions: Bohe-mia, Moravia and Silesia.\cite{Note1_en} In the other parts of the world, there are about 200 thousand speakers, mostly emigrants and the children of emigrants who left the country in sizable migration waves around World War I and World War II, and the years 1948 and 1968. Many Czech speakers can be found esp. in Austria (mostly in Vienna), Poland, Germany, Ukraine, Croatia (mostly in Daruvar area), in Western Romania (in Banat), in Australia, and Canada. Several tens of thousands of Czechs have continued to live in the Slovak Republic after the split of Czechoslovakia in 1993. However, the largest group of Czech speakers outside of the CR lives in United States, in cities like New York, Chicago or Cleveland and in number of communities in Texas, Wisconsin, Minnesota, and Nebraska. According to a US Census, more than 90,000 Czech speakers lived in United States in 1990.\cite{Note2}
 
 The Czech language is an official language in the CR, since May 2004 it is also one of administrative languages of the EU. According to the last census in 2001, 5,4\% of Czech citizens report a different nationality than Czech. Czech is used during administrative, judicial and other official proceedings. The manuals and description of imported goods must contain their Czech translation.
@@ -748,7 +828,9 @@ The Czech language has several varieties (formations), especially in its spoken 
 In common communication, most people prefer rather other varieties of Czech than literary Czech. The most widespread variety is so-called Common Czech (based on the Central Bohemian interdialect). In Moravia and Silesia, the remnants of dialects (Hanak, Lach, Czecho-Moravian) are still used actively in the spoken form. In Bohemia, the traces of Northeastern and Southwestern dialects can be heard.\cite{Note3} Common Czech and dialects differ from the literary variant esp. in morphology, less in the lexicon and pronunciation, the other differences are marginal. All variants of Czech are mutually intelligible. However, so-called code-switching, i.e. the use of the appropriate language variety based on the type of communication, speakers education, etc. is often confusing for foreign learners of Czech.
 
 Czech along with Slovak, Polish, and the Upper and Low Sorbian belongs to the western Slavonic group. However, Czech separated from the other Slavonic languages by a number of changes, most of which took place in the 10th through 16th centuries (sound changes such as a’ > ě, g > h, r’> ř). On one hand, in 15th century, Czech lost the dual number and two of the Slavic past tenses – the aorist and imperfect. On the other hand, the verbal aspect had grown more significant and the number of declensions had increased. In writing, initially, the medieval Latin alphabet was used. For sounds not present in Latin, digraphs were used. In the early 15th century, they were replaced by single letters with diacritics by the religious reformer Jan Hus („háček“ for the palatal/palatalized consonants – ť, ď, ň, ř, š, ť, ž; „čárka“ for long vowels – á, é, í, ó, ú, ý). The only digraph surviving in modern Czech is ch. Long u might have a ring – ů (coming from the chain of changes ó > uo > ů).
- \subsection{Specifika češtiny --- Particularities of the Czech Language }
+ 
+\subsection{Specifika češtiny --- Particularities of the Czech Language }
+
 The Czech language is a highly inflectional language with a complicated morphology. The noun declension distinguishes 7 cases (Nom, Gen, Dat, Accus, Voc, Loc, Instr), 2 numbers (sg, pl) and 4 genders (masc. anim, mascinanim, fem, neutr). Every category has several types of declensions (e.g. masc inanim has in school grammars two types of declension “hrad” {[}castle{]} and “stroj” {[}machine{]} with Gen sg “hrad\textbf{u}”, “stroj\textbf{e}” , respectively. However, some nouns classified as the “hrad” type have in Gen sg the ending –a (“les\textbf{a}”), some have both endings (bez rybník\textbf{u} {[}without a pond{]}, do rybník\textbf{a} {[}to a pond{]}).
 
 The noun gender is only partially influenced by the natural gender, mostly it is determined by the ending of the lemma (word), though the ending itself  is not unambiguous; for foreigners this means to learn the new words together with their gender similarly as in German, where the nouns are accompanied in the lexicon by the determiners “der/die/das”  (in Czech it is also necessary to state the gender in the lexicon, e.g. “nů\textbf{ž}” {[}knife{]} – masc inanim, “mří\textbf{ž}”  {[}lattice{]} -  fem, “tabul\textbf{e}” {[}desk{]} – fem, “pol\textbf{e}” {[}field{]} – neutr).
@@ -797,7 +879,9 @@ The possibility of word-order shifts causes discontinuities (as in ex. (7)), whi
  (7)	\textit{Tu knihu se Pavel rozhodl do knihovny vrátit až zítra.}\\
  \textit{{[}lit. This – book – REFL – Paul – decide – to library – to return – only – tomorrow{]}}\\
  \textit{{[}Paul decided to return this book to library only tomorrow{]}}\\
+
 \subsection{Současný vývoj --- Recent Developments}
+
 Though the Czech language preserves 98\% of its vocabulary from the Old Slavonic language, it is not insensitive to the influence of other languages.\cite{Note5} Till the 19th century German was the main language in contact (see e.g. words as “knedlík” {[}der Knődel; the dumpling{]}, “šunka” {[}der Schinken; the ham{]}, “taška” {[}die Tasche; the bag{]}, “brýle” {[}die Brille; the glasses{]}, “blok” {[}der Block; the block{]}, “cihla” {[}der Ziegel; the brick{]}, “muset” {[}műssen; must{]}).
 
 In the 20th century, the CR was under the political influence of Russia (Soviet Union). New words connected with politics and socialistic ideology were adapted for Czech. However, recently they have disappeared gradually from the language together with the disappearance of the notions and objects they referred to (“kulak” {[}rich farmer{]}, “pětiletka” {[}five years economic plan{]}, “celiny” {[}great fields{]}, “chozrasčot” {[}state economic plan{]},  “prověrka” {[}personal political review{]}).
@@ -815,7 +899,9 @@ From the other side, the Czech language enriched the international lexicon by th
 The neologisms in the Czech language were published in 3 books edited by Olga Martincová and others (see \cite{Martincova_en}).
 
 The facts presented in this section and following the influence of languages in contact are as to the development of Czech vocabulary marginal and they do not represent any dangerous for the system of Czech scientific terminology.
+
 \subsection{Kultivace jazyka v České republice --- Language Cultivation in the Czech Republic}
+
 As mentioned in the section General Facts, the Institute of Czech Language of Academy of Science of Czech Republic influences the language policy in the CR. Its Advisory Department is an important section of this Institute. Experienced linguists working here answer the questions asked by public in written form, by e-mail or by direct telephone calls. Practical popular handbooks are published as a reaction on the deep interest of the Czech society in the language culture and the problems of language planning. These include for example the handbooks “Na co se nás často ptáte” {[}The frequent questions for us{]} (\cite{Cerna}), “Jak používat čárku a další interpunkční znaménka” {[}How to use commas and other punctuation{]} (\cite{Janovec}). The Institute provides special web pages as a supplement service for the public.\cite{Note6}
 
 However, the language policy in the CR is generally far from prescriptive approach. The functional point of view introduced by the members of the classical Prague Linguistic Circle (founded in 1926) continues to describe the language development through the studies of the concrete results of communication acts. The members of the Prague Linguistic Circle demonstrated the impropriety of the purist approach to the language policy based on the principle “correct” vs. “incorrect”.  They point out that the stratification of the standard Czech into several varieties (see the section General Facts) is a source of a rich choice of a proper variety for a proper situation. The fact that the Czech native speakers do not use the same variety at school or at the official meetings addressing the wide public as they do in the common talks at home, at shops or during the chats with friends was respected and the research of the talks in different communicative  situations is described and presented on the functional basis.
@@ -824,7 +910,9 @@ There are many platforms for the linguistic discussion connected with language p
 eského jazyka {[}The Circle of Friends of Czech Language{]}), The journal Naše řeč [Our Speech] is devoted solely to the questions of language cultivation.
 
 The results of wide discussions are reflected in the normative grammars and in other normative handbooks. The language rules in them are formulated as a recommendation for the users who are interested in a cultural way of expression in their native language. The use of normative handbooks is required as obligatory in the elementary and secondary schools by the Ministry of Education, Youth and Sport of the CR.
-  \subsection{Jazyk ve vzdělávání --- Language in Education}
+
+\subsection{Jazyk ve vzdělávání --- Language in Education}
+
 The Czech language is an obligatory subject in all types of the elementary and secondary (high) schools. It also belongs to obligatory subjects for a school-leaving examination. However, the subject is called “Czech language and literature” and covers teaching of the language (its grammar and other types of language skills) as well as the literature (including some notions from the literary science).  Because there is no subject in school curricula which involves the world literature, a brief survey of it is included under the roof of the subject “Czech language and literature”. A discussion among specialists in the didactics, psychology, Czech language and literary scientists and the Ministry of Education, Youth and Sport about the separation of the Czech language on one side and the Czech and World literature on the other in the school curriculum took place 4-5 years ago. Unfortunately, the discussion failed, and in this respect the situation has not changed.
 
 In the CR there are no serious problems connected with language education of migrants such as in France or Germany. However, the knowledge of the Czech language attested by the certificates given by the accredited institutes (e. g. Institute for language and Preparatory Studies of Charles University in Prague, Czech Centers in Berlin, London, Moscow and at the Warsaw University) is required for some professions as well as for the university studies of applicants wanting to follow the schedule valid for Czech students. The certificate confirms a particular level of knowledge of the Czech language.  The levels A1, A2, B1, B2, C1, C2, are defined according to the “Common European Framework of Reference for Languages: Learning, Teaching, Assessment” which was created by the Council of Europe.\cite{Note7} Level A1 means that the applicant is able to understand Czech in common everyday situations, while the level C2 qualifies the applicant as a person understanding Czech very well and speaking Czech fluently in all situations.
@@ -836,7 +924,9 @@ For example, the STYX system is designed as an electronic corpus-based exercise 
 Another type of tool for teaching and exercising of Czech, CETLEF\cite{Note9en}, was developed originally for French students learning Czech as a second language. It is a web-based application featuring fill-in-the-blank exercises on Czech declension where the task of the learner is to fill an inflected form of a given word in a specific syntactic context. The system represents an example of a Computer Assisted Language Learning tool (CALL) using some NLP (Natural Language Processing) techniques. First, NLP is used for analyzing learner’s productions in order to provide a linguistically motivated feedback on errors. Secondly, it enriches the pedagogical environment with automatically generated linguistic annotation. The idea behind the error diagnosis is that most erroneous forms, existing or not in the language, can be reproduced artificially with a corresponding model of inflection (containing ending paradigms and contextual rules for morphological alternations). Hence they are interpretable in terms of violations of morphological categories. The diagnosis is carried out by matching the learner production with dynamically generated hypothetical word-forms. The most likely interpretations, chosen by a small number of heuristic rules, are used for error tagging and for the generation of the feedback. CETLEF is also used as an alternative source of learner data suitable for a research on second language acquisition. Beside learner’s corpora containing mainly students’ essays, linguistic productions resulting from grammatical exercises allows focusing on some more specific aspects of the target language, which can be an advantage for the study of acquisition of some complex systems like Czech inflection.
 
 The collection of students’ errors in special corpora (so-called students’ corpora) is also a promising application of computers during the process of language teaching and learning. The errors are classified according to their sources and the feedback between teachers and students is reflected (see also the webpage of Technical University in Liberec\cite{Note10}).
-  \subsection{Mezinárodní aspekty --- International Aspects}
+
+\subsection{Mezinárodní aspekty --- International Aspects}
+
 Czech Republic is a small country covering 78,867 km$^{\textrm{2}}$ with a small language – Czech. After the defeat at the battle of White Mountain in 1620, Literary Czech was under the danger of disappearance due to the German pressure. However, thanks to concentrated efforts of Czech writers, poets, translators and teachers during the National Revival, it survived. These efforts influenced the shape of Literary Czech and caused the differences between the norm of Literary Czech and the spoken variants as mentioned above in the section General Facts. However, there were established conditions for the development of rich cultural life: fiction, poems as well as the scientific texts from different areas were written and published since the end of the 18$^{\textrm{th}}$ century. Many books written in Czech were translated into foreign languages (esp. since the end of the 19$^{\textrm{th}}$ century). Among the most famous works of the 20$^{\textrm{th}}$  century were “The Good Soldier Švejk” (written by Jaroslav Hašek in 1923 and translated into 54 languages), fictions of Karel Čapek and Bohumil Hrabal. The Czech poet Jaroslav Seifert received the Nobel prize in literature (1984). One of the most famous contemporary writers in the world Milan Kundera, born in the CR, wrote his early books in Czech; since his emigration he has published his fictions and essays in French.
 
 In the 19th century the Czech botanical and chemical terminology was constituted by J. S. Presl (1791 – 1849). Nowadays, the communication in science in the CR undergoes changes characteristic for the globalization of the world and it is influenced by the newly opened possibilities of Czech scholars to have regular contacts with the world of science. English has become the main means of scientific communication, especially in technical and natural sciences. Humanities, esp. the branches concerning Czech history, language  and folklore, are not influenced by English so deeply. However, recently instituted governmental criteria evaluating the results of research put strong pressure on the scientific community to use English.
@@ -854,8 +944,12 @@ The most commonly used web application is probably web search, which involves th
 Internet users and providers of web content can also profit from language technologies in less obvious ways. For example, it could be used to automatically translate web pages from one language into another.  Considering the high costs associated with manual translation, it may be surprising how little from this point of view the language technology actually is used in comparison with the expected need.
 
 However, it becomes less surprising if we consider the complexity of the Czech language and the number of technologies involved in typical LT applications. In the next chapter, we will present an introduction to language technology and its core application areas as well as an evaluation of the current situation of LT support for Czech.
+\end{multicols}
+\clearpage
+%-----------------------------------
 
 \ssection[Language Technology Support for Czech]{Podpora jazykových technologií pro češtinu --- Language Technology Support for Czech}
+\begin{multicols}{2}
 Language technology is used to develop software systems designed to handle human language and are therefore often called “human language technology”. Human language comes in spoken and written forms. While speech is the oldest and in terms of human evolution the most natural form of language communication, complex information and most human knowledge is stored and transmitted through the written word. Speech and text technologies process or produce these different forms of language, using dictionaries, rules of grammar, and semantics. This means that language technology (LT) links language to various forms of knowledge, independently of the media (speech or text) in which it is expressed. Figure~\ref{fig:ltincontext_en} illustrates the LT landscape.
 
 \begin{figure*}[htb]
@@ -881,7 +975,7 @@ In the rest of this section, we first describe the architecture of a typical LT 
 \end{figure*}
 In the rest of this section, we first describe the architecture of a typical LT system. After that, we provide an overview of the core application areas, followed by a brief overview of the situation in LT research and education. Finally, the table at the end of the section summarizes an expert assessment of the situation regarding the core LT tools and resources in a number of dimensions such as availability, maturity, or quality.
 
-  \subsection{Architektura aplikací --- Application Architectures}
+\subsection{Architektura aplikací --- Application Architectures}
 
 Software applications for language processing typically consist of several components that mirror different aspects of language and of the task they implement. The figure on the right displays a highly simplified architecture that can be found in a text processing system. The first three modules deal with the structure and meaning of the text input:
 \begin{enumerate}
@@ -890,7 +984,9 @@ Software applications for language processing typically consist of several compo
   \item Semantic analysis: disambiguation (Which meaning of “apple” is the right one in the given context?), resolving coreferential expressions like “she”, “the car”, etc.; representing the meaning of the sentence in a machine-readable way
 \end{enumerate}
 Task-specific modules then perform many different operations such as automatic summarization of an input text, database look-ups and many others.
-  \subsection{Základní aplikační oblasti --- Core Application Areas}
+  
+\subsection{Základní aplikační oblasti --- Core Application Areas}
+
 In the following, we will discuss the main application areas of language technology, i.e., language checking, web search, speech interaction, and machine translation. This includes applications and basic technologies such as
 \begin{itemize}
   \item spelling correction
@@ -904,7 +1000,9 @@ In the following, we will discuss the main application areas of language technol
   \item speech synthesis
 \end{itemize}
 Below, we illustrate core application areas and highlight certain modules of the different architectures in each section. For expository reasons, the architectures are highly simplified and idealized.
-  \subsubsection{Jazyková kontrola --- Language Checking}
+
+\subsubsection{Jazyková kontrola --- Language Checking}
+
   \begin{figure*}[t]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
@@ -913,6 +1011,7 @@ Below, we illustrate core application areas and highlight certain modules of the
   \label{fig:langcheckingaarch_en}
   \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
+
 The morphological and syntactic properties of Czech constitute a great challenge for both spelling and grammar checking. Although the corresponding tools already exist for both kinds of checking (first spelling checkers date back to early 1990’s, the development of a first grammar checker for Microsoft Office took much longer time, it has been included as late as in 2005), there are still many issues waiting for an efficient solution.
 
 The existing spelling checkers for Czech are based on a dictionary of basic word forms (lemmas) combined with a set of morphological rules enabling the analysis or generation of all correct word forms. Although this simple approach seems to be satisfactory, it has two substantial drawbacks. The first issue concerns the spelling errors which are actually correct word forms appearing in a wrong context. Due to the isolated handling of individual word forms it is virtually impossible to discover such errors; some more advanced error detection algorithms would definitely be useful. The second drawback is the inability to distinguish between real spelling errors and word forms which are correct, but which are missing from the dictionary. Such words will always exist due to the natural enhancement of a lexicon by newly created words, by new scientific or technical terms etc. The ability to capture this distinction would bring the spelling checkers to a new level.
@@ -954,7 +1053,8 @@ The fact that the subject may be omitted from a sentence makes it extremely diff
 
 Although the first generation of spelling and grammar checkers for Czech already exist, other language checking tools do not. For example, in the field of authoring support we face a total lack of tools. This is caused to a certain extent by the fact that Czech is usually a target language for technical documentation of various products, not a source one, and thus the need for authoring tools is not as pressing as it is the case with more widely used languages. Nevertheless, the need for such tools will definitely grow in the future and thus the research in the natural language processing tools in this area will be more important.
 
- \subsubsection{Webové vyhledávání --- Web Search}
+\subsubsection{Webové vyhledávání --- Web Search}
+
 \begin{figure*}[htb]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
@@ -980,8 +1080,10 @@ We face an additional challenge if we want to match a query to documents written
 
 The increasing share of data available in non-textual format also drives the demand for services enabling multimedia search, i.e. information search on images, audio and video data. For audio and video files, this involves a speech recognition module to convert speech content into text or a phonetic representation, to which user queries can be matched.  
   
-    \subsubsection{Jazykové technologie --- Speech Technology}
- General recognition of spoken Czech is still in its infancy. Simple applications that work with a small vocabulary and grammar have a high reliability, because Czech does not have a complex sound system. The main problems of applications with large vocabularies and more general language models is the large number of inflection forms of words, a relatively free word order and an informal Common Czech. This prevents statistical language modelling methods to achieve results similar to English.
+\subsubsection{Jazykové technologie --- Speech Technology}
+
+General recognition of spoken Czech is still in its infancy. Simple applications that work with a small vocabulary and grammar have a high reliability, because Czech does not have a complex sound system. The main problems of applications with large vocabularies and more general language models is the large number of inflection forms of words, a relatively free word order and an informal Common Czech. This prevents statistical language modelling methods to achieve results similar to English.
+
  \begin{figure*}[htb]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
@@ -990,6 +1092,7 @@ The increasing share of data available in non-textual format also drives the dem
   \label{fig:dialoguearch_en}
   \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
+
 There are several commercial systems with large vocabularies available (SpeechTech s.r.o.\cite{Note11}, OptimSys, s.r.o.\cite{Note12}, NewtonTechnologies, a.s.\cite{Note13}), but they only work in dictation systems with a high quality audio input or very limited language domains like sporting events or parliamentary speeches. It is possible to buy a separate recognition engine with an open Media Resource Control Protocol  interface that allows the involvement of the recognition module into other applications. Companies offer applications generating off-line transcripts of multimedia archives allowing search. All these products have a relatively good configuration option, but they are not open source applications. For development of an open source recognizer of Czech, there is a lack of freely available acoustic training data, which would allow the preparation of free acoustic models for a speaker independent recognizer. Universal open source tools and libraries are available for the speech recognition, but a reliable method is still missing for the recognition of spontaneous Czech speech with all its word forms and free word order.
 Czech speech synthesis has several commercial voices on a good quality level (Eris\cite{Note11}, Acapela Group\cite{Note14}), there are even open-source Czech synthetic voices, but with lower quality (Festival Czech\cite{Note15}, Epos TTS System\cite{Note16}, MBROLA\cite{Note17}). The speech synthesis modules are embeddable into Interactive Voice Response systems that support many open standards. To create more open source voices we are again missing open source audio recordings, which would allow the development of freely available high-quality voices.
 
@@ -1004,7 +1107,9 @@ Apart from simple cases of replacement of suffixes of Common Czech by their lite
 The second line of research focuses on the development of syntactic and semantic analysers of Czech with the help of manually annotated tree corpora of written and spoken Czech. In conjunction with a morphological analysis, this method should help address problems of free word order and of the large number of word forms.
 
 Current research on synthesized spoken Czech tries to develop more natural voices. Hopes are placed in advanced syntactic and semantic analysis of input texts, which should significantly improve the n naturalness of utterances.
-  \subsubsection{Strojový překlad --- Machine Translation}
+
+\subsubsection{Strojový překlad --- Machine Translation}
+
 The idea of using digital computers to translate natural languages can be traced back to 1946 and was followed by substantial funding for research during the 1950s and again in the 1980s. Yet \textbf{machine translation} (MT) still cannot deliver on its initial promise of providing across-the-board automated translation.
 
 \boxtext{At its basic level, Machine Translation simply substitutes words in one natural language with words in another language.}
@@ -1021,6 +1126,7 @@ One way to build an MT system is to use linguistic rules. For translations betwe
   \label{fig:mtarch_en}
   \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
+
 For Czech, there are several commercial and academic rule- and lexicon-based translation systems. One of them is based on a linguistic theory elaborated in Prague since 1960s. The system follows the above mentioned analysis-transfer-synthesis scenario. Despite the linguistic adequacy of such approach, the system still suffers from a number of practical difficulties, such as from relatively high error rate of current syntactic analysers and from computational issues related to high number of contextual features that should be taken into account when translating individual words.
 In the late 1980s when computational power increased and became cheaper, interest in statistical models for machine translation began to grow. Statistical models are derived from analysing bilingual text corpora, \textbf{parallel corpora}, such as the Europarl parallel corpus, which contains the proceedings of the European Parliament in 21 European languages (Czech has been added recently and the size of Czech data is still orders of magnitude smaller than for established languages.) Given enough data, statistical MT works well enough to derive an approximate meaning of a foreign language text by processing parallel versions and finding plausible patterns of words. Unlike knowledge-driven systems, however, statistical (or data-driven) MT systems often generate ungrammatical output. Data-driven MT is advantageous because less human effort is required, and it can also cover special particularities of the language (e.\,g., idiomatic expressions) that are often ignored in knowledge-driven systems. 
 Availability of large amounts of bilingual texts is really the key in statistical MT. For Czech, corpora of parallel texts with several other languages are currently being created. The largest data – in total several million pairs of sentences – is available for the English-Czech language pair\cite{Note20}. The corpus contains for example EU law texts, newspaper texts, technical documentation, and electronic books. The most challenging problem related to the contemporary parallel corpora is the quality of alignment (pairing of corresponding parts of a text and its translation). Not only that exact word-to-word linkage is impossible due to differences in morphology and syntax of the two languages, but reliable sentence-to-sentence and sometimes even document-to-document alignment is difficult to achieve too. Needless to say that compilation of such corpora has to be fully automatic – human processing is completely out of question because of the data size.
@@ -1029,7 +1135,9 @@ Languages with rich morphology like Czech also pose specific challenges for stat
 The strengths and weaknesses of knowledge-driven and data-driven machine translation tend to be complementary, so that nowadays researchers focus on hybrid approaches that combine both methodologies. One such approach uses both knowledge-driven and data-driven systems, together with a selection module that decides on the best output for each sentence. However, results for sentences longer than, say, 12 words, will often be far from perfect. A more effective solution is to combine the best parts of each sentence from multiple outputs; this can be fairly complex, as corresponding parts of multiple alternatives are not always obvious and need to be aligned. Another, more challenging approach is to design a new setup that combines the advantages of the two paradigms by integrating the good features of each. For example, making a rule-based system adaptive by adding a module for rule learning, or, making a statistical MT system syntax-aware by adding syntactical constraints.
 
 Completely separate is the question of evaluating MT output quality, both manually and automatically. Experience shows that different systems score differently under various manual evaluations: rule-based systems tend to preserve the meaning better while statistical systems produce output more fluent locally. In e.g. question-answering evaluation, the meaning is more important. On the other hand, local fluency impacts the impression more when the user is directly comparing system outputs. Automatic evaluation (based on the comparison of MT output to one or more manually constructed reference translations) is vital in development of MT systems. It has been shown that such automatic evaluation is unreliable esp. for languages with richer morphology and it is also acknowledged that some automatic fine-grained reporting on MT quality and error types would be very useful.
+
 \subsection{Informační managment/Jazykové technologie „v zákulisí“ --- Information management/``LT behind the scenes''}
+
 Building language technology applications involves a range of subtasks that do not always surface at the level of interaction with the user, but they provide significant service functionalities “behind the scenes” of the system in question. They all form important research issues that have now evolved into individual sub-disciplines of computational linguistics. Question answering, for example, is an active area of research for which annotated corpora have been built and scientific competitions have been initiated. The concept of question answering goes beyond keyword-based searches (in which the search engine responds by delivering a collection of potentially relevant documents) and enables users to ask a concrete question to which the system provides a single answer. For example:
 
 \begin{itemize}
@@ -1062,12 +1170,16 @@ The research groups from the University of West Bohemia and from the Institute o
 The nearly 52,000 videotaped testimonies of the Shoah Foundation Institute's Visual History Archive were recorded primarily between 1994 and 1999 in 56 countries and in 32 languages. While the majority of the interviews are with Jewish Holocaust survivors, the archive also includes the testimonies of political prisoners, Sinti and Roma (Gypsy) survivors, Jehovah's Witness survivors, survivors of eugenics policies, and homosexual survivors as well as rescuers and aid providers, liberators, and participants in war crimes trials.
 
 The archive is accessible through an on-line interface, which enables the users browsing and viewing the testimonies, deploying an index of 55 thousand keywords and key phrases. The access point in Prague stores more than 500 testimonies in Czech, with average duration of 2 hours. Other testimonies have to be ordered online from the other access point, which usually takes a few hours.
+
 \subsubsection{Miscelanea --- Miscellaneous}
+
 It would be misleading to judge the NLP-HLT research of the respective countries only on the basis of how many resources and applications for their national language they have produced. In fact, there is a vicious circle in the NLP-HLT research for small languages: the grant agencies as well as the government want to support only the best teams. The best teams are the ones that produce the most internationally recognized publications. These are significantly easier to achieve in research that has international impact. While almost any improvement in any issue is interesting to report on big or strategic languages such as English, Chinese or Arabic, a research with the same outcome has a grossly humbler impact when reported on languages that are interesting only for their native speakers. To produce a good publication on a small language, a real breakthrough is needed, whereas, obviously, breakthroughs cannot be counted on to happen regularly.  Besides, even if a language-dependent result for a small language is considered a breakthrough by the local research community, it is still difficult to present to international reviewers who are not familiar with the language.
 Also, language-independent solutions are generally preferred to the language-dependent ones, since their commercial application is cheaper. English is the natural first-choice language to experiment on in the European context, as there are comprehensive high-quality resources available for English. Also, the results are more easily compared within the international community.
 
 As a consequence, national teams focus on English rather than relying on research on their national language. This is to be kept in mind when assessing the quality of national HLT/NLP research and development. A poor inventory of good HLT applications and resources for a small language does not necessarily imply poor research, but it can be a serious indicator of lacking governmental support policy. Targeted governmental support of national-language HLT is vital for language communities whose markets are too small for national-language HLT to be endorsed by the private sector.
-  \subsection{Průmysl a programy jazykových technologií --- LT industry and programs}
+ 
+\subsection{Průmysl a programy jazykových technologií --- LT industry and programs}
+
 Industrial deployment of language technologies is not widespread in Czechia. Businesses specialized in LT are rare. The same holds for research \& development departments of larger companies.
 
 Web search engines and services (Seznam, Centrum, Google etc.) are nowadays generally capable of performing morphological analysis and lemmatization. Google offers phrase-based machine translation of websites and user-supplied text both to and from Czech. Seznam provides on-line dictionaries between Czech on one side and English, German, French, Italian, Spanish or Russian on the other side. However, they don’t provide translation of running text.
@@ -1083,7 +1195,9 @@ Phone switchboards and help/information applications employing automatic speech 
 Czech speech recognition was commercialized by Newton Technologies company—a spin-off of the Technical University in Liberec.
 
 Most of the government-originating funding programs are maintained by the Czech Science Foundation (GAČR) and focused on basic research. Recently (2009), a new Technological Agency of the Czech Republic (Technologická agentura České republiky, TAČR) has been established, which shall focus on applied research. However, there are probably no LT-related projects funded by TAČR yet.
-  \subsection{Jazykové technologie ve výzkumu a vzdělávání --- LT research and education}
+
+\subsection{Jazykové technologie ve výzkumu a vzdělávání --- LT research and education}
+
 From the historical point of view, the terms ``computational linguistics'', ``natural language processing'' and ``speech recognition'' have been used for a longer time than the term language technologies, at least in the context of research and education. No matter the name, the disciplines related to natural language comprise a number of related subjects of research and education: theoretical linguistics, corpus linguistics, computer science, mathematics, machine learning etc.
 
 Below, we list Czech institutes and departments focusing on research and education in computational linguistics and language processing. The list also provides information about their core research areas (CL – computational ling., CoL – corpus ling., TL – theoretical ling., ASR – automatic speech recognition) and what study programs they offer, if any.
@@ -1131,9 +1245,45 @@ Charles University in Prague, Faculty of Mathematics and Physics is offering the
 The natural language research in the private sector is not very common in the Czech Republic and is only represented by small companies (e.g. Lingea, Captaworks, LangSoft) and by spin-offs of university teams (e.g. SpeechTech - University of West Bohemia, Phonexia - University of Technology in Brno).
 
 The study programs the institutes offer emphase both theory and practice. Unfortunately, a demand for such experts is very low in the Czech Republic.
+
 \subsection{Dostupné nástroje a zdroje pro češtinu --- Availability of tools and resources for Czech}
 The following table summarizes the current state of language technology support for the Czech language. The rating for existing tools and resources is based on assessments of leading experts (0 is worst, 6 is best).
-%TABLE HERE
+
+\begin{figure*}[htb]
+\centering
+\begin{tabular}{>{\columncolor{orange1}}p{.33\linewidth}@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c}
+\rowcolor{orange1}
+ \cellcolor{white}&
+ \begin{sideways}\makecell[l]{Quantity}\end{sideways} &
+ \begin{sideways}\makecell[l]{\makecell[l]{Availability} }\end{sideways} &
+ \begin{sideways}\makecell[l]{Quality}\end{sideways} &
+ \begin{sideways}\makecell[l]{Coverage}\end{sideways} &
+ \begin{sideways}\makecell[l]{Maturity}\end{sideways} &
+ \begin{sideways}\makecell[l]{Sustainability}\end{sideways} &
+ \begin{sideways}\makecell[l]{Adaptability}\end{sideways} \\ \addlinespace
+
+\multicolumn{8}{>{\columncolor{orange2}}l}{\textcolor{black}{Language Technology: Tools, Technologies and Applications}} \\ \addlinespace
+
+Speech Recognition		  & 3 & 4 & 4 & 3 & 3 & 4 & 3\\ \addlinespace
+Speech Synthesis      & 3 & 3 & 3 & 4 & 3 & 3 & 2\\ \addlinespace
+Grammatical analysis       & 4 & 2 & 4 & 4 & 3 & 2 & 4\\ \addlinespace
+Semantic analysis        & 1 & 1 & 2 & 2 & 1 & 2 & 2\\ \addlinespace
+Text generation         & 2 & 1 & 3 & 3 & 3 & 2 & 4\\ \addlinespace
+Machine translation          & 4 & 3 & 1 & 2 & 3 & 2 & 3\\ \addlinespace
+
+\multicolumn{8}{>{\columncolor{orange2}}l}{\textcolor{black}{Language Resources: Resources, Data and Knowledge Bases}} \\ \addlinespace
+
+Text corpora           & 4 & 3 & 5 & 4 & 5 & 4 & 1\\ \addlinespace
+Speech corpora      & 4 & 1 & 4 & 2 & 3 & 3 & 2\\ \addlinespace
+Parallel corpora         & 2 & 4 & 2 & 3 & 2 & 2 & 3\\ \addlinespace
+Lexical resources          & 4 & 2 & 3 & 4 & 2 & 3 & 2\\ \addlinespace
+Grammars                 & 1 & 1 & 3 & 2 & 2 & 1 & 1\\ \addlinespace
+
+\end{tabular}
+\label{tab:lrlttable}
+\caption{State of language technology support for Czech}
+\end{figure*}
+
 \subsubsection{Poznámky k tabulce --- Notes to the table}
 
 \begin{itemize}
@@ -1151,14 +1301,9 @@ The following table summarizes the current state of language technology support 
 \item For the web search, there is enough room both for improving existing popular local search engines through the academia-industry collaboration, and for introducing a new one.
 \end{itemize}
 To conclude, in a number of specific areas of Czech language research, we have software with limited functionality and resources with limited scope/complexity available today, and only some of them open-source. Obviously, further research efforts are required to meet the current deficits.
-  \subsection{Porovnání napříč jazyky --- Cross-language comparison}
+
+\subsection{Porovnání napříč jazyky --- Cross-language comparison}
     The current state of LT support varies considerably from one language community to another. In order to compare the situation between languages, this section will present an evaluation based on two sample application areas (machine translation and speech processing) and one underlying technology (text analysis), as well as basic resources needed for building LT applications.
-
-    % Figure 1 and 2
-
-
-    % Figure 3 and 4
-
 
 The above tables show that LT resources and tools for Czech clearly do not yet reach the quality and coverage of comparable resources and tools for the English language and some other ‘larger’ languages in EU. And there are still plenty of gaps in English language resources with regard to high quality applications.
 
@@ -1179,9 +1324,236 @@ The Czech language technology industry dedicated to transforming research into p
 Our findings show that the only alternative is to make a substantial effort to create LT resources for Czech, and use them to drive forward research, innovation and development. The need for large amounts of data and the extreme complexity of language technology systems makes it vital to develop a new infrastructure and a more coherent research organization to spur greater sharing and cooperation.
 Finally there is a lack of continuity in research and development funding. Short-term coordinated programmes tend to alternate with periods of sparse or zero funding. In addition, there is an overall lack of coordination with programmes in other EU countries and at the European Commission level.
 
-The long term goal of META-NET is to enable the creation of high-quality language technology for all languages. This requires all stakeholders - in politics, research, business, and society - to unite their efforts. The resulting technology will help tear down existing barriers and build bridges between Europe’s languages, paving the way for political and economic unity through cultural diversity. 
-\ssection[About META-NET]{About META-NET}
+The long term goal of META-NET is to enable the creation of high-quality language technology for all languages. This requires all stakeholders - in politics, research, business, and society - to unite their efforts. The resulting technology will help tear down existing barriers and build bridges between Europe’s languages, paving the way for political and economic unity through cultural diversity.
+\end{multicols}
 
+\clearpage
+
+\begin{figure*}[t]
+\small
+\centering
+\begin{tabular}
+{ % defines color for each column.
+>{\columncolor{corange5}} p{.17\linewidth}@{\hspace{.027\linewidth}}
+>{\columncolor{corange4}}p{.17\linewidth}@{\hspace{.027\linewidth}}
+>{\columncolor{corange3}}p{.17\linewidth}@{\hspace{.027\linewidth}}
+>{\columncolor{corange2}}p{.17\linewidth}@{\hspace{.027\linewidth}}
+>{\columncolor{corange1}}p{.17\linewidth} 
+}
+\rowcolor{orange1} % redefines color for all columns in row 1
+\begin{center}\vspace*{-2mm}\textbf{Cluster 1}\end{center} & 
+\begin{center}\vspace*{-2mm}\textbf{Cluster 2}\end{center} & 
+\begin{center}\vspace*{-2mm}\textbf{Cluster 3}\end{center} & 
+\begin{center}\vspace*{-2mm}\textbf{Cluster 4}\end{center} & 
+\begin{center}\vspace*{-2mm}\textbf{Cluster 5}\end{center} \\ \addlinespace
+
+& \vspace*{0.5mm}Angličtina
+& \vspace*{0.5mm}
+Čeština \newline 
+Finština \newline 
+Francouzština \newline 
+Holandština \newline 
+Italština \newline  
+Němčina \newline   
+Portugalština \newline 
+Španělština \newline
+& \vspace*{0.5mm}Baskičtina \newline 
+Bulharština \newline 
+Dánština \newline 
+Estonština \newline 
+Galicijština\newline 
+Irština \newline  
+Katalánština \newline 
+Maďarština  \newline
+Norština \newline 
+Polština \newline 
+Řečtina \newline  
+Srbština \newline 
+Slovenština \newline 
+Slovinština \newline 
+Švédština \newline
+& \vspace*{0.5mm}
+Chorvatština \newline 
+Islandština \newline  
+Litevština \newline 
+Lotyština \newline 
+Maltština \newline 
+Rumunština\\
+\end{tabular}
+\label{fig:speech_cluster}
+\caption{Jazykové skupiny pro zpracování mluvené řeči}
+\end{figure*}
+
+\begin{figure*}[b]
+\small
+\centering
+\begin{tabular}
+{ % defines color for each column.
+>{\columncolor{corange5}} p{.17\linewidth}@{\hspace{.027\linewidth}}
+>{\columncolor{corange4}}p{.17\linewidth}@{\hspace{.027\linewidth}}
+>{\columncolor{corange3}}p{.17\linewidth}@{\hspace{.027\linewidth}}
+>{\columncolor{corange2}}p{.17\linewidth}@{\hspace{.027\linewidth}}
+>{\columncolor{corange1}}p{.17\linewidth} 
+}
+\rowcolor{orange1} % redefines color for all columns in row 1
+\begin{center}\vspace*{-2mm}\textbf{Cluster 1}\end{center} & 
+\begin{center}\vspace*{-2mm}\textbf{Cluster 2}\end{center} & 
+\begin{center}\vspace*{-2mm}\textbf{Cluster 3}\end{center} & 
+\begin{center}\vspace*{-2mm}\textbf{Cluster 4}\end{center} & 
+\begin{center}\vspace*{-2mm}\textbf{Cluster 5}\end{center} \\ \addlinespace
+
+& \vspace*{0.5mm} Angličtina 
+& \vspace*{0.5mm} 
+Francouzština \newline 
+Španělština
+& \vspace*{0.5mm}
+Holandština \newline 
+Italština \newline 
+Katalánština \newline 
+Maďarština \newline
+Němčina \newline 
+Polština \newline 
+Rumunština \newline 
+& \vspace*{0.5mm}Baskičtina \newline 
+Bulharština \newline 
+Chorvatština \newline 
+Čeština \newline
+Dánština \newline 
+Estonština \newline 
+Finština \newline 
+Galicijština \newline 
+Islandština \newline 
+Irština \newline 
+Litevština \newline 
+Lotyština \newline 
+Maltština \newline 
+Norština \newline 
+Portugalština \newline 
+Řečtina \newline 
+Srbština \newline 
+Slovenština \newline 
+Slovinština \newline 
+Švédština \newline 
+\end{tabular}
+\label{fig:mt_cluster}
+\caption{Jazykové skupiny pro strojový překlad}
+\end{figure*}
+
+\begin{figure*}[t]
+  \small
+  \centering
+  \begin{tabular}
+{ % defines color for each column.
+>{\columncolor{corange5}} p{.17\linewidth}@{\hspace{.027\linewidth}}
+>{\columncolor{corange3}}p{.17\linewidth}@{\hspace{.027\linewidth}}
+>{\columncolor{corange3}}p{.17\linewidth}@{\hspace{.027\linewidth}}
+>{\columncolor{corange2}}p{.17\linewidth}@{\hspace{.027\linewidth}}
+>{\columncolor{corange1}}p{.17\linewidth} 
+}
+\rowcolor{orange1} % redefines color for all columns in row 1
+\begin{center}\vspace*{-2mm}\textbf{Cluster 1}\end{center} & 
+\begin{center}\vspace*{-2mm}\textbf{Cluster 2}\end{center} & 
+\begin{center}\vspace*{-2mm}\textbf{Cluster 3}\end{center} & 
+\begin{center}\vspace*{-2mm}\textbf{Cluster 4}\end{center} & 
+\begin{center}\vspace*{-2mm}\textbf{Cluster 5}\end{center} \\ \addlinespace
+
+& \vspace*{0.5mm}Angličtina
+& \vspace*{0.5mm}
+  Francouzština \newline 
+  Holandština \newline 
+  Italština \newline 
+  Němčina \newline 
+  Španělština
+& \vspace*{0.5mm}Baskičtina \newline 
+  Bulharština \newline 
+  Čeština \newline 
+  Dánština \newline 
+  Finština \newline 
+  Galicijština \newline 
+  Katalánština \newline 
+  Maďarština \newline 
+  Norština \newline 
+  Polština \newline 
+  Portugalština \newline 
+  Rumunština \newline 
+  Řečtina \newline 
+  Slovenština \newline 
+  Slovinština \newline 
+  Švédština \newline 
+& \vspace*{0.5mm}
+  Chorvatština \newline 
+  Estonština \newline 
+  Irština \newline 
+  Islandština \newline 
+  Litevština \newline 
+  Lotyština \newline 
+  Maltština \newline 
+  Srbština \\
+  \end{tabular}
+\label{fig:text_cluster}
+\caption{Jazykové skupiny pro analýzu textu}
+\end{figure*}
+
+\begin{figure*}[b]
+  \small
+  \centering
+\begin{tabular}
+{ % defines color for each column.
+>{\columncolor{corange5}} p{.17\linewidth}@{\hspace{.027\linewidth}}
+>{\columncolor{corange4}}p{.17\linewidth}@{\hspace{.027\linewidth}}
+>{\columncolor{corange3}}p{.17\linewidth}@{\hspace{.027\linewidth}}
+>{\columncolor{corange2}}p{.17\linewidth}@{\hspace{.027\linewidth}}
+>{\columncolor{corange1}}p{.17\linewidth} 
+}
+\rowcolor{orange1} % redefines color for all columns in row 1
+\begin{center}\vspace*{-2mm}\textbf{Cluster 1}\end{center} & 
+\begin{center}\vspace*{-2mm}\textbf{Cluster 2}\end{center} & 
+\begin{center}\vspace*{-2mm}\textbf{Cluster 3}\end{center} & 
+\begin{center}\vspace*{-2mm}\textbf{Cluster 4}\end{center} & 
+\begin{center}\vspace*{-2mm}\textbf{Cluster 5}\end{center} \\ \addlinespace
+    
+& \vspace*{0.5mm}Angličtina
+& \vspace*{0.5mm} 
+    Čeština \newline 
+    Francouzština \newline 
+    Holandština \newline 
+    Italština \newline
+    Maďarština \newline
+    Němčina \newline 
+    Polština \newline
+    Španělština \newline
+    Švédština \newline 
+& \vspace*{0.5mm} Baskičtina\newline 
+    Bulharština\newline 
+    Chorvatština \newline 
+    Dánština \newline 
+    Estonština \newline 
+    Finština \newline 
+    Galicijština \newline 
+    Katalánština \newline 
+    Norština \newline 
+    Portugalština \newline 
+    Rumunština \newline 
+    Řečtina \newline 
+    Srbština \newline 
+    Slovenština \newline 
+    Slovinština \newline
+&  \vspace*{0.5mm}
+    Irština \newline 
+    Islandština \newline 
+    Litevština \newline 
+    Lotyština \newline 
+    Maltština  \\
+  \end{tabular}
+  \label{fig:resources_cluster}
+  \caption{Jazykové skupiny pro jazykové zdroje}
+\end{figure*}
+
+
+\clearpage
+%-----------------------------------------
+
+\ssection[About META-NET]{About META-NET}
 \begin{multicols}{2}
 META-NET is a Network of Excellence funded by the European Commission. The network currently consists of 54 members from 33 European countries \cite{rehm2011}. META-NET fosters the Multilingual Europe Technology Alliance (META), a growing community of language technology professionals and organisations in Europe. META-NET cooperates with other initiatives like the Common Language Resources and Technology Infrastructure (CLARIN), which is helping to establish digital humanities research in Europe. META-NET fosters the technological foundations for a truly multilingual European information society that:
 
@@ -1200,63 +1572,141 @@ META-NET launched on 1 February 2010 with the goal of advancing research in lang
 \textbf{META-SHARE} creates an open, distributed facility for exchanging and sharing resources. The peer-to-peer network of repositories will contain language data, tools and web services that are documented with high-quality metadata and organised in standardised categories. The resources can be readily accessed and uniformly searched. The available resources include free, open source materials as well as restricted, commercially available, fee-based items. META-SHARE targets existing language data, tools and systems as well as new and emerging products that are required for building and evaluating new technologies, products and services. The reuse, combination, repurposing and re-engineering of language data and tools plays a crucial role. META-SHARE will eventually become a critical part of the LT marketplace for developers, localisation experts, researchers, translators and language professionals from small, mid-sized and large enterprises. META-SHARE addresses the full development cycle of LT—from research to innovative products and services. A key aspect of this activity is establishing META-SHARE as an important and valuable part of a European and global infrastructure for the LT community. 
 
 \textbf{META-RESEARCH} builds bridges to related technology fields. This activity seeks to leverage advances in other fields and to capitalise on innovative research that can benefit language technology. In particular, this activity wants to bring more semantics into machine translation (MT), optimise the division of labour in hybrid MT, exploit context when computing automatic translations and prepare an empirical base for MT. META-RESEARCH is working with other fields and disciplines, such as machine learning and the Semantic Web community. META-RESEARCH focuses on collecting data, preparing data sets and organising language resources for evaluation purposes; compiling inventories of tools and methods; and organising workshops and training events for members of the community. This activity has already clearly identified aspects of MT where semantics can impact current best practices. In addition, the activity has created recommendations on how to approach the problem of integrating semantic information into MT. META-RESEARCH is also finalising a new language resource for MT, the Annotated Hybrid Sample MT Corpus, which provides data for English-German, English-Spanish and English-Czech language pairs. META-RESEARCH has also developed software that collects multilingual corpora that are hidden on the Web.
+\end{multicols}
 
 
-  \subsection{Členské organizace --- Member Organisations}
-    V následující tabulce je uveden seznam organizací a jejich zástupců, které se podílejí na projektu META-NET.
-\begin{tabular*}{\textwidth}{l|p{6cm}|p{4cm}}
-    \hline \textbf{Země} & \textbf{Organizace} & \textbf{Účastník/-ci} \\
-    \hline Rakousko & University of Vienna & Gerhard Budin\\
-    \hline Belgie & University of Antwerp & Walter Daelemans\\
-    \hline University of Leuven & Dirk van Compernolle & \\
-    \hline Bulharsko & Bulgarian Academy of Sciences & Svetla Koeva \\
-    \hline Chorvatsko & University of Zagreb & Marko Tadić\\
-    \hline Kypr & University of Cyprus & Jack Burston\\
-    \hline Česká republika & Charles University in Prague Jan Hajic &\\
-    \hline Dánsko & University of Copenhagen & Bolette Sandford Pedersen and
-    Bente Maegaard\\
-    \hline Estonsko & University of Tartu & Tiit Roosmaa\\
-    \hline Finsko & Aalto University & Timo Honkela\\
-    \hline  & University of Helsinki & Kimmo Koskenniemi and
-    Krister Linden \\
-    \hline Francie & CNRS/LIMSI & Joseph Mariani \\
-    \hline & Evaluations and Language Resources Distribution Agency & Khalid Choukri\\
-    \hline Německo & DFKI & Hans Uszkoreit and Georg Rehm\\
-    \hline & RWTH Aachen University & Hermann Ney\\
-    \hline & Saarland University & Manfred Pinkal\\
-    \hline Řecko & Institute for Language and Speech Processing, “Athena” R.C. & Stelios Piperidis\\
-    \hline Maďarsko & Hungarian Academy of Sciences & Tamás Váradi\\
-    \hline & Budapest University of Technology and Economics & Géza Németh and Gábor Olaszy\\
-    \hline Island & University of Iceland & Eirikur Rögnvaldsson\\
-    \hline Irsko & Dublin City University & Josef van Genabith\\
-    \hline Itálie & Consiglio Nazionale Ricerche,  Istituto di Linguistica Computazionale “Antonio Zampolli” & Nicoletta Calzolari\\
-    \hline & Fondazione Bruno Kessler & Bernardo Magnini\\
-    \hline Lotyšsko & Tilde & Andrejs Vasiljevs\\
-    \hline & Institute of Mathematics and Computer Science, University of Latvia & Inguna Skadina\\
-    \hline Litva & Institute of the Lithuanian Language & Jolanta Zabarskaitė\\
-    \hline Lucembursko & Arax Ltd. & Vartkes Goetcherian\\
-    \hline Malta & University of Malta & Mike Rosner\\
-    \hline Nizozemí & Utrecht University & Jan Odijk\\
-    \hline & University of Groningen & Gertjan van Noord\\
-    \hline Norsko & University of Bergen & Koenraad De Smedt\\
-    \hline Polsko & Polish Academy of Sciences & Adam Przepiórkowski and
-    Maciej Ogrodniczuk \\
-    \hline & University of Lodz & Barbara Lewandowska-Tomaszczyk and Piotr Pęzik\\
-    \hline Portugalsko & University of Lisbon & Antonio Branco\\
-    \hline & Institute for Systems Engineering and Computers & Isabel Trancoso\\
-    \hline Rumunsko & Romanian Academy of Sciences & Dan Tufis\\
-    \hline & Alexandru Ioan Cuza University & Dan Cristea\\
-    \hline Srbsko & University of Belgrade & Dusko Vitas, Cvetana Krstev a Ivan Obradovic\\
-    \hline & Institute Mihailo Pupin & Sanja Vranes\\
-    \hline Slovensko & Slovak Academy of Sciences & Radovan Garabik\\
-    \hline Slovinsko & Jozef Stefan Institute & Marko Grobelnik\\
-    \hline Španělsko & Barcelona Media & Toni Badia\\
-    \hline & Technical University of Catalonia & Asunción Moreno\\
-    \hline & Pompeu Fabra University & Núria Bel\\
-    \hline Švédsko & University of Gothenburg & Lars Borin\\
-    \hline UK & University of Manchester & Sophia Ananiadou\\
-    \hline & University of Edinburgh & Steve Renals\\
-    \hline
-  \end{tabular*}
- \bibliographystyle{unsrt}
-  \bibliography{lwp_Czech}
+\vfill
+\centerline{office@meta-net.eu -- http://www.meta-net.eu}
+
+\cleardoublepage
+
+\appendix
+\addtocontents{toc}{\protect\bigskip}
+
+\bsection[Literaturverweise -- References]{Literaturverweise --- References} % Please translate this into Czech
+\bibliographystyle{unsrt}
+\bibliography{czech_references}
+
+\cleardoublepage
+
+
+
+\bsection[META-NET Mitglieder -- META-NET Members]{META-NET Mitglieder --- META-NET Members} % Please translate this into Czech
+\label{metanetmembers}
+
+\small
+\begin{longtable}{@{}llp{113mm}@{}}
+  Rakousko & \textcolor{grey1}{Austria} & Zentrum für Translationswissenschaft, Universität Wien: Gerhard Budin\\ \addlinespace 
+  Belgie & \textcolor{grey1}{Belgium} & Computational Linguistics and Psycholinguistics Research Centre, University of Antwerp: Walter Daelemans\\ \addlinespace
+  & & Centre for Processing Speech and Images, University of Leuven: Dirk van Compernolle \\ \addlinespace
+  Bulharsko & \textcolor{grey1}{Bulgaria} & Institute for Bulgarian Language, Bulgarian Academy of Sciences: Svetla Koeva \\ \addlinespace
+  Chorvatsko & \textcolor{grey1}{Croatia} & Institute of Linguistics, Faculty of Humanities and Social Science, University of Zagreb: Marko Tadić \\ \addlinespace
+  Kypr & \textcolor{grey1}{Cyprus} & Language Centre, School of Humanities: Jack Burston \\ \addlinespace
+  Česká republika & \textcolor{grey1}{Czech Republic} & Institute of Formal and Applied Linguistics, Charles University in Prague: Jan Hajič \\ \addlinespace 
+  Dánsko &  \textcolor{grey1}{Denmark} & Centre for Language Technology, University of Copenhagen: \newline Bolette Sandford Pedersen, Bente Maegaard\\ \addlinespace
+  Estonsko & \textcolor{grey1}{Estonia} & Institute of Computer Science, University of Tartu: Tiit Roosmaa, Kadri Vider\\ \addlinespace
+  Finsko & \textcolor{grey1}{Finland} & Computational Cognitive Systems Research Group, Aalto University: Timo Honkela\\ \addlinespace
+  & & Department of Modern Languages, University of Helsinki: Kimmo Koskenniemi,\newline Krister Lindén \\ \addlinespace
+  Francie & \textcolor{grey1}{France} & Centre National de la Recherche Scientifique, Laboratoire d'Informatique pour la Mécanique et les Sciences de l'Ingénieur and Institute for Multilingual and Multimedia Information: Joseph Mariani \\ \addlinespace
+  & & Evaluations and Language Resources Distribution Agency: Khalid Choukri\\ \addlinespace
+  Německo & \textcolor{grey1}{Germany} & Language Technology Lab, DFKI: Hans Uszkoreit, Georg Rehm\\ \addlinespace
+  & & Human Language Technology and Pattern Recognition, RWTH Aachen University: Hermann Ney \\ \addlinespace
+  & & Department of Computational Linguistics, Saarland University: Manfred Pinkal\\ \addlinespace 
+  Řecko & \textcolor{grey1}{Greece} & R.C. “Athena”, Institute for Language and Speech Processing: Stelios Piperidis\\ \addlinespace
+  Maďarsko & \textcolor{grey1}{Hungary} & Research Institute for Linguistics, Hungarian Academy of Sciences: Tamás Váradi\\  \addlinespace
+  & & Department of Telecommunications and Media Informatics, Budapest University of Technology and Economics: Géza Németh, Gábor Olaszy\\ \addlinespace
+  Island & \textcolor{grey1}{Iceland} & School of Humanities, University of Iceland: Eiríkur Rögnvaldsson\\ \addlinespace
+  Irsko & \textcolor{grey1}{Ireland} & School of Computing, Dublin City University: Josef van Genabith\\ \addlinespace
+  Itálie & \textcolor{grey1}{Italy} & Consiglio Nazionale delle Ricerche, Istituto di Linguistica Computazionale “Antonio Zampolli”: Nicoletta Calzolari\\ \addlinespace
+  & & Human Language Technology Research Unit, Fondazione Bruno Kessler:\newline Bernardo Magnini\\ \addlinespace
+  Lotyšsko & \textcolor{grey1}{Latvia} & Tilde: Andrejs Vasiļjevs\\ \addlinespace 
+  & & Institute of Mathematics and Computer Science, University of Latvia: Inguna Skadiņa\\ \addlinespace
+  Litva & \textcolor{grey1}{Lithuania} & Institute of the Lithuanian Language: Jolanta Zabarskaitė\\ \addlinespace
+  Lucembursko & \textcolor{grey1}{Luxembourg} & Arax Ltd.: Vartkes Goetcherian\\ \addlinespace
+  Malta & \textcolor{grey1}{Malta} & Department Intelligent Computer Systems, University of Malta: Mike Rosner\\ \addlinespace
+  Nizozemí & \textcolor{grey1}{Netherlands} & Utrecht Institute of Linguistics, Utrecht University: Jan Odijk\\ \addlinespace 
+  & & Computational Linguistics, University of Groningen: Gertjan van Noord\\ \addlinespace
+  Norsko & \textcolor{grey1}{Norway} & Department of Linguistic, University of Bergen: Koenraad De Smedt\\ \addlinespace 
+  & & Department of Informatics, Language Technology Group, University of Oslo:\newline Stephan Oepen \\ \addlinespace
+  Polsko & \textcolor{grey1}{Poland} & Institute of Computer Science, Polish Academy of Sciences: Adam Przepiórkowski, Maciej Ogrodniczuk \\ \addlinespace
+  & & University of Łódź: Barbara Lewandowska-Tomaszczyk, Piotr Pęzik\\ \addlinespace
+  & & Department of Computer Linguistics and Artificial Intelligence, Adam Mickiewicz University: Zygmunt Vetulani \\ \addlinespace
+  Portugalsko & \textcolor{grey1}{Portugal} & University of Lisbon: António Branco, Amália Mendes \\ \addlinespace
+  & & Spoken Language Systems Laboratory, Institute for Systems Engineering and Computers: Isabel Trancoso \\ \addlinespace
+  Rumunsko & \textcolor{grey1}{Romania} & Research Institute for Artificial Intelligence, Romanian Academy of Sciences:\newline Dan Tufiș \\ \addlinespace
+  & & Faculty of Computer Science, University Alexandru Ioan Cuza of Iași: Dan Cristea \\ \addlinespace
+  Srbsko & \textcolor{grey1}{Serbia} & University of Belgrade, Faculty of Mathematics: Duško Vitas, Cvetana Krstev,\newline Ivan Obradović \\ \addlinespace
+  & & Pupin Institute: Sanja Vranes \\ \addlinespace
+  Slovensko & \textcolor{grey1}{Slovakia} & Ľudovít Štúr Institute of Linguistics, Slovak Academy of Sciences: Radovan Garabík \\ \addlinespace 
+  Slovinsko & \textcolor{grey1}{Slovenia} & Jožef Stefan Institute: Marko Grobelnik \\ \addlinespace 
+  Španělsko & \textcolor{grey1}{Spain} & Barcelona Media: Toni Badia, Maite Melero \\ \addlinespace 
+  & & Institut Universitari de Lingüística Aplicada, Universitat Pompeu Fabra: Núria Bel \\ \addlinespace 
+  & & Aholab Signal Processing Laboratory, University of the Basque Country:\newline Inma Hernaez Rioja \\ \addlinespace 
+  & & Center for Language and Speech Technologies and Applications, Universitat Politècnica de Catalunya:  Asunción Moreno \\ \addlinespace 
+  & & Department of Signal Processing and Communications, University of Vigo:\newline Carmen García Mateo \\ \addlinespace
+  Švédsko & \textcolor{grey1}{Sweden} & Department of Swedish, University of Gothenburg: Lars Borin \\ \addlinespace 
+  UK & \textcolor{grey1}{UK} & 
+  School of Computer Science, University of Manchester: Sophia Ananiadou \\ \addlinespace 
+  & & Institute for Language, Cognition and Computation, Center for Speech Technology Research, University of Edinburgh: Steve Renals \\ \addlinespace 
+  & & Research Institute of Informatics and Language Processing, University of Wolverhampton: Ruslan Mitkov \\ \addlinespace  
+  Schweiz & \textcolor{grey1}{Switzerland} & Idiap Research Institute: Hervé Bourlard  % Please translate this into Czech
+    
+\end{longtable}
+\normalsize
+ 
+\renewcommand*{\figureformat}{}
+\renewcommand*{\captionformat}{}
+
+\begin{figure*}[htbp]
+  \colorrule{grey3}{\textwidth}{1.5pt}
+  \center
+  %\fbox{-- META-NET group picture omitted to keep the size of the PDF file small. --}
+  \includegraphics[width=\textwidth]{../_media/meta-net_team.jpg}
+  \caption{Etwa 100 Experten des Gebiets Sprachtechnologie -- Repräsentanten der in META-NET vertretenen Länder und Sprachen -- diskutierten und finalisierten die zentralen Ergebnisse der Weißbuch-Serie bei einem META-NET-Treffen in Berlin am 21./22.~Oktober 2011. --- \textcolor{grey1}{About 100 language technology experts -- representatives of the countries and languages represented in META-NET -- discussed and finalised the key results and messages of the White Paper Series at a META-NET meeting in Berlin, Germany, on October 21/22, 2011.}}
+  \medskip
+  \colorrule{grey3}{\textwidth}{1.5pt}
+\end{figure*}
+
+\cleardoublepage
+
+\bsection[Série Bílé knihy META-NET -- The META-NET White Paper Series]{Série Bílé knihy META-NET --- The META-NET\ \ \ \ \ \ White Paper Series}
+\label{whitepaperseries}
+
+\vspace*{-5mm}
+\centering
+  \setlength{\tabcolsep}{2em}
+  \begin{tabularx}{\textwidth}{lllll} \toprule\addlinespace
+  &Angličtina & English & English&\\
+  &Baskičtina & Basque & euskara&\\
+  &Bulharština & Bulgarian & български&\\
+  &Čeština & Czech & čeština&\\
+  &Dánština & Danish & dansk&\\
+  &Estonština & Estonian & eesti&\\
+  &Finština & Finnish & suomi&\\
+  &Francouzština & French & français&\\
+  &Galicijština & Galician & galego&\\
+  &Holandština & Dutch & Nederlands&\\ 
+  &Chorvatština & Croatian & hrvatski&\\
+  &Irština & Irish & Gaeilge&\\
+  &Islandština & Icelandic & íslenska&\\
+  &Italština & Italian & italiano&\\
+  &Katalánština & Catalan & català&\\
+  &Litevština & Lithuanian & lietuvių kalba&\\
+  &Lotyština & Latvian & latviešu valoda&\\
+  &Maďarština & Hungarian & magyar&\\
+  &Maltština & Maltese & Malti&\\
+  &Němčina & German & Deutsch&\\
+  &Norština Bokmål & Norwegian Bokmål & bokmål&\\
+  &Norština Nynorsk & Norwegian Nynorsk & nynorsk&\\
+  &Polština & Polish & polski&\\
+  &Portugalština & Portuguese & português&\\
+  &Rumunština & Romanian & română&\\
+  &Řečtina & Greek & ελληνικά&\\
+  &Slovenština & Slovak & slovenčina&\\
+  &Slovinština & Slovene & slovenščina&\\
+  &Srbština & Serbian & српски&\\
+  &Španělština & Spanish & español&\\
+  &Švédština & Swedish & svenska&\\ \addlinespace \bottomrule
+\end{tabularx}
+
+\end{document}
