@@ -639,6 +639,8 @@
 
 % Set the ebook version
 \DeclareOption{ebook}{%
+  %\RequirePackage[colorlinks=true, linkcolor=black, citecolor=black, urlcolor=black]{hyperref}
+  
   % Define papersize for cover 210x279mm + 0mm bleed
   \geometry{paperwidth=210mm, paperheight=279mm, top=24mm, bottom=34mm, left=22mm, right=21mm}%
   
@@ -835,5 +837,6 @@
   }
 }
 \ProcessOptions\relax
+
 
 \endinput
