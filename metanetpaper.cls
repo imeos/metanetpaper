@@ -1,4 +1,4 @@
-%                                     MMMMMMMMM                                         
+%                                     MMMMMMMMM
 %                                                                             
 %  MMO    MM   MMMMMM  MMMMMMM   MM    MMMMMMMM   MMD   MM  MMMMMMM MMMMMMM   
 %  MMM   MMM   MM        MM     ?MMM              MMM$  MM  MM         MM     
@@ -14,7 +14,8 @@
 % ----------------------------------------------------------------------------
 %
 % Class options
-% [cover] = Set (only) the cover of the whitepaper
+% [cover] = Set (only) the cover of the LWP
+% [ebook] = Set the eBook version of the LWP
 %
 % ----------------------------------------------------------------------------
 
