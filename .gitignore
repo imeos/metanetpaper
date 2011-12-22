@@ -1,6 +1,7 @@
 .gitignore
 .DS_Store
-_metanetpaper.tmproj
+*.tmproj
+*.tm_properties
 */.DS_Store
 *.aux
 *.log
