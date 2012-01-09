@@ -93,29 +93,29 @@
 
 
 % Colors                                             
-\definecolor{white}{cmyk}{0, 0, 0, 0}                % #FFFFFF
-\definecolor{printblack}{cmyk}{0, 0, 0, 1}           % #141413
-\definecolor{orange1}{cmyk}{0, 0.56, 0.86, 0}        % #FF6600
-\definecolor{orange2}{cmyk}{0, 0.34, 0.87, 0.01}     % #FF9900
-\definecolor{orange3}{cmyk}{0.01, 0.12, 0.91, 0.01}  % #FFCC00
-\definecolor{corange1}{cmyk}{0.0, 0.216, 0.42, 0.04} % #F5B58E
-\definecolor{corange2}{cmyk}{0.0, 0.32, 0.51, 0.04}  % #F5A676
-\definecolor{corange3}{cmyk}{0.0, 0.38, 0.62, 0.04}  % #F5975D
-\definecolor{corange4}{cmyk}{0.0, 0.44, 0.72, 0.04}  % #F58845
-\definecolor{corange5}{cmyk}{0.0, 0.50, 0.82, 0.04}  % #F5792C
-\definecolor{red_dark}{cmyk}{0.2, 1, 1, 0.10}        % #B72126
-\definecolor{red}{cmyk}{0.2, 1, 1, 0.1}              % #C80000
-\definecolor{red2}{cmyk}{0, 0.45, 0.26, 0}           % #ff8182
-\definecolor{red3}{cmyk}{0.1, 0.8, 0.6, 0}           % #a83b3b
-\definecolor{grey1}{cmyk}{0, 0, 0, 0.7}              % #3C3C3C
-\definecolor{grey2}{cmyk}{0.16, 0.11, 0.09, 0}       % #C6C7C8
-\definecolor{grey3}{cmyk}{0, 0, 0, 0.4}              % #C6C7C8
-\definecolor{grey4}{cmyk}{0.54, 0.59, 0.77, 0.23}    % #847a6f
-\definecolor{green}{cmyk}{0.82, 0.16, 0.79, 0.03}    % #1F9863
-\definecolor{green2}{cmyk}{0.53, 0, 0.77, 0}         % #81C56B
-\definecolor{blue}{cmyk}{0.65, 0, 0.26, 0}           % #44C1C5
-\definecolor{blue2}{cmyk}{0.55, 0, 0.22, 0}          % #56D8D8
-\definecolor{purple}{cmyk}{0.49, 0.32, 0, 0}         % #7e7fff
+\definecolor{white}{RGB}{255, 255, 255}    % #FFFFFF
+\definecolor{printblack}{RGB}{0, 0, 0}     % #141413
+\definecolor{orange1}{RGB}{255, 109, 50}   % #FF6600
+\definecolor{orange2}{RGB}{233, 154, 53}   % #FF9900
+\definecolor{orange3}{RGB}{255, 204, 0}    % #FFCC00
+\definecolor{corange1}{RGB}{232, 183, 127} % #F5B58E
+\definecolor{corange2}{RGB}{226, 157, 104} % #F5A676
+\definecolor{corange3}{RGB}{222, 141, 85}  % #F5975D
+\definecolor{corange4}{RGB}{220, 129, 70}  % #F58845
+\definecolor{corange5}{RGB}{217, 116, 55}  % #F5792C
+\definecolor{red_dark}{RGB}{146, 22, 32}   % #B72126
+\definecolor{red}{RGB}{146, 22, 32}        % #C80000
+\definecolor{red2}{RGB}{230, 134, 133}     % #ff8182
+\definecolor{red3}{RGB}{189, 62, 68}       % #a83b3b
+\definecolor{grey1}{RGB}{80, 80, 80}       % #3C3C3C
+\definecolor{grey2}{RGB}{197, 200, 200}    % #C6C7C8
+\definecolor{grey3}{RGB}{141, 142, 141}    % #C6C7C8
+\definecolor{grey4}{RGB}{82, 68, 49}       % #847a6f
+\definecolor{green}{RGB}{30, 127, 75}      % #1F9863
+\definecolor{green2}{RGB}{103, 179, 86}    % #81C56B
+\definecolor{blue}{RGB}{63, 172, 168}      % #44C1C5
+\definecolor{blue2}{RGB}{91, 182, 177}     % #56D8D8
+\definecolor{purple}{RGB}{107, 129, 177}   % #7e7fff
 
 
 % Orphans and widows
@@ -644,31 +644,6 @@
   % Define papersize for cover 210x279mm + 0mm bleed
   \geometry{paperwidth=210mm, paperheight=279mm, top=24mm, bottom=34mm, left=22mm, right=21mm}%
   
-  % Colors                                             
-  \definecolor{white}{RGB}{255, 255, 255}    % #FFFFFF
-  \definecolor{printblack}{RGB}{0, 0, 0}     % #141413
-  \definecolor{orange1}{RGB}{255, 109, 50}   % #FF6600
-  \definecolor{orange2}{RGB}{233, 154, 53}   % #FF9900
-  \definecolor{orange3}{RGB}{255, 204, 0}    % #FFCC00
-  \definecolor{corange1}{RGB}{232, 183, 127} % #F5B58E
-  \definecolor{corange2}{RGB}{226, 157, 104} % #F5A676
-  \definecolor{corange3}{RGB}{222, 141, 85}  % #F5975D
-  \definecolor{corange4}{RGB}{220, 129, 70}  % #F58845
-  \definecolor{corange5}{RGB}{217, 116, 55}  % #F5792C
-  \definecolor{red_dark}{RGB}{146, 22, 32}   % #B72126
-  \definecolor{red}{RGB}{146, 22, 32}        % #C80000
-  \definecolor{red2}{RGB}{230, 134, 133}     % #ff8182
-  \definecolor{red3}{RGB}{189, 62, 68}       % #a83b3b
-  \definecolor{grey1}{RGB}{80, 80, 80}       % #3C3C3C
-  \definecolor{grey2}{RGB}{197, 200, 200}    % #C6C7C8
-  \definecolor{grey3}{RGB}{141, 142, 141}    % #C6C7C8
-  \definecolor{grey4}{RGB}{82, 68, 49}       % #847a6f
-  \definecolor{green}{RGB}{30, 127, 75}      % #1F9863
-  \definecolor{green2}{RGB}{103, 179, 86}    % #81C56B
-  \definecolor{blue}{RGB}{63, 172, 168}      % #44C1C5
-  \definecolor{blue2}{RGB}{91, 182, 177}     % #56D8D8
-  \definecolor{purple}{RGB}{107, 129, 177}   % #7e7fff
-  
   % Title & Mocktitle
     % Maketitle
   \renewcommand\maketitle{%
@@ -735,7 +710,7 @@
       \end{Parallel}
       % Mocktitle
       \cleardoublepage
-      \ThisCenterWallPaper{1}{../_media/mocktitlepage_ebook.pdf}
+      \ThisCenterWallPaper{1}{../_media/mocktitlepage.pdf}
       \vspace*{3mm}
       % Left column
       \begin{minipage}[t]{83mm}
