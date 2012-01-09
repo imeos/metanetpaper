@@ -93,7 +93,7 @@ käännökselle\cite{lwpgerman}.
 
 \clearpage
 
-\bsection*{Esipuhe --- Preface}
+\bsection*{Esipuhe --- Preface} %FIXME: shorten 
 \begin{Parallel}[c]{78mm}{78mm}
 \ParallelLText{\selectlanguage{finnish}
 META-NET Valkoiset kirjat -julkaisusarjan tavoitteena on edistää tietämystä
@@ -107,7 +107,7 @@ tutkimusta ja kehitystä, ovat eri kielten kohdalla
 erilaisia ja ne riippuvat kyseisen kielen ominaispiirteistä ja
 kieliyhteisön koosta.
 
-Euroopan komission rahoittaman META-NET -huippuosaamisen verkoston kartoitustyö
+Euroopan komission rahoittaman META-NET -huippuosaamisen verkoston kartoitustyö %FIXME: Hyphenate huippuosaamisen
 kattaa Euroopan 23 virallisen kielen ja lisäksi sen tärkeiden kansallisten ja
 paikallisten kielten kieliresurssien ja teknologioiden tilannekatsaukset.
 Tulosten perusteella voidaan päätellä, että kaikkien kartoitettujen kielten
@@ -159,11 +159,13 @@ applications can address any research gaps by 2020.
 
 % --------------------------------------------------------------------------
 \bsection*{IN FINNISH --- Table of Contents}
+%FIXME: Translate
 
+\renewcommand\contentsname{}
 \tableofcontents
 
 \addtocontents{toc}{\protect\thispagestyle{empty}\protect}
-\addtocontents{toc}{{\Large\textsf{\centerline{Suomen kieli digitaalisella aikakaudella}}\par}}
+\addtocontents{toc}{{\Large\textsf{\centerline{SUOMEN KIELI DIGITAALISELLA AIKAKAUDELLA}}\par}}
 
 \cleardoublepage
 
@@ -1068,14 +1070,15 @@ tekstiteknologiat limittyvät siten keskenään ja ovat
 vuorovaikutuksessa muiden teknologioiden kanssa, jotka mahdollistavat
 multimodaalisen kommunikaation ja multimediatiedostojen tuottamisen.
 
-\begin{figure}[h!]
+\begin{figure*}[htb]
   \colorrule{grey3}{\textwidth}{1.5pt}
+  \vspace{-25mm}
   \center
   \includegraphics[width=\textwidth]{../_media/finnish/language_technologies}
   \caption{Kieliteknologia kontekstissa}
   \label{fig:ltincontext-fin}
   \colorrule{grey3}{\textwidth}{1.5pt}
-\end{figure}
+\end{figure*}
 
 Seuraavassa tarkastellaan kieliteknologian tärkeimpiä sovellusaloja,
 toisin sanoen kielentarkistusta, hakukonetta, puhesovelluksia ja
@@ -1113,14 +1116,14 @@ komponenteista, jotka kuvastavat kielen eri ominaisuuksia. Kuva
 arkkitehtuurin yksinkertaistetussa muodossa. Ensimmäiset kolme
 moduulia kuvaavat tekstinsyötön rakennetta ja tarkoitusta:
 
-\begin{figure}[h!]
+\begin{figure*}[b]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
-  \includegraphics[width=\textwidth]{../_media/finnish/text_processing_app_architecture}
+  \vspace{-5mm} \includegraphics[width=\textwidth]{../_media/finnish/text_processing_app_architecture}
   \caption{Tyypillinen tekstinkäsittelyn arkkitehtuuri}
   \label{fig:textprocessingarch-fin}
   \colorrule{grey3}{\textwidth}{1.5pt}
-\end{figure}
+\end{figure*}
 
 \begin{enumerate}
 \item Esiprosessointi puhdistaa dataa, analysoi tai poistaa muotoiluja,
@@ -1209,14 +1212,15 @@ ole siirrettävissä suoraan suomen kielen käsittelyyn, johtuen mm.
 suomen suhteellisen vapaasta sanajärjestyksestä, yhdyssanojen
 muodostuksesta ja sanojen taipumisesta.
 
-\begin{figure}[h!]
+\begin{figure*}[htb]
   \colorrule{grey3}{\textwidth}{1.5pt}
+  \vspace{-9mm}
   \center
   \includegraphics[width=\textwidth]{../_media/finnish/language_checking}
   \caption{Kielentarkistus (tilastollinen; sääntöpohjainen)}
   \label{fig:langcheckingarch-fin}
   \colorrule{grey3}{\textwidth}{1.5pt}
-\end{figure}
+\end{figure*}
 
 \boxtext{Kielentarkistus on myös kirjoittajan apuväline.}
 
@@ -1290,14 +1294,15 @@ avulla on voitu hyödyntää alkuperäisten hakusanojen ja termien synonyymejä,
 ja myös vähemmän toisiinsa sidoksissa olevia termejä
 voidaan hyödyntää.
 
-\begin{figure}[h!]
+\begin{figure*}[htb]
   \colorrule{grey3}{\textwidth}{1.5pt}
+  \vspace{-9mm}
   \center
   \includegraphics[width=\textwidth]{../_media/finnish/web_search_architecture}
   \caption{Haku verkossa}
   \label{fig:websearcharch-fin}
   \colorrule{grey3}{\textwidth}{1.5pt}
- \end{figure}
+ \end{figure*}
 
 \boxtext{Tulevaisuuden hakukoneet perustuvat kehittyneempään kieliteknologiaan.}
 
@@ -1377,14 +1382,15 @@ Puheteknologiat sisältävät neljä aluetta:
 \end{enumerate}
 
 \clearpage
-  \begin{figure}[h!]
-    \colorrule{grey3}{\textwidth}{1.5pt}
-    \center
-    \includegraphics[width=\textwidth]{../_media/finnish/simple_speech-based_dialogue_architecture}
+\begin{figure*}[htb]
+  \colorrule{grey3}{\textwidth}{1.5pt}
+  \vspace{-9mm}
+  \center  \includegraphics[width=\textwidth]{../_media/finnish/simple_speech-based_dialogue_architecture}
+  \center
     \caption{Puheeseen pohjautuva dialogijärjestelmä}
     \label{fig:dialoguearch-fin}
     \colorrule{grey3}{\textwidth}{1.5pt}
-  \end{figure}
+  \end{figure*}
 
 Eräs puheteknologiajärjestelmien haasteista on tunnistaa käyttäjän
 puheesta sanat oikein. Tämä merkitsee käytännössä käyttäjän
@@ -1513,7 +1519,7 @@ tekniikka halpeni, kiinnostus konekääntämisen tilastollisia malleja
 kohtaan heräsi jälleen. Tilastolliset mallit ovat kehittyneet
 kaksikielisten tekstikorpusten analysoinnin pohjalta, esimerkkinä
 Europarl-\textbf{rinnakkaiskorpus}, joka sisältää Euroopan parlamentin
-puheenvuorot 11 eurooppalaisella kielellä. Kun aineistoa on tarpeeksi,
+puheenvuorot 21 eurooppalaisella kielellä. Kun aineistoa on tarpeeksi,
 tilastollinen konekäännin saavuttaa riittävän tarkkuuden tuottamalla
 vieraan kielen merkityksen likiarvoja. Se tuottaa todennäköisistä
 sanoista muodostuvia jatkumoita tekstien rinnakkaisista
@@ -1525,14 +1531,16 @@ kattaa myös kielikohtaisia ominaispiirteitä (esim. idiomaattiset
 ilmaukset), jotka saattava jäädä ilman huomiota tietämyspohjaisissa
 järjestelmissä.
 
-\begin{figure}[h!]
+\begin{figure*}[htb]
   \colorrule{grey3}{\textwidth}{1.5pt}
+  \vspace{-21mm}
   \center
   \includegraphics[width=\textwidth]{../_media/finnish/machine_translation}
   \caption{Konekäännös (tilastollinen; sääntöpohjainen)}
   \label{fig:mtarch-fin}
   \colorrule{grey3}{\textwidth}{1.5pt}
-\end{figure}
+\end{figure*}
+%FIX: In this figure, we corrected the box "post-editing" to "text generation", please make sure we used the correct translation
 
 \boxtext{Konekääntäminen on erityisen haastavaa suomen kielen osalta.}
 
@@ -1595,11 +1603,11 @@ kielten kehittämiseen ei joko ole panostettu hankerahoitusta tai ne
 ovat rakenteellisesti erityisen paljon muista tutkituista kielistä
 poikkeavia (esimerkkeinä unkari, malta ja suomi).
 
-\begin{sidewaysfigure}
-\centering
-\setlength{\tabcolsep}{0.4em}
-\begin{tabular}{>{\columncolor{orange1}}cccccccccccccccccccccccc}
-    \small
+\begin{figure*}[tb]
+  \centering
+  \setlength{\tabcolsep}{0.17em}
+  \small
+  \begin{tabular}{>{\columncolor{corange1}}cccccccccccccccccccccccc}
   & \multicolumn{22}{>{\columncolor{orange1}}c}{Kohdekieli -- Target Language}\\\addlinespace[{-.009cm}]
   \rowcolor{orange1}  & EN & BG & DE & CS & DA & EL & ES & ET & FI & FR & HU & IT & LT & LV & MT & NL & PL & PT & RO & SK & SL & SV\\
   EN & -- & \textcolor{blue}{40.5} & \textcolor{blue}{46.8} & \textcolor{green2}{52.6} & \textcolor{green2}{50.0} & \textcolor{blue}{41.0} & \textcolor{green2}{55.2} & \textcolor{purple}{34.8} & \textcolor{purple}{38.6} & \textcolor{green2}{50.1} & \textcolor{purple}{37.2} & \textcolor{green2}{50.4} & \textcolor{purple}{39.6} & \textcolor{blue}{43.4} & \textcolor{purple}{39.8} & \textcolor{green2}{52.3} & \textcolor{blue}{49.2} & \textcolor{green2}{55.0} & \textcolor{blue}{49.0} & \textcolor{blue}{44.7} & \textcolor{green2}{50.7} & \textcolor{green2}{52.0}\\
@@ -1628,7 +1636,7 @@ poikkeavia (esimerkkeinä unkari, malta ja suomi).
 \label{tab:euromatrix}
 \caption{Konekäännös 22 EU-kielen välillä --- \textcolor{grey1}{Machine translation between 22 EU-languages \cite{BLEU}}}
 \label{fig:euromatrix}
-\end{sidewaysfigure}
+\end{figure*}
 
 
 \subsection{Muut sovellusalat}
@@ -2248,7 +2256,7 @@ korkealuokkainen konekääntäminen.
 \subsection{Johtopäätökset}
 
 
-\textbf{Tässä META-NET Valkoiset kirjat -julkaisusarjan raportissa
+\emph{Tässä META-NET Valkoiset kirjat -julkaisusarjan raportissa
 olemme ensimmäisen kerran kartoittaneet 30 eurooppalaisen kielen
 kieliteknologian tukea ja verranneet Euroopan kielten tilannetta
 keskenään. Euroopan kieliteknologiayhteisö ja sen toimijat ovat
@@ -2358,7 +2366,7 @@ yhteistyötä. Kaikilla eurooppalaisilla on yhtäläinen oikeus tietoon ja
 tietämykseen kielestä riippumatta.
 
 
-\subsection{Toimintalinjat}
+%\subsection{Toimintalinjat}
 
 
 META-NET -hanke käynnistyi 1.2.2010 tavoitteenaan edistää
@@ -2431,6 +2439,21 @@ Corpus tuottaa aineistoa kielipareille englanti-saksa,
 englanti-espanja ja englanti-tšekki, ja verkosta monikielisiä
 tekstiaineistoja keräävä ohjelma on jo kehitetty.
 \end{multicols}
+
+\vfill
+\centerline{office@meta-net.eu -- http://www.meta-net.eu}
+
+\addtocontents{toc}{\protect\clearpage\protect}
+\addtocontents{toc}{\protect\thispagestyle{empty}\protect}
+\addtocontents{toc}{\protect\vspace*{4mm}\protect}
+\addtocontents{toc}{\smallskip{\Large\textsf{\centerline{THE FINNISH LANGUAGE IN THE DIGITAL AGE}}\par}}
+
+\setcounter{section}{0}
+\setcounter{figure}{0}
+
+\cleardoublepage
+
+\selectlanguage{english}
 
 %---------------ENGLISH---------------
 \clearpage
@@ -2508,7 +2531,7 @@ material or in the case of sentences with complex
 structures.
 
 The European Union has therefore decided to fund projects such as EuroMatrix
-and EuroMatrixPlus (since 2006) and iTranslate4 (since 2010) that carry out
+and EuroMatrixPlus (since 2006) and iTranslate4 (since 2010), which carry out
 basic and applied research and generate resources for establishing high quality
 language technology solutions for all European languages. Analysing the deeper
 structural properties of languages is the only way forward if we want to build
@@ -2525,7 +2548,7 @@ Trados, which was founded back in 1984, was sold to the UK-based SDL in 2005.
 
 \boxtext{Language Technology helps unify Europe}
 
-META-NET’s long-term goal is to introduce high-quality language
+META-NET’s vision is high-quality language
 technology for all languages in order to achieve political and
 economic unity through cultural diversity. The technology will help
 tear down existing barriers and build bridges between Europe’s
@@ -2536,8 +2559,7 @@ Drawing on the insights gained so far, it appears that today’s
 'hybrid' language technology mixing deep processing with statistical
 methods will be able to bridge the gap between all European languages
 and beyond. As this series of white papers shows, there is a dramatic
-difference in the state of readiness with respect to language
-solutions and the state of research between Europe’s member states.
+difference between Europe’s member states in terms of both the maturity of the research and in the state of readiness with respect to language solutions.
 
 This white paper series complements other strategic actions taken by
 META-NET (see the appendix for an overview). Up-to-date information
@@ -2545,9 +2567,10 @@ such as the current version of the META-NET vision paper \cite{Vision}
 or the Strategic Research Agenda (SRA) can be found on the META-NET
 web site: \url{http://www.meta-net.eu}.
 
-We are currently witnessing a digital revolution that is comparable to
-Gutenberg’s invention of the printing press.
-
+%FIX: Removed the following sentence (doesn't seem to appear in the Finnish version)
+%We are currently witnessing a digital revolution that is comparable to
+%Gutenberg’s invention of the printing press.
+%END FIX
 
 \end{multicols}
 \clearpage
@@ -2608,7 +2631,7 @@ information and goods can flow freely.
 
 \subsection{Language Borders Hinder the European Information Society}
 
-\boxtext{A global economic and information space confronts us with more languages, speakers and content.}
+\boxtext{The global economy and information space confronts us with different languages, speakers and content.}
 We cannot predict exactly what the future information society will
 look like.  But there is a strong likelihood that the revolution in
 communication technology is bringing people speaking different
@@ -2625,7 +2648,7 @@ Today, we can transmit gigabytes of text around the world in a few
 seconds before we recognise that it is in a language we do not
 understand. According to a recent report from the European Commission,
 57\% of Internet users in Europe purchase goods and services in
-languages that are not their native language. (English is the most
+non-native languages. (English is the most
 common foreign language followed by French, German and Spanish.) 55\%
 of users read content in a foreign language while only 35\% use
 another language to write e-mails or post comments on the
@@ -2712,7 +2735,7 @@ beings had to do the hard work of looking up, reading, translating, and
 summarizing knowledge. We had to wait until Edison to record spoken language –
 and again his technology simply made analogue copies.
 
-Digital language technology can now automate the very processes of translation,
+Language technology can now automate the processes of translation,
 content production, and knowledge management for all European languages. It can
 also empower intuitive language/speech-based interfaces for household
 electronics, machinery, vehicles, computers and robots. Real-world commercial
@@ -2758,7 +2781,7 @@ have the potential to save lives.
 
 \subsection{Challenges Facing Language Technology}
 
-\boxtext{The current pace of technological progress is too slow.}
+\boxtext{Technological progress needs to be accelerated.}
 Although language technology has made considerable progress in the last few
 years, the current pace of technological progress and product innovation is too
 slow. Widely-used technologies such as the spelling and grammar correctors in
@@ -2778,7 +2801,7 @@ could include both computational advances and techniques such as crowdsourcing.
 To illustrate how computers handle language and why it is difficult to program
 them to use it, let’s look briefly at the way humans acquire first and second
 languages, and then see how language technology systems work.
-\boxtext{Humans acquire language skills in two different ways: learning exam-ples and learning the underlying language rules.}
+\boxtext{Humans acquire language skills in two different ways: learning from examples and learning the underlying language rules.}
 Humans acquire language skills in two different ways: learning
 examples and learning the underlying language rules. Babies acquire a
 language by listening to the real interactions between its parents,
@@ -2794,7 +2817,7 @@ structure, vocabulary and spelling using drills that describe linguistic
 knowledge in terms of abstract rules, tables and examples. Learning a foreign
 language gets harder with age.
 \boxtext{The two main types of language technology systems ‘acquire’ language capabilities in a similar manner.}
-The two main types of language technology systems ‘acquire’ language
+Moving now to language technology, the two main types of language technology systems ‘acquire’ language
 capabilities in a similar manner. Statistical (or ‘data-driven’) approaches
 obtain linguistic knowledge from vast collections of concrete example texts.
 While it is sufficient to use text in a single language for training, e.\,g., a
@@ -2886,7 +2909,7 @@ and partly in the vocabulary
 The differences between dialects are clear, and speakers
 from different areas can be identified by their intonation. However, the
 differences are minor enough to allow speakers of different dialects to
-understand each other. Urbanization and other changes in the society have
+understand each other. Urbanisation and other changes in the society have
 softened the dialects and smoothed out the most narrow and distinctive
 features.
 
@@ -3329,14 +3352,14 @@ form. In other words, speech and text technologies overlap and
 interact with other technologies that facilitate processing of
 multimodal communication and multimedia documents.
 
-\begin{figure}[h!]
+\begin{figure*}[htb]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
   \includegraphics[width=\textwidth]{../_media/english/language_technologies}
   \caption{Language technology in context}
   \label{fig:ltincontext-eng}
   \colorrule{grey3}{\textwidth}{1.5pt}
-\end{figure}
+\end{figure*}
 
 
 In the following, we will discuss the main application areas of
@@ -3354,7 +3377,7 @@ applications and basic technologies such as
 
 \item information extraction
 
-\item text summarization
+\item text summarisation
 
 \item question answering
 
@@ -3363,64 +3386,71 @@ applications and basic technologies such as
 \item speech synthesis
 \end{itemize}
 
+%FIX: Inserted this sentence: please integrate it into the Finnish version
+Language technology is an established area of research with an extensive set of introductory literature. The interested reader is referred to the following references:  \cite{carstensen-etal1, jurafsky-martin01, manning-schuetze1, lt-world1, lt-survey1}.
+%END FIX
+
 Before discussing the above application areas, we will shortly
 describe the architecture of a typical LT system.
 
 \subsection{Application Architectures}
 
 Software applications for language processing typically consist of
-several components that mirror different aspects of language.  Figure
-\ref{fig:textprocessingarch-eng} shows a highly simplified
-architecture that can be found in a typical text processing system.
-The first three modules handle the structure and meaning of the text
-input:
+several components that mirror different aspects of language. 
+While such applications tend to be very complex, figure~\ref{fig:textprocessingarch_en} shows a highly simplified architecture of a typical text processing system. The first three modules handle the structure and meaning of the text input:
 
-\begin{figure}[h!]
+\begin{figure*}[b]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
   \includegraphics[width=\textwidth]{../_media/english/text_processing_app_architecture}
   \caption{A Typical Text Processing Architecture}
   \label{fig:textprocessingarch-eng}
   \colorrule{grey3}{\textwidth}{1.5pt}
-\end{figure}
+\end{figure*}
 
 \begin{enumerate}
 \item Pre-processing: cleans the data, analyses or removes formatting,
 detects the input language, and so on.
 
 \item Grammatical analysis: finds the verb, its objects, modifiers and
-other parts of speech as well as detects the sentence structure.
+other sentence elements; detects the sentence structure.
 
 \item Semantic analysis: performs disambiguation (i.\,e., computes the
 appropriate meaning of words in a given context); resolves anaphora
 (i.\,e., which pronouns refer to which nouns in the sentence) and
-substitute expressions; and represents the meaning of the sentence in
+substitute expressions; represents the meaning of the sentence in
 a machine-readable way.
 \end{enumerate}
 After analysing the text, task-specific modules can perform other
-operations, such as automatic summarization and database
-look-ups. This is a simplified and idealised description of the
-application architecture and illustrates the complexity of LT
-applications.
+operations, such as automatic summarisation and database
+look-ups. 
+%FIX: Removed the following sentence:
+%This is a simplified and idealised description of the application architecture and illustrates the complexity of LT applications.
+%END FIX
 
-After introducing the core application areas for language technology,
-we shall provide a brief overview of the state of LT research and
-education today, and end with an overview of past and present research
-programmes. We shall then present an expert estimate of core LT tools
-and resources in terms of various dimensions such as availability,
-maturity and quality. The general situation of LT for the Finnish
-language is then summarised in tabular form.
+%After introducing the core application areas for language technology,
+%we shall provide a brief overview of the state of LT research and
+%education today, and end with an overview of past and present research
+%programmes. We shall then present an expert estimate of core LT tools
+%and resources in terms of various dimensions such as availability,
+%maturity and quality. The general situation of LT for the Finnish
+%language is then summarised in tabular form.
+
+%FIX: Replaced paragraph above by:
+In the remainder of this section, we firstly introduce the core application areas for language technology, and follow this with a brief overview of the state of LT research and education today, and a description of past and present research programmes. Finally, we present an expert estimate of core LT tools and resources for Finnish in terms of various dimensions such as availability, maturity and quality. The general situation of LT for the Finnish language is summarised in a matrix (figure~\ref{fig:lrlttable_en}). 
+LT support for German is also compared to other languages that are part of this series.
+%END FIX
 
 \subsection{Core Application Areas}
 
 In this section, we focus on the most important LT tools and
-resources, and give an overview of LT activities in Finland. Tools and
-resources that are \textbf{bold-faced} in the text can also be
-found in the summary table.
-
+resources, and give an overview of LT activities in Finland. 
+%Tools and resources that are \textbf{bold-faced} in the text can also be found in the summary table.
+%FIX: Replaced sentence above
+Tools and resources that are boldfaced in the text can also be found in figure~\ref{fig:lrlttable_en} (p.~\pageref{fig:lrlttable_en}) at the end of this chapter. 
+%END FIX
 
 \subsubsection{Language Checking}
-
 
 Anyone who has used a word processor knows that a spelling checker highlights 
 spelling mistakes and proposes corrections.  The first spelling correction programs compared
@@ -3436,15 +3466,23 @@ verb-subject agreement (e.\,g.,
 \textit{she *write a letter}]).
 But most spell checkers will not find any errors in the
 following text:
-\begin{itemize} % abuse of itemize
-\item[] \textit{I have a spelling checker,}
 
-\item[] \textit{It came with my PC.}
+%\begin{itemize} % abuse of itemize
+%\item[] \textit{I have a spelling checker,}
+%\item[] \textit{It came with my PC.}
+%\item[] \textit{It plane lee marks four my revue}
+%\item[] \textit{Miss steaks aye can knot sea.} \cite{Surprise}
+%\end{itemize}
 
-\item[] \textit{It plane lee marks four my revue}
+%FIX: Replaced poem above by:
+\begin{quote}
+  I have a spelling checker,\\
+  It came with my PC.\\
+  It plane lee marks four my revue\\
+  Miss steaks aye can knot sea.
+\end{quote}
+%END FIX
 
-\item[] \textit{Miss steaks aye can knot sea.} \cite{Surprise}
-\end{itemize}
 Handling these kinds of errors usually requires an analysis of the
 context. For example: if a word needs to be written in upper case in
 Finnish or not:
@@ -3470,14 +3508,14 @@ English. Neither approach can transfer easily to Finnish because the
 language has a flexible word order, unlimited compound building and a
 richer inflection system.
 
-\begin{figure}[h!]
+\begin{figure*}[t]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
   \includegraphics[width=\textwidth]{../_media/english/language_checking}
-  \caption{Language checking (statistical; rule-based)}
+  \caption{Language checking (top: statistical; bottom: rule-based)}
   \label{fig:langcheckingarch-eng}
   \colorrule{grey3}{\textwidth}{1.5pt}
-\end{figure}
+\end{figure*}
 
 \boxtext{The use of language checking is not limited to word processors; it also applies to authoring support systems.}
 
@@ -3488,7 +3526,7 @@ complex IT, healthcare, engineering and other products. Fearing
 customer complaints about incorrect use and damage claims resulting
 from poorly understood instructions, companies are increasingly
 focusing on the quality of technical documentation while targeting the
-international market (via translation or localization) at the same
+international market (via translation or localisation) at the same
 time. Advances in natural language processing have led to the
 development of authoring support software, which helps the writer of
 technical documentation use vocabulary and sentence structures that
@@ -3545,14 +3583,14 @@ original search terms, such as
 {\foreignlanguage{finnish}{\textit{ydinenergia}}} \textit{[nuclear energy]},
 or even more loosely related terms.
 
-\begin{figure}[h!]
+\begin{figure*}[htb]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
   \includegraphics[width=\textwidth]{../_media/english/web_search_architecture}
   \caption{Web Search}
   \label{fig:websearcharch-eng}
   \colorrule{grey3}{\textwidth}{1.5pt}
- \end{figure}
+ \end{figure*}
 
 \boxtext{The next generation of search engines will have to include much more sophisticated language technology.}
 
@@ -3571,14 +3609,12 @@ the system needs to determine the relevant years. And, the query needs
 to be matched against a huge amount of unstructured data to find the
 piece or pieces of relevant information the user wants. This is called
 “information retrieval”, and involves searching and ranking relevant
-documents. To generate a list of companies, the system also needs to
-recognise a particular string of words in a document as a company
-name, a process called “named entity recognition”.
+documents. To generate a list of companies, the system also needs to recognise a particular string of words in a document represents a company name, using a process called named entity recognition.
 
 A more demanding challenge is matching a query in one language with
 documents in another language. Cross-lingual information retrieval
 involves automatically translating the query into all possible source
-languages and then translating the results back into the target
+languages and then translating the results back into the user's target
 language.
 
 Now that data is increasingly found in non-textual formats, there is a
@@ -3589,7 +3625,7 @@ content into text (or into a phonetic representation) that can then be
 matched against a user query.
 
 In Finland, there are few small and medium size enterprises to actively develop and apply search
-technologies at the moment, although Gurusoft specializes in applying
+technologies at the moment, although Gurusoft specialises in applying
 language independent Self-organizing maps (SOM methods) to information
 retrieval tasks, but the product Docunaut is designed to apply the method in searches within the intranets of their customers instead of the world wide web. At present
 there are no ongoing large-scale Finnish language search engine
@@ -3599,17 +3635,21 @@ projects.
 
 \boxtext{Speech technology is the basis for creating interfaces that allow a user to interact with spoken language instead of a graphical display, keyboard and mouse.}
 
-Speech technology is used to create interfaces that enable users to
-interact in spoken language instead of a graphical display, keyboard and mouse.
-Today, voice user interfaces (VUI) are used for partially or
-fully automated telephone services provided by companies to customers,
-employees or partners. Business domains that rely heavily on VUIs include
-banking, supply chain, public transportation, and telecommunications. Other
-uses of speech technology include interfaces to car navigation systems and the
-use of spoken language as an alternative to the graphical or touch-screen
-interfaces in smartphones.
+%Speech technology is used to create interfaces that enable users to
+%interact in spoken language instead of a graphical display, keyboard and mouse.
 
-Speech technology comprises four technologies:
+%FIX: Replaced sentence above by:
+Speech interaction is one of many application areas that depend on speech technology, i.\,e., technologies for processing spoken language. Speech interaction technology is used to create interfaces that enable users to interact in spoken language instead of using a graphical display, keyboard and mouse.  
+%END FIX
+
+Today, these voice user interfaces (VUI) are used for partially or fully automated telephone services provided by companies to customers, employees or partners. Business domains that rely heavily on VUIs include banking, supply chain, public transportation, and telecommunications. Other uses of speech 
+interaction %FIX: Inserted "interaction"
+technology include interfaces to car navigation systems and the use of spoken language as an alternative to the graphical or touchscreen interfaces in smartphones.  
+
+Speech 
+interaction %FIX: Inserted "interaction"
+technology comprises four technologies:
+
 \begin{enumerate}
 \item Automatic \textbf{speech recognition} (ASR) determines which words are actually
     spoken in a given sequence of sounds uttered by a user.
@@ -3624,14 +3664,14 @@ Speech technology comprises four technologies:
     sounds for the user.
 \end{enumerate}
 
-  \begin{figure}[h!]
-    \colorrule{grey3}{\textwidth}{1.5pt}
-    \center
-    \includegraphics[width=\textwidth]{../_media/english/simple_speech-based_dialogue_architecture}
+\begin{figure*}[htb]
+  \colorrule{grey3}{\textwidth}{1.5pt}
+  \center
+  \includegraphics[width=\textwidth]{../_media/english/simple_speech-based_dialogue_architecture}
     \caption{Speech-based dialogue system}
     \label{fig:dialoguearch-eng}
     \colorrule{grey3}{\textwidth}{1.5pt}
-  \end{figure}
+  \end{figure*}
 
 One of the major challenges of ASR systems is to accurately recognise the words
 a user utters. This means restricting the range of possible user utterances to
@@ -3646,16 +3686,16 @@ language models and initially allow a user to express their intent more
 flexibly — prompted by a \textit{How may I help you?} greeting — tend to be automated
 and are better accepted by users.
 
-Companies tend to use pre-recorded utterances by professional speakers for
+Companies tend to use utterances pre-recorded by professional speakers for
 generating the output of the voice user interface. For static utterances where
 the wording does not depend on particular contexts of use or personal user
 data, this can deliver a rich user experience. But more dynamic content in an
-utterance may suffer from unnatural intonation because bits of audio files have
+utterance may suffer from unnatural intonation because different parts of audio files have
 simply been strung together. Today’s TTS systems are getting better (though
 they can still be optimised) at producing natural-sounding dynamic utterances.
 
-Interfaces in the market for speech technology have been
-considerably standardised during the last decade in terms of their various
+Interfaces in the market for speech technology 
+have been considerably standardised during the last decade in terms of their various
 technology components. There has also been strong market consolidation in
 speech recognition and speech synthesis. The national markets in the G20
 countries (economically resilient countries with high populations) have been
@@ -3718,7 +3758,7 @@ such as weather reports. But to produce a good translation of less standardised
 texts, larger text units (phrases, sentences, or even whole passages) need to
 be matched to their closest counterparts in the target language. The major
 difficulty is that human language is ambiguous. Ambiguity creates challenges on
-multiple levels, such as word sense disambiguation on the lexical level (a
+multiple levels, such as word sense disambiguation at the lexical level (a
 \textit{jaguar} is a brand of car or an animal) or the assignment of case on the
 syntactic level, for example:
 \begin{itemize}
@@ -3744,7 +3784,7 @@ In the late 1980s when computational power increased and became cheaper, there
 was more interest in statistical models for machine translation. Statistical
 models are derived from analysing bilingual text corpora, such as the Europarl
 \textbf{parallel corpus}, which contains the proceedings of the European Parliament in
-11 European languages. Given enough data, statistical MT works well enough to
+21 European languages. Given enough data, statistical MT works well enough to
 derive an approximate meaning of a foreign language text by processing parallel
 versions and finding plausible patterns of words. But unlike knowledge-driven
 systems, statistical (or data-driven) MT often generates ungrammatical output.
@@ -3752,14 +3792,14 @@ Data-driven MT is advantageous because less human effort is required, and it
 can also cover special particularities of the language (e.\,g., idiomatic
 expressions) that can get ignored in knowledge-driven systems.
 
-\begin{figure}[h!]
+\begin{figure*}[htb]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
   \includegraphics[width=\textwidth]{../_media/english/machine_translation}
   \caption{Machine translation (statistical; rule-based)}
   \label{fig:mtarch-eng}
   \colorrule{grey3}{\textwidth}{1.5pt}
-\end{figure}
+\end{figure*}
 
 \boxtext{Machine Translation is particularly challenging for the Finnish language.}
 
@@ -3845,7 +3885,7 @@ documents that potentially contain the answer can be analysed and compared (do
 they provide conflicting answers?); and how specific information (the answer)
 can be reliably extracted from a document without ignoring the context.
 
-This is in turn related to information extraction (IE), an area that was
+Question answering is in turn related to information extraction (IE), an area that was
 extremely popular and influential when computational linguistics took a
 statistical turn in the early 1990s. IE aims to identify specific pieces of
 information in specific classes of documents, such as detecting the key players
@@ -3859,15 +3899,15 @@ needs to be embedded into a suitable application environment.
 
 \boxtext{For the Finnish language, research in most text technologies is much less developed than for the English language.}
 
-Text summarization and \textbf{text generation} are two borderline areas that can act
+Text summarisation and \textbf{text generation} are two borderline areas that can act
 either as standalone applications or play a supporting role “under the hood”.
-Summarization attempts to give the essentials of a long text in a short form,
+Summarisation attempts to give the essentials of a long text in a short form,
 and is one of the features available in Microsoft Word. It mostly uses a
 statistical approach to identify the “important” words in a text (i.\,e., words
 that occur very frequently in the text in question but less frequently in
 general language use) and determine which sentences contain the most of these
 “important” words. These sentences are then extracted and put together to
-create the summary. In this very common commercial scenario, summarization is
+create the summary. In this very common commercial scenario, summarisation is
 simply a form of sentence extraction, and the text is reduced to a subset of
 its sentences. An alternative approach, for which some research has been
 carried out, is to generate brand new sentences that do not exist in the source
@@ -3876,29 +3916,28 @@ this approach is far less robust. On the whole, a text generator is rarely used
 as a stand-alone application but is embedded into a larger software
 environment, such as a clinical information system that collects, stores and
 processes patient data. Creating reports is just one of many applications for
-text summarization.
+text summarisation.
 
 For the Finnish language, research in these text technologies is much
 less developed than for the English language. Question answering,
-information extraction, and summarization have been the focus of
+information extraction, and summarisation have been the focus of
 numerous open competitions in the USA since the 1990s, primarily
 organised by the government-sponsored organisations DARPA and
 NIST. These competitions have significantly improved the
 start-of-the-art, but their focus has mostly been on the English
 language.  As a result, there are hardly any annotated corpora or
 other special resources needed to perform these tasks in Finnish. When
-summarization systems use purely statistical methods, they are largely
+summarisation systems use purely statistical methods, they are largely
 language-independent and a number of research prototypes are
 available. For text generation, reusable components have traditionally
-been limited to surface realization modules (generation grammars) and
+been limited to surface realisation modules (generation grammars) and
 most of the available software is for the English language.  
 
 
 \subsection{Educational Programmes}
 
-Language Technology is a highly interdisciplinary field, involving the
-expertise of linguists, computer scientists, mathematicians, philosophers,
-psycholinguists, and neuroscientists, among others Language Technology has been
+Language technology is a very interdisciplinary field that involves the combined expertise of linguists, computer scientists, mathematicians, philosophers, psycholinguists, and neuroscientists among others. 
+Language Technology has been
 taught as a major subject at the University of Helsinki since 1994, and it has
 been active in cooperation with other universities offering courses in the
 neighbouring fields on both national and international level. The national
@@ -4040,7 +4079,7 @@ The key results for the Finnish language can be summed up as follows:
 \begin{itemize}
 \item While some specific corpora of high quality exist, sufficiently large
     syntactically annotated corpora are not available yet and many of the
-    resources lack standardization. The commercial sector in Finland needs
+    resources lack standardisation. The commercial sector in Finland needs
     large, up-to date resources for the product development targeted to the big
     public.
 
@@ -4091,17 +4130,30 @@ application areas (machine translation and speech processing) and one
 underlying technology (text analysis), as well as basic resources
 needed for building LT applications.
 
-The languages were positioned into clusters based on the following
-five-point scale:
-\begin{itemize}
-\item[] Cluster 1: excellent support
-\item[] Cluster 2: good support
-\item[] Cluster 3: moderate support
-\item[] Cluster 4: fragmentary support
-\item[] Cluster 5: weak or no support
-\end{itemize}
+%The languages were positioned into clusters based on the following five-point scale:
+%FIX: Replaced sentence above
+The languages were categorised using the following five-point scale: 
+%END FIX
 
-LT support was measured according to the following criteria:
+%\begin{itemize}
+%\item[] Cluster 1: excellent support
+%\item[] Cluster 2: good support
+%\item[] Cluster 3: moderate support
+%\item[] Cluster 4: fragmentary support
+%\item[] Cluster 5: weak or no support
+%\end{itemize}
+
+%FIX: Replaced item list
+\begin{enumerate}
+\item Excellent support
+\item Good support
+\item Moderate support
+\item Fragmentary support
+\item Weak or no support
+\end{enumerate}
+%END FIX
+
+Language Technology support was measured according to the following criteria:
 \begin{itemize}
 \item Speech Processing: Quality of existing speech recognition
        technologies, quality of existing speech synthesis
@@ -4362,8 +4414,7 @@ Swedish \newline
   \label{fig:resources_cluster_en}
 \end{figure*}
 
-The tables
-show that the LT funding and thus the resources available for
+Figures~\ref{fig:speech_cluster_en} to~\ref{fig:resources_cluster_en} (p.~\pageref{fig:speech_cluster_en} and~\pageref{fig:resources_cluster_en}) show that the LT funding and thus the resources available for
 developing resources for the Finnish language in the recent decades has been
 smaller than for the major European languages in general, and particularly
 English. Based on the evaluation, machine translation technologies for Finnish
@@ -4385,14 +4436,7 @@ advanced application areas, including high-quality machine translation.
 
 \subsection{Conclusions}
 
-
-\textbf{In this series of white papers, we have made an important
-initial effort to assess language technology support for 30 European
-languages, and provide a high-level comparison across these
-languages. By identifying the gaps, needs and deficits, the European
-language technology community and related stakeholders are now in a
-position to design a large scale research and development programme
-aimed at building a truly multilingual, technology-enabled Europe.}
+\emph{In this series of white papers, we have made an important effort by assessing the language technology support for 30 European languages, and by providing a high-level comparison across these languages. By identifying the gaps, needs and deficits, the European language technology community and its related stakeholders are now in a position to design a large scale research and development programme aimed at building a truly multilingual, technology-enabled communication across Europe.}
 
 We have seen that there are huge differences between Europe’s
 languages. While there are good quality software and resources
@@ -4434,7 +4478,7 @@ effort to create LT resources for Finnish, and use them to drive
 forward research, innovation and development. The need for large
 amounts of data and the extreme complexity of language technology
 systems makes it vital to develop a new infrastructure and a more
-coherent research organization to spur greater sharing and
+coherent research organisation to spur greater sharing and
 cooperation.
 
 There is also a lack of continuity in research and development
@@ -4466,7 +4510,7 @@ professionals and organisations in Europe.
 % Figger: Countries Represented in META-NET
 
 META-NET cooperates with other initiatives like the Common Language
-Resources and Technology Infrastructure (CLARIN), which is helping
+Resources and Technology Infrastructure (CLARIN), which is helping to
 establish digital humanities research in Europe. META-NET fosters the
 technological foundations for a truly multilingual European
 information society that:
@@ -4486,7 +4530,7 @@ wants to improve current approaches, so better communication and
 cooperation across languages can take place. Europeans have an equal
 right to information and knowledge regardless of language.
 
-\subsection{Lines of Action}
+%\subsection{Lines of Action}
 
 META-NET launched on 1 February 2010 with the goal of advancing
 research in language technology (LT). The network supports a Europe
@@ -4547,12 +4591,15 @@ and training events for members of the community. This activity has
 already clearly identified aspects of MT where semantics can impact
 current best practices. In addition, the activity has created
 recommendations on how to approach the problem of integrating semantic
-information in MT. META-RESEARCH is also finalising a new language
+information into MT. META-RESEARCH is also finalising a new language
 resource for MT, the Annotated Hybrid Sample MT Corpus, which provides
 data for English-German, English-Spanish and English-Czech language
 pairs. META-RESEARCH has also developed software that collects
 multilingual corpora that are hidden on the Web.
 \end{multicols}
+
+\vfill
+\centerline{office@meta-net.eu -- http://www.meta-net.eu}
 
 \cleardoublepage
 
@@ -4573,8 +4620,8 @@ multilingual corpora that are hidden on the Web.
 %tutkimuslaitokset ja niiden edustajat.
 
 \small
-\begin{longtable}{@{}llp{113mm}@{}}
 
+\begin{longtable}{@{}llp{113mm}@{}}
 Alankomaat & \textcolor{grey1}{Netherlands} & Utrecht Institute of Linguistics, Utrecht University: Jan Odijk\\ \addlinespace 
   & & Computational Linguistics, University of Groningen: Gertjan van Noord\\ \addlinespace
 Belgia & \textcolor{grey1}{Belgium} & Computational Linguistics and Psycholinguistics Research Centre, University of Antwerp: Walter Daelemans\\ \addlinespace
@@ -4630,6 +4677,7 @@ Yhdistyneet Kuningaskunnat & \textcolor{grey1}{UK} &
   & & Institute for Language, Cognition and Computation, Center for Speech Technology Research, University of Edinburgh: Steve Renals \\ \addlinespace 
   & & Research Institute of Informatics and Language Processing, University of Wolverhampton: Ruslan Mitkov
 \end{longtable}
+\normalsize
 
 
 \renewcommand*{\figureformat}{}
@@ -4638,8 +4686,8 @@ Yhdistyneet Kuningaskunnat & \textcolor{grey1}{UK} &
 \begin{figure*}[htbp]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
-  \includegraphics[width=\textwidth]{../_media/meta-net_team.jpg}
-  %\fbox{Dummy -- we'll include the group photo of our META-NET meeting in Berlin here}
+  %\includegraphics[width=\textwidth]{../_media/meta-net_team.jpg}
+  \fbox{Dummy -- we'll include the group photo of our META-NET meeting in Berlin here}
   \caption{Lähes 100 kieliteknologian asiantuntijaa, jotka edustavat META-NET -hankkeen
 jäsenmaita ja kansallisia kieliä,  viimeistelivät META-NET valkoisten kirjojen
 julkaisusarjan keskeiset tulokset ja sanoman META-NET -hankkeen Berliinissä,
