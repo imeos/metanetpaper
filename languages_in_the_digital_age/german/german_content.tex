@@ -1267,15 +1267,23 @@ die Sammlung von Daten, der Aufbereitung von Datenquellen und Sprachressourcen f
 \end{multicols}
 
 \vfill
+
+\@ifundefined{theHsection}{%
+  \let
+}
+{
+  \renewcommand*{\theHsection}{\thepart.\thesection}
+}
+\part*{\textcolor{white}{English}}
+\setcounter{section}{0}
+\setcounter{figure}{0}
+
 \centerline{office@meta-net.eu -- http://www.meta-net.eu}
 
 \addtocontents{toc}{\protect\clearpage\protect}
 \addtocontents{toc}{\protect\thispagestyle{empty}\protect}
 \addtocontents{toc}{\protect\vspace*{4mm}\protect}
 \addtocontents{toc}{\smallskip{\Large\textsf{\centerline{THE GERMAN LANGUAGE IN THE DIGITAL AGE}}\par}}
-
-\setcounter{section}{0}
-\setcounter{figure}{0}
 
 \cleardoublepage
 
