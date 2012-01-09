@@ -49,6 +49,10 @@ Práce na této Bílé knize byla financována 7. Rámcovým programem Evropské
 
 
 \FundingRNotice{\selectlanguage{english}
+The authors of this document are grateful to the authors of the white paper on German for permission to re-use selected language-independent materials from their document \cite{lwpgerman}. 
+
+\bigskip
+
   The development of this white paper has been funded by the Seventh
   Framework Programme and the ICT Policy Support Programme of the
   European Commission under the contracts T4ME (Grant Agreement
@@ -1208,7 +1212,7 @@ In the rest of this section, we first describe the architecture of a typical LT 
 Software applications for language processing typically consist of several components that mirror different aspects of language and of the task they implement. The figure on the right displays a highly simplified architecture that can be found in a text processing system. The first three modules deal with the structure and meaning of the text input:
 \begin{enumerate}
   \item Pre-processing: cleaning up the data, removing formatting, detecting the input language, etc.
-  \item Grammatical analysis: finding the verb and its objects, modifiers, etc.; analyzing the sentence structure.
+  \item Grammatical analysis: finding verb, its objects, modifiers and other sentence elements; analyzing the sentence structure.
   \item Semantic analysis: disambiguation (Which meaning of “apple” is the right one in the given context?), resolving coreferential expressions like “she”, “the car”, etc.; representing the meaning of the sentence in a machine-readable way
 \end{enumerate}
 Task-specific modules then perform many different operations such as automatic summarization of an input text, database look-ups and many others.
@@ -1334,7 +1338,7 @@ Apart from simple cases of replacement of suffixes of Common Czech by their lite
 
 The second line of research focuses on the development of syntactic and semantic analysers of Czech with the help of manually annotated tree corpora of written and spoken Czech. In conjunction with a morphological analysis, this method should help address problems of free word order and of the large number of word forms.
 
-Current research on synthesized spoken Czech tries to develop more natural voices. Hopes are placed in advanced syntactic and semantic analysis of input texts, which should significantly improve the n naturalness of utterances.
+Current research on synthesized spoken Czech tries to develop more natural voices. Hopes are placed in advanced syntactic and semantic analysis of input texts, which should significantly improve the naturalness of utterances.
 
 \subsubsection{Machine Translation}
 
@@ -1342,7 +1346,7 @@ The idea of using digital computers to translate natural languages can be traced
 
 \boxtext{At its basic level, Machine Translation simply substitutes words in one natural language with words in another language.}
 The idea of the translation by the computers became attractive for linguists and mathematicians in the Czech Republic very soon after the first experiments with MT in the world (1954 in USA, 1955 in Soviet Union). In January 1960 the first experiment with English-Czech MT of several sentences by the computer of the 1st generation SAPO, made in earlier Czechoslovakia, was carried out due to the efforts of the small research group from Charles University and the Research Institute of Mathematical Machines. The development of the methods used in MT was continuously followed by the university linguistic research group and some experimental rule-based systems of English-Czech and Czech-Russian MT systems were developed for the computers of 2nd generation (made in GDR and in USSR). They were domain-restricted and served mainly for a verification of formally expressed grammatical rules. In the 1990s a prototype of MT between closely related languages was proposed for the pair Czech and Slovak at Charles University (Česílko\cite{Note18}); however, its application fails due to practical reasons (such as high costs connected with its maintenance etc.). The strategy of statistical methods or combination of statistical and rule-based methods was chosen as a more prospective one for the future.
-The most basic approach to machine translation is the automatic replacement of the words in a text written in one natural language with the equivalent words of another language. This can be useful in subject domains that have a very restricted, formulaic language such as weather reports (system METEO\cite{Note19}). However, in order to produce a good translation of less restricted texts, larger text units (phrases, sentences, or even whole passages) need to be matched to their closest counterparts in the target language. The major difficulty is that human language is ambiguous, which presents challenges on multiple levels, for example word sense disambiguation on the lexical level or the attachment of prepositional phrases on the syntactic level.
+The most basic approach to machine translation is the automatic replacement of the words in a text written in one natural language with the equivalent words of another language. This can be useful in subject domains that have a very restricted, formulaic language such as weather reports (system METEO\cite{Note19}). However, in order to produce a good translation of less restricted texts, larger text units (phrases, sentences, or even whole passages) need to be matched to their closest counterparts in the target language. The major difficulty is that human language is ambiguous, which presents challenges on multiple levels, for example word sense disambiguation at the lexical level or the attachment of prepositional phrases on the syntactic level.
 
 One way to build an MT system is to use linguistic rules. For translations between closely related languages, a translation using direct substitution may be feasible in cases such as the above example. However, rule-based (or linguistic knowledge-driven) systems often analyse the input text and create an intermediary symbolic representation from which the target language text can be generated. The success of these methods is highly dependent on the availability of extensive lexicons with morphological, syntactic, and semantic information, and large sets of grammar rules carefully designed by skilled linguists. This is a very long and therefore costly process.
 
