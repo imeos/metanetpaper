@@ -24,12 +24,12 @@
 \subtitle{Série Bílé knihy META-NET --- White Paper Series} %FIXME Please adapt the Czech part
 
 \author{
-  Jarmila Panevová, %FIXME Please add Affiliations
+  Jarmila Panevová, %FIXME Please add affiliations
   Jiří Mírovský,
   Barbora Vidová Hladká
 }
 \editors{
-  Georg Rehm, Hans Uszkoreit\\(Herausgeber, \textcolor{grey1}{editors})
+  Georg Rehm, Hans Uszkoreit\\(Herausgeber, \textcolor{grey1}{editors}) %FIXME Please translate into Czech
 }
 %--------------------------------------------------------
 \begin{document}
@@ -39,10 +39,20 @@
 \null
 \pagestyle{empty} 
 
-\FundingLNotice{\selectlanguage{german}
- Práce na této Bílé knize byla financována 7. Rámcovým programem Evropské komise a Programem na podporu politiky informačních a komunikačních technologií (ICT Policy Support Programme of the European Commission) na základě smluv T4ME (grantové dohoda 249119), CESAR (grantová dohoda 271022), METANET4U (grantová dohoda 270893) a META-NORD (grantová dohoda 270899).}
+\FundingLNotice{\selectlanguage{czech}
+Autoři tohoto dokumentu děkují autorům Bílé knihy pro němčinu za povolení  použít vybrané jazykově nezávislé části z jejich dokumentu \cite{lwpgerman}.
+
+\bigskip
+
+Práce na této Bílé knize byla financována 7. Rámcovým programem Evropské komise a Programem na podporu politiky informačních a komunikačních technologií (ICT Policy Support Programme of the European Commission) na základě smluv T4ME (grantové dohoda 249119), CESAR (grantová dohoda 271022), METANET4U (grantová dohoda 270893) a META-NORD (grantová dohoda 270899).}
+
+
 
 \FundingRNotice{\selectlanguage{english}
+The authors of this document are grateful to the authors of the white paper on German for permission to re-use selected language-independent materials from their document \cite{lwpgerman}. 
+
+\bigskip
+
   The development of this white paper has been funded by the Seventh
   Framework Programme and the ICT Policy Support Programme of the
   European Commission under the contracts T4ME (Grant Agreement
@@ -79,8 +89,9 @@ META-NET consists of 54 research centres from 33 countries that are working with
 
 \cleardoublepage
 %---------------------------------------
-\bsection*{Inhaltsverzeichnis --- Table of Contents} %FIXME
+\bsection*{Inhaltsverzeichnis --- Table of Contents} %FIXME Please translate into Czech
 
+\renewcommand\contentsname{}
 \tableofcontents
 
 \addtocontents{toc}{\protect\thispagestyle{empty}\protect}
@@ -604,7 +615,7 @@ Gramatiky                 & 1 & 1 & 3 & 2 & 2 & 1 & 1\\ \addlinespace
 
 Na závěr můžeme konstatovat, že v řadě konkrétních oblastí výzkumu českého jazyka máme v současné době k dispozici software s omezenou funkčností a prostředky s omezeným rozsahem a jen některé z nich jsou publikovány jako open-source. Je nasnadě, že další výzkumné snahy musí směřovat k současným nedostatkům.
 
-\subsection{Porovnání napříč jazyky --- Cross-language comparison}
+\subsection{Porovnání napříč jazyky}
 
 Aktuální stav podpory jazykových technologií se liší napříč jazykovými skupinami. V této části prezentujeme vyhodnocení dvou aplikačních oblastí (strojový překlad a zpracování mluvené řeči) a jedné základní technologie (analýza textu) spolu s vyhodnocením datových zdrojů nezbytných pro vytváření aplikací jazykových technologií. 
 Z výše uvedených tabulek vyplývá, že jazykově-technologické prostředky a nástroje pro češtinu zatím zjevně nedosahují kvality a pokrytí srovnatelných zdrojů a nástrojů pro angličtinu a některé další „větší“ jazyky v EU. A to stále ještě ve zdrojích pro angličtinu – s ohledem na vysokou kvalitu aplikací – narážíme na mnoho nedostatků.\\ 
@@ -893,7 +904,7 @@ Tři směry činnosti sítě META-NET
 %ENGLISCH
 %_-----------------------------------------------------------------------------------
   
-\ssection [Executive Summary]{Shrnutí --- Executive Summary}
+\ssection [Executive Summary]{Executive Summary}
 \begin{multicols}{2}
 During the last 60 years, Europe has become a distinct political and economic structure. Culturally and linguistically it is rich and diverse. However, from Portuguese to Polish and Italian to Icelandic, everyday communication between Europe’s citizens, within business and among politicians is inevitably confronted with language barriers. The EU's institutions spend about a billion euros a year on maintaining their policy of multilingualism, i.\,e., translating texts and interpreting spoken communication. Does this have to be such a burden? Language technology and linguistic research can make a significant contribution to removing the linguistic borders. Combined with intelligent devices and applications, language technology will help Europeans talk and do business together even if they do not speak a common language.
 The Czech economy takes great advantage from the European single market.
@@ -912,7 +923,7 @@ Rather than building on the outcomes of these research projects, Europe has tend
 
 \boxtext{Language Technology helps to unify Europe.}
 
-Drawing on the insights gained so far, it appears that today’s ‘hybrid’ language technology mixing deep processing with statistical methods will be able to bridge the gap between all European languages and beyond. As this series of white papers shows, there is a dramatic difference in the state of readiness with respect to language solutions and the state of research between Europe’s member states. Czech is one of the ‘smaller’ EU languages and needs further research before truly effective language technology solutions are ready for everyday use.
+Drawing on the insights gained so far, it appears that today’s ‘hybrid’ language technology mixing deep processing with statistical methods will be able to bridge the gap between all European languages and beyond. As this series of white papers shows, there is a dramatic difference between Europe’s member states in terms of both the maturity of the research and in the state of readiness with respect to language solutions. Czech is one of the ‘smaller’ EU languages and needs further research before truly effective language technology solutions are ready for everyday use.
 META-NET’s vision is high-quality language technology for all languages that supports political and economic unity through cultural diversity. This technology will help tear down existing barriers and build bridges between Europe’s languages. This requires all stakeholders -- in politics, research, business, and society -- to unite their efforts for the future.
 
 This whitepaper series complements the other strategic actions taken by META-NET (see the appendix for an overview). Up-to-date information such as the current version of the META-NET vision paper \cite{Meta1} or the Strategic Research Agenda (SRA) can be found on the META-NET web site: http://www.meta-net.eu.
@@ -1012,7 +1023,7 @@ Humans acquire language skills in two different ways. Babies acquire a language 
 
 Learning a second language at an older age requires more cognitive effort, largely because the child is not immersed in a language community of native speakers. At school, foreign languages are usually acquired by learning grammatical structure, vocabulary and spelling using drills that describe linguistic knowledge in terms of abstract rules, tables and examples.
 
-\boxtext{Humans acquire language skills in two different ways: learning examples and learning the underlying language rules.}
+\boxtext{Humans acquire language skills in two different ways: learning from examples and learning the underlying language rules.}
 
 Moving now to language technology, the two main types of systems acquire language capabilities in a similar manner. Statistical (or data-driven) approaches obtain linguistic knowledge from vast collections of concrete example texts. While it is sufficient to use text in a single language for training, e.\,g., a spell checker, parallel texts in two (or more) languages have to be available for training a machine translation system. The machine learning algorithm then learns patterns of how words, short phrases and complete sentences are translated.
 This statistical approach usually requires millions of sentences to boost performance quality. This is one reason why search engine providers are eager to collect as much written material as possible. Spelling correction in word processors, and services such as Google Search and Google Translate, all rely on statistical approaches. The great advantage of statistics is that the machine learns quickly in a continuous series of training cycles, even though quality can vary randomly.
@@ -1026,10 +1037,10 @@ As we have seen in this chapter, many applications widely used in today’s info
 \clearpage
 %-------------------------------
 
-\ssection [Czech in the European Information Society]{Čeština v evropské informační společnosti --- Czech in the European Information Society}
+\ssection [Czech in the European Information Society]{Czech in the European Information\newline Society}
 \begin{multicols}{2}
 
-\subsection{Obecné informace --- General Facts}
+\subsection{General Facts}
 
 Czech, one of the West Slavonic languages, has about 10 million speakers. Most of them are in the Czech Republic (also called Czechia; hence CR), consisting of three historical regions: Bohe-mia, Moravia and Silesia.\cite{Note1_en} In the other parts of the world, there are about 200 thousand speakers, mostly emigrants and the children of emigrants who left the country in sizable migration waves around World War I and World War II, and the years 1948 and 1968. Many Czech speakers can be found esp. in Austria (mostly in Vienna), Poland, Germany, Ukraine, Croatia (mostly in Daruvar area), in Western Romania (in Banat), in Australia, and Canada. Several tens of thousands of Czechs have continued to live in the Slovak Republic after the split of Czechoslovakia in 1993. However, the largest group of Czech speakers outside of the CR lives in United States, in cities like New York, Chicago or Cleveland and in number of communities in Texas, Wisconsin, Minnesota, and Nebraska. According to a US Census, more than 90,000 Czech speakers lived in United States in 1990.\cite{Note2}
 
@@ -1041,7 +1052,7 @@ In common communication, most people prefer rather other varieties of Czech than
 
 Czech along with Slovak, Polish, and the Upper and Low Sorbian belongs to the western Slavonic group. However, Czech separated from the other Slavonic languages by a number of changes, most of which took place in the 10th through 16th centuries (sound changes such as a’ > ě, g > h, r’> ř). On one hand, in 15th century, Czech lost the dual number and two of the Slavic past tenses – the aorist and imperfect. On the other hand, the verbal aspect had grown more significant and the number of declensions had increased. In writing, initially, the medieval Latin alphabet was used. For sounds not present in Latin, digraphs were used. In the early 15th century, they were replaced by single letters with diacritics by the religious reformer Jan Hus („háček“ for the palatal/palatalized consonants – ť, ď, ň, ř, š, ť, ž; „čárka“ for long vowels – á, é, í, ó, ú, ý). The only digraph surviving in modern Czech is ch. Long u might have a ring – ů (coming from the chain of changes ó > uo > ů).
  
-\subsection{Specifika češtiny --- Particularities of the Czech Language }
+\subsection{Particularities of the Czech Language }
 
 The Czech language is a highly inflectional language with a complicated morphology. The noun declension distinguishes 7 cases (Nom, Gen, Dat, Accus, Voc, Loc, Instr), 2 numbers (sg, pl) and 4 genders (masc. anim, mascinanim, fem, neutr). Every category has several types of declensions (e.g. masc inanim has in school grammars two types of declension “hrad” {[}castle{]} and “stroj” {[}machine{]} with Gen sg “hrad\textbf{u}”, “stroj\textbf{e}” , respectively. However, some nouns classified as the “hrad” type have in Gen sg the ending –a (“les\textbf{a}”), some have both endings (bez rybník\textbf{u} {[}without a pond{]}, do rybník\textbf{a} {[}to a pond{]}).
 
@@ -1101,7 +1112,7 @@ The possibility of word-order shifts causes discontinuities (as in ex. (7)), whi
 	\item[] \textit{{[}Paul decided to return this book to library only tomorrow{]}}
 \end{itemize}
 \end{itemize}
-\subsection{Současný vývoj --- Recent Developments}
+\subsection{Recent Developments}
 
 Though the Czech language preserves 98\% of its vocabulary from the Old Slavonic language, it is not insensitive to the influence of other languages.\cite{Note5} Till the 19th century German was the main language in contact (see e.g. words as “knedlík” {[}der Knődel; the dumpling{]}, “šunka” {[}der Schinken; the ham{]}, “taška” {[}die Tasche; the bag{]}, “brýle” {[}die Brille; the glasses{]}, “blok” {[}der Block; the block{]}, “cihla” {[}der Ziegel; the brick{]}, “muset” {[}műssen; must{]}).
 
@@ -1121,7 +1132,7 @@ The neologisms in the Czech language were published in 3 books edited by Olga Ma
 
 The facts presented in this section and following the influence of languages in contact are as to the development of Czech vocabulary marginal and they do not represent any dangerous for the system of Czech scientific terminology.
 
-\subsection{Kultivace jazyka v České republice --- Language Cultivation in the Czech Republic}
+\subsection{Language Cultivation in the Czech Republic}
 
 As mentioned in the section General Facts, the Institute of Czech Language of Academy of Science of Czech Republic influences the language policy in the CR. Its Advisory Department is an important section of this Institute. Experienced linguists working here answer the questions asked by public in written form, by e-mail or by direct telephone calls. Practical popular handbooks are published as a reaction on the deep interest of the Czech society in the language culture and the problems of language planning. These include for example the handbooks “Na co se nás často ptáte” {[}The frequent questions for us{]} (\cite{Cerna}), “Jak používat čárku a další interpunkční znaménka” {[}How to use commas and other punctuation{]} (\cite{Janovec}). The Institute provides special web pages as a supplement service for the public.\cite{Note6}
 
@@ -1132,7 +1143,7 @@ eského jazyka {[}The Circle of Friends of Czech Language{]}), The journal Naše
 
 The results of wide discussions are reflected in the normative grammars and in other normative handbooks. The language rules in them are formulated as a recommendation for the users who are interested in a cultural way of expression in their native language. The use of normative handbooks is required as obligatory in the elementary and secondary schools by the Ministry of Education, Youth and Sport of the CR.
 
-\subsection{Jazyk ve vzdělávání --- Language in Education}
+\subsection{Language in Education}
 
 The Czech language is an obligatory subject in all types of the elementary and secondary (high) schools. It also belongs to obligatory subjects for a school-leaving examination. However, the subject is called “Czech language and literature” and covers teaching of the language (its grammar and other types of language skills) as well as the literature (including some notions from the literary science).  Because there is no subject in school curricula which involves the world literature, a brief survey of it is included under the roof of the subject “Czech language and literature”. A discussion among specialists in the didactics, psychology, Czech language and literary scientists and the Ministry of Education, Youth and Sport about the separation of the Czech language on one side and the Czech and World literature on the other in the school curriculum took place 4-5 years ago. Unfortunately, the discussion failed, and in this respect the situation has not changed.
 
@@ -1146,7 +1157,7 @@ Another type of tool for teaching and exercising of Czech, CETLEF\cite{Note9en},
 
 The collection of students’ errors in special corpora (so-called students’ corpora) is also a promising application of computers during the process of language teaching and learning. The errors are classified according to their sources and the feedback between teachers and students is reflected (see also the webpage of Technical University in Liberec\cite{Note10}).
 
-\subsection{Mezinárodní aspekty --- International Aspects}
+\subsection{International Aspects}
 
 Czech Republic is a small country covering 78,867 km$^{\textrm{2}}$ with a small language – Czech. After the defeat at the battle of White Mountain in 1620, Literary Czech was under the danger of disappearance due to the German pressure. However, thanks to concentrated efforts of Czech writers, poets, translators and teachers during the National Revival, it survived. These efforts influenced the shape of Literary Czech and caused the differences between the norm of Literary Czech and the spoken variants as mentioned above in the section General Facts. However, there were established conditions for the development of rich cultural life: fiction, poems as well as the scientific texts from different areas were written and published since the end of the 18$^{\textrm{th}}$ century. Many books written in Czech were translated into foreign languages (esp. since the end of the 19$^{\textrm{th}}$ century). Among the most famous works of the 20$^{\textrm{th}}$  century were “The Good Soldier Švejk” (written by Jaroslav Hašek in 1923 and translated into 54 languages), fictions of Karel Čapek and Bohumil Hrabal. The Czech poet Jaroslav Seifert received the Nobel prize in literature (1984). One of the most famous contemporary writers in the world Milan Kundera, born in the CR, wrote his early books in Czech; since his emigration he has published his fictions and essays in French.
 
@@ -1154,7 +1165,7 @@ In the 19th century the Czech botanical and chemical terminology was constituted
 
 The discussion about the danger for a small national language to be lost for the process of communication among scholars however has arrived at the conclusion that the Czech language will survive and it will serve as a means of inner communication in the science as well as in other communication areas such as mass-media, economy, low, industry etc.
   
-\subsection{Čeština na internetu --- Czech on the Internet}
+\subsection{Czech on the Internet}
 
 In the year 2010, almost 60\% of Czechs were internet users. Most of them stated to be online every day. Among young people, the proportion of users is even higher. In January 2011, more than 750 thousand \emph{.cz} domains were registered. These numbers give us a vague idea of the vast amount of Czech language data available on the web.
 
@@ -1169,7 +1180,7 @@ However, it becomes less surprising if we consider the complexity of the Czech l
 \clearpage
 %-----------------------------------
 
-\ssection[Language Technology Support for Czech]{Podpora jazykových technologií pro češtinu --- Language Technology Support for Czech}
+\ssection[Language Technology Support for Czech]{Language Technology Support for Czech}
 \begin{multicols}{2}
 Language technology is used to develop software systems designed to handle human language and are therefore often called “human language technology”. Human language comes in spoken and written forms. While speech is the oldest and in terms of human evolution the most natural form of language communication, complex information and most human knowledge is stored and transmitted through the written word. Speech and text technologies process or produce these different forms of language, using dictionaries, rules of grammar, and semantics. This means that language technology (LT) links language to various forms of knowledge, independently of the media (speech or text) in which it is expressed. Figure~\ref{fig:ltincontext_en} illustrates the LT landscape.
 
@@ -1196,17 +1207,17 @@ In the rest of this section, we first describe the architecture of a typical LT 
 \end{figure*}
 
 
-\subsection{Architektura aplikací --- Application Architectures}
+\subsection{Application Architectures}
 
 Software applications for language processing typically consist of several components that mirror different aspects of language and of the task they implement. The figure on the right displays a highly simplified architecture that can be found in a text processing system. The first three modules deal with the structure and meaning of the text input:
 \begin{enumerate}
   \item Pre-processing: cleaning up the data, removing formatting, detecting the input language, etc.
-  \item Grammatical analysis: finding the verb and its objects, modifiers, etc.; analyzing the sentence structure.
+  \item Grammatical analysis: finding verb, its objects, modifiers and other sentence elements; analyzing the sentence structure.
   \item Semantic analysis: disambiguation (Which meaning of “apple” is the right one in the given context?), resolving coreferential expressions like “she”, “the car”, etc.; representing the meaning of the sentence in a machine-readable way
 \end{enumerate}
 Task-specific modules then perform many different operations such as automatic summarization of an input text, database look-ups and many others.
   
-\subsection{Základní aplikační oblasti --- Core Application Areas}
+\subsection{Core Application Areas}
 
 In the following, we will discuss the main application areas of language technology, i.e., language checking, web search, speech interaction, and machine translation. This includes applications and basic technologies such as
 \begin{itemize}
@@ -1222,7 +1233,7 @@ In the following, we will discuss the main application areas of language technol
 \end{itemize}
 Below, we illustrate core application areas and highlight certain modules of the different architectures in each section. For expository reasons, the architectures are highly simplified and idealized.
 
-\subsubsection{Jazyková kontrola --- Language Checking}
+\subsubsection{Language Checking}
 
   \begin{figure*}[t]
   \colorrule{grey3}{\textwidth}{1.5pt}
@@ -1274,7 +1285,7 @@ The fact that the subject may be omitted from a sentence makes it extremely diff
 
 Although the first generation of spelling and grammar checkers for Czech already exist, other language checking tools do not. For example, in the field of authoring support we face a total lack of tools. This is caused to a certain extent by the fact that Czech is usually a target language for technical documentation of various products, not a source one, and thus the need for authoring tools is not as pressing as it is the case with more widely used languages. Nevertheless, the need for such tools will definitely grow in the future and thus the research in the natural language processing tools in this area will be more important.
 
-\subsubsection{Webové vyhledávání --- Web Search}
+\subsubsection{Web Search}
 
 \begin{figure*}[htb]
   \colorrule{grey3}{\textwidth}{1.5pt}
@@ -1301,7 +1312,7 @@ We face an additional challenge if we want to match a query to documents written
 
 The increasing share of data available in non-textual format also drives the demand for services enabling multimedia search, i.e. information search on images, audio and video data. For audio and video files, this involves a \textbf{speech recognition} module to convert speech content into text or a phonetic representation, to which user queries can be matched.  
   
-\subsubsection{Jazykové technologie --- Speech Technology}
+\subsubsection{Speech Technology}
 
 General recognition of spoken Czech is still in its infancy. Simple applications that work with a small vocabulary and grammar have a high reliability, because Czech does not have a complex sound system. The main problems of applications with large vocabularies and more general language models is the large number of inflection forms of words, a relatively free word order and an informal Common Czech. This prevents statistical language modelling methods to achieve results similar to English.
 
@@ -1327,15 +1338,15 @@ Apart from simple cases of replacement of suffixes of Common Czech by their lite
 
 The second line of research focuses on the development of syntactic and semantic analysers of Czech with the help of manually annotated tree corpora of written and spoken Czech. In conjunction with a morphological analysis, this method should help address problems of free word order and of the large number of word forms.
 
-Current research on synthesized spoken Czech tries to develop more natural voices. Hopes are placed in advanced syntactic and semantic analysis of input texts, which should significantly improve the n naturalness of utterances.
+Current research on synthesized spoken Czech tries to develop more natural voices. Hopes are placed in advanced syntactic and semantic analysis of input texts, which should significantly improve the naturalness of utterances.
 
-\subsubsection{Strojový překlad --- Machine Translation}
+\subsubsection{Machine Translation}
 
 The idea of using digital computers to translate natural languages can be traced back to 1946 and was followed by substantial funding for research during the 1950s and again in the 1980s. Yet \textbf{machine translation} (MT) still cannot deliver on its initial promise of providing across-the-board automated translation.
 
 \boxtext{At its basic level, Machine Translation simply substitutes words in one natural language with words in another language.}
 The idea of the translation by the computers became attractive for linguists and mathematicians in the Czech Republic very soon after the first experiments with MT in the world (1954 in USA, 1955 in Soviet Union). In January 1960 the first experiment with English-Czech MT of several sentences by the computer of the 1st generation SAPO, made in earlier Czechoslovakia, was carried out due to the efforts of the small research group from Charles University and the Research Institute of Mathematical Machines. The development of the methods used in MT was continuously followed by the university linguistic research group and some experimental rule-based systems of English-Czech and Czech-Russian MT systems were developed for the computers of 2nd generation (made in GDR and in USSR). They were domain-restricted and served mainly for a verification of formally expressed grammatical rules. In the 1990s a prototype of MT between closely related languages was proposed for the pair Czech and Slovak at Charles University (Česílko\cite{Note18}); however, its application fails due to practical reasons (such as high costs connected with its maintenance etc.). The strategy of statistical methods or combination of statistical and rule-based methods was chosen as a more prospective one for the future.
-The most basic approach to machine translation is the automatic replacement of the words in a text written in one natural language with the equivalent words of another language. This can be useful in subject domains that have a very restricted, formulaic language such as weather reports (system METEO\cite{Note19}). However, in order to produce a good translation of less restricted texts, larger text units (phrases, sentences, or even whole passages) need to be matched to their closest counterparts in the target language. The major difficulty is that human language is ambiguous, which presents challenges on multiple levels, for example word sense disambiguation on the lexical level or the attachment of prepositional phrases on the syntactic level.
+The most basic approach to machine translation is the automatic replacement of the words in a text written in one natural language with the equivalent words of another language. This can be useful in subject domains that have a very restricted, formulaic language such as weather reports (system METEO\cite{Note19}). However, in order to produce a good translation of less restricted texts, larger text units (phrases, sentences, or even whole passages) need to be matched to their closest counterparts in the target language. The major difficulty is that human language is ambiguous, which presents challenges on multiple levels, for example word sense disambiguation at the lexical level or the attachment of prepositional phrases on the syntactic level.
 
 One way to build an MT system is to use linguistic rules. For translations between closely related languages, a translation using direct substitution may be feasible in cases such as the above example. However, rule-based (or linguistic knowledge-driven) systems often analyse the input text and create an intermediary symbolic representation from which the target language text can be generated. The success of these methods is highly dependent on the availability of extensive lexicons with morphological, syntactic, and semantic information, and large sets of grammar rules carefully designed by skilled linguists. This is a very long and therefore costly process.
 
@@ -1357,7 +1368,7 @@ The strengths and weaknesses of knowledge-driven and data-driven machine transla
 
 Completely separate is the question of evaluating MT output quality, both manually and automatically. Experience shows that different systems score differently under various manual evaluations: rule-based systems tend to preserve the meaning better while statistical systems produce output more fluent locally. In e.g. question-answering evaluation, the meaning is more important. On the other hand, local fluency impacts the impression more when the user is directly comparing system outputs. Automatic evaluation (based on the comparison of MT output to one or more manually constructed reference translations) is vital in development of MT systems. It has been shown that such automatic evaluation is unreliable esp. for languages with richer morphology and it is also acknowledged that some automatic fine-grained reporting on MT quality and error types would be very useful.
 
-\subsection{Informační managment/Jazykové technologie „v zákulisí“ --- Information management/``LT behind the scenes''}
+\subsection{Information management/``LT behind the scenes''}
 
 Building language technology applications involves a range of subtasks that do not always surface at the level of interaction with the user, but they provide significant service functionalities “behind the scenes” of the system in question. They all form important research issues that have now evolved into individual sub-disciplines of computational linguistics. Question answering, for example, is an active area of research for which annotated corpora have been built and scientific competitions have been initiated. The concept of question answering goes beyond keyword-based searches (in which the search engine responds by delivering a collection of potentially relevant documents) and enables users to ask a concrete question to which the system provides a single answer. For example:
 
@@ -1392,14 +1403,14 @@ The nearly 52,000 videotaped testimonies of the Shoah Foundation Institute's Vis
 
 The archive is accessible through an on-line interface, which enables the users browsing and viewing the testimonies, deploying an index of 55 thousand keywords and key phrases. The access point in Prague stores more than 500 testimonies in Czech, with average duration of 2 hours. Other testimonies have to be ordered online from the other access point, which usually takes a few hours.
 
-\subsubsection{Miscelanea --- Miscellaneous}
+\subsubsection{Miscellaneous}
 
 It would be misleading to judge the NLP-HLT research of the respective countries only on the basis of how many resources and applications for their national language they have produced. In fact, there is a vicious circle in the NLP-HLT research for small languages: the grant agencies as well as the government want to support only the best teams. The best teams are the ones that produce the most internationally recognized publications. These are significantly easier to achieve in research that has international impact. While almost any improvement in any issue is interesting to report on big or strategic languages such as English, Chinese or Arabic, a research with the same outcome has a grossly humbler impact when reported on languages that are interesting only for their native speakers. To produce a good publication on a small language, a real breakthrough is needed, whereas, obviously, breakthroughs cannot be counted on to happen regularly.  Besides, even if a language-dependent result for a small language is considered a breakthrough by the local research community, it is still difficult to present to international reviewers who are not familiar with the language.
 Also, language-independent solutions are generally preferred to the language-dependent ones, since their commercial application is cheaper. English is the natural first-choice language to experiment on in the European context, as there are comprehensive high-quality resources available for English. Also, the results are more easily compared within the international community.
 
 As a consequence, national teams focus on English rather than relying on research on their national language. This is to be kept in mind when assessing the quality of national HLT/NLP research and development. A poor inventory of good HLT applications and resources for a small language does not necessarily imply poor research, but it can be a serious indicator of lacking governmental support policy. Targeted governmental support of national-language HLT is vital for language communities whose markets are too small for national-language HLT to be endorsed by the private sector.
  
-\subsection{Průmysl a programy jazykových technologií --- LT industry and programs}
+\subsection{LT industry and programs}
 
 Industrial deployment of language technologies is not widespread in Czechia. Businesses specialized in LT are rare. The same holds for research \& development departments of larger companies.
 
@@ -1417,7 +1428,7 @@ Czech speech recognition was commercialized by Newton Technologies company—a s
 
 Most of the government-originating funding programs are maintained by the Czech Science Foundation (GAČR) and focused on basic research. Recently (2009), a new Technological Agency of the Czech Republic (Technologická agentura České republiky, TAČR) has been established, which shall focus on applied research. However, there are probably no LT-related projects funded by TAČR yet.
 
-\subsection{Jazykové technologie ve výzkumu a vzdělávání --- LT research and education}
+\subsection{LT research and education}
 
 From the historical point of view, the terms ``computational linguistics'', ``natural language processing'' and ``speech recognition'' have been used for a longer time than the term language technologies, at least in the context of research and education. No matter the name, the disciplines related to natural language comprise a number of related subjects of research and education: theoretical linguistics, corpus linguistics, computer science, mathematics, machine learning etc.
 
@@ -1467,7 +1478,7 @@ The natural language research in the private sector is not very common in the Cz
 
 The study programs the institutes offer emphase both theory and practice. Unfortunately, a demand for such experts is very low in the Czech Republic.
 
-\subsection{Dostupné nástroje a zdroje pro češtinu --- Availability of tools and resources for Czech}
+\subsection{Availability of tools and resources for Czech}
 The following table summarizes the current state of language technology support for the Czech language. The rating for existing tools and resources is based on assessments of leading experts (0 is worst, 6 is best).
 
 \begin{figure*}[htb]
@@ -1505,7 +1516,7 @@ Grammars                 & 1 & 1 & 3 & 2 & 2 & 1 & 1\\ \addlinespace
 \caption{State of language technology support for Czech}
 \end{figure*}
 
-\subsubsection{Poznámky k tabulce --- Notes to the table}
+\subsubsection{Notes to the table}
 
 \begin{itemize}
 \item While some specific corpora of high quality exist, a very large syntactically annotated corpus is not available.
@@ -1523,7 +1534,7 @@ Grammars                 & 1 & 1 & 3 & 2 & 2 & 1 & 1\\ \addlinespace
 \end{itemize}
 To conclude, in a number of specific areas of Czech language research, we have software with limited functionality and resources with limited scope/complexity available today, and only some of them open-source. Obviously, further research efforts are required to meet the current deficits.
 
-\subsection{Porovnání napříč jazyky --- Cross-language comparison}
+\subsection{Cross-language comparison}
     The current state of LT support varies considerably from one language community to another. In order to compare the situation between languages, this section will present an evaluation based on two sample application areas (\textbf{machine translation} and speech processing) and one underlying technology (text analysis), as well as basic resources needed for building LT applications.
 
 The above tables show that LT resources and tools for Czech clearly do not yet reach the quality and coverage of comparable resources and tools for the English language and some other ‘larger’ languages in EU. And there are still plenty of gaps in English language resources with regard to high quality applications.
