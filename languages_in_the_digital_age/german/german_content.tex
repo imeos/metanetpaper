@@ -1252,12 +1252,14 @@ die Sammlung von Daten, der Aufbereitung von Datenquellen und Sprachressourcen f
 
 \vfill
 
+\makeatletter
 \@ifundefined{theHsection}{%
   \let
 }
 {
   \renewcommand*{\theHsection}{\thepart.\thesection}
 }
+\makeatother
 \part*{\textcolor{white}{English}}
 \setcounter{section}{0}
 \setcounter{figure}{0}
