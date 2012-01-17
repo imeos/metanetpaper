@@ -473,8 +473,6 @@ Pro češtinu existuje několik komerčních i akademických systémů založen�
 Koncem 80. let 20. st. se s levnější a větší výpočetní silou počítačů zájem přesunul ke statistickým modelům. Tyto modely jsou automaticky vybudovány na základě analýzy dvojjazyčných souborů textů, jako je např. paralelní korpus Europarl obsahující zápisy z jednání Evropského parlamentu v 21 evropských jazycích. (Čeština byla přidána teprve nedávno a data pro češtinu jsou stále o několik řádů menší než pro zavedené jazyky.) Při dostatku dat pracuje statistický překlad pro přibližné pochopení textu dostatečně dobře. Na rozdíl od pravidlových metod však často generuje gramaticky nesprávný výstup. Silnou stránkou statistického přístupu je pak, kromě ušetřené námahy při přípravě pravidel, často plně automatické zachycení specifických frází včetně idiomů. Stačí, aby byly pokryty trénovacími daty. Právě dostupnost rozsáhlých objemů dvojjazyčných textů je klíčem k úspěšnému statistickému překladu. Pro češtinu jsou v současné době vytvářeny paralelní korpusy s několika dalšími jazyky. Největší soubor dat CzEng \cite{Note20}, celkově několik milionů dvojic vět, je dostupný pro češtinu a angličtinu. Tento korpus zahrnuje např. evropské právní dokumenty, novinové texty, technickou dokumentaci a elektronicky dostupné knihy. Nejtěžší problém při přípravě takového korpusu je tzv. zarovnání, tj. nalezení odpovídajících si dvojic úseků textu. Nejen že přiřazení slov slovům nelze často ani teoreticky provést správně pro odlišnosti v tvarosloví a skladbě zarovnávaných jazyků, často je obtížné přiřadit k sobě správně celé věty nebo i celé dokumenty. Proces zarovnání musí být navíc zcela automatický; s ohledem na objem textů je ruční zpracování vyloučeno. Jazyky s bohatou morfologií jako čeština pro současné systémy strojového překladu představují zvlášť obtížnou úlohu. Systém musí nejen vybrat správné slovo, ale navíc dobře zvolit gramatická pravidla pro stanovení jeho konkrétního tvaru s ohledem na kontext ve větě. V současné době jen velmi málo statistických systémů explicitně pracuje s morfologickou reprezentací, a proto často narazí na nedostatek dat: ani v největších paralelních korpusech nelze očekávat, že uvidíme slovo ve všech jeho potřebných tvarech.
 
 Vzhledem k tomu, že klady a zápory statistických a pravidlových systémů se do značné míry doplňuji, panuje dnes víceméně souhlas, že je dobré je kombinovat do hybridních metod. Kombinace je přitom možné provádět několika způsoby. Nejjednodušší je přeložit větu oběma systémy a (strojově) následně zvolit jednu z těchto odpovědí. Pro delší věty však nelze očekávat dobrý výsledek. Vhodnější přístup proto kombinuje nejlepší úseky z výstupů několika systémů. To je ovšem obtížnější, protože často je těžké strojově poznat, které části výstupů si odpovídají, nehledě na nutnost správně je spojit do výstupu jediného.
-
-
 %FIXME Please translazte the caption into czech. Can you make sure, that this table ist at the right place? In the english part, just give a reference within the text like this:
 % Figure~\ref{fig:euromatrix_cz} (p.~\pageref{fig:euromatrix_cz}), which was prepared during the Euromatrix+ project, shows the pair-wise performances obtained for 22 of the 23 EU languages 
 % (Irish was not compared).
@@ -511,7 +509,6 @@ Vzhledem k tomu, že klady a zápory statistických a pravidlových systémů se
   \caption{Maschinelle Übersetzung zwischen 22 EU-Sprachen -- \textcolor{grey1}{Machine translation between 22 EU-languages \cite{euro1}}}
   \label{fig:euromatrix_cz}
 \end{figure*}
-
 Alternativní, a samozřejmě obtížnější, je možnost navrhnout nový přístup k překladu, který obě metody integruje. Je například možné pravidlový systém obohatit modulem pro automatickou extrakci pravidel z dat nebo je možné statistický systém doplnit gramatickými pravidly.\\
 Zcela samostatnou otázku pak představuje úloha vyhodnocování kvality strojového překladu, ať již ručně nebo strojově. Zkušenosti ukazují, že různé přístupy překladu jsou různě úspěšné v různých ohledech: pravidlové systémy mají větší šanci zachovat význam, statistické systémy produkují výstup, který je plynulejší na úrovni krátkých sousloví. Například v úloze odpovídání na otázky sice lokální plynulost ve srovnání s jinými systémy dobře působí na uživatele, ale přesnost odpovědí může utrpět. Automatické vyhodnocování kvality (založené na porovnání výstupu MT s lidským překladem) je zcela zásadní pro vývoj zejm. statistických modelů. Ukazuje se však, že většina automatických hodnocení kvality je nespolehlivá, a to ještě výrazněji pro jazyky s bohatou morfologií. Pro vývoj systémů strojového překladu by též velmi pomohly nástroje, které klasifikují a podrobně zobrazí chyby ve výstupu.
 
@@ -679,21 +676,25 @@ Můžeme tedy konstatovat, že existuje silná potřeba velké, koordinované in
 \clearpage
 \begin{figure*}[t]
 \small
-\centering %FIXME Please rename Cluster 1 (etc.) to Excellent Supoort, Good Support etc.
+\centering %FIXME Please translate Excellent Supoort, Good Support etc. into czech 
 \begin{tabular}
 { % defines color for each column.
->{\columncolor{corange5}} p{.17\linewidth}@{\hspace{.027\linewidth}}
->{\columncolor{corange4}}p{.17\linewidth}@{\hspace{.027\linewidth}}
->{\columncolor{corange3}}p{.17\linewidth}@{\hspace{.027\linewidth}}
->{\columncolor{corange2}}p{.17\linewidth}@{\hspace{.027\linewidth}}
->{\columncolor{corange1}}p{.17\linewidth} 
-}
-\rowcolor{orange1} % redefines color for all columns in row 1
-\begin{center}\vspace*{-2mm}\textbf{Cluster 1}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Cluster 2}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Cluster 3}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Cluster 4}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Cluster 5}\end{center} \\ \addlinespace
+  >{\columncolor{corange5}}p{.13\linewidth}@{\hspace{.040\linewidth}}
+  >{\columncolor{corange4}}p{.13\linewidth}@{\hspace{.040\linewidth}}
+  >{\columncolor{corange3}}p{.13\linewidth}@{\hspace{.040\linewidth}}
+  >{\columncolor{corange2}}p{.13\linewidth}@{\hspace{.040\linewidth}}
+  >{\columncolor{corange1}}p{.13\linewidth} 
+  }
+  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Excellent}} & 
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Good}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Moderate}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Fragmentary}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{Weak/no}} \\ 
+  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} & 
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{support}} \\ \addlinespace
 
 & \vspace*{0.5mm}Angličtina
 & \vspace*{0.5mm}
@@ -737,18 +738,22 @@ Rumunština\\
 \centering
 \begin{tabular}
 { % defines color for each column.
->{\columncolor{corange5}} p{.17\linewidth}@{\hspace{.027\linewidth}}
->{\columncolor{corange4}}p{.17\linewidth}@{\hspace{.027\linewidth}}
->{\columncolor{corange3}}p{.17\linewidth}@{\hspace{.027\linewidth}}
->{\columncolor{corange2}}p{.17\linewidth}@{\hspace{.027\linewidth}}
->{\columncolor{corange1}}p{.17\linewidth} 
-}
-\rowcolor{orange1} % redefines color for all columns in row 1
-\begin{center}\vspace*{-2mm}\textbf{Cluster 1}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Cluster 2}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Cluster 3}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Cluster 4}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Cluster 5}\end{center} \\ \addlinespace
+  >{\columncolor{corange5}}p{.13\linewidth}@{\hspace{.040\linewidth}}
+  >{\columncolor{corange4}}p{.13\linewidth}@{\hspace{.040\linewidth}}
+  >{\columncolor{corange3}}p{.13\linewidth}@{\hspace{.040\linewidth}}
+  >{\columncolor{corange2}}p{.13\linewidth}@{\hspace{.040\linewidth}}
+  >{\columncolor{corange1}}p{.13\linewidth} 
+  }
+  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Excellent}} & 
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Good}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Moderate}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Fragmentary}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{Weak/no}} \\ 
+  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} & 
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{support}} \\ \addlinespace
 
 & \vspace*{0.5mm} Angličtina 
 & \vspace*{0.5mm} 
@@ -792,18 +797,22 @@ Slovinština \newline
   \centering
   \begin{tabular}
 { % defines color for each column.
->{\columncolor{corange5}} p{.17\linewidth}@{\hspace{.027\linewidth}}
->{\columncolor{corange3}}p{.17\linewidth}@{\hspace{.027\linewidth}}
->{\columncolor{corange3}}p{.17\linewidth}@{\hspace{.027\linewidth}}
->{\columncolor{corange2}}p{.17\linewidth}@{\hspace{.027\linewidth}}
->{\columncolor{corange1}}p{.17\linewidth} 
-}
-\rowcolor{orange1} % redefines color for all columns in row 1
-\begin{center}\vspace*{-2mm}\textbf{Cluster 1}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Cluster 2}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Cluster 3}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Cluster 4}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Cluster 5}\end{center} \\ \addlinespace
+  >{\columncolor{corange5}}p{.13\linewidth}@{\hspace{.040\linewidth}}
+  >{\columncolor{corange4}}p{.13\linewidth}@{\hspace{.040\linewidth}}
+  >{\columncolor{corange3}}p{.13\linewidth}@{\hspace{.040\linewidth}}
+  >{\columncolor{corange2}}p{.13\linewidth}@{\hspace{.040\linewidth}}
+  >{\columncolor{corange1}}p{.13\linewidth} 
+  }
+  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Excellent}} & 
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Good}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Moderate}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Fragmentary}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{Weak/no}} \\ 
+  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} & 
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{support}} \\ \addlinespace
 
 & \vspace*{0.5mm}Angličtina
 & \vspace*{0.5mm}
@@ -847,18 +856,22 @@ Slovinština \newline
   \centering
 \begin{tabular}
 { % defines color for each column.
->{\columncolor{corange5}} p{.17\linewidth}@{\hspace{.027\linewidth}}
->{\columncolor{corange4}}p{.17\linewidth}@{\hspace{.027\linewidth}}
->{\columncolor{corange3}}p{.17\linewidth}@{\hspace{.027\linewidth}}
->{\columncolor{corange2}}p{.17\linewidth}@{\hspace{.027\linewidth}}
->{\columncolor{corange1}}p{.17\linewidth} 
-}
-\rowcolor{orange1} % redefines color for all columns in row 1
-\begin{center}\vspace*{-2mm}\textbf{Cluster 1}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Cluster 2}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Cluster 3}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Cluster 4}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Cluster 5}\end{center} \\ \addlinespace
+  >{\columncolor{corange5}}p{.13\linewidth}@{\hspace{.040\linewidth}}
+  >{\columncolor{corange4}}p{.13\linewidth}@{\hspace{.040\linewidth}}
+  >{\columncolor{corange3}}p{.13\linewidth}@{\hspace{.040\linewidth}}
+  >{\columncolor{corange2}}p{.13\linewidth}@{\hspace{.040\linewidth}}
+  >{\columncolor{corange1}}p{.13\linewidth} 
+  }
+  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Excellent}} & 
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Good}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Moderate}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Fragmentary}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{Weak/no}} \\ 
+  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} & 
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{support}} \\ \addlinespace
     
 & \vspace*{0.5mm}Angličtina
 & \vspace*{0.5mm} 
@@ -1592,221 +1605,237 @@ The long term goal of META-NET is to enable the creation of high-quality languag
 \begin{figure*}[t]
 \small
 \centering
-\begin{tabular}
-{ % defines color for each column.
->{\columncolor{corange5}} p{.17\linewidth}@{\hspace{.027\linewidth}}
->{\columncolor{corange4}}p{.17\linewidth}@{\hspace{.027\linewidth}}
->{\columncolor{corange3}}p{.17\linewidth}@{\hspace{.027\linewidth}}
->{\columncolor{corange2}}p{.17\linewidth}@{\hspace{.027\linewidth}}
->{\columncolor{corange1}}p{.17\linewidth} 
-}
-\rowcolor{orange1} % redefines color for all columns in row 1
-\begin{center}\vspace*{-2mm}\textbf{Cluster 1}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Cluster 2}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Cluster 3}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Cluster 4}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Cluster 5}\end{center} \\ \addlinespace
-
-& \vspace*{0.5mm}Angličtina
+  \begin{tabular}
+  { % defines color for each column.
+  >{\columncolor{corange5}}p{.13\linewidth}@{\hspace{.040\linewidth}}
+  >{\columncolor{corange4}}p{.13\linewidth}@{\hspace{.040\linewidth}}
+  >{\columncolor{corange3}}p{.13\linewidth}@{\hspace{.040\linewidth}}
+  >{\columncolor{corange2}}p{.13\linewidth}@{\hspace{.040\linewidth}}
+  >{\columncolor{corange1}}p{.13\linewidth} 
+  }
+  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Excellent}} & 
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Good}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Moderate}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Fragmentary}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{Weak/no}} \\ 
+  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} & 
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{support}} \\ \addlinespace
+  
+& \vspace*{0.5mm}English
 & \vspace*{0.5mm}
-Čeština \newline 
-Finština \newline 
-Francouzština \newline 
-Holandština \newline 
-Italština \newline  
-Němčina \newline   
-Portugalština \newline 
-Španělština \newline
-& \vspace*{0.5mm}Baskičtina \newline 
-Bulharština \newline 
-Dánština \newline 
-Estonština \newline 
-Galicijština\newline 
-Irština \newline  
-Katalánština \newline 
-Maďarština  \newline
-Norština \newline 
-Polština \newline 
-Řečtina \newline  
-Srbština \newline 
-Slovenština \newline 
-Slovinština \newline 
-Švédština \newline
+\textbf{Czech} \newline 
+Dutch \newline 
+Finnish \newline 
+French \newline 
+German \newline   
+Italian \newline  
+Portuguese \newline 
+Spanish \newline
+& \vspace*{0.5mm}Basque \newline 
+Bulgarian \newline 
+Catalan \newline 
+Danish \newline 
+Estonian \newline 
+Galician\newline 
+Greek \newline  
+Hungarian  \newline
+Irish \newline  
+Norwegian \newline 
+Polish \newline 
+Serbian \newline 
+Slovak \newline 
+Slovene \newline 
+Swedish \newline
 & \vspace*{0.5mm}
-Chorvatština \newline 
-Islandština \newline  
-Litevština \newline 
-Lotyština \newline 
-Maltština \newline 
-Rumunština\\
+Croatian \newline 
+Icelandic \newline  
+Latvian \newline 
+Lithuanian \newline 
+Maltese \newline 
+Romanian\\
 \end{tabular}
-\label{fig:speech_cluster}
 \caption{Speech processing: state of language technology support for 30 European languages}
+\label{fig:speech_cluster_en}
 \end{figure*}
 
 \begin{figure*}[b]
-\small
-\centering
-\begin{tabular}
-{ % defines color for each column.
->{\columncolor{corange5}} p{.17\linewidth}@{\hspace{.027\linewidth}}
->{\columncolor{corange4}}p{.17\linewidth}@{\hspace{.027\linewidth}}
->{\columncolor{corange3}}p{.17\linewidth}@{\hspace{.027\linewidth}}
->{\columncolor{corange2}}p{.17\linewidth}@{\hspace{.027\linewidth}}
->{\columncolor{corange1}}p{.17\linewidth} 
-}
-\rowcolor{orange1} % redefines color for all columns in row 1
-\begin{center}\vspace*{-2mm}\textbf{Cluster 1}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Cluster 2}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Cluster 3}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Cluster 4}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Cluster 5}\end{center} \\ \addlinespace
-
-& \vspace*{0.5mm} Angličtina 
+  \small
+  \centering
+  \begin{tabular}
+  { % defines color for each column.
+  >{\columncolor{corange5}}p{.13\linewidth}@{\hspace{.040\linewidth}}
+  >{\columncolor{corange4}}p{.13\linewidth}@{\hspace{.040\linewidth}}
+  >{\columncolor{corange3}}p{.13\linewidth}@{\hspace{.040\linewidth}}
+  >{\columncolor{corange2}}p{.13\linewidth}@{\hspace{.040\linewidth}}
+  >{\columncolor{corange1}}p{.13\linewidth} 
+  }
+  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Excellent}} & 
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Good}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Moderate}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Fragmentary}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{Weak/no}} \\ 
+  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} & 
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{support}} \\ \addlinespace
+  
+& \vspace*{0.5mm} English 
 & \vspace*{0.5mm} 
-Francouzština \newline 
-Španělština
+French \newline 
+Spanish
 & \vspace*{0.5mm}
-Holandština \newline 
-Italština \newline 
-Katalánština \newline 
-Maďarština \newline
-Němčina \newline 
-Polština \newline 
-Rumunština \newline 
-& \vspace*{0.5mm}Baskičtina \newline 
-Bulharština \newline 
-Chorvatština \newline 
-Čeština \newline
-Dánština \newline 
-Estonština \newline 
-Finština \newline 
-Galicijština \newline 
-Islandština \newline 
-Irština \newline 
-Litevština \newline 
-Lotyština \newline 
-Maltština \newline 
-Norština \newline 
-Portugalština \newline 
-Řečtina \newline 
-Srbština \newline 
-Slovenština \newline 
-Slovinština \newline 
-Švédština \newline 
+Catalan \newline 
+Dutch \newline 
+German \newline 
+Hungarian \newline
+Italian \newline 
+Polish \newline 
+Romanian \newline 
+& \vspace*{0.5mm}Basque \newline 
+Bulgarian \newline 
+Croatian \newline 
+\textbf{Czech} \newline
+Danish \newline 
+Estonian \newline 
+Finnish \newline 
+Galician \newline 
+Greek \newline 
+Icelandic \newline 
+Irish \newline 
+Latvian \newline 
+Lithuanian \newline 
+Maltese \newline 
+Norwegian \newline 
+Portuguese \newline 
+Serbian \newline 
+Slovak \newline 
+Slovene \newline 
+Swedish \newline 
 \end{tabular}
-\label{fig:mt_cluster}
 \caption{Machine translation: state of language technology support for 30 European languages}
+\label{fig:mt_cluster_en}
 \end{figure*}
 
 \begin{figure*}[t]
   \small
   \centering
   \begin{tabular}
-{ % defines color for each column.
->{\columncolor{corange5}} p{.17\linewidth}@{\hspace{.027\linewidth}}
->{\columncolor{corange3}}p{.17\linewidth}@{\hspace{.027\linewidth}}
->{\columncolor{corange3}}p{.17\linewidth}@{\hspace{.027\linewidth}}
->{\columncolor{corange2}}p{.17\linewidth}@{\hspace{.027\linewidth}}
->{\columncolor{corange1}}p{.17\linewidth} 
-}
-\rowcolor{orange1} % redefines color for all columns in row 1
-\begin{center}\vspace*{-2mm}\textbf{Cluster 1}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Cluster 2}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Cluster 3}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Cluster 4}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Cluster 5}\end{center} \\ \addlinespace
+  { % defines color for each column.
+  >{\columncolor{corange5}}p{.13\linewidth}@{\hspace{.040\linewidth}}
+  >{\columncolor{corange4}}p{.13\linewidth}@{\hspace{.040\linewidth}}
+  >{\columncolor{corange3}}p{.13\linewidth}@{\hspace{.040\linewidth}}
+  >{\columncolor{corange2}}p{.13\linewidth}@{\hspace{.040\linewidth}}
+  >{\columncolor{corange1}}p{.13\linewidth} 
+  }
+  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Excellent}} & 
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Good}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Moderate}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Fragmentary}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{Weak/no}} \\ 
+  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} & 
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{support}} \\ \addlinespace
 
-& \vspace*{0.5mm}Angličtina
+& \vspace*{0.5mm}English
 & \vspace*{0.5mm}
-  Francouzština \newline 
-  Holandština \newline 
-  Italština \newline 
-  Němčina \newline 
-  Španělština
-& \vspace*{0.5mm}Baskičtina \newline 
-  Bulharština \newline 
-  Čeština \newline 
-  Dánština \newline 
-  Finština \newline 
-  Galicijština \newline 
-  Katalánština \newline 
-  Maďarština \newline 
-  Norština \newline 
-  Polština \newline 
-  Portugalština \newline 
-  Rumunština \newline 
-  Řečtina \newline 
-  Slovenština \newline 
-  Slovinština \newline 
-  Švédština \newline 
+  Dutch \newline 
+  French \newline 
+  German \newline 
+  Italian \newline 
+  Spanish
+& \vspace*{0.5mm}Basque \newline 
+  Bulgarian \newline 
+  Catalan \newline 
+  \textbf{Czech} \newline 
+  Danish \newline 
+  Finnish \newline 
+  Galician \newline 
+  Greek \newline 
+  Hungarian \newline 
+  Norwegian \newline 
+  Polish \newline 
+  Portuguese \newline 
+  Romanian \newline 
+  Slovak \newline 
+  Slovene \newline 
+  Swedish \newline 
 & \vspace*{0.5mm}
-  Chorvatština \newline 
-  Estonština \newline 
-  Irština \newline 
-  Islandština \newline 
-  Litevština \newline 
-  Lotyština \newline 
-  Maltština \newline 
-  Srbština \\
+  Croatian \newline 
+  Estonian \newline 
+  Icelandic \newline 
+  Irish \newline 
+  Latvian \newline 
+  Lithuanian \newline 
+  Maltese \newline 
+  Serbian \\
   \end{tabular}
-\label{fig:text_cluster}
 \caption{Text analysis: state of language technology support for 30 European languages}
+\label{fig:text_cluster_en}
 \end{figure*}
 
 \begin{figure*}[b]
   \small
   \centering
-\begin{tabular}
-{ % defines color for each column.
->{\columncolor{corange5}} p{.17\linewidth}@{\hspace{.027\linewidth}}
->{\columncolor{corange4}}p{.17\linewidth}@{\hspace{.027\linewidth}}
->{\columncolor{corange3}}p{.17\linewidth}@{\hspace{.027\linewidth}}
->{\columncolor{corange2}}p{.17\linewidth}@{\hspace{.027\linewidth}}
->{\columncolor{corange1}}p{.17\linewidth} 
-}
-\rowcolor{orange1} % redefines color for all columns in row 1
-\begin{center}\vspace*{-2mm}\textbf{Cluster 1}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Cluster 2}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Cluster 3}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Cluster 4}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Cluster 5}\end{center} \\ \addlinespace
+  \begin{tabular}
+  { % defines color for each column.
+  >{\columncolor{corange5}}p{.13\linewidth}@{\hspace{.040\linewidth}}
+  >{\columncolor{corange4}}p{.13\linewidth}@{\hspace{.040\linewidth}}
+  >{\columncolor{corange3}}p{.13\linewidth}@{\hspace{.040\linewidth}}
+  >{\columncolor{corange2}}p{.13\linewidth}@{\hspace{.040\linewidth}}
+  >{\columncolor{corange1}}p{.13\linewidth} 
+  }
+  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Excellent}} & 
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Good}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Moderate}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Fragmentary}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{Weak/no}} \\ 
+  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} & 
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{support}} \\ \addlinespace
     
-& \vspace*{0.5mm}Angličtina
+& \vspace*{0.5mm}English
 & \vspace*{0.5mm} 
-    Čeština \newline 
-    Francouzština \newline 
-    Holandština \newline 
-    Italština \newline
-    Maďarština \newline
-    Němčina \newline 
-    Polština \newline
-    Španělština \newline
-    Švédština \newline 
-& \vspace*{0.5mm} Baskičtina\newline 
-    Bulharština\newline 
-    Chorvatština \newline 
-    Dánština \newline 
-    Estonština \newline 
-    Finština \newline 
-    Galicijština \newline 
-    Katalánština \newline 
-    Norština \newline 
-    Portugalština \newline 
-    Rumunština \newline 
-    Řečtina \newline 
-    Srbština \newline 
-    Slovenština \newline 
-    Slovinština \newline
+    \textbf{Czech} \newline 
+    Dutch \newline 
+    French \newline 
+    German \newline 
+    Hungarian \newline
+    Italian \newline
+    Polish \newline
+    Spanish \newline
+    Swedish \newline 
+& \vspace*{0.5mm} Basque\newline 
+    Bulgarian\newline 
+    Catalan \newline 
+    Croatian \newline 
+    Danish \newline 
+    Estonian \newline 
+    Finnish \newline 
+    Galician \newline 
+    Greek \newline 
+    Norwegian \newline 
+    Portuguese \newline 
+    Romanian \newline 
+    Serbian \newline 
+    Slovak \newline 
+    Slovene \newline
 &  \vspace*{0.5mm}
-    Irština \newline 
-    Islandština \newline 
-    Litevština \newline 
-    Lotyština \newline 
-    Maltština  \\
+    Icelandic \newline 
+    Irish \newline 
+    Latvian \newline 
+    Lithuanian \newline 
+    Maltese  \\
   \end{tabular}
-  \label{fig:resources_cluster}
-  \caption{Speech and text resources: State of support for 30 European languages}
+  \caption{Speech and text resources: State of support for 30 European languages}  
+  \label{fig:resources_cluster_en}
 \end{figure*}
 
 
