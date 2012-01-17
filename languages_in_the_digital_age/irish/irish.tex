@@ -31,20 +31,20 @@
 
 \subtitle{White Paper Series --- Sraith Páipéar Bán }
 
-\author{
-  John Judge\\
-  Ailbhe Ní Chasaide\\
-  Rose Ní Dhubhda\\
-  Kevin P. Scannell\\
-  Elaine Uí Dhonnchadha
-}
-%\authoraffiliation{
-%  John Judge~ {\small CNGL}\\
-%  Ailbhe Ní Chasaide~ {\small TCD}\\
-%  Rose Ní Dhubhda~ {\small OÉ Gallimh}\\
-%  Kevin P. Scannell~ {\small Saint Louis University}
-%  Elaine Uí Dhonnchadha~ {\small TCD}
+%\author{
+%  John Judge\\
+%  Ailbhe Ní Chasaide\\
+%  Rose Ní Dhubhda\\
+%  Kevin P. Scannell\\
+%  Elaine Uí Dhonnchadha
 %}
+\author{
+  John Judge~ {\small CNGL}\\
+  Ailbhe Ní Chasaide~ {\small TCD}\\
+  Rose Ní Dhubhda~ {\small OÉ Gallimh}\\
+  Kevin P. Scannell~ {\small Saint Louis University}\\
+  Elaine Uí Dhonnchadha~ {\small TCD}
+}
 \editors{
   Georg Rehm, Hans Uszkoreit\\(eagarthóirí, \textcolor{grey1}{editors}) %NEED TO TRANSLATE
 }
@@ -59,28 +59,29 @@
 \null
 \pagestyle{empty} 
 
-\centerline{META-NET -- office@meta-net.eu -- http://www.meta-net.eu}
+%\centerline{META-NET -- office@meta-net.eu -- http://www.meta-net.eu}
 
-\vfill
 
-\begin{small}
-  \selectlanguage{irish} %NEED TO TRANSLATE
+\FundingLNotice{\selectlanguage{irish}
+  Tá údair na cáipéise seo buíoch d'údair an Pháipéir Bháin i nGearmáinis as cead a thabhairt ábhair neamhspleách ó theanga óna gcáipéis a athúsáid \cite{lwpgerman}. \\
+  
   Mhaoinigh an Seachtú Creatchlár agus Clár Tacaíochta Beartais TFC
   de Choimisiún na hEorpa faoi na conarthaí T4ME
   (Comhaontú Deontais 249119), CESAR (Comhaontú Deontais 271022),
   METANET4U (Comhaontú Deontais 270893) agus
-  META-NORD (Comhaontú Deontais 270899) forbairt an pháipéir bháin seo.
-\end{small}
+  META-NORD (Comhaontú Deontais 270899) forbairt an pháipéir bháin seo.}
 
-\bigskip
-\begin{small}
-  \selectlanguage{english}
+\FundingRNotice{\selectlanguage{english}
+  The authors of this document are grateful to the authors of the white paper on German for permission to re-use selected language-independent materials from their document \cite{lwpgerman}. \\
+  
   The development of this white paper has been funded by the Seventh
   Framework Programme and the ICT Policy Support Programme of the
-  European Commission under the contracts T4ME (Grant Agreement 249119),
-  CESAR (Grant Agreement 271022), METANET4U (Grant Agreement 270893)
-  and META-NORD (Grant Agreement 270899).
-\end{small}
+  European Commission under the contracts T4ME (Grant Agreement
+  249119), CESAR (Grant Agreement 271022), METANET4U (Grant Agreement
+  270893) and META-NORD (Grant Agreement 270899).}
+
+\makefundingnotice
+
 
 \clearpage
 % ------------- End of mocktitle ----------------
@@ -107,12 +108,11 @@ Tá 54 ionad taighde as 33 tír i META-NET atá ag oibriú le geallsealbhóirí 
 
 \ParallelRText{\selectlanguage{english}
 This white paper is part of a series that promotes knowledge about language technology and its potential. It addresses journalists, politicians, language communities, educators and others. 
+The availability and use of language technology in Europe varies between languages. Consequently, the actions that are required to further support research and development of language technologies also differ. The required actions depend on many factors, such as the complexity of a given language and the size of its community.
 
-The availability and use of language technology in Europe varies between languages. Consequently, the actions that are required to further support research and development of language technologies also differs. The required actions depend on many factors, such as the complexity of a given language and the size of its community.
+META-NET, a Network of Excellence funded by the European Commission, has conducted an  analysis of current language resources and technologies in this white paper series (p.~\pageref{whitepaperseries}). The analysis focuses on the 23 official European languages as well as other important national and regional languages in Europe. The results of this analysis suggest that there are tremendous deficits in technology support and significant research gaps for each language. The given detailed expert analysis and assessment of the current situation will help maximise the impact of future research.
 
-META-NET, a Network of Excellence funded by the European Commission, has conducted an  analysis of current language resources and technologies in this white paper series (p.~\pageref{whitepaperseries}). The analysis focused on the 23 official European languages as well as other important national and regional languages in Europe. The results of this analysis suggest that there are tremendous deficits in technology support and significant research gaps for each language. The given detailed expert analysis and assessment of the current situation will help maximise the impact of additional research.
-
-As of November 2011, META-NET consists of 54 research centres from 33 European countries (p.~\pageref{metanetmembers}). META-NET is working with stakeholders from economy (Software companies, technology providers, users), government agencies, research organisations, non-governmental organisations, language communities and European universities. Together with these communities, META-NET is creating a common technology vision and strategic research agenda for multilingual Europe 2020.} 
+As of November 2011, META-NET consists of 54 research centres in 33 European countries (p.~\pageref{metanetmembers}). META-NET is working with stakeholders from economy (software companies, technology providers and users), government agencies, research organisations, non-governmental organisations, language communities and European universities. Together with these communities, META-NET is creating a common technology vision and strategic research agenda for multilingual Europe 2020.}
 \ParallelPar
 \end{Parallel}
 
@@ -237,7 +237,7 @@ De réir thuarascáil UNESCO ar ilteangachas, is meán ríthábhachtach iad tean
 
 \subsection{Is Teicneolaíocht Chumasaithe atá i dTeicneolaíocht Teanga}
 
-San am a caitheadh, dhírigh iarrachtaí infheistíochta i gcaomhnú teanga ar oideachas agus aistriú teanga. De réir meastachán amháin, b’ionann an margadh Eorpach d’aistriúchán, teangaireacht, bogearraí logánaithe agus domhandú suíomhanna gréasáin agus \euro 8.4 billiún in 2008 agus táthar ag súil go bhfásfaidh sé 10\% sa bhliain \cite{EC3}.  Ach ní chlúdaíonn an figiúr seo ach cuid bheag de riachtanais reatha agus amach anseo na cumarsáide idir teangacha. Is é an réiteach is fearr atá ar fáil chun leithead agus doimhneacht úsáid teanga a chinntiú san Eoraip sa todhchaí an teicneolaíocht chuí a úsáid, díreach mar a úsáidimid teicneolaíocht chun ár riachtanais iompair, fuinnimh agus míchumais i measc nithe eile a réiteach.
+San am a caitheadh, dhírigh iarrachtaí infheistíochta i gcaomhnú teanga ar oideachas agus aistriú teanga. De réir meastachán amháin, b’ionann an margadh Eorpach d’aistriúchán, teangaireacht, bogearraí logánaithe agus domhandú suíomhanna gréasáin agus \texteuro 8.4 billiún in 2008 agus táthar ag súil go bhfásfaidh sé 10\% sa bhliain \cite{EC3}.  Ach ní chlúdaíonn an figiúr seo ach cuid bheag de riachtanais reatha agus amach anseo na cumarsáide idir teangacha. Is é an réiteach is fearr atá ar fáil chun leithead agus doimhneacht úsáid teanga a chinntiú san Eoraip sa todhchaí an teicneolaíocht chuí a úsáid, díreach mar a úsáidimid teicneolaíocht chun ár riachtanais iompair, fuinnimh agus míchumais i measc nithe eile a réiteach.
 
 Cuidíonn teicneolaíocht teanga dhigiteach (ag díriú ar gach cineál téacs scríofa agus dioscúrsa labhartha) le daoine comhoibriú, gnó a dhéanamh, faisnéis a roinnt agus bheith rannpháirteach i ndíospóireacht shóisialta agus pholaitiúil in ainneoin baic theanga agus scileanna ríomhaireachta. Feidhmíonn sé go minic laistigh de chórais bhogearraí choimpléascacha le cuidiú linn:
 
@@ -380,7 +380,7 @@ Mar sin féin, leantar ag múineadh na Gaeilge i scoileanna agus in ollscoileann
 
 \subsection{An Ghaeilge ar an Idirlíon}
 
-Léiríonn figiúirí do Mheitheamh 2010 go n-úsáideann beagnach 70\% de dhaoine Éireannacha an tIdirlíon ina dteach nó ina n-ionad oibre \citep{internetstats} agus léiríonn suirbhé ó mhí na Samhna 2010 go bhfuil guthán cliste ag os cionn leath de thomhaltóirí na hÉireann \cite{mindshare}.  Ach, níl figiúirí cruinne ar fáil maidir leis an teanga a úsáideann muintir na hÉireann chun rochtain a fháil ar an Idirlíon. Fiú dá mbeadh na figiúirí sin ar fáil, tá ceist fós ann maidir le céard is brí le ``rochtain a fháil ar an Idirlíon'' i dteanga áirithe. An mbreathnaímid ar theanga an bhrabhsálaí/chórais feidhmíochta nó na suíomhanna a dtugann daoine cuairt orthu? Sa chás deireanach, bheadh meascán d’ábhar Gaeilge agus Béarla ar na leathanaigh, fiú na daoine atá tiomanta don mhéid Gaeilge agus is féidir leo a úsáid.
+Léiríonn figiúirí do Mheitheamh 2010 go n-úsáideann beagnach 70\% de dhaoine Éireannacha an tIdirlíon ina dteach nó ina n-ionad oibre \cite{internetstats} agus léiríonn suirbhé ó mhí na Samhna 2010 go bhfuil guthán cliste ag os cionn leath de thomhaltóirí na hÉireann \cite{mindshare}.  Ach, níl figiúirí cruinne ar fáil maidir leis an teanga a úsáideann muintir na hÉireann chun rochtain a fháil ar an Idirlíon. Fiú dá mbeadh na figiúirí sin ar fáil, tá ceist fós ann maidir le céard is brí le ``rochtain a fháil ar an Idirlíon'' i dteanga áirithe. An mbreathnaímid ar theanga an bhrabhsálaí/chórais feidhmíochta nó na suíomhanna a dtugann daoine cuairt orthu? Sa chás deireanach, bheadh meascán d’ábhar Gaeilge agus Béarla ar na leathanaigh, fiú na daoine atá tiomanta don mhéid Gaeilge agus is féidir leo a úsáid.
 
 Cuireann an tIdirlíon raon leathan réimsí feidhme ar fáil do theicneolaíochtaí teanga. Le cuid chomh suntasach de phobal na hÉireann páirteach i ngníomhaíochtaí ar líne agus pobal teanga oilte ``uirbeach'' ag teacht chun tosaigh, léiríonn sé seo deis iontach chun teicneolaícohtaí a úsáid chun iomadú na Gaeilge ar líne agus i TFC a éascú.
 
@@ -404,7 +404,7 @@ Is dócha gurb é an comhéadan cuardaigh do Google as Gaeilge an dul chun cinn 
 
 % --------------------------------------------------------------------------
 
-\ssection[Tacaíocht Teicneolaíochta Teanga don Ghaeilge}
+\ssection{Tacaíocht Teicneolaíochta Teanga don Ghaeilge}
 
 \begin{multicols}{2}
 
@@ -413,7 +413,7 @@ Is córais bhogearraí atá i dteicneolaíochtaí teanga a dheartar chun teanga 
 \begin{figure*}[htb]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
-  \includegraphics[width=\textwidth]{../_media/german/language_technologies}
+  \includegraphics[width=\textwidth]{../_media/irish/language_technologies}
   \caption{Teicneolaíocht Teanga i gComhthéacs}
   \label{fig:ltincontext_de}
   \colorrule{grey3}{\textwidth}{1.5pt}
@@ -446,8 +446,8 @@ Is iondúil go mbíonn roinnt comhábhar i bhfeidhmchláir bogearraí do phróis
 \begin{figure*}[htb]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
-  \includegraphics[width=\textwidth]{../_media/german/text_processing_app_architecture}
-  \caption{Eine typische Architektur zur Verarbeitung von Texten}
+  \includegraphics[width=\textwidth]{../_media/irish/text_processing_app_architecture}
+  \caption{Ailtireacht Tipiciúil ar Fheidhmchlár Próiseála Téacs}
   \label{fig:textprocessingarch_de}
   \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
@@ -487,8 +487,8 @@ Níl seiceáil teanga teoranta do phróiseálaithe focail; úsáidtear chomh mai
 \begin{figure*}[htb]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
-  \includegraphics[width=\textwidth]{../_media/german/language_checking}
-  \caption{SprachÃ¼berprÃ¼fung (statistisch; regelbasiert)}
+  \includegraphics[width=\textwidth]{../_media/irish/language_checking}
+  \caption{Seiceáil Teanga (ar chlé: riailbhunaithe; ar dheis: staistiúil)}
   \label{fig:langcheckingaarch_de}
   \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
@@ -504,8 +504,8 @@ Is é cuardach gréasáin, inlín nó leabharlainne digiteach an feidhmchláir t
 \begin{figure*}[htb]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
-  \includegraphics[width=\textwidth]{../_media/german/web_search_architecture}
-  \caption{Websuche}
+  \includegraphics[width=\textwidth]{../_media/irish/web_search_architecture}
+  \caption{Ailtireacht do Chuardach Gréasáin}
   \label{fig:websearcharch_de}
   \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
@@ -531,8 +531,8 @@ Anois agus sonraí á n-aimsiú i bhformáidí neamhthéacsúla, is gá go mbead
 \begin{figure*}[htb]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center 
-  \includegraphics[width=\textwidth]{../_media/german/simple_speech-based_dialogue_architecture}
-  \caption{Sprachdialogsystem}
+  \includegraphics[width=\textwidth]{../_media/irish/simple_speech-based_dialogue_architecture}
+  \caption{Ailtireacht Dialóige Simplí Labhairtbhunaithe}
   \label{fig:dialoguearch_de}
   \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
@@ -546,7 +546,7 @@ Tá ceithre theicneolaíocht i dteicneolaíocht labhartha:
 \item Aistríonn \textbf{sintéis chainte} (téacs go caint nó TTS) freagra an chórais ina fhuaimeanna don úsáideoir.
 \end{enumerate}
 
-Ar cheann de na mórdhúshláin a bhaineann le córais ASR na focail a deir úsáideoirí a aithint go beacht. Is é is ciall leis seo an réimse rudaí a deir an t-úsáideoir a shrianú chuig sraith theoranta eochairfhocal, nó múnlaí teanga a chruthú de láimh a chlúdaíonn réimse leathan teanga nádúrtha. Trí fheidhm a bhaint as teicníochtaí ríomhfhoghlama, is féidir múnlaí teanga a chothú ó chorpais chainte, i.e. bainiúcháin mhóra de chomhaid chainte fuaime agus tras-scríbhinní téacs. Nuair a chuirtear srian ar chaint, is éigean do dhaoine an comhéadan cainte úsáideora a úsáid ar bhealach docht agus déantar damáiste do ghlacadh úsáideora; ach ardófar costais go suntasach de bharr cruthú, tiúnáil agus cothabháil múnla teanga saibhre. Is iondúil go mbíonn VUIanna a úsáideann múnlaí teanga agus a cheadaíonn don úsáideoir a bhfuil i gceist acu a chur in iúl ar bhealach níos solúbtha – a thosaíonn le fáiltiú \testit{Conas is féidir liom cabhair leat?} – uathoibríoch agus glacann úsáideoirí níos fearr leo. 
+Ar cheann de na mórdhúshláin a bhaineann le córais ASR na focail a deir úsáideoirí a aithint go beacht. Is é is ciall leis seo an réimse rudaí a deir an t-úsáideoir a shrianú chuig sraith theoranta eochairfhocal, nó múnlaí teanga a chruthú de láimh a chlúdaíonn réimse leathan teanga nádúrtha. Trí fheidhm a bhaint as teicníochtaí ríomhfhoghlama, is féidir múnlaí teanga a chothú ó chorpais chainte, i.e. bainiúcháin mhóra de chomhaid chainte fuaime agus tras-scríbhinní téacs. Nuair a chuirtear srian ar chaint, is éigean do dhaoine an comhéadan cainte úsáideora a úsáid ar bhealach docht agus déantar damáiste do ghlacadh úsáideora; ach ardófar costais go suntasach de bharr cruthú, tiúnáil agus cothabháil múnla teanga saibhre. Is iondúil go mbíonn VUIanna a úsáideann múnlaí teanga agus a cheadaíonn don úsáideoir a bhfuil i gceist acu a chur in iúl ar bhealach níos solúbtha – a thosaíonn le fáiltiú \textit{Conas is féidir liom cabhair leat?} – uathoibríoch agus glacann úsáideoirí níos fearr leo. 
 
 Is iondúil go n-úsáideann cuideachta cainteoirí gairmiúla chun caint a réamhthaifeadadh chun aschur an chomhéadain úsáideora cainte a chruthú. Do chaint statach nach mbraitheann an fhoclaíocht ar chomhthéacsanna áirithe úsáidte nó sonraí úsáideora pearsanta, tig leis seo taithí níos saibhre a thabhairt don úsáideoir. Ach d’fhéadfadh ábhar níos dinimiciúla bheith beagán mínádúrtha mar gheall gur cuireadh comhaid fuaime randamacha le chéile. Tá córais TTS an lae inniu ag feabhsú (cé gur féidir barrfeabhas a chur orthu) maidir le caint dhinimiciúil nádúrtha a tháirgeadh. 
 
@@ -570,8 +570,8 @@ Bealach amháin le córas MT a thógáil is ea rialacha teangeolaíocha a úsái
 \begin{figure*}[htb]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
-  \includegraphics[width=\textwidth]{../_media/german/machine_translation}
-  \caption{Maschinelle Ãœbersetzung (statistisch; regelbasiert)}
+  \includegraphics[width=\textwidth]{../_media/irish/machine_translation}
+  \caption{Uathaistriú (ar chlé: staitistiúil, ar dheis: riailbhunaithe)}
   \label{fig:mtarch_de}
   \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
@@ -618,7 +618,7 @@ Baineadh amach na torthaí is fearr (i nglas agus gorm) i dteangacha a fhaighean
     SL & \textcolor{green}{61.0} & \textcolor{purple}{33.1} & \textcolor{purple}{37.9} & \textcolor{blue}{43.5} & \textcolor{blue}{42.6} & \textcolor{purple}{34.0} & \textcolor{blue}{47.0} & \textcolor{purple}{31.1} & \textcolor{red3}{28.8} & \textcolor{purple}{38.2} & \textcolor{red3}{25.7} & \textcolor{blue}{42.3} & \textcolor{purple}{34.6} & \textcolor{purple}{37.3} & \textcolor{purple}{30.0} & \textcolor{blue}{45.9} & \textcolor{purple}{38.2} & \textcolor{blue}{44.1} & \textcolor{purple}{35.8} & \textcolor{purple}{38.9} & -- & \textcolor{blue}{42.7}\\
     SV & \textcolor{green2}{58.5} & \textcolor{red3}{26.9} & \textcolor{blue}{41.0} & \textcolor{purple}{35.6} & \textcolor{blue}{46.6} & \textcolor{purple}{33.3} & \textcolor{blue}{46.6} & \textcolor{red3}{27.4} & \textcolor{purple}{30.9} & \textcolor{purple}{38.9} & \textcolor{red3}{22.7} & \textcolor{blue}{42.0} & \textcolor{red3}{28.2} & \textcolor{purple}{31.0} & \textcolor{red3}{23.7} & \textcolor{blue}{45.6} & \textcolor{purple}{32.2} & \textcolor{blue}{44.2} & \textcolor{purple}{32.7} & \textcolor{purple}{31.3} & \textcolor{purple}{33.5} & --\\
     \end{tabular}
-  \caption{Uathaistriú idir 22 Theanga AE -- \textcolor{grey1}{Machine translation between 22 EU-languages \cite{euro1}}} %NEEDS TO BE TRANSLATED
+  \caption{Uathaistriú idir 22 Theanga AE -- \textcolor{grey1}{Machine translation between 22 EU-languages \cite{euro1}}} 
   \label{fig:euromatrix_de}
 \end{figure*}
 
@@ -677,18 +677,18 @@ Déantar achoimre sa tábla a leanas ar staid reatha na tacaíochta don teicneol
   &\begin{sideways}\makecell[l]{\makecell[l]{Infhaighteacht} }\end{sideways} &\begin{sideways}\makecell[l]{Caighdeán}\end{sideways}
   &\begin{sideways}\makecell[l]{Clúdach}\end{sideways} &\begin{sideways}\makecell[l]{Aibíocht}\end{sideways} &\begin{sideways}\makecell[l]{Inbhuanaitheacht}\end{sideways} &\begin{sideways}\makecell[l]{Inoiriúnaitheacht}\end{sideways} \\ \addlinespace
   \multicolumn{8}{>{\columncolor{orange2}}l}{Teicneolaíocht Teanga: Uirlisí, Teicneolaíochtaí agus Feidhmchláir} \\\addlinespace
-  Aithint cainte &5&1&5&5&4&3&3 \\ \addlinespace
-  Sintéis Chainte &5&3&5&5&4&3&3\\ \addlinespace
-  Anailís ghramadaí &4&2.5&5&5&4&2.5&2.5\\ \addlinespace
-  Anailís shéimeantach &2&2&3.5&2.5&2&2&1\\ \addlinespace
-  Giniúint téacs &2&1&2.5&2.5&2&1&2\\ \addlinespace
-  Uathaistriú &5&3&2.5&3.5&4&1&2\\ \addlinespace
+  Aithint cainte &5&1&3&2&4&3&3 \\ \addlinespace
+  Sintéis Chainte &5&3&3&2&4&3&3\\ \addlinespace
+  Anailís ghramadaí &4&2.5&2&2&4&2.5&2.5\\ \addlinespace
+  Anailís shéimeantach &2&2&0&0&2&2&1\\ \addlinespace
+  Giniúint téacs &2&1&2&2&2&1&2\\ \addlinespace
+  Uathaistriú &5&3&1&1&4&1&2\\ \addlinespace
   \multicolumn{8}{>{\columncolor{orange2}}l}{Acmhainní Teanga: Acmhainní, Sonraí agus Bunachair Eolais} \\\addlinespace
-  Corpais téacs &3&2&4.5&3.5&4&4&2.5\\ \addlinespace
-  Corpais chainte &3&1&3.5&2.5&3&3&2\\ \addlinespace
-  Corpais chomhthreomhara &2&1&2.5&2.5&2&2&1\\ \addlinespace
-  Acmhainní foclóireachta &3&2.5&4.5&3&4&4&2.5\\ \addlinespace
-  Gramadach &3&2&3.5&3.5&3&2&1\\
+  Corpais téacs &3&2&1&1&4&4&2.5\\ \addlinespace
+  Corpais chainte &3&1&2&1&3&3&2\\ \addlinespace
+  Corpais chomhthreomhara &2&1&2&1&2&2&1\\ \addlinespace
+  Acmhainní foclóireachta &3&2.5&2&2&4&4&2.5\\ \addlinespace
+  Gramadach &3&2&1&2&3&2&1\\
   \end{tabular}
   \caption{Bail thacaíocht na teicneolaíochta teanga don Ghaeilge}
   \label{fig:lrlttable_de}
@@ -714,7 +714,7 @@ Léiríonn na torthaí go bhfuil tacaíocht teicneolaíochta theoranta ann don G
 
 Athraíonn staid reatha tacaíocht LT go mór ó phobal teanga amháin go pobal eile. D'fhonn comparáid a dhéanamh idir teangacha, cuirfear os bhur gcomhair sa chuid seo measúnú bunaithe ar dhá réimse feidhme samplacha (uathaistriúchán agus próiseáil cainte), mar aon le bunteicneolaíocht amháin(anailís téacs), mar aon leis na bunacmhainní a theastaíonn chun feidhmchláir LT a thógáil. Rinneadh catagóiriú ar na teangacha trí úsáid a bhaint as an scála cúig phointe seo a leanas:
 
-\begin{enumerate} %NEEDS TO BE TRANSLATED AGAIN!!!
+\begin{enumerate} 
 \item Tacaíocht den scoth
 \item Tacaíocht mhaith
 \item Tacaíocht réasúnta
@@ -769,7 +769,7 @@ Tomhaiseadh tacaíocht LT de réir na gcritéar seo a leanas:
   Eastóinis \newline 
   Gailísis \newline 
   Gréigis \newline  
-  Gaeilge \newline  
+  \textbf{Gaeilge} \newline  
   Catalóinis \newline 
   Ioruais \newline 
   Polainnis \newline 
@@ -828,7 +828,7 @@ Tomhaiseadh tacaíocht LT de réir na gcritéar seo a leanas:
   Fionlainnis \newline 
   Gailísis \newline 
   Gréigis \newline 
-  Gaeilge \newline 
+  \textbf{Gaeilge} \newline 
   Íoslainnis \newline 
   Cróitis \newline 
   Laitvis \newline 
@@ -891,7 +891,7 @@ Tomhaiseadh tacaíocht LT de réir na gcritéar seo a leanas:
   Seicis \newline 
   Ungáiris \newline 
   & \vspace*{0.5mm}Eastóinis \newline 
-  Gaeilge \newline 
+  \textbf{Gaeilge} \newline 
   Íoslainnis \newline 
   Cróitis \newline 
   Laitvis \newline 
@@ -950,7 +950,7 @@ Tomhaiseadh tacaíocht LT de réir na gcritéar seo a leanas:
     Seirbis \newline 
     Slóvaicis \newline 
     Slóivéinis \newline
-  &  \vspace*{0.5mm} Gaeilge \newline 
+  &  \vspace*{0.5mm} \textbf{Gaeilge} \newline 
     Íoslainnis \newline 
     Laitvis \newline 
     Liotuáinis \newline 
@@ -976,14 +976,14 @@ Tá sé tugtha faoi deara againn go bhfuil difríochtaí móra idir teangacha na
 Rinne tionscadal EUROMAP Language Technologies, \cite{euromap}, iniúchadh ar thaighde agus glachadh LT den scoth san Eoraip, mar aon leis an gcúlra don staid reatha i ngach tír. Táthar den tuairim sa tuarascáil gur chóir láithreacht infheicthe do ghníomhaíochtaí LT na hEorpa a bhunú, mar tá éagsúlacht chultúrtha agus theangeolaíoch san Eoraip nach bhfuil i limistéar ardgheilleagair. Ba cheart go mbeadh sé mar aidhm sraith modúil láidre, chobhsaí, ilteangacha HLT bheith ann, ar féidir iad a leabú i dtimpeallachtaí feidhme IST atá ag teacht chun cinn. Léiríonn an staidéar go bhfuil staid láidir ag Éirinn maidir le taighde agus forbairt LT agus tugtar faoi deara go bhfuil Éire ag feidhmiú de réir an mheáin AE agus, bunaithe ar na méadrachtaí a úsáideadh, go dtiteann sí isteach i ngrúpa tíortha ``a bhfuil cumas iontu'' maidir le taighde agus forbairt LT nach gá dóibh ach aistriú teicneolaíochta a fheabhsú chun caighdeáin ``an chéad ghlún eile'' a bhaint amach, cé nach bhfuil sí ceannródaíoch sa réimse seo.
 
 
-\begin{figure*}[htb]
-  \colorrule{grey3}{\textwidth}{1.5pt}
-  \center
-  \includegraphics[width=\textwidth]{./EuromapScorecard}
-  \caption{Scórchárta HLT EUROMAP}
-  \label{fig:EuromapHLT}
-  \colorrule{grey3}{\textwidth}{1.5pt}
-\end{figure*}
+%\begin{figure*}[htb]
+%  \colorrule{grey3}{\textwidth}{1.5pt}
+%  \center
+%  \includegraphics[width=\textwidth]{./EuromapScorecard}
+%  \caption{Scórchárta HLT EUROMAP}
+%  \label{fig:EuromapHLT}
+%  \colorrule{grey3}{\textwidth}{1.5pt}
+%\end{figure*}
 %NEED TO ADD DIAGRAM
 
 Is príomhthoisc atá i saincheist an aistrithe teicneolaíochta, mar a shainaithin EUROMAP, chun áit don Ghaeilge a chinntiú i sochaí nua-aimseartha na faisnéise.  Tá éileamh láidir cruthaithe ag na tosca sóisialta, oideachais agus polaitiúla éagsúla in Éirinn ar TFC a fhreastalaíonn ar an éileamh atá ar fhás ar fhaisnéis dhigiteach trí Ghaeilge. Ach, is cosúil go bhfuil an easpa líofachta Gaeilge i measc an phobail i gcoitinne agus an easpa aistrithe teicneolaíochta ó thaighde LT den chéad scoth in Éirinn ina bhfeidhmchláir a d'fhéadfadh tacú le líofacht níos mó agus/nó rochtain ar fhaisnéis a fheabhsú trí Ghaeilge ag cur sriain ar an gcéad chéil eile chun cinn don Ghaeilge.
@@ -1010,7 +1010,7 @@ Is í sprioc fhadtéarmach META-NET teicneolaíocht teanga ardchaighdeáin a chu
 
 \begin{multicols}{2}
 
-Is Gréasain Sármhaitheasa arna maoiniú ag an gCoimisiún Eorpach atá in META-NET. Tá 47 ball sa ghréasán faoi láthair ó 31 tír Eorpach. Cothaíonn META-NET Comhghuaillíocht Teicneolaíochta Ilteangach na hEorpach (Multilingual Europe Technology Alliance), pobal gairmithe agus eagraíochtaí um theicneolaíocht theangach san Eoraip, atá i mbun fáis.
+Is Gréasain Sármhaitheasa arna maoiniú ag an gCoimisiún Eorpach atá in META-NET. Tá 54 ball sa ghréasán faoi láthair ó 33 tír Eorpach. Cothaíonn META-NET Comhghuaillíocht Teicneolaíochta Ilteangach na hEorpach (Multilingual Europe Technology Alliance), pobal gairmithe agus eagraíochtaí um theicneolaíocht theangach san Eoraip, atá i mbun fáis.
  
 Comhoibríonn META-NET le tionscnaimh eile cosúil le hAcmhainní Teanga agus Bonneagar Teicneolaíochta Coitianta (Common Language Resources and Technology Infrastructure (CLARIN)), atá ag cuidiú le taighde daonnachtaí digiteach a bhunú san Eoraip. Cothaíonn META-NET na bunúis teicneolaíochta do shochaí ilteangach Eorpach a dhéanann na nithe seo a leanas:
 
@@ -1051,9 +1051,7 @@ During the last 60 years, Europe has become a distinct political and economic st
 
 \boxtext{Language technology builds bridges.}
 
-The Irish economy takes great advantage of the European single market: In 2010, trade within the EU accounted for 57.9\% of Irish exports, and trade with other European countries totalled another 4.9\% \cite{csoirishtrade}.  But language barriers can bring business to a halt, especially for SMEs who do not have the financial means to reverse the situation. The only (unthinkable) alternative to this kind of multilingual Europe would be to allow a single language to take a dominant position and end up replacing all other languages.
- 
-One way to overcome the language barrier is to learn foreign languages. Yet without technological support, mastering the 23 official languages of the member states of the European Union and some 60 other European languages is an insurmountable obstacle for Europe's citizens, economy, political debate, and scientific progress. 
+The Irish economy takes great advantage of the European single market: In 2010, trade within the EU accounted for 57.9\% of Irish exports, and trade with other European countries totalled another 4.9\% \cite{csoirishtrade}.  But language barriers can bring business to a halt, especially for SMEs who do not have the financial means to reverse the situation. The only (unthinkable) alternative to a multilingual Europe would be to allow a single language to take a dominant position and end up replacing all other languages. One way to overcome the language barrier is to learn foreign languages. Yet without technological support, mastering the 23 official languages of the member states of the European Union and some 60 other European languages is an insurmountable obstacle for Europe's citizens, economy, political debate, and scientific progress. 
 
 The solution is to build key enabling technologies: language technologies will offer European stakeholders tremendous advantages, not only within the common European market, but also in trade relations with non-European countries, especially emerging economies. Language technology solutions will eventually serve as a unique bridge between Europe's languages. An indispensable prerequisite for their development is first to carry out a systematic analysis of the linguistic particularities of all European languages, and the current state of language technology support for them.  
     
@@ -1061,19 +1059,19 @@ The automated translation and speech processing tools currently available on the
 
 The predominant actors in LT today rely on imprecise statistical approaches that do not make use of deeper linguistic methods and knowledge. For example, sentences are often automatically translated by comparing each new sentence against thousands of sentences previously translated by humans. The quality of the output largely depends on the size and quality of the available  data. While the automatic translation of simple sentences in languages with sufficient amounts of available textual data can achieve useful results, shallow statistical methods are doomed to fail in the case of languages with a much smaller body of sample data or in the case of sentences with complex, non-repetitive structures. Analysing the deeper structural properties of languages is the only way forward if we want to build applications that perform well across the entire range of European languages.
 
-\boxtext{Language technology as a key for the future}
+\boxtext{Language technology is a key for the future.}
 
-The European Union is thus funding projects such as EuroMatrix and EuroMatrixPlus (since 2006) and iTranslate4 (since 2010) that carry out basic and applied research, and generate resources for establishing high quality language technology solutions for all European languages. 
+The European Union is thus funding projects such as EuroMatrix and EuroMatrix+ (since 2006) and iTranslate4 (since 2010), which carry out basic and applied research, and generate resources for establishing high quality language technology solutions for all European languages. 
 
 European research in the area of language technology has already achieved a number of successes. For example, the translation services of the European Union now use the Moses open-source machine translation software, which has been mainly developed in European research projects. The Verbmobil project, funded by the German Ministry of Education and Research (BMBF) between 1993 and 2000, pushed Germany into the lead in the world of speech translation research for a time. Many of the research and development labs located in Germany at the time (e.\,g., IBM and Philips) have since been closed down or moved elsewhere. Rather than building on the outcomes of these research projects, Europe has tended to pursue isolated research activities with a less pervasive impact on the market. The economic value of even the earliest efforts can be seen in the number of spin-offs. A company such as Trados, which was founded back in 1984, was sold to the UK-based SDL in 2005.
 
-\boxtext{Language Technology helps unify Europe}
+\boxtext{Language Technology helps to unify Europe.}
 
-Drawing on the insights gained so far, it appears that today’s `hybrid' language technology mixing deep processing with statistical methods will be able to bridge the gap between all European languages and beyond. As this series of white papers shows, there is a dramatic difference in the state of readiness with respect to language solutions and the state of research between Europe's member states. Irish, as a minority language of the EU, and indeed of Ireland, is at risk of being left behind in respect of such advances if action is not taken to provide basic component language technologies to support the language. At the same time, with a strong pedigree in translation and localisation and LT research Ireland is in a strong position to develop such technologies and also play an important role both economically and scientifically in making significant advances in the field at large.
+Drawing on the insights gained so far, today’s hybrid language technology mixing deep processing with statistical methods should be able to bridge the gap between all European languages and beyond. But as this series of white papers shows, there is a dramatic difference between Europe's member states in terms of both the maturity of the research and in the state of readiness with respect to language solutions. Irish, as a minority language of the EU, and indeed of Ireland, is at risk of being left behind in respect of such advances if action is not taken to provide basic component language technologies to support the language. At the same time, with a strong pedigree in translation and localisation and LT research Ireland is in a strong position to develop such technologies and also play an important role both economically and scientifically in making significant advances in the field at large.
 
 META-NET's vision is high-quality language technology for all languages that supports political and economic unity through cultural diversity. This technology will help tear down existing barriers and build bridges between Europe's languages. This requires all stakeholders -- in politics, research, business, and society -- to unite their efforts for the future.
 
-This whitepaper series complements the other strategic actions taken by META-NET (see the appendix for an overview). Up-to-date information such as the current version of the META-NET vision paper \cite{Meta1} or the Strategic Research Agenda (SRA) can be found on the META-NET web site: http://www.meta-net.eu.
+This whitepaper series complements the other strategic actions taken by META-NET (see the appendix for an overview). Up-to-date information such as the current version of the META-NET vision paper \cite{Meta1} and the Strategic Research Agenda (SRA) can be found on the META-NET web site: http://www.meta-net.eu.
 \end{multicols}
 
 \clearpage
@@ -1084,7 +1082,7 @@ This whitepaper series complements the other strategic actions taken by META-NET
 
 We are witnesses to a digital revolution that is dramatically impacting communication and society. Recent developments in information and communication technology are sometimes compared to Gutenberg's invention of the printing press. What can this analogy tell us about the future of the European information society and our languages in particular?
 
-\boxtext{We are witnessing a digital revolution that is comparable to Gutenberg's invention of the printing press.}
+\boxtext{The digital revolution is comparable to Gutenberg's invention of the printing press.}
 
 After Gutenberg's invention, real breakthroughs in communication were accomplished by efforts such as Luther's translation of the Bible into vernacular language. In subsequent centuries, cultural techniques have been developed to better handle language processing and knowledge exchange:
 
@@ -1113,25 +1111,25 @@ Although these tools and applications are helpful, they are not yet capable of s
 
 \subsection[Language Borders Hold back the European Information Society]{Language Borders\newline Hold back the European Information Society}
 
-We cannot predict exactly what the future information society will look like. However, there is a strong likelihood that the revolution in communication technology is bringing together people who speak different languages in new ways. This is putting pressure both on individuals to learn new languages and especially on developers to create new technology applications to ensure mutual understanding and access to shareable knowledge. In the global economic and information space, there is increasing interaction between different languages, speakers and content thanks to new types of media. The current popularity of social media (Wikipedia, Facebook, Twitter, YouTube, and, recently, Google+) is only the tip of the iceberg.
+We cannot predict exactly what the future information society will look like. However, there is a strong likelihood that the revolution in communication technology is bringing together people who speak different languages in new ways. This is putting pressure both on individuals to learn new languages and especially on developers to create new technology applications to ensure mutual understanding and access to shareable knowledge. In the global economic and information space, there is increasing interaction between different languages, speakers and content thanks to new types of media. The current popularity of social media (Wikipedia, Facebook, Twitter, YouTube, Google+) is only the tip of the iceberg.
 
-\boxtext{A global economy and information space confronts us with different languages, speakers and content.}
+\boxtext{The global economy and information space confronts us with different languages, speakers and content.}
 
-Today, we can transmit gigabytes of text around the world in a few seconds before we recognise that it is in a language that we do not understand. According to a recent report from the European Commission, 57\% of Internet users in Europe purchase goods and services in languages that are not their native language; English is the most common foreign language followed by French, German and Spanish. 55\% of users read content in a foreign language while 35\% use another language to write e-mails or post comments on the Web \cite{EC1}. A few years ago, English might have been the lingua franca of the Webâ -- the vast majority of content on the Web was in English -- but the situation has now drastically changed. The amount of online content in other European (as well as Asian and Middle Eastern) languages has exploded.
+Today, we can transmit gigabytes of text around the world in a few seconds before we recognise that it is in a language that we do not understand. According to a recent report from the European Commission, 57\% of Internet users in Europe purchase goods and services in non-native languages; English is the most common foreign language followed by French, German and Spanish. 55\% of users read content in a foreign language while 35\% use another language to write e-mails or post comments on the Web \cite{EC1}. A few years ago, English might have been the lingua franca of the Web -- the vast majority of content on the Web was in English -- but the situation has now drastically changed. The amount of online content in other European (as well as Asian and Middle Eastern) languages has exploded.
 
-Surprisingly, this ubiquitous digital linguistic divide has not gained much public attention; yet, it raises a very pressing question: Which European languages will thrive in the networked information and knowledge society, and which are doomed to disappear?
+Surprisingly, this ubiquitous digital linguistic divide has not gained much public attention. Yet, it raises a very pressing question: Which European languages will thrive in the networked information and knowledge society, and which are doomed to disappear?
 
 \subsection{Our Languages at Risk}
 
 While the printing press helped step up the exchange of information in Europe, it also led to the extinction of many European languages. Regional and minority languages were rarely printed and languages such as Cornish and Dalmatian were limited to oral forms of transmission, which in turn restricted their scope of use. Will the Internet have the same impact on our modern languages?
 
-\boxtext{The wide variety of languages in Europe is one of its richest and most important cultural assets.}
+\boxtext{The variety of languages in Europe is one of its richest and most important cultural assets.}
 
 Europe's approximately 80 languages are one of our richest and most important cultural assets, and a vital part of this unique social model \cite{EC2}. While languages such as English and Spanish are likely to survive in the emerging digital marketplace, many European languages could become irrelevant in a networked society. This would weaken Europe's global standing, and run counter to the strategic goal of ensuring equal participation for every European citizen regardless of language. According to a UNESCO report on multilingualism, languages are an essential medium for the enjoyment of fundamental rights, such as political expression, education and participation in society \cite{Unesco1}.
 
 \subsection{Language Technology is a Key Enabling Technology}
 
-In the past, investments in language preservation focussed primarily on language education and translation. According to one estimate, the European market for translation, interpretation, software localisation and website globalisation was â‚¬8.4 billion in 2008 and is expected to grow by 10\% per annum \cite{EC3}. Yet this figure covers just a small proportion of current and future needs in communicating between languages. The most compelling solution for ensuring the breadth and depth of language usage in Europe tomorrow is to use appropriate technology, just as we use technology to solve our transport and energy needs among others.
+In the past, investments in language preservation focussed primarily on language education and translation. According to one estimate, the European market for translation, interpretation, software localisation and website globalisation was \texteuro8.4 billion in 2008 and is expected to grow by 10\% per annum \cite{EC3}. Yet this figure covers just a small proportion of current and future needs in communicating between languages. The most compelling solution for ensuring the breadth and depth of language usage in Europe tomorrow is to use appropriate technology, just as we use technology to solve our transport and energy needs among others.
 
 Language technology targeting all forms of written text and spoken discourse can help people to collaborate, conduct business, share knowledge and participate in social and political debate regardless of language barriers and computer skills. It often operates invisibly inside complex software systems to help us already today to:
 
@@ -1165,7 +1163,7 @@ Language technology represents a tremendous opportunity for the European Union. 
 
 Although language technology has made considerable progress in the last few years, the current pace of technological progress and product innovation is too slow. Widely-used technologies such as the spelling and grammar correctors in word processors are typically monolingual, and are only available for a handful of languages. Online machine translation services, although useful for quickly generating a reasonable approximation of a document's contents, are fraught with difficulties when highly accurate and complete translations are required. Due to the complexity of human language, modelling our tongues in software and testing them in the real world is a long, costly business that requires sustained funding commitments. Europe must therefore maintain its pioneering role in facing the technological challenges of a multiple-language community by inventing new methods to accelerate development right across the map. These could include both computational advances and techniques such as crowdsourcing.
 
-\boxtext{The current pace of technological progress is too slow.}
+\boxtext{Technological progress needs to be accelerated.}
 
 \subsection{Language Acquisition in Humans and Machines}
 
@@ -1175,15 +1173,15 @@ Humans acquire language skills in two different ways. Babies acquire a language 
 
 Learning a second language at an older age requires more cognitive effort, largely because the child is not immersed in a language community of native speakers. At school, foreign languages are usually acquired by learning grammatical structure, vocabulary and spelling using drills that describe linguistic knowledge in terms of abstract rules, tables and examples.
 
-\boxtext{Humans acquire language skills in two different ways: learning examples and learning the underlying language rules.}
+\boxtext{Humans acquire language skills in two different ways: learning from examples and learning the underlying language rules.}
 
-Moving now to language technology, the two main types of systems `acquire' language capabilities in a similar manner. Statistical (or `data-driven') approaches obtain linguistic knowledge from vast collections of concrete example texts. While it is sufficient to use text in a single language for training, e.\,g., a spell checker, parallel texts in two (or more) languages have to be available for training a machine translation system. The machine learning algorithm then ``learns'' patterns of how words, short phrases and complete sentences are translated. 
+Moving now to language technology, the two main types of systems `acquire' language capabilities in a similar manner. Statistical (or data-driven') approaches obtain linguistic knowledge from vast collections of concrete example texts. While it is sufficient to use text in a single language for training, e.\,g., a spell checker, parallel texts in two (or more) languages have to be available for training a machine translation system. The machine learning algorithm then learns patterns of how words, short phrases and complete sentences are translated. 
 
 This statistical approach usually requires millions of sentences to boost performance quality. This is one reason why search engine providers are eager to collect as much written material as possible. Spelling correction in word processors, and services such as Google Search and Google Translate, all rely on statistical approaches. The great advantage of statistics is that the machine learns quickly in a continuous series of training cycles, even though quality can vary randomly.
 
 The second approach to language technology, and to machine translation in particular, is to build rule-based systems. Experts in the fields of linguistics, computational linguistics and computer science first have to encode grammatical analyses (translation rules) and compile vocabulary lists (lexicons). This is very time consuming and labour intensive. Some of the leading rule-based machine translation systems have been under constant development for more than 20 years. The great advantage of rule-based systems is that the experts have more detailed control over the language processing. This makes it possible to systematically correct mistakes in the software and give detailed feedback to the user, especially when rule-based systems are used for language learning. However, due to the high cost of this work, rule-based language technology has so far only been developed for a few major languages. 
 
-\boxtext{The two main types of language technology systems acquire language in a similar manner.}
+%\boxtext{The two main types of language technology systems acquire language in a similar manner.}
 
 As the strengths and weaknesses of statistical and rule-based systems tend to be complementary, current research focusses on hybrid approaches that combine the two methodologies. However, these approaches have so far been less successful in industrial applications than in the research lab. 
 
@@ -1264,7 +1262,7 @@ Historically, large scale emigration has been a feature of life in Ireland as th
 Nonetheless, Irish continues to be taught in schools and universities in North America, Australia and New Zealand, albeit largely as a purely academic pursuit. And, according to the 2000 census 25,661 people in the United States speak Irish at home. The U.S. also saw the founding of the first Irish language newspaper in 1881 which continued to be published into the 20th century and now exists online (http://www.angaelmagazine.com). 
 
 \subsection{Irish on the Internet}
-Figures for June 2010 show that almost 70\% of Irish people use the internet in their home or workplace \citep{internetstats} and a survey from November 2010 indicates that over half of Irish consumers own a smart-phone \cite{mindshare}. However, no accurate figures are available as to which language Irish people use to access the internet. Even if such figures were available, the question of what does it mean to ``access the internet'' in a given language remains. Do we look at the language of the browser/operating system or the sites people visit? In the latter case, even people committed to using Irish as much as possible would always have a mix of Irish and English content on pages.
+Figures for June 2010 show that almost 70\% of Irish people use the internet in their home or workplace \cite{internetstats} and a survey from November 2010 indicates that over half of Irish consumers own a smart-phone \cite{mindshare}. However, no accurate figures are available as to which language Irish people use to access the internet. Even if such figures were available, the question of what does it mean to ``access the internet'' in a given language remains. Do we look at the language of the browser/operating system or the sites people visit? In the latter case, even people committed to using Irish as much as possible would always have a mix of Irish and English content on pages.
 
 The internet offers a great range of application areas for language technologies. With such a significant proportion of the Irish population engaged in online activities and an emerging educated ``urban'' language community, this represents a significant opportunity to employ technologies to facilitate the proliferation of Irish online and in ICT.
 
@@ -1304,7 +1302,8 @@ Language technology is used to develop software systems designed to handle human
   \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
 
-When we communicate, we combine language with other modes of communication and information media -- for example speaking can involve gestures and facial expressions. Digital texts link to pictures and sounds. Movies may contain language in spoken and written form. In other words, speech and text technologies overlap and interact with other multimodal communication and multimedia technologies.\\ 
+When we communicate, we combine language with other modes of communication and information media -- for example speaking can involve gestures and facial expressions. Digital texts link to pictures and sounds. Movies may contain language in spoken and written form. In other words, speech and text technologies overlap and interact with other multimodal communication and multimedia technologies.
+
 In this section, we will discuss the main application areas of language technology, i.\,e., language checking, web search, speech interaction, and machine translation. These applications and basic technologies include 
 
 \begin{itemize}
@@ -1319,17 +1318,17 @@ In this section, we will discuss the main application areas of language technolo
 \item speech synthesis 
 \end{itemize}
 
-Language technology is an established area of research with an extensive set of introductory literature. The interested reader is referred to the following references:  \cite{carstensen-etal1, jurafsky-martin01, manning-schuetze1, lt-world1, lt-survey1}. %NEEDS TO BE TRANSLATED
+Language technology is an established area of research with an extensive set of introductory literature. The interested reader is referred to the following references:  \cite{carstensen-etal1, jurafsky-martin01, manning-schuetze1, lt-world1, lt-survey1}. 
 
 Before discussing the above application areas, we will briefly describe the architecture of a typical LT system.
 
 \subsection{Application Architectures}
 
-Software applications for language processing typically consist of several components that mirror different aspects of language. While such applications are typically very complex, figure~\ref{fig:textprocessingarch_en} shows a highly simplified architecture of a typical text processing system. The first three modules handle the structure and meaning of the text input:
+Software applications for language processing typically consist of several components that mirror different aspects of language. While such applications tend to be very complex, figure~\ref{fig:textprocessingarch_en} shows a highly simplified architecture of a typical text processing system. The first three modules handle the structure and meaning of the text input:
 
 \begin{enumerate}
-\item Pre-processing: cleans the data, analyses or removes format-ting, detects the input language, replaces contractions ``le’d thoil'' with ``le do thoil'', and so on.
-\item Grammatical analysis: finds the verb, its objects, modifiers and other parts of speech; detects the sentence structure.
+\item Pre-processing: cleans the data, analyses or removes format-ting, detects the input languages, replaces contractions (e.g. ``le’d thoil'' with ``le do thoil''), and so on.
+\item Grammatical analysis: finds the verb, its subject and objects, modifiers and other sentence constituents; detects the sentence structure.
 \item Semantic analysis: performs disambiguation (i.\,e., computes the appropriate meaning of words in a given context); resolves anaphora (i.\,e., which pronouns refer to which nouns in the sentence); represents the meaning of the sentence in a machine-readable way.
 \end{enumerate}
 
@@ -1374,7 +1373,7 @@ Handling these kinds of errors usually requires an analysis of the context. This
 
 Language checking is not limited to word processors; it is also used in ``authoring support systems'', i.\,e., software environments in which manuals and other types of technical documentation for complex IT, healthcare, engineering and other products, are written. To offset customer complaints about incorrect use and damage claims resulting from poorly understood instructions, companies are increasingly focusing on the quality of technical documentation while targeting the international market (via translation or localisation) at the same time. Advances in natural language processing have led to the development of authoring support software, which helps the writer of technical documentation to use vocabulary and sentence structures that are consistent with industry rules and (corporate) terminology restrictions.
 
-\boxtext{The use of language checking is not limited to word processors. It also applies to authoring support systems.}
+\boxtext{Language checking is not limited to word processors, but also applies to authoring systems.}
 
 Language checking tools are available for Irish in popular office suites such as Microsoft Office and Open Office. These tools check not just spelling but also many aspects of Irish grammar however, direct integration into existing products is not always possible. For example, only one language checker for Irish \cite{gramadoir} does more than spelling correction, and it is currently not easily integrated into either OpenOffice or Microsoft Word (though, at the time of writ-ing, this is work in progress). With respect to spelling correction, Microsoft's spell checker has not been updated in many years.  There is only one spell checker (GaelSpell http://borel.slu.edu/ispell/) which is consistently updated, open source, and available for Word/OOo/Firefox, etc
 
@@ -1386,19 +1385,18 @@ Besides spell checkers and authoring support, language checking is also importan
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
   \includegraphics[width=\textwidth]{../_media/english/web_search_architecture}
-  \caption{Web search}
+  \caption{Web search architecture}
   \label{fig:websearcharch_en}
   \colorrule{grey3}{\textwidth}{1.5pt}
  \end{figure*}
 
 Searching the Web, intranets or digital libraries is probably the most widely used yet largely underdeveloped language technology application today. The Google search engine, which started in 1998, now handles about 80\% of all search queries and over 90\% of all search queries from internet users in Ireland \cite{googlemarketshare}. As of the time of writing there is not yet an official Irish equivalent of the verb ``to google'' as there is in for example, German. But certainly in the vernacular where, English loan words first creep into the language the term ``gúgláil'' \cite{kilgarriff2010} is used. The Google search interface and re-sults page display has not significantly changed since the first version. Yet in the current version, Google offers spelling correction for misspelled words (but not for Irish) and has now incorporated basic semantic search capabilities that can improve search accuracy by analysing the meaning of terms in a search query context \cite{googlesemsearch}.  The Google success story shows that a large volume of available data and efficient indexing techniques can deliver satisfactory results for a statistically-based approach. 
 
-For more sophisticated information requests, it is essential to integrate deeper linguistic knowledge for text interpretation. Experiments using \textbf{lexical resources} such as machine-readable thesauri or ontological language resources (e.g., WordNet for English or Líonra Séimeantach na Gaeilge for Irish) have demonstrated improvements in finding pages using synonyms of the original search terms, such as \textit{fuinnimh adamach} [atomic energy], \textit{cumhacht núicléach} [nuclear energy], or even more loosely related terms. 
-
+For more sophisticated information requests, it is essential to integrate deeper linguistic knowledge to facilitate text interpretation. Experiments using \textbf{lexical resources} such as machine-readable thesauri or ontological language resources (e.g., WordNet for English or Líonra Séimeantach na Gaeilge for Irish) have demonstrated improvements in finding pages using synonyms of the original search terms, such as \textit{fuinnimh adamach} [atomic energy], \textit{cumhacht núicléach} [nuclear energy], or even more loosely related terms. 
 
 \boxtext{The next generation of search engines will have to include much more sophisticated language technology.}
 
-The next generation of search engines will have to include much more sophisticated language technology, escpecially to deal with search queries consisting of a question or other sentence type rather than a list of keywords. For the query, \textit{Give me a list of all companies that were taken over by other companies in the last five years}, a syntactic as well as \textbf{semantic analysis} is required. The system also needs to provide an index to quickly retrieve relevant documents. A satisfactory answer will require syntactic parsing to analyse the grammatical structure of the sentence and determine that the user wants companies that have been acquired, rather than companies that have acquired other companies. For the expression \textit{last five years}, the system needs to determine the relevant range of years, taking into account the present year. The query then needs to be matched against a huge amount of unstructured data to find the pieces of information that are relevant to the user's request. This process is called information retrieval, and involves searching and ranking relevant documents. To generate a list of companies, the system also needs to recognise a particular string of words in a document represents a company name, using a process called named entity recognition.
+The next generation of search engines will have to include much more sophisticated language technology, especially to deal with search queries consisting of a question or other sentence type rather than a list of keywords. For the query, \textit{Give me a list of all companies that were taken over by other companies in the last five years}, a syntactic as well as \textbf{semantic analysis} is required. The system also needs to provide an index to quickly retrieve relevant documents. A satisfactory answer will require syntactic parsing to analyse the grammatical structure of the sentence and determine that the user wants companies that have been acquired, rather than companies that have acquired other companies. For the expression \textit{last five years}, the system needs to determine the relevant range of years, taking into account the present year. The query then needs to be matched against a huge amount of unstructured data to find the pieces of information that are relevant to the user's request. This process is called information retrieval, and involves searching and ranking relevant documents. To generate a list of companies, the system also needs to recognise a particular string of words in a document represents a company name, using a process called named entity recognition.
 
 A more demanding challenge is matching a query in one language with documents in another language. Cross-lingual information retrieval involves automatically translating the query into all possible source languages and then translating the results back into the user's target language.
 
@@ -1430,9 +1428,9 @@ Speech interaction technology comprises four technologies:
 
 One of the major challenges of ASR systems is to accurately recognise the words a user utters. This means restricting the range of possible user utterances to a limited set of keywords, or manually creating language models that cover a large range of natural language utterances. Using machine learning techniques, language models can also be generated automatically from \textbf{speech corpora}, i.\,e., large collections of speech audio files and text transcriptions. Restricting utterances usually forces people to use the voice user interface in a rigid way and can damage user acceptance; but the creation, tuning and maintenance of rich language models will significantly increase costs. VUIs that employ language models and initially allow a user to express their intent more flexibly -- prompted by a \textit{How may I help you?} greeting -- tend to be automated and are better accepted by users.
 
-\boxtext{Speech interaction is the basis for creating interfaces that allow a user to interact with spoken language instead of a graphical dis-play, keyboard and mouse.}
+\boxtext{Speech interaction is the basis for interfaces that allow a user to interact with spoken language.}
 
-Companies tend to use pre-recorded utterances by professional speakers for generating the output of the voice user interface. For static utterances where the wording does not depend on particular contexts of use or personal user data, this can deliver a rich user experience. But more dynamic content in an utterance may suffer from unnatural intonation because bits of audio files have simply been strung together. Through optimisation, today's TTS systems are getting better at producing natural-sounding dynamic utterances.
+Companies tend to use utterances pre-recorded by professional speakers for generating the output of the voice user interface. For static utterances where the wording does not depend on particular contexts of use or personal user data, this can deliver a rich user experience. But more dynamic content in an utterance may suffer from unnatural intonation because different parts of audio files have simply been strung together. Through optimisation, today's TTS systems are getting better at producing natural-sounding dynamic utterances.
 
 Interfaces in speech interaction have been considerably standardised during the last decade in terms of their various technological components. There has also been strong market consolidation in speech recognition and speech synthesis. The national markets in the G20 countries (economically resilient countries with high populations) have been dominated by just five global players, with Nuance (USA) and Loquendo (Italy) being the most prominent players in Europe. In 2011, Nuance announced the acquisition of Loquendo, which represents a further step in market consolidation.
 
@@ -1442,53 +1440,48 @@ Looking ahead, there will be significant changes, due to the spread of smartphon
 
 \subsubsection{Machine Translation}
 
-\begin{figure*}[htb]
-  \colorrule{grey3}{\textwidth}{1.5pt}
-  \center
-  \includegraphics[width=\textwidth]{../_media/english/machine_translation}
-  \caption{Machine translation (statistical; rule-based)}
-  \label{fig:mtarch_en}
-  \colorrule{grey3}{\textwidth}{1.5pt}
-\end{figure*}
-
 The idea of using digital computers to translate natural languages can be traced back to 1946 and was followed by substantial funding for research during the 1950s and again in the 1980s. 
 Yet machine translation (MT) still cannot deliver on its initial promise of providing across-the-board automated translation.  
 
 \boxtext{At its basic level, Machine Translation simply substitutes words in one natural language with words in another language.}
 
-The idea of using digital computers to translate natural languages goes back to 1946 and was followed by substantial funding for research during the 1950s and again in the 1980s. Yet \textbf{machine translation} (MT) still cannot meet its initial promise of across-the-board automated translation. 
-
-The most basic approach to machine translation is the automatic replacement of the words in a text written in one natural language with the equivalent words of another language. This can be useful in subject domains that have a very restricted, formulaic language such as weather reports.
-However, in order to produce a good translation of less restricted texts, larger text units (phrases, sentences, or even whole passages) need to be matched to their closest counterparts in the target language. The major difficulty is that human language is ambiguous. Ambiguity creates challenges on multiple levels, such as word sense disambiguation on the lexical level (a \textit{jaguar} is a brand of car or an animal) or the assignment of case on the syntactic level.
+The most basic approach to machine translation is the automatic replacement of the words in a text written in one natural language with the equivalent words of another language. This can be useful in subject domains that have a very restricted, formulaic language such as weather reports. However, in order to produce a good translation of less restricted texts, larger text units (phrases, sentences, or even whole passages) need to be matched to their closest counterparts in the target language. The major difficulty is that human language is ambiguous. Ambiguity creates challenges on multiple levels, such as word sense disambiguation at the lexical level (a \textit{jaguar} is a brand of car or an animal) or the assignment of case on the syntactic level.
 
 One way to build an MT system is to use linguistic rules. For translations between closely related languages, a translation using direct substitution may be feasible in cases such as the above example. However, rule-based (or linguistic knowledge-driven) systems often analyse the input text and create an intermediary symbolic representation from which the target language text can be generated. The success of these methods is highly dependent on the availability of extensive lexicons with morphological, syntactic, and semantic information, and large sets of grammar rules carefully designed by skilled linguists. This is a very long and therefore costly process.
 
-In the late 1980s when computational power increased and became cheaper, interest in statistical models for machine translation began to grow. Statistical models are derived from analysing bilingual text corpora, \textbf{parallel corpora}, such as the Europarl parallel corpus, which contains the proceedings of the European Parliament in 11 European languages. Given enough data, statistical MT works well enough to derive an approximate meaning of a foreign language text by processing parallel versions and finding plausible patterns of words. Unlike knowledge-driven systems, however, statistical (or data-driven) MT systems often generate ungrammatical output. Data-driven MT is advantageous because less human effort is required, and it can also cover special particularities of the language (e.\,g., idiomatic expressions) that are often ignored in knowledge-driven systems. 
+\begin{figure*}[htb]
+  \colorrule{grey3}{\textwidth}{1.5pt}
+  \center
+  \includegraphics[width=\textwidth]{../_media/english/machine_translation}
+  \caption{Machine translation (left: statistical; right: rule-based)}
+  \label{fig:mtarch_en}
+  \colorrule{grey3}{\textwidth}{1.5pt}
+\end{figure*}
 
-The strengths and weaknesses of knowledge-driven and data-driven machine translation tend to be complementary, so that nowadays researchers focus on hybrid approaches that combine both methodologies. One such approach uses both knowledge-driven and data-driven systems, together with a selection module that decides on the best output for each sentence. However, results for sentences longer than, say, 12 words, will often be far from perfect. A more effective solution is to combine the best parts of each sentence from multiple outputs; this can be fairly complex, as corresponding parts of multiple alternatives are not always obvious and need to be aligned. 
+In the late 1980s when computational power increased and became cheaper, interest in statistical models for machine translation began to grow. Statistical models are derived from analysing bilingual text corpora, \textbf{parallel corpora}, such as the Europarl parallel corpus, which contains the proceedings of the European Parliament in 21 European languages. Given enough data, statistical MT works well enough to derive an approximate meaning of a foreign language text by processing parallel versions and finding plausible patterns of words. Unlike knowledge-driven systems, however, statistical (or data-driven) MT systems often generate ungrammatical output. Data-driven MT is advantageous because less human effort is required, and it can also cover special particularities of the language (e.\,g., idiomatic expressions) that are often ignored in knowledge-driven systems. 
 
 \boxtext{Machine Translation is particularly challenging for the Irish language due to a lack of resources.}
 
+The strengths and weaknesses of knowledge-driven and data-driven machine translation tend to be complementary, so that nowadays researchers focus on hybrid approaches that combine both methodologies. One such approach uses both knowledge-driven and data-driven systems, together with a selection module that decides on the best output for each sentence. However, results for sentences longer than, say, 12 words, will often be far from perfect. A more effective solution is to combine the best parts of each sentence from multiple outputs; this can be fairly complex, as corresponding parts of multiple alternatives are not always obvious and need to be aligned. 
+
 There is still a huge potential for improving the quality of MT systems. The challenges involve adapting language resources to a given subject domain or user area, and integrating the technology into workflows that already have term bases and translation memories. Another problem is that most of the current systems are English-centred and only support a few languages from and into Irish. This leads to friction in the translation workflow and forces MT users to learn different lexicon coding tools for different systems.
 
-Evaluation campaigns help to compare the quality of MT systems, the different approaches and the status of the systems for different language pairs. Figure~\ref{fig:euromatrix_de} (p.~\pageref{fig:euromatrix_de}), which was prepared during the EC Euromatrix+ project, shows the pair-wise performances obtained for 22 of the 23 official EU languages (Irish was not included in the comparison due to a lack of available tools). The results are ranked according to a BLEU score, which indicates higher scores for better translations \cite{bleu1}. A human translator would normally achieve a score of around 80 points.
-
-The best results (in green and blue) were achieved by languages that benefit from a considerable research effort in coordinated programmes and the existence of many parallel corpora (e.\,g., English, French, Dutch, Spanish and German). The languages with poorer results are shown in red. These languages either lack such development efforts or are structurally very different from other languages (e.\,g., Hungarian, Maltese and Finnish).
+Evaluation campaigns help to compare the quality of MT systems, their approaches and the status of the systems for different language pairs. Figure~\ref{fig:euromatrix_de} (p.~\pageref{fig:euromatrix_de}), which was prepared during the Euromatrix+ project, shows the pair-wise performances obtained for 22 of the 23 official EU languages (Irish was not included in the comparison due to a lack of available tools). The results are ranked according to a BLEU score, which indicates higher scores for better translations \cite{bleu1}. A human translator would normally achieve a score of around 80 points. The best results (in green and blue) were achieved by languages that benefit from a considerable research effort in coordinated programmes and the existence of many parallel corpora (e.\,g., English, French, Dutch, Spanish and German). The languages with poorer results are shown in red. These languages either lack such development efforts or are structurally very different from other languages (e.\,g., Hungarian, Maltese and Finnish).
 
 \subsection{Other Application Areas}
 
-Building language technology applications involves a range of subtasks that do not always surface at the level of interaction with the user, but they provide significant service functionalities ``behind the scenes'' of the system in question. They all form important research issues that have now evolved into individual sub-disciplines of computational linguistics.  Question answering, for example, is an active area of research for which annotated corpora have been built and scientific competitions have been initiated. The concept of question answering goes beyond keyword-based searches (in which the search engine responds by delivering a collection of potentially relevant documents) and enables users to ask a concrete question to which the system provides a single answer. For example:
+Building language technology applications involves a range of subtasks that do not always surface at the level of interaction with the user, but they provide significant service functionalities ``behind the scenes'' of the system in question. They all form important research issues that have now evolved into individual sub-disciplines of computational linguistics. Question answering, for example, is an active area of research for which annotated corpora have been built and scientific competitions have been initiated. The concept of question answering goes beyond keyword-based searches (in which the search engine responds by delivering a collection of potentially relevant documents) and enables users to ask a concrete question to which the system provides a single answer. For example:
 
-\textit{Question: How old was Neil Armstrong when he stepped on the moon?}\\
-\textit{Answer: 38.}
+\begin{itemize}
+\item[] \textit{Question: How old was Neil Armstrong when he stepped on the moon?}
+\item[] \textit{Answer: 38.}
+\end{itemize}
 
-While question answering is obviously related to the core area of web search, it is nowadays an umbrella term for such research issues as which different types of questions exist, and how they should be handled; how a set of documents that potentially contain the answer can be analysed and compared (do they provide conflicting answers?); and how specific information (the answer) can be reliably extracted from a document without ignoring the context. 
+While question answering is obviously related to the core area of web search, it is nowadays an umbrella term for such research issues as which different types of questions exist, and how they should be handled; how a set of documents that potentially contain the answer can be analysed and compared (do they provide conflicting answers?); and how specific information (the answer) can be reliably extracted from a document without ignoring the context. Question answering is in turn related to information extraction (IE), an area that was extremely popular and influential when computational linguistics took a statistical turn in the early 1990s. IE aims to identify specific pieces of information in specific classes of documents, such as the key players in company takeovers as reported in newspaper stories. Another common scenario that has been studied is reports on terrorist incidents. The task here consists of mapping appropriate parts of the text to a template that specifies the perpetrator, target, time, location and results of the incident. Domain-specific template-filling is the central characteristic of IE, which makes it another example of a ``behind the scenes'' technology that forms a well-demarcated research area, which in practice needs to be embedded into a suitable application environment. 
 
-\boxtext{Language technology applications often provide significant service functionalities ``behind the scenes'' of larger software systems.}
+\boxtext{Language technology applications often provide significant service functionalities behind the scenes of larger software systems.}
 
-Question answering is in turn related to information extraction (IE), an area that was extremely popular and influential when computational linguistics took a statistical turn in the early 1990s. IE aims to identify specific pieces of information in specific classes of documents, such as the key players in company takeovers as reported in newspaper stories. Another common scenario that has been studied is reports on terrorist incidents. The task here consists of mapping appropriate parts of the text to a template that specifies the perpetrator, target, time, location and results of the incident. Domain-specific template-filling is the central characteristic of IE, which makes it another example of a ``behind the scenes'' technology that forms a well-demarcated research area, which in practice needs to be embedded into a suitable application environment. 
-
-    Text summarisation and \textbf{text generation} are two borderline areas that can act either as standalone applications or play a supporting role. Summarisation attempts to give the essentials of a long text in a short form, and is one of the features available in Microsoft Word. It mostly uses a statistical approach to identify the ``important'' words in a text (i.\,e., words that occur very frequently in the text in question but less frequently in general language use) and determine which sentences contain the most of these ``important'' words. These sentences are then extracted and put together to create the summary. In this very common commercial scenario, summarisation is simply a form of sentence extraction, and the text is reduced to a subset of its sentences. An alternative approach, for which some research has been carried out, is to generate brand new sentences that do not exist in the source text. 
+Text summarisation and \textbf{text generation} are two borderline areas that can act either as standalone applications or play a supporting role. Summarisation attempts to give the essentials of a long text in a short form, and is one of the features available in Microsoft Word. It mostly uses a statistical approach to identify the ``important'' words in a text (i.\,e., words that occur very frequently in the text in question but less frequently in general language use) and determine which sentences contain the most of these ``important'' words. These sentences are then extracted and put together to create the summary. In this very common commercial scenario, summarisation is simply a form of sentence extraction, and the text is reduced to a subset of its sentences. An alternative approach, for which some research has been carried out, is to generate brand new sentences that do not exist in the source text. 
 
 \boxtext{For the Irish language, research in most text technologies is much less developed than for most European languages.}
 
@@ -1512,11 +1505,11 @@ A market for Irish language technologies is really only beginning to emerge now.
 
 \subsection{LT Research and Education in Ireland}
 
-Ireland is home to a number of leading research institutions in the field of computational linguistics, and has a National Centre for Language Technology located at Dublin City University alongside the Centre for Next Generation Localisation, which works on using computational linguistics to bring added value to globalisation, localisation and information access. Both of these centres are well established and have strong links with industrial R&D both locally and abroad, as well as strong ties with other European centres of excellence in the field. The machine translation research team based at the CNGL is among the largest and most successful in the world. With such expertise available in Irish institutions it stands out that the situation for language technologies for Irish is not better. 
+Ireland is home to a number of leading research institutions in the field of computational linguistics, and has a National Centre for Language Technology located at Dublin City University alongside the Centre for Next Generation Localisation, which works on using computational linguistics to bring added value to globalisation, localisation and information access. Both of these centres are well established and have strong links with industrial R\&D both locally and abroad, as well as strong ties with other European centres of excellence in the field. The machine translation research team based at the CNGL is among the largest and most successful in the world. With such expertise available in Irish institutions it stands out that the situation for language technologies for Irish is not better. 
 
-However, there is currently only 1 undergraduate degree in computational linguistics available at Irish universities. This single degree course only admits 25 students per year, of which 5 places are given an emphasis on Irish. With such a small pool of appropriately skilled graduates entering the workforce through the Irish educa-tion system, it is not surprising that the work done at Irish research centres is more significant for other languages than it is for Irish.
+However, there is currently only 1 undergraduate degree in computational linguistics available at Irish universities. This single degree course only admits 25 students per year, of which 5 places are given an emphasis on Irish. With such a small pool of appropriately skilled graduates entering the workforce through the Irish education system, it is not surprising that the work done at Irish research centres is more significant for other languages than it is for Irish.
 
-The computational linguistics and language technology community in Ireland is, relatively speaking, quite a small but active community. There is a lot of interaction and cooperation between institutes and industry partners in order to keep the field alive in Ire-land. However, outside of events for the centres mentioned and some university events there is no real conference or community event for Irish LT.
+The computational linguistics and language technology community in Ireland is, relatively speaking, quite a small but active community. There is a lot of interaction and cooperation between institutes and industry partners in order to keep the field alive in Ireland. However, outside of events for the centres mentioned and some university events there is no real conference or community event for Irish LT.
 
 \subsection{Availability of Tools and Resources}
 
@@ -1531,18 +1524,18 @@ Figure~\ref{fig:lrlttable_en} provides a rating for language technology support 
 &\begin{sideways}\makecell[l]{\makecell[l]{Availability} }\end{sideways} &\begin{sideways}\makecell[l]{Quality}\end{sideways}
 &\begin{sideways}\makecell[l]{Coverage}\end{sideways} &\begin{sideways}\makecell[l]{Maturity}\end{sideways} &\begin{sideways}\makecell[l]{Sustainability}\end{sideways} &\begin{sideways}\makecell[l]{Adaptability}\end{sideways} \\ \addlinespace
 \multicolumn{8}{>{\columncolor{orange2}}l}{Language Technology: Tools, Technologies and Applications} \\ \addlinespace
-Speech Recognition	&5&1&5&5&4&3&3 \\ \addlinespace
-Speech Synthesis &5&3&5&5&4&3&3\\ \addlinespace
-Grammatical analysis &4&2.5&5&5&4&2.5&2.5\\ \addlinespace
-Semantic analysis &2&2&3.5&2.5&2&2&1\\ \addlinespace
-Text generation &2&1&2.5&2.5&2&1&2\\ \addlinespace
-Machine translation &5&3&2.5&3.5&4&1&2\\ \addlinespace
+Speech Recognition	&5&1&3&2&4&3&3 \\ \addlinespace
+Speech Synthesis &5&3&3&2&4&3&3\\ \addlinespace
+Grammatical analysis &4&2.5&2&2&4&2.5&2.5\\ \addlinespace
+Semantic analysis &2&2&0&0&2&2&1\\ \addlinespace
+Text generation &2&1&2&2&2&1&2\\ \addlinespace
+Machine translation &5&3&1&1&4&1&2\\ \addlinespace
 \multicolumn{8}{>{\columncolor{orange2}}l}{Language Resources: Resources, Data and Knowledge Bases} \\ \addlinespace
-Text corpora &3&2&4.5&3.5&4&4&2.5\\ \addlinespace
-Speech corpora &3&1&3.5&2.5&3&3&2\\ \addlinespace
-Parallel corpora &2&1&2.5&2.5&2&2&1\\ \addlinespace
-Lexical resources &3&2.5&4.5&3&4&4&2.5\\ \addlinespace
-Grammars &3&2&3.5&3.5&3&2&1\\
+Text corpora &3&2&1&1&4&4&2.5\\ \addlinespace
+Speech corpora &3&1&2&1&3&3&2\\ \addlinespace
+Parallel corpora &2&1&2&1&2&2&1\\ \addlinespace
+Lexical resources &3&2.5&2&2&4&4&2.5\\ \addlinespace
+Grammars &3&2&1&1&3&2&1\\
 \end{tabular}
 \caption{State of language technology support for Irish}
 \label{fig:lrlttable_en}
@@ -1565,7 +1558,31 @@ The key results for Irish language technology can be summed up as follows:
 The results show that there is limited technological support for Irish and that the basic linguistic resources to support the development of core technologies are largely absent. It is clear that when investments in such tools and resources are made that quality tools and resources can be created. But it seems that a lack of direction in the development of such tools and resources has stilted progress.
 
 \subsection{Cross-language comparison}
+The current state of LT support varies considerably from one language community to another. In order to compare the situation between languages, this section will present an evaluation based on two sample application areas (machine translation and speech processing) and one underlying technology (text analysis), as well as basic resources needed for building LT applications. The languages were categorised using the following five-point scale: 
 
+\begin{enumerate}
+\item Excellent support
+\item Good support
+\item Moderate support
+\item Fragmentary support
+\item Weak or no support
+\end{enumerate}
+
+Language Technology support was measured according to the following criteria:
+
+\textbf{Speech Processing:} Quality of existing speech recognition technologies, quality of existing speech synthesis technologies, coverage of domains, number and size of existing speech corpora, amount and variety of available speech-based applications.
+
+\textbf{Machine Translation:} Quality of existing MT technologies, number of language pairs covered, coverage of linguistic phenomena and domains, quality and size of existing parallel corpora, amount and variety of available MT applications.
+
+\textbf{Text Analysis:} Quality and coverage of existing text analysis technologies (morphology, syntax, semantics), coverage of linguistic phenomena and domains, amount and variety of available applications, quality and size of existing (annotated) text corpora, quality and coverage of existing lexical resources (e.\,g., WordNet) and grammars.
+
+\textbf{Resources:} Quality and size of existing text corpora, speech corpora and parallel corpora, quality and coverage of existing lexical resources and grammars.
+
+Figures~\ref{fig:speech_cluster_en} to~\ref{fig:resources_cluster_en} show that Irish is not very well equipped with language technologies or language resources. The current research and development efforts, which have provided some resources for the Irish language, while providing a much needed step in the right direction are still lagging behind other languages and falling well behind English.
+
+However, the clustering shows that Irish is not alone in this situation. Many other European languages are facing this same difficulty. A key differentiating factor, though, is that most of these other languages far outnumber Irish in the number of speakers and also they are not competing with a much better resourced language like English nor are they minority languages in the regions where they are spoken.
+
+Looking at the tables in this light we can see that without making some drastic changes very much Irish is at risk of being left behind other languages as Language Technology advances are made. This is a serious situation for Ireland both politically and socially. Fortunately, Ireland still has a strong indigenous language services industry and is home to several world class LT research centres. By applying this expertise to the problems facing the Irish language Ireland could rapidly equip the Irish language to take a massive step forward into the information age. The resultant social and economic benefits through employment, R\&D path to market and increased enablement for Irish language speakers has the potential to make Ireland a leading light in LT for under-resourced languages while at the same time addressing many stumbling blocks for uptake of the Irish language. Such an effort is entirely possible in Ireland given the indigenous LT expertise, however greater engagement with LT from the Irish language community as well as a concerted national approach encompassing research, industry and language policy is needed to realise this goal.
 \begin{figure*}[tb]
   \small
   \centering
@@ -1606,7 +1623,7 @@ Estonian \newline
 Galician\newline 
 Greek \newline  
 Hungarian  \newline
-Irish \newline  
+\textbf{Irish} \newline  
 Norwegian \newline 
 Polish \newline 
 Serbian \newline 
@@ -1669,7 +1686,7 @@ Finnish \newline
 Galician \newline 
 Greek \newline 
 Icelandic \newline 
-Irish \newline 
+\textbf{Irish} \newline 
 Latvian \newline 
 Lithuanian \newline 
 Maltese \newline 
@@ -1733,7 +1750,7 @@ Swedish \newline
   Croatian \newline 
   Estonian \newline 
   Icelandic \newline 
-  Irish \newline 
+  \textbf{Irish} \newline 
   Latvian \newline 
   Lithuanian \newline 
   Maltese \newline 
@@ -1793,7 +1810,7 @@ Swedish \newline
     Slovene \newline
 &  \vspace*{0.5mm}
     Icelandic \newline 
-    Irish \newline 
+    \textbf{Irish} \newline 
     Latvian \newline 
     Lithuanian \newline 
     Maltese  \\
@@ -1802,49 +1819,25 @@ Swedish \newline
   \label{fig:resources_cluster_en}
 \end{figure*}
 
-The current state of LT support varies considerably from one language community to another. In order to compare the situation between languages, this section will present an evaluation based on two sample application areas (machine translation and speech processing) and one underlying technology (text analysis), as well as basic resources needed for building LT applications. The languages were categorised using the following five-point scale: 
 
-\begin{enumerate}
-\item Excellent support
-\item Good support
-\item Moderate support
-\item Fragmentary support
-\item Weak or no support
-\end{enumerate}
-
-LT support was measured according to the following criteria:
-
-\textbf{Speech Processing:} Quality of existing speech recognition technologies, quality of existing speech synthesis technologies, coverage of domains, number and size of existing speech corpora, amount and variety of available speech-based applications.
-
-\textbf{Machine Translation:} Quality of existing MT technologies, number of language pairs covered, coverage of linguistic phenomena and domains, quality and size of existing parallel corpora, amount and variety of available MT applications.
-
-\textbf{Text Analysis:} Quality and coverage of existing text analysis technologies (morphology, syntax, semantics), coverage of linguistic phenomena and domains, amount and variety of available applications, quality and size of existing (annotated) text corpora, quality and coverage of existing lexical resources (e.\,g., WordNet) and grammars.
-
-\textbf{Resources:} Quality and size of existing text corpora, speech corpora and parallel corpora, quality and coverage of existing lexical resources and grammars.
-
-Figures~\ref{fig:speech_cluster_en} to~\ref{fig:resources_cluster_en} show that Irish is not very well equipped with language technologies or language resources. The current research and development efforts, which have provided some resources for the Irish language, while providing a much needed step in the right direction are still lagging behind other languages and falling well behind English.
-
-However, the clustering shows that Irish is not alone in this situation. Many other European languages are facing this same difficulty. A key differentiating factor, though, is that most of these other languages far outnumber Irish in the number of speakers and also they are not competing with a much better resourced language like English nor are they minority languages in the regions where they are spoken.
-
-Looking at the tables in this light we can see that without making some drastic changes very much Irish is at risk of being left behind other languages as Language Technology advances are made. This is a serious situation for Ireland both politically and socially. Fortunately, Ireland still has a strong indigenous language services industry and is home to several world class LT research centres. By applying this expertise to the problems facing the Irish language Ireland could rapidly equip the Irish language to take a massive step forward into the information age. The resultant social and economic benefits through employment, R\&D path to market and increased enablement for Irish language speakers has the potential to make Ireland a leading light in LT for under-resourced languages while at the same time addressing many stumbling blocks for uptake of the Irish language. Such an effort is entirely possible in Ireland given the indigenous LT expertise, however greater engagement with LT from the Irish language community as well as a concerted national approach encompassing research, industry and language policy is needed to realise this goal.
 
 
 \subsection{Conclusions}
 
-\emph{In this series of white papers, we have made an important effort by assessing the language technology support for 30 European languages, and by providing a high-level comparison across these languages. By identifying the gaps, needs and deficits, the European language technology community and its related stakeholders are now in a position to design a large scale research and development programme aimed at building a truly multilingual, technology-enabled communication across Europe.}
+\emph{In this series of white papers, we have made an important effort by assessing the language technology support between 30 European languages, and by providing a high-level comparison across these languages. By identifying the gaps, needs and deficits, the European language technology community and its related stakeholders are now in a position to design a large scale research and development programme aimed at building a truly multilingual, technology-enabled communication across Europe.}
 
-We have seen that there are huge differences between Europe’s languages. While there are good quality software and resources available for some languages and application areas, others (usually `smaller' languages) have substantial gaps. Many languages lack basic technologies for text analysis and the essential resources for developing these technologies. Others have basic tools and re-sources but are as yet unable to invest in semantic processing. We therefore still need to make a large-scale effort to attain the ambitious goal of providing high-quality machine translation between all European languages.
+The results of this white paper series show that there is a dramatic difference in language technology support between the various European languages. While there are good quality software and resources available for some languages and application areas, others, usually smaller languages, have substantial gaps. Many languages lack basic technologies for text analysis and the essential resources. Others have basic tools and resources but the implementation of for example semantic methods is still far away. Therefore a large-scale effort is needed to attain the ambitious goal of providing high-quality language technology support for all European languages, for example through high quality machine translation. 
 
-The EUROMAP Language Technologies \cite{euromap} project, 2003, has investigated the state-of-the-art of LT research and take-up in Europe, as well as the background for the present situation in each country. The report concludes that a visible presence for European LT activities should be established, for Europe as no other advanced economic area enjoys a similar cultural and linguistic diversity. The goal should be to have a set of robust, stable, multilingual HLT modules, capable of being embedded into emerging IST application environments. The study highlights Ireland’s strong position with respect to LT R&D and notes that while Ireland is not leading the field in this area, it is performing in line with the EU average and, based on the metrics used, falls in a group of ``promising'' countries with respect to LT R&D which need only to improve technology transfer to attain ``next generation'' standards.
+The EUROMAP Language Technologies \cite{euromap} project, 2003, has investigated the state-of-the-art of LT research and take-up in Europe, as well as the background for the present situation in each country. The report concludes that a visible presence for European LT activities should be established, for Europe as no other advanced economic area enjoys a similar cultural and linguistic diversity. The goal should be to have a set of robust, stable, multilingual HLT modules, capable of being embedded into emerging IST application environments. The study highlights Ireland’s strong position with respect to LT R\&D and notes that while Ireland is not leading the field in this area, it is performing in line with the EU average and, based on the metrics used, falls in a group of ``promising'' countries with respect to LT R\&D which need only to improve technology transfer to attain ``next generation'' standards.
 
-\begin{figure*}[htb]
-  \colorrule{grey3}{\textwidth}{1.5pt}
-  \center
-  \includegraphics[width=\textwidth]{./EuromapScorecard}
-  \caption{EUROMAP HLT Scorecard}
-  \label{fig:EuromapHLT_EN}
-  \colorrule{grey3}{\textwidth}{1.5pt}
-\end{figure*}
+%\begin{figure*}[htb]
+%  \colorrule{grey3}{\textwidth}{1.5pt}
+%  \center
+%  \includegraphics[width=\textwidth]{./EuromapScorecard}
+%  \caption{EUROMAP HLT Scorecard}
+%  \label{fig:EuromapHLT_EN}
+%  \colorrule{grey3}{\textwidth}{1.5pt}
+%\end{figure*}
 %NEED TO ADD DIAGRAM
 
 The issue of technology transfer, as identified by EUROMAP is a key factor in securing a place for the Irish language in the modern information society. Various social, educational and political factors in Ireland have created a strong demand for ICT which caters for the growing demand for digital information in Irish. However, the lack of fluency in Irish among the general population and the lack of technology transfer from state of the art LT research in Ireland into applications which could support greater fluency and/or improve information access through Irish appear to be hindering taking the next step forward for Irish.
@@ -1869,7 +1862,7 @@ META-NET’s long-term goal is to introduce high-quality language technology for
 \ssection[About META-NET]{About META-NET}
 
 \begin{multicols}{2}
-META-NET is a Network of Excellence funded by the European Commission. The network currently consists of 54 members from 33 European countries. META-NET fosters the Multilingual Europe Technology Alliance (META), a growing community of language technology professionals and organisations in Europe. META-NET cooperates with other initiatives like the Common Language Resources and Technology Infrastructure (CLARIN), which is helping establish digital humanities research in Europe. META-NET fosters the technological foundations for a truly multilingual European information society that:
+META-NET is a Network of Excellence funded by the European Commission. The network currently consists of 54 members from 33 European countries \cite{rehm2011}. META-NET fosters the Multilingual Europe Technology Alliance (META), a growing community of language technology professionals and organisations in Europe. META-NET cooperates with other initiatives like the Common Language Resources and Technology Infrastructure (CLARIN), which is helping to establish digital humanities research in Europe. META-NET fosters the technological foundations for a truly multilingual European information society that:
 
 \begin{itemize}
 \item makes communication and cooperation possible across languages;
@@ -1885,8 +1878,12 @@ META-NET launched on 1 February 2010 with the goal of advancing research in lang
 
 \textbf{META-SHARE} creates an open, distributed facility for exchanging and sharing resources. The peer-to-peer network of repositories will contain language data, tools and web services that are documented with high-quality metadata and organised in standardised categories. The resources can be readily accessed and uniformly searched. The available resources include free, open source materials as well as restricted, commercially available, fee-based items. META-SHARE targets existing language data, tools and systems as well as new and emerging products that are required for building and evaluating new technologies, products and services. The reuse, combination, repurposing and re-engineering of language data and tools plays a crucial role. META-SHARE will eventually become a critical part of the LT marketplace for developers, localisation experts, researchers, translators and language professionals from small, mid-sized and large enterprises. META-SHARE addresses the full development cycle of LT -- from research to innovative products and services. A key aspect of this activity is establishing META-SHARE as an important and valuable part of a European and global infrastructure for the LT community. 
 
-\textbf{META-RESEARCH} builds bridges to related technology fields. This activity seeks to leverage advances in other fields and to capitalise on innovative research that can benefit language technology. In particular, this activity wants to bring more semantics into machine translation (MT), optimise the division of labour in hybrid MT, exploit context when computing automatic translations and prepare an empirical base for MT. META-RESEARCH is working with other fields and disciplines, such as machine learning and the Semantic Web community. META-RESEARCH focuses on collecting data, preparing data sets and organising language resources for evaluation purposes; compiling inventories of tools and methods; and organising workshops and training events for members of the community. This activity has already clearly identified aspects of MT where semantics can impact current best practices. In addition, the activity has created recommendations on how to approach the problem of integrating semantic information in MT. META-RESEARCH is also finalising a new language resource for MT, the Annotated Hybrid Sample MT Corpus, which provides data for English-German, English-Spanish and English-Czech language pairs. META-RESEARCH has also developed software that collects multilingual corpora that are hidden on the Web.
+\textbf{META-RESEARCH} builds bridges to related technology fields. This activity seeks to leverage advances in other fields and to capitalise on innovative research that can benefit language technology. In particular, this activity wants to bring more semantics into machine translation (MT), optimise the division of labour in hybrid MT, exploit context when computing automatic translations and prepare an empirical base for MT. META-RESEARCH is working with other fields and disciplines, such as machine learning and the Semantic Web community. META-RESEARCH focuses on collecting data, preparing data sets and organising language resources for evaluation purposes; compiling inventories of tools and methods; and organising workshops and training events for members of the community. This activity has already clearly identified aspects of MT where semantics can impact current best practices. In addition, the activity has created recommendations on how to approach the problem of integrating semantic information into MT. META-RESEARCH is also finalising a new language resource for MT, the Annotated Hybrid Sample MT Corpus, which provides data for English-German, English-Spanish and English-Czech language pairs. META-RESEARCH has also developed software that collects multilingual corpora that are hidden on the Web.
 \end{multicols}
+
+
+\vfill
+\centerline{office@meta-net.eu -- http://www.meta-net.eu}
 
 \cleardoublepage
 
@@ -1894,8 +1891,8 @@ META-NET launched on 1 February 2010 with the goal of advancing research in lang
 \addtocontents{toc}{\protect\bigskip}
 
 \bsection[Tagairtí -- References]{Tagairtí --- References}
-\bibliographystyle{plain}
-\bibliography{references}
+\bibliographystyle{unsrt}
+\bibliography{irish_references}
   
 \cleardoublepage
 
