@@ -8,25 +8,6 @@
 
 \subtitle{White Paper Series --- Valkoiset kirjat}
 
-%\author{
-%  Kimmo Koskenniemi \\
-%  Krister Lindén \\
-%  Lauri Carlson \\
-%  Martti Vainio \\
-%  Antti Arppe \\
-%  Mietta Lennes \\
-%  Hanna Westerlund \\
-%  Mirka Hyvärinen \\
-%  Pirkko Nuolijärvi \\
-%  Aino Piehl
-%}
-
-%  Helsingin yliopisto \\
-%  University of Helsinki \\
-
-%  Kotimaisten kielten tutkimuskeskus \\
-%  Research Institute for the Languages of Finland
-
 \author{
   Kimmo Koskenniemi~ {\small Helsingin yliopisto}\\
   Krister Lindén~ {\small Helsingin yliopisto}\\
@@ -40,11 +21,8 @@
   Aino Piehl~ {\small KOTUS}
 }
 
-%\editors{
-%	Hanna Westerlund\\(toimittaja, \textcolor{grey1}{editor})
-%}
 \editors{
-  Georg Rehm, Hans Uszkoreit\\(Herausgeber, \textcolor{grey1}{editors})
+  Georg Rehm, Hans Uszkoreit\\(toimittajat, \textcolor{grey1}{editors})
 }
 
 
@@ -65,7 +43,7 @@ Tämän raportin tekijät ovat kiitollisia saksankielisen META-NET
 valkoisen kirjan tekijöille luvasta käyttää raporttinsa kielestä
 riippumattomien osioiden tekstejä osana tämän raportin
 englanninkielistä osuutta sekä lähteenä suomenkieliselle
-käännökselle\cite{lwpgerman}.
+käännökselle \cite{lwpgerman}.
   
   \bigskip
   Tämän valkoisen kirjan tuottamiseen on myönnetty rahoitusta Euroopan 
@@ -93,28 +71,28 @@ käännökselle\cite{lwpgerman}.
 
 \clearpage
 
-\bsection*{Esipuhe --- Preface} %FIXME: shorten 
+\bsection*{Esipuhe --- Preface}
 \begin{Parallel}[c]{78mm}{78mm}
 \ParallelLText{\selectlanguage{finnish}
 META-NET Valkoiset kirjat -julkaisusarjan tavoitteena on edistää tietämystä
-kieliteknologiasta ja sen tarjoamista mahdollisuuksista. Tämän julkaisu
+kieliteknologiasta ja sen tarjoamista mahdollisuuksista. Tämä julkaisu
 haluaa herättää opettajia, toimittajia, poliitikkoja, kieliyhteisöjä ja
-kaikkia muitakin kieltä käyttäviä pohtimaan oman äidinkielensä merkitystä.
+muitakin.
 
 Euroopan kielten kieliteknologisten sovellusten saatavuus vaihtelee. Niinpä
 myös toimenpiteet, joita jatkossa tarvitaan tukemaan kieliteknologioiden
 tutkimusta ja kehitystä, ovat eri kielten kohdalla 
-erilaisia ja ne riippuvat kyseisen kielen ominaispiirteistä ja
+erilaisia ja riippuvat kielen ominaispiirteistä ja
 kieliyhteisön koosta.
 
-Euroopan komission rahoittaman META-NET -huippuosaamisen verkoston kartoitustyö %FIXME: Hyphenate huippuosaamisen
-kattaa Euroopan 23 virallisen kielen ja lisäksi sen tärkeiden kansallisten ja
-paikallisten kielten kieliresurssien ja teknologioiden tilannekatsaukset.
-Tulosten perusteella voidaan päätellä, että kaikkien kartoitettujen kielten
-tutkimus kärsii merkittävästä resurssien puutteesta heijastuen tutkimukseen ja
-tuotekehitykseen. Alan asiantuntijoita kuullen ja tilannetta realistisesti
-arvioiden kartoituksen tekijät nostavat esiin tutkimuksen ja tuotekehityksen
-tarpeita ja riskitekijöitä.
+Euroopan komission rahoittaman META-NET
+-huip\-pu\-osaa\-mis\-ver\-kos\-ton kartoitustyö
+kattaa Euroopan 23 virallisen kielen sekä tärkeiden kansallisten ja
+paikallisten kielten kieliaineistot ja kieliteknologiat.
+Tulosten perusteella kaikkien kartoitettujen kielten
+tutkimus kärsii merkittävästä resurssien puutteesta.
+Yksityiskohtaisempi nykyisen tilanteen selvitys vahvistaa
+tulevan tutkimuksen vaikutusta ja vähentää riskejä.
 
 META-NET koostuu 31 valtion 47 tutkimuskeskuksesta, jotka tekevät
 yhteistyötä useiden toimijoiden ja intressiryhmien kanssa. Mukana on
@@ -122,7 +100,7 @@ liikeyrityksiä, julkisen hallinnon yksiköitä, teollisuuden edustajia,
 tutkimusyksiköitä, tietotekniikan alan yrityksiä, teknologian tuottajia ja
 eurooppalaisia yliopistoja. Työn tuloksena on syntymässä teknologinen
 visio osana strategista tutkimuslinjausta osoittamaan, miten
-kieliteknologiat tulevat auttamaan Euroopan tutkimusyhteisöä ratkaisemaan
+kieliteknologiat auttavat Euroopan tutkimusyhteisöä ratkaisemaan
 keskeisiä tutkimuskysymyksiä vuoteen 2020 mennessä.
 }
 \ParallelRText{\selectlanguage{english}
@@ -158,8 +136,7 @@ applications can address any research gaps by 2020.
 \cleardoublepage
 
 % --------------------------------------------------------------------------
-\bsection*{IN FINNISH --- Table of Contents}
-%FIXME: Translate
+\bsection*{Sisällysluettelo --- Table of Contents}
 
 \renewcommand\contentsname{}
 \tableofcontents
@@ -277,9 +254,10 @@ joka on suurimmaksi osaksi kehitetty
 Euroopan tutkimushankkeiden puitteissa. Sen sijaan, että rakentaisi jo
 päättyneiden tutkimusprojektien varaan, Euroopalla on ollut tapana ryhtyä
 erillisiin tutkimushankkeisiin, joilla on vähemmän kattava vaikutus
-markkinoihin. Oheisyritysten määrä on yksi mahdollinen kriteeri, kun arvioidaan
-aikaisempien hankkeiden taloudellista vaikutusta. Esimerkiksi jo vuonna 1984
-perustettu Trados myytiin Britanniassa toimivalle SDL:lle vuonna 2005.
+markkinoihin. 
+%Oheisyritysten määrä on yksi mahdollinen kriteeri, kun arvioidaan
+%aikaisempien hankkeiden taloudellista vaikutusta. Esimerkiksi jo vuonna 1984
+%perustettu Trados myytiin Britanniassa toimivalle SDL:lle vuonna 2005.
 
 \boxtext{Kieliteknologia yhdistää Eurooppaa}
 
@@ -771,14 +749,14 @@ paljon verkossa sellaista tekstiä, joka on oikeastaan puhetta. Siksi puhekielen
 ilmiöt tulevat mukaan kirjoitettuun kieleen voimallisemmin kuin aiemmin.
 
 Suomen kielen virallinen huolto on lain ja asetuksen mukaan Kotimaisten kielten
-tutkimuskeskuksen tehtävä.
+keskuksen tehtävä.
 
 
 \subsection{Suomen kielen huolto}
 
 \boxtext{Suomen kielen huolto kuuluu KOTUKSEN tehtäviin.}
 Suomen kielen virallinen huolto on lain ja asetuksen mukaan Kotimaisten kielten
-tutkimuskeskuksen tehtävä. Tutkimuskeskus antaa suosituksia, opastaa, kouluttaa
+keskuksen tehtävä. Tutkimuskeskus antaa suosituksia, opastaa, kouluttaa
 sekä kartuttaa ja pitää yllä ajantasaisia suomen kielen tietokantoja.
 Neuvonnalla on pitkä perinne, ja toiminta tunnetaan hyvin kansalaisten
 keskuudessa. Suomalainen kielenhuolto on yhä enemmän tekstinhuoltoa, vaikka
@@ -792,7 +770,7 @@ tarkoituksena on edistää suomenkielisten tieteellisten termien laatimista ja
 niiden saamista laajaan käyttöön.
 
 2000-luvulla on yhä enemmän alettu kiinnittää huomiota myös viranomaiskielen
-laatuun ja ymmärrettävyyteen. Kotimaisten kielten tutkimuskeskus on tehnyt
+laatuun ja ymmärrettävyyteen. Kotimaisten kielten keskus on tehnyt
 poliitikoille monia aloitteita virkakielen parantamiseksi ja tekee läheistä
 yhteistyötä lainlaatijoiden kanssa.
 
@@ -1103,6 +1081,10 @@ konekääntämistä.  Sovelluksia ja perusteknologioita ovat mm.
 \item puhesynteesi.
 \end{itemize}
 
+Kieliteknologia on vakiintunut tutkimusala. Peruskirjallisuutta ovat
+muun muassa seuraavat viitteet: \cite{carstensen-etal1,
+  jurafsky-martin01, manning-schuetze1, lt-world1, lt-survey1}.
+
 Ennen sovellusalojen esittelyä kuvataan tyypillisen
 kieliteknologiajärjestelmän arkkitehtuuri lyhyesti alla.
 
@@ -1141,26 +1123,28 @@ merkitysrakenteen koneen luettavassa muodossa.
 
 Tekstin analyysin jälkeen tehtäväkohtaiset moduulit pääsevät
 suorittamaan muita operaatioita, kuten automaattista lyhennelmien
-tuottamista ja tietokantahakuja. Näinkin yksinkertaistettu
-kuvaus sovellusarkkitehtuurista jo paljastaa kieliteknologisten sovellusten 
-monimutkaisuuden.
+tuottamista ja tietokantahakuja.
 
-Kieliteknologian sovellusalojen esittelyn jälkeen kuvataan kieliteknologian 
-tutkimuksen ja opetuksen tilanne maassamme lyhyesti ja lopuksi esitellään 
-tärkeimmät jo päättyneet ja käynnissä olevat tutkimusohjelmat. Sen jälkeen kartoitetaan
-asiantuntijoiden arvioita kieliteknologisista työkaluista ja
-kieliaineistoista useiden kriteerien valossa, joita ovat esimerkiksi
-saatavuus, valmiusaste ja laatu. Yhteenveto arvioista esitetään
-taulukon muodossa lopuksi.
+Seuraavassa esitellään ensin kieliteknologian keskeiset sovellusalat.
+Sen jälkeen kuvataan lyhyesti kieliteknologian tutkimuksen ja
+opetuksen tilanne maassamme sekä tärkeimmät jo päättyneet ja käynnissä
+olevat tutkimusohjelmat. Lopuksi kartoitetaan asiantuntijoiden
+arvioita keskeisistä kieliteknologian työkaluista ja kieliaineistoista
+useiden kriteerien valossa, joita ovat esimerkiksi saatavuus,
+valmiusaste ja laatu. Yhteenveto arvioista suomen osalta esitetään
+taulukon muodossa (kuva~\ref{fig:lrlttable-fin}). Lisäksi suomen
+kielen kieliteknologian tilanne suhteutaan tämän sarjan muihin
+kieliin.
 
 
 \subsection{Keskeiset sovellusalat}
 
 
-Tässä osiossa keskitytään tärkeimpiin kieliteknologisiin
-työkaluihin ja kieliaineistoihin ja esitetään katsaus kieliteknologiaan
-Suomessa.  \textbf{Alleviivatut} työkalut ja kieliaineistot
-löytyvät myös yhteenvetotaulukosta.
+Tässä osiossa keskitytään tärkeimpiin kieliteknologisiin työkaluihin
+ja kieliaineistoihin ja luodaan katsaus kieliteknologiaan Suomessa.
+Lihavoidut työkalut ja aineistot löytyvät myös
+kuvasta~\ref{fig:lrlttable-fin} (s.~\pageref{fig:lrlttable-fin}) luvun
+lopussa.
 
 
 
@@ -1176,16 +1160,13 @@ algoritmien avulla sanojen morfologiasta johtuvia virheitä tekstissä
 puuttuvan verbin tai kongruenssivirheen (\textit{me *kirjoittaa
 kirjeen}). Useimmat englannin oikeinkirjoituksen tarkistimet eivät kuitenkaan
 löydä virheitä seuraavasta englanninkielisestä tekstistä:
-\begin{itemize} \item[] {\foreignlanguage{english}{\textit{I have a
-spelling checker,}}}
 
-\item[] {\foreignlanguage{english}{\textit{It came with my PC.}}}
-
-\item[] {\foreignlanguage{english}{\textit{It plane lee marks four my revue}}}
-
-\item[] {\foreignlanguage{english}
-                {\textit{Miss steaks aye can knot sea.}}} \cite{Surprise}
-\end{itemize}
+\begin{quote}
+  I have a spelling checker,\\
+  It came with my PC.\\
+  It plane lee marks four my revue\\
+  Miss steaks aye can knot sea.~\cite{Surprise}
+\end{quote}
 
 Tämänkaltaisten virheiden löytyminen edellyttää yleensä tietoa
 käyttöympäristöstä, esimerkkinä sen päättäminen, tulisiko sanan alkaa
@@ -1272,7 +1253,7 @@ Tiedon hakeminen verkosta, suljetusta intranetistä tai sähköisistä
 kirjastoista on todennäköisesti eniten käytetty, mutta
 vielä kehitysasteella oleva kieliteknologinen sovellus. Googlen
 hakukone, joka aloitti toimintansa vuonna 1998 käsittelee tänään noin
-80\% kaikista hakukyselyistä \cite{Spiegel}. Suomen puhekieleen on
+80\% kaikista hakukyselyistä \cite{spi1}. Suomen puhekieleen on
 ilmestynyt uusi verbi \textit{guuglata}, jolle ei vielä
 ole vakiintunutta kirjoitusasua. Google korjaa nykyisin kirjoitusvirheen
 sisältävän hakusanan kirjoitusasun automaattisesti, ja kyselyissä hyödynnetään
@@ -1351,16 +1332,20 @@ Suomessa ole vireillä laajamittaisia hakukoneteknologiaprojekteja.
 
 \boxtext{Puheteknologioita tarvitaan, kun halutaan kommunikoida koneen kanssa puheen avulla.}
 
-Puheteknologioita tarvitaan mukaan käyttöliittymiin, kun halutaan keskustella koneen 
-kanssa puheen avulla graafisen näytön, näppäimistön tai hiiren sijaan. 
+Puheeseen perustuva vuorovaikutus kuuluu sovellusaloihin, jotka
+tarvitsevat puheteknologiaa eli teknologioita, joilla käsitellään
+puhuttua kieltä. Puheeseen pohjautuva koneen käyttö ei tapahdu
+graafisella näytöllä, näppäimistöllä tai hiirellä vaan puhutulla
+kielellä.
+
 Puhekäyttöliittymiä (Voice User Interface, VUI) käytetäänkin nykyään usein osittain tai täysin
 automatisoiduissa puhelinpalveluissa. Erityisen paljon niitä hyödyntäviä aloja ovat 
 rahoitus, hankinta-ala, julkinen liikenne ja tietoliikenne. Muita
-puheteknologian sovelluskohteita ovat mm. ajoneuvojen
+puhekäyttöliittymien sovelluskohteita ovat mm. ajoneuvojen
 navigointilaitteistot ja puhe graafisen näytön tai kosketusnäytön
 vaihtoehtona älypuhelimen ohjaamisessa.
 
-Puheteknologiat sisältävät neljä aluetta:
+Puhepohjaiseen vuorovaikutukseen kuuluu neljä aluetta:
 \begin{enumerate}
 
 \item Automaattinen \textbf{puheentunnistus} määrittelee, mitkä
@@ -1405,7 +1390,7 @@ käyttämään puhekäyttöliittymää ennalta määritellyllä tavalla, mikä h
 käytettävyyttä. Toisaalta kattavien kielimallien luominen, hienosäätö
 ja ylläpito nostavat kustannuksia. Puhekäyttöliittymät, jotka hyödyntävät kielimalleja ja
 heti alussa antavat käyttäjän kertoa asiansa joustavammin —
-ja aloittavat vaikkapa tervehtimällä asiakasta ilmauksella\textit{Miten voin auttaa?} — ovat usein
+ja aloittavat vaikkapa tervehtimällä asiakasta ilmauksella \textit{Miten voin auttaa?} — ovat usein
 pitkälle automatisoituja ja siten käyttäjien helpommin hyväksyttävissä ihmisen korvaajaksi.
 
 Yritykset tapaavat käyttää ammattipuhujien etukäteen äänittämää
@@ -1540,7 +1525,6 @@ järjestelmissä.
   \label{fig:mtarch-fin}
   \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
-%FIX: In this figure, we corrected the box "post-editing" to "text generation", please make sure we used the correct translation
 
 \boxtext{Konekääntäminen on erityisen haastavaa suomen kielen osalta.}
 
@@ -1589,10 +1573,10 @@ Konekäännösjärjestelmien arviointihankkeiden tulokset auttavat niiden
 laadun vertailussa, ne selventävät eri lähestymistapoja ja tarjoavat
 tietoa siitä, millaisessa tilanteessa eri kieliparit ovat. Kuva
 \ref{fig:euromatrix} sisältää Euromatrix+ -projektin aikana kootut
-tuolloin 22 virallisen EU-kielen tulokset kielipareittain (Gaelin
-kieli ei ollut vertailussa mukana). Tulokset on arvioitu BLEU-pistein,
-joissa paremman käännöksen pistemäärä on aina korkeampi
-\cite{BLEU}. Ihminen saisi käännöstehtävästä keskimäärin 80 pistettä.
+tuolloin 22 virallisen EU-kielen tulokset kielipareittain (iiri ei
+ollut vertailussa mukana). Tulokset on arvioitu BLEU-pistein, joissa
+paremman käännöksen pistemäärä on aina korkeampi \cite{BLEU}. Ihminen
+saisi käännöstehtävästä keskimäärin 80 pistettä.
 
 Parhaimmat pisteet (taulukossa vihreällä ja sinisellä värillä) saivat
 kielet, joihin on panostettu perustamalla yhteistyöprojekteja ja
@@ -1763,7 +1747,7 @@ erityistä maisteriohjelmaa.
 
 KIT-tutkijakoulu toimi vuosina 2004 - 2009 osana uutta pohjoismaisen
 tutkijakoulutusyhteistyön tuloksena syntynyttä NGSLT-tutkijakoulua
-(Nordic Graudate School of Language Technology). KIT-tutkijakoulu sai kahdelle
+(Nordic Graduate School of Language Technology). KIT-tutkijakoulu sai kahdelle
 nelivuotiskaudelle viisi opetusministeriön rahoittamaa
 tutkijakoulupaikkaa ja vuonna 2010 se yhdistyi kielentutkimuksen
 LANGNET-tutkijakouluun sen yhdeksi osaohjelmaksi.
@@ -1831,7 +1815,7 @@ Technologies Infrastructure) ensimmäistä vaihetta vuosina 2008 –
 2010. CLARIN-yhteistyö jatkuu. Hankkeen kansallisen FIN-CLARIN osuuden
 rahoituksesta vastaa Opetus- ja kulttuuriministeriö. FIN-CLARIN
 konsortio muodostuu seuraavista osapuolista: CSC Tieteen
-tietotekniikan keskus, Kotimaisten kielten tutkimuskeskus KOTUS,
+tietotekniikan keskus, Kotimaisten kielten keskus KOTUS,
 Itä-Suomen, Helsingin, Jyväskylän, Oulun, Tampereen ja Turun ja Vaasan
 yliopistot, Aalto-yliopisto ja Åbo Akademi. HFST (Helsinki Finite
 State Transducer Technology), OMor (Open Source Morphologies),
@@ -1957,15 +1941,15 @@ analyysistä. Lisäksi arvioidaan
 kieliteknologisovellusten tuotekehityksen
 tarvitsemien resurssien saatavuutta.
 
-Kielet sijoitettiin klustereihin seuraavan
-asteikon mukaan:
-\begin{itemize}
-\item[] Klusteri 1: erinomainen tuki
-\item[] Klusteri 2: hyvä tuki
-\item[] Klusteri 3: kohtuullinen tuki
-\item[] Klusteri 4: osittainen tuki
-\item[] Klusteri 5: heikko tai olematon tuki
-\end{itemize}
+Kielet luokiteltiin seuraavien viiden asteen perusteella:
+
+\begin{enumerate}
+\item Erinomainen tuki
+\item Hyvä tuki
+\item Kohtuullinen tuki
+\item Osittainen tuki
+\item Heikko tai olematon tuki
+\end{enumerate}
 
 Kieliteknologian tukea arvioitiin seuraavien kriteerien
 perusteella:
@@ -2330,7 +2314,7 @@ tulevaisuuden eteen.
 
 META-NET on Euroopan komission rahoittama huippuosaamisen
 verkosto. Verkosto muodostuu 54 tutkimuskeskuksesta 33 Euroopan
-maassa\cite{rehm2011}. META-NET toimii Monikielisen Euroopan teknologiaverkoston
+maassa~\cite{rehm2011}. META-NET toimii Monikielisen Euroopan teknologiaverkoston
 (META) taustavoimana. META on Euroopan kieliteknologian
 ammattilaisista ja organisaatiosta koostuva nopeasti kasvava verkosto.
 
@@ -2466,8 +2450,8 @@ tekstiaineistoja keräävä ohjelma on jo kehitetty.
 
 During the last 60 years, Europe has become a distinct political and
 economic structure, yet culturally and linguistically it is still very
-diverse. This means that from Portuguese to Polish and Greek Italian
-to GaelicIcelandic, everyday communication between Europe’s citizens
+diverse. This means that from Portuguese to Polish and Italian
+to Icelandic, everyday communication between Europe’s citizens
 as well as communication in the spheres of business and politics is
 inevitably confronted by language barriers. The EU’s institutions
 spend about a billion euros a year on maintaining their policy of
@@ -2542,9 +2526,10 @@ example, the translation services of the European Union now use MOSES
 open-source machine translation software that has been mainly developed through
 European research projects. Rather than building on the outcomes of its
 research projects, Europe has tended to pursue isolated research activities
-with a less pervasive impact on the market. The economic value of even the
-earliest efforts can be seen in the number of spin-offs. A company such as
-Trados, which was founded back in 1984, was sold to the UK-based SDL in 2005.
+with a less pervasive impact on the market. 
+%The economic value of even the
+%earliest efforts can be seen in the number of spin-offs. A company such as
+%Trados, which was founded back in 1984, was sold to the UK-based SDL in 2005.
 
 \boxtext{Language Technology helps unify Europe}
 
@@ -2566,11 +2551,6 @@ META-NET (see the appendix for an overview). Up-to-date information
 such as the current version of the META-NET vision paper \cite{Vision}
 or the Strategic Research Agenda (SRA) can be found on the META-NET
 web site: \url{http://www.meta-net.eu}.
-
-%FIX: Removed the following sentence (doesn't seem to appear in the Finnish version)
-%We are currently witnessing a digital revolution that is comparable to
-%Gutenberg’s invention of the printing press.
-%END FIX
 
 \end{multicols}
 \clearpage
@@ -3056,10 +3036,10 @@ language much stronger than before.
 
 \subsection{Language Cultivation in Finland}
 
-\boxtext{The acts and degrees state that the language of Finnish is the task the Research Institute for the Languages in Finland.}
+\boxtext{The acts and degrees state that the language planning of Finnish is the task of the Institute for the Languages of Finland.}
 
 The acts and degrees state that the language planning of Finnish is the task of
-the Research Institute for the Languages in Finland. The institute gives out
+the Institute for the Languages of Finland. The institute gives out
 recommendations, offers counselling, educates, and collects and administers
 up-to-date databases of Finnish. Counselling has long traditions and is widely
 known amongst Finns. Language planning in Finland is all the more moving
@@ -3074,7 +3054,7 @@ objective of enhancing the creation and wide use of Finnish scientific terms.
 
 Interest in the quality and intelligibility of the language used by the
 authorities has grown during the 21st century. Cooperating closely with the
-legislators, the Research Centre for Languages in Finland has made several
+legislators, the Institute for the Languages of Finland has made several
 initiatives in suggesting improvements in the discourse of the authorities.
 
 \subsection{Language in Education}
@@ -3386,9 +3366,7 @@ applications and basic technologies such as
 \item speech synthesis
 \end{itemize}
 
-%FIX: Inserted this sentence: please integrate it into the Finnish version
 Language technology is an established area of research with an extensive set of introductory literature. The interested reader is referred to the following references:  \cite{carstensen-etal1, jurafsky-martin01, manning-schuetze1, lt-world1, lt-survey1}.
-%END FIX
 
 Before discussing the above application areas, we will shortly
 describe the architecture of a typical LT system.
@@ -3397,7 +3375,7 @@ describe the architecture of a typical LT system.
 
 Software applications for language processing typically consist of
 several components that mirror different aspects of language. 
-While such applications tend to be very complex, figure~\ref{fig:textprocessingarch_en} shows a highly simplified architecture of a typical text processing system. The first three modules handle the structure and meaning of the text input:
+While such applications tend to be very complex, figure~\ref{fig:textprocessingarch-eng} shows a highly simplified architecture of a typical text processing system. The first three modules handle the structure and meaning of the text input:
 
 \begin{figure*}[b]
   \colorrule{grey3}{\textwidth}{1.5pt}
@@ -3424,31 +3402,17 @@ a machine-readable way.
 After analysing the text, task-specific modules can perform other
 operations, such as automatic summarisation and database
 look-ups. 
-%FIX: Removed the following sentence:
-%This is a simplified and idealised description of the application architecture and illustrates the complexity of LT applications.
-%END FIX
 
-%After introducing the core application areas for language technology,
-%we shall provide a brief overview of the state of LT research and
-%education today, and end with an overview of past and present research
-%programmes. We shall then present an expert estimate of core LT tools
-%and resources in terms of various dimensions such as availability,
-%maturity and quality. The general situation of LT for the Finnish
-%language is then summarised in tabular form.
-
-%FIX: Replaced paragraph above by:
 In the remainder of this section, we firstly introduce the core application areas for language technology, and follow this with a brief overview of the state of LT research and education today, and a description of past and present research programmes. Finally, we present an expert estimate of core LT tools and resources for Finnish in terms of various dimensions such as availability, maturity and quality. The general situation of LT for the Finnish language is summarised in a matrix (figure~\ref{fig:lrlttable_en}). 
 LT support for German is also compared to other languages that are part of this series.
-%END FIX
+
 
 \subsection{Core Application Areas}
 
 In this section, we focus on the most important LT tools and
 resources, and give an overview of LT activities in Finland. 
-%Tools and resources that are \textbf{bold-faced} in the text can also be found in the summary table.
-%FIX: Replaced sentence above
 Tools and resources that are boldfaced in the text can also be found in figure~\ref{fig:lrlttable_en} (p.~\pageref{fig:lrlttable_en}) at the end of this chapter. 
-%END FIX
+
 
 \subsubsection{Language Checking}
 
@@ -3467,21 +3431,12 @@ verb-subject agreement (e.\,g.,
 But most spell checkers will not find any errors in the
 following text:
 
-%\begin{itemize} % abuse of itemize
-%\item[] \textit{I have a spelling checker,}
-%\item[] \textit{It came with my PC.}
-%\item[] \textit{It plane lee marks four my revue}
-%\item[] \textit{Miss steaks aye can knot sea.} \cite{Surprise}
-%\end{itemize}
-
-%FIX: Replaced poem above by:
 \begin{quote}
   I have a spelling checker,\\
   It came with my PC.\\
   It plane lee marks four my revue\\
-  Miss steaks aye can knot sea.
+  Miss steaks aye can knot sea.~\cite{Surprise}
 \end{quote}
-%END FIX
 
 Handling these kinds of errors usually requires an analysis of the
 context. For example: if a word needs to be written in upper case in
@@ -3559,7 +3514,7 @@ mean\dots} suggestions.
 Searching the Web, intranets or digital libraries is probably the
 most widely used yet largely underdeveloped language technology
 application today. The Google search engine, which started in 1998,
-now handles about 80\% of all search queries \cite{Spiegel}. The verb
+now handles about 80\% of all search queries \cite{spi1}. The verb
 \textit{\foreignlanguage{finnish}{\textit{guuglata}}} is used in everyday
 speech in Finnish although there is no conventional way to spell it
 yet. The Google search interface and results page display has not
@@ -3635,19 +3590,15 @@ projects.
 
 \boxtext{Speech technology is the basis for creating interfaces that allow a user to interact with spoken language instead of a graphical display, keyboard and mouse.}
 
-%Speech technology is used to create interfaces that enable users to
-%interact in spoken language instead of a graphical display, keyboard and mouse.
-
-%FIX: Replaced sentence above by:
 Speech interaction is one of many application areas that depend on speech technology, i.\,e., technologies for processing spoken language. Speech interaction technology is used to create interfaces that enable users to interact in spoken language instead of using a graphical display, keyboard and mouse.  
-%END FIX
+
 
 Today, these voice user interfaces (VUI) are used for partially or fully automated telephone services provided by companies to customers, employees or partners. Business domains that rely heavily on VUIs include banking, supply chain, public transportation, and telecommunications. Other uses of speech 
-interaction %FIX: Inserted "interaction"
+interaction
 technology include interfaces to car navigation systems and the use of spoken language as an alternative to the graphical or touchscreen interfaces in smartphones.  
 
 Speech 
-interaction %FIX: Inserted "interaction"
+interaction
 technology comprises four technologies:
 
 \begin{enumerate}
@@ -3796,7 +3747,7 @@ expressions) that can get ignored in knowledge-driven systems.
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
   \includegraphics[width=\textwidth]{../_media/english/machine_translation}
-  \caption{Machine translation (statistical; rule-based)}
+  \caption{Machine translation (left: statistical; right: rule-based)}
   \label{fig:mtarch-eng}
   \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
@@ -4023,7 +3974,7 @@ and Technologies Infrastructure (CLARIN) was funded by the Commission
 during 2008 – 2010, and the work within the initiative continues. The
 national part FIN-CLARIN is funded by the Ministry of Education and
 Culture. The FIN-CLARIN consortium comprises the following partners:
-IT Center for Science CSC, The Research Institute for the Languages of
+IT Center for Science CSC, The Institute for the Languages of
 Finland KOTUS, the universities of Helsinki, Eastern Finland,
 Jyväskylä, Oulu, Tampere, Turku, Vaasa, Aalto University and Åbo
 Akademi. HFST (Helsinki Finite State Transducer Technology), OMor
@@ -4130,20 +4081,8 @@ application areas (machine translation and speech processing) and one
 underlying technology (text analysis), as well as basic resources
 needed for building LT applications.
 
-%The languages were positioned into clusters based on the following five-point scale:
-%FIX: Replaced sentence above
 The languages were categorised using the following five-point scale: 
-%END FIX
 
-%\begin{itemize}
-%\item[] Cluster 1: excellent support
-%\item[] Cluster 2: good support
-%\item[] Cluster 3: moderate support
-%\item[] Cluster 4: fragmentary support
-%\item[] Cluster 5: weak or no support
-%\end{itemize}
-
-%FIX: Replaced item list
 \begin{enumerate}
 \item Excellent support
 \item Good support
@@ -4151,7 +4090,6 @@ The languages were categorised using the following five-point scale:
 \item Fragmentary support
 \item Weak or no support
 \end{enumerate}
-%END FIX
 
 Language Technology support was measured according to the following criteria:
 \begin{itemize}
@@ -4410,7 +4348,7 @@ Swedish \newline
     Lithuanian \newline 
     Maltese  \\
   \end{tabular}
-  \caption{Speech and text resources: State of support for 30 European languages}  
+  \caption{Speech and text resources: state of support for 30 European languages}  
   \label{fig:resources_cluster_en}
 \end{figure*}
 
@@ -4503,7 +4441,7 @@ business, and society - to unite their efforts for the future.
 
 META-NET is a Network of Excellence funded by the European
 Commission. The network currently consists of 54 members from 33
-European countries\cite{rehm2011}. META-NET fosters the Multilingual Europe
+European countries~\cite{rehm2011}. META-NET fosters the Multilingual Europe
 Technology Alliance (META), a growing community of language technology
 professionals and organisations in Europe.
 
