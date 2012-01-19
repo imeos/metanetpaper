@@ -1,4 +1,4 @@
-%                                     MMMMMMMMM                                         
+%                                     MMMMMMMMM        
 %                                                                             
 %  MMO    MM   MMMMMM  MMMMMMM   MM    MMMMMMMM   MMD   MM  MMMMMMM MMMMMMM   
 %  MMM   MMM   MM        MM     ?MMM              MMM$  MM  MM         MM     
@@ -8,66 +8,18 @@
 %  MM     MM   MMMMMM    MM   MM    MM            MM   MMM  MMMMMMM    MM
 %
 %
-%            - META-NET Language Whitepaper | Icelandic paper -
-
-\documentclass{../../metanetpaper}
-
-%\usepackage{booktabs}
-%\usepackage{longtable}
-%\usepackage{tabulary}
-%\usepackage{tabularx}
-%\usepackage{rotating}
-%\usepackage{makecell}
-%\usepackage{multirow}
-%\usepackage{colortbl}
-%\usepackage{polyglossia}
-%\usepackage{multicol,framed,lipsum}
-%\setotherlanguages{icelandic,english}
-\usepackage[icelandic, english]{babel}
-
-%!TEX TS-program = xelatex
-\RequireXeTeX %Force XeTeX check
-
-\title{Íslensk tunga á stafrænni öld --- The Icelandic Language in the Digital Age}
-
-\subtitle{White Paper Series --- Hvítbókaröð}
-
-\author{
-  Eiríkur Rögnvaldsson~ {\small Háskóla Íslands}\\
-  Kristín M. Jóhannsdóttir~ {\small Háskóla Íslands}\\
-  Sigrún Helgadóttir~ {\small Árnastofnun} \\
-  Steinþór Steingrímsson~ {\small Háskóla Íslands}
-}
-\editors{
-  Georg Rehm, Hans Uszkoreit\\(ritstjórar, \textcolor{grey1}{editors})
-}
+%            - META-NET Language Whitepaper | Icelandic content -
+% 
+% ----------------------------------------------------------------------------
 
 \begin{document}
-
-%\renewcommand*{\figureformat}{\sffamily\thefigure\autodot}
 
 \maketitle
 
 \null
 \pagestyle{empty} 
 
-% 1. Acknowledgments in your language
-\FundingLNotice{\selectlanguage{icelandic}
-Höfundar þessa rits þakka höfundum hvítbókar um þýsku fyrir leyfi til að endurnýta almenna kafla úr verki þeirra. \cite{lwpgerman}
-
-\bigskip
-
-Gerð þessarar hvítbókar var kostuð af Sjöundu rammaáætlun Evrópusambandsins og Stefnumótunaráætlun Evrópusambandsins í upplýsinga- og samskiptatækni samkvæmt samningum við T4ME (samningur 249119), CESAR (samningur 271022), META\-NET4U (samningur 270893) og META-NORD (samningur 270899).}
-
-\FundingRNotice{\selectlanguage{english}
-The authors of this document are grateful to the authors of the White Paper on German for permission to re-use selected language-independent materials from their document. \cite{lwpgerman} 
-
-\bigskip
-
-The development of this white paper has been funded by the Seventh Framework Programme and the ICT Policy Support Programme of the European Commission under the contracts T4ME (Grant Agreement 249119), CESAR (Grant Agreement 271022), META\-NET4U (Grant Agreement 270893) and META-NORD (Grant Agreement 270899).}
-
 \makefundingnotice
-
 
 \pagenumbering{Roman} 
 \setcounter{page}{5}
@@ -76,7 +28,6 @@ The development of this white paper has been funded by the Seventh Framework Pro
 \cleardoublepage
 
 % --------------------------------------------------------------------------
-
 \bsection*{Formáli --- Preface}
 
 \begin{Parallel}[c]{78mm}{78mm}
@@ -990,13 +941,26 @@ META-NET var sett af stað 1. febrúar 2010 með það að markmiði að efla ra
 \textbf{META-RESEARCH} smíðar brýr til skyldra tæknisviða. Þetta starf leitast við að nýta framfarir á öðrum sviðum og einbeita sér að nýskapandi rannsóknum sem geta eflt máltækni. Einkum er stefnt að því að færa meiri merkingarfræði inn í vélþýðingar, ná fram bestu deilingu verkþátta í blönduðum vélþýðingum, nýta samhengi við útreikning sjálfvirkra þýðinga og byggja upp reynslugrunn fyrir vélþýðingar. META-RESEARCH vinnur með öðrum sviðum og greinum, svo sem þeim sem vinna að þróun vélræns náms og merkingarvefsamfélaginu. META-RESEARCH leggur áherslu á að safna gögnum, ganga frá gagnasöfnum og skipuleggja málgögn til að nota við mat; að safna saman birgðum tóla og aðferða; og skipuleggja vinnustofur og æfingaferli fyrir þátttakendur í samfélaginu. Þetta starf hefur nú þegar bent ákveðið á þætti í vélþýðingum þar sem merkingarfræði getur endurbætt núverandi aðferðir. Þar að auki hefur starfið getið af sér tillögur um það hvernig eigi að fást við þann vanda að fella merkingarupplýsingar inn í vélþýðingarkerfi. META-RESEARCH er líka að leggja lokahönd á ný málföng til nota í vélþýðingum, Annotated Hybrid Sample MT Corpus, sem inniheldur gögn um tungumálapörin ensku-þýsku, ensku-spænsku og ensku-tékknesku. META-RESEARCH hefur einnig þróað hugbúnað sem safnar margmála málheildum sem eru huldar á vefnum.
 \end{multicols}
 
+\vfill
+
+\makeatletter
+\@ifundefined{theHsection}{
+  \let
+}
+{
+  \renewcommand*{\theHsection}{\thepart.\thesection}
+}
+\makeatother
+\part*{\textcolor{white}{English}}
+\setcounter{section}{0}
+\setcounter{figure}{0}
+
+\centerline{office@meta-net.eu -- http://www.meta-net.eu}
+
 \addtocontents{toc}{\protect\clearpage\protect}
 \addtocontents{toc}{\protect\thispagestyle{empty}\protect}
 \addtocontents{toc}{\protect\vspace*{4mm}\protect}
 \addtocontents{toc}{\smallskip{\Large\textsf{\centerline{THE ICELANDIC LANGUAGE IN THE DIGITAL AGE}}\par}}
-
-\setcounter{section}{0}
-\setcounter{figure}{0}
 
 \cleardoublepage
 
