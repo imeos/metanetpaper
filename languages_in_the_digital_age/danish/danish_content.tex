@@ -1,4 +1,4 @@
-%                                     MMMMMMMMM                                         
+%                                     MMMMMMMMM        
 %                                                                             
 %  MMO    MM   MMMMMM  MMMMMMM   MM    MMMMMMMM   MMD   MM  MMMMMMM MMMMMMM   
 %  MMM   MMM   MM        MM     ?MMM              MMM$  MM  MM         MM     
@@ -8,104 +8,20 @@
 %  MM     MM   MMMMMM    MM   MM    MM            MM   MMM  MMMMMMM    MM
 %
 %
-%            - META-NET Language Whitepaper | Danish paper -
-
-\documentclass[]{../../metanetpaper}
-
-\usepackage{booktabs}
-\usepackage{longtable}
-\usepackage{tabulary}
-\usepackage{tabularx}
-\usepackage{rotating}
-\usepackage{makecell}
-\usepackage{multirow}
-\usepackage{colortbl}
-\usepackage{polyglossia}
-\usepackage{multicol,framed,lipsum}
-\setotherlanguages{danish,english}
-
-%!TEX TS-program = xelatex
-\RequireXeTeX %Force XeTeX check
-
-\title{Det danske sprog i den digitale  tidsalder --- The Danish Language in the Digital Age}
-
-\subtitle{White Paper Series --- Hvidbogsserie}
-
-\author{
-Bolette Sandford Pedersen  \\
- J\"{u}rgen Wedekind  \\
-Steen B\o hm-Andersen \\
-Peter Juel Henrichsen\\
-Sanne Hoffensetz-Andresen\\
-Sabine Kirchmeier-Andersen\\
-Jens Otto Kj\ae rum\\
-Louise Bie Larsen\\
-Bente Maegaard\\
-Sanni Nimb\\
-Jens-Erik Rasmussen\\
-Peter Revsbech\\
-Hanne Erdman Thomsen}
-
-\author{
- Bolette Sandford Pedersen~{\small K\o benhavns Universitet}\\
- J\"{u}rgen Wedekind~{\small K\o benhavns Universitet}\\
-Steen B\o hm-Andersen~{\small Ankiro}\\ 
-Peter Juel Henrichsen~{\small Copenhagen Business School}\\
-Sanne Hoffensetz-Andresen~{\small ordbogen.com}\\
-Sabine Kirchmeier-Andersen~{\small Dansk Sprogn\ae vn}\\
-Jens Otto Kj\ae rum~{\small Prolog Development Center}\\
-Louise Bie Larsen~{\small Ankiro}\\
-Bente Maegaard~{\small K\o benhavns Universitet}\\
-Sanni Nimb~{\small Det Danske Sprog- og Litteraturselskab}\\
-Jens-Erik Rasmussen~{\small Mikro V\ae rkstedet}\\
-Peter Revsbech~{\small ordbogen.com}\\
-Hanne Erdman Thomsen~{\small Copenhagen Business School}
-}
-
-\editors{
-  Georg Rehm, Hans Uszkoreit\\(udgivere, \textcolor{grey1}{editors})
-}
+%            - META-NET Language Whitepaper | Danish content -
+% 
+% ----------------------------------------------------------------------------
 
 \begin{document}
-
+  
 \renewcommand*{\figureformat}{\sffamily\thefigure\autodot}
 
 \maketitle
 
-% ---------------- Mocktitle ------------------
 \null
 \pagestyle{empty} 
 
-%\centerline{META-NET -- office@meta-net.eu -- http://www.meta-net.eu}
-
-
-
-\FundingLNotice{\selectlanguage{danish}
- Forfatterne af dette dokument er forfatterne til sprograpporten for tysk taknemmelige for tilladelsen til at genbruge udvalgt sproguafh�ngigt materiale fra deres dokument \cite{lwpgerman}.\\
- 
- Udarbejdelsen af denne sprograpport er blevet finansieret af EU's 7.\ 
-  rammeprogram og ICT Policy Support Programme under kontrakterne T4ME
-  (kontrakt nr.\  249119), CESAR (kontrakt nr. 271022), METANET4U
-  (kontrakt nr.\ 270893) og META-NORD
-  (kontrakt nr.\  270899). Vi takker Lina Henriksen og Sussi Olsen for den danske overs\ae ttelse af den engelske vsersion.
- }
-
-
-\FundingRNotice{\selectlanguage{english}
- The authors of this document are grateful to the authors of the white paper on German for permission to re-use selected language-independent materials from their document \cite{lwpgerman}. \\
- 
- The development of this white paper has been funded by the Seventh
-  Framework Programme and the ICT Policy Support Programme of the
-  European Commission under the contracts T4ME (Grant Agreement 249119),
-  CESAR (Grant Agreement 271022), METANET4U (Grant Agreement 270893)
-  and META-NORD (Grant Agreement 270899). We thank Lina Henriksen and Sussi Olsen for the Danish translation of the English version.
- }
-
 \makefundingnotice
-
-
-\clearpage
-% ------------- End of mocktitle ----------------
 
 \pagenumbering{Roman} 
 \setcounter{page}{5}
@@ -114,7 +30,6 @@ Hanne Erdman Thomsen~{\small Copenhagen Business School}
 \cleardoublepage
 
 % --------------------------------------------------------------------------
-
 \bsection*{Forord --- Preface}
 
 \begin{Parallel}[c]{78mm}{78mm}
@@ -1129,17 +1044,28 @@ META-NET startede 1.\ februar 2010 med det form\aa l at fremme forskningen i spr
 \textbf{META-SHARE} st\aa r for en \aa ben distribueret infrastruktur til udveksling og deling af resurser. Peer-to-peer netv\ae rket vil indeholde sprogdata, v\ae rkt\o jer og web-tjenester som er dokumenteret med metadata og organiseret i standardiserede kategorier. Det er nemt at \mbox{tilg\aa} resurserne, og man kan anvende samme s\o geteknik i dem alle. Resursesamlingen inkluderer gratis open-source materialer s\aa vel som kommercielt tilg\ae ngelige resurser og v\ae rkt\o jer som kr\ae ver betaling. META-SHARE er rettet mod eksisterende sprogdata, v\ae rkt\o jer og systemer s\aa vel som nye produkter der er n\o dvendige for at opbygge og evaluere nye teknologier, produkter og tjenester. Genbrug, kombinering og tilpasning af sproglige data og v\ae rkt\o jer spiller en afg\o rende rolle. META-SHARE bliver med tiden en vigtig del af den sprogteknologiske markedsplads for udviklere, lokaliseringseksperter, forskere, overs\ae ttere og sprogfolk fra \mbox{sm\aa}, mellemstore og store virksomheder. META-SHARE addresserer hele forl\o bet fra forskning i sprogteknologi til innovative produkter og tjenester. Et n\o gleaspekt i denne aktivitet er at etablere META-SHARE som en vigtig og v\ae rdifuld del af en europ\ae isk og global infrastruktur for sprogteknologien. 
 
 \textbf{META-RESEARCH} bygger bro til relaterede teknologiske omr\aa der. Denne aktivitet fors\o ger at udnytte fremskridt inden for andre omr\aa der og at \mbox{f\aa} det bedste ud af den innovative forskning som kan gavne sprogteknologien. Fokus for denne aktivitet er: mere semantik i maskinovers\ae ttelse, optimering af arbejdsdelingen i hybrid maskinovers\ae ttelse, udnyttelse af overs\ae ttelsens kontekst og udarbejdelse af et empirisk fundament for maskinovers\ae ttelse. META-RESEARCH arbejder inden for andre omr\aa der og discipliner som fx maskinl\ae ring og det semantiske web. META-RESEARCH satser \mbox{p\aa} indsamling og forberedelse af data samt tilrettel\ae ggelse af sprog\-resurser med henblik \mbox{p\aa} evaluering; udarbejdelse af oversigter over v\ae rkt\o jer og metoder samt organisering af workshopper og kurser for medlemmerne. Man har allerede klart identificeret aspekter af maskinovers\ae ttelse hvor semantik kan p\aa virke den nuv\ae rende bedste praksis. Derudover har arbejdet givet anledning til anbefalinger vedr\o rende integration af semantisk information i maskinovers\ae ttelse. META-RESEARCH er \mbox{ogs\aa} ved at f\ae rdigg\o re en ny sprogresurse til maskinovers\ae ttelse {\it the Annotated Hybrid Sample MT Corpus} som indeholder f\o lgende sprogpar: engelsk-tysk, engelsk-spansk og engelsk-tjekkisk. META-RESEARCH har endvidere udviklet software til indsamling af flersprogede korpusser der er skjult \mbox{p\aa} nettet.
-
-
 \end{multicols}
+
+\vfill
+
+\makeatletter
+\@ifundefined{theHsection}{
+  \let
+}
+{
+  \renewcommand*{\theHsection}{\thepart.\thesection}
+}
+\makeatother
+\part*{\textcolor{white}{English}}
+\setcounter{section}{0}
+\setcounter{figure}{0}
+
+\centerline{office@meta-net.eu -- http://www.meta-net.eu}
 
 \addtocontents{toc}{\protect\clearpage\protect}
 \addtocontents{toc}{\protect\thispagestyle{empty}\protect}
 \addtocontents{toc}{\protect\vspace*{4mm}\protect}
 \addtocontents{toc}{\smallskip{\Large\textsf{\centerline{THE DANISH LANGUAGE IN THE DIGITAL AGE}}\par}}
-
-\setcounter{section}{0}
-\setcounter{figure}{0}
 
 \cleardoublepage
 
@@ -2059,7 +1985,7 @@ META-NET launched on 1 February 2010 with the goal of advancing research in lang
 
 \bsection[Referencer -- References]{Referencer --- References}
 \bibliographystyle{unsrt}
-\bibliography{danish-references}
+\bibliography{danish_references}
   
 \cleardoublepage
 
@@ -2210,5 +2136,3 @@ Sverige & \textcolor{grey1}{Sweden} & Department of Swedish, University of Gothe
 &tysk & German & Deutsch& \\
   &ungarsk & Hungarian & magyar& \\ \addlinespace \bottomrule
 \end{tabularx}
-
-\end{document}

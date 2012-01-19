@@ -1,67 +1,23 @@
-\documentclass[]{../../metanetpaper}
-
-\RequireXeTeX
-\usepackage[finnish, english]{babel}
-
-
-\title{Suomen kieli digitaalisella aikakaudella --- The Finnish Language in the Digital Age}
-
-\subtitle{White Paper Series --- Valkoiset kirjat}
-
-\author{
-  Kimmo Koskenniemi~ {\small Helsingin yliopisto}\\
-  Krister Lindén~ {\small Helsingin yliopisto}\\
-  Lauri Carlson~ {\small Helsingin yliopisto}\\
-  Martti Vainio~ {\small Helsingin yliopisto}\\
-  Antti Arppe~ {\small Helsingin yliopisto}\\
-  Mietta Lennes~ {\small Helsingin yliopisto}\\
-  Hanna Westerlund~ {\small Helsingin yliopisto}\\
-  Mirka Hyvärinen~ {\small Helsingin yliopisto}\\
-  Pirkko Nuolijärvi~ {\small KOTUS}\\
-  Aino Piehl~ {\small KOTUS}
-}
-
-\editors{
-  Georg Rehm, Hans Uszkoreit\\(toimittajat, \textcolor{grey1}{editors})
-}
-
-
-
+%                                     MMMMMMMMM        
+%                                                                             
+%  MMO    MM   MMMMMM  MMMMMMM   MM    MMMMMMMM   MMD   MM  MMMMMMM MMMMMMM   
+%  MMM   MMM   MM        MM     ?MMM              MMM$  MM  MM         MM     
+%  MMMM 7MMM   MM        MM     MM8M    MMMMMMM   MMMMD MM  MM         MM     
+%  MM MMMMMM   MMMMMM    MM    MM  MM             MM MMDMM  MMMMMM     MM     
+%  MM  MM MM   MM        MM    MMMMMM             MM  MMMM  MM         MM     
+%  MM     MM   MMMMMM    MM   MM    MM            MM   MMM  MMMMMMM    MM
+%
+%
+%            - META-NET Language Whitepaper | Finnish content -
+% 
+% ----------------------------------------------------------------------------
 
 \begin{document}
 
-  \maketitle
+\maketitle
 
 \null
 \pagestyle{empty} 
-
-%\centerline{META-NET -- office@meta-net.eu -- http://www.meta-net.eu}
-
-\FundingLNotice{
-\selectlanguage{finnish} 
-Tämän raportin tekijät ovat kiitollisia saksankielisen META-NET
-valkoisen kirjan tekijöille luvasta käyttää raporttinsa kielestä
-riippumattomien osioiden tekstejä osana tämän raportin
-englanninkielistä osuutta sekä lähteenä suomenkieliselle
-käännökselle \cite{lwpgerman}.
-  
-  \bigskip
-  Tämän valkoisen kirjan tuottamiseen on myönnetty rahoitusta Euroopan 
-  komission seitsemännestä puiteohjelmasta ja tieto- ja viestintäteknologioiden
-  tukiohjelmasta seuraavien sopimusten perusteella T4ME (rahoitussopimus 249119), 
-  CESAR (rahoitussopimus 271022), METANET4U (rahoitussopimus 270893) ja META-NORD (rahoitussopimus 270899).}
-
-\FundingRNotice{\selectlanguage{english} The authors of this document
-  are grateful to the authors of the White Paper on German for
-  permission to re-use selected language-independent materials from
-  their document \cite{lwpgerman}.
-  
-  \bigskip
-  The development of this white paper has been funded by the Seventh
-  Framework Programme and the ICT Policy Support Programme of the
-  European Commission under the contracts T4ME (Grant Agreement
-  249119), CESAR (Grant Agreement 271022), METANET4U (Grant Agreement
-  270893) and META-NORD (Grant Agreement 270899).}
 
 \makefundingnotice
 
@@ -69,8 +25,9 @@ käännökselle \cite{lwpgerman}.
 \setcounter{page}{5}
 \pagestyle{scrheadings}
 
-\clearpage
+\cleardoublepage
 
+% --------------------------------------------------------------------------
 \bsection*{Esipuhe --- Preface}
 \begin{Parallel}[c]{78mm}{78mm}
 \ParallelLText{\selectlanguage{finnish}
@@ -2403,15 +2360,25 @@ tekstiaineistoja keräävä ohjelma on jo kehitetty.
 \end{multicols}
 
 \vfill
+
+\makeatletter
+\@ifundefined{theHsection}{
+  \let
+}
+{
+  \renewcommand*{\theHsection}{\thepart.\thesection}
+}
+\makeatother
+\part*{\textcolor{white}{English}}
+\setcounter{section}{0}
+\setcounter{figure}{0}
+
 \centerline{office@meta-net.eu -- http://www.meta-net.eu}
 
 \addtocontents{toc}{\protect\clearpage\protect}
 \addtocontents{toc}{\protect\thispagestyle{empty}\protect}
 \addtocontents{toc}{\protect\vspace*{4mm}\protect}
 \addtocontents{toc}{\smallskip{\Large\textsf{\centerline{THE FINNISH LANGUAGE IN THE DIGITAL AGE}}\par}}
-
-\setcounter{section}{0}
-\setcounter{figure}{0}
 
 \cleardoublepage
 

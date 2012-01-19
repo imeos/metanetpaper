@@ -1,3 +1,4 @@
+%                                     MMMMMMMMM        
 %                                                                             
 %  MMO    MM   MMMMMM  MMMMMMM   MM    MMMMMMMM   MMD   MM  MMMMMMM MMMMMMM   
 %  MMM   MMM   MM        MM     ?MMM              MMM$  MM  MM         MM     
@@ -7,35 +8,9 @@
 %  MM     MM   MMMMMM    MM   MM    MM            MM   MMM  MMMMMMM    MM
 %
 %
-%            - META-NET Language Whitepaper | Greek paper -
+%            - META-NET Language Whitepaper | Greek content -
 % 
 % ----------------------------------------------------------------------------
-
-\documentclass[]{../../metanetpaper}
-
-\usepackage{multicol}
-
-%!TEX TS-program = xelatex
-\RequireXeTeX %Force XeTeX check
-
-\usepackage{polyglossia}
-\setotherlanguages{english,greek}
-
-\usepackage{hyperref}
-
-\title{Η Ελληνικη Γλωσσα στην Ψηφιακη Εποχη --- The Greek Language in the Digital Age}
-
-\subtitle{White Paper Series --- Σειρά Λευκών Βίβλων}
-
-\author{
-  Maria Gavrilidou~ {\small R.\,C.~“Athena”/ILSP}\\
-  Maria Koutsombogera~ {\small R.\,C.~“Athena”/ILSP}\\
-  Anastasios Patrikakos~ {\small R.\,C.~“Athena”} \\
-  Stelios Piperidis~ {\small R.\,C.~“Athena”/ILSP}
-}
-\editors{
-  Georg Rehm, Hans Uszkoreit\\(επιμελητές, \textcolor{grey1}{editors})
-}
 
 \begin{document}
 
@@ -43,23 +18,6 @@
 
 \null
 \pagestyle{empty} 
-
-\FundingLNotice{\selectlanguage{greek} Οι συντάκτες του κειμένου αυτού θα ήθελαν να ευχαριστήσουν τους συγγραφείς της γερμανικής Λευκής Βίβλου για την άδεια χρήσης επιλεγμένων εισαγωγικών χωρίων από το κείμενό τους \cite{lwpgerman}.
-
-  \bigskip
-  Η κατάρτιση αυτής της Λευκής Βίβλου χρηματοδοτήθηκε από το 7ο Πρόγραμμα Πλαίσιο και το Πρόγραμμα “Υποστήριξη της Πολιτικής για τις ΤΠΕ” της Ευρωπαϊκής Επιτροπής, με τα Έργα Τ4ΜΕ (Αρ.~Σύμβασης: 249119), CESAR (Αρ.~Σύμβασης: 271022), METANET4U (Αρ.~Σύμβασης: 270893) και META-NORD (Αρ.~Σύμβασης: 270899).}
-
-\FundingRNotice{\selectlanguage{english} The authors of this document
-  are grateful to the authors of the White Paper on German for
-  permission to re-use selected language-independent materials from
-  their document \cite{lwpgerman}.
-  
-  \bigskip
-  The development of this white paper has been funded by the Seventh
-  Framework Programme and the ICT Policy Support Programme of the
-  European Commission under the contracts T4ME (Grant Agreement
-  249119), CESAR (Grant Agreement 271022), METANET4U (Grant Agreement
-  270893) and META-NORD (Grant Agreement 270899).}
 
 \makefundingnotice
 
@@ -70,7 +28,6 @@
 \cleardoublepage
 
 % --------------------------------------------------------------------------
-
 \bsection*{Προοίμιο --- Preface}
 
 \vspace*{-4mm}
@@ -1097,15 +1054,25 @@ As of November 2011, META-NET consists of 54 research centres from 33 European c
 \end{multicols}
 
 \vfill
+
+\makeatletter
+\@ifundefined{theHsection}{
+  \let
+}
+{
+  \renewcommand*{\theHsection}{\thepart.\thesection}
+}
+\makeatother
+\part*{\textcolor{white}{English}}
+\setcounter{section}{0}
+\setcounter{figure}{0}
+
 \centerline{office@meta-net.eu -- http://www.meta-net.eu}
 
 \addtocontents{toc}{\protect\clearpage\protect}
 \addtocontents{toc}{\protect\thispagestyle{empty}\protect}
 %\addtocontents{toc}{\protect\vspace*{1mm}\protect}
 \addtocontents{toc}{\smallskip{\Large\textsf{\centerline{THE GREEK LANGUAGE IN THE DIGITAL AGE}}\par}}
-
-\setcounter{section}{0}
-\setcounter{figure}{0}
 
 \cleardoublepage
 

@@ -464,7 +464,7 @@
           \fontsize{14}{24}\selectfont{%
             \textsf{%
               \textcolor{red}{%
-                \@author
+                \@authoraffiliation
               }
             }
           }

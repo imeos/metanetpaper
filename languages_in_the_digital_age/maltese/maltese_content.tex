@@ -1,4 +1,4 @@
-%                                     MMMMMMMMM                                         
+%                                     MMMMMMMMM        
 %                                                                             
 %  MMO    MM   MMMMMM  MMMMMMM   MM    MMMMMMMM   MMD   MM  MMMMMMM MMMMMMM   
 %  MMM   MMM   MM        MM     ?MMM              MMM$  MM  MM         MM     
@@ -8,82 +8,18 @@
 %  MM     MM   MMMMMM    MM   MM    MM            MM   MMM  MMMMMMM    MM
 %
 %
-%            - META-NET Language Whitepaper | Maltese paper -
-
-\documentclass[]{../../metanetpaper}
-
-%!TEX TS-program = xelatex
-\RequireXeTeX %Force XeTeX check
-
-\usepackage{polyglossia}
-\setotherlanguages{maltese,english}
-
-%REMOVE?
-\usepackage{booktabs}
-\usepackage{longtable}
-\usepackage{tabulary}
-\usepackage{tabularx}
-\usepackage{rotating}
-\usepackage{makecell}
-\usepackage{multirow}
-\usepackage{colortbl}
-\usepackage{multicol,framed,lipsum}
-
+%            - META-NET Language Whitepaper | Maltese content -
+% 
 % ----------------------------------------------------------------------------
-%PACKAGES INCLUDED BY UNI MALTA
-\usepackage{graphicx}
-%\usepackage{amssymb}
-%\usepackage{epstopdf}
-%\usepackage{maltese}
-%\usepackage{tipa}
-%\usepackage{tikz}
-\usepackage{covington}
-%\usepackage{enumerate}
-% ----------------------------------------------------------------------------
-
-
-\title{Il-Lingwa Maltija\ \ \ \ \ \ fil-Era\ \ \ \ \ Diġitali --- The Maltese Language\ \ \ \ in the\ \ \ \ \ Digital Age}
-
-\subtitle{White Paper Series --- Serje ta’ White Papers}
-
-\author{
-  Mike Rosner~ {\small University of Malta}\\
-  Jan Joachimsen~ {\small University of Malta}  
-}
-
-\editors{
-  Georg Rehm, Hans Uszkoreit\\(Edituri, \textcolor{grey1}{editors})
-}
 
 \begin{document}
-
-%\renewcommand*{\figureformat}{\sffamily\thefigure\autodot}
 
 \maketitle
 
 \null
 \pagestyle{empty} 
 
-\FundingLNotice{\selectlanguage{maltese} 
-  Il-pubblikatur huwa grat lejn l-awturi tal-white paper Ġermaniża\cite{lwpgerman} għall-permess li jirriproduċi materjal mill-white paper imsemmija.  Grazzi lil Ritianne Stanyer u Roberta Abela għat-translazzjoni ta' dan id-dokument.
-
-  \bigskip L-iżvilupp ta’ din il-white paper ġie ffinanzjat mis-Seba' Programm ta' Qafas u l-Programm ta' Appoġġ għall-Politika dwar l-ICT tal-Kummissjoni Ewropea taħt il-kuntratti T4ME (Grant Agreement 249119), CESAR (Grant Agreement 271022), METANET4U (Grant Agreement 270893) u META-NORD (Grant Agreement 270899).}
-
-\FundingRNotice{\selectlanguage{english} The authors of this document
-  are grateful to the authors of the White Paper on German\cite{lwpgerman} for
-  permission to re-use selected language-independent materials from
-  their document. Thanks to Ritianne Stanyer and Roberta Abela for the translation of this document.
-  
-  \bigskip
-  The development of this white paper has been funded by the Seventh
-  Framework Programme and the ICT Policy Support Programme of the
-  European Commission under the contracts T4ME (Grant Agreement
-  249119), CESAR (Grant Agreement 271022), METANET4U (Grant Agreement
-  270893) and META-NORD (Grant Agreement 270899).}
-
 \makefundingnotice
-
-% ------------- End of mocktitle ----------------
 
 \pagenumbering{Roman} 
 \setcounter{page}{5}
@@ -92,7 +28,6 @@
 \cleardoublepage
 
 % --------------------------------------------------------------------------
-
 \bsection*{Daħla --- Preface}
 
 \begin{Parallel}[c]{78mm}{78mm}
@@ -1238,13 +1173,26 @@ META-NET tnieda fl-1 ta’ Frar 2010 bil-għan li javvanza r-riċerka fit-teknol
 
 \end{multicols}
 
+\vfill
+
+\makeatletter
+\@ifundefined{theHsection}{
+  \let
+}
+{
+  \renewcommand*{\theHsection}{\thepart.\thesection}
+}
+\makeatother
+\part*{\textcolor{white}{English}}
+\setcounter{section}{0}
+\setcounter{figure}{0}
+
+\centerline{office@meta-net.eu -- http://www.meta-net.eu}
+
 \addtocontents{toc}{\protect\clearpage\protect}
 \addtocontents{toc}{\protect\thispagestyle{empty}\protect}
 \addtocontents{toc}{\protect\vspace*{4mm}\protect}
 \addtocontents{toc}{\smallskip{\Large\textsf{\centerline{THE MALTESE LANGUAGE IN THE DIGITAL AGE}}\par}}
-
-\setcounter{section}{0}
-\setcounter{figure}{0}
 
 \cleardoublepage
 
@@ -1753,7 +1701,8 @@ For handling this type of error, analysis of the context is needed in many cases
 \item *\emph{... in-negozjati li kien agħmel il-Gvern ...}
 \end{enumerate}
  
-Both \emph{għamel} `he made' and \emph{agħmel} `make!' are pronounced \[\lingua{ˈɐː.mɛl}\].
+Both \emph{għamel} `he made' and \emph{agħmel} `make!' are pronounced 
+\[\lingua{ˈɐː.mɛl}\].
 
 This type of analysis either needs to draw on language-specific \textbf{grammars} laboriously coded into the software by experts, or on a statistical language model. In this case, a model calculates the probability of a particular word as it occurs in a specific position (e.\,g., between the words that precede and follow it). For example, \emph{kien għamel} is much more probable word sequence than \emph{kien agħmel}. A statistical language model can be automatically derived using a large amount of (correct) language data, a \textbf{text corpus}. Up to now, these approaches have mostly been developed and evaluated using English language data. However, they do not necessarily transfer well to highly inflectional languages like Maltese, where a given word type, such as a verb, can yield a large number of orthographic forms. 
 
@@ -2342,7 +2291,7 @@ META-NET launched on 1 February 2010 with the goal of advancing research in lang
 
 \bsection[Referenzi  -- References]{Referenzi --- References}
 \bibliographystyle{unsrt}
-\bibliography{references}
+\bibliography{maltese_references}
   
 \cleardoublepage
 
