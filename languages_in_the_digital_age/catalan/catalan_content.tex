@@ -1,4 +1,4 @@
-%                                     MMMMMMMMM                                         
+%                                     MMMMMMMMM        
 %                                                                             
 %  MMO    MM   MMMMMM  MMMMMMM   MM    MMMMMMMM   MMD   MM  MMMMMMM MMMMMMM   
 %  MMM   MMM   MM        MM     ?MMM              MMM$  MM  MM         MM     
@@ -8,37 +8,9 @@
 %  MM     MM   MMMMMM    MM   MM    MM            MM   MMM  MMMMMMM    MM
 %
 %
-%            - META-NET Language Whitepaper | Catalan paper -
-%
+%            - META-NET Language Whitepaper | Catalan content -
 % 
 % ----------------------------------------------------------------------------
-
-\documentclass[]{../../metanetpaper}
-
-%!TEX TS-program = xelatex
-%\RequireXeTeX %Force XeTeX check
-
-\usepackage{polyglossia}
-\setotherlanguages{catalan,english}
-
-
-\title{La llengua catalana a l'era digital --- The Catalan Language\ \ \ \ in the\ \ \ \ Digital Age}
-
-\subtitle{White Paper Series --- Sèrie de Llibres Blancs}
-%DONE: one line per author
-\author{
- Asunción Moreno~ {\small [UPC]}\\
- Núria Bel~{\small [UPF]}\\ 
- Eva Revilla~{\small [UPF]}\\
- Emília Garcia~{\small [UPC]}\\
- Sisco Vallverdú~{\small [UPC]}\\
- \footnotesize{[UPC]} ~ \small{Universitat Politècnica de Catalunya}\\
- \footnotesize{[UPF]} ~ \small{Universitat Pompeu Fabra}
-}
-
-\editors{
-  Georg Rehm, Hans Uszkoreit\\(editors)
-}
 
 \begin{document}
 
@@ -47,32 +19,6 @@
 \null
 \pagestyle{empty} 
 
-%DONE: translation of funding notice
-
-\FundingLNotice{\selectlanguage{catalan} Els autors d'aquest document 
-agraeixen als autors del Llibre Blanc en Alemany el permís per 
-reutilitzar fragments del seu document independents de la llengua.
-  
-  \bigskip
-  El desenvolupament d'aquest document ha estat finançat pel Setè 
-  Programa Marc i el Programa de Suport a Polítiques de les TIC 
-  de la Comissió Europea amb els contractes T4ME (acord de 
-  subvenció 249119), CESAR (acord de subvenció 271022), 
-  METANET4U (acord de subvenció del 270 893) i META-NORD 
-  (acord de subvenció 270899).}
-
-\FundingRNotice{\selectlanguage{english} The authors of this document
-  are grateful to the authors of the White Paper on German for
-  permission to re-use selected language-independent materials from
-  their document.
-  
-  \bigskip
-  The development of this white paper has been funded by the Seventh
-  Framework Programme and the ICT Policy Support Programme of the
-  European Commission under the contracts T4ME (Grant Agreement
-  249119), CESAR (Grant Agreement 271022), METANET4U (Grant Agreement
-  270893) and META-NORD (Grant Agreement 270899).}
-
 \makefundingnotice
 
 \pagenumbering{Roman} 
@@ -80,7 +26,6 @@ reutilitzar fragments del seu document independents de la llengua.
 \pagestyle{scrheadings}
 
 \cleardoublepage
-
 
 % --------------------------------------------------------------------------
 \bsection*{Pròleg --- Preface}
@@ -996,15 +941,25 @@ META-NET estimula i promou tecnologies multilingües per a totes les llengües e
 \end{multicols}
 
 \vfill
+
+\makeatletter
+\@ifundefined{theHsection}{
+  \let
+}
+{
+  \renewcommand*{\theHsection}{\thepart.\thesection}
+}
+\makeatother
+\part*{\textcolor{white}{English}}
+\setcounter{section}{0}
+\setcounter{figure}{0}
+
 \centerline{office@meta-net.eu -- http://www.meta-net.eu}
 
 \addtocontents{toc}{\protect\clearpage\protect}
 \addtocontents{toc}{\protect\thispagestyle{empty}\protect}
 \addtocontents{toc}{\protect\vspace*{4mm}\protect}
 \addtocontents{toc}{\smallskip{\Large\textsf{\centerline{THE CATALAN LANGUAGE IN THE DIGITAL AGE}}\par}}
-
-\setcounter{section}{0}
-\setcounter{figure}{0}
 
 \cleardoublepage
 
@@ -1842,7 +1797,7 @@ META-NET launched on 1 February 2010 with the goal of advancing research in lang
 \bsection[Referències -- References]{Referències --- References}
 \bibliographystyle{unsrt} % What is the difference between "unsrt" und "is-unsrt"?
 %\bibliographystyle{is-unsrt}
-\bibliography{references_ca}
+\bibliography{catalan_references}
   
 \cleardoublepage
 
