@@ -1,4 +1,4 @@
-%                                     MMMMMMMMM                                         
+%                                     MMMMMMMMM        
 %                                                                             
 %  MMO    MM   MMMMMM  MMMMMMM   MM    MMMMMMMM   MMD   MM  MMMMMMM MMMMMMM   
 %  MMM   MMM   MM        MM     ?MMM              MMM$  MM  MM         MM     
@@ -8,83 +8,18 @@
 %  MM     MM   MMMMMM    MM   MM    MM            MM   MMM  MMMMMMM    MM
 %
 %
-%            - META-NET Language Whitepaper | Irish paper -
-
-\documentclass[]{../../metanetpaper}
-
-%\usepackage{booktabs}
-%\usepackage{longtable}
-%\usepackage{tabulary}
-%\usepackage{tabularx}
-%\usepackage{rotating}
-%\usepackage{makecell}
-%\usepackage{multirow}
-%\usepackage{colortbl}
-\usepackage{polyglossia}
-%\usepackage{multicol,framed,lipsum}
-\setotherlanguages{irish,english}
-
-%!TEX TS-program = xelatex
-\RequireXeTeX %Force XeTeX check
-
-\title{An Ghaeilge sa Ré Dhigiteach --- The Irish Language in the Digital Age}
-
-\subtitle{White Paper Series --- Sraith Páipéar Bán }
-
-%\author{
-%  John Judge\\
-%  Ailbhe Ní Chasaide\\
-%  Rose Ní Dhubhda\\
-%  Kevin P. Scannell\\
-%  Elaine Uí Dhonnchadha
-%}
-\author{
-  John Judge~ {\small CNGL}\\
-  Ailbhe Ní Chasaide~ {\small TCD}\\
-  Rose Ní Dhubhda~ {\small OÉ Gallimh}\\
-  Kevin P. Scannell~ {\small Saint Louis University}\\
-  Elaine Uí Dhonnchadha~ {\small TCD}
-}
-\editors{
-  Georg Rehm, Hans Uszkoreit\\(eagarthóirí, \textcolor{grey1}{editors}) %NEED TO TRANSLATE
-}
+%            - META-NET Language Whitepaper | Irish content -
+% 
+% ----------------------------------------------------------------------------
 
 \begin{document}
 
-\renewcommand*{\figureformat}{\sffamily\thefigure\autodot}
-
 \maketitle
 
-% ---------------- Mocktitle ------------------
 \null
 \pagestyle{empty} 
 
-%\centerline{META-NET -- office@meta-net.eu -- http://www.meta-net.eu}
-
-
-\FundingLNotice{\selectlanguage{irish}
-  Tá údair na cáipéise seo buíoch d'údair an Pháipéir Bháin i nGearmáinis as cead a thabhairt ábhair neamhspleách ó theanga óna gcáipéis a athúsáid \cite{lwpgerman}. \\
-  
-  Mhaoinigh an Seachtú Creatchlár agus Clár Tacaíochta Beartais TFC
-  de Choimisiún na hEorpa faoi na conarthaí T4ME
-  (Comhaontú Deontais 249119), CESAR (Comhaontú Deontais 271022),
-  METANET4U (Comhaontú Deontais 270893) agus
-  META-NORD (Comhaontú Deontais 270899) forbairt an pháipéir bháin seo.}
-
-\FundingRNotice{\selectlanguage{english}
-  The authors of this document are grateful to the authors of the white paper on German for permission to re-use selected language-independent materials from their document \cite{lwpgerman}. \\
-  
-  The development of this white paper has been funded by the Seventh
-  Framework Programme and the ICT Policy Support Programme of the
-  European Commission under the contracts T4ME (Grant Agreement
-  249119), CESAR (Grant Agreement 271022), METANET4U (Grant Agreement
-  270893) and META-NORD (Grant Agreement 270899).}
-
 \makefundingnotice
-
-
-\clearpage
-% ------------- End of mocktitle ----------------
 
 \pagenumbering{Roman} 
 \setcounter{page}{5}
@@ -93,7 +28,6 @@
 \cleardoublepage
 
 % --------------------------------------------------------------------------
-
 \bsection*{Réamhrá --- Preface} 
 
 \begin{Parallel}[c]{78mm}{78mm}
@@ -1031,13 +965,26 @@ Cruthaíonn \textbf{META-SHARE} áis oscailte, dáilte chun acmhainní a mhalart
 Tógann \textbf{META-RESEARCH} droichid le réimsí teicneolaíochta ábhartha. Déantar iarracht sa ghníomhaíocht seo dul chun cinn i réimsí eile a luamhánú agus an úsáid is fearr a bhaint as taighde nuálaíoch ar féidir leis dul chun tairbhe na teicneolaíochta teanga. Go háirithe, teastaíonn ón ngníomhaíocht seo níos mó séimeantacha a thabhairt chuig uathaistriúchán (MT), an roinnt oibre in MT hibride a bharrfheabhsú, comhthéacs a úsáid agus uathaistriúcháin á ríomh agus bun impiriciúil a réiteach don MT. Tá META-RESEARCH ag oibriú le réimsí agus disciplíní eile, cosúil le foghlaim innill agus an pobal Séimeantach Gréasáin. Díríonn META-RESEARCH ar bhailiú sonraí, réiteach sraitheanna sonraí agus eagrú acmhainní teanga chun críocha measúnú; fardail uirlisí agus modhanna a chur le chéile; agus eagrú ceardlanna agus imeachtaí oiliúna do bhaill an phobail. Tá soiléiriú déanta cheana féin ag an ngníomhaíocht seo ar ghnéithe de MT inar féidir le MT tionchar bheith acu ar dhea-chleachtais reatha. Anuas air sin, tá moltaí tagtha ag an ngníomhaíocht seo maidir le dul i ngleic leis an bhfadhb a bhaineann le comhtháthú faisnéise séimeantach in MT. Tá META-RESEARCH ag cur deireadh chomh maith le hacmhainn teanga nua do MT, Corpas MT Samplach Hibride Anótáilte, a chuireann sonraí ar fáil do phéirí teanga Bhéarla-Ghearmáinise, Bhéarla-Spáinnise agus Bhéarla-Sheicise. Tá bogearraí forbartha ag META-RESEARCH chomh maith a bhailíonn corpais ilteangacha atá faoi cheilt ar an nGréasán.
 \end{multicols}
 
+\vfill
+
+\makeatletter
+\@ifundefined{theHsection}{
+  \let
+}
+{
+  \renewcommand*{\theHsection}{\thepart.\thesection}
+}
+\makeatother
+\part*{\textcolor{white}{English}}
+\setcounter{section}{0}
+\setcounter{figure}{0}
+
+\centerline{office@meta-net.eu -- http://www.meta-net.eu}
+
 \addtocontents{toc}{\protect\clearpage\protect}
 \addtocontents{toc}{\protect\thispagestyle{empty}\protect}
 \addtocontents{toc}{\protect\vspace*{4mm}\protect}
 \addtocontents{toc}{\smallskip{\Large\textsf{\centerline{THE IRISH LANGUAGE IN THE DIGITAL AGE}}\par}}
-
-\setcounter{section}{0}
-\setcounter{figure}{0}
 
 \cleardoublepage
 
