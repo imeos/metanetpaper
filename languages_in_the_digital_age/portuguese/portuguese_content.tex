@@ -1,4 +1,4 @@
-%                                     MMMMMMMMM                                         
+%                                     MMMMMMMMM        
 %                                                                             
 %  MMO    MM   MMMMMM  MMMMMMM   MM    MMMMMMMM   MMD   MM  MMMMMMM MMMMMMM   
 %  MMM   MMM   MM        MM     ?MMM              MMM$  MM  MM         MM     
@@ -8,91 +8,18 @@
 %  MM     MM   MMMMMM    MM   MM    MM            MM   MMM  MMMMMMM    MM
 %
 %
-%            - META-NET Language Whitepaper | Portuguese paper -
-
-\documentclass[]{../metanetpaper}
-
-\usepackage{booktabs}
-\usepackage{longtable}
-\usepackage{tabulary}
-\usepackage{tabularx}
-\usepackage{rotating}
-\usepackage{makecell}
-\usepackage{multirow}
-\usepackage{colortbl}
-\usepackage{polyglossia}
-\usepackage{multicol,framed,lipsum}
-\setotherlanguages{portuguese,english}
-
-%!TEX TS-program = xelatex
-\RequireXeTeX %Force XeTeX check
-
-\title{A  língua \mbox{portuguesa} na era digital --- The \mbox{Portuguese} Language in the Digital Age}
-
-\subtitle{White Paper Series --- Série Livro Branco}
-
-\author{
-  Amália Mendes \\
-  António Branco \\
-  Paulo Henriques \\
-  Sílvia Pereira \\
-  Thomas Pellegrini \\
-  Hugo Meinedo \\
-  Fernanda Bacelar \\
-  Isabel Trancoso \\
-  Paulo Quaresma \\
-  Vera Lúcia Strube de Lima
-}
-\authoraffiliation{
-  Amália Mendes~ {\small CLUL - U. de Lisboa}\\
-  António Branco~ {\small FCUL - U. de Lisboa}\\
-  Paulo Henriques~ {\small CLUL - U. de Lisboa} \\
-  Sílvia Pereira~ {\small CLUL - U. de Lisboa}\\
-  Thomas Pellegrini~ {\small INESC-ID}\\
-  Hugo Meinedo~ {\small INESC-ID}\\
-  Fernanda Bacelar~ {\small CLUL - U. de Lisboa} \\
-  Isabel Trancoso~ {\small INESC-ID / IST}\\
-  Paulo Quaresma~ {\small U. de Évora} \\
-  Vera Lúcia Strube de Lima~ {\small PUCRS-Pontifícia U. Católica do Rio Grande do Sul}
-}
-\editors{
-  Georg Rehm, Hans Uszkoreit\\(Herausgeber, \textcolor{grey1}{editors})
-}
+%            - META-NET Language Whitepaper | Portuguese content -
+% 
+% ----------------------------------------------------------------------------
 
 \begin{document}
 
-\renewcommand*{\figureformat}{\sffamily\thefigure\autodot}
-
 \maketitle
 
-% ---------------- Mocktitle ------------------
 \null
 \pagestyle{empty} 
 
-\centerline{META-NET -- office@meta-net.eu -- http://www.meta-net.eu}
-
-\vfill
-
-\begin{small}
-  \selectlanguage{portuguese}
-  A realização deste livro branco foi financiada pelo 7.º Programa-Quadro do 
-ICT Policy Support Programme da Comunidade Europeia no âmbito dos contratos 
-T4ME (acordo de financiamento 249119), CESAR (acordo de financiamento 271022), 
-METANET4U (acordo de financiamento 270893) e META-NORD (acordo de financiamento 270899).
-\end{small}
-
-\bigskip
-\begin{small}
-  \selectlanguage{english}
-  The development of this white paper has been funded by the Seventh
-  Framework Programme and the ICT Policy Support Programme of the
-  European Commission under the contracts T4ME (Grant Agreement 249119),
-  CESAR (Grant Agreement 271022), METANET4U (Grant Agreement 270893)
-  and META-NORD (Grant Agreement 270899).
-\end{small}
-
-\clearpage
-% ------------- End of mocktitle ----------------
+\makefundingnotice
 
 \pagenumbering{Roman} 
 \setcounter{page}{5}
@@ -101,7 +28,6 @@ METANET4U (acordo de financiamento 270893) e META-NORD (acordo de financiamento 
 \cleardoublepage
 
 % --------------------------------------------------------------------------
-
 \bsection*{Prefácio --- Preface}
 
 \begin{Parallel}[c]{78mm}{78mm}
@@ -679,7 +605,7 @@ Os melhores resultados (a azul e a verde) foram conseguidos tanto por línguas q
     SL & \textcolor{green}{61.0} & \textcolor{purple}{33.1} & \textcolor{purple}{37.9} & \textcolor{blue}{43.5} & \textcolor{blue}{42.6} & \textcolor{purple}{34.0} & \textcolor{blue}{47.0} & \textcolor{purple}{31.1} & \textcolor{red3}{28.8} & \textcolor{purple}{38.2} & \textcolor{red3}{25.7} & \textcolor{blue}{42.3} & \textcolor{purple}{34.6} & \textcolor{purple}{37.3} & \textcolor{purple}{30.0} & \textcolor{blue}{45.9} & \textcolor{purple}{38.2} & \textcolor{blue}{44.1} & \textcolor{purple}{35.8} & \textcolor{purple}{38.9} & -- & \textcolor{blue}{42.7}\\
     SV & \textcolor{green2}{58.5} & \textcolor{red3}{26.9} & \textcolor{blue}{41.0} & \textcolor{purple}{35.6} & \textcolor{blue}{46.6} & \textcolor{purple}{33.3} & \textcolor{blue}{46.6} & \textcolor{red3}{27.4} & \textcolor{purple}{30.9} & \textcolor{purple}{38.9} & \textcolor{red3}{22.7} & \textcolor{blue}{42.0} & \textcolor{red3}{28.2} & \textcolor{purple}{31.0} & \textcolor{red3}{23.7} & \textcolor{blue}{45.6} & \textcolor{purple}{32.2} & \textcolor{blue}{44.2} & \textcolor{purple}{32.7} & \textcolor{purple}{31.3} & \textcolor{purple}{33.5} & --\\
     \end{tabular}
-  \caption{Tradução automática entre 22 línguas oficiais da UE \cite{euro1}}}
+  \caption{Tradução automática entre 22 línguas oficiais da UE \cite{euro1}}
   \label{fig:euromatrix_de}
 \end{figure*}
 
@@ -1091,13 +1017,26 @@ A \textbf{META-SHARE} criou um sistema aberto, de fácil distribuição, troca e
 A   \textbf{META-RESEARCH} constrói pontes para áreas da tecnologia relacionadas. Este projeto visa impulsionar avanços em outras áreas e beneficiar com pesquisas inovadoras que podem favorecer as TL. Concretamente, pretende-se trazer mais semântica à tradução automática, otimizar a divisão de trabalho em tradução automática híbrida, explorar o contexto e preparar uma base empírica para tradução automática. A META-RESEARCH colabora com outras áreas e disciplinas, tais como a aprendizagem automática e a comunidade da \textit{Web} Semântica. A META-RESEARCH visa reunir dados, preparar conjuntos de dados e organizar recursos linguísticos para fins de avaliação; compilar inventários de ferramentas e métodos; organizar \textit{workshops} e tutoriais para membros da comunidade. Este trabalho já identificou, claramente, aspetos da tradução automática em que a semântica pode melhorar as práticas correntes. Paralelamente, fizeram-se sugestões sobre como abordar o problema da integração de informação semântica em tradução automática. A META-RESEARCH está também a terminar um novo recurso linguístico para tradução automática, o Annotated Hybrid Sample MT Corpus, que disponibiliza dados para os pares de línguas Inglês-Alemão, Inglês-Espanhol e Inglês-Checo. A META-RESEARCH desenvolveu ainda \textit{software} que reúne \textit{corpora} multilingues que estão espalhados na internet.
 \end{multicols}
 
+\vfill
+
+\makeatletter
+\@ifundefined{theHsection}{
+  \let
+}
+{
+  \renewcommand*{\theHsection}{\thepart.\thesection}
+}
+\makeatother
+\part*{\textcolor{white}{English}}
+\setcounter{section}{0}
+\setcounter{figure}{0}
+
+\centerline{office@meta-net.eu -- http://www.meta-net.eu}
+
 \addtocontents{toc}{\protect\clearpage\protect}
 \addtocontents{toc}{\protect\thispagestyle{empty}\protect}
 \addtocontents{toc}{\protect\vspace*{4mm}\protect}
 \addtocontents{toc}{\smallskip{\Large\textsf{\centerline{THE PORTUGUESE LANGUAGE IN THE DIGITAL AGE}}\par}}
-
-\setcounter{section}{0}
-\setcounter{figure}{0}
 
 \cleardoublepage
 
@@ -2060,7 +1999,7 @@ META-NET launched on 1 February 2010 with the goal of advancing research in lang
 
 \bsection[Referências -- References]{Referências --- References}
 \bibliographystyle{plain}
-\bibliography{references}
+\bibliography{portuguese_references}
   
 \cleardoublepage
 
@@ -2104,7 +2043,7 @@ META-NET launched on 1 February 2010 with the goal of advancing research in lang
   & & Inst. of Mathematics and Computer Science, Univ. of Latvia: Inguna Skadina\\ \addlinespace
   Lituânia & \textcolor{grey1}{Lithuania} & Inst. of the Lithuanian Lang.: Jolanta Zabarskaitė \\ \addlinespace
   Luxemburgo & \textcolor{grey1}{Luxembourg} & Arax Ltd.: Vartkes Goetcherian \\ \addlinespace
-  Malta & \textcolor{grey1}{Malta} & Dept. Intelligent Computer Systems, Univ. of Malta: Mike Rosner \\ \addlinespaceReino Unido & \textcolor{grey1}{UK} & Inst. for Lang., Cognition and Computation, Center for Speech Technology Research, Univ. of Edinburgh: Steve Renals \\ \addlinespace 
+  Malta & \textcolor{grey1}{Malta} & Dept. Intelligent Computer Systems, Univ. of Malta: Mike Rosner \\ \addlinespace Reino Unido & \textcolor{grey1}{UK} & Inst. for Lang., Cognition and Computation, Center for Speech Technology Research, Univ. of Edinburgh: Steve Renals \\ \addlinespace 
   & & Research Inst. of Informatics and Lang. Proc., Univ. of Wolverhampton: Ruslan Mitkov \\ \addlinespace 
   & & School of Computer Science, Univ. of Manchester: Sophia Ananiandou \\ \addlinespace 
   Noruega & \textcolor{grey1}{Norway} & Dept. of Linguistic, Univ. of Bergen: Koenraad De Smedt \\ \addlinespace 
@@ -2176,5 +2115,3 @@ META-NET launched on 1 February 2010 with the goal of advancing research in lang
   &Sérvio & Serbian & српски& \\
   &Sueco & Swedish & svenska& \\ \addlinespace \bottomrule
 \end{tabularx}
-
-\end{document}
