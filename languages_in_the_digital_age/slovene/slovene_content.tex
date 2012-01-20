@@ -1,4 +1,4 @@
-%                                     MMMMMMMMM                                         
+%                                     MMMMMMMMM        
 %                                                                             
 %  MMO    MM   MMMMMM  MMMMMMM   MM    MMMMMMMM   MMD   MM  MMMMMMM MMMMMMM   
 %  MMM   MMM   MM        MM     ?MMM              MMM$  MM  MM         MM     
@@ -8,73 +8,18 @@
 %  MM     MM   MMMMMM    MM   MM    MM            MM   MMM  MMMMMMM    MM
 %
 %
-%            - META-NET Language Whitepaper | Slovene paper -
-
-\documentclass[]{../../metanetpaper}
-
-\usepackage{booktabs}
-\usepackage{longtable}
-\usepackage{tabulary}
-\usepackage{tabularx}
-\usepackage{rotating}
-\usepackage{makecell}
-\usepackage{multirow}
-\usepackage{colortbl}
-\usepackage{polyglossia}
-\usepackage{multicol,framed,lipsum}
-\setotherlanguages{slovenian,english}
-
-%!TEX TS-program = xelatex
-\RequireXeTeX %Force XeTeX check
-
-\title{Slovenski jezik v digitalni dobi --- The Slovene Language in the Digital Age}
-
-\subtitle{White Paper Series --- Zbirka Bela knjiga}
-
-\author{
-  Simon Krek
-}
-\authoraffiliation{
-  dr. Simon Krek~ {\small IJS, Amebis}
-}
-\editors{
- dr. Tomaž Erjavec (IJS),\\ dr. Marko Stabej (FF, Uni LJ)\\(redakcija, \textcolor{grey1}{contributors})
-}
+%            - META-NET Language Whitepaper | Slovene content -
+% 
+% ----------------------------------------------------------------------------
 
 \begin{document}
 
-\renewcommand*{\figureformat}{\sffamily\thefigure\autodot}
-
 \maketitle
 
-% ---------------- Mocktitle ------------------
 \null
 \pagestyle{empty} 
 
-\centerline{META-NET -- office@meta-net.eu -- http://www.meta-net.eu}
-
-\vfill
-
-\begin{small}
-  \selectlanguage{slovenian}
- Izdelava bele knjige je bila financirana s sredstvi Sedmega okvirnega programa in Programa za
- podporo razvoju politik informacijsko-komunikacijskih tehnologij Evropske komisije v okviru
-pogodb T4ME (sporazum o dodelitvi sredstev 249119), CESAR (sporazum o dodelitvi sredstev 271022), METANET4U
-  (sporazum o dodelitvi sredstev 270893) in META-NORD (sporazum o dodelitvi sredstev 270899).
-\end{small}
-
-\bigskip
-\begin{small}
-  \selectlanguage{english}
-  The development of this white paper has been funded by the Seventh
-  Framework Programme and the ICT Policy Support Programme of the
-  European Commission under the contracts T4ME (Grant Agreement 249119),
-  CESAR (Grant Agreement 271022), METANET4U (Grant Agreement 270893)
-  and META-NORD (Grant Agreement 270899).
-\end{small}
-
-\clearpage
-% ------------- End of mocktitle ----------------
+\makefundingnotice
 
 \pagenumbering{Roman} 
 \setcounter{page}{5}
@@ -83,7 +28,6 @@ pogodb T4ME (sporazum o dodelitvi sredstev 249119), CESAR (sporazum o dodelitvi 
 \cleardoublepage
 
 % --------------------------------------------------------------------------
-
 \bsection*{Predgovor --- Preface}
 
 \begin{Parallel}[c]{78mm}{78mm}
@@ -1068,13 +1012,26 @@ Projekt META-NET se je začel 1. februarja 2010 s ciljem, da doseže napredek pr
 
 \end{multicols}
 
+\vfill
+
+\makeatletter
+\@ifundefined{theHsection}{
+  \let
+}
+{
+  \renewcommand*{\theHsection}{\thepart.\thesection}
+}
+\makeatother
+\part*{\textcolor{white}{English}}
+\setcounter{section}{0}
+\setcounter{figure}{0}
+
+\centerline{office@meta-net.eu -- http://www.meta-net.eu}
+
 \addtocontents{toc}{\protect\clearpage\protect}
 \addtocontents{toc}{\protect\thispagestyle{empty}\protect}
 \addtocontents{toc}{\protect\vspace*{4mm}\protect}
 \addtocontents{toc}{\smallskip{\Large\textsf{\centerline{THE SLOVENE LANGUAGE IN THE DIGITAL AGE}}\par}}
-
-\setcounter{section}{0}
-\setcounter{figure}{0}
 
 \cleardoublepage
 
@@ -2000,7 +1957,7 @@ META-NET launched on 1 February 2010 with the goal of advancing research in lang
 
 \bsection[Bibliografija -- References]{Bibliografija --- References}
 \bibliographystyle{plain}
-\bibliography{references}
+\bibliography{slovene_references}
   
 \cleardoublepage
 
@@ -2117,5 +2074,3 @@ META-NET launched on 1 February 2010 with the goal of advancing research in lang
   &češčina & Czech & čeština& \\
   &madžarščina & Hungarian & magyar& \\ \addlinespace \bottomrule
 \end{tabularx}
-
-\end{document}
