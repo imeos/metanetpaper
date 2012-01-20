@@ -1,4 +1,4 @@
-%                                     MMMMMMMMM                                         
+%                                     MMMMMMMMM        
 %                                                                             
 %  MMO    MM   MMMMMM  MMMMMMM   MM    MMMMMMMM   MMD   MM  MMMMMMM MMMMMMM   
 %  MMM   MMM   MM        MM     ?MMM              MMM$  MM  MM         MM     
@@ -8,81 +8,18 @@
 %  MM     MM   MMMMMM    MM   MM    MM            MM   MMM  MMMMMMM    MM
 %
 %
-%            - META-NET Language Whitepaper | Romanian paper -
-
-\documentclass[]{../../metanetpaper}
-
-\usepackage{booktabs}
-\usepackage{longtable}
-\usepackage{tabulary}
-\usepackage{tabularx}
-\usepackage{rotating}
-\usepackage{makecell}
-\usepackage{multirow}
-\usepackage{colortbl}
-\usepackage{polyglossia}
-\usepackage{covington}
-\usepackage{multicol,framed,lipsum}
-\setotherlanguages{romanian,english}
-
-%!TEX TS-program = xelatex
-\RequireXeTeX %Force XeTeX check
-
-\title{Limba română în era digitală --- The Romanian Language in the Digital Age}
-
-\subtitle{White Paper Series --- Seria de studii}
-
-%\author{
- % Diana Trandabăț \\
- % Elena Irimia \\
-  %Verginica Barbu Mititelu \\
-  %Dan Cristea \\
-  %Dan Tufiș
-%}
-
-\author{
-  Diana Trandabăț~ {\small University “Alexandru Ioan Cuza” of Iași}\\
-  Elena Irimia~ {\small Romanian Academy Research Institute for Artificial Intelligence}\\
-  Verginica Barbu Mititelu~ {\small Romanian Academy Research Institute for Artificial Intelligence} \\
-  Dan Cristea~ {\small University “Alexandru Ioan Cuza” of Iași}\\
-  Dan Tufiș~ {\small Romanian Academy Research Institute for Artificial Intelligence}
-}
-\editors{
-  Georg Rehm, Hans Uszkoreit\\(editori, \textcolor{grey1}{editors})
-}
+%            - META-NET Language Whitepaper | Romanian content -
+% 
+% ----------------------------------------------------------------------------
 
 \begin{document}
 
-\renewcommand*{\figureformat}{\sffamily\thefigure\autodot}
-
 \maketitle
 
-% ---------------- Mocktitle ------------------
 \null
 \pagestyle{empty} 
 
-\centerline{META-NET -- office@meta-net.eu -- http://www.meta-net.eu}
-
-\vfill
-
-\begin{small}
-  \selectlanguage{romanian}
- Acest studiu a fost finanțat prin Programul Cadru nr. 7 și prin Programul de sprijinire a politicii în domeniul Tehnologiilor Informației și Comunicațiilor (ICT Policy Support Programme) al
- Comisiei Europene prin proiectele T4ME (contract nr. 249119), CESAR (contract nr. 271022), METANET4U (contract nr. 270893) și META-NORD (contract nr. 270899).
-\end{small}
-
-\bigskip
-\begin{small}
-  \selectlanguage{english}
-  The development of this white paper has been funded by the Seventh
-  Framework Programme and the ICT Policy Support Programme of the
-  European Commission under the contracts T4ME (Grant Agreement 249119),
-  CESAR (Grant Agreement 271022), METANET4U (Grant Agreement 270893)
-  and META-NORD (Grant Agreement 270899).
-\end{small}
-
-\clearpage
-% ------------- End of mocktitle ----------------
+\makefundingnotice
 
 \pagenumbering{Roman} 
 \setcounter{page}{5}
@@ -91,7 +28,6 @@
 \cleardoublepage
 
 % --------------------------------------------------------------------------
-
 \bsection*{Prefață --- Preface}
 
 \begin{Parallel}[c]{78mm}{78mm}
@@ -1176,13 +1112,26 @@ META-NET a fost lansată pe data de 1 Februarie 2010 cu scopul de a avansa cerce
 
 \end{multicols}
 
+\vfill
+
+\makeatletter
+\@ifundefined{theHsection}{
+  \let
+}
+{
+  \renewcommand*{\theHsection}{\thepart.\thesection}
+}
+\makeatother
+\part*{\textcolor{white}{English}}
+\setcounter{section}{0}
+\setcounter{figure}{0}
+
+\centerline{office@meta-net.eu -- http://www.meta-net.eu}
+
 \addtocontents{toc}{\protect\clearpage\protect}
 \addtocontents{toc}{\protect\thispagestyle{empty}\protect}
 \addtocontents{toc}{\protect\vspace*{4mm}\protect}
 \addtocontents{toc}{\smallskip{\Large\textsf{\centerline{THE ROMANIAN LANGUAGE IN THE DIGITAL AGE}}\par}}
-
-\setcounter{section}{0}
-\setcounter{figure}{0}
 
 \cleardoublepage
 
@@ -2294,7 +2243,7 @@ META-NET launched on 1 February 2010 with the goal of advancing research in lang
 
 \bsection[Referințe bibliografice -- References]{Referințe bibliografice --- References}
 \bibliographystyle{unsrt}
-\bibliography{references}
+\bibliography{romanian_references}
   
 \cleardoublepage
 
@@ -2411,5 +2360,3 @@ Spaniolă & Spanish & español\\
 Suedeză & Swedish & svenska\\
  \addlinespace \bottomrule
 \end{tabularx}
-
-\end{document}
