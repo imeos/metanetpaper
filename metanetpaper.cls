@@ -14,8 +14,9 @@
 % ----------------------------------------------------------------------------
 %
 % Class options
-% [cover] = Set (only) the cover of the LWP
-% [ebook] = Set the eBook version of the LWP
+% []      = Set the inner part of the LWP
+% [cover] = Set the cover of the LWP
+% [ebook] = Set the eBook version of the LWP (including cover and inner part)
 %
 % ----------------------------------------------------------------------------
 
