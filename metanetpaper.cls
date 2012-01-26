@@ -95,28 +95,28 @@
 
 
 % Colors                                             
-\definecolor{white}{RGB}{255, 255, 255}    % #FFFFFF
+\definecolor{white}{RGB}{255, 255, 255}    % #ffffff
 \definecolor{printblack}{RGB}{0, 0, 0}     % #141413
-\definecolor{orange1}{RGB}{255, 109, 50}   % #FF6600
-\definecolor{orange2}{RGB}{233, 154, 53}   % #FF9900
-\definecolor{orange3}{RGB}{255, 204, 0}    % #FFCC00
-\definecolor{corange1}{RGB}{232, 183, 127} % #F5B58E
-\definecolor{corange2}{RGB}{226, 157, 104} % #F5A676
-\definecolor{corange3}{RGB}{222, 141, 85}  % #F5975D
-\definecolor{corange4}{RGB}{220, 129, 70}  % #F58845
-\definecolor{corange5}{RGB}{217, 116, 55}  % #F5792C
-\definecolor{red_dark}{RGB}{146, 22, 32}   % #B72126
-\definecolor{red}{RGB}{146, 22, 32}        % #C80000
+\definecolor{orange1}{RGB}{255, 109, 50}   % #ff6600
+\definecolor{orange2}{RGB}{233, 154, 53}   % #ff9900
+\definecolor{orange3}{RGB}{255, 204, 0}    % #ffcc00
+\definecolor{corange1}{RGB}{232, 183, 127} % #f5b58e
+\definecolor{corange2}{RGB}{226, 157, 104} % #f5a676
+\definecolor{corange3}{RGB}{222, 141, 85}  % #f5975d
+\definecolor{corange4}{RGB}{220, 129, 70}  % #f58845
+\definecolor{corange5}{RGB}{217, 116, 55}  % #f5792c
+\definecolor{red_dark}{RGB}{146, 22, 32}   % #b72126
+\definecolor{red}{RGB}{146, 22, 32}        % #c80000
 \definecolor{red2}{RGB}{230, 134, 133}     % #ff8182
 \definecolor{red3}{RGB}{189, 62, 68}       % #a83b3b
-\definecolor{grey1}{RGB}{80, 80, 80}       % #3C3C3C
-\definecolor{grey2}{RGB}{197, 200, 200}    % #C6C7C8
-\definecolor{grey3}{RGB}{141, 142, 141}    % #C6C7C8
+\definecolor{grey1}{RGB}{80, 80, 80}       % #3c3c3c
+\definecolor{grey2}{RGB}{197, 200, 200}    % #c6c7c8
+\definecolor{grey3}{RGB}{141, 142, 141}    % #c6c7c8
 \definecolor{grey4}{RGB}{82, 68, 49}       % #847a6f
-\definecolor{green}{RGB}{30, 127, 75}      % #1F9863
-\definecolor{green2}{RGB}{103, 179, 86}    % #81C56B
-\definecolor{blue}{RGB}{63, 172, 168}      % #44C1C5
-\definecolor{blue2}{RGB}{91, 182, 177}     % #56D8D8
+\definecolor{green}{RGB}{30, 127, 75}      % #1f9863
+\definecolor{green2}{RGB}{103, 179, 86}    % #81c56b
+\definecolor{blue}{RGB}{63, 172, 168}      % #44c1c5
+\definecolor{blue2}{RGB}{91, 182, 177}     % #56d8d8
 \definecolor{purple}{RGB}{107, 129, 177}   % #7e7fff
 
 

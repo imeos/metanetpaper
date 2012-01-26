@@ -4,12 +4,33 @@ LaTeX class and files to typeset bilingual papers of the META-NET project in a t
 
 ([www.meta-net.eu](http://www.meta-net.eu/))
 
+
 ## Class options
 `[]     ` = Set the inner part of the LWP  
 `[cover]` = Set the cover of the LWP  
 `[ebook]` = Set the eBook version of the LWP (including cover and inner part)
 
-## Available colors
+
+## Custom, class specific commands
+
+### For use within the *_preamble.tex-files
+`[\authoraffiliation]`: Author(s) and the organizations their affiliated with
+`[\FundingLNotice   ]`: Funding notice left column  
+`[\FundingRNotice   ]`: Funding notice right column  
+`[\editors          ]`: The editors of the current LWP  
+`[\SpineLText       ]`: Text in left column on backside of the cover  
+`[\SpineRText       ]`: Text in right column on backside of the cover  
+`[\quotes           ]`: Quotes from VIPs on backside of the cover
+
+### For use within the *_content.tex-files
+`[\ssection[]{}      ]`: Replacement for normal \section  
+`[\bsection[]{}      ]`: Replacement for normal \section to be printed bilingual  
+`[\boxtext{}         ]`: Marginal notes to be emphasized with sans-serif font and borders on top and bottom  
+`[\lingua            ]`: Prints IPA characters inside square brackets  
+`[\colorrule{1}{2}{3}]`: Prints a horizontal line with 1=color, 2=width, 3=thickness
+
+
+## Available color definitions
 `[white     ]` =~ #ffffff  
 `[printblack]` =~ #141413  
 `[orange1   ]` =~ #ff6600  
