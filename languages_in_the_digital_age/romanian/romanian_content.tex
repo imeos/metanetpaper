@@ -1,4 +1,4 @@
-﻿%                                     MMMMMMMMM                                         
+%                                     MMMMMMMMM        
 %                                                                             
 %  MMO    MM   MMMMMM  MMMMMMM   MM    MMMMMMMM   MMD   MM  MMMMMMM MMMMMMM   
 %  MMM   MMM   MM        MM     ?MMM              MMM$  MM  MM         MM     
@@ -8,80 +8,18 @@
 %  MM     MM   MMMMMM    MM   MM    MM            MM   MMM  MMMMMMM    MM
 %
 %
-%            - META-NET Language Whitepaper | Romanian paper -
-
-\documentclass[]{../metanetpaper}
-
-\usepackage{booktabs}
-\usepackage{longtable}
-\usepackage{tabulary}
-\usepackage{tabularx}
-\usepackage{rotating}
-\usepackage{makecell}
-\usepackage{multirow}
-\usepackage{colortbl}
-\usepackage{polyglossia}
-\usepackage{covington}
-\usepackage{multicol,framed,lipsum}
-\setotherlanguages{romanian,english}
-
-%!TEX TS-program = xelatex
-\RequireXeTeX %Force XeTeX check
-
-\title{Limba română în era digitală --- The Romanian Language in the Digital Age}
-
-\subtitle{White Paper Series --- Seria de studii}
-
-\author{
-  Diana Trandabăț \\
-  Elena Irimia \\
-  Verginica Barbu Mititelu \\
-  Dan Cristea \\
-  Dan Tufiș
-}
-\authoraffiliation{
-  Diana Trandabăț~ {\small University ``Alexandru Ioan Cuza” of Iași}\\
-  Elena Irimia~ {\small Romanian Academy Research Institute for Artificial Intelligence}\\
-  Verginica Barbu Mititelu~ {\small Romanian Academy Research Institute for Artificial Intelligence} \\
-  Dan Cristea~ {\small University ``Alexandru Ioan Cuza” of Iași}\\
-  Dan Tufiș~ {\small Romanian Academy Research Institute for Artificial Intelligence}
-}
-\editors{
-  Georg Rehm, Hans Uszkoreit\\(editori, \textcolor{grey1}{editors})
-}
+%            - META-NET Language Whitepaper | Romanian content -
+% 
+% ----------------------------------------------------------------------------
 
 \begin{document}
 
-\renewcommand*{\figureformat}{\sffamily\thefigure\autodot}
-
 \maketitle
 
-% ---------------- Mocktitle ------------------
 \null
 \pagestyle{empty} 
 
-\centerline{META-NET -- office@meta-net.eu -- http://www.meta-net.eu}
-
-\vfill
-
-\begin{small}
-  \selectlanguage{romanian}
- Acest studiu a fost finanțat prin Programul Cadru nr. 7 și prin Programul de sprijinire a politicii în domeniul Tehnologiilor Informației și Comunicațiilor (ICT Policy Support Programme) al
- Comisiei Europene prin proiectele T4ME (contract nr. 249119), CESAR (contract nr. 271022), METANET4U (contract nr. 270893) și META-NORD (contract nr. 270899).
-\end{small}
-
-\bigskip
-\begin{small}
-  \selectlanguage{english}
-  The development of this white paper has been funded by the Seventh
-  Framework Programme and the ICT Policy Support Programme of the
-  European Commission under the contracts T4ME (Grant Agreement 249119),
-  CESAR (Grant Agreement 271022), METANET4U (Grant Agreement 270893)
-  and META-NORD (Grant Agreement 270899).
-\end{small}
-
-\clearpage
-% ------------- End of mocktitle ----------------
+\makefundingnotice
 
 \pagenumbering{Roman} 
 \setcounter{page}{5}
@@ -90,7 +28,6 @@
 \cleardoublepage
 
 % --------------------------------------------------------------------------
-
 \bsection*{Prefață --- Preface}
 
 \begin{Parallel}[c]{78mm}{78mm}
@@ -528,7 +465,7 @@ Un corector ortografic probabil va fi capabil să corecteze doar forma \textit{r
 \center
 \includegraphics[width=\textwidth]{../_media/romanian/language_checking}
 \caption{Corector de limbă (sus: statistic, jos: bazat pe reguli)}
-\label{fig:langcheckingaarch_de}
+\label{fig:langcheckingaarch_ro}
 \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
 
@@ -539,7 +476,7 @@ Pentru a corecta astfel de greșeli este necesară în multe cazuri analiza cont
 \item \textit{\underline{Într-una} din zile am să merg la Paris.}
 \end{itemize}
 
-Aceasta presupune fie formularea unor \textbf{reguli gramaticale} specifice limbii, adică un nivel înalt de expertiză și muncă manuală, fie utilizarea așa-numitelor modele lingvistice statistice (vezi figura~\ref{fig:langcheckingaarch_de}). Acestea pot calcula probabilitatea ca un cuvânt să apară într-un anumit context (i.e. cuvintele dinainte și de după). De exemplu, \textit{într-una din zile} este o secvență de cuvinte mult mai probabilă decât \textit{întruna din zile}, iar \textit{plouă întruna} este mai frecventă decât \textit{plouă într-una}. Un model de limbă statistic poate fi creat automat pe baza unei cantități mari de date (corecte) de limbă (numit \textbf{corpus}). Și totuși, sunt cazuri când nici măcar acesta nu este util:
+Aceasta presupune fie formularea unor \textbf{reguli gramaticale} specifice limbii, adică un nivel înalt de expertiză și muncă manuală, fie utilizarea așa-numitelor modele lingvistice statistice (vezi figura~\ref{fig:langcheckingaarch_ro}). Acestea pot calcula probabilitatea ca un cuvânt să apară într-un anumit context (i.e. cuvintele dinainte și de după). De exemplu, \textit{într-una din zile} este o secvență de cuvinte mult mai probabilă decât \textit{întruna din zile}, iar \textit{plouă întruna} este mai frecventă decât \textit{plouă într-una}. Un model de limbă statistic poate fi creat automat pe baza unei cantități mari de date (corecte) de limbă (numit \textbf{corpus}). Și totuși, sunt cazuri când nici măcar acesta nu este util:
 
 \begin{itemize}
 \item \textit{Plouă \underline{întruna} din primele zile ale lui martie.}
@@ -686,7 +623,7 @@ Deoarece avantajele și dezavantajele sistemelor de TA bazate pe date și ale ce
 
 Calitatea sistemelor de TA poate fi mult îmbunătățită. Modificările includ adaptabilitatea resurselor lingvistice la diferite domenii sau utilizatori, precum și integrarea în platforme existente cu memorii de traducere sau forme de bază ale termenilor. O altă problemă este faptul că cele mai multe sisteme actuale sunt centrate pe limba engleză, iar traducerile din/spre limba română nu sunt încă suficient de precise. Acest lucru duce la încetinirea fluxului de traducere și forțează utilizatorii de TA să învețe să folosească diferite instrumente pentru codificarea dicționarelor pentru fiecare sistem, pentru a le îmbunătăți traducerile oferite.
 
-Campanii de evaluare sunt folosite pentru compararea sistemelor de traducere automată, a diferitelor abordări și a situației existente pentru diferite limbi. Figura~\ref{fig:euromatrix_de}, prezentată în cadrul proiectului european Euromatrix+, arată performanțele obținute de sisteme la traducerile automate încrucișate în 22 din cele 23 de limbi oficiale ale Uniunii Europene (limba irlandeză nu a fost comparată), raportate la scorul BLEU \cite{bleu1}, unde un scor mai mare indică o traducere mai bună. Un traducător uman ar avea un scor de aprox. 80 puncte.
+Campanii de evaluare sunt folosite pentru compararea sistemelor de traducere automată, a diferitelor abordări și a situației existente pentru diferite limbi. Figura~\ref{fig:euromatrix_ro}, prezentată în cadrul proiectului european Euromatrix+, arată performanțele obținute de sisteme la traducerile automate încrucișate în 22 din cele 23 de limbi oficiale ale Uniunii Europene (limba irlandeză nu a fost comparată), raportate la scorul BLEU \cite{bleu1}, unde un scor mai mare indică o traducere mai bună. Un traducător uman ar avea un scor de aprox. 80 puncte.
 
 Cele mai bune rezultate (în verde și albastru) le au limbile care beneficiază de eforturi de cercetare considerabile în domeniul TA în cadrul unor programe coordonate și de existența unor corpusuri paralele substanțiale (ex. engleză, franceză, olandeză, spaniolă, germană). Rezultatele cele mai slabe (în roșu) sunt obținute de limbi care nu beneficiază de eforturi similare sau care sunt foarte diferite din punctul de vedere al comportamentului lingvistic față de alte limbi (ex. ungară, malteză, finlandeză).
 \begin{figure*}[htbp]
@@ -720,7 +657,7 @@ SL & \textcolor{green}{61.0} & \textcolor{purple}{33.1} & \textcolor{purple}{37.
 SV & \textcolor{green2}{58.5} & \textcolor{red3}{26.9} & \textcolor{blue}{41.0} & \textcolor{purple}{35.6} & \textcolor{blue}{46.6} & \textcolor{purple}{33.3} & \textcolor{blue}{46.6} & \textcolor{red3}{27.4} & \textcolor{purple}{30.9} & \textcolor{purple}{38.9} & \textcolor{red3}{22.7} & \textcolor{blue}{42.0} & \textcolor{red3}{28.2} & \textcolor{purple}{31.0} & \textcolor{red3}{23.7} & \textcolor{blue}{45.6} & \textcolor{purple}{32.2} & \textcolor{blue}{44.2} & \textcolor{purple}{32.7} & \textcolor{purple}{31.3} & \textcolor{purple}{33.5} & --\\
 \end{tabular}
 \caption{Traducere automată între 22 de perechi de limbi \cite{euro1}}
-\label{fig:euromatrix_de}
+\label{fig:euromatrix_ro}
 \end{figure*}
 
 Domeniul traducerii automate este, în ochii investitorilor, cel mai atractiv domeniu dintre tehnologiile limbajului. Astfel, companii precum Language Weaver lucrează în domeniul traducerilor din/spre română folosind diferite tehnologii lingvistice. Sistemul major online de traducere automată cuprinde limba română atât ca limbă sursă, cât și ca limbă țintă. De asemenea, există în mediul online o multitudine de dicționare pentru limba română.
@@ -1181,6 +1118,16 @@ Proiectul META-NET a fost lansat pe data de 1 Februarie 2010 cu scopul de a coor
 \addtocontents{toc}{\protect\vspace*{4mm}\protect}
 \addtocontents{toc}{\smallskip{\Large\textsf{\centerline{THE ROMANIAN LANGUAGE IN THE DIGITAL AGE}}\par}}
 
+\makeatletter
+\@ifundefined{theHsection}{%
+  \let
+}
+{
+  \renewcommand*{\theHsection}{\thepart.\thesection}
+}
+\makeatother
+\part*{\textcolor{white}{English}}
+
 \setcounter{section}{0}
 \setcounter{figure}{0}
 
@@ -1302,9 +1249,9 @@ Language technology can now simplify and automate the processes of translation, 
 
 As with most technologies, the first language applications such as voice-based user interfaces and dialogue systems were developed for specialised domains, and often exhibit limited performance. However, there are huge market opportunities in the education and entertainment industries for integrating language technologies into games, edutainment packages, libraries, simulation environments and training programmes. Mobile information services, computer-assisted language learning software, eLearning environments, self-assessment tools and plagiarism detection software are just some of the application areas in which language technology can play an important role. The popularity of social media applications like Twitter and Facebook suggest a need for sophisticated language technologies that can monitor posts, summarise discussions, suggest opinion trends, detect emotional responses, identify copyright infringements or track misuse.
 
-\boxtext{Language technology helps overcome the ``disability” of linguistic diversity.}
+\boxtext{Language technology helps overcome the “disability” of linguistic diversity.}
 
-Language technology represents a tremendous opportunity for the European Union. It can help to address the complex issue of multilingualism in Europe – the fact that different languages coexist naturally in European businesses, organisations and schools. However, citizens need to communicate across the language borders of the European Common Market, and language technology can help overcome this final barrier, while supporting the free and open use of individual languages. Looking even further ahead, innovative European multilingual language technology will provide a benchmark for our global partners when they begin to support their own multilingual communities. Language technology can be seen as a form of ``assistive” technology that helps overcome the ``disability” of linguistic diversity and makes language communities more accessible to each other. Finally, one active field of research is the use of language technology for rescue operations in disaster areas, where performance can be a matter of life and death: Future intelligent robots with cross-lingual language capabilities have the potential to save lives.
+Language technology represents a tremendous opportunity for the European Union. It can help to address the complex issue of multilingualism in Europe – the fact that different languages coexist naturally in European businesses, organisations and schools. However, citizens need to communicate across the language borders of the European Common Market, and language technology can help overcome this final barrier, while supporting the free and open use of individual languages. Looking even further ahead, innovative European multilingual language technology will provide a benchmark for our global partners when they begin to support their own multilingual communities. Language technology can be seen as a form of “assistive” technology that helps overcome the “disability” of linguistic diversity and makes language communities more accessible to each other. Finally, one active field of research is the use of language technology for rescue operations in disaster areas, where performance can be a matter of life and death: Future intelligent robots with cross-lingual language capabilities have the potential to save lives.
 
 \subsection{Challenges Facing Language Technology}
 
@@ -1322,7 +1269,7 @@ Learning a second language at an older age requires more cognitive effort, large
 
 \boxtext{Humans acquire language skills in two different ways: learning examples and learning the underlying language rules.}
 
-Moving now to language technology, the two main types of systems ‘acquire’ language capabilities in a similar manner. Statistical (or ‘data-driven’) approaches obtain linguistic knowledge from vast collections of concrete example texts. While it is sufficient to use text in a single language for training, e.\,g., a spell checker, parallel texts in two (or more) languages have to be available for training a machine translation system. The machine learning algorithm then ``learns” patterns of how words, short phrases and complete sentences are translated. 
+Moving now to language technology, the two main types of systems ‘acquire’ language capabilities in a similar manner. Statistical (or ‘data-driven’) approaches obtain linguistic knowledge from vast collections of concrete example texts. While it is sufficient to use text in a single language for training, e.\,g., a spell checker, parallel texts in two (or more) languages have to be available for training a machine translation system. The machine learning algorithm then “learns” patterns of how words, short phrases and complete sentences are translated. 
 
 This statistical approach usually requires millions of sentences to boost performance quality. This is one reason why search engine providers are eager to collect as much written material as possible. Spelling correction in word processors, and services such as Google Search and Google Translate, all rely on statistical approaches. The great advantage of statistics is that the machine learns quickly in a continuous series of training cycles, even though quality can vary randomly.
 
@@ -1349,7 +1296,7 @@ Romanian is an official language also in the Autonomous Province of Vojvodina in
 
 Romanian has \textbf{4 dialects} \cite{sala}: Daco-Romanian, Aromanian (spoken by approximately 600.000 speakers in Albania, Bulgaria, Greece and Macedonia), Istro-Romanian (15,000 speakers in 2 small areas in the Istrian Peninsula, Croatia) and Megleno-Romanian (about 5,000 speakers in Greece and Macedonia). Because of their small number of speakers, these dialects are included in the UNESCO Red Book of Endangered Languages.
 
-In Romania there are 18 officially recognized national (ethnic) minorities; in the last Census (2002), the most numerous were Hungarians (1,431,807) and Romas (535,140), followed by Germans, Ukrainians, Lippovan Russians, Turks, Serbs, Croats, Slovenes, Tartars, Slovaks, Bulgarians, Jewish, Czechs, Poles, Greeks, Armenians, etc. For all these minorities, official language policies in Romania guarantee their rights to be protected as language communities and to use their own languages in private and public, culturally and socially, in economy and in communication media. However, article 13 of the Constitution states that ``In Romania, the official language is Romanian”. Moreover, Law number 500 from 12th November, 2004 stipulates the obligation of any text (either oral or written) that serves public interest to be translated or adapted into Romanian \cite{urlEFNIL}.
+In Romania there are 18 officially recognized national (ethnic) minorities; in the last Census (2002), the most numerous were Hungarians (1,431,807) and Romas (535,140), followed by Germans, Ukrainians, Lippovan Russians, Turks, Serbs, Croats, Slovenes, Tartars, Slovaks, Bulgarians, Jewish, Czechs, Poles, Greeks, Armenians, etc. For all these minorities, official language policies in Romania guarantee their rights to be protected as language communities and to use their own languages in private and public, culturally and socially, in economy and in communication media. However, article 13 of the Constitution states that “In Romania, the official language is Romanian”. Moreover, Law number 500 from 12th November, 2004 stipulates the obligation of any text (either oral or written) that serves public interest to be translated or adapted into Romanian \cite{urlEFNIL}.
 
 \subsection{Particularities of the Romanian Language}
 
@@ -1460,7 +1407,7 @@ Books-the of three children were new.
 
 \subsection{Recent Developments}
 
-Analogue to the re-latinization phase in the 19th century after the liberation from the Greek and Turkish domination, Romanian language was passing in the last 20 years through a process of transformation from the totalitarian usage (``langue de bois”, unidirectional discourse, etc.) to an open usage in which new linguistic patterns must adapt to the social and cultural transition. Therefore, similar to many other languages, Romanian is going through a continuous process of internationalization under the influence of the Anglo-Saxon vocabulary. 
+Analogue to the re-latinization phase in the 19th century after the liberation from the Greek and Turkish domination, Romanian language was passing in the last 20 years through a process of transformation from the totalitarian usage (“langue de bois”, unidirectional discourse, etc.) to an open usage in which new linguistic patterns must adapt to the social and cultural transition. Therefore, similar to many other languages, Romanian is going through a continuous process of internationalization under the influence of the Anglo-Saxon vocabulary. 
 
 In essential domains like political, administrative and economic sciences, media, advertising, computers, etc. substantial loans and semantic extensions from English occurred; terminologies in new fields are based on English loans, the active vocabulary of educated people contains more and more anglicisms, new intonation patterns can be observed (especially in media), as well as the use of the second person singular (informal) instead of the second person plural (formal).
 
@@ -1606,7 +1553,7 @@ Anyone who has used a word processor such as Microsoft Word knows that it has a 
 \center
 \includegraphics[width=\textwidth]{../_media/english/language_checking}
 \caption{Sprachüberprüfung (statistisch; regelbasiert)}
-\label{fig:langcheckingaarch_de}
+\label{fig:langcheckingaarch_en}
 \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
 
@@ -1626,7 +1573,7 @@ Handling these kinds of errors usually requires an analysis of the context, e.g.
 \end{itemize}
 \end{example}
 
-This type of analysis either needs to draw on language-specific \textbf{grammars} laboriously coded into the software by experts, or on a  statistical language model (see Fig.~\ref{fig:langcheckingaarch_de}). In this case, a model calculates the probability of a particular word as it occurs in a specific position (e.g., between the words that precede and follow it). For example, \textit{într-una din zile} is a much more probable word sequence than \textit{într-una de ieri}, and \textit{plouă întruna} is more frequent than \textit{plouă într-una}, therefore in the second case, the writing without hyphen is recommended. A statistical language model can be automatically created by using a large amount of (correct) language data (called a text \textbf{corpus}). However, there are cases when not even this could be of any help:
+This type of analysis either needs to draw on language-specific \textbf{grammars} laboriously coded into the software by experts, or on a  statistical language model (see Fig.~\ref{fig:langcheckingaarch_en}). In this case, a model calculates the probability of a particular word as it occurs in a specific position (e.g., between the words that precede and follow it). For example, \textit{într-una din zile} is a much more probable word sequence than \textit{într-una de ieri}, and \textit{plouă întruna} is more frequent than \textit{plouă într-una}, therefore in the second case, the writing without hyphen is recommended. A statistical language model can be automatically created by using a large amount of (correct) language data (called a text \textbf{corpus}). However, there are cases when not even this could be of any help:
 
 \begin{example}
 \begin{itemize}
@@ -1648,7 +1595,7 @@ Up to now, these approaches have mostly been developed and evaluated on data fro
 
 \boxtext{The use of language checking is not limited to word processors. It also applies to authoring support systems.}
 
-Language checking is not limited to word processors; it is also used in ``authoring support systems”, i.\,e., software environments in which manuals and other types of technical documentation for complex IT, healthcare, engineering and other products are written. To offset customer complaints about incorrect use and damage claims resulting from poorly understood instructions, companies are increasingly focusing on the quality of technical documentation while targeting the international market (via translation or localisation) at the same time. Advances in natural language processing have led to the development of authoring support software, which helps the writer of technical documentation to use vocabulary and sentence structures that are consistent with industry rules and (corporate) terminology restrictions.
+Language checking is not limited to word processors; it is also used in “authoring support systems”, i.\,e., software environments in which manuals and other types of technical documentation for complex IT, healthcare, engineering and other products are written. To offset customer complaints about incorrect use and damage claims resulting from poorly understood instructions, companies are increasingly focusing on the quality of technical documentation while targeting the international market (via translation or localisation) at the same time. Advances in natural language processing have led to the development of authoring support software, which helps the writer of technical documentation to use vocabulary and sentence structures that are consistent with industry rules and (corporate) terminology restrictions.
 
 Nowadays there are no Romanian companies or Language Service Providers offering products in this area, although researchers in different natural language processing groups have developed language models tailored for the Romanian language particularities. At the Research Institute for Artificial Intelligence within the Romanian Academy (RACAI), language models for Romanian are created from large corpora. Due to the fact that most of the Romanian texts on the Web are written with no diacritics, RACAI has also developed a diacritics recovery facility \cite{DIAC}, intended to indicate the right diacritics form of a word initially written with no diacritics, using a large Romanian lexicon developed by their team and character based 5-gram model to find the most probable interpretation in terms of diacritic occurrences for an unknown word. The approach takes into account the context surrounding the word in a preliminary process of part-of-speech tagging, which is critical for choosing the right word form in the lexicon. For instance, the word "peste" is transformed into "pește" (fish) in the example below:
 
@@ -1699,7 +1646,7 @@ A more demanding challenge is matching a query in one language with documents in
 
 Now that data is increasingly found in non-textual formats, there is a need for services that deliver multimedia information retrieval by searching images, audio files and video data. In the case of audio and video files, a speech recognition module must convert the speech content into text (or into a phonetic representation) that can be matched against a user query afterwards.
 
-In Romania, natural language-based search technologies are not considered for industrial applications yet. Instead, open source based technologies like Lucene are often used by search-focused companies to provide the basic search infrastructure. However, research groups from ``Alexandru Ioan Cuza” University of Iasi (UAIC) and RACAI have developed different modules that constitute the backbones of a semantic search tool, such as part-of-speech tagger, syntactic parsers, semantic parsers, named-entity recognizers, indexing tools, multimedia information retrieval, etc. However, their coverage and outreach are fairly limited so far.
+In Romania, natural language-based search technologies are not considered for industrial applications yet. Instead, open source based technologies like Lucene are often used by search-focused companies to provide the basic search infrastructure. However, research groups from “Alexandru Ioan Cuza” University of Iasi (UAIC) and RACAI have developed different modules that constitute the backbones of a semantic search tool, such as part-of-speech tagger, syntactic parsers, semantic parsers, named-entity recognizers, indexing tools, multimedia information retrieval, etc. However, their coverage and outreach are fairly limited so far.
 
 At RACAI, a part-of-speech tagger able to identify the lemma (dictionary form) and the part of speech of words in texts is available as a web service \cite{webservicesUrl}. For instance, if the user’s query for a web search contains \textit{evenimente} (events), the root (or lemmatized form) of the word can be used instead for search, i.e. \textit{eveniment} (event) \cite{webservicesArt}. 
 
@@ -1801,7 +1748,7 @@ The strengths and weaknesses of knowledge-driven and data-driven machine transla
 
 There is still a huge potential for improving the quality of MT systems. The challenges involve adapting language resources to a given subject domain or user area, and integrating the technology into workflows that already have term bases and translation memories. Another problem is that most of the current systems are English-centred and only support a few languages from and into Romanian. This leads to friction in the translation workflow and forces MT users to learn different lexicon coding tools for different systems.
 
-Evaluation campaigns help to compare the quality of MT systems, the different approaches and the status of the systems for different language pairs. Figure~\ref{fig:euromatrix_de} (p.~\pageref{fig:euromatrix_de}), which was prepared during the EC Euromatrix+ project, shows the pair-wise performances obtained for 22 of the 23 official EU languages (Irish was not compared). The results are ranked according to a BLEU score, which indicates higher scores for better translations \cite{bleu1}. A human translator would normally achieve a score of around 80 points.
+Evaluation campaigns help to compare the quality of MT systems, the different approaches and the status of the systems for different language pairs. Figure~\ref{fig:euromatrix_en} (p.~\pageref{fig:euromatrix_en}), which was prepared during the EC Euromatrix+ project, shows the pair-wise performances obtained for 22 of the 23 official EU languages (Irish was not compared). The results are ranked according to a BLEU score, which indicates higher scores for better translations \cite{bleu1}. A human translator would normally achieve a score of around 80 points.
 
 The best results (in green and blue) were achieved for languages that benefit from considerable research effort in coordinated programmes and the existence of many parallel corpora (e.\,g., English, French, Dutch, Spanish and German). The languages with poorer results are shown in red. These languages either lack such development efforts or are structurally very different from other languages (e.\,g., Hungarian, Maltese and Finnish).
 
@@ -1836,7 +1783,7 @@ SL & \textcolor{green}{61.0} & \textcolor{purple}{33.1} & \textcolor{purple}{37.
 SV & \textcolor{green2}{58.5} & \textcolor{red3}{26.9} & \textcolor{blue}{41.0} & \textcolor{purple}{35.6} & \textcolor{blue}{46.6} & \textcolor{purple}{33.3} & \textcolor{blue}{46.6} & \textcolor{red3}{27.4} & \textcolor{purple}{30.9} & \textcolor{purple}{38.9} & \textcolor{red3}{22.7} & \textcolor{blue}{42.0} & \textcolor{red3}{28.2} & \textcolor{purple}{31.0} & \textcolor{red3}{23.7} & \textcolor{blue}{45.6} & \textcolor{purple}{32.2} & \textcolor{blue}{44.2} & \textcolor{purple}{32.7} & \textcolor{purple}{31.3} & \textcolor{purple}{33.5} & --\\
 \end{tabular}
 \caption{Machine translation between 22 EU-languages \cite{euro1}}
-\label{fig:euromatrix_de}
+\label{fig:euromatrix_en}
 \end{figure*}
 
 The machine translation field is among the most attractive fields in language technologies in the eyes of industrials. Thus, companies such as Language Weaver work on translating from/to Romanian using various linguistic techniques. The major online translation systems include Romanian as both source and target language, and a multitude of online dictionaries are available for Romanian.
@@ -1847,7 +1794,7 @@ Moreover, at RACAI there are already 5 years of experimenting in MT with differe
  
 \subsection{Other Application Areas}
 
-Building language technology applications involves a range of subtasks that do not always surface at the level of interaction with the user, but they provide significant service functionalities ``behind the scenes” of the system in question. They all form important research issues that have now evolved into individual sub-disciplines of computational linguistics.  
+Building language technology applications involves a range of subtasks that do not always surface at the level of interaction with the user, but they provide significant service functionalities “behind the scenes” of the system in question. They all form important research issues that have now evolved into individual sub-disciplines of computational linguistics.  
 
 Question answering, for example, is an active area of research for which annotated corpora have been built and scientific competitions have been initiated. The concept of question answering goes beyond keyword-based searches (in which the search engine responds by delivering a collection of potentially relevant documents) and enables users to ask a concrete question to which the system provides a single answer. For example:
 
@@ -1858,9 +1805,9 @@ While question answering is obviously related to the core area of web search, it
 
 \boxtext{Language technology applications often provide significant service functionalities "behind the scenes” of larger software systems.}
 
-Question answering is in turn related to information extraction (IE), an area that was extremely popular and influential when computational linguistics took a statistical turn in the early 1990s. IE aims to identify specific pieces of information in specific classes of documents, such as the key players in company takeovers as reported in newspaper stories. Another common scenario that has been studied is reports on terrorist incidents. The task here consists of mapping appropriate parts of the text to a template that specifies the perpetrator, target, time, location and results of the incident. Domain-specific template-filling is the central characteristic of IE, which makes it another example of a ``behind the scenes” technology that forms a well-demarcated research area, which in practice needs to be embedded into a suitable application environment. 
+Question answering is in turn related to information extraction (IE), an area that was extremely popular and influential when computational linguistics took a statistical turn in the early 1990s. IE aims to identify specific pieces of information in specific classes of documents, such as the key players in company takeovers as reported in newspaper stories. Another common scenario that has been studied is reports on terrorist incidents. The task here consists of mapping appropriate parts of the text to a template that specifies the perpetrator, target, time, location and results of the incident. Domain-specific template-filling is the central characteristic of IE, which makes it another example of a “behind the scenes” technology that forms a well-demarcated research area, which in practice needs to be embedded into a suitable application environment. 
 
-Text summarisation and \textbf{text generation} are two borderline areas that can act either as standalone applications or play a supporting role. Summarisation attempts to give the essentials of a long text in a short form, and is one of the features available in Microsoft Word. It mostly uses a statistical approach to identify the ``important” words in a text (i.\,e., words that occur very frequently in the text in question but less frequently in general language use) and determine which sentences contain the most of these ``important” words. These sentences are then extracted and put together to create the summary. In this very common commercial scenario, summarisation is simply a form of sentence extraction, and the text is reduced to a subset of its sentences. 
+Text summarisation and \textbf{text generation} are two borderline areas that can act either as standalone applications or play a supporting role. Summarisation attempts to give the essentials of a long text in a short form, and is one of the features available in Microsoft Word. It mostly uses a statistical approach to identify the “important” words in a text (i.\,e., words that occur very frequently in the text in question but less frequently in general language use) and determine which sentences contain the most of these “important” words. These sentences are then extracted and put together to create the summary. In this very common commercial scenario, summarisation is simply a form of sentence extraction, and the text is reduced to a subset of its sentences. 
 
 A drawback of this approach is that it ignores the referential expressions that could occur in the initial text and be kept in the summary. Thus, due to sentence elimination, their antecedents may not be present anymore, resulting in incomprehensive reading. For example, consider the following text to be summarized:
 
@@ -1876,7 +1823,7 @@ The summary of this very short fragment, using the sentence elimination method, 
 
 \noindent
 which is really incomprehensible if no explanation is provided of who is \textit{she} or \textit{him}.
-One way to increase the coherence of such summaries is to firstly derive the discourse structure of the text and to guide the selection of the sentences to be included into the summary by a score that considers both the relevance of the sentence in a discourse tree and the coherence of the text, as given by solving anaphoric references \cite{cristea1}. For the summary example above, solving anaphoric references means identifying ``she” as Hera and ``him” as Hercules. Thus, the provided summary becomes readable:
+One way to increase the coherence of such summaries is to firstly derive the discourse structure of the text and to guide the selection of the sentences to be included into the summary by a score that considers both the relevance of the sentence in a discourse tree and the coherence of the text, as given by solving anaphoric references \cite{cristea1}. For the summary example above, solving anaphoric references means identifying “she” as Hera and “him” as Hercules. Thus, the provided summary becomes readable:
 
 \begin{itemize}
 \item \textit{Hera sent a two-headed serpent to attack Hercules.}
@@ -1906,9 +1853,9 @@ The newest domain of interest in the natural language processing field is sentim
 
 \subsection{Educational Programmes}
 
-Language technology is a very interdisciplinary field that involves the combined expertise of linguists, computer scientists, mathematicians, philosophers, psycholinguists, and neuroscientists among others. As a result, it has not acquired a clear, independent existence in the Romanian faculty system. Many universities in Romania and in the Republic of Moldova recently introduced natural language processing and computational linguistics courses at bachelor, master and PhD level. Since 2001, a master in computational linguistics was initiated as part of the Faculty of Computer Science at the ``Alexandru Ioan Cuza” University of Iași. Still, a consolidated higher education system in natural language processing and computational linguistics is yet to be configured.
+Language technology is a very interdisciplinary field that involves the combined expertise of linguists, computer scientists, mathematicians, philosophers, psycholinguists, and neuroscientists among others. As a result, it has not acquired a clear, independent existence in the Romanian faculty system. Many universities in Romania and in the Republic of Moldova recently introduced natural language processing and computational linguistics courses at bachelor, master and PhD level. Since 2001, a master in computational linguistics was initiated as part of the Faculty of Computer Science at the “Alexandru Ioan Cuza” University of Iași. Still, a consolidated higher education system in natural language processing and computational linguistics is yet to be configured.
 
-The most representative centres in computational linguistics dealing with Romanian language are in Bucharest, Iași, Cluj, Timișoara and Craiova, in Romania, and Chișinev – in the Republic of Moldova. Among the multitude of universities and research centres where teams work in this domain, we can mention the Romanian Academy Research Institute for Artificial Intelligence in Bucharest; the Romanian Academy Institute for Computer Science in Iași; the Department of Computer Science at the ``Alexandru Ioan Cuza” University of Iași; the Faculty of Mathematics-Informatics of the Babeș-Bolyai University of Cluj-Napoca; the Institute of Mathematics and Computer Science, Academy of Sciences of the Republic of Moldova; the Human Language Engineering Laboratory within the Applied Informatics Department, Faculty of Computers, Informatics and Microelectronics at the Technical University of the Republic of Moldova, etc. Some of these centres work in common national and international projects in the LT domain. 
+The most representative centres in computational linguistics dealing with Romanian language are in Bucharest, Iași, Cluj, Timișoara and Craiova, in Romania, and Chișinev – in the Republic of Moldova. Among the multitude of universities and research centres where teams work in this domain, we can mention the Romanian Academy Research Institute for Artificial Intelligence in Bucharest; the Romanian Academy Institute for Computer Science in Iași; the Department of Computer Science at the “Alexandru Ioan Cuza” University of Iași; the Faculty of Mathematics-Informatics of the Babeș-Bolyai University of Cluj-Napoca; the Institute of Mathematics and Computer Science, Academy of Sciences of the Republic of Moldova; the Human Language Engineering Laboratory within the Applied Informatics Department, Faculty of Computers, Informatics and Microelectronics at the Technical University of the Republic of Moldova, etc. Some of these centres work in common national and international projects in the LT domain. 
 
 The common meeting points of most researchers in the LT domain are, besides international conferences abroad, a series of international events that intend to bring together young students and mature professionals, linguists and computer scientists, which are held periodically in Romania: the ConsILR events – Consortium for the Digitalization of Romanian Language \cite{consilr}, the EUROLAN series of international summer schools, the SPED conferences – Speech Technology and Human-Computer Dialogue, the KEPT conferences - Knowledge Engineering: Principles and Techniques, ECIT – the European Conferences on Intelligent Systems and Technologies, etc.
 
@@ -1920,7 +1867,7 @@ The industries using and providing LT in Romania are certainly important and vit
 
 Previous national programs have led to an initial impulse, but subsequent financial aid missing or not attractive enough has lead to a loss of interest from major ICT players and young researchers, formed by universities and the Academy. One of the programs of collaboration between industry and education that has a good impact and results in Romania is the MSDN Academic Alliance, offering students free access to different Microsoft technologies. 
 
-The main research laboratories conducting activities in LT in Romania are RACAI in the Romanian Academy, Bucharest; the Department of Computer Science of the ``Alexandru Ioan Cuza” University in Iasi, and the Institute of Computer Science of the Romanian Academy, also in Iasi, which hosts the Voiced Sounds of Romanian Language – an online repository of recorded Romanian voices. As for research programs, UAIC and RACAI have been involved in several national or international research programs, intended to develop existing or new language technologies. Among these, some European funded projects are worth mentioning: ACCURAT-RO (Analysis and evaluation of Comparable Corpora for Under Resourced Areas of machine Translation), See-ERANET (Machine Translation Systems for Balkan Languages), the FP7 project CLARIN (Interoperable Linguistic Resources Infrastructure for Romanian), BALKANET (which built a network of aligned wordnets for Balkan languages), the FP6 project LT4eL (Language Technology for e-Learning), the INTAS project RoLTech (Platform For Romanian Language Technology: Resources, Tools and Interfaces), Roric-Ling, ALEAR project (Artificial Language Evolution for Autonomous Robots), the PSP-ICT projects METANET4U (Enhancing Multilingual European Infrastructure) and ATLAS (Applied Technologies for Content Management Systems Using Natural Language), etc. Some nationally funded projects also existed, such as: STAR (A System for Machine Translation for Romanian), SIR-RESDEC (Open Domain Question Answering System for Romanian and English), ROTEL (intelligent systems for the Semantic Web, based on the logic of ontologies and NLP), eDTLR (The Romanian Thesaurus Dictionary in electronic form), among others.
+The main research laboratories conducting activities in LT in Romania are RACAI in the Romanian Academy, Bucharest; the Department of Computer Science of the “Alexandru Ioan Cuza” University in Iasi, and the Institute of Computer Science of the Romanian Academy, also in Iasi, which hosts the Voiced Sounds of Romanian Language – an online repository of recorded Romanian voices. As for research programs, UAIC and RACAI have been involved in several national or international research programs, intended to develop existing or new language technologies. Among these, some European funded projects are worth mentioning: ACCURAT-RO (Analysis and evaluation of Comparable Corpora for Under Resourced Areas of machine Translation), See-ERANET (Machine Translation Systems for Balkan Languages), the FP7 project CLARIN (Interoperable Linguistic Resources Infrastructure for Romanian), BALKANET (which built a network of aligned wordnets for Balkan languages), the FP6 project LT4eL (Language Technology for e-Learning), the INTAS project RoLTech (Platform For Romanian Language Technology: Resources, Tools and Interfaces), Roric-Ling, ALEAR project (Artificial Language Evolution for Autonomous Robots), the PSP-ICT projects METANET4U (Enhancing Multilingual European Infrastructure) and ATLAS (Applied Technologies for Content Management Systems Using Natural Language), etc. Some nationally funded projects also existed, such as: STAR (A System for Machine Translation for Romanian), SIR-RESDEC (Open Domain Question Answering System for Romanian and English), ROTEL (intelligent systems for the Semantic Web, based on the logic of ontologies and NLP), eDTLR (The Romanian Thesaurus Dictionary in electronic form), among others.
 
 The market for language technologies can only be estimated and will most probably get a boost by mobile appliances, the Apple iPad and similar products, (educational) games, etc. 
 
@@ -2294,8 +2241,8 @@ META-NET launched on 1 February 2010 with the goal of advancing research in lang
 \addtocontents{toc}{\protect\bigskip}
 
 \bsection[Referințe bibliografice -- References]{Referințe bibliografice --- References}
-\bibliographystyle{plain}
-\bibliography{references}
+\bibliographystyle{unsrt}
+\bibliography{romanian_references}
   
 \cleardoublepage
 
@@ -2315,7 +2262,7 @@ META-NET launched on 1 February 2010 with the goal of advancing research in lang
   & & Dept. of General Linguistics, Univ. of Helsinki: Kimmo Koskenniemi, Krister Linden \\ \addlinespace
   Franța & \textcolor{grey1}{France} & Centre National de la Recherche Scientifique, Laboratoire d'Informatique pour la Mécanique et les Sciences de l'Ingénieur: Joseph Mariani \\ \addlinespace
   & & Evaluations and Lang. Resources Distribution Agency: Khalid Choukri\\ \addlinespace 
-  Grecia & \textcolor{grey1}{Greece} & Inst. for Lang. and Speech Proc., R.C. ``Athena”: Stelios Piperidis\\ \addlinespace
+  Grecia & \textcolor{grey1}{Greece} & Inst. for Lang. and Speech Proc., R.C. “Athena”: Stelios Piperidis\\ \addlinespace
   Marea Britanie & \textcolor{grey1}{UK} & Inst. for Lang., Cognition and Computation, Center for Speech Technology Research, Univ. of Edinburgh: Steve Renals \\ \addlinespace 
   & & Research Inst. of Informatics and Lang. Proc., Univ. of Wolverhampton: Ruslan Mitkov \\ \addlinespace 
   & & School of Computer Science, Univ. of Manchester: Sophia Ananiandou \\ \addlinespace 
@@ -2412,5 +2359,3 @@ spaniolă & Spanish & español\\
 suedeză & Swedish & svenska\\
  \addlinespace \bottomrule
 \end{tabularx}
-
-\end{document}
