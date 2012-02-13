@@ -1,0 +1,53 @@
+\documentclass{scrartcl}
+
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setotherlanguage{english}
+\setmainlanguage{galician}
+
+\usepackage{pdfcolparallel}
+\begin{document}
+\begin{Parallel}[c]{70mm}{70mm}
+  \ParallelLText{\selectlanguage{galician}%
+
+As linguas foron agrupadas segundo a seguinte escala de 5 puntos:
+\begin{itemize}
+\item Grupo 1 (excelente soporte de tecnoloxías da lingua)
+\item Grupo 2 (bo soporte)
+\item Grupo 3 (soporte moderado)
+\item Grupo 4 (soporte fragmentario)
+\item Grupo 5 (pouco soporte ou inexistente)
+\end{itemize}
+O apoio ás tecnoloxías da linguaxe foi medido en base aos seguintes criterios:
+\begin{itemize}
+\item Procesamento da Fala: Calidade das tecnoloxías de recoñecemento da fala, calidade das tecnoloxías de síntese da fala existentes, cobertura de dominios, número e tamaño de corpus da fala, cantidade e variedade de aplicacións baseadas na fala dispoñibles.
+\item Tradución automática: Calidade de tecnoloxías de tradución automática, número de pares de linguas cubertos, cobertura de fenómenos lingüísticos e dominios, calidade e tamaño de corpus paralelos existentes, cantidade e variedade de aplicacións de tradución automática dispoñibles.
+\item Análise Textual: Calidade e cobertura de tecnoloxías de análise textual existentes (morfoloxía, sintaxe, semántica), cobertura de fenómenos lingüísticos e dominios, cantidade e variedade de aplicacións dispoñibles, calidade e tamaño de corpus textuais existentes (anotados), calidade e cobertura de recursos léxicos existentes (por exemplo, WordNet) e gramáticas.
+\item Recursos: Calidade e tamaño de corpus textuais existentes, corpus da fala e corpus paralelos, calidade e cobertura de recursos léxicos existentes e gramáticas.
+\end{itemize} 
+ }
+
+  \ParallelRText{\selectlanguage{english}%
+
+The languages were clustered using the following five-point scale: 
+
+    \begin{itemize}
+      \item Cluster 1 (excellent LT support)
+      \item Cluster 2 (good support)
+      \item Cluster 3 (moderate support)
+      \item Cluster 4 (fragmentary support) 
+      \item Cluster 5 (weak or no support)
+    \end{itemize}
+
+LT support was measured according to the following criteria:
+\begin{itemize}
+\item Speech Processing: Quality of existing speech recognition technologies, quality of existing speech synthesis technologies, coverage of domains, number and size of existing speech corpora, amount and variety of available speech-based applications
+\item Machine Translation: Quality of existing MT technologies, number of language pairs covered, coverage of linguistic phenomena and domains, quality and size of existing parallel corpora, amount and variety of available MT applications
+\item Text Analysis: Quality and coverage of existing text analysis technologies (morphology, syntax, semantics), coverage of linguistic phenomena and domains, amount and variety of available applications, quality and size of existing (annotated) text corpora, quality and coverage of existing lexical resources (e.g., WordNet) and grammars
+\item Resources: Quality and size of existing text corpora, speech corpora and parallel corpora, quality and coverage of existing lexical resources and grammars
+\end{itemize} 
+
+  }
+  \ParallelPar
+\end{Parallel}
+\end{document}
