@@ -648,7 +648,21 @@
   }
   
   % Define papersize for cover 210x279mm + 0mm bleed
-  \geometry{paperwidth=210mm, paperheight=279mm, top=24mm, bottom=34mm, left=22mm, right=21mm}%
+  \geometry{paperwidth=210mm, paperheight=279mm, top=24mm, bottom=34mm, left=22mm, right=22mm}%
+  
+  \setfootwidth[-22mm]{paper}
+  \lefoot[\pagemark]{}
+
+  \refoot[\pagemark]{
+  \colorrule{grey1}{22mm}{0.5pt}%
+  \vskip1mm%
+    \begin{minipage}[h]{21mm}%
+      \begin{flushleft}%
+          \fontsize{10}{1.2}\normalfont\sffamily\color{grey1}%
+        \pagemark
+      \end{flushleft}
+    \end{minipage}
+  }
   
   % Title & Mocktitle
     % Maketitle
