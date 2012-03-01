@@ -118,6 +118,7 @@
 \definecolor{blue}{RGB}{63, 172, 168}      % #44c1c5
 \definecolor{blue2}{RGB}{91, 182, 177}     % #56d8d8
 \definecolor{purple}{RGB}{107, 129, 177}   % #7e7fff
+\definecolor{blue}{RGB}{32, 32, 192}       % #7e7fff
 
 
 % Orphans and widows
@@ -645,6 +646,13 @@
   \AtEndOfClass{
     \RequirePackage{varioref}
     \RequirePackage{hyperref}
+    \hypersetup{
+        colorlinks=true,       % false: boxed links; true: colored links
+        linkcolor=blue,          % color of internal links
+        citecolor=blue,        % color of links to bibliography
+        filecolor=blue,      % color of file links
+        urlcolor=blue           % color of external links
+    }
   }
   
   % Define papersize for cover 210x279mm + 0mm bleed
