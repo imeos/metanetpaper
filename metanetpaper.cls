@@ -149,15 +149,17 @@
     \vspace*{1mm}
     \ThisCenterWallPaper{1}{../_media/section_bg.pdf}
     \begin{minipage}[t]{\textwidth}
-      \begin{spacing}{2.2}
-      \color{red}
-      \textsf{%
-        % Title
-        \fontsize{24}{24}\selectfont{%
-          \MakeUppercase{#2}
+      \begin{flushleft}
+        \begin{spacing}{2.2}
+        \color{red}
+        \textsf{%
+          % Title
+          \fontsize{24}{24}\selectfont{%
+            \MakeUppercase{#2}
+          }
         }
-      }
-      \end{spacing}
+        \end{spacing}
+      \end{flushleft}
     \end{minipage}
     \vspace*{-8mm}
   }
@@ -167,15 +169,17 @@
   \vspace*{9mm}
   \ThisCenterWallPaper{1}{../_media/section_bg.pdf}
   \begin{minipage}[t]{\textwidth}
-    \begin{spacing}{2.2}
-    \color{red}
-    \textsf{%
-      % Title
-      \fontsize{24}{24}\selectfont{%
-        \MakeUppercase{#2}
+    \begin{flushleft}
+      \begin{spacing}{2.2}
+      \color{red}
+      \textsf{%
+        % Title
+        \fontsize{24}{24}\selectfont{%
+          \MakeUppercase{#2}
+        }
       }
-    }
-    \end{spacing}
+      \end{spacing}
+    \end{flushleft}
   \end{minipage}
 }
 
