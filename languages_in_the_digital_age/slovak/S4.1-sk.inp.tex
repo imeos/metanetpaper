@@ -1,3 +1,38 @@
-Jazykové technológie sú informačné technológie, ktoré sa zameriavajú na prácu s~ľudským jazykom, preto sa tieto technológie často zaraďujú pod pojem ľudské jazykové technológie. Ľudský jazyk existuje v~hovorenej a~písomnej forme. Kým reč je najstarší a~najprirodzenejší spôsob jazykovej komunikácie, komplexné informácie a~súhrn ľudského poznania sa zaznamenávajú a~prenášajú vo forme písomných textov. Rečové a~textové technológie spracúvajú alebo produkujú jazyk v~uvedených dvoch formách. Ale jazyk má tiež aspekty spoločné pre obe formy, ako sú slovníky, väčšina z~gramatiky a~zmysel viet. Veľkú časť jazykových technológií teda nemožno zaradiť výlučne pod rečovú alebo textovú technológiu. Znalostné technológie sú technológie, ktoré spájajú jazyk s~vedomosťami. Príslušná schéma znázorňuje krajinu jazykových technológií. V~našej komunikácii miešame jazyk s~inými druhmi komunikácie a~ďalšími informačnými médiami. Reč kombinujeme s~gestami a~výrazmi tváre. Texty je možné kombinovať s~obrázkami a~zvukmi. Filmy môžu obsahovať jazyk v~hovorenej aj písomnej forme. Rečové a~textové technológie sa teda prekrývajú a~pôsobia v~interakcii s~mnohými ďalšími technológiami, ktoré uľahčujú spracovanie multimodálnej komunikácie a~multimediálnych dokumentov.
+\noindent Typické softvérové aplikácie na spracovanie jazyka sa
+skladajú z~niekoľkých zložiek, ktoré odrážajú rôzne aspekty
+jazyka a~úlohu, ktorú plnia. Obrázok~\ref{fig:textprocessingarch_sk}
+zobrazuje veľmi zjednodušenú architektúru, ktorú možno nájsť
+v~systéme na spracovanie textu. Prvé tri moduly sa zaoberajú
+štruktúrou a~významom textového vstupu:
 
-%obrazok
+\begin{figure*}[ht]
+  \colorrule{grey3}{\textwidth}{1.5pt}
+  \center
+  \includegraphics[width=\textwidth]{../_media/slovak/text_processing_app_architecture}
+  \caption{Typická architektúra aplikácie na spracovanie textu}
+  \label{fig:textprocessingarch_sk}
+  \colorrule{grey3}{\textwidth}{1.5pt}
+\end{figure*}
+
+\begin{itemize}
+\item Predbežné spracovanie: vyčistenie dát, odstránenie formátovania, detekcia vstupného jazyka, detekcia chýbajúcej diakritiky atď.
+\item Gramatická analýza: hľadanie slovesa a~jeho prislúchajúceho predmetu alebo zvratného zámena atď.; zistenie vetnej štruktúry.
+\item Sémantická analýza: odstránenie viacznačnosti (Ktorý význam slova \emph{mier} je správny v~danom kontexte?), vyriešenie anafory a~odkazujúcich výrazov ako \emph{on}, \emph{to auto} atď.; prezentácia významu vety v~strojovo čitateľnej forme.	
+\end{itemize}
+
+Moduly na špecifické úlohy potom vykonávajú rôzne operácie, ako je
+automatická sumarizácia vstupného textu, databázové hľadania
+a~mnoho ďalších. Ďalej ukážeme základné aplikačné oblasti
+a~zdôrazníme ich základné moduly. Opäť pripomíname,
+že architektúry aplikácií sú veľmi zjednodušené a~idealizované
+pre vyjadrenie komplexnosti aplikácií jazykových technológií
+všeobecne zrozumiteľným spôsobom.
+
+Po predstavení základných aplikačných oblastí poskytneme stručný
+prehľad situácie jazykových technológií v~oblasti výskumu a~vzdelávania, pričom na záver uvedieme prehľad minulých
+a~prebiehajúcich výskumných programov. Na konci tejto časti budeme
+prezentovať odborný odhad situácie oblasti základných nástrojov
+a~zdrojov jazykových technológií z~viacerých hľadísk, napríklad z hľadiska dostupnosti, zrelosti alebo kvality. Táto tabuľka poskytne
+prehľad situácie jazykových technológií pre slovenčinu.
+
+

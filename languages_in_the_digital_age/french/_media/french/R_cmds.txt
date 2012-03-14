@@ -1,0 +1,25 @@
+#JV <- read.table("all5", header=T, sep="\t")
+#pdf( "jv_eval.pdf" )
+#barplot(as.matrix(JV), main="Evaluation JV", ylab= "Total", ylim=c(0,1),  beside=TRUE, col=rainbow(24))
+#legend("topleft",c("micro_doc_preci_polarity","micro_doc_preci_intensity","micro_doc_preci_combined","micro_doc_preci_sem_cat","micro_par_preci_polarity","micro_par_preci_intensity","micro_par_preci_combined","micro_par_preci_sem_cat","micro_doc_reca_polarity","micro_doc_reca_intensity","micro_doc_reca_combined","micro_doc_reca_sem_cat","micro_par_reca_polarity","micro_par_reca_intensity","micro_par_reca_combined","micro_par_reca_sem_cat","micro_doc_f_polarity","micro_doc_f_intensity","micro_doc_f_combined","micro_doc_f_sem_cat","micro_par_f_polarity","micro_par_f_polarityintensity","micro_par_f_polaritycombined","micro_par_f_polaritysem_cat"),cex=0.6, bty="n", fill=rainbow(24));
+
+pdf( "foo.pdf")
+
+topten <- read.table("top_10_Internet_languages_2010.data", header=T, , encoding="UTF-8")
+
+barplot(as.matrix(topten), main="Les 10 langues les plus utilisees sur Internet fin 2009\n(en millions d'utilisateurs)", ylab= "Total", ylim=c(0,700),  beside=TRUE, col=rainbow(11), las=2)
+
+#legend("topright",c("anglais","chinois","espagnol","japonais","portugais","allemand","arabe","francais","russe","coreen","autres"), cex=0.6, bty="n", fill=rainbow(11));
+
+#------------ for english version
+
+pdf( "foo.pdf")
+
+par(mai=c(1.2,1,1,1))
+
+topten <- read.table("top_10_Internet_languages_2010_english.data", header=T, , encoding="UTF-8")
+
+barplot(as.matrix(topten), main="Top 10 most used languages on Internet by the end of 2009\n(in millions of users)", ylab= "Total", ylim=c(0,700),  beside=TRUE, col=rainbow(11), las=2)
+
+#legend("topright",c("english","chinese","spanish","japanese","portuguese","germand","arabic","french","russian","korean","other"), cex=0.6, bty="n", fill=rainbow(11));
+
