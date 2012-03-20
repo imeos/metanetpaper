@@ -498,6 +498,7 @@
 \long\def\FundingRNotice#1{\gdef\@FundingRNotice{#1}}
 \def\@FundingRNotice{\@latex@warning@no@line{No \noexpand\FundingRNotice given}}
 \newcommand{\makefundingnotice}{%
+  \vskip20mm
   \centerline{META-NET -- office@meta-net.eu -- http://www.meta-net.eu}
 
   \vfill
@@ -541,8 +542,8 @@
 
 % Set the cover for the printversion
 \DeclareOption{cover}{%
-  % Define papersize for cover 420x279mm + 5mm bleed
-  \setlength{\paperwidth}{430mm}%
+  % Define papersize for cover 420x279mm + 4mm Spine + 5mm bleed
+  \setlength{\paperwidth}{434mm}%
   \setlength{\paperheight}{289mm}%
   \setlength{\textwidth}{380mm}%
 %  \setlength{\width}{380mm}%
@@ -578,7 +579,7 @@
         }
       \end{minipage}
       % Space between back and front cover
-      \begin{minipage}[t]{43mm}\ \end{minipage} 
+      \begin{minipage}[t]{47mm}\ \end{minipage} 
       % Front cover
       \begin{minipage}[t]{185mm} 
         % Left column
