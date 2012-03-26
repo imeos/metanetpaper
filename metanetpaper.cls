@@ -661,7 +661,7 @@
   }
   
   % Define papersize for cover 210x279mm + 0mm bleed
-  \geometry{paperwidth=210mm, paperheight=279mm, top=24mm, bottom=34mm, left=22mm, right=22mm}%
+  \geometry{paperwidth=210mm, paperheight=279mm, top=24mm, bottom=34mm, left=23mm, right=23mm}%
   
   \setfootwidth[-22mm]{paper}
   \lefoot[\pagemark]{}
