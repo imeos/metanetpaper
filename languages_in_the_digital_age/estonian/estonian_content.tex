@@ -1,4 +1,4 @@
-%                                     MMMMMMMMM                                         
+%                                     MMMMMMMMM        
 %                                                                             
 %  MMO    MM   MMMMMM  MMMMMMM   MM    MMMMMMMM   MMD   MM  MMMMMMM MMMMMMM   
 %  MMM   MMM   MM        MM     ?MMM              MMM$  MM  MM         MM     
@@ -8,90 +8,23 @@
 %  MM     MM   MMMMMM    MM   MM    MM            MM   MMM  MMMMMMM    MM
 %
 %
-%            - META-NET Language Whitepaper | Estonian paper -
-
-\documentclass[]{../../metanetpaper}
-
-\usepackage{booktabs}
-\usepackage{longtable}
-\usepackage{tabulary}
-\usepackage{tabularx}
-\usepackage{rotating}
-\usepackage{makecell}
-\usepackage{multirow}
-\usepackage{colortbl}
-\usepackage{polyglossia}
-\usepackage{multicol,framed,lipsum}
-\setotherlanguages{estonian,german,english}
-
-%!TEX TS-program = xelatex
-\RequireXeTeX %Force XeTeX check
-
-\title{Eesti keel digiajastul --- The Estonian Language in the Digital Age}
-
-\subtitle{White Paper Series --- Valge raamatu sari}
-
-\author{
-  Krista Liin\\
-  Kadri Muischnek\\
-  Kaili Müürisep\\
-  Kadri Vider
-}
-\authoraffiliation{
-  Krista Liin~ {\small Tartu Ülikool}\\
-  Kadri Muischnek~ {\small Tartu Ülikool}\\
-  Kaili Müürisep~ {\small Tartu Ülikool}\\
-  Kadri Vider~ {\small Tartu Ülikool}
-  }
-\editors{
-  Georg Rehm, Hans Uszkoreit\\(toimetajad, \textcolor{grey1}{editors})
-}
+%            - META-NET Language Whitepaper | Estonian content -
+% 
+% ----------------------------------------------------------------------------
 
 \begin{document}
 
-\renewcommand*{\figureformat}{\sffamily\thefigure\autodot}
-
 \maketitle
 
-% ---------------- Mocktitle ------------------
+% --------------------------------------------------------------------------
+\bsection*{Eessõna --- Preface}
+
 \null
 \pagestyle{empty} 
 
-\centerline{META-NET -- office@meta-net.eu -- http://www.meta-net.eu}
-
-\vfill
-
-\begin{small}
-  \selectlanguage{estonian}
-  Selle keeleraporti koostamist rahastas 7. raamprogramm ja Euroopa
-  Komisjoni IKT poliitika toetusprogramm lepingute  
-  T4ME (toetusleping  249119), CESAR (toetusleping 271022), METANET4U
-  (toetusleping 270893) ja META-NORD
-  (toetusleping 270899) kaudu.
-\end{small}
-
-\bigskip
-\begin{small}
-  \selectlanguage{english}
-  The development of this white paper has been funded by the Seventh
-  Framework Programme and the ICT Policy Support Programme of the
-  European Commission under the contracts T4ME (Grant Agreement 249119),
-  CESAR (Grant Agreement 271022), METANET4U (Grant Agreement 270893)
-  and META-NORD (Grant Agreement 270899).
-\end{small}
-
-\clearpage
-% ------------- End of mocktitle ----------------
-
 \pagenumbering{Roman} 
-\setcounter{page}{5}
+\setcounter{page}{3}
 \pagestyle{scrheadings}
-
-\cleardoublepage
-
-% --------------------------------------------------------------------------
-
-\bsection*{Eessõna --- Preface}
 
 \begin{Parallel}[c]{78mm}{78mm}
 \ParallelLText{\selectlanguage{estonian}
@@ -124,7 +57,6 @@ rakendused saavad katta praegused uuri\-mis\-töö puudujäägid aastaks
 
 }
 
-
 \ParallelRText{\selectlanguage{english}
 This white paper is part of a series that promotes knowledge about language technology and its potential. It addresses journalists, politicians, language communities, educators and others. 
 
@@ -135,6 +67,8 @@ META-NET, a Network of Excellence funded by the European Commission, has conduct
 As of January 2012, META-NET consists of 54 research centres from 33 European countries (p.~\pageref{metanetmembers}). META-NET is working with stakeholders from economy (software companies, technology providers, users), government agencies, research organisations, non-governmental organisations, language communities and European universities. Together with these communities, META-NET is creating a common technology vision and strategic research agenda for multilingual Europe 2020.} 
 \ParallelPar
 \end{Parallel}
+
+\makefundingnotice
 
 % --------------------------------------------------------------------------
 
@@ -2868,8 +2802,8 @@ Launched on 1 February 2010, META-NET has already conducted various activities i
 \addtocontents{toc}{\protect\bigskip}
 
 \bsection[Kirjandus --- References]{Kirjandus --- References}
-\bibliographystyle{plain}
-\bibliography{est_LWP_references}
+\bibliographystyle{unsrt}
+\bibliography{estonian_references}
   
 \cleardoublepage
 
@@ -2993,5 +2927,3 @@ Launched on 1 February 2010, META-NET has already conducted various activities i
   &tšehhi & Czech & čeština& \\
   &ungari & Hungarian & magyar& \\ \addlinespace \bottomrule
 \end{tabularx}
-
-\end{document}
