@@ -1,0 +1,504 @@
+%                                     MMMMMMMMM                                         
+%                                                                             
+%  MMO    MM   MMMMMM  MMMMMMM   MM    MMMMMMMM   MMD   MM  MMMMMMM MMMMMMM   
+%  MMM   MMM   MM        MM     ?MMM              MMM$  MM  MM         MM     
+%  MMMM 7MMM   MM        MM     MM8M    MMMMMMM   MMMMD MM  MM         MM     
+%  MM MMMMMM   MMMMMM    MM    MM  MM             MM MMDMM  MMMMMM     MM     
+%  MM  MM MM   MM        MM    MMMMMM             MM  MMMM  MM         MM     
+%  MM     MM   MMMMMM    MM   MM    MM            MM   MMM  MMMMMMM    MM
+%
+%
+%            - META-NET Language Whitepaper | German paper -
+
+\documentclass[]{../metanetpaper}
+
+\usepackage{pdfcolparallel}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\setmainfont[Mapping=tex-text]{FreeSerif}
+\usepackage{url}
+\usepackage[super]{nth}
+\usepackage{textcomp}
+\usepackage{eurosym}
+\usepackage{tipa}
+\usepackage{color}
+
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{tabulary}
+\usepackage{tabularx}
+\usepackage{rotating}
+\usepackage{makecell}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{multicol,framed,lipsum}
+
+\usepackage{polyglossia}
+\setdefaultlanguage{slovak}
+\setotherlanguage[variant=uk]{english}
+
+\usepackage[style=alphabetic,natbib=true,backend=biber]{biblatex}
+\bibliography{references}
+
+\renewcommand{\sectionNoStar}[2][]{%
+  \section[#1]{%
+    \vspace*{1mm}
+    \ThisCenterWallPaper{1}{../_media/section_bg.pdf}
+    \begin{minipage}[t]{\textwidth}
+      \raggedright
+      \begin{spacing}{2.2}
+      \color{red}
+      \textsf{%
+        % Title
+        \fontsize{24}{24}\selectfont{%
+          \MakeUppercase{#2}
+        }
+      }
+      \end{spacing}
+    \end{minipage}
+    \vspace*{-8mm}
+  }
+}
+\renewcommand{\sectionStar}[2][]{%
+  \clearpage
+  \vspace*{9mm}
+  \ThisCenterWallPaper{1}{../_media/section_bg.pdf}
+  \begin{minipage}[t]{\textwidth}
+    \raggedright
+    \begin{spacing}{2.2}
+    \color{red}
+    \textsf{%
+      % Title
+      \fontsize{24}{24}\selectfont{%
+        \MakeUppercase{#2}
+      }
+    }
+    \end{spacing}
+  \end{minipage}
+}
+
+\newcommand{\inst}[1]{{\newline\small #1}}
+
+\setlength\parindent{0pt} % Indent for new Paragraphs
+
+% Table colors
+\definecolor{orange1}{cmyk}{0, 0.56, 0.86, 0}        % #FF6600
+\definecolor{orange2}{cmyk}{0, 0.34, 0.87, 0.01}     % #FF9900
+
+% cluster table colors
+\definecolor{orange3}{cmyk}{0.01, 0.12, 0.91, 0.01}  % #FFCC00
+\definecolor{corange1}{cmyk}{0.0, 0.216,0.42, 0.04} % #F5B58E
+\definecolor{corange2}{cmyk}{0.0, 0.32, 0.51, 0.04}  % #F5A676
+\definecolor{corange3}{cmyk}{0.0, 0.38, 0.62, 0.04}  % #F5975D
+\definecolor{corange4}{cmyk}{0.0, 0.44, 0.72, 0.04}  % #F58845
+\definecolor{corange5}{cmyk}{0.0, 0.50, 0.82, 0.04}  % #F5792C
+
+\definecolor{grey4}{cmyk}{0, 0, 0, 0.7}              % #3C3C3C
+
+
+%!TEX TS-program = xelatex
+\RequireXeTeX %Force XeTeX check
+
+\title{Jazyky v Európskej informačnej spoločnosti --- Languages in the European Information Society}
+
+\subtitle{White Paper Series --- Séria bielych kníh}
+
+\begin{small}
+\author{%
+Mária Šimková \\
+Radovan Garabík \\
+Slavomír Ondrejovič \\
+Jozef Ivanecký \\
+Helena Ivoríková \\
+Michal Laclavík \\
+Karol Furdík \\
+Katarína Gajdošová \\
+Jozef Juhár \\
+Ján Genči \\
+}
+\end{small}
+
+\authoraffiliation{%
+Mária Šimková \inst{Jazykovedný ústav Ľudovíta Štúra SAV} \\
+Radovan Garabík \inst{Jazykovedný ústav Ľudovíta Štúra SAV} \\
+Slavomír Ondrejovič \inst{Jazykovedný ústav Ľudovíta Štúra SAV} \\
+Jozef Ivanecký \inst{European Media Laboratory} \\
+Helena Ivoríková \inst{Studia Academica Slovaca, Univerzita Komenského} \\
+Michal Laclavík \inst{Ústav informatiky SAV} \\
+Karol Furdík \inst{Technická univerzita v~Košiciach} \\
+Katarína Gajdošová \inst{Jazykovedný ústav Ľudovíta Štúra SAV}  \\
+Jozef Juhár \inst{Technická univerzita v~Košiciach} \\
+Ján Genči \inst{Technická univerzita v~Košiciach} \\
+}
+
+\editors{
+  Mária Šimková  \\
+  Radovan Garabík\\
+  Adriána Žáková \\
+  Agáta Karčová  \\
+  (\textcolor{grey1}{editors})
+}
+
+
+\begin{document}
+
+\renewcommand*{\figureformat}{\sffamily\thefigure\autodot}
+
+\maketitle
+
+\include{hyphen-sk.inp.tex}
+
+% ---------------- Mocktitle ------------------
+\null
+\pagestyle{empty} 
+
+\centerline{META-NET -- office@meta-net.eu -- http://www.meta-net.eu}
+
+\vfill
+
+\begin{small}
+  \selectlanguage{slovak}
+  \frenchspacing
+  Táto biela kniha bola financovaná prostredníctvom Siedmeho
+  rámcového programu a~Programu podpory politiky v~oblasti informačných a~komunikačných technológií
+  Európskej komisie na základe dohôd T4ME (Grantová dohoda 249119),
+  CESAR (Grantová dohoda 271022), METANET4U (Grantová dohoda 270893)
+  a META-NORD (Grantová dohoda 270899).
+\end{small}
+
+\bigskip
+\begin{small}
+  \selectlanguage{english}
+  \nonfrenchspacing
+  The development of this white paper has been funded by the Seventh
+  Framework Programme and the ICT Policy Support Programme of the
+  European Commission under the contracts T4ME (Grant Agreement 249119),
+  CESAR (Grant Agreement 271022), METANET4U (Grant Agreement 270893)
+  and META-NORD (Grant Agreement 270899).
+\end{small}
+
+\clearpage
+% ------------- End of mocktitle ----------------
+
+\pagenumbering{Roman} 
+\setcounter{page}{5}
+\pagestyle{scrheadings}
+
+\cleardoublepage
+
+% --------------------------------------------------------------------------
+
+\bsection*{Predhovor --- Preface}
+
+\begin{Parallel}[c]{78mm}{78mm}
+\ParallelLText{
+\selectlanguage{slovak}
+\setlength\parindent{1em}
+\frenchspacing
+\input{S0-sk.inp}
+}
+
+\ParallelRText{
+\selectlanguage{english}
+\setlength\parindent{0pt}
+\nonfrenchspacing
+\input{S0-en.inp}
+}
+
+\ParallelPar
+\end{Parallel}
+
+% --------------------------------------------------------------------------
+
+\cleardoublepage
+
+\bsection*{Obsah --- Table of Contents}
+
+\renewcommand{\contentsname}{}
+\tableofcontents
+
+\addtocontents{toc}{\protect\thispagestyle{empty}\protect}
+
+% --------------------------------------------------------------------------
+
+\cleardoublepage
+
+\setcounter{page}{1}
+\pagenumbering{arabic} 
+\pagestyle{scrheadings}
+
+\selectlanguage{slovak}
+\setlength\parindent{1em}
+\frenchspacing
+
+\ssection[Zhrnutie]{Zhrnutie}
+\begin{multicols}{2}
+\input{S1.1-sk.inp}
+\input{S1.2-sk.inp}
+\input{S1.3-sk.inp}
+\end{multicols}
+
+\clearpage
+
+\ssection[Ohrozenie našich jazykov: Výzva pre jazykové technológie]{Ohrozenie našich jazykov: Výzva pre jazykové technológie}
+\begin{multicols}{2}
+\input{S2-sk.inp}
+\subsection{Jazykové hranice spomaľujú európsku informačnú spoločnosť}
+\input{S2.1-sk.inp}
+\subsection{Naše jazyky v~ohrození}
+\input{S2.2-sk.inp}
+\subsection{Jazykové technológie sú kľúčovými technológiami}
+\input{S2.3-sk.inp}
+\subsection{Príležitosti pre jazykové technológie}
+\input{S2.4-sk.inp}
+\subsection{Výzvy pre jazykové technológie}
+\input{S2.5-sk.inp}
+\subsection{Osvojovanie si jazyka}
+\input{S2.6-sk.inp}
+\end{multicols}
+
+\clearpage
+
+\ssection[Slovenčina v~európskej informačnej spoločnosti]{Slovenčina v~európskej informačnej spoločnosti}
+\begin{multicols}{2}
+\subsection{Všeobecné fakty}
+\input{S3.1-sk.inp}
+\subsubsection{Slovenské nárečia}
+
+\begin{figure*}[ht]
+\centering
+\includegraphics[width=\textwidth]{dialects-map.png}
+\caption{%
+Mapa slovenských nárečí
+}
+\label{fig:dialects_sk}
+\end{figure*}
+
+\input{S3.1.1-sk.inp}
+\subsection{Špecifiká slovenčiny}
+\input{S3.2-sk.inp}
+\subsection{Slovenčina na internete}
+\input{S3.3-sk.inp}
+\subsection{Slovenčina ako cudzí jazyk}
+\subsubsection{Slovak Online}
+\input{S3.4.1-sk.inp}
+\subsubsection{Studia Academica Slovaca – centrum pre slovenčinu ako cudzí jazyk}
+\input{S3.4.2-sk.inp}
+\subsubsection{Letná škola slovenského jazyka a~kultúry Studia Academica Slovaca}
+\input{S3.4.3-sk.inp}
+
+\subsection{Slovenský národný korpus}
+\input{S3.5-sk.inp}
+\subsubsection{Korpus písaných textov}
+\input{S3.5.1-sk.inp}
+\subsubsection{Slovenský hovorený korpus}
+\input{S3.5.2-sk.inp}
+\subsubsection{Slovenská terminologická databáza}
+\input{S3.5.3-sk.inp}
+\subsubsection{Paralelné korpusy}
+\input{S3.5.4-sk.inp}
+\subsubsection{Lingvistické zdroje}
+\input{S3.5.5-sk.inp}
+\end{multicols}
+
+\clearpage
+
+\ssection[Jazykové technológie na podporu slovenčiny]{Jazykové technológie na podporu slovenčiny}
+\begin{multicols}{2}
+\input{S4-sk.inp}
+\subsection{Architektúra aplikácií}
+\input{S4.1-sk.inp}
+\subsection{Základné aplikačné oblasti}
+\subsubsection{Kontrola pravopisu}
+\input{S4.2.1-sk.inp}
+\subsubsection{Vyhľadávanie na webe}
+\input{S4.2.2-sk.inp}
+\subsubsection{Rečová technológia}
+\input{S4.2.3-sk.inp}
+\subsubsection{Strojový preklad}
+\input{S4.2.4-sk.inp}
+\subsection{Ďalšie aplikačné oblasti}
+\input{S4.3-sk.inp}
+\subsection{Jazykové technológie vo vzdelávaní}
+\input{S4.4-sk.inp}
+\subsection{Štátne programy a iniciatívy}
+\input{S4.5-sk.inp}
+\subsection{Dostupnosť nástrojov a~zdrojov}
+\input{S4.6-sk.inp}
+\subsection{Porovnanie jazykov}
+\input{S4.7-sk.inp}
+\subsection{Závery}
+\input{S4.8-sk.inp}
+\end{multicols}
+
+\clearpage
+
+\ssection[O META-NET-e]{O META-NET-e}
+\begin{multicols}{2}
+\input{S5-sk.inp}
+\input{S5.1-sk.inp}
+%\subsection{Členské organizácie}
+%\input{S5.2-sk.inp}
+\end{multicols}
+
+%\bsection[META-NET Members]{META-NET Members}
+%\label{metanetmembers}
+%\input{Smembers-sk.inp}
+
+
+% --------------------------------------------------------------------------
+
+\addtocontents{toc}{\protect\clearpage\protect}
+\addtocontents{toc}{\protect\thispagestyle{empty}\protect}
+\addtocontents{toc}{\protect\vspace*{4mm}\protect}
+%\addtocontents{toc}{\smallskip{\Large\textsf{\centerline{THE SLOVAK LANGUAGE IN THE DIGITAL AGE}}\par}}
+
+\setcounter{section}{0}
+\setcounter{figure}{0}
+\setcounter{table}{0}
+
+\cleardoublepage
+
+\selectlanguage{english}
+\setlength\parindent{0pt}
+\nonfrenchspacing
+
+\ssection[Executive Summary]{Executive Summary}
+\begin{multicols}{2}
+\input{S1.1-en.inp}
+\input{S1.2-en.inp}
+\input{S1.3-en.inp}
+\end{multicols}
+
+\clearpage
+
+\ssection[Languages at risk: Challenge for Language Technology]{Languages at risk: A Challenge for Language Technology}
+\begin{multicols}{2}
+\input{S2-en.inp}
+\subsection{Language Borders Hold back the European Information Society}
+\input{S2.1-en.inp}
+\subsection{Our Languages at Risk}
+\input{S2.2-en.inp}
+\subsection{Language Technology is a Key Enabling Technology}
+\input{S2.3-en.inp}
+\subsection{Opportunities for Language Technology}
+\input{S2.4-en.inp}
+\subsection{Challenges Facing Language Technology}
+\input{S2.5-en.inp}
+\subsection{Language Acquisition in Humans and Machines}
+\input{S2.6-en.inp}
+\end{multicols}
+
+\clearpage
+
+\ssection[Slovak in the European Information Society]{Slovak in the European Information Society}
+\begin{multicols}{2}
+\subsection{General Facts}
+\input{S3.1-en.inp}
+\subsubsection{Slovak Dialects}
+
+\begin{figure*}[ht]
+\centering
+\includegraphics[width=\textwidth]{dialects-map.png}
+\caption{%
+Map of Slovak Dialects
+}
+\label{fig:dialects_en}
+\end{figure*}
+
+\input{S3.1.1-en.inp}
+\subsection{Particularities of the Slovak Language}
+\input{S3.2-en.inp}
+\subsection{Slovak on the Internet}
+\input{S3.3-en.inp}
+\subsection{Slovak as a Foreign Language}
+\subsubsection{Slovak Online}
+\input{S3.4.1-en.inp}
+\subsubsection{Studia Academica Slovaca -- The Centre for Slovak as a Foreign Language}
+\input{S3.4.2-en.inp}
+\subsubsection{Summer School of Slovak Language and Culture}
+\input{S3.4.3-en.inp}
+
+\subsection{Slovak National Corpus}
+\input{S3.5-en.inp}
+\subsubsection{Corpus of Written Language}
+\input{S3.5.1-en.inp}
+\subsubsection{Corpus of Spoken Language}
+\input{S3.5.2-en.inp}
+\subsubsection{Slovak Terminology Database}
+\input{S3.5.3-en.inp}
+\subsubsection{Parallel Corpora}
+\input{S3.5.4-en.inp}
+\subsubsection{Linguistic Resources}
+\input{S3.5.5-en.inp}
+
+\end{multicols}
+
+\clearpage
+
+\ssection[Language Technology Support for Slovak]{Language Technology Support for Slovak}
+\begin{multicols}{2}
+%\subsection{Language Technologies}
+\input{S4-en.inp}
+\subsection{Application Architectures}
+\input{S4.1-en.inp}
+\subsection{Core Application Areas}
+\subsubsection{Language Checking}
+\input{S4.2.1-en.inp}
+\subsubsection{Web Search}
+\input{S4.2.2-en.inp}
+\subsubsection{Speech Technology}
+\input{S4.2.3-en.inp}
+\subsubsection{Machine Translation}
+\input{S4.2.4-en.inp}
+\subsection{Other Application Areas}
+\input{S4.3-en.inp}
+\subsection{Language Technology in Education}
+\input{S4.4-en.inp}
+\subsection{National Projects and Initiatives}
+\input{S4.5-en.inp}
+\subsection{Availability of Tools and Resources}
+\input{S4.6-en.inp}
+\subsection{Cross-language Comparison}
+\input{S4.7-en.inp}
+\subsection{Conclusions}
+\input{S4.8-en.inp}
+\end{multicols}
+
+\clearpage
+
+\ssection[About META-NET]{About META-NET}
+\begin{multicols}{2}
+\input{S5-en.inp}
+\input{S5.1-en.inp}
+%\subsection{Member Organisations}
+%\input{S5.2-en.inp}
+\end{multicols}
+
+
+
+\cleardoublepage
+
+% --------------------------------------------------------------------------
+
+\appendix
+\addtocontents{toc}{\protect\bigskip}
+
+\bsection{Zoznam literatúry --- References}
+\nocite{*}
+\renewcommand{\refname}{}
+\printbibliography
+
+\bsection{Členovia META-NET-u --- META-NET Members}
+\label{metanetmembers}
+\input{Smembers.inp}
+
+\bsection{Séria bielych kníh META-NET-u --- The META-NET White Paper Series}
+\label{whitepaperseries}
+\begin{small}
+\input{Slanguages-table.inp}
+\end{small}
+
+\cleardoublepage
+
+\end{document}

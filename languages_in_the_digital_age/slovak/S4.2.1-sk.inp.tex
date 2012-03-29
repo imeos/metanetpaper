@@ -1,0 +1,82 @@
+\noindent Každý, kto používa kancelársky balík, ako napríklad LibreOffice, už pravdepodobne narazil na funkciu Kontrola pravopisu a~gramatiky, ktorá poukazuje na pravopisné chyby a~navrhuje ich opravu. 40 rokov po tom, čo Ralph Gorin uviedol prvý program na kontrolu pravopisu, sa tieto programy jazyka stali oveľa sofistikovanejšími a~už nepracujú len na princípe porovnávania zoznamu vybraných slov s~pravopisným slovníkom. Oproti jazykovo závislým algoritmom na zvládnutie morfológie (napr. tvorenie plurálu) existujú aj algoritmy schopné rozpoznať syntaktické chyby, typu chýbajúce sloveso alebo sloveso nezhodné s~podmetom v~osobe a~čísle, ako to môžeme pozorovať napríklad aj vo vete ‘She *write a~letter.’ („Ona písať list.“). Najdostupnejšie funkcie kontroly pravopisu (vrátane uplatnených v~balíku LibreOffice) však v~nasledujúcej prvej strofe básne Jerrolda H. Zara založenej na homofónii nenájdu žiadnu chybu (1992)\footnote{\url{http://www.bios.niu.edu/zar/zar.shtml}}:
+
+\begin{verse}
+\emph{%
+Eye have a~spelling chequer\\
+It came with my Pea Sea.\\
+It plane lee marks four my revue\\
+Miss Steaks I~can knot sea.
+}
+\end{verse}
+
+Na spracovanie tohto typu chýb je v~mnohých prípadoch potrebná analýza daného \underbar{kontextu}, ktorá je napríklad potrebná aj na rozhodnutie, či sa má isté slovo písať s~„y“ alebo s~„i“, ako napríklad v~prísloví:
+
+\begin{verse}
+\emph{%
+Kto chce psa biť, palicu si nájde.\\
+\smallskip
+Kto chce psom byť, pána si nájde.
+}
+\end{verse}
+
+Takýto postup si vyžaduje buď formuláciu gramatických
+pravidiel špecifických pre daný jazyk, čo zároveň predpokladá
+vysoký stupeň expertízy a~manuálnej práce, alebo využitie
+takzvaného štatistického \underbar{jazykového modelu}. Takéto
+modely prepočítavajú možnosť výskytu istého slova v~danom kontexte
+(tzn. s~predchádzajúcimi a~nasledujúcimi slovami). Napríklad,
+\emph{chce psom byť} je oveľa pravdepodobnejší sled slov ako
+\emph{chce psom biť} a~naopak, \emph{chce psa biť} je oveľa
+pravdepodobnejšia vetná konštrukcia než \emph{chce psa byť}
+(napriek tomu by sme nepochybne dokázali vymyslieť kontexty,
+v~ktorých sú gramaticky správne všetky štyri uvedené fragmenty).
+Štatistický jazykový model môže byť automaticky derivovaný
+využívaním veľkého množstva (korektných) jazykových dát (t.~j.
+\underbar{korpusu}). Tieto prístupy však boli vyvinuté a~hodnotené
+len na anglických jazykových dátach a~nedajú sa automaticky priamo
+aplikovať na slovenčinu s~jej nestálym slovosledom a~bohatou flexiou.
+
+Používanie funkcie Kontrola pravopisu a~gramatiky nie je obmedzené
+len na nástroje spracovania textu, ale využíva sa aj
+v~autorských systémoch. Spolu s~rastúcim počtom technických
+produktov sa za posledné obdobie rapídne zvýšil aj počet technickej
+dokumentácie. Strach spoločností zo sťažností zákazníkov
+a~z~nárokov na náhradu škody, ktorá bola zapríčinená nesprávnymi
+alebo nesprávne pochopenými inštrukciami, spôsobil, že sa
+spoločnosti začali viac sústreďovať na kvalitu technickej
+dokumentácie a~zároveň na medzinárodný trh. Pokroky
+v~spracovávaní prirodzeného jazyka vedú k~rozvoju autorského
+podporného softvéru, ktorý slúži zostavovateľovi technickej
+dokumentácie na využívanie slovnej zásoby a~vetných štruktúr
+v~súlade s~istými pravidlami a terminologickými
+obmedzeniami.
+
+\begin{figure*}[htb]
+  \colorrule{grey3}{\textwidth}{1.5pt}
+  \center
+  \includegraphics[width=\textwidth]{../_media/slovak/language_checking}
+  \caption{Kontrola pravopisu a gramatiky (štatistická; na báze pravidiel)}
+  \label{fig:langcheckingaarch_sk}
+  \colorrule{grey3}{\textwidth}{1.5pt}
+\end{figure*}
+
+\boxtext{Funkcie kontroly pravopisu a~gramatiky pre slovenský jazyk
+sú väčšinou založené na slovníku základných slovných tvarov
+(lem) a súbore pravidiel na odvodenie ostatných tvarov}
+
+Existujúce zariadenia kontroly pravopisu a~gramatiky pre slovenský
+jazyk sú väčšinou založené na slovníku základných slovných
+tvarov (lem) skombinovanom so súborom morfologických pravidiel, ktorý
+umožňuje analýzu alebo generovanie všetkých (správnych) slovných
+tvarov. Hoci sa zdá tento jednoduchý uspokojivý, má dve
+zásadné nevýhody. Prvou nevýhodou je nesprávne určenie zdanlivo
+správnych slovných tvarov v~dôsledku nesprávneho kontextu. Druhou
+nevýhodou je neschopnosť rozlišovať skutočné pravopisné chyby od
+správnych slovných tvarov, ktoré však nie sú obsiahnuté
+v~slovníku. Takéto slová však budú vzhľadom na prirodzené
+pribúdanie nových slov, vedeckých a~technických termínov
+v~lexikóne existovať stále.
+
+Okrem kontroly pravopisu a~autorizovanej podpory je funkcia kontrola
+pravopisu a~gramatiky takisto dôležitá v~oblasti výučby jazyka. Aplikácie na kontrolu gramatiky a pravopisu taktiež dokážu pri preklepoch navrhnúť správne slovo, napríklad Google frázou „Mali ste na mysli\dots“
+
