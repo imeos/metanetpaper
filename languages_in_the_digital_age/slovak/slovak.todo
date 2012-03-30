@@ -1,0 +1,15 @@
+preamble:
+- authoraffiliations
+- quotes
+
+content:
+- abkürzungen s.r.o , a.s. 
+- \footnote{} to \cite{}
+- Chapter 5 retranslation
+- sort membertable
+- Preface: add pagereferences; differences in last 2 parts
+- Chapter 4:
+	- inserted euromatrix+ figure; not mentioned in text
+	- speechcluster headings
+	- underline -> bold
+	- 11\,th -> 11^{th} , etc
