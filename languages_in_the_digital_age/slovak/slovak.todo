@@ -13,3 +13,7 @@ content:
 	- speechcluster headings
 	- underline -> bold
 	- 11\,th -> 11^{th} , etc
+	
+graphics:
+- replace graphic for 'Map of Slovak Dialects' with vectorgraphic (or if
+  impossible with a bitmap-graphic of at least 300dpi)
