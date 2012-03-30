@@ -821,7 +821,7 @@
     \ThisCenterWallPaper{1}{../_media/spinepage_ebook.pdf}
     \vspace*{50mm}
     % Left column
-    \begin{minipage}[t]{83mm}
+    \begin{minipage}[t]{81mm}
       \color{grey2}%
       \textsf{%
         \@SpineLText
