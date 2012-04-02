@@ -1180,8 +1180,14 @@ pre ktorý boli vytvorené anotované korpusy a~ktorý odštartoval
 vedecké súperenie. Idea spočíva v~posune od vyhľadávania pomocou
 klávesnice (na ktoré prístroj odpovedá celým súborom potenciálne
 relevantných dokumentov) k~variantu, v~ktorom používateľ kladie
-konkrétnu otázku a~systém generuje jedinú odpoveď: „V~akom veku
-vystúpil Neil Armstrong na Mesiac?“ – „38“. Pokiaľ to súvisí
+konkrétnu otázku a~systém generuje jedinú odpoveď:
+%FIXME please translate Question, Answer below
+\begin{itemize}
+	\item[] \textit{Question: V~akom veku
+vystúpil Neil Armstrong na Mesiac?}
+	\item[] \textit{Answer: 38.}
+\end{itemize}
+Pokiaľ to súvisí
 s~už spomínanou základnou oblasťou vyhľadávania na webe,
 zodpovedanie otázok je predovšetkým zastrešujúcim výrazom
 výskumných otázok typu: Aké \emph{druhy} otázok by sa mali
@@ -1374,7 +1380,7 @@ nórčina \newline
 poľština \newline 
 švédčina \newline
 srbčina \newline 
-slovenčina \newline 
+\textbf{slovenčina} \newline 
 slovinčina \newline 
 maďarčina  \newline
 & \vspace*{0.5mm}islandčina \newline  
@@ -1437,7 +1443,7 @@ nórčina \newline
 portugalčina \newline 
 švédčina \newline 
 srbčina \newline 
-slovenčina \newline 
+\textbf{slovenčina} \newline 
 slovinčina \newline 
 čeština \newline
 \end{tabular}
@@ -1485,7 +1491,7 @@ slovinčina \newline
   portugalčina \newline 
   rumunčina \newline 
   švédčina \newline 
-  slovenčina \newline 
+  \textbf{slovenčina} \newline 
   slovinčina \newline 
   čeština \newline 
   maďarčina \newline 
@@ -1532,7 +1538,9 @@ slovinčina \newline
     švédčina \newline 
     čeština \newline 
     poľština \newline 
-    maďarčina 
+    maďarčina \newline
+    taliančina \newline
+    španielčina
 & \vspace*{0.5mm} baskičtina \newline 
     bulharčina \newline 
     dánčina \newline 
@@ -1546,7 +1554,7 @@ slovinčina \newline
     portugalčina \newline 
     rumunčina \newline 
     srbčina \newline 
-    slovenčina \newline 
+    \textbf{slovenčina} \newline 
     slovinčina \newline
 &  \vspace*{0.5mm} írčina \newline 
     islandčina \newline 
@@ -1695,13 +1703,13 @@ The predominant actors in LT today rely on imprecise statistical approaches that
 
 \boxtext{Language technology as a key for the future}
 
-The European Union has therefore decided to fund projects such as EuroMatrix and EuroMatrixPlus (since 2006) and iTranslate4 (since 2010) that carry out basic and applied research and generate resources for establishing high quality language technology solutions for all European languages. Analysing the deeper structural properties of languages is the only way forward if we want to build applications that perform well across the entire range of Europe’s languages.
+The European Union has therefore decided to fund projects such as EuroMatrix and EuroMatrixPlus (since 2006) and iTranslate4 (since 2010) which carry out basic and applied research and generate resources for establishing high quality language technology solutions for all European languages. Analysing the deeper structural properties of languages is the only way forward if we want to build applications that perform well across the entire range of Europe’s languages.
 
 European research in this area has already achieved a number of successes. For example, the translation services of the European Union now use MOSES open-source machine translation software that has been mainly developed through European research projects. The Verbmobil project, funded by the German Ministry of Education and Research, pushed Germany into the lead in the world of speech translation research for a time. Many of the research and development labs have since been closed down or moved elsewhere. Europe has tended to pursue isolated research activities with a less pervasive impact on the market.  
 
 \boxtext{Language Technology helps unify Europe}
 
-Drawing on the insights gained so far, it appears that today’s 'hybrid' language technology mixing deep processing with statistical methods will be able to bridge the gap between all European languages and beyond. As this series of white papers shows, there is a dramatic difference in the state of readiness with respect to language solutions and the state of research between Europe’s member states. 
+Drawing on the insights gained so far, it appears that today’s 'hybrid' language technology mixing deep processing with statistical methods will be able to bridge the gap between all European languages and beyond. As this series of white papers shows, there is a dramatic difference between Europe’s member states in terms of both the maturity of the research and in the state of readiness with respect to language solutions. 
 
 META-NET’s long-term goal is to introduce high-quality language technology for all languages in order to achieve political and economic unity through cultural diversity. The technology will help tear down existing barriers and build bridges between Europe’s languages. This requires all stakeholders - in politics, research, business, and society - to unite their efforts for the future.
 
@@ -1749,7 +1757,7 @@ We cannot predict exactly what the future information society will look like. Bu
 
 \boxtext{The global economy and information space confronts us with different languages, speakers and content.}
 
-Today, we can transmit gigabytes of text around the world in a few seconds before we recognise that it is in a language we do not understand. According to a recent report from the European Commission, 57\% of Internet users in Europe purchase goods and services in languages that are not their native language. (English is the most common foreign language followed by French, German and Spanish.) 55\% of users read content in a foreign language while only 35\% use another language to write e-mails or post comments on the Web.\cite{EC1} A few years ago, English might have been the lingua franca of the Web—the vast majority of content on the Web was in English—but the situation has now drastically changed. The amount of online content in other European (as well as Asian and Middle Eastern) languages has exploded.
+Today, we can transmit gigabytes of text around the world in a few seconds before we recognise that it is in a language we do not understand. According to a recent report from the European Commission, 57\% of Internet users in Europe purchase goods and services in non-native languages. (English is the most common foreign language followed by French, German and Spanish.) 55\% of users read content in a foreign language while only 35\% use another language to write e-mails or post comments on the Web.\cite{EC1} A few years ago, English might have been the lingua franca of the Web—the vast majority of content on the Web was in English—but the situation has now drastically changed. The amount of online content in other European (as well as Asian and Middle Eastern) languages has exploded.
 
 Surprisingly, this ubiquitous digital divide due to language borders has not gained much public attention; yet, it raises a very pressing question: Which European languages will thrive in the networked information and knowledge society, and which are doomed to disappear?
 
@@ -2197,6 +2205,24 @@ pictures and sounds. Films may contain language in spoken and written
 form. Thus, speech and text technologies overlap and interact with many
 other technologies that facilitate the processing of multi-modal
 communication and multimedia documents.
+%FIXME translation for part below required
+In this section, we will discuss the main application areas of language technology, i.\,e., language checking, web search, speech interaction, and machine translation. These applications and basic technologies include 
+
+\begin{itemize}
+\item spelling correction
+\item authoring support
+\item computer-assisted language learning
+\item information retrieval 
+\item information extraction
+\item text summarisation
+\item question answering
+\item speech recognition 
+\item speech synthesis 
+\end{itemize}
+
+Language technology is an established area of research with an extensive set of introductory literature. The interested reader is referred to the following references:  \cite{carstensen-etal1, jurafsky-martin01, manning-schuetze1, lt-world1, lt-survey1}.
+
+Before discussing the above application areas, we will briefly describe the architecture of a typical LT system.
 
 \begin{figure*}[htb]
   \colorrule{grey3}{\textwidth}{1.5pt}
@@ -2212,9 +2238,9 @@ communication and multimedia documents.
 Typical software applications for language processing consist of several components that mirror different aspects of language and of the task they implement. Figure \ref{fig:textprocessingarch_en} displays a highly simplified architecture that can be found in a text processing system. The first three modules deal with the structure and meaning of the text input:
 
 \begin{enumerate}
-\item Pre-processing: cleaning up the data, removing formatting, detecting the input language, detecting if the text lacks diacritics, etc.
-\item Grammatical analysis: finding the verb and its objects, reflexive pronouns, etc.;  detecting the sentence structure.
-\item Semantic analysis: disambiguation (Which meaning of \emph{mier} is the right one in a given context?), resolving anaphora and referring expressions like \emph{on}, \emph{to auto}, etc.; representing the meaning of the sentence in a machine-readable way
+\item Pre-processing: cleans the data, analyses or removes formatting, detects the input languages, detects if the text lacks diacritics and so on.
+\item Grammatical analysis: finds the verb, its objects, modifiers and other sentence elements; detects the sentence structure.
+\item Semantic analysis: disambiguation (Which meaning of \emph{mier} is the right one in a given context?), resolving anaphora and referring expressions like \emph{on}, \emph{to auto}, etc.; representing the meaning of the sentence in a machine-readable way.
 \end{enumerate}
 
 Task-specific modules then perform many different operations such as
@@ -2227,12 +2253,9 @@ applications in a generally understandable way.
 
 After introducing the core application areas, we will give a short
 overview of the situation in language technology research and education,
-concluding with an overview of past and ongoing research programs. At
-the end of this section, we will present an expert estimation on the
+concluding with an overview of past and ongoing research programs. Finally, we will present an expert estimation on the
 situation regarding core language technology tools and resources on a
-number of dimensions such as availability, maturity, or quality. This
-table gives a good overview on the situation of language technology for
-Slovak.
+number of dimensions such as availability, maturity, or quality. The general situation of LT for the Slovak language is summarised in figure~\ref{fig:lrlttable_en} (p.~\pageref{fig:lrlttable_en}) at the end of this chapter. This table lists all tools and resources that are boldfaced in the text. LT support for Slovak is also compared to other languages that are part of this series.
 
 \begin{figure*}[ht]
   \colorrule{grey3}{\textwidth}{1.5pt}
@@ -2345,7 +2368,7 @@ At its core, Speech technology comprises the following four different technologi
 
 One of the major challenges is to have an ASR system recognising the words uttered by a user as precisely as possible. This requires either a restriction of the range of possible user utterances to a limited set of keywords, or the manual creation of language models that cover a large range of natural language user utterances. A fundamental requirement for good performance is also a well trained acoustic model based on a huge amount of recorded data covering different accents, age groups, genders etc. Whereas the former results in a rather rigid and inflexible usage of a VUI and possibly causes a poor user acceptance, the creation, tuning and maintenance of acoustic and language models may increase the costs significantly. However, VUIs that employ language models and initially allow a user to flexibly express their intent – evoked by a ‘How may I help you’ greeting – show both a higher automation rate and higher user acceptance and may therefore be considered as advantageous over a less flexibly directed dialogue approach. An exception to the above mentioned are  so-called embedded systems. They require a  small set of commands and the usage of language models in such cases is a disadvantage. Embedded systems are today still successfully built with grammars. 
 
-For the output part of a VUI, companies tend to use pre-recorded utterances of professional – ideally corporate – speakers a lot. Static utterances in which the wording does not depend on the particular contexts of use or the personal data of the given users will result in a rich user experience. However, the more dynamic the content an utterance needs to consider, the more the user experience may suffer from a poor prosody resulting from concatenating single audio files. In contrast, today’s TTS systems prove superior, though optimizable, regarding the prosodic naturalness of dynamic utterances.  
+For the output part of a VUI, companies tend to use utterances pre-recorded by professional – ideally corporate – speakers a lot. Static utterances in which the wording does not depend on the particular contexts of use or the personal data of the given users will result in a rich user experience. However, the more dynamic the content an utterance needs to consider, the more the user experience may suffer from a poor prosody resulting from concatenating single audio files. In contrast, today’s TTS systems prove superior, though optimizable, regarding the prosodic naturalness of dynamic utterances.  
 
 Regarding the market for Speech technology, the last decade underwent a strong standardisation of the interfaces between the different technology components, as well as by standards for creating particular software artefacts for a given application. There also has been strong market consolidation in the last ten years, particularly in the field of ASR and TTS. Here, the national markets in the G20 countries – i.e. economically strong countries with a considerable population - are dominated by few big players worldwide led mainly by Nuance, Google and Microsoft. 
 
@@ -2371,7 +2394,7 @@ Looking beyond today’s state of technology, there will be significant changes 
 
 The idea of using digital computers for the translation of natural languages came up in 1946 by A. D. Booth and was followed by substantial funding for research in this area in the 1950s and beginning again in the 1980s. Nevertheless, \underbar{Machine Translation} (MT) still fails to fulfil the high expectations it gave rise to in its early years. 
 
-At its basic level, MT simply substitutes words in one natural language with words in another. This can be useful in subject domains with a very restricted, formulaic language, e.g., weather reports. However, for a good translation of less standardised texts, larger text units (phrases, sentences, or even whole passages) need to be matched to their closest counterparts in the target language. The major difficulty here lies in the fact that human language is ambiguous, which yields challenges on multiple levels, e.g., \underbar{word sense disambiguation} on the lexical level (‘Leopard’ can mean an animal or an operating system) or the attachment of attributes on the syntactic level as in:
+At its basic level, MT simply substitutes words in one natural language with words in another. This can be useful in subject domains with a very restricted, formulaic language, e.g., weather reports. However, for a good translation of less standardised texts, larger text units (phrases, sentences, or even whole passages) need to be matched to their closest counterparts in the target language. The major difficulty here lies in the fact that human language is ambiguous, which yields challenges on multiple levels, e.g., \underbar{word sense disambiguation} at the lexical level (‘Leopard’ can mean an animal or an operating system) or the attachment of attributes on the syntactic level as in:
 
 \begin{verse}
 {\em Otcovi priatelia neprišli, moji áno.}\\
@@ -2389,7 +2412,7 @@ As the strengths and weaknesses of knowledge- and data-driven MT are complementa
 
 In the 1990s a prototype of MT between closely related languages was proposed for the pair Czech and Slovak at Charles University in Prague.
 
-TEOS Trenčín markets the first practical multilingual MT software for the Slovak language, bundled with their PC dictionary software. However, since the system did not use any further linguistic analysis and simply substituted words from one language with words in the other language (mostly limited to lemmas), its usability was limited to languages that do not have much morphology – i.e. English. A later version allowed to translate webpages on the fly, a functionality that is particularly useful in the English$\rightarrow$Slovak translation, which coincidentally was the only translation direction that “worked”.
+TEOS Trenčín markets the first practical multilingual MT software for the Slovak language, bundled with their PC dictionary software. However, since the system did not use any further linguistic analysis and simply substituted words from one language with words in the other language (mostly limited to lemmas), its usability was limited to languages that do not have much morphology – i.\,e.~English. A later version allowed to translate webpages on the fly, a functionality that is particularly useful in the English$\rightarrow$Slovak translation, which coincidentally was the only translation direction that “worked”.
 
 The quality of MT systems is still considered to have a huge improvement potential. Challenges include the adaptability of the language resources to a given subject domain or user area and the integration into existing workflows with term bases and translation memories. In addition, most of the current systems (not limited to the Slovak language) are English-centred. In particular, Google Translator offers the best translation quality for translations from/to English.
 
@@ -2397,10 +2420,17 @@ The quality of MT systems is still considered to have a huge improvement potenti
 
 The availability of large amounts of bilingual texts is really the key in statistical MT. For Slovak, corpora of parallel texts with several other languages are currently being created. The largest data – in total several million pairs of sentences – is available in the Slovak-Czech and Slovak-English parallel corpora compiled at the Ľ. Štúr Institute of Linguistics. The corpora contain mostly fiction and are automatically sentence aligned.
 
+Figure~\ref{fig:euromatrix_de} (p.~\pageref{fig:euromatrix_de}), which was prepared during the EC Euromatrix+ project, shows the pair-wise performances obtained for 22 of the 23 official EU languages (Irish was not compared). The results are ranked according to a BLEU score, which indicates higher scores for better translations \cite{bleu1}. A human translator would normally achieve a score of around 80 points.
+
 \subsection{Other Application Areas}
 Building Language Technology applications involves a range of subtasks that do not always surface at the level of interaction with the user, but provide significant service functionalities ‘under the hood’ of the system. Therefore, they constitute important research issues that have become individual sub-disciplines of Computational Linguistics in academia. 
 
-\underbar{Question answering} has become an active area of research, for which annotated \underbar{corpora} have been built and scientific competitions have been started. The idea is to move from a keyword-based search (to which the engine responds with a whole collection of potentially relevant documents) to the scenario of the user asking a concrete question and the system providing a single answer: ‘At what age did Neil Armstrong step on the moon?’ – ’38’. While this is obviously related to the aforementioned core area Web Search, question answering nowadays is primarily an umbrella term for research questions such as what \emph{types} of questions should be distinguished and how they should be handled, how a set of documents that potentially contain the answer can be analysed and compared (do they give conflicting answers?), and how specific information – the answer – can be reliably extracted from a document, without unduly ignoring the context. 
+\underbar{Question answering} has become an active area of research, for which annotated \underbar{corpora} have been built and scientific competitions have been started. The idea is to move from a keyword-based search (to which the engine responds with a whole collection of potentially relevant documents) to the scenario of the user asking a concrete question and the system providing a single answer:
+\begin{itemize}
+	\item[] \textit{Question: How old was Neil Armstrong when he stepped on the moon?}
+	\item[] \textit{Answer: 38.}
+\end{itemize}
+While this is obviously related to the aforementioned core area Web Search, question answering nowadays is primarily an umbrella term for research questions such as what \emph{types} of questions should be distinguished and how they should be handled, how a set of documents that potentially contain the answer can be analysed and compared (do they give conflicting answers?), and how specific information – the answer – can be reliably extracted from a document, without unduly ignoring the context. 
 
 This is in turn related to the \underbar{information extraction} (IE) task, an area that was extremely popular and influential at the time of the ‘statistical turn’ in Computational Linguistics in the early 1990s. IE aims at identifying specific pieces of information in specific classes of documents; this could be e.\,g.~the detection of the key players in company takeovers as reported in newspaper stories. Another scenario that has been worked on is reports on terrorist incidents, where the problem is to map the text to a template specifying the perpetrator, the target, time and location of the incident and the results of the incident. Domain-specific template-filling is the central characteristic of IE, which for this reason is another example of a ‘behind the scenes’ technology that constitutes a well-demarcated research area but for practical purposes then needs to be embedded into a suitable application environment. 
 
@@ -2468,9 +2498,9 @@ language processing of the Slovak language. They paved the way for further
 research and commercial projects, but the need for additional research and its funding is clearly necessary.
 
 \subsection{Availability of Tools and Resources}
-The table \ref{tab:lrlttable-en} summarises the current state of language technology support for the Slovak language. The rating for existing tools and resources was generated by leading experts in the field who provided estimates based on a scale from 0 (very low) to 6 (very high) according to seven criteria.
+The table \ref{fig:lrlttable_en} summarises the current state of language technology support for the Slovak language. The rating for existing tools and resources was generated by leading experts in the field who provided estimates based on a scale from 0 (very low) to 6 (very high) according to seven criteria.
 
-\begin{table*}[htb]
+\begin{figure*}[htb]
 \centering
 
 \begin{tabular}{>{\columncolor{orange1}}p{.33\linewidth}@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c}
@@ -2502,8 +2532,8 @@ Lexical resources 	&3	&2	&3	&4	&3	&4	&3 \\ \addlinespace
 Grammars 		&2	&3	&3	&2	&1	&2	&1 \\
 \end{tabular}
 \caption{State of language technology support for Slovak}
-\label{tab:lrlttable-en}
-\end{table*}
+\label{fig:lrlttable_en}
+\end{figure*}
 
 \begin{enumerate}
 \item Quantity: Does a tool/resource exist for the language at hand? The more tools/resources exist, the higher the rating.
@@ -2609,7 +2639,7 @@ Norwegian \newline
 Polish \newline 
 Swedish \newline
 Serbian \newline 
-Slovak \newline 
+\textbf{Slovak} \newline 
 Slovene \newline 
 Hungarian  \newline
 & \vspace*{0.5mm}Icelandic \newline  
@@ -2672,7 +2702,7 @@ Norwegian \newline
 Portuguese \newline 
 Swedish \newline 
 Serbian \newline 
-Slovak \newline 
+\textbf{Slovak} \newline 
 Slovene \newline 
 Czech \newline
 \end{tabular}
@@ -2720,7 +2750,7 @@ Czech \newline
   Portuguese \newline 
   Romanian \newline 
   Swedish \newline 
-  Slovak \newline 
+  \textbf{Slovak} \newline 
   Slovene \newline 
   Czech \newline 
   Hungarian \newline 
@@ -2766,7 +2796,9 @@ Czech \newline
     Swedish \newline 
     Czech \newline 
     Polish \newline
-    Hungarian 
+    Hungarian \newline
+    Italian \newline
+    Spanish
 & \vspace*{0.5mm} Basque\newline 
     Bulgarian\newline 
     Danish \newline 
@@ -2780,7 +2812,7 @@ Czech \newline
     Portuguese \newline 
     Romanian \newline 
     Serbian \newline 
-    Slovak \newline 
+    \textbf{Slovak} \newline 
     Slovene \newline
 &  \vspace*{0.5mm} Irish \newline 
     Icelandic \newline 
@@ -2810,7 +2842,7 @@ LT support was measured according to the following criteria:
 \end{itemize} 
 
 \subsection{Conclusions}
-In this series of white papers, an initial effort has been made to assess support for language technology for many European languages. This makes it possible to compare the situation across languages at a high-level, and to identify gaps and needs.
+\emph{In this series of white papers, we have made an important effort by assessing the language technology support for 30 European languages, and by providing a high-level comparison across these languages. By identifying the gaps, needs and deficits, the European language technology community and its related stakeholders are now in a position to design a large scale research and development programme aimed at building a truly multilingual, technology-enabled communication across Europe.}
 
 This white paper demonstrates the existence of the quality environment for
 linguistic research in Slovakia, despite the technology industry here is not
