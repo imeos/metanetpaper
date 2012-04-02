@@ -4,16 +4,40 @@ preamble:
 
 content:
 - abkürzungen s.r.o , a.s. 
-- \footnote{} to \cite{}
 - Chapter 5 retranslation
-- sort membertable
 - Preface: add pagereferences; differences in last 2 parts
+
 - Chapter 4:
 	- inserted euromatrix+ figure; not mentioned in text
 	- speechcluster headings
 	- underline -> bold
 	- 11\,th -> 11^{th} , etc
+	- in 4.0 added 'In this section, we will discuss the main application areas of language technology, i.\,e., language checking, web search, speech interaction, and machine translation. These applications and basic technologies include 
+
+	\begin{itemize}
+	\item spelling correction
+	\item authoring support
+	\item computer-assisted language learning
+	\item information retrieval 
+	\item information extraction
+	\item text summarisation
+	\item question answering
+	\item speech recognition 
+	\item speech synthesis 
+	\end{itemize}
+
+	Language technology is an established area of research with an extensive set of introductory literature. The interested reader is referred to the following references:  \cite{carstensen-etal1, jurafsky-martin01, manning-schuetze1, lt-world1, lt-survey1}.
+
+	%?? Before discussing the above application areas, we will briefly describe the architecture of a typical LT system.' - needs to be translated
+
+	- 4.2.4 added at the end: 'Figure~\ref{fig:euromatrix_de} (p.~\pageref{fig:euromatrix_de}), which was prepared during the EC Euromatrix+ project, shows the pair-wise performances obtained for 22 of the 23 official EU languages (Irish was not compared). The results are ranked according to a BLEU score, which indicates higher scores for better translations \cite{bleu1}. A human translator would normally achieve a score of around 80 points.' -- requires translation
+	- Armstrong BSP. (slovak): translate Question, Answer
 	
+	- 4.1 replaced last sentence with 'The general situation of LT for the X language is summarised in figure~\ref{fig:lrlttable_en} (p.~\pageref{fig:lrlttable_en}) at the end of this chapter. This table lists all tools and resources that are boldfaced in the text. LT support for Slovak is also compared to other languages that are part of this series.' -- requires translation
+	
+	- 4.8 replaced first sentence with '\emph{In this series of white papers, we have made an important effort by assessing the language technology support for 30 European languages, and by providing a high-level comparison across these languages. By identifying the gaps, needs and deficits, the European language technology community and its related stakeholders are now in a position to design a large scale research and development programme aimed at building a truly multilingual, technology-enabled communication across Europe.}
+' -- requires translation
+
 graphics:
 - replace graphic for 'Map of Slovak Dialects' with vectorgraphic (or if
   impossible with a bitmap-graphic of at least 300dpi)
