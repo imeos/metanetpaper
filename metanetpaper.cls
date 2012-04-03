@@ -724,7 +724,7 @@
         }
       \end{minipage}
       % Authors
-      \begin{Parallel}[c]{81mm}{77mm}
+      \begin{Parallel}[c]{83mm}{75mm}
         \ParallelLText{
           \
         }
@@ -784,7 +784,7 @@
         }
       \end{minipage}
       % Authors
-      \begin{Parallel}[c]{81mm}{77mm}
+      \begin{Parallel}[c]{83mm}{75mm}
         \ParallelLText{
           \
         }
