@@ -652,16 +652,16 @@
     \RequirePackage{varioref}
     \RequirePackage{hyperref}
     \hypersetup{
-        colorlinks=true,       % false: boxed links; true: colored links
-        linkcolor=blue,          % color of internal links
-        citecolor=blue,        % color of links to bibliography
-        filecolor=blue,      % color of file links
-        urlcolor=blue           % color of external links
+        colorlinks=true,  % false: boxed links; true: colored links
+        linkcolor=blue,   % color of internal links
+        citecolor=blue,   % color of links to bibliography
+        filecolor=blue,   % color of file links
+        urlcolor=blue     % color of external links
     }
   }
   
   % Define papersize for cover 210x279mm + 0mm bleed
-  \geometry{paperwidth=210mm, paperheight=279mm, top=24mm, bottom=34mm, left=23mm, right=23mm}%
+  \geometry{paperwidth=210mm, paperheight=279mm, top=24mm, bottom=31mm, left=23mm, right=23mm}%
   
   \setfootwidth[-22mm]{paper}
   \lefoot[\pagemark]{}
@@ -803,11 +803,11 @@
       \end{Parallel}
       \vfill
        % Left column
-        \begin{minipage}[t]{81mm}\ \end{minipage}
+        \begin{minipage}[t]{83mm}\ \end{minipage}
         % spacing between colums
         \begin{minipage}[t]{5mm}\ \end{minipage}
         % Right column
-        \begin{minipage}[t]{85mm}
+        \begin{minipage}[t]{83mm}
           \textsf{\color{red}\@editors}
         \end{minipage}
       \clearpage
