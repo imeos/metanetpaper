@@ -415,7 +415,7 @@
 
 % Mocktitle
   % Maketitle
-\renewcommand\maketitle{%
+\renewcommand\maketitle{%  
   \begin{titlepage}%  
     % Mocktitle
     \cleardoublepage
@@ -487,7 +487,7 @@
       \begin{minipage}[t]{85mm}
         \textsf{\color{red}\@editors}
       \end{minipage}
-    \clearpage
+    \cleardoublepage
   \end{titlepage}
 }
   % Funding notices
