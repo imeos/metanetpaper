@@ -55,7 +55,7 @@
 \RequirePackage{tabularx}
 \RequirePackage{makecell}
 \RequirePackage{multirow}
-\RequirePackage{rotating}
+\RequirePackage{rotating} % Sideways text and figures
 \RequirePackage{colortbl}
 
 
@@ -566,7 +566,8 @@
           }
         \end{minipage}
         % Gutter 
-        \begin{minipage}[t]{8mm}\ \end{minipage}
+        \begin{minipage}[t]{8mm}\ 
+        \end{minipage}
         \begin{minipage}[t]{79mm}
           \color{white}%
           \textsf{%
@@ -579,7 +580,20 @@
         }
       \end{minipage}
       % Space between back and front cover
-      \begin{minipage}[t]{47mm}\ \end{minipage} 
+      \begin{minipage}[t]{20mm}\ \end{minipage}
+      \begin{minipage}[t]{10mm}%
+        \vskip-10mm
+        \rotatebox{270}{%
+          \color{white}
+          \textsf{
+            \MakeUppercase{%
+              \hskip2.2mm \protect\StrBefore{\@title}{ ---} \ \ \ --- \ \ \ %
+                \protect\StrBehind{\@title}{--- }
+            }
+          }
+        }
+      \end{minipage}
+      \begin{minipage}[t]{17mm}\ \end{minipage} 
       % Front cover
       \begin{minipage}[t]{185mm} 
         % Left column
