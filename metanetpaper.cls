@@ -8,7 +8,7 @@
 %  MM     MM   MMMMMM    MM   MM    MM            MM   MMM  MMMMMMM    MM
 %
 %
-%                - META-NET Language Whitepaper | CLASS -
+%                - META-NET Language White Paper | CLASS -
 %
 % 
 % ----------------------------------------------------------------------------
@@ -55,7 +55,7 @@
 \RequirePackage{tabularx}
 \RequirePackage{makecell}
 \RequirePackage{multirow}
-\RequirePackage{rotating}
+\RequirePackage{rotating} % Sideways text and figures
 \RequirePackage{colortbl}
 
 
@@ -415,7 +415,7 @@
 
 % Mocktitle
   % Maketitle
-\renewcommand\maketitle{%
+\renewcommand\maketitle{%  
   \begin{titlepage}%  
     % Mocktitle
     \cleardoublepage
@@ -487,7 +487,7 @@
       \begin{minipage}[t]{85mm}
         \textsf{\color{red}\@editors}
       \end{minipage}
-    \clearpage
+    \cleardoublepage
   \end{titlepage}
 }
   % Funding notices
@@ -566,7 +566,8 @@
           }
         \end{minipage}
         % Gutter 
-        \begin{minipage}[t]{8mm}\ \end{minipage}
+        \begin{minipage}[t]{8mm}\ 
+        \end{minipage}
         \begin{minipage}[t]{79mm}
           \color{white}%
           \textsf{%
@@ -579,7 +580,20 @@
         }
       \end{minipage}
       % Space between back and front cover
-      \begin{minipage}[t]{47mm}\ \end{minipage} 
+      \begin{minipage}[t]{20mm}\ \end{minipage}
+      \begin{minipage}[t]{10mm}%
+        \vskip-10mm
+        \rotatebox{270}{%
+          \color{white}
+          \textsf{
+            \MakeUppercase{%
+              \hskip2.2mm \protect\StrBefore{\@title}{ ---} \ \ \ --- \ \ \ %
+                \protect\StrBehind{\@title}{--- }
+            }
+          }
+        }
+      \end{minipage}
+      \begin{minipage}[t]{17mm}\ \end{minipage} 
       % Front cover
       \begin{minipage}[t]{185mm} 
         % Left column
@@ -652,16 +666,16 @@
     \RequirePackage{varioref}
     \RequirePackage{hyperref}
     \hypersetup{
-        colorlinks=true,       % false: boxed links; true: colored links
-        linkcolor=blue,          % color of internal links
-        citecolor=blue,        % color of links to bibliography
-        filecolor=blue,      % color of file links
-        urlcolor=blue           % color of external links
+        colorlinks=true,  % false: boxed links; true: colored links
+        linkcolor=blue,   % color of internal links
+        citecolor=blue,   % color of links to bibliography
+        filecolor=blue,   % color of file links
+        urlcolor=blue     % color of external links
     }
   }
   
   % Define papersize for cover 210x279mm + 0mm bleed
-  \geometry{paperwidth=210mm, paperheight=279mm, top=24mm, bottom=34mm, left=23mm, right=23mm}%
+  \geometry{paperwidth=210mm, paperheight=279mm, top=24mm, bottom=31mm, left=23mm, right=23mm}%
   
   \setfootwidth[-22mm]{paper}
   \lefoot[\pagemark]{}
@@ -724,7 +738,7 @@
         }
       \end{minipage}
       % Authors
-      \begin{Parallel}[c]{81mm}{77mm}
+      \begin{Parallel}[c]{83mm}{75mm}
         \ParallelLText{
           \
         }
@@ -784,7 +798,7 @@
         }
       \end{minipage}
       % Authors
-      \begin{Parallel}[c]{81mm}{77mm}
+      \begin{Parallel}[c]{83mm}{75mm}
         \ParallelLText{
           \
         }
@@ -803,11 +817,11 @@
       \end{Parallel}
       \vfill
        % Left column
-        \begin{minipage}[t]{81mm}\ \end{minipage}
+        \begin{minipage}[t]{83mm}\ \end{minipage}
         % spacing between colums
         \begin{minipage}[t]{5mm}\ \end{minipage}
         % Right column
-        \begin{minipage}[t]{85mm}
+        \begin{minipage}[t]{83mm}
           \textsf{\color{red}\@editors}
         \end{minipage}
       \clearpage
@@ -821,7 +835,7 @@
     \ThisCenterWallPaper{1}{../_media/spinepage_ebook.pdf}
     \vspace*{50mm}
     % Left column
-    \begin{minipage}[t]{83mm}
+    \begin{minipage}[t]{81mm}
       \color{grey2}%
       \textsf{%
         \@SpineLText
