@@ -547,6 +547,10 @@
   \setlength{\paperheight}{289mm}%
   \setlength{\textwidth}{380mm}%
 %  \setlength{\width}{380mm}%
+
+  % Define title for spine on cover
+  \long\def\spineTitle#1{\gdef\@spineTitle{#1}}
+  \def\@spineTitle{\@latex@warning@no@line{No \noexpand\spineTitle given}}
   
   % Titlepage
     % Maketitle
@@ -587,8 +591,7 @@
           \color{white}
           \textsf{
             \MakeUppercase{%
-              \hskip2.2mm \protect\StrBefore{\@title}{ ---} \ \ \ --- \ \ \ %
-                \protect\StrBehind{\@title}{--- }
+              \hskip2.2mm \@spineTitle
             }
           }
         }
