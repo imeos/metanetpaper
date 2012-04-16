@@ -85,6 +85,9 @@
   \newfontfamily\linguistics[Scale=0.8]{DejaVu Serif}
   
 % Own defs
+% Title for spine on cover
+\long\def\spineTitle#1{\gdef\@spineTitle{#1}}
+\def\@spineTitle{\@latex@warning@no@line{No \noexpand\spineTitle given}}
   % Editors
 \def\editors#1{\gdef\@editors{#1}}
 \def\@editors{\@latex@warning@no@line{No \noexpand\editors given}}
@@ -587,8 +590,7 @@
           \color{white}
           \textsf{
             \MakeUppercase{%
-              \hskip2.2mm \protect\StrBefore{\@title}{ ---} \ \ \ --- \ \ \ %
-                \protect\StrBehind{\@title}{--- }
+              \hskip2.2mm \@spineTitle
             }
           }
         }

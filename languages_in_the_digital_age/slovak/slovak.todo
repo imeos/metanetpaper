@@ -1,3 +1,6 @@
+Tabelle UK \\ \addlinespace -> \newline
+
+---------------MAILED
 preamble:
 - authoraffiliations
 - quotes
@@ -6,6 +9,8 @@ content:
 - abkürzungen s.r.o , a.s. 
 - Chapter 5 retranslation
 - Preface: add pagereferences; differences in last 2 parts
+
+- Chapter 3 structure
 
 - Chapter 4:
 	- inserted euromatrix+ figure; not mentioned in text
@@ -34,9 +39,12 @@ content:
 	- Armstrong BSP. (slovak): translate Question, Answer
 	
 	- 4.1 replaced last sentence with 'The general situation of LT for the X language is summarised in figure~\ref{fig:lrlttable_en} (p.~\pageref{fig:lrlttable_en}) at the end of this chapter. This table lists all tools and resources that are boldfaced in the text. LT support for Slovak is also compared to other languages that are part of this series.' -- requires translation
+	& blodfacing of tools & resources (underlines?)
 	
 	- 4.8 replaced first sentence with '\emph{In this series of white papers, we have made an important effort by assessing the language technology support for 30 European languages, and by providing a high-level comparison across these languages. By identifying the gaps, needs and deficits, the European language technology community and its related stakeholders are now in a position to design a large scale research and development programme aimed at building a truly multilingual, technology-enabled communication across Europe.}
 ' -- requires translation
+
+
 
 graphics:
 - replace graphic for 'Map of Slovak Dialects' with vectorgraphic (or if

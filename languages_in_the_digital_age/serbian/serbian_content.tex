@@ -1,4 +1,4 @@
-﻿%                                     MMMMMMMMM                                         
+%                                     MMMMMMMMM        
 %                                                                             
 %  MMO    MM   MMMMMM  MMMMMMM   MM    MMMMMMMM   MMD   MM  MMMMMMM MMMMMMM   
 %  MMM   MMM   MM        MM     ?MMM              MMM$  MM  MM         MM     
@@ -8,90 +8,23 @@
 %  MM     MM   MMMMMM    MM   MM    MM            MM   MMM  MMMMMMM    MM
 %
 %
-%            - META-NET Language White Paper | German paper -
-
-\documentclass[]{../../metanetpaper}
-
-\usepackage{booktabs}
-\usepackage{longtable}
-\usepackage{tabulary}
-\usepackage{tabularx}
-\usepackage{rotating}
-\usepackage{makecell}
-\usepackage{multirow}
-\usepackage{colortbl}
-\usepackage{polyglossia}
-\usepackage{multicol,framed,lipsum}
-\setotherlanguages{serbian,english}
-
-%!TEX TS-program = xelatex
-\RequireXeTeX %Force XeTeX check
-
-\title{Српски језик у дигиталном добу --- Serbian Language in Digital Age}
-
-\subtitle{White Paper Series --- Серија белих књига}
-
-\author{
-Duško Vitas \\
-Ljubomir Popović \\
-Cvetana Krstev \\
-Ivan Obradović \\
-Gordana Pavlović-Lažetić \\
-Mladen Stanojević
-}
-\authoraffiliation{
- Duško Vitas, {\small University of Belgrade} \\
- Ljubomir Popović, {\small University of Belgrade} \\
- Cvetana Krstev, {\small University of Belgrade} \\
- Ivan Obradović, {\small University of Belgrade} \\
- Gordana Pavlović-Lažetić, {\small University of Belgrade} \\
- Mladen Stanojević, {\small Pupin Institute}
-}
-\editors{
-  Georg Rehm, Hans Uszkoreit\\ (urednici, \textcolor{grey1}{editors})
-}
+%            - META-NET Language White Paper | Serbian content -
+% 
+% ----------------------------------------------------------------------------
 
 \begin{document}
 
-\renewcommand*{\figureformat}{\sffamily\thefigure\autodot}
-
 \maketitle
 
-% ---------------- Mocktitle ------------------
+% --------------------------------------------------------------------------
+\bsection*{Предговор --- Preface}
+
 \null
 \pagestyle{empty} 
 
-\centerline{META-NET -- office@meta-net.eu -- http://www.meta-net.eu}
-
-\vfill
-
-\pagestyle{empty} 
-
-\begin{small}
-Израду ове беле књиге финансирали су Седми оквирни програм (FP7) и Програм подршке политици информационо-комуникационих технологија Европске комисије преко уговора T4ME (Уговор о финансирању 249119), CESAR (Уговор о финансирању 271022), METANET4U (Уговор о финансирању 270893) и META-NORD (Уговор о финансирању 270899).
-\end{small}
-
-\bigskip
-\begin{small}
-  The development of this white paper has been funded by the Seventh
-  Framework Programme and the ICT Policy Support Programme of the
-  European Commission under the contracts T4ME (Grant Agreement 249119),
-  CESAR (Grant Agreement 271022), METANET4U (Grant Agreement 270893)
-  and META-NORD (Grant Agreement 270899).
-\end{small}
-
-\clearpage
-% ------------- End of mocktitle ----------------
-
 \pagenumbering{Roman} 
-\setcounter{page}{5}
+\setcounter{page}{3}
 \pagestyle{scrheadings}
-
-\cleardoublepage
-
-% --------------------------------------------------------------------------
-
-\bsection*{Предговор --- Preface}
 
 \begin{Parallel}[c]{78mm}{78mm}
 \ParallelLText{
@@ -2495,8 +2428,8 @@ META-NET launched on 1 February 2010 with the goal of advancing research in lang
 \addtocontents{toc}{\protect\bigskip}
 
 \bsection[Литература --- References]{Литература --- References}
-\bibliographystyle{plain}
-\bibliography{references}
+\bibliographystyle{unsrt}
+\bibliography{serbian_references}
   
 \cleardoublepage
 
@@ -2705,5 +2638,3 @@ META-NET launched on 1 February 2010 with the goal of advancing research in lang
    \addlinespace \bottomrule
 \end{tabulary}
 \end{center}
-
-\end{document}
