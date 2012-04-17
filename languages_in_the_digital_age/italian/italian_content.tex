@@ -1,4 +1,4 @@
-%                                     MMMMMMMMM                                         
+%                                     MMMMMMMMM        
 %                                                                             
 %  MMO    MM   MMMMMM  MMMMMMM   MM    MMMMMMMM   MMD   MM  MMMMMMM MMMMMMM   
 %  MMM   MMM   MM        MM     ?MMM              MMM$  MM  MM         MM     
@@ -8,86 +8,23 @@
 %  MM     MM   MMMMMM    MM   MM    MM            MM   MMM  MMMMMMM    MM
 %
 %
-%            - META-NET Language White Paper | Italian paper -
-
-\documentclass[]{../../metanetpaper}
-
-\usepackage{booktabs}
-\usepackage{longtable}
-\usepackage{tabulary}
-\usepackage{tabularx}
-\usepackage{rotating}
-\usepackage{makecell}
-\usepackage{multirow}
-\usepackage{colortbl}
-\usepackage{polyglossia}
-\usepackage{multicol,framed,lipsum}
-\setotherlanguages{german,english}
-
-%!TEX TS-program = xelatex
-\RequireXeTeX %Force XeTeX check
-
-\title{La Lingua Italiana nell'Era Digitale --- The Italian Language in the Digital Age}
-
-\subtitle{White Paper Series --- Collana Libri Bianchi}
-
-\author{
-Nicoletta Calzolari\\
-Bernardo Magnini\\
-Claudia Soria\\
-Manuela Speranza
-}
-\authoraffiliation{
-Nicoletta Calzolari~ {\small CNR-ILC}\\
-Bernardo Magnini~ {\small FBK}\\
-Claudia Soria~ {\small CNR-ILC}\\
-Manuela Speranza~ {\small FBK}
-}
-\editors{
-  Georg Rehm, Hans Uszkoreit\\(curatori, \textcolor{grey1}{editors})
-}
+%            - META-NET Language White Paper | Italian content -
+% 
+% ----------------------------------------------------------------------------
 
 \begin{document}
 
-\renewcommand*{\figureformat}{\sffamily\thefigure\autodot}
-
 \maketitle
 
-% ---------------- Mocktitle ------------------
+% --------------------------------------------------------------------------
+\bsection*{Prefazione --- Preface}
+
 \null
 \pagestyle{empty} 
 
-\centerline{META-NET -- office@meta-net.eu -- http://www.meta-net.eu}
-
-\vfill
-
-\begin{small}
-  \selectlanguage{italian}
-  Questo Libro Bianco \`{e} stato finanziato dal Settimo Programma Quadro e dal Programma ICT Policy Support della Commissione Europea nell'ambito dei contratti T4ME (Grant Agreement 249119), CESAR (Grant Agreement 271022), METANET4U (Grant Agreement 270893) e META-NORD (Grant Agreement 270899).
-\end{small}
-
-\bigskip
-\begin{small}
-  \selectlanguage{english}
-  The development of this white paper has been funded by the Seventh
-  Framework Programme and the ICT Policy Support Programme of the
-  European Commission under the contracts T4ME (Grant Agreement 249119),
-  CESAR (Grant Agreement 271022), METANET4U (Grant Agreement 270893)
-  and META-NORD (Grant Agreement 270899).
-\end{small}
-
-\clearpage
-% ------------- End of mocktitle ----------------
-
 \pagenumbering{Roman} 
-\setcounter{page}{5}
+\setcounter{page}{3}
 \pagestyle{scrheadings}
-
-\cleardoublepage
-
-% --------------------------------------------------------------------------
-
-\bsection*{Prefazione --- Preface}
 
 \begin{Parallel}[c]{78mm}{78mm}
 \ParallelLText{\selectlanguage{italian}
@@ -3181,8 +3118,8 @@ META-NET launched on 1 February 2010 with the goal of advancing research in lang
 \addtocontents{toc}{\protect\bigskip}
 
 \bsection[Riferimenti bibliografici -- References]{Riferimenti bibliografici --- References}
-\bibliographystyle{plain}
-\bibliography{references}
+\bibliographystyle{unsrt}
+\bibliography{italian_references}
   
 \cleardoublepage
 
@@ -3298,5 +3235,3 @@ META-NET launched on 1 February 2010 with the goal of advancing research in lang
   Tedesco & German & Deutsch\\
   Ungherese & Hungarian & magyar\\ \addlinespace \bottomrule
 \end{tabularx}
-
-\end{document}

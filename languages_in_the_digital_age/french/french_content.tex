@@ -1,111 +1,30 @@
-%                                     MMMMMMMMM                                         
+%                                     MMMMMMMMM        
 %                                                                             
-%  MM    MM   MMMMMM  MMMMMMM   MM     MMMMMMMM   MMD   MM  MMMMMMM MMMMMMM   
-%  MMM   MMM   MM        MM     MMM               MMM   MM  MM         MM     
-%  MMMM  MMM   MM        MM     MMMM    MMMMMMM   MMMMD MM  MM         MM     
+%  MMO    MM   MMMMMM  MMMMMMM   MM    MMMMMMMM   MMD   MM  MMMMMMM MMMMMMM   
+%  MMM   MMM   MM        MM     ?MMM              MMM$  MM  MM         MM     
+%  MMMM 7MMM   MM        MM     MM8M    MMMMMMM   MMMMD MM  MM         MM     
 %  MM MMMMMM   MMMMMM    MM    MM  MM             MM MMDMM  MMMMMM     MM     
 %  MM  MM MM   MM        MM    MMMMMM             MM  MMMM  MM         MM     
 %  MM     MM   MMMMMM    MM   MM    MM            MM   MMM  MMMMMMM    MM
 %
 %
-%            - META-NET Language White Paper | German paper -
-
-\documentclass[]{../metanetpaper}
-
-\usepackage{booktabs}
-\usepackage{longtable}
-\usepackage{tabulary}
-\usepackage{tabularx}
-\usepackage{rotating}
-\usepackage{makecell}
-\usepackage{multirow}
-\usepackage{colortbl}
-\usepackage{polyglossia}
-\usepackage{multicol,framed,lipsum}
-% do not put french as default language since it duplicates the table of content title
-\setotherlanguages{french,english}
-
-% Since the following does not work
-%\lccode`\{\mbox '}=`\{\mbox '}
-%\hyphenation{ l{\mbox '}information }
-% I used the following HACK
-% to prevent the hyphenation to cut words just after the apostrophe
-%cat old_french.tex | sed -e "s/'/{\\\mbox &}/g" > new_french.tex
-
-%!TEX TS-program = xelatex
-\RequireXeTeX %Force XeTeX check
-
-\title{La langue française {\mbox ~} à l{\mbox '}Ère \mbox{~~}\mbox{~~} du numérique --- The French Language in the Digital Age}
-
-\subtitle{White Paper Series --- Collection de Livres Blancs}
-
-\author{
-  Joseph Mariani \\
-  Patrick Paroubek \\
-  Gil Francopoulo \\
-  Aurélien Max \\
-  François Yvon \\
-  Pierre Zweigenbaum \\
-}
-\authoraffiliation{
-  Joseph Mariani~ \\ \hspace{1.0in}{\small IMMI-CNRS \& LIMSI-CNRS}\\
-  Patrick Paroubek~ \\ \hspace{1.0in}{\small LIMSI-CNRS}\\
-  Gil Francopoulo~ \\ \hspace{1.0in}{\small IMMI-CNRS \& TAGMATICA}\\
-  Aurélien Max~ \\ \hspace{1.0in}{\small LIMSI-CNRS \& U. Paris Sud 11}\\
-  François Yvon~ \\ \hspace{1.0in}{\small LIMSI-CNRS \& U. Paris Sud 11}\\
-  Pierre Zweigenbaum~ \\ \hspace{1.0in}{\small LIMSI-CNRS}\\
-}
-\editors{
-  Georg Rehm, Hans Uszkoreit\\(Herausgeber, \textcolor{grey1}{editors})
-}
+%            - META-NET Language White Paper | French content -
+% 
+% ----------------------------------------------------------------------------
 
 \begin{document}
 
-\renewcommand*{\figureformat}{\sffamily\thefigure\autodot}
-
 \maketitle
 
-% ---------------- Mocktitle ------------------
+% --------------------------------------------------------------------------
+\bsection*{Préface --- Preface}
+
 \null
 \pagestyle{empty} 
 
-\centerline{META-NET -- office@meta-net.eu -- http://www.meta-net.eu}
-
-\vfill
-
-\begin{small}
-  \selectlanguage{french} 
-  La création de ce livre blanc a été financée
-  grâce aux moyens alloués par le septième programme-cadre (7\raise+.5ex\hbox{ème} PCRD) et le
-  programme de soutien à la politique pour les technologies de
-  l{\mbox '}information et de la communication (TIC) de la Commission Européenne
-  dans le cadre des contrats T4ME (convention d{\mbox '}aide 249119),
-  CESAR (convention d{\mbox '}aide 271022), METANET4U (convention
-  d{\mbox '}aide 270893) et META-NORD (convention d{\mbox '}aide 270899).
-\end{small}
-
-\bigskip
-\begin{small}
-  \selectlanguage{english}
-  The development of this white paper has been funded by the Seventh
-  Framework Programme and the ICT Policy Support Programme of the
-  European Commission under the contracts T4ME (Grant Agreement 249119),
-  CESAR (Grant Agreement 271022), METANET4U (Grant Agreement 270893)
-  and META-NORD (Grant Agreement 270899).
-\end{small}
-
-\clearpage
-% ------------- End of mocktitle ----------------
-
 \pagenumbering{Roman} 
-\setcounter{page}{5}
+\setcounter{page}{3}
 \pagestyle{scrheadings}
-
-\cleardoublepage
-
-% --------------------------------------------------------------------------
-
-\bsection*{Préface --- Preface}
 
 \begin{Parallel}[c]{78mm}{78mm}
 \ParallelLText{\selectlanguage{french} 
@@ -5130,9 +5049,9 @@ Nicholas Ostler, The last lingua franca: English until the return of Babel, 2010
 
 
 \bsection[Références -- References]{Références --- References}
-\bibliographystyle{plain}
+\bibliographystyle{unsrt}
 %\bibliography{references}
-\bibliography{french}
+\bibliography{french_references}
   
 \cleardoublepage
 
@@ -5249,5 +5168,3 @@ Nicholas Ostler, The last lingua franca: English until the return of Babel, 2010
   &Suédois & Swedish & svenska& \\
   &Tchèque & Czech & čeština& \\
 \end{tabularx}
-
-\end{document}
