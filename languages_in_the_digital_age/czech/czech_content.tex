@@ -321,12 +321,19 @@ Jazykové technologie jsou informační technologie, které jsou specializované
   \label{fig:ltincontext_de}
   \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
+<<<<<<< Updated upstream
 Velké části jazykových technologií proto nelze zařadit ani pod technologii mluvené řeči, ani textu. Mezi ně patří technologie, které spojují jazyk a myšlení. Obrázek 1 ukazuje oblast jazykových technologií. V rámci komunikace směšujeme jazyk s jinými způsoby komunikace a jinými informačními zdroji. Kombinujeme „řeč“ s gesty a výrazy obličeje. Digitální texty mohou obsahovat obrázky, grafy, zvuky apod. Filmy mohou obsahovat jazyk v mluvené i psané formě. Řečové a textové technologie se tedy překrývají a vzájemně ovlivňují s mnoha dalšími technologiemi, které usnadňují zpracování multimodální komunikace a multimediálních dokumentů.
 
 %FIXME add translation for:
 % Language technology is an established area of research with an extensive set of introductory literature. The interested reader is referred to the following references: \cite{carstensen-etal1, jurafsky-martin01, manning-schuetze1, lt-world1, lt-survey1}.
 %%%DONE by BH March 29
 Jazykové technologie jsou zavedeným vědním oborem s rozsáhlým seznamem úvodní literatury. Zájemcům doporučujeme následující práce: \cite{carstensen-etal1, jurafsky-martin01, manning-schuetze1, lt-world1, lt-survey1}.
+=======
+Velké části jazykových technologií proto nelze zařadit ani pod technologii mluvené řeči, ani textu. Mezi ně patří technologie, které spojují jazyk a myšlení. Obrázek 1 ukazuje oblast jazykových technologií. V rámci komunikace směšujeme jazyk s jinými způsoby komunikace a jinými informačními zdroji. Kombinujeme „řeč“ s gesty a výrazy obličeje. Digitální texty mohou obsahovat obrázky, grafy, zvuky apod. Filmy mohou obsahovat jazyk v mluvené i psané formě. Řečové a textové technologie se tedy překrývají a vzájemně ovlivňují s mnoha dalšími technologiemi, které usnadňují zpracování multimodální komunikace a multimediálních dokumentů.\\
+
+%FIXME add translation for:
+% Language technology is an established area of research with an extensive set of introductory literature. The interested reader is referred to the following references: \cite{carstensen-etal1, jurafsky-martin01, manning-schuetze1, lt-world1, lt-survey1}.
+>>>>>>> Stashed changes
 
 V dalším textu popíšeme architekturu typického systému jazykových technologií. Následně podáme přehled základních aplikačních oblastí a stručně shrneme situaci jazykových technologií ve výzkumu a vzdělávání v ČR. Tabulka v závěru této části poskytuje vyhodnocení situace v nástrojích a datových zdrojích jazykových technologií z několika aspektů, jako je např. dostupnost, vyzrálost a kvalita.
 %FIXME please add change sentence above according to
@@ -458,6 +465,13 @@ Na území České republiky nápad překladu prováděného počítači velmi z
 \boxtext{Základní systém strojového překladu jednoduše nahrazuje slova v jednom jazyce slovy druhého jazyka.}
 %%%DONE by BH March 29
 
+<<<<<<< Updated upstream
+=======
+%FIXMEplease add translated boxtext
+%At its basic level, Machine Translation simply substitutes words in one natural language with words in another language.
+
+Na území České republiky nápad překladu prováděného počítači velmi zaujal lingvisty a matematiky záhy po prvních pokusech s překladem ve světě (1954 v USA, 1955 v Sovětském svazu). V lednu 1960 byl proveden první pokus přeložit několik vět z angličtiny do češtiny na počítači SAPO první generace, který byl vyroben v tehdejším Československu. Za pokusy stála malá skupina badatelů z Karlovy univerzity a Výzkumného ústavu matematických strojů. Univerzitní skupina pokračovala ve vývoji metod strojového překladu i dále a pro počítače druhé generace (z NDR a SSSR) byly vytvořeny experimentální pravidlové systémy pro anglicko-český a česko-ruský překlad. Systémy byly omezeny na úzkou doménu textů a sloužily především jako potvrzení správnosti formálně zapsaných gramatických pravidel. V devadesátých letech 20. st. byl navržen prototyp překladu mezi blízkými jazyky, konkrétně mezi češtinou a slovenštinou, systém Česílko \cite{Note18}. V praxi se tento systém bohužel nepoužívá zejména kvůli náročné údržbě. Následný výzkum vkládá více nadějí do statistických metod nebo kombinace statistických a pravidlových metod.\\
+>>>>>>> Stashed changes
 V základní implementaci strojový překlad nahrazuje jednotlivá slova zdrojového jazyka slovy z jazyka cílového. Takto primitivní přístup lze s úspěchem použít jen ve velmi úzkých oblastech s jednoduchým vyjadřováním, např. v předpovědích počasí (srov. systém METEO \cite{Note19}). Pro překlad méně standardizovaných textů je nutné zohlednit větší úseky textu (fráze, věty nebo i celé pasáže). Hlavní problém pak představuje víceznačnost lidské řeči projevující se na vícero úrovních, např. u lexikálního obsazení jde o tzv. word sense disambiguation (WSD), u větného rozboru o určení řídícího členu pro předložkové skupiny (PP-attachment).
 \begin{figure*}[htb]
   \colorrule{grey3}{\textwidth}{1.5pt}
@@ -474,18 +488,28 @@ Koncem 80. let 20. st. se s levnější a větší výpočetní silou počítač
 Vzhledem k tomu, že klady a zápory statistických a pravidlových systémů se do značné míry doplňuji, panuje dnes víceméně souhlas, že je dobré je kombinovat do hybridních metod. Kombinace je přitom možné provádět několika způsoby. Nejjednodušší je přeložit větu oběma systémy a (strojově) následně zvolit jednu z těchto odpovědí. Pro delší věty však nelze očekávat dobrý výsledek. Vhodnější přístup proto kombinuje nejlepší úseky z výstupů několika systémů. To je ovšem obtížnější, protože často je těžké strojově poznat, které části výstupů si odpovídají, nehledě na nutnost správně je spojit do výstupu jediného.\\
 Alternativní, a samozřejmě obtížnější, je možnost navrhnout nový přístup k překladu, který obě metody integruje. Je například možné pravidlový systém obohatit modulem pro automatickou extrakci pravidel z dat nebo je možné statistický systém doplnit gramatickými pravidly.\\
 Zcela samostatnou otázku pak představuje úloha vyhodnocování kvality strojového překladu, ať již ručně nebo strojově. Zkušenosti ukazují, že různé přístupy překladu jsou různě úspěšné v různých ohledech: pravidlové systémy mají větší šanci zachovat význam, statistické systémy produkují výstup, který je plynulejší na úrovni krátkých sousloví. Například v úloze odpovídání na otázky sice lokální plynulost ve srovnání s jinými systémy dobře působí na uživatele, ale přesnost odpovědí může utrpět. Automatické vyhodnocování kvality (založené na porovnání výstupu MT s lidským překladem) je zcela zásadní pro vývoj zejm. statistických modelů. Ukazuje se však, že většina automatických hodnocení kvality je nespolehlivá, a to ještě výrazněji pro jazyky s bohatou morfologií. Pro vývoj systémů strojového překladu by též velmi pomohly nástroje, které klasifikují a podrobně zobrazí chyby ve výstupu.
+<<<<<<< Updated upstream
 Tabulka~\ref{fig:euromatrix_cz} (str.~\pageref{fig:euromatrix_cz}), která byla připravena v projektu Euromatrix+, obsahuje porovnání úspěšnosti po dvojicích 22 oficiálních jazyků Evropské Unie (irština nebyla porovnána).
 %FIXME please add translation of (Irish was not compared) to the last sentence.
 %%%DONE by BH March 29
 
+=======
+Tabulka~\ref{fig:euromatrix_cz} (str.~\pageref{fig:euromatrix_cz}), která byla připravena v projektu Euromatrix+, obsahuje porovnání úspěšnosti po dvojicích 22 oficiálních jazyků Evropské Unie.
+%FIXME please add translation of (Irish was not compared) to the last sentence.
+>>>>>>> Stashed changes
 \begin{figure*}[tb]
   \centering
   \setlength{\tabcolsep}{0.17em}
   \small
   \begin{tabular}{>{\columncolor{corange1}}cccccccccccccccccccccccc}
+<<<<<<< Updated upstream
     & \multicolumn{22}{>{\columncolor{corange1}}c}{Cílový jazyk --- \textcolor{grey1}{Target language}}\\\addlinespace[{-.009cm}]
     % FIXME = 'Target language' translation
     %%%DONE by BH March 29
+=======
+    & \multicolumn{22}{>{\columncolor{corange1}}c}{FIXME -- \textcolor{grey1}{Target language}}\\\addlinespace[{-.009cm}]
+    % FIXME = 'Target language' translation
+>>>>>>> Stashed changes
     \rowcolor{corange1}  & EN & BG & DE & CS & DA & EL & ES & ET & FI & FR & HU & IT & LT & LV & MT & NL & PL & PT & RO & SK & SL & SV\\
     EN & -- & \textcolor{blue}{40.5} & \textcolor{blue}{46.8} & \textcolor{green2}{52.6} & \textcolor{green2}{50.0} & \textcolor{blue}{41.0} & \textcolor{green2}{55.2} & \textcolor{purple}{34.8} & \textcolor{purple}{38.6} & \textcolor{green2}{50.1} & \textcolor{purple}{37.2} & \textcolor{green2}{50.4} & \textcolor{purple}{39.6} & \textcolor{blue}{43.4} & \textcolor{purple}{39.8} & \textcolor{green2}{52.3} & \textcolor{blue}{49.2} & \textcolor{green2}{55.0} & \textcolor{blue}{49.0} & \textcolor{blue}{44.7} & \textcolor{green2}{50.7} & \textcolor{green2}{52.0}\\
     BG & \textcolor{green}{61.3} & -- & \textcolor{purple}{38.7} & \textcolor{purple}{39.4} & \textcolor{purple}{39.6} & \textcolor{purple}{34.5} & \textcolor{blue}{46.9} & \textcolor{red3}{25.5} & \textcolor{red3}{26.7} & \textcolor{blue}{42.4} & \textcolor{red3}{22.0} & \textcolor{blue}{43.5} & \textcolor{red3}{29.3} & \textcolor{red3}{29.1} & \textcolor{red3}{25.9} & \textcolor{blue}{44.9} & \textcolor{purple}{35.1} & \textcolor{blue}{45.9} & \textcolor{purple}{36.8} & \textcolor{purple}{34.1} & \textcolor{purple}{34.1} & \textcolor{purple}{39.9}\\
@@ -514,9 +538,14 @@ Tabulka~\ref{fig:euromatrix_cz} (str.~\pageref{fig:euromatrix_cz}), která byla 
   \label{fig:euromatrix_cz}
 \end{figure*}
 
+<<<<<<< Updated upstream
 \subsection{Další aplikační oblasti}
 %FIXME new title: Other Application Areas - please translate
 %%%DONE by BH March 29
+=======
+\subsection{Informační managment/Jazykové technologie „v zákulisí“}
+%FIXME new title: Other Application Areas - please translate
+>>>>>>> Stashed changes
 Vytváření aplikací jazykových technologií zahrnuje celou řadu podúloh, které sice komunikují s uživatelem omezeně, ale poskytují zásadní funkcionality systémů. Tím formulují důležitá výzkumná témata, ze kterých vznikají samostatné disciplíny komputační lingvistiky.
 
 Například, zodpovídání otázek (question asnwering, QA) je aktivní oblastí výzkumu, pro kterou jsou připravovány anotované korpusy, organizovány soutěže atd. Cílem je posunout se od hledání na základě klíčových slov (pro které vyhledávací stroje vrací kolekci potencionálně relevantních dokumentů) k postupu, kdy uživatel položí konkrétní otázku a systém vrátí jasnou odpověď:
@@ -529,9 +558,13 @@ Zatímco toto zřetelně souvisí s výše popsanou oblastí webového hledání
 To pro změnu souvisí s úlohou extrakce informací (information extraction, IE), s oblastí, která byla nesmírně populární a významná v době „statistické otočky“ v počítačové lingvistice na počátku 90. let minulého století. Cílem IE je identifikace specifických informací ve specifických třídách dokumentů, např. detekce klíčových postav při převzetí společnosti, které jsou uváděny v novinových článcích. Jiným příkladem je podávání zpráv o teroristických incidentech, kdy úkolem je mapovat text na šablonu vymezující pachatele, cíl, čas, místo incidentu a výsledek incidentu. Doménově řízené vyplňování šablon je hlavní charakteristikou IE, což ji řadí mezi příklady technologií „v zákulisí“. Je dobře vymezenou výzkumnou oblastí, ale z praktického hlediska musí být začleněna do vhodného aplikačního prostředí.
 
 %FIXME please add translated boxtext
+<<<<<<< Updated upstream
 %%%DONE by BH March 29
 %Language technology applications often provide significant service functionalities behind the scenes of larger software systems.
 \boxtext{Aplikace jazykových technologií zajišťují značnou funkcionalitu v zákulisí větších softwarových systémů.}
+=======
+%Language technology applications often provide significant service functionalities behind the scenes of larger software systems.
+>>>>>>> Stashed changes
 
 Dvě „mezní“ oblasti, které někdy vystupují samostatně a někdy jako podpůrné komponenty, jsou shrnutí textu (text summarization, TS) a generování textu (text generation, TG). Aplikace TS dělají z delšího textu kratší text a jsou nabízeny například jako funkcionalita editoru MS Word. Většinou vycházejí ze statistiky a postupují tak, že nejdříve v textu identifikují „důležitá“ slova (tj. např. slova, která se vyskytují často v textu, ale podstatně méně často v obecném užívání jazyka) a následně určují věty, které většinu těchto „důležitých“ slov obsahují. Tyto věty jsou poté použity na sestavení shrnutí. V tomto zdaleka nejpopulárnějším postupu znamená TS extrakci vět, tj. text je zredukován na podmnožinu vět. Všechny komerční systémy tento postup aplikují.
 Alternativním přístupem je syntéza nových vět, tj. sestavení shrnutí z vět, které se v dané formě nemusí ve zdrojovém textu vyskytovat. Tento postup vyžaduje hlubší porozumění textu, a proto je méně robustní. Ba co víc, je do značné míry zaměřen na určitou doménu nebo žánr textu, protože je třeba specifických znalostí k dalšímu kroku abstrakce zdrojového textu směrem k jeho obsahu. Sestavení shrnutí pak odpovídá generování textu, tj. vytvoření nového textu buď z jiného textu (viz shrnutí), nebo z netextových dat. To může být využito ke generování zpráv o vývoji určitých dat v čase -- např. generování zpráv o počasí a kvalitě vzduchu, shrnutí lékařských diagnóz aj. Aplikace TG většinou nejsou samostatnou aplikací, bývají začleněny do větších softwarových produktů, jako je např. informační systém kliniky, ve kterém jsou shromažďovány, ukládány a zpracovávány údaje o pacientech, a generování zpráv je jednou z jeho funkcionalit.
@@ -556,10 +589,15 @@ Ukazuje se, že posuzovat úroveň národního výzkumu a vývoje v oblasti jazy
 Dalším nepříznivým faktorem pro výzkum a vývoj jazykových technologií přímo na malých jazycích je fakt, že nejvíce oceňovanými řešeními jsou řešení nezávislá na konkrétním jazyku. Jejich komerční aplikace je totiž mnohem levnější než jazykově specifická řešení. Výsledky jednotlivých výzkumných týmů se nejlépe porovnávají na stejném jazyku. Nejobvyklejším cizím jazykem je pro Evropany angličtina. Kromě toho pro ni existují nejpočetnější a nejkvalitnější jazykové zdroje. Proto není nikterak překvapující, že evropský výzkum a vývoj jazykově nezávislých technologií vychází převážně z experimentů prováděných na angličtině.
 V důsledku jmenovaných vlivů se národní týmy soustřeďují spíše na angličtinu než na svůj mateřský jazyk. To je třeba zohlednit při posuzování úrovně národního výzkumu v oblasti jazykových technologií a zpracování přirozeného jazyka. Chudý inventář jazykových zdrojů a chybějící aplikace pro daný jazyk neznamenají nutně špatnou úroveň oboru v dané zemi jako takového, ale naopak můžou být závažným příznakem chybějící vládní jazykové politiky. Pro jazyková společenství, která jsou příliš malá na to, aby výzkum a vývoj národních jazykových technologií byl ekonomicky zajímavý pro soukromý sektor. V těchto případech je cílená vládní podpora jazykových technologií pro národní jazyk naprosto nezbytná.
 
+<<<<<<< Updated upstream
 \subsection{Vzdělávací programy}
 %FIXME new title: Educational Programmes - please translate
 % FIXED by BH March 29
 
+=======
+\subsection{Jazykové technologie ve výzkumu a vzdělávání}
+%FIXME new title: Educational Programmes - please translate
+>>>>>>> Stashed changes
 Pojmy „počítačová lingvistika“, „počítačové zpracování přirozeného jazyka“ a „rozpoznání mluvené řeči“ jsou podstatně starší než pojem jazykové technologie, alespoň z pohledu výzkumu a vzdělávání. Bez ohledu na terminologii, obory, které se věnují přirozenému jazyku, zahrnují i obory výzkumu a vzdělávání, jako je teoretická lingvistika, korpusová lingvistika, informatika, matematika, strojové učení aj.
 
 V České republice působí několik institucí, které věnují svůj výzkum a výuku počítačovému zpracování přirozeného jazyka. Níže uvádíme jejich seznam včetně informací, na jaký podobor se zaměřují (PL – počítačová lingvistika, KL – korpusová l., TL – teoretická l., ASR – rozpoznávání mluvené řeči) a jaké studijní programy nabízejí.
@@ -614,9 +652,14 @@ Univerzita Karlova v Praze, Matematicko-fyzikální fakulta (UK MFF) nabízí ev
 Výzkum přirozeného jazyka v privátní sféře není v ČR rozšířen a zabývají se jím spíše menší firmy (např. Lingea, Captaworks, Langsoft) a spinoffy založené univerzitními týmy (např. SpeechTech -- ZČU Plzeň, Phonexia – VUT Brno).\\
 Studijní programy vzdělávacích institucí jsou zaměřeny jak na teoretické znalosti, tak i na aplikace. Bohužel, poptávka po odbornících těchto programů je v ČR nízká.
 
+<<<<<<< Updated upstream
 \subsection{Národní projekty a iniciativy}
 %FIXME new title: National Projects and Initiatives - please translate
 % FIXED by BH March 29
+=======
+\subsection{Průmysl a programy jazykových technologií}
+%FIXME new title: National Projects and Initiatives - please translate
+>>>>>>> Stashed changes
 Průmyslový rozvoj jazykových technologií není v České republice zdaleka rozšířen, podnikání v oblasti jazykových technologií je spíše vzácné. Stejná situace je i ve vědeckých a výzkumných odděleních větších společností.
 
 V současné době využívají webové vyhledávače a webové služby (Seznam, Centrum, Google aj.) morfologickou analýzu a lematizaci. Google nabízí tzv. frázový strojový překlad webových stránek i vlastních textů uživatelů z a do češtiny. Seznam nabízí dvoujazyčné on-line slovníky s češtinou na jedné straně a s angličtinou, němčinou, francouzštinou, španělštinou a ruštinou na straně druhé. Několik společností vytváří a publikuje dvoujazyčné elektronické slovníky jako aplikace pro MS Windows, případně Linux.\\
@@ -952,8 +995,13 @@ Slovinština \newline
 \ssection[O síti META-NET]{O síti META-NET}
 \begin{multicols}{2}
 %FIXME insert newly translated Chapter
+<<<<<<< Updated upstream
 %FIXED by BH Apr 1
 META-NET je Síť excelence částečně financovaná Evropskou komisí. V současné době se skládá z 54 členů z 33 evropských zemí \cite{rehm2011}. META-NET podporuje Multilingual Europe Technology Alliance (META), rozrůstající se komunitu odborníků na jazykové technologie a jazykově-technologických organizací v Evropě: \\
+=======
+META-NET je Síť excelence financovaná Evropskou komisí. V současné době se skládá z 54 členů z 33 evropských zemí \cite{rehm2011}. META-NET podporuje Multilingual Europe Technology Alliance (META), rozrůstající se komunitu odborníků na jazykové technologie a jazykově-technologických organizací v Evropě.\\
+META-NET spolupracuje s dalšími organizacemi, jako je Common Language Resources a Technology Infrastructure (CLARIN), která pomáhá vybudovat digitální výzkum humanitních věd v Evropě. META-NET podporuje technologické nadace pro vytvoření a udržování skutečně mnohojazyčné evropské informační společnosti:
+>>>>>>> Stashed changes
     \begin{itemize}
       \item umožňuje komunikaci a spolupráci napříč jazyky;
       \item zajišťuje rovný přístup k informacím a znalostem v jakémkoli jazyce;
@@ -1279,8 +1327,12 @@ Language technology is used to develop software systems designed to handle human
 
  Language technology is an established area of research with an extensive set of introductory literature. The interested reader is referred to the following references: \cite{carstensen-etal1, jurafsky-martin01, manning-schuetze1, lt-world1, lt-survey1}.
 %FIXME inserted above sentences; replaced section with chapter below i guess
+<<<<<<< Updated upstream
 % FIXED by BH March 29
 In the rest of this section, we first describe the architecture of a typical LT system. After that, we provide an overview of the core application areas, followed by a brief overview of the situation in LT research and education. Finally, we present an expert estimate of core LT tools and resources for Czech in terms of various dimensions such as availability, maturity, or quality. The general situation of LT for the Czech language is summarised in figure~\ref{fig:lrlttable_en} (p.~\pageref{fig:lrlttable_en}) at the end of the chapter. This table lists all tools and resources that are boldfaced in the text. LT support for Czech is also compared to other languages that are part of this series.
+=======
+In the rest of this chapter, we first describe the architecture of a typical LT system. After that, we provide an overview of the core application areas, followed by a brief overview of the situation in LT research and education. Finally, we present an expert estimate of core LT tools and resources for Czech in terms of various dimensions such as availability, maturity, or quality. The general situation of LT for the Czech language is summarised in figure~\ref{fig:lrlttable_en} (p.~\pageref{fig:lrlttable_en}) at the end of the chapter. This table lists all tools and resources that are boldfaced in the text. LT support for Czech is also compared to other languages that are part of this series.
+>>>>>>> Stashed changes
 %FIXME rewrote laste sentence + added 2
 \begin{figure*}[b]
   \colorrule{grey3}{\textwidth}{1.5pt}
@@ -1526,11 +1578,19 @@ Below, we list Czech institutes and departments focusing on research and educati
 \item[] $\!\!\!\!\!\!$\textbf{Technical University of Liberec}
 \item[$\centerdot$]Laboratory of Computer Speech Processing\\(\textit{https://www.ite.tul.cz/speechlabe/})\\ ASR.
 \end{enumerate}
+<<<<<<< Updated upstream
 
 Charles University in Prague, Faculty of Mathematics and Physics is offering the European Master Program in Language and Communication Technologies as a part of its MSc. study program as well as PhD program. Thanks to this activity, the Faculty can welcome students from abroad who also give new impulses to their Czech colleagues.
 
 The natural language research in the private sector is not very common in the Czech Republic and is only represented by small companies (e.\,g., Lingea, Captaworks, LangSoft) and by spin-offs of university teams (e.\,g., SpeechTech -- University of West Bohemia, Phonexia -- University of Technology in Brno).
 
+=======
+
+Charles University in Prague, Faculty of Mathematics and Physics is offering the European Master Program in Language and Communication Technologies as a part of its MSc. study program as well as PhD program. Thanks to this activity, the Faculty can welcome students from abroad who also give new impulses to their Czech colleagues.
+
+The natural language research in the private sector is not very common in the Czech Republic and is only represented by small companies (e.\,g., Lingea, Captaworks, LangSoft) and by spin-offs of university teams (e.\,g., SpeechTech -- University of West Bohemia, Phonexia -- University of Technology in Brno).
+
+>>>>>>> Stashed changes
 The study programs the institutes offer emphase both theory and practice. Unfortunately, a demand for such experts is very low in the Czech Republic.
 
 \subsection{National Projects and Initiatives}
@@ -1586,7 +1646,11 @@ Grammars                 & 1 & 1 & 3 & 2 & 2 & 1 & 1\\ \addlinespace
 \caption{State of language technology support for Czech}
 \label{fig:lrlttable_en}
 \end{figure*}
+<<<<<<< Updated upstream
 Table \ref{fig:lrlttable_en} (p.~\pageref{fig:lrlttable_en}) summarizes the current state of language technology support for the Czech language. The rating for existing tools and resources is based on assessments of leading experts (0 is worst, 6 is best).
+=======
+The above table summarizes the current state of language technology support for the Czech language. The rating for existing tools and resources is based on assessments of leading experts (0 is worst, 6 is best).
+>>>>>>> Stashed changes
 
 \subsubsection{Notes to the table}
 
@@ -1982,6 +2046,7 @@ Maďarsko & \textcolor{grey1}{Hungary} & Research Institute for Linguistics, Hun
   & & Aholab Signal Processing Laboratory, University of the Basque Country:\newline Inma Hernaez Rioja \\ \addlinespace 
   & & Center for Language and Speech Technologies and Applications, Universitat Politècnica de Catalunya:  Asunción Moreno \\ \addlinespace 
   & & Department of Signal Processing and Communications, University of Vigo:\newline Carmen García Mateo \\ \addlinespace
+<<<<<<< Updated upstream
   \begin{minipage}[t]{0.2\columnwidth}%
     Spojené království\\
     Velké Británie a\\
@@ -1994,6 +2059,13 @@ Maďarsko & \textcolor{grey1}{Hungary} & Research Institute for Linguistics, Hun
   School of Computer Science, University of Manchester: Sophia Ananiadou  
   \newline Institute for Language, Cognition and Computation, Center for Speech Technology Research, University of Edinburgh: Steve Renals
   \newline Research Institute of Informatics and Language Processing, University of Wolverhampton: Ruslan Mitkov \\ \addlinespace 
+=======
+  Spojené království & \textcolor{grey1}{UK} & 
+  %FIXME right translations?
+  School of Computer Science, University of Manchester: Sophia Ananiadou \\ \addlinespace 
+  & & Institute for Language, Cognition and Computation, Center for Speech Technology Research, University of Edinburgh: Steve Renals \\ \addlinespace 
+  & & Research Institute of Informatics and Language Processing, University of Wolverhampton: Ruslan Mitkov \\ \addlinespace 
+>>>>>>> Stashed changes
   Srbsko & \textcolor{grey1}{Serbia} & University of Belgrade, Faculty of Mathematics: Duško Vitas, Cvetana Krstev,\newline Ivan Obradović \\ \addlinespace
   & & Pupin Institute: Sanja Vranes \\ \addlinespace
   Švédsko & \textcolor{grey1}{Sweden} & Department of Swedish, University of Gothenburg: Lars Borin \\ \addlinespace 
