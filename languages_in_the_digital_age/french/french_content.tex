@@ -1,111 +1,30 @@
-%                                     MMMMMMMMM                                         
+%                                     MMMMMMMMM        
 %                                                                             
-%  MM    MM   MMMMMM  MMMMMMM   MM     MMMMMMMM   MMD   MM  MMMMMMM MMMMMMM   
-%  MMM   MMM   MM        MM     MMM               MMM   MM  MM         MM     
-%  MMMM  MMM   MM        MM     MMMM    MMMMMMM   MMMMD MM  MM         MM     
+%  MMO    MM   MMMMMM  MMMMMMM   MM    MMMMMMMM   MMD   MM  MMMMMMM MMMMMMM   
+%  MMM   MMM   MM        MM     ?MMM              MMM$  MM  MM         MM     
+%  MMMM 7MMM   MM        MM     MM8M    MMMMMMM   MMMMD MM  MM         MM     
 %  MM MMMMMM   MMMMMM    MM    MM  MM             MM MMDMM  MMMMMM     MM     
 %  MM  MM MM   MM        MM    MMMMMM             MM  MMMM  MM         MM     
 %  MM     MM   MMMMMM    MM   MM    MM            MM   MMM  MMMMMMM    MM
 %
 %
-%            - META-NET Language White Paper | German paper -
-
-\documentclass[]{../metanetpaper}
-
-\usepackage{booktabs}
-\usepackage{longtable}
-\usepackage{tabulary}
-\usepackage{tabularx}
-\usepackage{rotating}
-\usepackage{makecell}
-\usepackage{multirow}
-\usepackage{colortbl}
-\usepackage{polyglossia}
-\usepackage{multicol,framed,lipsum}
-% do not put french as default language since it duplicates the table of content title
-\setotherlanguages{french,english}
-
-% Since the following does not work
-%\lccode`\{\mbox '}=`\{\mbox '}
-%\hyphenation{ l{\mbox '}information }
-% I used the following HACK
-% to prevent the hyphenation to cut words just after the apostrophe
-%cat old_french.tex | sed -e "s/'/{\\\mbox &}/g" > new_french.tex
-
-%!TEX TS-program = xelatex
-\RequireXeTeX %Force XeTeX check
-
-\title{La langue française {\mbox ~} à l{\mbox '}Ère \mbox{~~}\mbox{~~} du numérique --- The French Language in the Digital Age}
-
-\subtitle{White Paper Series --- Collection de Livres Blancs}
-
-\author{
-  Joseph Mariani \\
-  Patrick Paroubek \\
-  Gil Francopoulo \\
-  Aurélien Max \\
-  François Yvon \\
-  Pierre Zweigenbaum \\
-}
-\authoraffiliation{
-  Joseph Mariani~ \\ \hspace{1.0in}{\small IMMI-CNRS \& LIMSI-CNRS}\\
-  Patrick Paroubek~ \\ \hspace{1.0in}{\small LIMSI-CNRS}\\
-  Gil Francopoulo~ \\ \hspace{1.0in}{\small IMMI-CNRS \& TAGMATICA}\\
-  Aurélien Max~ \\ \hspace{1.0in}{\small LIMSI-CNRS \& U. Paris Sud 11}\\
-  François Yvon~ \\ \hspace{1.0in}{\small LIMSI-CNRS \& U. Paris Sud 11}\\
-  Pierre Zweigenbaum~ \\ \hspace{1.0in}{\small LIMSI-CNRS}\\
-}
-\editors{
-  Georg Rehm, Hans Uszkoreit\\(Herausgeber, \textcolor{grey1}{editors})
-}
+%            - META-NET Language White Paper | French content -
+% 
+% ----------------------------------------------------------------------------
 
 \begin{document}
 
-\renewcommand*{\figureformat}{\sffamily\thefigure\autodot}
-
 \maketitle
 
-% ---------------- Mocktitle ------------------
+% --------------------------------------------------------------------------
+\bsection*{Préface --- Preface}
+
 \null
 \pagestyle{empty} 
 
-\centerline{META-NET -- office@meta-net.eu -- http://www.meta-net.eu}
-
-\vfill
-
-\begin{small}
-  \selectlanguage{french} 
-  La création de ce livre blanc a été financée
-  grâce aux moyens alloués par le septième programme-cadre (7\raise+.5ex\hbox{ème} PCRD) et le
-  programme de soutien à la politique pour les technologies de
-  l{\mbox '}information et de la communication (TIC) de la Commission Européenne
-  dans le cadre des contrats T4ME (convention d{\mbox '}aide 249119),
-  CESAR (convention d{\mbox '}aide 271022), METANET4U (convention
-  d{\mbox '}aide 270893) et META-NORD (convention d{\mbox '}aide 270899).
-\end{small}
-
-\bigskip
-\begin{small}
-  \selectlanguage{english}
-  The development of this white paper has been funded by the Seventh
-  Framework Programme and the ICT Policy Support Programme of the
-  European Commission under the contracts T4ME (Grant Agreement 249119),
-  CESAR (Grant Agreement 271022), METANET4U (Grant Agreement 270893)
-  and META-NORD (Grant Agreement 270899).
-\end{small}
-
-\clearpage
-% ------------- End of mocktitle ----------------
-
 \pagenumbering{Roman} 
-\setcounter{page}{5}
+\setcounter{page}{3}
 \pagestyle{scrheadings}
-
-\cleardoublepage
-
-% --------------------------------------------------------------------------
-
-\bsection*{Préface --- Preface}
 
 \begin{Parallel}[c]{78mm}{78mm}
 \ParallelLText{\selectlanguage{french} 
@@ -118,7 +37,7 @@ grandement d{\mbox '}une langue à l{\mbox '}autre en Europe, les actions
 nécessaires au soutien des activités de recherche et développement
 peuvent être très différentes en fonction des langues selon des facteurs multiples, comme leur complexité
 intrinsèque ou leur nombre de locuteurs.
-
+%
 Le Réseau d{\mbox '}Excellence META-NET, financé par la Commission Européenne,
 a analysé l{\mbox '}état des ressources et des technologies de la langue dans
 cette collection de livres blancs (p.~\pageref{whitepaperseries}).
@@ -128,12 +47,12 @@ montre qu{\mbox '}il y a des déficits énormes en soutient technologique et des
 lacunes significatives en recherche selon les langues. L{\mbox '}analyse et
 l{\mbox '}évaluation de la situation actuelle par les experts vont permettre
 de maximiser l{\mbox '}impact des recherches additionnelles.
-
+%
 En novembre 2011, META-NET regroupe 54 centres de recherche de 33
 pays européens (p.~\pageref{metanetmembers}) et travaille avec
 les acteurs de l{\mbox '}économie (sociétés informatiques, fournisseurs de
 technologies, utilisateurs), les agences gouvernementales, les
-organismes de recherche, les organisations non gouvernementales, les
+organismes de recherche et non gouvernementales, les
 communautés linguistiques et les universités européennes, pour établir une vision
 commune des technologies de la langue et un échéancier stratégique de
 recherche dans la vision d{\mbox '}une Europe multilingue en 2020.}
@@ -275,7 +194,7 @@ souffrir de sa défaite économique.
 
 \clearpage
 
-\ssection[Les langues en danger~: un défi pour les Technologies de la Langue]{Les langues en danger~:\newline un défi pour les Technologies de la Langue}
+\ssection[Les langues en dangern~: un défi pour les Technologies de la Langue]{Les langues en danger~: un défi pour les Technologies de la Langue}
 
 \begin{multicols}{2}
 
@@ -367,12 +286,14 @@ apprendre de nouvelles langues et les développeurs à créer de
 nouvelles applications pour assurer une entente mutuelle et accéder à
 des connaissances partagées.
 
+
 Dans un espace économique et informationnel mondial, nous sommes
 confrontés à un accroissement des contacts avec des langues, des
 locuteurs et des contenus à travers les nouveaux types de médias. La
 popularité actuelle des médias sociaux et collaboratifs (Wikipédia,
 Facebook, Twitter, You Tube et Google+, par exemple) n{\mbox '}est que
 la face émergée de l{\mbox '}iceberg.
+
 
 \boxtext{Dans un espace économique et informationnel global, nous
   sommes confrontés à des langues, des locuteurs et des contenus très
@@ -474,13 +395,17 @@ aident déjà aujourd{\mbox '}hui lorsque nous:
 \end{itemize}
 Les technologies de la langue sont des technologies habilitantes dans
 le cadre d{\mbox '}applications plus larges comme les systèmes de
-navigation ou les moteurs de recherche. La mission de cette collection
+navigation ou les moteurs de recherche. 
+
+
+\boxtext{L{\mbox '}Europe a besoin de technologies de la langue
+  robustes et abordables pour toutes les\\ langues européennes.}
+
+La mission de cette collection
 de livres blancs réalisés par META-NET sur les langues est de
 déterminer les capacités de ces technologies de base pour chacune des
 langues européennes.
 
-\boxtext{L{\mbox '}Europe a besoin de technologies de la langue
-  robustes et abordables pour toutes les langues européennes.}
 
 Pour maintenir sa position à la pointe de l{\mbox '}innovation,
 l{\mbox '}Europe aura besoin de technologies de la langue pour toutes
@@ -518,8 +443,8 @@ spécifiques et des applications expérimentales permettent d{\mbox
 gestion des connaissances ainsi que la production de contenus dans de
 nombreuses langues européennes.
 
-\boxtext{Les technologies de la langue sont\\ une solution pour
- traiter\\ le handicap lié à la diversité linguistique.}
+\boxtext{Les technologies de la langue sont une solution pour
+ traiter le handicap lié\\ à la diversité linguistique.}
 
 Les technologies de la langue représentent une formidable opportunité
 pour l{\mbox '}Union européenne. Elles peuvent aider à traiter la
@@ -802,7 +727,9 @@ de la présidence française au Conseil Européen sur le thème
 «~Multilinguisme, traduction et dialogue interculturel~» et, en
 Novembre 2008, par une résolution du Conseil européen sur une
 stratégie européenne sur le multilinguisme, qui encourage
-spécifiquement «~{\em le développement des technologies du langage, en
+spécifiquement 
+\begin{quote}
+«~{\em le développement des technologies du langage, en
     particulier dans le domaine de la traduction et de l{\mbox
       '}interprétation, d{\mbox '}une part en favorisant la
     coopération entre la Commission, les États membres, les autorités
@@ -810,8 +737,9 @@ spécifiquement «~{\em le développement des technologies du langage, en
     d{\mbox '}autre part en assurant la convergence entre les
     programmes de recherche, l{\mbox '}identification des domaines
     d{\mbox '}application et le déploiement des technologies dans
-    toutes les langues de l{\mbox '}UE}~»\cite{eurlex}. Cette
-résolution n'a pas encore porté ses fruits.
+    toutes les langues de l{\mbox '}UE}~»\cite{eurlex}. 
+\end{quote}
+Cette résolution n'a pas encore porté ses fruits.
 
 \subsection{Les difficultés et les joies de la langue française}
 
@@ -844,7 +772,15 @@ les Amériques depuis le 18\raise+.5ex\hbox{ème} siècle. Le français
 ce qui en fait un puissant moyen de l{\mbox '}argumentation et de
 l{\mbox '}explication juridique et technique où la clarté et l{\mbox
  '}absence d{\mbox '}ambiguïtés sont primordiales.
-
+%
+\begin{figure*}[t]
+\begin{center}
+ \includegraphics[height=2.5in]{_media/french/french_pix1_freq_je.png} 
+  \caption{Fréquence d{\mbox '}utilisation du mot «~Je~» dans les discours des Présidents de la République Française successifs}
+  \label{fig:je_stats}
+\end{center}
+\end{figure*}
+%
 Les Français aiment aussi jouer avec leur langue. On peut se référer à
 l{\mbox '}Oulipo~\cite{oulipo}, au verlan~\cite{plenat95}, au
 Slam~\cite{slam} ou plus généralement à l{\mbox '}usage de la langue
@@ -857,23 +793,17 @@ France en 2011, et comprend des données intéressantes telles que
 l{\mbox '}étude de la langue des hommes politiques français (voir
 figure \ref{fig:je_stats}).
 
-\begin{figure*}[!ht]
-\begin{center}
- \includegraphics[height=3.0in]{../_media/french/french_pix1_freq_je.png} 
-  \caption{Fréquence d{\mbox '}utilisation du mot «~Je~» dans les discours des Présidents de la République Française successifs}
-  \label{fig:je_stats}
-\end{center}
-\end{figure*}
+
 
 \subsection{Le français dans le cyberespace}
 
 Le français est désormais très présent sur Internet, et était classé
 8\raise+.5ex\hbox{ème} fin 2009 (voir figure \ref{fig:internettop10})
 avec 57 millions d{\mbox '}internautes dans le monde qui le pratiquent~\cite{internettop10}.
-
-\begin{figure*}[!ht]
+%
+\begin{figure*}[t]
 \begin{center}
- \includegraphics[height=4.0in]{../_media/french/french_pix2_top_10_Internet_languages_2010.png}
+ \includegraphics[height=4.0in]{_media/french/french_pix2_top_10_Internet_languages_2010.png}
   \caption{Les 10 langues les plus pratiquées sur Internet~\cite{internettop10}}
   \label{fig:internettop10}
 \end{center}
@@ -1153,12 +1083,26 @@ la communication multimodale et des documents multimédias.  La langue
 des signes permet la communication des personnes atteintes de surdité.
 
 \begin{figure*}[!ht]
+ \colorrule{grey3}{\textwidth}{1.5pt}
+
 \begin{center}
- \includegraphics[width=3.0in]{../_media/french/language_technologies} 
-\caption{les technologies de la langue}
+ \includegraphics[width=\textwidth]{../_media/french/language_technologies} 
+\caption{Les technologies de la langue}
 \label{fig:languagetechno}
 \end{center}
+\vspace*{-.2cm}
+ \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
+
+% \begin{figure*}[htb]
+%   \colorrule{grey3}{\textwidth}{1.5pt}
+%   \center
+%   \includegraphics[width=\textwidth]{../_media/english/language_technologies}
+%   \caption{Language technologies}
+%   \label{fig:ltincontext_en}
+%   \colorrule{grey3}{\textwidth}{1.5pt}
+% \end{figure*}
+
 
 \subsection{Les architectures des applications en Technologies de la Langue}
 
@@ -1191,14 +1135,6 @@ des applications sont très simplifiées et idéalisées, pour illustrer
 la complexité des applications des technologies de la langue de
 manière compréhensible.
 
-\begin{figure*}[!ht]
-\begin{center}
- \includegraphics[width=3.0in]{../_media/french/text_processing_app_architecture}
-\caption{Architecture type pour une chaîne de traitement textuel}
-\label{fig:textprocarchi}
-\end{center}
-\end{figure*}
-
 Après avoir présenté les domaines d{\mbox '}application de base, nous
 donnerons un bref aperçu de la situation concernant les technologies
 de la langue pour le français, avec un aperçu des programmes de
@@ -1210,8 +1146,9 @@ aperçu brut et global de la situation des technologies de la langue
 pour le français.
 
 \subsection{Domaines d{\mbox '}application génériques}
-
+%
 \subsubsection{Correcteur de texte}
+%
 Toute personne utilisant un outil de traitement de texte comme
 Microsoft Word a fait usage d{\mbox '}un outil de vérification orthographique
 qui indique les erreurs d{\mbox '}orthographe et propose des corrections.  40
@@ -1227,18 +1164,29 @@ syntaxe simples, comme un verbe manquant ou un verbe qui n{\mbox '}est pas en
 accord avec son sujet en personne ou en nombre; par exemple, dans
 «~Elle *écris une lettre~».
 
+\begin{figure*}[t]
+ \colorrule{grey3}{\textwidth}{1.5pt}
+
+\begin{center}
+ \includegraphics[width=\textwidth]{../_media/french/text_processing_app_architecture}
+\caption{Architecture type pour une chaîne de traitement textuel}
+\label{fig:textprocarchi}
+\end{center}
+ \colorrule{grey3}{\textwidth}{1.5pt}
+\end{figure*}
+
 Cependant, pour d{\mbox '}autres types d{\mbox '}erreurs communes, les
 méthodes actuellement utilisées ne sont pas suffisantes. Prenons par
 exemple le premier verset d{\mbox '}un poème de Jerrold H. Zar
 (1992)~:\\
-\begin{it}
-\begin{center}
+\begin{quote}
+%\begin{center}
 Eye have a spelling chequer,\\
 It came with my Pea Sea.\\
 It plane lee marks four my revue\\
 Miss Steaks I can knot sea.\\
-\end{center}
-\end{it}
+%\end{center}
+\end{quote}
 La plupart des correcteurs orthographiques disponibles (y compris MS
 Word) ne trouveront pas d{\mbox '}erreurs dans ce poème, car ils ont surtout
 regardé les mots isolément. Toutefois, pour détecter les erreurs que
@@ -1246,12 +1194,15 @@ l{\mbox '}on appelle homophones (par exemple «~Eye~» au lieu de «~I~»), le
 vérificateur de la langue doit prendre en considération le contexte
 dans lequel survient le mot.
 
-\begin{figure*}[!ht]
+\begin{figure*}[t]
+\colorrule{grey3}{\textwidth}{1.5pt}
 \begin{center}
-  \includegraphics[width=3.0in]{../_media/french/french_pix6_spell_checker.png}
-\caption{Architecture type de correcteur de texte, à base de règles (flèches jaunes) ou statistique (flèche bleue)}
+  \includegraphics[width=\textwidth]{../_media/french/language_checking.pdf}
+\caption{Architecture type de correcteur de texte, à base de règles
+  (flèches jaunes) ou statistique (flèche bleue)}
 \label{fig:spellchecker}
 \end{center}
+\colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
 
 Ceci nécessite soit la formulation {\bf de règles
@@ -1330,12 +1281,14 @@ analyse de cette question ou de cette phrase sur un plan syntaxique et
 sémantique ainsi que la disponibilité d{\mbox '}un index qui permette une
 récupération rapide des documents pertinents.
 
-\begin{figure*}[!ht]
+\begin{figure*}[t]
+ \colorrule{grey3}{\textwidth}{1.5pt}
 \begin{center}
- \includegraphics[width=3.0in]{../_media/french/web_search_architecture}
+ \includegraphics[width=\textwidth]{../_media/french/web_search_architecture}
  \caption{Architecture type de moteur de recherche Web}
 \label{fig:archiweb}
 \end{center}
+ \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
 
 Imaginez par exemple un utilisateur qui saisit la requête «~Donne-moi
@@ -1421,11 +1374,13 @@ est nécessaire. Pour les systèmes interactifs avancés, une analyse
 linguistique en profondeur de l{\mbox '}entrée vocale s{\mbox '}impose.
 
 \begin{figure*}[!ht]
+ \colorrule{grey3}{\textwidth}{1.5pt}
 \begin{center}
- \includegraphics[width=3.0in]{../_media/french/simple_speech-based_dialogue_architecture} 
+ \includegraphics[width=\textwidth]{../_media/french/simple_speech-based_dialogue_architecture} 
 \caption{Architecture de base pour un système de dialogue oral}
 \label{fig:slds}
 \end{center}
+ \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
 
 Un système d{\mbox '}interaction vocale complète comprend quatre technologies
@@ -1541,7 +1496,7 @@ entre les modalités verbales et non verbales (expressions faciales des
 
 \begin{figure*}[!ht]
 \begin{center}
-  \includegraphics[height=4.0in]{../_media/french/french_pix8_speech_reco_nist.png}
+  \includegraphics[height=4.0in]{_media/french/french_pix8_speech_reco_nist.png}
   \caption{Une histoire de la Reconnaissance Automatique de la Parole depuis 1987 à travers les campagnes d{\mbox '}évaluation du NIST~\cite{speechreconist}}
   \label{fig:nistreco}
 \end{center}
@@ -1631,6 +1586,16 @@ par exemple Apple Siri ou Android Voice Actions). Compte tenu de cette
 analyse linguistique spécifique à l{\mbox '}application gagnera en
 importance par rapport à la situation actuelle.
 
+\begin{figure*}[t]
+ \colorrule{grey3}{\textwidth}{1.5pt}
+\begin{center}
+ \includegraphics[width=\textwidth]{../_media/french/machine_translation}
+\caption{Traduction automatique statistique (flèche bleue) ou à base de règles (flèches jaunes)}
+\label{fig:mtarchi}
+\end{center}
+ \colorrule{grey3}{\textwidth}{1.5pt}
+\end{figure*}
+
 \subsubsection{Traduction Automatique}
 L{\mbox '}idée d{\mbox '}utiliser des ordinateurs numériques pour la traduction des
 langues naturelles est venue en 1946 d{\mbox '}A.D. Booth et a été suivie par
@@ -1641,14 +1606,6 @@ sur {\bf la traduction automatique} (TA) a été écrit par un Français
 (Delavenay, 1957). Néanmoins, la traduction automatique ne
 parvient toujours pas à répondre aux attentes qu{\mbox '}elle a suscitées à
 ses débuts.
-
-\begin{figure*}[!ht]
-\begin{center}
- \includegraphics[width=3.0in]{../_media/french/machine_translation}
-\caption{Traduction automatique statistique (flèche bleue) ou à base de règles (flèches jaunes)}
-\label{fig:mtarchi}
-\end{center}
-\end{figure*}
 
 À son niveau de base, la traduction automatique substitue simplement les mots d{\mbox '}une langue
 par les mots d{\mbox '}une autre. Cela peut être utile dans des domaines
@@ -1701,6 +1658,42 @@ statistique peut également couvrir les particularités de la langue qui
 disparaissent dans les systèmes à base de connaissances, comme par
 exemple pour la traduction des expressions idiomatiques.
 
+\begin{figure*}[tbp]
+  \centering
+  \setlength{\tabcolsep}{0.17em}
+  \small
+  \begin{tabular}{>{\columncolor{corange1}}cccccccccccccccccccccccc}
+    & \multicolumn{22}{>{\columncolor{corange1}}c}{\textcolor{red}{ XXX} -- \textcolor{grey1}{Target language}}\\\addlinespace[{-.009cm}]
+    \rowcolor{corange1}  & EN & BG & DE & CS & DA & EL & ES & ET & FI & FR & HU & IT & LT & LV & MT & NL & PL & PT & RO & SK & SL & SV\\
+    EN & -- & \textcolor{blue}{40.5} & \textcolor{blue}{46.8} & \textcolor{green2}{52.6} & \textcolor{green2}{50.0} & \textcolor{blue}{41.0} & \textcolor{green2}{55.2} & \textcolor{purple}{34.8} & \textcolor{purple}{38.6} & \textcolor{green2}{50.1} & \textcolor{purple}{37.2} & \textcolor{green2}{50.4} & \textcolor{purple}{39.6} & \textcolor{blue}{43.4} & \textcolor{purple}{39.8} & \textcolor{green2}{52.3} & \textcolor{blue}{49.2} & \textcolor{green2}{55.0} & \textcolor{blue}{49.0} & \textcolor{blue}{44.7} & \textcolor{green2}{50.7} & \textcolor{green2}{52.0}\\
+    BG & \textcolor{green}{61.3} & -- & \textcolor{purple}{38.7} & \textcolor{purple}{39.4} & \textcolor{purple}{39.6} & \textcolor{purple}{34.5} & \textcolor{blue}{46.9} & \textcolor{red3}{25.5} & \textcolor{red3}{26.7} & \textcolor{blue}{42.4} & \textcolor{red3}{22.0} & \textcolor{blue}{43.5} & \textcolor{red3}{29.3} & \textcolor{red3}{29.1} & \textcolor{red3}{25.9} & \textcolor{blue}{44.9} & \textcolor{purple}{35.1} & \textcolor{blue}{45.9} & \textcolor{purple}{36.8} & \textcolor{purple}{34.1} & \textcolor{purple}{34.1} & \textcolor{purple}{39.9}\\
+    DE & \textcolor{green2}{53.6} & \textcolor{red3}{26.3} & -- & \textcolor{purple}{35.4} & \textcolor{blue}{43.1} & \textcolor{purple}{32.8} & \textcolor{blue}{47.1} & \textcolor{red3}{26.7} & \textcolor{red3}{29.5} & \textcolor{purple}{39.4} & \textcolor{red3}{27.6} & \textcolor{blue}{42.7} & \textcolor{red3}{27.6} & \textcolor{purple}{30.3} & \textcolor{red2}{19.8} & \textcolor{green2}{50.2} & \textcolor{purple}{30.2} & \textcolor{blue}{44.1} & \textcolor{purple}{30.7} & \textcolor{red3}{29.4} & \textcolor{purple}{31.4} & \textcolor{blue}{41.2}\\
+    CS & \textcolor{green2}{58.4} & \textcolor{purple}{32.0} & \textcolor{blue}{42.6} & -- & \textcolor{blue}{43.6} & \textcolor{purple}{34.6} & \textcolor{blue}{48.9} & \textcolor{purple}{30.7} & \textcolor{purple}{30.5} & \textcolor{blue}{41.6} & \textcolor{red3}{27.4} & \textcolor{blue}{44.3} & \textcolor{purple}{34.5} & \textcolor{purple}{35.8} & \textcolor{red3}{26.3} & \textcolor{blue}{46.5} & \textcolor{purple}{39.2} & \textcolor{blue}{45.7} & \textcolor{purple}{36.5} & \textcolor{blue}{43.6} & \textcolor{blue}{41.3} & \textcolor{blue}{42.9}\\
+    DA & \textcolor{green2}{57.6} & \textcolor{red3}{28.7} & \textcolor{blue}{44.1} & \textcolor{purple}{35.7} & -- & \textcolor{purple}{34.3} & \textcolor{blue}{47.5} & \textcolor{red3}{27.8} & \textcolor{purple}{31.6} & \textcolor{blue}{41.3} & \textcolor{red3}{24.2} & \textcolor{blue}{43.8} & \textcolor{red3}{29.7} & \textcolor{purple}{32.9} & \textcolor{red3}{21.1} & \textcolor{blue}{48.5} & \textcolor{purple}{34.3} & \textcolor{blue}{45.4} & \textcolor{purple}{33.9} & \textcolor{purple}{33.0} & \textcolor{purple}{36.2} & \textcolor{blue}{47.2}\\
+    EL & \textcolor{green2}{59.5} & \textcolor{purple}{32.4} & \textcolor{blue}{43.1} & \textcolor{purple}{37.7} & \textcolor{blue}{44.5} & -- & \textcolor{green2}{54.0} & \textcolor{red3}{26.5} & \textcolor{red3}{29.0} & \textcolor{blue}{48.3} & \textcolor{red3}{23.7} & \textcolor{blue}{49.6} & \textcolor{red3}{29.0} & \textcolor{purple}{32.6} & \textcolor{red3}{23.8} & \textcolor{blue}{48.9} & \textcolor{purple}{34.2} & \textcolor{green2}{52.5} & \textcolor{purple}{37.2} & \textcolor{purple}{33.1} & \textcolor{purple}{36.3} & \textcolor{blue}{43.3}\\
+    ES & \textcolor{green}{60.0} & \textcolor{purple}{31.1} & \textcolor{blue}{42.7} & \textcolor{purple}{37.5} & \textcolor{blue}{44.4} & \textcolor{purple}{39.4} & -- & \textcolor{red3}{25.4} & \textcolor{red3}{28.5} & \textcolor{green2}{51.3} & \textcolor{red3}{24.0} & \textcolor{green2}{51.7} & \textcolor{red3}{26.8} & \textcolor{purple}{30.5} & \textcolor{red3}{24.6} & \textcolor{blue}{48.8} & \textcolor{purple}{33.9} & \textcolor{green2}{57.3} & \textcolor{purple}{38.1} & \textcolor{purple}{31.7} & \textcolor{purple}{33.9} & \textcolor{blue}{43.7}\\
+    ET & \textcolor{green2}{52.0} & \textcolor{red3}{24.6} & \textcolor{purple}{37.3} & \textcolor{purple}{35.2} & \textcolor{purple}{37.8} & \textcolor{red3}{28.2} & \textcolor{blue}{40.4} & -- & \textcolor{purple}{37.7} & \textcolor{purple}{33.4} & \textcolor{purple}{30.9} & \textcolor{purple}{37.0} & \textcolor{purple}{35.0} & \textcolor{purple}{36.9} & \textcolor{red3}{20.5} & \textcolor{blue}{41.3} & \textcolor{purple}{32.0} & \textcolor{purple}{37.8} & \textcolor{red3}{28.0} & \textcolor{purple}{30.6} & \textcolor{purple}{32.9} & \textcolor{purple}{37.3}\\
+    FI & \textcolor{blue}{49.3} & \textcolor{red3}{23.2} & \textcolor{purple}{36.0} & \textcolor{purple}{32.0} & \textcolor{purple}{37.9} & \textcolor{red3}{27.2} & \textcolor{purple}{39.7} & \textcolor{purple}{34.9} & -- & \textcolor{red3}{29.5} & \textcolor{red3}{27.2} & \textcolor{purple}{36.6} & \textcolor{purple}{30.5} & \textcolor{purple}{32.5} & \textcolor{red2}{19.4} & \textcolor{blue}{40.6} & \textcolor{red3}{28.8} & \textcolor{purple}{37.5} & \textcolor{red3}{26.5} & \textcolor{red3}{27.3} & \textcolor{red3}{28.2} & \textcolor{purple}{37.6}\\
+    FR & \textcolor{green}{64.0} & \textcolor{purple}{34.5} & \textcolor{blue}{45.1} & \textcolor{purple}{39.5} & \textcolor{blue}{47.4} & \textcolor{blue}{42.8} & \textcolor{green}{60.9} & \textcolor{red3}{26.7} & \textcolor{purple}{30.0} & -- & \textcolor{red3}{25.5} & \textcolor{green2}{56.1} & \textcolor{red3}{28.3} & \textcolor{purple}{31.9} & \textcolor{red3}{25.3} & \textcolor{green2}{51.6} & \textcolor{purple}{35.7} & \textcolor{green}{61.0} & \textcolor{blue}{43.8} & \textcolor{purple}{33.1} & \textcolor{purple}{35.6} & \textcolor{blue}{45.8}\\
+    HU & \textcolor{blue}{48.0} & \textcolor{red3}{24.7} & \textcolor{purple}{34.3} & \textcolor{purple}{30.0} & \textcolor{purple}{33.0} & \textcolor{red3}{25.5} & \textcolor{purple}{34.1} & \textcolor{red3}{29.6} & \textcolor{red3}{29.4} & \textcolor{purple}{30.7} & -- & \textcolor{purple}{33.5} & \textcolor{red3}{29.6} & \textcolor{purple}{31.9} & \textcolor{red2}{18.1} & \textcolor{purple}{36.1} & \textcolor{red3}{29.8} & \textcolor{purple}{34.2} & \textcolor{red3}{25.7} & \textcolor{red3}{25.6} & \textcolor{red3}{28.2} & \textcolor{purple}{30.5}\\
+    IT & \textcolor{green}{61.0} & \textcolor{purple}{32.1} & \textcolor{blue}{44.3} & \textcolor{purple}{38.9} & \textcolor{blue}{45.8} & \textcolor{blue}{40.6} & \textcolor{red3}{26.9} & \textcolor{red3}{25.0} & \textcolor{red3}{29.7} & \textcolor{green2}{52.7} & \textcolor{red3}{24.2} & -- & \textcolor{red3}{29.4} & \textcolor{purple}{32.6} & \textcolor{red3}{24.6} & \textcolor{green2}{50.5} & \textcolor{purple}{35.2} & \textcolor{green2}{56.5} & \textcolor{purple}{39.3} & \textcolor{purple}{32.5} & \textcolor{purple}{34.7} & \textcolor{blue}{44.3}\\
+    LT & \textcolor{green2}{51.8} & \textcolor{red3}{27.6} & \textcolor{purple}{33.9} & \textcolor{purple}{37.0} & \textcolor{purple}{36.8} & \textcolor{red3}{26.5} & \textcolor{red3}{21.1} & \textcolor{purple}{34.2} & \textcolor{purple}{32.0} & \textcolor{purple}{34.4} & \textcolor{red3}{28.5} & \textcolor{purple}{36.8} & -- & \textcolor{blue}{40.1} & \textcolor{red3}{22.2} & \textcolor{purple}{38.1} & \textcolor{purple}{31.6} & \textcolor{purple}{31.6} & \textcolor{red3}{29.3} & \textcolor{purple}{31.8} & \textcolor{purple}{35.3} & \textcolor{purple}{35.3}\\
+    LV & \textcolor{green2}{54.0} & \textcolor{red3}{29.1} & \textcolor{purple}{35.0} & \textcolor{purple}{37.8} & \textcolor{purple}{38.5} & \textcolor{red3}{29.7} & \textcolor{red2}{8.0} & \textcolor{purple}{34.2} & \textcolor{purple}{32.4} & \textcolor{purple}{35.6} & \textcolor{red3}{29.3} & \textcolor{purple}{38.9} & \textcolor{purple}{38.4} & -- & \textcolor{red3}{23.3} & \textcolor{blue}{41.5} & \textcolor{purple}{34.4} & \textcolor{purple}{39.6} & \textcolor{purple}{31.0} & \textcolor{purple}{33.3} & \textcolor{purple}{37.1} & \textcolor{purple}{38.0}\\
+    MT & \textcolor{green}{72.1} & \textcolor{purple}{32.2} & \textcolor{purple}{37.2} & \textcolor{purple}{37.9} & \textcolor{purple}{38.9} & \textcolor{purple}{33.7} & \textcolor{blue}{48.7} & \textcolor{red3}{26.9} & \textcolor{red3}{25.8} & \textcolor{blue}{42.4} & \textcolor{red3}{22.4} & \textcolor{blue}{43.7} & \textcolor{purple}{30.2} & \textcolor{purple}{33.2} & -- & \textcolor{blue}{44.0} & \textcolor{purple}{37.1} & \textcolor{blue}{45.9} & \textcolor{purple}{38.9} & \textcolor{purple}{35.8} & \textcolor{blue}{40.0} & \textcolor{blue}{41.6}\\
+    NL & \textcolor{green2}{56.9} & \textcolor{red3}{29.3} & \textcolor{blue}{46.9} & \textcolor{purple}{37.0} & \textcolor{blue}{45.4} & \textcolor{purple}{35.3} & \textcolor{blue}{49.7} & \textcolor{red3}{27.5} & \textcolor{red3}{29.8} & \textcolor{blue}{43.4} & \textcolor{red3}{25.3} & \textcolor{blue}{44.5} & \textcolor{red3}{28.6} & \textcolor{purple}{31.7} & \textcolor{red3}{22.0} & -- & \textcolor{purple}{32.0} & \textcolor{blue}{47.7} & \textcolor{purple}{33.0} & \textcolor{purple}{30.1} & \textcolor{purple}{34.6} & \textcolor{blue}{43.6}\\
+    PL & \textcolor{green}{60.8} & \textcolor{purple}{31.5} & \textcolor{blue}{40.2} & \textcolor{blue}{44.2} & \textcolor{blue}{42.1} & \textcolor{purple}{34.2} & \textcolor{blue}{46.2} & \textcolor{red3}{29.2} & \textcolor{red3}{29.0} & \textcolor{blue}{40.0} & \textcolor{red3}{24.5} & \textcolor{blue}{43.2} & \textcolor{purple}{33.2} & \textcolor{purple}{35.6} & \textcolor{red3}{27.9} & \textcolor{blue}{44.8} & -- & \textcolor{blue}{44.1} & \textcolor{purple}{38.2} & \textcolor{purple}{38.2} & \textcolor{purple}{39.8} & \textcolor{blue}{42.1}\\
+    PT & \textcolor{green}{60.7} & \textcolor{purple}{31.4} & \textcolor{blue}{42.9} & \textcolor{purple}{38.4} & \textcolor{blue}{42.8} & \textcolor{blue}{40.2} & \textcolor{green}{60.7} & \textcolor{red3}{26.4} & \textcolor{red3}{29.2} & \textcolor{green2}{53.2} & \textcolor{red3}{23.8} & \textcolor{green2}{52.8} & \textcolor{red3}{28.0} & \textcolor{purple}{31.5} & \textcolor{red3}{24.8} & \textcolor{blue}{49.3} & \textcolor{purple}{34.5} & -- & \textcolor{purple}{39.4} & \textcolor{purple}{32.1} & \textcolor{purple}{34.4} & \textcolor{blue}{43.9}\\
+    RO & \textcolor{green}{60.8} & \textcolor{purple}{33.1} & \textcolor{purple}{38.5} & \textcolor{purple}{37.8} & \textcolor{blue}{40.3} & \textcolor{purple}{35.6} & \textcolor{green2}{50.4} & \textcolor{red3}{24.6} & \textcolor{red3}{26.2} & \textcolor{blue}{46.5} & \textcolor{red3}{25.0} & \textcolor{blue}{44.8} & \textcolor{red3}{28.4} & \textcolor{red3}{29.9} & \textcolor{red3}{28.7} & \textcolor{blue}{43.0} & \textcolor{purple}{35.8} & \textcolor{blue}{48.5} & -- & \textcolor{purple}{31.5} & \textcolor{purple}{35.1} & \textcolor{purple}{39.4}\\
+    SK & \textcolor{green}{60.8} & \textcolor{purple}{32.6} & \textcolor{purple}{39.4} & \textcolor{blue}{48.1} & \textcolor{blue}{41.0} & \textcolor{purple}{33.3} & \textcolor{blue}{46.2} & \textcolor{red3}{29.8} & \textcolor{red3}{28.4} & \textcolor{purple}{39.4} & \textcolor{red3}{27.4} & \textcolor{blue}{41.8} & \textcolor{purple}{33.8} & \textcolor{purple}{36.7} & \textcolor{red3}{28.5} & \textcolor{blue}{44.4} & \textcolor{purple}{39.0} & \textcolor{blue}{43.3} & \textcolor{purple}{35.3} & -- & \textcolor{blue}{42.6} & \textcolor{blue}{41.8}\\
+    SL & \textcolor{green}{61.0} & \textcolor{purple}{33.1} & \textcolor{purple}{37.9} & \textcolor{blue}{43.5} & \textcolor{blue}{42.6} & \textcolor{purple}{34.0} & \textcolor{blue}{47.0} & \textcolor{purple}{31.1} & \textcolor{red3}{28.8} & \textcolor{purple}{38.2} & \textcolor{red3}{25.7} & \textcolor{blue}{42.3} & \textcolor{purple}{34.6} & \textcolor{purple}{37.3} & \textcolor{purple}{30.0} & \textcolor{blue}{45.9} & \textcolor{purple}{38.2} & \textcolor{blue}{44.1} & \textcolor{purple}{35.8} & \textcolor{purple}{38.9} & -- & \textcolor{blue}{42.7}\\
+    SV & \textcolor{green2}{58.5} & \textcolor{red3}{26.9} & \textcolor{blue}{41.0} & \textcolor{purple}{35.6} & \textcolor{blue}{46.6} & \textcolor{purple}{33.3} & \textcolor{blue}{46.6} & \textcolor{red3}{27.4} & \textcolor{purple}{30.9} & \textcolor{purple}{38.9} & \textcolor{red3}{22.7} & \textcolor{blue}{42.0} & \textcolor{red3}{28.2} & \textcolor{purple}{31.0} & \textcolor{red3}{23.7} & \textcolor{blue}{45.6} & \textcolor{purple}{32.2} & \textcolor{blue}{44.2} & \textcolor{purple}{32.7} & \textcolor{purple}{31.3} & \textcolor{purple}{33.5} & --\\
+    \end{tabular}
+%  \caption{Performances (mesure BLEU) de Traduction Automatique pour un ensemble de paires de langues constitué à partir de 22 langues officielles de l{\mbox '}Union Européenne~\cite{mt462}. La langue source est donnée en ligne et la langue cible est donnée en colonne.}
+ \caption{ Traduction Automatique entre 22 langues de
+   l{\mbox '}UE -- \textcolor{grey1}{Machine translation between 22 EU-languages~\cite{mt462}}}
+ \label{fig:euromatrixplus}
+\end{figure*}
+
 Les {\bf approches hybrides} visent à combiner les approches à base de
 connaissances et les approches statistiques. Cela peut être fait de
 plusieurs façons. L{\mbox '}une consiste à utiliser à la fois les
@@ -1742,13 +1735,15 @@ différentes approches et l{\mbox '}état des systèmes de traduction automatiqu
 différentes langues, comme cela apparaît dans un tableau présenté dans
 le projet Euromatrix+ financé par la Commission Européenne (voir figure \ref{fig:euromatrixplus}).
 
-\begin{figure*}[!ht]
-\begin{center}
-  \includegraphics[height=5.0in]{../_media/french/french_table1_mt_matrix.png}
-  \caption{Performances (mesure BLEU) de Traduction Automatique pour un ensemble de paires de langues constitué à partir de 22 langues officielles de l{\mbox '}Union Européenne~\cite{mt462}. La langue source est donnée en ligne et la langue cible est donnée en colonne.}
-  \label{fig:euromatrixplus}
-\end{center}
-\end{figure*}
+
+
+% \begin{figure*}[!ht]
+% \begin{center}
+%   \includegraphics[height=5.0in]{../_media/french/french_table1_mt_matrix.png}
+%   \caption{Performances (mesure BLEU) de Traduction Automatique pour un ensemble de paires de langues constitué à partir de 22 langues officielles de l{\mbox '}Union Européenne~\cite{mt462}. La langue source est donnée en ligne et la langue cible est donnée en colonne.}
+%   \label{fig:euromatrixplus}
+% \end{center}
+% \end{figure*}
 
 Cette figure donne la meilleure performance obtenue pour 462 paires de
 langues officielles de l{\mbox '}Union Européenne (l{\mbox '}irlandais est manquant),
@@ -1975,7 +1970,7 @@ ressources ont été identifiées pour le français (en mai 2011).
 
 \begin{figure*}
 \begin{center}
-\includegraphics[width=4.0in]{../_media/french/french_table2_euromatrix.png}
+\includegraphics[width=2.5in]{_media/french/french_table2_euromatrix.png}
 \caption{Nombre de ressources linguistiques existant pour différentes paires de langues dont le français suivant Euromatrix+}
 \label{fig:EuromatrixFrRessource}
 \end{center}
@@ -2179,6 +2174,8 @@ Europe après le Royaume-Uni.
 
 \subsection{Disponibilité des technologies et des ressources pour le français}
 
+
+
 \subsubsection{Tableaux de situation}
 Les tableaux suivants (figures \ref{fig:lrlttable_fr_1},
 \ref{fig:lrlttable_fr_2}, \ref{fig:lrlttable_fr_3}) donnent un aperçu
@@ -2186,6 +2183,71 @@ de la situation actuelle du soutien technologique pour le français. La
 cote des technologies existantes et des ressources est basée sur des
 estimations en utilisant les critères suivants (chacun allant de 0 à
 6).
+
+\begin{figure*}[!ht]
+  \centering
+\begin{tabular}{>{\columncolor{orange1}}p{.50\linewidth}@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c}
+  \rowcolor{orange1}
+   \cellcolor{white}
+  &\begin{sideways}\makecell[l]{Quantité}\end{sideways}
+ % &\begin{sideways}\makecell[l]{\makecell[l]{Disponibilité} }\end{sideways} 
+  &\begin{sideways}\makecell[l]{Disponibilité~~~~}\end{sideways}
+  &\begin{sideways}\makecell[l]{Qualité}\end{sideways}
+  &\begin{sideways}\makecell[l]{Couverture}\end{sideways} 
+  &\begin{sideways}\makecell[l]{Maturité}\end{sideways} 
+  &\begin{sideways}\makecell[l]{Pérennité}\end{sideways} 
+  &\begin{sideways}\makecell[l]{Adaptabilité}\end{sideways} \\ \addlinespace
+  \multicolumn{8}{>{\columncolor{orange2}}l}{Technologies de la langue} \\\addlinespace
+  Tokenisation, analyse~morpho-syntaxique, analyse/génération morphologique &4&4&4&4&4&3&3 \\ \addlinespace
+  Analyse syntaxique (de surface ou profonde) &4&4&4&4&4&2&2\\ \addlinespace
+  Sémantique des phrases (WSD, structure argumentaire, rôles sémantiques) &2&2&2&1&2&1&2\\ \addlinespace
+  Sémantique de textes (résolution de coréférences, contexte, pragmatique, inférence) &2&1&3&2&2&2&1\\ \addlinespace
+  Traitement avancé du discours (structure des textes, cohérence, structure rhétorique/RST, zonage argumentatif, argumentation, patterns textuels, types de textes etc.) &2&2&2&2&2&2&1\\ \addlinespace
+  Recherche d{\mbox '}Informations (Indexation de textes, RI multimédia, RI interlingue) &4&5&5&4&5&4&4\\ \addlinespace
+  Extraction d{\mbox '}Informations (reconnaissance d{\mbox '}entités nommées, extraction d{\mbox '}évènements/de relations, reconnaissance d{\mbox '}opinions/de sentiments, fouille de textes/analytique)&3&3&4&3&4&3&3\\ \addlinespace
+  Génération de Langue (génération de phrases, génération de rapports, génération de textes) &2&1&2&2&2&1&2\\ \addlinespace
+  Résumé automatique, Réponse aux Questions, Technologies avancées d{\mbox '}accès à l{\mbox '}Information &3&3&3&3&3&2&2\\ \addlinespace
+  Traduction Automatique (et traduction vocale) &5&4&4&3&4&3&3\\ \addlinespace
+  Reconnaissance de la parole (couvrant un large spectre: commande vocale, dictée vocale, transcription d{\mbox '}émissions, transcription de conversations, dialogue oral) &4&3&4&4&4&3&3\\ \addlinespace
+  Synthèse vocale (synthèse à partir du texte, génération de parole)&4&3&4&4&4&3&3\\ \addlinespace
+  Gestion du Dialogue (Capacités dialogiques et modélisation de l{\mbox '}interlocuteur)&3&2&3&3&3&2&2\\ \addlinespace
+  \end{tabular}
+  \caption{Tableau complet de la situation estimée des technologies pour le français.}
+  \label{fig:lrlttable_fr_1}
+\end{figure*}
+
+
+\begin{figure*}[ht]
+  \centering
+\begin{tabular}{>{\columncolor{orange1}}p{.50\linewidth}@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c}
+  \rowcolor{orange1}
+   \cellcolor{white}
+  &\begin{sideways}\makecell[l]{Quantité}\end{sideways}
+ % &\begin{sideways}\makecell[l]{\makecell[l]{Disponibilité} }\end{sideways} 
+  &\begin{sideways}\makecell[l]{Disponibilité}\end{sideways}
+  &\begin{sideways}\makecell[l]{Qualité}\end{sideways}
+  &\begin{sideways}\makecell[l]{Couverture}\end{sideways} 
+  &\begin{sideways}\makecell[l]{Maturité}\end{sideways} 
+  &\begin{sideways}\makecell[l]{Pérennité}\end{sideways} 
+  &\begin{sideways}\makecell[l]{Adaptabilité}\end{sideways} \\ \addlinespace
+  \multicolumn{8}{>{\columncolor{orange2}}l}{Ressources Linguistiques (Ressources, Données, Bases de connaissances)} \\\addlinespace
+  Corpus de référence &3&1&4&3&4&4&3\\ \addlinespace
+  Corpus syntaxiques (corpus arborés)&4&4&3&3&3&3&2\\ \addlinespace
+  Corpus sémantiques&2&2&2&1&2&2&2\\ \addlinespace
+  Corpus de discours&1&2&2&2&1&1&1\\ \addlinespace
+  Corpus parallèles, Mémoires de traduction&4&3&4&3&3&4&2\\ \addlinespace
+  Corpus de parole (brut, étiqueté/annoté, dialogue)&4&3&4&3&3&4&2\\ \addlinespace
+  Corpus multimédia et multimodal (texte combiné à de l{\mbox '}audio/de la vidéo)&2&1&3&1&1&2&1\\ \addlinespace
+  Modèles de langage&4&3&3&3&3&3&2\\ \addlinespace
+  Lexiques, Bases terminologiques&4&3&4&3&4&4&3\\ \addlinespace
+  Grammaires&3&2&3&3&3&2&2\\ \addlinespace
+  Thesauri, WordNets&3&3&2&1&3&3&3\\ \addlinespace
+  Ressources Ontologiques pour la connaissance du monde (c.àd. {\em upper models}, Données liées)  &2&1&2&1&2&1&1\\ \addlinespace
+  \end{tabular}
+  \caption{Tableau complet de la situation estimée des ressources pour le français.}
+  \label{fig:lrlttable_fr_2}
+\end{figure*}
+
 
 \begin{enumerate}
 \item {\bf Quantité}~: Est-ce qu{\mbox '}un outil/une ressource existe pour la langue considérée~? Plus il y en a, meilleure est la note.
@@ -2231,74 +2293,12 @@ estimations en utilisant les critères suivants (chacun allant de 0 à
       \end{itemize}
 \end{enumerate}
 
-\begin{figure*}[!ht]
-  \centering
-\begin{tabular}{>{\columncolor{orange1}}p{.50\linewidth}@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c}
-  \rowcolor{orange1}
-   \cellcolor{white}
-  &\begin{sideways}\makecell[l]{Quantité}\end{sideways}
- % &\begin{sideways}\makecell[l]{\makecell[l]{Disponibilité} }\end{sideways} 
-  &\begin{sideways}\makecell[l]{Disponibilité}\end{sideways}
-  &\begin{sideways}\makecell[l]{Qualité}\end{sideways}
-  &\begin{sideways}\makecell[l]{Couverture}\end{sideways} 
-  &\begin{sideways}\makecell[l]{Maturité}\end{sideways} 
-  &\begin{sideways}\makecell[l]{Pérennité}\end{sideways} 
-  &\begin{sideways}\makecell[l]{Adaptabilité}\end{sideways} \\ \addlinespace
-  \multicolumn{8}{>{\columncolor{orange2}}l}{Technologies de la langue} \\\addlinespace
-  Tokenisation, analyse~morpho-syntaxique, analyse/génération morphologique &4&4&4&4&4&3&3 \\ \addlinespace
-  Analyse syntaxique (de surface ou profonde) &4&4&4&4&4&2&2\\ \addlinespace
-  Sémantique des phrases (WSD, structure argumentaire, rôles sémantiques) &2&2&2&1&2&1&2\\ \addlinespace
-  Sémantique de textes (résolution de coréférences, contexte, pragmatique, inférence) &2&1&3&2&2&2&1\\ \addlinespace
-  Traitement avancé du discours (structure des textes, cohérence, structure rhétorique/RST, zonage argumentatif, argumentation, patterns textuels, types de textes etc.) &2&2&2&2&2&2&1\\ \addlinespace
-  Recherche d{\mbox '}Informations (Indexation de textes, RI multimédia, RI interlingue) &4&5&5&4&5&4&4\\ \addlinespace
-  Extraction d{\mbox '}Informations (reconnaissance d{\mbox '}entités nommées, extraction d{\mbox '}évènements/de relations, reconnaissance d{\mbox '}opinions/de sentiments, fouille de textes/analytique)&3&3&4&3&4&3&3\\ \addlinespace
-  Génération de Langue (génération de phrases, génération de rapports, génération de textes) &2&1&2&2&2&1&2\\ \addlinespace
-  Résumé automatique, Réponse aux Questions, Technologies avancées d{\mbox '}accès à l{\mbox '}Information &3&3&3&3&3&2&2\\ \addlinespace
-  Traduction Automatique (et traduction vocale) &5&4&4&3&4&3&3\\ \addlinespace
-  Reconnaissance de la parole (couvrant un large spectre: commande vocale, dictée vocale, transcription d{\mbox '}émissions, transcription de conversations, dialogue oral) &4&3&4&4&4&3&3\\ \addlinespace
-  Synthèse vocale (synthèse à partir du texte, génération de parole)&4&3&4&4&4&3&3\\ \addlinespace
-  Gestion du Dialogue (Capacités dialogiques et modélisation de l{\mbox '}interlocuteur)&3&2&3&3&3&2&2\\ \addlinespace
-  \end{tabular}
-  \caption{Tableau complet de la situation estimée des technologies pour le français.}
-  \label{fig:lrlttable_fr_1}
-\end{figure*}
-
-\begin{figure*}[!ht]
-  \centering
-\begin{tabular}{>{\columncolor{orange1}}p{.50\linewidth}@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c}
-  \rowcolor{orange1}
-   \cellcolor{white}
-  &\begin{sideways}\makecell[l]{Quantité}\end{sideways}
- % &\begin{sideways}\makecell[l]{\makecell[l]{Disponibilité} }\end{sideways} 
-  &\begin{sideways}\makecell[l]{Disponibilité}\end{sideways}
-  &\begin{sideways}\makecell[l]{Qualité}\end{sideways}
-  &\begin{sideways}\makecell[l]{Couverture}\end{sideways} 
-  &\begin{sideways}\makecell[l]{Maturité}\end{sideways} 
-  &\begin{sideways}\makecell[l]{Pérennité}\end{sideways} 
-  &\begin{sideways}\makecell[l]{Adaptabilité}\end{sideways} \\ \addlinespace
-  \multicolumn{8}{>{\columncolor{orange2}}l}{Ressources Linguistiques (Ressources, Données, Bases de connaissances)} \\\addlinespace
-  Corpus de référence &3&1&4&3&4&4&3\\ \addlinespace
-  Corpus syntaxiques (corpus arborés)&4&4&3&3&3&3&2\\ \addlinespace
-  Corpus sémantiques&2&2&2&1&2&2&2\\ \addlinespace
-  Corpus de discours&1&2&2&2&1&1&1\\ \addlinespace
-  Corpus parallèles, Mémoires de traduction&4&3&4&3&3&4&2\\ \addlinespace
-  Corpus de parole (brut, étiqueté/annoté, dialogue)&4&3&4&3&3&4&2\\ \addlinespace
-  Corpus multimédia et multimodal (texte combiné à de l{\mbox '}audio/de la vidéo)&2&1&3&1&1&2&1\\ \addlinespace
-  Modèles de langage&4&3&3&3&3&3&2\\ \addlinespace
-  Lexiques, Bases terminologiques&4&3&4&3&4&4&3\\ \addlinespace
-  Grammaires&3&2&3&3&3&2&2\\ \addlinespace
-  Thesauri, WordNets&3&3&2&1&3&3&3\\ \addlinespace
-  Ressources Ontologiques pour la connaissance du monde (c.àd. {\em upper models}, Données liées)  &2&1&2&1&2&1&1\\ \addlinespace
-  \end{tabular}
-  \caption{Tableau complet de la situation estimée des ressources pour le français.}
-  \label{fig:lrlttable_fr_2}
-\end{figure*}
 
 Un tableau réduit (figure \ref{fig:lrlttable_fr_3}) a également été produit, où les technologies et les
 ressources ont été regroupées, qui prend également en compte la
 situation pour les autres langues européennes.
 
-\begin{figure*}[!ht]
+\begin{figure*}[th]
   \centering
 \begin{tabular}{>{\columncolor{orange1}}p{.50\linewidth}@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c}
   \rowcolor{orange1}
@@ -2325,7 +2325,9 @@ situation pour les autres langues européennes.
   {\bf Ressources lexicales}  &4&3&4&4&4&4&3\\ \addlinespace
   {\bf Grammaires, Modèles de langage}&3&3&4&4&3&3&3\\ \addlinespace
   \end{tabular}
-  \caption{Tableau réduit de la situation estimée des outils et ressources pour le français (voir~\cite{terminology_table} pour l'explicitation de certains termes.)}
+  \caption{Tableau réduit de la situation estimée des outils et
+    ressources pour le français.} 
+% \caption{Tableau réduit de la situation estimée des outils et ressources pour le français (voir~\cite{terminology_table} pour l'explicitation de certains termes.)}
   \label{fig:lrlttable_fr_3}
 \end{figure*}
 
@@ -2543,7 +2545,7 @@ existants, qualité et couverture des ressources lexicales existantes
 et des corpus parallèles existants, qualité et couverture des
 ressources lexicales et des grammaires existantes
 
-\begin{figure*}[!ht]
+\begin{figure*}[h]
   \small
   \centering
   \begin{tabular}
@@ -2600,7 +2602,7 @@ ressources lexicales et des grammaires existantes
   \label{fig:speech_cluster_fr}
 \end{figure*}
 
-\begin{figure*}[!ht]
+\begin{figure*}[h]
   \small
   \centering
   \begin{tabular}
@@ -2657,7 +2659,7 @@ ressources lexicales et des grammaires existantes
   \label{fig:mt_cluster_fr}
 \end{figure*}
 
-\begin{figure*}[!ht]
+\begin{figure*}[h]
   \small
   \centering
   \begin{tabular}
@@ -2714,7 +2716,7 @@ ressources lexicales et des grammaires existantes
   \label{fig:text_cluster_fr}
 \end{figure*}
 
-\begin{figure*}[!ht]
+\begin{figure*}[h]
   \small
   \centering
   \begin{tabular}
@@ -2845,25 +2847,25 @@ META-NET est un réseau d{\mbox '}excellence financé par la Commission Europée
 \item offre des technologies de l{\mbox '}information en réseau aux fonctionnalités avancées et accessibles aux citoyens européens.
 \end{itemize}
 
-\begin{figure*}[!ht]
-\begin{center}
-  \includegraphics[height=5.0in]{../_media/french/french_pix10_europa_map.png}
-  \caption{Pays représentés dans META-NET}
-  \label{fig:metanet_countries}
-\end{center}
-\end{figure*}
+% \begin{figure*}[!ht]
+% \begin{center}
+%   \includegraphics[height=5.0in]{_media/french/french_pix10_europa_map.png}
+%   \caption{Pays représentés dans META-NET}
+%   \label{fig:metanet_countries}
+% \end{center}
+% \end{figure*}
 
 META-NET stimule et favorise les technologies multilingues pour toutes les langues européennes. Ces technologies permettent la traduction automatique, la production de contenus, le traitement de l{\mbox '}information et la gestion des connaissances pour une grande variété d{\mbox '}applications et de domaines disciplinaires. Le réseau veut améliorer les approches actuelles, de manière à ce que de meilleures communications et coopérations puissent avoir lieu à travers les langues. Les Européens ont un droit égal pour l'accès à l{\mbox '}information et aux connaissances indépendamment de leur langue. 
 
 META-NET a été lancé le 1\raise+.5ex\hbox{er} février 2010 avec l{\mbox '}objectif de faire avancer la recherche en technologies de la langue. Le réseau soutient une Europe unifiée en un seul marché numérique et un unique espace d{\mbox '}information. META-NET a mené plusieurs activités qui favorisent ses objectifs. META-VISION, META-SHARE et META-RESEARCH sont les trois lignes d{\mbox '}action du réseau.
 
-\begin{figure*}[!ht]
-\begin{center}
-  \includegraphics[width=3.0in]{../_media/french/meta_3lines}\\
-  \caption{Les trois lignes d{\mbox '}action dans META-NET}
-  \label{fig:metanetactionlines}
-\end{center}
-\end{figure*}
+% \begin{figure*}[!ht]
+% \begin{center}
+%   \includegraphics[width=3.0in]{_media/french/meta_3lines.pdf}\\
+%   \caption{Les trois lignes d{\mbox '}action dans META-NET}
+%   \label{fig:metanetactionlines}
+% \end{center}
+% \end{figure*}
 
 \textbf{META-VISION} favorise une communauté d{\mbox '}intervenants dynamiques et influents unifiés autour d{\mbox '}une vision partagée et d{\mbox '}un agenda de recherche stratégique commun (SRA). L{\mbox '}objectif principal de cette activité est de construire en Europe une communauté sur les Technologies de la Langue qui soit cohérente et cohésive, en réunissant des représentants de groupes très fragmentés et diversifiés. Lors de la première année de META-NET, les présentations au Forum FLaReNet (Espagne), aux Journées {\it Language Technology} (Luxembourg), à JIAMCATT 2010 (Luxembourg), à LREC 2010 (Malte), à EAMT 2010 (France) et aux TIC 2010 (Belgique) ont été centrées sur la sensibilisation du public. Selon les premières estimations, META-NET a déjà été en contact avec plus de 2500 professionnels des technologies de la langue pour développer ses objectifs et ses visions avec eux. Lors du META-FORUM 2010 à Bruxelles, META-NET a communiqué les premiers résultats de son processus de construction d{\mbox '}une vision à plus de 250 participants. Dans une série de sessions interactives, les participants ont fourni des commentaires sur les visions présentées par le réseau.
 
@@ -3269,9 +3271,9 @@ especially in politics, which was ranked 1\raise+.5ex\hbox{st} blog in science i
 in 2011, and includes interesting data such as the study of the
 language of French politicians (see figure \ref{fig:je_stats_en}).
 
-\begin{figure*}[!ht]
+\begin{figure*}[ht]
 \begin{center}
- \includegraphics[height=3.0in]{../_media/french/french_pix1_freq_je.png} 
+ \includegraphics[height=2.5in]{_media/french/french_pix1_freq_je.png} 
   \caption{Frequency of the use of «~Je~» (``I{\mbox '}{\mbox '}) in their talks by several French Presidents}
   \label{fig:je_stats_en}
 \end{center}
@@ -3283,9 +3285,9 @@ French is now very present over the Internet, and ranked
 8\raise+.5ex\hbox{th} (see figure \ref{fig:internettop10_en}) at the end
 of 2009, with 57 million users in the world~\cite{internettop10}.
 
-\begin{figure*}[!ht]
+\begin{figure*}[ht]
 \begin{center}
- \includegraphics[height=4.0in]{../_media/french/french_pix2_top_10_Internet_languages_2010_english.png}
+ \includegraphics[height=4.0in]{_media/french/french_pix2_top_10_Internet_languages_2010_english.png}
   \caption{Top 10 languages in the Internet~\cite{internettop10}}
   \label{fig:internettop10_en}
 \end{center}
@@ -3534,12 +3536,14 @@ speech and text technologies overlap and interact with many other
 technologies that facilitate processing of multimodal communication
 and multimedia documents. Sign language allows hearing impaired people to communicate.
 
-\begin{figure*}
+\begin{figure*}[htb]
+ \colorrule{grey3}{\textwidth}{1.5pt}
 \begin{center}
- \includegraphics[width=3.0in]{../_media/language_technologies} 
+ \includegraphics[width=\textwidth]{../_media/english/language_technologies} 
 \caption{Language Technologies}
 \label{fig:languagetechnoEng}
 \end{center}
+ \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
 
 \subsection{Language Technology Application Architectures}
@@ -3569,13 +3573,7 @@ highly simplified and idealised, to illustrate the complexity of
 Language Technology (LT) applications in a generally understandable
 way.
 
-\begin{figure*}
-\begin{center}
- \includegraphics[width=3.0in]{../_media/text_processing_app_architecture}
-\caption{Typical text processing pipeline}
-\label{fig:textprocarchiEng}
-\end{center}
-\end{figure*}
+
 
 After introducing the core application areas, we will give a short
 description of the situation regarding LT for French, with an overview
@@ -3603,14 +3601,14 @@ and number, e.g. in ``She *write a letter.{\mbox '}{\mbox '}
 However, for other common error types the currently used methods are
 not sufficient. For example, take a look at the following first verse
 of a poem by Jerrold H. Zar (1992):
-\begin{it}
-\begin{center}
+%\begin{it}
+\begin{quote}
 Eye have a spelling chequer,\\
 It came with my Pea Sea.\\
 It plane lee marks four my revue\\
-Miss Steaks I can knot sea.\\
-\end{center}
-\end{it}
+Miss Steaks I can knot sea.
+\end{quote}
+%\end{it}
 Most available spell checkers (including Microsoft Word) will find
 no errors in this poem because they mostly look at words in
 isolation. However, for detecting so-called homophone errors
@@ -3618,11 +3616,13 @@ isolation. However, for detecting so-called homophone errors
 the context in which a word occurs.
 
 \begin{figure*}[!ht]
+ \colorrule{grey3}{\textwidth}{1.5pt}
 \begin{center}
-  \includegraphics[width=3.0in]{../_media/language_checking}
+  \includegraphics[width=\textwidth]{../_media/english/language_checking}
 \caption{Typical architecture for a spell-checker rule based (yellow arrows) or statistical (blue arrow)}
 \label{fig:spellcheckerEn}
 \end{center}
+ \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
 
 This either requires the formulation of language-specific {\bf grammar
@@ -3667,6 +3667,16 @@ and grammatical checker for French (available online on Reverso
 website), besides the spell-checkers Antidote of Druide Informatique
 and Prolexis of Éditions Diagonal.
 
+\begin{figure*}[htb]
+ \colorrule{grey3}{\textwidth}{1.5pt}
+\begin{center}
+ \includegraphics[width=\textwidth]{../_media/english/text_processing_app_architecture}
+\caption{Typical text processing pipeline}
+\label{fig:textprocarchiEng}
+\end{center}
+ \colorrule{grey3}{\textwidth}{1.5pt}
+\end{figure*}
+
 \subsubsection{Web search}
 The Google search engine (see figure \ref{fig:archiwebEn} for a
 typical architecture), which started in 1998, is nowadays used for
@@ -3689,13 +3699,7 @@ analysis of this question or sentence on a syntactic and semantic
 level as well as the availability of an index that allows for a fast
 retrieval of relevant documents.
 
-\begin{figure*}[!ht]
-\begin{center}
- \includegraphics[width=3.0in]{../_media/web_search_architecture}
- \caption{Typical Architecture of Web Search Engine}
-\label{fig:archiwebEn}
-\end{center}
-\end{figure*}
+
 
 For example, imagine a user inputs the query ``Give me a list of all
 companies that were taken over by other companies in the last five
@@ -3743,6 +3747,16 @@ the {\em Voxalead News}~\cite{voxaleadnews} multimedia search application in 6 l
 (French, English, Spanish, Chinese Mandarin, Arabic and Russian),
 slightly ahead of Google.
 
+\begin{figure*}[!ht]
+ \colorrule{grey3}{\textwidth}{1.5pt}
+\begin{center}
+ \includegraphics[width=\width]{../_media/english/web_search_architecture}
+ \caption{Typical Architecture of Web Search Engine}
+\label{fig:archiwebEn}
+\end{center}
+ \colorrule{grey3}{\textwidth}{1.5pt}
+\end{figure*}
+
 \subsubsection{Speech processing} 
 Spoken Language Processing is part of Language Processing, although
 the communities working on Computational Linguistics and on Speech
@@ -3769,11 +3783,13 @@ speech input is required.
 
 
 \begin{figure*}
+ \colorrule{grey3}{\textwidth}{1.5pt}
 \begin{center}
- \includegraphics[width=3.0in]{../_media/simple_speech-based_dialogue_architecture} 
+ \includegraphics[width=\textwidth]{../_media/english/simple_speech-based_dialogue_architecture} 
 \caption{Basic Architecture for a Spoken Language Dialog System}
 \label{fig:sldsEng}
 \end{center}
+ \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
 
 A complete Speech Interaction system comprises the following four
@@ -3878,7 +3894,7 @@ artificial {\bf talking faces}, pointing, etc.).
 
 \begin{figure*}[!ht]
 \begin{center}
-  \includegraphics[height=4.0in]{../_media/french/french_pix8_speech_reco_nist.png}
+  \includegraphics[height=4.0in]{_media/french/french_pix8_speech_reco_nist.png}
   \caption{The history of Automatic Speech Recognition since 1987 through the NIST evaluation campaigns~\cite{speechreconist}}
   \label{fig:nistreco}
 \end{center}
@@ -3966,11 +3982,13 @@ Translation (MT) still fails to fulfil the high expectations it gave
 rise to in its early years.
 
 \begin{figure*}
+ \colorrule{grey3}{\textwidth}{1.5pt}
 \begin{center}
- \includegraphics[width=3.0in]{../_media/machine_translation}
+ \includegraphics[width=\textwidth]{../_media/english/machine_translation}
 \caption{Machine Translation Architecture statistical (blue arrow) or rule based (yellow arrows)}
 \label{fig:mtarchiEng}
 \end{center}
+ \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
 
 At its basic level, MT simply substitutes words in one natural
@@ -4051,13 +4069,13 @@ the quality of MT systems, the various approaches and the status of MT
 systems for the different languages, as it appears in a Table
 presented within the EC Euromatrix+ project (see figure \ref{fig:euromatrixplus}).
 
-\begin{figure*}[!ht]
-\begin{center}
-  \includegraphics[height=5.0in]{../_media/french/french_table1_mt_matrix.png}
-  \caption{Machine Translation performances (BLEU measure) for a set of language pairs made with 22 EU official languages~\cite{mt462}. Source languages are given in rows and target languages in columns.}
-  \label{fig:euromatrixplus}
-\end{center}
-\end{figure*}
+% \begin{figure*}[!ht]
+% \begin{center}
+%   \includegraphics[height=5.0in]{../_media/french/french_table1_mt_matrix.png}
+%   \caption{Machine Translation performances (BLEU measure) for a set of language pairs made with 22 EU official languages~\cite{mt462}. Source languages are given in rows and target languages in columns.}
+%   \label{fig:euromatrixplus}
+% \end{center}
+% \end{figure*}
 
 This figure gives the best performance obtained for 462 pairs of the
 European Union official languages (Irish is missing), in terms of BLEU
@@ -4248,13 +4266,13 @@ after English and German in terms of the number of Language Resources
 devoted to MT available for the European Union official languages, as
 it appears in the Euromatrix+~\cite{euromatrixplus} (see \ref{fig:EuromatrixFrRessource}), where 130 resources have been identified for French (May 2011).
 
-\begin{figure*}
-\begin{center}
-\includegraphics[width=4.0in]{../_media/french/french_table2_euromatrix.png}
-\caption{Number of Language Resources for various language pairs including french, according to Euromatrix+}
-\label{fig:EuromatrixFrRessource}
-\end{center}
-\end{figure*}
+%\begin{figure*}
+%\begin{center}
+%\includegraphics[width=4.0in]{_media/french/french_table2_euromatrix.png}
+%\caption{Number of Language Resources for various language pairs including french, according to Euromatrix+}
+%\label{fig:EuromatrixFrRessource}
+%\end{center}
+%\end{figure*}
 
 For example, the Techno-Langue ESTER campaign allowed producing, in
 2004, 1,700 hours of Broadcast News speech in French, 100 hours of
@@ -4576,7 +4594,8 @@ European languages.
   {\bf Lexical Resources} &4&3&4&4&4&4&3\\ \addlinespace
   {\bf Grammars, Language Models}&3&3&4&4&3&3&3\\ \addlinespace
   \end{tabular}
-  \caption{Reduced Table of the estimated status of Language Technologies and Resources for French (see~\cite{terminology_table_eng} for details about some terms)}
+  \caption{Reduced Table of the estimated status of Language Technologies and Resources for French}
+%  \caption{Reduced Table of the estimated status of Language Technologies and Resources for French (see~\cite{terminology_table_eng} for details about some terms)}
   \label{fig:lrlttable_fr_3}
 \end{figure*}
 
@@ -4766,233 +4785,7 @@ of existing lexical resources (e.g. WordNet) and grammars.
 corpora and parallel corpora, quality and coverage of existing lexical
 resources and grammars.
 
-\begin{figure*}[tb]
-  \small
-  \centering
-  \begin{tabular}
-  { % defines color for each column.
-  >{\columncolor{corange5}}p{.13\linewidth}@{\hspace{.040\linewidth}}
-  >{\columncolor{corange4}}p{.13\linewidth}@{\hspace{.040\linewidth}}
-  >{\columncolor{corange3}}p{.13\linewidth}@{\hspace{.040\linewidth}}
-  >{\columncolor{corange2}}p{.13\linewidth}@{\hspace{.040\linewidth}}
-  >{\columncolor{corange1}}p{.13\linewidth} 
-  }
-  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Excellent}} & 
-  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Good}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Moderate}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Fragmentary}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{Weak/no}} \\ 
-  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} & 
-  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{support}} \\ \addlinespace
 
-  & \vspace*{0.5mm}English 
-  & \vspace*{0.5mm}Czech \newline 
-  Dutch \newline 
-  Finnish \newline 
-  French \newline 
-  German \newline   
-  Italian \newline  
-  Portuguese \newline 
-  Spanish
-  & \vspace*{0.5mm}Basque \newline 
-  Bulgarian \newline 
-  Catalan \newline 
-  Danish \newline 
-  Estonian \newline 
-  Galician \newline 
-  Greek \newline  
-  Hungarian \newline
-  Irish \newline  
-  Norwegian \newline 
-  Polish \newline 
-  Serbian \newline 
-  Slovak \newline 
-  Slovene \newline 
-  Swedish
-  & \vspace*{0.5mm}Croatian \newline 
-  Icelandic \newline  
-  Latvian \newline 
-  Lithuanian \newline 
-  Maltese \newline 
-  Romanian
-  \end{tabular}
-  \caption{Speech processing: status for 30 European languages}
-  \label{fig:speech_cluster_fr_en}
-\end{figure*}
-
-\begin{figure*}[tb]
-  \small
-  \centering
-  \begin{tabular}
-  { % defines color for each column.
-  >{\columncolor{corange5}}p{.13\linewidth}@{\hspace{.040\linewidth}}
-  >{\columncolor{corange4}}p{.13\linewidth}@{\hspace{.040\linewidth}}
-  >{\columncolor{corange3}}p{.13\linewidth}@{\hspace{.040\linewidth}}
-  >{\columncolor{corange2}}p{.13\linewidth}@{\hspace{.040\linewidth}}
-  >{\columncolor{corange1}}p{.13\linewidth} 
-  }
-  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Excellent}} & 
-  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Good}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Moderate}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Fragmentary}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{Weak/no}} \\ 
-  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} & 
-  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{support}} \\ \addlinespace
-
-  & \vspace*{0.5mm}English  
-  & \vspace*{0.5mm}French \newline 
-  Spanish
-  & \vspace*{0.5mm}  Catalan \newline 
-  Dutch \newline 
-  German \newline 
-  Hungarian \newline 
-  Italian \newline 
-  Polish \newline 
-  Romanian
-  & \vspace*{0.5mm}Basque \newline 
-  Bulgarian \newline 
-  Croatian \newline 
-  Czech \newline
-  Danish \newline 
-  Estonian \newline 
-  Finnish \newline 
-  Galician \newline 
-  Greek \newline 
-  Irish \newline 
-  Islandic \newline 
-  Latvian \newline 
-  Lithuanian \newline 
-  Maltese \newline 
-  Norwegian \newline 
-  Portuguese \newline 
-  Serbian \newline 
-  Slovak \newline 
-  Slovene \newline 
-  Swedish
-  \end{tabular}
-  \caption{Machine Translation: status for 30 European languages}
-  \label{fig:mt_cluster_fr_en}
-\end{figure*}
-
-\begin{figure*}[tb]
-  \small
-  \centering
-  \begin{tabular}
-  { % defines color for each column.
-  >{\columncolor{corange5}}p{.13\linewidth}@{\hspace{.040\linewidth}}
-  >{\columncolor{corange4}}p{.13\linewidth}@{\hspace{.040\linewidth}}
-  >{\columncolor{corange3}}p{.13\linewidth}@{\hspace{.040\linewidth}}
-  >{\columncolor{corange2}}p{.13\linewidth}@{\hspace{.040\linewidth}}
-  >{\columncolor{corange1}}p{.13\linewidth} 
-  }
-  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Excellent}} & 
-  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Good}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Moderate}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Fragmentary}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{Weak/no}} \\ 
-  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} & 
-  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{support}} \\ \addlinespace
-
-  & \vspace*{0.5mm}English
-  & \vspace*{0.5mm}Dutch \newline 
-  French \newline 
-  German \newline 
-  Italian \newline 
-  Spanish
-  & \vspace*{0.5mm}Basque \newline 
-  Bulgarian \newline 
-  Catalan \newline 
-  Czech \newline 
-  Danish \newline 
-  Finnish \newline 
-  Galician \newline 
-  Greek \newline 
-  Hungarian \newline 
-  Norwegian \newline 
-  Polish \newline 
-  Portuguese \newline 
-  Romanian \newline 
-  Slovak \newline 
-  Slovene \newline 
-  Swedish
-  & \vspace*{0.5mm}Croatian \newline 
-  Estonian \newline 
-  Irish \newline 
-  Islandic \newline 
-  Latvian \newline 
-  Lithuanien \newline 
-  Maltese \newline 
-  Serbian \\
-  \end{tabular}
-  \caption{Text analysis: status for 30 European languages}
-  \label{fig:text_cluster_fr_en}
-\end{figure*}
-
-\begin{figure*}[tb]
-  \small
-  \centering
-  \begin{tabular}
-  { % defines color for each column.
-  >{\columncolor{corange5}}p{.13\linewidth}@{\hspace{.040\linewidth}}
-  >{\columncolor{corange4}}p{.13\linewidth}@{\hspace{.040\linewidth}}
-  >{\columncolor{corange3}}p{.13\linewidth}@{\hspace{.040\linewidth}}
-  >{\columncolor{corange2}}p{.13\linewidth}@{\hspace{.040\linewidth}}
-  >{\columncolor{corange1}}p{.13\linewidth} 
-  }
-  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Excellent}} & 
-  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Good}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Moderate}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Fragmentary}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{Weak/no}} \\ 
-  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} & 
-  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{support}} \\ \addlinespace
-  
-  & \vspace*{0.5mm}English 
-  & \vspace*{0.5mm}Czech\newline 
-  Dutch \newline 
-  French \newline 
-  German \newline 
-  Hungarian \newline 
-  Italian \newline
-  Polish \newline 
-  Spanish \newline
-  Swedish 
-  & \vspace*{0.5mm}  Basque \newline 
-    Bulgarian \newline 
-    Catalan \newline 
-    Croatian \newline 
-    Danish \newline 
-    Estonian \newline 
-    Finnish \newline 
-    Galician \newline 
-    Greek \newline 
-    Norwegian \newline 
-    Portuguese \newline 
-    Romanian \newline 
-    Serbian \newline 
-    Slovak \newline 
-    Slovene
-  &  \vspace*{0.5mm} Irish \newline 
-    Islandic \newline 
-    Latvian \newline 
-    Lithuanian \newline 
-    Maltese \\
-  \end{tabular}
-  \caption{Speech and text resources: status for 30 European languages}
-  \label{fig:resources_cluster_fr_en}
-\end{figure*}
 
 The tables in figures \ref{fig:speech_cluster_fr_en},
 \ref{fig:mt_cluster_fr_en}, \ref{fig:text_cluster_fr_en} and
@@ -5049,6 +4842,234 @@ A large, coordinated effort on Language Technologies would help saving
 the French language just like the other languages, and multilingualism
 in general in Europe and worldwide~\cite{worldconclusion}.
 
+\begin{figure*}[htb]
+  \small
+  \centering
+  \begin{tabular}
+  { % defines color for each column.
+  >{\columncolor{corange5}}p{.13\linewidth}@{\hspace{.040\linewidth}}
+  >{\columncolor{corange4}}p{.13\linewidth}@{\hspace{.040\linewidth}}
+  >{\columncolor{corange3}}p{.13\linewidth}@{\hspace{.040\linewidth}}
+  >{\columncolor{corange2}}p{.13\linewidth}@{\hspace{.040\linewidth}}
+  >{\columncolor{corange1}}p{.13\linewidth} 
+  }
+  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Excellent}} & 
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Good}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Moderate}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Fragmentary}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{Weak/no}} \\ 
+  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} & 
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{support}} \\ \addlinespace
+
+  & \vspace*{0.5mm}English 
+  & \vspace*{0.5mm}Czech \newline 
+  Dutch \newline 
+  Finnish \newline 
+  French \newline 
+  German \newline   
+  Italian \newline  
+  Portuguese \newline 
+  Spanish
+  & \vspace*{0.5mm}Basque \newline 
+  Bulgarian \newline 
+  Catalan \newline 
+  Danish \newline 
+  Estonian \newline 
+  Galician \newline 
+  Greek \newline  
+  Hungarian \newline
+  Irish \newline  
+  Norwegian \newline 
+  Polish \newline 
+  Serbian \newline 
+  Slovak \newline 
+  Slovene \newline 
+  Swedish
+  & \vspace*{0.5mm}Croatian \newline 
+  Icelandic \newline  
+  Latvian \newline 
+  Lithuanian \newline 
+  Maltese \newline 
+  Romanian
+  \end{tabular}
+  \caption{Speech processing: status for 30 European languages}
+  \label{fig:speech_cluster_fr_en}
+\end{figure*}
+
+\begin{figure*}[htb]
+  \small
+  \centering
+  \begin{tabular}
+  { % defines color for each column.
+  >{\columncolor{corange5}}p{.13\linewidth}@{\hspace{.040\linewidth}}
+  >{\columncolor{corange4}}p{.13\linewidth}@{\hspace{.040\linewidth}}
+  >{\columncolor{corange3}}p{.13\linewidth}@{\hspace{.040\linewidth}}
+  >{\columncolor{corange2}}p{.13\linewidth}@{\hspace{.040\linewidth}}
+  >{\columncolor{corange1}}p{.13\linewidth} 
+  }
+  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Excellent}} & 
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Good}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Moderate}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Fragmentary}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{Weak/no}} \\ 
+  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} & 
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{support}} \\ \addlinespace
+
+  & \vspace*{0.5mm}English  
+  & \vspace*{0.5mm}French \newline 
+  Spanish
+  & \vspace*{0.5mm}  Catalan \newline 
+  Dutch \newline 
+  German \newline 
+  Hungarian \newline 
+  Italian \newline 
+  Polish \newline 
+  Romanian
+  & \vspace*{0.5mm}Basque \newline 
+  Bulgarian \newline 
+  Croatian \newline 
+  Czech \newline
+  Danish \newline 
+  Estonian \newline 
+  Finnish \newline 
+  Galician \newline 
+  Greek \newline 
+  Irish \newline 
+  Islandic \newline 
+  Latvian \newline 
+  Lithuanian \newline 
+  Maltese \newline 
+  Norwegian \newline 
+  Portuguese \newline 
+  Serbian \newline 
+  Slovak \newline 
+  Slovene \newline 
+  Swedish
+  \end{tabular}
+  \caption{Machine Translation: status for 30 European languages}
+  \label{fig:mt_cluster_fr_en}
+\end{figure*}
+
+\begin{figure*}[htb]
+  \small
+  \centering
+  \begin{tabular}
+  { % defines color for each column.
+  >{\columncolor{corange5}}p{.13\linewidth}@{\hspace{.040\linewidth}}
+  >{\columncolor{corange4}}p{.13\linewidth}@{\hspace{.040\linewidth}}
+  >{\columncolor{corange3}}p{.13\linewidth}@{\hspace{.040\linewidth}}
+  >{\columncolor{corange2}}p{.13\linewidth}@{\hspace{.040\linewidth}}
+  >{\columncolor{corange1}}p{.13\linewidth} 
+  }
+  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Excellent}} & 
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Good}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Moderate}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Fragmentary}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{Weak/no}} \\ 
+  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} & 
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{support}} \\ \addlinespace
+
+  & \vspace*{0.5mm}English
+  & \vspace*{0.5mm}Dutch \newline 
+  French \newline 
+  German \newline 
+  Italian \newline 
+  Spanish
+  & \vspace*{0.5mm}Basque \newline 
+  Bulgarian \newline 
+  Catalan \newline 
+  Czech \newline 
+  Danish \newline 
+  Finnish \newline 
+  Galician \newline 
+  Greek \newline 
+  Hungarian \newline 
+  Norwegian \newline 
+  Polish \newline 
+  Portuguese \newline 
+  Romanian \newline 
+  Slovak \newline 
+  Slovene \newline 
+  Swedish
+  & \vspace*{0.5mm}Croatian \newline 
+  Estonian \newline 
+  Irish \newline 
+  Islandic \newline 
+  Latvian \newline 
+  Lithuanien \newline 
+  Maltese \newline 
+  Serbian \\
+  \end{tabular}
+  \caption{Text analysis: status for 30 European languages}
+  \label{fig:text_cluster_fr_en}
+\end{figure*}
+
+\begin{figure*}[htb]
+  \small
+  \centering
+  \begin{tabular}
+  { % defines color for each column.
+  >{\columncolor{corange5}}p{.13\linewidth}@{\hspace{.040\linewidth}}
+  >{\columncolor{corange4}}p{.13\linewidth}@{\hspace{.040\linewidth}}
+  >{\columncolor{corange3}}p{.13\linewidth}@{\hspace{.040\linewidth}}
+  >{\columncolor{corange2}}p{.13\linewidth}@{\hspace{.040\linewidth}}
+  >{\columncolor{corange1}}p{.13\linewidth} 
+  }
+  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Excellent}} & 
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Good}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Moderate}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Fragmentary}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{Weak/no}} \\ 
+  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} & 
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{support}} \\ \addlinespace
+  
+  & \vspace*{0.5mm}English 
+  & \vspace*{0.5mm}Czech\newline 
+  Dutch \newline 
+  French \newline 
+  German \newline 
+  Hungarian \newline 
+  Italian \newline
+  Polish \newline 
+  Spanish \newline
+  Swedish 
+  & \vspace*{0.5mm}  Basque \newline 
+    Bulgarian \newline 
+    Catalan \newline 
+    Croatian \newline 
+    Danish \newline 
+    Estonian \newline 
+    Finnish \newline 
+    Galician \newline 
+    Greek \newline 
+    Norwegian \newline 
+    Portuguese \newline 
+    Romanian \newline 
+    Serbian \newline 
+    Slovak \newline 
+    Slovene
+  &  \vspace*{0.5mm} Irish \newline 
+    Islandic \newline 
+    Latvian \newline 
+    Lithuanian \newline 
+    Maltese \\
+  \end{tabular}
+  \caption{Speech and text resources: status for 30 European languages}
+  \label{fig:resources_cluster_fr_en}
+\end{figure*}
+
 \end{multicols}
 
 \clearpage
@@ -5064,25 +5085,25 @@ META-NET is a Network of Excellence funded by the European Commission. The netwo
 \item offers advanced and affordable networked information technology to European citizens.
 \end{itemize}
 
-\begin{figure*}[!ht]
-\begin{center}
-  \includegraphics[height=5.0in]{../_media/french/french_pix10_europa_map.png}
-  \caption{Countries represented in META-NET}
-  \label{fig:metanet_countries}
-\end{center}
-\end{figure*}
+% \begin{figure*}[!ht]
+% \begin{center}
+%   \includegraphics[height=5.0in]{_media/french/french_pix10_europa_map.png}
+%   \caption{Countries represented in META-NET}
+%   \label{fig:metanet_countries}
+% \end{center}
+% \end{figure*}
 
 META-NET stimulates and promotes multilingual technologies for all European languages. The technologies enable automatic translation, content production, information processing and knowledge management for a wide variety of applications and subject domains. The network wants to improve current approaches, so better communication and cooperation across languages can take place. Europeans have an equal right to information and knowledge regardless of language.
 
 META-NET launched on 1 February 2010 with the goal of advancing research in language technology (LT). The network supports a Europe that unites as a single digital market and information space. META-NET has conducted several activities that further its goals. META-VISION, META-SHARE and META-RESEARCH are the network{\mbox '}s three lines of action.
 
-\begin{figure*}[!ht]
-\begin{center}
-  \includegraphics[width=3.0in]{../_media/meta_3lines}\\
-  \caption{The three META-NET action lines}
-  \label{fig:metanetactionlines}
-\end{center}
-\end{figure*}
+% \begin{figure*}[!ht]
+% \begin{center}
+%   \includegraphics[width=3.0in]{_media/french/meta_3lines}\\
+%   \caption{The three META-NET action lines}
+%   \label{fig:metanetactionlines}
+% \end{center}
+% \end{figure*}
 
 \textbf{META-VISION} fosters a dynamic and influential stakeholder community that unites around a shared vision and a common strategic research agenda (SRA). The main focus of this activity is to build a coherent and cohesive LT community in Europe by bringing together representatives from highly fragmented and diverse groups of stakeholders. In the first year of META-NET, presentations at the FLaReNet Forum (Spain), Language Technology Days (Luxembourg), JIAMCATT 2010 (Luxembourg), LREC 2010 (Malta), EAMT 2010 (France) and ICT 2010 (Belgium) centred on public outreach. According to initial estimates, META-NET has already contacted more than 2,500 LT professionals to develop its goals and visions with them. At the META-FORUM 2010 event in Brussels, META-NET communicated the initial results of its vision building process to more than 250 participants. In a series of interactive sessions, the participants provided feedback on the visions presented by the network. 
 
@@ -5130,9 +5151,9 @@ Nicholas Ostler, The last lingua franca: English until the return of Babel, 2010
 
 
 \bsection[Références -- References]{Références --- References}
-\bibliographystyle{plain}
+\bibliographystyle{unsrt}
 %\bibliography{references}
-\bibliography{french}
+\bibliography{french_references}
   
 \cleardoublepage
 
@@ -5249,5 +5270,3 @@ Nicholas Ostler, The last lingua franca: English until the return of Babel, 2010
   &Suédois & Swedish & svenska& \\
   &Tchèque & Czech & čeština& \\
 \end{tabularx}
-
-\end{document}

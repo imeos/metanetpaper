@@ -85,6 +85,9 @@
   \newfontfamily\linguistics[Scale=0.8]{DejaVu Serif}
   
 % Own defs
+% Title for spine on cover
+\long\def\spineTitle#1{\gdef\@spineTitle{#1}}
+\def\@spineTitle{\@latex@warning@no@line{No \noexpand\spineTitle given}}
   % Editors
 \def\editors#1{\gdef\@editors{#1}}
 \def\@editors{\@latex@warning@no@line{No \noexpand\editors given}}
@@ -547,10 +550,6 @@
   \setlength{\paperheight}{289mm}%
   \setlength{\textwidth}{380mm}%
 %  \setlength{\width}{380mm}%
-
-  % Define title for spine on cover
-  \long\def\spineTitle#1{\gdef\@spineTitle{#1}}
-  \def\@spineTitle{\@latex@warning@no@line{No \noexpand\spineTitle given}}
   
   % Titlepage
     % Maketitle
