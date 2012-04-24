@@ -16,15 +16,21 @@
 
 \maketitle
 
+\null
+
+\pagestyle{empty} 
+
+\makefundingnotice
+
+\pagenumbering{Roman} 
+\setcounter{page}{5}
+\pagestyle{scrheadings}
+
+\cleardoublepage
+
 % --------------------------------------------------------------------------
 \bsection*{Предговор --- Preface}
 
-\null
-\pagestyle{empty} 
-
-\pagenumbering{Roman} 
-\setcounter{page}{3}
-\pagestyle{scrheadings}
 
 \begin{Parallel}[c]{78mm}{78mm}
 \ParallelLText{
@@ -856,7 +862,7 @@ As of November 2011, META-NET consists of 54 research centres in 33 European cou
 \end{figure*}
 
 
-Акције за процењивање омогућавају да се пореде квалитет система за машинско превођење, различити приступи, као и статус система за машинско превођење за различите језичке парове. Следећа табела, представљена у оквиру пројекта Европске комисије Euromatrix+, приказује перформансе по паровима за 22 од 23 службена европска језика (недостаје ирски). Резултати су рангирани према BLEU процени, која даје више оцене за боље преводе \cite{PAPINENI}. Човек-преводилац постиже резултат од око 80 поена. 
+Акције за процењивање омогућавају да се пореде квалитет система за машинско превођење, различити приступи, као и статус система за машинско превођење за различите језичке парове. Следећа табела, представљена у оквиру пројекта Европске комисије Euromatrix+, приказује перформансе по паровима за 22 од 23 службена европска језика (недостаје ирски). Резултати су рангирани према BLEU процени, која даје више оцене за боље преводе \cite{bleu1}. Човек-преводилац постиже резултат од око 80 поена. 
 
 Најбољи резултати (приказани зеленом и плавом бојом) постигнути су за језике који имају користи од значајних истраживачких напора у оквиру сарадничких програма и за које постоје многи паралелни корпуси (нпр., енглески, француски, холандски, шпански и немачки), а најлошији (приказани црвеном бојом) за језике који нису могли да користе сличне претходне напоре или који су веома различити од других језика (нпр., мађарски, малтешки, фински). 
 
@@ -1294,7 +1300,7 @@ As of November 2011, META-NET consists of 54 research centres in 33 European cou
 \addtocontents{toc}{\protect\clearpage\protect}
 \addtocontents{toc}{\protect\thispagestyle{empty}\protect}
 \addtocontents{toc}{\protect\vspace*{4mm}\protect}
-\addtocontents{toc}{\smallskip{\Large\textsf{\centerline{SERBIAN LANGUAGE IN DIGITAL AGE}}\par}}
+\addtocontents{toc}{\smallskip{\Large\textsf{\centerline{THE SERBIAN LANGUAGE IN THE DIGITAL AGE}}\par}}
 
 \setcounter{section}{0}
 \setcounter{figure}{0}
@@ -1538,7 +1544,7 @@ There are three types of inflection: (a) declension (nouns are inflected for num
 \hline
 \end{tabular}
 \end{center}
-\caption{4 types of nominal inflection}
+\caption{Four types of nominal inflection}
  \label{nominal_inflection}
 \end{table*}
 
@@ -1858,7 +1864,7 @@ Software applications for language processing typically consist of several compo
 After analysing the text, task-specific modules can perform other operations, such as automatic summarisation and database look-ups. This is a simplified and idealised description of the application architecture, and illustrates the complexity of LT applications. 
 
 In the remainder of this section, we firstly introduce the core application areas for language technology, and follow this with a brief overview of the state of LT research and education today, and a description of past and present research programmes. Finally, we present an expert estimate of core LT tools and resources for Serbian in terms of various dimensions such as availability, maturity and quality. The general situation of LT for the Serbian language is summarised in
-figure~\ref{tab:lrlttable} (p.~\pageref{tab:lrlttable}) at the end of this chapter. This table lists all tools and
+Figure~\ref{tab:lrlttable} (p.~\pageref{tab:lrlttable}) at the end of this chapter. This table lists all tools and
 resources that are boldfaced in the text. 
  
 
@@ -1902,7 +1908,7 @@ The first attempts to develop spelling checking software for Serbian dates back 
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
   \includegraphics[width=\textwidth]{../_media/english/language_checking}
-  \caption{Language checking (statistical; rule-based)}
+  \caption{Language checking (top: statistical; bottom: rule-based)}
   \label{fig:langcheckingaarch_en}
   \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
@@ -1920,7 +1926,7 @@ Besides spelling checkers and authoring support, language checking is also impor
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
   \includegraphics[width=\textwidth]{../_media/english/web_search_architecture}
-  \caption{Web search}
+  \caption{Web search architecture}
   \label{fig:websearcharch_en}
   \colorrule{grey3}{\textwidth}{1.5pt}
  \end{figure*}
@@ -1989,7 +1995,7 @@ Looking ahead, there will be significant changes, due to the spread of smartphon
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
   \includegraphics[width=\textwidth]{../_media/english/machine_translation}
-  \caption{Machine translation (statistical; rule-based)}
+  \caption{Machine translation (left: statistical; right: rule-based)}
   \label{fig:mtarch_en}
   \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
@@ -2029,7 +2035,7 @@ However, generic statistical MT systems such as Google Translate support Serbian
 
 The quality of MT systems is still considered to have huge improvement potential. Challenges include the adaptability of the language resources to a given subject domain or user area and the integration into existing workflows with term bases and translation memories. 
 
-Evaluation campaigns help compare the quality of MT systems, the different approaches and the status of the systems for different language pairs. Figure~\ref{fig:euromatrix} (p. ~\pageref{fig:euromatrix}), which was prepared in the course of the EC Euromatrix+ project, shows the pair-wise performances obtained for 22 of the 23 official EU languages (Irish was not compared). The results are ranked according to a BLEU score, which indicates higher scores for better translations. \cite{PAPINENI}  A human translator would achieve a score of around 80 points.
+Evaluation campaigns help compare the quality of MT systems, the different approaches and the status of the systems for different language pairs. Figure~\ref{fig:euromatrix} (p. ~\pageref{fig:euromatrix}), which was prepared in the course of the EC Euromatrix+ project, shows the pair-wise performances obtained for 22 of the 23 official EU languages (Irish was not compared). The results are ranked according to a BLEU score, which indicates higher scores for better translations \cite{bleu1}. A human translator would achieve a score of around 80 points.
 
 The best results (in green and blue) were achieved by languages that benefit from a considerable research effort in coordinated programs and from the existence of many parallel corpora (e.\,g.~English, French, Dutch, Spanish and German). Languages with poorer results are shown in red. These languages either lack such development efforts or are structurally very different from other languages (e.\,g.~Hungarian, Maltese and Finnish).
 
@@ -2069,7 +2075,7 @@ At the level of university studies, topics from the field of computational lingu
  
 
 % --------------------------------------------------------------------------
- \subsection {National Projects and Efforts}
+ \subsection {National Projects and Initiatives}
 
 Due to various reasons the LT industry in Serbia is relatively undeveloped compared to the leading EU economies. The main driving force behind the development of LT in Serbia are mainly domestic SMEs but also some foreign companies, which sometimes provide support for the Serbian language in various LT-related applications. Since a national programme to support the development of language technologies does not exist, their development and application are often realised in an uncoordinated manner. The introduction of language technologies in Serbia follows at least three different directions: (a) through state supported scientific and technology development projects (b) through (mainly) foreign companies which, in addition to computer equipment, also offer some sort of language support, and (c) through in-house development within domestic organisations such as publishing houses and translation agencies. Except in rare cases, these three lines of activities are realised independently from each other. 
 
@@ -2260,7 +2266,7 @@ Maltese \newline
 Romanian\\
 \end{tabular}
 \label{fig:speech_cluster}
-\caption{Language clusters for speech processing}
+\caption{Speech processing: state of language technology support for 30 European languages}
 \end{table*}
 
 \begin{table*}[ht]
@@ -2319,7 +2325,7 @@ Slovenian \newline
 Czech \newline
 \end{tabular}
 \label{fig:mt_cluster}
-\caption{Language clusters for machine translation}
+\caption{Machine translation: state of language technology support for 30 European languages}
 \end{table*}
 
 \begin{table*}[ht]
@@ -2378,7 +2384,7 @@ Czech \newline
   \textbf{Serbian} \\
   \end{tabular}
 \label{fig:text_cluster}
-\caption{Language clusters for text analysis}
+\caption{Text analysis: state of language technology support for 30 European languages}
 \end{table*}
 
 \begin{table*}[ht]
@@ -2437,7 +2443,7 @@ Czech \newline
     Maltese  \\
   \end{tabular}
   \label{fig:resources_cluster}
-  \caption{Language clusters and resources}
+  \caption{Speech and text resources: State of support for 30 European languages}
 \end{table*}
 
 
@@ -2451,7 +2457,7 @@ Czech \newline
 
 \begin{multicols}{2}
 
-META-NET is a Network of Excellence partially funded by the European Commission \cite{rehm2011}. The network currently consists of 54 research centres in 33 European countries. META-NET forges META, the Multilingual Europe Technology Alliance, a growing community of language technology professionals and organisations in Eu-rope. META-NET fosters the technological foundations for a truly multilingual European information society that:
+META-NET is a Network of Excellence partially funded by the European Commission \cite{rehm2011}. The network currently consists of 54 research centres in 33 European countries. META-NET forges META, the Multilingual Europe Technology Alliance, a growing community of language technology professionals and organisations in Europe. META-NET fosters the technological foundations for a truly multilingual European information society that:
 
 \begin{itemize}
 \item makes communication and cooperation possible across languages;
@@ -2659,7 +2665,7 @@ Launched on 1 February 2010, META-NET has already conducted various activities i
   \center
   \fbox{-- META-NET group picture omitted to keep the size of the PDF file small. --}
   %\includegraphics[width=\textwidth]{../_media/meta-net_team.jpg}
-  \caption{SERBIAN --- \textcolor{grey1}{About 100 language technology experts -- representatives of the countries and languages represented in META-NET -- discussed and finalised the key results and messages of the White Paper Series at a META-NET meeting in Berlin, Germany, on October 21/22, 2011.}}
+  \caption{Готово 100 стручњака за језичке технологије - представници земаља и језика заступљених у МЕТА-НЕТУ - расправљало је о кључним резултатима и порукама серије белих књига на састанку у Берлину у Немачкој 21. и 22. октобра 2011. --- \textcolor{grey1}{About 100 language technology experts -- representatives of the countries and languages represented in META-NET -- discussed and finalised the key results and messages of the White Paper Series at a META-NET meeting in Berlin, Germany, on October 21/22, 2011.}}
   \medskip
   \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
