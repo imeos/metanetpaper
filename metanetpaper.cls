@@ -668,11 +668,15 @@
     \RequirePackage{varioref}
     \RequirePackage{hyperref}
     \hypersetup{
-        colorlinks=true,  % false: boxed links; true: colored links
-        linkcolor=blue,   % color of internal links
-        citecolor=blue,   % color of links to bibliography
-        filecolor=blue,   % color of file links
-        urlcolor=blue     % color of external links
+        colorlinks=true,        % false: boxed links; true: colored links
+        linkcolor=blue,         % color of internal links
+        citecolor=blue,         % color of links to bibliography
+        filecolor=blue,         % color of file links
+        urlcolor=blue,          % color of external links
+        pdffitwindow=false,     % don't fit window to page when opened
+        pdfstartview={FitW},    % fits the width of the page to the window
+        pdfcreator={XeLaTeX},   % creator of the document
+        pdfproducer={META-NET}, % producer of the document
     }
   }
   
