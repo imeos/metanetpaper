@@ -15,7 +15,7 @@ En klassisk strategi for å komme over språkbarrieren er å lære fremmedspråk
 
 Løsningen er å bygge ut nøkkelteknologier. Disse vil gi europeiske aktører enorme fordeler, ikke bare innenfor det felles europeiske markedet men også i handelsrelasjoner med tredjepartsland, spesielt land med voksende økonomi. For å oppnå dette målet, og bevare Europas kulturelle og språklige mangfold, er det første steget systematisk å analysere de språklige særegenhetene, og dermed utfordringene, for de ulike europeiske språkene. Dernest trenger vi en oversikt over den nåværende tilstanden for språkteknologisk støtte for hvert språk. Språkteknologiske løsninger vil etter hvert fungere som en unik bro mellom Europas språk.
     
-Dagens verktøy for automatisk oversettelse og taleprosessering strekker ikke til for å nå dette ambisiøse målet. De dominerende aktørene på dette området er for det meste privateide, kommersielle selskaper i Nord-Amerika. Allerede på slutten av 1970-tallet forutså EU at språkteknologi virkelig kunne bli en motor for en europeisk enhet, og begynte da å finansiere de første store forskningsprosjektene i Europa, f.eks. EUROTRA. Samtidig ble også gradvis nasjonale prosjekter etablert; disse leverte verdifulle resultater, men førte aldri til en klart samkjørt europeisk innsats. I motsetning til denne selektive finansieringsinnsatsen i Europa har andre flerspråklige samfunn som India (med 22 offisielle språk) og Sør-Afrika (med 11 offisielle språk) nylig initiert langsiktige nasjonale programmer for språkforskning og teknologiutvikling.
+Dagens verktøy for automatisk oversettelse og taleprosessering strekker ikke til for å nå dette ambisiøse målet. De dominerende aktørene på dette området er for det meste privateide, kommersielle selskaper i Nord-Amerika. Allerede på slutten av 1970-tallet forutså EU at språkteknologi virkelig kunne bli en motor for en europeisk enhet, og begynte da å finansiere de første store forskningsprosjektene i Europa, f.\,eks.~EUROTRA. Samtidig ble også gradvis nasjonale prosjekter etablert; disse leverte verdifulle resultater, men førte aldri til en klart samkjørt europeisk innsats. I motsetning til denne selektive finansieringsinnsatsen i Europa har andre flerspråklige samfunn som India (med 22 offisielle språk) og Sør-Afrika (med 11 offisielle språk) nylig initiert langsiktige nasjonale programmer for språkforskning og teknologiutvikling.
 
 De dominerende aktørene innenfor i språkteknologi baserer seg i dag på relativt upresise statistiske tilnærminger som ikke anvender dypere lingvistisk kunnskap og metoder. Setninger oversettes vanligvis automatisk ved å sammenligne en ny setning med tusenvis av setninger som tidligere er oversatt av mennesker (et treningsdatasett). Oversettelseskvaliteten avhenger i stor grad av mengden og kvaliteten på det tilgjengelige treningsdatasettet som systemet kan lære fra. Mens man kan få brukbare resultater for automatisk oversettelse av enkle setninger i språk med tilstrekkelige mengder treningsmateriale, kan ikke statistiske tilnærminger bli like vellykket for språk som har betydelig mindre treningsdatasett eller for setninger med komplekse strukturer, fordi disse krever en dypere lingvistisk analyse. Analyser av språkenes dypere, strukturelle egenskaper er den eneste løsningen for å bygge applikasjoner som fungerer godt for alle de europeiske språkene.
 
@@ -372,7 +372,7 @@ Menneskelig språk finnes i muntlig og skriftlig form. Mens tale er den eldste o
 \begin{figure*}[htb]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
-  \includegraphics[width=\textwidth]{../_media/bokmaal/language_technologies}
+  \includegraphics[width=\textwidth]{../_media/norwegian-bokmaal/language_technologies}
   \caption{Språkteknologi i kontekst}
   \label{fig:ltincontext_no}
   \colorrule{grey3}{\textwidth}{1.5pt}
@@ -418,7 +418,7 @@ I resten av dette kapittelet skal vi først gi en beskrivelse av de viktigste br
 \begin{figure*}[htb]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
-  \includegraphics[width=\textwidth]{../_media/bokmaal/text_processing_app_architecture}
+  \includegraphics[width=\textwidth]{../_media/norwegian-bokmaal/text_processing_app_architecture}
   \caption{En typisk arkitektur for tekstprosessering}
   \label{fig:textprocessingarch_no}
   \colorrule{grey3}{\textwidth}{1.5pt}
@@ -430,7 +430,7 @@ I dette delkapittelet fokuserer vi på de viktigste språkteknologiske verktøye
 
 \subsubsection{Korrekturlesningsverktøy}
 
-Alle som har brukt et tekstbehandlingsprogram som Microsoft Word vet at den har en stavekontroll som uthever stavefeil og foreslår rettelser. De første stavekontrollene  sammenlignet en liste av utvalgte ord mot en ordbok med korrekte ord. I dag er slike programmer langt mer sofistikerte. Ved å bruke språkspesifikke algoritmer for \textbf{grammatisk analyse} kan de oppdage morfologiske feil (f.eks. flertallsformer) samt syntaktiske feil, som manglende verb eller gal verbbøyning (f.eks \textit{hun *skrive et brev}). Men de fleste korrekturverktøyene vil ikke finne noen feil i følgende engelske tekst \cite{zar1}:
+Alle som har brukt et tekstbehandlingsprogram som Microsoft Word vet at den har en stavekontroll som uthever stavefeil og foreslår rettelser. De første stavekontrollene  sammenlignet en liste av utvalgte ord mot en ordbok med korrekte ord. I dag er slike programmer langt mer sofistikerte. Ved å bruke språkspesifikke algoritmer for \textbf{grammatisk analyse} kan de oppdage morfologiske feil (f.\,eks.~flertallsformer) samt syntaktiske feil, som manglende verb eller gal verbbøyning (f.eks \textit{hun *skrive et brev}). Men de fleste korrekturverktøyene vil ikke finne noen feil i følgende engelske tekst \cite{zar1}:
  
 \begin{quote}
   I have a spelling checker,\\
@@ -441,21 +441,21 @@ Alle som har brukt et tekstbehandlingsprogram som Microsoft Word vet at den har 
 
 %start Norwegian
 For å avdekke slike feil trengs en analyse av konteksten, for eksempel for å avgjøre om et norsk ord skal staves med enkel eller dobbel konsonant i norsk, som i \textit{vil} vs. \textit{vill}.
-Denne typen analyse må enten baseres på språkspesifikke grammatikker som eksperter møysommelig har kodet i programvaren, eller på en statistisk språkmodell. 
-I en statistisk modell beregnes da sannsynligheten for at et bestemt ord forekommer i en bestemt posisjon i teksten (f.eks. mellom ordene som kommer før og etter det aktuelle ordet). For eksempel er \textit{jeg vil ha} en mye mer sannsynlig ordsekvens enn \textit{jeg vill ha}. En statistisk språkmodell kan genereres automatisk ved hjelp av en stor mengde av (riktige) språkdata, et \textbf{tekstkorpus}. 
+Denne typen analyse må enten baseres på språkspesifikke \textbf{grammatikker} som eksperter møysommelig har kodet i programvaren, eller på en statistisk språkmodell. 
+I en statistisk modell beregnes da sannsynligheten for at et bestemt ord forekommer i en bestemt posisjon i teksten (f.\,eks.~mellom ordene som kommer før og etter det aktuelle ordet). For eksempel er \textit{jeg vil ha} en mye mer sannsynlig ordsekvens enn \textit{jeg vill ha}. En statistisk språkmodell kan genereres automatisk ved hjelp av en stor mengde av (riktige) språkdata, et \textbf{tekstkorpus}. 
 
 Disse to tilnærmingene har i hovedsak blitt utviklet med utgangspunkt i materiale fra engelsk. Imidlertid kan ingen av dem enkelt overføres til norsk, siden norsk har annerledes ordstilling, sammensatte ord og et mer omfattende bøyningsmønster for visse ordklasser enn engelsk. Studier med utgangspunkt i norsk er derfor nødvendig. Siden norsk har to offisielle målformer, hvorav den ene er mindre brukt, er behovet for gode korrekturverktøy for hver av målformene betydelig.
 
 \begin{figure*}[htb]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
-  \includegraphics[width=\textwidth]{../_media/bokmaal/language_checking}
+  \includegraphics[width=\textwidth]{../_media/norwegian-bokmaal/language_checking}
   \caption{Korrekturlesning (statistisk; regelbasert)}
   \label{fig:langcheckingaarch_no}
   \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
 
-Korrekturlesningsverktøy er ikke begrenset til tekstbehandlingsprogrammer, det er også brukt i \textbf{skrivestøttesystemer}, dvs. programvaresystemer som brukes for å skrive manualer og andre typer teknisk dokumentasjon som må oppfylle spesielle standarder for eksempel innen IT- og helsesektoren og innen ingeniørvirksomhet. I frykt for kundeklager og skadekrav som følge av uklare instruksjoner, fokuserer næringslivet i økende grad på teknisk dokumentasjonskvalitet, samtidig som de retter seg mot et internasjonalt marked (via oversettelses- eller lokaliseringstjenester). Fremskritt innen prosessering av naturlig språk har ført til utvikling av programvare for skrivestøtte. Slik programvare hjelper forfattere av teknisk dokumentasjon til å bruke ordforråd og setningsstrukturer som er i samsvar med industriregler og (bedriftsinterne) terminologiske restriksjoner.
+Korrekturlesningsverktøy er ikke begrenset til tekstbehandlingsprogrammer, det er også brukt i  “skrivestøttesystemer”, dvs. programvaresystemer som brukes for å skrive manualer og andre typer teknisk dokumentasjon som må oppfylle spesielle standarder for eksempel innen IT- og helsesektoren og innen ingeniørvirksomhet. I frykt for kundeklager og skadekrav som følge av uklare instruksjoner, fokuserer næringslivet i økende grad på teknisk dokumentasjonskvalitet, samtidig som de retter seg mot et internasjonalt marked (via oversettelses- eller lokaliseringstjenester). Fremskritt innen prosessering av naturlig språk har ført til utvikling av programvare for skrivestøtte. Slik programvare hjelper forfattere av teknisk dokumentasjon til å bruke ordforråd og setningsstrukturer som er i samsvar med industriregler og (bedriftsinterne) terminologiske restriksjoner.
 
 \boxtext{Korrekturlesningsverktøy brukes ikke bare til tekstbehandling, det brukes også i skrivestøttesystemer.}
 
@@ -487,7 +487,7 @@ Utover korrekturlesning og skrivestøtte er korrekturverktøy også viktig innen
 \begin{figure*}[htb]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
-  \includegraphics[width=\textwidth]{../_media/bokmaal/web_search_architecture}
+  \includegraphics[width=\textwidth]{../_media/norwegian-bokmaal/web_search_architecture}
   \caption{Nettsøk}
   \label{fig:websearcharch_no}
   \colorrule{grey3}{\textwidth}{1.5pt}
@@ -496,7 +496,7 @@ Utover korrekturlesning og skrivestøtte er korrekturverktøy også viktig innen
 Digitale søk er sannsynligvis den mest brukte språkteknologiske applikasjonen, men den er samtidig i stor grad underutviklet. Søkemotoren Google, som ble opprettet i 1998, utfører nå omtrent 80\% av alle nettsøk \cite{spi1}. 
 Googles søkegrensesnitt og resultatvisning har ikke endret seg vesentlig siden den første versjonen. Men i den nåværende versjonen tilbyr Google stavekorrigering for feilstavede ord, og har innarbeidet grunnleggende semantiske søkemuligheter som kan forbedre nøyaktigheten gjennom analyser av ordets betydning i en gitt søkekontekst \cite{pc1}. Googles suksess viser at med store mengder tilgjengelige data kan statistiske metoder gi relativt gode resultater.
 
-For mer sofistikerte informasjonssøk er det imidlertid avgjørende å integrere dypere lingvistiske analyser for teksttolkning. Eksperimenter med leksikalske ressurser, som maskinlesbare tesauruser eller ontologiske språkressurser (for eksempel WordNet for engelsk; et norsk ordnett er ventet innen utgangen av 2012), har gitt bedre resultater når det gjelder å finne nettsider som inneholder synonymer til den opprinnelige søketermen, som 
+For mer sofistikerte informasjonssøk er det imidlertid avgjørende å integrere dypere lingvistiske analyser for teksttolkning. Eksperimenter med \textbf{leksikalske ressurser}, som maskinlesbare tesauruser eller ontologiske språkressurser (for eksempel WordNet for engelsk; et norsk ordnett er ventet innen utgangen av 2012), har gitt bedre resultater når det gjelder å finne nettsider som inneholder synonymer til den opprinnelige søketermen, som 
 \textit{atomkraft}, \textit{kjerneenergi} og \textit{nukleærenergi}, og til og med termer som er enda løsere beslektet.  
 
 \boxtext{Den neste generasjonen søkemotorer må bruke en mye mer sofistikert språkteknologi.}
@@ -521,7 +521,7 @@ De grunnleggende taleteknologiene er talegjenkjenning og talesyntese, som kan br
 \begin{figure*}[htb]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
-  \includegraphics[width=\textwidth]{../_media/bokmaal/simple_speech-based_dialogue_architecture}
+  \includegraphics[width=\textwidth]{../_media/norwegian-bokmaal/simple_speech-based_dialogue_architecture}
   \caption{Talebasert dialogsystem}
   \label{fig:dialoguearch_no}
   \colorrule{grey3}{\textwidth}{1.5pt}
@@ -571,7 +571,7 @@ Denne utviklingen vil sannsynligvis primært drives frem gjennom stegvise forbed
 \begin{figure*}[htb]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
-  \includegraphics[width=\textwidth]{../_media/bokmaal/machine_translation}
+  \includegraphics[width=\textwidth]{../_media/norwegian-bokmaal/machine_translation}
   \caption{Maskinoversettelse (statistisk / regelbasert)}
   \label{fig:mtarch_no}
   \colorrule{grey3}{\textwidth}{1.5pt}
@@ -596,7 +596,7 @@ En annen utfordring for maskinoversettelse for norsk er sammensatte ord. Et effe
 
 For oversettelser mellom nært beslektede språk kan en enkel ord-for-ord-oversettelse la seg gjøre. Men maskinoversettelsessystemer kan også bygges ved å bruke lingvistiske regler. Regelbaserte (eller kunnskapsdrevne) systemer analyserer kildeteksten, og lager en mellomstående symbolsk representasjon. På grunnlag av den symbolske representasjonen kan man så generere tekst til målspråket. Kvaliteten på slike metoder avhenger i stor grad av tilgangen til omfattende ordbøker med morfologisk, syntaktisk og semantisk informasjon, i tillegg til store sett med grammatiske regler utviklet av  språkforskere. Dette er en veldig omfattende, og derfor dyr, prosess.
 
-På slutten av 80-tallet, da datamaskinkapasiteten økte, økte også interessen for statistiske modeller for maskinoversettelse. Statistiske modeller for maskinoversettelse er basert på analyser av tospråklige tekstkorpus, som parallellkorpuset Europarl, som består av møtereferater fra Europaparlamentet på 11 europeiske språk 
+På slutten av 80-tallet, da datamaskinkapasiteten økte, økte også interessen for statistiske modeller for maskinoversettelse. Statistiske modeller for maskinoversettelse er basert på analyser av tospråklige tekstkorpus, som \textbf{parallellkorpuset} Europarl, som består av møtereferater fra Europaparlamentet på 21 europeiske språk 
 %start Norwegian
 (norsk er ikke inkludert).
 %end Norwegian
@@ -623,9 +623,43 @@ I tillegg bruker profesjonelle oversettere termbaser (DU, IATE), og til en viss 
 
 Kvaliteten på maskinoversettelsessystemer har fremdeles et stort forbedringspotensial. Blant utfordringene er å tilpasse språkressurser til et gitt emne eller brukerområde, og å integrere teknologien i en arbeidsflyt som allerede inneholder termbaser og oversettelsesminne. I tillegg er de fleste systemene som er i bruk rettet mot engelsk, og støtter bare sjelden oversettelse til og fra norsk. Dette gir forstyrrelser i prosessen med å få tekst oversatt, og tvinger maskinoversettelsesbrukere til å lære seg ulike kodingsverktøy for forskjellige systemer.
 
+\begin{figure*}[tb]
+  \centering
+  \setlength{\tabcolsep}{0.17em}
+  \small
+  \begin{tabular}{>{\columncolor{corange1}}cccccccccccccccccccccccc}
+    & \multicolumn{22}{>{\columncolor{corange1}}c}{NORWEGIAN -- \textcolor{grey1}{Target language}}\\\addlinespace[{-.009cm}]
+    \rowcolor{corange1}  & EN & BG & DE & CS & DA & EL & ES & ET & FI & FR & HU & IT & LT & LV & MT & NL & PL & PT & RO & SK & SL & SV\\
+    EN & -- & \textcolor{blue}{40.5} & \textcolor{blue}{46.8} & \textcolor{green2}{52.6} & \textcolor{green2}{50.0} & \textcolor{blue}{41.0} & \textcolor{green2}{55.2} & \textcolor{purple}{34.8} & \textcolor{purple}{38.6} & \textcolor{green2}{50.1} & \textcolor{purple}{37.2} & \textcolor{green2}{50.4} & \textcolor{purple}{39.6} & \textcolor{blue}{43.4} & \textcolor{purple}{39.8} & \textcolor{green2}{52.3} & \textcolor{blue}{49.2} & \textcolor{green2}{55.0} & \textcolor{blue}{49.0} & \textcolor{blue}{44.7} & \textcolor{green2}{50.7} & \textcolor{green2}{52.0}\\
+    BG & \textcolor{green}{61.3} & -- & \textcolor{purple}{38.7} & \textcolor{purple}{39.4} & \textcolor{purple}{39.6} & \textcolor{purple}{34.5} & \textcolor{blue}{46.9} & \textcolor{red3}{25.5} & \textcolor{red3}{26.7} & \textcolor{blue}{42.4} & \textcolor{red3}{22.0} & \textcolor{blue}{43.5} & \textcolor{red3}{29.3} & \textcolor{red3}{29.1} & \textcolor{red3}{25.9} & \textcolor{blue}{44.9} & \textcolor{purple}{35.1} & \textcolor{blue}{45.9} & \textcolor{purple}{36.8} & \textcolor{purple}{34.1} & \textcolor{purple}{34.1} & \textcolor{purple}{39.9}\\
+    DE & \textcolor{green2}{53.6} & \textcolor{red3}{26.3} & -- & \textcolor{purple}{35.4} & \textcolor{blue}{43.1} & \textcolor{purple}{32.8} & \textcolor{blue}{47.1} & \textcolor{red3}{26.7} & \textcolor{red3}{29.5} & \textcolor{purple}{39.4} & \textcolor{red3}{27.6} & \textcolor{blue}{42.7} & \textcolor{red3}{27.6} & \textcolor{purple}{30.3} & \textcolor{red2}{19.8} & \textcolor{green2}{50.2} & \textcolor{purple}{30.2} & \textcolor{blue}{44.1} & \textcolor{purple}{30.7} & \textcolor{red3}{29.4} & \textcolor{purple}{31.4} & \textcolor{blue}{41.2}\\
+    CS & \textcolor{green2}{58.4} & \textcolor{purple}{32.0} & \textcolor{blue}{42.6} & -- & \textcolor{blue}{43.6} & \textcolor{purple}{34.6} & \textcolor{blue}{48.9} & \textcolor{purple}{30.7} & \textcolor{purple}{30.5} & \textcolor{blue}{41.6} & \textcolor{red3}{27.4} & \textcolor{blue}{44.3} & \textcolor{purple}{34.5} & \textcolor{purple}{35.8} & \textcolor{red3}{26.3} & \textcolor{blue}{46.5} & \textcolor{purple}{39.2} & \textcolor{blue}{45.7} & \textcolor{purple}{36.5} & \textcolor{blue}{43.6} & \textcolor{blue}{41.3} & \textcolor{blue}{42.9}\\
+    DA & \textcolor{green2}{57.6} & \textcolor{red3}{28.7} & \textcolor{blue}{44.1} & \textcolor{purple}{35.7} & -- & \textcolor{purple}{34.3} & \textcolor{blue}{47.5} & \textcolor{red3}{27.8} & \textcolor{purple}{31.6} & \textcolor{blue}{41.3} & \textcolor{red3}{24.2} & \textcolor{blue}{43.8} & \textcolor{red3}{29.7} & \textcolor{purple}{32.9} & \textcolor{red3}{21.1} & \textcolor{blue}{48.5} & \textcolor{purple}{34.3} & \textcolor{blue}{45.4} & \textcolor{purple}{33.9} & \textcolor{purple}{33.0} & \textcolor{purple}{36.2} & \textcolor{blue}{47.2}\\
+    EL & \textcolor{green2}{59.5} & \textcolor{purple}{32.4} & \textcolor{blue}{43.1} & \textcolor{purple}{37.7} & \textcolor{blue}{44.5} & -- & \textcolor{green2}{54.0} & \textcolor{red3}{26.5} & \textcolor{red3}{29.0} & \textcolor{blue}{48.3} & \textcolor{red3}{23.7} & \textcolor{blue}{49.6} & \textcolor{red3}{29.0} & \textcolor{purple}{32.6} & \textcolor{red3}{23.8} & \textcolor{blue}{48.9} & \textcolor{purple}{34.2} & \textcolor{green2}{52.5} & \textcolor{purple}{37.2} & \textcolor{purple}{33.1} & \textcolor{purple}{36.3} & \textcolor{blue}{43.3}\\
+    ES & \textcolor{green}{60.0} & \textcolor{purple}{31.1} & \textcolor{blue}{42.7} & \textcolor{purple}{37.5} & \textcolor{blue}{44.4} & \textcolor{purple}{39.4} & -- & \textcolor{red3}{25.4} & \textcolor{red3}{28.5} & \textcolor{green2}{51.3} & \textcolor{red3}{24.0} & \textcolor{green2}{51.7} & \textcolor{red3}{26.8} & \textcolor{purple}{30.5} & \textcolor{red3}{24.6} & \textcolor{blue}{48.8} & \textcolor{purple}{33.9} & \textcolor{green2}{57.3} & \textcolor{purple}{38.1} & \textcolor{purple}{31.7} & \textcolor{purple}{33.9} & \textcolor{blue}{43.7}\\
+    ET & \textcolor{green2}{52.0} & \textcolor{red3}{24.6} & \textcolor{purple}{37.3} & \textcolor{purple}{35.2} & \textcolor{purple}{37.8} & \textcolor{red3}{28.2} & \textcolor{blue}{40.4} & -- & \textcolor{purple}{37.7} & \textcolor{purple}{33.4} & \textcolor{purple}{30.9} & \textcolor{purple}{37.0} & \textcolor{purple}{35.0} & \textcolor{purple}{36.9} & \textcolor{red3}{20.5} & \textcolor{blue}{41.3} & \textcolor{purple}{32.0} & \textcolor{purple}{37.8} & \textcolor{red3}{28.0} & \textcolor{purple}{30.6} & \textcolor{purple}{32.9} & \textcolor{purple}{37.3}\\
+    FI & \textcolor{blue}{49.3} & \textcolor{red3}{23.2} & \textcolor{purple}{36.0} & \textcolor{purple}{32.0} & \textcolor{purple}{37.9} & \textcolor{red3}{27.2} & \textcolor{purple}{39.7} & \textcolor{purple}{34.9} & -- & \textcolor{red3}{29.5} & \textcolor{red3}{27.2} & \textcolor{purple}{36.6} & \textcolor{purple}{30.5} & \textcolor{purple}{32.5} & \textcolor{red2}{19.4} & \textcolor{blue}{40.6} & \textcolor{red3}{28.8} & \textcolor{purple}{37.5} & \textcolor{red3}{26.5} & \textcolor{red3}{27.3} & \textcolor{red3}{28.2} & \textcolor{purple}{37.6}\\
+    FR & \textcolor{green}{64.0} & \textcolor{purple}{34.5} & \textcolor{blue}{45.1} & \textcolor{purple}{39.5} & \textcolor{blue}{47.4} & \textcolor{blue}{42.8} & \textcolor{green}{60.9} & \textcolor{red3}{26.7} & \textcolor{purple}{30.0} & -- & \textcolor{red3}{25.5} & \textcolor{green2}{56.1} & \textcolor{red3}{28.3} & \textcolor{purple}{31.9} & \textcolor{red3}{25.3} & \textcolor{green2}{51.6} & \textcolor{purple}{35.7} & \textcolor{green}{61.0} & \textcolor{blue}{43.8} & \textcolor{purple}{33.1} & \textcolor{purple}{35.6} & \textcolor{blue}{45.8}\\
+    HU & \textcolor{blue}{48.0} & \textcolor{red3}{24.7} & \textcolor{purple}{34.3} & \textcolor{purple}{30.0} & \textcolor{purple}{33.0} & \textcolor{red3}{25.5} & \textcolor{purple}{34.1} & \textcolor{red3}{29.6} & \textcolor{red3}{29.4} & \textcolor{purple}{30.7} & -- & \textcolor{purple}{33.5} & \textcolor{red3}{29.6} & \textcolor{purple}{31.9} & \textcolor{red2}{18.1} & \textcolor{purple}{36.1} & \textcolor{red3}{29.8} & \textcolor{purple}{34.2} & \textcolor{red3}{25.7} & \textcolor{red3}{25.6} & \textcolor{red3}{28.2} & \textcolor{purple}{30.5}\\
+    IT & \textcolor{green}{61.0} & \textcolor{purple}{32.1} & \textcolor{blue}{44.3} & \textcolor{purple}{38.9} & \textcolor{blue}{45.8} & \textcolor{blue}{40.6} & \textcolor{red3}{26.9} & \textcolor{red3}{25.0} & \textcolor{red3}{29.7} & \textcolor{green2}{52.7} & \textcolor{red3}{24.2} & -- & \textcolor{red3}{29.4} & \textcolor{purple}{32.6} & \textcolor{red3}{24.6} & \textcolor{green2}{50.5} & \textcolor{purple}{35.2} & \textcolor{green2}{56.5} & \textcolor{purple}{39.3} & \textcolor{purple}{32.5} & \textcolor{purple}{34.7} & \textcolor{blue}{44.3}\\
+    LT & \textcolor{green2}{51.8} & \textcolor{red3}{27.6} & \textcolor{purple}{33.9} & \textcolor{purple}{37.0} & \textcolor{purple}{36.8} & \textcolor{red3}{26.5} & \textcolor{red3}{21.1} & \textcolor{purple}{34.2} & \textcolor{purple}{32.0} & \textcolor{purple}{34.4} & \textcolor{red3}{28.5} & \textcolor{purple}{36.8} & -- & \textcolor{blue}{40.1} & \textcolor{red3}{22.2} & \textcolor{purple}{38.1} & \textcolor{purple}{31.6} & \textcolor{purple}{31.6} & \textcolor{red3}{29.3} & \textcolor{purple}{31.8} & \textcolor{purple}{35.3} & \textcolor{purple}{35.3}\\
+    LV & \textcolor{green2}{54.0} & \textcolor{red3}{29.1} & \textcolor{purple}{35.0} & \textcolor{purple}{37.8} & \textcolor{purple}{38.5} & \textcolor{red3}{29.7} & \textcolor{red2}{8.0} & \textcolor{purple}{34.2} & \textcolor{purple}{32.4} & \textcolor{purple}{35.6} & \textcolor{red3}{29.3} & \textcolor{purple}{38.9} & \textcolor{purple}{38.4} & -- & \textcolor{red3}{23.3} & \textcolor{blue}{41.5} & \textcolor{purple}{34.4} & \textcolor{purple}{39.6} & \textcolor{purple}{31.0} & \textcolor{purple}{33.3} & \textcolor{purple}{37.1} & \textcolor{purple}{38.0}\\
+    MT & \textcolor{green}{72.1} & \textcolor{purple}{32.2} & \textcolor{purple}{37.2} & \textcolor{purple}{37.9} & \textcolor{purple}{38.9} & \textcolor{purple}{33.7} & \textcolor{blue}{48.7} & \textcolor{red3}{26.9} & \textcolor{red3}{25.8} & \textcolor{blue}{42.4} & \textcolor{red3}{22.4} & \textcolor{blue}{43.7} & \textcolor{purple}{30.2} & \textcolor{purple}{33.2} & -- & \textcolor{blue}{44.0} & \textcolor{purple}{37.1} & \textcolor{blue}{45.9} & \textcolor{purple}{38.9} & \textcolor{purple}{35.8} & \textcolor{blue}{40.0} & \textcolor{blue}{41.6}\\
+    NL & \textcolor{green2}{56.9} & \textcolor{red3}{29.3} & \textcolor{blue}{46.9} & \textcolor{purple}{37.0} & \textcolor{blue}{45.4} & \textcolor{purple}{35.3} & \textcolor{blue}{49.7} & \textcolor{red3}{27.5} & \textcolor{red3}{29.8} & \textcolor{blue}{43.4} & \textcolor{red3}{25.3} & \textcolor{blue}{44.5} & \textcolor{red3}{28.6} & \textcolor{purple}{31.7} & \textcolor{red3}{22.0} & -- & \textcolor{purple}{32.0} & \textcolor{blue}{47.7} & \textcolor{purple}{33.0} & \textcolor{purple}{30.1} & \textcolor{purple}{34.6} & \textcolor{blue}{43.6}\\
+    PL & \textcolor{green}{60.8} & \textcolor{purple}{31.5} & \textcolor{blue}{40.2} & \textcolor{blue}{44.2} & \textcolor{blue}{42.1} & \textcolor{purple}{34.2} & \textcolor{blue}{46.2} & \textcolor{red3}{29.2} & \textcolor{red3}{29.0} & \textcolor{blue}{40.0} & \textcolor{red3}{24.5} & \textcolor{blue}{43.2} & \textcolor{purple}{33.2} & \textcolor{purple}{35.6} & \textcolor{red3}{27.9} & \textcolor{blue}{44.8} & -- & \textcolor{blue}{44.1} & \textcolor{purple}{38.2} & \textcolor{purple}{38.2} & \textcolor{purple}{39.8} & \textcolor{blue}{42.1}\\
+    PT & \textcolor{green}{60.7} & \textcolor{purple}{31.4} & \textcolor{blue}{42.9} & \textcolor{purple}{38.4} & \textcolor{blue}{42.8} & \textcolor{blue}{40.2} & \textcolor{green}{60.7} & \textcolor{red3}{26.4} & \textcolor{red3}{29.2} & \textcolor{green2}{53.2} & \textcolor{red3}{23.8} & \textcolor{green2}{52.8} & \textcolor{red3}{28.0} & \textcolor{purple}{31.5} & \textcolor{red3}{24.8} & \textcolor{blue}{49.3} & \textcolor{purple}{34.5} & -- & \textcolor{purple}{39.4} & \textcolor{purple}{32.1} & \textcolor{purple}{34.4} & \textcolor{blue}{43.9}\\
+    RO & \textcolor{green}{60.8} & \textcolor{purple}{33.1} & \textcolor{purple}{38.5} & \textcolor{purple}{37.8} & \textcolor{blue}{40.3} & \textcolor{purple}{35.6} & \textcolor{green2}{50.4} & \textcolor{red3}{24.6} & \textcolor{red3}{26.2} & \textcolor{blue}{46.5} & \textcolor{red3}{25.0} & \textcolor{blue}{44.8} & \textcolor{red3}{28.4} & \textcolor{red3}{29.9} & \textcolor{red3}{28.7} & \textcolor{blue}{43.0} & \textcolor{purple}{35.8} & \textcolor{blue}{48.5} & -- & \textcolor{purple}{31.5} & \textcolor{purple}{35.1} & \textcolor{purple}{39.4}\\
+    SK & \textcolor{green}{60.8} & \textcolor{purple}{32.6} & \textcolor{purple}{39.4} & \textcolor{blue}{48.1} & \textcolor{blue}{41.0} & \textcolor{purple}{33.3} & \textcolor{blue}{46.2} & \textcolor{red3}{29.8} & \textcolor{red3}{28.4} & \textcolor{purple}{39.4} & \textcolor{red3}{27.4} & \textcolor{blue}{41.8} & \textcolor{purple}{33.8} & \textcolor{purple}{36.7} & \textcolor{red3}{28.5} & \textcolor{blue}{44.4} & \textcolor{purple}{39.0} & \textcolor{blue}{43.3} & \textcolor{purple}{35.3} & -- & \textcolor{blue}{42.6} & \textcolor{blue}{41.8}\\
+    SL & \textcolor{green}{61.0} & \textcolor{purple}{33.1} & \textcolor{purple}{37.9} & \textcolor{blue}{43.5} & \textcolor{blue}{42.6} & \textcolor{purple}{34.0} & \textcolor{blue}{47.0} & \textcolor{purple}{31.1} & \textcolor{red3}{28.8} & \textcolor{purple}{38.2} & \textcolor{red3}{25.7} & \textcolor{blue}{42.3} & \textcolor{purple}{34.6} & \textcolor{purple}{37.3} & \textcolor{purple}{30.0} & \textcolor{blue}{45.9} & \textcolor{purple}{38.2} & \textcolor{blue}{44.1} & \textcolor{purple}{35.8} & \textcolor{purple}{38.9} & -- & \textcolor{blue}{42.7}\\
+    SV & \textcolor{green2}{58.5} & \textcolor{red3}{26.9} & \textcolor{blue}{41.0} & \textcolor{purple}{35.6} & \textcolor{blue}{46.6} & \textcolor{purple}{33.3} & \textcolor{blue}{46.6} & \textcolor{red3}{27.4} & \textcolor{purple}{30.9} & \textcolor{purple}{38.9} & \textcolor{red3}{22.7} & \textcolor{blue}{42.0} & \textcolor{red3}{28.2} & \textcolor{purple}{31.0} & \textcolor{red3}{23.7} & \textcolor{blue}{45.6} & \textcolor{purple}{32.2} & \textcolor{blue}{44.2} & \textcolor{purple}{32.7} & \textcolor{purple}{31.3} & \textcolor{purple}{33.5} & --\\
+    \end{tabular}
+  \caption{NORWEGIAN -- \textcolor{grey1}{Machine translation between 22 EU-languages \cite{euro1}}}
+  \label{fig:euromatrix_de}
+\end{figure*}
+
 Gjennom evalueringskampanjer sammenlignes kvaliteten på ulike maskinoversettelsessystemer og tilnærminger og ikke minst hva som er status for systemene for ulike språkpar.
 %start Norwegian
-Prosjektet EuroMatrixPlus gjennomførte en studie av kvaliteten på maskinoversettelsessystemer for 22 offisielle EU-språk.
+Prosjektet EuroMatrix+ gjennomførte en studie av kvaliteten på maskinoversettelsessystemer for 22 offisielle EU-språk.
 Norsk var ikke inkludert i dette prosjektet.
 %end Norwegian
 
@@ -635,16 +669,16 @@ Oppbyggingen av språkteknologiske verktøy omfatter en rekke underoppgaver som 
 
 Såkalte dialogsystemer som besvarer spørsmål (engelsk \textit{Question Answering}) er for eksempel et aktivt forskningsområde, hvor man har utviklet korpora kodet med setningsstruktur, og hvor vitenskapelige evalueringskonkurranser har vært initiert. Feltet omfatter mer enn bare søk på nøkkelord (hvor søkemotoren svarer med en samling potensielt relevante dokumenter); det lar brukere stille et konkret spørsmål, som systemet så gir ett eneste svar på. For eksempel:
 
-\begin{quote}
-Spørsmål: \textit{Hvor gammel var Neil Armstrong da han gikk på månen?}\\
-Svar: \textit{38.}
-\end{quote}
+\begin{itemize}
+\item[] \textit{Spørsmål: Hvor gammel var Neil Armstrong da han gikk på månen?}
+\item[] \textit{Svar: 38.}
+\end{itemize}
 
 Mens slike dialogsystemer åpenbart er relatert til nettsøk, brukes det i dag som et overordnet begrep for forskningsspørsmål som hvilke typer spørsmål som finnes, hvordan man skal behandle dem, hvordan man kan analysere og sammenlikne sett av dokumenter som potensielt inneholder svaret (gir dokumentene for eksempel motstridende svar?), og hvordan relevant informasjon kan ekstraheres fra et dokument med minimal grad av feil, og uten å se bort fra kontekst.
 
 Dette er i sin tur knyttet til informasjonsekstrahering (engelsk \textit{Information Extraction}), et område som ble svært populært og innflytelsesrikt da datalingvistikken fikk en mer statistisk orientering tidlig på 90-tallet. Informasjonsekstrahering har som mål å finne bestemte biter av informasjon i visse dokumentsett,  for eksempel å identifisere de viktigste aktørene i avisartikler som handler om overtakelse av bedrifter. Et annet scenario som kan studeres er terrorhandlinger. Problemstillingen er da å sortere informasjon i teksten i henhold til en forhåndsdefinert mal som spesifiserer kriterier som gjerningsmann, mål, tid, sted og utfall av hendelsen. Informasjonsekstrahering består grunnleggende sett i å fylle ut en mal med domenespesifikk og relevant informasjon, hvilket gjør informasjonsekstrahering til nok et eksempel på en undeliggende teknologi som  på den ene siden utgjør et selvstendig forskningsfelt, og som på den andre siden skal kunne integreres i større brukerapplikasjoner for praktisk bruk.
 
-\textbf{Sammendrag} og \textbf{tekstgenerering} er tilgrensende områder som kan brukes som selvstendige applikasjoner eller som underliggende støtteteknologi. Sammendrag har som mål å gjengi de viktigste punktene i en lengre tekst, og finnes blant annet i Microsoft Word. Oftest brukes en statistisk tilnærming for å identifisere de `viktige' ordene i en tekst (dvs. ord som opptrer hyppig i den aktuelle teksten, men mer sjeldent i allmennspråket) og for å finne de setningene som har høyest forekomst av disse `viktige' ordene. De aktuelle setningene blir så trukket ut og satt sammen for å lage et sammendrag. I en slik modell, som er svært utbredt i kommersiell bruk, er sammendrag rett og slett en form for ekstrahering av setninger, og teksten reduseres til et subsett av sine setninger. En annen mulighet er å generere helt nye setninger som ikke allerede finnes i kildeteksten, og en del forskning utføres på dette feltet.
+Sammendrag og \textbf{tekstgenerering} er tilgrensende områder som kan brukes som selvstendige applikasjoner eller som underliggende støtteteknologi. Sammendrag har som mål å gjengi de viktigste punktene i en lengre tekst, og finnes blant annet i Microsoft Word. Oftest brukes en statistisk tilnærming for å identifisere de `viktige' ordene i en tekst (dvs. ord som opptrer hyppig i den aktuelle teksten, men mer sjeldent i allmennspråket) og for å finne de setningene som har høyest forekomst av disse `viktige' ordene. De aktuelle setningene blir så trukket ut og satt sammen for å lage et sammendrag. I en slik modell, som er svært utbredt i kommersiell bruk, er sammendrag rett og slett en form for ekstrahering av setninger, og teksten reduseres til et subsett av sine setninger. En annen mulighet er å generere helt nye setninger som ikke allerede finnes i kildeteksten, og en del forskning utføres på dette feltet.
 
 %start Norwegian
 \boxtext{Forskning på de fleste typer tekstteknologi er langt mindre utviklet for norsk enn for engelsk.}
@@ -691,7 +725,7 @@ Som en oppsummering har dette delkapittelet vist at tidligere forskningsprogramm
 I neste delkapittel oppsummerer vi situasjonen for språkteknologisk støtte for norsk språk. 
   
 \subsection{Situasjonen for språkteknologisk støtte for norsk språk}
-Figur~\ref{fig:lrlttable_no} oppsummerer situasjonen for språkteknologisk støtte for norsk språk gjennom tallmessige verdivurderinger av eksisterende verktøy og ressurser. Vurderingene er gjort av ledende norske eksperter på feltet, som har satt tallverdier for syv ulike kriterier (f.eks. tilgjengelighet), på en skala fra 0 (svært lav) til 6 (svært høy).
+Figur~\ref{fig:lrlttable_no} oppsummerer situasjonen for språkteknologisk støtte for norsk språk gjennom tallmessige verdivurderinger av eksisterende verktøy og ressurser. Vurderingene er gjort av ledende norske eksperter på feltet, som har satt tallverdier for syv ulike kriterier (f.\,eks.~tilgjengelighet), på en skala fra 0 (svært lav) til 6 (svært høy).
 
 \begin{figure*}[htb]
 \centering
@@ -703,8 +737,8 @@ Figur~\ref{fig:lrlttable_no} oppsummerer situasjonen for språkteknologisk støt
 \multicolumn{8}{>{\columncolor{orange2}}l}{Språkteknologi (verktøy, teknologier og applikasjoner)} \\ \addlinespace
 Talegjenkjenning &4&2&2&1&2&3&3 \\ \addlinespace
 Talesyntese &3&2&3&2&3&3&3\\ \addlinespace
-Setningsanalyse &4&4,5&4&4&4,5&4,5&5\\ \addlinespace
-Teksttolking &2&2&3,3&3&3,7&3,3&3,7\\ \addlinespace
+Grammatisk analyse &4&4,5&4&4&4,5&4,5&5\\ \addlinespace
+Semantisk analyse &2&2&3,3&3&3,7&3,3&3,7\\ \addlinespace
 Språkgenerering &1&4&4&3&5&4&5\\ \addlinespace
 Maskinoversettelse &4&4&2&2&3&5&3\\ \addlinespace
 \multicolumn{8}{>{\columncolor{orange2}}l}{Språkressurser (ressurs-, data- og kunnskapsbaser)} \\ \addlinespace
@@ -776,7 +810,7 @@ galisisk\newline
 gresk \newline  
 irsk \newline  
 katalansk \newline 
-norsk \newline 
+\textbf{norsk} \newline 
 polsk \newline 
 serbisk \newline 
 slovakisk \newline 
@@ -842,7 +876,7 @@ kroatisk \newline
 latvisk \newline 
 litausk \newline 
 maltesisk \newline 
-norsk \newline 
+\textbf{norsk} \newline 
 portugisisk \newline 
 serbisk \newline 
 slovakisk \newline 
@@ -890,7 +924,7 @@ tsjekkisk \newline
   galisisk \newline 
   gresk \newline 
   katalansk \newline 
-  norsk \newline 
+  \textbf{norsk} \newline 
   polsk \newline 
   portugisisk \newline 
   rumensk \newline 
@@ -955,7 +989,7 @@ tsjekkisk \newline
     gresk \newline 
     katalansk \newline 
     kroatisk \newline 
-    norsk \newline 
+    \textbf{norsk} \newline 
     portugisisk \newline 
     rumensk \newline 
     serbisk \newline 
@@ -1003,7 +1037,7 @@ Det finnes ett spesialisert dikteringsverktøy for helsevesenet med varierende k
 For maskinoversettelse mellom norsk bokmål og nynorsk finnes det ett toveis, fritt tilgjengelig program og ett enveis, kommersielt program. 
 For maskinoversettelse mellom norsk og andre språk finnes det ett gratis, fritt tilgjengelig program og ett kommersielt program. Begge har varierende kvalitet og ytelse.
 
-Komponenter for tekstanalyse dekker det norske språket til en viss grad, og inngår i flere anvendelser som typisk gjennomfører en nokså overfladisk språkanalyse, f.eks. generelle stavekontroller eller skrivestøtte for dyslektikere.
+Komponenter for tekstanalyse dekker det norske språket til en viss grad, og inngår i flere anvendelser som typisk gjennomfører en nokså overfladisk språkanalyse, f.\,eks.~generelle stavekontroller eller skrivestøtte for dyslektikere.
 
 Med hensyn til ressurser har vi allerede tidligere pekt på mangler.
 %end Norwegian
@@ -1013,7 +1047,7 @@ For å bygge mer avanserte programmer, for eksempel maskinoversettelse, er det e
 
 \emph{Denne hvitbokserien er ment som et viktig innledende tiltak for å vurdere situasjonen for språkteknologi for 30 europeiske språk, og å gi en overordnet sammenlikning på tvers av språkene. Gjennom denne analysen av mangler og behov er det europeiske språkteknologimiljøet og andre interesserte nå i stand til å utvikle et forsknings-og utviklingsprogram i stor skala, hvor målet er å bygge et virkelig flerspråklig Europa basert på moderne språkteknologi.}
 
-Vi har sett at det er store forskjeller fra språk til språk. Mens det finnes programvare og ressurser av høy kvalitet for noen språk og noen bruksområder, er det betydelige mangler for andre (vanligvis `mindre') språk og for andre anvendelser. Mange språk mangler grunnleggende verktøy for tekstanalyse og grunnlagsressursene som trengs for å utvikle dem. Andre språk har grunnleggende verktøy og ressurser, men er ennå ikke i stand til å investere i utviklingen av semantisk prosessering og analyse. Vi trenger derfor en storstilt innsats om vi skal nå målet om å kunne tilby teknologistøtte av høy kvalitet til alle de europeiske språkene, f.eks. maskinoversettelse av god kvalitet.
+Vi har sett at det er store forskjeller fra språk til språk. Mens det finnes programvare og ressurser av høy kvalitet for noen språk og noen bruksområder, er det betydelige mangler for andre (vanligvis `mindre') språk og for andre anvendelser. Mange språk mangler grunnleggende verktøy for tekstanalyse og grunnlagsressursene som trengs for å utvikle dem. Andre språk har grunnleggende verktøy og ressurser, men er ennå ikke i stand til å investere i utviklingen av semantisk prosessering og analyse. Vi trenger derfor en storstilt innsats om vi skal nå målet om å kunne tilby teknologistøtte av høy kvalitet til alle de europeiske språkene, f.\,eks.~maskinoversettelse av god kvalitet.
 
 %start Norwegian
 Når det gjelder norsk har vi sett at det ikke er enkelt å overføre teknologi som er utviklet og optimalisert for det engelske språket. 

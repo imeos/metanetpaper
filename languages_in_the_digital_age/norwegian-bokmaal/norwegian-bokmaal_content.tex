@@ -1,20 +1,343 @@
-%                                     MMMMMMMMM        
-%                                                                             
-%  MMO    MM   MMMMMM  MMMMMMM   MM    MMMMMMMM   MMD   MM  MMMMMMM MMMMMMM   
-%  MMM   MMM   MM        MM     ?MMM              MMM$  MM  MM         MM     
-%  MMMM 7MMM   MM        MM     MM8M    MMMMMMM   MMMMD MM  MM         MM     
-%  MM MMMMMM   MMMMMM    MM    MM  MM             MM MMDMM  MMMMMM     MM     
-%  MM  MM MM   MM        MM    MMMMMM             MM  MMMM  MM         MM     
-%  MM     MM   MMMMMM    MM   MM    MM            MM   MMM  MMMMMMM    MM
-%
-%
-%     - META-NET Language White Paper | Norwegian (bokmaal) content -
-% 
-% ----------------------------------------------------------------------------
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+
+% META-NET Language Whitepaper, Norwegian Bokmål and Nynorsk
+
+\documentclass[]{../../metanetpaper}
+
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{tabulary}
+\usepackage{tabularx}
+\usepackage{rotating}
+\usepackage{makecell}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{polyglossia}
+\usepackage{multicol,framed,lipsum}
+\setmainlanguage{norsk}
+\setotherlanguages{english}
+
+\RequireXeTeX %Force XeTeX check
+%\newcommand{\gil}[1]{{\bf !!!#1}}
+\newcommand{\bokmaal}[1]{#1} % {#1} to activate bokmaal, {} to deactivate
+\newcommand{\nynorsk}[1]{} % {#1} to activate nynorsk, {} to deactivate
+
+\title{Norsk i den digitale tidsalderen --- The Norwegian Language in the Digital Age}
+
+% Title for the spine of the cover
+\spineTitle{Norsk i den digitale tidsalderen --- The Norwegian Language in the Digital Age}
+
+
+\subtitle{\bokmaal{White Paper Series --- Hvitbokserie}}
+
+\author{
+Koenraad De Smedt\\
+Gunn Inger Lyse\\
+Anje Müller Gjesdal\\
+Gyri S. Losnegaard
+}
+\authoraffiliation
+{ Koenraad De Smedt~ {\small UIB}\\
+  Gunn Inger Lyse~ {\small UIB}\\
+  Anje Müller Gjesdal~ {\small UIB}\\
+  Gyri S. Losnegaard~ {\small UIB}
+}
+\editors{
+  Georg Rehm, Hans Uszkoreit\\(Redaktører, \textcolor{grey1}{editors})
+}
+
+% Text in left column on backside of the cover
+\SpineLText{\selectlanguage{english}%
+  In everyday communication, Europe’s citizens, business partners and politicians are inevitably confronted with language barriers.  
+  Language technology has the potential to overcome these barriers and to provide innovative interfaces to technologies and knowledge. 
+  This white paper presents the state of language technology support for the Norwegian language. 
+  It is part of a series that analyzes the available language resources and technologies for 31~European languages. 
+  The analysis was carried out by META-NET, a Network of Excellence funded by the European Commission.
+  META-NET consists of 54 research centres in 33 countries, who cooperate with stakeholders from economy, government agencies, research organisations, non-governmental organisations, language communities and European universities. 
+  META-NET’s vision is high-quality language technology for all European languages.}
+
+% Text in right column on backside of the cover
+\SpineRText{\selectlanguage{norsk}%
+Det er uunngåelig at innbyggerne, næringsliv og politikere i Europa støter på språkbarrierer. Språkteknologi er et virkemiddel til å motvirke disse barrierene og kan gi nyskapende grensesnitt for teknologi og kunnskap. Denne hviteboken gir en oversikt over situasjonen for språkteknologi for norsk. Den er del av en serie som analyserer tilgjengelige språkressurser og verktøy for 31 europeiske språk. Analysen er utført av META-NET, et forskningsnettverk (Network of  Excellence) finansiert av EU-kommisjonen. META-NET består av 54 forskningsinstitusjoner i 33 land som samarbeider med ulike aktører fra næringslivet, forvaltning, forskningsmiljøer, NGOer, språkbrukere og universiteter. META-NETs visjon er å gjøre språkteknologi av høy kvalitet tilgjengelig for alle europeiske språk.}
+
+% Quotes from VIPs on backside of the cover
+\quotes{Skal man lage gode språkteknologiske løsninger for norsk, må det
+eksistere språklige ressurser av høy kvalitet som industrien kan
+benytte. Jeg håper at denne rapporten kan bidra til at slike ressurser
+etableres raskt.\\\textcolor{grey2}{--- Torbjørn Nordgård (Utviklingsdirektør Lingit AS)}\\[3mm]
+Skal vi kommunisere med maskinene rundt oss treng vi
+språkteknologi. Denne rapporten presenterer status quo og vegen
+framover for språkteknologi i Noreg. 
+\textcolor{grey2}{--- Trond Trosterud (Professor Universitetet i Tromsø)}}
+
+% Funding notice left column
+\FundingLNotice{\selectlanguage{portuguese}\vskip2mm
+  Forfatterne av denne teksten takker forfatterne av hvitboken for
+  tysk for tillatelsen til å gjenbruke visse språkuavhengige
+  materialer fra deres tekst \cite{lwpgerman}. Forfatterne takker også Gisle Andersen,
+  Torbjørg Breivik, Helge Dyvik, Kristin Hagen, Torbjørn Nordgård,
+  Torbjørn Svendsen og Trond Trosterud for verdifulle bidrag og
+  kommentarer.
+  
+  \bigskip
+
+  Arbeidet med denne utredningen er finansiert av det sjuende rammeprogrammet og Den europeiske kommisjonens ICT Policy Support program, gjennom kontraktene T4ME (tildelingsavtale 249 119), Cesar (tildelingsavtale 271 022), METANET4U (tildelingsavtale 270 893) og META-NORD (tildelingsavtale 270 899).}
+
+% Funding notice right column
+\FundingRNotice{\selectlanguage{english}\vskip2mm
+  The authors of this document
+  are grateful to the authors of the White Paper on German for
+  permission to re-use selected language-independent materials from
+  their document \cite{lwpgerman}.
+  
+  \bigskip
+  
+  The development of this White Paper has been funded by the Seventh
+  Framework Programme and the ICT Policy Support Programme of the
+  European Commission under the contracts T4ME (Grant Agreement
+  249119), CESAR (Grant Agreement 271022), METANET4U (Grant Agreement
+  270893) and META-NORD (Grant Agreement 270899).}
+
 
 \begin{document}
 
+\renewcommand*{\figureformat}{\sffamily\thefigure\autodot}
+
+\selectlanguage{norsk}
 \maketitle
 
+\hyphenation{clarin CLARIN net-work gjes-dal infor-masjons-sam-funnet nyno-data infor-masjons-sam-funnet You-Tube språk-bar-riera-ne }
+
+% ---------------- Mocktitle ------------------
+
+\null
+\vfill
+
+\pagestyle{empty} 
+
+\centerline{META-NET --- office@meta-net.eu --- http://www.meta-net.eu}
+
+\begin{small}
+\input{\bokmaal{bokmaal-credits}}
+\end{small}
+
+\selectlanguage{english}
+\bigskip
+\begin{small}
+  The authors of this document are grateful to the authors of the White Paper on German for permission to re-use selected language-independent materials from their document. They also wish to thank Gisle Andersen, Torbjørg Breivik, Helge Dyvik, Kristin Hagen, Torbjørn Nordgård, Torbjørn Svendsen and Trond Trosterud for valuable contributions and comments.
+  
+  The development of this white paper has been funded by the Seventh
+  Framework Programme and the ICT Policy Support Programme of the
+  European Commission under the contracts T4ME (Grant Agreement 249119),
+  CESAR (Grant Agreement 271022), METANET4U (Grant Agreement 270893)
+  and META-NORD (Grant Agreement 270899).
+\end{small}
+
+\clearpage
+
+% ------------- End of mocktitle ----------------
+
+\pagenumbering{Roman} 
+\setcounter{page}{5}
+\pagestyle{scrheadings}
+
+\cleardoublepage
+
 % --------------------------------------------------------------------------
-FIXme
+
+\bsection*{Forord --- Preface}
+
+\begin{Parallel}[c]{78mm}{78mm}
+
+\ParallelLText{\selectlanguage{norsk}
+\input{\bokmaal{bokmaal-foreword}\nynorsk{nynorsk-foreword}}
+}
+
+\ParallelRText{\selectlanguage{english}
+This white paper is part of a series that promotes knowledge about language technology and its potential. It addresses journalists, politicians, language communities, educators and others. 
+The availability and use of language technology in Europe varies between languages. Consequently, the actions that are required to further support research and development of language technologies also differs. The required actions depend on many factors, such as the complexity of a given language and the size of its community.
+
+META-NET, a Network of Excellence funded by the European Commission, has conducted an  analysis of current language resources and technologies in this white paper series (p.~\pageref{whitepaperseries}). The analysis focused on the 23 official European languages as well as other important national and regional languages in Europe. The results of this analysis suggest that there are tremendous deficits in technology support and significant research gaps for each language. The given detailed expert analysis and assessment of the current situation will help maximise the impact of additional research.
+
+As of November 2011, META-NET consists of 54 research centres from 33
+European countries (p.~\pageref{metanetmembers}). META-NET is working
+with stakeholders from economy (Software companies, technology
+providers and users), government agencies, research organisations, non-governmental organisations, language communities and European universities. Together with these communities, META-NET is creating a common technology vision and strategic research agenda for multilingual Europe 2020.} 
+\ParallelPar
+\end{Parallel}
+
+% --------------------------------------------------------------------------
+
+\cleardoublepage
+\selectlanguage{norsk}
+\renewcommand*\contentsname{}
+\bsection*{Innhold --- Table of Contents}
+
+\tableofcontents
+
+\selectlanguage{norsk}
+
+\addtocontents{toc}{\protect\thispagestyle{empty}\protect}
+\addtocontents{toc}{{\Large\textsf{\centerline{NORSK I DEN DIGITALE TIDSALDEREN}}\par}}
+
+% --------------------------------------------------------------------------
+
+\cleardoublepage
+
+\setcounter{page}{1}
+\pagenumbering{arabic} 
+\pagestyle{scrheadings}
+
+\input{\bokmaal{bokmaal-body_v20gil}\nynorsk{nynorsk-body_v07kds}}
+
+\selectlanguage{english}
+
+\addtocontents{toc}{\protect\clearpage\protect}
+\addtocontents{toc}{\protect\thispagestyle{empty}\protect}
+\addtocontents{toc}{\protect\vspace*{4mm}\protect}
+\addtocontents{toc}{\smallskip{\Large\textsf{\centerline{THE NORWEGIAN LANGUAGE IN THE DIGITAL AGE}}\par}}
+
+\setcounter{section}{0}
+\setcounter{figure}{0}
+
+\cleardoublepage
+
+\input{norwegian-body-in-english_v11kds}
+
+\cleardoublepage
+
+\appendix
+%\addtocontents{toc}{\protect\bigskip}
+
+\bsection[Literaturliste --- References]{Literaturliste --- References}
+\bibliographystyle{unsrt} % What is the difference between "unsrt" und "is-unsrt"?
+%\bibliographystyle{is-unsrt}
+\bibliography{norwegian-bokmaal_references}
+  
+
+%\bibliographystyle{plain}
+%\bibliography{metanordnorsk}
+  
+\cleardoublepage
+
+\bsection[Medlemmer i META-NET --- META-NET Members]{Medlemmer i META-NET --- META-NET Members}
+\label{metanetmembers}
+
+\small
+\begin{longtable}{llp{113mm}}
+   Belgia & \textcolor{grey1}{Belgium} & Computational Linguistics and Psycholinguistics Research Centre, University of Antwerp: Walter Daelemans\\ \addlinespace
+  & & Centre for Processing Speech and Images, University of Leuven: Dirk van Compernolle \\ \addlinespace
+  Bulgaria & \textcolor{grey1}{Bulgaria} & Institute for Bulgarian Language, Bulgarian Academy of Sciences: Svetla Koeva \\ \addlinespace
+  Danmark &  \textcolor{grey1}{Denmark} & Centre for Language Technology, University of Copenhagen: \newline Bolette Sandford Pedersen, Bente Maegaard\\ \addlinespace
+  Estland & \textcolor{grey1}{Estonia} & Institute of Computer Science, University of Tartu: Tiit Roosmaa, Kadri Vider\\ \addlinespace
+  Finland & \textcolor{grey1}{Finland} & Computational Cognitive Systems Research Group, Aalto University: Timo Honkela\\ \addlinespace
+  & & Department of Modern Languages, University of Helsinki: Kimmo Koskenniemi,\newline Krister Lindén \\ \addlinespace
+  Frankrike & \textcolor{grey1}{France} & Centre National de la Recherche Scientifique, Laboratoire d'Informatique pour la Mécanique et les Sciences de l'Ingénieur and Institute for Multilingual and Multimedia Information: Joseph Mariani \\ \addlinespace
+  & & Evaluations and Language Resources Distribution Agency: Khalid Choukri\\ \addlinespace 
+  Hellas & \textcolor{grey1}{Greece} & R.C. “Athena”, Institute for Language and Speech Processing: Stelios Piperidis\\ \addlinespace
+  Irland & \textcolor{grey1}{Ireland} & School of Computing, Dublin City University: Josef van Genabith\\ \addlinespace
+  Island & \textcolor{grey1}{Iceland} & School of Humanities, University of Iceland: Eiríkur Rögnvaldsson\\ \addlinespace
+  Italia & \textcolor{grey1}{Italy} & Consiglio Nazionale delle Ricerche, Istituto di Linguistica Computazionale “Antonio Zampolli”: Nicoletta Calzolari\\ \addlinespace
+  & & Human Language Technology Research Unit, Fondazione Bruno Kessler:\newline Bernardo Magnini\\ \addlinespace 
+  Kroatia & \textcolor{grey1}{Croatia} & Institute of Linguistics, Faculty of Humanities and Social Science, University of Zagreb: Marko Tadić \\ \addlinespace
+  Kypros & \textcolor{grey1}{Cyprus} & Language Centre, School of
+  Humanities: Jack Burston \\ \addlinespace
+  Latvia & \textcolor{grey1}{Latvia} & Tilde: Andrejs Vasiļjevs\\ \addlinespace 
+  & & Institute of Mathematics and Computer Science, University of Latvia: Inguna Skadiņa\\ \addlinespace
+  Litauen & \textcolor{grey1}{Lithuania} & Institute of the Lithuanian Language: Jolanta Zabarskaitė\\ \addlinespace
+  Luxemburg & \textcolor{grey1}{Luxembourg} & Arax Ltd.: Vartkes Goetcherian\\ \addlinespace
+  Malta & \textcolor{grey1}{Malta} & Department Intelligent Computer Systems, University of Malta: Mike Rosner\\ \addlinespace
+  Nederland & \textcolor{grey1}{Netherlands} & Utrecht Institute of Linguistics, Utrecht University: Jan Odijk\\ \addlinespace 
+  & & Computational Linguistics, University of Groningen: Gertjan van Noord\\ \addlinespace 
+  Norwegen & \textcolor{grey1}{Norway} & Department of Linguistic, University of Bergen: Koenraad De Smedt\\ \addlinespace 
+  & & Department of Informatics, Language Technology Group, University of Oslo:\newline Stephan Oepen \\ \addlinespace
+  Polen & \textcolor{grey1}{Poland} & Institute of Computer Science, Polish Academy of Sciences: Adam Przepiórkowski, Maciej Ogrodniczuk \\ \addlinespace
+  & & University of Łódź: Barbara Lewandowska-Tomaszczyk, Piotr Pęzik\\ \addlinespace 
+  & & Department of Computer Linguistics and Artificial Intelligence, Adam Mickiewicz University: Zygmunt Vetulani\\ \addlinespace  
+  Portugal & \textcolor{grey1}{Portugal} & University of Lisbon: António Branco, Amália Mendes \\ \addlinespace
+  & & Spoken Language Systems Laboratory, Institute for Systems Engineering and Computers: Isabel Trancoso \\ \addlinespace
+  Romania & \textcolor{grey1}{Romania} & Research Institute for Artificial Intelligence, Romanian Academy of Sciences:\newline Dan Tufiș \\ \addlinespace
+  & & Faculty of Computer Science, University Alexandru Ioan Cuza of Iași: Dan Cristea \\ \addlinespace
+   Serbia & \textcolor{grey1}{Serbia} & University of Belgrade, Faculty of Mathematics: Duško Vitas, Cvetana Krstev,\newline Ivan Obradović \\ \addlinespace
+  & & Pupin Institute: Sanja Vranes \\ \addlinespace  
+  Slovakia  & \textcolor{grey1}{Slovakia} & Ľudovít Štúr Institute of Linguistics, Slovak Academy of Sciences: Radovan Garabík \\ \addlinespace 
+  Slovenia  & \textcolor{grey1}{Slovenia} & Jožef Stefan Institute: Marko Grobelnik \\ \addlinespace 
+  Spania & \textcolor{grey1}{Spain} & Barcelona Media: Toni Badia, Maite Melero \\ \addlinespace 
+  & & Institut Universitari de Lingüística Aplicada, Universitat Pompeu Fabra: Núria Bel \\ \addlinespace 
+  & & Aholab Signal Processing Laboratory, University of the Basque Country:\newline Inma Hernaez Rioja \\ \addlinespace 
+  & & Centre for Language and Speech Technologies and Applications, Universitat Politècnica de Catalunya:  Asunción Moreno \\ \addlinespace 
+  & & Department of Signal Processing and Communications, University of Vigo:\newline Carmen García Mateo \\ \addlinespace 
+  Storbritannia & \textcolor{grey1}{UK} &  School of Computer Science, University of Manchester: Sophia Ananiadou \\ \addlinespace 
+  & & Institute for Language, Cognition and Computation, Centre for Speech Technology Research, University of Edinburgh: Steve Renals \\ \addlinespace 
+  & & Research Institute of Informatics and Language Processing, University of Wolverhampton: Ruslan Mitkov \\ \addlinespace 
+  Sveits  & \textcolor{grey1}{Switzerland} & Idiap Research Institute: Hervé Bourlard \\ \addlinespace  
+  Sverige& \textcolor{grey1}{Sweden} & Department of Swedish, University of Gothenburg: Lars Borin \\ \addlinespace 
+  Tsjekkia & \textcolor{grey1}{Czech Republic} & Institute of Formal and Applied Linguistics, Charles University in Prague: Jan Hajič \\ \addlinespace
+  Tyskland & \textcolor{grey1}{Germany} & Language Technology Lab, DFKI: Hans Uszkoreit, Georg Rehm\\ \addlinespace
+  & & Human Language Technology and Pattern Recognition, RWTH Aachen University: Hermann Ney \\ \addlinespace
+  & & Department of Computational Linguistics, Saarland University:
+  Manfred Pinkal\\ \addlinespace 
+   Ungarn & \textcolor{grey1}{Hungary} & Research Institute for Linguistics, Hungarian Academy of Sciences: Tamás Váradi\\  \addlinespace
+  & & Department of Telecommunications and Media Informatics, Budapest University of Technology and Economics: Géza Németh, Gábor Olaszy \\ \addlinespace
+  Østerrike & \textcolor{grey1}{Austria} & Zentrum für Translationswissenschaft, Universität Wien: Gerhard Budin
+\end{longtable}
+\normalsize
+
+\renewcommand*{\figureformat}{}
+\renewcommand*{\captionformat}{}
+
+\begin{figure*}[htbp]
+   \colorrule{grey3}{\textwidth}{1.5pt}
+  \center
+  \includegraphics[width=\textwidth]{../_media/meta-net_team.jpg}
+  %\fbox{Dummy -- we'll include the group photo of our META-NET meeting in Berlin here}
+  \caption{\bokmaal{Omtrent 100 eksperter innen språkteknologi -- representanter for landene og språkene i META-NET -- sluttførte diskusjonen om nøkkelresultatene og -konklusjonene i hvitbokserien på et}\nynorsk{Omtrent 100 ekspertar innan språkteknologi -- representantar for landa og språka i META-NET -- sluttførte diskusjonen om nøkkelresultata og -konklusjonane i kvitbokserien på eit} META-NET-møte i Berlin, Tyskland, 21--22 oktober 2011. --- \textcolor{grey1}{About 100 language technology experts -- representatives of the countries and languages represented in META-NET -- discussed and finalised the key results and messages of the White Paper Series at a META-NET meeting in Berlin, Germany, on October 21--22, 2011.}}
+  \medskip
+  \colorrule{grey3}{\textwidth}{1.5pt}
+\end{figure*}
+
+\cleardoublepage
+
+\bsection[META-NET \bokmaal{hvitbokserien}\nynorsk{kvitbokserien} --- The META-NET White Paper Series]{META-NET \bokmaal{hvitbokserien}\nynorsk{kvitbokserien} --- The META-NET\ \ \ \ \ \ White Paper Series}
+\label{whitepaperseries}
+
+\vspace*{-5mm}
+\centering
+  \setlength{\tabcolsep}{2em}
+  \begin{tabularx}{\textwidth}{lllll} \toprule\addlinespace
+  %\begin{tabulary}{170mm}{LLL} \toprule
+  &baskisk & Basque & euskara& \\
+  &bokmål & Norwegian Bokmål & bokmål& \\
+  &bulgarsk & Bulgarian & български& \\
+  &dansk & Danish & dansk& \\
+  &engelsk & English & English& \\
+  &estisk & Estonian & eesti& \\
+  &finsk & Finnish & suomi& \\
+  &fransk & French & français& \\
+  &galisisk & Galician & galego& \\
+  &gresk & Greek & ελληνικά& \\
+  &irsk & Irish & Gaeilge& \\
+  &islandsk & Icelandic & íslenska& \\
+  &italiensk & Italian & italiano& \\
+  &katalansk & Catalan & català& \\
+  &kroatisk & Croatian & hrvatski& \\
+  &latvisk & Latvian & latviešu valoda& \\
+  &litausk & Lithuanian & lietuvių kalba& \\
+  &maltesisk & Maltese & Malti& \\
+  &nederlandsk & Dutch & Nederlands& \\
+  &nynorsk & Norwegian Nynorsk & nynorsk& \\
+  &polsk & Polish & polski& \\
+  &portugisisk & Portuguese & português& \\
+  &rumensk & Romanian & română& \\
+  &serbisk & Serbian & српски& \\
+  &slovakisk & Slovak & slovenčina& \\
+  &slovensk & Slovene & slovenščina& \\
+  &spansk & Spanish & español& \\
+  &svensk & Swedish & svenska& \\
+  &tsjekkisk & Czech & čeština& \\
+  &tysk & German & Deutsch& \\
+  &ungarsk & Hungarian & magyar& \\ \addlinespace \bottomrule
+\end{tabularx}
+
+\end{document}
