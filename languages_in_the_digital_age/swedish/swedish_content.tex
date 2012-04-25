@@ -26,7 +26,7 @@
 \setcounter{page}{3}
 \pagestyle{scrheadings}
 
-\begin{Parallel}[c]{75mm}{81mm}
+\begin{Parallel}[c]{78mm}{78mm}
 \ParallelLText{\selectlanguage{swedish} \frenchspacing Denna vitbok
   ingår i en serie med information om språkteknologi och de
   möjligheter denna teknologi öppnar. Vitboken riktar sig till
@@ -88,12 +88,16 @@ multilingual Europe 2020.}
 \ParallelPar
 \end{Parallel}
 
+\makefundingnotice
+
 % --------------------------------------------------------------------------
 
 \cleardoublepage
 
-\bsection*{Innehålls\-förteckning --- Table of Contents}
+%\bsection*{Innehålls\-förteckning --- Table of Contents}
+\bsection*{Innehåll --- Contents}
 
+\renewcommand\contentsname{}
 \tableofcontents
 
 \addtocontents{toc}{\protect\thispagestyle{empty}\protect}
@@ -146,7 +150,7 @@ jämfört med många andra språk. Det finns ett antal public
 service-tevekanaler som \mbox{sänder} på svenska (Sverige: 7, Finland: 1)
 samt \mbox{några} kommersiella kanaler. Trots att dess snara undergång \mbox{ofta}
 har förutspåtts, är bok- och tidningsmarknaden faktiskt tämligen
-stabil och aktiv, och den årliga bokmässan i Göteborg är störst i sltt %% TODO: fix typo
+stabil och aktiv, och den årliga bokmässan i Göteborg är störst i sitt
 slag i Norden, med över 100.000 besökare.
 
 Det har länge varit självklart att använda svenska för kommunikation i
@@ -325,7 +329,7 @@ folkspråket. Senare århundraden bevittnade framväxten av kulturella
 teknologier för mer effektiv språkanvändning och kunskapsutbyte:
 
 \medskip
-\begin{itemize}[itemsep=0pt,parsep=0pt]
+\begin{itemize}
 \item Ortografisk, lexikalisk och grammatisk standardisering av
   språken möjliggjorde snabb spridning av nya vetenskapliga och
   intellektuella idéer.
@@ -343,7 +347,7 @@ teknologier för mer effektiv språkanvändning och kunskapsutbyte:
 Under de senaste två årtiondena har informations\-teknologin
 möjliggjort automatisering och förenkling av en rad aktiviter:
 
-\begin{itemize}[itemsep=0pt,parsep=0pt]
+\begin{itemize}
 \item Skrivmaskiner och textsättning har ersatts av ordbehandling och
   desktopprogram.
 \item Presentations\-programvara har ersatt over\-head\-bilder.
@@ -390,7 +394,7 @@ på ett språk som vi inte förstår. Enligt en färsk EU-rapport köper
 språk som inte är deras modersmål. Engelska är det vanligaste
 främmande språket, följt av franska, tyska och spanska. Av användarna
 läser 55~\% innehåll på ett främmande språk och 35~\% använder ett
-annat språk för att skriva epost eller kommentarer på webben. Så sent
+annat språk för att skriva epost eller kommentarer på webben \cite{EC1}. Så sent
 som för några år sen kunde man kalla engelska webbens lingua franca --
 den överväldigande merparten av innehållet på webben var då på
 engelska -- men situationen har nu förändrats drastiskt. Andelen
@@ -419,7 +423,7 @@ våra nutida skriftspråk på grund av internet?
 
 De ungefär 80 språk som talas i Europa är en av våra rikaste och
 viktigaste kulturskatter och en central del av den unika europeiska
-samhällsmodellen. Även om språk som engelska och spanska troligen
+samhällsmodellen \cite{EC2}. Även om språk som engelska och spanska troligen
 kommer att överleva på den framväxande digitala marknaden, kan många
 andra av våra språk sannolikt bli överflödiga i ett samman\-länkat
 informa\-tions\-samhälle. En sådan utveckling skulle försvaga Europas
@@ -429,7 +433,7 @@ villkor oavsett språk.
 
 I en UNESCO-rapport om flerspråkighet understryks språkets nyckelroll
 för utövandet av grundläggande rättigheter såsom uttryckande av
-politiska åsikter, utbildning och samhällsdeltagande.
+politiska åsikter, utbildning och samhällsdeltagande \cite{Unesco1}.
 
 
 \subsection{Språkteknologi är en nyckelteknologi}
@@ -452,7 +456,7 @@ i den samhälleliga och politiska debatten oavsett språkskillnader och
 datormognad. Språkteknologi finns ofta dold under ytan som en
 komponent i komplexa mjuk\-varu\-system. Redan idag möjliggör den:
 
-\begin{itemize}[itemsep=0pt,parsep=0pt]
+\begin{itemize}
 \item informationssökning med sökmotorer
 \item stavnings- och grammatikkontroll
 \item produktrekommendationer i webbutiker
@@ -802,7 +806,7 @@ språk i allmänhet, och germanska språk i synnerhet. De mest ''exotiska''
 detaljerna i språket återfinns inom fonologin, där bland annat
 följande drag sticker ut:
 
-\begin{itemize}[itemsep=0pt,parsep=0pt]
+\begin{itemize}
 \item ett fonematiskt tonaccentsystem,
 \item förekomsten av det tvärspråkligt ovanliga
   fonemet~{\fontspec[Scale=MatchLowercase]{Arial Unicode MS} /ɧ/},
@@ -1129,7 +1133,7 @@ för språkteknologi, särskilt språkkontroll, webbsökteknologi, talad
 interaktion och maskinöversättning. Här ingår tillämpningar och
 basteknologier som exempelvis
 
-\begin{itemize}[itemsep=0pt,parsep=0pt]
+\begin{itemize}
 \item stavningskontroll
 \item skrivstöd vid textproduktion
 \item datorstödd språkinlärning
@@ -1161,7 +1165,7 @@ starkt förenklad form uppbyggnaden av ett typiskt
 textbearbetningssystem. De första tre modulerna svarar för att ta hand
 om den inkommande textens struktur och betydelse: \\
 
-\begin{enumerate}[itemsep=0pt,parsep=0pt]
+\begin{enumerate}
 \item förbearbetning: ''städar'' texten, analyserar eller tar bort
   formateringsinformation, samt bestämmer vilket eller vilka textens
   språk är, etc.
@@ -1242,7 +1246,7 @@ analys av kontexten, som i följande exempel där kontexten hjälper oss
 att avgöra om det sista pronomenet i meningen ska vara singular eller
 plural:
 
-\begin{itemize}[itemsep=0pt,parsep=0pt]
+\begin{itemize}
 \item \textit{Faxen} [maskin] blev tydligen \textit{skickad} [\textsc{ental}] förra veckan, men jag har inte sett \textit{den}.
 \item \textit{Faxen} [meddelar] blev tydligen \textit{skickade} [\textsc{flertal}] förra veckan, men jag har inte sett \textit{dem}.
 \end{itemize}
@@ -1313,7 +1317,7 @@ upplagan av SAOL). Googles sökgränssnitt och träffsida har inte
 förändrats i grunden sen den första versionen. Däremot har man infört
 både stavningskorrigering och en rudimentär semantisk sökning som
 bygger på en kontextuell analys av sökorden i relation till andra ord
-i sökfrågan \cite{spi1}. Googles framgångar visar hur tillgång till
+i sökfrågan \cite{pc1}. Googles framgångar visar hur tillgång till
 stora datamängder i kombination med effektiva
 in\-dex\-er\-ings\-tek\-nik\-er och statistiskt baserad språkteknologi
 kan producera godtagbara resultat för denna typ av sökningar på
@@ -1422,7 +1426,7 @@ pek\-skärm\-en i smarttelefoner.
 Talgränssnitt eller dialogsystem omfattar följande fyra
 forskningsområden:
 
-\begin{enumerate}[itemsep=0pt,parsep=0pt]
+\begin{enumerate}
 \item Automatisk \textbf{taligenkänning} (\emph{Automatic Speech
   Recognition: ASR}) omvandlar den ljudföljd som användaren yttrar
   till den mest sannolika ordsekvensen med hjälp av en statistisk
@@ -1552,7 +1556,7 @@ handla om enstaka ord -- här talar man om lexikal disambiguering (en
 frågan om vilken roll ett prepositionsuttryck spelar i satsen,
 attribut eller adverbial, till exempel:
 
-\begin{itemize}[itemsep=0pt,parsep=0pt]
+\begin{itemize}
 \item \textit{Polisen betraktade mannen med kikaren.}
 \item \textit{Polisen betraktade mannen med revolvern.}
 \end{itemize}
@@ -1821,7 +1825,7 @@ forskarskolan i språkteknologi (GSLT) av regeringen som en av 16
 nationella forskarskolor. Värduniversitet för GSLT är Göteborgs
 universitet, men den utgör ett samarbete mellan följande högskolor:
 
-\begin{itemize}[itemsep=0pt,parsep=0pt]
+\begin{itemize}
 \item Göteborgs universitet
 \item Högskolan i Borås
 \item Chalmers tekniska högskola
@@ -1874,7 +1878,7 @@ Sverige har flera framstående språkteknologi\-forsknings\-centra:
 \cellcolor{orange1}{\textbf{Textbaserad språkteknologiforskning}} \\
 \cellcolor{orange2}{\emph{Göteborgs universitet:}} \\
 \parbox[b]{0.9\columnwidth}{%
-\begin{itemize}[topsep=1pt,itemsep=-5pt]
+\begin{itemize}
 \item CLT (Centre for Language Technology)
 \item Språkbanken
 \item Institutionen för svenska språket
@@ -1889,13 +1893,13 @@ Sverige har flera framstående språkteknologi\-forsknings\-centra:
 \begin{itemize} \item \vspace{-20pt} Institutionen för data- och informa\-tions\-vetenskap \vspace{-20pt} \end{itemize} \\ \addlinespace
 \cellcolor{orange2}{\emph{Lunds universitet:}} \\
 \parbox[b]{0.9\columnwidth}{%
-\begin{itemize}[topsep=1pt,itemsep=-5pt]
+\begin{itemize}
 \item Institutionen för lingvistik och fonetik
 \item Institutionen för datavetenskap
 \end{itemize}} \\
 \cellcolor{orange2}{\emph{Stockholms universitet:}} \\
 \parbox[b]{0.9\columnwidth}{%
-\begin{itemize}[topsep=1pt,itemsep=-5pt]
+\begin{itemize}
 \item Institutionen för data- och systemvetenskap
 \item Institutionen för lingvistik
 \end{itemize}} \\
@@ -1913,7 +1917,7 @@ Sverige har flera framstående språkteknologi\-forsknings\-centra:
 \begin{itemize} \item \vspace{-20pt} CTT (Centrum för talteknologi) \vspace{-20pt} \end{itemize} \\ \addlinespace
 \cellcolor{orange2}{\emph{Göteborgs universitet:}} \\
 \parbox[b]{0.9\columnwidth}{%
-\begin{itemize}[topsep=1pt,itemsep=-5pt]
+\begin{itemize}
 \item CLT (Centre for Language Technology)
 \item Dialoglaboratoriet (Institutionen för filo\-sofi, lingvistik och vetenskapsteori)
 \end{itemize}} \\ \addlinespace \addlinespace \addlinespace
@@ -1929,7 +1933,7 @@ Sverige har flera framstående språkteknologi\-forsknings\-centra:
 \begin{itemize} \item \vspace{-20pt} Språkrådet \vspace{-10pt}  \end{itemize} \\
 \cellcolor{orange2}{\emph{Språkteknologikonsortier:}} \\
 \parbox[b]{0.9\columnwidth}{%
-\begin{itemize}[topsep=1pt,itemsep=-5pt]
+\begin{itemize}
 \item CLT (Centre for Language Technology)
 \item Graduate School of Language Tech\-nology (GSLT)
 \item The Human Language Technology \mbox{Center}
@@ -1984,7 +1988,7 @@ Grammatiker &3&2&3&3&3&4&5 \\
 De viktigaste resultaten när det gäller språkteknologi för svenska kan
 sammanfattas som följer: \\ 
 
-\begin{itemize}[itemsep=0pt,parsep=0pt]
+\begin{itemize}
 \item Å ena sidan verkar textteknologin ha kommit längre i mognad än
   talteknologi. Å den andra sidan finner vi fler företag och fler
   vardagstillämpningar av talteknologi än textteknologi,
@@ -2040,7 +2044,7 @@ viktiga världsspråk än engelska.
 De mest akuta behoven för svensk språkteknologi är för närvarande
 (uppräknade i stigande svårighetsgrad och kostnad):
 
-\begin{enumerate}[itemsep=0pt,parsep=0pt]
+\begin{enumerate}
 \item Standardisering (av data- och innehållsformat samt API:er för
   att uppnå interoperabilitet) av befintliga fritt tillgängliga (med
   open source-licenser) verktyg och resurser, för att göra dessa
@@ -2073,7 +2077,7 @@ grundläggande resurser som behövs för att bygga
 språkteknologitillämpningar. Språken bedömdes enligt följande
 femgradiga skala:
 
-\begin{enumerate}[itemsep=0pt,parsep=0pt]
+\begin{enumerate}
 \item stor mängd högkvalitativa resurser
 \item god resurstillgång
 \item måttlig resurstillgång
@@ -2451,7 +2455,7 @@ samhällvetenskap. META-NET bygger de teknologiska grundvalarna för ett
 genuint mångspråkigt europeiskt informations\-samhälle i syfte att
 åstadkomma:
 
-\begin{itemize}[itemsep=0pt,parsep=0pt]
+\begin{itemize}
 \item kommunikation och samarbete över språkgränserna;
 \item lika tillgång till information och kunskap oavsett modersmål;
 \item en vidare utveckling av nätverksbaserad informationsteknologi.
@@ -2509,7 +2513,7 @@ searching, and increasingly for reading, listening to music, viewing
 photos and watching movies. We carry small computers in our pockets
 and use them to make phone calls, write emails, get information and
 entertain ourselves, wherever we are. How does this massive
-digitization of information, knowledge and everyday communication
+digitisation of information, knowledge and everyday communication
 affect our language? Will our language change or even disappear?
 
 %\boxtext{Language technology builds bridges.}
@@ -2558,7 +2562,7 @@ countermeasure to the threat of losing our beloved Swedish words and
 phrases is to actually use them -- frequently and consciously; \mbox{neither}
 linguistic polemics about foreign influences nor government
 regulations are usually of any help. Our main concern should not be
-the gradual angli\-cization of our language, but its complete
+the gradual angli\-cisation of our language, but its complete
 disappearance from major areas of our personal lives. These are not
 science, aviation and the global financial markets, which actually
 need a world-wide \emph{lingua franca}. We have in mind the many areas of
@@ -2699,7 +2703,7 @@ We are witnesses to a digital revolution that is dramatically impacting communic
 
 After Gutenberg’s invention, real breakthroughs in communication were accomplished by efforts such as Luther’s translation of the Bible into vernacular language. In subsequent centuries, cultural techniques have been developed to better handle language processing and knowledge exchange:
 
-\begin{itemize}[itemsep=0pt,parsep=0pt]
+\begin{itemize}
 \item the orthographic and grammatical standardisation of major languages enabled the rapid dissemination of new scientific and intellectual ideas;
 \item the development of official languages made it possible for citizens to communicate within certain (often political) boundaries;
 \item the teaching and translation of languages enabled exchanges across languages;
@@ -2709,7 +2713,7 @@ After Gutenberg’s invention, real breakthroughs in communication were accompli
 
 In the past twenty years, information technology has helped to automate and facilitate many processes:
 
-\begin{itemize}[itemsep=0pt,parsep=0pt]
+\begin{itemize}
 \item desktop publishing software has replaced typewriting and typesetting;
 \item presentation software has replaced overhead projector transparencies;
 \item e-mail allows documents to be sent and received more quickly than using a fax machine;
@@ -2773,7 +2777,7 @@ energy needs among others.
 
 Language technology targeting all forms of written text and spoken discourse can help people to collaborate, conduct business, share knowledge and participate in social and political debate regardless of language barriers and computer skills. It often operates invisibly inside complex software systems to help us already today to:
 
-\begin{itemize}[itemsep=0pt,parsep=0pt]
+\begin{itemize}
 \item find information with a search engine;
 \item check spelling and grammar in a word processor;
 \item view product recommendations in an online shop;
@@ -2998,7 +3002,7 @@ languages, and Germanic languages in particular. The most ``exotic''
 aspects of the language are found in the domain of phonology, with
 notable features being:
 
-\begin{itemize}[itemsep=0pt,parsep=0pt]    
+\begin{itemize}    
 \item a phonemic pitch accent system;
 \item presence of the cross-linguistically unusual
   phoneme~{\fontspec[Scale=MatchLowercase]{Arial Unicode MS} /ɧ/};
@@ -3090,7 +3094,7 @@ Group’), the Swedish Academy and \textit{Svenska språknämnden}
 are or were seen as having a normative mandate. In Finland, the
 \textit{Institute for the Languages of Finland} fulfils a similar
 role. In 2006, the \textit{Språkrådet} (`Language Council of Sweden'),
-was formed by the government, an organization billing itself as the
+was formed by the government, an organisation billing itself as the
 ``official language cultivation body of Sweden''. Its mission is to
 ``monitor the development of spoken and written Swedish and also to
 monitor the use and status of all other languages spoken in Sweden
@@ -3308,7 +3312,7 @@ landscape.
 When we communicate, we combine language with other modes of communication and information media -- for example speaking can involve gestures and facial expressions. Digital texts link to pictures and sounds. Movies may contain language in spoken and written form. In other words, speech and text technologies overlap and interact with other multimodal communication and multimedia technologies.\\ 
 In this section, we will discuss the main application areas of language technology, i.\,e., language checking, web search, speech interaction, and machine translation. These applications and basic technologies include: 
 
-\begin{itemize}[itemsep=0pt,parsep=0pt]
+\begin{itemize}
 \item spelling correction
 \item authoring support
 \item computer-assisted language learning
@@ -3331,7 +3335,7 @@ Before discussing the above application areas, we will briefly describe the arch
 
 Software applications for language processing typically consist of several components that mirror different aspects of language. While such applications are typically very complex, figure~\ref{fig:textprocessingarch_en} shows a highly simplified architecture of a typical text processing system. The first three modules handle the structure and meaning of the text input:
 
-\begin{enumerate}[itemsep=0pt,parsep=0pt]
+\begin{enumerate}
 \item Pre-processing: cleans the data, analyses or removes formatting, detects the input languages, and so on.
 \item Grammatical analysis: finds the verb, its objects, modifiers and other parts of speech; detects the sentence structure.
 \item Semantic analysis: performs disambiguation (i.\,e., computes the appropriate meaning of words in a given context); resolves anaphora (i.\,e., which pronouns refer to which nouns in the sentence); represents the meaning of the sentence in a machine-readable way.
@@ -3379,7 +3383,7 @@ the following text \cite{zar1}:
 
 Handling these kinds of errors usually requires an analysis of the context. For example: 
 
-\begin{itemize}[itemsep=0pt,parsep=0pt]
+\begin{itemize}
 \item \textit{Faxen} blev tydligen \textit{skickad} förra veckan, men jag har inte sett \textit{den}.\\
 => ‘\emph{The fax} [machine] was supposedly \emph{sent} [\textsc{singular}] last week, but I have not seen \emph{it}.’
 \item \textit{Faxen} blev tydligen \textit{skickade} förra veckan, men jag har inte sett \textit{dem}.\\
@@ -3491,7 +3495,7 @@ Speech interaction is one of many application areas that depend on speech techno
 
 Speech interaction technology comprises four technologies: 
 
-\begin{enumerate}[itemsep=0pt,parsep=0pt]
+\begin{enumerate}
 \item Automatic \textbf{speech recognition} (ASR) determines which words are actually spoken in a given sequence of sounds uttered by a user.  
 \item Natural language understanding analyses the syntactic structure of a user’s utterance and interprets it according to the system in question.
 \item Dialogue management determines which action to take given the user input and system functionality.   
@@ -3567,7 +3571,7 @@ The idea of using digital computers to translate natural languages goes back to 
 
 The most basic approach to machine translation is the automatic replacement of the words in a text written in one natural language with the equivalent words of another language. This can be useful in subject domains that have a very restricted, formulaic language such as weather reports. However, in order to produce a good translation of less restricted texts, larger text units (phrases, sentences, or even whole passages) need to be matched to their closest counterparts in the target language. The major difficulty is that human language is ambiguous. Ambiguity creates challenges on multiple levels, such as word sense disambiguation on the lexical level (a \textit{jaguar} is a brand of car or an animal) or the assignment of case on the syntactic level, for example:
 
-\begin{itemize}[itemsep=0pt,parsep=0pt]
+\begin{itemize}
 \item \textit{Polisen betraktade mannen med kikaren.}
 \\`The policeman observed the man with the binoculars.'
 \item \textit{Polisen betraktade mannen med revolvern.}
@@ -3696,7 +3700,7 @@ as one of sixteen national graduate schools. The graduate school is
 hosted by the University of Gothenburg, but is a collaboration between
 the following centres:
 
-\begin{itemize}[itemsep=0pt,parsep=0pt]
+\begin{itemize}
 \item University of Gothenburg
 \item University College of Borås
 \item Chalmers University of Technology (Gothenburg)
@@ -3750,7 +3754,7 @@ Sweden has a number of excellent language technology research centres: \\
 \cellcolor{orange1}{\textbf{Text-based language technology research}} \\
 \cellcolor{orange2}{\emph{University of Gothenburg:}} \\
 \parbox[b]{0.9\columnwidth}{%
-\begin{itemize}[topsep=1pt,itemsep=-5pt]
+\begin{itemize}
 \item CLT (Centre for Language Technology)
 \item The Swedish Language Bank (Språkbanken)
 \item Department of Swedish
@@ -3765,7 +3769,7 @@ Sweden has a number of excellent language technology research centres: \\
 \begin{itemize} \item \vspace{-20pt} Department of Computer and Inform\-ation Science \vspace{-20pt} \end{itemize} \\ \addlinespace
 \cellcolor{orange2}{\emph{Lund University:}} \\
 \parbox[b]{0.9\columnwidth}{%
-\begin{itemize}[topsep=1pt,itemsep=-5pt]
+\begin{itemize}
 \item Department of Linguistics and Phonetics
 \item Department of Computer Science
 \end{itemize}} \\
@@ -3776,7 +3780,7 @@ Sweden has a number of excellent language technology research centres: \\
 \begin{tabular}{p{0.9\columnwidth}}
 \cellcolor{orange2}{\emph{Stockholm University:}} \\
 \parbox[b]{0.9\columnwidth}{%
-\begin{itemize}[topsep=1pt,itemsep=-5pt]
+\begin{itemize}
 \item Department of Computer and Systems Sciences
 \item Department of Linguistics
 \end{itemize}} \\
@@ -3794,7 +3798,7 @@ Sweden has a number of excellent language technology research centres: \\
 \begin{itemize} \item \vspace{-20pt} CTT (Centre for Speech Technology) \vspace{-10pt} \end{itemize} \\
 \cellcolor{orange2}{\emph{University of Gothenburg:}} \\
 \parbox[b]{0.9\columnwidth}{%
-\begin{itemize}[topsep=1pt,itemsep=-5pt]
+\begin{itemize}
 \item CLT (Centre for Language Technology)
 \item Dialogue Lab (Dept. of Philosophy, Linguistics and Theory of Science)
 \end{itemize}} \\
@@ -3810,7 +3814,7 @@ Sweden has a number of excellent language technology research centres: \\
 \begin{itemize} \item \vspace{-20pt} The Swedish Language Council (Språkrådet) \vspace{-10pt}  \end{itemize} \\
 \cellcolor{orange2}{\emph{\footnotesize{Language technology consortia:}}} \\
 \parbox[b]{0.9\columnwidth}{%
-\begin{itemize}[topsep=1pt,itemsep=-5pt]
+\begin{itemize}
 \item CLT (Centre for Language Technology)
 \item Graduate School of Language Tech\-nology (GSLT)
 \item The Human Language Technology Center
@@ -3857,7 +3861,7 @@ Grammars &3&2&3&3&3&4&5 \\
 
 The key results for Swedish language technology can be summed up as follows:
 
-\begin{itemize}[itemsep=0pt,parsep=0pt]
+\begin{itemize}
 \item On the one hand, processing of written text currently seems to
   be more mature than speech processing. On the other hand, speech
   technology -- and less so text technology -- has already been
@@ -3874,7 +3878,7 @@ The key results for Swedish language technology can be summed up as follows:
   of the BLARK (Basic LAnguage Resource Kit) concept \cite{blark}, we
   may note that there is a conspicuous lack of certain basic
   resources:
-%\begin{itemize}[itemsep=0pt,parsep=0pt]
+%\begin{itemize}
 
 While there are some -- mainly small -- specific corpora of high
   quality, a large balanced corpus (a ``national corpus'') does not
@@ -3916,7 +3920,7 @@ In the area of multilingual resources, there is a clear focus on
 
 The most urgent needs of Swedish language technology at present are
 (in order of decreasing feasibility/increasing cost):
-\begin{enumerate}[itemsep=0pt,parsep=0pt]
+\begin{enumerate}
 \item Standardisation (for interoperabilty, of data and content
   formats, as well as APIs) of existing basic open source/open content
   tools and resources, in order to make them generally available to
@@ -3941,7 +3945,7 @@ The most urgent needs of Swedish language technology at present are
 
 The current state of LT support varies considerably from one language community to another. In order to compare the situation between languages, this section will present an evaluation based on two sample application areas (machine translation and speech processing) and one underlying technology (text analysis), as well as basic resources needed for building LT applications. The languages were categorised using the following five-point scale: 
 
-\begin{enumerate}[itemsep=0pt,parsep=0pt]
+\begin{enumerate}
 \item Excellent support
 \item Good support
 \item Moderate support
@@ -4260,7 +4264,7 @@ the way for political and economic unity through cultural diversity.
 \begin{multicols}{2}
 META-NET is a Network of Excellence partially funded by the European Commission. The network currently consists of 54 research centres in 33 European countries. META-NET forges META, the Multilingual Europe Technology Alliance, a growing community of language technology professionals and organisations in Europe. META-NET fosters the technological foundations for a truly multilingual European information society that: 
 
-\begin{itemize}[itemsep=0pt,parsep=0pt]
+\begin{itemize}
 \item makes communication and cooperation possible across languages;
 \item grants all Europeans equal access to information and knowledge regardless of their language; 
 \item builds upon and advances functionalities of networked information technology.
