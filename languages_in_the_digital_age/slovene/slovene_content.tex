@@ -16,10 +16,10 @@
 
 \maketitle
 
-\null
-\pagestyle{empty} 
+%\null
+%\pagestyle{empty} 
 
-\makefundingnotice
+%\makefundingnotice
 
 \pagenumbering{Roman} 
 \setcounter{page}{5}
@@ -49,6 +49,7 @@ As of November 2011, META-NET consists of 54 research centres from 33 European c
 
 % --------------------------------------------------------------------------
 
+\makefundingnotice
 \cleardoublepage
 
 \bsection*{Kazalo --- Contents}
@@ -420,7 +421,7 @@ V nadaljevanju obravnavamo glavna področja, kjer se uporabljajo jezikovne tehno
 \item sinteza govora
 \end{itemize}
 
-Jezikovne tehnologije so uveljavljeno raziskovalno področje z obsežno temeljno literaturo, zainteresirani bralci lahko preberejo naslednja dela: \cite{carstensen-etal1} \cite{jurafsky-martin01} \cite{manning-schuetze1} \cite{lt-world1} \cite{lt-survey1}. Pred obravnavo omenjenih področij bomo na kratko opisali arhitekturo tipičnega jezikovnotehnološkega sistema.
+Jezikovne tehnologije so uveljavljeno raziskovalno področje z obsežno temeljno literaturo, zainteresirani bralci lahko preberejo naslednja dela: \cite{carstensen-etal1, jurafsky-martin01, manning-schuetze1, lt-world1, lt-survey1}. Pred obravnavo omenjenih področij bomo na kratko opisali arhitekturo tipičnega jezikovnotehnološkega sistema.
 
 \subsection{Procesna arhitektura}
 
@@ -584,7 +585,7 @@ Pri primerjanju sistemov strojnega prevajanja, različnih pristopov in statusa s
 
 Najboljše rezultate (v zeleni in modri barvi) dosegajo jeziki, ki izkoriščajo pretekle znatne raziskovalne napore v koordiniranih programih ter obstoj množice vzporednih korpusov (npr. angleščina, francoščina, nizozemščina, španščina in nemščina). Rezultati pri jezikih s slabšimi rezultati so prikazani v rdeči barvi. Pri teh jezikih bodisi ni bilo vlaganj v razvoj ali pa se strukturno zelo razlikujejo od drugih jezikov (npr. madžarščina, malteščina, finščina).
 
-\begin{figure*}[htbp]
+\begin{figure*}[ht]
   \centering
   \setlength{\tabcolsep}{0.17em}
   \small
@@ -614,7 +615,7 @@ Najboljše rezultate (v zeleni in modri barvi) dosegajo jeziki, ki izkoriščajo
     SL & \textcolor{green}{61.0} & \textcolor{purple}{33.1} & \textcolor{purple}{37.9} & \textcolor{blue}{43.5} & \textcolor{blue}{42.6} & \textcolor{purple}{34.0} & \textcolor{blue}{47.0} & \textcolor{purple}{31.1} & \textcolor{red3}{28.8} & \textcolor{purple}{38.2} & \textcolor{red3}{25.7} & \textcolor{blue}{42.3} & \textcolor{purple}{34.6} & \textcolor{purple}{37.3} & \textcolor{purple}{30.0} & \textcolor{blue}{45.9} & \textcolor{purple}{38.2} & \textcolor{blue}{44.1} & \textcolor{purple}{35.8} & \textcolor{purple}{38.9} & -- & \textcolor{blue}{42.7}\\
     SV & \textcolor{green2}{58.5} & \textcolor{red3}{26.9} & \textcolor{blue}{41.0} & \textcolor{purple}{35.6} & \textcolor{blue}{46.6} & \textcolor{purple}{33.3} & \textcolor{blue}{46.6} & \textcolor{red3}{27.4} & \textcolor{purple}{30.9} & \textcolor{purple}{38.9} & \textcolor{red3}{22.7} & \textcolor{blue}{42.0} & \textcolor{red3}{28.2} & \textcolor{purple}{31.0} & \textcolor{red3}{23.7} & \textcolor{blue}{45.6} & \textcolor{purple}{32.2} & \textcolor{blue}{44.2} & \textcolor{purple}{32.7} & \textcolor{purple}{31.3} & \textcolor{purple}{33.5} & --\\
     \end{tabular}
-  \caption{Uspešnost strojnega prevajanja po jezikovnih parih v projektu Euromatrix+ --- \textcolor{grey1}{Machine Translation between 22 EU-languages}\cite{euro1}}
+  \caption{Uspešnost strojnega prevajanja po jezikovnih parih v projektu Euromatrix+ --- \textcolor{grey1}{Machine Translation between 22 EU-languages} \cite{euro1}}
   \label{fig:euromatrix_de}
 \end{figure*}
 
@@ -1134,9 +1135,11 @@ Surprisingly, this ubiquitous digital linguistic divide has not gained much publ
 
 While the printing press helped step up the exchange of information in Europe, it also led to the extinction of many European languages. Regional and minority languages were rarely printed and languages such as Cornish and Dalmatian were limited to oral forms of transmission, which in turn restricted their scope of use. Will the Internet have the same impact on our modern languages?
 
-\boxtext{The variety of languages in Europe is one of its richest and most important cultural assets.}
+Europe’s approximately 80 languages are one of our richest and most important cultural assets, and a vital part of this unique social model \cite{EC2}. While languages such as English and Spanish are likely to survive in the emerging digital marketplace, many European languages could become irrelevant in a networked society. This would weaken Europe’s global standing, and run counter to the strategic goal of ensuring equal participation for every European citizen regardless of language. 
 
-Europe’s approximately 80 languages are one of our richest and most important cultural assets, and a vital part of this unique social model \cite{EC2}. While languages such as English and Spanish are likely to survive in the emerging digital marketplace, many European languages could become irrelevant in a networked society. This would weaken Europe’s global standing, and run counter to the strategic goal of ensuring equal participation for every European citizen regardless of language. According to a UNESCO report on multilingualism, languages are an essential medium for the enjoyment of fundamental rights, such as political expression, education and participation in society \cite{Unesco1}.
+According to a UNESCO report on multilingualism, languages are an essential medium for the enjoyment of fundamental rights, such as political expression, education and participation in society \cite{Unesco1}.
+
+\boxtext{The variety of languages in Europe is one of its richest and most important cultural assets.}
 
 \subsection{Language Technology is a Key Enabling Technology}
 
@@ -1359,10 +1362,9 @@ Recognition of Slovene literature outside of Slovenia is largely limited to neig
 %FIXME ʒiʒɛk
 usually associated with the philosophical traditions of Hegelianism, Marxism and, above all, with Lacanian psychoanalysis. A controversial figure, he has attracted considerable attention and was called everything from an “academic rock star” by the New York Times to ``the most dangerous philosopher in the West'' by German Der Spiegel magazine. His writings and lectures – sometimes described as lecture-performances – combine themes from pop culture and everyday life with complex philosophical concepts in a provocative way, usually deliberately challenging fundamental and generally accepted ideas of Western philosophy. 
 
+International promotion of the Slovene literature, translations of Slovene authors to foreign languages and support to literary production in general is organised by the Slovenian Book Agency, an independent government agency established in 2009 \cite{JAKRS1}.  As a comparatively small community with a correspondingly small literary production, speakers of Slovene are largely dependent on translation of foreign literature and other book genres. Statistics show that in 2009, 6,139 new books were published, with 71\% of the original titles in Slovene and 29\% translations. Of these, 1,473 were literary titles with a 37\% share of novels, 26\% of short prose, 20\% of poetry and 1\% of drama. 
 
 \boxtext{The Slovene language does not have a wider international influence and import outside the limits of its community of speakers and the official status of one of the official EU languages.}
-
-International promotion of the Slovene literature, translations of Slovene authors to foreign languages and support to literary production in general is organised by the Slovenian Book Agency, an independent government agency established in 2009 \cite{JAKRS1}.  As a comparatively small community with a correspondingly small literary production, speakers of Slovene are largely dependent on translation of foreign literature and other book genres. Statistics show that in 2009, 6,139 new books were published, with 71\% of the original titles in Slovene and 29\% translations. Of these, 1,473 were literary titles with a 37\% share of novels, 26\% of short prose, 20\% of poetry and 1\% of drama. 
 
 The international study of Slovene language, literature and culture is supported by Slovene state through the Centre for Slovene as a Second/Foreign Language which operates under the auspices of the Department of Slovene Studies at the Faculty of Arts of the University of Ljubljana \cite{CSDTJ1}.  The Centre encourages and promotes international research in the Slovene language and literature, organises professional and scientific conferences and develops the infrastructure for attaining, examining and certifying proficiency in Slovene as a second/foreign language. One of the programmes of the Centre, called Slovene at Foreign Universities, enables students around the world to study the Slovene language. It is currently being taught through 57 lectureships, with financial support from the Ministry of Higher Education, Science and Technology.
 
@@ -2029,7 +2031,6 @@ Launched on 1 February 2010, META-NET has already conducted various activities i
 \end{multicols}
 
 \vfill
-\centerline{office@meta-net.eu -- http://www.meta-net.eu}
 
 \cleardoublepage
 
@@ -2095,7 +2096,7 @@ Launched on 1 February 2010, META-NET has already conducted various activities i
   & & Center for Language and Speech Technologies and Applications, Universitat Politècnica de Catalunya:  Asunción Moreno \\ \addlinespace 
   & & Department of Signal Processing and Communications, University of Vigo:\newline Carmen García Mateo \\ \addlinespace 
   Srbija & \textcolor{grey1}{Serbia} & University of Belgrade, Faculty of Mathematics: Duško Vitas, Cvetana Krstev,\newline Ivan Obradović \\ \addlinespace
-  & & Pupin Institute: Sanja Vranes \\ \addlinespace  
+  & & Pupin Institute: Sanja Vraneš \\ \addlinespace  
   Švedska & \textcolor{grey1}{Sweden} & Department of Swedish, University of Gothenburg: Lars Borin \\ \addlinespace 
   Švica & \textcolor{grey1}{Switzerland} & Idiap Research Institute: Hervé Bourlard \\ \addlinespace 
   Velika Britanija & \textcolor{grey1}{UK} & School of Computer Science, University of Manchester: Sophia Ananiadou \\ \addlinespace
@@ -2110,8 +2111,8 @@ Launched on 1 February 2010, META-NET has already conducted various activities i
 \begin{figure*}[htbp]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
-  %\includegraphics[width=\textwidth]{../_media/meta-net_team.jpg}
-   \fbox{Dummy -- we'll include the group photo of our META-NET meeting in Berlin here}
+  \includegraphics[width=\textwidth]{../_media/meta-net_team.jpg}
+  % \fbox{Dummy -- we'll include the group photo of our META-NET meeting in Berlin here}
   \caption{Skoraj 100 strokovnjakov -- predstavnikov držav in jezikov, zbranih v okviru projekta META-NET -- je na srečanju v Berlinu 22. in 23. oktobra 2011 razpravljalo o ključnih rezultatih in sporočilih zbirke Bela knjiga META-NET in jo dokončno oblikovalo. --- \textcolor{grey1}{About 100 language technology experts -- representatives of the countries and languages represented in META-NET -- discussed and finalised the key results and messages of the White Paper Series at a META-NET meeting in Berlin, Germany, on October 21/22, 2011.}}\medskip
   \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
