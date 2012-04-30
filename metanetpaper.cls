@@ -766,7 +766,7 @@
       \ThisCenterWallPaper{1}{../_media/mocktitlepage.pdf}
       \vspace*{3mm}
       % Left column
-      \begin{minipage}[t]{83mm}
+      \begin{minipage}[t]{81mm}
         \color{grey3}
         \textsf{
           \begin{flushright}
@@ -804,7 +804,7 @@
         }
       \end{minipage}
       % Authors
-      \begin{Parallel}[c]{83mm}{75mm}
+      \begin{Parallel}[c]{81mm}{77mm}
         \ParallelLText{
           \
         }
