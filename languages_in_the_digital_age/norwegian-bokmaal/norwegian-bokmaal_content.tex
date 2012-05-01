@@ -3,7 +3,7 @@
 
 % META-NET Language Whitepaper, Norwegian Bokmål and Nynorsk
 
-\documentclass[]{../../metanetpaper}
+%\documentclass[]{../../metanetpaper}
 
 \usepackage{booktabs}
 \usepackage{longtable}
@@ -20,84 +20,9 @@
 
 \RequireXeTeX %Force XeTeX check
 %\newcommand{\gil}[1]{{\bf !!!#1}}
-\newcommand{\bokmaal}[1]{#1} % {#1} to activate bokmaal, {} to deactivate
-\newcommand{\nynorsk}[1]{} % {#1} to activate nynorsk, {} to deactivate
+%\newcommand{\bokmaal}[1]{#1} % {#1} to activate bokmaal, {} to deactivate
+%\newcommand{\nynorsk}[1]{} % {#1} to activate nynorsk, {} to deactivate
 
-\title{Norsk i den digitale tidsalderen --- The Norwegian Language in the Digital Age}
-
-% Title for the spine of the cover
-\spineTitle{Norsk i den digitale tidsalderen --- The Norwegian Language in the Digital Age}
-
-
-\subtitle{\bokmaal{White Paper Series --- Hvitbokserie}}
-
-\author{
-Koenraad De Smedt\\
-Gunn Inger Lyse\\
-Anje Müller Gjesdal\\
-Gyri S. Losnegaard
-}
-\authoraffiliation
-{ Koenraad De Smedt~ {\small UIB}\\
-  Gunn Inger Lyse~ {\small UIB}\\
-  Anje Müller Gjesdal~ {\small UIB}\\
-  Gyri S. Losnegaard~ {\small UIB}
-}
-\editors{
-  Georg Rehm, Hans Uszkoreit\\(Redaktører, \textcolor{grey1}{editors})
-}
-
-% Text in left column on backside of the cover
-\SpineLText{\selectlanguage{english}%
-  In everyday communication, Europe’s citizens, business partners and politicians are inevitably confronted with language barriers.  
-  Language technology has the potential to overcome these barriers and to provide innovative interfaces to technologies and knowledge. 
-  This white paper presents the state of language technology support for the Norwegian language. 
-  It is part of a series that analyzes the available language resources and technologies for 31~European languages. 
-  The analysis was carried out by META-NET, a Network of Excellence funded by the European Commission.
-  META-NET consists of 54 research centres in 33 countries, who cooperate with stakeholders from economy, government agencies, research organisations, non-governmental organisations, language communities and European universities. 
-  META-NET’s vision is high-quality language technology for all European languages.}
-
-% Text in right column on backside of the cover
-\SpineRText{\selectlanguage{norsk}%
-Det er uunngåelig at innbyggerne, næringsliv og politikere i Europa støter på språkbarrierer. Språkteknologi er et virkemiddel til å motvirke disse barrierene og kan gi nyskapende grensesnitt for teknologi og kunnskap. Denne hviteboken gir en oversikt over situasjonen for språkteknologi for norsk. Den er del av en serie som analyserer tilgjengelige språkressurser og verktøy for 31 europeiske språk. Analysen er utført av META-NET, et forskningsnettverk (Network of  Excellence) finansiert av EU-kommisjonen. META-NET består av 54 forskningsinstitusjoner i 33 land som samarbeider med ulike aktører fra næringslivet, forvaltning, forskningsmiljøer, NGOer, språkbrukere og universiteter. META-NETs visjon er å gjøre språkteknologi av høy kvalitet tilgjengelig for alle europeiske språk.}
-
-% Quotes from VIPs on backside of the cover
-\quotes{Skal man lage gode språkteknologiske løsninger for norsk, må det
-eksistere språklige ressurser av høy kvalitet som industrien kan
-benytte. Jeg håper at denne rapporten kan bidra til at slike ressurser
-etableres raskt.\\\textcolor{grey2}{--- Torbjørn Nordgård (Utviklingsdirektør Lingit AS)}\\[3mm]
-Skal vi kommunisere med maskinene rundt oss treng vi
-språkteknologi. Denne rapporten presenterer status quo og vegen
-framover for språkteknologi i Noreg. 
-\textcolor{grey2}{--- Trond Trosterud (Professor Universitetet i Tromsø)}}
-
-% Funding notice left column
-\FundingLNotice{\selectlanguage{portuguese}\vskip2mm
-  Forfatterne av denne teksten takker forfatterne av hvitboken for
-  tysk for tillatelsen til å gjenbruke visse språkuavhengige
-  materialer fra deres tekst \cite{lwpgerman}. Forfatterne takker også Gisle Andersen,
-  Torbjørg Breivik, Helge Dyvik, Kristin Hagen, Torbjørn Nordgård,
-  Torbjørn Svendsen og Trond Trosterud for verdifulle bidrag og
-  kommentarer.
-  
-  \bigskip
-
-  Arbeidet med denne utredningen er finansiert av det sjuende rammeprogrammet og Den europeiske kommisjonens ICT Policy Support program, gjennom kontraktene T4ME (tildelingsavtale 249 119), Cesar (tildelingsavtale 271 022), METANET4U (tildelingsavtale 270 893) og META-NORD (tildelingsavtale 270 899).}
-
-% Funding notice right column
-\FundingRNotice{\selectlanguage{english}\vskip2mm
-  The authors of this document
-  are grateful to the authors of the White Paper on German for
-  permission to re-use selected language-independent materials from
-  their document \cite{lwpgerman}.
-  
-  \bigskip
-  
-  The development of this White Paper has been funded by the Seventh
-  Framework Programme and the ICT Policy Support Programme of the
-  European Commission under the contracts T4ME (Grant Agreement
-  249119), CESAR (Grant Agreement 271022), METANET4U (Grant Agreement
-  270893) and META-NORD (Grant Agreement 270899).}
 
 
 \begin{document}
@@ -105,9 +30,10 @@ framover for språkteknologi i Noreg.
 \renewcommand*{\figureformat}{\sffamily\thefigure\autodot}
 
 \selectlanguage{norsk}
+
 \maketitle
 
-\hyphenation{clarin CLARIN net-work gjes-dal infor-masjons-sam-funnet nyno-data infor-masjons-sam-funnet You-Tube språk-bar-riera-ne }
+\hyphenation{clarin CLARIN net-work gjes-dal infor-masjons-sam-funnet nyno-data infor-masjons-sam-funnet You-Tube språk-bar-riera-ne Applikasjons-arkitekturer}
 
 % ---------------- Mocktitle ------------------
 
@@ -116,30 +42,31 @@ framover for språkteknologi i Noreg.
 
 \pagestyle{empty} 
 
-\centerline{META-NET --- office@meta-net.eu --- http://www.meta-net.eu}
+%\centerline{META-NET --- office@meta-net.eu --- http://www.meta-net.eu}
+%\begin{small}
+%\input{bokmaal-credits}
+%\end{small}
 
-\begin{small}
-\input{\bokmaal{bokmaal-credits}}
-\end{small}
-
-\selectlanguage{english}
-\bigskip
-\begin{small}
-  The authors of this document are grateful to the authors of the White Paper on German for permission to re-use selected language-independent materials from their document. They also wish to thank Gisle Andersen, Torbjørg Breivik, Helge Dyvik, Kristin Hagen, Torbjørn Nordgård, Torbjørn Svendsen and Trond Trosterud for valuable contributions and comments.
+%\selectlanguage{english}
+%\bigskip
+%\begin{small}
+%  The authors of this document are grateful to the authors of the
+%  White Paper on German for permission to re-use selected
+%  language-independent materials from their document \cite{lwpgerman}. They also wish to thank Gisle Andersen, Torbjørg Breivik, Helge Dyvik, Kristin Hagen, Torbjørn Nordgård, Torbjørn Svendsen and Trond Trosterud for valuable contributions and comments.
   
-  The development of this white paper has been funded by the Seventh
-  Framework Programme and the ICT Policy Support Programme of the
-  European Commission under the contracts T4ME (Grant Agreement 249119),
-  CESAR (Grant Agreement 271022), METANET4U (Grant Agreement 270893)
-  and META-NORD (Grant Agreement 270899).
-\end{small}
+%  The development of this white paper has been funded by the Seventh
+%  Framework Programme and the ICT Policy Support Programme of the
+%  European Commission under the contracts T4ME (Grant Agreement 249119),
+%  CESAR (Grant Agreement 271022), METANET4U (Grant Agreement 270893)
+ % and META-NORD (Grant Agreement 270899).
+%\end{small}
 
 \clearpage
 
 % ------------- End of mocktitle ----------------
 
 \pagenumbering{Roman} 
-\setcounter{page}{5}
+\setcounter{page}{3}
 \pagestyle{scrheadings}
 
 \cleardoublepage
@@ -151,7 +78,7 @@ framover for språkteknologi i Noreg.
 \begin{Parallel}[c]{78mm}{78mm}
 
 \ParallelLText{\selectlanguage{norsk}
-\input{\bokmaal{bokmaal-foreword}\nynorsk{nynorsk-foreword}}
+\input{bokmaal-foreword}
 }
 
 \ParallelRText{\selectlanguage{english}
@@ -168,6 +95,9 @@ providers and users), government agencies, research organisations, non-governmen
 \end{Parallel}
 
 % --------------------------------------------------------------------------
+
+
+\makefundingnotice
 
 \cleardoublepage
 \selectlanguage{norsk}
@@ -189,7 +119,7 @@ providers and users), government agencies, research organisations, non-governmen
 \pagenumbering{arabic} 
 \pagestyle{scrheadings}
 
-\input{\bokmaal{bokmaal-body_v20gil}\nynorsk{nynorsk-body_v07kds}}
+\input{bokmaal-body_v20gil}
 
 \selectlanguage{english}
 
@@ -210,7 +140,7 @@ providers and users), government agencies, research organisations, non-governmen
 \appendix
 %\addtocontents{toc}{\protect\bigskip}
 
-\bsection[Literaturliste --- References]{Literaturliste --- References}
+\bsection[Litteraturliste --- References]{Litteraturliste --- References}
 \bibliographystyle{unsrt} % What is the difference between "unsrt" und "is-unsrt"?
 %\bibliographystyle{is-unsrt}
 \bibliography{norwegian-bokmaal_references}
@@ -221,7 +151,8 @@ providers and users), government agencies, research organisations, non-governmen
   
 \cleardoublepage
 
-\bsection[Medlemmer i META-NET --- META-NET Members]{Medlemmer i META-NET --- META-NET Members}
+\bsection[Medlemmer i META-NET --- META-NET Members]{Medlemmer i
+  META-NET --- META-NET \ \ \ \ \ \ \ Members}
 \label{metanetmembers}
 
 \small
@@ -292,14 +223,15 @@ providers and users), government agencies, research organisations, non-governmen
   \center
   \includegraphics[width=\textwidth]{../_media/meta-net_team.jpg}
   %\fbox{Dummy -- we'll include the group photo of our META-NET meeting in Berlin here}
-  \caption{\bokmaal{Omtrent 100 eksperter innen språkteknologi -- representanter for landene og språkene i META-NET -- sluttførte diskusjonen om nøkkelresultatene og -konklusjonene i hvitbokserien på et}\nynorsk{Omtrent 100 ekspertar innan språkteknologi -- representantar for landa og språka i META-NET -- sluttførte diskusjonen om nøkkelresultata og -konklusjonane i kvitbokserien på eit} META-NET-møte i Berlin, Tyskland, 21--22 oktober 2011. --- \textcolor{grey1}{About 100 language technology experts -- representatives of the countries and languages represented in META-NET -- discussed and finalised the key results and messages of the White Paper Series at a META-NET meeting in Berlin, Germany, on October 21--22, 2011.}}
+  \caption{Omtrent 100 eksperter innen språkteknologi -- representanter for landene og språkene i META-NET -- sluttførte diskusjonen om nøkkelresultatene og -konklusjonene i hvitbokserien på et META-NET-møte i Berlin, Tyskland, 21--22 oktober 2011. --- \textcolor{grey1}{About 100 language technology experts -- representatives of the countries and languages represented in META-NET -- discussed and finalised the key results and messages of the White Paper Series at a META-NET meeting in Berlin, Germany, on October 21--22, 2011.}}
   \medskip
   \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
 
 \cleardoublepage
 
-\bsection[META-NET \bokmaal{hvitbokserien}\nynorsk{kvitbokserien} --- The META-NET White Paper Series]{META-NET \bokmaal{hvitbokserien}\nynorsk{kvitbokserien} --- The META-NET\ \ \ \ \ \ White Paper Series}
+\bsection[META-NET hvitbokserien --- The META-NET White Paper
+Series]{META-NET hvitbokserien --- The META-NET\ \ \ \ \ \ White Paper Series}
 \label{whitepaperseries}
 
 \vspace*{-5mm}
@@ -339,5 +271,3 @@ providers and users), government agencies, research organisations, non-governmen
   &tysk & German & Deutsch& \\
   &ungarsk & Hungarian & magyar& \\ \addlinespace \bottomrule
 \end{tabularx}
-
-\end{document}

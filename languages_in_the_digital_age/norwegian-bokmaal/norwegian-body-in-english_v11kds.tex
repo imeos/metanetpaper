@@ -234,8 +234,7 @@ As mentioned in the section on spoken particularities, the Norwegian compounding
 One of the many challenges in machine translation is the use of Norwegian reflexives, as in the following sentence:
 
 \begin{quote}
-	\nynorsk{\emph{Per visste ikkje at Kari hadde freista å reparere bilen \emph{sin}.}}
-	\bokmaal{\emph{Per visste ikke at Kari hadde forsøkt å reparere bilen \emph{sin}.}}\\
+	\emph{Per visste ikke at Kari hadde forsøkt å reparere bilen \emph{sin}.}\\
 	Per didn’t know that Kari had tried to fix her/*his car.
 \end{quote}
 
@@ -509,7 +508,9 @@ Two of them, Lingit and Include, include a spell checker component as well as ot
 On the face of it, the situation for Norwegian proofing tools may seem quite encouraging. 
 But at the same time, several of the initiatives are quite fragile. 
 For instance, Norwegian spell checking based on open source technologies (\textit{aspell, Hunspell}) is maintained by three individuals who use their spare time to do so. 
-One may say that one of the major competitors to Microsoft software on the Norwegian market hinges on the personal initiatives of a few dedicated individuals rather than a systematic effort towards the development of open source modules. Moreover, a significant challenge for most Norwegian proofing tools is to \textit{improve} the existing basic resources by developing more advanced Language Technology tools. Finally, language specific tools for automatic translation or translation support of Norwegian are missing. Translation memory tools such as Trados exist, but they do not contain language specific adjustment for Norwegian beyond basic spell checking.
+One may say that one of the major competitors to Microsoft software on the Norwegian market hinges on the personal initiatives of a few dedicated individuals rather than a systematic effort towards the development of open source modules. Moreover, a significant challenge for most Norwegian proofing tools is to \textit{improve} the existing basic resources by developing more advanced Language Technology tools. 
+
+Finally, language specific tools for automatic translation or translation support of Norwegian are missing. Translation memory tools such as Trados exist, but they do not contain language specific adjustment for Norwegian beyond basic spell checking.
 
 Besides spell checkers and authoring support, language checking is also important in the field of computer-assisted language learning. Language checking applications also automatically correct search engine queries, as found in Google's \textit{Did you mean…} suggestions.
 %end Norwegian
@@ -624,13 +625,13 @@ However, in order to produce a good translation of less restricted texts, larger
 
 %start Norwegian
 The major difficulty is that human language is ambiguous. Ambiguity creates challenges on multiple levels, such as word sense disambiguation at the lexical level or syntactic ambiguities at the sentence level. 
-A likely idiomatic translation of the Norwegian sentence \textit{\bokmaal{Plutselig røk slangen}\nynorsk{Plutseleg rauk slangen}} in English could be \textit{Suddenly the hose snapped.}
+A likely idiomatic translation of the Norwegian sentence \textit{Plutselig røk slangen} in English could be \textit{Suddenly the hose snapped.}
 However, a simple word-by-word translation of this sentence might yield \textit{Suddenly smoked the snake.}
-This is because the verb form \textit{\bokmaal{røk}\nynorsk{rauk}} (past tense of \textit{ryke}) is ambiguous between `snap' and `smoke' whereas \textit{slange} is ambiguous between `hose' and `snake'; note also that a simple word-by-word translation would not get the difference in word order between Norwegian and English right.
+This is because the verb form \textit{røk} (past tense of \textit{ryke}) is ambiguous between `snap' and `smoke' whereas \textit{slange} is ambiguous between `hose' and `snake'; note also that a simple word-by-word translation would not get the difference in word order between Norwegian and English right.
 
 In addition to lexical ambiguities and word order differences, another challenge is syntactic ambiguities. 
 In Norwegian we may topicalise objects, but this possibility is much more restricted in English. 
-The Norwegian sentence \textit{\bokmaal{Eplene}\nynorsk{epla} spiste mannen} has two possible interpretations: either \textit{\bokmaal{Eplene}\nynorsk{epla}} (the apples) is analysed as the subject of the sentence (the apples ate the man) or as a topicalised object (the apples were eaten by the man). 
+The Norwegian sentence \textit{Eplene spiste mannen} has two possible interpretations: either \textit{Eplene} (the apples) is analysed as the subject of the sentence (the apples ate the man) or as a topicalised object (the apples were eaten by the man). 
 Since this ambiguity does not exist in English, a machine translation system must first identify the correct syntactic interpretation in order to find the correct translation. 
 
 Another MT challenge for Norwegian is compounding. 
@@ -658,15 +659,12 @@ GramTrans is an MT platform developed in cooperation between the Danish GrammarS
 The translation engine offers free web-based translation for the Scandinavian languages and also between Norwegian and English, based on a robust grammatical analysis, a transfer component for lexicon and grammar and a generation component. 
 The company Clue Norge, which specialises in electronic dictionaries for enterprises, developed a system (Textran) for machine translation from English to Norwegian about ten years ago. 
 The system still exists but was not further developed because perfect translations are hard to obtain whereas the user groups were not ready to pay for a less than perfect system.
-
 Although significant research in this technology exists in national and international contexts, data-driven and hybrid systems have so far been less successful in business applications than in the research lab. 
 In Norway, the main research expertise in this field is found at the University of Oslo and the University of Bergen.
 
 The use of machine translation can significantly increase productivity provided the system is intelligently adapted to user-specific terminology and integrated into a workflow. 
 In general, there seems to be an underuse of language technology resources in the Norwegian Language Service Industry. 
-This sector can be divided into two groups: on the one hand there are freelance translators and translation agencies catering to individual clients, commercial actors and the public sector, and on the other hand there are translators affiliated with \textit{Oversetterforeningen} (Organisation of translators of literary texts) and \textit{Norsk faglitterær forfatter- og oversetterforening} (Organisation of translators of scientific and academic texts). 
-
-In the latter group, the use of language technology is limited. 
+This sector can be divided into two groups: on the one hand there are freelance translators and translation agencies catering to individual clients, commercial actors and the public sector, and on the other hand there are translators affiliated with \textit{Oversetterforeningen} (Organisation of translators of literary texts) and \textit{Norsk faglitterær forfatter- og oversetterforening} (Organisation of translators of scientific and academic texts). In the latter group, the use of language technology is limited. 
 The former group uses Trados, which is the dominant machine translation tool for professional translators. 
 However, Trados has no Norwegian module but is based on Hunspell, an open source spell checker and morphological analyser originally developed for Hungarian which is not optimal for Norwegian. 
 Although it is a functional and open solution, it still needs further development to be an optimal resource for the Norwegian Language Service industry and there is a particular need for improvement of the analysis of Norwegian compounds. 
@@ -680,7 +678,7 @@ There is still a huge potential for improving the quality of MT systems. The cha
 
 Evaluation campaigns help to compare the quality of MT systems, the different approaches and the status of the systems for different language pairs.
 %start Norwegian
-Figure~\ref{fig:euromatrix_de} (p.~\pageref{fig:euromatrix_de}), which was prepared during the Euromatrix+ project, shows the pair-wise performances obtained for 22 of the 23 EU languages (Irish was not compared). The results are ranked according to a BLEU score, which indicates higher scores for better translations \cite{bleu1}. A human translator would normally achieve around 80 points. The best results (in green and blue) were achieved by languages that benefit from a considerable research effort in coordinated programmes and the existence of many parallel corpora (e.\,g., English, French, Dutch, Spanish and German). The languages with poorer results are shown in red. These either lack such development efforts or are structurally very different from other languages (e.\,g., Hungarian, Maltese, Finnish). Norwegian was not included in this project.
+Figure~\ref{fig:euromatrix_de} (p.~\pageref{fig:euromatrix_de}), prepared during the Euromatrix+ project, shows the pair-wise performances obtained for 22 of the 23 EU languages (Irish was not compared). The results are ranked according to a BLEU score, which indicates higher scores for better translations \cite{bleu1}. A human translator would normally achieve around 80 points. The best results (in green and blue) were achieved by languages that benefit from a considerable research effort in coordinated programmes and many parallel corpora (e.\,g., English, French, Dutch, Spanish and German). Poorer results are shown in red. These either lack such development efforts or are structurally very different from other languages (e.\,g., Hungarian, Maltese, Finnish). Norwegian was not included in this project.
 %end Norwegian
 
 \subsection{Other Application Areas}
@@ -812,6 +810,77 @@ Obviously, further research efforts are required to meet the current deficit in 
 %end Norwegian
 
 \subsection{Cross-language comparison}
+
+The current state of LT support varies considerably from one language community to another. In order to compare the situation between languages, this section will present an evaluation based on two sample application areas (machine translation and speech processing) and one underlying technology (text analysis), as well as basic resources needed for building LT applications. The languages were categorised using the following five-point scale: 
+
+\begin{enumerate}
+\item Excellent support
+\item Good support
+\item Moderate support
+\item Fragmentary support
+\item Weak or no support
+\end{enumerate}
+
+LT support was measured according to the following criteria:
+
+\textbf{Speech Processing:} Quality of existing speech recognition technologies, quality of existing speech synthesis technologies, coverage of domains, number and size of existing speech corpora, amount and variety of available speech-based applications.
+
+\textbf{Machine Translation:} Quality of existing MT technologies, number of language pairs covered, coverage of linguistic phenomena and domains, quality and size of existing parallel corpora, amount and variety of available MT applications.
+
+\textbf{Text Analysis:} Quality and coverage of existing text analysis technologies (morphology, syntax, semantics), coverage of linguistic phenomena and domains, amount and variety of available applications, quality and size of existing (annotated) text corpora, quality and coverage of existing lexical resources (e.\,g., WordNet) and grammars.
+
+\textbf{Resources:} Quality and size of existing text corpora, speech corpora and parallel corpora, quality and coverage of existing lexical resources and grammars.
+
+%start Norwegian
+Figures~\ref{fig:speech_cluster_en} to~\ref{fig:resources_cluster_en} show that LT resources and tools for Norwegian clearly do not yet reach the quality and coverage of comparable resources and tools for the English language, which is in the lead in almost all LT areas. 
+Moreover, there are still many gaps even in English language resources with regard to high quality applications. 
+The situation for Norwegian compares well with our neighbouring languages, although the figures fail to show mismatches between the situation for Bokmål on the one hand and Nynorsk on the other hand. 
+
+For speech synthesis, several Norwegian-speaking voices are available in end-user applications, although many platforms do not offer free, adaptive and high quality Norwegian speech synthesis that could be used by developers. 
+For speech recognition there is low support for Norwegian; there are no general speech recognisers with the possible exception of the recently launched mobile application Dragon Dictation, which could not be assessed in time for the present report.
+There is one specialised recogniser for medical records with varying quality.
+
+For machine translation between Norwegian Bokmål and Nynorsk, one bidirectional, freely available application and one unidirectional, commercial application exist. 
+For machine translation from Norwegian to other languages there is one free resource and one commercial application available with varying quality and performance. 
+
+Today’s text analysis components cover the linguistic phenomena of Norwegian to a certain extent and form part of many applications involving mostly shallow natural language processing, e.\,g.~general spelling correction and writing aid tools for dyslectics. 
+
+As far as resources are concerned, the previous section has already pointed to conspicuous gaps.
+%end Norwegian
+For building more sophisticated applications, such as machine translation, there is a clear need for resources and technologies that cover a wider range of linguistic aspects and enable a deep semantic analysis of the input text. By improving the quality and coverage of these basic resources and technologies, we shall be able to open up new opportunities for tackling a broader range of advanced application areas, including high-quality machine translation.
+
+\subsection{Conclusions}
+
+\emph{In this series of white papers, we have made an important effort by assessing the language technology support for 30 European languages, and by providing a high-level comparison across these languages. By identifying the gaps, needs and deficits, the European language technology community and its related stakeholders are now in a position to design a large scale research and development programme aimed at building a truly multilingual, technology-enabled communication across Europe.}
+
+The results of this white paper series show that there is a dramatic difference in language technology support between the various European languages. While there are good quality software and resources available for some languages and application areas, other (usually smaller) languages have substantial gaps. Many languages lack basic technologies for text analysis and the essential resources. Others have basic tools and resources, but there is little chance of implementing semantic methods in the near future. Therefore a large-scale effort is needed to attain the ambitious goal of providing high-quality language technology support for all European languages, for example through high quality machine translation. 
+
+%start Norwegian
+In the case of the Norwegian language, we have seen that technologies that were developed and optimised for the English language do not easily transfer to Norwegian. 
+It costs just as much to develop language resources for a small language as for a larger language. 
+It is therefore important to continue the public support for R\&D for Norwegian LT, even more so since Norwegian has two written norms that must be catered for. 
+The required level of investment has not been reached thus far. The Norwegian language technology industry dedicated to transforming research into products is currently fragmented and disorganised. The field is characterised by specialised SMEs that are not robust enough to address the internal and the global market with a sustained strategy. 
+
+Specifically, the most urgent needs of Norwegian Language Technology are:
+\begin{enumerate}
+\item Improved licensing conditions and standardisation of existing basic tools and resources, in order to make them openly available to the research community and industry.
+\item Creation of missing basic tools and resources, including multilingual tools with Norwegian as source or target language, in standard formats with open licenses.
+\item Basic research on the higher levels of automatic linguistic analysis for Norwegian, and on the integration of statistical and rule-based LT, not least in order to aim for a closer interaction between speech and text technology.
+\item Coordinated dissemination of research results to improve their visibility to potential users and to attract new scholars/students to the field.
+\item Long term funding strategies for securing the development of LRT for both Norwegian written norms and for the minority languages.
+\end{enumerate}
+
+For a small language community such as Norwegian and a small research environment, cooperation is vital, not only on the national level but also internationally. Since 2000, Norwegian researchers and policy makers have taken an active part in Nordic cooperation (e.\,g.~the Nordic Language Technology Research Programme 2000–2004). It is also hoped that Norway’s participation in CLARIN and META-NORD will make set an example to develop, standardise and share several important LRT and thus contribute to the growth of Norwegian language technology in a context of European cooperation. This should be followed up by a better overall coordination with programmes in other EU countries and at the European Commission level.
+
+%Our findings lead to the conclusion that the only way forward is to make a substantial effort to create language technology resources for German, as a means to drive forward research, innovation and development. The need for large amounts of data and the extreme complexity of language technology systems makes it vital to develop an infrastructure and a coherent research organisation to spur greater sharing and cooperation.
+
+%Finally there is a lack of continuity in research and development funding. Short-term coordinated programmes tend to alternate with periods of sparse or zero funding. In addition, there is an overall lack of coordination with programmes in other EU countries and at the European Commission level.
+
+The long term goal of META-NET is to enable the creation of high-quality language technology for all languages. This requires all stakeholders --- in politics, research, business, and society --- to unite their efforts. The resulting technology will help tear down existing barriers and build bridges between Europe’s languages, paving the way for political and economic unity through cultural diversity. 
+
+\end{multicols}
+
+\clearpage
 
 \begin{figure*}[tb]
   \small
@@ -1049,77 +1118,9 @@ Swedish \newline
   \label{fig:resources_cluster_en}
 \end{figure*}
 
-The current state of LT support varies considerably from one language community to another. In order to compare the situation between languages, this section will present an evaluation based on two sample application areas (machine translation and speech processing) and one underlying technology (text analysis), as well as basic resources needed for building LT applications. The languages were categorised using the following five-point scale: 
+\cleardoublepage
 
-\begin{enumerate}
-\item Excellent support
-\item Good support
-\item Moderate support
-\item Fragmentary support
-\item Weak or no support
-\end{enumerate}
-
-LT support was measured according to the following criteria:
-
-\textbf{Speech Processing:} Quality of existing speech recognition technologies, quality of existing speech synthesis technologies, coverage of domains, number and size of existing speech corpora, amount and variety of available speech-based applications.
-
-\textbf{Machine Translation:} Quality of existing MT technologies, number of language pairs covered, coverage of linguistic phenomena and domains, quality and size of existing parallel corpora, amount and variety of available MT applications.
-
-\textbf{Text Analysis:} Quality and coverage of existing text analysis technologies (morphology, syntax, semantics), coverage of linguistic phenomena and domains, amount and variety of available applications, quality and size of existing (annotated) text corpora, quality and coverage of existing lexical resources (e.\,g., WordNet) and grammars.
-
-\textbf{Resources:} Quality and size of existing text corpora, speech corpora and parallel corpora, quality and coverage of existing lexical resources and grammars.
-
-%start Norwegian
-Figures~\ref{fig:speech_cluster_en} to~\ref{fig:resources_cluster_en} show that LT resources and tools for Norwegian clearly do not yet reach the quality and coverage of comparable resources and tools for the English language, which is in the lead in almost all LT areas. 
-Moreover, there are still many gaps even in English language resources with regard to high quality applications. 
-The situation for Norwegian compares well with our neighbouring languages, although the figures fail to show mismatches between the situation for Bokmål on the one hand and Nynorsk on the other hand. 
-
-For speech synthesis, several Norwegian-speaking voices are available in end-user applications, although many platforms do not offer free, adaptive and high quality Norwegian speech synthesis that could be used by developers. 
-For speech recognition there is low support for Norwegian; there are no general speech recognisers with the possible exception of the recently launched mobile application Dragon Dictation, which could not be assessed in time for the present report.
-There is one specialised recogniser for medical records with varying quality.
-
-For machine translation between Norwegian Bokmål and Nynorsk, one bidirectional, freely available application and one unidirectional, commercial application exist. 
-For machine translation from Norwegian to other languages there is one free resource and one commercial application available with varying quality and performance. 
-
-Today’s text analysis components cover the linguistic phenomena of Norwegian to a certain extent and form part of many applications involving mostly shallow natural language processing, e.\,g.~general spelling correction and writing aid tools for dyslectics. 
-
-As far as resources are concerned, the previous section has already pointed to conspicuous gaps.
-%end Norwegian
-For building more sophisticated applications, such as machine translation, there is a clear need for resources and technologies that cover a wider range of linguistic aspects and enable a deep semantic analysis of the input text. By improving the quality and coverage of these basic resources and technologies, we shall be able to open up new opportunities for tackling a broader range of advanced application areas, including high-quality machine translation.
-
-\subsection{Conclusions}
-
-\emph{In this series of white papers, we have made an important effort by assessing the language technology support for 30 European languages, and by providing a high-level comparison across these languages. By identifying the gaps, needs and deficits, the European language technology community and its related stakeholders are now in a position to design a large scale research and development programme aimed at building a truly multilingual, technology-enabled communication across Europe.}
-
-The results of this white paper series show that there is a dramatic difference in language technology support between the various European languages. While there are good quality software and resources available for some languages and application areas, other (usually smaller) languages have substantial gaps. Many languages lack basic technologies for text analysis and the essential resources. Others have basic tools and resources, but there is little chance of implementing semantic methods in the near future. Therefore a large-scale effort is needed to attain the ambitious goal of providing high-quality language technology support for all European languages, for example through high quality machine translation. 
-
-%start Norwegian
-In the case of the Norwegian language, we have seen that technologies that were developed and optimised for the English language do not easily transfer to Norwegian. 
-It costs just as much to develop language resources for a small language as for a larger language. 
-It is therefore important to continue the public support for R\&D for Norwegian LT, even more so since Norwegian has two written norms that must be catered for. 
-The required level of investment has not been reached thus far. The Norwegian language technology industry dedicated to transforming research into products is currently fragmented and disorganised. The field is characterised by specialised SMEs that are not robust enough to address the internal and the global market with a sustained strategy. 
-
-Specifically, the most urgent needs of Norwegian Language Technology are:
-\begin{enumerate}
-\item Improved licensing conditions and standardisation of existing basic tools and resources, in order to make them openly available to the research community and industry.
-\item Creation of missing basic tools and resources, including multilingual tools with Norwegian as source or target language, in standard formats with open licenses.
-\item Basic research on the higher levels of automatic linguistic analysis for Norwegian, and on the integration of statistical and rule-based LT, not least in order to aim for a closer interaction between speech and text technology.
-\item Coordinated dissemination of research results to improve their visibility to potential users and to attract new scholars/students to the field.
-\item Long term funding strategies for securing the development of LRT for both Norwegian written norms and for the minority languages.
-\end{enumerate}
-
-For a small language community such as Norwegian and a small research environment, cooperation is vital, not only on the national level but also internationally. Since 2000, Norwegian researchers and policy makers have taken an active part in Nordic cooperation (e.\,g.~the Nordic Language Technology Research Programme 2000–2004). It is also hoped that Norway’s participation in CLARIN and META-NORD will make set an example to develop, standardise and share several important LRT and thus contribute to the growth of Norwegian language technology in a context of European cooperation. This should be followed up by a better overall coordination with programmes in other EU countries and at the European Commission level.
-
-%Our findings lead to the conclusion that the only way forward is to make a substantial effort to create language technology resources for German, as a means to drive forward research, innovation and development. The need for large amounts of data and the extreme complexity of language technology systems makes it vital to develop an infrastructure and a coherent research organisation to spur greater sharing and cooperation.
-
-%Finally there is a lack of continuity in research and development funding. Short-term coordinated programmes tend to alternate with periods of sparse or zero funding. In addition, there is an overall lack of coordination with programmes in other EU countries and at the European Commission level.
-
-The long term goal of META-NET is to enable the creation of high-quality language technology for all languages. This requires all stakeholders --- in politics, research, business, and society --- to unite their efforts. The resulting technology will help tear down existing barriers and build bridges between Europe’s languages, paving the way for political and economic unity through cultural diversity. 
-
-\end{multicols}
-
-\clearpage
-
+% --------------------------------------------------------------------------
 \ssection[About META-NET]{About META-NET}
 
 \begin{multicols}{2}
