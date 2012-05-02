@@ -330,7 +330,7 @@ Hizkuntza-teknologiarentzat garrantzitsua da Internet gero eta indartsuagoa izat
  
    \begin{figure*}[htb]
   \colorrule{grey3}{\textwidth}{1.5pt}
-  \vspace{-25mm}
+ % \vspace{-25mm}
   \center
   \includegraphics[width=\textwidth]{../_media/basque/language_technologies}
   \caption{Hizkuntza teknologien ingurua}
@@ -343,14 +343,16 @@ Hizkuntza-teknologiarentzat garrantzitsua da Internet gero eta indartsuagoa izat
 
     \begin{itemize}
       \item Aurretratamendua: datuak garbitu, formatua kendu, sarrerako hizkuntza detektatu eta abar. 
-      \item \textbf{Analisi gramatikala}: aditza eta haren objektuak, modifikatzaileak eta abar aurkitu; esaldiaren egitura detektatu.
-      \item \textbf{Analisi semantikoa}: desanbiguazioa (“hori” hitzaren zein adiera da egokia testuinguru jakin batean?), anaforak eta erreferentziako adierazpenak (adib. “bera” edo “autoa”) ulertzea; esaldi baten esanahia ordenagailuak irakurtzeko moduan eman.
+      \item Analisi gramatikala: aditza eta haren objektuak, modifikatzaileak eta abar aurkitu; esaldiaren egitura detektatu.
+      \item Analisi semantikoa: desanbiguazioa (“hori” hitzaren zein adiera da egokia testuinguru jakin batean?), anaforak eta erreferentziako adierazpenak (adib. “bera” edo “autoa”) ulertzea; esaldi baten esanahia ordenagailuak irakurtzeko moduan eman.
     \end{itemize}
     Zeregin espezifikoko moduluek era askotako eragiketak egiten dituzte, hala nola sarrerako testu baten laburpen automatikoa, datu-baseko bilaketak eta beste hainbat. Hemen behean, aplikazio-eremu komunak erakutsiko ditugu, eta eremu horietako modulu nagusiak nabarmendu. Hor ere, aplikazioen arkitekturak oso sinplifikatuta eta idealizatuta ageri dira, hizkuntza-teknologiako (HT) aplikazioak edonork ulertzeko moduan azaltzearren. Tresna eta baliabide garrantzitsuenak azpimarratuta daude testuan, eta kapitulu amaierako taulan ere ageri dira. Aplikazio-eremu komunei buruzko ataletan, dagokion euskarazko esparruan lanean ari diren industrien ikuspegi orokor bat ere ematen da.
+    
 \begin{figure*}[b]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
-  \vspace{-5mm} \includegraphics[width=\textwidth]{../_media/basque/text_processing_app_architecture}
+ % \vspace{-5mm} 
+ \includegraphics[width=\textwidth]{../_media/basque/text_processing_app_architecture}
   \caption{Testua prozesatzeko aplikazioen ohiko arkitektura}
   \label{fig:textprocessingarch_eu}
   \colorrule{grey3}{\textwidth}{1.5pt}
@@ -379,7 +381,7 @@ Mota horretako akatsak aurkitzeko, \textbf{testuin\-gurua} aztertu beharra dago 
 \hspace{10pt}\textit{Irakurlea neska da.} 
  \begin{figure*}[htb]
   \colorrule{grey3}{\textwidth}{1.5pt}
-  \vspace{-9mm}
+  %\vspace{-9mm}
   \center
   \includegraphics[width=\textwidth]{../_media/basque/language_checking}
   \caption{Hizkuntza azterketa (behean: arauetan oinarritua; goian: estatistikoa)}
@@ -408,7 +410,7 @@ Bilatzaileen hurrengo belaunaldiak hizkuntza-teknologia sofistikatuagoa izan beh
 
 \begin{figure*}[htb]
   \colorrule{grey3}{\textwidth}{1.5pt}
-  \vspace{-9mm}
+ % \vspace{-9mm}
   \center
   \includegraphics[width=\textwidth]{../_media/basque/web_search_architecture}
   \vspace{-5mm}
@@ -433,7 +435,7 @@ Euskal Autonomia Erkidegoan, Eleka Ingeniaritza Linguistikoa enpresa txikia buru
 
 \begin{figure*}[htb]
   \colorrule{grey3}{\textwidth}{1.5pt}
-  \vspace{-9mm}
+  %\vspace{-9mm}
   \center  \includegraphics[width=\textwidth]{../_media/basque/simple_speech-based_dialogue_architecture}
   \center
   \caption{Ahots bidezko elkarrizketa sinple baten arkitektura}
@@ -471,7 +473,7 @@ Gaur egungo teknologiatik harago begiratuta, aldaketa esanguratsuak egongo dira,
 
 \begin{figure*}[htb]
   \colorrule{grey3}{\textwidth}{1.5pt}
-  \vspace{-21mm}
+ % \vspace{-21mm}
   \center
   \includegraphics[width=\textwidth]{../_media/basque/machine_translation}
   \vspace{-2mm}
@@ -545,7 +547,14 @@ Erabiltzailearekiko espezifikoa den terminologia eta lan-prozesuen integrazioa b
 
    Hizkuntza-teknologiako aplikazioak sortzeko, era askotako lanak egin behar dira, eta, batzuetan, lan horiek ez dira agertzen erabiltzailearekiko elkarreraginean, baina zerbitzu-funtzio garrantzitsuak betetzen dituzte sistemaren “erraietan”. Horregatik, ikergai garrantzitsuak dira, eta esparru akademikoko hizkuntzalaritza konputazionalaren barruko banakako diziplinak dira orain. 
 
-Galderei erantzutea ikerketa-arlo bizia da orain; corpus etiketatuak egin dira horretarako eta lehiaketa zientifikoak antolatu dira. Ideia da gako-hitzetan oinarritutako bilaketa atzean uztea (bilatzaileak garrantzitsuak izan daitezkeen dokumentuen sorta handi bat ematen du), eta bilaketa zehatza egin ahal izatea (erabiltzaileak galdera zehatz bat egiten du, eta sistemak erantzun bakar bat ematen dio): “Zer adin zuen Neil Amstrongek ilargira iritsi zenean?" - “38”. Argi dago hori lehen aipatu dugun web-bilaketaren esparru komunarekin dagoela lotuta, baina, galderei erantzutea, gaur egun termino zabala da eta hainbat zalantza sortzen ditu, hala nola “Zer galdera mota ezberdindu behar lirateke eta nola tratatu behar lirateke”, “Nola azter eta erka daitezke erantzuna izan dezaketen dokumentuak” (bat ez datozen erantzunak eman ditzakete?) eta “Nola erauz daiteke informazio espezifikoa (erantzuna) testu batetik testuingurua gehiegi baztertu gabe?”. 
+Galderei erantzutea ikerketa-arlo bizia da orain; corpus etiketatuak egin dira horretarako eta lehiaketa zientifikoak antolatu dira. Ideia da gako-hitzetan oinarritutako bilaketa atzean uztea (bilatzaileak garrantzitsuak izan daitezkeen dokumentuen sorta handi bat ematen du), eta bilaketa zehatza egin ahal izatea (erabiltzaileak galdera zehatz bat egiten du, eta sistemak erantzun bakar bat ematen dio):
+
+\begin{itemize}
+\item[] \textit{Question: Zer adin zuen Neil Amstrongek ilargira iritsi zenean?}  %%Please translate "Question"
+\item[] \textit{Answer: 38.}  %%Please translate "Answer"
+\end{itemize}
+
+Argi dago hori lehen aipatu dugun web-bilaketaren esparru komunarekin dagoela lotuta, baina, galderei erantzutea, gaur egun termino zabala da eta hainbat zalantza sortzen ditu, hala nola “Zer galdera mota ezberdindu behar lirateke eta nola tratatu behar lirateke”, “Nola azter eta erka daitezke erantzuna izan dezaketen dokumentuak” (bat ez datozen erantzunak eman ditzakete?) eta “Nola erauz daiteke informazio espezifikoa (erantzuna) testu batetik testuingurua gehiegi baztertu gabe?”. 
 
 Horrek lotura du informazio-erauzketa (IE) delako lanarekin ere; garrantzi eta eragin handiko alorra izan zen hori 1990eko hamarkadaren hasieran, hizkuntzalaritza konputazionalaren barruan "aldaketa estatistikoa" gertatu zen garaian. IEren xedea da dokumentu mota espezifikoetan informazio espezifikoa aurkitzea; adibidez, egunkarietako pasarteetan kontatzen diren enpresa-xurgatzeetan partaide nagusiak zein diren aurkitzea. Landutako beste alor bat terroristen erasoei buruzko albisteena da; horietan, erasoaren egilea, helburua, ordua, tokia eta ondorioak jasotzen dituen txantiloi batera pasatzea da arazoa. Esparru espezifikoko txantiloiak betetzeko gaitasuna IEren bereizgarri nagusia da, eta, horregatik, “atzeko” teknologiaren beste adibide bat da; ondo zedarritutako ikerketa-eremuak ditu, baina, erabilgarria izan dadin, aplikazio-inguru egoki batean txertatu behar da. 
 
@@ -647,39 +656,33 @@ Horrenbestez, argi dago ahalegin handiagoak bideratu behar direla, bai euskarara
 
 \subsection{Hizkuntzarteko konparaketa}
     HTen gaur egungo egoera oso desberdina da hizkuntza-komunitate batetik bestera. Hizkuntzen arteko egoerak alderatzeko, bi aplikazio-eremutan (itzulpen automatikoa eta hizketa-prozesaketa), oinarrizko teknologia batean (testu-analisia) eta, orobat, HTetan oinarritutako aplikazioak garatzeko behar diren funtsezko baliabideetan oinarritutako ebaluazio bat aurkeztu da atal honetan.Hizkuntzak multzokatzeko, bost puntuko honako eskala hau baliatu da:
-\begin{itemize}
-\item 1 multzoa (HTen egoera bikaina)
-\item 2 multzoa (egoera ona)
-\item 3 multzoa (egoera ertaina)
-\item 4 multzoa (egoera osagabea)
-\item 5 multzoa (egoera apala)
-\end{itemize}
-HTen egoera irizpide hauen bidez neurtu da:
-\begin{itemize}
-\item Hizketa Prozesaketa: hizketa ezagutzeko dauden teknologien kalitatea, hizketa-sintesirako dauden teknologien kalitatea, landutako eremuen kopurua, dauden hizketazko corpusen kantitatea eta tamaina, hizketan oinarritutako aplikazio eskuragarrien kantitatea eta motak.
-\item Itzulpen Automatikoa: Dauden MT teknologien kalitatea, landutako hizkuntza pareen kopurua, landutako fenomeno linguistikoen eta eremuen kopurua, dauden corpus paraleloen kalitatea eta tamaina, MT aplikazio eskuragarrien kantitatea eta motak.
-\item Testu Analisia: Testua analizatzeko dauden teknologien kalitatea eta motak (morfologia, sintaxia, semantika), landutako fenomeno linguistikoen eta eremuen kopurua, eskuragarri dauden aplikazioen kantitatea eta motak, dauden testu-corpusen (etiketatuen) kalitatea eta tamaina, dauden baliabide lexikalen (adibidez, WordNet) eta gramatiken kalitatea eta motak.
-\item Baliabideak: Dauden \textbf{testu-corpusen} kalitatea eta tamaina, \textbf{hizketa-corpusak} eta \textbf{corpus paraleloak}, dauden \textbf{baliabide lexikal} eta \textbf{gramatiken} kalitatea eta motak.
-\end{itemize} 
 
+\begin{enumerate}\item HTen egoera bikaina
+\item egoera ona
+\item egoera ertaina
+\item egoera osagabea
+\item egoera apala\end{enumerate}
 
-\begin{figure*}
-\small
-\centering
-\begin{tabular}
-{ % defines color for each column.
->{\columncolor{corange5}} p{.17\linewidth}@{\hspace{.027\linewidth}}
->{\columncolor{corange4}}p{.17\linewidth}@{\hspace{.027\linewidth}}
->{\columncolor{corange3}}p{.17\linewidth}@{\hspace{.027\linewidth}}
->{\columncolor{corange2}}p{.17\linewidth}@{\hspace{.027\linewidth}}
->{\columncolor{corange1}}p{.17\linewidth} 
-}
-\rowcolor{orange1} % redefines color for all columns in row 1
-\begin{center}\vspace*{-2mm}\textbf{Bikaina}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Ona}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Ertaina}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Osagabea}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Apala/Ez}\end{center} \\ \addlinespace
+LT support was measured according to the following criteria:\\
+\textbf{Hizketa Prozesaketa:} hizketa ezagutzeko dauden teknologien kalitatea, hizketa-sintesirako dauden teknologien kalitatea, landutako eremuen kopurua, dauden hizketazko corpusen kantitatea eta tamaina, hizketan oinarritutako aplikazio eskuragarrien kantitatea eta motak.\textbf{Itzulpen Automatikoa:} Dauden MT teknologien kalitatea, landutako hizkuntza pareen kopurua, landutako fenomeno linguistikoen eta eremuen kopurua, dauden corpus paraleloen kalitatea eta tamaina, MT aplikazio eskuragarrien kantitatea eta motak.\textbf{Testu Analisia:} Testua analizatzeko dauden teknologien kalitatea eta motak (morfologia, sintaxia, semantika), landutako fenomeno linguistikoen eta eremuen kopurua, eskuragarri dauden aplikazioen kantitatea eta motak, dauden testu-corpusen (etiketatuen) kalitatea eta tamaina, dauden baliabide lexikalen (adibidez, WordNet) eta gramatiken kalitatea eta motak.\textbf{Baliabideak:} Dauden \textit{testu-corpusen} kalitatea eta tamaina, \textit{hizketa-corpusak} eta \textit{corpus paraleloak}, dauden \textit{baliabide lexikal} eta \textit{gramatiken} kalitatea eta motak.
+
+%\begin{itemize} 
+%\item HTen egoera bikaina
+%\item egoera ona
+%\item egoera ertaina
+%\item egoera osagabea
+%\item egoera apala
+%\end{itemize}
+
+%HTen egoera irizpide hauen bidez neurtu da:
+%\begin{itemize}
+%\item Hizketa Prozesaketa: hizketa ezagutzeko dauden teknologien kalitatea, hizketa-sintesirako dauden teknologien kalitatea, landutako eremuen kopurua, dauden hizketazko corpusen kantitatea eta tamaina, hizketan oinarritutako aplikazio eskuragarrien kantitatea eta motak.
+%\item Itzulpen Automatikoa: Dauden MT teknologien kalitatea, landutako hizkuntza pareen kopurua, landutako fenomeno linguistikoen eta eremuen kopurua, dauden corpus paraleloen kalitatea eta tamaina, MT aplikazio eskuragarrien kantitatea eta motak.
+%\item Testu Analisia: Testua analizatzeko dauden teknologien kalitatea eta motak (morfologia, sintaxia, semantika), landutako fenomeno linguistikoen eta eremuen kopurua, eskuragarri dauden aplikazioen kantitatea eta motak, dauden testu-corpusen (etiketatuen) kalitatea eta tamaina, dauden baliabide lexikalen (adibidez, WordNet) eta gramatiken kalitatea eta motak.
+%\item Baliabideak: Dauden \textbf{testu-corpusen} kalitatea eta tamaina, \textbf{hizketa-corpusak} eta \textbf{corpus paraleloak}, dauden \textbf{baliabide lexikal} eta \textbf{gramatiken} kalitatea eta motak.
+%\end{itemize} 
+
+\begin{figure*}[tb]  \small  \centering  \begin{tabular}  {   >{\columncolor{corange5}}p{.13\linewidth}@{\hspace{.040\linewidth}}  >{\columncolor{corange4}}p{.13\linewidth}@{\hspace{.040\linewidth}}  >{\columncolor{corange3}}p{.13\linewidth}@{\hspace{.040\linewidth}}  >{\columncolor{corange2}}p{.13\linewidth}@{\hspace{.040\linewidth}}  >{\columncolor{corange1}}p{.13\linewidth}   }  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Bikaina}} &   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Ona}} &  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Ertaina}} &  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Osagabea}} &  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{Apala/Ez}} \\   \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{egoera}} &   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{egoera}} &  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{egoera}} &  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{egoera}} &  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{egoera}} \\ \addlinespace
 % "Pobre/Inexistent" may be changed to "Pobre/No" if "Inexistent" is too long
 
 & \vspace*{0.5mm}
@@ -721,23 +724,7 @@ Errumaniera\\
 \caption{Hizketa-prozesaketarako hizkuntza-multzoak}
 \end{figure*}
 
-\begin{figure*}
-\small
-\centering
-\begin{tabular}
-{ % defines color for each column.
->{\columncolor{corange5}} p{.17\linewidth}@{\hspace{.027\linewidth}}
->{\columncolor{corange4}}p{.17\linewidth}@{\hspace{.027\linewidth}}
->{\columncolor{corange3}}p{.17\linewidth}@{\hspace{.027\linewidth}}
->{\columncolor{corange2}}p{.17\linewidth}@{\hspace{.027\linewidth}}
->{\columncolor{corange1}}p{.17\linewidth} 
-}
-\rowcolor{orange1} % redefines color for all columns in row 1
-\begin{center}\vspace*{-2mm}\textbf{Bikaina}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Ona}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Ertaina}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Osagabea}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Apala/Ez}\end{center} \\ \addlinespace
+\begin{figure*}[tb]  \small  \centering  \begin{tabular}  {   >{\columncolor{corange5}}p{.13\linewidth}@{\hspace{.040\linewidth}}  >{\columncolor{corange4}}p{.13\linewidth}@{\hspace{.040\linewidth}}  >{\columncolor{corange3}}p{.13\linewidth}@{\hspace{.040\linewidth}}  >{\columncolor{corange2}}p{.13\linewidth}@{\hspace{.040\linewidth}}  >{\columncolor{corange1}}p{.13\linewidth}   }  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Bikaina}} &   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Ona}} &  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Ertaina}} &  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Osagabea}} &  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{Apala/Ez}} \\   \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{egoera}} &   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{egoera}} &  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{egoera}} &  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{egoera}} &  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{egoera}} \\ \addlinespace
 % "Pobre/Inexistent" may be changed to "Pobre/No" if "Inexistent" is too long
 
 & \vspace*{0.5mm} Ingelesa 
@@ -778,23 +765,7 @@ Txekiera \newline
 \caption{Itzulpen automatikorako hizkuntza-multzoak}
 \end{figure*}
 
-\begin{figure*}
-  \small
-  \centering
-  \begin{tabular}
-{ % defines color for each column.
->{\columncolor{corange5}} p{.17\linewidth}@{\hspace{.027\linewidth}}
->{\columncolor{corange3}}p{.17\linewidth}@{\hspace{.027\linewidth}}
->{\columncolor{corange3}}p{.17\linewidth}@{\hspace{.027\linewidth}}
->{\columncolor{corange2}}p{.17\linewidth}@{\hspace{.027\linewidth}}
->{\columncolor{corange1}}p{.17\linewidth} 
-}
-\rowcolor{orange1} % redefines color for all columns in row 1
-\begin{center}\vspace*{-2mm}\textbf{Bikaina}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Ona}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Ertaina}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Osagabea}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Apala/Ez}\end{center} \\ \addlinespace
+\begin{figure*}[tb]  \small  \centering  \begin{tabular}  {   >{\columncolor{corange5}}p{.13\linewidth}@{\hspace{.040\linewidth}}  >{\columncolor{corange4}}p{.13\linewidth}@{\hspace{.040\linewidth}}  >{\columncolor{corange3}}p{.13\linewidth}@{\hspace{.040\linewidth}}  >{\columncolor{corange2}}p{.13\linewidth}@{\hspace{.040\linewidth}}  >{\columncolor{corange1}}p{.13\linewidth}   }  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Bikaina}} &   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Ona}} &  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Ertaina}} &  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Osagabea}} &  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{Apala/Ez}} \\   \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{egoera}} &   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{egoera}} &  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{egoera}} &  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{egoera}} &  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{egoera}} \\ \addlinespace
 % "Pobre/Inexistent" may be changed to "Pobre/No" if "Inexistent" is too long
 
 & \vspace*{0.5mm}Ingelesa
@@ -835,23 +806,7 @@ Txekiera \newline
 \caption{Testu-analisirako hizkuntza-multzoak}
 \end{figure*}
 
-\begin{figure*}
-  \small
-  \centering
-\begin{tabular}
-{ % defines color for each column.
->{\columncolor{corange5}} p{.17\linewidth}@{\hspace{.027\linewidth}}
->{\columncolor{corange4}}p{.17\linewidth}@{\hspace{.027\linewidth}}
->{\columncolor{corange3}}p{.17\linewidth}@{\hspace{.027\linewidth}}
->{\columncolor{corange2}}p{.17\linewidth}@{\hspace{.027\linewidth}}
->{\columncolor{corange1}}p{.17\linewidth} 
-}
-\rowcolor{orange1} % redefines color for all columns in row 1
-\begin{center}\vspace*{-2mm}\textbf{Bikaina}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Ona}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Ertaina}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Osagabea}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Apala/Ez}\end{center} \\ \addlinespace
+\begin{figure*}[tb]  \small  \centering  \begin{tabular}  {   >{\columncolor{corange5}}p{.13\linewidth}@{\hspace{.040\linewidth}}  >{\columncolor{corange4}}p{.13\linewidth}@{\hspace{.040\linewidth}}  >{\columncolor{corange3}}p{.13\linewidth}@{\hspace{.040\linewidth}}  >{\columncolor{corange2}}p{.13\linewidth}@{\hspace{.040\linewidth}}  >{\columncolor{corange1}}p{.13\linewidth}   }  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Bikaina}} &   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Ona}} &  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Ertaina}} &  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Osagabea}} &  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{Apala/Ez}} \\   \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{egoera}} &   \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{egoera}} &  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{egoera}} &  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{egoera}} &  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{egoera}} \\ \addlinespace
 % "Pobre/Inexistent" may be changed to "Pobre/No" if "Inexistent" is too long
     
 & \vspace*{0.5mm}Ingelesa
@@ -898,11 +853,11 @@ Goiko taulek erakusten dute ezen, azken hamarkadetan espainiar eta euskal gobern
 
 \subsection{Ondorioak}
 
-\emph{   Liburu Zurien bilduma honetan, lehendabiziko ahalegin garrantzitsu bat egin dugu, Europako 30 hizkuntzatako hizkuntza-teknologien egoera aztertu eta hizkuntza horien arteko goi-mailako konparaketa bat erakusteko. Hutsuneak, beharrak eta gabeziak identifikatuz, Europako hizkuntza-teknologien komunitatearentzat eta interesa duten parteentzat errazagoa izango da teknologian oinarritutako benetako Europa eleaniztun bat eraikitzea helburu duen eskala handiko ikerketa- eta garapen-programa bat diseinatzea.}
+\emph{Liburu Zurien bilduma honetan, lehendabiziko ahalegin garrantzitsu bat egin dugu, Europako 30 hizkuntzatako hizkuntza-teknologien egoera aztertu eta hizkuntza horien arteko goi-mailako konparaketa bat erakusteko. Hutsuneak, beharrak eta gabeziak identifikatuz, Europako hizkuntza-teknologien komunitatearentzat eta interesa duten parteentzat errazagoa izango da teknologian oinarritutako benetako Europa eleaniztun bat eraikitzea helburu duen eskala handiko ikerketa- eta garapen-programa bat diseinatzea.}
 
     Ikusi dugu alde handiak daudela Europako hizkuntza batetik bestera. Zenbait hizkuntzatarako eta aplikazio-eremutarako, kalitate oneko softwarea eta baliabideak badaude ere, beste hizkuntza batzuek (eskuarki hizkuntza "txikiagoek") hutsune handiak dituzte. Hizkuntza askori testu-analisirako oinarrizko teknologiak eta teknologia horiek garatzeko oinarrizko baliabideak falta zaizkie. Beste batzuek, berriz, badituzte oinarrizko tresna eta baliabideak, baina oraindik ez dute prozesaketa semantikoan inbertitzen. Hortaz, eskala handiko ahalegina egin beharra dugu, Europako hizkuntza guztien arteko kalitate handiko itzulpen automatikoa garatzeko helburu handira iristeko.
 
-   \textbf{ Euskara}ren kasua, hizkuntza-teknologien egoerari dagokionez, baikor baina zuhur aztertu beharra dago. Badago HT ikerketa-komunitate bideragarri bat Euskal Herrian, espainiar eta euskal ikerketa-programen bidez bultzatzen dena. Hainbat baliabide eta punta-puntako teknologia ekoitzi eta banatu dira euskararako. Hala ere, garatu diren baliabideen irismena eta tresnen multzoa oso mugatuak dira oraindik ere, gaztelaniarako (eta, noski, ingeleserako) dauden baliabide eta tresnekin alderatuta; beraz, ez dira nahiko, ez kalitateari dagokionez, ez kantitateari dagokionez, benetako jakintzaren gizarte eleaniztun bat sustatzeko beharrezkoak diren teknologia motak garatzeko.
+   \textbf{Euskara}ren kasua, hizkuntza-teknologien egoerari dagokionez, baikor baina zuhur aztertu beharra dago. Badago HT ikerketa-komunitate bideragarri bat Euskal Herrian, espainiar eta euskal ikerketa-programen bidez bultzatzen dena. Hainbat baliabide eta punta-puntako teknologia ekoitzi eta banatu dira euskararako. Hala ere, garatu diren baliabideen irismena eta tresnen multzoa oso mugatuak dira oraindik ere, gaztelaniarako (eta, noski, ingeleserako) dauden baliabide eta tresnekin alderatuta; beraz, ez dira nahiko, ez kalitateari dagokionez, ez kantitateari dagokionez, benetako jakintzaren gizarte eleaniztun bat sustatzeko beharrezkoak diren teknologia motak garatzeko.
 
     Gaur egun, hizkuntza-teknologien industria aski hedatuta dago, eta ETT askok lantzen dute eremu hori, batez ere hizkuntza idatzirako. Haien produktuak euskararen estandarizazio-prozesua eta erabilera bultzatzeko tresna eraginkorrak izan dira eta dira oraindik ere. Euskara ez da ageri enpresa handien katalogoetan, ekimen jakin zenbaitetan izan ezik, Eusko Jaurlaritzaren laguntzaz, eskuarki.
 
@@ -1006,7 +961,7 @@ In the field of language technology, the Basque language shows a number of produ
 
 \boxtext{Basque is one of the EU languages that still needs further research before truly effective language technology solutions are ready for everyday use}
 
-As this series of white papers demostrate, there is a dramatic difference among countries in the state of readiness of their language solutions based on language technologies. One of the major conclusions is that Basque is one of the EU languages that still needs further research before truly effective language technology solutions are ready for everyday use. At the same time, there are good prospects for achieving an outstanding position in this important technology area. This development of high-quality language technology for Basque is urgent and of utmost importance for the preservation for a minority language as Basque.
+As this series of white papers demonstrate, there is a dramatic difference between Europe’s member states in terms of both the maturity of the research and in the state of readiness with respect to language solutions. One of the major conclusions is that Basque is one of the EU languages that still needs further research before truly effective language technology solutions are ready for everyday use. At the same time, there are good prospects for achieving an outstanding position in this important technology area. This development of high-quality language technology for Basque is urgent and of utmost importance for the preservation for a minority language as Basque.
 
 \end{multicols}
 
@@ -1052,7 +1007,7 @@ As this series of white papers demostrate, there is a dramatic difference among 
 
    \boxtext{The global economy and information space confronts us with different languages, speakers and content}
    
-    Today, we can transmit gigabytes of text around the world in a few seconds before we recognise that it is in a language we do not understand. According to a recent report from the European Commission, 57\% of Internet users in Europe purchase goods and services in languages that are not their native language. (English is the most common foreign language followed by French, German and Spanish.) 55\% of users read content in a foreign language while only 35\% use another language to write e-mails or post comments on the Web \cite{BAS-Nota1}. A few years ago, English might have been the lingua franca of the Web—the vast majority of content on the Web was in English—but the situation has now drastically changed. The amount of online content in other European (as well as Asian and Middle Eastern) languages has exploded.
+    Today, we can transmit gigabytes of text around the world in a few seconds before we recognise that it is in a language we do not understand. According to a recent report from the European Commission, 57\% of Internet users in Europe purchase goods and services in non-native languages (English is the most common foreign language followed by French, German and Spanish.). 55\% of users read content in a foreign language while only 35\% use another language to write e-mails or post comments on the Web \cite{BAS-Nota1}. A few years ago, English might have been the lingua franca of the Web—the vast majority of content on the Web was in English—but the situation has now drastically changed. The amount of online content in other European (as well as Asian and Middle Eastern) languages has exploded.
 
     Surprisingly, this ubiquitous digital divide due to language borders has not gained much public attention; yet, it raises a very pressing question: Which European languages will thrive in the networked information and knowledge society, and which are doomed to disappear?
 
@@ -1225,7 +1180,30 @@ For language technology, the growing importance of the internet is important in 
 \ssection[Language Technology Support for Basque]{Language Technology Support\newline for Basque}
 
 \begin{multicols}{2}
-   Language technologies are information technologies that are specialised for dealing with human language. Therefore these technologies are also often subsumed under the term Human Language Technology. Human language occurs in spoken and written form. Whereas speech is the oldest and most natural mode of language communication, complex information and most of human knowledge is maintained and transmitted in written texts. Speech and text technologies process or produce language in these two modes of realisation. But language also has aspects that are shared between speech and text such as dictionaries, most of grammar and the meaning of sentences. Thus, large parts of language technology cannot be subsumed under either speech or text technologies. Among those are technologies that link language to knowledge. Figure~\ref{fig:ltincontext_en} illustrates the Language Technology landscape. In our communication we mix language with other modes of communication and other information media. We combine speech with gesture and facial expressions. Digital texts are combined with pictures and sounds. Movies may contain language in spoken and written form. Thus speech and text technologies overlap and interact with many other technologies that facilitate the processing of multimodal communication and multimedia documents. 
+Language technology is used to develop software systems designed to handle human language and are therefore often called “human language technology”. Human language comes in spoken and written forms. While speech is the oldest and in terms of human evolution the most natural form of language communication, complex information and most human knowledge is stored and transmitted through the written word. Speech and text technologies process or produce these different forms of language, using dictionaries, rules of grammar, and semantics. This means that language technology (LT) links language to various forms of knowledge, independently of the media (speech or text) in which it is expressed. Figure~\ref{fig:ltincontext_en} illustrates the LT landscape.
+
+When we communicate, we combine language with other modes of communication and information media – for example speaking can involve gestures and facial expressions. Digital texts link to pictures and sounds. Movies may contain language in spoken and written form. In other words, speech and text technologies overlap and interact with other multimodal communication and multimedia technologies.
+
+In this section, we will discuss the main application areas of language technology, i.\,e., language checking, web search, speech interaction, and machine translation. These applications and basic technologies include 
+
+\begin{itemize}
+\item spelling correction
+\item authoring support
+\item computer-assisted language learning
+\item information retrieval 
+\item information extraction
+\item text summarisation
+\item question answering
+\item speech recognition 
+\item speech synthesis 
+\end{itemize}
+
+Language technology is an established area of research with an extensive set of introductory literature. The interested reader is referred to the following references:  \cite{carstensen-etal1, jurafsky-martin01, manning-schuetze1, lt-world1, lt-survey1}.
+
+Before discussing the above application areas, we will briefly describe the architecture of a typical LT system.
+
+%   Language technologies are information technologies that are specialised for dealing with human language. Therefore these technologies are also often subsumed under the term Human Language Technology. Human language occurs in spoken and written form. Whereas speech is the oldest and most natural mode of language communication, complex information and most of human knowledge is maintained and transmitted in written texts. Speech and text technologies process or produce language in these two modes of realisation. But language also has aspects that are shared between speech and text such as dictionaries, most of grammar and the meaning of sentences. Thus, large parts of language technology cannot be subsumed under either speech or text technologies. Among those are technologies that link language to knowledge. Figure~\ref{fig:ltincontext_en} illustrates the Language Technology landscape. In our communication we mix language with other modes of communication and other information media. We combine speech with gesture and facial expressions. Digital texts are combined with pictures and sounds. Movies may contain language in spoken and written form. Thus speech and text technologies overlap and interact with many other technologies that facilitate the processing of multimodal communication and multimedia documents. 
+
 \begin{figure*}[htb]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
@@ -1237,12 +1215,30 @@ For language technology, the growing importance of the internet is important in 
 
 \subsection{Application Architectures}
 
-    Typical software applications for language processing consist of several components that mirror different aspects of language and of the task they implement. Figure ~\ref{fig:textprocessingarch_en} displays a highly simplified architecture that can be found in a text processing system. The first three modules deal with the structure and meaning of the text input:
-    \begin{itemize}
-      \item Pre-processing: cleaning up the data, removing formatting, detecting the input language, etc. 
-      \item \textbf{Grammatical analysis}: finding the verb and its objects, modificators, etc.; detecting the sentence structure.
-      \item \textbf{Semantic analysis}: disambiguation (Which meaning of “apple” is the right one in the given context?), resolving anaphora and referring expressions like “she”, “the car”, etc.; representing the meaning of the sentence in a machine-readable way.
-\end{itemize}
+Software applications for language processing typically consist of several components that mirror different aspects of language. While such applications tend to be very complex, figure~\ref{fig:textprocessingarch_en} shows a highly simplified architecture of a typical text processing system. The first three modules handle the structure and meaning of the text input:
+
+\begin{enumerate}
+\item Pre-processing: cleans the data, analyses or removes formatting, detects the input languages, and so on.
+\item Grammatical analysis: finds the verb, its objects, modifiers and other sentence elements; detects the sentence structure.
+\item Semantic analysis: performs disambiguation (i.\,e., computes the appropriate meaning of words in a given context); resolves anaphora (i.\,e., which pronouns refer to which nouns in the sentence); represents the meaning of the sentence in a machine-readable way.
+\end{enumerate}
+
+After analysing the text, task-specific modules can perform other operations, such as automatic summarisation and database look-ups.
+
+In the remainder of this section, we firstly introduce the core application areas for language technology, and follow this with a brief overview of the state of LT research and education today, and a description of past and present research programmes. Finally, we present an expert estimate of core LT tools and resources for Basque in terms of various dimensions such as availability, maturity and quality. 
+The general situation of LT for the Basque language is summarised in
+figure~\ref{fig:lrlttable_baen} (p.~\pageref{fig:lrlttable_baen}) at the end of this chapter. This table lists all tools and
+resources that are boldfaced in the text.
+LT support for Basque is also compared to other languages that are part of this series.
+
+
+%    Typical software applications for language processing consist of several components that mirror different aspects of language and of the task they implement. Figure ~\ref{fig:textprocessingarch_en} displays a highly simplified architecture that can be found in a text processing system. The first three modules deal with the structure and meaning of the text input:
+%    \begin{itemize}
+%      \item Pre-processing: cleaning up the data, removing formatting, detecting the input language, etc. 
+%      \item Grammatical analysis: finding the verb, its objects, modifiers and other sentence element; detecting the sentence structure.
+%      \item Semantic analysis: disambiguation (Which meaning of “apple” is the right one in the given context?), resolving anaphora and referring expressions like “she”, “the car”, etc.; representing the meaning of the sentence in a machine-readable way.
+%\end{itemize}
+
 \begin{figure*}[b]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
@@ -1252,9 +1248,9 @@ For language technology, the growing importance of the internet is important in 
   \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
    
- Task-specific modules then perform many different operations such as automatic summarisation of an input text, database lookups and many others. Below, we will illustrate core application areas and highlight their core modules. Again, the architectures of the applica¬tions are highly simplified and idealised, to illustrate the complexity of Language Technology (LT) applications in a generally understandable way. The most important tools and resources involved are underlined in the text and can also be found in the table at the end of the chapter.  The sections discussing the core application areas also contain an overview of the industries active in the respective field in Basque.
+% Task-specific modules then perform many different operations such as automatic summarisation of an input text, database lookups and many others. Below, we will illustrate core application areas and highlight their core modules. Again, the architectures of the applications are highly simplified and idealised, to illustrate the complexity of Language Technology (LT) applications in a generally understandable way. The most important tools and resources involved are underlined in the text and can also be found in the table at the end of the chapter.  The sections discussing the core application areas also contain an overview of the industries active in the respective field in Basque.
 
-After introducing the core application areas, we will give a short overview of the situation in LT research and education, concluding with an overview of past and ongoing research programs. At the end of this section, we will present an expert estimation on the situation regarding core LT tools and resources on a number of dimensions such as availability, maturity, or quality. This table gives a good overview on the situation of LT for Basque.
+%After introducing the core application areas, we will give a short overview of the situation in LT research and education, concluding with an overview of past and ongoing research programs. At the end of this section, we will present an expert estimation on the situation regarding core LT tools and resources on a number of dimensions such as availability, maturity, or quality. This table gives a good overview on the situation of LT for Basque.
 
 \subsection{Core Application Areas}
 
@@ -1353,7 +1349,7 @@ At its core, Speech Interaction comprises the following four differrent technolo
 
 \boxtext{Speech interaction is the basis for interfaces that allow a user to interact with spoken language}
 
-For the output part of a VUI, companies tend to use pre-recorded utterances of professional – ideally corporate – speakers a lot. For static utterances, in which the wording does not depend on the particular contexts of use or the personal data of the given user, this will result in a rich user experience. However, the more dynamic content an utterance needs to consider, the more the user experience may suffer from a poor prosody resulting from concate-nating single audio files. In contrast, today’s TTS systems prove superior, though optimisable, regarding the prosodic naturalness of dynamic utterances.  
+For the output part of a VUI, companies tend to use utterances pre-recorded by professional – ideally corporate – speakers a lot. For static utterances, in which the wording does not depend on the particular contexts of use or the personal data of the given user, this will result in a rich user experience. However, the more dynamic content an utterance needs to consider, the more the user experience may suffer from a poor prosody resulting from concatenating different parts of audio files. In contrast, today’s TTS systems prove superior, though optimisable, regarding the prosodic naturalness of dynamic utterances.  
 
 Regarding the market for Speech Interaction technology, the last decade underwent a strong standardisation of the interfaces between the different technology components, as well as by standards for creating particular software artefacts for a given application. There also has been strong market consolidation within the last ten years, particularly in the field of ASR and TTS. Here, the national markets in the G20 countries – i.e. economically strong countries with a considerable population - are dominated by less than 5 players worldwide, with Nuance and Loquendo being the most prominent ones in Europe. Since 2007, thanks to the support given by the Basque Government, Basque language is included in the catalogue of products of Nuance. However, the offer in ASR is limited to small to medium size vocabulary applications and no dictation product is available. For TTS, just one female voice is available. On the Spanish market, the Catalan SME Verbio Speech Technologies \cite{BAS-Nota29}  also offers Basque both for ASR and TTS, with more than one voice.  Still, no commercial dictation system exists for Basque. 
 
@@ -1375,7 +1371,7 @@ Looking beyond today’s state of technology, there will be significant changes 
   \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
 
-At its basic level, MT simply substitutes words in one natural language by words in another. This can be useful in subject domains with a very restricted, formulaic language, e.g., weather reports. However, for a good translation of less standardised texts, larger text units (phrases, sentences, or even whole passages) need to be matched to their closest counterparts in the target language. The major difficulty here lies in the fact that human language is ambiguous, which yields challenges on multiple levels, e.g., \textbf{word sense disambiguation} on the lexical level (‘Jaguar’ can mean a car or an animal) or on other levels as in:
+At its basic level, MT simply substitutes words in one natural language by words in another. This can be useful in subject domains with a very restricted, formulaic language, e.g., weather reports. However, for a good translation of less standardised texts, larger text units (phrases, sentences, or even whole passages) need to be matched to their closest counterparts in the target language. The major difficulty here lies in the fact that human language is ambiguous, which yields challenges on multiple levels, e.g., \textbf{word sense disambiguation} at the lexical level (‘Jaguar’ can mean a car or an animal) or on other levels as in:
 
 \textit{Egon garenetan ez dugu topatu}
 
@@ -1389,7 +1385,7 @@ At its basic level, MT simply substitutes words in one natural language by words
 
 One way of approaching the task is based on linguistic rules. For translations between closely related languages, a direct translation may be feasible in cases like in the second example above. But often rule-based (or knowledge-driven) systems analyse the input text and create an intermediary, symbolic representation, from which the text in the target language is generated. The success of these methods is highly dependent on the availability of extensive lexicons with morphological, syntactic, and semantic information, and large sets of grammar rules carefully designed by a skilled linguist.
 
-Beginning in the late 1980s, as computational power increased and became less expensive, more interest was shown in statistical models for MT. The parameters of these statistical models are derived from the analysis of bilingual text \textbf{corpora}, such as the Europarl parallel corpus, which contains the proceedings of the European Parliament in 11 European languages. Given enough data, statistical MT works well enough to derive an approximate meaning of a foreign language text. However, unlike knowledge-driven systems, statistical (or data-driven) MT often generates ungrammatical output. On the other hand, besides the advantage that less human effort is required for grammar writing, data-driven MT can also cover particularities of the language that go missing in knowledge-driven systems, for example idiomatic expressions. 
+Beginning in the late 1980s, as computational power increased and became less expensive, more interest was shown in statistical models for MT. The parameters of these statistical models are derived from the analysis of bilingual text \textbf{corpora}, such as the Europarl parallel corpus, which contains the proceedings of the European Parliament in 21 European languages. Given enough data, statistical MT works well enough to derive an approximate meaning of a foreign language text. However, unlike knowledge-driven systems, statistical (or data-driven) MT often generates ungrammatical output. On the other hand, besides the advantage that less human effort is required for grammar writing, data-driven MT can also cover particularities of the language that go missing in knowledge-driven systems, for example idiomatic expressions. 
 
 As the strengths and weaknesses of knowledge- and data-driven MT are complementary, researchers nowadays unanimously target hybrid approaches combining methodologies of both. This can be done in several ways. One is to use both knowledge- and data-driven systems and have a selection module decide on the best output for each sentence. However, for longer sentences, no result will be perfect. A better solution is to combine the best parts of each sentence from multiple outputs, which can be fairly complex, as corresponding parts of multiple alternatives are not always obvious and need to be aligned. 
 
@@ -1404,7 +1400,14 @@ Provided good adaptation in terms of user-specific terminology and workflow inte
 \subsection{Other Application Areas}
     Building Language Technology applications involves a range of subtasks that do not always surface at the level of interaction with the user,  but provide significant service functionalities ‘under the hood’ of the system. Therefore, they constitute important research issues that have become individual sub-disciplines of Computational Linguistics in academia. 
 
-Question answering has become an active area of research, for which annotated corpora have been built and scientific competitions have been started. The idea is to move from keyword-based search (to which the engine responds with a whole collection of potentially relevant documents) to the scenario of the user asking a concrete question and the system providing a single answer: ‘At what age did Neil Armstrong step on the moon?’ - ’38’. While this is obviously related to the aforementioned core area Web Search, question answering nowadays is primarily an umbrella term for research questions such as what \textit{types} of questions should be distinguished and how should they be handled, how can a set of documents that potentially contain the answer be analysed and compared (do they give conflicting answers?), and how can specific information - the answer - be reliably extracted from a document, without unduly ignoring the context. 
+Question answering has become an active area of research, for which annotated corpora have been built and scientific competitions have been started. The idea is to move from keyword-based search (to which the engine responds with a whole collection of potentially relevant documents) to the scenario of the user asking a concrete question and the system providing a single answer. For example:
+
+\begin{itemize}
+\item[] \textit{Question: How old was Neil Armstrong when he stepped on the moon?}
+\item[] \textit{Answer: 38.}
+\end{itemize}
+
+While this is obviously related to the aforementioned core area Web Search, question answering nowadays is primarily an umbrella term for research questions such as what \textit{types} of questions should be distinguished and how should they be handled, how can a set of documents that potentially contain the answer be analysed and compared (do they give conflicting answers?), and how can specific information - the answer - be reliably extracted from a document, without unduly ignoring the context. 
 
 \boxtext{Language technology applications often provide significant service functionalities behind the scenes of larger software systems}
 
@@ -1453,7 +1456,7 @@ In the last \textit{PCTI2010}, as had already been in previous plans, Language T
   
 \subsection{Availability of Tools and Resources}
 
-    Table ~\ref{fig:lrlttable_en} provides an overview of the current situation of Language Technology support for Basque. Several leading experts rated the existing tools and resources based on educated estimations using seven criteria (each ranging from 0 to 6):
+    Table ~\ref{fig:lrlttable_baen} provides an overview of the current situation of Language Technology support for Basque. Several leading experts rated the existing tools and resources based on educated estimations using seven criteria (each ranging from 0 to 6):
 
 \begin{figure*}[htb]
 \centering
@@ -1482,7 +1485,7 @@ Grammars &2&2&2&2&2&2&2\\
 
 \end{tabular}
 \caption{State of language technology support for Basque}
-\label{fig:lrlttable_en}
+\label{fig:lrlttable_baen}
 \end{figure*}
 
     In this White Paper Series, a first effort has been made to assess the overall situation of many European languages with respect to language technology support in a way that allows for high level comparison and identification of gaps and needs.
@@ -1495,29 +1498,11 @@ For Basque, key results regarding technologies and resources include the followi
       \item The spelling checker is one of the most powerful tools in the ongoing standardisation of Basque and the most representative of the effective LT tools created to promote the use of Basque. 
       \item Standard resources for Basque have adopted TEI and XML standards as a basis for linguistic annotation at the different levels of processing, and also to the definition of a general methodology for written corpus annotation. However, several resources lack standardisation, i.e., even if they exist, sustainability is not always given; concerted programs and initiatives are needed to standardise data and interchange formats.
       \item Text semantics is more difficult to process than word and sentence semantics. There is a Wordnet for Basque, and promising algorithms to examine similarity between words and to extract facts from text have been developed. 
-
     \end{itemize}
+    
     From this, it is clear that more efforts need to be directed into the creation of resources for Basque and into research, innovation, and development. The need for large amounts of data and the high complexity of language technology systems make it also mandatory to develop new infrastructures for sharing and cooperation.
 
 \subsection{Cross-language comparison}
-
-   The current state of LT support varies considerably from one language community to another. In order to compare the situation between languages, this section will present an evaluation based on two sample application areas (machine translation and speech processing) and one underlying technology (text analysis), as well as basic resources needed for building LT applications. The languages were clustered using the following five-point scale: 
-
-    \begin{itemize}
-      \item Cluster 1 (excellent LT support)
-      \item Cluster 2 (good support)
-      \item Cluster 3 (moderate support)
-      \item Cluster 4 (fragmentary support) 
-      \item Cluster 5 (weak or no support)
-    \end{itemize}
-
-LT support was measured according to the following criteria:
-\begin{itemize}
-\item Speech Processing: Quality of existing speech recognition technologies, quality of existing speech synthesis technologies, coverage of domains, number and size of existing speech corpora, amount and variety of available speech-based applications
-\item Machine Translation: Quality of existing MT technologies, number of language pairs covered, coverage of linguistic phenomena and domains, quality and size of existing parallel corpora, amount and variety of available MT applications
-\item Text Analysis: Quality and coverage of existing text analysis technologies (morphology, syntax, semantics), coverage of linguistic phenomena and domains, amount and variety of available applications, quality and size of existing (annotated) text corpora, quality and coverage of existing lexical resources (e.g., WordNet) and grammars
-\item Resources: Quality and size of existing \textbf{text corpora}, \textbf{speech corpora} and \textbf{parallel corpora}, quality and coverage of existing \textbf{lexical resources} and \textbf{grammars}
-\end{itemize} 
 
 \begin{figure*}[tb]
   \small
@@ -1530,12 +1515,16 @@ LT support was measured according to the following criteria:
   >{\columncolor{corange2}}p{.13\linewidth}@{\hspace{.040\linewidth}}
   >{\columncolor{corange1}}p{.13\linewidth} 
   }
-\rowcolor{orange1} % redefines color for all columns in row 1
-\begin{center}\vspace*{-2mm}\textbf{Excellent}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Good}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Moderate}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Fragmentary}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Weak/no}\end{center} \\ \addlinespace
+  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Excellent}} & 
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Good}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Moderate}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Fragmentary}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{Weak/no}} \\ 
+  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} & 
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{support}} \\ \addlinespace
   
 & \vspace*{0.5mm}English
 & \vspace*{0.5mm}
@@ -1585,12 +1574,16 @@ Romanian\\
   >{\columncolor{corange2}}p{.13\linewidth}@{\hspace{.040\linewidth}}
   >{\columncolor{corange1}}p{.13\linewidth} 
   }
-\rowcolor{orange1} % redefines color for all columns in row 1
-\begin{center}\vspace*{-2mm}\textbf{Excellent}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Good}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Moderate}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Fragmentary}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Weak/no}\end{center} \\ \addlinespace
+  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Excellent}} & 
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Good}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Moderate}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Fragmentary}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{Weak/no}} \\ 
+  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} & 
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{support}} \\ \addlinespace
   
 & \vspace*{0.5mm} English 
 & \vspace*{0.5mm} 
@@ -1640,12 +1633,16 @@ Swedish \newline
   >{\columncolor{corange2}}p{.13\linewidth}@{\hspace{.040\linewidth}}
   >{\columncolor{corange1}}p{.13\linewidth} 
   }
-\rowcolor{orange1} % redefines color for all columns in row 1
-\begin{center}\vspace*{-2mm}\textbf{Excellent}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Good}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Moderate}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Fragmentary}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Weak/no}\end{center} \\ \addlinespace
+  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Excellent}} & 
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Good}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Moderate}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Fragmentary}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{Weak/no}} \\ 
+  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} & 
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{support}} \\ \addlinespace
 
 & \vspace*{0.5mm}English
 & \vspace*{0.5mm}
@@ -1695,12 +1692,16 @@ Swedish \newline
   >{\columncolor{corange2}}p{.13\linewidth}@{\hspace{.040\linewidth}}
   >{\columncolor{corange1}}p{.13\linewidth} 
   }
-\rowcolor{orange1} % redefines color for all columns in row 1
-\begin{center}\vspace*{-2mm}\textbf{Excellent}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Good}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Moderate}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Fragmentary}\end{center} & 
-\begin{center}\vspace*{-2mm}\textbf{Weak/no}\end{center} \\ \addlinespace
+  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Excellent}} & 
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Good}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Moderate}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Fragmentary}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{Weak/no}} \\ 
+  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} & 
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{support}} \\ \addlinespace
     
 & \vspace*{0.5mm}English
 & \vspace*{0.5mm} 
@@ -1739,21 +1740,29 @@ Swedish \newline
   \label{fig:resources_cluster_en}
 \end{figure*}
 
-   \textit{Cluster description (for Text Analysis and Resources)}
-    \begin{itemize}
-      \item Cluster 1 (excellent LT support): Technologies/resources exist that are in widespread use and cover practically all linguistic phenomena (vocabulary, compounds, grammar, metaphors etc.) of a language.
-      \item Cluster 2 (very good support): Technologies/resources exist that are used in a variety of applications and cover the most important linguistic phenomena. 
-      \item Cluster 3 (good support): Technologies/resources exist that cover a reasonable amount of linguistic phenomena and are used in applications that are usually domain-specific.
-      \item Cluster 4 (medium support): Research prototypes/resources exist, but quality and coverage varies.
-      \item Cluster 5 (low to almost no support): From the drawing board to rudimentary prototypes (very limited quality and coverage, toy systems)
-    \end{itemize}
-    The above tables show that, thanks to LT funding programs from the Spanish and Basque governments in recent decades, the Basque language is equipped as most of other European languages. It compares well with languages spoken by a bigger number of speakers despite these are official languages of EU countries. This is mainly due to coordinated efforts of research groups and small developers of LT tools. But LT resources and tools for Basque clearly do not yet reach the quality, size and coverage of comparable resources and tools for the Spanish language, which is in a good position in almost all LT areas. There are still some gaps in Basque language resources and tools with regard to high quality applications. 
+ The current state of LT support varies considerably from one language community to another. In order to compare the situation between languages, this section will present an evaluation based on two sample application areas (machine translation and speech processing) and one underlying technology (text analysis), as well as basic resources needed for building LT applications. The languages were clustered using the following five-point scale: 
+
+\begin{enumerate}\item Excellent support\item Good support\item Moderate support\item Fragmentary support\item Weak or no support\end{enumerate}
+
+LT support was measured according to the following criteria:\\
+\textbf{Speech Processing:} Quality of existing speech recognition technologies, quality of existing speech synthesis technologies, coverage of domains, number and size of existing speech corpora, amount and variety of available speech-based applications.\textbf{Machine Translation:} Quality of existing MT technologies, number of language pairs covered, coverage of linguistic phenomena and domains, quality and size of existing parallel corpora, amount and variety of available MT applications.\textbf{Text Analysis:} Quality and coverage of existing text analysis technologies (morphology, syntax, semantics), coverage of linguistic phenomena and domains, amount and variety of available applications, quality and size of existing (annotated) text corpora, quality and coverage of existing lexical resources (e.g., WordNet) and grammars.\textbf{Resources:} Quality and size of existing text corpora, speech corpora and parallel corpora, quality and coverage of existing lexical resources and grammars.
+
+%\textit{Cluster description (for Text Analysis and Resources)}
+%    \begin{itemize}
+%      \item Cluster 1 (excellent LT support): Technologies/resources exist that are in widespread use and cover practically all linguistic phenomena (vocabulary, compounds, grammar, metaphors etc.) of a language.
+%      \item Cluster 2 (very good support): Technologies/resources exist that are used in a variety of applications and cover the most important linguistic phenomena. 
+%      \item Cluster 3 (good support): Technologies/resources exist that cover a reasonable amount of linguistic phenomena and are used in applications that are usually domain-specific.
+%      \item Cluster 4 (medium support): Research prototypes/resources exist, but quality and coverage varies.
+%      \item Cluster 5 (low to almost no support): From the drawing board to rudimentary prototypes (very limited quality and coverage, toy systems)
+%    \end{itemize}
+    
+Figures~\ref{fig:speech_cluster_en} to~\ref{fig:resources_cluster_en} show that, thanks to LT funding programs from the Spanish and Basque governments in recent decades, the Basque language is equipped as most of other European languages. It compares well with languages spoken by a bigger number of speakers despite these are official languages of EU countries. This is mainly due to coordinated efforts of research groups and small developers of LT tools. But LT resources and tools for Basque clearly do not yet reach the quality, size and coverage of comparable resources and tools for the Spanish language, which is in a good position in almost all LT areas. There are still some gaps in Basque language resources and tools with regard to high quality applications. 
 
     For speech processing, current technologies perform well enough to be successfully integrated into a limited number of industrial applications such as IVR spoken dialogue systems, although there is still a gap to fill for dictation systems, even in a constrained domain. Machine Translation systems do not get a good performance yet, due to the fact that Basque is very different from the Indo-European languages. Deeper statistical classifiers are needed compared to other language pairs with similar origin, such as Catalan-Spanish or Galician-Spanish. There is a clear need for resources and technologies to cover a wider range of linguistic aspects and to allow a deep semantic analysis of the input text. By improving the quality and coverage of these basic resources and technologies, we shall be able to open up new opportunities for tackling a vast range of advanced application areas, including high-quality machine translation and continuous speech recognition.  
 
 \subsection{Conclusions}
 
-    \emph{   In this series of white papers, we have made an important initial effort to assess language technology support for 30 European languages, and provide a high-level comparison across these languages. By identifying the gaps, needs and deficits, the European language technology community and related stakeholders are now in a position to design a large scale research and development programme aimed at building a truly multilingual, technology-enabled Europe.}
+    \emph{In this series of white papers, we have made an important initial effort to assess language technology support for 30 European languages, and provide a high-level comparison across these languages. By identifying the gaps, needs and deficits, the European language technology community and related stakeholders are now in a position to design a large scale research and development programme aimed at building a truly multilingual, technology-enabled Europe.}
 
     We have seen that there are huge differences between Europe’s languages. While there are good quality software and resources available for some languages and application areas, others (usually “smaller” languages) have substantial gaps. Many languages lack basic technologies for text analysis and the essential resources for developing these technologies. Others have basic tools and resources but are as yet unable to invest in semantic processing. We therefore still need to make a large-scale effort to attain the ambitious goal of providing high-quality machine translation between all European languages.
 
@@ -1782,7 +1791,7 @@ META-NET is a Network of Excellence funded by the European Commission. The netwo
 \begin{itemize}
 \item makes communication and cooperation possible across languages;
 \item grants all Europeans equal access to information and knowledge regardless of their language; 
-\item •	builds upon and advances functionalities of networked information technology.
+\item builds upon and advances functionalities of networked information technology.
 \end{itemize}
 
 The network supports a Europe that unites as a single digital market and information space. It stimulates and promotes multilingual technologies for all European languages. These technolo¬gies support automatic translation, content production, information processing and knowledge management for a wide variety of subject domains and applications. They also enable intuitive language-based interfaces to technology ranging from household electronics, machinery and vehicles to computers and robots.
@@ -1794,10 +1803,11 @@ Launched on 1 February 2010, META-NET has already conducted various activities i
 \textbf{META-SHARE} creates an open, distributed facility for exchanging and sharing resources. The peer-to-peer network of repositories will contain language data, tools and web services that are documented with high-quality metadata and organised in standardised cate¬gories. The resources can be readily accessed and uni¬formly searched. The available resources include free, open source materials as well as restricted, commercially available, fee-based items. 
 
 \textbf{META-RESEARCH} builds bridges to related technol¬ogy ﬁelds. This activity seeks to leverage advances in other ﬁelds and to capitalise on innovative research that can beneﬁt language technology. In particular, the action line focuses on conducting leading-edge research in machine translation, collect¬ing data, preparing data sets and organising language re-sources for evaluation purposes; compiling inventories of tools and methods; and organising workshops and training events for members of the community.
+\textbf{\centerline{office@meta-net.eu -- http://www.meta-net.eu}}
 \end{multicols}
 
-\vfill
-\centerline{office@meta-net.eu -- http://www.meta-net.eu}
+%\vfill
+
 
 \cleardoublepage
 
