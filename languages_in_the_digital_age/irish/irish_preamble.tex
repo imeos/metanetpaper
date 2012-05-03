@@ -13,10 +13,13 @@
 % ----------------------------------------------------------------------------
 
 \usepackage{polyglossia}
+\usepackage{tipa} %For phonetic transcription
 \setotherlanguages{irish,english}
 
 
 \title{An Ghaeilge sa Ré Dhigiteach --- The Irish Language in the Digital Age}
+
+\spineTitle{The Irish Language in the Digital Age --- An Ghaeilge sa Ré Dhigiteach}
 
 \subtitle{White Paper Series --- Sraith Páipéar Bán }
 
@@ -29,10 +32,10 @@
 }
 \authoraffiliation{
   John Judge~ {\small CNGL}\\
-  Ailbhe Ní Chasaide~ {\small TCD}\\
+  Ailbhe Ní Chasaide~ {\small Coláiste na Trínóide}\\
   Rose Ní Dhubhda~ {\small OÉ Gallimh}\\
   Kevin P. Scannell~ {\small Saint Louis University}\\
-  Elaine Uí Dhonnchadha~ {\small TCD}
+  Elaine Uí Dhonnchadha~ {\small Coláiste na Trínóide}
 }
 \editors{
   Georg Rehm, Hans Uszkoreit\\(eagarthóirí, \textcolor{grey1}{editors})
@@ -42,8 +45,8 @@
 \SpineLText{\selectlanguage{english}%
   In everyday communication, Europe’s citizens, business partners and politicians are inevitably confronted with language barriers.  
   Language technology has the potential to overcome these barriers and to provide innovative interfaces to technologies and knowledge. 
-  This white paper presents the state of language technology support for the German language. 
-  It is part of a series that analyzes the available language resources and technologies for 31~European languages. 
+  This white paper presents the state of language technology support for the Irish language. 
+  It is part of a series that analyzes the available language resources and technologies for 30~European languages. 
   The analysis was carried out by META-NET, a Network of Excellence funded by the European Commission.
   META-NET consists of 54 research centres in 33 countries, who cooperate with stakeholders from economy, government agencies, research organisations, non-governmental organisations, language communities and European universities. 
   META-NET’s vision is high-quality language technology for all European languages. 
@@ -51,7 +54,7 @@
 
 % Text in right column on backside of the cover
 \SpineRText{\selectlanguage{irish}%
-I gcumarsáid laethúil, bíonn baic theanga le sárú ag saoránaigh, comhpháirtithe gnó agus polaiteoirí na hEorpa. Tá sé de chumas ag teicneolaíocht teanga na baic seo a shárú agus comhéadain nuálaíocha a chur ar fáil do theicneolaíochtaí agus faisnéis. Cuirtear i láthair sa pháipéar bán seo staid thacaíocht na teicneolaíochta teanga don Ghaeilge. Tá sé mar chuid de shraith a dhéanann anailís ar na hacmhainní agus teicneolaíochtaí teanga atá ar fáil don 31 teanga Eorpacha. Rinne META-NET, Gréasán Sármhaitheasa arna mhaoiniú ag Coimisiún na hEorpa, an anailís. Tá 54 ionad taighde i 33 tír i META-NET, a chomhoibríonn le geallsealbhóirí ón ngeilleagar, ó ghníomhaireachtaí rialtais, ó eagraíochtaí taighde, ó eagraíochtaí neamhrialtasacha, ó phobail teanga agus ó ollscoileanna Eorpacha. Is é atá mar fhís ag META-NET teicneolaíocht teanga d'ardchaighdeán a bheith ar fáil do theangacha ar fad na hEorpa.}
+I gcumarsáid laethúil, bíonn baic theanga le sárú ag saoránaigh, comhpháirtithe gnó agus polaiteoirí na hEorpa. Tá sé de chumas ag teicneolaíocht teanga na baic seo a shárú agus comhéadain nuálaíocha a chur ar fáil do theicneolaíochtaí agus faisnéis. Cuirtear i láthair sa pháipéar bán seo staid thacaíocht na teicneolaíochta teanga don Ghaeilge. Tá sé mar chuid de shraith a dhéanann anailís ar na hacmhainní agus teicneolaíochtaí teanga atá ar fáil don 30 teanga Eorpacha. Rinne META-NET, Gréasán Sármhaitheasa arna mhaoiniú ag Coimisiún na hEorpa, an anailís. Tá 54 ionad taighde i 33 tír i META-NET, a chomhoibríonn le geallsealbhóirí ón ngeilleagar, ó ghníomhaireachtaí rialtais, ó eagraíochtaí taighde, ó eagraíochtaí neamhrialtasacha, ó phobail teanga agus ó ollscoileanna Eorpacha. Is é atá mar fhís ag META-NET teicneolaíocht teanga d'ardchaighdeán a bheith ar fáil do theangacha ar fad na hEorpa.}
 
 % Quotes from VIPs on backside of the cover
 \quotes{%
@@ -65,6 +68,7 @@ I gcumarsáid laethúil, bíonn baic theanga le sárú ag saoránaigh, comhphái
 \FundingLNotice{\selectlanguage{irish}
   Tá údair na cáipéise seo buíoch d'údair an Pháipéir Bháin i nGearmáinis as cead a thabhairt ábhair neamhspleách ó theanga óna gcáipéis a athúsáid \cite{lwpgerman}. \\
   \bigskip
+  
   Mhaoinigh an Seachtú Creatchlár agus Clár Tacaíochta Beartais TFC
   de Choimisiún na hEorpa faoi na conarthaí T4ME
   (Comhaontú Deontais 249119), CESAR (Comhaontú Deontais 271022),
@@ -76,6 +80,7 @@ I gcumarsáid laethúil, bíonn baic theanga le sárú ag saoránaigh, comhphái
 \FundingRNotice{\selectlanguage{english}
   The authors of this document are grateful to the authors of the white paper on German for permission to re-use selected language-independent materials from their document \cite{lwpgerman}. \\
   \bigskip
+  
   The development of this white paper has been funded by the Seventh
   Framework Programme and the ICT Policy Support Programme of the
   European Commission under the contracts T4ME (Grant Agreement
