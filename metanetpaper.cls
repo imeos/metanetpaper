@@ -557,21 +557,19 @@
     \begin{titlepage}%
     \ThisCenterWallPaper{1}{../_media/titlepage.pdf}
       \vspace*{3mm}
-      % workaround to add 2mm to \left margin of geometry package
-      \begin{minipage}[t]{1mm}\ \end{minipage}
       % Back cover
-      \begin{minipage}[t]{166mm}  
-        \vskip60mm
-        \begin{minipage}[t]{79mm}
+      \begin{minipage}[t]{168mm}  
+        \vskip50mm
+        \begin{minipage}[t]{81mm}
           \color{grey2}%
           \textsf{%
             \@SpineLText
           }
         \end{minipage}
         % Gutter 
-        \begin{minipage}[t]{8mm}\ 
+        \begin{minipage}[t]{5mm}\ 
         \end{minipage}
-        \begin{minipage}[t]{79mm}
+        \begin{minipage}[t]{75mm}
           \color{white}%
           \textsf{%
             \@SpineRText
