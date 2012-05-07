@@ -569,16 +569,18 @@
         % Gutter 
         \begin{minipage}[t]{5mm}\ 
         \end{minipage}
-        \begin{minipage}[t]{75mm}
+        \begin{minipage}[t]{76mm}
           \color{white}%
           \textsf{%
             \@SpineRText
           }
         \end{minipage}
         \vskip10mm
-        \textsf{%
-          \textcolor{white}{\@quotes}
-        }
+        \begin{minipage}[t]{163.5mm}
+          \textsf{%
+            \textcolor{white}{\@quotes}
+          }
+        \end{minipage}
       \end{minipage}
       % Space between back and front cover
       \begin{minipage}[t]{20mm}\ \end{minipage}
@@ -848,18 +850,18 @@
     % spacing between colums
     \begin{minipage}[t]{5mm}\ \end{minipage}
     % Right column
-    \begin{minipage}[t]{75mm}
+    \begin{minipage}[t]{76mm}
       \color{white}%
       \textsf{%
         \@SpineRText
       }
     \end{minipage}
     \vskip10mm
-    \begin{flushleft}
+    \begin{minipage}[t]{163.5mm}
       \textsf{%
         \textcolor{white}{\@quotes}
       }
-    \end{flushleft}
+    \end{minipage}
   }
 }
 \ProcessOptions\relax
