@@ -44,6 +44,7 @@ kieliyhteisön koosta.
 
 Euroopan komission rahoittaman META-NET
 -huip\-pu\-osaa\-mis\-ver\-kos\-ton kartoitustyö
+tässä valkoisten kirjojen sarjassa (p.~\pageref{whitepaperseries})
 kattaa Euroopan 23 virallisen kielen sekä tärkeiden kansallisten ja
 paikallisten kielten kieliaineistot ja kieliteknologiat.
 Tulosten perusteella kaikkien kartoitettujen kielten
@@ -2199,19 +2200,18 @@ META-NET edistää Euroopan yhdentymistä kaikkien kansalaistensa saavutettavaks
 
 \vfill
 
-%\makeatletter
-%\@ifundefined{theHsection}{
- % \let
-%}
-%{
- % \renewcommand*{\theHsection}{\thepart.\thesection}
-%}
-%\makeatother
-%\part*{\textcolor{white}{English}}
+\makeatletter
+\@ifundefined{theHsection}{
+}
+{
+  \renewcommand*{\theHsection}{\thepart.\thesection}
+}
+\makeatother
+\part*{\textcolor{white}{English}}
 \setcounter{section}{0}
 \setcounter{figure}{0}
 
-%\centerline{office@meta-net.eu -- http://www.meta-net.eu}
+\centerline{office@meta-net.eu -- http://www.meta-net.eu}
 
 \addtocontents{toc}{\protect\clearpage\protect}
 \addtocontents{toc}{\protect\thispagestyle{empty}\protect}
