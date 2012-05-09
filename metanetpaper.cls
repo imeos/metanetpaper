@@ -569,16 +569,18 @@
         % Gutter 
         \begin{minipage}[t]{5mm}\ 
         \end{minipage}
-        \begin{minipage}[t]{75mm}
+        \begin{minipage}[t]{76mm}
           \color{white}%
           \textsf{%
             \@SpineRText
           }
         \end{minipage}
         \vskip10mm
-        \textsf{%
-          \textcolor{white}{\@quotes}
-        }
+        \begin{minipage}[t]{163.5mm}
+          \textsf{%
+            \textcolor{white}{\@quotes}
+          }
+        \end{minipage}
       \end{minipage}
       % Space between back and front cover
       \begin{minipage}[t]{20mm}\ \end{minipage}
@@ -839,27 +841,27 @@
     \ThisCenterWallPaper{1}{../_media/spinepage_ebook.pdf}
     \vspace*{50mm}
     % Left column
-    \begin{minipage}[t]{81mm}
+    \begin{minipage}[t]{80mm}
       \color{grey2}%
       \textsf{%
         \@SpineLText
       }
     \end{minipage}
     % spacing between colums
-    \begin{minipage}[t]{5mm}\ \end{minipage}
+    \begin{minipage}[t]{6mm}\ \end{minipage}
     % Right column
-    \begin{minipage}[t]{75mm}
+    \begin{minipage}[t]{76mm}
       \color{white}%
       \textsf{%
         \@SpineRText
       }
     \end{minipage}
     \vskip10mm
-    \begin{flushleft}
+    \begin{minipage}[t]{163.5mm}
       \textsf{%
         \textcolor{white}{\@quotes}
       }
-    \end{flushleft}
+    \end{minipage}
   }
 }
 \ProcessOptions\relax
