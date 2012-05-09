@@ -18,15 +18,18 @@
 
 \maketitle
 
-% --------------------------------------------------------------------------
-\bsection*{Forord --- Preface}
-
 \null
 \pagestyle{empty} 
+
+\makefundingnotice
 
 \pagenumbering{Roman} 
 \setcounter{page}{3}
 \pagestyle{scrheadings}
+
+\cleardoublepage
+% --------------------------------------------------------------------------
+\bsection*{Forord --- Preface}
 
 \begin{Parallel}[c]{78mm}{78mm}
 \ParallelLText{\selectlanguage{danish} %\vskip1mm
@@ -50,7 +53,6 @@ As of November 2011, META-NET consists of 54 research centres in 33 European cou
 
 % --------------------------------------------------------------------------
 
-\makefundingnotice
 
 % --------------------------------------------------------------------------
 
@@ -1153,7 +1155,8 @@ maltesisk \newline
 
 \end{multicols}
 
-\cleardoublepage
+%\cleardoublepage
+\clearpage
 
 % --------------------------------------------------------------------------
 
@@ -1235,6 +1238,7 @@ kurser for medlemmerne.\\
 \setcounter{figure}{0}
 
 \cleardoublepage
+%\clearpage
 
 \selectlanguage{english}
 
@@ -2280,10 +2284,9 @@ Swedish \newline
   \label{fig:resources_cluster_en}
 \end{figure*}
 
-
 \end{multicols}
 
-\clearpage
+\cleardoublepage
 
 \ssection[About META-NET]{About META-NET}
 
