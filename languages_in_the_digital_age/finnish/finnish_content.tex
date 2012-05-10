@@ -2200,19 +2200,18 @@ META-NET edistää Euroopan yhdentymistä kaikkien kansalaistensa saavutettavaks
 
 \vfill
 
-%\makeatletter
-%\@ifundefined{theHsection}{
- % \let
-%}
-%{
- % \renewcommand*{\theHsection}{\thepart.\thesection}
-%}
-%\makeatother
-%\part*{\textcolor{white}{English}}
+\makeatletter
+\@ifundefined{theHsection}{
+}
+{
+  \renewcommand*{\theHsection}{\thepart.\thesection}
+}
+\makeatother
+\part*{\textcolor{white}{English}}
 \setcounter{section}{0}
 \setcounter{figure}{0}
 
-%\centerline{office@meta-net.eu -- http://www.meta-net.eu}
+\centerline{office@meta-net.eu -- http://www.meta-net.eu}
 
 \addtocontents{toc}{\protect\clearpage\protect}
 \addtocontents{toc}{\protect\thispagestyle{empty}\protect}
