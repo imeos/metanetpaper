@@ -121,15 +121,23 @@ providers and users), government agencies, research organisations, non-governmen
 
 \input{bokmaal-body}
 
+\makeatletter
+\@ifundefined{theHsection}{
+}
+{
+  \renewcommand*{\theHsection}{\thepart.\thesection}
+}
+\makeatother
+
+\setcounter{section}{0}
+\setcounter{figure}{0}
+
 \selectlanguage{english}
 
 \addtocontents{toc}{\protect\clearpage\protect}
 \addtocontents{toc}{\protect\thispagestyle{empty}\protect}
 \addtocontents{toc}{\protect\vspace*{4mm}\protect}
 \addtocontents{toc}{\smallskip{\Large\textsf{\centerline{THE NORWEGIAN LANGUAGE IN THE DIGITAL AGE}}\par}}
-
-\setcounter{section}{0}
-\setcounter{figure}{0}
 
 \cleardoublepage
 
