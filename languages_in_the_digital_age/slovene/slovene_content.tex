@@ -1025,21 +1025,16 @@ Mreža nudi podporo Evropi, ki se združuje v enotni digitalni trg in informacij
 
 \textbf{META-SHARE} ustvarja prosto dostopno infrastrukturo za izmenjavo in deljenje virov. Omrežje enakovrednih (\textit{peer-to-peer}) repozitorijev bo vsebovalo jezikovne podatke, orodja in spletne servise, dokumentirane s kakovostnimi metapodatki in organizirane po standardiziranih kategorijah. Omogočen bo dostop do virov in poenoteno iskanje. Med viri, ki bodo na voljo, so tako brezplačni prostokodni kot tudi komercialni izdelki z omejenim in plačljivim dostopom.
 
-\textbf{META-RESEARCH} gradi mostove do povezanih tehnoloških področij. V okviru te dejavnosti skušamo izkoristiti napredek v drugih disciplinah in izrabiti inovativne raziskave za potrebe jezikovnih tehnologij. Osredotočamo se na izvajanje vrhunskih raziskav na področju stroj\-nega prevajanja, zbiranje podatkov, izdelavo podatkovnih zbirk in sestav\-ljanje jezikovnih virov za evalvacij\-ske namene; sestav\-ljanje seznamov orodij in metodologij; organiziranje delavnic in izobraževanj za člane skupnosti.
-\end{multicols}
+\textbf{META-RESEARCH} gradi mostove do povezanih tehnoloških področij. V okviru te dejavnosti skušamo izkoristiti napredek v drugih disciplinah in izrabiti inovativne raziskave za potrebe jezikovnih tehnologij. Osredotočamo se na izvajanje vrhunskih raziskav na področju stroj\-nega prevajanja, zbiranje podatkov, izdelavo podatkovnih zbirk in sestav\-ljanje jezikovnih virov za evalvacij\-ske namene; sestav\-ljanje seznamov orodij in metodologij; organiziranje delavnic in izobraževanj za člane skupnosti.\\
 \textbf{\centerline{office@meta-net.eu -- http://www.meta-net.eu}}
+\end{multicols}
 \vfill
-\makeatletter
-\@ifundefined{theHsection}{
-  \let
-}
-{
-  \renewcommand*{\theHsection}{\thepart.\thesection}
-}
-\makeatother
-\part*{\textcolor{white}{English}}
+
+\makeatletter \@ifundefined{theHsection}{ } {
+\renewcommand*{\theHsection}{\thepart.\thesection}} \makeatother
+%\part*{\textcolor{white}{English}}
 \setcounter{section}{0}
-\setcounter{figure}{0}
+\setcounter{figure}{0} 
 
 \addtocontents{toc}{\protect\clearpage\protect}
 \addtocontents{toc}{\protect\thispagestyle{empty}\protect}
@@ -2042,6 +2037,7 @@ Launched on 1 February 2010, META-NET has already conducted various activities i
 \appendix
 \addtocontents{toc}{\protect\bigskip}
 
+\phantomsection
 \bsection[Bibliografija -- References]{Bibliografija --- References}
 \bibliographystyle{unsrt}
 \vspace*{-0.6 cm}
@@ -2049,6 +2045,7 @@ Launched on 1 February 2010, META-NET has already conducted various activities i
   
 \cleardoublepage
 
+\phantomsection
 \bsection[Članstvo v META-NET -- META-NET Members]{Članstvo v META-NET --- META-NET Members}
 \label{metanetmembers}
 
@@ -2117,7 +2114,7 @@ Launched on 1 February 2010, META-NET has already conducted various activities i
 \begin{figure*}[htbp]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
-  \includegraphics[width=\textwidth]{../_media/meta-net_team.jpg}
+  %\includegraphics[width=\textwidth]{../_media/meta-net_team.jpg}
   % \fbox{Dummy -- we'll include the group photo of our META-NET meeting in Berlin here}
   \caption{Skoraj 100 strokovnjakov -- predstavnikov držav in jezikov, zbranih v okviru projekta META-NET -- je na srečanju v Berlinu 22. in 23. oktobra 2011 razprav\-ljalo o ključnih rezultatih in sporočilih zbirke Bela knjiga META-NET in jo dokončno oblikovalo. --- \textcolor{grey1}{About 100 language technology experts -- representatives of the countries and languages represented in META-NET -- discussed and finalised the key results and messages of the White Paper Series at a META-NET meeting in Berlin, Germany, on October 21/22, 2011.}}\medskip
   \colorrule{grey3}{\textwidth}{1.5pt}
@@ -2125,6 +2122,7 @@ Launched on 1 February 2010, META-NET has already conducted various activities i
 
 \cleardoublepage
 
+\phantomsection
 \bsection[Zbirka Bela knjiga META-NET -- The META-NET White Paper Series]{Zbirka Bela knjiga META-NET --- The META-NET\ \ \ \ \ \ White Paper Series}
 \label{whitepaperseries}
 
