@@ -1145,14 +1145,9 @@ Lansat pe data de 1 Februarie 2010, META-NET a desfășurat deja mai multe activ
 \addtocontents{toc}{\smallskip{\Large\textsf{\centerline{THE ROMANIAN LANGUAGE IN THE DIGITAL AGE}}\par}}
 
 \makeatletter
-\@ifundefined{theHsection}{%
-  \let
-}
-{
-  \renewcommand*{\theHsection}{\thepart.\thesection}
-}
+\@ifundefined{theHsection}{ }{ \renewcommand*{\theHsection}{\thepart.\thesection}}
 \makeatother
-\part*{\textcolor{white}{English}}
+%\part*{\textcolor{white}{English}}
 
 \setcounter{section}{0}
 \setcounter{figure}{0}
@@ -2306,12 +2301,14 @@ Launched on 1 February 2010, META-NET has already conducted various activities i
 \appendix
 \addtocontents{toc}{\protect\bigskip}
 
+\phantomsection
 \bsection[Referințe bibliografice -- References]{Referințe bibliografice --- References}
 \bibliographystyle{unsrt}
 \bibliography{romanian_references}
   
 \cleardoublepage
 
+\phantomsection
 \bsection[Membrii META-NET -- META-NET Members]{Membrii META-NET --- META-NET Members}
 \label{metanetmembers}
 
@@ -2377,7 +2374,7 @@ Launched on 1 February 2010, META-NET has already conducted various activities i
 \renewcommand*{\captionformat}{}
 
 \begin{figure*}[htbp]
-  \colorrule{grey3}{\textwidth}{1.5pt}\colorrule{grey3}{\textwidth}{1.5pt}
+  \colorrule{grey3}{\textwidth}{1.5pt}
   \center
   %\fbox{-- META-NET group picture omitted to keep the size of the PDF file small. --}
   \includegraphics[width=\textwidth]{../_media/meta-net_team.jpg}
@@ -2387,6 +2384,7 @@ Launched on 1 February 2010, META-NET has already conducted various activities i
 
 \cleardoublepage
 
+\phantomsection
 \bsection[Seria de studii META-NET -- The META-NET White Paper Series]{Seria de studii META-NET --- The META-NET\ \ \ \ \ \ White Paper Series}
 \label{whitepaperseries}
 
