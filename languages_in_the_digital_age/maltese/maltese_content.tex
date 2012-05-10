@@ -1177,17 +1177,15 @@ Imniedi fl-1 ta’ Frar 2010, META-NET għadu wettaq diversi attivitajiet fit-tl
 \setcounter{section}{0}
 \setcounter{figure}{0}
 
-%\makeatletter
-%\@ifundefined{theHsection}{
- % \let
-%}
-%{
- % \renewcommand*{\theHsection}{\thepart.\thesection}
-%}
-%\makeatother
+\makeatletter
+\@ifundefined{theHsection}{
+ \let
+}
+{
+ \renewcommand*{\theHsection}{\thepart.\thesection}
+}
+\makeatother
 %\part*{\textcolor{white}{English}}
-
-
 
 \cleardoublepage
 
