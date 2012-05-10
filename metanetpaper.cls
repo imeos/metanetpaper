@@ -83,18 +83,6 @@
   \newfontfamily\futuramedium{Futura Medium}
 \setmonofont[Scale=0.7]{DejaVu Sans Mono}
   \newfontfamily\linguistics[Scale=0.8]{DejaVu Serif}
-  
-% Own defs
-% Title for spine on cover
-\long\def\spineTitle#1{\gdef\@spineTitle{#1}}
-\def\@spineTitle{\@latex@warning@no@line{No \noexpand\spineTitle given}}
-  % Editors
-\def\editors#1{\gdef\@editors{#1}}
-\def\@editors{\@latex@warning@no@line{No \noexpand\editors given}}
-  % Autors with affiliation
-\def\authoraffiliation#1{\gdef\@authoraffiliation{#1}}
-\def\@authoraffiliation{\@latex@warning@no@line{No \noexpand\authoraffiliation given}}
-
 
 
 % Colors                                             
@@ -530,18 +518,33 @@
 }
 
 
-% Class options
+% Own command definitions
 % ----------------------------------------------------------------------------
+
   % Left text on spine
 \def\SpineLText#1{\gdef\@SpineLText{#1}}
 \def\@SpineLText{\@latex@warning@no@line{No \noexpand\SpineLText given}}
   % Right text on spine
 \def\SpineRText#1{\gdef\@SpineRText{#1}}
 \def\@SpineRText{\@latex@warning@no@line{No \noexpand\SpineRText given}}
-  % Left text on spine
+  % Quotes
 \def\quotes#1{\gdef\@quotes{#1}}
 \def\@quotes{\@latex@warning@no@line{No \noexpand\quotes given}}
+% Title for spine on cover
+\long\def\spineTitle#1{\gdef\@spineTitle{#1}}
+\def\@spineTitle{\@latex@warning@no@line{No \noexpand\spineTitle given}}
+  % Editors
+\def\editors#1{\gdef\@editors{#1}}
+\def\@editors{\@latex@warning@no@line{No \noexpand\editors given}}
+  % Autors with affiliation
+\def\authoraffiliation#1{\gdef\@authoraffiliation{#1}}
+\def\@authoraffiliation{\@latex@warning@no@line{No \noexpand\authoraffiliation given}}
+  % Language version
+\def\languageVersion#1{\gdef\@languageVersion{#1}}
 
+
+% Class options
+% ----------------------------------------------------------------------------
 
 % Set the cover for the printversion
 \DeclareOption{cover}{%
@@ -647,7 +650,14 @@
             \begin{flushleft}
               \fontsize{14}{1.2}\selectfont{%
                 \textsf{%
-                  \textcolor{white}{%
+                    \textcolor{white}{%
+                    \ifx\@languageVersion\@null
+                      \@author
+                    \else
+                      \MakeUppercase{\@languageVersion}\\
+                      \vspace*{10mm}
+                      \@author
+                    \fi
                     \@author
                   }
                 }
@@ -753,7 +763,13 @@
             \fontsize{14}{24}\selectfont{%
               \textsf{%
                 \textcolor{white}{%
-                  \@author
+                  \ifx\@languageVersion\@null
+                    \@author
+                  \else
+                    \MakeUppercase{\@languageVersion}\\
+                    \vspace*{10mm}
+                    \@author
+                  \fi
                 }
               }
             }
