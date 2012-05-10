@@ -1001,6 +1001,14 @@ META-NET es va posar en marxa l’1 de febrer de l’any 2010 i ha dut a terme v
 \addtocontents{toc}{\smallskip{\Large\textsf{\centerline{THE CATALAN LANGUAGE IN THE DIGITAL AGE}}\par}}
 \setcounter{section}{0}
 \setcounter{figure}{0}
+\makeatletter
+\@ifundefined{theHsection}{
+}
+{
+  \renewcommand*{\theHsection}{\thepart.\thesection}
+}
+\makeatother
+
 \cleardoublepage
 
 % --------------------------------------------------------------------------
@@ -1330,7 +1338,7 @@ Typical software applications for language processing consist of several compone
 \item Semantic analysis: disambiguation (which meaning of \textit{apple} is the right one in a given context?), resolving anaphora and referring expressions like \textit{she}, \textit{the car}; representing the meaning of the sentence in a machine-readable way.
 \end{itemize}
 
-Task-specific modules then perform many different operations such as automatic summarisation of an input text, database lookups and many others. Below, we will illustrate core application areas and highlight their core modules. Again, the architectures of the applications are highly simplified and idealised, to illustrate the complexity of Language Technology (LT) applications in a generally understandable way. The general situation of LT for the Catalan language is summarised in figure~\ref{fig:lrlttable_en} (p.~\pageref{fig:lrlttable_en}) at the end of this chapter. This table lists all tools and resources that are boldfaced in the text.  The sections discussing the core application areas also contain an overview of the industries active in the respective field in Catalonia. 
+Task-specific modules then perform many different operations such as automatic summarisation of an input text, database lookups. Below, we will illustrate core application areas and highlight their core modules. Again, the architectures of the applications are highly simplified and idealised, to illustrate the complexity of Language Technology (LT) applications in a generally understandable way. The general situation of LT for the Catalan language is summarised in figure~\ref{fig:lrlttable_en} (p.~\pageref{fig:lrlttable_en}) at the end of this chapter. This table lists all tools and resources that are boldfaced in the text.  The sections discussing the core application areas also contain an overview of the industries active in the respective field in Catalonia. 
 
 
 \begin{figure*}[bt]
@@ -1348,7 +1356,7 @@ After introducing the core application areas, we will give a short overview of t
 
 \subsection{Core Application Areas}
 
-    In this section, we focus on the most important LT tools and resources, and give an overview of LT activities in Catalan. Tools and resources that are set in bold in the text can also be found in the table at the end of this chapter.
+    In this section, we focus on the most important LT tools and resources, and give an overview of LT activities in Catalan. 
 
 \subsubsection{Language Checking}
 
@@ -1356,14 +1364,14 @@ Anyone using a word processing tool such as Microsoft Word has come across a spe
 
 Language checking (see figure~\ref{fig:langcheckingaarch_en}) either requires the formulation of language-specific \textbf{grammars}, i.\,e.~a high degree of expertise and manual labour, or the use of a so-called statistical language model. Such models calculate the probability of a particular word occurring in a specific environment (i.\,e.~the preceding and following words).
 
-For example, ``llibre anglès'' is a much more probable word sequence than ``llibre anglesa''. A statistical language model can be automatically derived using a large amount of (correct) language data, a \textbf{text corpus}. Up to now, these approaches have mostly been developed and evaluated on English language data. However, they do not necessarily transfer straightforwardly to Catalan with its flexible word order and richer inflection. 
+For example, \textit{llibre anglès} is a much more probable word sequence than \textit{llibre anglesa}. A statistical language model can be automatically derived using a large amount of (correct) language data, a \textbf{text corpus}. Up to now, these approaches have mostly been developed and evaluated on English language data. However, they do not necessarily transfer straightforwardly to Catalan with its flexible word order and richer inflection. 
 
 
-The use of Language Checking is not limited to word processing tools. It is also applied in authoring support systems. Accompanying the rising number of technical products, the amount of technical documentation has rapidly increased over the last decades. Fearing customer complaints about wrong usage and damage claims resulting from bad or badly understood instructions, companies have begun to focus increasingly on the quality of technical documentation, and at the same time targeting the international market. Advances in natural language processing lead to the development of authoring support software, which assists the writer of technical documentation to use vocabulary and sentence structures consistent with certain rules and (corporate) terminology restrictions.
+The use of Language Checking is not limited to word processing tools. It is also applied in authoring support systems. Accompanying the rising number of technical products, the amount of technical documentation has rapidly increased over the last decades. To offset customer complaints about incorrect use and damage claims resulting from poorly understood instructions, companies are increasingly focusing on the quality of technical documentation while targeting the international market (via translation or localisation) at the same time. Advances in natural language processing lead to the development of authoring support software, which assists the writer of technical documentation to use vocabulary and sentence structures consistent with certain rules and (corporate) terminology restrictions.
 
 \boxtext{Language checking is not limited to word processors but also applies to authoring systems.}
 
-Only a few companies and Language Service Providers offer products in this area for Catalan. Enciclopèdia Catalana, Maxigrammar and Inèdit have created and commercialised products that include spell and grammar checking for Catalan, as well as specific checking facilities adapted to different domains and styles. Softcatalà and Barcelona Media have also developed language tools that are offered to the community as web applications. A new version of “\textit{El Corrector}” has recently been developed and commercialised as iPod, iPhone and iPad apps. 
+Only a few companies and Language Service Providers offer products in this area for Catalan. Enciclopèdia Catalana, Maxigrammar and Inèdit have created and commercialised products that include spell and grammar checking for Catalan, as well as specific checking facilities adapted to different domains and styles. Softcatalà and Barcelona Media have also developed language tools that are offered to the community as web applications. A new version of ``\textit{El Corrector}” has recently been developed and commercialised as iPod, iPhone and iPad apps. 
 
 
 \begin{figure*}[htb]
@@ -1376,7 +1384,7 @@ Only a few companies and Language Service Providers offer products in this area 
 \end{figure*}
 
 
-Besides spell checkers and authoring support, Language Checking is also important in the field of computer-assisted language learning and is applied to automatically correct queries sent to Web Search engines, e.\,g.~Google’s ‘Did you mean…’ suggestions. 
+Besides spell checkers and authoring support, Language Checking is also important in the field of computer-assisted language learning and is applied to automatically correct queries sent to Web Search engines, e.\,g.~Google’s \textit{Did you mean…} suggestions. 
 
 \subsubsection{Web Search}
 
@@ -1427,17 +1435,18 @@ Speech interaction technology is the basis for the creation of interfaces that a
 At its core, speech interaction comprises the following four different technologies:
 \begin{itemize}
 \item Automatic \textbf{speech recognition} (ASR) is responsible for determining which words were actually spoken given a sequence of sounds uttered by a user.
-\item Syntactic analysis and semantic interpretation deal with analysing the syntactic structure of a user’s utterance and interpret-ting the latter according to the given system’s purpose.
+\item Syntactic analysis and semantic interpretation deal with analysing the syntactic structure of a user’s utterance and interpret
+ing the latter according to the given system’s purpose.
 \item Dialogue Management is required for determining, on the part of the system the user interacts with, which action shall be taken given the user’s input and the system’s functionality.
 \item \textbf{Speech Synthesis} (Text-to-Speech, TTS) technology is employed for transforming the wording of that utterance into sounds that will be output to the user. 
 \end{itemize}
 One of the major challenges is to have an ASR system recognise the words uttered by a user as precisely as possible. This requires either a restriction of the range of possible user utterances to a limited set of keywords, or the manual creation of language models that cover a large range of natural language user utterances.  Using machine learning techniques, language models can also be generated automatically from \textbf{speech corpora}, i.\,e., large collections of speech audio files and text transcriptions.
 
-Whereas the former results in a rather rigid and inflexible usage of a VUI and possibly causes a poor user acceptance, the creation, tuning and maintenance of language models may increase the costs significantly. However, VUIs that employ language models and initially allow a user to flexibly express their intent – evoked, e.\,g.~by a \textit{How may I help you} greeting – show both a higher automation rate and a higher user acceptance and may therefore be considered as advantageous over a less flexible \textit{directed dialogue} approach.
+Whereas the former results in a rather rigid and inflexible usage of a VUI and possibly causes a poor user acceptance, the creation, tuning and maintenance of language models may increase the costs significantly. However, VUIs that employ language models and initially allow a user to flexibly express their intent – prompted by a \textit{How may I help you} greeting – show both a higher automation rate and a higher user acceptance and may therefore be considered as advantageous over a less flexible \textit{directed dialogue} approach.
 
 \boxtext{Speech interaction is the basis for interfaces that allow a user to interact with spoken language.}
 
-For the output part of a VUI, companies tend to use utterances pre-recorded by professional – ideally corporate – speakers a lot. For static utterances, in which the wording does not depend on the particular contexts of use or the personal data of the given user, this will result in a rich user experience. However, the more dynamic content an utterance needs to consider, the more the user experience may suffer from a poor prosody resulting from concatenating single audio files. In contrast, today’s TTS systems prove superior, though optimisable, regarding the prosodic naturalness of dynamic utterances.  
+For the output part of a VUI, companies tend to use utterances pre-recorded by professional – ideally corporate – speakers. For static utterances, in which the wording does not depend on the particular contexts of use or the personal data of the given user, this will result in a rich user experience. However, the more dynamic content an utterance needs to consider, the more the user experience may suffer from a poor prosody resulting from concatenating single audio files. In contrast, today’s TTS systems prove superior, though optimisable, regarding the prosodic naturalness of dynamic utterances.  
 
 Regarding the market for speech interaction technology, the last decade has been characterised by a strong standardisation of the interfaces between the different technology components, as well as by standards for creating particular software artefacts for a given application. There also has been strong market consolidation within the last ten years, particularly in the field of ASR and TTS. Here, the national markets in the G20 countries – i.\,e.~economically strong countries with a considerable population - are dominated by less than 5 players worldwide, with Nuance being the most prominent one in Europe, also for Catalan, although some smaller local companies are starting to compete, such as Verbio \cite{CAT-Nota25}, which is a spin-off of Universitat Politècnica de Catalunya and has its own speech technology. 
 
