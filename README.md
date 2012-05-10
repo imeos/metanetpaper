@@ -14,6 +14,8 @@ LaTeX class and files to typeset bilingual papers of the META-NET project in a t
 ## Custom, class specific commands
 
 ### For use within the *_preamble.tex-files
+`[\spineTitle]`: Title for the spine of the cover, english version first
+`[\authoraffiliation]`: (optional) Version of a language e.g. bokmålsversjon or nynorskversjon
 `[\authoraffiliation]`: Author(s) and the organizations their affiliated with   
 `[\FundingLNotice]  `: Funding notice left column  
 `[\FundingRNotice]  `: Funding notice right column  
