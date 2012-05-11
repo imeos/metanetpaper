@@ -649,16 +649,15 @@
           \ParallelRText{
             \begin{flushleft}
               \fontsize{14}{1.2}\selectfont{%
-                \textsf{%
-                    \textcolor{white}{%
-                    \ifx\@languageVersion\@null
-                      \@author
-                    \else
-                      \MakeUppercase{\@languageVersion}\\
-                      \vspace*{10mm}
-                      \@author
-                    \fi
+              \textsf{%
+                \textcolor{white}{%
+                  \ifx\@languageVersion\@null
                     \@author
+                  \else
+                    \MakeUppercase{\@languageVersion}\\
+                    \vspace*{10mm}
+                    \@author
+                  \fi
                   }
                 }
               }
