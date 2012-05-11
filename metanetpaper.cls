@@ -8,7 +8,7 @@
 %  MM     MM   MMMMMM    MM   MM    MM            MM   MMM  MMMMMMM    MM
 %
 %
-%                - META-NET Language White Paper | CLASS -
+%             - META-NET Language White Paper | XeTeX CLASS -
 %
 % 
 % ----------------------------------------------------------------------------
@@ -452,7 +452,7 @@
       }
     \end{minipage}
     % Authors
-    \begin{Parallel}[c]{81mm}{77mm}
+    \begin{Parallel}[c]{80.5mm}{76.5mm}
       \ParallelLText{
         \
       }
@@ -753,7 +753,7 @@
         }
       \end{minipage}
       % Authors
-      \begin{Parallel}[c]{83mm}{75mm}
+      \begin{Parallel}[c]{83.5mm}{74.5mm}
         \ParallelLText{
           \
         }
@@ -778,10 +778,10 @@
       \end{Parallel}
       % Mocktitle
       \cleardoublepage
-      \ThisCenterWallPaper{1}{../_media/mocktitlepage.pdf}
+      \ThisCenterWallPaper{1}{../_media/mocktitlepage_ebook.pdf}
       \vspace*{3mm}
       % Left column
-      \begin{minipage}[t]{81mm}
+      \begin{minipage}[t]{83mm}
         \color{grey3}
         \textsf{
           \begin{flushright}
@@ -819,7 +819,7 @@
         }
       \end{minipage}
       % Authors
-      \begin{Parallel}[c]{81mm}{77mm}
+      \begin{Parallel}[c]{83.5mm}{74.5mm}
         \ParallelLText{
           \
         }
