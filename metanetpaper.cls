@@ -461,7 +461,13 @@
           \fontsize{14}{24}\selectfont{%
             \textsf{%
               \textcolor{red}{%
-                \@authoraffiliation
+                \ifx\@languageVersion\@null
+                  \@authoraffiliation
+                \else
+                  \MakeUppercase{\@languageVersion}\\
+                  \vspace*{10mm}
+                  \@authoraffiliation
+                \fi
               }
             }
           }
@@ -828,7 +834,13 @@
             \fontsize{14}{24}\selectfont{%
               \textsf{%
                 \textcolor{red}{%
-                  \@authoraffiliation
+                  \ifx\@languageVersion\@null
+                    \@authoraffiliation
+                  \else
+                    \MakeUppercase{\@languageVersion}\\
+                    \vspace*{10mm}
+                    \@authoraffiliation
+                  \fi
                 }
               }
             }
