@@ -554,9 +554,9 @@ Pero máis aló do estado actual da tecnoloxía, xurdirán importantes cambios d
 No seu nivel básico, a TA simplemente substitúe palabras nunha lingua natural por palabras noutra. Isto pode resultar útil en disciplinas que posúen unha linguaxe moi restrinxida e con fórmulas establecidas, tales como os informes meteorolóxicos. Non obstante, para que exista unha boa tradución dos textos menos estandarizados, as unidades textuais máis grandes (frases, oracións, ou mesmo pasaxes completas) teñen que coincidir coas súas unidades homólogas máis próximas na lingua meta. Neste caso, a principal dificultade reside no feito de que a linguaxe humana é ambigua, e presenta retos a varios niveis, como por exemplo a \textbf{desambiguación do sentido da palabra} a nivel léxico ("Gato" pode significar animal ou aparello mecánico), ou a vinculación de frases preposicionais a nivel sintáctico como en:
 
 \begin{itemize}
-\item[] O policía observou ao home co telescopio.
+\item[] \textit{O policía observou ao home co telescopio}
 %\hspace{10pt}\textit{[The policeman observed the man with the telescope.]}\\
-\item[] O policía observou ao home co revólver.
+\item[]\textit{O policía observou ao home co revólver.}
 %\hspace{10pt}\textit{[The policeman observed the man with the revolver.]}
 \end{itemize}
 
@@ -1453,14 +1453,12 @@ Anyone using a word processing tool such as Microsoft Word has come across a spe
 
 Most available spell checkers (including Microsoft Word) will find no errors in this poem because they mostly look at words in isolation. However, for detecting so called homophone errors (e.\,g., “Eye” instead of “I”), the language checker needs to consider the context in which a word occurs. For Galician, even spell checking requires analysing the context in many cases. A typical case is when the orthographic error transforms one word into another, which also exits. In the following example, the first sentence contains a frequent error (problems with orthographic accents). The second sentence is the corrected version of the first one.
 
-\textit{A casa do meu tío \textbf{e} a casa da miña avoa.}
-
-\textit{[The house of my uncle and the house of my grandmother]}
-
-\textit{A casa do meu tío \textbf{é} a casa da miña avoa.}
-
-\textit{[The house of my uncle is the house of my grandmother]}
-
+\begin{itemize}
+\item[] \textit{A casa do meu tío \textbf{e} a casa da miña avoa.}
+\item[] \textit{[The house of my uncle and the house of my grandmother]}
+\item[] \textit{A casa do meu tío \textbf{é} a casa da miña avoa.}
+\item[] \textit{[The house of my uncle is the house of my grandmother]}
+\end{itemize}
 
 To automatically correct these errors, it is not enough to check each word in a dictionary, since all words in the first sentence are correct in isolation. This either requires the formulation of language-specific \textbf{grammars}, i.\,e., a high degree of expertise and manual labour, or the use of a so called statistical language model. Such models calculate the probability of a particular word occurring in a specific environment (i.\,e., the preceding and following words). For example, “é a” is a much more probable word sequence than “e a”. A statistical language model can be derived automatically using a large amount of (correct) language data (i.\,e., a \textbf{text corpus}).
 
@@ -1555,10 +1553,10 @@ The idea of using digital computers for translation of natural languages came up
 At its basic level, MT simply substitutes words in one natural language by words in another. This can be useful in subject domains with a very restricted, formulaic language, e.\,g., weather reports. However, for a good translation of less standardised texts, larger text units (phrases, sentences, or even whole passages) need to be matched to their closest counterparts in the target language. The major difficulty here lies in the fact that human language is ambiguous, which yields challenges on multiple levels, e.\,g., word sense disambiguation at the lexical level (‘Jaguar’ can mean a car or an animal) or on other levels as in:
 
 \begin{itemize}
-\item[] O policía observou ao home co telescopio.
-\item[] [The policeman observed the man with the telescope.]
-\item[] O policía observou ao home co revólver.
-\item[] [The policeman observed the man with the revolver.]
+\item[] \textit{O policía observou ao home co telescopio.}
+\item[] \textit{[The policeman observed the man with the telescope.]}
+\item[] \textit{O policía observou ao home co revólver.}
+\item[] \textit{[The policeman observed the man with the revolver.]}
 \end{itemize}
 
 One way of approaching the task is based on linguistic rules. For translations between closely related languages, a direct translation may be feasible in cases like the example above. But often rule-based (or knowledge-driven) systems analyse the input text and create an intermediary, symbolic representation, from which the text in the target language is generated. The success of these methods is highly dependent on the availability of extensive lexicons with morphological, syntactic, and semantic information, and large sets of grammar rules carefully designed by a skilled linguist.
