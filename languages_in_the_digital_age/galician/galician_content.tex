@@ -18,6 +18,8 @@
 
 \maketitle
 
+\cleardoublepage
+
 %\null
 %\pagestyle{empty} 
 
@@ -170,7 +172,6 @@ As aproximadamente 80 linguas que existen en Europa son un dos seus bens cultura
 \subsection{A tecnoloxía lingüística é unha tecnoloxía instrumental clave}
 
    No pasado, as inversións centrábanse no ensino de idiomas e na súa tradución. Por exemplo, segundo algunhas estimacións, o mercado europeo para a tradución, a interpretación, a localización de \textit{software}, e a globalización das páxinas web era, no ano 2008, de 8,4 miles de millóns de euros, e esperábase un crecemento dun 10\% anual \cite{GAL-Nota4}.  Non obstante, estes recursos existentes non son suficientes para satisfacer as necesidades actuais e as futuras. 
-
 A tecnoloxía lingüística  (tendo como obxectivo todas as formas de texto escrito e falado)  permite que os cidadáns colaboren, fagan negocios, compartan coñecementos, e participen nos debates sociais e políticos independentemente das barreiras lingüísticas ou dos coñecementos informáticos.  A tecnoloxía lingüística hoxe en día axúdanos en tarefas cotiás, como escribir un correo electrónico, buscar información na rede, ou reservar un voo. Estamos a nos beneficiar da tecnoloxía lingüística cando:
 
 \begin{itemize}
@@ -253,10 +254,6 @@ O territorio xeográfico da lingua galega está delimitada pola comunidade autó
  
 Galicia é, segundo recoñece a Constitución, unha comunidade autónoma que conta con institucións propias: o seu propio parlamento, goberno, corpos de seguridade, televisión e radio públicas, bandeira, etc. O Estatuto de Autonomía de Galicia, aprobado en 1981, recoñece o galego como lingua “propia” de Galicia e idioma cooficial da comunidade, que “todos teñen o dereito de coñecer e usar" e, ao mesmo tempo, responsabiliza os poderes públicos da normalización do galego en todos os ámbitos. A Lei de normalización lingüística, aprobada por unanimidade o 15 de xuño de 1983 no Parlamento de Galicia, garante e ordena os dereitos lingüísticos dos cidadáns, especialmente os referidos aos ámbitos da administración, a educación e os medios de comunicación. 
 
-En virtude da Lei de normalización lingüística, a Administración local e a autonómica están obrigadas a escribir todos os seus documentos oficiais en galego; está establecida a presenza do galego en todo o sistema educativo e garántese a promoción lingüística nos países con comunidades galegas emigrantes e nas áreas limítrofes con Galicia nas que se fala o galego. 
-
-Dende a morte de Franco, a situación do galego, sobre todo no que fai referencia ao seu status legal e á súa promoción, mellorou notablemente \cite{GAL-Nota7}. Así e todo, estas melloras non conseguiron o que realmente importa, xa que aínda non se conseguiu un aumento no uso falado do idioma, e unha plena igualdade xurídica co idioma español.
-
 \begin{figure*}[htb]
 \center
 \begin{tabular}{|c|c|c|c|c|}
@@ -267,6 +264,10 @@ Dende a morte de Franco, a situación do galego, sobre todo no que fai referenci
 \end{tabular} 
 \caption{Competencia lingüística en galego \cite{GAL-Nota8}.}
 \end{figure*}
+
+En virtude da Lei de normalización lingüística, a Administración local e a autonómica están obrigadas a escribir todos os seus documentos oficiais en galego; está establecida a presenza do galego en todo o sistema educativo e garántese a promoción lingüística nos países con comunidades galegas emigrantes e nas áreas limítrofes con Galicia nas que se fala o galego. 
+
+Dende a morte de Franco, a situación do galego, sobre todo no que fai referencia ao seu status legal e á súa promoción, mellorou notablemente \cite{GAL-Nota7}. Así e todo, estas melloras non conseguiron o que realmente importa, xa que aínda non se conseguiu un aumento no uso falado do idioma, e unha plena igualdade xurídica co idioma español.
 
 \subsection{Particularidades do idioma galego}
 
@@ -453,9 +454,10 @@ Calquera persoa que empregue unha ferramenta de procesamento de textos, como Mic
 
 A meirande parte dos correctores ortográficos (incluído Microsoft Word) non atoparán erros neste poema, porque se fixan principalmente nas palabras de forma illada. Non obstante, para detectar os erros chamados homófonos (por exemplo, “Eye" no canto de “I"), o corrector lingüístico ten que considerar o contexto no que se atopa a palabra. No caso do galego, mesmo a corrección ortográfica require unha análise do contexto en moitos casos. Un caso típico sucede cando o erro ortográfico transforma unha palabra noutra que tamén existe. No seguinte exemplo, a primeira frase contén un erro frecuente (problemas con acentos ortográficos). A segunda frase é a versión corrixida da primeira.
 
-\textit{A casa do meu tío \textbf{e} a casa da miña avoa.}
-
-\textit{A casa do meu tío \textbf{é} a casa da miña avoa.} 
+\begin{itemize}
+\item[]\textit{A casa do meu tío \textbf{e} a casa da miña avoa.}
+\item[]\textit{A casa do meu tío \textbf{é} a casa da miña avoa.} 
+\end{itemize}
  
 Para corrixir automaticamente estes erros, non é suficiente facer unha comprobación de cada palabra no dicionario, xa que todas as palabras da primeira frase son correctas de forma illada. Isto ou ben require a formulación de \textbf{gramáticas} específicas para cada lingua (é dicir, un alto grao de experiencia e traballo manual), ou o uso dun modelo lingüístico estatístico. Estes modelos calculan a probabilidade de que se dea unha palabra nun contexto específico (é dicir, as palabras anteriores e as seguintes). Por exemplo, “é a" é unha secuencia de palabras moito máis probable que “e a". Ao empregar unha grande cantidade de datos (correctos) lingüísticos (é dicir, un \textbf{corpus textual}), pódese obter automaticamente un modelo lingüístico estatístico. Ata o de agora, este tipo de mecanismos foron principalmente desenvolvidos e avaliados con datos do idioma inglés. Non obstante, non sempre son aplicables a outras linguas, como por exemplo as linguas sintéticas ou as linguas con flexión sintáctica, como o galego. Para estes idiomas máis complexos, un corrector lingüístico avanzado de alta precisión requirirá o desenvolvemento de métodos máis sofisticados e que implican unha análise lingüística máis profunda.
 
@@ -1258,16 +1260,14 @@ As the strengths and weaknesses of statistical and rule-based systems tend to be
 Galician is part of the Romance family of languages. It’s the co-official language in the Spanish region of Galicia. Galicia has over 2,800,000 inhabitants. Approximately, two million persons are speakers of Galician and the rest speaks it as a second language \cite{GAL-Nota5,GAL-Nota6}.
 
 The Galician-speaking territory is delimited by the Autonomous Community of Galicia and the farthest western area of Asturias, León and Zamora, as well as three small areas in Extremadura. Apart from this, and due to the historical circumstances of the Galician emigration around the world, there are some regions with a large concentration of people of Galician origin. 
-
 This population preserved its language as communication vehicle -- not only in the private field but also in the public field -- through periodicals, literary publications or even in the radio in host countries. There are still large Galician-speaking communities in other regions of Spain (Madrid, Barcelona, the Basque Country and the Canary Islands), in Europe (Portugal, France, Switzerland, Germany, the United Kingdom and the Netherlands) and in America (Argentina, Uruguay, Brazil, Venezuela, Cuba, Mexico and the United States).
 
 Galicia is -- by constitutional recognition -- an autonomous community with its own institutions: its Parliament, its own government, security corps, its own public media, flag, etc.
-
 The Statute of Autonomy of Galicia -- passed in 1981 -- recognised Galician as the “own” language of Galicia and the co-official language of the Community, which “everyone has the right to know and use”, and at the same time it made the authorities responsible for the normalisation of Galician in all fields. The Linguistic Normalisation Act -- passed unanimously on June 15th, 1983 by the Galician Parliament -- guarantees and regulates citizens’ linguistic rights, particularly those regarding the fields of administration, education and the media. 
 
-In accordance with the Linguistic Normalisation Act, the local and autonomic administrations are obliged to write all of their official documents in Galician; the use of Galician is established in the whole educational system and the promotion of the language is guaranteed in those countries with emigrant Galician communities as well as in Galician-speaking areas bordering the Community. 
-
 \boxtext{Galician has around 2 million native speakers.}
+
+In accordance with the Linguistic Normalisation Act, the local and autonomic administrations are obliged to write all of their official documents in Galician; the use of Galician is established in the whole educational system and the promotion of the language is guaranteed in those countries with emigrant Galician communities as well as in Galician-speaking areas bordering the Community. 
 
 Since the death of Franco, the situation of Galician, especially regarding its legal status and promotion, has remarkably advanced \cite{GAL-Nota7}. Nevertheless, all these improvements didn't come with what really matters; a clear growth in the spoken use of the language, and full legal equality with Spanish has not been reached yet.
 
@@ -1645,12 +1645,12 @@ Graduate courses offer a more targeted professional training. There are several 
 
 There are over 30 research groups in Spain spread across the universities, working on speech recognition, natural language processing, text-to-text translation and speech synthesis. The Sociedad Española para el Procesamiento del Lenguaje Natural (SEPLN, Spanish Society for Natural Language Processing), is a non-profit organisation with over 300 members, both from academia and industry, which was created in 1984 with the purpose to promote and spread activities related to teaching, research and development of NLP, on both national and international level. SEPLN organises seminaries, symposiums and conferences and promotes collaboration with national and international institutions.
 
-SEPLN organises an annual conference, which is attended yearly by an increasing number of researchers working on NLP, both from Spain and abroad. The association also edits a periodical journal and maintains a web server with information about issues related to the natural language processing and an open forum for members.
+SEPLN organises an annual conference, which is attended by an increasing number of researchers working on NLP, both from Spain and abroad. The association also edits a periodical journal and maintains a web server with information about issues related to the natural language processing and an open forum for members.
 
-The Spanish Network on Speech Technology (RTTH) \cite{GAL-Nota34} is a common forum where researchers (presently more than 25o researchers) in Speech Technology combine efforts and share experiences in order to:
+The Spanish Network on Speech Technology (RTTH) \cite{GAL-Nota34} is a common forum where researchers (presently more than 250 researchers) in Speech Technology combine efforts and share experiences in order to:
 
 \begin{itemize}
-	\item Progress in building partnerships and integration of network members to maintain Spain's leadership in the investigation of Spanish, and also enhance co-official languages such as Catalan, Basque and Galician.
+	\item Progress in building partnerships and integration of network members to maintain Spain's leadership in the investigation of Spanish, and also enhance co-official languages (Catalan, Basque and Galician).
 	\item Promote research in speech technology to attract new young researchers in this field through training, student exchanges, scholarships and awards.
 	\item	 Attract investments for business research by finding new applications that offer new business opportunities. 
 \end{itemize}
@@ -2143,35 +2143,35 @@ Case 100 expertos en tecnoloxías da linguaxe -- representantes dos países e da
   \setlength{\tabcolsep}{2em}
   \begin{tabularx}{\textwidth}{lllll} \toprule\addlinespace
   %\begin{tabulary}{170mm}{LLL} \toprule
-  Alemán & German & Deutsch\\
-  Búlgaro & Bulgarian & български \\
-  Catalán & Catalan & català\\
-  Checo & Czech & čeština\\
-  Croata & Croatian & hrvatski\\
-  Danés & Danish & dansk\\
-  Eslovaco & Slovak & slovenčina\\
-  Esloveno & Slovene & slovenščina\\
-  Español & Spanish & español\\
-  Estoniano & Estonian & eesti\\
-  Éuscaro & Basque & euskara\\
-  Finlandés & Finnish & suomi\\
-  Francés & French & français\\
-  Galego & Galician & galego\\
-  Grego & Greek & ελληνικά\\
-  Holandés & Dutch & Nederlands\\
-  Húngaro & Hungarian & magyar\\ 
-  Inglés & English & English\\
-  Irlandés & Irish & Gaeilge\\
-  Islandés & Icelandic & íslenska\\
-  Italiano & Italian & italiano\\
-  Letón & Latvian & latviešu valoda\\
-  Lituano & Lithuanian & lietuvių kalba\\
-  Maltés & Maltese & Malti\\
-  Noruegués Bokmål & Norwegian Bokmål & bokmål\\
-  Noruegués Nynorsk & Norwegian Nynorsk & nynorsk\\
-  Polaco & Polish & polski\\
-  Portugués & Portuguese & português\\
-  Romanés & Romanian & română\\
-  Serbio & Serbian & српски\\
-  Sueco & Swedish & svenska\\  \addlinespace \bottomrule
+ & Alemán & German & Deutsch\\
+ & Búlgaro & Bulgarian & български \\
+ & Catalán & Catalan & català\\
+ & Checo & Czech & čeština\\
+ & Croata & Croatian & hrvatski\\
+ & Danés & Danish & dansk\\
+ & Eslovaco & Slovak & slovenčina\\
+ & Esloveno & Slovene & slovenščina\\
+ & Español & Spanish & español\\
+ & Estoniano & Estonian & eesti\\
+ & Éuscaro & Basque & euskara\\
+ & Finlandés & Finnish & suomi\\
+ & Francés & French & français\\
+ & Galego & Galician & galego\\
+ & Grego & Greek & ελληνικά\\
+ & Holandés & Dutch & Nederlands\\
+ & Húngaro & Hungarian & magyar\\ 
+ & Inglés & English & English\\
+ & Irlandés & Irish & Gaeilge\\
+ & Islandés & Icelandic & íslenska\\
+ & Italiano & Italian & italiano\\
+ & Letón & Latvian & latviešu valoda\\
+ & Lituano & Lithuanian & lietuvių kalba\\
+ & Maltés & Maltese & Malti\\
+ & Noruegués Bokmål & Norwegian Bokmål & bokmål\\
+ & Noruegués Nynorsk & Norwegian Nynorsk & nynorsk\\
+ & Polaco & Polish & polski\\
+ & Portugués & Portuguese & português\\
+ & Romanés & Romanian & română\\
+ & Serbio & Serbian & српски\\
+ & Sueco & Swedish & svenska\\  \addlinespace \bottomrule
 \end{tabularx}
