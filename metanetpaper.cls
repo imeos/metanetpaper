@@ -57,6 +57,8 @@
 \RequirePackage{multirow}
 \RequirePackage{rotating} % Sideways text and figures
 \RequirePackage{colortbl}
+\RequirePackage{etoolbox} % Conditionally select images based on doc. class
+\newtoggle{ebook}
 
 
 % Class definitions
@@ -711,6 +713,9 @@
       \end{flushleft}
     \end{minipage}
   }
+  
+  % Switch for \iftoggle{(name)}{(true)}{(false)}
+  \toggletrue{ebook} 
   
   % Title & Mocktitle
     % Maketitle
