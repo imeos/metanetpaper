@@ -27,10 +27,6 @@
 częścią serii wydawniczej, której celem jest upowszechnianie
 wiedzy na temat technologii językowych i~ich możliwych zastosowań. 
 
-Raport jest przeznaczony dla osób zajmujących się edukacją,
-dziennikarzy, polityków, przedstawicieli społeczności językowych
-i~innych zainteresowanych tą problematyką. 
-
 Dostępność i~wykorzystanie technologii językowych w~Europie są
 różne w~zależności od języka. Dlatego też działania, które
 należy podjąć, aby odpowiednio wspierać badania i~rozwój
@@ -59,8 +55,7 @@ uzupełnienie wykrytych braków technologicznych do 2020~r. }
 
 \ParallelRText{\selectlanguage{english} This white paper is part of
 a~series that promotes knowledge about language technology and its
-potential. It addresses journalists, politicians, language
-communities, educators and others. The availability and use of
+potential. The availability and use of
 language technology in Europe varies between languages. Consequently,
 the actions that are required to further support research and
 development of language technologies also differ. The required
@@ -4498,8 +4493,12 @@ Bernardo Magnini\\
 \renewcommand*{\figureformat}{} \renewcommand*{\captionformat}{} 
 
 \begin{figure*}[htb] \colorrule{grey3}{\textwidth}{1.5pt} \center
-  \fbox{-- META-NET group picture omitted to keep the size of the PDF file small. --}
-  %\includegraphics[width=\textwidth]{../_media/meta-net_team.jpg}
+  %\fbox{-- META-NET group picture omitted to keep the size of the PDF file small. --}
+  \iftoggle{ebook}{%
+    \includegraphics[width=\textwidth]{../_media/meta-net_team_ebook.jpg}
+  }{%
+    \includegraphics[width=\textwidth]{../_media/meta-net_team.jpg}
+  }
   \caption{Około 100 ekspertów ds. technologii językowych --
 przedstawicieli krajów i~języków reprezentowanych w~sieci META-NET
 -- omawiało podstawowe rezultaty zawarte w~raportach

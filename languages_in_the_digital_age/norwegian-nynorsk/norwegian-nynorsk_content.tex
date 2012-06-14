@@ -2530,7 +2530,11 @@ Launched on 1 February 2010, META-NET has already conducted various activities i
 \begin{figure*}[htbp]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
-  \includegraphics[width=\textwidth]{../_media/meta-net_team.jpg}
+  \iftoggle{ebook}{%
+    \includegraphics[width=\textwidth]{../_media/meta-net_team_ebook.jpg}
+  }{%
+    \includegraphics[width=\textwidth]{../_media/meta-net_team.jpg}
+  }
   \caption{Omtrent 100 ekspertar innan språkteknologi --
     representantar for landa og språka i META-NET -- sluttførte
     diskusjonen om nøkkelresultata og -konklusjonane i kvitbokserien

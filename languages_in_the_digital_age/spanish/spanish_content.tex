@@ -2047,8 +2047,12 @@ Launched on 1 February 2010, META-NET has already conducted various activities i
 \begin{figure*}[htbp]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
-  \fbox{-- META-NET group picture omitted to keep the size of the PDF file small. --}
-  %\includegraphics[width=\textwidth]{../_media/meta-net_team.jpg}
+  %\fbox{-- META-NET group picture omitted to keep the size of the PDF file small. --}
+  \iftoggle{ebook}{%
+    \includegraphics[width=\textwidth]{../_media/meta-net_team_ebook.jpg}
+  }{%
+    \includegraphics[width=\textwidth]{../_media/meta-net_team.jpg}
+  }
   \caption{Alrededor de 100 expertos en tecnología lingüística -representantes de los países y las lenguas incluídos en META-NET- discutieron y finalizaron los principales resultados y mensajes de la Serie de Libros Blancos de META-NET en una reunión en Berlín, Alemania, los días 21 y 22 de octubre de 2011. --- \textcolor{grey1}{About 100 language technology experts -- representatives of the countries and languages represented in META-NET -- discussed and finalised the key results and messages of the White Paper Series at a META-NET meeting in Berlin, Germany, on October 21/22, 2011.}}
   \medskip
   \colorrule{grey3}{\textwidth}{1.5pt}

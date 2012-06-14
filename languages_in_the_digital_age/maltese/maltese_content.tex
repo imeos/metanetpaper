@@ -2325,7 +2325,11 @@ Launched on 1 February 2010, META-NET has already conducted various activities i
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
 %\fbox{-- META-NET group picture omitted to keep the size of the PDF file small. --}
- \includegraphics[width=\textwidth]{../_media/meta-net_team.jpg}
+ \iftoggle{ebook}{%
+   \includegraphics[width=\textwidth]{../_media/meta-net_team_ebook.jpg}
+ }{%
+   \includegraphics[width=\textwidth]{../_media/meta-net_team.jpg}
+ }
  \caption{Kważi 100 esperti tat-teknoloġija lingwistika -- rappreżentanti tal-pajjiżi u tal-lingwi li huma rappreżentati f'META-NET -- ddiskutew u ffinalizzaw ir-riżultati ewlenin u l-messaġġi ta' Serje ta’ White Papers tal-META-NET f'laqgħa f'Berlin, fil-Ġermanja, dwar Ottubru 21/22, 2011. --- \textcolor{grey1}{About 100 language technology experts -- representatives of the countries and languages represented in META-NET -- discussed and finalised the key results and messages of the White Paper Series at a META-NET meeting in Berlin, Germany, on October 21/22, 2011.}}
   \medskip
   \colorrule{grey3}{\textwidth}{1.5pt}
@@ -2373,5 +2377,4 @@ Launched on 1 February 2010, META-NET has already conducted various activities i
 & Svediż & Swedish & svenska\\
 & Taljan & Italian & italiano\\
 & Ungeriż & Hungarian & magyar\\ \addlinespace \bottomrule
-
 \end{tabularx}
