@@ -306,6 +306,12 @@
 %\urlstyle{rm}
 
 
+% Get the \ref's to images right in the second (english part) of the LPW
+% Use '\refstepcounter{refs_en}' before the label in every graphic in the 
+% english part
+\newcounter{refs_en}
+
+
 % Marginal notes
   % \boxtext{your text}
 \newcommand\boxtext[1]{
