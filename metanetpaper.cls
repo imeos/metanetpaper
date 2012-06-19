@@ -691,7 +691,6 @@
         filecolor=blue,         % color of file links
         urlcolor=blue,          % color of external links
         pdffitwindow=false,     % don't fit window to page when opened
-        pdfstartview={FitW},    % fits the width of the page to the window
         pdfcreator={XeLaTeX},   % creator of the document
         pdfproducer={META-NET}, % producer of the document
     }
