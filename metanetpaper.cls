@@ -306,6 +306,12 @@
 %\urlstyle{rm}
 
 
+% Get the \ref's to images right in the second (english part) of the LPW
+% Use '\refstepcounter{refs_en}' before the label in every graphic in the 
+% english part
+\newcounter{refs_en}
+
+
 % Marginal notes
   % \boxtext{your text}
 \newcommand\boxtext[1]{
@@ -691,7 +697,6 @@
         filecolor=blue,         % color of file links
         urlcolor=blue,          % color of external links
         pdffitwindow=false,     % don't fit window to page when opened
-        pdfstartview={FitW},    % fits the width of the page to the window
         pdfcreator={XeLaTeX},   % creator of the document
         pdfproducer={META-NET}, % producer of the document
     }
