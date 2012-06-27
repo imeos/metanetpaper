@@ -903,6 +903,7 @@
 
 % Set the plain version
 \DeclareOption{plain}{%
+
   \AtEndOfClass{
     \RequirePackage{varioref}
     \RequirePackage{hyperref}
