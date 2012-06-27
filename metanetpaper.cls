@@ -8,7 +8,7 @@
 %  MM     MM   MMMMMM    MM   MM    MM            MM   MMM  MMMMMMM    MM
 %
 %
-%             - META-NET Language White Paper | XeTeX CLASS -
+%             - META-NET White Paper | XeTeX CLASS -
 %
 % 
 % ----------------------------------------------------------------------------
@@ -17,6 +17,7 @@
 % []      = Set the inner part of the LWP
 % [cover] = Set the cover of the LWP
 % [ebook] = Set the eBook version of the LWP (including cover and inner part)
+% [plain] = Create a whitepaper without ISSN and third-party logo(s)
 %
 % ----------------------------------------------------------------------------
 
@@ -898,7 +899,222 @@
     \end{minipage}
   }
 }
-\ProcessOptions\relax
 
+
+% Set the plain version
+\DeclareOption{plain}{%
+
+  \AtEndOfClass{
+    \RequirePackage{varioref}
+    \RequirePackage{hyperref}
+    \hypersetup{
+        colorlinks=true,        % false: boxed links; true: colored links
+        linkcolor=blue,         % color of internal links
+        citecolor=blue,         % color of links to bibliography
+        filecolor=blue,         % color of file links
+        urlcolor=blue,          % color of external links
+        pdffitwindow=false,     % don't fit window to page when opened
+        pdfcreator={XeLaTeX},   % creator of the document
+        pdfproducer={META-NET}, % producer of the document
+    }
+  }
+  
+  % Define papersize for cover 210x279mm + 0mm bleed
+  \geometry{paperwidth=210mm, paperheight=279mm, top=24mm, bottom=31mm, left=21mm, right=21mm}%
+  
+  \setfootwidth[-22mm]{paper}
+  \lefoot[\pagemark]{}
+
+  \refoot[\pagemark]{
+  \colorrule{grey1}{22mm}{0.5pt}%
+  \vskip1mm%
+    \begin{minipage}[h]{21mm}%
+      \begin{flushleft}%
+          \fontsize{10}{1.2}\normalfont\sffamily\color{grey1}%
+        \pagemark
+      \end{flushleft}
+    \end{minipage}
+  }
+  
+  % Title & Mocktitle
+    % Maketitle
+  \renewcommand\maketitle{%
+    \begin{titlepage}%  
+      % Title
+      \pagestyle{empty}
+      \ThisCenterWallPaper{1}{../_media/titlepage_plain.pdf}
+      \vspace*{3mm}
+      % Left column
+      \begin{minipage}[t]{84mm}
+        \color{grey2}
+        \textsf{
+          \begin{flushright}
+            % Subtitle
+            \StrBefore{\@subtitle}{ ---} \\
+            \vspace*{5mm}
+            % Title
+            \fontsize{36}{36}\selectfont{%
+              \MakeUppercase{%
+                \protect\StrBehind{\@title}{--- }
+              }
+            }
+          \end{flushright}
+          \vspace*{7mm}
+        }
+      \end{minipage}
+      % spacing between colums
+      \begin{minipage}[t]{5mm}\ \end{minipage}
+      % Right column
+      \begin{minipage}[t]{88mm}
+        \color{white}
+        \textsf{
+          \begin{flushleft}
+            % Subtitle
+            \StrBehind{\@subtitle}{--- } \\
+            \vspace*{5mm}
+            % Title
+            \fontsize{36}{36}\selectfont{%
+              \MakeUppercase{%
+                \protect\StrBefore{\@title}{ ---}
+              }
+            }
+          \end{flushleft}
+          \vspace*{7mm}
+        }
+      \end{minipage}
+      % Authors
+      \begin{Parallel}[c]{83.5mm}{77mm}
+        \ParallelLText{
+          \
+        }
+        \ParallelRText{
+          \begin{flushleft}
+            \fontsize{14}{24}\selectfont{%
+              \textsf{%
+                \textcolor{white}{%
+                  \ifx\@languageVersion\@null
+                    \@author
+                  \else
+                    \MakeUppercase{\@languageVersion}\\
+                    \vspace*{10mm}
+                    \@author
+                  \fi
+                }
+              }
+            }
+          \end{flushleft}
+        }
+        \ParallelPar
+      \end{Parallel}
+      % Mocktitle
+      \cleardoublepage
+      \ThisCenterWallPaper{1}{../_media/mocktitlepage_plain.pdf}
+      \vspace*{3mm}
+      % Left column
+      \begin{minipage}[t]{84mm}
+        \color{grey3}
+        \textsf{
+          \begin{flushright}
+            % Subtitle
+            \StrBefore{\@subtitle}{ ---} \\
+            \vspace*{5mm}
+            % Title
+            \fontsize{36}{36}\selectfont{%
+              \MakeUppercase{%
+                \protect\StrBehind{\@title}{--- }
+              }
+            }
+          \end{flushright}
+          \vspace*{7mm}
+        }
+      \end{minipage}
+      % spacing between colums
+      \begin{minipage}[t]{5mm}\ \end{minipage}
+      % Right column
+      \begin{minipage}[t]{88mm}
+        \color{red}
+        \textsf{
+          \begin{flushleft}
+            % Subtitle
+            \StrBehind{\@subtitle}{--- } \\
+            \vspace*{5mm}
+            % Title
+            \fontsize{36}{36}\selectfont{%
+              \MakeUppercase{%
+                \protect\StrBefore{\@title}{ ---}
+              }
+            }
+          \end{flushleft}
+          \vspace*{7mm}
+        }
+      \end{minipage}
+      % Authors
+      \begin{Parallel}[c]{83.5mm}{77mm}
+        \ParallelLText{
+          \
+        }
+        \ParallelRText{
+          \begin{flushleft}
+            \fontsize{14}{24}\selectfont{%
+              \textsf{%
+                \textcolor{red}{%
+                  \ifx\@languageVersion\@null
+                    \@authoraffiliation
+                  \else
+                    \MakeUppercase{\@languageVersion}\\
+                    \vspace*{10mm}
+                    \@authoraffiliation
+                  \fi
+                }
+              }
+            }
+          \end{flushleft}
+        }
+        \ParallelPar
+      \end{Parallel}
+      \vfill
+       % Left column
+        \begin{minipage}[t]{83mm}\ \end{minipage}
+        % spacing between colums
+        \begin{minipage}[t]{5mm}\ \end{minipage}
+        % Right column
+        \begin{minipage}[t]{83mm}
+          \textsf{\color{red}\@editors}
+        \end{minipage}
+      \clearpage
+    \end{titlepage}
+  }
+  
+  % Makespine
+  \providecommand\makespine{%
+    \clearpage
+    \pagestyle{empty}
+    \ThisCenterWallPaper{1}{../_media/spinepage_plain.pdf}
+    \vspace*{50mm}
+    % Left column
+    \begin{minipage}[t]{80mm}
+      \color{grey2}%
+      \textsf{%
+        \@SpineLText
+      }
+    \end{minipage}
+    % spacing between colums
+    \begin{minipage}[t]{6mm}\ \end{minipage}
+    % Right column
+    \begin{minipage}[t]{76mm}
+      \color{white}%
+      \textsf{%
+        \@SpineRText
+      }
+    \end{minipage}
+    \vskip10mm
+    \begin{minipage}[t]{163.5mm}
+      \textsf{%
+        \textcolor{white}{\@quotes}
+      }
+    \end{minipage}
+  }
+}
+\ProcessOptions\relax
 
 \endinput
