@@ -945,7 +945,7 @@
       \ThisCenterWallPaper{1}{../_media/titlepage_plain.pdf}
       \vspace*{3mm}
       % Left column
-      \begin{minipage}[t]{83mm}
+      \begin{minipage}[t]{84mm}
         \color{grey2}
         \textsf{
           \begin{flushright}
@@ -965,7 +965,7 @@
       % spacing between colums
       \begin{minipage}[t]{5mm}\ \end{minipage}
       % Right column
-      \begin{minipage}[t]{85mm}
+      \begin{minipage}[t]{88mm}
         \color{white}
         \textsf{
           \begin{flushleft}
@@ -983,7 +983,7 @@
         }
       \end{minipage}
       % Authors
-      \begin{Parallel}[c]{83.5mm}{74.5mm}
+      \begin{Parallel}[c]{83.5mm}{77mm}
         \ParallelLText{
           \
         }
@@ -1011,7 +1011,7 @@
       \ThisCenterWallPaper{1}{../_media/mocktitlepage_plain.pdf}
       \vspace*{3mm}
       % Left column
-      \begin{minipage}[t]{83mm}
+      \begin{minipage}[t]{84mm}
         \color{grey3}
         \textsf{
           \begin{flushright}
@@ -1031,7 +1031,7 @@
       % spacing between colums
       \begin{minipage}[t]{5mm}\ \end{minipage}
       % Right column
-      \begin{minipage}[t]{85mm}
+      \begin{minipage}[t]{88mm}
         \color{red}
         \textsf{
           \begin{flushleft}
@@ -1049,7 +1049,7 @@
         }
       \end{minipage}
       % Authors
-      \begin{Parallel}[c]{83.5mm}{74.5mm}
+      \begin{Parallel}[c]{83.5mm}{77mm}
         \ParallelLText{
           \
         }
