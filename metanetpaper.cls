@@ -926,9 +926,9 @@
   \lefoot[\pagemark]{}
 
   \refoot[\pagemark]{
-  \colorrule{grey1}{22mm}{0.5pt}%
+  \colorrule{grey1}{24mm}{0.5pt}%
   \vskip1mm%
-    \begin{minipage}[h]{21mm}%
+    \begin{minipage}[h]{23mm}%
       \begin{flushleft}%
           \fontsize{10}{1.2}\normalfont\sffamily\color{grey1}%
         \pagemark
