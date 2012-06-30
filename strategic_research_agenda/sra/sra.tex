@@ -121,18 +121,17 @@
 % - Smoothen the text and section structure after the Priority Themes presentation.
 % - Cite generic references (sra_references.bib based on german_refences.bib) and the section from there.
 % - Convert all references and footnotes into proper BibTeX references.
-% - Cite META-NET White Paper Series and link to its website.
 % - Include Section "Conclusions: A Roadmap for Multilingual Europe 2020".
 % - Cite all references properly.
 % - Take into account the important references from the Language White Papers.
 % - Take into account Hans' most recent slides from META-FORUM 2012.
-% - Include the part on Language Resources to be provided by Stelios.
+% - Shorten and partially re-write the part on Language Resources provided by Stelios.
 % - Take into account the FLaReNet recommendations (-> Stelios).
 % - Take into account all reference materials that we have, extract more data, cite them.
 % - Take into account the META-VISION slides from the review -- is everything in?
-% - Take out all awkward acronyms.
-% - One final editing pass to make the text coherent and cohesive and also to shorten it substantially.
-% - bold-face important terms and sentences
+% - Take out all acronyms.
+% - One final editing pass to make the text coherent and cohesive and also to shorten it substantially.a
+% - Bold-face important terms and sentences (?)
 
 % --------------------------------------------------------------------------
 \ssection[Executive Summary]{Executive Summary}
@@ -181,8 +180,7 @@ These thematic directions have been designed with the aim of turning the joint v
 
 The three research priority themes build the bridge between societal needs, LT applications, and concrete roadmaps for the organization of research, development and scientific innovation. The priority themes are contextualized in the advanced networked society and cover the main functions of language: storing, sharing and using of information and knowledge, as well as improving social interaction among humans and enabling social interaction between humans and technology. As multilingualism is at the core of European culture and becoming a global norm, one theme is devoted to overcoming language barriers.
 
-We also present ways in which research and innovation need to be organized, in order to achieve the targeted breakthroughs and to benefit from the immense economic opportunities they create. Core components of the sketched strategy are novel modes of large-scale collective research and interaction among the major stakeholder constituencies: research in several disciplines, technology providers, technology users, policy makers and language communities. Effective schemes for sharing resources such as data, computational language models, and generic base technologies are also an integral part of the designed strategy. Of central importance is a rapid and effectual flow of intermediate results into profitable solutions of societal impact contributing to the fertile culture of technological, social and cultural innovation targeted by the Digital Agenda and the programmes Connecting Europe Facility (CEF) and Horizon 2020.  
-
+We also present ways in which research and innovation need to be organized, in order to achieve the targeted breakthroughs and to benefit from the immense economic opportunities they create. Core components of the sketched strategy are novel modes of large-scale collective research and interaction among the major stakeholder constituencies: research in several disciplines, technology providers, technology users, policy makers and language communities. Effective schemes for sharing resources such as data, computational language models, and generic base technologies are also an integral part of the designed strategy. Of central importance is a rapid and effectual flow of intermediate results into profitable solutions of societal impact contributing to the fertile culture of technological, social and cultural innovation targeted by the Digital Agenda and the programmes Connecting Europe Facility (CEF) \cite{CEF2011} and Horizon 2020 \cite{H2020}.
 \end{multicols}
 
 \clearpage
@@ -191,59 +189,26 @@ We also present ways in which research and innovation need to be organized, in o
 
 \ssection[Introduction]{Introduction}
 
-% the European Union brings together 500 million people speaking many languages…
-% half of the EU adult population don’t speak English
-% no such thing as a digital lingua franca since the advent of the social Web, smartphones, e-readers…
-
-% EU policy framework: "Digital Agenda for Europe" 
-% build a digital single market where content & services can flow freely
-% support cross-border exchanges between public online services
-% ease internationalisation of SMEs… but what if you don’t understand what's being displayed?
-
-% main themes of our projects
-% 	“… effective solutions that support business and inter-personal communication and enable people to make sense of online content and services in Europe's many languages.”
-% global content processing, eg automated translation
-% mining of unstructured information, eg text analytics
-% natural interaction, eg speech understanding & dialogue
-%     in and between multiple languages
-
-% CEF: "… enable providers of online services to offer their content & services in as many EU languages as possible, in a most cost effective way." "addressing:
-% public services esp. eGovernment, eHealth, eCulture, Open Data portals
-% commercial services eg eCommerce
-% where possible, user-generated content (social media)"
-
-% less than 40% of Europeans (outside UK, IE) understand English, less than 10% accept to use online services in English
-% multilingual services are necessary to:
-% unify the EU online market – from 20+ “sub-markets” to one single market of 500+ million consumers
-% enable the provision of public services across national borders
-% unleash the power of global online communities
-
-% heavy competition with other policy areas
-% emphasis on competitiveness, growth & jobs
-% so to be successful:
-% - clear & credible R & I agenda
-% - well understood impact on economy & society
-% - well connected & mobilized community
-% - broad (incl. national) recognition & support
+% FIXME: Ab hier noch mal durchgehen und auf Kohärenz und Kohäsion prüfen!
 
 \begin{multicols}{2}
-During the last 60 years, Europe has become a distinct political and economic structure. Culturally and linguistically it is rich and diverse. However, from Portuguese to Polish and Italian to Icelandic, everyday communication between Europe's citizens, enterprises and politicians is inevitably confronted with language barriers. The EU's institutions spend about a billion Euros a year on maintaining their policy of multilingualism, i.e., translating texts and interpreting spoken communication.
+  During the last 60 years, Europe has become a distinct political and economic structure. Culturally and linguistically it is rich and diverse. However, from Portuguese to Polish and Italian to Icelandic, everyday communication between Europe's citizens, enterprises and politicians is inevitably confronted with language barriers. The European Union's institutions spend about \emph{one billion Euros} a year on maintaining their policy of multilingualism, i.\,e., translating texts and interpreting spoken communication.
 
 The European market for translation, interpretation, software localisation and website globalisation was estimated at €8.4 billion in 2008. Are these expenses necessary and are they even sufficient? Despite this high level of expenditure, the actual documents translated represent only a fraction of the information available to the whole population in countries with a single predominant language, such as the USA, China or Japan.
 
 Language technology and linguistic research can make a significant contribution to removing the linguistic borders. Combined with intelligent devices and applications, language technology can help Europeans talk and do business together even if they do not speak a common language.
 
-The economy benefits from the European single market. For example, in 2010, trade within the EU accounted for 60.3\% of German exports and with other European countries totalled another 10.8\%. But language barriers can bring business to a halt, especially for SMEs who do not have the financial means to reverse the situation. The only (unthinkable) alternative to a multilingual Europe would be to allow a single language to take a predominant position and replace all other languages in transnational communication. Another way to overcome language barriers is to learn foreign languages.
+The economy benefits from the European single market. For example, in 2010, trade within the European Union accounted for 60.3\% of German exports and with other European countries totalled another 10.8\%. But language barriers can bring business to a halt, especially for SMEs who do not have the financial means to reverse the situation. The only (unthinkable) alternative to a multilingual Europe would be to allow a single language to take a predominant position and replace all other languages in transnational communication. Another way to overcome language barriers is to learn foreign languages.
 
-But given the multitude of European languages (23 official languages and 60 or more others), language learning just cannot solve the problem of cross-border communication. Without technological support such as machine translation, European linguistic diversity will be an insurmountable obstacle for the entire continent.
+But given the multitude of European languages (23 official languages and 60 or more others), language learning just cannot solve the problem of cross-border communication. Without technological support such as machine translation, European linguistic diversity will be an insurmountable obstacle for the entire continent. While about half of the 500 million people who live in the European Union do speak English, less than 40\% of the Europeans outside the UK and Ireland clearly do not -- there is no such thing as a lingua franca that is shared by the vast majority of the population of our continent. 
 
-Language technology is a key enabling technology for sustainable, cost-effective and socially beneficial solutions to language problems. Language technologies will offer European stakeholders tremendous advantages, not only within the common European market, but also in trade relations with non-European countries, especially emerging economies. Language technology solutions will eventually serve as a unique bridge between Europe's languages.
+In addition, less than 10\% of the EU's population accept to use online services in English which is why multilingual services based on robust and high-quality language technologies are badly needed to support and to unify the EU online market -- from more than 20 country- or language-specific sub-markets to a unified single digital market with more than 500 million users and consumers. The main idea, foreseen in the Digital Agenda EU policy framework \cite{DA2010}, is to build a single digital market in which content and services can flow freely. In order to support cross-border exchanges between users, consumers, countries and regions, robust and high-quality cross- and multilingual language technologies need to be developed.
 
-But to develop these solutions, it is absolutely essential to first carry out a systematic analysis of the linguistic particularities of all European languages, and the current state of language technology support for them. As early as the late 1970s, the EU realised the profound relevance of language technology as a driver of European unity, and began funding its first research projects, such as EUROTRA.
+Language technology is a key enabling technology for sustainable, cost-effective and socially beneficial solutions to language problems. Language technologies will offer European stakeholders tremendous advantages, not only within the common European market, but also in trade relations with non-European countries, especially emerging economies. Language technology solutions will eventually serve as a unique bridge between Europe's languages. One important prerequisite to develop these solutions, is to carry out a systematic analysis of the linguistic particularities of all European languages, and the current state of language technology support for them. This important step has already been taken in the form of the series of META-NET White Papers ``Europe's Languages in the Digital Age'' \cite{LWP2012}.
 
-After a longer period of sparse funding on the European level, the European Commission set up a department dedicated to language technology and machine translation a few years ago. Currently, the EU is supporting language technology projects such as EuroMatrix and EuroMatrix+ (since 2006) and iTranslate4 (since 2010), which use basic and applied research to generate resources for establishing high-quality solutions for all European languages.
+As early as the late 1970s, the EU realised the profound relevance of language technology as a driver of European unity, and began funding its first research projects, such as EUROTRA. After a longer period of sparse funding on the European level, the European Commission set up a department dedicated to language technology and machine translation a few years ago. In recent years, the EU has been supporting language technology projects such as EuroMatrix and EuroMatrix+ (since 2006) and iTranslate4 (since 2010), which use basic and applied research to generate resources for establishing high-quality solutions for all European languages.
 
-These selective funding efforts have led to a number of valuable results. For example, the translation services of the European Commission now use the Moses open-source machine translation software, which has been mainly developed in European research projects. However, these projects never led to a concerted European effort through which the EU and its member states systematically pursue the common goal of providing technology support for all European languages. Figure~\ref{fig:languages-in-research} depicts the languages that have been studied by Language Technology resaerchers in 2010, taking into account major conferences and journals. It illustrates how technology research has focussed mainly on English followed by Chinese, German, French, and a few other bigger languages. Many European languages without any reference, e.g., Slovak, Maltese, Lithuanian, Irish, Albanian, Croatian, Macedonian, Montenegrin, Romansh, Galician, Occitain, or Frisian.
+These selective funding efforts have led to a number of valuable results. For example, the translation services of the European Commission now use the Moses open source machine translation software, which has been mainly developed in European research projects. However, these projects never led to a concerted European effort through which the EU and its member states systematically pursue the common goal of providing technology support for all European languages. Figure~\ref{fig:languages-in-research} depicts the languages that have been studied by Language Technology researchers in 2010, taking into account major conferences and journals. It illustrates how technology research has focussed mainly on English followed by Chinese, German, French, and a few other bigger languages. Many European languages are without any reference whatsoever, e.\,g., Slovak, Maltese, Lithuanian, Irish, Albanian, Croatian, Macedonian, Montenegrin, Romansh, Galician, Occitain, or Frisian.
 
 \begin{figure*}[htb]
   \colorrule{grey3}{\textwidth}{1.5pt}
@@ -258,13 +223,36 @@ Research activities have tended to be isolated, delivering valuable results but 
 
 Most of their language technology systems rely on imprecise statistical approaches that do not make use of deeper linguistic methods and knowledge. For example, sentences are often automatically translated by comparing each new sentence against thousands of sentences previously translated by humans. The quality of the output largely depends on the size and quality of the available data. While the automatic translation of simple sentences in languages with sufficient amounts of available textual data can achieve useful results, shallow statistical methods are doomed to fail in the case of languages with a much smaller body of sample data or in the case of new sentences with complex structures. Analysing the deeper structural properties of languages is the only way forward if we want to build applications that perform well across the entire range of European languages.
 
-Europe now has a well-developed research base. Through initiatives like CLARIN and META-NET the research community is well-connected and engaged in a long term agenda that is gradually strengthening language technology's role within the European Commission. Yet at the same time, our position is worse compared to other multilingual societies. Despite fewer financial resources, countries like India (22 official languages) and South Africa (11 official languages) have set up long-term national programmes for language research and technology development.
+Europe now has a well-developed research base. Through initiatives like CLARIN and META-NET the research community is well-connected and engaged in a long term agenda that aims gradually to strengthen language technology's role within the European Commission. Yet at the same time, our position is worse compared to other multilingual societies. Despite fewer financial resources, countries like India (22 official languages) and South Africa (11 official languages) have set up long-term national programmes for language research and technology development.
 
 What is missing in Europe is a lack of awareness and of political determination and courage that would take us to a leading position in this technology area through a concerted funding effort.
 
 Drawing on the insights gained so far, today’s hybrid language technology mixing deep processing with statistical methods should be able to bridge the gap between all European languages and beyond. In the end, high-quality language technology will be a must for all of Europe's languages for supporting the political and economic unity through cultural diversity.
 
 Language technology can help tear down existing barriers and build bridges between Europe’s languages. In the digital age, communication with people and machines, as well as the unrestricted access to the knowledge of the world should be possible for all languages.
+
+% FIXME: The following paragraphs are taken from the Executive Summary
+
+The European LT community is dedicated to fulfilling the technology demands of the multilingual European society and to turn these needs and the emerging business opportunities into competitive advantages for our economy. To this end, we have developed this Strategic Research Agenda based on a shared vision and careful planning involving the major stakeholder communities.
+
+In the first chapters we analyse the multilingual technology needs arising from the multicultural setup of our continent with its emerging single digital market. We also discuss the current state of technologies for European languages and the situation of the provider industries. The two core chapters of this document summarize our shared vision of the role of language technology in the year 2020 in non-technical terms (Chapter~\ref{sec:lt2020}, p.~\pageref{sec:lt2020}\,ff.) and outline three priority themes for large-scale research and innovation (Chapter~\ref{sec:pts}, p.~\pageref{sec:pts}\,ff.):
+
+\begin{enumerate}
+\item \textbf{Translation Cloud} -- Services for instantaneous reliable spoken and written translation among all European and major non-European languages
+\item \textbf{Social Intelligence and e-Participation} -- understanding and dialogue within and across communities of citizens, customers, clients, consumers
+\item \textbf{Socially Aware Interactive Assistants} -- analysis and synthesis of non-verbal, speech and semantic signals
+\end{enumerate}
+ 
+These thematic directions have been designed with the aim of turning the joint vision into reality and to letting Europe benefit from a technological revolution that will overcome barriers of understanding between people of different languages, between people and technology and between people and the accumulated knowledge of mankind.
+
+The three research priority themes build the bridge between societal needs, LT applications, and concrete roadmaps for the organization of research, development and scientific innovation. The priority themes are contextualized in the advanced networked society and cover the main functions of language: storing, sharing and using of information and knowledge, as well as improving social interaction among humans and enabling social interaction between humans and technology. As multilingualism is at the core of European culture and becoming a global norm, one theme is devoted to overcoming language barriers.
+
+We also present ways in which research and innovation need to be organized, in order to achieve the targeted breakthroughs and to benefit from the immense economic opportunities they create. Core components of the sketched strategy are novel modes of large-scale collective research and interaction among the major stakeholder constituencies: research in several disciplines, technology providers, technology users, policy makers and language communities. Effective schemes for sharing resources such as data, computational language models, and generic base technologies are also an integral part of the designed strategy. Of central importance is a rapid and effectual flow of intermediate results into profitable solutions of societal impact contributing to the fertile culture of technological, social and cultural innovation targeted by the Digital Agenda \cite{DA2010} and the programmes Connecting Europe Facility (CEF) \cite{CEF2011} and Horizon 2020 \cite{H2020}.
+
+% This is a new paragraph (Georg)
+
+The three research priority themes presented in this Strategic Research Agenda are mainly aimed at the programme Horizon 2020 which is foreseen to run from 2014 until 2020. The more infrastructural aspects, platform design and implementation and concrete language technology services are aimed at the programme Connecting Europe Facility. Our suggestion for integrating multilingual technologies into the wider CEF framework is to develop innovative solutions that enable providers of online services to offer their content and services in as many EU languages as possible, in a most cost effective way. These services are to include public services (e.\,g., eGovernment, eHealth, eCulture and open data portals), commercial services and user-generated content. An integral component of our strategic plans are the member states and associated countries: it is of utmost importance to set up, under the overall umbrella of our SRA and research priority themes, a coordinated initiative both on the national (member states, regions, associated countries) and international (EC/EU) level, including research centres as well as small, medium and large enterprises who work on or with language technologies. Only through close cooperation and tightly coordinated collaboration can we realise the ambituous plan of researching, designing, developing and putting into practice a European platform that supports all citizens of Europe and beyond by providing, among others, sophisticated services for communication across language boundaries.
+
 \end{multicols}
 
 \clearpage
@@ -2053,10 +2041,10 @@ The first international and national funding supporting language technologies fo
 
 Machine translation, speech recognition, spelling and grammar checking research and industrial developments have been supported by different departments of the Generalitat de Catalunya for more than 20 years. The CREL – Centre de Referència en Enginyeria Lingüística, 1996-2000, managed by the Institut d’Estudis Catalans and with participants from the major Catalan Universities, was created with the specific aim of promoting the creation of resources and tools for the automatic processing of Catalan texts in a variety of applications. As regards the presence of the Catalan language in European infrastructures, in 2008 the Catalan Government signed an agreement with Universitat Pompeu Fabra, the national representative of the European project CLARIN in Spain, with the aim of building a Catalan demonstrator. In addition, the Biblioteca de Catalunya, Catalonia’s national library, is one of the partners in the EUROPEANA project. From 2000 up until the present day, the Spanish Government supported several projects in the area of multilingual speech technologies within the National Plan of Research and Technology, i.e., TEHAM, AVIVAVOZ, and BUCEADOR. The main purpose of these projects was to improve the quality of speech recognition, speech translation and text to speech synthesis in all the official languages spoken in Spain, i.e., Basque, Galician, Catalan and Spanish. In 2005, the Catalan Government launched a project to produce Language Resources for Speech Recognition and Speech Synthesis. As a result, Language Resources for telephone applications, in-car applications and microphone applications were produced. Later, the project TECNOPARLA (2007-2010) had as its objective the translation of speech between Spanish and Catalan. The project resulted on advances in all the component speech technologies, i.e. diarization, speech recognition, speech translation and text to speech synthesis.
 
-\subsection*{Croatian}
-\label{sec:croatian}
-
-n.\,a.
+%\subsection*{Croatian}
+%\label{sec:croatian}
+%
+%n.\,a.
 
 \subsection*{Czech}
 \label{sec:czech}
@@ -2085,10 +2073,10 @@ Most prominent in their focus on the Dutch language are the joint Netherlands-Fl
 AKT (2000-2007), was a multi-million pound collaboration between five UK universities, with the aim of enhancing information and knowledge management in the age of the World Wide Web. The research conducted on the project formed an important contribution to the semantic web, in which the use of LT technologies played a central role. A follow-up project, ”EnAKTing the Unbounded Data Web: Challenges in Web Science”, is currently ongoing.
 Two systems which support the user in creating new applications from existing libraries of processing components are the University of Sheffield’s GATE system, which has been under development for over 15 years, and the more recent UCompare system, which was developed as part of a collaboration between the Universities of Tokyo, Manchester and Colorado. Whilst current components in UCompare mainly deal with English, the library will be extended as part of META-NET to cover a number of different European languages.
 
-\subsection*{Estonian}
-\label{sec:estonian}
-
-n.\,a.
+%\subsection*{Estonian}
+%\label{sec:estonian}
+%
+%n.\,a.
 
 \subsection*{Finnish}
 \label{sec:finnish}
@@ -2161,10 +2149,10 @@ Ireland is home to a number of leading research institutions in the field of com
 
 As for Italian, a considerable effort has been invested in Language Technologies research in Italy since 1997, when Human Language Technology (hence forth HLT) was designated a National research policy, with the launch of two three-year projects: TAL (National Infrastructure for Linguistic resources in the field of Automatic Treatment of Spoken and Written Natural Language), funded by the Italian government for about 1.75M Euros and LRCMM, devoted to mono and multilingual research in computational linguistics, funded for about 3M Euros. Since the two projects above were launched, only two small-size projects have been recently funded, i.e. MIUR-PARLI, for the harmonization of existing computational resources for Italian, and MIUR-PAISA, for the realization of a platform for learning Italian from annotated corpora. The majority of the production of language resources and technologies for Italian is the result of various EU-funded research projects and other initiatives. Italian groups are involved, often with coordination roles, in international networking projects, particularly at the European Level (for example in CLEF, the Cross Language Evaluation Forum, and in FLaReNet, a project fostering an international network for language resources). According to a recent META-NET survey, there are currently seven national projects running and six European projects coordinated by Italian partners.
 
-\subsection*{Latvian}
-\label{sec:latvian}
-
-n.\,a.
+%\subsection*{Latvian}
+%\label{sec:latvian}
+%
+%n.\,a.
 
 \subsection*{Lithuanian}
 \label{sec:lithuanian}
@@ -2185,10 +2173,10 @@ The Research Council of Norway has supported one language technology research pr
 
 It was an important achievement to establish the Language Technology Resource Collection for Norwegian – Språkbanken in 2010, after two decades of joint efforts between the Norwegian Language Council, the Research Council, commercial companies and the Norwegian research institutions. Språkbanken at the National Library is to function as an infrastructure for making Norwegian LRT available for research and commercial use, thus hopefully reducing the threshold for developing Norwegian LRT products. Sizeable LRT building projects (e.g. the INESS, NoTa-Oslo (Norsk Talespråkskorpus, the Oslo part), Norsk aviskorpus, WeSearch—Language technology for the web and SIRKUS) after KUNSTI have been financed through infrastructure programs (AVIT) or general ICT programs from the Research Council such as VERDIKT. As a part of building basic Norwegian LRT, Språkbanken signed a contract with Kaldera språkteknologi AS in 2011 to create wordnets for Norwegian.
 
-\subsection*{Polish}
-\label{sec:polish}
-
-n.\,a.
+%\subsection*{Polish}
+%\label{sec:polish}
+%
+%n.\,a.
 
 \subsection*{Portuguese (Portugal, Brazil)}
 \label{sec:port-port-braz}
@@ -2211,25 +2199,25 @@ The first interdisciplinary project entitled “Interactions between text and di
 
 Parallel with this research in the field of language, a project was funded within the social sciences field under the name “Fundamental cognitive processes and functions”, realised by the Department of Psychology at the Faculty of Philosophy in Belgrade. The aim of this project, among other things, was to investigate the possibility of the automatic annotation of texts based on an annotated corpus.  Speech synthesis and recognition is being realised at the Faculty of Technical Sciences of the University of Novi Sad through projects of technological development from 2005, namely “Development of speech technologies in Serbian and their application in Telekom Serbia” (2005-2007), “Man-machine speech communication” (2008-2010), “Development of dialogue systems for Serbian and other South-Slavic languages” (2011–2014). They provide support for different TTS and ASR applications and services including IVR systems, private branch exchanges, call centres, audio logging, track commercials, word spotter, etc.  In addition to national projects, Serbian scientific institutions have also taken part in various international projects related to the HLT field.
 
-\subsection*{Slovak}
-\label{sec:slovak}
-
-n.\,a.
+%\subsection*{Slovak}
+%\label{sec:slovak}
+%
+%n.\,a.
 
 \subsection*{Slovene}
 \label{sec:slovene}
 
 In general, it can be stated that in the last two decades language technology for Slovene was never supported by a consistently devised national funding scheme. The process of the development of HLT applications, tools and resources for Slovene has been therefore a mixture of international projects extending their scope from Western European languages to Central and Eastern Europe with a view toward the EU enlargement process, national research funding where speech interaction was the dominant research area, and the enthusiasm of individuals involved in LT or of larger groups working on the localization of free software such as Linux, OpenOffice, etc., to Slovene.  In the 2000s, the Alpineon software company, a spin-off from the Faculty of Electrical Engineering (University of Ljubljana) led a large consortium in the Voicetran project (2004-2008), the biggest national speech interaction project to date.  A new standardization effort concerning a morpho-syntactic tagging system, with origins in the MULTEXT-East project and used in the annotation of the FIDA line of corpora, and a newly developed syntactic annotation system was funded in the JOS project (Linguistic annotation of Slovene 2007--2009). The results of the project are now used in a large European Social Fund project “Communication of Slovene” (2008--2013), led by the Amebis software company, where a new tagger and parser is being developed along with an upgrade of the FidaPLUS corpus to more than 1 billion word Gigafida corpus.  Statistical data on national research funding shows that 18 national research projects were funded in the field of speech interaction from 1995 to 2010, 9 in the field of written language technologies and 3 in the digitization of (historical) resources. However, language technology as a field has never seen a more consistent national effort in the sense of building a LT language infrastructure for Slovene, exemplified by the German COLLATE project or TST Centrale for Dutch.
 
-\subsection*{Spanish}
-\label{sec:spanish}
+%\subsection*{Spanish}
+%\label{sec:spanish}
+%
+%n.\,a.
 
-n.\,a.
-
-\subsection*{Swedish}
-\label{sec:swedish}
-
-n.\,a.
+%\subsection*{Swedish}
+%\label{sec:swedish}
+%
+%n.\,a.
 \end{small}
 
 \end{multicols}
