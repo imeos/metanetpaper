@@ -936,6 +936,42 @@
     \end{minipage}
   }
   
+  % LTInfoBox Definition
+  \long\def\LTInfoBox#1{\gdef\@LTInfoBox{#1}}
+  \def\@LTInfoBox{\@latex@warning@no@line{No \noexpand\LTInfoBox given}}
+  % FundingNotice Definition
+  \long\def\FundingNotice#1{\gdef\@FundingNotice{#1}}
+  \def\@FundingNotice{\@latex@warning@no@line{No \noexpand\FundingNotice given}}
+  
+  % Funding Notice
+  \renewcommand{\makefundingnotice}{%
+    \vskip20mm
+    \centerline{META-NET -- office@meta-net.eu -- http://www.meta-net.eu}
+
+    \vfill
+    
+    \begin{center}
+      \@LTInfoBox
+    \end{center}
+
+    \vfill
+
+    \hskip90mm\colorrule{grey3}{110mm}{1.5pt}
+    \vskip3mm
+
+    \begin{footnotesize}
+      \begin{spacing}{1.2}
+        \@FundingNotice
+      \end{spacing}
+    \end{footnotesize}
+  
+    \vskip1mm
+    \hskip-29mm\colorrule{grey3}{110mm}{1.5pt}
+  
+    \clearpage
+  }
+  
+  
   % Title & Mocktitle
     % Maketitle
   \renewcommand\maketitle{%
