@@ -104,10 +104,10 @@
 % IMPORTANT AND URGENT BUGS AND FIXMEs:
 %
 % - Take into account Hans' most recent slides from META-FORUM 2012.
-% - Take into account the META-VISION slides from the review -- is everything in?
 % - Continue writing, editing, revising the text in Chapters 7 and 8.
 % - Smoothen the text and section structure after the Priority Themes presentation.
 % - Shorten and partially re-write the part on Language Resources provided by Stelios.
+% - Write a few paragraphs on possible EC funding instruments for pan-European initiatives?
 % - Take into account the FLaReNet recommendations (-> Stelios).
 % - Take out all strange acronyms.
 % - One final editing pass to make the text coherent and cohesive and also to shorten it substantially.
@@ -911,7 +911,10 @@ The wide range of novel or improved applications mentioned in our shared vision 
 With so many applications and application areas, each of them confronted with different functionalities and types of language, we may be tempted to doubt that there is a common technology core. And indeed there has been a trend of excessive diversification in LT software development. Many tools can only be used for one purpose. This is different from the way humans learn their language. Once we have learned our mother tongue we can easily obtain new skills, always employing the core knowledge acquired during childhood. We learn to read, write, skim texts, summarize, outline, proof-read, edit and translate.
  
 Currently we are witnessing a promising trend in LT giving rise to hope for faster progress. Instead of relying on highly specialised components, powerful core technologies are reused for many applications. We can now compose lists of components and tools that we need for every language since these will be adapted for and integrated into many applications. In addition, we have also identified lists of core data, such as text and speech corpora and language descriptions, such as lexicons, thesauri and grammars, needed for a wide spectrum of purposes.
- 
+
+% FIXME: Prepare a figure that shows Language Technology on the same level as Database Technology, 
+% Network Technology and maybe a few other well-known and well-established technologies?
+
 In information technology, we can differentiate between specialized application technologies, such as credit-card readers, and enabling technologies, such as microprocessors, that are needed for rather diverse types of applications. In hardware technology, certain key-enabling technologies have been identified, technology areas indispensable for projected essential progress (e.\,g., nanotechnology, microelectronics including semiconductors, biotechnology and photonics). Similar key-enabling technologies also exist on the software side, such as database technology or network technology. Considering the broad range of LT-enabled applications and their potential impact on business and society, LT is certainly becoming a key-enabling technology for future generations of IT. In contrast to some of the key-enabling technologies listed above, Europe has not lost yet a leadership role in this field. There is no reason to be discouraged or even paralysed by the strong evidence of interest and expertise on the side of major commercial players in the US. In software markets the situation can change fast.
  
 If Europe does not take a decisive stand for a substantial commitment to LT research and innovation in the years to come, we may as well give up any ambition in future IT altogether because there is no other software sector in which European research can benefit from a similar combination of existing competitive competence, recognized economic potential, acknowledged societal needs and determined political obligation toward our unique wealth of languages.
@@ -927,34 +930,37 @@ If Europe does not take a decisive stand for a substantial commitment to LT rese
 \label{sec:pts}
 
 \begin{multicols}{2}
+\subsection{Introduction}
+\label{sec:pt-introduction}
+
 For decades it has been obvious that one of the last remaining frontiers of information technology is still
-separating our rapidly evolving technological world of mobile devices, PCs and the internet from the most precious and powerful asset of mankind, the human mind, the only system capable of thought, knowledge and emotion. Although we use computers to write, telephones to chat and the web to search for knowledge, information technology has no direct access to the meaning, purpose and sentiment behind our trillions of written and spoken words. This is why it is unable to summarize a text, answer a question, respond to a letter and to translate reliably. In many cases it cannot even correctly pronounce a simple English sentence.
+separating our rapidly evolving technological world of mobile devices, personal computers and the internet from the most precious and powerful asset of mankind, the human mind, the only system capable of thought, knowledge and emotion. Although we use computers to write, telephones to chat and the web to search for knowledge, information technology has no direct access to the meaning, purpose and sentiment behind our trillions of written and spoken words. This is why it is unable to summarize a text, answer a question, respond to a letter and to translate reliably. In many cases it cannot even correctly pronounce a simple English sentence.
 
-Visionaries such as Ray Kurzweil, Marvin Minsky and Bill Gates have long predicted that this border would eventually be overcome by artificial intelligence including language understanding whereas science fiction such as the Star Trek TV series suggested attractive ways in which the increased technological power would change our lives, by establishing the fantastic concept of an invisible computer that you have a conversation with and that is able to react to the most difficult commands and also of technology that can reliably translate any human and non-human language.
+Visionaries such as Ray Kurzweil, Marvin Minsky and Bill Gates have long predicted that this border would eventually be overcome by artificial intelligence including language understanding whereas science fiction such as the Star Trek TV series suggested attractive ways in which technology would change our lives, by establishing the fantastic concept of an invisible computer that you have a conversation with and that is able to react to the most difficult commands and also of technology that can reliably translate any human and non-human language.
 
-Many enterprises had started much too early to invest in language technology research and development and then lost faith after a long period without any tangible progress. During the years of apparent technological standstill, however, research continued to conquer new ground. The results were: a deeper theoretical understanding of language, better machine-readable dictionaries, thesauri and grammars, specialized efficient language processing algorithms, hardware with increased computing power and storage capacities, large volumes of digitized text and speech data and, most importantly, powerful new methods of statistical language processing that could exploit language data for learning hidden regularities governing our language use.
+Many enterprises had started much too early to invest in language technology research and development and then lost faith after a long period without any tangible progress. During the years of apparent technological standstill, however, research continued to conquer new ground. The results were a deeper theoretical understanding of language, better machine-readable dictionaries, thesauri and grammars, specialized efficient language processing algorithms, hardware with increased computing power and storage capacities, large volumes of digitized text and speech data and, most importantly, powerful new methods of statistical language processing that could exploit language data for learning hidden regularities governing our language use.
 
-We still do not possess the know-how for unleashing the full potential of language technology for business and society since essential research results are still missing. Nevertheless, the speed of research keeps increasing and even small improvements can already be exploited for innovative products and services that are commercially viable. As a consequence, we are witnessing a chain of new products for a wide variety of applications entering the market in rapid succession.
+We do not possess the know-how for unleashing the full potential of language technology for business and society yet since essential research results are still missing. Nevertheless, the speed of research keeps increasing and even small improvements can already be exploited for innovative products and services that are commercially viable. As a consequence, we are witnessing a chain of new products for a wide variety of applications entering the market in rapid succession.
 
 These applications are still built on dedicated computational models of language processing that are specialized for a certain task. People, on the other hand, apply the basic knowledge of the language they have acquired during the first few years of their socialisation, throughout their lives to many different tasks of varying complexity such as reading, writing, skimming, summarizing, studying, editing, arguing, teaching. They even use this knowledge for the learning of additional languages, which explains why second languages are easier to acquire if they are closely related to the learners' native language. After people have obtained proficiency in a second language, they can already translate simple sentences more fluently than any machine translation system, whereas truly adequate and stylistically acceptable translation, especially of more demanding texts is a highly skillful art gained by special training.
 
-Today, no text technology program can translate and check for grammatical correctness and no speech technology program could recognize all the sentences it can read aloud if they were spoken by people in their normal voices. But increasingly we observe a reuse of core components and language models for a wide variety of purposes. It started with dictionaries, spell checkers and text-to-speech tools. Google Translate, Apple's Siri and IBM's Watson still do not use the same technologies for analysing and producing language, because the generic processing components are simply not powerful enough to meet their respective needs. But many advanced research systems already utilize the same tools for syntactic analysis. This process is going to continue.
+Today, no text technology program can translate and check for grammatical correctness and no speech technology program could recognize all the sentences it can read aloud if they were spoken by people in their normal voices. But increasingly we observe a reuse of core components and language models for a wide variety of purposes. It started with dictionaries, spell checkers and text-to-speech tools. Google Translate, Apple's Siri and IBM Watson still do not use the same technologies for analysing and producing language, because the generic processing components are simply not powerful enough to meet their respective needs. But many advanced research systems already utilize the same tools for syntactic analysis. This process is going to continue.
 
-In ten years or less, basic language proficiency is going to be an integral component of any advanced IT. They will be available to any user interface, service and application development. Additional language skills for semantic information search, knowledge discovery, human-technology communication, text analytics, language checking, e-learning, translation and other applications will employ and extend the basic proficiency. The shared basic language competence will ensure consistency and interoperability among services. Many adaptations and extensions will be derived and improved through sample data and interaction with people by powerful machine learning techniques.
+In ten years or less, basic language proficiency is going to be an integral component of any advanced IT. It will be available to any user interface, service and application development. Additional language skills for semantic search, knowledge discovery, human-technology communication, text analytics, language checking, e-learning, translation and other applications will employ and extend the basic proficiency. The shared basic language competence will ensure consistency and interoperability among services. Many adaptations and extensions will be derived and improved through sample data and interaction with people by powerful machine learning techniques.
 
-In the envisaged big push toward realizing this vision by massive research and innovation, the technology community is faced with three enormous challenges:
+In the envisaged big push toward realising this vision by massive research and innovation, the technology community is faced with three enormous challenges:
 
 \begin{enumerate}
-\item Richness and diversity -- A serious challenge is the sheer number of languages some closely related, others distantly apart. But within a language, technology has to deal with numerous dialects, sociolects, registers, professional jargons, genres and slangs. And each language variant finally is abundant with alternatives to achieve the same goal or to express the same fact.
-\item Depth and meaning -- Understanding language can be a complex and creative process.  Human language is not only the key to knowledge and thought, it also cannot be interpreted without certain shared knowledge and active inference. Computational language proficiency needs semantic technologies.
-\item Multimodality and grounding -- Human language is embedded in our daily activities. It is combined with other modes and media of communication. It is affected by beliefs, desires, intentions and emotions and it affects all of these. Successful interactive language technology requires models of embodied and adaptive human interaction with people, technology and other parts of the world.
+\item \emph{Richness and diversity.} A serious challenge is the sheer number of languages, some closely related, others distantly apart. Within a language, technology has to deal with numerous dialects, sociolects, registers, professional jargons, genres and slangs. Each language variant finally is abundant with alternatives to achieve the same goal or to express the same fact.
+\item \emph{Depth and meaning.} Understanding language can be a complex and creative process. Human language is not only the key to knowledge and thought, it also cannot be interpreted without certain shared knowledge and active inference. Computational language proficiency needs semantic technologies.
+\item \emph{Multimodality and grounding.} Human language is embedded in our daily activities. It is combined with other modes and media of communication. It is affected by beliefs, desires, intentions and emotions and it affects all of these. Successful interactive language technology requires models of embodied and adaptive human interaction with people, technology and other parts of the world.
 \end{enumerate}
  
-If we could take these challenges with us into our research labs and reappear after some years with solutions that approximate the grand vision of language-competent IT, this would put expectations and commercial planning on hold and trigger in society the typical mixed attitude of waiting and forgetting, which can be observed with respect to nuclear fusion and manned Mars exploration. It is fortunate for both research and economy that the only way to effectively tackle the three major challenges involves submitting the evolving technology continuously to the growing demands and practical stress tests of real world applications.
+If we could take these challenges with us into our research labs and reappear after some years with solutions that approximate the grand vision of language-competent IT, this would put expectations and commercial planning on hold and trigger in society the typical mixed attitude of waiting and forgetting, which can be observed with respect to nuclear fusion and manned Mars exploration. It is fortunate for both research and economy that the only way to effectively tackle the three major challenges mentioned above involves submitting the evolving technology continuously to the growing demands and practical stress tests of real world applications.
 
 Google's Translate, Apple's Siri, Autonomy's text analytics and scores of other products demonstrate that there are plenty of commercially viable applications for imperfect technologies that are still far from the envisaged scope and capabilities. Only a continuous stream of technological innovation can provide the economic pull forces and the evolutionary environments for the realization of the grand vision. 
 
-The three priority themes have been thoughtfully selected in a complex process to ensure the needed market pull, the appropriate performance demands, the realistic testing environments and a sufficient level of public interest. Each challenge is covered by the three themes but strongly represented by one of them.  The priority themes also represent a good mix of applications with respect to the user communities. Small businesses, large enterprises, public administration and the general public as personal end users are all well represented among the beneficiaries of the targeted solutions.  
+The three priority themes have been thoughtfully selected in a complex process (see Appendix~\ref{vision-evolution} on p.~\pageref{vision-evolution}\,ff.) to ensure the needed market pull, the appropriate performance demands, the realistic testing environments and a sufficient level of public interest. Each challenge is covered by the three themes but strongly represented by one of them. The priority themes also represent a good mix of applications with respect to the user communities. Small businesses, large enterprises, public administration and the general public as personal end users are all well represented among the beneficiaries of the targeted solutions.
 
 \subsection{Priority Theme 1: Translation Cloud}
 \label{sec:priority-theme-1-translation-cloud}
@@ -967,7 +973,7 @@ The goal is a multilingual European society, in which all citizens can use any s
 The citizen, the professional, the organization, or the software application in need of cross-lingual communication will use a single simple access point for channelling text or speech through a gateway that will instantly return the translations into the requested languages in the required quality and desired format.
  
 Behind this access point will be a network of generic and special-purpose services combining automatic translation or interpretation, language checking, post-editing, as well as human creativity and quality assurance where needed for achieving the demanded quality.  The service will be free for small volume use and for high-volume base-line quality but it will offer extensive business opportunities for a wide range of service and technology providers.
- 
+
 Special components and extensions of the permanent and ubiquitous service are:
 
 \begin{itemize}
@@ -980,6 +986,20 @@ Special components and extensions of the permanent and ubiquitous service are:
 
 \subsubsection{Novel Research Approaches and Targeted Breakthroughs}
 \label{sec:novel-rese-appr-pt1}
+
+% Current State of the Art in Research (Folie von Andrejs beim META-FORUM 2012):
+% - Open-source MT Toolkits (e.g., Moses)
+%   - Maturing and scaling to reach the requirements of massive production use
+%   - No general interoperability with LT tools (e.g., parsers, NE recognisers, etc.) 
+%   -Confidence estimation (let alone quality estimation) is an open issue
+% - Growing availability of multilingual data
+%   - Available for many languages, yet in a few domains only
+%   - META-SHARE contribution
+% - Experimental prototypes for AV media translation
+%   - Typically re-speaking scenarios (involving human translators)
+% - Support of online media very limited
+% - Promising research results from FP7 and ICT-PSP projects
+%   - Fragmentation, sustainability, scalability issues
 
 The core reason why HQMT has not been systematically addressed yet seems to be the Zipfian distribution of issues in MT: some improvements, the “low-hanging fruit” can be harvested with moderate effort in a limited amount of time. Yet, many more resources and a more fundamental, novel scientific approach -- that eventually runs across several projects and also calls -- are needed for significant and substantial improvements that cover the phenomena and problems that make up the Zipfian long tail. This is an obstacle in particular for individual research centres and SMEs given their limited resources and planning horizon.
 Although recent progress in machine translation has already led to many new applications of this technology, radically different approaches are needed to accomplish the ambitious goal of this research including a true quality breakthrough. Among these new research approaches are:
@@ -1069,6 +1089,22 @@ At the same time, use cases should cover areas where the European social and soc
  
 Concerted activities sharing resources such as error corpora or test suites and challenges/shared tasks in carefully selected areas should be offered to accelerate innovation breakthrough and market-readiness for desperately needed technologies.
 
+\begin{figure*}[htbp]
+  \centering
+  \small
+  \begin{tabular}{@{}p{2.5cm}p{4cm}p{4cm}p{4cm}@{}} \toprule\addlinespace
+    \multicolumn{1}{c}{Research Priority} & \multicolumn{1}{c}{Phase 1: 2013-2014} & \multicolumn{1}{c}{Phase 2: 2015-2017} & \multicolumn{1}{c}{Phase 3: 2018-2020} \\ \addlinespace\midrule\addlinespace
+    Immediate affordable translation in any needed quality level (from sufficient to high) & Development of necessary monolingual language tools (analysis, generation) driven by MT needs; exploitation of novel ML techniques for MT purposes, using large LR and semantic resources, including Linked Open Data and other naturally occuring semantic and knowledge  resources (re-purposing for MT and NLP use); experiment with novel metrics, automated, human-centered, or hybrid; use EU languages, identify remaining gaps (LR resources, tools) & Concentrate on High-Quality MT systems using results of Phase 1, deepen development of MT-related monolingual tools; employ novel techniques aimed at HQMT, combination of systems, domain adaptation, cross-language adaptation; develop showcase systems for novel translation workflow; use novel metrics identified as correlated with the aims of HQMT application; continue development on EU languages, identify needs for non-EU languages (MT-related) and their gaps & Deployment of MT systems in particular applications requiring HQMT, such as technology export, government and public information systems, private services, medical applications, etc, using novel translation workflows where appropriate; application- and user-based evaluation driven engagement of core and supplemental technologies; coverage of EU languages and other languages important for EU business and policy \\ \addlinespace
+    Delivering multi-media content in any language (captioning, subtitling, dubbing) & Multi-media system prototypes, combining language, speech, image and video analysis; employing novel techniques (machine learning, cross-fertilization of features across media types); targeted evaluation metrics for system quality assessment related to MT; aimed at EU languages with sufficient resources; data collection effort to support multi-media analysis & Prototype applications in selected domains, such as public service (parliament recordings, sports events, legal proceedings) and other applications (archive TV series or movie delivery, online services at content providers); continued effort at multimedia analysis, adding languages as resources become available & Deployment of large-scale applications for multi-media content delivery, public and/or private, in selected domains; development of online services for captioning, subtitling, dubbing, including on-demand translation); new languages for outside-of-the-EU delivery, continued improvement of EU languages \\ \addlinespace
+Content analytics & & & \\ \addlinespace
+Cross-lingual knowledge management and linked open data & & & \\ \addlinespace
+Synchronous and asynchronous interpretation & & & \\ \addlinespace
+Translingual collaborative spaces & & & \\ \addlinespace\bottomrule
+  \end{tabular}
+  \caption{Priority Theme 1 -- Translation Cloud: Preliminary Roadmap}
+  \label{fig:pt1-roadmap}
+\end{figure*}
+
 \subsection{Priority Theme 2: Social Intelligence and eParticipation}
 \label{sec:priority-theme-2-social-intelligence}
 
@@ -1099,6 +1135,36 @@ Language technologies such as, for example, information extraction, data mining,
 \item Extracting semantic representations from social media content, i.e., creating representations for reasoning and inferencing;
 \item Taking metadata and multimedia data into account.
 \end{itemize}
+
+% Die "five proposed research lines", die Marko Grobelnik in seinen Folien hatte:
+\begin{enumerate}
+\item Social influence and incentives
+  \begin{itemize}
+  \item Modeling social diversity of views across languages and cultures
+  \item Modeling social influence and incentives
+  \item Multipolar opinion mining (beyond usual sentiment analysis)
+  \end{itemize}
+\item Information dynamics
+  \begin{itemize}
+  \item Tracking dynamics of information diffusion across languages, cultures and media
+  \item Prediction of future events and identification of causal relationships from textual and social streams
+  \end{itemize}
+\item Multimodal data processing
+  \begin{itemize}
+  \item Joining textual data and social networks, including spatial and temporal dimensions
+  \item Joining textual and social data with unstructured sources like sensor data (smart cities), video, images, audio
+  \end{itemize}
+\item Visualization and user interaction
+  \begin{itemize}
+  \item Visualization of textual and social dynamics
+  \item Adaptive user interfaces
+  \end{itemize}
+\item Algorithmic fundamentals
+  \begin{itemize}
+  \item Algorithms and toolkits for scalable processing of multi-modal Big data
+  \item Real-time modeling and reasoning on massive textual and social streams
+  \end{itemize}
+\end{enumerate}
 
 The following list contains specific targeted breakthroughs to be sought in this scenario:
 
@@ -1166,6 +1232,21 @@ The research and innovation will provide technological support for emerging new 
 \label{sec:organ-rese-pt2}
 
 Research in this area touches upon political as well as business interests and at the same time is scalable in reach from the regional to the European scale. Therefore, it is necessary to identify business opportunities and potential impact for society at different levels and to align EU level research with efforts on the national level.
+
+\begin{figure*}[htbp]
+  \centering
+  \small
+  \begin{tabular}{@{}p{2.5cm}p{4cm}p{4cm}p{4cm}@{}} \toprule\addlinespace
+    \multicolumn{1}{c}{Research Priority} & \multicolumn{1}{c}{Phase 1: 2013-2014} & \multicolumn{1}{c}{Phase 2: 2015-2017} & \multicolumn{1}{c}{Phase 3: 2018-2020} \\ \addlinespace\midrule\addlinespace
+    Social influence and incentives & Modelling social diversity of views across languages and cultures & Modelling social influence and incentives  through game theoretic approaches using data from textual and social networking streams & Holistic modelling of society (or its segments) through observing variety of data sources \\ \addlinespace
+    Information tracking & Tracking dynamics of information diffusion across languages, cultures and media & Transforming observed textual and social data streams into actionable deep knowledge representations & Prediction of future events and identification of causal relationships from textual and social streams \\ \addlinespace
+    Multimodal data processing & Joining textual data and social networks, including spatial and temporal dimensions & Joining textual and social data with unstructured sources like sensor data (smart cities), video, images, audio & Detecting inconsistencies, gaps and completeness of collected knowledge from textual and social sources \\ \addlinespace
+    Visualisation and user interaction & Visualisation of textual and social dynamics & Adaptive human-computer interfaces boosting specific aims in interaction & Adaptive interaction systems for communication with the whole or parts of society \\ \addlinespace
+    Algorithmic fundamentals & Algorithms and toolkits for scalable processing of multi-modal data (Big-Data) & Real-time modelling and reasoning on massive textual and social streams & Algorithms and toolkits being able to deal with planetary scale analytics and reasoning with multimodal data \\ \addlinespace\bottomrule
+  \end{tabular}
+  \caption{Priority Theme 2 -- Social Intelligence and eParticipation: Preliminary Roadmap}
+  \label{fig:pt2-roadmap}
+\end{figure*}
 
 \subsection{Priority Theme 3: Socially Aware Interactive Assistant}
 \label{sec:priority-theme-3-interactive-assistant}
@@ -1274,6 +1355,22 @@ To maximise impact, it is necessary to have a substantial effort in the developm
 This includes the production of adequate language and human naturalistic behaviour corpora, semantically annotated including prosodic and non-verbal behavioural cues, which represents a huge effort. This also includes the production (acquisition and annotation) of dialogue corpora from the real world, which probably implies an incremental system design, and either the use of synchronised continuous observations of all involved parties, or the use of similar data available on Internet (conversation, talks shows).
  
 Dialogue systems evaluation still needs research investigations on the choice of adequate metrics and protocols. The multilingual dimension that is targeted implies the availability of language resources and language technology evaluation for all languages. Handling them all together reduces however the overall effort, given the possibility to use the same best practices, tools and protocols.
+
+\begin{figure*}[htbp]
+  \centering
+  \small
+  \begin{tabular}{@{}p{2.5cm}p{4cm}p{4cm}p{4cm}@{}} \toprule\addlinespace
+    \multicolumn{1}{c}{Research Priority} & \multicolumn{1}{c}{Phase 1: 2013-2014} & \multicolumn{1}{c}{Phase 2: 2015-2017} & \multicolumn{1}{c}{Phase 3: 2018-2020} \\ \addlinespace\midrule\addlinespace
+    Interacting naturally with agents & \textbf{Provide usable human interface}, reliable speech recognition, natural and intelligible speech synthesis, limited understanding and dialogue capabilities & \textbf{Provide usable dialogue interface}, context and dialogue aware speech recognition and synthesis. Recognize and produce emotions,  understanding capabilities, context aware dialogue, using other sensors (GPS, RFID, cameras, etc.) & \textbf{Provide multiparty (human-agents) interface}, multiple voices, mimicking, advanced understanding and advanced  personalised dialogue (indirect speech acts, incl.~prosodics, lies, humor) \\ \addlinespace
+    Using language and other modalities (in parallel or together) & \textbf{Multimodal interaction} (speech, facial expression, gesture, body postures) & \textbf{Multimodal dialogue}, fusion and fission & \textbf{Fleximodal dialogue}, identification of best suited modalities \\ \addlinespace
+    Conscious of its performing capacities & Confidence in hearing/understanding, interactively recovering from mistakes & Ability to learn continuously and incrementally from mistakes by interaction & Unsupervised learning/forgetting \\ \addlinespace
+    Exhibiting multilingual proficiency & Ensure availability or portability to major EU languages; recognize which language is spoken; multilingual access to multilingual information & More languages (migrants, foreign languages), accents and dialects; recognize dialects, accents; exploit limited resources; crosslingual access to information & Speech translation in human-human interactions (multiple speakers speaking multiple languages); cross-cultural support; learn new language with small effort \\ \addlinespace
+    Resources & Install infrastructure, collection of multi-task benchmark data, collaborative production of semantically annotated data (multimodal), incremental production of dialogue data & Use infrastructure, more data, more languages & Use infrastructure, more data, more languages \\ \addlinespace
+    Evaluation & Multi-task benchmark evaluation; measures and protocols for automated speech synthesis; dialogue systems and speech translation evaluation & Measure of progress; more languages & Measure of progress; more languages \\ \addlinespace\bottomrule
+  \end{tabular}
+  \caption{Priority Theme 3 -- Socially-Aware Interactive Assistant: Preliminary Roadmap}
+  \label{fig:pt3-roadmap}
+\end{figure*}
 
 \subsection{Structure and Principles of Research Organisation}
 \label{sec:struct-princ-research-org}
@@ -1404,6 +1501,24 @@ The challenge for both the language technology community and policy makers is to
 
 Interoperability of resources seeks to maximise the extent to which they are compatible and therefore integratable at various levels, so as to allow, for instance, the merging of data or tools coming from different sources, while preserving their semantics and individual functions. Interoperability of resources and data is also an essential prerequisite for successful exploitation of the enormous amount of data that the advent of the Internet has been making available since less than two decades. The community and funding agencies need to join forces to drive forward the use of existing and emerging standards, at least in the areas where there is some degree of consensus. The only way to ensure useful feedback to improve and advance is to use these standards on a regular basis. It will be thus even more important to enforce and promote the use of standards at all stages, from basic standardisation for less-resourced languages (such as orthography normalization, transcription of oral data, etc.) to more complex areas (such as semantics, etc.). Language Resource producers, on their side, should look for standards and best practices that best fit the LRs to be produced, already at the early stages of design/specifications.
 
+\begin{figure*}[htbp]
+  \centering
+  \small
+  \begin{tabular}{@{}p{2.5cm}p{8cm}p{4cm}@{}} \toprule\addlinespace
+    \multicolumn{1}{c}{Research Priority} & \multicolumn{1}{c}{Phase 1: 2013-2014} & \multicolumn{1}{c}{Phases 2 and 3: 2015-2020} \\ \addlinespace\midrule\addlinespace
+    Infrastructure & Maintain and extend facility(-ies) for sharing resource data and tools; promote accurate and reliable documentation of Language Resources through agreed formal metadata models; define and agree on the basic criteria and dimensions for an appropriate governance; cooperation between infrastructure initiatives to avoid the duplication of effort & Create mechanisms for (automatically) accumulating descriptions of as well as actual speech and language resources; multilingual coverage, ease of access, ease of conversion into uniform formats; technical solutions for integrating language processing services to help organic growth of LR infrastructures (SaaS) \\ \addlinespace
+    Coverage, quality, adequacy & Increase quantity of resources available to address language technology and application needs; address formal and content quality of resources by promoting evaluation and validation; promote evaluation and validation activities of LRs and the dissemination of their outcomes & Further increase quantity of resources available to address language and application needs; provide high quality resources for all European languages; coordinated effort at the international level would help by providing less advanced countries, languages with examples and best practices \\ \addlinespace
+    LR acquisition & Ensure strong public and community support to definition and dissemination of resource production best practices; enforce recycling, reusing and repurposing (also through appropriate metadata); research work towards the full automation of LR data production; invest in Web 2.0/3.0 methods for collaborative creation and extension of high-quality resources, also as a means to achieve better coverage;
+implement workflows of speech and language processing services for acquisition of LRs required for the implementation of the priority themes; bridge LR acquisition methods with linked open data and big data;
+share the effort for production of LRs between international bodies and individual countries & \\ \addlinespace
+    Openness & Educate key players with basic legal know-how; elaborate specific, simple and harmonised licensing solutions for data resources; promote copyright exception for research purposes; develop legal and technical solutions for privacy protection; opt for openness of LRs, especially publicly funded ones;
+ensure that publicly funded resources are publicly available either free of charge or at a small distribution cost; clear IPR at the early stages of production; try to ensure that re-use is permitted & \\ \addlinespace
+    Interoperability & Invest in standardisation activities, make standards operational and put them in use; create a permanent Standards Observatory or Standards Watch; set up training initiatives to promote and disseminate standards to students and young researchers; encourage/enforce use of best practices or standards in LR production projects; identify new mature areas for standardisation and promote joint efforts between R\&D and industry & \\ \addlinespace\bottomrule
+  \end{tabular}
+  \caption{Core technologies and resources: Preliminary Roadmap}
+  \label{fig:lrlt-roadmap}
+\end{figure*}
+
 % ------- End of Stelios' text
 
 \subsection{Mechanisms for Showcasing and Innovation}
@@ -1422,6 +1537,18 @@ The trend towards widely used platforms will drastically facilitate spreading in
 \subsection{A European Service Platform for Language Understanding, Communication, Knowledge, Inference and Emotion}
 \label{sec:europ-service-platform}
 
+% FIXME: Integrate these general points from Hans' META-FORUM 2012 slides:
+
+% Large global platforms for novel end-user-services have become the predominant innovation drivers for language technology solutions.
+%
+% web-services such as Google search that integrates the new Knowledge Graph concept network, speech-enabled search and web-translation. 
+%
+% hardware/OS combinations such as iOS 6 for Apple’s mobile devices with its speech-activated assistant Siri. 
+%
+% open operating system such as Android that is expected to extend its current speech and language functionalities in the near future. 
+%
+% Of a different nature: iOS distribution platforms such as the Apple AppStore
+
 In this section we argue for the creation of an ambitious large-scale sky-computing platform as a central motor for research and innovation in the next phase of IT evolution and a ubiquitous resource for the multilingual European society (an idea suggested by several experts from industry in META-NET Vision Group meetings). The platform will be used for testing, show casing, proof-of-concept demonstration, avant-garde adoption, experimental and operational service composition, and fast and economical service delivery to enterprises and end-users.
  
 The proposed creation of a powerful cloud or sky computing platform for a wide range of services dealing with human language, knowledge and emotion will not only benefit the individual and corporate users of these technologies but also the providers.
@@ -1434,9 +1561,10 @@ Users will be able to receive customized integrated services without having to i
  
 \textbf{Researchers} will have a unique virtual laboratory for testing, combining, and benchmarking their novel technologies and for exposing them in realistic trials to real tasks and end users.
  
-\textbf{Providers of services} that can be enabled or enhanced by text and speech processing will utilize the platform for testing the needed LT functionalities
-and for integrating them into their own solutions.
- 
+\textbf{Providers of services} that can be enabled or enhanced by text and speech processing will utilize the platform for testing the needed LT functionalities and for integrating them into their own solutions.
+
+\textbf{Citizens and corporate users} will enjoy the benefits of language technology early and at no or reasonable costs through a large variety of generic and specialized services offered at a single source.
+
 In order to allow for the gigantic range of foreseeable and currently not yet foreseeable solutions, the infrastructure will have to host all relevant simple services, including components, tools and data resources, as well as various layers or components of higher services that incorporate simpler ones.
  
 A top layer consists of \textbf{language} processing such as text filters, spell checking, hyphenation, lemmatizing and parsing. At a slightly deeper level, services will be offered that realize some degree and form of language \textbf{understanding} including entity and event extraction, opinion mining and translation. Both basic language processing and understanding will be used by services that support human \textbf{communication} or realize some human-machine interaction. Part of this layer are question answering and dialogue systems as well as email response applications. Another component will bring in services for processing and storing \textbf{knowledge} gained by and used for understanding and communication. This part will include repositories of linked data and ontologies, as well as services for building, using and maintaining them. These in turn permit a certain range of rational capabilities often attributed to a notion of intelligence. The goal is not to model the entire human intelligence but rather to realize selected forms of \textbf{inference} that are needed for utilizing and extending knowledge, for understanding and for successful communication. These forms of inference permit better decision support, pro-active planning and autonomous adaptation. A final part of services will be dedicated to human \textbf{emotion}.  Since people are largely guided by their emotions and strongly affected by the emotions of others, truly user-centred IT need facilities for detecting and interpreting emotion and even for expressing emotional states in communication.
@@ -1480,6 +1608,60 @@ Thus the service platform will be an important instrument for supporting the ent
 %
 % - Mention Roadmap
 % - Mention shared programme between EU/EC, member states and associated countries (e.g., Article 185)
+% - Mention innovation as super-important.
+
+% A few points from Hans' META-FORUM 2012 slides:
+%
+% Apart from new ways of sharing, development, and distribution, a generally innovative climate is needed. 
+%
+% mechanisms for 1. encouraging and incentivizing creativity, 2. fostering and rewarding courage, 3. accessing and rebuilding capital need 
+%
+% These should be incorporated into the planned research and innovation actions, new proposals need to be assessed and tested. 
+%
+% EC Collaborative Research Instruments
+%
+% Article 185 of the Treaty on the Functioning of the European Union (TFEU): "In implementing the multiannual framework programme, the Union may make provision, in agreement with the Member States concerned, for participation in research and development programmes undertaken by several Member States, including participation in the structures created for the execution of those programmes." 
+% Currently four Article 185 Initiatives: "AAL" - a joint research programme on "Ambient Assisted Living" (use of new ICT in order to enhance the quality of the lives of elderly people) (2008; 150M€ EC + 150M€ MS); "BONUS"- a joint research programme in the field of Baltic Sea research (2010; 50M€ EC + 50M€ MS); "EMRP" - a joint research programme in the field of Metrology (the science of measurement) (2009; 200 M€ EC + 200 M€ MS). One is under the "Capacities" specific programme [PDF]: "Eurostars" - a joint research programme for research performing SMEs and their partners (2008; 100 M€ EC + 300 M€ MS)
+%
+% An Article 185 Initiative seems to be a perfect fit for the needs described in this document:  
+%
+% http://cordis.europa.eu/fp7/art185/faq_en.html
+%
+% "The main objective of the coordination of national research programmes is to reduce the fragmentation of research efforts carried out at national or regional level in Europe. In ensuring better coordination of research activities and the convergence of research and innovation policies at national and EU levels, some important goals can be achieved:
+%  - Critical mass can be reached in certain research areas, ensuring better use of scarce resources;
+%  - Through joint action, common answers can be found to common needs and interests;
+%  - Global issues can be addressed at EU level and common approaches can be developed (e.g. ethics, standards, etc.);
+%  - The Member States involved are given the opportunity to exchange "good practice" and learn from each other.
+%More generally, the coordination of (parts of) national research programmes will enable Member States to avoid unnecessary overlaps of efforts, to exchange information, expertise and good practice in specific fields."
+%
+% First steps have been taken at our META-FORUM 2012 conference in Brussels where representatives of several member states have participated in a panel discussion about the need for such a coordinated programme between the EU/EC and the member states.
+%
+% Identification process
+%
+%What are the relevant "criteria" for the identification of potential Article 185 TFEU (ex Article 169 TEC) initiatives? The Seventh Framework Programme states that in well-defined cases, Article 185 TFEU (ex Article 169 TEC) initiatives could be launched in areas to be identified in close association with the Member States, including the possible cooperation with intergovernmental programmes, on the basis of a series of criteria:
+%- relevance to EU objectives,
+%- the clear definition of the objective to be pursued and its relevance to the objectives of this Framework Programme,
+%- presence of a pre-existing basis (existing or envisaged research programmes),
+%- European added value,
+%- critical mass, with regard to the size and the number of programmes involved and the similarity of activities they cover,
+%- efficiency of Article 185 TFEU as the most appropriate means for achieving the objectives.
+%
+% How is an Article 185 TFEU (ex Article 169 TEC) initiative set-up?
+% -> Each Article 185 TFEU (ex Article 169 TEC) initiative is set up individually through a Decision of the European Parliament and of the European Council, via the co-decision procedure. Article 185 TFEU Initiatives are set up on the basis of a Council Regulation following a proposal from the Commission.
+%
+% Implementation: Establishment or existence of a legal Dedicated Implementation Structure (DIS); Should exist before decision; takes care of programme management and Calls for Proposals, projects selection and follow-up; Financial management; sole recipient of EU funding
+%
+% LT is a great match for Article 185: 
+% - High societal challenge on multilingualism in EU
+% - LT needs major investments (#LT x  # languages)
+% - Industrial coverage by SMEs
+% - Interest of MS/AS/regions to support their language(s)
+% - Interest of EU to allow communication among citizens / businesses
+% - Interest of EU bodies for their own needs (EC, EP, ECJ, EPO, ENISA, etc.)
+% - Importance that EC ensures coordination (Best Practices, standards, technology evaluation)
+%
+% Resolution of the European Council on a “European strategy on Multilingualism” (November 2008). Specifically encourages “the development of language technologies, in particular in the field of translation and interpretation, firstly by promoting cooperation between the Commission, the Member States, local authorities, research bodies and industry, and secondly by ensuring convergence between research programs, the identification of areas of application and the deployment of the technologies across all EU languages”.
+
 \end{multicols}
 
 \clearpage
@@ -1654,26 +1836,22 @@ In the following we list the experts who contributed to this Strategic Research 
 
 \ssection[About META-NET]{About META-NET}
 
-% FIXME: Include the "three stripes" visual in this chapter
-
 \begin{multicols}{2}
-\textbf{META-NET} is a Network of Excellence funded by the European Commission \cite{rehm2011}.  The network currently consists of 60 members in 34 European countries. META-NET forges \textbf{META}, the Multilingual Europe Technology Alliance, a growing community of language technology professionals and organisations in Europe. META-NET fosters the technological foundations for a truly multilingual European information society that:
-
-\begin{itemize}
-\item makes communication and cooperation possible across languages;
-\item grants all Europeans equal access to information and knowledge regardless of their language; 
-\item builds upon and advances functionalities of networked information technology.
-\end{itemize}
+  \textbf{META-NET} is a Network of Excellence partially funded by the European Commission \cite{rehm2011}.  The network currently consists of 60 members in 34 European countries. META-NET forges the Multilingual Europe Technology Alliance (\textbf{META}), a growing community of currently more than 600 language technology professionals and organisations. META-NET fosters the technological foundations for a multilingual European information society that: 1.~makes communication and cooperation possible across languages; 2.~grants all Europeans equal access to information and knowledge regardless of their language; 3.~builds upon and advances functionalities of networked information technology.
 
 The network supports a Europe that unites as a single digital market and information space. It stimulates and promotes multilingual technologies for all European languages. These technologies support automatic translation, content production, information processing and knowledge management for a wide variety of subject domains and applications. They also enable intuitive language-based interfaces to technology ranging from household electronics, machinery and vehicles to computers and robots.
 
-Launched on 1 February 2010, META-NET has already conducted various activities in its three lines of action META-VISION, META-SHARE and META-RESEARCH. 
+Launched on 1 February 2010, META-NET is conducting various activities in its three lines of action META-VISION, META-SHARE and META-RESEARCH.
 
-\textbf{META-VISION} fosters a dynamic and influential stakeholder community that unites around a shared vision and a common strategic research agenda (SRA). The main focus of this activity is to build a coherent and cohesive LT community in Europe by bringing together representatives from highly fragmented and diverse groups of stakeholders. The present white paper was prepared together with volumes for 29 other languages. The shared technology vision was developed in three sectorial Vision Groups. The META Technology Council was established in order to discuss and to prepare the SRA based on the vision in close interaction with the entire LT community.
+\textbf{META-VISION} fosters a dynamic and influential stakeholder community that unites around a shared vision and strategic research agenda (SRA). The main focus of this activity is to build a coherent and cohesive LT community in Europe by bringing together representatives from highly fragmented and diverse groups of stakeholders. White Papers were produced for 30 languages, each one describing the status of one language with respect to its state in the digital era and existing technological support \cite{LWP2012}. The shared technology vision was developed in three sectorial Vision Groups. 
 
-\textbf{META-SHARE} creates an open, distributed facility for exchanging and sharing resources. The peer-to-peer network of repositories will contain language data, tools and web services that are documented with high-quality metadata and organised in standardised categories. The resources can be readily accessed and uniformly searched. The available resources include free, open source materials as well as restricted, commercially available, fee-based items. 
+\textbf{META-SHARE} creates an open, distributed facility for exchanging and sharing resources. The peer-to-peer network of repositories will contain language data, tools and services that are documented with metadata and organised in standardised categories. The resources can be accessed and uniformly searched. The available resources include free, open-source materials as well as restricted, commercially available, fee-based items.  
 
-\textbf{META-RESEARCH} builds bridges to related technology fields. This activity seeks to leverage advances in other fields and to capitalise on innovative research that can benefit language technology. In particular, the action line focusses on conducting leading-edge research in machine translation, collecting data, preparing data sets and organising language resources for evaluation purposes; compiling inventories of tools and methods; and organising workshops and training events for members of the community.
+\textbf{META-RESEARCH} builds bridges to related technology ﬁelds. This activity seeks to leverage advances in other ﬁelds and to capitalise on innovative research that can beneﬁt language technology. The action line focuses on conducting leading-edge research in machine translation, collecting data, preparing data sets and organising language resources for evaluation purposes; compiling inventories of tools and methods; and organising workshops and training events for members of the community.
+
+\begin{center}
+  \includegraphics[width=0.42\textwidth]{../_media/action-lines}  
+\end{center}
 
 \vfill
 %\centerline{office@meta-net.eu -- http://www.meta-net.eu}
