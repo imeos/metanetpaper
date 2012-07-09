@@ -1,8 +1,18 @@
 # DFKI META-NET whitepaper
-
 LaTeX class and files to typeset (bilingual) papers of the META-NET project in a one- or twocolumn layout in all languages of the project.
 
 ([www.meta-net.eu](http://www.meta-net.eu/))
+
+
+## Installation
+1. Clone this project locally
+
+	git clone git@github.com:imeos/metanetpaper.git
+
+2. Make sure you have the necessary packages and fonts installed (see `metanetpaper.cls`)
+3. Happy TeXing
+
+If you have no write access: Of course you can also fork this project and issue pull requests.
 
 
 ## Class options
