@@ -5,7 +5,7 @@ LaTeX class and files to typeset (bilingual) papers of the META-NET project in a
 
 
 ## Installation
-1. [mailto:christoph.seelus@dfki.de](Request) write access
+1. [Request](mailto:christoph.seelus@dfki.de) write access
 2. Clone this project locally
 
         git clone git@github.com:imeos/metanetpaper.git
