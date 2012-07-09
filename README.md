@@ -5,12 +5,13 @@ LaTeX class and files to typeset (bilingual) papers of the META-NET project in a
 
 
 ## Installation
-1. Clone this project locally
+1. [mailto:christoph.seelus@dfki.de](Request) write access
+2. Clone this project locally
 
         git clone git@github.com:imeos/metanetpaper.git
 
-2. Make sure you have the necessary packages and fonts installed (see `metanetpaper.cls`)
-3. Happy TeXing
+3. Make sure you have the necessary packages and fonts installed (see `metanetpaper.cls`)
+4. Happy TeXing
 
 If you have no write access: Of course you can also fork this project and issue pull requests.
 
