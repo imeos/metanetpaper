@@ -59,8 +59,8 @@ LaTeX class and files to typeset (bilingual) papers of the META-NET project in a
 `[purple]    ` =~ #7e7fff
 
 ## Sample screenshots
-![Danish Ebook Cover](http://stuff.imeos.org/persistent/lwp_icelandic_ebook_cover.png)
-Language White Paper Series: Danish Ebook Cover
+![Icelandic Ebook Cover](http://stuff.imeos.org/persistent/lwp_icelandic_ebook_cover.png)
+*Language White Paper Series:* Icelandic Ebook Cover
 
 ![Danish Ebook Content](http://stuff.imeos.org/persistent/lwp_danish_ebook_content.png)
-Language White Paper Series: Danish Ebook Content
+*Language White Paper Series:* Danish Ebook Content
