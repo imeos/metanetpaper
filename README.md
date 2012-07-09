@@ -57,3 +57,7 @@ LaTeX class and files to typeset (bilingual) papers of the META-NET project in a
 `[blue]      ` =~ #44c1c5  
 `[blue2]     ` =~ #56d8d8  
 `[purple]    ` =~ #7e7fff
+
+## Sample screenshots
+![Danish Ebook Cover](http://stuff.imeos.org/persistent/danish_ebook_cover.png)
+![Danish Ebook Content](http://stuff.imeos.org/persistent/danish_ebook_content.png)
