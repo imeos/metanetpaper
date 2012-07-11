@@ -1,8 +1,17 @@
 # DFKI META-NET whitepaper
+LaTeX class and files to typeset (bilingual) papers of the [META-NET project](http://www.meta-net.eu/) in a one- or twocolumn layout in all languages of the project.
 
-LaTeX class and files to typeset (bilingual) papers of the META-NET project in a one- or twocolumn layout in all languages of the project.
 
-([www.meta-net.eu](http://www.meta-net.eu/))
+## Installation
+1. [Request](mailto:christoph.seelus@dfki.de) write access
+2. Clone this project locally
+
+        git clone git@github.com:imeos/metanetpaper.git
+
+3. Make sure you have the necessary packages and fonts installed (see `metanetpaper.cls`)
+4. Happy TeXing
+
+If you have no write access: Of course you can also fork this project and issue pull requests.
 
 
 ## Class options
@@ -59,8 +68,10 @@ LaTeX class and files to typeset (bilingual) papers of the META-NET project in a
 `[purple]    ` =~ #7e7fff
 
 ## Sample screenshots
-![Danish Ebook Cover](http://stuff.imeos.org/persistent/lwp_icelandic_ebook_cover.png)
-Danish Ebook Cover
+![Icelandic Ebook Cover](http://stuff.imeos.org/persistent/lwp_icelandic_ebook_cover.png)
+**Language White Paper Series:** Icelandic Ebook Cover
+
+---
 
 ![Danish Ebook Content](http://stuff.imeos.org/persistent/lwp_danish_ebook_content.png)
-Danish Ebook Content
+**Language White Paper Series:** Danish Ebook Content
