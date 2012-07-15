@@ -1,5 +1,5 @@
 # DFKI META-NET whitepaper
-LaTeX class and files to typeset (bilingual) papers of the [META-NET project](http://www.meta-net.eu/) in a one- or twocolumn layout in all languages of the project.
+LaTeX class and files to typeset (bilingual) papers of the [META-NET project](http://www.meta-net.eu/) for the [DFKI](http://www.dfki.de/) in a one- or twocolumn layout in all languages of the project.
 
 
 ## Installation
