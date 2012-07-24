@@ -327,7 +327,7 @@ La Fundéu BBVA (antes la Fundación del Español Urgente) \cite{fundeu} es una 
 
 La Fundación ha creado y mantiene una página web en la que se pueden encontrar los materiales elaborados por ella. El Manual del Español Urgente es una guía de referencia para aquellos que quieren escribir en español correcto, libre de modismos procedentes de otras lenguas. Un ejemplo del manual dice lo siguiente:
 
-\textit{Jugar un papel -- la frase ``Jugar un papel'' aparece muy frecuentemente en las noticias y se utiliza cada vez más tanto en español escrito como hablado, ... ``Jugar un papel'' es un anglo-galicismo que tiene sus raíces en la expresión inglesa ``to play a role'' y en la francesa ``jouer un rôle'' ... en el sentido de ``cumplir una misión o tarea'' \ldots es una expresión inaceptable, ajena a nuestro idioma, como lo sería ``jugar una comedia'' o ``jugar al piano''.}
+\textit{Jugar un papel -- la frase ``Jugar un papel'' aparece muy frecuentemente en las noticias y se utiliza cada vez más tanto en español escrito como hablado, \dots\  ``Jugar un papel'' es un anglo-galicismo que tiene sus raíces en la expresión inglesa ``to play a role'' y en la francesa ``jouer un rôle'' \dots\ en el sentido de ``cumplir una misión o tarea'' \dots\ es una expresión inaceptable, ajena a nuestro idioma, como lo sería ``jugar una comedia'' o ``jugar al piano''.}
 
 El manual también aborda otros aspectos lingüísticos, tales como la pronunciación, la ortografía o la puntuacion. Por ejemplo, con respecto a ``seseo'' y ``ceceo'' (las distintas formas locales de pronunciar ``s'', ``c'' y ``z''), el Manual de Español Urgente dice:
 
@@ -462,8 +462,9 @@ Cualquiera que haya usado un procesador de texto como Microsoft Word sabe que ti
 
 \begin{figure*}[htb]
   \colorrule{grey3}{\textwidth}{1.5pt}
+
+  \bigskip
   \centering
-  \vspace{6mm}
   \includegraphics[width=\textwidth]{../_media/spanish/language_checking}
   \caption{Corrección de textos (parte superior: estadística; parte inferior: basada en reglas)}
   \label{fig:langcheckingaarch_de}
@@ -472,11 +473,13 @@ Cualquiera que haya usado un procesador de texto como Microsoft Word sabe que ti
 
 El tratamiento de muchos tipos de errores requiere un análisis del contexto. Un caso típico es cuando el error ortográfico transforma una palabra en otra palabra existente. En el siguiente ejemplo, la primera frase contiene un par de errores comunes (problemas con los acentos ortográficos y la omisión de /h/ muda). La segunda frase es la versión corregida de la primera:
 
-\begin{itemize}
-\item Mí calculo es que hoy a venido mas publico que ayer.
-\item Mi cálculo es que hoy ha venido más público que ayer.
-\end{itemize}
+\medskip
+Mí calculo es que hoy a venido mas publico que ayer.
 
+\smallskip
+Mi cálculo es que hoy ha venido más público que ayer.
+
+\medskip 
 Para analizar el contexto lingüístico son necesarias reglas gramaticales laboriosamente codificadas por expertos, o bien un modelo de lenguaje estadístico construido a partir de corpus. En este último caso, el modelo calcula la probabilidad de que una palabra concreta aparezca en una posición específica (por ejemplo, entre las palabras que la preceden y la siguen). Por ejemplo, [Mi cálculo] o [ha venido] son secuencias de palabras mucho más probables que [Mí calculo] o [a venido] respectivamente. Un modelo estadístico de lenguaje se construye automáticamente a partir de una gran cantidad de texto (correcto), lo que se conoce como corpus textual. La mayor parte de las aplicaciones lingüísticas, ya sean basadas en reglas o en modelos estadísticos, se han desarrollado para el inglés. Otras lenguas han podido beneficiarse de toda la investigación realizada en torno al inglés. Sin embargo, no todos los tratamientos desarrollados para esta lengua se aplican bien a otras. Por ejemplo, los idiomas con una morfología más rica, o con un orden de palabras flexible, como el español, pueden necesitar un análisis lingüístico más profundo para alcanzar el mismo grado de precisión en la corrección de los textos.
 
 La corrección de textos también se utiliza en sistemas de creación controlada de textos, es decir, entornos para la edición de manuales y documentación que siguen normas de escritura especiales, en el ámbito de la salud, ingeniería y otros. Para evitar reclamaciones sobre el uso incorrecto de sus aparatos o por daños resultantes de instrucciones mal entendidas, las empresas están insistiendo cada vez más en la calidad de la documentación técnica, y de las traducciones de sus versiones multilingües. Los avances en el procesamiento del lenguaje natural han llevado al desarrollo de software de edición que ayuda al autor de documentación técnica a usar vocabulario especializado y estructura de las frases compatibles con las normas de la industria y que se ajustan a las restricciones terminológicas corporativas.
@@ -491,10 +494,8 @@ Buscar en la Web, en las intranets o en las bibliotecas digitales es probablemen
 
 \begin{figure*}[htb]
   \colorrule{grey3}{\textwidth}{1.5pt}
-  %\vspace{-9mm}
   \center
   \includegraphics[width=\textwidth]{../_media/spanish/web_search_architecture}
-  %\vspace{-5mm}
   \caption{Búsquedas en la web}
   \label{fig:websearcharch_de}
   \colorrule{grey3}{\textwidth}{1.5pt}
@@ -543,6 +544,7 @@ Las empresas tienden a utilizar frases pregrabadas por locutores profesionales p
 Las interfaces de voz que se hallan en el mercado, se han estandarizado considerablemente durante la última década, en términos de sus diversos componentes tecnológicos. También se ha consolidado el mercado en el reconocimiento y en la síntesis de voz. Los mercados nacionales de los países del G20 (países económicamente resistente con alta población) ha estado dominado por sólo cinco actores globales, con Nuance (EE.UU.) y Loquendo (Italia) entre los más importantes de Europa, también para el español, aunque algunas pequeñas compañías locales están empezando a competir, como Verbio, que es un spin-off de la Universitat Politècnica de Catalunya y dispone de tecnología de voz propia.
 
 En cuanto a la tecnología de gestión de diálogo, los mercados están fuertemente dominados por actores nacionales, que suelen ser pequeñas empresas.
+\columnbreak
 
 La mayoría de las empresas en el mercado español de las tecnologías de la voz son esencialmente desarrolladores de aplicaciones. Los principales actores en el mercado español son los siguientes: Indsys (Sistemas Inteligentes de diálogo), Fonetic , Ydilo y NaturalVoz. En lugar de depender de un modelo de negocio basado en las licencias de software, estas empresas se han posicionado principalmente como proveedores de servicios que crean interfaces de usuario de voz como parte de un servicio de integración de sistemas. En el área de la interacción del habla, no existe aún un mercado real para las tecnologías de análisis basadas en el análisi sintáctico y semántico.
 
@@ -559,9 +561,9 @@ La idea de utilizar ordenadores para traducir de una lengua a otra se remonta a 
 La aproximación más simple a la traducción automática consiste en reemplazar automáticamente las palabras de un texto en un idioma, por palabras en otro idioma. Esto puede ser útil en ámbitos que tienen un lenguaje muy restringido, como los informes metorológicos. Sin embargo, para producir una buena traducción de textos menos estandarizados, hay que asociar unidades mayores de texto (sintagmas, oraciones, o incluso párrafos completos) con sus traducciones en la lengua destino. La mayor dificultad es que el lenguaje humano es ambiguo. La ambigüedad afecta múltiples niveles, por ejemplo la desambiguación de sentidos a nivel léxico (un jaguar es una marca de coche o un animal) o la asignación de casos a nivel sintáctico, por ejemplo:
 
 \begin{itemize}
-  \item[] \textit{The woman saw the car and her husband, too.}
-  \item[] [La mujer vio el coche y su marido también.]
-  \item[] [La mujer vio el coche y a su marido también.]
+  \item \textit{The woman saw the car and her husband, too.}
+  \item La mujer vio el coche y su marido también.\\
+    La mujer vio el coche y a su marido también.
 \end{itemize}
 
 Una forma de construir un sistema de TA es escribir reglas lingüísticas. Los sistemas basados en reglas (o basados en conocimiento lingüístico) analizan el texto de entrada y crean una representación simbólica intermedia a partir de la cual puede generarse el texto en la lengua de destino. El éxito de estos métodos depende en gran medida de la disponibilidad de léxicos amplios con información morfológica, sintáctica y semántica, y de grandes conjuntos de reglas gramaticales cuidadosamente diseñadas por expertos lingüistas. Este es un proceso muy largo y costoso.
@@ -628,8 +630,6 @@ Los mejores resultados (en verde y azul) corresponden a las lenguas que se benef
 
 La construcción de aplicaciones lingüísticas implica un conjunto de tecnologías que no siempre aparecen de forma evidente en el nivel de interacción con el usuario, pero que proporcionan funcionalidades importantes al sistema en cuestión. Todos ellos constituyen temas importantes de investigación que han evolucionado hasta convertirse en sub-disciplinas específicas de la lingüística computacional.
 
-\boxtext{Las tecnologías lingüísticas proporcionan funcionalidades importantes de forma\\ no siempre evidente.}
-
 La \textbf{búsqueda de respuestas} o question answering, por ejemplo, es un área activa de investigación para la que se han construido corpus anotados y se han puesto en marcha concursos científicos. El concepto de búsqueda de respuestas va más allá de las búsquedas convencionales basadas en palabras clave (en las que el motor de búsqueda responde mediante la entrega de una colección de documentos potencialmente relevantes). Este tipo de búsqueda permite a los usuarios hacer una pregunta concreta a la que el sistema proporciona una respuesta única. Por ejemplo:
 
 \begin{itemize}
@@ -639,6 +639,8 @@ La \textbf{búsqueda de respuestas} o question answering, por ejemplo, es un ár
 
 A pesar de que la búsqueda de respuestas está obviamente relacionada con la búsqueda en la Web, hoy en día es un término general que engloba temas de investigación tales como: qué tipos de preguntas hay y cómo deberían tratarse; cómo pueden analizarse y compararse un conjunto de documentos que podrían contener la respuesta (¿ofrecen respuestas contradictorias?), y cómo puede extraerse de forma fiable la información específica (es decir, la respuesta) de un documento sin descuidar el contexto. 
 
+\boxtext{Las tecnologías lingüísticas proporcionan funcionalidades importantes de forma\\ no siempre evidente.}
+ 
 Esto a su vez está relacionado con la \textbf{extracción de información}, un ámbito que se hizo muy popular e influyente cuando la lingüística computacional dio un giro hacia la estadística en la década de 1990. La extracción de información tiene como objetivo identificar información específica en clases de documentos específicos, como por ejemplo, la detección de los actores clave en la adquisición de empresas a partir de informaciones periodísticas. Otra situación común que se ha estudiado son los informes sobre incidentes terroristas. El problema aquí consiste en proyectar el texto hacia una plantilla que especifique el autor, el objetivo, hora, lugar y los resultados del incidente. La extracción de información consiste básicamente en llenar plantillas relativas a dominios específicos, por lo que constituye otro ejemplo de tecnología “entre bastidores” que en la práctica tiene que ser integrada en un entorno de aplicación adecuada. 
 
 \boxtext{La investigación en estas tecnologías está\\ mucho menos desarro-llada para la lengua\\ española que para el inglés.} 
@@ -661,13 +663,14 @@ La SEPLN organiza una conferencia anual a la que asisten un número creciente de
 
 \subsection{Proyectos e iniciativas nacionales}
 
-El Ministerio de Educación, a través de la Comisión Interministerial de Ciencia y Tecnología (CICYT), que es el órgano que coordina y supervisa los planes estratégicos nacionales para la Ciencia y la Tecnología en España, apoya la investigación en el campo de las tecnologías de la información, a través de programas nacionales de investigación. Estos programas han impulsado numerosos proyectos de investigación y de colaboración con empresas y centros internacionales de investigación. La base del desarrollo tecnológico y de las aplicaciones comerciales para el procesamiento automático de la lengua española ha surgido en parte como resultado de estos proyectos.
+El Ministerio de Educación, a través de la Comisión Interministerial de Ciencia y Tecnología (CICYT), órgano que coordina y supervisa los planes estratégicos nacionales para la Ciencia y la Tecnología en España, apoya la investigación en el campo de las tecnologías de la información, a través de programas nacionales de investigación. Estos programas han impulsado numerosos proyectos de investigación y de colaboración con empresas y centros internacionales de investigación. La base del desarrollo tecnológico y de las aplicaciones comerciales para el procesamiento automático de la lengua española ha surgido en parte como resultado de estos proyectos.
 
 El Centro para el Desarrollo Tecnológico Industrial (CDTI) es una organización pública española, dependiente del Ministerio de Ciencia e Innovación, cuyo objetivo es ayudar a las empresas españolas a incrementar su perfil tecnológico. El CDTI evalúa y financia proyectos I + D a través de programas como CENIT, AVANZA e INNPACTO.
 
 El programa CENIT (Consorcios Estratégicos Nacionales para la Investigación Tecnológica) tiene como objetivo estimular la cooperación en I + D entre el sector privado, las universidades, los organismos y centros públicos de investigación, los parques científicos y los centros tecnológicos, impulsando la cooperación en I + D entre los sectores público y privado. Los proyectos CENIT tienen una duración mínima de cuatro años, un presupuesto mínimo de 5 millones de euros por año, y reciben una financiación mínima del 50\% del sector privado. Al menos el 50\% de la financiación pública se destina a centros públicos de investigación o a centros tecnológicos. Las tecnologías de la Información y la Comunicación son una de las áreas prioritarias del programa. Los proyectos en este área incluyen a menudo algún tipo de investigación en tecnologías del lenguaje.
 
 El objetivo de los planes AVANZ@ e INNPACTO es acercar la Sociedad de la Información a los ciudadanos comunes, y a los sectores público y privado. Promover el uso de las TIC ha de tener un efecto en cadena sobre el conjunto del sector en España, y por consiguiente, en su carácter innovador. Los objetivos del Plan incluyen el incremento del porcentaje de empresas que utilizan el comercio electrónico; la promoción del uso de la facturación electrónica; la  implementación de un carnet de identidad electrónico y la extensión de los trámites públicos electrónicos; alcanzar la tasa de un ordenador conectado a Internet por cada dos alumnos en las escuelas; y duplicar el número de hogares con acceso a Internet. Entre sus mayores prioridades está el facilitar el uso de las nuevas tecnologías a las personas mayores y a las personas con discapacidad, como un medio ideal para lograr la integración social, evitar la exclusión y mejorar su calidad de vida. Las herramientas basadas en tecnología lingüística constituyen el medio principal para satisfacer este objetivo  (por ejemplo, los asistentes de lectura para ciegos que utilizan síntesis de voz).
+\columnbreak
 
 Proyectos y programas anteriores han contribuido al desarrollo de una serie de herramientas de tecnología lingüística y de recursos para el español. En la siguiente sección, se resume el estado actual del soporte a la tecnología lingüística para el español.  
 
@@ -680,7 +683,7 @@ La siguiente tabla resume el estado actual del soporte a la tecnología lingüí
 \begin{tabular}{>{\columncolor{orange1}}p{.33\linewidth}@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c@{\hspace*{6mm}}c}
   \rowcolor{orange1}
    \cellcolor{white}&\begin{sideways}\makecell[l]{Cantidad}\end{sideways}
-  &\begin{sideways}\makecell[l]{\makecell[l]{Disponibilidad} }\end{sideways} &\begin{sideways}\makecell[l]{Calidad}\end{sideways}
+  &\begin{sideways}\makecell[l]{\makecell[l]{Disponibilidad~~~} }\end{sideways} &\begin{sideways}\makecell[l]{Calidad}\end{sideways}
   &\begin{sideways}\makecell[l]{Cobertura}\end{sideways} &\begin{sideways}\makecell[l]{Madurez}\end{sideways} &\begin{sideways}\makecell[l]{Sostenibilidad}\end{sideways} &\begin{sideways}\makecell[l]{Adaptabilidad~~~}\end{sideways} \\ \addlinespace
   \multicolumn{8}{>{\columncolor{orange2}}l}{Tecnoligías lingüísticas: herramientas, tecnologías y aplicaciones} \\\addlinespace
   Reconocimiento de voz &2&3&4&2&2&2&4 \\ \addlinespace
@@ -708,6 +711,8 @@ Los datos contenidos en esta tabla se pueden interpretar de forma resumida, de l
   \item En cuanto a los recursos, existe un corpus textual de referencia de gran tamaño para el español, que contiene una mezcla equilibrada de géneros, pero que no es de fácil acceso para la investigación. Existen también diversos corpus anotados con información sintáctica, semántica y de discurso, pero no son suficientes, ni en riqueza de anotaciones ni en tamaño, para satisfacer la creciente necesidad de información lingüística.
   \item En particular, hay una carencia de corpus paralelos que constituyen la base de los sistemas de traducción automática estadísticos e híbridos. Existen corpus paralelos entre el español y el inglés, así como entre el español y el resto de lenguas oficiales en España. Sin embargo, faltan corpus paralelos entre el español y otros idiomas.
   \item Muchas de estas herramientas, recursos y formatos de codificación no se ajustan a los estándares del sector y no se pueden mantener de forma eficaz. Se requiere un plan concertado para estandarizar las interfaces de las aplicaciones y los formatos de los datos.
+\columnbreak
+
   \item Existe una situación legal confusa que restringe la utilización de textos digitales, como las publicaciones en línea, para su uso en investigación, por ejemplo para entrenar modelos estadísticos de la lengua. Los investigadores, junto con los políticos, deben intentar establecer leyes o regulaciones que les permitan utilizar para la investigación, textos a disposición del público.
   \item Debería intensificarse la cooperación entre la comunidad dedicada a las tecnologías lingüísticas y las relacionadas con la Web Semántica y el movimiento Linked Open Data, con objeto de establecer una base de conocimientos digitales mantenida de forma colaborativa, que pueda ser utilizada en los sistemas de información basados en la web y como base de conocimiento semántico para las aplicaciones de tecnología lingüística. Lo ideal sería que este esfuerzo fuera abordado de forma multilingüe a escala europea.
 \end{itemize}
@@ -750,8 +755,8 @@ Hemos visto que existen grandes diferencias entre las lenguas de Europa. Si bien
 Podemos ser moderadamente optimistas acerca del apoyo tecnológico a la lengua española. En España existe una pequeña industria lingüística y un marco de investigación que se benefició en el pasado de programas de investigación importantes. Se han producido y distribuido una serie de recursos y de tecnologías de última generación para el español. Sin embargo, tanto el tamaño de los recursos como el número de herramientas son todavía muy limitados en comparación con los recursos y las herramientas existentes para el inglés, y, desde luego, no son lo suficientemente completos como para dar el apoyo tecnológico integral que necesita una sociedad del conocimiento verdaderamente multilingüe.
 
 Desgraciadamente, la implicación de la industria en las tecnologías lingüísticas para el español en la actualidad es reducida. La mayoría de grandes empresas han interrumpido o reducido mucho sus actividades en este área, dejándola mayoritariamente en manos un pequeño grupo de empresas medianas y pequeñas, más especializadas, que no pueden afrontar un mercado internacional en el que la barrera del idioma es un factor clave que frena el comercio electrónico transfronterizo en la UE \cite{EUecommerce}.
-
-Está claro que debe hacerse un mayor esfuerzo para crear recursos lingüísticos para el español, así como impulsar la investigación, la innovación y el desarrollo en general. La necesidad de grandes cantidades de datos y la gran complejidad de las aplicaciones tecnológicas lingüísticas hace que sea vital el desarrollo de una nueva infraestructura para estimular un mayor intercambio y cooperación.
+%
+Está claro que debe hacerse un mayor esfuerzo para crear recursos lingüísticos para el español, así como impulsar la investigación, la innovación y el desarrollo. La necesidad de grandes cantidades de datos y la gran complejidad de las aplicaciones tecnológicas lingüísticas hace que sea vital el desarrollo de una nueva infraestructura para estimular un mayor intercambio y cooperación.
 
 También se detecta una falta de continuidad en la financiación de la investigación y el desarrollo. Suelen alternarse programas coordinados a corto plazo, con períodos de escasa o nula financiación. Además, hay una falta general de coordinación con los programas de otros países de la UE y a nivel de la Comisión Europea.
 
@@ -1003,16 +1008,11 @@ Sueco \newline
 % --------------------------------------------------------------------------
 \ssection[Acerca de META-NET]{Acerca de META-NET}
 
+\vspace*{-8mm}
 \begin{multicols}{2}
   \selectlanguage{spanish} META-NET es una Red de Excelencia financiada por la Comisión Europea. La red consta actualmente de 54 miembros de 33 países europeos \cite{rehm2011}. META-NET fomenta la Alianza Tecnológica Multilingüe de Europa, una amplia comunidad europea de profesionales y organizaciones vinculadas con las tecnologías lingüísticas.
   
-  META-NET promueve los fundamentos tecnológicos necesarios para una sociedad de la información europea verdaderamente multilingüe que:
-
-\begin{itemize}
-  \item haga posible la comunicación y la cooperación entre las distintas lenguas;
-  \item proporcione un acceso igualitario a la información y al conocimiento en cualquier lengua;
-  \item ofrezca tecnología de la información en red, avanzada y asequible, a todos los ciudadanos europeos.
-\end{itemize}
+META-NET promueve los fundamentos tecnológicos necesarios para una sociedad de la información europea verdaderamente multilingüe que: haga posible la comunicación y la cooperación entre las distintas lenguas; proporcione un acceso igualitario a la información y al conocimiento en cualquier lengua; ofrezca tecnología de la información en red, avanzada y asequible, a todos los ciudadanos europeos.
 
 La red apoya una Europa unida con un mercado digital y un espacio de información únicos. Estimula y fomenta tecnologías multilingües para todas las lenguas europeas. Estas tecnologías están en la base de la traducción automática, la producción de contenidos, el procesamiento de la información y la gestión del conocimiento para una gran variedad de aplicaciones y ámbitos temáticos. La red pretende mejorar las estrategias actuales de forma que se favorezcan la comunicación y la cooperación entre las distintas lenguas. Los europeos tienen derecho al mismo nivel de información y conocimiento independientemente de cuál sea su lengua de origen.
 
@@ -1024,30 +1024,27 @@ META-NET surgió el 1 de febrero de 2010 con el objetivo de potenciar la investi
 
 \textbf{META-RESEARCH} tiende puentes hacia ámbitos tecnológicos cercanos. Esta actividad tiene por objeto utilizar los avances en otros campos y sacar provecho de investigaciones innovadoras que puedan beneficiar a la tecnología de la lengua. En particular, esta actividad pretende enriquecer la investigación puntera en traducción automática recogiendo y preparando datos y organizando recursos lingüísticos para la evaluación de algoritmos y tecnologías; elaborando inventarios de herramientas y metodologías; y organizando talleres y eventos formativos para los miembros de la comunidad.
 
+\centerline{\textbf{office@meta-net.eu -- http://www.meta-net.eu}}
 \end{multicols}
 
-\vfill
+\clearpage
 
 \makeatletter
 \@ifundefined{theHsection}{
-  \let
+% \let
 }
 {
   \renewcommand*{\theHsection}{\thepart.\thesection}
 }
 \makeatother
-\part*{\textcolor{white}{English}}
+%\part*{\textcolor{white}{English}}
 \setcounter{section}{0}
 \setcounter{figure}{0}
-
-\centerline{office@meta-net.eu -- http://www.meta-net.eu}
 
 \addtocontents{toc}{\protect\clearpage\protect}
 \addtocontents{toc}{\protect\thispagestyle{empty}\protect}
 %\addtocontents{toc}{\protect\vspace*{1mm}\protect}
 \addtocontents{toc}{\smallskip{\Large\textsf{\centerline{THE SPANISH LANGUAGE IN THE DIGITAL AGE}}\par}}
-
-\cleardoublepage
 
 \selectlanguage{english}
 
@@ -1077,7 +1074,7 @@ European research in the area of language technology has already achieved a numb
 
 \boxtext{Language Technology helps unify Europe.}
 
-Drawing on the insights gained so far, today’s hybrid language technology mixing deep processing with statistical methods should be able to bridge the gap between all European languages and beyond. But as this series of white papers shows, there is a dramatic difference between Europe’s member states in terms of both the maturity of the research and in the state of readiness with respect to language solutions. Although the field of language technology has witnessed much progress the past years in Spanish, further research and de-velopment is needed before truly effective language technology solutions are ready for everyday use. 
+Drawing on the insights gained so far, today’s hybrid language technology mixing deep processing with statistical methods should be able to bridge the gap between all European languages and beyond. But as this series of white papers shows, there is a dramatic difference between Europe’s member states in terms of both the maturity of the research and in the state of readiness with respect to language solutions. Although the field of language technology has witnessed much progress in the past years for the Spanish language, further research and development is needed before truly effective language technology solutions are ready for everyday use. 
 
 META-NET’s vision is high-quality language technology for all languages that supports political and economic unity through cultural diversity. This technology will help tear down existing barriers and build bridges between Europe’s languages. This requires all stakeholders -- in politics, research, business, and society -- to unite their efforts for the future.
 
@@ -1208,17 +1205,17 @@ As we have seen in this chapter, many applications widely used in today’s info
 
 \subsection{General Facts}
 
-\boxtext{Spanish is one of the languages with more demographic weight in the world today.}
-
 Spanish is one of the languages with more demographic weight in the world today. According to Ethnologue \cite{ethnologue} it is the second most widely spoken language in terms of native speakers after Chinese. Around 6\% of the world population, or over 400 million speakers, have Spanish as first language.
 
 Spanish is the official language of Spain, where it originated as an evolution of Vulgar Latin, but most Spanish speakers are in Latin America; of all countries with a majority of Spanish speakers, only Spain and Equatorial Guinea are outside the Americas. Mexico has the most native speakers of any country. Nationally, Spanish is the official language of Argentina, Bolivia, Chile, Colombia, Costa Rica, Cuba, Dominican Republic, Ecuador, El Salvador, Guatemala, Honduras, Mexico , Nicaragua, Panama, Paraguay, Peru, Puerto Rico, Uruguay and Venezuela \cite{atlasspanish}.
+
+\boxtext{Spanish is one of the languages with more demographic weight in the world today.}
 
 In the Americas, Spanish coexists with a multitude of indigenous languages, some of them also co-official with Spanish in their respective countries, such as Quechuan and Aymara in Peru and Bolivia, and Guarani in Paraguay. In general, the situation can be characterised as being diglossic, with Spanish being the socially prestigious language, and the other language being used as com-munication vehicle within the family domain. The Spanish language functions in effect as a koiné and it is characterized by its linguistic homogeneity, especially among the educated, not forgetting that it comprises diverse sociolinguistic and geolinguistic varieties.
 
 In Spain and in some parts of the Spanish speaking world, but not all, Spanish is called castellano (Castilian) as well as español (Spanish), that is, the language of the Castile region, contrasting it with other languages spoken in Spain, which are co-official in their territories, such as Catalan, Galician and Basque, spoken respectively by around six million, two million and half a million people. 
 
-In spite of its broad homogeneity, there exist variations between the language spoken in most of Spain, and the one spoken in much of southern Spain, the Canary Islands and Latin America. Apart from lexical local variations, it is well-known the different pronunciation of the letter c (as in the word Barcelona), being a voiceless dental fricative /θ/ (as in English thing) in the former and a sibilant /s/ in the latter. Other variations affect the use of second person pronouns: tú or vos, depending on the zones, for the singular; and ustedes or vosotros, for the plural.
+Despite its homogeneity there exist variations between the language spoken in most of Spain, and the one spoken in much of southern Spain, the Canary Islands and Latin America. Apart from lexical local variations, it is well-known the different pronunciation of the letter c (as in the word Barcelona), being a voiceless dental fricative /θ/ (as in English thing) in the former and a sibilant /s/ in the latter. Other variations affect the use of second person pronouns: tú or vos, depending on the zones, for the singular; and ustedes or vosotros, for the plural.
 
 \subsection{Particularities of the Spanish Language}
 
@@ -1229,13 +1226,13 @@ Spanish phonology exhibits a five-vowel system. Spanish is an inflected language
 Spanish syntax provides overt marking for some direct objects: the so-called ``personal a'', that is, human direct objects are preceded by the preposition “a”:
 
 \begin{itemize}    
-  \item[] Vi a María (I saw Mary) vs. Vi la película (I saw the film).
+\item[] Vi a María (I saw Mary) vs.\\ Vi la película (I saw the film).
 \end{itemize}
 
 A ``redundant'' indirect object pronoun (le, les) may be used even in the presence of an explicit indirect object noun phrase:
 
 \begin{itemize}    
-  \item[] Le di las llaves a María (I gave the keys to Mary).
+\item[] Le di las llaves a María (I gave the keys to Mary).
 \end{itemize}
 
 With regard to subject pronouns, Spanish is a pro-drop language, meaning that the inflected verb phrase can often stand alone without the use of a subject pronoun (or a subject noun phrase). Compared to other Romance languages, Spanish has a somewhat freer syntax with relatively fewer restrictions on subject-verb-object word order.
@@ -1248,35 +1245,35 @@ Spanish orthography is far more transparent than, for example, English orthograp
 
 Written Spanish unequivocally marks stress through a series of orthographic rules. The default stress is on the next-to-last syllable on words that end in a vowel, ‹n› or ‹s› and on the final syllable when the word ends in any consonant other than ‹n› or ‹s›. Words that do not follow the default stress have an acute accent over the stressed vowel.
 
-Capitalisation in Spanish is sparse compared to other languages. In general, only personal and place names, some abbreviations (e.\,g.Sr. López, but señor López), the first word (only) in the title of a book, movie, song, etc., and the first word in a sentence are capitalized, as are names of companies, government bodies, etc. Names of nationalities or languages are not capitalized, nor (in standard style) are days of the week and months of the year.
+Capitalisation in Spanish is sparse compared to other languages. In general, only personal and place names, some abbreviations (e.\,g., Sr.~López, but señor López), the first word in the title of a book, movie, song, etc., and the first word in a sentence are capitalized, as are names of companies, government bodies, etc. Names of nationalities or languages are not capitalized, nor (in standard style) are days of the week or months of the year.
 
 \subsection{Recent Developments}
 
 From the 1950s on, American movies began to dominate the spanish market; the domination was even more evident in the 1970s, when television series were introduced to every household. Foreign films and series are not dubbed in Spanish; instead, subtitles are used (in contrast to many other countries such as France and Germany). The strong presence of the American way of life in the media influenced the spanish culture and language. Due to the continuing triumph of English and American music since the 1960s, spanishs have been exposed to a lot of English during their adolescence for generations. English soon acquired the status of a ‘cool/hip’ language, which it has kept up to the present day.
+%
+This continuing status is reflected by the sheer number of present-day loan words from English (so-called anglicisms). In most cases these words fill some gap in the vocabulary, e.\,g., by naming a new concept or referent for which a spanish name does not exist.
 
-This continuing status is reflected by the sheer number of present-day loan words from English (so-called anglicisms). In most cases these words fill some gap in the vocabulary, e.\,g.,by naming a new concept or referent for which a spanish name does not exist.
-
-However, in some areas, anglicisms have started to replace existing spanish vocabulary. One example is the use of English titles in job advertisements, in particular for executive positions, e.\,g.,‘Human Resources Manager’ instead of \textit{Υπεύθυνος Προσωπικού}; furthermore, English shop names, product brands etc. are considered more ‘catchy’ than spanish ones. A strong tendency to overuse anglicisms can also be detected in product advertisements. This tendency, however, ‘cool’ as it might be, runs the risk of excluding large parts of the population from taking part in information society, namely those who are not familiar with English.
+However, in some areas, anglicisms have started to replace existing spanish vocabulary. One example is the use of English titles in job advertisements, in particular for executive positions, e.\,g., ‘Human Resources Manager’; furthermore, English shop names, product brands etc. are considered more ‘catchy’ than spanish ones. A strong tendency to overuse anglicisms can also be detected in product advertisements. This tendency, however, ‘cool’ as it might be, runs the risk of excluding large parts of the population from taking part in information society, namely those who are not familiar with English.
 
 \subsection{Language Cultivation in Spain}
 
 The Real Academia Española (RAE or Royal Spanish Academy), founded in 1713, together with the 21 other national ones (one for each Spanish speaking country), exercises a standardizing influence through its publication of dictionaries and widely respected grammar and style guides. Because of influence and for other socio historical reasons, a standardized form of the language, mostly based on Castilian Spanish, is widely acknowledged for use in literature, academic contexts and the media. 
 
-\boxtext{The Real Academia Española (RAE) exercises\\ a standardizing influence through its publication\\ of dictionaries and widely respected grammar and style guides.}
-
 The RAE, through its non-profit Foundation, has created two large Spanish textual corpora: the  Corpus of Reference of Current Spanish (CREA) and the Diachronic Corpus of Spanish (CORDE). They have been used by the Academy as a source of  information to write dictionaries and grammars, such as the Student's Dictionary, the Panhispanic Dictionary of Doubts, the Essential Dictionary and the New Grammar of the Spanish language, which incorporate many examples of the actual use of the  language, taken mainly from CREA. 
 
+\boxtext{The Real Academia Española (RAE) exercises\\ a standardizing influence through its publication\\ of dictionaries and widely respected grammar and style guides.}
+ 
 The Instituto Cervantes (Cervantes Institute) is a worldwide non-profit organisation created by the Spanish government in 1991. This organisation has branched out in over 20 different countries with 54 centres devoted to the Spanish and Hispanic American culture and Spanish language. The ultimate goals of the Institute are to promote the education, the study and the use of Spanish universally as a second language, to support the methods and activities that would help the process of Spanish language education, and to contribute to the advancement of the Spanish and Hispanic American cultures throughout non-Spanish-speaking countries.
 
 From 1997 until today, the Cervantes Institute together with the Royal Spanish Academy and the Association of Spanish Language Academies have organised every three years an International Congress of the Spanish Language. This conference is an international forum for discussing the situation, problems and challenges of the Spanish language. It aims at raising awareness of individuals, governments and institutions in promoting the language, its unity and foster dialogue across the Hispanic cultural community.
 
-\boxtext{The main goal of the Fundéu BBVA is to promote good usage of Spanish in all media, including print, radio, television, and Internet.}
-
 The Fundéu BBVA (formerly The Foundation of Urgent Spanish) \cite{fundeu} is a non-profit organisation created in February 2005 in Madrid. The Foundation was created in collaboration with the Real Academia Española, and is founded under the Department of Urgent Spanish of the news agency Agencia EFE. It took its new name Fundéu BBVA in 2008. The main goal of the Foundation is to promote good usage of Spanish in all media, including, but not limited to, print, radio, television, and Internet.
+
+\boxtext{The main goal of the Fundéu BBVA is to promote good usage of Spanish in all media, including print, radio, television, and Internet.}
 
 The Foundation has created and maintains a web page in which the materials elaborated by the foundation can be found. The Manual of Urgent Spanish is a reference guide for all those who want to write correct Spanish, free from the influence of other languages. An example from the Manual reads:
 
-\textit{Jugar un papel (play a role) -- the phrase “jugar un papel” ap-pears quite frequently in the news and is increasingly used in both written and spoken Spanish,  ... “jugar un papel” is an Anglo-Gallicism which has its roots in the English ``to play a role'' and the French ``jouer un rôle'' ... in the sense of ``fulfill a mission or assignment'' , ``agree with the position'' \ldots it is an unacceptable expression, alien to our language as it would be “jugar una comedia” (to play a comedy) o “jugar al piano” (to play the piano).}
+\textit{Jugar un papel (play a role) -- the phrase “jugar un papel” ap-pears quite frequently in the news and is increasingly used in both written and spoken Spanish, \dots\ “jugar un papel” is an Anglo-Gallicism which has its roots in the English ``to play a role'' and the French ``jouer un rôle'' \dots\ in the sense of ``fulfill a mission or assignment'' , ``agree with the position'' \dots\ it is an unacceptable expression, alien to our language as it would be “jugar una comedia” (to play a comedy) o “jugar al piano” (to play the piano).}
 
 The manual also addresses other linguistic aspects, such as pronunciation, orthography, and punctuation. For example, with respect to “seseo” and “ceceo” (the varying local ways of pronouncing ‘s’, ‘c’ and ‘z’), the Manual of Urgent Spanish says:
 
@@ -1286,36 +1283,36 @@ The Foundation of Urgent Spanish in 2008 launched Wikilengua \cite{wikilengua}, 
 
 \subsection{Language in Education}
 
-\boxtext{Spanish is the official language of the State.\\ All Spaniards have a duty to understand and the right to use it.}
-
 The Article 3 of the Spanish Constitution states that “Spanish is the official language of the State. All Spaniards have a duty to understand and the right to use it. Other Spanish languages may also be official languages within autonomous communities depending on their individual statutes. The rich diversity of the languages of Spain constitutes a cultural heritage which deserves our particular respect and protection.” Each ‘historical’ autonomous community (Catalonia, the Basque Country and Galicia) possesses laws on the use of Spanish and their own language. Other communities (the Balearic Islands, the Valencian Community, Navarre, Aragon and Asturias) have progressively implemented various legal provisions to promote the use of their language within the education system and civil society.
 
-\boxtext{Each bilingual community has a Linguistic\\ Policy Department to promote the use of\\ its own language.}
+\boxtext{Spanish is the official language of the State.\\ All Spaniards have a duty to understand and the right to use it.}
 
 Each bilingual community has a Linguistic Policy Department to promote the use of its own language. This department proposes, implements and controls the application of diverse legal measures which have been taken to promote the languages and provide guidelines for their use. It works closely with the community’s Education Department. Legal provisions have been made in the context of the Education Law of 3 May 2006 (LOE) to guarantee the teaching of and equal status as an official language of the second language in bilingual communities.
 
-\boxtext{Different provisions are available to\\ enable young people and adults to learn the official languages of Spain.}
+\boxtext{Each bilingual community has a Linguistic\\ Policy Department to promote the use of\\ its own language.}
 
 As far as legal provisions about foreigners are concerned, it is stipulated that all foreigners under the age of 18 have the right (and duty) to be educated under the same conditions as Spaniards. This means access to an elementary education from 6 to 16 years of age, to include primary teaching (6-12 years) and compulsory secondary schooling (12-16 years). Different provisions are available to enable young people (in the school system by classes and induction groups) and adults to learn the official languages of Spain. Teaching is also available for vocational training and recap classes with the aim of obtaining specific qualifications.
 
+\boxtext{Different provisions are available to\\ enable young people and adults to learn the official languages of Spain.}
+ 
 The relevant induction programmes are the responsibility of the autonomous communities and vary from one community to the other. However, induction and linguistic integration are systematically offered. 
 In the context of decentralising the education system, the Law of Education (LOE) reaffirms the sharing of responsibility between the Spanish Ministry for Education and the Education Departments in the autonomous communities. For monolingual communities, the State is responsible for 65\% of teaching and the community for 35\%. For bilingual communities, the State’s responsibility is reduced to 55\% and the community’s increased to 45\%. The teaching of a second foreign language is also subject to provisions made by the autonomous communities, only the first modern language is compulsory from primary school and its study remains compulsory until the end of secondary schooling (16 years) \cite{Efni1}.
 
 \subsection{International Aspects}
 
-\boxtext{Spanish is the second most studied\\ language in the world, after English \cite{conespanola}, with nearly two million students in secondary education in the European Union.}
-
 Spanish is the second most studied language in the world, after English , with nearly two million students in secondary education in the European Union. It has also become the most popular foreign language studied in the United States (chosen by 70\% of the students). In Brazil its study in high school is compulsory. Spanish is also a language of culture, endowed with a rich literature. 
 
-\boxtext{In the technological domain, English is\\ clearly the dominant language.}
+\boxtext{Spanish is the second most studied\\ language in the world, after English \cite{conespanola}, with nearly two million students in secondary education in the European Union.}
 
 However, despite the demographic weight of Spanish, its position as an international language of communication and the current demand for Spanish as second language, the competitiveness of Spanish as a scientific language is seriously challenged by English. In the technological domain, English is clearly the dominant language. The capacity of the English language to generate technical terms and consolidate their use is very difficult to compete with. In the field of natural and environmental sciences, Spanish is also virtually nonexistent. To address this situation, a number of possible solutions have been proposed. These include the strengthening of the teaching of Spanish in science and technology, training of foreign students at Spanish universities, the organisation of regular workshops on technical writing, and the establishment of a science news agency in Spanish.
 
-\boxtext{The economic value of the Spanish\\ language is considered to contribute over\\ 15\% to the GDP of Spain.}
+\boxtext{In the technological domain, English is\\ clearly the dominant language.}
 
 On the other hand, Spanish as a business language is in a position to challenge English dominance, being the key to a huge Latin-American market. The economic value of the Spanish language has even been quantified  \cite{ecospanish1}.  It is considered to contribute over 15\% to the GDP of Spain (therefore, in 2009, more than 37,000 million) \cite{ecospanish2}. According to a research by the Telefonica Foundation, using the same language multiplies by two or three the market share of exports from Spain to Spanish-speaking countries.
 
 Spanish is not only a booming language for business but it is a business itself. There is a new tourism for foreigners coming to Spain to study Spanish, which since 1995 has increased at a rate of about 10\% annually.  In 2006, about 150,000 tourists travelled to Spain with this goal, and left 255 million. The Cervantes Institute has specific Spanish courses for Business, which seem to be very successful in the countries of Eastern Europe, because of their relationship with Spain, especially in construction and public works, and because of emerging Latin-American markets.
+
+\boxtext{The economic value of the Spanish\\ language is considered to contribute over\\ 15\% to the GDP of Spain.}
 
 The President of the Governing Council of INSEAD Business School (Universidad Autónoma de Madrid) foresees that in 2030 Spanish will become the second language for economic exchange in the world, only behind Chinese. Its widespread use demands that more business masters and training are offered in this language. Also the traditional teaching methods are starting to give way to new technologies and e-learning. So far the greatest number of interested students has come from Latin American countries. But the range has recently opened to students from other origins, especially Portuguese-speaking professionals, and German and French as well. Those seeking this type of courses are experienced professionals who wish to advance in their careers. Also companies that, in order to achieve greater competitiveness, promote their staff training.
 
@@ -1336,18 +1333,18 @@ It is often claimed that English dominates computers and the Internet, and that 
 
 Many corporate websites now employ multilingual strategies making choice of language a ‘user preference’. Machine translation of web content is only a mouse-click away. Furthermore, the Internet is proving to be a very useful resource to those interested in learning lesser-used languages. An analysis published in November 2005 by Byte Level Research concluded that “the next Internet revolution will not be in English“. While English isn’t becoming any less important on the Internet, other languages, such as Chinese, Russian, Spanish, and Portuguese, are becoming comparatively more important \cite{britishcouncil}.
 
-\boxtext{The total number of Internet users from the different Spanish speaking countries was over 153 million in 2010, with a 20.8\% from Spain.}
+\boxtext{The total number of Internet users from the\\[.3ex] different Spanish speaking countries was over\\ 153 million in 2010, with a 20.8\% from Spain.}
 
 Global internet usage statistics for 2007 show Spanish as the third most commonly used language on the Internet, after English and Chinese \cite{internetworldstats}. The total number of Internet users from the different Spanish speaking countries was over 153 million in 2010, with a 20.8\% from Spain. Penetration of Internet use in Spain reached 62.6\% in 2010 according to Nielsen Online \cite{nielsen}.
 
 The study entitled “Socio-Demographic Profile of Internet Users, Analysis of INE (Spanish National Statistics Institute) 2010 Data”, produced by the Spanish Observatory for Telecommunications and the Information Society (ONTSI) \cite{ontsi}, is based on data produced by the INE in its “Survey of Equipment and Use of Information and Communication Technologies in Households 2010” (ICT-H 2010) and highlights the increasingly intensive use of the Internet:
 
 \begin{itemize}
-  \item 44.4\% of the Spanish population aged between 16 and 74, that is to say, 15.4 million people, use the Internet on a daily basis.
-  \item Almost 27 million individuals aged 10 or over have accessed the Internet at some time.
-  \item The difference between men and women in Internet use has been reduced over the last years, mainly in the group of users who access the Internet every week.
-  \item The age variable is a differentiating factor: the higher percentage of Internet users is found in the younger age groups. Almost all students have accessed the Internet at some time.
-  \item The level of completed education is also a determining factor when it comes to Internet use: the higher the level of education, the higher the percentage of Internet users.
+\item 44.4\% of the Spanish population aged between 16 and 74, that is to say, 15.4 million people, use the Internet on a daily basis.
+\item Almost 27 million individuals aged 10 or over have accessed the Internet at some time.
+\item The difference between men and women in Internet use has been reduced over the last years, mainly in the group of users who access the Internet every week.
+\item The age variable is a differentiating factor: the higher percentage of Internet users is found in the younger age groups. Almost all students have accessed the Internet at some time.
+\item The level of completed education is also a determining factor when it comes to Internet use: the higher the level of education, the higher the percentage of Internet users.
 \end{itemize}
 
 Another report prepared by the ONTSI is based on data extracted from the survey on ICT use in companies, also carried out by the INE, and asserts that 100\% of large companies have computers, Internet access and e-mail. It also points out that mobile phones and computers were available in 2 out of 3 microenterprises in the first quarter of 2010. Over 90\% of large and medium-sized companies and nearly 40\% of microenterprises interact with the public administration via the Internet. The two main reasons for interacting are obtaining information and downloading forms. The most notable growth in SMEs and large companies has been observed in complete electronic management, which has risen by 5.2 points over the previous year.
@@ -1425,7 +1422,7 @@ Software applications for language processing typically consist of several compo
 
 After analysing the text, task-specific modules can perform other operations, such as automatic summarisation and database look-ups.
 
-In the remainder of this section, we firstly introduce the core application areas for language technology, and follow this with a brief overview of the state of LT research and education today, and a description of past and present research programmes. Finally, we present an expert estimate of core LT tools and resources for spanish in terms of various dimensions such as availability, maturity and quality. The general situation of LT for the spanish language is is summarised in figure~\ref{fig:lrlttable_en} (p.~\pageref{fig:lrlttable_en}) at the end of this chapter. This table lists all tools and resources that are boldfaced in the text. LT support for spanish is also compared to other languages that are part of this series.
+We first introduce core application areas for language technology, and follow this with a brief overview of the state of LT research and education today, and a description of past and present research programmes. Finally, we present an expert estimate of core LT tools and resources for spanish in terms of various dimensions such as availability, maturity and quality. The general situation of LT for the spanish language is is summarised in figure~\ref{fig:lrlttable_en} (p.~\pageref{fig:lrlttable_en}) at the end of this chapter. This table lists all tools and resources that are boldfaced in the text. LT support for spanish is also compared to other languages that are part of this series.
 
 \subsection{Core Application Areas}
 
@@ -1443,26 +1440,26 @@ In this section, we focus on the most important LT tools and resources, and prov
   \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
 
-Anyone who has used a word processor such as Microsoft Word knows that it has a spelling checker that highlights spelling mistakes and proposes corrections. The first spelling correction programs compared a list of extracted words against a dictionary of correctly spelled words. Today these programs are far more sophisticated. Using language-dependent algorithms for \textbf{text analysis}, they detect errors related to morphology (e.\,g., plural formation) as well as syntax--related errors, such as a missing verb or a conflict of verb-subject agreement (e.\,g., she *write a letter). But most spell checkers will not find any errors in the following text:
-
-\begin{quote}
-  Eye have a spelling chequer,\\
-  It came with my Pea Sea.\\
-  It plane lee marks four my revue\\
-  Miss Steaks I can knot sea. \cite{zar1}
-\end{quote}
-
-Handling these kinds of errors usually requires an analysis of the context. For Spanish, even spell checking requires analyzing the context in many cases. A typical case is when the orthographic error transforms one word into another, which also exits. In the following example, the first sentence contains a couple of frequent errors (problems with orthographic accents and omission of silent /h/). The second sentence is the corrected version of the first:
+Anyone who has used a word processor such as Microsoft Word knows that it has a spelling checker that highlights spelling mistakes and proposes corrections. The first spelling correction programs compared a list of extracted words against a dictionary of correctly spelled words. Today these programs are far more sophisticated. Using language-dependent algorithms for \textbf{text analysis}, they detect errors related to morphology (e.\,g., plural formation) as well as syntax--related errors, such as a missing verb or a conflict of verb-subject agreement (e.\,g., she *write a letter). But most spell checkers will not find any errors in the following text \cite{zar1}:
 
 \begin{itemize}
-  \item[] Mí calculo es que hoy a venido mas publico que ayer.
-  \item[] [Me I-estimate that today to come but I-publish than yesterday]
-  \item[] Mi cálculo es que hoy ha venido más público que ayer.
-  \item[] [My estimation is that today has come more people (audience) than yesterday]
+\item[] Eye have a spelling chequer,\\
+  It came with my Pea Sea.\\
+  It plane lee marks four my revue\\
+  Miss Steaks I can knot sea.
 \end{itemize}
 
-This type of analysis either needs to draw on language-specific \textbf{grammars} laboriously coded into the software by experts, or on a statistical language model. In this case, a model calculates the probability of a particular word as it occurs in a specific position (e.\,g., between the words that precede and follow it). For example, \textit{Mi cálculo or ha venido} are far much probable word sequences than \textit{Mí calculo or a venido} respectively. A statistical language model can be automatically created by using a large amount of (correct) language data (called a \textbf{text corpus}). Most of these two approaches have been developed around data from English. However, they do not necessarily transfer well to other languages, e.\,g.highly inflectional ones or languages with a flexible word order like Spanish. For these more complex languages, an advanced high-precision language checker may require the development of more sophisticated methods, involving a deeper linguistic analysis. 
+Handling these kinds of errors usually requires an analysis of the context. For Spanish, even spell checking requires analyzing the context in many cases. A typical case is when the orthographic error transforms one word into another, which also exits. In the following example, the first sentence contains a couple of frequent errors (problems with orthographic accents and omission of silent /h/). The second sentence is the corrected version of the first:
 \columnbreak
+
+\begin{itemize}
+\item Mí calculo es que hoy a venido mas publico que ayer.\\
+ \emph{Me I-estimate that today to come but I-publish than yesterday}
+\item Mi cálculo es que hoy ha venido más público que ayer.\\
+ \emph{My estimation is that today has come more people (audience) than yesterday}
+\end{itemize}
+
+This type of analysis either needs to draw on language-specific \textbf{grammars} laboriously coded into the software by experts, or on a statistical language model. In this case, a model calculates the probability of a particular word as it occurs in a specific position (e.\,g., between the words that precede and follow it). For example, \textit{Mi cálculo or ha venido} are far much probable word sequences than \textit{Mí calculo or a venido} respectively. A statistical language model can be automatically created by using a large amount of (correct) language data (called a \textbf{text corpus}). Most of these two approaches have been developed around data from English. However, they do not necessarily transfer well to other languages, e.\,g., highly inflectional ones or languages with a flexible word order like Spanish. For these more complex languages, an advanced high-precision language checker may require the development of more sophisticated methods, involving a deeper linguistic analysis. 
 
 \boxtext{The use of language checking is not\\ limited to word processors; it also applies to authoring support systems.}
 
@@ -1486,7 +1483,7 @@ Besides spell checkers and authoring support, language checking is also importan
 
 Searching the Web, intranets or digital libraries is probably the most widely used yet largely underdeveloped language technology application today. The Google search engine, which started in 1998, now handles about 80\% of all search queries. The Google search interface and results page display has not significantly changed since the first version. Yet in the current version, Google offers spelling correction for misspelled words and has recently incorporated basic semantic search capabilities that can improve search accuracy by analysing the meaning of terms in a search query context.  The Google success story shows that a large volume of available data and efficient indexing techniques can deliver satisfactory results for a statistically-based approach.
 
-For more sophisticated information requests, it is essential to integrate deeper linguistic knowledge for \textbf{text interpretation}. Experiments using \textbf{lexical resources} such as machine-readable thesauri or ontological language resources (e.\,g.WordNet) have demonstrated improvements in finding pages using synonyms of the original search terms, such as e.\,g., ``Energía atómica'' and ``Energía nuclear'', or even more loosely related terms. 
+For more sophisticated information requests, it is essential to integrate deeper linguistic knowledge for \textbf{text interpretation}. Experiments using \textbf{lexical resources} such as machine-readable thesauri or ontological language resources (e.\,g., WordNet) have demonstrated improvements in finding pages using synonyms of the original search terms, such as e.\,g., ``Energía atómica'' and ``Energía nuclear'', or even more loosely related terms. 
 
 \boxtext{The next generation of search engines\\ will have to include much more sophisticated language technology.}
 
@@ -1514,15 +1511,13 @@ Speech interaction technology is used to create interfaces that enable users to 
   \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
 
-\boxtext{Speech interaction technology is the basis for creating interfaces that allow a user to interact with spoken language instead of a graphical display, keyboard and mouse.}
-
 Speech interaction comprises four technologies:
+
 \begin{enumerate}
-  \item Automatic \textbf{speech recognition} (ASR) determines which words are actually spoken in a given sequence of sounds uttered by a user.  
-  \columnbreak
-  \item Natural language understanding analyses the syntactic structure of a user’s utterance and interprets it according to the system in question.
-  \item Dialogue management determines which action to take given the user input and system functionality.   
-  \item \textbf{Speech synthesis} (text-to-speech or TTS) transforms the system’s reply into sounds for the user.
+\item Automatic \textbf{speech recognition} (ASR) determines which words are actually spoken in a given sequence of sounds uttered by a user.  
+\item Natural language understanding analyses the syntactic structure of a user’s utterance and interprets it according to the system in question.
+\item Dialogue management determines which action to take given the user input and system functionality.   
+\item \textbf{Speech synthesis} (text-to-speech or TTS) transforms the system’s reply into sounds for the user.
 \end{enumerate}
 
 One of the major challenges of ASR systems is to accurately recognise the words a user utters. This means restricting the range of possible user utterances to a limited set of keywords, or manually creating language models that cover a large range of natural language utterances. Using machine learning techniques, language models can also be generated automatically from \textbf{speech corpora}, i.\,e., large collections of speech audio files and text transcriptions. Restricting utterances usually forces people to use the voice user interface in a rigid way and can damage user acceptance; but the creation, tuning and maintenance of rich language models will significantly increase costs. VUIs that employ language models and initially allow a user to express their intent more flexibly -- prompted by a \textit{How may I help you?} greeting -- tend to be automated and are better accepted by users. 
@@ -1534,6 +1529,8 @@ Interfaces in the market for speech interaction technology have been considerabl
 Regarding dialogue management technology and know-how, markets are strongly dominated by national players, which are usually SMEs.
 
 Most of the companies on the Spanish TTS market are essentially application developers. Key players in the Spanish market are: Indsys  (Intelligent Dialogue Systems), Fonetic , Ydilo  and NaturalVoz . Rather than relying on a software license-driven product business, these companies are mainly positioned as full-service providers that create voice user interfaces as part of a system integration service. In the area of speech interaction, there is as yet no real market for syntactic and semantic analysis-based core tech-nologies.
+
+\boxtext{Speech interaction technology is the basis for creating interfaces that allow a user to interact with spoken language instead of a graphical display, keyboard and mouse.}
 
 The demand for voice user interfaces in Spain has grown fast in the last five years, driven by increasing demand for customer self-service, cost optimisation for automated telephone services, and the increasing acceptance of spoken language as a media for human-machine interaction. 
 
@@ -1548,9 +1545,9 @@ The idea of using digital computers to translate natural languages can be traced
 The most basic approach to machine translation is to automatically replace the words in a text in one natural language by words in another language. This can be useful in subject domains that have a very restricted, formulaic language such as weather reports. But to produce a good translation of less standardized texts, larger text units (phrases, sentences, or even whole passages) need to be matched to their closest counterparts in the target language. The major difficulty is that human language is ambiguous. Ambiguity creates challenges on multiple levels, such as word sense disambiguation on the lexical level (a \textit{jaguar} is a brand of car or an animal) or the assignment of case on the syntactic level, for example:
 
 \begin{itemize}
-  \item[] The woman saw the car and her husband, too.
-  \item[] [La mujer vio el coche y su marido también.]
-  \item[] [La mujer vio el coche y a su marido también.]
+  \item \textit{The woman saw the car and her husband, too.}
+  \item La mujer vio el coche y su marido también.\\
+    La mujer vio el coche y a su marido también.
 \end{itemize}
 
 One way to build an MT system is to use linguistic rules. For translations between closely related languages, a direct substitution translation may be feasible in cases like the above example. But, rule-based (or linguistic knowledge-driven) systems often analyse the input text and create an intermediary symbolic representation from which the text can be generated into the target language. The success of these methods is highly dependent on the availability of extensive lexicons with morphological, syntactic, and semantic information, and large sets of grammar rules carefully designed by skilled linguists. This is a very long and therefore costly process.
@@ -1573,12 +1570,12 @@ Leading international MT developer Lucy Software has an important subsidiary in 
 
 Apertium is a free open-source machine translation platform that provides a language-independent machine translation engine initially designed by the Transducens group at the Universitat d'Alacant and subsequently developed in the framework of  the nationally funded Opentrad project. Among current MT systems using Apertium technology, we find interNOSTRUM (Spanish-Catalan), Traductor Universia (Spanish-Portuguese) and Matxin (Basque-Spanish), the former developed by Transducens and the latter by the IXA group  at Euskal Herriko Unibertsitatea. It is possible to use Apertium to build machine translation systems for a variety of language pairs (there are over 20 to date); to that end, Apertium uses simple XML-based standard formats to encode the linguistic data needed (either by hand or by converting existing data), which are compiled using the provided tools into the high-speed formats used by the engine.
 
-\boxtext{The use of machine translation can\\ significantly increase productivity provided the system is adapted to user-specific terminology and integrated into a workflow.}
-
 The use of machine translation can significantly increase productivity provided the system is intelligently adapted to user-specific terminology and integrated into a workflow. 
-
+ 
 There is still a huge potential for improving the quality of MT systems. The challenges involve adapting language resources to a given subject domain or user area, and integrating the technology into workflows that already have term bases and translation memories.
 
+\boxtext{The use of machine translation can\\[.3ex] significantly increase productivity provided the system is adapted to user-specific terminology and integrated into a workflow.}
+ 
 Another problem is that most of the current systems are English-centred and only support a few languages from and into Spanish. This leads to friction in the translation workflow and forces MT users to learn different lexicon coding tools for different systems.
 
 Evaluation campaigns help compare the quality of MT systems, the different approaches and the status of the systems for different language pairs. Figure~\ref{fig:euromatrix_es} (p.~\pageref{fig:euromatrix_es}), which was prepared during the EC Euromatrix+ project, shows the pair-wise performances obtained for 22 of the 23 official EU languages. (Irish Gaelic was not compared.) The results are ranked according to a BLEU score, which indicates higher scores for better translations \cite{bleu1}. (A human translator would achieve a score of around 80 points.) 
@@ -1587,10 +1584,10 @@ The best results (in green and blue) were achieved by languages that benefit fro
 
 \subsection{Other Application Areas}
 
-\boxtext{Language technology applications often\\ provide significant service functionalities “under the hood” of larger software systems.}
-
 Building language technology applications involves a range of subtasks that do not always surface at the level of interaction with the user, but they provide significant service functionalities “under the hood” of the system in question. They all form important research issues that have now evolved into individual sub-disciplines of computational linguistics. 
 
+\boxtext{Language technology applications often\\ provide significant service functionalities “under the hood” of larger software systems.}
+ 
 Question answering, for example, is an active area of research for which annotated corpora have been built and scientific competitions have been initiated. The concept of question answering goes beyond keyword-based searches (in which the search engine responds by delivering a collection of potentially relevant documents) and enables users to ask a concrete question to which the system provides a single answer. For example:
 
 \begin{itemize}
@@ -1618,7 +1615,7 @@ Language Technology is a highly interdisciplinary field, involving the expertise
 
 On the other hand, main computational science faculties offering Computational Linguistic as subject are: Universidad Politécnica de Madrid, Universidad Carlos III, Universidad Autónoma de Madrid, Universitat d’Alacant, Universidad Nacional de Educación a Distancia, and Euskal Herriko Unibertsitatea. Other cases, such as the Universidad Complutense combine both.
 
-Graduate courses offer a more targeted professional training. There are several doctoral programs which offer masters or subjects related to language and speech processing. Certain universities such as the Universitat Politècnica de Catalunya also participate in the European Masters in Language and Speech sponsored by ELSNET (European Network of Excellence in Human Language Technologies). Masters are often offered by a group of universities, either at state or at European level. For example, the Universitat Autònoma de Barcelona offers the International Master in Natural Language Processing and Human Language Technology, in collaboration with foreign universities. Modules in Language Technology are also offered to students of other master or PhD courses, particularly in Translation (e.\,g.Autònoma de Barcelona, Alacant, Castelló, Politècnica de València, Granada).
+Graduate courses offer a more targeted professional training. There are several doctoral programs which offer masters or subjects related to language and speech processing. Certain universities such as the Universitat Politècnica de Catalunya also participate in the European Masters in Language and Speech sponsored by ELSNET (European Network of Excellence in Human Language Technologies). Masters are often offered by a group of universities, either at state or at European level. For example, the Universitat Autònoma de Barcelona offers the International Master in Natural Language Processing and Human Language Technology, in collaboration with foreign universities. Modules in Language Technology are also offered to students of other master or PhD courses, particularly in Translation (e.\,g., Autònoma de Barcelona, Alacant, Castelló, Politècnica de València, Granada).
 
 There are over 30 research groups in Spain spread across the universities, working on speech recognition, natural language processing, text-to-text translation and speech synthesis. The Sociedad Española para el Procesamiento del Lenguaje Natural (SEPLN, Spanish Society for Natural Language Processing), is a non-profit organisation with over 300 members, both from academia and industry, which was created in 1984 with the purpose to promote and spread activities related to teaching, research and development of NLP, on both national and international level. SEPLN organizes seminaries, symposiums and conferences and promotes collaboration with national and international institutions.
 
@@ -1705,7 +1702,7 @@ LT support was measured according to the following criteria:
 
 The tables~\ref{fig:speech_cluster_en} to~\ref{fig:resources_cluster_en} show that, thanks to large-scale LT funding in recent decades, the Spanish language is better equipped than most other languages. It compares well with most large languages, such as French and German. But LT resources and tools for Spanish clearly do not yet reach the quality and coverage of comparable resources and tools for the English language, which is in the lead in almost all LT areas. And there are still plenty of gaps in English language resources with regard to high quality applications.
 
-For speech processing, current technologies perform well enough to be successfully integrated into a number of industrial applications such as spoken dialogue and dictation systems. Today’s text analysis components and language resources already cover most surface linguistic phenomena of Spanish and form part of many applications involving mostly shallow natural language processing, e.\,g.spelling correction and authoring support.
+For speech processing, current technologies perform well enough to be successfully integrated into a number of industrial applications such as spoken dialogue and dictation systems. Today’s text analysis components and language resources already cover most surface linguistic phenomena of Spanish and form part of many applications involving mostly shallow natural language processing, e.\,g., spelling correction and authoring support.
 
 However, for building more sophisticated applications, such as machine translation, there is a clear need for resources and technologies that cover a wider range of linguistic aspects and allow a deep semantic analysis of the input text. By improving the quality and coverage of these basic resources and technologies, we shall be able to open up new opportunities for tackling a vast range of advanced application areas, including high-quality machine translation.
 
@@ -1986,7 +1983,7 @@ META-NET is a Network of Excellence funded by the European Commission. The netwo
 \end{itemize}
 
 The network supports a Europe that unites as a single digital market and information space. It stimulates and promotes multilingual technologies for all European languages. These technologies support automatic translation, content production, information processing and knowledge management for a wide variety of applications and subject domains. They also enable intuitive language-based interfaces to technology ranging from household electronics, machinery and vehicles to computers and robots.
-
+%
 Launched on 1 February 2010, META-NET has already conducted various activities in its three lines of action META-VISION, META-SHARE and META-RESEARCH.
 
 \textbf{META-VISION} fosters a dynamic and influential stakeholder community that unites around a shared vision and a common strategic research agenda (SRA). The main focus of this activity is to build a coherent and cohesive LT community in Europe by bringing together representatives from highly fragmented and diverse groups of stakeholders. The present White Paper was prepared together with volumes for 29 other languages. The shared technology vision was developed in three sectorial Vision Groups. The META Technology Council was established in order to discuss and to prepare the SRA based on the vision in close interaction with the entire LT community. 
@@ -2029,7 +2026,7 @@ Launched on 1 February 2010, META-NET has already conducted various activities i
   Eslovenia & \textcolor{grey1}{Slovenia} & Jozef Stefan Institute: Marko Grobelnik \\ \addlinespace 
   España & \textcolor{grey1}{Spain} & Barcelona Media: Toni Badia \\ \addlinespace 
   & & Institut Universitari de Lingüistica Aplicada, Univ. Pompeu Fabra: Núria Bel \\ \addlinespace 
-  & & Aholab Signal Processing Laboratory, Univ. of the Basque Country: Inma Hernaez Rioja \\ \addlinespace 
+  & & Aholab Signal Processing Laboratory, Univ. of the Basque Country:\newline Inma Hernaez Rioja \\ \addlinespace 
   & & Center for Language and Speech Technologies and Applications, Technical Univ. of Catalonia: Asunción Moreno \\ \addlinespace 
   & & Dept. of Signal Processing and Communications, Univ. of Vigo: Carmen García Mateo \\ \addlinespace 
   Estonia & \textcolor{grey1}{Estonia} & Institute of Computer Science, Univ. of Tartu: Tiit Roosmaa \\ \addlinespace
@@ -2053,7 +2050,7 @@ Launched on 1 February 2010, META-NET has already conducted various activities i
   Malta & \textcolor{grey1}{Malta} & Dept.~Intelligent Computer Systems, Univ. of Malta: Mike Rosner \\ \addlinespace Reino Unido & \textcolor{grey1}{UK} & Institute for Language, Cognition and Computation, Center for Speech Technology Research, Univ. of Edinburgh: Steve Renals \\ \addlinespace 
   & & Research Institute of Informatics and Language Processing, Univ. of Wolverhampton: Ruslan Mitkov \\ \addlinespace 
   & & School of Computer Science, Univ. of Manchester: Sophia Ananiandou \\ \addlinespace 
-  Noruega & \textcolor{grey1}{Norway} & Dept.~of Linguistic, Literary and Aesthetic Studies, Univ. of Bergen: Koenraad De Smedt \\ \addlinespace 
+  Noruega & \textcolor{grey1}{Norway} & Dept.~of Linguistic, Literary and Aesthetic Studies, Univ. of Bergen:\newline Koenraad De Smedt \\ \addlinespace 
   & & Dept.~of Informatics, LT Group, Univ.~of Oslo: Stephan Oepen \\ \addlinespace
   Polonia & \textcolor{grey1}{Poland} & Institute of Computer Science, Polish Academy of Sciences: Adam Przepiórkowski, Maciej Ogrodniczuk \\ \addlinespace
   & & Univ. of Łódź: Barbara Lewandowska-Tomaszczyk, Piotr Pęzik \\ \addlinespace
@@ -2061,7 +2058,7 @@ Launched on 1 February 2010, META-NET has already conducted various activities i
   Portugal & \textcolor{grey1}{Portugal} & Univ. of Lisbon: António Branco, Amália Mendes \\ \addlinespace
   & & Spoken Language Systems Laboratory, Institute for Systems Engineering and Computers: Isabel Trancoso \\ \addlinespace
   Rep.~Checa & \textcolor{grey1}{Czech Republic} & Institute of Formal and Applied Linguistics, Charles Univ. in Prague: Jan Hajic \\ \addlinespace
-  Rumanía & \textcolor{grey1}{Romania} & Research Institute for Artificial Intelligence, Romanian Academy of Sciences: Dan Tufis \\ \addlinespace
+  Rumanía & \textcolor{grey1}{Romania} & Research Institute for Artificial Intelligence, Romanian Academy of Sciences:\newline Dan Tufis \\ \addlinespace
   & & Faculty of Computer Science, Univ. Alexandru Ioan Cuza: Dan Cristea \\ \addlinespace
   Serbia & \textcolor{grey1}{Serbia} & Faculty of Math., Belgrade Univ.: Dusko Vitas, Cvetana Krstev, Ivan Obradovic \\ \addlinespace
   & & Pupin Institute: Sanja Vranes \\ \addlinespace  
@@ -2089,15 +2086,16 @@ Launched on 1 February 2010, META-NET has already conducted various activities i
 
 \cleardoublepage
 
-\phantomsection\bsection[La serie de Libros Blancos de META-NET -- The META-NET White Paper Series]{La serie de Libros \mbox{Blancos de META-NET} --- The META-NET\ \ \ \ \ \ \ White Paper Series}
+\phantomsection\bsection[La serie de Libros Blancos de META-NET -- The META-NET White Paper Series]{La serie de\ \ \ \ \ \ \ \ Libros Blancos\ \ \ \ \ \ de META-NET --- The META-NET\ \ \ \ \ \ \ White Paper\ \ \ \ \ \ \ \ \ Series}
 \label{whitepaperseries}
 
 \selectlanguage{english}
 
-\vspace*{-5mm}
+%\vspace*{-5mm}
 \centering
-  \setlength{\tabcolsep}{2.2em}
-  \begin{tabularx}{\textwidth}{lllll} \toprule\addlinespace
+\setlength{\tabcolsep}{2.4em}
+\begin{small}
+\begin{tabularx}{\textwidth}{lllll} \toprule\addlinespace
   &Alemán & German & Deutsch& \\
   &Búlgaro & Bulgarian & български& \\
   &Catalán & Catalan & català& \\
@@ -2130,3 +2128,4 @@ Launched on 1 February 2010, META-NET has already conducted various activities i
   &Sueco & Swedish & svenska& \\
   &Vasco & Basque & euskara& \\ \addlinespace \bottomrule
 \end{tabularx}
+\end{small}
