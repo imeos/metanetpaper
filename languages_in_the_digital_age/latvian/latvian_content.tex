@@ -1830,7 +1830,7 @@ The current popularity of social media (Wikipedia, Facebook, Twitter, YouTube, a
 \boxtext{A global economy and information space confronts us with more languages, speakers, and content.}
 
 Today, we can transmit gigabytes of text around the world in a few seconds before we recognise that the text is in a language we do not understand.
-According to a recent report from the European Commission, 57\% of Internet users in Europe purchase goods and services in languages that are not their native language.
+According to a recent report from the European Commission, 57\% of Internet users in Europe purchase goods and services in non-native languages.
 (English is the most common foreign language, followed by French, German, and Spanish.) 55\% of users read content in a foreign language while only 35\% use another language to write e-mails or post comments on the Web \cite{Meta48}.
 A few years ago, English might have been the lingua franca of the Web---the vast majority of content on the Web was in English---but the situation has now drastically changed.
 The amount of online content in other European (as well as Asian and Middle Eastern) languages has exploded.
@@ -1912,7 +1912,7 @@ These could include both computational advances and techniques, such as crowdsou
 \subsection{Language Acquisition in Humans and Machines}
 
 To illustrate how computers handle language and why it is difficult to program them to use it, let's look briefly at the way humans acquire first and second languages, and then see how language technology systems work. 
-\boxtext{Humans acquire language skills in two different ways: learning examples and learning the underlying language rules.}
+\boxtext{Humans acquire language skills in two different ways: learning from examples and learning the underlying language rules.}
 Humans acquire language skills in two different ways.
 Babies acquire a language by listening to the real interactions between their parents, siblings, and other family members.
 From the age of about two, children produce their first words and short phrases.
@@ -2336,6 +2336,8 @@ This includes applications and basic technologies such as
 \item  speech synthesis 
 \end{itemize}
 
+Language technology is an established area of research with an extensive set of introductory literature. The interested reader is referred to the following references: \cite{carstensen-etal1, jurafsky-martin01, manning-schuetze1, lt-world1, lt-survey1}.
+
 \begin{figure*}[htb]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
@@ -2354,7 +2356,7 @@ The first three modules handle the structure and meaning of the text input:
 
 \begin{itemize}
 \item  Preprocessing: cleans the data, analyses or removes formatting, detects the input language, and so on.
-\item  Grammatical analysis: finds the verb, its objects, modifiers and other parts of speech as well as detects the sentence structure.
+\item  Grammatical analysis: finds the verb, its objects, modifiers and other sentence elements as well as detects the sentence structure.
 \item  Semantic analysis: performs disambiguation (i.e., computes the appropriate meaning of words in a given context); resolves anaphora (i.e., which pronouns refer to which nouns in the sentence) and substitute expressions; and represents the meaning of the sentence in a machine-readable way.
 \end{itemize}
 
@@ -2534,9 +2536,9 @@ Using machine learning techniques, language models can also be generated automat
 Restricting utterances usually forces people to use the voice user interface in a rigid way and can damage user acceptance; but the creation, tuning and maintenance of rich language models will significantly increase costs.
 VUIs that employ language models and initially allow a user to express their intent more flexibly~--- prompted by a \textit{How may I help you?} greeting~--- tend to be automated and are better accepted by users. 
 
-Companies tend to use pre-recorded utterances by professional speakers for generating the output of the voice user interface.
+Companies tend to use utterances pre-recorded by professional speakers for generating the output of the voice user interface.
 For static utterances where the wording does not depend on particular contexts of use or personal user data, this can deliver a rich user experience.
-But more dynamic content in an utterance may suffer from unnatural intonation because bits of audio files have simply been strung together.
+But more dynamic content in an utterance may suffer from unnatural intonation because different parts of audio files have simply been strung together.
 Today's TTS systems are getting better (though they can still be optimised) at producing natural-sounding dynamic utterances.  
 
 Interfaces in the market for speech interaction have been considerably standardised during the last decade in terms of their various technology components.
@@ -2570,7 +2572,7 @@ The most basic approach to machine translation is to automatically replace the w
 This can be useful in subject domains that have a very restricted, formulaic language such as weather reports.
 But to produce a good translation of less standardised texts, larger text units (phrases, sentences, or even whole passages) need to be matched to their closest counterparts in the target language.
 The major difficulty is that human language is ambiguous.
-Ambiguity creates challenges on multiple levels, such as word sense disambiguation on the lexical level (a \textit{jaguar} is a brand of car or an animal) or the assignment of case on the syntactic level, for example:
+Ambiguity creates challenges on multiple levels, such as word sense disambiguation at the lexical level (a \textit{jaguar} is a brand of car or an animal) or the assignment of case on the syntactic level, for example:
 \\
 \textit{The woman saw the car and her husband, too.}\\
 \textit{[Sieviete redzēja mašīnu un viņas vīr}\textbf{\textit{s}}\textit{ arī]}\\
@@ -2759,7 +2761,7 @@ Public funding for LT in Europe is relatively low compared to the expenditures f
 In Latvia, public funding is even lower than in many other European countries, including its neighbouring countries, Estonia and Lithuania.
 
 As we have seen, previous programmes have led to the development of a number of LT tools and resources for the Latvian language.
-In the following section, the current state of LT support for Latvian is summarised.  
+In the following section, the current state of LT support for Latvian is summarised in figure~\ref{fig:lrlttable_en} (p.~\pageref{fig:lrlttable_en}) at the end of this chapter. This table lists all tools and resources that are boldfaced in the text. 
 
 \subsection{Availability of Tools and Resources}
 
