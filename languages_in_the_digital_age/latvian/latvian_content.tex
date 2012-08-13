@@ -1,16 +1,15 @@
-%                                     MMMMMMMMM        
-%                                                                             
-%  MMO    MM   MMMMMM  MMMMMMM   MM    MMMMMMMM   MMD   MM  MMMMMMM MMMMMMM   
-%  MMM   MMM   MM        MM     ?MMM              MMM$  MM  MM         MM     
-%  MMMM 7MMM   MM        MM     MM8M    MMMMMMM   MMMMD MM  MM         MM     
-%  MM MMMMMM   MMMMMM    MM    MM  MM             MM MMDMM  MMMMMM     MM     
-%  MM  MM MM   MM        MM    MMMMMM             MM  MMMM  MM         MM     
-%  MM     MM   MMMMMM    MM   MM    MM            MM   MMM  MMMMMMM    MM
+%                                     MMMMMMMMM
+%
+%  MMA    MM   MMMMMM  MMMMMMM   MM    MMMMMMMM   MMA   MM  MMMMMMM MMMMMMM
+%  MMMA AMMM   MM        MM     MMMM              MMMM  MM  MM        MM
+%  MM MMM MM   MMMMMM    MM    IM  MI   MMMMMMM   MM MMxMM  MMMMMM    MM
+%  MM  M  MM   MM        MM   .MMMMMM.            MM  MMMM  MM        MM
+%  MM     MM   MMMMMM    MM   MM    MM            MM   MMM  MMMMMMM   MM
 %
 %
 %            - META-NET Language Whitepaper | Latvian content -
 % 
-% ----------------------------------------------------------------------------
+% ------------------------------------------------------------------------
 
 \begin{document}
 
@@ -2734,10 +2733,10 @@ Most research activities in Latvia are funded by the Latvian Council of Science 
 Significant funding from the LCS has been received between 2005-2009 when two HLT related projects were authorised in State Research Programmes: ``\textit{Scientific Foundations of Information Technology}'' and ``\textit{Latvian Studies (Letonica): History, Language and Culture}''.
 The \textit{SemTi-Kamols} project \cite{Meta39} developed and adapted semantic web technologies for semantic analysis in Latvian.
 The project ``\textit{Database of Latvian Explanatory Dictionaries and Recent Loanwords}'' dealt mainly with the semi-automatic transformation of the Dictionary of Standard Latvian Language into a machine-readable format.
-Work on semantic technologies continues in two large projects: ``\textit{Novel information technologies based on ontologies and model transformations''} (2010-2013) of the State Research Program and ``\textit{Semantic database platform for domain specialists}'' funded by the European Structural Funds.
-Support for development of electronic resources is provided through the project ``\textit{Latvian language grammar and electronic resources'' (2010-2013)} of the State Research Program ``National identity (language, history of Latvia, culture and human security)''. 
+Work on semantic technologies continues in two large projects: ``\textit{Novel information technologies based on ontologies and model transformations}'' (2010-2013) of the State Research Program and ``\textit{Semantic database platform for domain specialists}'' funded by the European Structural Funds.
+Support for development of electronic resources is provided through the project \textit{``Latvian language grammar and electronic resources'' (2010-2013)} of the State Research Program ``National identity (language, history of Latvia, culture and human security)''. 
 
-Additionally, several smaller projects related to LT have been funded by LCS in the last six years: \textit{``Evaluation of Statistical Machine Translation Methods for English-Latvian Translation System''} (2005-2008), ``\textit{Modeling of Universal Lexicon System for the Latvian Language''} (2005-2008), \textit{``Historical Dictionary of the Latvian Language (16-18${}^{th}$ centuries)''} (2005-2008), \textit{``Methods for Latvian-English Computer Aided Lexicography''} (2008), \textit{``Application of Factored Methods in English-Latvian Statistical Machine Translation System''} (2009-2012) \cite{Meta27}.
+Additionally, several smaller projects related to LT have been funded by LCS in the last six years: \textit{``Evaluation of Statistical Machine Translation Methods for English-Latvian Translation System''} (2005-2008), ``\textit{Modeling of Universal Lexicon System for the Latvian Language}'' (2005-2008), \textit{``Historical Dictionary of the Latvian Language (16-18${}^{th}$ centuries)''} (2005-2008), \textit{``Methods for Latvian-English Computer Aided Lexicography''} (2008), \textit{``Application of Factored Methods in English-Latvian Statistical Machine Translation System''} (2009-2012) \cite{Meta27}.
 
 The development of the Latvian National Corpus was initiated by the State Language Commission in 2004.
 As different resources have been collected in a number of institutions, the Latvian National Corpus Initiative envisions the establishment of an umbrella organisation for all the available corpora of the Latvian language.
@@ -3260,24 +3259,26 @@ In particular, the action line focuses on conducting leading-edge research in ma
 \renewcommand*{\figureformat}{}
 \renewcommand*{\captionformat}{}
 
-%\makeatletter
-%\def\@makecaption#1#2{%
- % \vskip\abovecaptionskip
- %\hfil#1#2\hfil
-  %\vskip\belowcaptionskip
-  %}
-%\makeatother
+\makeatletter
+\def\@makecaption#1#2{%
+  \vskip\abovecaptionskip%
+  \raggedright%
+  \textsf{#1#2}\hfil%
+  \vskip\belowcaptionskip
+}
+\makeatother
 
 \begin{figure*}[htbp]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
-%  \fbox{-- META-NET group picture omitted to keep the size of the PDF file small. --}
+  %\fbox{-- META-NET group picture omitted to keep the size of the PDF file small. --}
   \iftoggle{lowres}{%
-  \includegraphics[width=\textwidth]{../_media/meta-net_team_ebook.jpg}
+    \includegraphics[width=\textwidth]{../_media/meta-net_team_ebook.jpg}
   }{%
- \includegraphics[width=\textwidth]{../_media/meta-net_team.jpg}
+    \includegraphics[width=\textwidth]{../_media/meta-net_team.jpg}
   }
-\caption{Gandrīz 100 valodu tehnoloģiju eksperti — META-NET pārstāvēto valstu un valodu pārstāvji — 2011.~gada 21. un 22.~oktobrī META-NET sanāksmē Berlīnē (Vācijā) apsprieda un apkopoja balto grāmatu sērijas galvenos rezultātus. --- \textcolor{grey1}{Almost 100 language technology experts~-- representatives of the countries and languages represented in META-NET~-- discussed and finalised the key results and messages of the White Paper Series at a META-NET meeting in Berlin, Germany, on October 21/22, 2011.}}
+  \caption{\noindent%
+  Gandrīz 100 valodu tehnoloģiju eksperti — META-NET pārstāvēto valstu un valodu pārstāvji — 2011.~gada 21. un 22.~oktobrī META-NET sanāksmē Berlīnē (Vācijā) apsprieda un apkopoja balto grāmatu sērijas galvenos rezultātus. --- \textcolor{grey1}{Almost 100 language technology experts~-- representatives of the countries and languages represented in META-NET~-- discussed and finalised the key results and messages of the White Paper Series at a META-NET meeting in Berlin, Germany, on October 21/22, 2011.}}
   \medskip
   \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
