@@ -24,7 +24,7 @@
 \ProvidesClass{metanetpaper}[2011/09/20 LaTeX class to typeset bilingual papers of the DFKI META-NET Project]
 
 % Use KOMA-script class 'scrartcl', based on 'article'
-\LoadClass[11pt, twoside]{scrartcl}
+\LoadClass[11pt, twoside, numbers=noendperiod]{scrartcl}
 
 
 % Dependencies
