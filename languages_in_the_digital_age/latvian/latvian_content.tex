@@ -13,6 +13,33 @@
 
 \begin{document}
 
+\hyphenation{%
+  augšup-ielādēt 
+  Da-līb-or-ga-ni-zā-ci-jas 
+  datorpro-grammās 
+  dia-sporā
+  dia-sporai
+  funk-ciju
+  jo-projām 
+  infra-struktūras 
+  lietojumpro-grammas
+  Lietojumpro-grammas 
+  manu-ālās 
+  materi-āli
+  orto-ēpija
+  paš-laik 
+  Paš-laik 
+  paš-reizējo
+  pro-grammām
+  pro-grammās
+  pro-grammproduktu 
+  pro-grammu 
+  starp-tau-tis-kas 
+  tekstu-ālus 
+  tekst-apstrādes
+  vienkārš-runa
+}
+
 \maketitle
 % --------------------------------------------------------------------------
 \bsection*{Priekšvārds --- Preface}
@@ -32,6 +59,10 @@
   }
 \makeatother
 
+%\renewcommand{\thesection}{\arabic{section}.}
+%\renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}.}
+%\renewcommand{\thesubsubsection}{\arabic{section}.\arabic{subsection}.\arabic{subsubsection}.}
+
 \begin{Parallel}[c]{78mm}{78mm}
 \ParallelLText{\selectlanguage{latvian}\vskip-3mm
 Šī baltā grāmata ir daļa no dokumentu sērijas, kurā apkopota informācija par valodu tehnoloģijām un to iespējām. 
@@ -41,7 +72,7 @@ Valodu tehnoloģiju pieejamība un lietojums dažādās Eiropas valodās atšķi
 Tādējādi katrai valodai nepieciešamas atšķirīgas darbības, lai tālāk izpētītu un attīstītu valodu tehnoloģijas. 
 Tās ir atkarīgas no daudziem faktoriem, piemēram, konkrētās valodas sarežģītības un tās lietotāju skaita.
 
-Šajās balto grāmatu publikācijās (\pageref{whitepaperseries}.~lpp.) veikta pašreizējo valodas resursu un tehnoloģiju analīze. 
+Šajās balto grāmatu publikācijās (\pageref{whitepaperseries}.~lpp.) veikta paš\-reizējo valodas resursu un tehnoloģiju analīze. 
 Tās vadītājs bija META-NET~--- Eiropas Komisijas finansētais izcilības tīkls. 
 Šajā analīzē galvenā uzmanība tika pievērsta 23~Eiropas oficiālajām valodām, kā arī citām nozīmīgām Eiropas valstu un reģionālajām valodām. 
 Analīzes rezultāti liecina, ka visu valodu pētniecībā ir daudz svarīgu izaicinājumu un problēmu. 
@@ -50,7 +81,7 @@ Lai turpmākajai pētniecībai būtu maksimāla atdeve un tiktu samazināti pote
 Tīklā META-NET ietilpst 54~pētniecības centri 33~valstīs \cite{rehm2011} (\pageref{metanetmembers}.~lpp.). 
 Tie sadarbojas ar pārstāvjiem no privātajiem uzņēmumiem, valsts aģentūrām, rūpniecības nozarēm, pētniecības iestādēm, programmatūras izstrādātājiem, tehnoloģiju nodrošinātājiem un Eiropas universitātēm. 
 Visi šī tīkla dalībnieki strādā pie kopīga tehnoloģiju redzējuma. 
-Tiek izstrādāta stratēģija, kā līdz 2020.~gadam risināt visas ar pētniecību mbox{saistītās} problēmas, izmantojot valodu tehnoloģiju lietojumprogrammas. 
+Tiek izstrādāta stratēģija, kā līdz 2020.~gadam risināt visas ar pētniecību \mbox{saistītās} problēmas, izmantojot valodu tehnoloģiju lietojumprogrammas. 
 }
 \ParallelRText{\selectlanguage{english}\vskip-3mm
 This white paper is part of a series that promotes knowledge about language technology and its potential. 
@@ -79,7 +110,8 @@ Together, they are creating a common technology vision while developing a strate
 % --------------------------------------------------------------------------
 
 \bsection*{Saturs --- Contents}
-
+\renewcommand{\contentsname}{}
+\vspace*{-5mm}
 \tableofcontents
 
 \addtocontents{toc}{\protect\thispagestyle{empty}\protect}
@@ -116,14 +148,14 @@ Tiek lēsts, ka nākamajos gadu desmitos izzudīs vismaz 2000 valodu.
 Vēl daudzas citas tiks lietotas tikai ģimenes lokā un ikdienas saziņā, bet ne uzņēmējdarbības vidē vai zinātnē.
 Kādas izredzes izdzīvot ir latviešu valodai?
 
-Latviešu valoda, ko visā pasaulē lieto aptuveni 1,5~miljoni cilvēku, valodas lietojuma ziņā ir apmēram 150. vietā pasaulē.
+Latviešu valoda, ko visā pasaulē lieto aptuveni 1,5~miljoni cilvēku, valodas lietojuma ziņā ir apmēram 150.~vietā pasaulē.
 Latviešu valoda ir vienīgā valsts valoda Latvijas Republikā un viena no Eiropas Savienības oficiālajām valodām. 
 
-2010. gadā Latvijā tika izdotas 2035 grāmatas un bukleti, kas ir visai daudz, tomēr kopējais izdoto eksemplāru skaits bija tikai 3,33 miljoni~--- ievērojami mazāk \mbox{nekā} 1991. gadā, kad tika izdoti 28,355 miljoni eksemplāru \cite{Meta1ES}.
+2010.~gadā Latvijā tika izdotas 2035 grāmatas un bukleti, kas ir visai daudz, tomēr kopējais izdoto eksemplāru skaits bija tikai 3,33 miljoni~--- ievērojami mazāk \mbox{nekā} 1991.~gadā, kad tika izdoti 28,355 miljoni eksemplāru \cite{Meta1ES}.
 Programmas latviešu valodā piedāvā daudzas radiostacijas, divi sabiedriskās televīzijas kanāli un vairākas privātās telekompānijas.
 Daudzas ārzemju filmas tiek dublētas latviešu valodā. 
 
-Latvijā vēl joprojām jārisina problēmas, ko rada valstij ``mantojumā'' atstātā 20. gs. 50.–80. gados padomju varas piekoptā masveida imigrācijas un izglītības sistēmas segregācijas politika.
+Latvijā vēl joprojām jārisina problēmas, ko rada valstij ``mantojumā'' atstātā 20.~gs. 50.–80. gados padomju varas piekoptā masveida imigrācijas un izglītības sistēmas segregācijas politika.
 Gandrīz trešās daļas Latvijas iedzīvotāju dzimtā valoda ir krievu valoda.
 Daudzās Latvijas skolās izglītību savulaik varēja iegūt tikai krievu valodā.
 Galu galā 1989.~gadā tikai piektā daļa krieviski runājošo iedzīvotāju prata latviešu valodu \cite{Meta2ES}.
@@ -163,7 +195,7 @@ Nākamā informācijas tehnoloģijas paaudze būs apguvusi cilvēku valodas tād
 Nākamā informācijas un sakaru tehnoloģijas paaudze ļaus rūpniecības un pakalpojumu sfēras robotiem (kas pašlaik tiek izstrādāti pētniecības laboratorijās) “saprast” lietotāju vēlmes un sarunāties ar tiem. 
 
 Darbība šajā līmenī nozīmē krietni vairāk par rakstzīmju apstrādi vai vienkāršu leksikonu izpratni, pareizrakstības vai pareizrunas pārbaudi.
-Tehnoloģijas izstrādē vairs nepietiek ar vienkāršotu pieeju, ir jāķeras pie visaptverošas valodas modelēšanas, ņemot vērā sintaksi un semantiku, lai izprastu cilvēka uzdoto jautājumu būtību un spētu sniegt pilnvērtīgas un precīzas atbildes.
+Tehnoloģijas izstrādē vairs nepietiek ar vienkāršotu pieeju, ir jāķeras pie visaptverošas valodas modelēšanas, ņemot vērā sintaksi un semantiku, lai izprastu cilvēka uzdoto \mbox{jautājumu} \mbox{būtību} un spētu sniegt pilnvērtīgas un precīzas atbildes.
 
 Ne visas Eiropas valodas ir līdzvērtīgi sagatavojušās šim nākotnes uzdevumam.
 Angļu valodas tehnoloģiskais nodrošinājums ir ievērojami plašāks nekā latviešu valodai, un šī nevienlīdzība arvien palielinās.
@@ -401,7 +433,7 @@ Saskaņā ar 2000.~gada tautas skaitīšanas datiem nacionālo minoritāšu vid�
 Visā pasaulē latviešu valoda ir dzimtā valoda apmēram 1,5~miljoniem iedzīvotāju, no kuriem 1,2~miljoni dzīvo Latvijā.
 
 2011.~gada tautas skaitīšanas dati liecina, ka Latvijā dzīvo vairāk nekā 170 tautību iedzīvotāji. 
-Zemās dzimstības dēļ kopš iepriekšējās tautas skaitīšanas visu \mbox{lielāko} tautību pārstāvju skaits Latvijā ir samazinājies. 
+Zemās \mbox{dzimstības} dēļ kopš iepriekšējās tautas skaitīšanas visu \mbox{lielāko} tautību pārstāvju skaits Latvijā ir samazinājies. 
 Piemēram, latviski runājošo cilvēku skaits ik gadu samazinās par 5000 (0,3\%). 
 Tomēr pamattautības~--- latviešu~--- īpatsvars iedzīvotāju kopskaitā valstī kopumā ir pieaudzis no 57,7\% 2000.~gadā līdz 62,1\% pašreiz. 
 Krievu tautības iedzīvotāju īpatsvars samazinājies no 29,6\% 2000.~gadā līdz 26,9\% 2011.~gadā, baltkrievu~--- no 4,1\% līdz 3,3\%, ukraiņu~--- no 2,7\% līdz 2,2\%, poļu~--- no 2,5\% līdz 2,2\%, lietuviešu~--- no 1,4\% līdz 1,2\% \cite{Meta54}.
@@ -470,7 +502,7 @@ Vārdu izruna atkarībā no konteksta ir jāņem vērā ne tikai latviešu valod
 \boxtext{Latviešu valoda ir sintētiski fleksīva valoda.\\[.3mm]
 Locīšanas dēļ pastāv daudz dažādu\\ gramatisko formu un galotņu. }
 
-Latviešu valoda ir sintētiski fleksīva valoda.  Vārdformas mainās atbilstoši gramatiskajai funkcijai.  Tas nozīmē, ka lietvārdu, vietniekvārdu, īpašības vārdu, skaitļa vārdu un darbības vārdu galotnes mainās atkarībā no dažādām kategorijām.  Galvenās latviešu valodas kategorijas ir dzimte, skaitlis, locījums, laiks, kārta, salīdzināmā pakāpe, persona, noteiktā un nenoteiktā galotne, izteiksme, atgriezeniskums.  Katrai vārdšķirai ir atšķirīgas kategorijas.  Vārdformas var darināt ne tikai ar galotni.  Valodā pastāv arī bagātīga derivatīvo afiksu sistēma.  Galotnes nav viennozīmīgas.  Piemēram, latviešu valodā lietvārdiem ir 29~atšķirīgas galotnes, īpašības vārdiem~--- 24, bet darbības vārdiem~--- 28. Visām šīm trim vārdšķirām tikai puse no galotnēm ir viennozīmīgas, pārējos gadījumos no locījuma var iegūt vairākas pamatformas.
+Latviešu valoda ir sintētiski fleksīva valoda.  Vārdformas mainās atbilstoši gramatiskajai funkcijai.  Tas nozīmē, ka lietvārdu, vietniekvārdu, īpašības vārdu, skaitļa vārdu un darbības vārdu galotnes mainās atkarībā no dažādām kategorijām.  Galvenās latviešu valodas kategorijas ir dzimte, skaitlis, locījums, laiks, kārta, salīdzināmā pakāpe, persona, noteiktā un nenoteiktā galotne, izteiksme, atgriezeniskums.  Katrai vārdšķirai ir atšķirīgas kategorijas.  Vārdformas var darināt ne tikai ar galotni.  Valodā pastāv arī bagātīga derivatīvo afiksu sistēma.  \mbox{Galotnes} nav viennozīmīgas.  Piemēram, latviešu valodā lietvārdiem ir 29~atšķirīgas galotnes, īpašības vārdiem~--- 24, bet darbības vārdiem~--- 28. Visām šīm trim vārdšķirām tikai puse no galotnēm ir viennozīmīgas, pārējos gadījumos no locījuma var iegūt vairākas pamatformas.
 
 Latviešu valodā nav noteiktā vai nenoteiktā artikula.
 Noteiktību var norādīt īpašības vārdu galotnes.
@@ -513,7 +545,7 @@ Visērtāk bieži vien ir izvēlēties ātrumā radītas teksta klišejas.
 Oficiāli valodas attīstība netiek regulēta, un terminologi latviski pareizus apzīmējumus sabiedrībai piedāvā nepietiekami operatīvi.
 Neapdomīgi pieņemot ātrumā radītus vārdus, to lietotājs riskē tikt pārprasts. 
 
-Lai arī bieži vien svešvārdi var tikt sekmīgi aizstāti ar līdzvērtīgiem latviskiem darinājumiem vai piemērotiem aizguvumiem (piemēram, \textit{ofšors} --- \textit{ārzona}, \textit{kompjūters} --- \textit{dators}), procentuāli svešvārdu latviešu valodā vienmēr ir bijis daudz.  Svešvalodās rakstītas informācijas apjomam pieaugot, pieaug tendence vienkārši transkribēt citas valodas vārdus, pievienojot tiem latvisku galotni.  Pēc būtības tā ir atgriešanās 19.~gadsimtā, kad plaši tika lietoti ģermānismi.  Var uzskatīt, ka svešvārdu procentuālā attiecība nemitīgi pieaug atbilstoši pieprasījumam pēc jauniem jēdzieniem un paplašinoties vārdu krājumam.  Lai gan pastāv raizes, ka latviešu valodā ir pārāk daudz svešvārdu, nav veikti pētījumi, kas šo uzskatu apstiprinātu.
+Lai arī bieži vien svešvārdi var tikt sekmīgi aizstāti ar līdzvērtīgiem latviskiem darinājumiem vai piemērotiem aizguvumiem (piemēram, \textit{ofšors} --- \textit{ārzona}, \textit{kompjūters} --- \textit{dators}), procentuāli svešvārdu latviešu valodā vienmēr ir bijis daudz.  Svešvalodās rakstītas informācijas apjomam pieaugot, pieaug tendence vienkārši transkribēt citas valodas vārdus, pievienojot tiem latvisku galotni.  Pēc būtības tā ir atgriešanās 19.~gadsimtā, kad plaši tika lietoti ģermānismi.  Var uzskatīt, ka svešvārdu procentuālā attiecība nemitīgi pieaug atbilstoši pieprasījumam pēc jauniem jēdzieniem un paplašinoties vārdu \mbox{krājumam}.  Lai gan pastāv raizes, ka latviešu valodā ir pārāk daudz svešvārdu, nav veikti pētījumi, kas šo uzskatu apstiprinātu.
 
 \subsection{Valodas attīstība Latvijā}
 
@@ -652,7 +684,7 @@ Pēc aptaujas datiem, interneta pazušana negatīvi ietekmētu 37\% uzņēmumu d
 Internetā lietotā valoda ir specifiska, tai ir noteiktas tradīcijas, bet tajā ir vērojama arī lingvistiskā visatļautība. 
 Internetā ir pakalpojumi, kuros tiek publicēti rediģēti materiāli. 
 Tomēr lielā daļā internetā pieejamo tekstu valodas lietojums netiek kontrolēts. 
-Interneta saziņā ienāk līdz šim nebijuši paņēmieni un leksika: grafiskas zīmes jeb smaidiņi emociju pau\-šanai, diakritisko zīmju nelietošana, neierasti saīsinājumi, sarunvaloda un vienkāršruna. 
+Interneta saziņā ienāk līdz šim nebijuši paņēmieni un leksika: grafiskas zīmes jeb smaidiņi emociju pau\-šanai, diakritisko zīmju \mbox{nelietošana}, neierasti saīsinājumi, sarunvaloda un vienkāršruna. 
 Internets, tāpat kā citi komunikācijas līdzekļi, ir valodas faktu avots, kas atspoguļo valodas attīstības tendences.
 
 Interneta nozīmes pieaugums būtiski ietekmē valodu tehnoloģijas. 
@@ -672,7 +704,7 @@ Sabiedrības \textit{Tilde} izstrādātajā portālā \textit{\url{Letonika.lv}}
 \textit{\url{Letonika.lv}} ietver vairākas vispārīgas un specializētas vārdnīcas, kas paredzētas 20~tulkošanas virzieniem: no angļu, franču, vācu un krievu valodas uz latviešu valodu un pretēji, latviešu--lietuviešu, lietuviešu--latviešu un igauņu--latviešu virzienam, kā arī vairāk nekā 40~terminoloģijas vārdnīcu.
 Latviešu literatūras kolekcijā tiešsaistē publicēti 22 autoru 200 pilna teksta darbi un krājumi, kopējais digitalizēto lapu skaits --- 22\,000.
 
-Latvijas Universitātes Matemātikas un informātikas institūts (LU~MII) piedāvā apjomīgu digitālā satura kolekciju, ieskaitot leksiskos resursus, tekstus un krājumus, un datorizētus mācību palīglīdzekļus.
+Latvijas Universitātes Matemātikas un informātikas institūts (LU~MII) piedāvā apjomīgu digitālā satura \mbox{kolekciju}, ieskaitot leksiskos resursus, tekstus un krājumus, un datorizētus mācību palīglīdzekļus.
 Lielākā daļa resursu ir pieejami tīmeklī \cite{Meta7}, un tos izmanto humanitāro zinātņu pētniecībā un izglītībā.
 Kā nozīmīgākie minami šādi: \textit{Līdzsvarots mūsdienu latviešu valodas tekstu korpuss} \cite{Meta8} ${}^{ }$(\~{}3,5~miljoni vārdlietojumu), \textit{Latviešu valodas tīmekļa korpuss} (\~{}10~miljoni vārdlietojumu), \textit{Latvijas Republikas 5.--9.~Saeimas sēžu stenogrammas ar metadatiem} (vairāk nekā 20~miljoni vārdlietojumu), \textit{Latviešu valodas seno tekstu korpuss} \cite{Meta9, metaAndronova} un \textit{Latviešu literatūras klasika}.
 
@@ -683,7 +715,7 @@ Lai palīdzētu nedzirdīgiem bērniem, ir izstrādāta zīmju valodas vārdnīc
 Lielākā daļa e-mācību materiālu ir iekļauti Latvijas Izglītības informatizācijas sistēmā (LIIS). 
 
 Latvijas Zinātņu akadēmijas Terminoloģijas komisija oficiālo terminoloģiju publicē divās lielās tiešsaistes datu bāzēs: \url{www.termnet.lv} (apmēram 150~000~terminu) un \url{termini.lza.lv/akadterm}.
-Pirmā datu bāze ir pievienota arī lielākajam Eiropas terminoloģijas portālam \textit{EuroTermBank} \cite{Meta61}.
+Pirmā datu bāze ir \mbox{pievienota} arī lielākajam Eiropas terminoloģijas portālam \textit{EuroTermBank} \cite{Meta61}.
 
 Latvijas Universitātes Literatūras, folkloras un mākslas institūta Latviešu folkloras krātuve \cite{Meta11} izveidojusi apjomīgu latviešu folkloras resursu tiešsaistes kolekciju, kurā iekļauts arī liels skaits audioierakstu un videoierakstu. 
 Krišjāņa Barona apkopotais latviešu tautasdziesmu krājums \textit{Dainu skapis} ir iekļauts UNESCO Pasaules mantojuma sarakstā, un tiešsaistē ir pieejama tā digitalizētā versija \cite{Meta12}. 
@@ -802,8 +834,8 @@ Neviena no šīm pieejām nav viegli piemērojama latviešu valodai, jo latvieš
 
 Valodas pārbaude neattiecas tikai uz tekstapstrādes programmām; tā tiek izmantota arī autorēšanas \mbox{atbalsta} sistēmās, piemēram, programmatūras vidēs, kurās sarežģītas IT, veselības aprūpes, inženierijas un citu produktu rokasgrāmatas un dokumentācija tiek rakstīta atbilstoši īpašiem standartiem.
 Uzņēmumi pievērš arvien lielāku uzmanību tehniskās dokumentācijas kvalitātei, kas palīdz iekarot starptautisko tirgu (izmantojot tulkošanu un lokalizēšanu).
-Slikti saprastu instrukciju dēļ bieži vien produkts tiek lietots nepareizi, un uzņēmumi saņem klientu sūdzības un bojājumu pieteikumus.
-Savukārt kvalitatīva tehniskā dokumentācija palīdz no tā izvairīties.
+Slikti saprastu instrukciju dēļ bieži vien produkts tiek lietots nepareizi, un uzņēmumi saņem klientu sūdzības un bojājumu \mbox{pieteikumus}.
+\mbox{Savukārt} kvalitatīva tehniskā dokumentācija palīdz no tā izvairīties.
 Sasniegumi dabiskās valodas apstrādē ir veicinājuši autorēšanas atbalsta sistēmu izstrādi.
 Šīs sistēmas palīdz tehniskās dokumentācijas rakstītājiem lietot nozares noteikumiem un (uzņēmuma) terminoloģijas ierobežojumiem atbilstošu vārdu krājumu un teikumu struktūras.
 
@@ -823,7 +855,7 @@ Tēzaurs ne tikai piedāvā izvēlētā vārda sinonīmus, bet arī ģenerē par
 
 Gramatikas pārbaudītājs pārbauda teikuma struktūru un interpunkciju.
 Pirmo latviešu valodas gramatikas pārbaudītāju izstrādāja \textit{Tilde }2004.~gadā.
-Šis gramatikas pārbaudītājs izmanto šablona atbilsmes pārbaudi, kas ļauj atpazīt un izlabot bieži sastopamus kļūdu veidus: lielo sākumburtu lietojumu, interpunkciju dažādās sintaktiskajās struktūrās, saīsinājumus, salikteņus un dažādas saskaņojuma kļūdas.
+Šis gramatikas pārbaudītājs izmanto šablona atbilsmes pārbaudi, kas ļauj atpazīt un izlabot bieži sastopamus kļūdu veidus: lielo sākumburtu lietojumu, interpunkciju dažādās sintaktiskajās struktūrās, saīsinājumus, salikteņus un \mbox{dažādas} saskaņojuma kļūdas.
 Nesen \textit{Tilde} laida klajā jaunu gramatikas pārbaudītāja versiju, kurā tiek lietota pilna teikuma sintaktiskā analīze.
 Uzlabotais gramatikas pārbaudītājs identificē izplatītākās gramatiskās kļūdas, tostarp vārdu saskaņojuma, pieturzīmju un daudzas stila kļūdas.
 Šī pieeja ļauj programmai atrast arī sintakses kļūdas teikuma daļās, kuras atrodas tālu cita no citas.
@@ -1003,7 +1035,7 @@ Projektā \textit{LetsMT!} \cite{Meta34} izveidota novatoriska tiešsaistes plat
 \textit{LetsMT!} tulkošanas pakalpojumus var izmantot dažādi: kā tīmekļa portāla risinājumu, kā logrīku, kas tulko tīmekļa lapas, kā pārlūkprogrammas spraudni un kā risinājumu, kas integrējams datorizētos tulkošanas (\textit{computer-assisted translation}, CAT) rīkos un dažādās tiešsaistes lietojumprogrammās. 
 
 MT sistēmu kvalitāti joprojām vēl var būtiski uzlabot.
-Izaicinājumi ir saistīti ar valodas resursu pielāgošanu konkrētajai nozarei vai lietotāja specializācijai un integrēšanu esošajās darbplūsmās ar terminu datu bāzēm un tulkošanas atmiņām. 
+Izaicinājumi ir saistīti ar valodas resursu pielāgošanu konkrētajai nozarei vai lietotāja specializācijai un \mbox{integrēšanu} esošajās darbplūsmās ar terminu datu bāzēm un tulkošanas atmiņām. 
 
 Sekmīgi pielāgojot konkrētai lietotāju kategorijai raksturīgu terminoloģiju un integrējot mašīntulkošanu darbplūsmā, MT lietošana var būtiski palielināt tulkošanas apjomus un kāpināt tulkotāju produktivitāti.
 Nesen \textit{Tilde} veica eksperimentu par angļu--latviešu SMT izmantojamību lokalizēšanas procesā.
@@ -1101,15 +1133,15 @@ Atšķirībā no vairākām citām Eiropas Savienības valstīm Latvijā nav ats
 
 2005.--2009.~gadā valsts pētījumu programmās \textit{Informācijas tehnoloģiju zinātniskā bāze} un \textit{Letonika: pētījumi par vēsturi, valodu un kultūru} LZP finansēja divus ar valodu tehnoloģijām saistītus LU MII projektus.  Projekta \textit{SemTi-Kamols} \cite{Meta39} mērķis bija izstrādāt un pielāgot semantiskās tīmekļa tehnoloģijas semantiskās analīzes vajadzībām latviešu valodā.  Projektā \textit{Latviešu valodas skaidrojošo vārdnīcu un jaunāko aizguvumu datu bāze} galvenokārt tika veikta \textit{Latviešu literārās valodas vārdnīcas} pusautomātiska pārveide mašīnlasāmā formā.  Darbs semantisko tehnoloģiju attīstīšanā tiek turpināts divos lielos projektos: valsts pētījumu programmas projektā \textit{Uz ontoloģijām un modeļu transformācijām balstītās jaunās informācijas tehnoloģijas un lietojumi} (2010--2013) un \textit{Semantisko datu bāzu platforma nozaru speciālistiem}, kas tiek finansēts no Eiropas struktūrfondu līdzekļiem.  Atbalsts elektronisko resursu izveidei tiek nodrošināts projektā \textit{Latviešu valodas gramatika un elektroniskie resursi} (2010–2013), kas tiek īstenots valsts pētījumu programmā \textit{Nacionālā identitāte (valoda, Latvijas vēsture, kultūra un cilvēkdrošība)}.
 
-Pēdējo gadu laikā LZP ir finansējusi arī dažus mazākus ar valodu tehnoloģijām saistītus LU~MII projektus: \textit{Statistiskās mašīntulkošanas metožu izvērtējums angļu--latviešu tulkošanas sistēmā} (2005--2008), \textit{Universālās leksikona sistēmas modelēšana latviešu \mbox{valodai}} (2005--2008), \textit{Latviešu valodas vēsturiskā vārdnīca (16.--18.${}^{~}$gs.)} (2005--2008), \textit{Datorizētās latviešu-angļu leksikogrāfijas metodes} (2008), \textit{Faktorēto metožu lietojums angļu-latviešu statistiskajā mašīntulkošanas sistēmā} (2009--2012) \cite{Meta27}.
+Pēdējo gadu laikā LZP ir finansējusi arī dažus mazākus ar valodu tehnoloģijām saistītus LU~MII projektus: \textit{Statistiskās mašīntulkošanas metožu izvērtējums angļu--latviešu tulkošanas sistēmā} (2005--2008), \textit{\mbox{Universālās} leksikona sistēmas modelēšana latviešu \mbox{valodai}} (2005--2008), \textit{Latviešu valodas vēsturiskā vārdnīca (16.--18.${}^{~}$gs.)} (2005--2008), \textit{Datorizētās latviešu-angļu leksikogrāfijas metodes} (2008), \textit{Faktorēto metožu lietojums angļu-latviešu statistiskajā mašīntulkošanas sistēmā} (2009--2012) \cite{Meta27}.
 
 2004.~gadā Valsts valodas komisija aicināja uzsākt Latviešu valodas nacionālā korpusa izveidi.  Šādi korpusi, kas fiksē un atspoguļo reālo valodas lietojumu, ir izveidoti daudzām valodām (piemēram, čehu, poļu, slovēņu, ungāru, krievu, horvātu valodai un citām).  Tie nepieciešami mūsdienu prasībām atbilstošu vārdnīcu sastādīšanai, valodas un sociolingvistiskiem pētījumiem, mācību līdzekļu sagatavošanai, pareizrakstības un gramatikas automatizētas pārbaudes līdzekļu izstrādei, automatizētās tulkošanas sistēmu veidošanai un citiem pētījumiem.  Tā kā dažādi resursi tiek apkopoti vairākās iestādēs, latviešu valodas tekstu korpusa iniciatīva paredz visus latviešu tekstu korpusus apvienot vienotā tīklā saslēgtā sistēmā.  Nozīmīgāko valodas resursu izstrādātāji un turētāji gan akadēmiskajā, gan nozares vidē ir parakstījuši nodomu protokolu, izveidojuši darba grupu un apsprieduši turpmākos praktiskos soļus, taču tālāko darbību kavē finansējuma trūkums.
 
-Kopš 2006.~gada Latvija piedalās Eiropas mēroga iniciatīvā CLARIN \textit{(Vienoto valodas resursu un tehnoloģijas infrastruktūra)} \cite{metaClarin}.  CLARIN mērķis ir novērst pašreizējo sadrumstalotību valodas resursu jomā un izveidot vienotu valodu resursu pētniecības infrastruktūru humanitāro un sociālo zinātņu pētniekiem.  CLARIN sagatavošanas posmā (no 2008.~gada janvāra līdz 2012.~gada jūnijam) apzināti latviešu valodai esošie valodas resursi un tehnoloģijas, noteikti trūkstošie pamatresursi un rīki, veikti sagatavošanās darbi CLARIN centra izveidei LU MII, kā arī izstrādāti vairāki tīmekļa pakalpojumi iekļaušanai infrastruktūrā \cite{metaClarin}.  Atbalsts CLARIN infrastruktūras izveidei ir minēts Ministru kabineta 2010.~gadā apstiprinātajā stratēģiskajā dokumentā \textit{Zinātnes un tehnoloģijas attīstības pamatnostādņu ieviešanas rīcības plāns}.  2012.~gada februārī CLARIN ieguva Eiropas pētniecības infrastruktūras konsorcija (\textit{European Research Infrastructure Consortium~--ERIC}) juridisko statusu, tādējādi kļūstot par CLARIN ERIC.  Latvija apliecinājusi savu vēlmi kļūt par CLARIN ERIC biedru, parakstot saprašanās memorandu un sākot nepieciešamās procedūras, kas tai ļautu kļūt par CLARIN ERIC biedru.  Lai noteiktu CLARIN Latvijā darbības prioritātes un sekmētu iekļaušanos CLARIN Eiropas infrastruktūrā, izveidota CLARIN Nacionālā konsultatīvā padome, kas apvieno profesionāļus no valsts institūcijām un privātā sektora, kā arī no dažādām Latvijas pētniecības un izglītības iestādēm, kas veido vai pētniecības vai mācību nolūkos izmanto valodas resursus un rīkus.
+Kopš 2006.~gada Latvija piedalās Eiropas mēroga iniciatīvā CLARIN \textit{(Vienoto valodas resursu un tehnoloģijas infrastruktūra)} \cite{metaClarin}.  CLARIN mērķis ir novērst pašreizējo sadrumstalotību valodas resursu jomā un izveidot vienotu valodu resursu pētniecības infrastruktūru humanitāro un sociālo zinātņu pētniekiem.  CLARIN sagatavošanas posmā (no 2008.~gada janvāra līdz 2012.~gada jūnijam) apzināti latviešu valodai esošie valodas resursi un tehnoloģijas, noteikti trūkstošie pamatresursi un rīki, veikti sagatavošanās darbi CLARIN centra izveidei LU MII, kā arī izstrādāti vairāki tīmekļa pakalpojumi iekļaušanai infrastruktūrā \cite{metaClarin}.  Atbalsts CLARIN infrastruktūras izveidei ir minēts Ministru kabineta 2010.~gadā apstiprinātajā stratēģiskajā dokumentā \textit{Zinātnes un tehnoloģijas attīstības pamatnostādņu ieviešanas rīcības plāns}.  2012.~gada februārī CLARIN ieguva Eiropas pētniecības infrastruktūras konsorcija (\textit{European Research Infrastructure Consortium~--- ERIC}) juridisko statusu, tādējādi kļūstot par CLARIN ERIC.  Latvija apliecinājusi savu vēlmi kļūt par CLARIN ERIC biedru, parakstot saprašanās memorandu un sākot nepieciešamās procedūras, kas tai ļautu kļūt par CLARIN ERIC biedru.  Lai noteiktu CLARIN Latvijā darbības prioritātes un sekmētu iekļaušanos CLARIN Eiropas infrastruktūrā, izveidota CLARIN Nacionālā konsultatīvā padome, kas apvieno profesionāļus no valsts institūcijām un privātā sektora, kā arī no dažādām Latvijas pētniecības un izglītības iestādēm, kas veido vai pētniecības vai mācību nolūkos izmanto valodas resursus un rīkus.
 
 Tā kā valodu tehnoloģiju tirgus Latvijā ir ļoti mazs, risinājumus šajā jomā nodrošina tikai daži nozares pārstāvji.  1991.~gadā dibinātais uzņēmums \textit{Tilde} \cite{Meta41} ir vadošais valodu tehnoloģiju uzņēmums Baltijas valstīs.  Vislielākā pieredze uzņēmumam \textit{Tilde} ir trijās valodu tehnoloģiju jomās: tulkošanas rīki, pareizrakstības pārbaudes rīki un terminoloģijas pārvaldība.  \textit{Tildes} izstrādātie valodu programmprodukti tiek plaši lietoti Baltijas valstīs, un tās latviešu valodas tulkošanas un korektūras rīkus izmanto vairāk nekā 350~000~licencētu lietotāju.  Uzņēmumā tiek izstrādātas tiešsaistē un mobilajās ierīcēs lietojamas mašīntulkošanas un terminoloģijas sistēmas latviešu valodai, kā arī citām Eiropas valodām.  \textit{Tilde} aktīvi piedalās ES pētniecības un attīstības pasākumos, koordinējot vairākus liela mēroga projektus: \textit{EuroTermBank} (eContent), ACCURAT (7.~pamatpro\-gramma), \textit{LetsMT!} (ICT-PSP), META-NORD (ICT-PSP) un \textit{TaaS} (7.~pamatprogramma).
 
-Cits uzņēmums, kas piedāvā mašīntulkošanas risinājumus, ir \textit{Trident MT} \cite{Meta42}~--- Ukrainas uzņēmuma \textit{Trident} filiāle Latvijā.  Šis uzņēmums piedalās ICT-PSP projektā \textit{itranslate4.eu} \cite{Meta43}.  Plaši lietotus latviešu valodas atbalsta risinājumus \textit{Macintosh} datoriem izstrādājis uzņēmums \textit{Deksoft} \cite{MetaRef1}.  Uzņēmums \textit{Algorego} \cite{Meta44} \mbox{izstrādā} elektronisko dokumentu informācijas apstrādes un strukturēšanas risinājumus.  Uzņēmums \textit{Datorzinību centrs} \cite{Meta45} izstrādā elektroniskās mācību lietojumprogrammas, tostarp risinājumus valodu apguvei.
+Cits uzņēmums, kas piedāvā mašīntulkošanas risinājumus, ir \textit{Trident MT} \cite{Meta42}~--- Ukrainas uzņēmuma \textit{Trident} filiāle Latvijā.  Šis uzņēmums piedalās ICT-PSP projektā \textit{itranslate4.eu} \cite{Meta43}.  Plaši lietotus latviešu valodas atbalsta risinājumus \textit{Macintosh} datoriem \mbox{izstrādājis} uzņēmums \textit{Deksoft} \cite{MetaRef1}.  Uzņēmums \textit{Algorego} \cite{Meta44} \mbox{izstrādā} elektronisko dokumentu informācijas apstrādes un strukturēšanas risinājumus.  Uzņēmums \textit{Datorzinību centrs} \cite{Meta45} izstrādā elektroniskās mācību lietojumprogrammas, tostarp risinājumus valodu apguvei.
 
 Ņemot vērā valodu tehnoloģiju nozīmi latviešu valodas, kā arī citu valodu ilgtspējīgas attīstības nodrošināšanā, 2009.~gadā bijušā Latvijas prezidenta Valda Zatlera aizbildniecībā tika sākta iniciatīva \textit{Valodu krasts}.  Tās mērķis ir veicināt sadarbību starp pētniecības iestādēm, digitālā satura organizācijām, augstskolām un IT uzņēmumiem, lai attīstītu starp\-tautiskas nozīmes pētījumus un praktiskas izstrādes valodas tehnoloģiju jomā.
 
@@ -1120,7 +1152,7 @@ Sadarbības rezultātā būtiski uzlabots \textit{Microsoft} latviešu valodas m
 Turpmākā \textit{Valodu krasta} attīstība tika paredzēta ES struktūrfondu līdzfinansētās programmas \textit{Kompetences centri} ietvaros.
 Lai veiktu izpēti un attīstību valodu tehnoloģijās un uzņēmējdarbības procesu analīzē, vadošie Latvijas IT uzņēmumi un augstskolas izveidoja IKT kompetences centru.
 Tas paredzējis veikt dažādus pētījumus un eksperimentālas izstrādes mašīntulkošanā, runas tehnoloģijās un semantiskajā analīzē.
-Taču šie pētījumi vēl nav uzsākti, jo programmu Kompetences centri kavē birokrātiski šķēršļi.
+Taču šie pētījumi vēl nav uzsākti, jo programmu \textit{Kompetences centri} kavē birokrātiski šķēršļi.
 
 Lai gan valodu tehnoloģiju jomā ir gūti vairāki nozīmīgi sasniegumi, Latvijā trūkst specializētas valsts programmas valodu tehnoloģiju pētniecībai un attīstībai.
 Pašreizējā izpēte notiek fragmentāri un galvenokārt tiek organizēta īstermiņa projektos, kas sarežģī iestāžu sadarbību ilgtermiņā, kā arī lielāka apjoma pētniecību un resursu izstrādi.
@@ -1557,7 +1589,7 @@ Will our language change or even disappear?
 
 All our computing devices are linked together into an increasingly dense and powerful global network.
 However, when Europe's citizens discuss the effects of the Fukushima nuclear accident on European energy policy in online forums and chat rooms, they do so in distinctly separate language communities.
-What the internet connects is still divided by the languages of its users.
+What the Internet connects is still divided by the languages of its users.
 Will it always be like this? 
 
 Many of the world’s 6,900 languages will not survive in a globalised digital information society.
@@ -1599,7 +1631,7 @@ Although there are applications and tools for spelling and grammar checking, tok
 There are electronic dictionaries and applications for automatic translation from and into Latvian.
 While being very useful to get a general meaning of foreign language texts these are not yet able to produce linguistically and idiomatically correct translations, especially when Latvian is the target language due to the specific linguistic characteristics of Latvian.
 
-Information and communication technology are now preparing for the next revolution.
+Information and communication technologies (ICT) are now preparing for the next revolution.
 After personal computers, networks, miniaturisation, multimedia, mobile devices and cloud-computing, the next generation of technology will feature software that understands written and spoken sentences, and supports users far better because it speaks, knows and understands their language.
 Forerunners of such developments are the free online service Google Translate that translates between numerous languages, IBM’s supercomputer Watson that was able to defeat the US-champion in the game of “Jeopardy”, and Apple’s mobile assistant Siri for the iPhone that can react to voice commands and answer questions in English, German, French and Japanese. 
 
@@ -1693,7 +1725,7 @@ While the printing press helped step up the exchange of information in Europe, i
 
 Europe's approximately 60 languages constitute one of its richest and most important cultural assets and a vital part of its unique social model \cite{Meta49}.  While languages such as English and Spanish are likely to survive in the emerging digital marketplace, many European languages could become irrelevant in a networked society.  This would weaken Europe's global standing and run counter to the strategic goal of ensuring equal participation for every European citizen regardless of language.  According to a UNESCO report on multilingualism, languages are an essential medium for the enjoyment of fundamental rights, such as political expression, education, and participation in society \cite{Meta50}.
 
-\subsection[Language Technology is a Key Enabling Technology]{A Key Enabling Technology}
+\subsection[Language Technology is a Key Enabling Technology]{LT is A Key Enabling Technology}
 
 In the past, investment efforts in language preservation focused on language education and translation.
 According to one estimate, the European market for translation, interpretation, software localisation and website globalisation was €8.4 billion in 2008 and is expected to grow by 10\% per annum \cite{Meta51}.
@@ -1925,7 +1957,7 @@ These schools are finding it difficult to work towards the 60\% of lessons to be
 \boxtext{Language policy in education was defined by the Law on Education of 1991, in which it was stated that any language other than Latvian has the status of a foreign language. }
 
 In the 2010/2011 academic year, the total number of students in general full-time education programmes was 216,307.
-Latvian was the language of instruction for 73.11\% (158,137 students), Russian~-- for 26.18\% (56,636 students), and other languages of instruction~- for only 0.71\% (1,534 students).
+Latvian was the language of instruction for 73.11\% (158,137 students), Russian~-- for 26.18\% (56,636 students), and other languages of instruction~-- for only 0.71\% (1,534 students).
 
 Article~41 of the~1998 Law on Education states that educational institutions may offer programmes adapted for national minorities as long as they are in accordance with the Ministry's regulations on education, but that these programmes must be accompanied by subjects taught in the national language.
 The Russian community in Latvia has reservations about these provisions.
@@ -1990,9 +2022,10 @@ From 2007 till 2009 the training programme for teachers involved 61~participants
 
 \subsection{Latvian on the Internet}
 
-To address the synergy between language and technology, the subcommission of the State Language commission “The Latvian Language in New Technologies” has set the following key goal: Latvian shall be provided a full software support in all popular technologies and the support shall be of high quality and maintained and developed in pace with the development of new technologies; and the support shall be widely applied and accessible.
-To reach these goals, the subcommission has set the following priority tasks: to develop language technologies, to ensure the availability and application of these technologies in widely used systems, to develop the regulations for the use of Latvian in computer systems, to promote the development and implementation of IT and telecommunications terminology.
+To address the synergy between language and technology, the State Language Commission has set the following key goal: Latvian shall be provided with a full software support in all popular technologies. The support shall be of high quality as well as maintained and developed in pace with the development of new technologies. It shall be also widely applied and accessible for every user. To reach these goals, the following priority tasks have been highlighted: to develop language technologies, to ensure the availability and application of these technologies in widely used systems, to develop the regulations for the use of Latvian in computer systems, to promote the development and implementation of Latvian terminology in IT and telecommunications.
+
 \boxtext{The State Language subcommission on Latvian Language in New Technologies has set the following key goal: Latvian shall be provided full software support in all popular technologies and the support shall be of high quality and maintained and developed in pace with the development of new technologies; and the support shall be widely accessible and applied.}
+
 According to a survey in the Discovery News website, there are 1,369,600 Latvian language Internet users.
 \textit{TNS Latvia}, a market, public opinion, and media research agency, has gathered the latest results of the Internet audience survey for the winter~of 2011.
 On average, 64\% or 1,123,000~residents of Latvia between the ages of 15 and 74~have used the Internet in the last six months.
@@ -2027,10 +2060,10 @@ The online collection of Latvian literature includes 200 full text works and col
 
 The Institute of Mathematics and Computer Science (IMCS) of the University of Latvia offers a large collection of digital content, including lexical resources, texts and corpora, and computer-assisted teaching aids.
 Most resources are available on the web \cite{Meta7} and are used in humanities research and education.
-Among corpora collected by IMCS are the \textit{Balanced Corpus of Modern Latvian} \cite{Meta8} (\~3.5 million running words), the \textit{Latvian} \textit{Web Corpus} (100 million running words), the \textit{Corpus of the Transcripts of the Saeima's (Parliament of Latvia) Sessions} (more than 20 million running words), the \textit{Corpus of Early Written Latvian Texts} \cite{Meta9, metaAndronova}, and a collection of classical Latvian literature.
+Among corpora collected by IMCS are the \textit{Balanced Corpus of Modern Latvian} \cite{Meta8} (ca.~3.5 million running words), the \textit{Latvian} \textit{Web Corpus} (ca.~100 million running words), the \textit{Corpus of the Transcripts of the Saeima's (Parliament of Latvia) Sessions} (more than 20 million running words), the \textit{Corpus of Early Written Latvian Texts} \cite{Meta9, metaAndronova}, and a collection of classical Latvian literature.
 
 IMCS has collected numerous Latvian dictionaries~-- mainly explanatory dictionaries and dictionaries of terminology.
-The main resources include: an electronic version of Mülenbach-Endzelin ``Lettisch-deutsches Wörterbuch'' \cite{Meta10}, the Dictionary of Standard Latvian Language (with 64,000 entries), and the Explanatory Dictionary which contains more than 150,000 entries from about 120 Latvian dictionaries from different times and domains.
+The main resources include: an electronic version of Mülenbach-Endzelin ``Lettisch-deutsches Wörterbuch'' \cite{Meta10}, the Dictionary of Standard Latvian Language (with ca.~64,000 entries), and the Explanatory Dictionary which contains more than 150,000 entries from about 120 Latvian dictionaries from different times and domains.
 
 E-learning materials developed by IMCS comprise e-courses, e-books, teaching aids, exercises, and tests for different levels of language learners, starting from elementary school and ending with secondary school.
 In order to assist deaf children, a sign language dictionary has been developed.
@@ -2167,7 +2200,7 @@ Tilde also has developed a hyphenation tool for Latvian.  It puts hyphens in the
 
 A convenient tool to assist in writing texts is the Latvian thesaurus created by Tilde.  With the help of the thesaurus, repetition of the same words can be avoided in order to improve the document's language.  The thesaurus not only offers the synonyms for a chosen word, but also generates the correct inflectional form for replacement.  It is integrated in the \textit{Microsoft Office} environment.
 
-A Grammar checker verifies sentence structure and punctuation.  The first grammar checker for Latvian was developed in 2004 by Tilde.  This grammar checker uses an advanced pattern matching, which allows recognition and correction of several frequent types of errors: capital letter usage, punctuation for some types of syntactic structures, abbreviations, multiword compounds, and different types of agreement errors.  Recently, Tilde released a new version of grammar checker that is based on full syntactic analysis of the text.  The improved grammar checker identifies the most common grammar mistakes, including agreement between words, punctuation, and comma errors, as well as numerous stylistic errors.  The new approach allows the program to find long distance syntactical errors between different sub parts of the sentence.  In addition, calques, slang, and some other undesirable words or language constructions are identified.  The grammar checker is integrated in \textit{Microsoft Word} and \textit{Open Office} text editors.
+A grammar checker verifies sentence structure and punctuation.  The first grammar checker for Latvian was developed in 2004 by Tilde.  This grammar checker uses an advanced pattern matching, which allows recognition and correction of several frequent types of errors: capital letter usage, punctuation for some types of syntactic structures, abbreviations, multiword compounds, and different types of agreement errors.  Recently, Tilde released a new version of grammar checker that is based on full syntactic analysis of the text.  The improved grammar checker identifies the most common grammar mistakes, including agreement between words, punctuation, and comma errors, as well as numerous stylistic errors.  The new approach allows the program to find long distance syntactical errors between different sub parts of the sentence.  In addition, calques, slang, and some other undesirable words or language constructions are identified.  The grammar checker is integrated in \textit{Microsoft Word} and \textit{Open Office} text editors.
 
 Besides spell checkers and authoring support, language checking is also important in the field of computer-assisted language learning.
 And language checking applications also automatically correct search engine queries, as found in Google's \textit{Did you mean\dots } suggestions.
@@ -2280,8 +2313,8 @@ The most basic approach to machine translation is to automatically replace the w
 
 \begin{itemize}
 \item[] \textit{The woman saw the car and her husband, too.}
-\item \textit{[Sieviete redzēja mašīnu un viņas vīr}\textbf{\textit{s}}\textit{ arī]}
-\item \textit{[Sieviete redzēja mašīnu un viņas vīr}\textbf{\textit{u}}\textit{ arī]}
+\item \textit{Sieviete redzēja mašīnu un viņas vīr}\textbf{\textit{s}}\textit{ arī}
+\item \textit{Sieviete redzēja mašīnu un viņas vīr}\textbf{\textit{u}}\textit{ arī}
 \end{itemize}
 
 One way to build an MT system is to use linguistic rules.  For translations between closely related languages, a direct substitution translation may be feasible in cases like the above example.  However, rule-based (or linguistic knowledge-driven) systems often analyse the input text and create an intermediary symbolic representation from which the text can be generated into the target language.  The success of these methods is highly dependent on the availability of extensive lexicons with morphological, syntactic, and semantic information, and large sets of grammar rules carefully designed by skilled linguists.  This is a very long and therefore costly process.
@@ -2409,7 +2442,7 @@ The main language resource developers and stakeholders, of both academia and ind
 
 Since 2006 Latvia participates in the CLARIN (Common Language Resources and Technology Infrastructure) initiative \cite{metaClarin}.  CLARIN is a pan-European collaborative effort aiming to overcome current fragmentation and to offer common language resource infrastructure for researchers in the Humanities and Social Sciences.  During CLARIN preparation phase (January, 2010--June, 2011) survey of Latvian language resources and tools was prepared and most important LRT gaps were identified, preparatory work on creation of CLARIN centre at IMCS was performed as well as several web services were developed for inclusion into CLARIN infrastructure.  The advancement of CLARIN is mentioned in the strategic document \textit{“Action Plan for Implementation of Guidelines for Science and Technology Development”} approved by the Cabinet of Ministers in 2010.  In February, 2012 CLARIN ERIC (European Research Infrastructure Consortium) was established.  Latvia has confirmed its interest to become member of CLARIN ERIC by signing memorandum of understanding and by work on legal procedures necessary to fulfil before becoming member of CLARIN ERIC. The CLARIN National Advisory Board is established to prioritise the goals and tasks of the CLARIN in Latvia and to facilitate integration with the CLARIN infrastructure.  Members of the Advisory Board are professionals from state organizations, industry, research and education sector working on creation or using language resources and tools.
 
-As the market for language technologies is very small in Latvia, there are only a few industry players providing solutions in this field.  Tilde \cite{Meta41}, established in 1991, is the leading language technology company in Latvia.  Key experience of Tilde is in three language technology areas: translation tools, proofing tools, and terminology management.  Language software by Tilde is widely used in Baltic countries with more than 350,000 licensed users for Latvian language translation and proofreading tools.  Tilde develops online and mobile machine translation and terminology systems for Latvian and other European languages.  The company actively participates in EU research and development activities coordinating several large-scale projects: EuroTermBank (eContent), ACCURAT (FP7), LetsMT! (ICT-PSP) and META-NORD (ICT-PSP) and TaaS(FP7).
+As the market for language technologies is very small in Latvia, there are only a few industry players providing solutions in this field.  Tilde \cite{Meta41}, established in 1991, is the leading language technology company in Latvia.  Key experience of Tilde is in three language technology areas: translation tools, proofing tools, and terminology management.  Language software by Tilde is widely used in Baltic countries with more than 350,000 licensed users for Latvian language translation and proofreading tools.  Tilde develops online and mobile machine translation and terminology systems for Latvian and other European languages.  The company actively participates in EU research and development activities coordinating several large-scale projects: EuroTermBank (eContent), ACCURAT (FP7), LetsMT! (ICT-PSP), META-NORD (ICT-PSP) and TaaS (FP7).
 
 Another company developing machine translation solutions is Trident MT \cite{Meta42}~-- a recently opened Latvian branch of the Ukrainian company Trident.  This company participates in the ICT-PSP project itranslate4.eu \cite{Meta43}.  The company Deksoft \cite{MetaRef1} provides several popular Latvian language tools for Macintosh computers.  The company Algorego \cite{Meta44} develops solutions for processing and structuring information of digitized documents.  The company Datorzinību Centrs \cite{Meta45} develops e-learning applications including solutions for language learning.
 
@@ -2433,8 +2466,7 @@ In the following section, the current state of LT support for Latvian is summari
 
 \subsection{Availability of Tools and Resources}
 
-The following table summarises the current state of language technology support for the Latvian language.
-The rating for existing tools and resources was generated by leading experts in the field who provided estimates based on a scale from 0 (very low) to 6 (very high), according to seven criteria. 
+Figure~\ref{fig:lrlttable_en} summarises the current state of language technology support for the Latvian language.  The rating for existing tools and resources was generated by leading experts in the field who provided estimates based on a scale from 0 (very low) to 6 (very high), according to seven criteria.
 
 \begin{figure*}[htb]
 \centering
@@ -2516,7 +2548,7 @@ However, for building more sophisticated applications such as machine translatio
 \emph{In this series of white papers, we have made an important initial effort to assess language technology support for 30 European languages, and provide a high-level comparison across these languages.
 By identifying the gaps, needs and deficits, the European language technology community and related stakeholders are now in a position to design a large scale research and development programme aimed at building a truly multilingual, technology-enabled Europe.}
 
-The results of this white paper series illustrate that that there is a dramatic difference in language technology support between various European languages.
+The results of this white paper series illustrate that there is a dramatic difference in language technology support between various European languages.
 While there are good quality software and resources available for some languages and application areas, others (usually `smaller' languages) have substantial LT gaps.
 Many languages lack the basic technologies for text analysis and the essential resources for developing these technologies.
 Others have the basic tools and resources, but are as yet unable to invest in semantic processing.
@@ -2910,11 +2942,11 @@ In particular, the action line focuses on conducting leading-edge research in ma
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
   %\fbox{-- META-NET group picture omitted to keep the size of the PDF file small. --}
-  \iftoggle{lowres}{%
+%  \iftoggle{lowres}{%
     \includegraphics[width=\textwidth]{../_media/meta-net_team_ebook.jpg}
-  }{%
-    \includegraphics[width=\textwidth]{../_media/meta-net_team.jpg}
-  }
+%  }{%
+%    \includegraphics[width=\textwidth]{../_media/meta-net_team.jpg}
+%  }
   \caption{\noindent%
   Gandrīz 100 valodu tehnoloģiju eksperti --- META-NET pārstāvēto valstu un valodu pārstāvji --- 2011.~gada 21. un 22.~oktobrī META-NET sanāksmē Berlīnē (Vācijā) apsprieda un apkopoja balto grāmatu sērijas galvenos rezultātus. --- \textcolor{grey1}{Almost 100 language technology experts~-- representatives of the countries and languages represented in META-NET~-- discussed and finalised the key results and messages of the White Paper Series at a META-NET meeting in Berlin, Germany, on October 21/22, 2011.}}
   \medskip
