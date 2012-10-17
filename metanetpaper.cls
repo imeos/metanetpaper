@@ -921,20 +921,6 @@
   % Define papersize for cover 210x279mm + 0mm bleed
   \geometry{paperwidth=210mm, paperheight=279mm, top=24mm, bottom=31mm, left=21mm, right=21mm}%
   
-  \setfootwidth[-22mm]{paper}
-  \lefoot[\pagemark]{}
-
-  \refoot[\pagemark]{
-  \colorrule{grey1}{24mm}{0.5pt}%
-  \vskip1mm%
-    \begin{minipage}[h]{23mm}%
-      \begin{flushleft}%
-          \fontsize{10}{1.2}\normalfont\sffamily\color{grey1}%
-        \pagemark
-      \end{flushleft}
-    \end{minipage}
-  }
-  
   % LTInfoBox Definition
   \long\def\LTInfoBox#1{\gdef\@LTInfoBox{#1}}
   \def\@LTInfoBox{\@latex@warning@no@line{No \noexpand\LTInfoBox given}}
