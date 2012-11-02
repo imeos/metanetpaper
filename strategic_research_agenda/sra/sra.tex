@@ -24,13 +24,13 @@
 
 \maketitle
 
-\clearpage
+\cleardoublepage
 
 \pagenumbering{roman}
 
 \makefundingnotice
 
-\clearpage
+\cleardoublepage
 
 % ----------------------------------------------------------------------------
 
@@ -126,6 +126,9 @@ clearly shows coverage of the LT area hot topics.'' --- Olga Caprotti (Universit
 
 \bigskip \textbf{UK:} ``Language is a fundamental part of society. Research into Language Technology has already led to the development of software that many people are familiar with, when searching the web, checking spelling in a word processor or booking cinema tickets over the telephone. The work of META-NET is an important step towards a future in which Language Technology will be all around us, allowing us to collaborate, conduct business and share knowledge with friends and colleagues, whether or not we speak the same language.'' --- David Willets (Minister of State for Universities and Science, Department for Business, Innovation and Skills)
 
+\bigskip \textbf{European Commission:} ``Having worked on automatic media analysis for many years and in tens of languages, we are painfully aware of the lack of text analysis tools and resources in most languages. META-NET's analysis is very accurate. Language Technology is a key enabling ingredient for future generations of information technology. Languages for which no tools and resources will exist soon will not participate in the next major technological developments.'' --- Ralf Steinberger (Joint Research Centre, 
+IPSC -- GlobeSec -- Open-Source Text Information Mining and Analysis, Ispra, Italy)
+
 \smallskip \centerline{\small See \url{http://www.meta-net.eu/whitepapers/all-quotes-and-testimonials} for additional quotes and testimonials.}
 
 \vfill
@@ -157,7 +160,7 @@ Faced with the globalising online economy and ever-increasing information in all
 \addtocontents{toc}{\protect\thispagestyle{empty}\protect}
 \addtocontents{toc}{{\protect\vspace*{-20mm}\protect}}
 
-\clearpage
+\cleardoublepage
 
 % --------------------------------------------------------------------------
 % --------------------------------------------------------------------------
@@ -171,8 +174,6 @@ Faced with the globalising online economy and ever-increasing information in all
 \pagenumbering{arabic} 
 \pagestyle{scrheadings}
 
-\clearpage
-
 % IMPORTANT AND URGENT BUGS AND FIXMEs:
 %
 % - One final editing pass to make the text coherent and cohesive and also to shorten it substantially.
@@ -184,9 +185,24 @@ Faced with the globalising online economy and ever-increasing information in all
 % RC: "the final version must include a punchy executive summary, possibly co-signed by prominent figures in the field; a long list of organisations (private and public, especially private!) contributing/commenting/endorsing the SRA; (tabular) elements of the implementation roadmaps (I guess 1 per priority theme): chart, phases of work, intended intermediate and final deadlines with major outputs/spinoffs, likely size/scale of effort"
 
 % --------------------------------------------------------------------------
+
 \ssection*[Executive Summary]{Executive Summary}
 \addcontentsline{toc}{section}{\hspace*{5.7mm}Executive Summary}
 \addtocontents{toc}{\protect\medskip}
+
+% FIXME: Comments from Alice Dijkstra:
+%
+% - For a summary, it is still pretty long.
+% - I am afraid that non-expert policy makers (and most of them are non-experts) may still read in the summary that research has been done and it is now up  to Google, IBM, Apple, Nuance, Autonomy etc to finish the job. I am missing a clear short paragraph stressing and explaining that fundamental/application oriented RESEARCH in this area is required. For that you need to read the full Strategic Research Agenda.
+% - I am missing clear references to some Horizon 2020 “sesame words” like e.g. “Grand (Societal) Challenges”, “Inclusive, Innovative and Reflective Societies”; “Social Innovation”. “E-Infrastructure”.
+%
+% FIXME: Comments from Johannes Bursch:
+%
+% Das Ziel mit dieser Publikation die Entscheidungsträger zu informieren kann aus meiner Sicht gelingen. Dazu muss das Executive Summary noch stärker die Gründe für diese drei Forschungsschwerpunkte und den zu erwartenden Nutzen (gesellschaftlich und wirtschaftlich) darlegen.
+%
+% FIXME: Comments from Jürgen Wedekind:
+% 
+% It seems that the aim of the strategy is twofold: (i) provide language technology support for all European languages and (ii) enable European research and development in the field to compete with the US. If this is true then it should be made more clear, in particular, because the two goals might require different actions. For instance, one could facilitate start-up financing or make research in Europe more attractive to achieve (ii) but this wouldn't necessarily support (i).
 
 \begin{multicols}{2}
 The unique multilingual setup of our multicultural European society imposes considerable challenges in political, economic and social integration, especially in the creation of the united digital information and market space targeted by Europe’s Digital Agenda \cite{DA2010}.
@@ -200,7 +216,7 @@ Spectacular recent innovations powered by language technology such as Google’s
 
 With its special needs, experience, potential and markets, Europe is the most appropriate place for progress in this technology area. Europe has half a billion citizens speaking more than 40 European languages and many non-European ones as their mother tongue \cite{eurobarometer2012}, with more than 2,500 small and medium sized enterprises in language, knowledge and interface technologies, and more than 5,000 enterprises providing language services that can be improved and extended by technology. It also has a longstanding research tradition at more than 800 centres of scientific and technological research on all European and economically relevant non-European languages. 
 
-The European LT community is dedicated to fulﬁlling the technology requirements of Europe’s multilingual society and turning these needs and the emerging business opportunities into competitive advantages for our economy. Recognizing Europe’s exceptional demands and opportunities, 60 leading IT research centres in 34 European countries with a strong track record in language technology joined forces in META-NET, a European Network of Excellence dedicated to the technological foundations of the multilingual European society in the digital age. 
+The European LT community is dedicated to fulfilling the technology requirements of Europe’s multilingual society and turning these needs and the emerging business opportunities into competitive advantages for our economy. Recognizing Europe’s exceptional demands and opportunities, 60 leading IT research centres in 34 European countries with a strong track record in language technology joined forces in META-NET, a European Network of Excellence dedicated to the technological foundations of the multilingual European society in the digital age. 
 
 META-NET assembled the Multilingual Europe Technology Alliance (META) with more than 600 organisations and experts representing stakeholders such as industries that provide or use language technologies, professional associations, public administrations and language communities. Working together with numerous additional stakeholder organisations and experts from a variety of fields, META (including META-NET) has developed this Strategic Research Agenda. The plan is based on a shared vision and a thorough planning process involving a total of more than 1,200 experts and stakeholders. 
 
@@ -216,7 +232,6 @@ In Chapter~\ref{sec:pts} five action lines for large-scale research and innovati
 \item The creation of a pan-European language technology service platform for supporting research and innovation by testing and showcasing research results, integrating various services even including professional human services. This showcase platform will allow SME providers to offer component and end-user services, and share and utilise tools, components and data resources. 
 \end{itemize}
 
-\pagebreak
 The three solution scenarios are:
 
 \begin{itemize}
@@ -255,9 +270,9 @@ We believe that this Strategic Research Agenda has the potential to become the s
 \begin{multicols}{2}
 During the last 60 years, Europe has become a distinct political and economic structure. Culturally and linguistically it is rich and diverse. However, from Portuguese to Polish and Italian to Icelandic, everyday communication between Europe's citizens, enterprises and politicians is inevitably confronted with language barriers. The EU's institutions spend about \emph{one billion Euros} a year on maintaining their policy of multilingualism \cite{EC7}, i.\,e., translating texts and interpreting spoken communication.
 
-The European market for translation, interpretation, software localisation and website globalisation was estimated at 8.4 billion Euros in 2008. Are these expenses necessary? Are they even sufficient? Despite this high level of expenditure, the actual documents translated represent only a fraction of the information available to the whole population in countries with a single predominant language, such as the USA, China or Japan.
+The European market for translation, interpretation, software localisation and website globalisation was estimated at 5.7 billion Euros in 2008. Are these expenses necessary? Are they even sufficient? Despite this high level of expenditure, the actual documents translated represent only a fraction of the information available to the whole population in countries with a single predominant language, such as the USA, China or Japan.
 
-Language technology and linguistic research can significantly contribute to removing linguistic barriers. Combined with intelligent devices and applications, language technology can help Europeans talk and do business together even if they do not speak a common language.
+Language technology and linguistic research as well as related fields such as the digital humanities, social sciences and psychology can significantly contribute to removing linguistic barriers. Combined with intelligent devices and applications, language technology can help Europeans talk and do business together even if they do not speak a common language.
 
 The economy benefits from the European single market. For example, in 2010, trade within the European Union accounted for 60.3\% of German exports and with other European countries totalled another 10.8\%. But language barriers can bring business to a halt, especially for SMEs who do not have the financial means to compete on a European (or a global) level. The only (unacceptable) alternative to a multilingual Europe \cite{lre2011} would be to allow a single language to take a predominant position and replace all other languages in transnational communication. Another way to overcome language barriers is to learn foreign languages, and language technologies can play a key role in this. 
 
@@ -269,18 +284,18 @@ Language technology is a key enabling technology for sustainable, cost-effective
 
 As early as the late 1970s, the EU realised the profound relevance of language technology as a driver of European unity, and began funding its first research projects, such as EUROTRA. After a longer period of sparse funding on the European level \cite{laz1,euromap}, the European Commission set up a department dedicated to language technology and machine translation a few years ago. In recent years, the EU has been supporting language technology projects such as EuroMatrix and EuroMatrix+ (since 2006) and iTranslate4 (since 2010), which use basic and applied research to generate resources for establishing high-quality solutions for all European languages.
 
-These selective funding efforts have led to a number of valuable results. For example, the translation services of the European Commission now use the Moses open source machine translation software, which has been mainly developed in European research projects. However, these projects never led to a concerted European effort through which the EU and its member states systematically pursue the common goal of providing technology support for all European languages. Figure~\ref{fig:languages-in-research} depicts the languages that have been studied by Language Technology researchers in 2010, taking into account major conferences and journals. It illustrates how technology research has focussed mainly on English followed by Chinese, German, French, and a few other bigger languages. Many European languages are without any reference whatsoever, e.\,g., Slovak, Maltese, Lithuanian, Irish, Albanian, Croatian, Macedonian, Montenegrin, Romansh, Galician, Occitain, or Frisian.
+These selective funding efforts have led to a number of valuable results. For example, the translation services of the European Commission now use the Moses open source machine translation software, which has been mainly developed in European research projects. However, these projects never led to a concerted European effort through which the EU and its member states systematically pursue the common goal of providing technology support for all European languages. Figure~\ref{fig:languages-in-research} depicts the languages that have been studied by Language Technology researchers in 2010, taking into account major conferences and journals. It illustrates how technology research has focussed mainly on English followed by Chinese, German, French, and a few other bigger languages. Many European languages are without any reference whatsoever, e.\,g., Slovak, Maltese, Lithuanian, Irish, Albanian, Croatian, Macedonian, Montenegrin, Romansh, Galician, Occitan, or Frisian.
 
 \begin{figure*}[htb]
   \colorrule{grey3}{\textwidth}{1.5pt}
   \center
   \includegraphics[width=0.71\textwidth]{../_media/Languages-in-LT-Research}
-  \caption{Languages treated in research published in the 2010 edition of the Journal of Computational Linguistics and the conferences of ACL, EMNLP and COLING}
+  \caption{Languages treated in research published in the 2010 edition of the Journal of Computational Linguistics and the conferences of ACL, EMNLP and COLING (internal, unpublished study)}
   \label{fig:languages-in-research}
   \colorrule{grey3}{\textwidth}{1.5pt}
 \end{figure*}
 
-Research activities have tended to be isolated, delivering valuable results, often failing to make a decisive impact on the market. Even worse, in many cases research funded in Europe eventually bore fruit outside Europe. Google and Apple have been noteworthy beneficiaries. In fact, many of the predominant actors in the field today are privately-owned for-profit enterprises based in North America.
+Research activities have tended to be isolated, delivering valuable results, often failing to make a decisive impact on the market. In many cases research funded in Europe eventually bore fruit outside Europe. Google and Apple have been noteworthy beneficiaries. In fact, many of the predominant actors in the field today are privately-owned for-profit enterprises based in North America.
 
 Statistical methods have been succesful, scaling to many languages and application domains but in many cases reached a performance plateau and inclusion of and combination with deep linguistic methods and insights is seen as a promising a way forward.
 
@@ -288,7 +303,7 @@ In the pure statistical approach, sentences are automatically translated by comp
 
 Europe now has a well-developed research base. Through initiatives like CLARIN and META-NET the research community is well-connected and engaged in a long term agenda that aims gradually to strengthen language technology's role. Yet at the same time, our position is worse compared to other multilingual societies. Despite fewer financial resources, countries like India (22 official languages) and South Africa (11 official languages) have set up long-term national programmes for language research and technology development.
 
-What is missing in Europe is a lack of awareness and of political determination and courage that would take us to a leading position in this technology area through a concerted funding effort, a major dedicated push.
+What is missing in Europe is awareness and political determination and courage that would take us to a leading position in this technology area through a concerted funding effort, a major dedicated push.
 
 Drawing on the insights gained so far, today’s hybrid language technology mixing deep processing with statistical methods should be able to bridge the gap between all European languages and beyond. In the end, high-quality language technology will be a must for all of Europe's languages for supporting the political and economic unity through cultural diversity.
 
@@ -297,6 +312,8 @@ Language technology can help tear down existing barriers and build bridges betwe
 % FIXME: The following paragraphs are taken from the Executive Summary
 
 The European LT community is dedicated to fulfilling the technology demands of the multilingual European society and to turn these needs and the emerging business opportunities into competitive advantages for our economy. To this end, we have developed this Strategic Research Agenda based on a shared vision and careful planning involving the major stakeholder communities.
+
+% FIXME: Dieser Teil hat Einleitungscharakter und fällt sprachlich etwas aus dem Rahmen. Glätten!
 
 In the first chapters we analyse the multilingual technology needs arising from the multicultural setup of our continent with its emerging single digital market. We also discuss the current state of technologies for European languages and the situation of the provider industries. The two core chapters of this document summarize our shared vision of the role of language technology in the year 2020 in non-technical terms (Chapter~\ref{sec:lt2020}, p.~\pageref{sec:lt2020}\,ff.) and outline three priority themes for large-scale research and innovation (Chapter~\ref{sec:pts}, p.~\pageref{sec:pts}\,ff.):
 
@@ -363,7 +380,7 @@ The most compelling solution for ensuring the breadth and depth of language usag
 \subsection{How can Language Technology help?}
 \label{sec:how-can-language-technology-help}
 
-One way to overcome language barriers is to learn foreign languages. Yet without technological support, mastering the 23 official languages of the EU and some 60 other European languages is an insurmountable obstacle for Europe’s citizens, economy, political debate, and scientific progress. The solution is to build key enabling technologies: language technologies (LT) will offer all European stakeholders tremendous advantages, not only within the single market, but also in trade relations with non-European countries, especially emerging economies. Language technologies will eventually serve as the bridge between Europe’s languages.
+One way to overcome language barriers is to learn foreign languages. Yet without technological support, mastering the 23 official languages of the EU and some 60 other European languages is an insurmountable obstacle for Europe’s citizens, economy, political debate \cite{ombudsman2012}, and scientific progress. The solution is to build key enabling technologies: language technologies (LT) will offer all European stakeholders tremendous advantages, not only within the single market, but also in trade relations with non-European countries, especially emerging economies. Language technologies will eventually serve as the bridge between Europe’s languages.
 
 Language technology is a key enabling technology for the knowledge society. LT supports humans in everyday tasks, such as writing e-mails, searching for information online or booking a flight. It is often used behind the scenes of other software applications. We benefit from language technology when we
 
@@ -583,7 +600,7 @@ The European Union is funding projects such as EuroMatrix and EuroMatrix+ (since
 
 Drawing on the insights gained so far, today’s hybrid language technology mixing deep processing with statistical methods will be able to bridge the gap between all European languages and beyond. But as we have described above, there is a dramatic difference between Europe’s languages in terms of both the maturity of the research and the state of readiness with respect to language technology solutions. 
 
-Three key ingredients are needed to realise the technology visions described in the next chapter: the right actors, a shared vision and strategic programme and a certain level of support and commitment. Until recently the European community of language technologists and language professionals had to be considered highly fragmented at best. In early 2010 META-NET (see appendix~\ref{sec:app-meta-net}, p.~\pageref{sec:app-meta-net}) has started to bring the fragmented community together and to assemble researchers from the different subfields involved in language technology and also related scientific fields, universities, research centres, the language communities, national language institutions, smaller and medium companies as well as large enterprises, officials, administrators, politicians under one roof: META (Multilingual Europe Technology Alliance). By now META has more than 640 members in more than 50 countries (roughly one third of META's membership base are companies). Now that the European language technology community has been brought together we can present our technology vision and strategic research agenda as illustrated in this very document. The whole META community has shaped this SRA through participating in many discussions around the ideas, approaches, technology visions and strategic goals described in this paper (see, among others, the list of key contributors on p.~\pageref{sec:list-of-contributors}\,f.). META-NET hopes to raise enough awareness, enthusiasm and, eventually, support to develop and, finally, to bring about a truly multilingual Europe based on sophisticated language technologies. To this end, we suggest to set up a shared and coordinated programme with the goal of concentrating our research efforts on the three priority research themes described in the next chapter. This shared and coordinated programme is foreseen to span all member states and associated countries and also the level of the European Commission.
+Three key ingredients are needed to realise the technology visions described in the next chapter: the right actors, a shared vision and strategic programme and a certain level of support and commitment. Until recently the European community of language technologists and language professionals had to be considered highly fragmented at best. In early 2010 META-NET (see appendix~\ref{sec:app-meta-net}, p.~\pageref{sec:app-meta-net}) has started to bring the fragmented community together and to assemble researchers from the different subfields involved in language technology and also related scientific fields (humanities, psychology, social sciences etc.), universities, research centres, the language communities, national language institutions, smaller and medium companies as well as large enterprises, officials, administrators, politicians under one roof: META (Multilingual Europe Technology Alliance). By now META has more than 640 members in more than 50 countries (roughly one third of META's membership base are companies). Now that the European language technology community has been brought together we can present our technology vision and strategic research agenda as illustrated in this very document. The whole META community has shaped this SRA through participating in many discussions around the ideas, approaches, technology visions and strategic goals described in this paper (see, among others, the list of key contributors on p.~\pageref{sec:list-of-contributors}\,f.). META-NET hopes to raise enough awareness, enthusiasm and, eventually, support to develop and, finally, to bring about a truly multilingual Europe based on sophisticated language technologies. To this end, we suggest to set up a shared and coordinated programme with the goal of concentrating our research efforts on the three priority research themes described in the next chapter. This shared and coordinated programme is foreseen to span all member states and associated countries and also the level of the European Commission.
 
 \subsection{Market Opportunities}
 \label{sec:lang-techn-industry}
@@ -922,15 +939,15 @@ One prerequisite of this envisaged knowledge access through natural communicatio
 \subsection{Processing Knowledge and Information}
 \label{sec:proc-knowl-inform}
 
-Most knowledge on the web, by far, is formulated in human language. However, machines cannot yet automatically interpret the texts containing this knowledge. Machines can interpret knowledge represented in databases but databases are too simple in structure to express complex concepts and their relations. The logical formalisms of semanticists, on the other hand, that were designed to cope with the complexity of human thought, were too unwieldy for practical computation. Therefore computational logicians developed simpler logical representation languages as a compromise between desired expressivity and required computability. In these languages, knowledge engineers can formulate formal models of knowledge domains, ontologies,  describing the concepts of the domains by their properties and their relations to other concepts. Ontologies enable knowledge engineers to specify which things, people, places in the world belong to which concepts. Such a domain model can be queried like a database. Its contents can be automatically analysed and modified. The intellectual creation of domain models, however, turned out to be an extremely demanding and time-consuming task, requiring well-trained specialists. Their encoding of knowledge seemed to be a promising alternative to the current web, so that the vision of the Semantic Web was born. 
+Most knowledge on the web, by far, is formulated in human language. However, machines cannot yet automatically interpret the texts containing this knowledge. Machines can interpret knowledge represented in databases but databases are too simple in structure to express complex concepts and their relations. The logical formalisms of semanticists, on the other hand, that were designed to cope with the complexity of human thought, were too unwieldy for practical computation. Therefore computational logicians developed simpler logical representation languages as a compromise between desired expressivity and required computability. In these languages, knowledge engineers can formulate formal models of knowledge domains, ontologies,  describing the concepts of the domains by their properties and their relations to other concepts. Ontologies enable knowledge engineers to specify which things, people, places in the world belong to which concepts. Such a domain model can be queried like a database. Its contents can be automatically analysed and modified. The intellectual creation of domain models, however, turned out to be an extremely demanding and time-consuming task, requiring well-trained specialists that prepare new ontologies from scratch or base their work on existing taxonomies, ontologies or categorisation systems. Their encoding of knowledge seemed to be a promising alternative to the current web, so that the vision of the Semantic Web was born. 
  
 The main bottleneck of the Semantic Web is the problem of knowledge acquisition. It is unrealistic to believe that the authors of web content will be able to encode knowledge in the semantic web languages based on description logics. Nor will there be any affordable services for the manual conversion of large volumes of content.
  
 Since LT did not have any means for automatically interpreting texts, language technologists had developed methods for at least extracting relevant pieces of information from such texts. This technique became a useful extension to information retrieval, which enables users to find entire documents such as in Google search. A relatively simple information extraction task is the reliable recognition of all person and company names, time and date expressions, locations and monetary expressions (named-entity extraction). Much harder is the recognition of certain relations such as the one between company and customer, company and employee or inventor and invention. Even more difficult are many-place relations such as the four-place relation of a wedding between groom and bride at a certain data and time. Events are typical cases of relations. However, events can have many more components such as the participants, costs, causes, victims and circumstances of accidents. Although research in this area is advancing fast, a reliable recognition of relations is not yet possible.
  
-Information extraction can also be used for populating ontologies. Texts and pieces of texts can be annotated by extracted data. These metadata can serve as a bridge between the ``semantic'' portions of the web and the traditional web of unstructured data. LT is indispensable for the realization of the vision of a semantic web. 
+Information extraction can also be used for populating ontologies. Texts and pieces of texts can be annotated by extracted data. These metadata can serve as a bridge between the ``semantic'' portions of the web and the traditional web of unstructured data. LT is indispensable for the realisation of the vision of a semantic web. 
  
-In addition, LT can perform many other tasks in the processing of knowledge and information. It can sort, catalogue and filter content and it can deliver the data for data mining in texts, which has been termed text data mining. LT can automatically connect web documents with meaningful hyperlinks and it can produce summaries of larger collections of texts. The LT techniques of opinion mining and sentiment analysis can find out what people think about products, personalities or problems and analyse their feelings about such topics.
+In addition, LT can perform many other tasks in the processing of knowledge and information. It can sort, categorise, catalogue and filter content and it can deliver the data for data mining in texts, which has been termed text data mining. LT can automatically connect web documents with meaningful hyperlinks and it can produce summaries of larger collections of texts. The LT techniques of opinion mining and sentiment analysis can find out what people think about products, personalities or problems and analyse their feelings about such topics.
 
 Another class of techniques is needed for connecting between different media in the multimedia content of the web. Some of the tasks are annotating pictures, videos and sound recordings with metadata, interlinking them with texts, semantic linking and searching in films and video content and cross-media analytics including cross-media summarization.
  
@@ -957,7 +974,7 @@ Although we do not expect to substitute human teachers by 2020, we predict that 
 \subsection{Creative Contents and Creative Work}
 \label{sec:lt-creative-contents}
 
-One of the major cost factors in European TV and film production is the required subtitling and dubbing. Whereas some countries with multiple official languages or with strict legislation on subtitling or sign-language display have a long tradition in providing these services, producers in many other countries still leave all subtitling and dubbing to importing distributors or media partners. With a single digital market, the increase of productions for multiple language communities and with the strengthening of inclusion policies, the demand for fast and cost-effective subtitling and dubbing will grow significantly. In some countries the method of voice-over is widely used as it is cheaper than dubbing. A professional voice talent reads all translations, sometimes shortened, over the original sound track. % This method is common in Eastern Europe and occasionally in some Asian countries. 
+One of the major cost factors in European TV and film production is the required subtitling and dubbing \cite{eurobarometer2011}. Whereas some countries with multiple official languages or with strict legislation on subtitling or sign-language display have a long tradition in providing these services, producers in many other countries still leave all subtitling and dubbing to importing distributors or media partners. With a single digital market, the increase of productions for multiple language communities and with the strengthening of inclusion policies \cite{medier12}, the demand for fast and cost-effective subtitling and dubbing will grow significantly. In some countries the method of voice-over is widely used as it is cheaper than dubbing. A professional voice talent reads all translations, sometimes shortened, over the original sound track. 
  
 The automatic translation of subtitles is easier than the translation of newspaper articles because of shorter and simpler sentences in spoken language. Some commercial services have already started using machine translation for subtitles and audio-description. If monolingual subtitling becomes the norm demanded by law, automated subtitle translation could be deployed at large scale.
  
@@ -1031,7 +1048,7 @@ In the envisaged big push toward realising this vision by massive research and i
 
 \begin{enumerate}
 \item \emph{Richness and diversity.} A serious challenge is the sheer number of languages, some closely related, others distantly apart. Within a language, technology has to deal with numerous dialects, sociolects, registers, professional jargons, genres and slangs. Each language variant finally is abundant with alternatives to achieve the same goal or to express the same fact.
-\item \emph{Depth and meaning.} Understanding language can be a complex and creative process. Human language is not only the key to knowledge and thought, it also cannot be interpreted without certain shared knowledge and active inference. Computational language proficiency needs semantic technologies.
+\item \emph{Depth and meaning.} Understanding language is a complex process. Human language is not only the key to knowledge and thought, it also cannot be interpreted without certain shared knowledge and active inference. Computational language proficiency needs semantic technologies.
 \item \emph{Multimodality and grounding.} Human language is embedded in our daily activities. It is combined with other modes and media of communication. It is affected by beliefs, desires, intentions and emotions and it affects all of these. Successful interactive language technology requires models of embodied and adaptive human interaction with people, technology and other parts of the world.
 \end{enumerate}
  
@@ -1058,6 +1075,68 @@ The three priority research themes based on solution scenarios are:
 These priority themes have been designed with the aim of turning the joint vision into reality and to letting Europe benefit from a technological revolution that will overcome barriers of understanding between people of different languages, between people and technology and between people and the accumulated knowledge of mankind. The three research priority themes connect societal needs with LT applications and concrete roadmaps for the organization of research, development and scientiﬁc innovation. The priority themes are contextualised in the advanced networked society and cover the main functions of language: storing, sharing and using of information and knowledge, as well as improving social interaction among humans and enabling social interaction between humans and technology. As multilingualism is at the core of European culture and becoming a global norm, one theme is devoted to overcoming language barriers. 
 
 The three themes have been thoughtfully selected in a complex process (see Appendix~\ref{vision-evolution} on p.~\pageref{vision-evolution}\,ff.) to ensure the needed market pull, the appropriate performance demands, the realistic testing environments and a sufficient level of public interest. Each of our identified challenges is covered by the three themes but strongly represented by one of them. The priority themes also represent a good mix of applications with respect to the various user communities. Small businesses, large enterprises, public administration and the general public as personal end users are all well represented among the beneficiaries of the targeted solutions.
+
+\subsection{Languages to be Supported}
+\label{sec:languages-to-be-supported}
+
+% FIXME: Write this short section!
+%
+% - All important official European languages, regardless of its respective country/countries being a member, a potential member or an associated member of the European Union or not.
+% - All official Member State languages.
+% - All official languages of Associated States (cite EFNIL)
+% - All important minority languages in active use in Europe (cite NPLD, cite ELDIA, i.e., \cite{eldia12}; mention that we know and like and work together with EFNIL and NPLD)
+% - Important other languages (Chinese etc.)
+%
+% - (To avoid the misunderstanding that we only support the languages that we examined in the White Paper exercise.)
+% 
+% - Approach: Set up a big programme between EU/EC and as many countries as possible.
+% - Fund important overarching umbrella technologies on the EC/EU level.
+% - Fund basic LRs/LTs on the European and also on the national/regional level. At least include the national/regional level to a certain extent. There just /must/ be a certain amount of funding for all languages coming from the EC/EU, that's for sure.
+% - Establish techniques, methods, instruments for research and knowledge transfer so that the colleagues on the national level can benefit from the expertise that is available on the European level.
+
+% Comments from Miriam Butt:
+%
+% There is one aspect that I feel is important and that should play a big role in visions for how the EU should proceed further. That is the issue of what has been called "minority" languages in the UK (where they also provide for specialized funding schemes). These are languages that are not "traditional" EU languages, but which are spoken by a significant population in the EU. For Germany, this is, for example, Turkish, Serbo-Croatian and now Russian.  In the UK these include Bengali, Urdu/HIndi and Punjabi.  
+%
+% I feel it is very important that some provision be made that work on these languages can be funded via the EU as well and be included in visions of machine translation or CALL (for example, compiling learner corpora for speakers of these languages, etc.).  I feel it is detrimental to keep the current narrow focus on "European" languages, both from a typological computational perspective (the tools you build for Rumanian will most certainly not work for Bengali) and from a perspective of who actually makes up the EU.  For better or worse, Germany is already a multi-ethnic and multi-lingual society and providing good language technology may help overcome some of the language barriers that are current in place for a significant number of people living in the EU. 
+%
+% Comments from Jost Gippert:
+%
+% It surely does. However, there is one point that seems to be a bit underrepresented, viz. the co-existence of "official" and "other" languages. In my view, the role of minority languages would have to be stressed here as the treatment of minority languages, usually but not always related to migration processes, is crucial for many European countries today, at least as much as, e.g., the ageing problem. So it would be required to have a paragraph on multiethnicity in European societies in chap. 2.3 and to deal with "minor" languages to a greater extent.
+%
+% Also see: http://titus.uni-frankfurt.de/personal/jg/pdf/jg1999c.pdf
+%
+% Comment from Annie Zaenen:
+% 
+% "A quick comment. I am surprised that Arabic and Turkish are not considered when talking about LT tools. Arabic is the second most spoken language in France, I don't know about the status of Turkish in Germany and Belgium but it is most likely also substantial. Not putting these languages somewhere promotes further ghettoization. I think LT could/should be part of countering that."
+%
+% Comment from Maneerat Sawasdiwat:
+%
+% "European Strategies might include perspectives/visions of some other languages in addition to  EU languages  and some major Asian languages (Chinese, Japan, Koran) as  global  trades, business, industry and communication should be addressed and integrated to cover global perspectives in order to achieve an optimum  effective implementation. Europe couldn’t avoid to trade or contact with some other  dynamic  communities, e.g. ASEAN Economic Community which will be fully activated in 2015, African Community, etc.  The focus of the world gravity in the future is Asian region."
+%
+% Comment from Micea Giurgiu:
+%
+% The only thing I would like to emphasis is on the efforts to be made to align the under-resource languages to a certain standard that would allow co-operation, avoid the digital exclusion and secure possible business development. I refer particularly to the lack of available resources for my native language, Romanian, but as described in the report there is the case for other languages. 
+%
+% Currently we are working on a FP7 project ("Simple4All: Speech Synthesis that Improves through Adaptive Learning, www.simple4all.org) coordinated by Prof. Simon King from Univ of Edinburgh, with the target to demonstrate the possibility to create new voices, new speaking styles and control the emotion of synthesized speech only using small amount of data and employing unsupervised learning techniques. The available resources we use are: the RSS (Romanian Speech Synthesis) corpus, audiobooks and available parliamentary speeches.
+%
+% There are not yet available numbers on the commercial use of language technologies in Romania. However, there are several solutions for speech synthesis (eg. Ivona, HMM-based speech synthesis), but not for continuous speech recognition. Text processing research is intensively done in the Institute of Artificial Intelligence of Romanian Academy of Sciences and Iasi University.
+%
+% Comment from Eirikur R. (maybe as a few data/case study with regard to one very small language):
+%
+% We read the SRA draft with great interest, and we are generally satisfied with the vision set forth in it and the three Priority Research Themes. However, we are not certain about the direct relevance of the SRA for Icelandic Language Technology. The reason is that the Icelandic language community is so small - only 320,000 speakers. Since the market is tiny and the R&D costs are high, it is very difficult to get Icelandic companies interested in Language Technology. At present, only one company works on Icelandic LT, as far as I know.
+%
+% The research community is also very small. There is no position in Language Technology at any Icelandic university or college. Those who work on LT at universities and research institutes come from either language departments or computer science departments and their main duties are not directly related to Language Technology. They have been occupied with building basic language resources for Icelandic, and will not be able to contribute much to high-level LT research in the near future.
+%
+% Thus, it is not obvious to us how the SRA relates to the situation in tiny language communities like the Icelandic one. We have succeeded in building many basic language resources, but advanced types of resources do not exist at all, as evident from the Language Whitepaper. We do not foresee that we will get public money to build these resources in the near future, and neither do we foresee that private companies will invest in building such resources. This might mean that applications that rely on high-level Language Technology will not be available in Icelandic.
+%
+% [...] However, we cannot rely on luck or coincidence for the future of Icelandic Language Technology. It is vital to find some means for building advanced resources and utilizing high-level research to further Language Technology for small language communities. That is where we would like to see the SRA come in with some suggestions.
+%
+% Comment from Andre Wlodarczyk:
+%
+% It is important to build an Euro-Asian Interface: starting with the construction of electronic dictionaries and ending with inventing more sophisticated Machine Translation technologies.
+%
+% Comment from Gil F. with regard to corpora: we need at least one big, well thought-through corpus for each European language. Maybe a kind of a European Corpus with identical principles and annotation schemes etc.? More on Gil's comment in the section on LRs/LTs in the Priority Themes chapter.
 
 \subsection{Priority Theme 1: Translation Cloud}
 \label{sec:priority-theme-1-translation-cloud}
@@ -1155,7 +1234,7 @@ HQMT in the cloud will ensure and extend the value of the digital information sp
 
 \begin{itemize}
 \item Multilingual content production (media, web, technical, legal documents)
-\item Cross-lingual communication, document translation
+\item Cross-lingual communication, document translation and search
 \item Real-time subtitling and translating speech from live events
 \item Mobile interactive interpretation for business, social services, and security
 \item Translation workspaces for online services
@@ -1196,7 +1275,7 @@ Social intelligence builds on improved text analytics methodologies but goes far
  
 Social intelligence can also support collective deliberation processes. Today any collective discussion processes involving large numbers of participants are bound to become intransparent and incomprehensible rather fast. By recording, grouping, aggregating and counting opinion statements, pros and cons, supporting evidence, sentiments and new questions and issues, the discussion can be summarised and focussed. Decision processes can be structured, monitored, documented and visualised, so that joining, following and benefitting from them becomes much easier. The efficiency and impact of such processes can thus be greatly enhanced.
  
-Since many collective discussions will involve participants in several countries, e.\,g., EU member states or enterprise locations, cross-lingual participation needs to be supported. Special support will also be provided for participants not mastering certain group-specific or expert jargons and for participants with disabilities affecting their comprehension.
+Since many collective discussions will involve participants in several countries, e.\,g., EU member states or enterprise locations, cross-lingual participation needs to be supported \cite{ombudsman2012}. Special support will also be provided for participants not mastering certain group-specific or expert jargons and for participants with disabilities affecting their comprehension.
 
 \subsubsection{Novel Research Approaches and Targeted Breakthroughs}
 \label{sec:novel-rese-appr-pt2}
@@ -1283,7 +1362,7 @@ real-time modeling and reasoning on massive textual and social streams
 \subsubsection{Impact}
 \label{sec:impact-pt2}
 
-The 21st century presents us with multiple challenges including efficient energy consumption, global warming and financial crises. It is obvious that no single individual can provide answers to challenging problems such as these, nor will top-down imposed measures find social acceptance as solutions. Language technology will enable a paradigm shift in transnational public deliberation.
+The 21st century presents us with multiple challenges including efficient energy consumption, global warming and financial crises. It is obvious that no single individual can provide answers to challenging problems such as these, nor will top-down imposed measures find social acceptance as solutions. Language technology will enable a paradigm shift in transnational public deliberation. Even the European Ombudsman recently realised \cite{ombudsman2012} that there are problems and gaps in the way public debates and consultation are usually held in Europe -- language technology can improve the situation altogether and bring about a paradigm shift in that regard.
  
 The applications and technologies discussed in this section will change how business adapts and communicates with their customers. It will increase transparency in decision-making processes, e.\,g., in politics and at the same time give more power to the citizen. As a by-product, the citizens are encouraged to become better informed in order to make use of their right to participate in a reasonable way. Powerful analytical methods will help European companies to optimise marketing strategies or foresee certain developments by extrapolating on the basis of current trends. Leveraging social intelligence for informed decision making is recognised as crucial in a wide range of contexts and scenarios:
 
@@ -1331,6 +1410,8 @@ This priority theme includes several components:
 \item Providing personalised training (computer-assisted language learning, e-learning in general).
 \end{itemize}
 
+Initial steps in the right direction have already been taken -- again, by US companies. Apple's intelligent assistant Siri is available on the iPhone, Google's interactive speech technologies can be used on Android and iOS devices. Recently, Microsoft announced -- in a letter sent to shareholders by Microsoft CEO Steve Ballmer -- that it wants to focus on ``developing of new form factors that have increasingly natural ways to use them including touch, gestures and speech''. Analysing this announcement, user interface expert Bill Meisel ``never expected to see mentions of natural user interfaces and machine learning in a short message to shareholders by the CEO of one of the largest companies in the U.S. Their mention as focus areas suggests that areas once viewed as leading-edge technology have achieved mainstream importance, to the degree that their successful deployment can impact the future of a major company.'' \cite{meisel12}. Meisel concludes that all three companies (Apple, Google, Microsoft) are currently ``developing integrated ecosystems that can tightly couple our human intelligence with computer intelligence across a range of products. And they have the budgets to make it happen.'' Again, Europe has to ask itself the question if we want to leave this huge field to three US companies or if the combined expertise of our continent's language technology experts is better suited to build interactive, socially aware assistants for the speakers and users of our many different languages and cultures.
+
 \subsubsection{Novel Research Approaches and Targeted Breakthroughs}
 \label{sec:novel-rese-appr-pt3}
 
@@ -1345,7 +1426,7 @@ There is also a strong connection to the first priority theme: the multilingual 
 \subsubsection{Solution and Technological Realisation}
 \label{sec:solut-techn-real-pt3}
 
-The technological and scientific state-of-the-art is at a stage that allows tackling the development of socially aware multilingual assistants. Progress in machine learning, including adaptation, unsupervised learning from streams of data, continuous learning, and transfer learning makes it possible automatically to learn certain capabilities from data. In addition, existing language and multimodal resources enable the bootstraping of systems. Furthermore, there is interdisciplinary progress made in, e.\,g., social signal processing.
+The technological and scientific state-of-the-art is at a stage that allows tackling the development of socially aware multilingual assistants. Progress in machine learning, including adaptation, unsupervised learning from streams of data, continuous learning, and transfer learning makes it possible automatically to learn certain capabilities from data. In addition, existing language and multimodal resources enable the bootstrapping of systems. Furthermore, there is interdisciplinary progress made in, e.\,g., social signal processing and also knowledge representation including approaches such as the Semantic Web and Linked Open Data -- especially inferences and automatic reasoning on such data sets are an important prerequisite for socially-aware interactive assistants as devised here.
  
 Technological advances are continuously being achieved in the vision-based human behaviour analysis and synthesis fields. Ubiquitous technologies are now widely available (at lower costs and in reduced size). User-centric approaches have been largely studied and crowd-sourcing is being more and more widely used. Quantitative and objective language technology and human-behaviour understanding technology evaluations, allowing for assessing a technological readiness level (TRL), are carried out more widely, as best practice, and language resources and publicly-available annotated recordings of human spontaneous behaviour are now available.
  
@@ -1444,6 +1525,21 @@ The European academic and industrial technology community is fully aware of the 
 
 All language resources and basic technologies that are created under the core technologies umbrella will be shared and made available through the respective infrastructure. The effort should revolve around the following axes: Infrastructure; Coverage, Quality, Adequacy; Language Resources Acquisition; Openness; Interoperability.
 
+% FIXME: Focus upon Knowledge Representation, Semantic Web, Open Data, Linked Open Data, Inferences, Automatic Reasoning etc. a lot more! We have to work together closely with the Semantic Web and W3C people. Named entity recognition and mapping strings to concepts and also attributes to concept features is super important for all three priority research themes.
+
+% FIXME: We have to make sure, especially on the European level, that all (ALL!) languages have a certain set of base technologies and data sets available. Gil F. dazu: 
+%
+% In modern NLP, everything is based on corpora. When I say "everything" this includes algorithms, annotations, lexica, best practices and so on. But, do we have a corpus representing each European language? The answer is no.
+%
+% In our 23 official European languages, we have a national corpus for British, Polish, Czech, Slovenian and Bulgarian, that's it. The German reference corpus is badly unbalanced. In French, we have a lot of data but nothing balanced, labelled and maintained, ditto for Spanish.
+%
+% I think we should organize a corpus for each language with the following properties:
+% * balanced genres (e.g. social networks material, newspapers, institutional, technical),
+% * balanced modalities (e.g speech, written),
+% * open source and free for research and production, for private and public actors.
+%
+% PS: Take a look at the Open American National Corpus.
+
 \subsubsection{Infrastructure}
 \label{sec:infrastructure}
 
@@ -1464,6 +1560,8 @@ With regard to the data-driven paradigm, innovation in LT nowadays crucially dep
 
 To reduce the amount of human intervention and revision, automatic techniques should be promoted to guarantee quality through error detection and confidence assessment. The promotion of validation and evaluation can play a valuable role in fostering quality improvement. Evaluation should encompass technologies, resources, guidelines and documentation. But like the technologies it addresses, evaluation is constantly evolving, and new, more specific measures using innovative methodologies are needed to evaluate the reliability of language resources, while maximal use of existing tools should be ensured for the validation of resources.
 
+Specific lists of basic language technologies should be compiled that should be either made available or researched and implemented for all languages covered by this document. These should include tools such as sentence boundary detection modules, tokenisers, lemmatizers, taggers, parsers, word/phrase aligners etc.~as obligatory processing components for each language. These should also include lists of basic resources needed for making the modules work for a specific language. Other important aspects are quality thresholds (minimal level of accuracy, speed, open availability, interoperability etc.) and cross-lingual evaluation campaigns organised on a regular basis. There have been partial attempts at these in the past (e.\,g., BLARK and ELARK, shared tasks such as CLEF, EuroMatrix Marathons, IWSLT, Morpho-Olympics etc.) but a more coordinated, sustainable and also wider attempt is needed. 
+
 A “Language Resources Impact Factor (LRIF)” should be defined in order to enforce the practice of citation of resources on the model of scientific paper authoring and to calculate the actual research impact of resources.  A reference model for creating resources will help address the current shortage of resources in terms of breadth (languages and applications) and depth (quality and volume).
 
 \subsubsection{Language Resources Acquisition}
@@ -1473,7 +1571,7 @@ Re-use and re-purposing should be encouraged to ensure the reuse of development 
 
 There are several promising experiments in crowd-sourcing data collection tasks. Crowd-sourcing makes it possible to mobilise large groups of human talent around the world with just the right language skills so that we can collect what we need when we need it. For instance, it has been estimated that Mechanical Turk translation is 10 to 60 times less expensive than professional translation. 
 
-% A particularly sensitive case is that of less-resourced languages, where language technology should be developed rapidly to help minority-language speakers access education and the Information Society. Basic language resources for all the world’s languages could be created building a Web 2.0 site starting with the 446 languages currently present on the web. Collaborative and Web 2.0 methods for data collection and annotation seem particularly very well-suited for collecting the data needed for the development of LT applications.
+A particularly sensitive case is that of less-resourced languages, where language technology should be developed rapidly to help minority-language speakers access education and the Information Society \cite{eldia12}. Basic language resources for all the world’s languages could be created building a Web 2.0 site starting with the 446 languages currently present on the web. Collaborative and Web 2.0 methods for data collection and annotation seem particularly very well-suited for collecting the data needed for the development of LT applications.
 
 \subsubsection{Openness}
 \label{sec:openness}
@@ -1481,6 +1579,8 @@ There are several promising experiments in crowd-sourcing data collection tasks.
 There is a strong trend towards open data, i.\,e., data that are easily obtainable and that can be used with few, if any, restrictions. Sharing resources (both data and tools) has become a viable solution towards encouraging open data, and the community is strongly investing in facilities such as META-SHARE for the discovery and use of resources. These facilities could represent an optimal intermediate solution to respond to the needs for data variety, ease of retrieval, better data description and community-wide access, while at the same time assisting in clearing the intricate issues associated with intellectual property rights.
 
 The challenge for the community and policy makers is to push for the development of a common legal framework that would facilitate resource sharing efforts abiding by the law, benefiting from the adoption of “fair use” principles and appropriate copyright exceptions. It is of utmost importance that legislation regarding resource use be harmonised, and even standardised, for all types of resources, and that free use be allowed, at least for research or non-profit purposes. 
+
+% FIXME: Mention the META-NET Data Liberation Campaign that we carry out.
 
 % Licensing schemes need to be simplified through broad-based solutions for both R\&D and industry. Electronic licensing (e-licenses) should be adopted and current distribution models to new media (web, mobile devices, etc.) should be accepted.
 
@@ -1511,6 +1611,13 @@ ensure that publicly funded resources are publicly available free of charge; cle
 
 In order to optimise the efficiency of shared core technologies for language analysis and production as well as the further development of the infrastructure, maximise the infrastructure's impact, and ensure that requirements for research and development are met at the necessary depth for all languages in all priority themes, the organisation of this shared component of the research agenda should adopt the following principles: It is necessary to invest in the further development of an integrated infrastructure (i.\,e., META-SHARE) based on an open architecture, enabling the sharing and further development of resources. The infrastructure should support technology-specific challenges and shared tasks in order to accelerate innovation breakthrough and market-readiness for desperately needed technologies. Concerted activities and policies facilitating the sharing of resources overcoming all stumbling blocks on the way to technical, organisational and legal interoperability should be supported. EU level research must be aligned and tightly coordinated with efforts on the national levels, so that language coverage and language-specific developments are efficiently achieved. An important aspect of this coordination effort is concerned with the results of the META-NET White Paper Series: in the 30 different white papers we have concrete and specific assessments of the language- and country-specific situation with regard to demands and technology gaps. The next step is to address and to fill these gaps with high-quality and robust core technologies and language resources. In addition we will continue to collect relevant technologies and resources for inclusion in and distribution through META-SHARE.
 
+% FIXME: Two remarks from Jürgen Wedekind:
+%
+% Is it realistic to assume that the required semantic, pragmatic, multimodal, and reasoning "tools and resources" can be developed within 8 years, in particular, if hybrid approaches will be employed. Rule-based approaches are even more costly and time-consuming than statistical approaches. Is the idea to develop them for all European languages? That is even less realistic.
+%
+%
+% It is not entirely clear how the core technologies (language analysis and production) are developed: independently of the priority themes or not? Moreover, the priority themes are very sophisticated and complex in the sense that they depend on many core technologies that also depend or build on each other. This might cause extremely high risk to the completion of the projects of the priority themes.
+
 %\begin{itemize}
 %\item This platform should enable resources, data and processing services to be incorporated in, or called by a wide range of application software.
 %\item To boost the automation of the language resource acquisition process, thus increasing coverage, quality and adequacy, a small number of coordinating projects attached to a federation of strategic projects with complementary goals can be foreseen. These projects should be objective-driven, with clear research, technology and exploitation milestones, coordinated by an ongoing road-mapping effort.
@@ -1530,21 +1637,24 @@ As there are many niches in the market that are not targeted by the big players,
 
 The question is how to transform innovation and research into new products, markets, growth, and, finally, new jobs. In recent years, drivers for innovations have often been applications and tools such as Skype, Facebook, or recommender systems that have been designed by smaller teams and start-ups. Important aspects of their success stories, besides the core and novel functionalities and feature sets for which there was an obvious need, often was their fast and viral outreach and uptake through social networks. 
 
-Large global platforms for novel end-user-services have also become the predominant innovation drivers for language technology solutions. These platforms can be web services such as Google Search that integrates the new Knowledge Graph concept network, speech-enabled search and also web translation. Combinations of hardware and operating systems such as iOS for Apple's mobile devices iPhone and iPad can also be considered platforms. Or it could be an open operating system such as Android which recently extended its current speech and language functionalities with a mobile assistant.
+Large global platforms for novel end-user-services have also become the predominant innovation drivers for language technology solutions. These platforms can be web services such as Google Search that integrates the new Knowledge Graph concept network, speech-enabled search \cite{meisel12} and also web translation. Combinations of hardware and operating systems such as iOS for Apple's mobile devices can also be considered platforms. Or it could be an open operating system such as Android which recently extended its current speech and language functionalities with a mobile assistant.
 
 The trend towards widely used platforms will drastically facilitate the spreading of innovative language technologies. Actually, language technology has a good chance of becoming the essential feature for the success of the next generation of services. At closer inspection, the integration of sophisticated language technology in current platforms is rather limited, scratching only the surface of what will be possible in the near future.
 
-Apart from new ways of sharing, development, and distribution, a generally innovative climate is needed. The availability of venture capital and meeting points like summits where research and decision makers from industry get together should be backed by public funding, and uptake. Flexible funded consortia that run over a longer period with changing partners, where research and innovation phases lead over to product development and marketing would also support innovation.
+Apart from new ways of sharing, development, and distribution, a generally innovative climate is needed. The availability of venture capital and meeting points such as summits where research and decision makers from industry get together should be backed by public funding and uptake. Flexibly funded consortia that run over a longer period with changing partners, where research and innovation phases lead over to product development and marketing would also support innovation. Research centres and companies that develop highly innovative approaches or technologies should get incentives, for example, bonus grants, awards or prizes. In addition we have to bring the language technology landscape and the European startup scene together in order to foster innovation between these two communities that only very partially overlap.
+
+In META-NET we tried to bring together the largely fragmented European Language Technology technology. It is of utmost importance that this community building aspect is continued and further strengthened in order to enable companies to cooperate and to being competitive, especially with regard to the shared European programme that we plan. 
 
 Another aspect on a more abstract but also crucial level is the existence of the English language innovation bias: the discourse on innovation has become determined by the English language, and the media reporting in that language. As Mark Vanderbeeken, a Belgian who lives in Italy notes in a widely read essay \cite{vanderbeeken2012}, this sheer dominance of English carries with it an accompanying perspective of Europe, both in terms of stereotypes and in terms of relevance to the Anglo-Saxon world. In turn, this puts European businesses and countries at a serious disadvantage that they are not aware of. But it also disadvantages businesses in the English-speaking world, which are perhaps not aware that they are receiving an abbreviated picture of innovation in Europe. This is a phenomenon that Vanderbeeken terms ``the non-English disadvantage''. This is another example of a disadvantage which can be successfully addressed, especially on the European level, through multilingual technologies.
 
 %\subsection{A European Service Platform for Language Understanding, Communication, Knowledge, Inference and Emotion}
+
 \subsection{A European Service Platform for Language Technologies}
 \label{sec:europ-service-platform}
 
 % Possible Names and Acronyms for the Platform:
 %
-% EuroLang:   European Languages Platform
+% EuroLang:   European Language(s) Platform
 % PEL:        Platform for European Languages
 % PELT:       Platform for European Language Technology
 % CompCom:    Computers and Communication
@@ -1595,17 +1705,13 @@ Thus the service platform will be an important instrument for supporting the ent
 \ssection[Towards Roadmaps and a Shared European Programme for Multilingual Europe 2020]{Towards Roadmaps and a\newline Shared European Programme for\newline Multilingual Europe 2020}
 \label{sec:conclusions}
 
+% FIXME: This chapter needs to be seriously revised!
+
 \begin{multicols}{2}
-\subsection{Next Steps}
-\label{sec:next-steps}
+\subsection{Improved Education and Training}
+\label{sec:improved-edu-and-training}
 
-The current version of this Strategic Research Agenda is not the final one, several steps are foreseen before the document will be finalised. The step immediately following the publication of this first initial version is to collect further feedback from META-NET, META and the Language Technology community at large. Even though more than 130 persons have directly contributed to this Strategic Research Agenda (see Appendix~\ref{sec:list-of-contributors} on~\pageref{sec:list-of-contributors}\,f.), we would like to collect as much further feedback, testimonials and additional contributions as possible. Among the reasons for sending in feedback can be, for example, significant gaps in the argumentation, interesting figures, data and numbers, convincing quotes and references, ideas for technology use cases, or steps and goals for the roadmap.
-
-\medskip
-\centerline{\fbox{\parbox{\dimexpr 0.85\linewidth - 2\fboxrule - 2\fboxsep}{Please send feedback to this SRA to georg.rehm@meta-net.eu with the subject line ``META-NET SRA: feedback'' or participate in our online discussion forum at \url{http://www.meta-net.eu/forum}.}}}
-
-\medskip
-The editors of this Strategic Research Agenda will process all feedback received by September 15, 2012, and include it into the final version of this document which is due for publication in November 2012.
+An indispensable prerequisite for innovative research and technology development are highly qualified researchers and software developers. In the ca.~two years it took us to prepare what is now contained in this strategic research agenda, we talked to representatives of many companies. Almost without exception these industry representatives mentioned the lack of qualified personnel to be a significiant problem for their further growth and diminishing factor as regards producing highly innovative technologies. Europe's academic programmes in Natural Language Processing, Computational Linguistics, Language Technologies, Language-Oriented Information Processing etc.~need to be further strengthened and advertised on a European level and especially made more attractive for potential students. In a later implementation phase of our Strategic Research Agenda we also need to introduce coordinated training programmes for IT professionals and software developers who are not yet familiar with language technologies so that they are made aware of our tools, resources and technologies and learn how to make use of them in their own IT landscapes. The lack of skilled personnel --~from students to senior software engineers~-- currently is a, if not \emph{the} major bottleneck for many small and medium companies and also research centres. In addition, future users of language technologies need to be equipped with at least some background in general linguistics, computational linguistics, natural language processing, speech and related basic technologies.
 
 \subsection{Towards Roadmaps}
 \label{sec:roadmaps}
@@ -1620,6 +1726,8 @@ The plans foreseen in this SRA can be successfully realised and implemented usin
 A sizable portion of the research proposed in this SRA under the umbrella of the three priority themes is to be carried out in the Horizon 2020 programme. The European service platform for language technologies is a very good fit for the Connecting Europe Facility programme (CEF) while large parts of the core technologies for language analysis and production are good candidates for support through national and regional programmes.
 
 There are several options how to organise the research proposed in this strategic agenda. In June 2012 we have started discussing two possible instruments within META-NET that mainly aim at establishing a shared European programme -- several other options still have to be screened. The two candidate instruments are an Article 185 Initiative (see Section~\ref{sec:article-185-init}) and a Contractual Public-Private Partnership (PPP, see Section~\ref{sec:contr-ppp}).
+
+
 
 \subsubsection{Article 185 Initiative}
 \label{sec:article-185-init}
@@ -2102,7 +2210,7 @@ Espoo, Finland, June 14, 2011
 
 % ===========================================================================
 
-\ssection[Language White Paper Press Campaign ``Digital Extinction'': Overview and Impact]{Language White Paper Press Campaign: Overview and Impact}
+\ssection[Language White Paper Press Campaign: Overview and Impact]{Language White Paper Press Campaign: Overview and Impact}
 \label{lwp-campaign}
 
 % FIXME: Here, we could include graphics, Google Analytics data, more figures, examples, newspaper scans etc.
