@@ -14,6 +14,7 @@
 \documentclass[10pt, plain]{../../metanetpaper}
 
 \usepackage{acronym}
+\usepackage{rotating}
 
 %!TEX TS-program = xelatex
 \RequireXeTeX %Force XeTeX check
@@ -195,6 +196,10 @@ Faced with the globalising online economy and ever-increasing information in all
 % - Is this story ok? Any important points missing?
 % - Arle: "There are twenty of these messages. I think that even this number is hard to wade through and would suggest somehow grouping these into three sections in the list with a header. E.g., “The Role of Language in Europe”, “Benefits of Multilingualism”, and “The Future of Language Technology”. (Don’t take those to the bank since I just made them up in about 30 seconds."
 
+% - The Role of Language in Europe
+% - Benefits of Multilingualism
+% - The Future of Language Technology
+
 \vspace*{-6mm}
 \begin{multicols}{2}
   \begin{itemize}
@@ -250,6 +255,17 @@ Faced with the globalising online economy and ever-increasing information in all
 % - Speech, intelligent content, translation -- operate in silos.
 % - No mechanisms for coordinating language expertise.
 % - Brain drain
+
+% FIXME: Good comparison from Stelios:
+%
+% - Evidence from many domains – geo & earth sciences, biotechnology – shows data & tools become valuable through opening and sharing
+% -  Both for research and technology development & evaluation
+% -  Supporting innovative applications
+% - Making the Human Genome Project results accessible, leveraged ~ €3 billion R&D investment, ~ €500 billion in economic activity
+% - “Alzheimers’ researchers recently pooled genetic data and discovered 5 new genes and important evidence about the disease”
+% - “Data is too valuable to be locked away”
+%
+% FIXME: Another good comparison: The Large Hadron-Collider. Europe needs these flagship projects!
 
 % FIXME: Comments from Alice Dijkstra:
 %
@@ -378,7 +394,16 @@ The economy benefits from the European single market. But language barriers can 
 
 But given the 23 official EU languages plus 60 or more other languages spoken in Europe \cite{eurobarometer2012}, language learning on its own cannot solve the problem of cross-border communication or cross-border commerce \cite{economist12}. Without technological support such as machine translation, our linguistic diversity will be an insurmountable obstacle for the entire continent. Only about half of the 500 million people who live in the European Union speak English! It is evident that there is no such thing as a lingua franca shared by the vast majority of the population of our continent.
 
-Less than 10\% of the EU's population are willing or able to use online services in English which is why multilingual services based on language technologies are badly needed to support and to move the EU online market from more than 20 language-specific sub-markets to a unified single digital market with more than 500 million users and consumers. The main goal, foreseen in the Digital Agenda EU policy framework \cite{DA2010}, is to build a single digital market in which content and services can flow freely. In order to support cross-border exchanges between users, consumers, countries and regions \cite{economist12}, robust and high-quality cross- and multilingual language technologies need to be developed urgently. In fact, the current situation with ``many fragmented markets'' is considered one of the main obstacles that seriously undermine Europe's efforts to exploit ICT fully \cite{DA2010}! A truly functioning single digital market can only be established once the language barrier has fallen, something that can be achieved only through research, development and wide deployment of language technologies. The single digital market functions poorly because multilingual Europe itself functions poorly.
+Less than 10\% of the EU's population are willing or able to use online services in English which is why multilingual services based on language technologies are badly needed to support and to move the EU online market from more than 20 language-specific sub-markets to a unified single digital market with more than 500 million users and consumers. The main goal, foreseen in the Digital Agenda EU policy framework \cite{DA2010}, is to build a single digital market in which content and services can flow freely. In order to support cross-border exchanges between users, consumers, countries and regions \cite{economist12}, robust and high-quality cross- and multilingual language technologies need to be developed urgently. In fact, the current situation with ``many fragmented markets'' is considered one of the main obstacles that seriously undermine Europe's efforts to exploit ICT fully \cite{DA2010}! A truly functioning single digital market can only be established once the language barrier has fallen, something that can be achieved only through research, development and wide deployment of language technologies (see Figure~\ref{fig:single-digital-market}). The single digital market functions poorly because multilingual Europe itself functions poorly.
+
+\begin{figure*}[htb]
+  \colorrule{grey3}{\textwidth}{1.5pt}
+  \center
+  \includegraphics[width=0.7\textwidth]{../_media/single-digital-market}
+  \caption{Language Technology unlocks the Single Digital Market}
+  \label{fig:single-digital-market}
+  \colorrule{grey3}{\textwidth}{1.5pt}
+\end{figure*}
 
 Language technology is a key enabler for sustainable, cost-effective and socially beneficial solutions to overcome language barriers. It will offer European stakeholders tremendous advantages, not only within the European market, but also in trade relations with non-European countries, especially emerging economies. One prerequisite to develop these solutions was a systematic survey of the linguistic particularities of all European languages and the current state of language technology support for them. With the publication of the META-NET White Paper Series ``Europe's Languages in the Digital Age'' \cite{LWP2012} this important step has now been taken (see also Chapter~\ref{sec:lwp}, p.~\pageref{sec:lwp}\,ff., and Appendix~\ref{vision-evolution}, p.~\pageref{vision-evolution} for an overview of the timeline and history of this document).
 
@@ -668,291 +693,114 @@ The IT research and advisory company Gartner publishes the ``Gartner Hype Cycle'
 \subsection{Current State of European Language Technology}
 \label{sec:what-current-state}
 
-% FIXME: Briefly mention the "21 European Languages in Danger of Digital Extinction" press campaign and their results! This information is already included in Appendix F but it should be moved here (and updated). The morale of the story: Europe is passionate about the language topic! Europe is also very much concerned about the language topic! People are interested in the topic!
-
-Answering the question on the current state of a whole R\&D field is both difficult and complex. For language technology, even though partial answers exist in terms of business figures, scientific challenges and results from educational studies, nobody has collected these indicators and provided comparable reports for a substantial number of European languages yet. In order to arrive at a comprehensive answer, META-NET prepared a White Paper Series that describes the current state of language technology support for 30 European languages \cite{LWP2012}. The White Paper Series has been in preparation since mid 2010, has been finalised in the Spring of 2012 and is currently in print. More than 160 co-authors participated to the 30 volumes, more than 50 additional experts contributed supporting information, data and figures. White Papers were written for the following 30 European languages (including all 23 official EU languages):
+Answering the question on the current state of a whole R\&D field is both difficult and complex. For language technology, even though partial answers exist in terms of business figures, scientific challenges and results from educational studies, nobody has collected these indicators and provided comparable reports for a substantial number of European languages yet. In order to arrive at a comprehensive answer, META-NET prepared the White Paper Series ``Europe's Languages in the Digital Age'' that describes the current state of language technology support for 30 European languages \cite{LWP2012}. This immense undertaking has been in preparation since mid 2010 and was published in the Summer of 2012. More than 200 experts from academia and industry participated to the 30 volumes as co-authors and contributors. White Papers were written for the following 30 European languages (including all 23 official EU languages):
 
 \medskip
 \centerline{\fbox{\parbox{\dimexpr 0.91\linewidth - 2\fboxrule - 2\fboxsep}{Basque, Bulgarian, Catalan, Croatian, Czech, Danish, Dutch, English, Estonian, Finnish, French, Galician, German, Greek, Hungarian, Icelandic, Irish, Italian, Latvian, Lithuanian, Maltese, Norwegian, Polish, Portuguese, Romanian, Serbian, Slovak, Slovene, Spanish, Swedish}}}
 
 \medskip 
-The current state of support through language technology varies considerably from one language community to another. In order to compare the situation between languages, the META-NET Language White Papers introduce an evaluation based on two sample application areas (machine translation and speech processing) and one underlying technology (text analysis) as well as basic language resources needed for building LT applications (for example, very large collections of texts for machine learning purposes). For each language, support through language technology was categorised using a five-point scale (1.~excellent support; 2.~good support; 3.~moderate support; 4.~fragmentary support; 5.~weak or no support) and measured according to the following key criteria:
+The current state of support through language technology varies considerably from one language community to another. In order to compare the situation between languages, the META-NET White Paper Series introduces an evaluation based on two sample application areas (Machine Translation and Speech Processing) and one underlying technology (Text Analytics) as well as basic Language Resources needed for building LT applications (for example, very large collections of texts for machine learning purposes). For each language, support through language technology was categorised using a five-point scale (1.~excellent support; 2.~good support; 3.~moderate support; 4.~fragmentary support; 5.~weak or no support) and measured according to the following key criteria:
 
-\textbf{Machine Translation:} quality of existing MT technologies, number of language pairs covered, coverage of linguistic phenomena and domains, quality and size of existing parallel corpora, amount and variety of available MT applications.
+\textbf{Machine Translation:} quality of existing technologies, number of language pairs covered, coverage of linguistic phenomena and domains, quality and size of parallel corpora, amount and variety of applications.
 
-\textbf{Speech Processing:} quality of existing speech recognition and synthesis technologies, coverage of domains, number and size of existing speech corpora, amount and variety of available speech-based applications.
+\textbf{Speech Processing:} quality of existing speech recognition and synthesis technologies, coverage of domains, number and size of existing corpora, amount and variety of available applications.
 
-\textbf{Text Analytics:} quality and coverage of existing text analytics and text analysis technologies (morphology, syntax, semantics), coverage of linguistic phenomena and domains, amount and variety of available applications, quality and size of existing (annotated) text corpora, quality and coverage of existing lexical resources (e.\,g., WordNet) and grammars.
+\textbf{Text Analytics:} quality and coverage of existing technologies (morphology, syntax, semantics), coverage of linguistic phenomena and domains, amount and variety of available applications, quality and size of (annotated) corpora, quality and coverage of lexical resources (e.\,g., WordNet) and grammars.
 
-\textbf{Resources:} quality and size of existing text corpora, speech corpora and parallel corpora, quality and coverage of existing lexical resources and grammars.
+\textbf{Resources:} quality and size of text corpora, speech corpora and parallel corpora, quality and coverage of lexical resources and grammars.
 
 The more than 200 co-authors of and contributors to the White Papers prepared an initial language-specific assessment of language technology support using an approach in which ca.~25 different applications, tools and resources were assessed along seven different axes and criteria. Later on, the 30 individual and language-specific matrices were condensed in multiple iterations in order to arrive at a single score per language and area. 
 
-Figures~\ref{fig:mt_cluster_en} to~\ref{fig:resources_cluster_en} (p.~\pageref{fig:mt_cluster_en} and~\pageref{fig:resources_cluster_en}) show the results. The figures demonstrate that there are dramatic and alarming differences in LT support between the various European languages and technology areas. In all four areas, English is ahead of the other languages but even support for English is far from being perfect. While there are good quality software and resources available for a few larger languages and application areas, others, usually smaller or very small languages, have substantial gaps. Many languages lack even basic technologies for text analytics and essential language resources. Others have basic tools and resources but the implementation of, for example, semantic methods is still far away. Therefore, a large-scale effort is needed to attain the ambitious goal of providing high-quality language technologies for all European languages.
+Figure~\ref{fig:europes-languages} (p.~\pageref{fig:europes-languages}) shows the results. The figure demonstrates that the differences in language technology support between the various European languages and technology areas are both dramatic and alarming. In all four areas, English is ahead of the other languages but even support for English is far from being perfect. While there are good quality software and resources available for a few larger languages and application areas, others, usually smaller or very small languages, have substantial gaps. Many languages lack even basic technologies for text analytics and essential language resources. Others have basic tools and resources but the implementation of, for example, semantic methods is still far away. Therefore, a large-scale effort is needed to attain the ambitious goal of providing high-quality language technologies for all European languages.
 
-The 30 volumes of the Language White Paper Series contain detailed assessments of LT support for each of the 30 languages. Due to space limitations we are unable to reproduce the results in this document. Two key results of this study are that currently no language, not even English, has the technological support it deserves. Also, the number of badly supported and under-resourced languages is unacceptable if we do not want to give up the principles of solidarity and subsidiarity in Europe.
+\begin{figure*}[htbp]
+  \footnotesize
+  \centering
+  \begin{tabular}
+  { % defines color for each column.
+  m{0.02\linewidth}
+  >{\columncolor{corange5}}m{.16\linewidth}@{\hspace{.035\linewidth}}
+  >{\columncolor{corange4}}m{.16\linewidth}@{\hspace{.035\linewidth}}
+  >{\columncolor{corange3}}m{.16\linewidth}@{\hspace{.035\linewidth}}
+  >{\columncolor{corange2}}m{.16\linewidth}@{\hspace{.035\linewidth}}
+  >{\columncolor{corange1}}m{.16\linewidth} 
+  }
+  & 
+  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.035\linewidth}}}{\textbf{Support: excellent}} & 
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.035\linewidth}}}{\textbf{good}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.035\linewidth}}}{\textbf{moderate}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.035\linewidth}}}{\textbf{fragmentary}} &
+  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{weak/none}} \\ \addlinespace
+
+% Machine Translation
+\rotatebox{90}{\textbf{Machine Translation}} &
+& \vspace*{0.5mm} English
+& \vspace*{0.5mm} French, Spanish
+& \vspace*{0.5mm} Catalan, Dutch, German, Hungarian, Italian, Polish, Romanian
+& \vspace*{0.5mm} ~\newline Basque, Bulgarian, Croatian, Czech, Danish, Estonian, Finnish, Galician, Greek, Icelandic, Irish, Latvian, Lithuanian, Maltese, Norwegian, Portuguese, Serbian, Slovak, Slovene, Swedish\newline \\ \addlinespace
+
+% Speech Processing
+\rotatebox{90}{\textbf{Speech}} & 
+& \vspace*{0.5mm} English
+& \vspace*{0.5mm} Czech, Dutch, Finnish, French, German, Italian, Portuguese, Spanish
+& \vspace*{0.5mm} ~\newline Basque, Bulgarian, Catalan, Danish, Estonian, Galician, Greek, Hungarian, Irish, Norwegian, Polish, Serbian, Slovak, Slovene, Swedish\newline
+& \vspace*{0.5mm} Croatian, Icelandic, Latvian, Lithuanian, Maltese, Romanian \\ \addlinespace
+
+% Text Analytics
+\rotatebox{90}{\textbf{Text Analytics}} & 
+& \vspace*{0.5mm} English
+& \vspace*{0.5mm} Dutch, French, German, Italian, Spanish
+& \vspace*{0.5mm} ~\newline Basque, Bulgarian, Catalan, Czech, Danish, Finnish, Galician, Greek, Hungarian, Norwegian, Polish, Portuguese, Romanian, Slovak, Slovene, Swedish\newline
+& \vspace*{0.5mm} Croatian, Estonian, Icelandic, Irish, Latvian, Lithuanian, Maltese, Serbian \\ \addlinespace
+
+% Speech and Text Resources
+\rotatebox{90}{\textbf{Language Resources}} & 
+& \vspace*{0.5mm} English
+& \vspace*{0.5mm} Czech, Dutch, French, German, Hungarian, Italian, Polish, Spanish, Swedish
+& \vspace*{0.5mm} ~\newline Basque, Bulgarian, Catalan, Croatian, Danish, Estonian, Finnish, Galician, Greek, Norwegian, Portuguese, Romanian, Serbian, Slovak, Slovene \newline
+& \vspace*{0.5mm} Icelandic, Irish, Latvian, Lithuanian, Maltese  \\
+
+\end{tabular}
+\caption{State of language technology support for 30 European languages in four different areas}
+\label{fig:europes-languages}
+\end{figure*}
+
+The White Paper Series contains detailed assessments for each of the 30 languages. Two key results of this study are that currently no language, not even English, has the technological support it deserves. Also, the number of badly supported and under-resourced languages is unacceptable if we do not want to give up the principles of solidarity and subsidiarity in Europe.
+
+\subsection{The Danger of Digital Language Extinction}
+\label{sec:lang-techn-as-a-key-to-the-future}
+
+On the occasion of the European Day of Languages 2012, September 26, we announced the results of our ``Europe's Languages in the Digital Age'' study to the public through a press release which was translated into the 30 languages. The headline of our press release was: \emph{At Least 21 European Languages in Danger of Digital Extinction -- Good News and Bad News on the European Day of Languages}. 
+
+We were overwhelmed by the immediate, very big interest in the topic and our findings. The first articles appeared online only hours after we sent out the first press releases. We also received many requests for radio and television interviews. Journalists called to collect additional statements and to enquire about specific details. 
+
+By now we estimate ca.~550 mentions in the online press in Europe and also multiple mentions in the international press (from Mexico to New Zealand). We also estimate that our press release generated more than 75 mentions in traditional newspapers. Representatives of META-NET took part in about 45 radio interviews (for example, in Germany, Greece, Iceland, Ireland, Latvia, Norway). We estimate that an additional 25 radio and more than 25 television programmes (including coverage in, for example, Iceland and Latvia) reported on our findings. 
+
+A few significant newspapers and blogs that reported on the study: Der Standard (Austria); Politiken, Berlingske Tidende (Denmark); Tiede (Finland); Heise Newsticker, Süddeutsche Zeitung (Germany); in.gr, Πρώτο Θέμα, Pro\-silip\-sis (Greece); Fréttablaðið, Morgunblaðið (Iceland); Wired (Italy); Computerworld (Norway); Delo, Dnevnik, De\-mo\-kra\-cija (Slovenia); El Mundo (Spain); Huffington Post (UK); Mashable, NBC News, Reddit (USA). A full list is available online at \url{http://www.meta-net.eu/whitepapers/press-coverage}. 
+
+The immediacy and size of the echo generated by our press campaign clearly shows that Europe is extremely passionate about its languages, concerned about digital language extinction and that it is also very interested in the idea of establishing a solid language technology base for overcoming language barriers. 
 
 \subsection{Challenges and Chances}
 \label{sec:lang-techn-as-a-key-to-the-future}
 
-As with most technologies, the first language applications such as voice-based user interfaces and dialogue systems were developed for highly specialised domains and purposes, and often exhibited rather limited performance. By now, however, there are huge market opportunities in the communication, collaboration, education and entertainment industries for integrating language technologies into general information and communication technologies, games, cultural heritage sites, edutainment packages, libraries, simulation environments and training programmes. Mobile information services, computer-assisted language learning software, e-learning environments, self-assessment tools and plagiarism detection software are just a few application areas in which language technology can and will play an important role in the years to come. The success of social media networks such as Twitter and Facebook demonstrates a further need for sophisticated language technologies that can monitor posts, summarise discussions, suggest opinion trends, detect emotional responses, identify copyright infringements or track misuse.
+As with most technologies, the first language applications such as voice-based user interfaces and dialogue systems were developed for highly specialised domains and purposes, and often exhibited rather limited performance. By now, however, there are huge market opportunities in the communication, collaboration, education and entertainment industries for integrating language technologies into general information and communication technologies, games, cultural heritage sites, edutainment packages, libraries, simulation environments and training programmes. Mobile information services, computer-assisted language learning software, e-learning environments, self-assessment tools and plagiarism detection software are just a few application areas in which language technology can and will play an important role in the years to come. The success of social networks such as Twitter and Facebook demonstrates a further need for sophisticated language technologies that can monitor posts, summarise discussions, suggest opinion trends, detect emotional responses, identify copyright infringements or track misuse.
 
-Language technology represents a tremendous opportunity for the European Union. It can help address the complex issue of multilingualism in Europe. Citizens need to communicate across language borders, criss-crossing the European common market -- language technology can help overcome this final barrier while supporting the free and open use of individual languages. Looking even a bit further into the future, innovative European multilingual language technology will provide a benchmark for other multilingual communities in the world.
+Language technology represents a tremendous opportunity for the European Union. It can help address the complex issue of multilingualism in Europe. Citizens need to communicate across language borders, criss-crossing the European common market -- language technology can help overcome this final barrier while supporting the free and open use of individual languages. Looking even a bit further into the future, innovative European multilingual language technology could provide a benchmark for other multilingual communities in the world. This, in turn, would generate additional market opportunities for European companies.
 
-The automated translation and speech processing tools currently available fall short of the envisaged goals. The dominant actors in the field are primarily companies based in the US. As early as the late 1970s, the European Union realised the profound relevance of language technology as a driver of European unity, and began funding its first research projects, such as EUROTRA. At the same time, national projects were set up that generated valuable results, but never led to a concerted European effort. In contrast to these highly selective funding efforts, other multilingual societies such as India (22 official languages) and South Africa (11 official languages) have recently set up long-term national programmes for language research and technology development.
+The automated translation and speech processing tools currently available fall short of the envisaged goals. The dominant actors in the field are primarily companies based in the US. As early as the late 1970s, the EU realised the profound relevance of language technology as a driver of European unity, and began funding its first research projects. At the same time, national projects were set up that generated valuable results, but never led to a concerted European effort. In contrast to these highly selective funding efforts, other multilingual societies such as India (22 official languages) and South Africa (11 official languages) have recently set up long-term national programmes for language research and technology development.
 
 Today the predominant actors in language technology rely on statistical approaches, but rule-based approaches reach comparable performance in a different way. Not surprisingly, cross-fertilisation between these approaches has been sought and reached already. Both in combination and in separation there are promising ideas to advance these approaches. On the one hand, analysing the deeper structural properties of languages in terms of syntax and semantics as well as making use of different types of knowledge and inferencing is a promising way forward if we want to build applications that perform well across the entire range of European languages. On the other hand, we need statistical models that go beyond the current ones and extract more dependencies from the data. They can be related to existing linguistic theories, but they might also be very much different. The dependencies have to be deeply integrated and require research on statistical decision theory and machine learning along with efficient algorithms and implementations.
 
-%%%
-% This old version of the paragraph commented out as suggested by Volker Steinbiss et al.
-%
-% Today the predominant actors in language technology rely on statistical approaches that have reached a performance plateau and that do not make use of deeper linguistic methods and knowledge. For example, sentences are translated automatically by comparing each new sentence with thousands of sentences previously translated by humans. The quality of the output completely depends on the size and quality of the available data. While the automatic translation of simple sentences in languages with sufficient amounts of available textual training data can achieve surprisingly good results, shallow statistical methods are likely to fail in the case of languages with a much smaller body of sample data or in the case of new sentences with complex structures. Analysing the deeper structural properties of languages in terms of syntax and semantics is a promising way forward if we want to build applications that perform well across the entire range of European languages.
-%%%
+The European Union is funding projects such as EuroMatrix and EuroMatrix+ (since 2006) and iTranslate4 (since 2010), that carry out basic and applied research and also generate resources for establishing high quality language technology solutions for several European languages. European research in the area of language technology has already achieved a number of outstanding successes. For example, the translation services of the EU now use the Moses open source machine translation software, which has been mainly developed in European research projects \cite{moses}. In addition, national funding used to have huge impact. For example, the Verbmobil project, funded by the German Ministry of Education and Research (BMBF) between 1993 and 2000, pushed Germany to the top position in the world in terms of speech translation research for a time. Rather than building on the important results and success stories generated by these projects, Europe has tended to pursue isolated research activities with a less pervasive impact on the market. The economic value of even the earliest efforts can be seen in the number of spin-offs: a company such as Trados, founded back in 1984, was sold to the UK-based SDL in 2005.
 
-The European Union is funding projects such as EuroMatrix and EuroMatrix+ (since 2006) and iTranslate4 (since 2010), that carry out basic and applied research and also generate resources for establishing high quality language technology solutions for several European languages. European research in the area of language technology has already achieved a number of outstanding successes. For example, the translation services of the European Union now use the Moses open source machine translation software, which has been mainly developed in European research projects \cite{moses}. In addition, national funding used to have huge impact. For example, the Verbmobil project, funded by the German Ministry of Education and Research (BMBF) between 1993 and 2000, pushed Germany to the top position in the world in terms of speech translation research for a time. Rather than building on the important results and success stories generated by these research projects, Europe has tended to pursue isolated research activities with a less pervasive impact on the market. The economic value of even the earliest efforts can be seen in the number of spin-offs. A company such as Trados, founded back in 1984, was sold to the UK-based SDL in 2005.
+Today’s hybrid language technology mixing deep processing with statistical methods will be able to bridge the gap between all European languages and beyond. But as we have described above, there is a dramatic difference between Europe’s languages in terms of both the maturity of the research and the state of readiness with respect to language technology solutions. 
 
-Drawing on the insights gained so far, today’s hybrid language technology mixing deep processing with statistical methods will be able to bridge the gap between all European languages and beyond. But as we have described above, there is a dramatic difference between Europe’s languages in terms of both the maturity of the research and the state of readiness with respect to language technology solutions. 
+Three key ingredients are needed to realise the technology visions described in the next chapter: the right actors, a shared vision and strategic programme and a certain level of support and commitment. Until recently the European community of language technologists and language professionals had to be considered highly fragmented at best. In early 2010 META-NET (see appendix~\ref{sec:app-meta-net}, p.~\pageref{sec:app-meta-net}) has started to bring the fragmented community together and to assemble researchers from the different subfields involved in language technology and also related scientific fields (humanities, psychology, social sciences etc.), universities, research centres, the language communities, national language institutions, smaller and medium companies as well as large enterprises, officials, administrators, politicians under one roof: META (Multilingual Europe Technology Alliance). By now META has more than 650 members in more than 50 countries (roughly one third of META's membership base are companies). 
 
-Three key ingredients are needed to realise the technology visions described in the next chapter: the right actors, a shared vision and strategic programme and a certain level of support and commitment. Until recently the European community of language technologists and language professionals had to be considered highly fragmented at best. In early 2010 META-NET (see appendix~\ref{sec:app-meta-net}, p.~\pageref{sec:app-meta-net}) has started to bring the fragmented community together and to assemble researchers from the different subfields involved in language technology and also related scientific fields (humanities, psychology, social sciences etc.), universities, research centres, the language communities, national language institutions, smaller and medium companies as well as large enterprises, officials, administrators, politicians under one roof: META (Multilingual Europe Technology Alliance). By now META has more than 640 members in more than 50 countries (roughly one third of META's membership base are companies). Now that the European language technology community has been brought together we can present our technology vision and strategic research agenda as illustrated in this very document. The whole META community has shaped this SRA through participating in many discussions around the ideas, approaches, technology visions and strategic goals described in this paper (see, among others, the list of key contributors on p.~\pageref{sec:list-of-contributors}\,f.). META-NET hopes to raise enough awareness, enthusiasm and, eventually, support to develop and, finally, to bring about a truly multilingual Europe based on sophisticated language technologies. To this end, we suggest to set up a shared and coordinated programme with the goal of concentrating our research efforts on the three priority research themes described in the next chapter. This shared and coordinated programme is foreseen to span all member states and associated countries and also the level of the European Commission. 
+Now that the European language technology community has been brought together we can present our technology vision and strategic research agenda as illustrated in this very document. The whole META community has shaped this SRA through participating in many discussions around the ideas, approaches, technology visions and strategic goals described in this agenda (see, among others, the list of key contributors on p.~\pageref{sec:list-of-contributors}\,f.). 
+
+META-NET hopes to raise enough awareness, enthusiasm and, eventually, support to develop and, finally, to bring about a truly multilingual Europe based on sophisticated language technologies. To this end, we suggest to set up a shared and coordinated programme with the goal of concentrating our research efforts on the three priority research themes described in the next Chapter. This shared and coordinated programme is foreseen to span all member states and associated countries and also the level of the European Commission. 
 \end{multicols}
-
-\clearpage
-
-\begin{figure*}[t]
-  \small
-  \centering
-  \begin{tabular}
-  { % defines color for each column.
-  >{\columncolor{corange5}}p{.13\linewidth}@{\hspace{.040\linewidth}}
-  >{\columncolor{corange4}}p{.13\linewidth}@{\hspace{.040\linewidth}}
-  >{\columncolor{corange3}}p{.13\linewidth}@{\hspace{.040\linewidth}}
-  >{\columncolor{corange2}}p{.13\linewidth}@{\hspace{.040\linewidth}}
-  >{\columncolor{corange1}}p{.13\linewidth} 
-  }
-  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Excellent}} & 
-  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Good}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Moderate}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Fragmentary}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{Weak/no}} \\ 
-  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} & 
-  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{support}} \\ \addlinespace
-  
-& \vspace*{0.5mm} English
-& \vspace*{0.5mm} 
-French \newline 
-Spanish
-& \vspace*{0.5mm}
-Catalan \newline 
-Dutch \newline 
-German \newline 
-Hungarian \newline
-Italian \newline 
-Polish \newline 
-Romanian \newline 
-& \vspace*{0.5mm}Basque \newline 
-Bulgarian \newline 
-Croatian \newline 
-Czech \newline
-Danish \newline 
-Estonian \newline 
-Finnish \newline 
-Galician \newline 
-Greek \newline 
-Icelandic \newline 
-Irish \newline 
-Latvian \newline 
-Lithuanian \newline 
-Maltese \newline 
-Norwegian \newline 
-Portuguese \newline 
-Serbian \newline 
-Slovak \newline 
-Slovene \newline 
-Swedish \newline 
-\end{tabular}
-\caption{Machine translation: state of language technology support for 30 European languages}
-\label{fig:mt_cluster_en}
-\end{figure*}
-
-\begin{figure*}[b]
-  \small
-  \centering
-  \begin{tabular}
-  { % defines color for each column.
-  >{\columncolor{corange5}}p{.13\linewidth}@{\hspace{.040\linewidth}}
-  >{\columncolor{corange4}}p{.13\linewidth}@{\hspace{.040\linewidth}}
-  >{\columncolor{corange3}}p{.13\linewidth}@{\hspace{.040\linewidth}}
-  >{\columncolor{corange2}}p{.13\linewidth}@{\hspace{.040\linewidth}}
-  >{\columncolor{corange1}}p{.13\linewidth} 
-  }
-  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Excellent}} & 
-  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Good}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Moderate}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Fragmentary}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{Weak/no}} \\ 
-  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} & 
-  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{support}} \\ \addlinespace
-  
-  & \vspace*{0.5mm} English
-  & \vspace*{0.5mm}
-  Czech \newline 
-  Dutch \newline 
-  Finnish \newline 
-  French \newline 
-  German \newline   
-  Italian \newline  
-  Portuguese \newline 
-  Spanish \newline
-  & \vspace*{0.5mm}Basque \newline 
-  Bulgarian \newline 
-  Catalan \newline 
-  Danish \newline 
-  Estonian \newline 
-  Galician\newline 
-  Greek \newline  
-  Hungarian  \newline
-  Irish \newline  
-  Norwegian \newline 
-  Polish \newline 
-  Serbian \newline 
-  Slovak \newline 
-  Slovene \newline 
-  Swedish \newline
-  & \vspace*{0.5mm}
-  Croatian \newline 
-  Icelandic \newline  
-  Latvian \newline 
-  Lithuanian \newline 
-  Maltese \newline 
-  Romanian\\
-\end{tabular}
-\caption{Speech processing: state of language technology support for 30 European languages}
-\label{fig:speech_cluster_en}
-\end{figure*}
-
-\begin{figure*}[t]
-  \small
-  \centering
-  \begin{tabular}
-  { % defines color for each column.
-  >{\columncolor{corange5}}p{.13\linewidth}@{\hspace{.040\linewidth}}
-  >{\columncolor{corange4}}p{.13\linewidth}@{\hspace{.040\linewidth}}
-  >{\columncolor{corange3}}p{.13\linewidth}@{\hspace{.040\linewidth}}
-  >{\columncolor{corange2}}p{.13\linewidth}@{\hspace{.040\linewidth}}
-  >{\columncolor{corange1}}p{.13\linewidth} 
-  }
-  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Excellent}} & 
-  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Good}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Moderate}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Fragmentary}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{Weak/no}} \\ 
-  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} & 
-  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{support}} \\ \addlinespace
-
-& \vspace*{0.5mm} English
-& \vspace*{0.5mm}
-  Dutch \newline 
-  French \newline 
-  German \newline 
-  Italian \newline 
-  Spanish
-& \vspace*{0.5mm}Basque \newline 
-  Bulgarian \newline 
-  Catalan \newline 
-  Czech \newline 
-  Danish \newline 
-  Finnish \newline 
-  Galician \newline 
-  Greek \newline 
-  Hungarian \newline 
-  Norwegian \newline 
-  Polish \newline 
-  Portuguese \newline 
-  Romanian \newline 
-  Slovak \newline 
-  Slovene \newline 
-  Swedish \newline 
-& \vspace*{0.5mm}
-  Croatian \newline 
-  Estonian \newline 
-  Icelandic \newline 
-  Irish \newline 
-  Latvian \newline 
-  Lithuanian \newline 
-  Maltese \newline 
-  Serbian \\
-  \end{tabular}
-\caption{Text analytics: state of language technology support for 30 European languages}
-\label{fig:text_cluster_en}
-\end{figure*}
-
-\begin{figure*}[b]
-  \small
-  \centering
-  \begin{tabular}
-  { % defines color for each column.
-  >{\columncolor{corange5}}p{.13\linewidth}@{\hspace{.040\linewidth}}
-  >{\columncolor{corange4}}p{.13\linewidth}@{\hspace{.040\linewidth}}
-  >{\columncolor{corange3}}p{.13\linewidth}@{\hspace{.040\linewidth}}
-  >{\columncolor{corange2}}p{.13\linewidth}@{\hspace{.040\linewidth}}
-  >{\columncolor{corange1}}p{.13\linewidth} 
-  }
-  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Excellent}} & 
-  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Good}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Moderate}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{Fragmentary}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{Weak/no}} \\ 
-  \multicolumn{1}{>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} & 
-  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c@{\hspace{.040\linewidth}}}{\textbf{support}} &
-  \multicolumn{1}{@{}>{\columncolor{white}}c}{\textbf{support}} \\ \addlinespace
-    
-& \vspace*{0.5mm} English
-& \vspace*{0.5mm} 
-    Czech \newline 
-    Dutch \newline 
-    French \newline 
-    German \newline 
-    Hungarian \newline
-    Italian \newline
-    Polish \newline
-    Spanish \newline
-    Swedish \newline 
-& \vspace*{0.5mm} Basque\newline 
-    Bulgarian\newline 
-    Catalan \newline 
-    Croatian \newline 
-    Danish \newline 
-    Estonian \newline 
-    Finnish \newline 
-    Galician \newline 
-    Greek \newline 
-    Norwegian \newline 
-    Portuguese \newline 
-    Romanian \newline 
-    Serbian \newline 
-    Slovak \newline 
-    Slovene \newline
-&  \vspace*{0.5mm}
-    Icelandic \newline 
-    Irish \newline 
-    Latvian \newline 
-    Lithuanian \newline 
-    Maltese  \\
-  \end{tabular}
-  \caption{Speech and text resources: State of support for 30 European languages}  
-  \label{fig:resources_cluster_en}
-\end{figure*}
 
 \clearpage
 
@@ -1959,8 +1807,11 @@ The research plans specified in this SRA are, among others, a good match for an 
 % ===========================================================================
 
 \ssection[References]{References}
+
+\begin{footnotesize}
 \bibliographystyle{unsrt}
 \bibliography{sra_references}
+\end{footnotesize}
 
 \clearpage
 
@@ -1969,7 +1820,9 @@ The research plans specified in this SRA are, among others, a good match for an 
 \ssection[List of Key Contributors]{List of Key Contributors}
 \label{sec:list-of-contributors}
 
+\begin{small}
 The experts listed in the following contributed to this Strategic Research Agenda (54\% from language technology user or provider industries, 46\% from language technology research, 4\% from national or international institutions). The Strategic Research Agenda was edited by the \href{http://www.meta-net.eu/vision/technology-council-members/all}{META Technology Council}.
+\end{small}
 
 % Gesamt:    190
 %
@@ -1978,204 +1831,320 @@ The experts listed in the following contributed to this Strategic Research Agend
 % Other:       8 (EPO, JRC, Ministry of Defense, France)
 
 \begin{multicols}{3}
-\begin{small}
+\begin{footnotesize}
   \begin{enumerate}
     \raggedright{
-      \item Sophia Ananiadou, University of Manchester, UK
-      \item Sanne Andresen, Ordbogen, Denmark
-      \item Toni Badia, Barcelona Media, Spain
-      \item Antonio Balvet, University of Lille, France
-      \item Michaela Bartelt, Electronic Arts, Germany/USA
-      \item Christoph Bauer, ORF, Austria
-      \item Matthias Bärwolff, Tazaldoo, Germany
-      \item Caterina Berbenni-Rehm, Promis, Luxembourg
-      \item Juanjo Bermudez, Lingua e-Solutions SL, Spain
-      \item Henriette Edvarda Berntsen, Tansa, Norway
-      \item Nozha Boujemaa, INRIA, France
-      \item Hervé Bourland, IDIAP, Switzerland
-      \item Antonio Branco, University of Lisbon, Portugal
-      \item Andrew Bredenkamp, acrolinx, Germany
-      \item Anton Bregar, Poland
-      \item Gerhard Budin, University of Vienna, Austria
-      \item Axel Buendia, Spir.\,Ops, France
-      \item Paul Buitelaar, DERI, Ireland
-      \item Aljoscha Burchardt, DFKI, Germany
+      \item Sophia Ananiadou, U.~of Manchester, UK
+      \item Sanne Andresen, Ordbogen, DK
+      \item Toni Badia, Barcelona Media, ES
+      \item Antonio Balvet, U.~of Lille, FR
+      \item Michaela Bartelt, Electronic Arts, GER/USA
+      \item Christoph Bauer, ORF, AT
+      \item Matthias Bärwolff, Tazaldoo, GER
+      \item Caterina Berbenni-Rehm, Promis, LUX
+      \item Juanjo Bermudez, Lingua e-Solutions SL, ES
+      \item Henriette Edvarda Berntsen, Tansa, NO
+      \item Nozha Boujemaa, INRIA, FR
+      \item Hervé Bourland, IDIAP, CH
+      \item Antonio Branco, U.~of Lisbon, PT
+      \item Andrew Bredenkamp, acrolinx, GER
+      \item Anton Bregar, PL
+      \item Gerhard Budin, U.~of Vienna, AT
+      \item Axel Buendia, Spir.\,Ops, FR
+      \item Paul Buitelaar, DERI, IE
+      \item Aljoscha Burchardt, DFKI, GER
       \item Will Burgett, Intel, USA
-      \item Johannes Bursch, Daimler AG, Germany
-      \item Miriam Butt, University of Konstanz, Germany
-      \item Nicoletta Calzolari, Consiglio Nazionale delle Ricerche, Italy
-      \item Nick Campbell, Trinity College Dublin, Ireland
-      \item Olga Caprotti, University of Gothenburg, Sweden
-      \item Jean Carrive, INA, France
-      \item Khalid Choukri, ELDA, France
-      \item Philipp Cimiano, University of Bielefeld, Germany
-      \item Ann Copestake, University of Cambridge, UK
-      \item Ido Dagan, Bar-Ilan University, Israel
-      \item Morena Danieli, Loquendo, Italy
+      \item Johannes Bursch, Daimler AG, GER
+      \item Miriam Butt, U.~of Konstanz, GER
+      \item Nicoletta Calzolari, Consiglio Nazionale delle Ricerche, IT
+      \item Nick Campbell, Trinity College Dublin, IE
+      \item Olga Caprotti, U.~of Gothenburg, SE
+      \item Jean Carrive, INA, FR
+      \item Khalid Choukri, ELDA, FR
+      \item Philipp Cimiano, U.~of Bielefeld, GER
+      \item Ann Copestake, U.~of Cambridge, UK
+      \item Ido Dagan, Bar-Ilan University, IL
+      \item Morena Danieli, Loquendo, IT
       \item Christophe Declercq, Imperial College, UK
-      \item Claude de Loupy, Syllabs, France
-      \item Maarten de Rijke, University of Amsterdam, The Netherlands
-      \item Koenraad De Smedt, University of Bergen, Norway
-      \item István Dienes, Hungary
-      \item Alice Dijkstra, Nederlandse Organisatie voor Wetenschappelijk Onderzoek, The Netherlands
-      \item Marin Dimitrov, Ontotext, Bulgaria
+      \item Claude de Loupy, Syllabs, FR
+      \item Maarten de Rijke, U.~of Amsterdam, NL
+      \item Koenraad De Smedt, U.~of Bergen, NO
+      \item István Dienes, HU
+      \item Alice Dijkstra, Nederlandse Organisatie voor Wetenschappelijk Onderzoek, NL
+      \item Marin Dimitrov, Ontotext, BG
       \item Petar Djekic, SoundCloud, UK
       \item Bill Dolan, Microsoft, USA
-      \item Rickard Domeij, Language Council of Sweden, Sweden
-      \item Christoph Dosch, Institut für Rundfunktechnik, Germany
-      \item Christian Dugast, Tech2Biz, Germany
-      \item Ray Fabri, University of Malta, Malta
-      \item Marcello Federico, FBK, Italy
-      \item David Filip, Moravia, Czech Republic
-      \item Dan Flickinger, Stanford University, USA
-      \item Gil Francopoulo, CNRS/LIMSI, IMMI, Tagmatica, France
-      \item Piotr W.~Fuglewicz, TiP, Poland
-      \item Robert Gaizauskas, University of Sheffield, UK
-      \item Martine Garnier-Rizet, CNRS/LIMSI and IMMI, France
+      \item Rickard Domeij, Language Council of Sweden, SE
+      \item Christoph Dosch, Institut für Rundfunktechnik, GER
+      \item Christian Dugast, Tech2Biz, GER
+      \item Ray Fabri, U.~of Malta, MT
+      \item Marcello Federico, FBK, IT
+      \item David Filip, Moravia, CZ
+      \item Dan Flickinger, Stanford Univ., USA
+      \item Gil Francopoulo, CNRS/LIMSI, IMMI, Tagmatica, FR
+      \item Piotr W.~Fuglewicz, TiP, PL
+      \item Robert Gaizauskas, U.~of Sheffield, UK
+      \item Martine Garnier-Rizet, CNRS/LIMSI and IMMI, FR
       \item Simon Garrett, British Telecom, UK
-      \item Stefan Geissler, Temis, Germany
-      \item Edouard Geoffrois, Ministry of Defense and French National Research Agency, France
+      \item Stefan Geissler, Temis, GER
+      \item Edouard Geoffrois, Ministry of Defense and French Nat.~Research Agency, FR
       \item Yota Georgakopolou, European Captioning Institute, UK
-      \item Jost Gippert, University of Frankfurt, Germany
-      \item Mircea Giurgiu, University of Cluj-Napoca, Romania
-      \item Serge Gladkoff, Logrus International and GALA Standards Director, USA/Russia
-      \item Daniel Grasmick, Lucy Software, Germany
-      \item Gregory Grefenstette, Exalead, France
-      \item Marko Grobelnik, Institut ``Jožef Stefan'', Slovenia
-      \item Joakim Gustafson, KTH Royal Institute of Technology, Sweden
-      \item Thomas Hagen, Dictatr AS, Norway
-      \item Jan Hajic, Charles University Prague, Czech Republic
-      \item Paul Heisterkamp, Daimler AG, Germany
-      \item Mattias Heldner, KTH Royal Institute of Technology, Sweden
-      \item Sebastian Hellmann, University of Leipzig, Germany
-      \item Manuel Herranz, PangeaMT, Spain
-      \item Theo Hoffenberg, Softissimo, France
-      \item Thomas Hofmann, Google, Switzerland/USA
-      \item Timo Honkela, Aalto University, Finland
-      \item Roman Jansen-Winkeln, Belingoo Media Group, Luxembourg
-      \item Krzysztof Jassem, Poleng, Poland
+      \item Jost Gippert, U.~of Frankfurt, GER
+      \item Mircea Giurgiu, U.~of Cluj-Napoca, RO
+      \item Serge Gladkoff, Logrus International and GALA Standards Director, USA/RUS
+      \item Daniel Grasmick, Lucy Software, GER
+      \item Gregory Grefenstette, Exalead, FR
+      \item Marko Grobelnik, Institut ``Jožef Stefan'', SI
+      \item Joakim Gustafson, KTH Royal Institute of Technology, SE
+      \item Thomas Hagen, Dictatr AS, NO
+      \item Jan Hajic, Charles U.~Prague, CZ
+      \item Paul Heisterkamp, Daimler AG, GER
+      \item Mattias Heldner, KTH Royal Institute of Technology, SE
+      \item Sebastian Hellmann, U.~of Leipzig, GER
+      \item Manuel Herranz, PangeaMT, ES
+      \item Theo Hoffenberg, Softissimo, FR
+      \item Thomas Hofmann, Google, CH/USA
+      \item Timo Honkela, Aalto University, FI
+      \item Roman Jansen-Winkeln, Belingoo Media Group, LUX
+      \item Krzysztof Jassem, Poleng, PL
       \item Keith Jeffery, Science and Technology Facilities Council, Rutherford Appleton Lab., UK
-      \item Richard Jelinek, PetaMem GmbH, Germany
-      \item Kristiina Jokinen, University of Helsinki, Finland
-      \item Rebecca Jonson, Artificial Solutions, Spain
-      \item John Judge, Dublin City University and CNGL, Ireland
-      \item Martin Kay, Stanford University, USA and Universität des Saarlandes, Germany
-      \item Melih Karakulukcu, Karakulukcu Consulting, Turkey
-      \item Jussi Karlgren, Gavagai, Finland
-      \item Marc Kemps-Snijders, Meertens Instituut, The Netherlands
-      \item Ilan Kernerman, K Dictionaries, Israel
-      \item Christopher Kermorvant, A2iA, France
-      \item Simon King, University of Edinburgh, UK
-      \item Philipp Koehn, University of Edinburgh, UK
-      \item Maria Koutsombogera, ILSP, Greece
-      \item Steven Krauwer, University of Utrecht, The Netherlands
-      \item Verena Krawarik, APA, Austria
-      \item Stefan Kreckwitz, Across, Germany
-      \item Simon Krek, Institut ``Jožef Stefan'', Slovenia
-      \item Brigitte Krenn, OFAI, Austria
+      \item Richard Jelinek, PetaMem GmbH, GER
+      \item Kristiina Jokinen, U.~of Helsinki, FI
+      \item Rebecca Jonson, Artificial Solutions, ES
+      \item John Judge, Dublin City U./CNGL, IE
+      \item Martin Kay, Stanford University, USA and Universität des Saarlandes, GER
+      \item Melih Karakulukcu, Karakulukcu Consulting, TR
+      \item Jussi Karlgren, Gavagai, FI
+      \item Marc Kemps-Snijders, Meertens Instituut, NL
+      \item Ilan Kernerman, K Dictionaries, IL
+      \item Christopher Kermorvant, A2iA, FR
+      \item Simon King, U.~of Edinburgh, UK
+      \item Philipp Koehn, U.~of Edinburgh, UK
+      \item Maria Koutsombogera, ILSP, GR
+      \item Steven Krauwer, U.~of Utrecht, NL
+      \item Verena Krawarik, APA, AT
+      \item Stefan Kreckwitz, Across, GER
+      \item Simon Krek, Institut ``Jožef Stefan'', SI
+      \item Brigitte Krenn, OFAI, AT
       \item Sandra Kübler, Indiana University, USA
-      \item Michal Küfhaber, Skrivanek, Czech Republic
-      \item Serg Kulikov, Russian Academy of Sciences, Russia
-      \item Jimmy Kunzmann, EML, Germany
-      \item Gunn Inger Lyse Samdal, University of Bergen, Sweden
-      \item Bernardo Magnini, FBK, Italy
-      \item Gudrun Magnusdottir, ESTeam, Sweden
-      \item Elisabeth Maier, CLS Communication, Switzerland
-      \item Joseph Mariani, CNRS/LIMSI and IMMI, France
-      \item Penny Marinou, Litterae Trans, Greece
-      \item Margaretha Mazura, EMF, UK/Belgium
-      \item John McNaught, University of Manchester, UK
-      \item Erhan Mengusoglu, Mantis, Turkey
-      \item Wolfgang Menzel, University of Hamburg, Germany
-      \item Roger Moore, University of Sheffield, UK
-      \item Sukumar Munshi, Across, Germany
-      \item Bart Noe, Jabbla, Belgium
-      \item Torbjørn Nordgård, LINGIT AS, Norway
-      \item Jan Odijk, University of Utrecht, The Netherlands
-      \item Stephan Oepen, University of Oslo, Norway
-      \item Karel Oliva, Czech Academy of Sciences, Czech Republic
-      \item Mehmed Özkan, Bogazici University, Turkey
+      \item Michal Küfhaber, Skrivanek, CZ
+      \item Serg Kulikov, Russian Acad.~of Sciences, RUS
+      \item Jimmy Kunzmann, EML, GER
+      \item Gunn Inger Lyse Samdal, U.~of Bergen, SE
+      \item Bernardo Magnini, FBK, IT
+      \item Gudrun Magnusdottir, ESTeam, SE
+      \item Elisabeth Maier, CLS Communication, CH
+      \item Joseph Mariani, CNRS/LIMSI and IMMI, FR
+      \item Penny Marinou, Litterae Trans, GR
+      \item Margaretha Mazura, EMF, UK/BE
+      \item John McNaught, U.~of Manchester, UK
+      \item Erhan Mengusoglu, Mantis, TR
+      \item Wolfgang Menzel, U.~of Hamburg, GER
+      \item Roger Moore, U.~of Sheffield, UK
+      \item Sukumar Munshi, Across, GER
+      \item Bart Noe, Jabbla, BE
+      \item Torbjørn Nordgård, LINGIT AS, NO
+      \item Jan Odijk, U.~of Utrecht, NL
+      \item Stephan Oepen, U.~of Oslo, NO
+      \item Karel Oliva, Czech Acad.~of Sciences, CZ
+      \item Mehmed Özkan, Bogazici University, TR
       \item Maja Pantic, Imperial College London, UK
-      \item Niko Papula, Mutilizer, Finland
-      \item Alexandre Passant, DERI, Ireland
-      \item Pavel Pecina, Dublin City University and CNGL, Ireland
-      \item Manfred Pinkal, Universität des Saarlandes, Germany
-      \item Stelios Piperidis, ILSP, Greece
-      \item László Podhorányi, Vodafone, Hungary
-      \item Jörg Porsiel, VW, Germany
-      \item Gabor Proszeky, Morphologic, Hungary
-      \item Artur Raczynski, European Patent Office, Germany
-      \item Jens Erik Rasmussen, Mikroverkstedet, Norway
-      \item Georg Rehm, DFKI, Germany
-      \item Steve Renals, University of Edinburgh, UK
-      \item Peter Revsbech, Ordbogen, Denmark
-      \item Giuseppe Riccardi, University of Trento, Italy
-      \item Daniel Ridings, Mikroverkstedet AS, LINGIT AS, Norway
-      \item Eirikur Rögnvaldsson, University of Iceland, Iceland
-      \item Philippe Rohou, ERCIM, France
-      \item Günther Roscher, ICS Dr.~G.~Roscher GmbH, Germany
-      \item Johann Roturier, Symantec, Ireland
-      \item Dimitris Sabatakakis, Systran, France
-      \item David Sadek, Institute Telecom, France
-      \item Sergi Sagàs, MediaPro, Spain
-      \item Felix Sasaki, W3C and DFKI, Germany
-      \item Jana Šatková, ACP Traductera, Czech Republic
-      \item Maneerat Sawasdiwat, Rajamangala University of Technology, Thailand
-      \item David Schlangen, University of Bielefeld, Germany
-      \item Jörg Schütz, Bioloom, Germany
-      \item Bjørn Seljebotn, Nynodata, Norway
-      \item Max Silberztein, Université de Franche-Comté, France
-      \item Mirko Silvestrini, Rapidrad, Italy
-      \item Ruud Smeulders, Rabo Bank, The Netherlands
-      \item Svetlana Sokolova, ProMT, Russia
-      \item Ralf Steinberger, Joint Research Centre, EC, Italy
-      \item Juan Manuel Soto, Fonetic, Spain
-      \item Lucia Specia, University of Sheffield, UK
+      \item Niko Papula, Mutilizer, FI
+      \item Alexandre Passant, DERI, IE
+      \item Pavel Pecina, Dublin City U./CNGL, IE
+      \item Manfred Pinkal, Universität des Saarlandes, GER
+      \item Stelios Piperidis, ILSP, GR
+      \item László Podhorányi, Vodafone, HU
+      \item Jörg Porsiel, VW, GER
+      \item Gabor Proszeky, Morphologic, HU
+      \item Artur Raczynski, European Patent Office, GER
+      \item Jens Erik Rasmussen, Mikroverkstedet, NO
+      \item Georg Rehm, DFKI, GER
+      \item Steve Renals, U.~of Edinburgh, UK
+      \item Peter Revsbech, Ordbogen, DK
+      \item Giuseppe Riccardi, U.~of Trento, IT
+      \item Daniel Ridings, Mikroverkstedet AS, LINGIT AS, NO
+      \item Eirikur Rögnvaldsson, U.~of Iceland, IS
+      \item Philippe Rohou, ERCIM, FR
+      \item Günther Roscher, ICS Dr.~G.~Roscher GmbH, GER
+      \item Johann Roturier, Symantec, IE
+      \item Dimitris Sabatakakis, Systran, FR
+      \item David Sadek, Institute Telecom, FR
+      \item Sergi Sagàs, MediaPro, ES
+      \item Felix Sasaki, W3C and DFKI, GER
+      \item Jana Šatková, ACP Traductera, CZ
+      \item Maneerat Sawasdiwat, Rajamangala U.~of Technology, TH
+      \item David Schlangen, U.~of Bielefeld, GER
+      \item Jörg Schütz, Bioloom, GER
+      \item Bjørn Seljebotn, Nynodata, NO
+      \item Max Silberztein, Université de Franche-Comté, FR
+      \item Mirko Silvestrini, Rapidrad, IT
+      \item Ruud Smeulders, Rabo Bank, NL
+      \item Svetlana Sokolova, ProMT, RUS
+      \item Ralf Steinberger, JRC, EC, IT
+      \item Juan Manuel Soto, Fonetic, ES
+      \item Lucia Specia, U.~of Sheffield, UK
       \item C.\,M.~Sperberg-McQueen, BlackMesa Technologies, USA
-      \item Peter Spyns, Flemish Government, Belgium
-      \item Maxim Stamenov, Bulgarian Academy of Sciences, Bulgaria
-      \item Kerstin Steffen, Maravision, Spain
-      \item Volker Steinbiss, RWTH Aachen and Accipio, Germany
-      \item Rudi Studer, KIT, Germany
-      \item Katerina Stuparicova, Charles University Prague, Czech Republic
-      \item Daniel Tapias, Sigma Tech, Spain
-      \item Alessandro Tescari, Pervoice, Italy
-      \item Lori Thicke, Translators without Borders and Lexcelera, France
-      \item Gregor Thurmair, Linguatec, Germany
-      \item Rudy Tirry, Lionbridge, Belgium
-      \item Attila Törcsvári, Arcanum Development, Hungary
-      \item Diana Trandabat, University of A.\,I.~Cuza, Romania
-      \item Isabel Trancoso, INESC-ID, Portugal
-      \item Dan Tufis, Romanian Academy, Romania
-      \item Hans Uszkoreit, DFKI and Universität des Saarlandes, Germany
-      \item Erik van der Goot, Joint Research Center, EC, Italy
-      \item Peggy van der Kreeft, Deutsche Welle, Germany
-      \item Jaap van der Meer, TAUS, The Netherlands
-      \item René van Erk, Wolters Kluwer, The Netherlands
-      \item Josef van Genabith, Dublin City University and CNGL, Ireland
-      \item Arjan van Hessen, Twente University and Telecats, The Netherlands
-      \item David van Leeuwen, TNO and Radboud University, The Netherlands
-      \item Andrejs Vasiljevs, Tilde, Latvia
-      \item Michel Vérel, VecSys, France
-      \item Kjersti Drøsdal Vikøren, Standard Norge AS, Norway
-      \item Bo Vincents, Ankiro, Denmark
-      \item Claire Waast, EDF, France
-      \item Philippe Wacker, EMF, UK/Belgium
-      \item Wolfgang Wahlster, DFKI, Germany
-      \item Alex Waibel, KIT, Germany and CMU, Jibbigo, USA
-      \item Jürgen Wedekind, University of Copenhagen, Denmark
-      \item André Wlodarczyk, University of Charles De Gaulle, France
-      \item Feiyu Xu, DFKI, Germany
-      \item Annie Zaenen, University of Stanford, USA
-      \item Jakub Zavrel, Textkernel, The Netherlands
-      \item Patricia Zimmermann, SpeechConcept GmbH, Germany
-      \item Elie Znaty, VecSys, France
-      \item Chenqing Zong, Chinese Academy of Sciences, China
+      \item Peter Spyns, Flemish Government, BE
+      \item Maxim Stamenov, Bulgarian Acad.~of Sciences, BG
+      \item Kerstin Steffen, Maravision, ES
+      \item Volker Steinbiss, RWTH Aachen and Accipio, GER
+      \item Rudi Studer, KIT, GER
+      \item Katerina Stuparicova, Charles U.~Prague, CZ
+      \item Daniel Tapias, Sigma Tech, ES
+      \item Alessandro Tescari, Pervoice, IT
+      \item Lori Thicke, Translators without Borders and Lexcelera, FR
+      \item Gregor Thurmair, Linguatec, GER
+      \item Rudy Tirry, Lionbridge, BE
+      \item Attila Törcsvári, Arcanum Development, HU
+      \item Diana Trandabat, U.~of A.\,I.~Cuza, RO
+      \item Isabel Trancoso, INESC-ID, PT
+      \item Dan Tufis, Romanian Acad., RO
+      \item Hans Uszkoreit, DFKI and Universität des Saarlandes, GER
+      \item Erik van der Goot, Joint Research Center, EC, IT
+      \item Peggy van der Kreeft, Deutsche Welle, GER
+      \item Jaap van der Meer, TAUS, NL
+      \item René van Erk, Wolters Kluwer, NL
+      \item Josef van Genabith, Dublin City U./CNGL, IE
+      \item Arjan van Hessen, Twente U.~and Telecats, NL
+      \item David van Leeuwen, TNO and Radboud University, NL
+      \item Andrejs Vasiljevs, Tilde, LV
+      \item Michel Vérel, VecSys, FR
+      \item Kjersti Drøsdal Vikøren, Standard Norge AS, NO
+      \item Bo Vincents, Ankiro, DK
+      \item Claire Waast, EDF, FR
+      \item Philippe Wacker, EMF, UK/BE
+      \item Wolfgang Wahlster, DFKI, GER
+      \item Alex Waibel, KIT, GER and CMU, Jibbigo, USA
+      \item Jürgen Wedekind, U.~of Copenhagen, DK
+      \item André Wlodarczyk, U.~of Charles De Gaulle, FR
+      \item Feiyu Xu, DFKI, GER
+      \item Annie Zaenen, U.~of Stanford, USA
+      \item Jakub Zavrel, Textkernel, NL
+      \item Patricia Zimmermann, SpeechConcept GmbH, GER
+      \item Elie Znaty, VecSys, FR
+      \item Chenqing Zong, Chinese Acad.~of Sciences, CN
     }
   \end{enumerate}
-\end{small}
+\end{footnotesize}
 \end{multicols}
   
+\clearpage
+
+% ===========================================================================
+
+\ssection[Milestones and History of the Strategic Research Agenda]{Milestones and History of the\newline Strategic Research Agenda}
+\label{vision-evolution}
+
+\begin{small}
+The META-VISION process within META-NET started in early 2010, its main aim was to produce this Strategic Research Agenda and the accompanying Roadmap document. Hundreds of representatives from academia, industry, official institutions, policy makers, politicians and journalists have contributed to this process. In this section we give an overview of the meetings at which the SRA or important components on the way towards the SRA have been presented and discussed (key meetings of the META-VISION process marked in bold typeface). 
+Important milestones within the long and complex process towards this Strategic Research Agenda include five documents: the three Vision Reports prepared by the three domain-specific Vision Groups (see below), a general Vision Paper, ``The Future European Multilingual Information Society: Current State of the Discussion'' \cite{Meta1}, and the Priority Themes Paper in which the three technology visions are specified in a more concrete way, ``LT 2020 -- Vision and Priority Themes for Language Technology Research in Europe until the Year 2020. Towards the META-NET Strategic Research Agenda'' \cite{LT2020}. All reports, papers and discussions that took place in the process have been reflected in the Strategic Research Agenda. The documents are available online at \url{http://www.meta-net.eu/vision}.
+\end{small}
+
+\begin{footnotesize}
+\begin{enumerate}
+\item FLaReNet Forum, Barcelona, Spain, Feb.~11/12, 2010
+\item Language Technology Days 2010, Luxembourg, March 22/23, 2010
+\item EAMT 2010, Saint-Raphael, France, May 27/28, 2010
+\item theMETAnk, Berlin, Germany, June 4/5, 2010
+\item Translingual Europe 2010, Berlin, Germany, June 7, 2010
+\item Localization World, Berlin, Germany, June 8/9, 2010
+\item Multisaund Seminar, Istanbul, Turkey, June 16-18, 2010
+\item \textbf{Vision Group ``Text Translation and Localisation''} (1st meeting), Berlin, Germany, July 23, 2010
+\item \textbf{Vision Group ``Media and Information Services''} (1st meeting), Paris, France, Sep.~10, 2010
+\item \textbf{Vision Group ``Interactive Systems''} (1st meeting), Paris, France, Sep.~10, 2010
+\item ICT 2010, Brussels, Belgium, September 27-29, 2010
+\item \textbf{Vision Group ``Text Translation and Localisation''} (2nd meeting), Brussels, Belgium, Sep.~29, 2010
+\item \textbf{Vision Group ``Interactive Systems''} (2nd meeting), Prague, Czech Republic, Oct.~5, 2010
+\item Languages and the Media 2010, Berlin, Germany, October 7, 2010
+\item HLT: The Baltic Perspective, Riga, Latvia, October 7/8, 2010
+\item LISA Forum Europe, Budapest, Hungary, October 13, 2010
+\item \textbf{Vision Group ``Media and Information Services''} (2nd meeting), Barcelona, Spain, Oct.~15, 2010
+\item EFNIL 2010, Thessaloniki, Greece, Nov.~3, 2010
+\item Interact Presidential Summit, Moffett Field, USA, Nov.~8-9, 2010
+\item \textbf{META Technology Council} (1st meeting), Brussels, Belgium, Nov.~16, 2010
+\item Language question in research: English vs.~national languages?, Finnish Parliament, Helsinki, Nov.~17, 2010
+\item \textbf{META-FORUM 2010: ``Challenges for Multilingual Europe''}, Brussels, Belgium, Nov.~17/18, 2010
+\item Oriental-Cocosda 2010, Kathmandu, Nepal, Nov.~24-25, 2010
+\item The International Workshop on Spoken Language Translation (IWSLT), Paris, France, Dec.~2/3, 2010
+\item Meeting of the LT Berlin working group, Berlin, Germany, Dec.~9, 2010
+\item Language Technology for Multilingual Applications, European Parliament, Luxembourg, Jan.~27, 2011
+\item Opening of German/Austrian W3C Office at DFKI Berlin, Berlin, Germany, Feb.~10, 2011
+\item Japanese Workshop for Machine Translation, Tokyo, Japan, Feb.~23, 2011
+\item Meeting of Representatives of European Language Councils, Copenhagen, Denmark, March 08, 2011
+\item TRALOGY, Paris, France, March 3/4, 2011
+\item \textbf{Vision Group ``Interactive Systems''} (3rd meeting), Rotterdam, The Netherlands, March 28, 2011
+\item \textbf{Vision Group ``Media and Information Services''} (3rd meeting), Vienna, Austria, April 1, 2011
+\item Meeting of the LT Berlin working group, Berlin, Germany, April 4, 2011
+\item W3C Workshop ``Content on the multilingual web'', Pisa, Italy, April 5, 2011
+\item \textbf{Vision Group ``Translation and Localisation''} (3rd meeting), Prague, Czech Republic, April 7/8, 2011
+\item Attensity Forum 2011, Berlin, Germany, May 6, 2011
+\item \textbf{META Technology Council} (2nd meeting), Venice, Italy, May 25, 2011
+\item FLaReNet Forum, Venice, May 26-27, 2011
+\item Multisaund Seminar, Bursa, Turkey, June 13-14, 2011
+\item META-NET Workshop at ICANN 2011: Context in Machine Translation,
+Espoo, Finland, June 14, 2011
+\item Speech Processing Conference, Tel Aviv, Israel, June 21-22, 2011
+\item \textbf{META-FORUM 2011: ``Solutions for Multilingual Europe''}, Budapest, Hungary, June 27/28, 2011
+\item Media for All, London, June 29-July 1, 2011
+\item EUROLAN 2011 Summer School, Cluj-Napoca, Romania, Aug.~28-Sep.~4, 2011
+\item Interspeech 2011, Firenze, Italy, Aug.~28-31, 2011
+\item RANLP 2011, Hissar, Bulgaria, Sep.~12-14, 2011
+\item Multilingual Web Workshop, Limerick, Ireland, Sep.~21/22, 2011
+\item ML4HMT Workshop at MT Summit, Xiamen, China, Sep.~19-23, 2011
+\item Workshop Language Technology for a Multilingual Europe at GSCL 2011, Hamburg, Germany, Sep.~27, 2011
+\item GSCL 2011: ``Multilingual Resources and Multilingual Applications'', Hamburg, Germany, Sep.~28-30, 2011
+\item \textbf{META Technology Council} (3rd meeting), Berlin, Germany, Sep.~30, 2011
+\item Workshop on IPR and Metadata by META-NORD, Helsinki, Finland, Sep.~30, 2011
+\item META-NET Network Meeting and General Assembly, Berlin, Germany, Oct.~21/22, 2011
+\item NPLD Assembly, Eskilstuna, Sweden, Oct.~25/26, 2011
+\item EFNIL 2011, London, UK, Oct.~26, 2011
+\item Oriental-Cocosda 2011, Hsinchu, Taiwan, Oct.~26-28, 2011
+\item SIMC 2011 International Symposium on Multilingualism in the Cyberspace, Brasilia, Brasil, Nov.~7-9, 2011
+\item IJCNLP 2011, Chiang Mai, Thailand, Nov.~9-13, 2011
+\item ML4HMT-11 Workshop, Barcelona, Spain, Nov.~19, 2011
+\item LTC 2011, Poznan, Poland, Nov.~25-27, 2011
+\item GALA Conference, Monaco, March 26-29, 2012
+\item EACL 2012, Avignon, France, April 23-27, 2012
+\item CESAR Roadshow Event, Sofia, Bulgaria, May 2, 2012
+\item LREC 2012, Istanbul, Turkey, May 21-27, 2012
+\item CESAR Roadshow Event, Bratislava, Slovakia, June 7/8, 2012
+\item Multilingual Web Workshop, Dublin, Ireland, June 11, 2012
+\item \textbf{META Technology Council} (4th meeting), Brussels, Belgium, June 19, 2012
+\item \textbf{META-FORUM 2012: ``A Strategy for Multilingual Europe''}, Brussels, Belgium, June 20/21, 2012
+\item CHAT 2012 Workshop, Madrid, Spain, June 22, 2012
+\item Language, Technologies and the Future of Europe, Riga, Latvia, September 21, 2012
+\item Linguistic Technologies in the Research in Romania and in the Diaspora, Bucharest, Romania, September 26/27, 2012
+\item CESAR Roadshow Event, Warsaw, Poland, September 27/28, 2012
+\item Workshop on LT and Innovation, Oslo, Norway, October 15, 2012
+\item EFNIL 2012, Budapest, Hungary, October 25/26, 2012
+\item CESAR Roadshow Event, Belgrade, Serbia, October 29, 2012
+\item European Languages in the Age of Technology -- quo vadis?, Vilnius, Lithuania, November 14, 2012
+\item Workshop The Portuguese Language in the Digital Age, Lisbon, Portugal, November 16, 2012
+\item SIMC III, Conference of the World Network for Linguistic Diversity, Paris, France, November 21-23, 2012
+\item Workshop A Roadmap for the Digital Survival of Maltese, Malta, November 24, 2012
+\item Translating and the Computer Conference, London, UK, November 29/30, 2012
+\end{enumerate}
+\end{footnotesize}
+
+\begin{figure*}[htb]
+  %\colorrule{grey3}{\textwidth}{1.5pt}
+  \center
+  \includegraphics[width=0.77\textwidth]{../_media/Timeline}
+  \caption{The three phases of the META-VISION process}
+  \label{fig:sra-timeline}
+  %\colorrule{grey3}{\textwidth}{1.5pt}
+\end{figure*}
+ 
+\begin{figure*}[htb]
+  %\colorrule{grey3}{\textwidth}{1.5pt}
+  \center
+  \includegraphics[width=0.77\textwidth]{../_media/Towards-SRA}
+  \caption{Steps towards the Strategic Research Agenda for Multilingual Europe 2020}
+  \label{fig:towards-sra}
+  %\colorrule{grey3}{\textwidth}{1.5pt}
+\end{figure*}
+
 \clearpage
 
 % --------------------------------------------------------------------------
@@ -2312,150 +2281,6 @@ UK & School of Computer Science, University of Manchester: Sophia Ananiadou \\ \
 % FIXME: Include a very tightly typeset list of the 630+ META members
 
 %\clearpage
-
-% ===========================================================================
-
-\ssection[Milestones and History of the Strategic Research Agenda]{Milestones and History of the\newline Strategic Research Agenda}
-\label{vision-evolution}
-
-The META-VISION process within META-NET started in early 2010, its main aim was to produce this Strategic Research Agenda and the accompanying Roadmap document. Hundreds of representatives from academia, industry, official institutions, policy makers, politicians and journalists have contributed to this process. In this section we give an overview of the meetings at which the SRA or important components on the way towards the SRA have been presented and discussed (key meetings of the META-VISION process marked in bold typeface). 
-
-Important milestones within the long and complex process towards this Strategic Research Agenda include five documents: the three Vision Reports prepared by the three domain-specific Vision Groups (see below), a general Vision Paper, ``The Future European Multilingual Information Society: Current State of the Discussion'' \cite{Meta1}, and the Priority Themes Paper in which the three technology visions are specified in a more concrete way, ``LT 2020 -- Vision and Priority Themes for Language Technology Research in Europe until the Year 2020. Towards the META-NET Strategic Research Agenda'' \cite{LT2020}. All reports, papers and discussions that took place in the process have been reflected in the Strategic Research Agenda. The documents are available online at \url{http://www.meta-net.eu/vision}.
-
-\begin{small}
-\begin{enumerate}
-\item FLaReNet Forum, Barcelona, Spain, Feb.~11/12, 2010
-\item Language Technology Days 2010, Luxembourg, March 22/23, 2010
-\item EAMT 2010, Saint-Raphael, France, May 27/28, 2010
-\item theMETAnk, Berlin, Germany, June 4/5, 2010
-\item Translingual Europe 2010, Berlin, Germany, June 7, 2010
-\item Localization World, Berlin, Germany, June 8/9, 2010
-\item Multisaund Seminar, Istanbul, Turkey, June 16-18, 2010
-\item \textbf{Vision Group ``Text Translation and Localisation''} (1st meeting), Berlin, Germany, July 23, 2010
-\item \textbf{Vision Group ``Media and Information Services''} (1st meeting), Paris, France, Sep.~10, 2010
-\item \textbf{Vision Group ``Interactive Systems''} (1st meeting), Paris, France, Sep.~10, 2010
-\item ICT 2010, Brussels, Belgium, September 27-29, 2010
-\item \textbf{Vision Group ``Text Translation and Localisation''} (2nd meeting), Brussels, Belgium, Sep.~29, 2010
-\item \textbf{Vision Group ``Interactive Systems''} (2nd meeting), Prague, Czech Republic, Oct.~5, 2010
-\item Languages and the Media 2010, Berlin, Germany, October 7, 2010
-\item HLT: The Baltic Perspective, Riga, Latvia, October 7/8, 2010
-\item LISA Forum Europe, Budapest, Hungary, October 13, 2010
-\item \textbf{Vision Group ``Media and Information Services''} (2nd meeting), Barcelona, Spain, Oct.~15, 2010
-\item EFNIL 2010, Thessaloniki, Greece, Nov.~3, 2010
-\item Interact Presidential Summit, Moffett Field, USA, Nov.~8-9, 2010
-\item \textbf{META Technology Council} (1st meeting), Brussels, Belgium, Nov.~16, 2010
-\item Language question in research: English vs.~national languages?, Finnish Parliament, Helsinki, Nov.~17, 2010
-\item \textbf{META-FORUM 2010: ``Challenges for Multilingual Europe''}, Brussels, Belgium, Nov.~17/18, 2010
-\item Oriental-Cocosda 2010, Kathmandu, Nepal, Nov.~24-25, 2010
-\item The International Workshop on Spoken Language Translation (IWSLT), Paris, France, Dec.~2/3, 2010
-\item Meeting of the LT Berlin working group, Berlin, Germany, Dec.~9, 2010
-\item Language Technology for Multilingual Applications, European Parliament, Luxembourg, Jan.~27, 2011
-\item Opening of German/Austrian W3C Office at DFKI Berlin, Berlin, Germany, Feb.~10, 2011
-\item Japanese Workshop for Machine Translation, Tokyo, Japan, Feb.~23, 2011
-\item Meeting of Representatives of European Language Councils, Copenhagen, Denmark, March 08, 2011
-\item TRALOGY, Paris, France, March 3/4, 2011
-\item \textbf{Vision Group ``Interactive Systems''} (3rd meeting), Rotterdam, The Netherlands, March 28, 2011
-\item \textbf{Vision Group ``Media and Information Services''} (3rd meeting), Vienna, Austria, April 1, 2011
-\item Meeting of the LT Berlin working group, Berlin, Germany, April 4, 2011
-\item W3C Workshop ``Content on the multilingual web'', Pisa, Italy, April 5, 2011
-\item \textbf{Vision Group ``Translation and Localisation''} (3rd meeting), Prague, Czech Republic, April 7/8, 2011
-\item Attensity Forum 2011, Berlin, Germany, May 6, 2011
-\item \textbf{META Technology Council} (2nd meeting), Venice, Italy, May 25, 2011
-\item FLaReNet Forum, Venice, May 26-27, 2011
-\item Multisaund Seminar, Bursa, Turkey, June 13-14, 2011
-\item META-NET Workshop at ICANN 2011: Context in Machine Translation,
-Espoo, Finland, June 14, 2011
-\item Speech Processing Conference, Tel Aviv, Israel, June 21-22, 2011
-\item \textbf{META-FORUM 2011: ``Solutions for Multilingual Europe''}, Budapest, Hungary, June 27/28, 2011
-\item Media for All, London, June 29-July 1, 2011
-\item EUROLAN 2011 Summer School, Cluj-Napoca, Romania, Aug.~28-Sep.~4, 2011
-\item Interspeech 2011, Firenze, Italy, Aug.~28-31, 2011
-\item RANLP 2011, Hissar, Bulgaria, Sep.~12-14, 2011
-\item Multilingual Web Workshop, Limerick, Ireland, Sep.~21/22, 2011
-\item ML4HMT Workshop at MT Summit, Xiamen, China, Sep.~19-23, 2011
-\item Workshop Language Technology for a Multilingual Europe at GSCL 2011, Hamburg, Germany, Sep.~27, 2011
-\item GSCL 2011: ``Multilingual Resources and Multilingual Applications'', Hamburg, Germany, Sep.~28-30, 2011
-\item \textbf{META Technology Council} (3rd meeting), Berlin, Germany, Sep.~30, 2011
-\item Workshop on IPR and Metadata by META-NORD, Helsinki, Finland, Sep.~30, 2011
-\item META-NET Network Meeting and General Assembly, Berlin, Germany, Oct.~21/22, 2011
-\item NPLD Assembly, Eskilstuna, Sweden, Oct.~25/26, 2011
-\item EFNIL 2011, London, UK, Oct.~26, 2011
-\item Oriental-Cocosda 2011, Hsinchu, Taiwan, Oct.~26-28, 2011
-\item SIMC 2011 International Symposium on Multilingualism in the Cyberspace, Brasilia, Brasil, Nov.~7-9, 2011
-\item IJCNLP 2011, Chiang Mai, Thailand, Nov.~9-13, 2011
-\item ML4HMT-11 Workshop, Barcelona, Spain, Nov.~19, 2011
-\item LTC 2011, Poznan, Poland, Nov.~25-27, 2011
-\item GALA Conference, Monaco, March 26-29, 2012
-\item EACL 2012, Avignon, France, April 23-27, 2012
-\item CESAR Roadshow Event, Sofia, Bulgaria, May 2, 2012
-\item LREC 2012, Istanbul, Turkey, May 21-27, 2012
-\item CESAR Roadshow Event, Bratislava, Slovakia, June 7/8, 2012
-\item Multilingual Web Workshop, Dublin, Ireland, June 11, 2012
-\item \textbf{META Technology Council} (4th meeting), Brussels, Belgium, June 19, 2012
-\item \textbf{META-FORUM 2012: ``A Strategy for Multilingual Europe''}, Brussels, Belgium, June 20/21, 2012
-\item CHAT 2012 Workshop, Madrid, Spain, June 22, 2012
-\item Language, Technologies and the Future of Europe, Riga, Latvia, September 21, 2012
-\item Linguistic Technologies in the Research in Romania and in the Diaspora, Bucharest, Romania, September 26/27, 2012
-\item CESAR Roadshow Event, Warsaw, Poland, September 27/28, 2012
-\item Workshop on LT and Innovation, Oslo, Norway, October 15, 2012
-\item EFNIL 2012, Budapest, Hungary, October 25/26, 2012
-\item CESAR Roadshow Event, Belgrade, Serbia, October 29, 2012
-\item European Languages in the Age of Technology -- quo vadis?, Vilnius, Lithuania, November 14, 2012
-\item Workshop The Portuguese Language in the Digital Age, Lisbon, Portugal, November 16, 2012
-\item SIMC III, Conference of the World Network for Linguistic Diversity, Paris, France, November 21-23, 2012
-\item Workshop A Roadmap for the Digital Survival of Maltese, Malta, November 24, 2012
-\item Translating and the Computer Conference, London, UK, November 29/30, 2012
-\end{enumerate}
-\end{small}
-
-\clearpage
-
-\begin{figure*}[htb]
-  \colorrule{grey3}{\textwidth}{1.5pt}
-  \center
-  \includegraphics[width=0.65\textwidth]{../_media/Timeline}
-  \caption{The three phases of the META-VISION process}
-  \label{fig:sra-timeline}
-  \colorrule{grey3}{\textwidth}{1.5pt}
-\end{figure*}
- 
-\begin{figure*}[htb]
-  \colorrule{grey3}{\textwidth}{1.5pt}
-  \center
-  \includegraphics[width=0.65\textwidth]{../_media/Towards-SRA}
-  \caption{Steps towards the Strategic Research Agenda for Multilingual Europe 2020}
-  \label{fig:towards-sra}
-  \colorrule{grey3}{\textwidth}{1.5pt}
-\end{figure*}
-
-\clearpage
-
-% ===========================================================================
-
-\ssection[Language White Paper Press Campaign: Overview and Impact]{Language White Paper Press Campaign: Overview and Impact}
-\label{lwp-campaign}
-
-% FIXME: Here, we could include graphics, Google Analytics data, more figures, examples, newspaper scans etc.
-
-\textbf{Background:} META-NET prepared a study on the level of support that language technology provides for 30 European languages. The process took more than two years and resulted in 30 volumes of the META-NET White Paper Series “Europe’s Languages in the Digital Age”. More than 200 experts from academia and industry contributed as authors to this immense undertaking. Printed versions of the White Papers are published at Springer. PDF versions are available free of charge on \url{http://www.meta-net.eu/whitepapers}.
-
-\smallskip
-\textbf{Timeline:} At the beginning of September 2012, a press release was drafted at the META-NET Coordinator site, DFKI Berlin. This press release was translated and localised into 30 languages and, on September 20, sent out to national and international journalists, politicians and other stakeholder groups. Our goal was to gain traction in the online and traditional press on the occasion of the European Day of Languages which is traditionally held at September 26. The headline of our press release was:
-
-\begin{center}
-At Least 21 European Languages in Danger of Digital Extinction\\
-Good News and Bad News on the European Day of Languages
-\end{center}
-
-\textbf{Response:} We were overwhelmed by the immediate, very big interest in the topic and our key findings. The first articles appeared online only hours after we sent out the first press releases. We also received multiple requests for radio and television interviews. Journalists called to collect additional statements and to enquire about specific details of our study. 
-
-\smallskip
-\textbf{Impact and Coverage:} We’re collecting and documenting all mentions in the traditional and online press and also radio and television reports on \url{http://www.meta-net.eu/whitepapers/press-coverage}. This collection process is ongoing. By now we estimate \textbf{ca.~300-350 mentions in the online press} in Europe and also multiple mentions in the international press (from Mexico to New Zealand). We also estimate that our press release generated more than 50 mentions in traditional newspapers. Representatives of META-NET took part in \textbf{about 25 radio interviews} (for example, in Germany, Greece, Iceland, Ireland, Latvia, Norway). We estimate that an \textbf{additional 25 radio and more than 15 television programmes} (including coverage in, for example, Iceland and Latvia) reported on our findings. 
-
-\smallskip
-\textbf{Examples:} A few significant newspapers and blogs that reported on us: Der Standard (Austria); Politiken, Berlingske Tidende (Denmark); Tiede (Finland); Heise Newsticker, Süddeutsche Zeitung (Germany); in.gr, Πρώτο Θέμα, Pro\-silip\-sis (Greece); Fréttablaðið, Morgunblaðið (Iceland); Wired (Italy); Computerworld (Norway); Delo, Dnevnik, De\-mo\-kra\-cija (Slovenia); El Mundo (Spain); Huffington Post (UK); Mashable, NBC News, Reddit (USA).
-
-\clearpage
 
 % ===========================================================================
 
