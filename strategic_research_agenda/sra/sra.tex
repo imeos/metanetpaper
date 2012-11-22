@@ -1307,11 +1307,7 @@ Dialogue systems evaluation still needs more research on the choice of adequate 
 \subsection{Core Language Resources and Technologies}
 \label{sec:sharing-resources-and-results}
 
-% FIXME:
-
-% This section is based on Stelios' input (sent on June 29, 2012)
-
-% Terminology as one key aspect of, especially, translation:
+% Serge: Terminology as one key aspect of, especially, translation:
 %
 % Terminology is key for industry-specific communication. Companies within the industry cannot communicate if they use different terminology. Information delivery in a foreign language is impossible without the right words that mean the right things.
 % Delivery of the information to all the citizens of Europe is impossible without pan-European terminology for key concepts, entities and actions that carry the meaning of this cross-country and cross-language communication.
@@ -1325,38 +1321,11 @@ Dialogue systems evaluation still needs more research on the choice of adequate 
 % 3.	Create pan-European centralized multilingual terminology portal for communities to work on important, socially significant terminology for multilingual Europe on centralized technology, data and service platform;
 % 4.	This portal will be building knowledge base that will later be used for pan-European MT effort.
 
-The three priority research themes share a large and heterogeneous group of core technologies for language analysis and production that provide development support through basic modules and datasets (see Figure~\ref{fig:priority-themes}, p.~\pageref{fig:priority-themes}). To this group belong tools and technologies such as, among others, tokenisers, part-of-speech taggers, syntactic parsers, tools for building language models, information retrieval tools, machine learning toolkits, speech recognition and speech synthesis engines, and integrated architectures such as GATE and UIMA. Many of these tools depend on specific datasets (i.\,e., language resources), for example, very large collections of linguistically annotated documents (monolingual or multilingual, aligned corpora), treebanks, grammars, lexicons, thesauri, ontologies and language models. Both the basic tools and especially language resources can be rather general or highly task- or domain-specific, tools can be language-independent, datasets are, by definition, language-specific. As complements to the core technologies and resources there are several types of resources, such as error-annotated corpora for machine translation or spoken dialogue corpora, that are specific to one or more of the three priority themes.
+The three priority research themes share a large and heterogeneous group of core technologies for language analysis and production that provide development support through basic modules and datasets (see Figure~\ref{fig:priority-themes}, p.~\pageref{fig:priority-themes}). To this group belong tools and technologies such as, among others, tokenisers, part-of-speech taggers, syntactic parsers, tools for building language models, information retrieval tools, machine learning toolkits, speech recognition and speech synthesis engines, and integrated architectures such as GATE and UIMA. Many of these tools depend on specific datasets (i.\,e., language resources), for example, very large collections of linguistically annotated documents (monolingual or multilingual, aligned corpora), treebanks, grammars, lexicons, thesauri, terminologies, dictionaries, ontologies and language models. Both tools and resources can be rather general or highly task- or domain-specific, tools can be language-independent, datasets are, by definition, language-specific. As complements to the core technologies and resources there are several types of resources, such as error-annotated corpora for machine translation or spoken dialogue corpora, that are specific to one or more of the three priority themes.
 
 A key component of this research agenda is to collect, develop and make available core technologies and resources through a shared infrastructure so that the research and technology development carried out in all themes can make use of them. Over time, this approach will improve the core technologies, as the specific research will have certain requirements on the software, extending their feature sets, performance, accuracy etc.~through dynamic push-pull effetcs. Conceptualising these technologies as a set of shared core technologies will also have positive effects on their sustainability and interoperability. Also, many European languages other than English are heavily under-resourced, i.\,e., there are no or almost no resources or basic technologies available \cite{LWP2012}.
 
 The European academic and industrial technology community is fully aware of the need for sharing resources such as language data (e.\,g., corpora), language descriptions (e.\,g., lexicons, thesauri, grammars), tools (e.\,g., taggers, stemmers, tokenisers) and core technology components (e.\,g., morphological, syntactic, semantic processing) as a basis for the successful development and implementation of the priority themes. Initiatives such as FLaReNet \cite{flarenetsra2011} and CLARIN have prepared the ground for a culture of sharing, META-NET's open resource exchange infrastructure, META-SHARE, is providing the technological platform as well as legal and organisational schemes. All language resources and basic technologies will be created under the core technologies umbrella. The effort will revolve around the following axes: Infrastructure; Coverage, Quality, Adequacy; Language Resources Acquisition; Openness; Interoperability.
-
-% FIXME:
-% 
-% http://flarenet.eu/sites/default/files/S2_Sellis_Slides.pdf
-%
-% Diese Präsentation ist exquisit. Vielleicht noch Punkte daraus hier einbauen?
-
-% FIXME: Focus upon Knowledge Representation, Semantic Web, Open Data, Linked Open Data, Inferences, Automatic Reasoning etc. a lot more! We have to work together closely with the Semantic Web and W3C people. Named entity recognition and mapping strings to concepts and also attributes to concept features is super important for all three priority research themes.
-
-% FIXME: We have to make sure, especially on the European level, that all (ALL!) languages have a certain set of base technologies and data sets available. Gil F. dazu: 
-%
-% In modern NLP, everything is based on corpora. When I say "everything" this includes algorithms, annotations, lexica, best practices and so on. But, do we have a corpus representing each European language? The answer is no.
-%
-% In our 23 official European languages, we have a national corpus for British, Polish, Czech, Slovenian and Bulgarian, that's it. The German reference corpus is badly unbalanced. In French, we have a lot of data but nothing balanced, labelled and maintained, ditto for Spanish.
-%
-% I think we should organize a corpus for each language with the following properties:
-% * balanced genres (e.g. social networks material, newspapers, institutional, technical),
-% * balanced modalities (e.g speech, written),
-% * open source and free for research and production, for private and public actors.
-%
-% PS: Take a look at the Open American National Corpus.
-%
-% FIXME: A comment from Maxim Stamenov.
-%
-% Development of unified e-dictionaries that are representative of the life and cultural background of each of EU languages – with massive textual and databases support on different lines. Such integrated systems, structured in comparable format and linked multilingually would be, as a matter of fact, a prerequisite for the development on a full-scale of the Translation Cloud. The mapping of such dictionaries (including  the implied diversity of the cultural background of each of them) with their textual support pairwise 23x22 for the 23 official languages of the EU already is a very hard challenge.
-%
-% [This is not only about technology development, we also need to do a lot of basic research, especially new approaches!] Semantically based knowledge search and representation as a problem requiring new approaches to semantics of natural language and pragmatics of human communication.
 
 \subsubsection{Infrastructure}
 \label{sec:infrastructure}
@@ -1380,10 +1349,12 @@ Lists of basic language technologies should be compiled that should be either ma
 
 A Language Resources Impact Factor (LRIF) should be defined in order to enforce the practice of citation of resources on the model of scientific paper authoring and to calculate the actual research impact of resources.  A reference model for creating resources will help address the current shortage of resources in terms of breadth (languages and applications) and depth (quality and volume).
 
+In addition to the, putting it in general terms, unification of approaches mentioned above, a set of shared resources and technologies should be compiled for all the languages to be supported through the future initiative. The specifics of this shared set of dictionaries, text and speech corpora, terminologies, ontologies, lexicons, taggers etc.~remain to be discussed and determined. It is important that they follow the same basic principles, cover not only general language but also several specific domains tailored to the priority themes, will be interlinked (for multilingual applications) and made available as free, public data sets for research and commercial purposes. The creation of such a shared set of base resources and technologies is imperative for the future European multilingual information society --~currently there are many European languages that do not even have a corresponding corpus yet that fulfills certain requirements. National corpora only exist for a handful of languages, many of these corpora are not readily available for research purposes. 
+
 \begin{figure*}[htb]
   \center
-  \includegraphics[width=0.85\textwidth]{../_media/europeImproveLT}
-  \caption{Towards far better coverage of language resources and technologies in Europe}
+  \includegraphics[width=0.95\textwidth]{../_media/europeImproveLT}
+  \caption{Towards appropriate and adequate coverage of language resources and technologies for Europe}
   \label{fig:lr-lt-coverage}
 \end{figure*}
 
@@ -1397,13 +1368,9 @@ There are several promising experiments in crowd-sourcing data collection tasks.
 \subsubsection{Openness}
 \label{sec:openness}
 
-There is a strong trend towards open data, i.\,e., data that are easily obtainable and that can be used with few, if any, restrictions. Sharing resources (both data and tools) has become a viable solution towards encouraging open data, and the community is strongly investing in facilities such as META-SHARE for the discovery and use of resources. These facilities could represent an optimal intermediate solution to respond to the needs for data variety, ease of retrieval, better data description and community-wide access, while at the same time assisting in clearing the intricate issues associated with intellectual property rights.
+There is a strong trend towards open data, i.\,e., data that are easily obtainable and that can be used with few, if any, restrictions. Sharing data and tools has become a viable solution towards encouraging open data \cite{sellis2010}, and the community is strongly investing in facilities such as META-SHARE for the discovery and use of resources. These facilities could represent an optimal intermediate solution to respond to the needs for data variety, ease of retrieval, better data description and community-wide access, while at the same time assisting in clearing the intricate issues associated with intellectual property rights.
 
 The challenge for the community and policy makers is to push for the development of a common legal framework that would facilitate resource sharing efforts abiding by the law, benefiting from the adoption of “fair use” principles and appropriate copyright exceptions. It is of utmost importance that legislation regarding resource use be harmonised, and even standardised, for all types of resources, and that free use be allowed, at least for research or non-profit purposes. 
-
-% FIXME: Mention the META-NET Data Liberation Campaign that we carry out.
-
-% Licensing schemes need to be simplified through broad-based solutions for both R\&D and industry. Electronic licensing (e-licenses) should be adopted and current distribution models to new media (web, mobile devices, etc.) should be accepted.
 
 \subsubsection{Interoperability}
 \label{sec:interoperability}
@@ -1429,14 +1396,6 @@ Interoperability of resources seeks to maximise the extent to which they are com
 \label{sec:org-research-pt4}
 
 In order to optimise the efficiency of shared core technologies for language analysis and production as well as the further development of the infrastructure, maximise the infrastructure's impact, and ensure that requirements for research and development are met at the necessary depth for all languages in all priority themes, the organisation of this shared agenda theme should adopt the following principles: It is necessary to invest in the further development of an integrated infrastructure (i.\,e., META-SHARE) based on an open architecture, enabling the sharing and further development of resources. The infrastructure should support technology-specific challenges and shared tasks in order to accelerate innovation breakthrough and market-readiness for desperately needed technologies. Concerted activities and policies facilitating the sharing of resources overcoming all stumbling blocks on the way to technical, organisational and legal interoperability should be supported. EU level research must be aligned and tightly coordinated with efforts on the national levels, so that coverage and language-specific developments are efficiently achieved. An important aspect of this coordination effort is concerned with the META-NET White Paper Series \cite{LWP2012}: in the 30 different white papers we have concrete and specific assessments of the language- and country-specific situation with regard to demands and technology gaps. The next step is to address and to fill these gaps with high-quality and robust core technologies and language resources.
-
-% FIXME. Peter Spyns: "tightly coordinated -- but by whom? National funders are very reluctant to leave this to the EC (cf. the current discussions on Horizon 2020 PCs) and the researchers/companies themselves should not do this alone either."
-
-% FIXME: Two remarks from Jürgen Wedekind:
-%
-% Is it realistic to assume that the required semantic, pragmatic, multimodal, and reasoning "tools and resources" can be developed within 8 years, in particular, if hybrid approaches will be employed. Rule-based approaches are even more costly and time-consuming than statistical approaches. Is the idea to develop them for all European languages? That is even less realistic.
-%
-% It is not entirely clear how the core technologies (language analysis and production) are developed: independently of the priority themes or not? Moreover, the priority themes are very sophisticated and complex in the sense that they depend on many core technologies that also depend or build on each other. This might cause extremely high risk to the completion of the projects of the priority themes.
 
 %\begin{itemize}
 %\item This platform should enable resources, data and processing services to be incorporated in, or called by a wide range of application software.
@@ -1497,7 +1456,7 @@ Thus the service platform will be an important instrument for supporting the ent
 \subsubsection{Legal Aspects}
 \label{sec:legal-aspects}
 
-% FIXME: Important comments from Serge Gladkoff that can probably best be integrated here.
+% FIXME: Important comments from Serge Gladkoff that can probably best be integrated here. There are also some mentions of legal aspects in the last part of the LR/LT section. Maybe harmonise them?
 %
 % % Looking into the issues of privacy, IP, patented and proprietary technologies
 % While reading the SRA many questions arise on various legal aspects of future research and development efforts:
