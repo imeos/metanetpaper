@@ -10,15 +10,16 @@
 %             - META-NET White Paper | XeTeX CLASS -
 %
 % 
-% ----------------------------------------------------------------------------
+% ---------------------------------------------------------------------
 %
 % Class options
 % []      = Set the inner part of the LWP
 % [cover] = Set the cover of the LWP
 % [ebook] = Set the eBook version of the LWP (including cover and inner part)
 % [plain] = Create a whitepaper without ISSN and third-party logo(s)
+% [plain_cover] = Create a whitepaper without ISSN and third-party logo(s)
 %
-% ----------------------------------------------------------------------------
+% ---------------------------------------------------------------------
 
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{metanetpaper}[2011/09/20 LaTeX class to typeset bilingual papers of the DFKI META-NET Project]
@@ -28,7 +29,7 @@
 
 
 % Dependencies
-% ----------------------------------------------------------------------------
+% ---------------------------------------------------------------------
 
 % Define papersize 210x279mm + 3mm bleed
 \RequirePackage[paperwidth=216mm, paperheight=285mm, top=24mm, bottom=37mm, left=27mm, right=25mm, headsep=20mm, bindingoffset=0mm]{geometry}
@@ -62,7 +63,7 @@
 
 
 % Class definitions
-% ----------------------------------------------------------------------------
+% ---------------------------------------------------------------------
 
 % Indent for new Paragraphs
 \setlength{\parindent}{0pt}
@@ -530,7 +531,7 @@
 
 
 % Own command definitions
-% ----------------------------------------------------------------------------
+% ---------------------------------------------------------------------
 
   % Left text on spine
 \def\SpineLText#1{\gdef\@SpineLText{#1}}
@@ -552,10 +553,17 @@
 \def\@authoraffiliation{\@latex@warning@no@line{No \noexpand\authoraffiliation given}}
   % Language version
 \def\languageVersion#1{\gdef\@languageVersion{#1}}
+  
+  % LTInfoBox Definition
+\long\def\LTInfoBox#1{\gdef\@LTInfoBox{#1}}
+\def\@LTInfoBox{\@latex@warning@no@line{No \noexpand\LTInfoBox given}}
+  % FundingNotice Definition
+\long\def\FundingNotice#1{\gdef\@FundingNotice{#1}}
+\def\@FundingNotice{\@latex@warning@no@line{No \noexpand\FundingNotice given}}
 
 
 % Class options
-% ----------------------------------------------------------------------------
+% ---------------------------------------------------------------------
 
 % Set the cover for the printversion
 \DeclareOption{cover}{%
@@ -941,14 +949,7 @@
   %  \end{minipage}
   %}
   
-  % LTInfoBox Definition
-  \long\def\LTInfoBox#1{\gdef\@LTInfoBox{#1}}
-  \def\@LTInfoBox{\@latex@warning@no@line{No \noexpand\LTInfoBox given}}
-  % FundingNotice Definition
-  \long\def\FundingNotice#1{\gdef\@FundingNotice{#1}}
-  \def\@FundingNotice{\@latex@warning@no@line{No \noexpand\FundingNotice given}}
-  
-  % Funding Notice
+    % Funding Notice
   \renewcommand{\makefundingnotice}{%
     \vskip20mm
     \centerline{META-NET -- office@meta-net.eu -- http://www.meta-net.eu}
@@ -975,8 +976,7 @@
   
     \clearpage
   }
-  
-  
+
   % Title & Mocktitle
     % Maketitle
   \renewcommand\maketitle{%
@@ -1156,6 +1156,133 @@
     \end{minipage}
   }
 }
+
+
+% Set the cover for the plain printversion
+\DeclareOption{plain_cover}{%
+  % Define papersize for cover 420x279mm + 4mm Spine + 5mm bleed
+  \setlength{\paperwidth}{434mm}%
+  \setlength{\paperheight}{289mm}%
+  \setlength{\textwidth}{380mm}%
+%  \setlength{\width}{380mm}%
+  
+  % Titlepage
+    % Maketitle
+  \renewcommand\maketitle{%
+    \begin{titlepage}%
+    \ThisCenterWallPaper{1}{../_media/titlepage.pdf}
+      \vspace*{3mm}
+      % Back cover
+      \begin{minipage}[t]{168mm}  
+        \vskip50mm
+        \begin{minipage}[t]{81mm}
+          \color{grey2}%
+          \textsf{%
+            \@SpineLText
+          }
+        \end{minipage}
+        % Gutter 
+        \begin{minipage}[t]{5mm}\ 
+        \end{minipage}
+        \begin{minipage}[t]{76mm}
+          \color{white}%
+          \textsf{%
+            \@SpineRText
+          }
+        \end{minipage}
+        \vskip10mm
+        \begin{minipage}[t]{163.5mm}
+          \textsf{%
+            \textcolor{white}{\@quotes}
+          }
+        \end{minipage}
+      \end{minipage}
+      % Space between back and front cover
+      \begin{minipage}[t]{20mm}\ \end{minipage}
+      \begin{minipage}[t]{10mm}%
+        \vskip-10mm
+        \rotatebox{270}{%
+          \color{white}
+          \textsf{
+            \MakeUppercase{%
+              \hskip2.2mm \@spineTitle
+            }
+          }
+        }
+      \end{minipage}
+      \begin{minipage}[t]{17mm}\ \end{minipage} 
+      % Front cover
+      \begin{minipage}[t]{185mm} 
+        % Left column
+        \begin{minipage}[t]{81mm}
+          \color{grey2}
+          \textsf{
+            \begin{flushright}
+              % Subtitle
+              \StrBefore{\@subtitle}{ ---} \\
+              \vspace*{5mm}
+              % Title
+              \fontsize{36}{36}\selectfont{%
+                \MakeUppercase{%
+                  \protect\StrBehind{\@title}{--- }
+                }
+              }
+            \end{flushright}
+            \vspace*{7mm}
+          }
+        \end{minipage}
+        % spacing between colums
+        \begin{minipage}[t]{5mm}\ \end{minipage}
+        % Right column
+        \begin{minipage}[t]{85mm}
+          \color{white}
+          \textsf{
+            \begin{flushleft}
+              % Subtitle
+              \textcolor{white}{%
+                \StrBehind{\@subtitle}{--- }
+              } \\
+              \vspace*{5mm}
+              % Title
+              \fontsize{36}{36}\selectfont{%
+                \MakeUppercase{%
+                  \protect\StrBefore{\@title}{ ---}
+                }
+              }
+            \end{flushleft}
+            \vspace*{7mm}
+          }
+        \end{minipage}
+        % Authors
+        \begin{Parallel}[c]{81mm}{97mm}
+          \ParallelLText{
+            \
+          }
+          \ParallelRText{
+            \begin{flushleft}
+              \fontsize{14}{1.2}\selectfont{%
+              \textsf{%
+                \textcolor{white}{%
+                  \ifx\@languageVersion\@null
+                    \@author
+                  \else
+                    \MakeUppercase{\@languageVersion}\\
+                    \vspace*{10mm}
+                    \@author
+                  \fi
+                  }
+                }
+              }
+            \end{flushleft}
+          }
+          \ParallelPar
+        \end{Parallel}
+      \end{minipage} % end Front cover
+    \end{titlepage}
+  }
+}
+
+
 \ProcessOptions\relax
 
 \endinput

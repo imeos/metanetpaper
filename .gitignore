@@ -19,7 +19,6 @@ languages_in_the_digital_age/*/*.pdf
 !languages_in_the_digital_age/_media/*.pdf
 
 strategic_research_agenda/*/*.pdf
-!strategic_research_agenda/sra/sra_cover.pdf
 !strategic_research_agenda/_media/*.pdf
 
 character_test/*.pdf
