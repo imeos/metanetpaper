@@ -13,11 +13,15 @@
 
 \documentclass[10pt, plain]{../../metanetpaper}
 
+\usepackage{caption}
 \usepackage{acronym}
 \usepackage{rotating}
 
-%!TEX TS-program = xelatex
 \RequireXeTeX %Force XeTeX check
+
+\newenvironment{Figure}
+  {\par\bigskip\noindent\minipage{\linewidth}}
+  {\endminipage\par\bigskip}
 
 \input{sra_preamble}
 
@@ -140,20 +144,20 @@ IPSC -- GlobeSec -- Open-Source Text Information Mining and Analysis, Ispra, Ita
 
 \vfill
 
-\centerline{\normalsize\fbox{\parbox{\dimexpr 0.85\linewidth - 2\fboxrule - 2\fboxsep}{``The Commission will [\dots] work with stakeholders to develop a new generation of web-based applications and services, including for multilingual content and services, by supporting standards and open platforms through EU-funded programmes.'' -- \emph{A Digital Agenda for Europe} \cite{DA2010}, p.~24}}}
+\centerline{\small\fbox{\parbox{\dimexpr 0.95\linewidth - 2\fboxrule - 2\fboxsep}{``The Commission will [\dots] work with stakeholders to develop a new generation of web-based applications and services, including for multilingual content and services, by supporting standards and open platforms through EU-funded programmes.'' -- \emph{A Digital Agenda for Europe} \cite{DA2010}, p.~24}}}
 
 \bigskip
-\centerline{\normalsize\fbox{\parbox{\dimexpr 0.85\linewidth - 2\fboxrule - 2\fboxsep}{``Everybody must have the chance to communicate efficiently in the enlarged EU. This does not only affect those who already are multilingual but also those who are monolingual or linguistically less skilled.\newline
+\centerline{\small\fbox{\parbox{\dimexpr 0.95\linewidth - 2\fboxrule - 2\fboxsep}{``Everybody must have the chance to communicate efficiently in the enlarged EU. This does not only affect those who already are multilingual but also those who are monolingual or linguistically less skilled.\newline
 %
 The media, new technologies and human and automatic translation services can bring the increasing variety of languages and cultures in the EU closer to citizens and provide the means to cross language barriers. They can also play an important role to reduce those barriers and allow citizens, companies and national administrations to exploit the opportunities of the single market and the globalising economy.\newline
 %
 Faced with the globalising online economy and ever-increasing information in all imaginable languages, it is important that citizens access and use information and services across national and language barriers, through the internet and mobile devices. Information and communication technologies (ICT) need to be language-aware and promote content creation in multiple languages.'' -- \emph{Multilingualism: An Asset for Europe and a Shared Commitment} \cite{EC2}, p.~12\,f.}}}
 
 \bigskip
-\centerline{\normalsize\fbox{\parbox{\dimexpr 0.85\linewidth - 2\fboxrule - 2\fboxsep}{``The Council of the European Union [\dots] encourage[s] the development of language technologies, in particular in the field of translation and interpretation, firstly by promoting cooperation between the Commission, the Member States, local authorities, research bodies and industry, and secondly by ensuring convergence between research programmes, the identification of areas of application and the deployment of the technologies across all EU languages.'' -- \emph{Council Resolution of 21 November 2008 on a European strategy for multilingualism} \cite{ecouncil2008}}}}
+\centerline{\small\fbox{\parbox{\dimexpr 0.95\linewidth - 2\fboxrule - 2\fboxsep}{``The Council of the European Union [\dots] encourage[s] the development of language technologies, in particular in the field of translation and interpretation, firstly by promoting cooperation between the Commission, the Member States, local authorities, research bodies and industry, and secondly by ensuring convergence between research programmes, the identification of areas of application and the deployment of the technologies across all EU languages.'' -- \emph{Council Resolution of 21 November 2008 on a European strategy for multilingualism} \cite{ecouncil2008}}}}
 
 \bigskip
-\centerline{\normalsize\fbox{\parbox{\dimexpr 0.85\linewidth - 2\fboxrule - 2\fboxsep}{``The language of Europe is translation.'' -- Umberto Eco (1993)}}}
+\centerline{\small\fbox{\parbox{\dimexpr 0.95\linewidth - 2\fboxrule - 2\fboxsep}{``The language of Europe is translation.'' -- Umberto Eco (1993)}}}
 
 \vfill
 
@@ -348,8 +352,8 @@ These selective funding efforts have led to a number of valuable results. For ex
 
 \begin{figure*}[htb]
   \center
-  \includegraphics[width=0.71\textwidth]{../_media/Languages-in-LT-Research}
-  \caption{Languages treated in research published in the 2010 edition of the Journal of Computational Linguistics and the conferences of ACL, EMNLP and COLING (internal, unpublished study)}
+  \includegraphics[width=0.80\textwidth]{../_media/Languages-in-LT-Research}
+  \caption{Languages treated in research published in the 2008--2010 edition of the Journal of Computational Linguistics and the conferences of ACL, EMNLP and COLING (internal, unpublished study)}
   \label{fig:languages-in-research}
 \end{figure*}
 
@@ -584,15 +588,36 @@ Our three priority themes (see Chapter~\ref{sec:pts}) are related to the Transli
  
 In order to be able to overcome language barriers, data infrastructures need to be made available, while carefully taking licensing and data provenance into account. Existing language and localisation resources (e.\,g., terminological, lexical data or translation memories) need to be transformed into linked open data. Only then will they be able to play a key role for creating truly multilingual linked open data.  Standardisation is crucial when it comes to implementing the infrastructure. So are reference implementations that deal with standardised data and metadata for human language in LT, localisation, CMS, CAT and TMS tools, to assure that standards can be put into action easily and get wide adoption.
 
-Language Technology will also play a key role for Big Data. Building future-proof solutions for big data analysis is impossible without Language Technology. Big data analysis will not be slightly better if we include language technology -- it simply will not happen. We cannot download big data into a database and then build applications on top of it -- we will need to process it sensibly and that sense will need to be based on language. This challenge not only relates to structured big data but also to any type of unstructured data including text documents and social media streams, esentially any sequential symbolic process of meaningful information. LT will build bridges from big data to knowledge, from unstructured data to structured data, and can finally lead to what some people are already referring to as Big Semantics. Language Technology will become the foundation for organising, analysing and extracting data in a truly useful way.
+Language Technology will also play a key role for Big Data (Figure~\ref{fig:language-and-data}). Building future-proof solutions for big data analysis is impossible without Language Technology. Big data analysis will not be slightly better if we include language technology -- it simply will not happen. We cannot download big data into a database and then build applications on top of it -- we will need to process it sensibly and that sense will need to be based on language. This challenge not only relates to structured big data but also to any type of unstructured data including text documents and social media streams, esentially any sequential symbolic process of meaningful information. LT will build bridges from big data to knowledge, from unstructured data to structured data, and can finally lead to what some people are already referring to as Big Semantics. Language Technology will become the foundation for organising, analysing and extracting data in a truly useful way.
+
+\begin{Figure}
+  \centering
+  \includegraphics[width=\textwidth]{../_media/TypesOfData.jpeg}
+  \captionof{figure}{Human language in the world of data}
+  \label{fig:language-and-data}
+\end{Figure}
+
+%\begin{figure*}[htb]
+%  \center
+%  \includegraphics[width=0.45\textwidth]{../_media/TypesOfData.jpeg}
+%  \caption{Human language in the world of data}
+%  \label{fig:language-and-data}
+%\end{figure*}
 
 To achieve success in these trends, various prerequisites need to be fulfilled. Linked open data sets need to be enriched with multilingual information. For textual knowledge we can expect that the enrichment will trigger a bootstrapping process. Here, bootstrapping means that existing Semantic Web vocabularies and data sets will be enriched with multilingual information in a first step. They can then be exploited as background knowledge for improved text analysis. Afterwards they can be fed back into the world of linked open data. Models such as, e.\,g., Lemon for enriching ontologies with multilingual, linguistic information will lead to richer resources and quality in the areas of machine translation, question answering, information extraction or textual entailment. This will create a synergetic cycle, in which the Semantic Web and deep text analysis benefit from each other, effectively bootstrapping the Translingual Web. For realising these synergies, methodologies need to be developed both for high quality, manually created linked open data resources and for big data, e.\,g., analysing activities of billions of users on the global, multilingual social web.
 
 Another pre-requisite for the convergence of data and Language Technology is the availability of free, open and interoperable data sources. Existing resources such as Wikipedia, DBpedia, Wikidata, Yago and OpenStreetMap need to be consolidated, based on standardised vocabularies to support interoperability and re-use. Core ontology vocabularies need to be translated into different languages. Tools have to be developed for cleaning up data, as well as mechanisms that can aggregate, summarise and repurpose content. Again the functionalities will be adapted to both small as well as big data sets.
 
+\begin{figure*}[htb]
+  \center
+  \includegraphics[width=0.90\textwidth]{../_media/DataValueChain.jpeg}
+  \caption{Language technology in the Data Value Chain}
+  \label{fig:lt-and-data-value-chain}
+\end{figure*}
+
 For all Language Technology applications that interact with data, the regulation of intellectual property rights is a problem that needs to be resolved soon. The web is a global information space, and Europe has to find a legal approach that supports both local R\&D while fostering global competitiveness.
 
-In the Seventh Framework Programme, projects and efforts such as DBpedia, Monnet, Wikidata and META-NET's META-SHARE have started tackling problems in the data-related trends discussed above. Organisations like ISO TC37 SC4, GALA and the World Wide Web Consortium  support this work by providing standardised building blocks for application development and data sharing. Europe is in a good position to be in the driver's seat of the data challenge, both for human knowledge and big data, effectively creating multiple new data value chains.
+In the Seventh Framework Programme, projects and efforts such as DBpedia, Monnet, Wikidata and META-NET's META-SHARE have started tackling problems in the data-related trends discussed above. Organisations like ISO TC37 SC4, GALA and the World Wide Web Consortium  support this work by providing standardised building blocks for application development and data sharing. Europe is in a good position to be in the driver's seat of the data challenge, both for human knowledge and big data, effectively creating multiple new data value chains (Figure~\ref{fig:lt-and-data-value-chain}).
 
 \subsection[Selected Trend: From Cloud Computing to Sky Computing]{Selected Trend:\newline From Cloud Computing to Sky Computing}
 \label{sec:cloud-sky-computing}
@@ -608,16 +633,16 @@ Language technologies are prime candidates for sky computing setups since they a
 \subsection[The Future Role of Language Technology]{The Future Role of Language Technology}
 \label{sec:}
 
-\begin{figure*}[htb]
-  \center
-  \includegraphics[width=0.9\textwidth]{../_media/Gartner-2012-Hype-Cycle.jpeg}
-  \caption{Gartner's 2012 Hype Cycle for Emerging Technologies \cite{gartner2012}}
-  \label{fig:hype-cycle}
-\end{figure*}
-
 % http://www.gartner.com/it/page.jsp?id=2124315
 
 In the next years language technology will play a major and decisive role, as explained and demonstrated by the discussion of megatrends and selected trends above. 
+
+\begin{figure*}[htbp]
+  \center
+  \includegraphics[width=0.80\textwidth]{../_media/Gartner-2012-Hype-Cycle.jpeg}
+  \caption{Gartner's 2012 Hype Cycle for Emerging Technologies \cite{gartner2012}}
+  \label{fig:hype-cycle}
+\end{figure*}
 
 The IT research and advisory company Gartner publishes the ``Gartner Hype Cycle'' every year. These studies are meant to provide strategists and planners with an assessment of the maturity, business benefit and future direction of more than 1,900 technologies, grouped into 92 areas \cite{gartner2012}. Among the ones most prominently featured by the report are big data, 3D printing, activity streams, Internet TV, Near Field Communication (NFC) payment, cloud computing and media tablets. The Gartner analysts also mention several significant scenarios, that appear to be extremely promising on multiple levels but for which more enabling technologies are needed before they can be put into practice. Among them are  ``smarter things'' and, most notably, ``the human way to interact with technology''. In fact, if we take a closer look at the 2012 hype cycle, reproduced in Figure~\ref{fig:hype-cycle}, we notice that a total of 13 of the 48 technologies listed are language technologies, many of which are in the early ``technology trigger'' phase. Among the top emerging and key enabling technologies of 2012 and the coming years are, to list only a few, Automatic Content Recognition, Natural-Language Question Answering, Speech-to-Speech Translation, Complex Event-Processing, Social Analytics, Text Analytics and Speech Recognition. This assessment clearly shows that now is the time to invest in strategic research in the area of language technology and to go for a major, continent-wide push. One thing is certain: these technologies \emph{will} come -- they will be responsible for the biggest revolution in IT since the introduction of the graphical user interface and they will generate many jobs and countless business as well as social opportunities. Europe can now decide if it wants to play only a minor role, following the US and Asia, or it wants to move ahead and take the lead itself.
 \end{multicols}
@@ -1456,7 +1481,7 @@ From the description of the three priority themes one can easily see that the pr
 
 \begin{figure*}[htb]
   \center
-  \includegraphics[width=0.75\textwidth]{../_media/PT-Rings.jpeg}
+  \includegraphics[width=0.70\textwidth]{../_media/PT-Rings.pdf}
   \caption{Scientific cooperation among the three priority research themes}
   \label{fig:priority-themes}
 \end{figure*}
