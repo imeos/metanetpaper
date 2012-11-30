@@ -107,23 +107,26 @@
 
 % LTInfoBox
 \LTInfoBox{
-  \begin{tabular}{p{.90\linewidth}}
+  \sffamily
+  \begin{tabular}{p{.93\linewidth}}
 
-  \rowcolor{orange2}\vspace{.15cm}\centerline{{\textcolor{white}{\Large What are the major topics?}}}\\[-3mm]
+  \rowcolor{orange2}\vspace{.15cm}\centerline{{\textcolor{white}{\Large\textbf{What are the major topics?}}}}\\
 
-  \rowcolor{orange2}{\textbf{Information access and management.} Ex.: Information retrieval.\newline
-    \textbf{Communication between humans and between humans and machines.} Ex.: Spoken dialogue system.\newline
-    \textbf{Translation of spoken and written content.} Ex.: Document translation.}
-  \vspace*{3mm} \\
+  \rowcolor{orange2}{\vspace*{-6mm}\begin{itemize}
+    \item \emph{Information access and management.} Ex.: Information retrieval.
+    \item \emph{Communication between humans and between humans and
+        machines.} Ex.: Spoken dialogue system.
+    \item \emph{Translation of spoken and written content.} Ex.: Document translation.
+    \end{itemize}}\\[-2mm]
 
-  \rowcolor{orange1} \vspace{.15cm}\centerline{{\textcolor{white}{\Large  What are common Language Technology applications?}}}\\[-2mm]
+  \rowcolor{orange1} \vspace{.15cm}\centerline{{\textcolor{white}{\Large\textbf{What are common Language Technology applications?}}}}\\[-2mm]
   \rowcolor{orange1} 
   Language technologies include: spelling and grammar checkers; web search; voice dialing; interactive dialogue systems (e.\,g., phone banking or train reservation systems); interactive assistants such as Apple's Siri or Google's voice search; crosslingual search in digital libraries (e.\,g., Europeana); term extraction; speech synthesis for navigation systems; recommender systems for online shops; automatic content summarisation; and machine translation systems such as Google Translate and Microsoft's Bing Translator.
   \vspace*{3mm} \\ 
 
-  \rowcolor{orange2}\vspace{.10cm}\centerline{{\textcolor{white}{\Large What is Language Technology?}}}\\[-2mm]
+  \rowcolor{orange2}\vspace{.10cm}\centerline{{\textcolor{white}{\Large\textbf{What is Language Technology?}}}}\\[-2mm]
   \rowcolor{orange2} Language technologies are technologies for automatically analysing and generating the most complex information medium in our world, \emph{human language}, in both its spoken and written forms (as well as sign language). These technologies are developed by experts involved in linguistics, computer science, computational linguistics and related disciplines \cite{jurafsky-martin01,manning-schuetze1,lt-world1,lt-survey1}.
   \vspace*{3mm} \\
-
   \end{tabular}
+  \normalfont
 }
