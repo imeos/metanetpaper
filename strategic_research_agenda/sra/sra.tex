@@ -20,6 +20,8 @@
 %!TEX TS-program = xelatex
 \RequireXeTeX %Force XeTeX check
 
+%\toggletrue{lowres}
+
 \newenvironment{Figure}
   {\par\bigskip\noindent\minipage{\linewidth}}
   {\endminipage\par\bigskip}
@@ -388,7 +390,7 @@ These selective funding efforts have led to a number of valuable results. For ex
 
 \begin{figure*}[htb]
   \center
-  \includegraphics[width=0.90\textwidth]{../_media/Languages-in-LT-Research}
+  \includegraphics[width=0.90\textwidth]{../_media/Languages-in-LT-Research-CMYK}
   \caption{Languages treated in research published in the 2008--2010 edition of the Journal of Computational Linguistics and the conferences of ACL, EMNLP and COLING (internal, unpublished study)}
   \label{fig:languages-in-research}
 \end{figure*}
@@ -674,7 +676,7 @@ The IT research and advisory company Gartner publishes the ``Gartner Hype Cycle'
 
 \begin{figure*}[htb]
   \center
-  \includegraphics[width=0.99\textwidth]{../_media/Gartner-2012-Hype-Cycle.jpeg}
+  \includegraphics[width=0.99\textwidth]{../_media/Gartner-2012-Hype-Cycle}
   \caption{Gartner's 2012 Hype Cycle for Emerging Technologies \cite{gartner2012}}
   \label{fig:hype-cycle}
 \end{figure*}
@@ -1508,7 +1510,7 @@ Except for a few large national projects and programmes such as Technolangue and
  
 \begin{figure*}[htb]
   \center
-  \includegraphics[width=0.70\textwidth]{../_media/PT-Rings.pdf}
+  \includegraphics[width=0.70\textwidth]{../_media/PT-Rings}
   \caption{Scientific cooperation among the three priority research themes}
   \label{fig:priority-themes}
 \end{figure*}
@@ -2084,7 +2086,11 @@ UK & School of Computer Science, University of Manchester: Sophia Ananiadou \\ \
 
 \begin{figure*}[h]
   \center
-  \includegraphics[width=\textwidth]{../_media/meta-net_team.jpg}
+  \iftoggle{lowres}{%
+    \includegraphics[width=\textwidth]{../_media/meta-net_team_ebook.jpg}
+  }{%
+    \includegraphics[width=\textwidth]{../_media/meta-net_team.jpg}
+  }
   \caption{About 100 language technology experts -- representatives of the countries and languages represented in META-NET -- discussed and finalised the key results and messages of the White Paper Series at a META-NET meeting in Berlin, Germany, on October 21/22, 2011.}
   \medskip
 \end{figure*}
