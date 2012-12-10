@@ -20,7 +20,15 @@
 %!TEX TS-program = xelatex
 \RequireXeTeX %Force XeTeX check
 
-\toggletrue{lowres}
+% Comment out => print version
+% Comment in  => ebook version
+%\toggletrue{lowres}
+
+% Comment out => ebook version
+% Comment in  => print version
+\hypersetup{colorlinks=false}
+
+% FIXME: Make all link colours black
 
 \newenvironment{Figure}
   {\par\bigskip\noindent\minipage{\linewidth}}
